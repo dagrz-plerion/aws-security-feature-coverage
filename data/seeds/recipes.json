@@ -944,6 +944,28 @@
           "requireMin": 100
         }
       ]
+    },
+    {
+      "urlPattern": "config/latest/developerguide/resource-config-reference\\.md$",
+      "serviceId": "config",
+      "note": "The authoritative reference of every resource type AWS Config records, in the Resource Type Value column.",
+      "recipes": [
+        {
+          "id": "config-resource-type-reference",
+          "blocks": "whole-page",
+          "select": {
+            "from": "list-items",
+            "extract": "regex",
+            "pattern": "Resource Type Value:\\s*(AWS::[A-Za-z0-9]+::[A-Za-z0-9]+)",
+            "matches": "^AWS::[A-Za-z0-9]+::[A-Za-z0-9]+$",
+            "depth": "any"
+          },
+          "axis": "resourceType",
+          "status": "covered",
+          "featureId": "config/recording-aws-resources",
+          "requireMin": 200
+        }
+      ]
     }
   ]
 }

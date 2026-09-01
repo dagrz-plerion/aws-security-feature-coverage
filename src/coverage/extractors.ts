@@ -56,6 +56,18 @@ export function neverStatesCoverage(title: string, ancestors = ""): boolean {
   return NEVER_COVERAGE.test(ancestors);
 }
 
+/**
+ * The "Region | Endpoint | Protocol" table appears on hundreds of AWS pages. It says
+ * the service has an endpoint in a Region, which is a fact about the service, not
+ * about whatever feature the page happens to describe. Read as feature coverage it
+ * claimed that AWS Config rules, conformance packs and service-linked roles each
+ * cover 36 Regions, on the strength of the same boilerplate.
+ */
+export function isServiceEndpointsTable(headers: string[]): boolean {
+  const joined = headers.join(" | ").toLowerCase();
+  return /\bendpoint\b/.test(joined) && /\bregion\b/.test(joined) && /\bprotocol\b/.test(joined);
+}
+
 /** Headings whose lists are navigation, never data. */
 const NAVIGATION_BLOCK = /^(topics?|contents?|see also|related( information| resources| topics)?|additional resources|more information|next steps?|in this (section|guide)|learn more)$/i;
 
@@ -149,11 +161,23 @@ function statusFrom(value: string | undefined): CoverageStatus | undefined {
  * every universe; the column that resolves best names the targets. A table that
  * resolves poorly is left alone rather than guessed at.
  */
-export function extractFromTable(table: MdTable, resolver: TargetResolver, serviceId: string, blockHeading = ""): ExtractionOutcome {
+export function extractFromTable(
+  table: MdTable,
+  resolver: TargetResolver,
+  serviceId: string,
+  blockHeading = "",
+  pageIsAboutAvailability = false,
+): ExtractionOutcome {
   const unresolved: { axis: string; raw: string }[] = [];
   if (table.rows.length < MIN_VALUES) return { claims: [], unresolved };
   const context = `${blockHeading} | ${table.section.join(" > ")} | ${table.headers.join(" | ")}`;
   if (isNavigation(context) || neverStatesCoverage(context) || !assertsCoverage(context)) {
+    return { claims: [], unresolved };
+  }
+  // The endpoints table is legitimate on a page about where the service runs, and
+  // boilerplate everywhere else. AWS bolts a "Region Support" section onto many
+  // unrelated pages, so the decision has to come from the page, not the section.
+  if (isServiceEndpointsTable(table.headers) && !pageIsAboutAvailability) {
     return { claims: [], unresolved };
   }
 
@@ -409,14 +433,20 @@ export function extractFromHeadings(body: string, resolver: TargetResolver, serv
  * removes that line from the body, so without it the guards see no context at all and
  * throw away the very lists the split was meant to separate.
  */
-export function extractFromPage(body: string, resolver: TargetResolver, serviceId: string, blockHeading = ""): ExtractionOutcome {
+export function extractFromPage(
+  body: string,
+  resolver: TargetResolver,
+  serviceId: string,
+  blockHeading = "",
+  pageIsAboutAvailability = false,
+): ExtractionOutcome {
   const doc = parseMarkdown(body);
   const claims: RawClaim[] = [];
   const unresolved: { axis: string; raw: string }[] = [];
   const failures: string[] = [];
 
   for (const table of doc.tables) {
-    const outcome = extractFromTable(table, resolver, serviceId, blockHeading);
+    const outcome = extractFromTable(table, resolver, serviceId, blockHeading, pageIsAboutAvailability);
     claims.push(...outcome.claims);
     unresolved.push(...outcome.unresolved);
     if (outcome.failure) failures.push(outcome.failure);

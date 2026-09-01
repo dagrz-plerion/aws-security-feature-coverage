@@ -28,6 +28,8 @@ export type Recipe = {
     joinColumns?: string[];
     /** Split one cell into several targets, for a list crammed into a cell. */
     split?: string;
+    /** "any" reads nested bullets too; AWS indents its per-service rows one level. */
+    depth?: "top" | "any";
   };
   axis: string;
   status?: "covered" | "not-covered" | "from-column" | "from-context";
@@ -193,7 +195,7 @@ export function runRecipe(
     if (recipe.select.from === "list-items") {
       for (const list of blockDoc.lists) {
         for (const item of list.items) {
-          if (item.depth !== 0) continue;
+          if (recipe.select.depth !== "any" && item.depth !== 0) continue;
           for (const value of splitValue(item.text, recipe)) values.push({ value, quote: item.raw });
         }
       }

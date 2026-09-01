@@ -416,7 +416,13 @@ export const stage5: Stage = {
         for (let blockIndex = 0; blockIndex < blocks.length; blockIndex += 1) {
           const block = blocks[blockIndex] as { headings: string[]; body: string };
           const isWholePage = blockIndex === blocks.length - 1 && blocks.length > 1;
-          const outcome = extractFromPage(block.body, resolver, job.page.serviceId, block.headings.join(" "));
+          const outcome = extractFromPage(
+            block.body,
+            resolver,
+            job.page.serviceId,
+            block.headings.join(" "),
+            SERVICE_WIDE_PAGE.test(pageTitle),
+          );
           if (outcome.claims.length === 0) continue;
           // The heading nearest the list decides. Only when it names no feature do
           // we fall back to the page as a whole.
