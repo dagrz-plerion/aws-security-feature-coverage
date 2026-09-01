@@ -224,7 +224,7 @@
             "extract": "whole"
           },
           "axis": "operatingSystem",
-          "status": "not-covered",
+          "status": "from-context",
           "requireMin": 8,
           "featureId": "inspector2/automated-scans"
         },
@@ -241,14 +241,15 @@
             "extract": "whole"
           },
           "axis": "operatingSystem",
-          "status": "covered",
+          "status": "from-column",
           "scope": {
             "axis": "scanMethod",
             "from": "constant",
             "value": "ecr-scanning"
           },
           "requireMin": 8,
-          "featureId": "inspector2/automated-scans"
+          "featureId": "inspector2/automated-scans",
+          "statusColumn": "enhanced scanning"
         }
       ]
     },
@@ -290,9 +291,9 @@
           "blocks": "whole-page",
           "select": {
             "from": "paragraph",
-            "sentenceMatches": "does ?n'?t analyze",
+            "sentenceMatches": "does\\s?n['\u2019]?t analyze",
             "extract": "regex",
-            "pattern": "(S3 Glacier Deep Archive|S3 Express One Zone|S3 directory buckets)",
+            "pattern": "(S3 Glacier Deep Archive|S3 Express One Zone)",
             "split": "\\s+or\\s+|,\\s+"
           },
           "axis": "storageClass",
@@ -377,11 +378,11 @@
           "select": {
             "from": "list-items",
             "extract": "whole",
-            "matches": "^[A-Za-z0-9][^.]{2,70}$"
+            "matches": "^[A-Za-z0-9][A-Za-z0-9 ,.:()/&'-]{2,70}$"
           },
           "axis": "auditFramework",
           "status": "covered",
-          "requireMin": 20,
+          "requireMin": 27,
           "featureId": "auditmanager/framework-library"
         }
       ]
@@ -460,7 +461,12 @@
           "status": "from-column",
           "statusColumn": "trusted access",
           "requireMin": 35,
-          "featureId": "organizations/delegated-administrator-for-integrated-aws-services"
+          "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+          "scope": {
+            "axis": "integrationType",
+            "from": "constant",
+            "value": "trusted-access"
+          }
         },
         {
           "id": "organizations-delegated-administrator",
@@ -1161,6 +1167,71 @@
           },
           "featureId": "kms/condition-keys",
           "requireMin": 60
+        }
+      ]
+    },
+    {
+      "urlPattern": "IAM/latest/UserGuide/reference_aws-services-that-work-with-iam\\.md$",
+      "serviceId": "iam",
+      "note": "A matrix: one row per AWS service, one column per IAM capability, each cell Yes, No or Partial. Read flat it asserted support the page denies for most services.",
+      "recipes": [
+        {
+          "id": "iam-service-capability-matrix",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "work with IAM",
+          "select": {
+            "from": "matrix",
+            "headerMatches": "^service$",
+            "extract": "whole"
+          },
+          "axis": "service",
+          "status": "from-column",
+          "scope": {
+            "axis": "iamCapability",
+            "from": "column-header"
+          },
+          "featureId": "iam/iam-works-with-other-aws-services",
+          "requireMin": 250
+        }
+      ]
+    },
+    {
+      "urlPattern": "acm/latest/userguide/acm-slr\\.md$",
+      "serviceId": "acm",
+      "note": "The Regions where the ACM service-linked role can be used. This is the SLR's limit, not where ACM runs, so it belongs to the SLR feature.",
+      "recipes": [
+        {
+          "id": "acm-slr-regions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "region",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "covered",
+          "featureId": "acm/service-linked-roles",
+          "requireMin": 15
+        }
+      ]
+    },
+    {
+      "urlPattern": "waf/latest/developerguide/classic-using-service-linked-roles\\.md$",
+      "serviceId": "waf",
+      "note": "This is the AWS WAF Classic service-linked role page, so it belongs to the WAF Classic service, not to WAFv2.",
+      "recipes": [
+        {
+          "id": "waf-classic-slr-regions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "region",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "covered",
+          "featureId": "waf/service-linked-roles",
+          "requireMin": 10
         }
       ]
     }

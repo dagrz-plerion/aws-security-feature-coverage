@@ -478,11 +478,31 @@
       ],
       "extractorId": "recipe:macie-unsupported-storage-classes",
       "featureId": "macie2/running-sensitive-data-discovery-jobs",
-      "id": "macie2-running-sensitive-data-discovery-jobs-storageclass-s3-directory-buckets-recipe-macie-unsupported-storage-classes",
+      "id": "macie2-running-sensitive-data-discovery-jobs-storageclass-s3-express-one-zone-recipe-macie-unsupported-storage-classes",
       "method": "deterministic",
       "status": "not-covered",
-      "targetId": "S3 directory buckets",
-      "targetLabel": "Macie doesn't analyze objects that are stored in S3 directory buckets."
+      "targetId": "S3 Express One Zone",
+      "targetLabel": "S3 Express One Zone."
+    },
+    {
+      "axis": "storageClass",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "b4bf5f77322faae9cfa14acad652e20a019c956e9f0902f8fdd140bfa553c7c5",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-supported-storage.md :: Supported storage classes and formats",
+          "quote": "Macie doesn’t analyze S3 objects that use other Amazon S3 storage classes, such as S3 Glacier Deep Archive or S3 Express One Zone. In addition, Macie doesn't analyze objects that are stored in S3 directory buckets.",
+          "retrievedAt": "2026-09-01T04:29:01.481Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-supported-storage.md"
+        }
+      ],
+      "extractorId": "recipe:macie-unsupported-storage-classes",
+      "featureId": "macie2/running-sensitive-data-discovery-jobs",
+      "id": "macie2-running-sensitive-data-discovery-jobs-storageclass-s3-glacier-deep-archive-recipe-macie-unsupported-storage-class",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "S3 Glacier Deep Archive",
+      "targetLabel": "such as S3 Glacier Deep Archive"
     },
     {
       "axis": "storageClass",
@@ -586,7 +606,7 @@
     }
   ],
   "featureId": "macie2/running-sensitive-data-discovery-jobs",
-  "generatedAt": "2026-09-01T07:45:51.472Z",
+  "generatedAt": "2026-09-01T11:14:54.031Z",
   "serviceId": "macie2",
   "unresolvedTargets": []
 }

@@ -104,6 +104,30 @@
     "conditionKey": {
       "kind": "catalogue",
       "label": "IAM condition keys the service publishes"
+    },
+    "iamCapability": {
+      "kind": "external",
+      "label": "IAM capabilities a service can support"
+    },
+    "integrationType": {
+      "kind": "external",
+      "label": "how a service integrates with Organizations"
+    },
+    "scanMethod": {
+      "kind": "external",
+      "label": "how Inspector scans"
+    },
+    "cpuArchitecture": {
+      "kind": "external",
+      "label": "CPU architectures"
+    },
+    "sharingScope": {
+      "kind": "external",
+      "label": "how far a resource can be shared"
+    },
+    "identityCenterCapability": {
+      "kind": "external",
+      "label": "IAM Identity Center capabilities"
     }
   }
 }

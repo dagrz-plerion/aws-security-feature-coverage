@@ -125,6 +125,8 @@ export function sentencesIn(body: string): { text: string; raw: string }[] {
     if (/^\s*(\||[+*-]\s|#{1,6}\s|<a )/.test(raw)) continue;
     const clean = raw
       .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+      .replace(/[\u2018\u2019]/g, "'")
+      .replace(/[\u201c\u201d]/g, '"')
       .replace(/[*`]/g, "")
       .replace(/\s+/g, " ")
       .trim();

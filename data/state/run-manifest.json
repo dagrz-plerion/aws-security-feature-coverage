@@ -1,12 +1,66 @@
 {
   "fetch": {
-    "cacheHit": 64,
+    "cacheHit": 10472,
     "failed": 0,
     "network": 0,
     "revalidated": 0
   },
-  "finishedAt": "2026-09-01T07:46:03.210Z",
+  "finishedAt": "2026-09-01T11:14:56.097Z",
   "stages": [
+    {
+      "counts": {
+        "claims": 49692,
+        "conflicts": 0,
+        "covered": 37869,
+        "duplicateRegistrationsSkipped": 1493,
+        "empty": 11716,
+        "enabled": 11778,
+        "featuresWithCoverage": 53,
+        "from_agent": 30,
+        "from_tier1-sweep": 6516,
+        "from_title-match": 5237,
+        "newlyDiscovered": 0,
+        "notCovered": 11823,
+        "openAxes": 19,
+        "openAxisMembers": 2233,
+        "pagesConsidered": 10285,
+        "pagesFailed": 1,
+        "pagesRead": 64,
+        "pagesRejectedByKind": 2636,
+        "prunedStaleRecords": 2,
+        "recipeFailures": 0,
+        "recipeRulesWithNoPage": 0,
+        "recipes": 69,
+        "recipesAttached": 69,
+        "registered": 11783,
+        "serviceWideRecords": 3,
+        "tablesRecoveredFromHtml": 360,
+        "unattachedPages": 181,
+        "unresolvedTargets": 5,
+        "valuesDroppedUnresolved": 3150,
+        "withRecipe": 51,
+        "yielding": 66
+      },
+      "finishedAt": "2026-09-01T11:14:54.494Z",
+      "id": "stage5-coverage",
+      "startedAt": "2026-09-01T11:14:41.189Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "claims": 49692,
+        "features": 1755,
+        "quotesChecked": 250,
+        "recallFound": 73,
+        "recallTotal": 73,
+        "services": 692,
+        "violations": 0
+      },
+      "finishedAt": "2026-09-01T11:14:55.135Z",
+      "id": "stage6-validate",
+      "startedAt": "2026-09-01T11:14:54.495Z",
+      "status": "ok"
+    },
     {
       "counts": {
         "clean": 63,
@@ -15,9 +69,9 @@
         "partialRead": 1,
         "staleQuotes": 0
       },
-      "finishedAt": "2026-09-01T07:46:02.608Z",
+      "finishedAt": "2026-09-01T11:14:55.433Z",
       "id": "stage7-verify",
-      "startedAt": "2026-09-01T07:46:02.263Z",
+      "startedAt": "2026-09-01T11:14:55.136Z",
       "status": "partial"
     },
     {
@@ -25,11 +79,11 @@
         "features": 1755,
         "services": 211
       },
-      "finishedAt": "2026-09-01T07:46:03.210Z",
+      "finishedAt": "2026-09-01T11:14:56.097Z",
       "id": "report",
-      "startedAt": "2026-09-01T07:46:02.608Z",
+      "startedAt": "2026-09-01T11:14:55.434Z",
       "status": "ok"
     }
   ],
-  "startedAt": "2026-09-01T07:46:02.261Z"
+  "startedAt": "2026-09-01T11:14:41.187Z"
 }

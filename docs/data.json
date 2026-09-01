@@ -28,6 +28,10 @@
       "kind": "catalogue",
       "label": "controls the service publishes"
     },
+    "cpuArchitecture": {
+      "kind": "external",
+      "label": "CPU architectures"
+    },
     "dataIdentifier": {
       "kind": "catalogue",
       "label": "data identifiers the service publishes"
@@ -43,6 +47,18 @@
     "findingType": {
       "kind": "catalogue",
       "label": "finding types the service publishes"
+    },
+    "iamCapability": {
+      "kind": "external",
+      "label": "IAM capabilities a service can support"
+    },
+    "identityCenterCapability": {
+      "kind": "external",
+      "label": "IAM Identity Center capabilities"
+    },
+    "integrationType": {
+      "kind": "external",
+      "label": "how a service integrates with Organizations"
     },
     "ipsRule": {
       "kind": "catalogue",
@@ -92,9 +108,17 @@
       "kind": "external",
       "label": "Amazon S3 features"
     },
+    "scanMethod": {
+      "kind": "external",
+      "label": "how Inspector scans"
+    },
     "service": {
       "kind": "external",
       "label": "AWS services"
+    },
+    "sharingScope": {
+      "kind": "external",
+      "label": "how far a resource can be shared"
     },
     "storageClass": {
       "kind": "external",
@@ -1434,8 +1458,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "region": {
+          "covered": 18,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 18,
+          "unknown": 0
+        }
+      },
+      "claimCount": 18,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -1451,7 +1484,28 @@
       "serviceId": "acm",
       "serviceName": "AWS Certificate Manager",
       "summary": "How to use service-linked roles to give ACM access to resources in your AWS account.",
-      "targets": {},
+      "targets": {
+        "region": [
+          "ap-northeast-1",
+          "ap-northeast-2",
+          "ap-northeast-3",
+          "ap-south-1",
+          "ap-southeast-1",
+          "ap-southeast-2",
+          "ca-central-1",
+          "eu-central-1",
+          "eu-central-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3",
+          "sa-east-1",
+          "us-east-1",
+          "us-east-2",
+          "us-gov-west-1",
+          "us-west-1",
+          "us-west-2"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -2251,15 +2305,15 @@
     {
       "axes": {
         "auditFramework": {
-          "covered": 21,
+          "covered": 29,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 21,
+          "total": 29,
           "unknown": 0
         }
       },
-      "claimCount": 21,
+      "claimCount": 29,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter"
@@ -2287,6 +2341,11 @@
           "AWS Operational Best Practices",
           "AWS Well Architected Framework WAF v10",
           "CCCS Medium Cloud Control",
+          "CIS AWS Benchmark v1.2.0",
+          "CIS AWS Benchmark v1.3.0",
+          "CIS AWS Benchmark v1.4.0",
+          "CIS Controls v7.1, IG1",
+          "CIS Critical Security Controls version 8.0, IG1",
           "EU GMP Annex 11, v1",
           "FedRAMP Security Baseline Controls r4",
           "GDPR 2016",
@@ -2294,8 +2353,11 @@
           "HIPAA Omnibus Final Rule",
           "HIPAA Security Rule: Feb 2003",
           "ISO/IEC 27001:2013 Annex A",
+          "NIST Cybersecurity Framework v1.1",
           "NIST SP 800-171 Rev 2",
           "NIST SP 800-53 Rev 5",
+          "PCI DSS V3.2.1",
+          "PCI DSS V4.0",
           "SSAE-18 SOC 2",
           "Title 21 CFR Part 11"
         ]
@@ -7324,17 +7386,8 @@
       "unresolved": 0
     },
     {
-      "axes": {
-        "region": {
-          "covered": 32,
-          "notCovered": 0,
-          "partial": 0,
-          "scoped": 0,
-          "total": 32,
-          "unknown": 0
-        }
-      },
-      "claimCount": 32,
+      "axes": {},
+      "claimCount": 0,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter"
@@ -7350,42 +7403,7 @@
       "serviceId": "cognito-idp",
       "serviceName": "Amazon Cognito",
       "summary": "",
-      "targets": {
-        "region": [
-          "af-south-1",
-          "ap-east-1",
-          "ap-northeast-1",
-          "ap-northeast-2",
-          "ap-northeast-3",
-          "ap-south-1",
-          "ap-south-2",
-          "ap-southeast-1",
-          "ap-southeast-2",
-          "ap-southeast-3",
-          "ap-southeast-4",
-          "ap-southeast-5",
-          "ap-southeast-7",
-          "ca-central-1",
-          "ca-west-1",
-          "eu-central-1",
-          "eu-central-2",
-          "eu-north-1",
-          "eu-south-1",
-          "eu-south-2",
-          "eu-west-1",
-          "eu-west-2",
-          "eu-west-3",
-          "il-central-1",
-          "me-central-1",
-          "me-south-1",
-          "mx-central-1",
-          "sa-east-1",
-          "us-east-1",
-          "us-east-2",
-          "us-west-1",
-          "us-west-2"
-        ]
-      },
+      "targets": {},
       "tier": "tier1",
       "unresolved": 0
     },
@@ -10305,17 +10323,8 @@
       "unresolved": 0
     },
     {
-      "axes": {
-        "region": {
-          "covered": 32,
-          "notCovered": 0,
-          "partial": 0,
-          "scoped": 0,
-          "total": 32,
-          "unknown": 0
-        }
-      },
-      "claimCount": 32,
+      "axes": {},
+      "claimCount": 0,
       "confidence": 0.75,
       "discoveredBy": [
         "named-control",
@@ -10332,42 +10341,7 @@
       "serviceId": "config",
       "serviceName": "AWS Config",
       "summary": "How to use service-linked roles to give AWS Config access to resources in your AWS account.",
-      "targets": {
-        "region": [
-          "af-south-1",
-          "ap-east-1",
-          "ap-east-2",
-          "ap-northeast-1",
-          "ap-northeast-2",
-          "ap-northeast-3",
-          "ap-south-1",
-          "ap-south-2",
-          "ap-southeast-1",
-          "ap-southeast-2",
-          "ap-southeast-3",
-          "ap-southeast-4",
-          "ap-southeast-5",
-          "ap-southeast-6",
-          "ap-southeast-7",
-          "ca-central-1",
-          "ca-west-1",
-          "eu-central-1",
-          "eu-central-2",
-          "eu-north-1",
-          "eu-south-1",
-          "eu-south-2",
-          "eu-west-1",
-          "eu-west-2",
-          "eu-west-3",
-          "il-central-1",
-          "mx-central-1",
-          "sa-east-1",
-          "us-east-1",
-          "us-east-2",
-          "us-west-1",
-          "us-west-2"
-        ]
-      },
+      "targets": {},
       "tier": "tier1",
       "unresolved": 0
     },
@@ -20426,8 +20400,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "service": {
+          "covered": 22,
+          "notCovered": 261,
+          "partial": 0,
+          "scoped": 283,
+          "total": 283,
+          "unknown": 0
+        }
+      },
+      "claimCount": 283,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter"
@@ -20443,7 +20426,293 @@
       "serviceId": "iam",
       "serviceName": "AWS Identity and Access Management",
       "summary": "",
-      "targets": {},
+      "targets": {
+        "service": [
+          "account-access",
+          "acm",
+          "aiops",
+          "amplify",
+          "amplifyuibuilder",
+          "aoss",
+          "apigateway",
+          "appconfig",
+          "appfabric",
+          "appflow",
+          "application-autoscaling",
+          "application-signals",
+          "applicationinsights",
+          "appmesh",
+          "apprunner",
+          "appstream",
+          "appstudio",
+          "appsync",
+          "aps",
+          "artifact",
+          "athena",
+          "auditmanager",
+          "autoscaling",
+          "b2bi",
+          "backup",
+          "backup-gateway",
+          "backup-search",
+          "batch",
+          "bcm-dashboards",
+          "bcm-data-exports",
+          "bcm-pricing-calculator",
+          "bcm-recommended-actions",
+          "bedrock",
+          "bedrock-agentcore",
+          "billingconductor",
+          "braket",
+          "cassandra",
+          "catalog.marketplace",
+          "ce",
+          "chime",
+          "cleanrooms",
+          "cleanrooms-ml",
+          "cloud9",
+          "cloudcontrolapi",
+          "clouddirectory",
+          "cloudformation",
+          "cloudfront",
+          "cloudfront-keyvaluestore",
+          "cloudhsm",
+          "cloudsearch",
+          "cloudshell",
+          "cloudwatch",
+          "codeartifact",
+          "codebuild",
+          "codecatalyst",
+          "codecommit",
+          "codeconnections",
+          "codedeploy",
+          "codeguru",
+          "codeguru-security",
+          "codepipeline",
+          "codestar",
+          "codestar-connections",
+          "codestar-notifications",
+          "codewhisperer",
+          "cognito-identity",
+          "cognito-sync",
+          "comprehend",
+          "comprehendmedical",
+          "compute-optimizer",
+          "config",
+          "connect",
+          "controlcatalog",
+          "controltower",
+          "databrew",
+          "dataexchange",
+          "datapipeline",
+          "datasync",
+          "datazone",
+          "dax",
+          "deadline",
+          "deployment-marketplace",
+          "detective",
+          "devicefarm",
+          "devops-guru",
+          "directconnect",
+          "discovery",
+          "discovery-marketplace",
+          "dlm",
+          "dms",
+          "docdb-elastic",
+          "drs",
+          "ds",
+          "ds-data",
+          "dsql",
+          "dynamodb",
+          "ec2-instance-connect",
+          "eks",
+          "elasticache",
+          "elasticbeanstalk",
+          "elasticmapreduce",
+          "elastictranscoder",
+          "email",
+          "emr-serverless",
+          "entitlement.marketplace",
+          "entityresolution",
+          "es",
+          "events",
+          "evs",
+          "finspace",
+          "firehose",
+          "fis",
+          "fms",
+          "forecast",
+          "frauddetector",
+          "freertos",
+          "freetier",
+          "fsx",
+          "gamelift",
+          "gameliftstreams",
+          "geo",
+          "glacier",
+          "globalaccelerator",
+          "grafana",
+          "greengrass",
+          "groundstation",
+          "guardduty",
+          "health",
+          "health-agent",
+          "healthlake",
+          "imagebuilder",
+          "importexport",
+          "inspector",
+          "internetmonitor",
+          "invoicing",
+          "iot",
+          "iotanalytics",
+          "iotdeviceadvisor",
+          "iotevents",
+          "iotfleetwise",
+          "iotsitewise",
+          "iottwinmaker",
+          "iotwireless",
+          "ivs",
+          "ivschat",
+          "kafkaconnect",
+          "kendra",
+          "kendra-ranking",
+          "kinesis",
+          "kinesisvideo",
+          "lakeformation",
+          "lambda",
+          "launchwizard",
+          "lex",
+          "license-manager",
+          "license-manager-user-subscriptions",
+          "lightsail",
+          "lookoutequipment",
+          "m2",
+          "machinelearning",
+          "macie2",
+          "managedblockchain",
+          "managedblockchain-query",
+          "marketplacecommerceanalytics",
+          "mediaconnect",
+          "mediaconvert",
+          "medialive",
+          "mediapackage",
+          "mediapackage-vod",
+          "mediastore",
+          "mediatailor",
+          "memorydb",
+          "mgh",
+          "mgn",
+          "migrationhub-orchestrator",
+          "monitron",
+          "mpa",
+          "mq",
+          "mturk-requester",
+          "network-firewall",
+          "networkflowmonitor",
+          "networkmanager",
+          "nimble",
+          "notifications",
+          "notifications-contacts",
+          "oam",
+          "odb",
+          "omics",
+          "one",
+          "opsworks",
+          "organizations",
+          "osis",
+          "outposts",
+          "panorama",
+          "payment-cryptography",
+          "pca-connector-ad",
+          "pcs",
+          "personalize",
+          "pi",
+          "pinpoint",
+          "pipes",
+          "polly",
+          "product:amazon-lookout-for-metrics",
+          "product:amazon-lookout-for-vision",
+          "product:amazon-managed-workflows-for-apache-airflow-mwaa",
+          "product:aws-app2container",
+          "product:aws-cost-and-usage-report",
+          "product:aws-deepcomposer",
+          "product:aws-deepracer",
+          "product:aws-private-5g",
+          "product:aws-privatelink",
+          "proton",
+          "qbusiness",
+          "qdeveloper",
+          "quicksight",
+          "rds",
+          "redshift",
+          "redshift-data",
+          "redshift-serverless",
+          "refactor-spaces",
+          "regional:amazon-managed-service-for-apache-flink",
+          "regional:aws-client-vpn",
+          "repostspace",
+          "resiliencehub",
+          "resource-explorer-2",
+          "resource-groups",
+          "robomaker",
+          "route53",
+          "route53domains",
+          "route53resolver",
+          "s3tables",
+          "s3vectors",
+          "sagemaker",
+          "savingsplans",
+          "scheduler",
+          "scn",
+          "sdb",
+          "secretsmanager",
+          "security-ir",
+          "securityhub",
+          "securitylake",
+          "serverlessrepo",
+          "servicecatalog",
+          "servicediscovery",
+          "servicequotas",
+          "shield",
+          "signin",
+          "simspaceweaver",
+          "sms-voice.pinpoint",
+          "snowball",
+          "social-messaging",
+          "ssm-contacts",
+          "ssm-guiconnect",
+          "ssm-incidents",
+          "ssm-sap",
+          "sso",
+          "states",
+          "storagegateway",
+          "support",
+          "supportapp",
+          "sustainability",
+          "tagging",
+          "textract",
+          "thinclient",
+          "timestream",
+          "tnb",
+          "transcribe",
+          "transfer",
+          "transform",
+          "translate",
+          "trustedadvisor",
+          "verified-access",
+          "verifiedpermissions",
+          "vpc-lattice",
+          "waf",
+          "waf-regional",
+          "wellarchitected",
+          "wickr",
+          "workmail",
+          "workmailmessageflow",
+          "workspaces",
+          "workspaces-web",
+          "xray"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -22346,8 +22615,8 @@
     {
       "axes": {
         "operatingSystem": {
-          "covered": 50,
-          "notCovered": 83,
+          "covered": 124,
+          "notCovered": 12,
           "partial": 0,
           "scoped": 114,
           "total": 125,
@@ -26459,14 +26728,14 @@
         },
         "storageClass": {
           "covered": 6,
-          "notCovered": 1,
+          "notCovered": 2,
           "partial": 0,
           "scoped": 0,
-          "total": 7,
+          "total": 8,
           "unknown": 0
         }
       },
-      "claimCount": 29,
+      "claimCount": 30,
       "confidence": 0.75,
       "discoveredBy": [
         "guide-subchapter",
@@ -26510,7 +26779,8 @@
         ],
         "storageClass": [
           "Reduced Redundancy (RRS)",
-          "S3 directory buckets",
+          "S3 Express One Zone",
+          "S3 Glacier Deep Archive",
           "S3 Glacier Instant Retrieval",
           "S3 Intelligent‐Tiering",
           "S3 One Zone‐Infrequent Access (S3 One Zone‐IA)",
@@ -28716,7 +28986,7 @@
           "covered": 38,
           "notCovered": 10,
           "partial": 0,
-          "scoped": 39,
+          "scoped": 78,
           "total": 39,
           "unknown": 0
         }
@@ -40944,8 +41214,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "region": {
+          "covered": 16,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 16,
+          "unknown": 0
+        }
+      },
+      "claimCount": 16,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -40961,7 +41240,26 @@
       "serviceId": "waf",
       "serviceName": "waf",
       "summary": "How to use service-linked roles to give AWS WAF Classic access to resources in your AWS account.",
-      "targets": {},
+      "targets": {
+        "region": [
+          "ap-northeast-1",
+          "ap-northeast-2",
+          "ap-northeast-3",
+          "ap-south-1",
+          "ap-southeast-1",
+          "ap-southeast-2",
+          "ca-central-1",
+          "eu-central-1",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3",
+          "sa-east-1",
+          "us-east-1",
+          "us-east-2",
+          "us-west-1",
+          "us-west-2"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -42294,17 +42592,8 @@
       "unresolved": 0
     },
     {
-      "axes": {
-        "region": {
-          "covered": 16,
-          "notCovered": 0,
-          "partial": 0,
-          "scoped": 0,
-          "total": 16,
-          "unknown": 0
-        }
-      },
-      "claimCount": 16,
+      "axes": {},
+      "claimCount": 0,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -42320,26 +42609,7 @@
       "serviceId": "wafv2",
       "serviceName": "AWS WAF",
       "summary": "How to use service-linked roles to give AWS WAF access to resources in your AWS account.",
-      "targets": {
-        "region": [
-          "ap-northeast-1",
-          "ap-northeast-2",
-          "ap-northeast-3",
-          "ap-south-1",
-          "ap-southeast-1",
-          "ap-southeast-2",
-          "ca-central-1",
-          "eu-central-1",
-          "eu-west-1",
-          "eu-west-2",
-          "eu-west-3",
-          "sa-east-1",
-          "us-east-1",
-          "us-east-2",
-          "us-west-1",
-          "us-west-2"
-        ]
-      },
+      "targets": {},
       "tier": "tier1",
       "unresolved": 0
     },
@@ -43936,6 +44206,13 @@
       "subject": "recipe:shield-advanced-protected-resources"
     },
     {
+      "detail": "recipe iam-service-capability-matrix produced 283 claims, fewer than the 800 it promises on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md. The page shape has probably changed.",
+      "id": "4663766c224d68df",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:iam-service-capability-matrix"
+    },
+    {
       "detail": "recipe securityhub-standards produced 1 claims, fewer than the 4 it promises on https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md. The page shape has probably changed.",
       "id": "46fdbf31a9877b38",
       "kind": "parser",
@@ -44109,6 +44386,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:recovery-readiness"
+    },
+    {
+      "detail": "recipe macie-unsupported-storage-classes produced 0 claims, fewer than the 1 it promises on https://docs.aws.amazon.com/macie/latest/user/discovery-supported-storage.md. The page shape has probably changed.",
+      "id": "5c130caf8f9cb58a",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:macie-unsupported-storage-classes"
     },
     {
       "detail": "\"AWS Tools for PowerShell (version 4)\" did not join to a service prefix. Score 3, signals security-doc-pages.",
@@ -44452,6 +44736,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:prescriptive-guidance"
+    },
+    {
+      "detail": "181 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions\".",
+      "id": "8076b8018c7f5c56",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "coverage pages without a feature"
     },
     {
       "detail": "\"doc:serverless\" did not join to a service prefix. Score 0, signals none.",
@@ -45616,6 +45907,13 @@
       "subject": "unresolved:doc:sdk-for-python"
     },
     {
+      "detail": "187 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions\".",
+      "id": "dbbf760ac7c02734",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "coverage pages without a feature"
+    },
+    {
       "detail": "\"AWS SDK for Python\" did not join to a service prefix. Score 2, signals security-doc-pages.",
       "id": "dc0b23cb58b1a8b3",
       "kind": "alias",
@@ -46015,16 +46313,70 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-01T07:46:04.352Z",
+  "generatedAt": "2026-09-01T11:15:05.221Z",
   "manifest": {
     "fetch": {
-      "cacheHit": 64,
+      "cacheHit": 10472,
       "failed": 0,
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-01T07:46:03.210Z",
+    "finishedAt": "2026-09-01T11:14:56.097Z",
     "stages": [
+      {
+        "counts": {
+          "claims": 49692,
+          "conflicts": 0,
+          "covered": 37869,
+          "duplicateRegistrationsSkipped": 1493,
+          "empty": 11716,
+          "enabled": 11778,
+          "featuresWithCoverage": 53,
+          "from_agent": 30,
+          "from_tier1-sweep": 6516,
+          "from_title-match": 5237,
+          "newlyDiscovered": 0,
+          "notCovered": 11823,
+          "openAxes": 19,
+          "openAxisMembers": 2233,
+          "pagesConsidered": 10285,
+          "pagesFailed": 1,
+          "pagesRead": 64,
+          "pagesRejectedByKind": 2636,
+          "prunedStaleRecords": 2,
+          "recipeFailures": 0,
+          "recipeRulesWithNoPage": 0,
+          "recipes": 69,
+          "recipesAttached": 69,
+          "registered": 11783,
+          "serviceWideRecords": 3,
+          "tablesRecoveredFromHtml": 360,
+          "unattachedPages": 181,
+          "unresolvedTargets": 5,
+          "valuesDroppedUnresolved": 3150,
+          "withRecipe": 51,
+          "yielding": 66
+        },
+        "finishedAt": "2026-09-01T11:14:54.494Z",
+        "id": "stage5-coverage",
+        "startedAt": "2026-09-01T11:14:41.189Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "claims": 49692,
+          "features": 1755,
+          "quotesChecked": 250,
+          "recallFound": 73,
+          "recallTotal": 73,
+          "services": 692,
+          "violations": 0
+        },
+        "finishedAt": "2026-09-01T11:14:55.135Z",
+        "id": "stage6-validate",
+        "startedAt": "2026-09-01T11:14:54.495Z",
+        "status": "ok"
+      },
       {
         "counts": {
           "clean": 63,
@@ -46033,9 +46385,9 @@
           "partialRead": 1,
           "staleQuotes": 0
         },
-        "finishedAt": "2026-09-01T07:46:02.608Z",
+        "finishedAt": "2026-09-01T11:14:55.433Z",
         "id": "stage7-verify",
-        "startedAt": "2026-09-01T07:46:02.263Z",
+        "startedAt": "2026-09-01T11:14:55.136Z",
         "status": "partial"
       },
       {
@@ -46043,13 +46395,13 @@
           "features": 1755,
           "services": 211
         },
-        "finishedAt": "2026-09-01T07:46:03.210Z",
+        "finishedAt": "2026-09-01T11:14:56.097Z",
         "id": "report",
-        "startedAt": "2026-09-01T07:46:02.608Z",
+        "startedAt": "2026-09-01T11:14:55.434Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-01T07:46:02.261Z"
+    "startedAt": "2026-09-01T11:14:41.187Z"
   },
   "outOfScope": [
     {
@@ -51351,7 +51703,7 @@
     {
       "actionCount": 41,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 0,
+      "claimCount": 18,
       "confidence": 1,
       "docGuides": [
         {
@@ -51815,7 +52167,7 @@
     {
       "actionCount": 62,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 21,
+      "claimCount": 29,
       "confidence": 1,
       "docGuides": [
         {
@@ -52716,7 +53068,7 @@
     {
       "actionCount": 128,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 32,
+      "claimCount": 0,
       "confidence": 1,
       "docGuides": [
         {
@@ -52812,7 +53164,7 @@
     {
       "actionCount": 102,
       "category": "Management & Governance",
-      "claimCount": 40820,
+      "claimCount": 40788,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -54605,7 +54957,7 @@
     {
       "actionCount": 190,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 0,
+      "claimCount": 283,
       "confidence": 1,
       "docGuides": [
         {
@@ -55245,7 +55597,7 @@
     {
       "actionCount": 81,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 195,
+      "claimCount": 196,
       "confidence": 1,
       "docGuides": [
         {
@@ -57972,7 +58324,7 @@
     {
       "actionCount": 77,
       "category": "",
-      "claimCount": 0,
+      "claimCount": 16,
       "confidence": 0.85,
       "docGuides": [],
       "featureCount": 4,
@@ -57991,7 +58343,7 @@
     {
       "actionCount": 61,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 32,
+      "claimCount": 16,
       "confidence": 1,
       "docGuides": [
         {
@@ -58199,6 +58551,17 @@
       "verdict": "ok"
     },
     {
+      "claims": 283,
+      "dropped": 2288,
+      "note": "A matrix: one row per AWS service, one column per IAM capability, each cell Yes, No or Partial. Read flat it asserted support the page denies for most services.",
+      "readRatio": 0.63,
+      "recipes": 1,
+      "serviceId": "iam",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md",
+      "verdict": "ok"
+    },
+    {
       "claims": 38,
       "readRatio": 0.68,
       "recipes": 0,
@@ -58243,6 +58606,17 @@
       "serviceId": "guardduty",
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/guardduty/latest/ug/gd-findings-initiate-malware-protection-scan.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 18,
+      "dropped": 1,
+      "note": "The Regions where the ACM service-linked role can be used. This is the SLR's limit, not where ACM runs, so it belongs to the SLR feature.",
+      "readRatio": 0.95,
+      "recipes": 1,
+      "serviceId": "acm",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md",
       "verdict": "ok"
     },
     {
@@ -58451,6 +58825,7 @@
     },
     {
       "claims": 32,
+      "note": "Amazon SES email Regions, not Cognito coverage",
       "readRatio": 1,
       "recipes": 0,
       "serviceId": "cognito-idp",
@@ -58460,6 +58835,7 @@
     },
     {
       "claims": 32,
+      "note": "the third-party SLR page, wrongly read as the Config SLR",
       "readRatio": 1,
       "recipes": 0,
       "serviceId": "config",
@@ -58477,6 +58853,16 @@
       "verdict": "ok"
     },
     {
+      "claims": 30,
+      "note": "The S3 storage classes Macie reads, and the file formats it can open. Extensions are comma separated inside one cell.",
+      "readRatio": 1,
+      "recipes": 3,
+      "serviceId": "macie2",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/macie/latest/user/discovery-supported-storage.md",
+      "verdict": "ok"
+    },
+    {
       "claims": 29,
       "readRatio": 1,
       "recipes": 0,
@@ -58487,12 +58873,12 @@
     },
     {
       "claims": 29,
-      "note": "The S3 storage classes Macie reads, and the file formats it can open. Extensions are comma separated inside one cell.",
+      "note": "The prebuilt audit frameworks Audit Manager ships.",
       "readRatio": 1,
-      "recipes": 3,
-      "serviceId": "macie2",
+      "recipes": 1,
+      "serviceId": "auditmanager",
       "source": "agent",
-      "url": "https://docs.aws.amazon.com/macie/latest/user/discovery-supported-storage.md",
+      "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/framework-overviews.md",
       "verdict": "ok"
     },
     {
@@ -58546,16 +58932,6 @@
     },
     {
       "claims": 21,
-      "note": "The prebuilt audit frameworks Audit Manager ships.",
-      "readRatio": 1,
-      "recipes": 1,
-      "serviceId": "auditmanager",
-      "source": "agent",
-      "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/framework-overviews.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 21,
       "note": "These finding types are retired: the page says GuardDuty no longer generates them. Recording them as covered asserted the inverse.",
       "readRatio": 1,
       "recipes": 1,
@@ -58597,9 +58973,10 @@
     },
     {
       "claims": 16,
+      "note": "This is the AWS WAF Classic service-linked role page, so it belongs to the WAF Classic service, not to WAFv2.",
       "readRatio": 1,
-      "recipes": 0,
-      "serviceId": "wafv2",
+      "recipes": 1,
+      "serviceId": "waf",
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/classic-using-service-linked-roles.md",
       "verdict": "ok"
@@ -58816,7 +59193,7 @@
   "universeSizes": {
     "accessScope": 12,
     "apiOperation": 30,
-    "auditFramework": 21,
+    "auditFramework": 29,
     "complianceStandard": 8,
     "conditionKey": 38,
     "configRule": 828,
@@ -58836,7 +59213,7 @@
     "resourceType": 3134,
     "s3Feature": 22,
     "service": 526,
-    "storageClass": 7,
+    "storageClass": 8,
     "threatCategory": 16
   },
   "universes": {

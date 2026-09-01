@@ -17,8 +17,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-access-analyzer-recipe-organizations-trusted-a",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-access-analyzer-trusted-access-recipe-organiza",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "access-analyzer",
       "targetLabel": "IAM Access Analyzer"
@@ -62,8 +67,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-artifact-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-artifact-trusted-access-recipe-organizations-t",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "artifact",
       "targetLabel": "AWS Artifact"
@@ -107,8 +117,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-auditmanager-recipe-organizations-trusted-acce",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-auditmanager-trusted-access-recipe-organizatio",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "auditmanager",
       "targetLabel": "AWS Audit Manager"
@@ -152,8 +167,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-backup-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-backup-trusted-access-recipe-organizations-tru",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "backup",
       "targetLabel": "AWS Backup"
@@ -197,8 +217,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-cloudtrail-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-cloudtrail-trusted-access-recipe-organizations",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "cloudtrail",
       "targetLabel": "AWS CloudTrail"
@@ -242,8 +267,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-cloudwatch-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-cloudwatch-trusted-access-recipe-organizations",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "cloudwatch",
       "targetLabel": "Amazon CloudWatch"
@@ -287,8 +317,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-compute-optimizer-recipe-organizations-trusted",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-compute-optimizer-trusted-access-recipe-organi",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "compute-optimizer",
       "targetLabel": "AWS Compute Optimizer"
@@ -332,8 +367,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-config-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-config-trusted-access-recipe-organizations-tru",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "config",
       "targetLabel": "AWS Config"
@@ -377,8 +417,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-controltower-recipe-organizations-trusted-acce",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-controltower-trusted-access-recipe-organizatio",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "controltower",
       "targetLabel": "AWS Control Tower"
@@ -422,8 +467,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-detective-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-detective-trusted-access-recipe-organizations-",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "detective",
       "targetLabel": "Amazon Detective"
@@ -467,8 +517,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-devops-guru-recipe-organizations-trusted-acces",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-devops-guru-trusted-access-recipe-organization",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "devops-guru",
       "targetLabel": "Amazon DevOps Guru"
@@ -512,8 +567,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-ds-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-ds-trusted-access-recipe-organizations-trusted",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "ds",
       "targetLabel": "AWS Directory Service"
@@ -557,8 +617,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-ec2-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-ec2-trusted-access-recipe-organizations-truste",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "ec2",
       "targetLabel": "Amazon Elastic Compute Cloud"
@@ -602,8 +667,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-eks-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-eks-trusted-access-recipe-organizations-truste",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "eks",
       "targetLabel": "Amazon Elastic Kubernetes Service"
@@ -647,8 +717,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-events-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-events-trusted-access-recipe-organizations-tru",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "not-covered",
       "targetId": "events",
       "targetLabel": "Amazon EventBridge"
@@ -692,8 +767,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-fms-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-fms-trusted-access-recipe-organizations-truste",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "fms",
       "targetLabel": "AWS Firewall Manager"
@@ -737,8 +817,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-guardduty-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-guardduty-trusted-access-recipe-organizations-",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "guardduty",
       "targetLabel": "Amazon GuardDuty"
@@ -782,8 +867,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-health-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-health-trusted-access-recipe-organizations-tru",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "health",
       "targetLabel": "AWS Health"
@@ -827,8 +917,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-iam-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-iam-trusted-access-recipe-organizations-truste",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "iam",
       "targetLabel": "AWS Identity and Access Management"
@@ -872,8 +967,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-inspector-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-inspector-trusted-access-recipe-organizations-",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "inspector",
       "targetLabel": "Amazon Inspector"
@@ -917,8 +1017,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-license-manager-recipe-organizations-trusted-a",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-license-manager-trusted-access-recipe-organiza",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "license-manager",
       "targetLabel": "AWS License Manager"
@@ -962,8 +1067,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-macie2-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-macie2-trusted-access-recipe-organizations-tru",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "macie2",
       "targetLabel": "Amazon Macie"
@@ -1007,8 +1117,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-marketplacecommerceanalytics-recipe-organizati",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-marketplacecommerceanalytics-trusted-access-re",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "marketplacecommerceanalytics",
       "targetLabel": "AWS Marketplace"
@@ -1052,8 +1167,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-mgn-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-mgn-trusted-access-recipe-organizations-truste",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "mgn",
       "targetLabel": "AWS Transform MGN"
@@ -1097,8 +1217,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-networkmanager-recipe-organizations-trusted-ac",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-networkmanager-trusted-access-recipe-organizat",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "networkmanager",
       "targetLabel": "AWS Network Manager"
@@ -1142,8 +1267,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-notifications-recipe-organizations-trusted-acc",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-notifications-trusted-access-recipe-organizati",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "notifications",
       "targetLabel": "AWS User Notifications"
@@ -1187,8 +1317,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-qdeveloper-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-qdeveloper-trusted-access-recipe-organizations",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "qdeveloper",
       "targetLabel": "Amazon Q Developer"
@@ -1232,8 +1367,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-ram-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-ram-trusted-access-recipe-organizations-truste",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "ram",
       "targetLabel": "AWS Resource Access Manager"
@@ -1277,8 +1417,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-resiliencehub-recipe-organizations-trusted-acc",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-resiliencehub-trusted-access-recipe-organizati",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "resiliencehub",
       "targetLabel": "AWS Resilience Hub"
@@ -1322,8 +1467,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-resource-explorer-2-recipe-organizations-trust",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-resource-explorer-2-trusted-access-recipe-orga",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "resource-explorer-2",
       "targetLabel": "AWS Resource Explorer"
@@ -1367,8 +1517,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-security-ir-recipe-organizations-trusted-acces",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-security-ir-trusted-access-recipe-organization",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "security-ir",
       "targetLabel": "AWS Security Incident Response"
@@ -1412,8 +1567,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-securityhub-recipe-organizations-trusted-acces",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-securityhub-trusted-access-recipe-organization",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "securityhub",
       "targetLabel": "AWS Security Hub CSPM"
@@ -1457,8 +1617,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-securitylake-recipe-organizations-trusted-acce",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-securitylake-trusted-access-recipe-organizatio",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "securitylake",
       "targetLabel": "Amazon Security Lake"
@@ -1502,8 +1667,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-servicecatalog-recipe-organizations-trusted-ac",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-servicecatalog-trusted-access-recipe-organizat",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "servicecatalog",
       "targetLabel": "AWS Service Catalog"
@@ -1547,8 +1717,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-servicequotas-recipe-organizations-trusted-acc",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-servicequotas-trusted-access-recipe-organizati",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "servicequotas",
       "targetLabel": "Service Quotas"
@@ -1592,8 +1767,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-ssm-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-ssm-trusted-access-recipe-organizations-truste",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "ssm",
       "targetLabel": "AWS Systems Manager"
@@ -1637,8 +1817,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-sso-recipe-organizations-trusted-access",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-sso-trusted-access-recipe-organizations-truste",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "sso",
       "targetLabel": "AWS IAM Identity Center"
@@ -1682,8 +1867,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-trustedadvisor-recipe-organizations-trusted-ac",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-trustedadvisor-trusted-access-recipe-organizat",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "trustedadvisor",
       "targetLabel": "AWS Trusted Advisor"
@@ -1727,8 +1917,13 @@
       ],
       "extractorId": "recipe:organizations-trusted-access",
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-wellarchitected-recipe-organizations-trusted-a",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-wellarchitected-trusted-access-recipe-organiza",
       "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
       "status": "covered",
       "targetId": "wellarchitected",
       "targetLabel": "AWS Well-Architected Tool"
@@ -1760,7 +1955,7 @@
     }
   ],
   "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-  "generatedAt": "2026-09-01T07:45:51.472Z",
+  "generatedAt": "2026-09-01T11:14:54.031Z",
   "serviceId": "organizations",
   "unresolvedTargets": []
 }
