@@ -1,5 +1,13 @@
 {
   "axisKinds": {
+    "accessScope": {
+      "kind": "catalogue",
+      "label": "access scopes the service publishes"
+    },
+    "apiOperation": {
+      "kind": "catalogue",
+      "label": "API operations the service accepts"
+    },
     "auditFramework": {
       "kind": "catalogue",
       "label": "audit frameworks the service ships"
@@ -7,6 +15,10 @@
     "complianceStandard": {
       "kind": "catalogue",
       "label": "compliance standards the service evaluates"
+    },
+    "conditionKey": {
+      "kind": "catalogue",
+      "label": "IAM condition keys the service publishes"
     },
     "configRule": {
       "kind": "catalogue",
@@ -67,6 +79,10 @@
     "region": {
       "kind": "external",
       "label": "AWS Regions"
+    },
+    "resourceTarget": {
+      "kind": "external",
+      "label": "resources a rule group can be attached to"
     },
     "resourceType": {
       "kind": "external",
@@ -17973,6 +17989,14 @@
     },
     {
       "axes": {
+        "dataSource": {
+          "covered": 3,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 3,
+          "unknown": 0
+        },
         "findingType": {
           "covered": 88,
           "notCovered": 21,
@@ -17982,7 +18006,7 @@
           "unknown": 0
         }
       },
-      "claimCount": 109,
+      "claimCount": 112,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -18000,6 +18024,11 @@
       "serviceName": "Amazon GuardDuty",
       "summary": "Each protection plan provides the following auto-enable options for organization accounts:",
       "targets": {
+        "dataSource": [
+          "cloudtrail-management-events",
+          "dns-logs",
+          "vpc-flow-logs"
+        ],
         "findingType": [
           "Backdoor:EC2/C&CActivity.B",
           "Backdoor:EC2/C&CActivity.B!DNS",
@@ -23719,16 +23748,24 @@
     },
     {
       "axes": {
+        "conditionKey": {
+          "covered": 38,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 38,
+          "unknown": 0
+        },
         "service": {
           "covered": 77,
           "notCovered": 0,
           "partial": 0,
-          "scoped": 0,
+          "scoped": 77,
           "total": 77,
           "unknown": 0
         }
       },
-      "claimCount": 77,
+      "claimCount": 115,
       "confidence": 0.6,
       "discoveredBy": [
         "guide-subchapter"
@@ -23745,6 +23782,46 @@
       "serviceName": "AWS Key Management Service (KMS)",
       "summary": "AWS defines global condition keys, a set of policy conditions keys for all AWS services that use IAM for access control.",
       "targets": {
+        "conditionKey": [
+          "kms:BypassPolicyLockoutSafetyCheck",
+          "kms:CallerAccount",
+          "kms:CustomerMasterKeySpec (deprecated)",
+          "kms:CustomerMasterKeyUsage (deprecated)",
+          "kms:DataKeyPairSpec",
+          "kms:EncryptionAlgorithm",
+          "kms:EncryptionContext:context-key",
+          "kms:EncryptionContextKeys",
+          "kms:ExpirationModel",
+          "kms:GrantConstraintSourceArn",
+          "kms:GrantConstraintType",
+          "kms:GranteePrincipal",
+          "kms:GranteeServicePrincipal",
+          "kms:GrantIsForAWSResource",
+          "kms:GrantOperations",
+          "kms:KeyAgreementAlgorithm",
+          "kms:KeyOrigin",
+          "kms:KeySpec",
+          "kms:KeyUsage",
+          "kms:MacAlgorithm",
+          "kms:MessageType",
+          "kms:MultiRegion",
+          "kms:MultiRegionKeyType",
+          "kms:PrimaryRegion",
+          "kms:ReEncryptOnSameKey",
+          "kms:ReplicaRegion",
+          "kms:RequestAlias",
+          "kms:ResourceAliases",
+          "kms:RetiringPrincipal",
+          "kms:RetiringServicePrincipal",
+          "kms:RotationPeriodInDays",
+          "kms:ScheduleKeyDeletionPendingWindowInDays",
+          "kms:SigningAlgorithm",
+          "kms:TrailingDaysWithoutKeyUsage",
+          "kms:ValidTo",
+          "kms:ViaService",
+          "kms:WrappingAlgorithm",
+          "kms:WrappingKeySpec"
+        ],
         "service": [
           "aiops",
           "appfabric",
@@ -23826,7 +23903,7 @@
         ]
       },
       "tier": "tier1",
-      "unresolved": 18
+      "unresolved": 0
     },
     {
       "axes": {},
@@ -32017,8 +32094,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "region": {
+          "covered": 5,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 5,
+          "unknown": 0
+        }
+      },
+      "claimCount": 5,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -32034,7 +32120,15 @@
       "serviceId": "s3",
       "serviceName": "Storage Browser for Amazon S3",
       "summary": "Use Amazon S3 Multi-Region Access Point failover controls.",
-      "targets": {},
+      "targets": {
+        "region": [
+          "ap-northeast-1",
+          "ap-southeast-2",
+          "eu-west-1",
+          "us-east-1",
+          "us-west-2"
+        ]
+      },
       "tier": "tier2",
       "unresolved": 0
     },
@@ -32601,16 +32695,16 @@
     },
     {
       "axes": {
-        "region": {
-          "covered": 5,
+        "apiOperation": {
+          "covered": 30,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 5,
+          "total": 30,
           "unknown": 0
         }
       },
-      "claimCount": 5,
+      "claimCount": 30,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -32628,12 +32722,37 @@
       "serviceName": "Storage Browser for Amazon S3",
       "summary": "Configure Multi-Region Access Point opt-in Regions.",
       "targets": {
-        "region": [
-          "ap-northeast-1",
-          "ap-southeast-2",
-          "eu-west-1",
-          "us-east-1",
-          "us-west-2"
+        "apiOperation": [
+          "AbortMultipartUpload",
+          "CompleteMultipartUpload",
+          "CreateMultipartUpload",
+          "CreateMultiRegionAccessPoint",
+          "DeleteObject",
+          "DeleteObjectTagging",
+          "DescribeMultiRegionAccessPointOperation",
+          "GetMultiRegionAccessPoint",
+          "GetMultiRegionAccessPointPolicy",
+          "GetMultiRegionAccessPointPolicyStatus",
+          "GetMultiRegionAccessPointRoutes",
+          "GetObject",
+          "GetObjectAcl",
+          "GetObjectLegalHold",
+          "GetObjectRetention",
+          "GetObjectTagging",
+          "HeadObject",
+          "ListMultipartUploads",
+          "ListMultiRegionAccessPoints",
+          "ListObjectsV2",
+          "ListParts",
+          "PutMultiRegionAccessPointPolicy",
+          "PutObject",
+          "PutObjectAcl",
+          "PutObjectLegalHold",
+          "PutObjectRetention",
+          "PutObjectTagging",
+          "RestoreObject",
+          "SubmitMultiRegionAccessPointRoutes",
+          "UploadPart"
         ]
       },
       "tier": "tier2",
@@ -37324,8 +37443,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "region": {
+          "covered": 14,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 14,
+          "unknown": 0
+        }
+      },
+      "claimCount": 14,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -37341,7 +37469,24 @@
       "serviceId": "shield",
       "serviceName": "AWS Shield",
       "summary": "How to use service-linked roles to give Shield Advanced access to resources in your AWS account.",
-      "targets": {},
+      "targets": {
+        "region": [
+          "af-south-1",
+          "ap-east-1",
+          "ap-northeast-1",
+          "ap-southeast-1",
+          "ap-southeast-2",
+          "ap-southeast-5",
+          "ap-southeast-7",
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-2",
+          "eu-west-1",
+          "us-east-1",
+          "us-east-2",
+          "us-west-2"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -39388,6 +39533,14 @@
     },
     {
       "axes": {
+        "accessScope": {
+          "covered": 12,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 12,
+          "unknown": 0
+        },
         "service": {
           "covered": 5,
           "notCovered": 0,
@@ -39397,7 +39550,7 @@
           "unknown": 0
         }
       },
-      "claimCount": 5,
+      "claimCount": 17,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -39414,6 +39567,20 @@
       "serviceName": "AWS IAM Identity Center",
       "summary": "Understand how SAML 2.0 and OAuth 2.0 applications work with IAM Identity Center.",
       "targets": {
+        "accessScope": [
+          "codecatalyst:read_write",
+          "codewhisperer:analysis",
+          "codewhisperer:completions",
+          "codewhisperer:conversations",
+          "codewhisperer:taskassist",
+          "codewhisperer:transformations",
+          "datazone:domain:access",
+          "nosqlworkbench:datamodeladviser",
+          "redshift:connect",
+          "sso:account:access",
+          "transform:read_write",
+          "verified_access:application:connect"
+        ],
         "service": [
           "datazone",
           "identitystore",
@@ -39423,7 +39590,7 @@
         ]
       },
       "tier": "tier1",
-      "unresolved": 7
+      "unresolved": 0
     },
     {
       "axes": {},
@@ -42117,15 +42284,15 @@
     {
       "axes": {
         "region": {
-          "covered": 22,
+          "covered": 16,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 22,
+          "total": 16,
           "unknown": 0
         }
       },
-      "claimCount": 22,
+      "claimCount": 16,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -42143,20 +42310,14 @@
       "summary": "How to use service-linked roles to give AWS WAF access to resources in your AWS account.",
       "targets": {
         "region": [
-          "af-south-1",
-          "ap-east-1",
           "ap-northeast-1",
           "ap-northeast-2",
           "ap-northeast-3",
           "ap-south-1",
           "ap-southeast-1",
           "ap-southeast-2",
-          "ap-southeast-5",
-          "ap-southeast-7",
           "ca-central-1",
           "eu-central-1",
-          "eu-north-1",
-          "eu-south-2",
           "eu-west-1",
           "eu-west-2",
           "eu-west-3",
@@ -44302,11 +44463,25 @@
       "subject": "recipe:ram-shareable-outside-organization"
     },
     {
+      "detail": "191 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions for ACM SLRs\".",
+      "id": "82e43e42da88e853",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "coverage pages without a feature"
+    },
+    {
       "detail": "\"VMware Cloud on AWS\" did not join to a service prefix. Score 0, signals none.",
       "id": "83173f73ae546af5",
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:vmware-cloud-on-aws"
+    },
+    {
+      "detail": "23 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
+      "id": "834054c2631b3125",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved coverage targets"
     },
     {
       "detail": "\"doc:code-library\" did not join to a service prefix. Score 3, signals security-doc-pages.",
@@ -44631,6 +44806,13 @@
       "subject": "unresolved:doc:vm-import"
     },
     {
+      "detail": "recipe guardduty-region-exclusions produced 0 claims, fewer than the 1 it promises on https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md. The page shape has probably changed.",
+      "id": "967c8f845981712a",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:guardduty-region-exclusions"
+    },
+    {
       "detail": "321 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
       "id": "968fa161eb97e857",
       "kind": "alias",
@@ -44874,6 +45056,13 @@
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "coverage pages without a feature"
+    },
+    {
+      "detail": "5 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
+      "id": "afdab15cd39b3d90",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved coverage targets"
     },
     {
       "detail": "29 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
@@ -45807,68 +45996,27 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-01T07:39:08.450Z",
+  "generatedAt": "2026-09-01T07:44:58.999Z",
   "manifest": {
     "fetch": {
-      "cacheHit": 10413,
+      "cacheHit": 63,
       "failed": 0,
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-01T07:37:36.206Z",
+    "finishedAt": "2026-09-01T07:44:56.629Z",
     "stages": [
       {
         "counts": {
-          "claims": 49353,
-          "conflicts": 0,
-          "covered": 37723,
-          "duplicateRegistrationsSkipped": 1493,
-          "empty": 11720,
-          "enabled": 11783,
-          "featuresWithCoverage": 51,
-          "from_agent": 29,
-          "from_tier1-sweep": 6516,
-          "from_title-match": 5238,
-          "newlyDiscovered": 0,
-          "notCovered": 11630,
-          "openAxes": 16,
-          "openAxisMembers": 2144,
-          "pagesConsidered": 10290,
-          "pagesFailed": 1,
-          "pagesRead": 62,
-          "pagesRejectedByKind": 2636,
-          "prunedStaleRecords": 0,
-          "recipeFailures": 0,
-          "recipeRulesWithNoPage": 0,
-          "recipes": 57,
-          "recipesAttached": 57,
-          "registered": 11783,
-          "serviceWideRecords": 3,
-          "tablesRecoveredFromHtml": 360,
-          "unattachedPages": 193,
-          "unresolvedTargets": 30,
-          "valuesDroppedUnresolved": 836,
-          "withRecipe": 42,
-          "yielding": 62
+          "clean": 63,
+          "empty": 0,
+          "pagesChecked": 63,
+          "partialRead": 0,
+          "staleQuotes": 0
         },
-        "finishedAt": "2026-09-01T07:37:34.887Z",
-        "id": "stage5-coverage",
-        "startedAt": "2026-09-01T07:37:20.732Z",
-        "status": "partial"
-      },
-      {
-        "counts": {
-          "claims": 49353,
-          "features": 1755,
-          "quotesChecked": 250,
-          "recallFound": 73,
-          "recallTotal": 73,
-          "services": 692,
-          "violations": 0
-        },
-        "finishedAt": "2026-09-01T07:37:35.514Z",
-        "id": "stage6-validate",
-        "startedAt": "2026-09-01T07:37:34.887Z",
+        "finishedAt": "2026-09-01T07:44:56.027Z",
+        "id": "stage7-verify",
+        "startedAt": "2026-09-01T07:44:55.686Z",
         "status": "ok"
       },
       {
@@ -45876,13 +46024,13 @@
           "features": 1755,
           "services": 211
         },
-        "finishedAt": "2026-09-01T07:37:36.206Z",
+        "finishedAt": "2026-09-01T07:44:56.629Z",
         "id": "report",
-        "startedAt": "2026-09-01T07:37:35.514Z",
+        "startedAt": "2026-09-01T07:44:56.028Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-01T07:37:20.730Z"
+    "startedAt": "2026-09-01T07:44:55.683Z"
   },
   "outOfScope": [
     {
@@ -49094,6 +49242,13 @@
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/s3-controls.md",
       "stage": "stage5-coverage",
       "subject": "s3-control/controls-reference :: Amazon S3 controls"
+    },
+    {
+      "id": "2f35a69c92d5fc7a",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: Regions and endpoints"
     },
     {
       "id": "2f6362a0ee83b667",
@@ -54364,7 +54519,7 @@
     {
       "actionCount": 91,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 370,
+      "claimCount": 373,
       "confidence": 1,
       "docGuides": [
         {
@@ -54742,7 +54897,7 @@
     {
       "actionCount": 56,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 77,
+      "claimCount": 115,
       "confidence": 1,
       "docGuides": [
         {
@@ -56392,7 +56547,7 @@
     {
       "actionCount": 180,
       "category": "Storage",
-      "claimCount": 5,
+      "claimCount": 35,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -56941,7 +57096,7 @@
     {
       "actionCount": 39,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 3,
+      "claimCount": 17,
       "confidence": 1,
       "docGuides": [
         {
@@ -57225,7 +57380,7 @@
     {
       "actionCount": 126,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 95,
+      "claimCount": 107,
       "confidence": 1,
       "docGuides": [
         {
@@ -57817,7 +57972,7 @@
     {
       "actionCount": 61,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 38,
+      "claimCount": 32,
       "confidence": 1,
       "docGuides": [
         {
@@ -58005,33 +58160,6 @@
   ],
   "sources": [
     {
-      "claims": 5,
-      "readRatio": 0.17,
-      "recipes": 0,
-      "serviceId": "s3",
-      "source": "title-match",
-      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md",
-      "verdict": "partial-read"
-    },
-    {
-      "claims": 5,
-      "readRatio": 0.36,
-      "recipes": 0,
-      "serviceId": "sso",
-      "source": "tier1-sweep",
-      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md",
-      "verdict": "partial-read"
-    },
-    {
-      "claims": 6,
-      "readRatio": 0.43,
-      "recipes": 0,
-      "serviceId": "wafv2",
-      "source": "tier1-sweep",
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md",
-      "verdict": "partial-read"
-    },
-    {
       "claims": 1,
       "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",
       "readRatio": 0.5,
@@ -58048,15 +58176,6 @@
       "serviceId": "ds",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 77,
-      "readRatio": 0.8,
-      "recipes": 0,
-      "serviceId": "kms",
-      "source": "tier1-sweep",
-      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md",
       "verdict": "ok"
     },
     {
@@ -58179,6 +58298,17 @@
       "verdict": "ok"
     },
     {
+      "claims": 115,
+      "dropped": 18,
+      "note": "Each H2 is one KMS condition key. Only kms:ViaService carries a service list, and that list is coverage scoped to that one key, not to condition keys in general.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "kms",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md",
+      "verdict": "ok"
+    },
+    {
       "claims": 90,
       "dropped": 30,
       "note": "AWS managed applications that work with IAM Identity Center, with four independent Yes/No columns.",
@@ -58268,6 +58398,16 @@
       "serviceId": "cloudtrail",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 35,
+      "note": "Two catalogues the generic reader skipped: the S3 data plane and control plane API operations that accept a Multi-Region Access Point ARN, and the five Regions route commands can be run against. The Region list belongs to failover controls, not to Multi-Region Access Points as a whole.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "s3",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md",
       "verdict": "ok"
     },
     {
@@ -58406,6 +58546,17 @@
       "verdict": "ok"
     },
     {
+      "claims": 17,
+      "dropped": 7,
+      "note": "The OIDC access scope catalogue. The generic reader took only the five services in the last column and left the scopes themselves, which is what the table exists to publish.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "sso",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md",
+      "verdict": "ok"
+    },
+    {
       "claims": 16,
       "note": "The operating systems the CloudHSM CLI runs on, by CPU architecture. The older Client SDK 3 tool page uses a different table and needs its own recipe.",
       "readRatio": 1,
@@ -58422,6 +58573,16 @@
       "serviceId": "wafv2",
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/classic-using-service-linked-roles.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 14,
+      "note": "An AWS Shield network security director page that sits in the AWS WAF guide, so its Region table was landing on wafv2/service-linked-roles. The recipe hands the page to Shield and reads the whole table. The bullets above it describe what the role may call, not what the service covers.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "shield",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md",
       "verdict": "ok"
     },
     {
@@ -58553,6 +58714,16 @@
     },
     {
       "claims": 3,
+      "note": "The foundational data sources GuardDuty reads, one per H2. This is coverage on an axis outside GuardDuty: these logs exist whether or not GuardDuty does.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 3,
       "dropped": 2,
       "note": "The resource types Shield Advanced protects, one per bullet.",
       "readRatio": 1,
@@ -58614,8 +58785,11 @@
     }
   ],
   "universeSizes": {
+    "accessScope": 12,
+    "apiOperation": 30,
     "auditFramework": 21,
     "complianceStandard": 8,
+    "conditionKey": 38,
     "configRule": 828,
     "control": 591,
     "dataIdentifier": 166,

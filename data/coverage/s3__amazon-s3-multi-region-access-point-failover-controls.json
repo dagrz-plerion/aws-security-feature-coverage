@@ -1,0 +1,111 @@
+{
+  "axes": [
+    "region"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Update a Multi-Region Access Point route configuration",
+          "quote": "+ `ap-northeast-1`",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-route-command-regions",
+      "featureId": "s3/amazon-s3-multi-region-access-point-failover-controls",
+      "id": "s3-amazon-s3-multi-region-access-point-failover-controls-region-ap-northeast-1-recipe-s3-mrap-route-command-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-1",
+      "targetLabel": "ap-northeast-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Update a Multi-Region Access Point route configuration",
+          "quote": "+ `ap-southeast-2`",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-route-command-regions",
+      "featureId": "s3/amazon-s3-multi-region-access-point-failover-controls",
+      "id": "s3-amazon-s3-multi-region-access-point-failover-controls-region-ap-southeast-2-recipe-s3-mrap-route-command-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-2",
+      "targetLabel": "ap-southeast-2"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Update a Multi-Region Access Point route configuration",
+          "quote": "+ `eu-west-1`",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-route-command-regions",
+      "featureId": "s3/amazon-s3-multi-region-access-point-failover-controls",
+      "id": "s3-amazon-s3-multi-region-access-point-failover-controls-region-eu-west-1-recipe-s3-mrap-route-command-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-1",
+      "targetLabel": "eu-west-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Update a Multi-Region Access Point route configuration",
+          "quote": "+ `us-east-1`",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-route-command-regions",
+      "featureId": "s3/amazon-s3-multi-region-access-point-failover-controls",
+      "id": "s3-amazon-s3-multi-region-access-point-failover-controls-region-us-east-1-recipe-s3-mrap-route-command-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "us-east-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Update a Multi-Region Access Point route configuration",
+          "quote": "+ `us-west-2`",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-route-command-regions",
+      "featureId": "s3/amazon-s3-multi-region-access-point-failover-controls",
+      "id": "s3-amazon-s3-multi-region-access-point-failover-controls-region-us-west-2-recipe-s3-mrap-route-command-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "us-west-2"
+    }
+  ],
+  "featureId": "s3/amazon-s3-multi-region-access-point-failover-controls",
+  "generatedAt": "2026-09-01T07:44:49.225Z",
+  "serviceId": "s3",
+  "unresolvedTargets": []
+}

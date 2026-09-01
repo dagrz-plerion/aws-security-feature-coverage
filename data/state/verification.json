@@ -1,50 +1,8 @@
 {
-  "generatedAt": "2026-09-01T07:39:07.923Z",
-  "pages": 62,
-  "problems": 3,
+  "generatedAt": "2026-09-01T07:44:58.466Z",
+  "pages": 63,
+  "problems": 0,
   "verdicts": [
-    {
-      "candidates": 30,
-      "claims": 5,
-      "featureIds": [
-        "s3/multi-region-access-points"
-      ],
-      "labelsNotInQuote": 0,
-      "note": "read 5 of about 30 candidate values on the page",
-      "quotesChecked": 5,
-      "quotesMissing": 0,
-      "readRatio": 0.17,
-      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md",
-      "verdict": "partial-read"
-    },
-    {
-      "candidates": 14,
-      "claims": 5,
-      "featureIds": [
-        "sso/saml-2-0-and-oauth-2-0-applications"
-      ],
-      "labelsNotInQuote": 0,
-      "note": "read 5 of about 14 candidate values on the page",
-      "quotesChecked": 5,
-      "quotesMissing": 0,
-      "readRatio": 0.36,
-      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md",
-      "verdict": "partial-read"
-    },
-    {
-      "candidates": 14,
-      "claims": 6,
-      "featureIds": [
-        "wafv2/service-linked-roles"
-      ],
-      "labelsNotInQuote": 0,
-      "note": "read 6 of about 14 candidate values on the page",
-      "quotesChecked": 6,
-      "quotesMissing": 0,
-      "readRatio": 0.43,
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md",
-      "verdict": "partial-read"
-    },
     {
       "candidates": 2,
       "claims": 1,
@@ -69,19 +27,6 @@
       "quotesMissing": 0,
       "readRatio": 0.68,
       "url": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 96,
-      "claims": 77,
-      "featureIds": [
-        "kms/condition-keys"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 0.8,
-      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md",
       "verdict": "ok"
     },
     {
@@ -386,6 +331,19 @@
     },
     {
       "candidates": 0,
+      "claims": 3,
+      "featureIds": [
+        "guardduty/all-protection-plans"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 3,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 0,
       "claims": 40,
       "featureIds": [
         "guardduty/all-protection-plans"
@@ -541,6 +499,19 @@
       "verdict": "ok"
     },
     {
+      "candidates": 96,
+      "claims": 115,
+      "featureIds": [
+        "kms/condition-keys"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md",
+      "verdict": "ok"
+    },
+    {
       "candidates": 0,
       "claims": 166,
       "featureIds": [
@@ -603,6 +574,20 @@
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 30,
+      "claims": 35,
+      "featureIds": [
+        "s3/amazon-s3-multi-region-access-point-failover-controls",
+        "s3/multi-region-access-points"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md",
       "verdict": "ok"
     },
     {
@@ -697,6 +682,19 @@
       "verdict": "ok"
     },
     {
+      "candidates": 14,
+      "claims": 14,
+      "featureIds": [
+        "shield/service-linked-roles"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 14,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md",
+      "verdict": "ok"
+    },
+    {
       "candidates": 40,
       "claims": 90,
       "featureIds": [
@@ -707,6 +705,19 @@
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 14,
+      "claims": 17,
+      "featureIds": [
+        "sso/saml-2-0-and-oauth-2-0-applications"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 17,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md",
       "verdict": "ok"
     },
     {

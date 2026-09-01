@@ -1,28 +1,109 @@
 {
   "_comment": "What kind of thing an axis measures. An EXTERNAL axis has a universe that exists whether or not the feature does: AWS Regions, resource types, operating systems. Measuring a feature against it is coverage, and the ratio means something. A CATALOGUE axis is a list the service publishes about itself: GuardDuty's finding types, Config's managed rules, Security Hub's controls. A feature always holds 100% of its own catalogue, so the ratio is an inventory count, not coverage. A catalogue axis still carries real coverage when a statement is scoped to an external axis, as with a Config rule available only in certain Regions.",
   "axes": {
-    "region":              { "kind": "external",  "label": "AWS Regions" },
-    "partition":           { "kind": "external",  "label": "AWS partitions" },
-    "service":             { "kind": "external",  "label": "AWS services" },
-    "resourceType":        { "kind": "external",  "label": "AWS resource types" },
-    "dataSource":          { "kind": "external",  "label": "signal inputs" },
-    "operatingSystem":     { "kind": "external",  "label": "operating systems" },
-    "fileExtension":       { "kind": "external",  "label": "file formats" },
-    "storageClass":        { "kind": "external",  "label": "S3 storage classes" },
-    "programmingLanguage": { "kind": "external",  "label": "programming languages" },
-    "packageEcosystem":    { "kind": "external",  "label": "package ecosystems" },
-    "s3Feature":           { "kind": "external",  "label": "Amazon S3 features" },
-    "logSource":           { "kind": "external",  "label": "log sources" },
-
-    "findingType":        { "kind": "catalogue", "label": "finding types the service publishes" },
-    "configRule":         { "kind": "catalogue", "label": "managed rules the service publishes" },
-    "control":            { "kind": "catalogue", "label": "controls the service publishes" },
-    "dataIdentifier":     { "kind": "catalogue", "label": "data identifiers the service publishes" },
-    "managedRuleGroup":   { "kind": "catalogue", "label": "managed rule groups the service publishes" },
-    "threatCategory":     { "kind": "catalogue", "label": "threat categories the service publishes" },
-    "auditFramework":     { "kind": "catalogue", "label": "audit frameworks the service ships" },
-    "complianceStandard": { "kind": "catalogue", "label": "compliance standards the service evaluates" },
-    "policyType":         { "kind": "catalogue", "label": "policy types the service enforces" },
-    "ipsRule":            { "kind": "catalogue", "label": "rule groups the service publishes" }
+    "region": {
+      "kind": "external",
+      "label": "AWS Regions"
+    },
+    "partition": {
+      "kind": "external",
+      "label": "AWS partitions"
+    },
+    "service": {
+      "kind": "external",
+      "label": "AWS services"
+    },
+    "resourceType": {
+      "kind": "external",
+      "label": "AWS resource types"
+    },
+    "dataSource": {
+      "kind": "external",
+      "label": "signal inputs"
+    },
+    "operatingSystem": {
+      "kind": "external",
+      "label": "operating systems"
+    },
+    "fileExtension": {
+      "kind": "external",
+      "label": "file formats"
+    },
+    "storageClass": {
+      "kind": "external",
+      "label": "S3 storage classes"
+    },
+    "programmingLanguage": {
+      "kind": "external",
+      "label": "programming languages"
+    },
+    "packageEcosystem": {
+      "kind": "external",
+      "label": "package ecosystems"
+    },
+    "s3Feature": {
+      "kind": "external",
+      "label": "Amazon S3 features"
+    },
+    "logSource": {
+      "kind": "external",
+      "label": "log sources"
+    },
+    "findingType": {
+      "kind": "catalogue",
+      "label": "finding types the service publishes"
+    },
+    "configRule": {
+      "kind": "catalogue",
+      "label": "managed rules the service publishes"
+    },
+    "control": {
+      "kind": "catalogue",
+      "label": "controls the service publishes"
+    },
+    "dataIdentifier": {
+      "kind": "catalogue",
+      "label": "data identifiers the service publishes"
+    },
+    "managedRuleGroup": {
+      "kind": "catalogue",
+      "label": "managed rule groups the service publishes"
+    },
+    "threatCategory": {
+      "kind": "catalogue",
+      "label": "threat categories the service publishes"
+    },
+    "auditFramework": {
+      "kind": "catalogue",
+      "label": "audit frameworks the service ships"
+    },
+    "complianceStandard": {
+      "kind": "catalogue",
+      "label": "compliance standards the service evaluates"
+    },
+    "policyType": {
+      "kind": "catalogue",
+      "label": "policy types the service enforces"
+    },
+    "ipsRule": {
+      "kind": "catalogue",
+      "label": "rule groups the service publishes"
+    },
+    "apiOperation": {
+      "kind": "catalogue",
+      "label": "API operations the service accepts"
+    },
+    "accessScope": {
+      "kind": "catalogue",
+      "label": "access scopes the service publishes"
+    },
+    "resourceTarget": {
+      "kind": "external",
+      "label": "resources a rule group can be attached to"
+    },
+    "conditionKey": {
+      "kind": "catalogue",
+      "label": "IAM condition keys the service publishes"
+    }
   }
 }

@@ -2026,6 +2026,50 @@
       ]
     },
     {
+      "axis": "conditionKey",
+      "count": 38,
+      "members": [
+        "kms:BypassPolicyLockoutSafetyCheck",
+        "kms:CallerAccount",
+        "kms:CustomerMasterKeySpec (deprecated)",
+        "kms:CustomerMasterKeyUsage (deprecated)",
+        "kms:DataKeyPairSpec",
+        "kms:EncryptionAlgorithm",
+        "kms:EncryptionContext:context-key",
+        "kms:EncryptionContextKeys",
+        "kms:ExpirationModel",
+        "kms:GrantConstraintSourceArn",
+        "kms:GrantConstraintType",
+        "kms:GrantIsForAWSResource",
+        "kms:GrantOperations",
+        "kms:GranteePrincipal",
+        "kms:GranteeServicePrincipal",
+        "kms:KeyAgreementAlgorithm",
+        "kms:KeyOrigin",
+        "kms:KeySpec",
+        "kms:KeyUsage",
+        "kms:MacAlgorithm",
+        "kms:MessageType",
+        "kms:MultiRegion",
+        "kms:MultiRegionKeyType",
+        "kms:PrimaryRegion",
+        "kms:ReEncryptOnSameKey",
+        "kms:ReplicaRegion",
+        "kms:RequestAlias",
+        "kms:ResourceAliases",
+        "kms:RetiringPrincipal",
+        "kms:RetiringServicePrincipal",
+        "kms:RotationPeriodInDays",
+        "kms:ScheduleKeyDeletionPendingWindowInDays",
+        "kms:SigningAlgorithm",
+        "kms:TrailingDaysWithoutKeyUsage",
+        "kms:ValidTo",
+        "kms:ViaService",
+        "kms:WrappingAlgorithm",
+        "kms:WrappingKeySpec"
+      ]
+    },
+    {
       "axis": "packageEcosystem",
       "count": 36,
       "members": [
@@ -2065,6 +2109,42 @@
         "Windsurf",
         "WordPress",
         "Zed"
+      ]
+    },
+    {
+      "axis": "apiOperation",
+      "count": 30,
+      "members": [
+        "AbortMultipartUpload",
+        "CompleteMultipartUpload",
+        "CreateMultiRegionAccessPoint",
+        "CreateMultipartUpload",
+        "DeleteObject",
+        "DeleteObjectTagging",
+        "DescribeMultiRegionAccessPointOperation",
+        "GetMultiRegionAccessPoint",
+        "GetMultiRegionAccessPointPolicy",
+        "GetMultiRegionAccessPointPolicyStatus",
+        "GetMultiRegionAccessPointRoutes",
+        "GetObject",
+        "GetObjectAcl",
+        "GetObjectLegalHold",
+        "GetObjectRetention",
+        "GetObjectTagging",
+        "HeadObject",
+        "ListMultiRegionAccessPoints",
+        "ListMultipartUploads",
+        "ListObjectsV2",
+        "ListParts",
+        "PutMultiRegionAccessPointPolicy",
+        "PutObject",
+        "PutObjectAcl",
+        "PutObjectLegalHold",
+        "PutObjectRetention",
+        "PutObjectTagging",
+        "RestoreObject",
+        "SubmitMultiRegionAccessPointRoutes",
+        "UploadPart"
       ]
     },
     {
@@ -2173,6 +2253,24 @@
       ]
     },
     {
+      "axis": "accessScope",
+      "count": 12,
+      "members": [
+        "codecatalyst:read_write",
+        "codewhisperer:analysis",
+        "codewhisperer:completions",
+        "codewhisperer:conversations",
+        "codewhisperer:taskassist",
+        "codewhisperer:transformations",
+        "datazone:domain:access",
+        "nosqlworkbench:datamodeladviser",
+        "redshift:connect",
+        "sso:account:access",
+        "transform:read_write",
+        "verified_access:application:connect"
+      ]
+    },
+    {
       "axis": "programmingLanguage",
       "count": 9,
       "members": [
@@ -2241,6 +2339,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-01T07:37:34.428Z",
+  "generatedAt": "2026-09-01T07:44:49.224Z",
   "note": "Axes AWS defines only inside its documentation. Membership is everything the catalogs name."
 }

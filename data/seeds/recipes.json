@@ -991,6 +991,178 @@
           "requireMin": 550
         }
       ]
+    },
+    {
+      "urlPattern": "AmazonS3/latest/userguide/MrapOperations\\.md$",
+      "serviceId": "s3",
+      "note": "Two catalogues the generic reader skipped: the S3 data plane and control plane API operations that accept a Multi-Region Access Point ARN, and the five Regions route commands can be run against. The Region list belongs to failover controls, not to Multi-Region Access Points as a whole.",
+      "recipes": [
+        {
+          "id": "s3-mrap-supported-operations",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "compatibility with S3 operations",
+          "select": {
+            "from": "list-items",
+            "extract": "whole",
+            "matches": "^[A-Z][A-Za-z0-9]{5,60}$"
+          },
+          "axis": "apiOperation",
+          "status": "covered",
+          "featureId": "s3/multi-region-access-points",
+          "requireMin": 29
+        },
+        {
+          "id": "s3-mrap-route-command-regions",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "route configuration",
+          "select": {
+            "from": "list-items",
+            "extract": "whole",
+            "matches": "^[a-z]{2,4}(-[a-z]+)+-\\d$"
+          },
+          "axis": "region",
+          "status": "covered",
+          "featureId": "s3/amazon-s3-multi-region-access-point-failover-controls",
+          "requireMin": 5
+        }
+      ]
+    },
+    {
+      "urlPattern": "singlesignon/latest/userguide/customermanagedapps-saml2-oauth2\\.md$",
+      "serviceId": "sso",
+      "note": "The OIDC access scope catalogue. The generic reader took only the five services in the last column and left the scopes themselves, which is what the table exists to publish.",
+      "recipes": [
+        {
+          "id": "identity-center-oidc-access-scopes",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Scope$",
+            "extract": "whole",
+            "matches": "^[a-z][a-z0-9_]*(:[a-z0-9_]+){1,3}$"
+          },
+          "axis": "accessScope",
+          "status": "covered",
+          "featureId": "sso/saml-2-0-and-oauth-2-0-applications",
+          "requireMin": 11
+        },
+        {
+          "id": "identity-center-oidc-scope-services",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "Services supported by",
+            "extract": "whole",
+            "split": "\\s+and\\s+"
+          },
+          "axis": "service",
+          "status": "covered",
+          "featureId": "sso/saml-2-0-and-oauth-2-0-applications",
+          "requireMin": 5
+        }
+      ]
+    },
+    {
+      "urlPattern": "waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked\\.md$",
+      "serviceId": "shield",
+      "note": "An AWS Shield network security director page that sits in the AWS WAF guide, so its Region table was landing on wafv2/service-linked-roles. The recipe hands the page to Shield and reads the whole table. The bullets above it describe what the role may call, not what the service covers.",
+      "recipes": [
+        {
+          "id": "shield-nsd-service-linked-role-regions",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "Supported Regions",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "Region Name",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "covered",
+          "featureId": "shield/service-linked-roles",
+          "requireMin": 13
+        }
+      ]
+    },
+    {
+      "urlPattern": "guardduty/latest/ug/guardduty_data-sources\\.md$",
+      "serviceId": "guardduty",
+      "note": "The foundational data sources GuardDuty reads, one per H2. This is coverage on an axis outside GuardDuty: these logs exist whether or not GuardDuty does.",
+      "recipes": [
+        {
+          "id": "guardduty-foundational-data-sources",
+          "blocks": "whole-page",
+          "select": {
+            "from": "headings",
+            "level": 2,
+            "extract": "whole"
+          },
+          "axis": "dataSource",
+          "status": "covered",
+          "featureId": "guardduty/all-protection-plans",
+          "requireMin": 3
+        }
+      ]
+    },
+    {
+      "urlPattern": "guardduty/latest/ug/guardduty_regions\\.md$",
+      "serviceId": "guardduty",
+      "note": "Region-specific feature availability, stated as prose beside each protection plan: 'RDS Protection is not supported in Asia Pacific (Taipei)'.",
+      "recipes": [
+        {
+          "id": "guardduty-region-exclusions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "paragraph",
+            "sentenceMatches": "(is|are) not supported in",
+            "extract": "regex",
+            "pattern": "\\(([a-z]{2,4}-[a-z]+-\\d)\\)"
+          },
+          "axis": "region",
+          "status": "not-covered",
+          "featureId": "guardduty/all-protection-plans",
+          "requireMin": 1
+        }
+      ]
+    },
+    {
+      "urlPattern": "kms/latest/developerguide/conditions-kms\\.md$",
+      "serviceId": "kms",
+      "note": "Each H2 is one KMS condition key. Only kms:ViaService carries a service list, and that list is coverage scoped to that one key, not to condition keys in general.",
+      "recipes": [
+        {
+          "id": "kms-condition-key-catalogue",
+          "blocks": "whole-page",
+          "select": {
+            "from": "headings",
+            "level": 2,
+            "extract": "whole",
+            "matches": "^kms:[A-Za-z]+"
+          },
+          "axis": "conditionKey",
+          "status": "covered",
+          "featureId": "kms/condition-keys",
+          "requireMin": 20
+        },
+        {
+          "id": "kms-viaservice-supported-services",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "^kms:ViaService$",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "service name",
+            "extract": "whole"
+          },
+          "axis": "service",
+          "status": "covered",
+          "scope": {
+            "axis": "conditionKey",
+            "from": "constant",
+            "value": "kms:ViaService"
+          },
+          "featureId": "kms/condition-keys",
+          "requireMin": 60
+        }
+      ]
     }
   ]
 }

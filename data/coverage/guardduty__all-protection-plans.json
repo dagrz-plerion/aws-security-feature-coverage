@@ -1,8 +1,69 @@
 {
   "axes": [
+    "dataSource",
     "findingType"
   ],
   "claims": [
+    {
+      "axis": "dataSource",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d418526097f9038efaa273f91d72cb216fc4d3b33f0b444303c4e9d413e368a5",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.md :: GuardDuty foundational data sources",
+          "quote": "## AWS CloudTrail management events",
+          "retrievedAt": "2026-09-01T04:35:15.160Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-foundational-data-sources",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-datasource-cloudtrail-management-events-recipe-guardduty-foundational-data-sources",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudtrail-management-events",
+      "targetLabel": "AWS CloudTrail management events"
+    },
+    {
+      "axis": "dataSource",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d418526097f9038efaa273f91d72cb216fc4d3b33f0b444303c4e9d413e368a5",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.md :: GuardDuty foundational data sources",
+          "quote": "## Route53 Resolver DNS query logs",
+          "retrievedAt": "2026-09-01T04:35:15.160Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-foundational-data-sources",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-datasource-dns-logs-recipe-guardduty-foundational-data-sources",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "dns-logs",
+      "targetLabel": "Route53 Resolver DNS query logs"
+    },
+    {
+      "axis": "dataSource",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d418526097f9038efaa273f91d72cb216fc4d3b33f0b444303c4e9d413e368a5",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.md :: GuardDuty foundational data sources",
+          "quote": "## VPC Flow Logs",
+          "retrievedAt": "2026-09-01T04:35:15.160Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-foundational-data-sources",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-datasource-vpc-flow-logs-recipe-guardduty-foundational-data-sources",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "vpc-flow-logs",
+      "targetLabel": "VPC Flow Logs"
+    },
     {
       "axis": "findingType",
       "confidence": 0.95,
@@ -2185,7 +2246,7 @@
     }
   ],
   "featureId": "guardduty/all-protection-plans",
-  "generatedAt": "2026-09-01T07:37:34.430Z",
+  "generatedAt": "2026-09-01T07:44:49.225Z",
   "serviceId": "guardduty",
   "unresolvedTargets": []
 }

@@ -235,6 +235,9 @@ export const stage5: Stage = {
       if (!page.enabled) continue;
       if (ownerForUrl.get(page.url) !== page.serviceId) {
         duplicateRegistrations += 1;
+        // Clear the old result, or the registry keeps advertising claims this
+        // registration no longer produces.
+        recordResult(page, { claims: 0, axes: [], status: "empty", detail: "another service owns this page" });
         continue;
       }
       const own = featuresByService.get(page.serviceId) ?? [];

@@ -4,7 +4,7 @@ import { readAllJson, readJson } from "../core/store.js";
 import { verifyEvidence } from "../core/evidence.js";
 import { recordGap } from "../core/ops.js";
 import { runRecall } from "../cli/recall.js";
-import { recipeRules } from "../core/seeds.js";
+import { axisKinds, recipeRules } from "../core/seeds.js";
 import type { Stage, StageResult } from "../core/runner.js";
 import type {
   Adjudication, CoverageClaim, DataSource, Feature, FeatureCoverage,
@@ -113,6 +113,15 @@ export async function validate(sampleSize = 250): Promise<{ violations: Violatio
 
   // An axis with one or two members gives a denominator nobody can read: "0/1" looks
   // like a failure when it is a single documented exclusion.
+  // An undeclared axis defaults to "external" in the report, so a catalogue would be
+  // shown as coverage with a ratio of 100% by construction.
+  const declared = await axisKinds();
+  const usedAxes = [...new Set(claims.map((c) => c.axis))];
+  add(
+    "every axis in use declares whether it is a real universe or a catalogue",
+    usedAxes.filter((a) => !declared[a]),
+  );
+
   add(
     "no axis is too small to be a denominator",
     openAxes.filter((a) => a.members.length < 3).map((a) => `${a.axis} has only ${a.members.length} member(s)`),

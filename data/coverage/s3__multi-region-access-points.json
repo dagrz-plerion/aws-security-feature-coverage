@@ -1,111 +1,611 @@
 {
   "axes": [
-    "region"
+    "apiOperation"
   ],
   "claims": [
     {
-      "axis": "region",
-      "confidence": 0.8,
+      "axis": "apiOperation",
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
-          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Using Multi-Region Access Points with supported API operations > Update a Multi-Region Access Point route configuration",
-          "quote": "+ `ap-northeast-1`",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [AbortMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_AbortMultipartUpload.html)",
           "retrievedAt": "2026-09-01T04:34:56.967Z",
           "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:s3-mrap-supported-operations",
       "featureId": "s3/multi-region-access-points",
-      "id": "s3-multi-region-access-points-region-ap-northeast-1-md-bullet-list",
+      "id": "s3-multi-region-access-points-apioperation-abortmultipartupload-recipe-s3-mrap-supported-operations",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "ap-northeast-1",
-      "targetLabel": "ap-northeast-1"
+      "targetId": "AbortMultipartUpload",
+      "targetLabel": "AbortMultipartUpload"
     },
     {
-      "axis": "region",
-      "confidence": 0.8,
+      "axis": "apiOperation",
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
-          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Using Multi-Region Access Points with supported API operations > Update a Multi-Region Access Point route configuration",
-          "quote": "+ `ap-southeast-2`",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [CompleteMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html)",
           "retrievedAt": "2026-09-01T04:34:56.967Z",
           "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:s3-mrap-supported-operations",
       "featureId": "s3/multi-region-access-points",
-      "id": "s3-multi-region-access-points-region-ap-southeast-2-md-bullet-list",
+      "id": "s3-multi-region-access-points-apioperation-completemultipartupload-recipe-s3-mrap-supported-operations",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "ap-southeast-2",
-      "targetLabel": "ap-southeast-2"
+      "targetId": "CompleteMultipartUpload",
+      "targetLabel": "CompleteMultipartUpload"
     },
     {
-      "axis": "region",
-      "confidence": 0.8,
+      "axis": "apiOperation",
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
-          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Using Multi-Region Access Points with supported API operations > Update a Multi-Region Access Point route configuration",
-          "quote": "+ `eu-west-1`",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [CreateMultipartUpload](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateMultipartUpload.html)",
           "retrievedAt": "2026-09-01T04:34:56.967Z",
           "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:s3-mrap-supported-operations",
       "featureId": "s3/multi-region-access-points",
-      "id": "s3-multi-region-access-points-region-eu-west-1-md-bullet-list",
+      "id": "s3-multi-region-access-points-apioperation-createmultipartupload-recipe-s3-mrap-supported-operations",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "eu-west-1",
-      "targetLabel": "eu-west-1"
+      "targetId": "CreateMultipartUpload",
+      "targetLabel": "CreateMultipartUpload"
     },
     {
-      "axis": "region",
-      "confidence": 0.8,
+      "axis": "apiOperation",
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
-          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Using Multi-Region Access Points with supported API operations > Update a Multi-Region Access Point route configuration",
-          "quote": "+ `us-east-1`",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [CreateMultiRegionAccessPoint](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateMultiRegionAccessPoint.html)",
           "retrievedAt": "2026-09-01T04:34:56.967Z",
           "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:s3-mrap-supported-operations",
       "featureId": "s3/multi-region-access-points",
-      "id": "s3-multi-region-access-points-region-us-east-1-md-bullet-list",
+      "id": "s3-multi-region-access-points-apioperation-createmultiregionaccesspoint-recipe-s3-mrap-supported-operations",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "us-east-1",
-      "targetLabel": "us-east-1"
+      "targetId": "CreateMultiRegionAccessPoint",
+      "targetLabel": "CreateMultiRegionAccessPoint"
     },
     {
-      "axis": "region",
-      "confidence": 0.8,
+      "axis": "apiOperation",
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
-          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Using Multi-Region Access Points with supported API operations > Update a Multi-Region Access Point route configuration",
-          "quote": "+ `us-west-2`",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [DeleteObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html)",
           "retrievedAt": "2026-09-01T04:34:56.967Z",
           "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:s3-mrap-supported-operations",
       "featureId": "s3/multi-region-access-points",
-      "id": "s3-multi-region-access-points-region-us-west-2-md-bullet-list",
+      "id": "s3-multi-region-access-points-apioperation-deleteobject-recipe-s3-mrap-supported-operations",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "us-west-2",
-      "targetLabel": "us-west-2"
+      "targetId": "DeleteObject",
+      "targetLabel": "DeleteObject"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [DeleteObjectTagging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjectTagging.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-deleteobjecttagging-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "DeleteObjectTagging",
+      "targetLabel": "DeleteObjectTagging"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [DescribeMultiRegionAccessPointOperation](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DescribeMultiRegionAccessPointOperation.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-describemultiregionaccesspointoperation-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "DescribeMultiRegionAccessPointOperation",
+      "targetLabel": "DescribeMultiRegionAccessPointOperation"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [GetMultiRegionAccessPoint](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetMultiRegionAccessPoint.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-getmultiregionaccesspoint-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GetMultiRegionAccessPoint",
+      "targetLabel": "GetMultiRegionAccessPoint"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [GetMultiRegionAccessPointPolicy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetMultiRegionAccessPointPolicy.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-getmultiregionaccesspointpolicy-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GetMultiRegionAccessPointPolicy",
+      "targetLabel": "GetMultiRegionAccessPointPolicy"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [GetMultiRegionAccessPointPolicyStatus](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetMultiRegionAccessPointPolicyStatus.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-getmultiregionaccesspointpolicystatus-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GetMultiRegionAccessPointPolicyStatus",
+      "targetLabel": "GetMultiRegionAccessPointPolicyStatus"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [GetMultiRegionAccessPointRoutes](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetMultiRegionAccessPointRoutes.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-getmultiregionaccesspointroutes-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GetMultiRegionAccessPointRoutes",
+      "targetLabel": "GetMultiRegionAccessPointRoutes"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [GetObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-getobject-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GetObject",
+      "targetLabel": "GetObject"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [GetObjectAcl](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectAcl.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-getobjectacl-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GetObjectAcl",
+      "targetLabel": "GetObjectAcl"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [GetObjectLegalHold](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectLegalHold.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-getobjectlegalhold-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GetObjectLegalHold",
+      "targetLabel": "GetObjectLegalHold"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [GetObjectRetention](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectRetention.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-getobjectretention-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GetObjectRetention",
+      "targetLabel": "GetObjectRetention"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [GetObjectTagging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectTagging.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-getobjecttagging-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GetObjectTagging",
+      "targetLabel": "GetObjectTagging"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [HeadObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-headobject-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "HeadObject",
+      "targetLabel": "HeadObject"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [ListMultipartUploads](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUploads.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-listmultipartuploads-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ListMultipartUploads",
+      "targetLabel": "ListMultipartUploads"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [ListMultiRegionAccessPoints](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListMultiRegionAccessPoints.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-listmultiregionaccesspoints-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ListMultiRegionAccessPoints",
+      "targetLabel": "ListMultiRegionAccessPoints"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [ListObjectsV2](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-listobjectsv2-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ListObjectsV2",
+      "targetLabel": "ListObjectsV2"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [ListParts](https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListParts.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-listparts-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ListParts",
+      "targetLabel": "ListParts"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [PutMultiRegionAccessPointPolicy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutMultiRegionAccessPointPolicy.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-putmultiregionaccesspointpolicy-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PutMultiRegionAccessPointPolicy",
+      "targetLabel": "PutMultiRegionAccessPointPolicy"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [PutObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-putobject-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PutObject",
+      "targetLabel": "PutObject"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [PutObjectAcl](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-putobjectacl-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PutObjectAcl",
+      "targetLabel": "PutObjectAcl"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [PutObjectLegalHold](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLegalHold.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-putobjectlegalhold-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PutObjectLegalHold",
+      "targetLabel": "PutObjectLegalHold"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [PutObjectRetention](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectRetention.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-putobjectretention-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PutObjectRetention",
+      "targetLabel": "PutObjectRetention"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [PutObjectTagging](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectTagging.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-putobjecttagging-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PutObjectTagging",
+      "targetLabel": "PutObjectTagging"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [RestoreObject](https://docs.aws.amazon.com/AmazonS3/latest/API/API_RestoreObject.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-restoreobject-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "RestoreObject",
+      "targetLabel": "RestoreObject"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [SubmitMultiRegionAccessPointRoutes](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_SubmitMultiRegionAccessPointRoutes.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-submitmultiregionaccesspointroutes-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SubmitMultiRegionAccessPointRoutes",
+      "targetLabel": "SubmitMultiRegionAccessPointRoutes"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Multi-Region Access Point compatibility with S3 operations",
+          "quote": "+ [UploadPart](https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPart.html)",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "recipe:s3-mrap-supported-operations",
+      "featureId": "s3/multi-region-access-points",
+      "id": "s3-multi-region-access-points-apioperation-uploadpart-recipe-s3-mrap-supported-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UploadPart",
+      "targetLabel": "UploadPart"
     }
   ],
   "featureId": "s3/multi-region-access-points",
-  "generatedAt": "2026-09-01T07:37:34.430Z",
+  "generatedAt": "2026-09-01T07:44:49.225Z",
   "serviceId": "s3",
   "unresolvedTargets": []
 }
