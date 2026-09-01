@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "83ee92effc780ef08dd42fbc604592ccf3a89bb57f88031e0dd816d7636adecc",
+      "locator": "evidently.json .Name",
+      "quote": "evidently",
+      "retrievedAt": "2026-09-01T03:57:50.190Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/evidently/evidently.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "evidently",
+  "signals": [],
+  "tier": "not-security"
+}

@@ -1,0 +1,33 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "b30129750c1c89918d98030a5f898d7a1714e28a7e96198991a8f393aff25345",
+      "locator": "internetmonitor.json .Name",
+      "quote": "internetmonitor",
+      "retrievedAt": "2026-09-01T03:57:52.789Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/internetmonitor/internetmonitor.json"
+    },
+    {
+      "bodySha256": "cbebbb5de0c7a2a48b82adba893a8b7ee0a336ac503f3690b75b65e342e58919",
+      "locator": "aws-products directory item",
+      "quote": "Amazon CloudWatch Internet Monitor",
+      "retrievedAt": "2026-09-01T03:58:06.968Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=0&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "internetmonitor",
+  "signals": [
+    {
+      "detail": "The name contains \"monitor\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

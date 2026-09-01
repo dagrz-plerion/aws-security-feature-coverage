@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/vpc/latest/userguide/network-acl-associations.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "806081e0accc96971afd6c563111611671637d2792b6bb3187b6589373660258",
+      "locator": "Security > Network ACLs",
+      "quote": "[Manage network ACL associations](https://docs.aws.amazon.com/vpc/latest/userguide/network-acl-associations.md)",
+      "retrievedAt": "2026-09-01T04:06:20.127Z",
+      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ec2/network-acl-associations",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "network ACL associations",
+  "serviceId": "ec2",
+  "summary": "Each subnet is associated with one network ACL.",
+  "tier": "tier2"
+}

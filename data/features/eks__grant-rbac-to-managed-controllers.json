@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/eks/latest/userguide/auto-managed-rbac.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "daa7d251c6281e980634dbc5c455c8ed531244295a5db277294b4f9769077fda",
+      "locator": "EKS Auto Mode > Configure",
+      "quote": "[Grant RBAC to managed controllers](https://docs.aws.amazon.com/eks/latest/userguide/auto-managed-rbac.md)",
+      "retrievedAt": "2026-09-01T04:06:07.864Z",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "eks/grant-rbac-to-managed-controllers",
+  "kind": "control-set",
+  "method": "deterministic",
+  "name": "Grant RBAC to managed controllers",
+  "serviceId": "eks",
+  "summary": "Learn how to grant additional Kubernetes RBAC permissions to the controllers Amazon EKS Auto Mode manages on your behalf, without waiting for a managed policy update.",
+  "tier": "tier2"
+}

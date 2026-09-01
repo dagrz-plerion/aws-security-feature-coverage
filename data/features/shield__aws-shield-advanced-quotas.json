@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/waf/latest/developerguide/shield-limits.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "c4a1d08847c7d6491c1b218f6b7cf6a57f3d182e5e3184ef264649d65abf4a84",
+      "locator": "AWS Shield > Using IAM with Shield",
+      "quote": "[AWS Shield Advanced quotas](https://docs.aws.amazon.com/waf/latest/developerguide/shield-limits.md)",
+      "retrievedAt": "2026-09-01T04:06:20.284Z",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "shield/aws-shield-advanced-quotas",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS Shield Advanced quotas",
+  "serviceId": "shield",
+  "summary": "AWS Shield Advanced is subject to the quotas described here.",
+  "tier": "tier1"
+}

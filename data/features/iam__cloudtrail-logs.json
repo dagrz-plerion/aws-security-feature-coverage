@@ -1,0 +1,42 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/app-mesh/latest/userguide/logging-using-cloudtrail.md",
+    "https://docs.aws.amazon.com/grafana/latest/userguide/logging-using-cloudtrail.md",
+    "https://docs.aws.amazon.com/prometheus/latest/userguide/logging-using-cloudtrail.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "954df78458e183f9d7a97dc9ea453be8a909fa6ba51d1c7687b83ff6d1808c1d",
+      "locator": "Securing Applications > Identity and access management",
+      "quote": "[CloudTrail logs](https://docs.aws.amazon.com/app-mesh/latest/userguide/logging-using-cloudtrail.md)",
+      "retrievedAt": "2026-09-01T04:06:02.695Z",
+      "sourceUrl": "https://docs.aws.amazon.com/app-mesh/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "fb4693f608ea60b529044869fdb8a5d9b626adc8414071cbf12e2c1454f1f488",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[CloudTrail logs](https://docs.aws.amazon.com/grafana/latest/userguide/logging-using-cloudtrail.md)",
+      "retrievedAt": "2026-09-01T04:06:10.028Z",
+      "sourceUrl": "https://docs.aws.amazon.com/grafana/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "28534e200bc566d6b9b6de879eb94f84f4133554ee9d9c95d64e436e79fd0e8a",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[CloudTrail logs](https://docs.aws.amazon.com/prometheus/latest/userguide/logging-using-cloudtrail.md)",
+      "retrievedAt": "2026-09-01T04:06:15.634Z",
+      "sourceUrl": "https://docs.aws.amazon.com/prometheus/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "iam/cloudtrail-logs",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "CloudTrail logs",
+  "serviceId": "iam",
+  "summary": "Learn about logging AWS App Mesh with AWS CloudTrail.",
+  "tier": "tier1"
+}

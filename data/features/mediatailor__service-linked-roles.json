@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/mediatailor/latest/ug/slr-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5177aeb7afacf1d08b4539b59957ff1b8a30155157892bbfa9c7377fea127063",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Service-linked role permissions](https://docs.aws.amazon.com/mediatailor/latest/ug/slr-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:13.520Z",
+      "sourceUrl": "https://docs.aws.amazon.com/mediatailor/latest/ug/llms.txt"
+    }
+  ],
+  "id": "mediatailor/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "mediatailor",
+  "summary": "MediaTailor uses the service-linked role named AWSServiceRoleForMediaTailor – MediaTailor uses this service-linked role to invoke CloudWatch to create and manage log groups, log streams, and log events.",
+  "tier": "tier2"
+}

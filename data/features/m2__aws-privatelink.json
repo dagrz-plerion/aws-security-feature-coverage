@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/m2/latest/userguide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "47d48cb21a6bded70aef7bfc5487fe6ac8de93920170ae5a5306ab9a98e54279",
+      "locator": "Security > How AWS Mainframe Modernization works with IAM",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/m2/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:12.529Z",
+      "sourceUrl": "https://docs.aws.amazon.com/m2/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "m2/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "m2",
+  "summary": "You can use an AWS PrivateLink to create a private connection between your VPC and AWS Mainframe Modernization.",
+  "tier": "tier2"
+}

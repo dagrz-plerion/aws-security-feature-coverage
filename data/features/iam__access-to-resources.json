@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/controltower/latest/userguide/assign-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b1821ffc20aac2e8d4563c8ed7ac5d14950e4f6e719c7f879f083f8da339def5",
+      "locator": "Identity and access management > Manage access to resources",
+      "quote": "[Create roles and assign permissions](https://docs.aws.amazon.com/controltower/latest/userguide/assign-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:06.248Z",
+      "sourceUrl": "https://docs.aws.amazon.com/controltower/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "iam/access-to-resources",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "access to resources",
+  "serviceId": "iam",
+  "summary": "Find detailed instructions on creating roles and assigning permissions in AWS Control Tower and other AWS services, including steps for using the IAM console, JSON policy editor, and visual editor to create policies.",
+  "tier": "tier1"
+}

@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "1eb91bc9c99d0a7cff6a95d099efc36a9810132202fe447a644a496e9771f2c6",
+      "locator": "bcm-data-exports.json .Name",
+      "quote": "bcm-data-exports",
+      "retrievedAt": "2026-09-01T03:57:44.038Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/bcm-data-exports/bcm-data-exports.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "bcm-data-exports",
+  "signals": [],
+  "tier": "not-security"
+}

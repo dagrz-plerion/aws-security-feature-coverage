@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/efs/latest/ug/mount-fs-diff-account-same-vpc.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "89f34b9c5e8f4bef5e83eb0347330728204d47c522c8fe7b90610e6e48bb2db7",
+      "locator": "Mounting file systems > Mounting from another account or VPC",
+      "quote": "[Mounting from another AWS account](https://docs.aws.amazon.com/efs/latest/ug/mount-fs-diff-account-same-vpc.md)",
+      "retrievedAt": "2026-09-01T04:06:07.786Z",
+      "sourceUrl": "https://docs.aws.amazon.com/efs/latest/ug/llms.txt"
+    }
+  ],
+  "id": "account/mounting-from-another-account-or-vpc",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Mounting from another account or VPC",
+  "serviceId": "account",
+  "summary": "Mount EFS file systems owned by one AWS account from EC2 instances owned by a different account using shared Amazon VPCs and DNS name resolution.",
+  "tier": "tier2"
+}

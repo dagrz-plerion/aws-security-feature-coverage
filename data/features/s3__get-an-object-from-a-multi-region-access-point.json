@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_example_s3_GetObject_MRAP_section.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "4a32d55ede10e9c306365751c1318c1c752467808a0aa9b7dde66206fc6ac668",
+      "locator": "Code examples > Scenarios",
+      "quote": "[Get an object from a Multi-Region Access Point](https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_example_s3_GetObject_MRAP_section.md)",
+      "retrievedAt": "2026-09-01T04:06:01.514Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "s3/get-an-object-from-a-multi-region-access-point",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Get an object from a Multi-Region Access Point",
+  "serviceId": "s3",
+  "summary": "Get an Amazon S3 object from a Multi-Region Access Point by using an AWS SDK",
+  "tier": "tier2"
+}

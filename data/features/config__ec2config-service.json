@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/UsingConfig_Install.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "09dae225b6b711c053d8bf0af0304c20e0677c5e57535e214cce6c8b300eb08e",
+      "locator": "Instances > EC2Config service",
+      "quote": "[Install EC2Config](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/UsingConfig_Install.md)",
+      "retrievedAt": "2026-09-01T04:06:00.831Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/llms.txt"
+    }
+  ],
+  "id": "config/ec2config-service",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "EC2Config service",
+  "serviceId": "config",
+  "summary": "Manually install the EC2Config launch agent on your instance.",
+  "tier": "tier1"
+}

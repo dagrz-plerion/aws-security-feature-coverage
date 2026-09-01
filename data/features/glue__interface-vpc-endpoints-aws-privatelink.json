@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/glue/latest/dg/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "1d628b17316beace57b0747efb99ff3c2de60a332a67592618c3ae82921b685b",
+      "locator": "Security > Infrastructure security",
+      "quote": "[Configuring interface VPC endpoints (AWS PrivateLink) for AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:09.925Z",
+      "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/llms.txt"
+    }
+  ],
+  "id": "glue/interface-vpc-endpoints-aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "interface VPC endpoints (AWS PrivateLink)",
+  "serviceId": "glue",
+  "summary": "You can use an interface VPC endpoint to create a private connection between your VPC and AWS Glue without requiring access over the internet or through a NAT device, a VPN connection, or an Direct Connect connection.",
+  "tier": "tier2"
+}

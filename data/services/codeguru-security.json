@@ -1,0 +1,33 @@
+{
+  "candidate": true,
+  "confidence": 0.85,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "48d40fcbbb29d81c7d823cfb02b64dd986030b3c498951306faf00d97d5f9ba4",
+      "locator": "codeguru-security.json .Name",
+      "quote": "codeguru-security",
+      "retrievedAt": "2026-09-01T03:57:46.338Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/codeguru-security/codeguru-security.json"
+    },
+    {
+      "bodySha256": "78a4f264f6940e4ca302ee05f30a2fac538c9ddcaa2f7bafbe718d85ed384cba",
+      "locator": "https://docs.aws.amazon.com/general/latest/gr/codeguru-security.html service endpoints",
+      "quote": "| US East (Ohio) | us-east-2 | codeguru-security.us-east-2.amazonaws.com | HTTPS |",
+      "retrievedAt": "2026-09-01T03:59:34.068Z",
+      "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/codeguru-security.md"
+    }
+  ],
+  "method": "llm",
+  "reason": "Amazon CodeGuru Security finds security defects in source code.",
+  "score": 5,
+  "serviceId": "codeguru-security",
+  "signals": [
+    {
+      "detail": "The name contains \"security\".",
+      "id": "security-name-strong",
+      "weight": 5
+    }
+  ],
+  "tier": "tier1"
+}

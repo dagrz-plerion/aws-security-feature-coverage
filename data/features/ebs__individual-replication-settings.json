@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/drs/latest/userguide/volumes-drs.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "2ae86736b1a1c9eefac1517d699dcf145216e2c33ea70cf10db7d7c3771cfe67",
+      "locator": "AWS DRS settings > Individual replication settings",
+      "quote": "[Amazon EBS volumes](https://docs.aws.amazon.com/drs/latest/userguide/volumes-drs.md)",
+      "retrievedAt": "2026-09-01T04:06:07.572Z",
+      "sourceUrl": "https://docs.aws.amazon.com/drs/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ebs/individual-replication-settings",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Individual replication settings",
+  "serviceId": "ebs",
+  "summary": "Set the default Amazon EBS volume type used by the replication servers and whether to use Amazon EBS encryption.",
+  "tier": "tier2"
+}

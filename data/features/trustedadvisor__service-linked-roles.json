@@ -1,0 +1,28 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/awssupport/latest/user/using-service-linked-roles-ta.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "db05c33bbb134bafdd0a899570435bf613628371591ed29e5218471cd2b88c2d",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Using service-linked roles for Trusted Advisor](https://docs.aws.amazon.com/awssupport/latest/user/using-service-linked-roles-ta.md)",
+      "retrievedAt": "2026-09-01T04:06:04.184Z",
+      "sourceUrl": "https://docs.aws.amazon.com/awssupport/latest/user/llms.txt"
+    }
+  ],
+  "id": "trustedadvisor/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "trustedadvisor",
+  "summary": "Use service-linked roles to give AWS Trusted Advisor access to resources in your AWS account.",
+  "tier": "tier2"
+}

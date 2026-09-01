@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/application-discovery/latest/userguide/delete-service-linked-role.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5d9e50c0d304a19ef2ee3e3a95921c625da815262f2a3dc34d03f38b300662e8",
+      "locator": "Security > Understanding and using service-linked roles",
+      "quote": "[Deleting a service-linked role for Application Discovery Service](https://docs.aws.amazon.com/application-discovery/latest/userguide/delete-service-linked-role.md)",
+      "retrievedAt": "2026-09-01T04:06:02.876Z",
+      "sourceUrl": "https://docs.aws.amazon.com/application-discovery/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "discovery/deleting-a-service-linked-role-for-application-discovery-service",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Deleting a service-linked role for Application Discovery Service",
+  "serviceId": "discovery",
+  "summary": "If you no longer need to use a feature or service that requires a service-linked role, we recommend that you delete that role.",
+  "tier": "tier2"
+}

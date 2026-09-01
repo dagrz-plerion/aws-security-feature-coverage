@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "51ac301a702956a2fe042fc544b1230b96a2222e566aeeb07797fd461cd4bc67",
+      "locator": "account-access.json .Name",
+      "quote": "account-access",
+      "retrievedAt": "2026-09-01T03:57:41.268Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/account-access/account-access.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide account-access/latest/APIReference",
+      "quote": "Account access manager API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority. Promoted to tier 2: 38 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "account-access",
+  "signals": [
+    {
+      "detail": "The name contains \"access\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

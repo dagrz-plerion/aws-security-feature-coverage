@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/controltower/latest/userguide/logging-s3-audit-bucket.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b1821ffc20aac2e8d4563c8ed7ac5d14950e4f6e719c7f879f083f8da339def5",
+      "locator": "Logging and monitoring",
+      "quote": "[S3 bucket policy](https://docs.aws.amazon.com/controltower/latest/userguide/logging-s3-audit-bucket.md)",
+      "retrievedAt": "2026-09-01T04:06:06.248Z",
+      "sourceUrl": "https://docs.aws.amazon.com/controltower/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "controltower/s3-bucket-policy",
+  "kind": "policy-type",
+  "method": "deterministic",
+  "name": "S3 bucket policy",
+  "serviceId": "controltower",
+  "summary": "Learn how AWS Control Tower implements a specific Amazon S3 bucket policy in the audit account to ensure that only AWS services within the organization or organizational unit can access resources.",
+  "tier": "tier2"
+}

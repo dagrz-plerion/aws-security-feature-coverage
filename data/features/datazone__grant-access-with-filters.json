@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/datazone/latest/userguide/grant-access-with-filters.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "08bdf1d95bb2b4e2d312f770d4578dd2732ae5ef654c0733f68d56f2503cefeb",
+      "locator": "Fine-grained access control to data",
+      "quote": "[Grant access with filters](https://docs.aws.amazon.com/datazone/latest/userguide/grant-access-with-filters.md)",
+      "retrievedAt": "2026-09-01T04:06:06.718Z",
+      "sourceUrl": "https://docs.aws.amazon.com/datazone/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "datazone/grant-access-with-filters",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Grant access with filters",
+  "serviceId": "datazone",
+  "summary": "Amazon DataZone enables fine-grained access control by translating the defined row and column filters into appropriate grants for AWS Lake Formation and Amazon Redshift.",
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-manage-subset-automatic.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "e8920401360814f75558084d9a8d532cb690ae882f7b0b55c7379f24767f87bf",
+      "locator": "Monitoring > Runtime Monitoring for Fargate workloads",
+      "quote": "[Removing Runtime Monitoring from a cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-manage-subset-automatic.md)",
+      "retrievedAt": "2026-09-01T04:06:01.290Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "ecs/removing-runtime-monitoring-from-a-cluster",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "Removing Runtime Monitoring from a cluster",
+  "serviceId": "ecs",
+  "summary": "Learn how to remove Runtime Monitoring from an Amazon ECS cluster.",
+  "tier": "tier2"
+}

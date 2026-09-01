@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/devicefarm/latest/developerguide/vpc-eni-service-linked-role.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "e4c804026607412c2cbc0c1c76db9db752abeea8ffab37e96087290a81ebc784",
+      "locator": "VPC connectivity",
+      "quote": "[Service-linked roles](https://docs.aws.amazon.com/devicefarm/latest/developerguide/vpc-eni-service-linked-role.md)",
+      "retrievedAt": "2026-09-01T04:06:07.128Z",
+      "sourceUrl": "https://docs.aws.amazon.com/devicefarm/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "devicefarm/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Service-linked roles",
+  "serviceId": "devicefarm",
+  "summary": "AWS Device Farm uses AWS Identity and Access Management (IAM) service-linked roles.",
+  "tier": "tier2"
+}

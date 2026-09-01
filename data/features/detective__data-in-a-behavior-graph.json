@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.85,
+  "discoveredBy": [
+    "guide-chapter",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/detective/latest/userguide/behavior-graph-population-about.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b4e540d07d68924645799f11c8ab8d109107ec8b22413b786007b49d3c2f1c4f",
+      "locator": "Data in a behavior graph",
+      "quote": "[How Detective populates a behavior graph](https://docs.aws.amazon.com/detective/latest/userguide/behavior-graph-population-about.md)",
+      "retrievedAt": "2026-09-01T04:06:06.948Z",
+      "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "detective/data-in-a-behavior-graph",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "Data in a behavior graph",
+  "serviceId": "detective",
+  "summary": "Discover how Amazon Detective, using a combination of extraction and analytics, uses log data and findings for member accounts to populate the behavior graph.",
+  "tier": "tier1"
+}

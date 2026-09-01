@@ -1,0 +1,25 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/controlcatalog/latest/userguide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "f3dc79646da8a92e337c4ea1caddeed2e7d3a8d2902c10afcabc015b719f34b7",
+      "locator": "AWS Control Catalog Security Information",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/controlcatalog/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:06.238Z",
+      "sourceUrl": "https://docs.aws.amazon.com/controlcatalog/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "controlcatalog/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "controlcatalog",
+  "tier": "tier1"
+}

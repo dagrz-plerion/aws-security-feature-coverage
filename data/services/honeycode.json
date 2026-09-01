@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "6cfe3aebe7d04999600652986853111e0e12a476ce4204ca10cafd8fa4abfb8b",
+      "locator": "honeycode.json .Name",
+      "quote": "honeycode",
+      "retrievedAt": "2026-09-01T03:57:52.060Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/honeycode/honeycode.json"
+    },
+    {
+      "bodySha256": "cbebbb5de0c7a2a48b82adba893a8b7ee0a336ac503f3690b75b65e342e58919",
+      "locator": "aws-products directory item",
+      "quote": "Amazon Honeycode",
+      "retrievedAt": "2026-09-01T03:58:06.968Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=0&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "honeycode",
+  "signals": [],
+  "tier": "not-security"
+}

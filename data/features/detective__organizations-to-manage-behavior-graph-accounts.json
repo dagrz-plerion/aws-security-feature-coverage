@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/detective/latest/userguide/accounts-orgs-transition.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b4e540d07d68924645799f11c8ab8d109107ec8b22413b786007b49d3c2f1c4f",
+      "locator": "Managing accounts",
+      "quote": "[Using Organizations to manage behavior graph accounts](https://docs.aws.amazon.com/detective/latest/userguide/accounts-orgs-transition.md)",
+      "retrievedAt": "2026-09-01T04:06:06.948Z",
+      "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "detective/organizations-to-manage-behavior-graph-accounts",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "Organizations to manage behavior graph accounts",
+  "serviceId": "detective",
+  "summary": "Transition an existing behavior graph into your organization behavior graph.",
+  "tier": "tier1"
+}

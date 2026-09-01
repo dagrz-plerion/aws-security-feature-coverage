@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "aa7759b97cfafe9a844381a07ba077bc1cf0e28d488be6c7cdc3d85ce1df5927",
+      "locator": "dbqms.json .Name",
+      "quote": "dbqms",
+      "retrievedAt": "2026-09-01T03:57:48.031Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/dbqms/dbqms.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "dbqms",
+  "signals": [],
+  "tier": "not-security"
+}

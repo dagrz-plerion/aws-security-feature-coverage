@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "c2d1d77d6280e2cf25589850af21978bc4b8effbeb4a9e0651a8e8350496f312",
+      "locator": "pi.json .Name",
+      "quote": "pi",
+      "retrievedAt": "2026-09-01T03:57:58.213Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/pi/pi.json"
+    },
+    {
+      "bodySha256": "56a4410946651419b5e9f4f16b91e2c9e043f138d9fc94663c5ff95c9dd7ce96",
+      "locator": "https://docs.aws.amazon.com/general/latest/gr/rds-service.html service endpoints",
+      "quote": "| US East (Ohio) | us-east-2 |  rds.us-east-2.amazonaws.com <br /> rds-fips.us-east-2.api.aws <br /> rds.us-east-2.api.aws <br /> rds-fips.us-east-2.amazonaws.com  | HTTPS<br />HTTPS<br />HTTPS<br />HTTPS |",
+      "retrievedAt": "2026-09-01T03:59:38.120Z",
+      "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/rds-service.md"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "pi",
+  "signals": [],
+  "tier": "not-security"
+}

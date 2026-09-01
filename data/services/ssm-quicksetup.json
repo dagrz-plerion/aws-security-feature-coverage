@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "ba410efc0ce7900474021da3bf96e4354567f2464f56d2a958dfb6087721d1b3",
+      "locator": "ssm-quicksetup.json .Name",
+      "quote": "ssm-quicksetup",
+      "retrievedAt": "2026-09-01T03:58:02.587Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/ssm-quicksetup/ssm-quicksetup.json"
+    },
+    {
+      "bodySha256": "df61b8c0814f7ea47b645019813536b8c7ee179c5e55670edb13c72296c837d0",
+      "locator": "https://docs.aws.amazon.com/general/latest/gr/quick-setup.html service endpoints",
+      "quote": "| US East (Ohio) | us-east-2 |  ssm-quicksetup.us-east-2.amazonaws.com <br /> ssm-quicksetup-fips.us-east-2.api.aws <br /> ssm-quicksetup-fips.us-east-2.amazonaws.com <br /> ssm-quicksetup.us-east-2.api.aws  | HTTPS<br />HTTPS<br />HTTPS<br />HTTPS |",
+      "retrievedAt": "2026-09-01T03:59:37.985Z",
+      "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/quick-setup.md"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "ssm-quicksetup",
+  "signals": [],
+  "tier": "not-security"
+}

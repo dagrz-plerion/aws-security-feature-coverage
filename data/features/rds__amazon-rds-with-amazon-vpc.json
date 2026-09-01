@@ -1,0 +1,25 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "a6652b8041761406ae90ef56f105e72901bda456025f1da24fbe0f9c188e9f82",
+      "locator": "Security > Using Amazon RDS with Amazon VPC",
+      "quote": "[Working with a DB instance in a VPC](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.md)",
+      "retrievedAt": "2026-09-01T04:06:01.518Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/llms.txt"
+    }
+  ],
+  "id": "rds/amazon-rds-with-amazon-vpc",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon RDS with Amazon VPC",
+  "serviceId": "rds",
+  "tier": "tier2"
+}

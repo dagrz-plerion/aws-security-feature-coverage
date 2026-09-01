@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/devopsagent/latest/userguide/aws-devops-agent-security-limiting-agent-access-in-an-aws-account.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "c4179338009c0e84ab0fb5e8d55bb6ae7695948dfdb406ec78ec0913372dddb3",
+      "locator": "AWS DevOps Agent Security",
+      "quote": "[Limiting Agent Access in an AWS Account](https://docs.aws.amazon.com/devopsagent/latest/userguide/aws-devops-agent-security-limiting-agent-access-in-an-aws-account.md)",
+      "retrievedAt": "2026-09-01T04:06:07.163Z",
+      "sourceUrl": "https://docs.aws.amazon.com/devopsagent/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "account/aws-devops-agent-security",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS DevOps Agent Security",
+  "serviceId": "account",
+  "summary": "AWS DevOps Agent uses IAM roles to discover and describe AWS resources during incident investigations and preventative evaluations.",
+  "tier": "tier2"
+}

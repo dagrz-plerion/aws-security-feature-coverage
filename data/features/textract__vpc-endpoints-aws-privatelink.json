@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/textract/latest/dg/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "a2e43e21a0f7198d3cfbc6593bb252a7d759b9e9b2974b9c941e3dc52994d06f",
+      "locator": "Security > Tagging resources",
+      "quote": "[VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/textract/latest/dg/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:19.449Z",
+      "sourceUrl": "https://docs.aws.amazon.com/textract/latest/dg/llms.txt"
+    }
+  ],
+  "id": "textract/vpc-endpoints-aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "VPC endpoints (AWS PrivateLink)",
+  "serviceId": "textract",
+  "summary": "You can use an interface VPC endpoint to create a private connection between your VPC and Amazon Textract without requiring access over the internet or through a NAT device, a VPN connection, or an Direct Connect connection.",
+  "tier": "tier2"
+}

@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/chatbot/latest/adminguide/slr-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "96d5696eafeda228779b9b421f0dd710ee156362c794dcbfda2d1cc702f3c528",
+      "locator": "Security > Using Service-Linked Roles",
+      "quote": "[Service-linked role for performing operations on Amazon SNS topics and CloudWatch Logs](https://docs.aws.amazon.com/chatbot/latest/adminguide/slr-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:04.511Z",
+      "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/llms.txt"
+    }
+  ],
+  "id": "chatbot/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Service-Linked Roles",
+  "serviceId": "chatbot",
+  "summary": "Amazon Q Developer uses the service-linked role named AWSServiceRoleForAWSChatbot.",
+  "tier": "tier2"
+}

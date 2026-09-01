@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/grafana/latest/userguide/ES-adding-AWS-config.md",
+    "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-delete-opensearch-domain.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "fb4693f608ea60b529044869fdb8a5d9b626adc8414071cbf12e2c1454f1f488",
+      "locator": "Use your Grafana workspace > Amazon OpenSearch Service",
+      "quote": "[Use AWS data source configuration to add OpenSearch Service as a data source](https://docs.aws.amazon.com/grafana/latest/userguide/ES-adding-AWS-config.md)",
+      "retrievedAt": "2026-09-01T04:06:10.028Z",
+      "sourceUrl": "https://docs.aws.amazon.com/grafana/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "4f64722f627b4b796720af8a22bd6fc7e276b528c3cb721e9bab48cf80f4e8b5",
+      "locator": "Automation Runbook Reference > Amazon OpenSearch Service",
+      "quote": "[AWSConfigRemediation-DeleteOpenSearchDomain](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-delete-opensearch-domain.md)",
+      "retrievedAt": "2026-09-01T04:06:19.357Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "es/amazon-opensearch-service",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon OpenSearch Service",
+  "serviceId": "es",
+  "summary": "To use AWS data source configuration, first you use the Amazon Managed Grafana console to enable service-managed IAM roles that grant the workspace the IAM policies necessary to read the OpenSearch Service resources in your account or in your entire organizational units.",
+  "tier": "tier2"
+}

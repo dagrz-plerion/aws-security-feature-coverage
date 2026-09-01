@@ -1,0 +1,35 @@
+{
+  "aliases": [],
+  "confidence": 0.85,
+  "discoveredBy": [
+    "guide-chapter",
+    "guide-subchapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/singlesignon/latest/userguide/howtoactivateaccount.md",
+    "https://docs.aws.amazon.com/singlesignon/latest/userguide/howtosignin.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5e339cfafb670f842f8888bdbf08877a16d942765c442220072f6d7917172f94",
+      "locator": "AWS access portal > Configure the AWS access portal",
+      "quote": "[Activating the AWS access portal](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtoactivateaccount.md)",
+      "retrievedAt": "2026-09-01T04:06:18.788Z",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "5e339cfafb670f842f8888bdbf08877a16d942765c442220072f6d7917172f94",
+      "locator": "AWS access portal > Use the AWS access portal",
+      "quote": "[Signing in to the AWS access portal](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtosignin.md)",
+      "retrievedAt": "2026-09-01T04:06:18.788Z",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "sso/aws-access-portal",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "AWS access portal",
+  "serviceId": "sso",
+  "summary": "If this is your first time attempting to sign in to the AWS access portal, check your email for instructions on how to activate your user credentials.",
+  "tier": "tier1"
+}

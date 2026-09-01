@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/monitoring-resolver-dns-firewall-with-cloudwatch.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "24d4c43a6666ecbcdf8d5ff41b357f5f44fc5b21fcea0293f82e7f5bf4ee0a46",
+      "locator": "Monitoring > Resolver query log example",
+      "quote": "[Monitoring Resolver DNS Firewall rule groups with Amazon CloudWatch](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/monitoring-resolver-dns-firewall-with-cloudwatch.md)",
+      "retrievedAt": "2026-09-01T04:06:01.984Z",
+      "sourceUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/llms.txt"
+    }
+  ],
+  "id": "cloudwatch/resolver-dns-firewall-rule-groups-with-amazon-cloudwatch",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "Resolver DNS Firewall rule groups with Amazon CloudWatch",
+  "serviceId": "cloudwatch",
+  "summary": "You can use Amazon CloudWatch to monitor the number of DNS queries that are filtered by Resolver DNS Firewall rule groups.",
+  "tier": "tier2"
+}

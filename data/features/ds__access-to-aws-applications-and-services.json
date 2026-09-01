@@ -1,0 +1,42 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "guide-subchapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_connector_app_compatibility.md",
+    "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_app_compatibility.md",
+    "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simple_ad_app_compatibility.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "920c2475f5a2c690c771e1a56137df8edaf6dd8ce07a81bd583279fa948e87fa",
+      "locator": "AWS Managed Microsoft AD > Access to AWS applications and services",
+      "quote": "[Application compatibility](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_app_compatibility.md)",
+      "retrievedAt": "2026-09-01T04:06:07.342Z",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/llms.txt"
+    },
+    {
+      "bodySha256": "920c2475f5a2c690c771e1a56137df8edaf6dd8ce07a81bd583279fa948e87fa",
+      "locator": "AD Connector > Access to AWS applications and services",
+      "quote": "[Application compatibility](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_connector_app_compatibility.md)",
+      "retrievedAt": "2026-09-01T04:06:07.342Z",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/llms.txt"
+    },
+    {
+      "bodySha256": "920c2475f5a2c690c771e1a56137df8edaf6dd8ce07a81bd583279fa948e87fa",
+      "locator": "Simple AD > Access to AWS applications and services",
+      "quote": "[Application compatibility](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simple_ad_app_compatibility.md)",
+      "retrievedAt": "2026-09-01T04:06:07.342Z",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/llms.txt"
+    }
+  ],
+  "id": "ds/access-to-aws-applications-and-services",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Access to AWS applications and services",
+  "serviceId": "ds",
+  "summary": "Learn more about which applications are AWS Managed Microsoft AD compatible.",
+  "tier": "tier1"
+}

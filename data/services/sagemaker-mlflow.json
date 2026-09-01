@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "715aa77eff309d22bc7b8014ec22733089fd9e9dc0256fc648fc9597cd829538",
+      "locator": "sagemaker-mlflow.json .Name",
+      "quote": "sagemaker-mlflow",
+      "retrievedAt": "2026-09-01T03:58:00.944Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/sagemaker-mlflow/sagemaker-mlflow.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "sagemaker-mlflow",
+  "signals": [],
+  "tier": "not-security"
+}

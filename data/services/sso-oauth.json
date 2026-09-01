@@ -1,0 +1,26 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "d36ad5315c242650a59247e3f5938a0678cae8f0335beb1e67c857c7c5758e73",
+      "locator": "sso-oauth.json .Name",
+      "quote": "sso-oauth",
+      "retrievedAt": "2026-09-01T03:58:02.928Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/sso-oauth/sso-oauth.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "sso-oauth",
+  "signals": [
+    {
+      "detail": "The name contains \"auth\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

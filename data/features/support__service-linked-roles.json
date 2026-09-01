@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/awssupport/latest/user/using-service-linked-roles-sup.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "db05c33bbb134bafdd0a899570435bf613628371591ed29e5218471cd2b88c2d",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Using service-linked roles for AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/using-service-linked-roles-sup.md)",
+      "retrievedAt": "2026-09-01T04:06:04.184Z",
+      "sourceUrl": "https://docs.aws.amazon.com/awssupport/latest/user/llms.txt"
+    }
+  ],
+  "id": "support/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "support",
+  "summary": "Use the built-in service-linked role to manage your interaction with AWS Support.",
+  "tier": "tier2"
+}

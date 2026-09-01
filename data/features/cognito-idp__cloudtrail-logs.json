@@ -1,0 +1,25 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cognito/latest/developerguide/understanding-amazon-cognito-entries.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "373f31a56031ece0ad054997a91a0752467e68c744b48b89c61a4c0405016c75",
+      "locator": "Security > CloudTrail logs",
+      "quote": "[Example events](https://docs.aws.amazon.com/cognito/latest/developerguide/understanding-amazon-cognito-entries.md)",
+      "retrievedAt": "2026-09-01T04:06:05.789Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "cognito-idp/cloudtrail-logs",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "CloudTrail logs",
+  "serviceId": "cognito-idp",
+  "tier": "tier1"
+}

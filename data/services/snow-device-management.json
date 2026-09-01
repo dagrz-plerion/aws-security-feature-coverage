@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "d5177c796a40309633eb8d54e0f1a17d6fa423e7831cb1f134a5c3f1b38ad78b",
+      "locator": "snow-device-management.json .Name",
+      "quote": "snow-device-management",
+      "retrievedAt": "2026-09-01T03:58:02.242Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/snow-device-management/snow-device-management.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "snow-device-management",
+  "signals": [],
+  "tier": "not-security"
+}

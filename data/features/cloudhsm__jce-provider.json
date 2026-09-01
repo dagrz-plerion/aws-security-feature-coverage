@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "guide-subchapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cloudhsm/latest/userguide/java-library-install_5.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "40168a9d137882d27d81e97c1cca0c17ceefcd5177947d8edd37426974206ee4",
+      "locator": "Client SDKs > JCE provider",
+      "quote": "[Install](https://docs.aws.amazon.com/cloudhsm/latest/userguide/java-library-install_5.md)",
+      "retrievedAt": "2026-09-01T04:06:05.112Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudhsm/jce-provider",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "JCE provider",
+  "serviceId": "cloudhsm",
+  "summary": "Install JCE provider so that you can write Java applications that communicate with the HSMs in your cluster.",
+  "tier": "tier1"
+}

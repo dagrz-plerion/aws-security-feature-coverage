@@ -1,0 +1,55 @@
+{
+  "candidate": true,
+  "confidence": 0.85,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "a8a2f9a15b854ea66a353d80839f51d7b225407453741c844619b4975a75729f",
+      "locator": "AWS SRA appendix",
+      "quote": "+ AWS Transit Gateway - Connect VPCs, AWS accounts, and on-premises networks to a single gateway",
+      "retrievedAt": "2026-09-01T04:07:16.433Z",
+      "sourceUrl": "https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/appendix.md"
+    },
+    {
+      "bodySha256": "1f447d82702dce06acefb0e5549aaeeb6f7c0fd74712fea322cf9983bde10dd0",
+      "locator": "ec2.json .Name",
+      "quote": "ec2",
+      "retrievedAt": "2026-09-01T03:57:48.792Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/ec2/ec2.json"
+    },
+    {
+      "bodySha256": "cbebbb5de0c7a2a48b82adba893a8b7ee0a336ac503f3690b75b65e342e58919",
+      "locator": "aws-products directory item",
+      "quote": "Amazon EC2",
+      "retrievedAt": "2026-09-01T03:58:06.968Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=0&item.locale=en_US"
+    }
+  ],
+  "method": "llm",
+  "reason": "EC2 carries security groups, network ACLs, EBS encryption, IMDSv2 and Nitro Enclaves, but it is a compute service.",
+  "score": 18,
+  "serviceId": "ec2",
+  "signals": [
+    {
+      "detail": "The AWS Security Reference Architecture appendix lists this under network-and-application-protection.",
+      "id": "sra-appendix",
+      "weight": 8
+    },
+    {
+      "detail": "The name contains \"access analyzer\".",
+      "id": "security-name-strong",
+      "weight": 5
+    },
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    },
+    {
+      "detail": "91 documentation pages describe security capability, for example \"Manage the block public access setting for AMIs\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

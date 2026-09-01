@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/sns/latest/dg/sns-enable-encryption-for-topic.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "83f90a5a40b2bc4d14c8b4fa78ca2a518117d0dd7566468c22de96ecdf4c92e4",
+      "locator": "Security > Data encryption",
+      "quote": "[Setting up topic encryption with server-side encryption](https://docs.aws.amazon.com/sns/latest/dg/sns-enable-encryption-for-topic.md)",
+      "retrievedAt": "2026-09-01T04:06:18.939Z",
+      "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/llms.txt"
+    }
+  ],
+  "id": "sns/topic-encryption-with-server-side-encryption",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "topic encryption with server-side encryption",
+  "serviceId": "sns",
+  "summary": "Learn how to enable and configure server-side encryption (SSE) for Amazon SNS topics, including using AWS KMS for key management, setting appropriate AWS KMS key policies, and understanding the impact on message consumption for subscribers.",
+  "tier": "tier2"
+}

@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "7cb9481e86062d156cb2a49ff04c0b3b1c3995e8191788d754d14262cdb5a43d",
+      "locator": "codeguru-reviewer.json .Name",
+      "quote": "codeguru-reviewer",
+      "retrievedAt": "2026-09-01T03:57:46.228Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/codeguru-reviewer/codeguru-reviewer.json"
+    },
+    {
+      "bodySha256": "64f59b7a7b605006e1705420022c0de6daeb99f800fa7e4d090bd447a56c4439",
+      "locator": "https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.html service endpoints",
+      "quote": "| US East (Ohio) | us-east-2 |  codeguru-reviewer.us-east-2.amazonaws.com  | HTTPS |",
+      "retrievedAt": "2026-09-01T03:59:34.067Z",
+      "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/codeguru-reviewer.md"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "codeguru-reviewer",
+  "signals": [],
+  "tier": "not-security"
+}

@@ -1,0 +1,42 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/freertos/archive/202012.00/userguide/ota-logging.md",
+    "https://docs.aws.amazon.com/freertos/archive/202210.00/userguide/ota-logging.md",
+    "https://docs.aws.amazon.com/freertos/latest/userguide/ota-logging.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5375ede4ce61d96c68b35dec908977db3279374ff863b50fa8184a699a495a67",
+      "locator": "Over-the-Air Updates > OTA troubleshooting",
+      "quote": "[Set up CloudWatch Logs for OTA updates](https://docs.aws.amazon.com/freertos/archive/202012.00/userguide/ota-logging.md)",
+      "retrievedAt": "2026-09-01T04:06:09.455Z",
+      "sourceUrl": "https://docs.aws.amazon.com/freertos/archive/202012.00/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "d870ecdbb987132d01bcf09d8b61fb46671d0f8fc6edc1a6dc85c0e427439339",
+      "locator": "Over-the-Air Updates > OTA troubleshooting",
+      "quote": "[Set up CloudWatch Logs for OTA updates](https://docs.aws.amazon.com/freertos/archive/202210.00/userguide/ota-logging.md)",
+      "retrievedAt": "2026-09-01T04:06:09.474Z",
+      "sourceUrl": "https://docs.aws.amazon.com/freertos/archive/202210.00/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "e4b720eacadda80fb65c3d97a39404aa8d73c4e1e9d3b20ed0f44762eef5578d",
+      "locator": "Archive > OTA troubleshooting",
+      "quote": "[Set up CloudWatch Logs for OTA updates](https://docs.aws.amazon.com/freertos/latest/userguide/ota-logging.md)",
+      "retrievedAt": "2026-09-01T04:06:09.572Z",
+      "sourceUrl": "https://docs.aws.amazon.com/freertos/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudwatch/ota-troubleshooting",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "OTA troubleshooting",
+  "serviceId": "cloudwatch",
+  "summary": "The OTA Update service supports logging with Amazon CloudWatch.",
+  "tier": "tier2"
+}

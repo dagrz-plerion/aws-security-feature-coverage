@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/kms/latest/developerguide/authorize-key-store.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "0ba3e6f8bc82eaecae04851380ae183a4d968bbb98ce29dec74d9b204f1ef846",
+      "locator": "Key stores > AWS CloudHSM key stores",
+      "quote": "[Control access to your AWS CloudHSM key store](https://docs.aws.amazon.com/kms/latest/developerguide/authorize-key-store.md)",
+      "retrievedAt": "2026-09-01T04:06:11.963Z",
+      "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "cloudhsm/aws-cloudhsm-key-stores",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "AWS CloudHSM key stores",
+  "serviceId": "cloudhsm",
+  "summary": "You use IAM policies to control access to your AWS CloudHSM key store and your AWS CloudHSM cluster.",
+  "tier": "tier1"
+}

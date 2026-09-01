@@ -1,0 +1,25 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/singlesignon/latest/userguide/understanding-sso-entries.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5e339cfafb670f842f8888bdbf08877a16d942765c442220072f6d7917172f94",
+      "locator": "Security > IAM Identity Center information in CloudTrail",
+      "quote": "[CloudTrail events for IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/understanding-sso-entries.md)",
+      "retrievedAt": "2026-09-01T04:06:18.788Z",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "sso/iam-identity-center-information-in-cloudtrail",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "IAM Identity Center information in CloudTrail",
+  "serviceId": "sso",
+  "tier": "tier1"
+}

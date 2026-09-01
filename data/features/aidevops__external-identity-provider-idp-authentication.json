@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/devopsagent/latest/userguide/aws-devops-agent-security-setting-up-external-identity-provider-idp-authentication.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "c4179338009c0e84ab0fb5e8d55bb6ae7695948dfdb406ec78ec0913372dddb3",
+      "locator": "AWS DevOps Agent Security",
+      "quote": "[Setting Up External Identity Provider (IdP) Authentication](https://docs.aws.amazon.com/devopsagent/latest/userguide/aws-devops-agent-security-setting-up-external-identity-provider-idp-authentication.md)",
+      "retrievedAt": "2026-09-01T04:06:07.163Z",
+      "sourceUrl": "https://docs.aws.amazon.com/devopsagent/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "aidevops/external-identity-provider-idp-authentication",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "External Identity Provider (IdP) Authentication",
+  "serviceId": "aidevops",
+  "summary": "External identity provider (IdP) authentication allows your organization to use an existing OIDC-compatible identity provider, such as Okta or Microsoft Entra ID, to manage user access to the AWS DevOps Agent Space web application.",
+  "tier": "tier2"
+}

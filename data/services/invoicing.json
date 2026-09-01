@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "2e931f2ae825acede3ce37e2e42870f2cc1e581a8e1663f70fdbf5794c389616",
+      "locator": "invoicing.json .Name",
+      "quote": "invoicing",
+      "retrievedAt": "2026-09-01T03:57:52.802Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/invoicing/invoicing.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "invoicing",
+  "signals": [],
+  "tier": "not-security"
+}

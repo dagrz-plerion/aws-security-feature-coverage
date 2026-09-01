@@ -1,0 +1,38 @@
+{
+  "candidate": true,
+  "confidence": 0.85,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "e5a870ace838d2e11821dd6284b113f44b57c07f8268598eb19790664ec21b4f",
+      "locator": "resource-explorer-2.json .Name",
+      "quote": "resource-explorer-2",
+      "retrievedAt": "2026-09-01T03:57:59.602Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/resource-explorer-2/resource-explorer-2.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide resource-explorer/latest/apireference",
+      "quote": "AWS Resource Explorer API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "llm",
+  "reason": "Resource Explorer supports security work by inventorying resources, but it is a discovery service.",
+  "score": 5,
+  "serviceId": "resource-explorer-2",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    },
+    {
+      "detail": "12 documentation pages describe security capability, for example \"Upgrade IAM policies to IPv6\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

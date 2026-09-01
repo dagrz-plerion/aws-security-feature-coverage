@@ -1,0 +1,25 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/appstream2/latest/developerguide/example-confused-deputy.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "7f2eb1a588759a457bea8e1ef21603eb6790ef5eead596155dee75e039baadda",
+      "locator": "Security > Confused Deputy Prevention",
+      "quote": "[Example: WorkSpaces Applications service role cross-service confused deputy prevention](https://docs.aws.amazon.com/appstream2/latest/developerguide/example-confused-deputy.md)",
+      "retrievedAt": "2026-09-01T04:06:03.094Z",
+      "sourceUrl": "https://docs.aws.amazon.com/appstream2/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "workspaces/confused-deputy-prevention",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Confused Deputy Prevention",
+  "serviceId": "workspaces",
+  "tier": "tier2"
+}

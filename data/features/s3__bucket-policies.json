@@ -1,0 +1,45 @@
+{
+  "aliases": [
+    "bucket policies"
+  ],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.md",
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-bucket-policy.md",
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-security-iam-example-bucket-policies.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Access control > Bucket policies",
+      "quote": "[Adding a bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Working with directory buckets > Data residency workloads",
+      "quote": "[Managing bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-bucket-policy.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Working with directory buckets > Authorizing Regional endpoint API operations with IAM",
+      "quote": "[Bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-security-iam-example-bucket-policies.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "s3/bucket-policies",
+  "kind": "policy-type",
+  "method": "deterministic",
+  "name": "Bucket policies",
+  "serviceId": "s3",
+  "summary": "Add a bucket policy to an Amazon S3 bucket to grant other AWS accounts or AWS Identity and Access Management (IAM) users access to the bucket.",
+  "tier": "tier2"
+}

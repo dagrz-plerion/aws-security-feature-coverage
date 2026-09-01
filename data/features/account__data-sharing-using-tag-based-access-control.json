@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/lake-formation/latest/dg/cross-account-TBAC.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "f4c2e2bbf4522b4fdb451f2e5b39ccca48ee6f29b7591e07d303dcf2881cde89",
+      "locator": "Managing Lake Formation permissions > Sharing Data Catalog tables and databases across AWS accounts or IAM principals from external accounts",
+      "quote": "[Data sharing using tag-based access control](https://docs.aws.amazon.com/lake-formation/latest/dg/cross-account-TBAC.md)",
+      "retrievedAt": "2026-09-01T04:06:12.057Z",
+      "sourceUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/llms.txt"
+    }
+  ],
+  "id": "account/data-sharing-using-tag-based-access-control",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Data sharing using tag-based access control",
+  "serviceId": "account",
+  "summary": "AWS Lake Formation tag-based access control (LF-TBAC) is an authorization strategy that defines permissions based on attributes.",
+  "tier": "tier2"
+}

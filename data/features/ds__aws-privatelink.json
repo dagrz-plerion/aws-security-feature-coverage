@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "920c2475f5a2c690c771e1a56137df8edaf6dd8ce07a81bd583279fa948e87fa",
+      "locator": "Security > Logging and monitoring",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:07.342Z",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/llms.txt"
+    }
+  ],
+  "id": "ds/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "ds",
+  "summary": "Learn about how you can use an AWS PrivateLink to create a private connection between your VPC and Directory Service/Directory Service Data.",
+  "tier": "tier1"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "guide-subchapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/securityagent/latest/userguide/grant-user-access.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ed7d5eb1f67e08a4ba059f9c88a187efa96eccd85188e616e13a95d28d866a84",
+      "locator": "For administrators (console) > Manage users and access",
+      "quote": "[Grant users access to the AWS Security Agent web application](https://docs.aws.amazon.com/securityagent/latest/userguide/grant-user-access.md)",
+      "retrievedAt": "2026-09-01T04:06:18.269Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityagent/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "securityagent/users-and-access",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "users and access",
+  "serviceId": "securityagent",
+  "summary": "AWS Security Agent provides two methods for users to access the web application, depending on how you configured your Agent Space during setup.",
+  "tier": "tier1"
+}

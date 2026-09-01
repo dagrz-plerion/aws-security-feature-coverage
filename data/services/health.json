@@ -1,0 +1,44 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "c74c8f7d962093291235f0d39f21d0cdc5231ee384a794d4af4e44a8a95c8d45",
+      "locator": "health.json .Name",
+      "quote": "health",
+      "retrievedAt": "2026-09-01T03:57:51.768Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/health/health.json"
+    },
+    {
+      "bodySha256": "34ce17faff84f2e6f197c1266ef9030194eb61677cafeeb28e8ec8b8a4a710d9",
+      "locator": "aws-products directory item",
+      "quote": "AWS Health",
+      "retrievedAt": "2026-09-01T03:58:07.905Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=2&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 7: security-name-weak, permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 11 named security features were found in its documentation.",
+  "score": 7,
+  "serviceId": "health",
+  "signals": [
+    {
+      "detail": "The name contains \"notification\".",
+      "id": "security-name-weak",
+      "weight": 2
+    },
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    },
+    {
+      "detail": "12 documentation pages describe security capability, for example \"Data encryption\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

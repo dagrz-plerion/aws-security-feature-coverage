@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/datazone/latest/userguide/add-sagemaker-as-trusted-service-associate.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "08bdf1d95bb2b4e2d312f770d4578dd2732ae5ef654c0733f68d56f2503cefeb",
+      "locator": "Associated accounts",
+      "quote": "[Add Amazon SageMaker as a trusted service in the associated AWS account](https://docs.aws.amazon.com/datazone/latest/userguide/add-sagemaker-as-trusted-service-associate.md)",
+      "retrievedAt": "2026-09-01T04:06:06.718Z",
+      "sourceUrl": "https://docs.aws.amazon.com/datazone/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "sagemaker/associated-accounts",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Associated accounts",
+  "serviceId": "sagemaker",
+  "summary": "If you've enabled the Amazon SageMaker blueprint, you must also add SageMaker as one of the trusted services within Amazon DataZone.",
+  "tier": "tier2"
+}

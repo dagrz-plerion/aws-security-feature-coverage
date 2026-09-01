@@ -1,0 +1,26 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "3dcf4088242d5e0d40401f58718b2416054f6d8c634beb92df7c59233906add3",
+      "locator": "aws-marketplace.json .Name",
+      "quote": "aws-marketplace",
+      "retrievedAt": "2026-09-01T03:57:43.329Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/aws-marketplace/aws-marketplace.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: permission-management-actions). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "aws-marketplace",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/systems-manager/latest/userguide/secure-string-parameter-kms-encryption.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "08e1cef5478bbbe3ddf01ef5adad6aa9a90cec3c725d3e86ea1da0ec73ca4e8f",
+      "locator": "Product and service integrations > Integration with AWS services",
+      "quote": "[AWS KMS encryption for Parameter Store SecureString parameters](https://docs.aws.amazon.com/systems-manager/latest/userguide/secure-string-parameter-kms-encryption.md)",
+      "retrievedAt": "2026-09-01T04:06:19.398Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ssm/aws-kms-encryption-for-parameter-store-securestring-parameters",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "AWS KMS encryption for Parameter Store SecureString parameters",
+  "serviceId": "ssm",
+  "summary": "Learn how AWS Systems Manager Parameter Store uses AWS KMS to encrypt the values of Parameter Store SecureString parameters.",
+  "tier": "tier2"
+}

@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-param-securestring-walkthrough.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "08e1cef5478bbbe3ddf01ef5adad6aa9a90cec3c725d3e86ea1da0ec73ca4e8f",
+      "locator": "Using AWS Systems Manager tools > Parameter Store walkthroughs",
+      "quote": "[Creating a SecureString parameter and joining a node to a Domain (PowerShell)](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-param-securestring-walkthrough.md)",
+      "retrievedAt": "2026-09-01T04:06:19.398Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ssm/parameter-store-walkthroughs",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Parameter Store walkthroughs",
+  "serviceId": "ssm",
+  "summary": "Learn how to join a Windows Server managed node to a domain using Parameter Store SecureString parameters and Run Command.",
+  "tier": "tier2"
+}

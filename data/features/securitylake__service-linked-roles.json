@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/security-lake/latest/userguide/slr-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "9bb27a8de3b567f546c664f09ed29b51544a1769d5aec4d0d8e19e25a9199172",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[SLR permissions for Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/slr-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:18.243Z",
+      "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "securitylake/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "securitylake",
+  "summary": "Security Lake uses the service-linked role named AWSServiceRoleForSecurityLake.",
+  "tier": "tier1"
+}

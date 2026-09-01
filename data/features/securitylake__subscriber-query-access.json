@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/security-lake/latest/userguide/prereqs-query-subscriber.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "9bb27a8de3b567f546c664f09ed29b51544a1769d5aec4d0d8e19e25a9199172",
+      "locator": "Subscriber management > Subscriber query access",
+      "quote": "[Prerequisites](https://docs.aws.amazon.com/security-lake/latest/userguide/prereqs-query-subscriber.md)",
+      "retrievedAt": "2026-09-01T04:06:18.243Z",
+      "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "securitylake/subscriber-query-access",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Subscriber query access",
+  "serviceId": "securitylake",
+  "summary": "You must complete the following prerequisites before you can create a subscriber with data access in Security Lake.",
+  "tier": "tier1"
+}

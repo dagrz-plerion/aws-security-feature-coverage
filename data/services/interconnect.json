@@ -1,0 +1,33 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "29cc095cc383a5fdacc46913c372dc03dedebcbc2066b75045c3f2497777e5cc",
+      "locator": "interconnect.json .Name",
+      "quote": "interconnect",
+      "retrievedAt": "2026-09-01T03:57:52.301Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/interconnect/interconnect.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide interconnect/latest/api",
+      "quote": "AWS Interconnect API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "interconnect",
+  "signals": [
+    {
+      "detail": "4 documentation pages describe security capability, for example \"How AWS Interconnect works with IAM\".",
+      "id": "security-doc-pages",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

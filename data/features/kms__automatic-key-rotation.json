@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/kms/latest/developerguide/rotating-keys-disable.md",
+    "https://docs.aws.amazon.com/kms/latest/developerguide/rotating-keys-enable.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "0ba3e6f8bc82eaecae04851380ae183a4d968bbb98ce29dec74d9b204f1ef846",
+      "locator": "Rotate keys",
+      "quote": "[Enable automatic key rotation](https://docs.aws.amazon.com/kms/latest/developerguide/rotating-keys-enable.md)",
+      "retrievedAt": "2026-09-01T04:06:11.963Z",
+      "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "0ba3e6f8bc82eaecae04851380ae183a4d968bbb98ce29dec74d9b204f1ef846",
+      "locator": "Rotate keys",
+      "quote": "[Disable automatic key rotation](https://docs.aws.amazon.com/kms/latest/developerguide/rotating-keys-disable.md)",
+      "retrievedAt": "2026-09-01T04:06:11.963Z",
+      "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "kms/automatic-key-rotation",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "automatic key rotation",
+  "serviceId": "kms",
+  "summary": "By default, when you enable automatic key rotation for a KMS key, AWS KMS generates new cryptographic material for the KMS key every year.",
+  "tier": "tier1"
+}

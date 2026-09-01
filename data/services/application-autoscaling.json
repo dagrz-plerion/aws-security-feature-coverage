@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "6000aea3e14bbc241e30619e3ff625e9c350aae5acebe7b15bfc145d29b95dea",
+      "locator": "application-autoscaling.json .Name",
+      "quote": "application-autoscaling",
+      "retrievedAt": "2026-09-01T03:57:42.617Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/application-autoscaling/application-autoscaling.json"
+    },
+    {
+      "bodySha256": "93c76bef2905fc06a3194f1899f913d89c7365c40f2b91befcd40b60d1aac260",
+      "locator": "regional services table",
+      "quote": "AWS Application Auto Scaling",
+      "retrievedAt": "2026-09-01T03:58:10.266Z",
+      "sourceUrl": "https://api.regional-table.region-services.aws.a2z.com/index.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "application-autoscaling",
+  "signals": [],
+  "tier": "not-security"
+}

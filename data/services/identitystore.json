@@ -1,0 +1,33 @@
+{
+  "candidate": true,
+  "confidence": 0.85,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "fbb14245e33e72a636168c53b27d03f0584314991f14a5a2a2950edd309b98c8",
+      "locator": "identitystore.json .Name",
+      "quote": "identitystore",
+      "retrievedAt": "2026-09-01T03:57:52.151Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/identitystore/identitystore.json"
+    },
+    {
+      "bodySha256": "50cd5bd6b3d3dddb925eb5af0d3b9037e48d5e2128544be26a649fbcfc41c042",
+      "locator": "https://docs.aws.amazon.com/general/latest/gr/sso.html service endpoints",
+      "quote": "| US East (Ohio) | us-east-2 |  sso.us-east-2.amazonaws.com <br /> sso-fips.us-east-2.api.aws <br /> sso.us-east-2.api.aws  | HTTPS<br />HTTPS<br />HTTPS |",
+      "retrievedAt": "2026-09-01T03:59:36.115Z",
+      "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/sso.md"
+    }
+  ],
+  "method": "llm",
+  "reason": "The IAM Identity Center identity store holds users and groups for AWS access. It is an identity service.",
+  "score": 5,
+  "serviceId": "identitystore",
+  "signals": [
+    {
+      "detail": "The name contains \"identity center\".",
+      "id": "security-name-strong",
+      "weight": 5
+    }
+  ],
+  "tier": "tier1"
+}

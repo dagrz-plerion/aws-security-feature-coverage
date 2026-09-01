@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/medialive/latest/ug/purpose-input-security-groups.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "582b80be02492a396a7f7cccd2123a678b041c4edeff4852d24c037fed43e748",
+      "locator": "Working with resources > Input security groups",
+      "quote": "[Purpose of an input security group](https://docs.aws.amazon.com/medialive/latest/ug/purpose-input-security-groups.md)",
+      "retrievedAt": "2026-09-01T04:06:13.203Z",
+      "sourceUrl": "https://docs.aws.amazon.com/medialive/latest/ug/llms.txt"
+    }
+  ],
+  "id": "medialive/purpose-of-an-input-security-group",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "Purpose of an input security group",
+  "serviceId": "medialive",
+  "summary": "In MediaLive, input security groups are used with specific push inputs where the upstream system for the source is on the public internet:",
+  "tier": "tier2"
+}

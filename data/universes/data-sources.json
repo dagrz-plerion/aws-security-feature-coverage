@@ -1,0 +1,491 @@
+{
+  "count": 23,
+  "dataSources": [
+    {
+      "aliases": [
+        "cloudtrail management event logs",
+        "aws cloudtrail management events"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "cloudtrail-management-events\tCloudTrail management events",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "cloudtrail-management-events",
+      "kind": "log",
+      "name": "CloudTrail management events",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "cloudtrail s3 data event logs",
+        "s3 data events",
+        "data events"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "cloudtrail-data-events\tCloudTrail data events",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "cloudtrail-data-events",
+      "kind": "log",
+      "name": "CloudTrail data events",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "network activity events"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "cloudtrail-network-activity-events\tCloudTrail network activity events",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "cloudtrail-network-activity-events",
+      "kind": "log",
+      "name": "CloudTrail network activity events",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "vpc flow logs",
+        "flow logs"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "vpc-flow-logs\tVPC Flow Logs",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "vpc-flow-logs",
+      "kind": "log",
+      "name": "VPC Flow Logs",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "dns logs",
+        "dns query logs",
+        "resolver query logs"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "dns-logs\tRoute 53 Resolver DNS query logs",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "dns-logs",
+      "kind": "log",
+      "name": "Route 53 Resolver DNS query logs",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "kubernetes audit logs",
+        "eks audit logs"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "eks-audit-logs\tEKS audit logs",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "eks-audit-logs",
+      "kind": "log",
+      "name": "EKS audit logs",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "rds login events",
+        "rds login activity monitoring"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "rds-login-events\tRDS login activity",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "rds-login-events",
+      "kind": "log",
+      "name": "RDS login activity",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "lambda network logs",
+        "lambda network activity monitoring"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "lambda-network-logs\tLambda network activity logs",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "lambda-network-logs",
+      "kind": "log",
+      "name": "Lambda network activity logs",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "s3 objects",
+        "objects in s3 buckets"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "s3-object-contents\tS3 object contents",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "s3-object-contents",
+      "kind": "content",
+      "name": "S3 object contents",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "ebs volumes",
+        "ebs volume data",
+        "ebs snapshots"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "ebs-volume-data\tEBS volume data",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "ebs-volume-data",
+      "kind": "snapshot",
+      "name": "EBS volume data",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "ec2 runtime monitoring",
+        "guardduty agent for ec2"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "runtime-agent-ec2\tRuntime agent on EC2",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "runtime-agent-ec2",
+      "kind": "agent",
+      "name": "Runtime agent on EC2",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "eks runtime monitoring",
+        "eks add-on agent"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "runtime-agent-eks\tRuntime agent on EKS",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "runtime-agent-eks",
+      "kind": "agent",
+      "name": "Runtime agent on EKS",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "ecs runtime monitoring",
+        "fargate runtime monitoring"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "runtime-agent-ecs\tRuntime agent on ECS and Fargate",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "runtime-agent-ecs",
+      "kind": "agent",
+      "name": "Runtime agent on ECS and Fargate",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "systems manager agent",
+        "ssm agent"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "ssm-agent\tSSM Agent inventory",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "ssm-agent",
+      "kind": "agent",
+      "name": "SSM Agent inventory",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "ecr images",
+        "container images"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "container-image-layers\tContainer image layers",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "container-image-layers",
+      "kind": "content",
+      "name": "Container image layers",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "lambda code scanning",
+        "function code"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "lambda-code\tLambda function code",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "lambda-code",
+      "kind": "content",
+      "name": "Lambda function code",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "configuration items",
+        "config recorder"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "config-configuration-items\tConfig configuration items",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "config-configuration-items",
+      "kind": "telemetry",
+      "name": "Config configuration items",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "resource based policies",
+        "resource policies"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "resource-policies\tResource-based policies",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "resource-policies",
+      "kind": "api",
+      "name": "Resource-based policies",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "iam policies",
+        "identity based policies"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "identity-policies\tIdentity policies",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "identity-policies",
+      "kind": "api",
+      "name": "Identity policies",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "network traffic",
+        "packet inspection"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "network-traffic\tIn-line network traffic",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "network-traffic",
+      "kind": "telemetry",
+      "name": "In-line network traffic",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "web requests",
+        "http requests"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "http-requests\tHTTP requests at the edge",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "http-requests",
+      "kind": "telemetry",
+      "name": "HTTP requests at the edge",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "operating system packages",
+        "os packages"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "os-package-inventory\tOperating system package inventory",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "os-package-inventory",
+      "kind": "platform",
+      "name": "Operating system package inventory",
+      "seenIn": [
+        "seed"
+      ]
+    },
+    {
+      "aliases": [
+        "programming language packages",
+        "application packages"
+      ],
+      "evidence": [
+        {
+          "bodySha256": "150fa025293cf6b6f893098c79c24ee23d6886140330d1e50475b879ef1b4b06",
+          "locator": "seed list, extended by Stage 4",
+          "quote": "application-package-inventory\tApplication dependency inventory",
+          "retrievedAt": "2026-09-01T04:41:02.574Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html"
+        }
+      ],
+      "id": "application-package-inventory",
+      "kind": "ecosystem",
+      "name": "Application dependency inventory",
+      "seenIn": [
+        "seed"
+      ]
+    }
+  ],
+  "generatedAt": "2026-09-01T04:41:02.574Z"
+}

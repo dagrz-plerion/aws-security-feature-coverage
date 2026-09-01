@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/eks/latest/userguide/using-service-linked-roles-eks.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "daa7d251c6281e980634dbc5c455c8ed531244295a5db277294b4f9769077fda",
+      "locator": "Security > Service-linked roles",
+      "quote": "[Cluster role](https://docs.aws.amazon.com/eks/latest/userguide/using-service-linked-roles-eks.md)",
+      "retrievedAt": "2026-09-01T04:06:07.864Z",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "eks/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Service-linked roles",
+  "serviceId": "eks",
+  "summary": "How to use service-linked roles to give Amazon EKS access to resources in your AWS account.",
+  "tier": "tier2"
+}

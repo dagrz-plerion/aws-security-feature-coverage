@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/origin-certificate-management-certificate-manager.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "003b337f8a5250f1d9decebbc697cae0335f9bb3910a2f27bc79c44f4da7c313",
+      "locator": "Configure secure access and restrict access to content > Origin mutual TLS with CloudFront",
+      "quote": "[Certificate management with AWS Certificate Manager](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/origin-certificate-management-certificate-manager.md)",
+      "retrievedAt": "2026-09-01T04:06:01.059Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/llms.txt"
+    }
+  ],
+  "id": "acm/origin-mutual-tls-with-cloudfront",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "Origin mutual TLS with CloudFront",
+  "serviceId": "acm",
+  "summary": "AWS Certificate Manager (ACM) stores the client certificates that CloudFront presents to your origin servers during origin mutual TLS authentication.",
+  "tier": "tier1"
+}

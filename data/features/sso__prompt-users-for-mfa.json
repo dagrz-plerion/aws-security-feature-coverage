@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/singlesignon/latest/userguide/mfa-getting-started.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5e339cfafb670f842f8888bdbf08877a16d942765c442220072f6d7917172f94",
+      "locator": "Workforce access > Configure MFA",
+      "quote": "[Prompt users for MFA](https://docs.aws.amazon.com/singlesignon/latest/userguide/mfa-getting-started.md)",
+      "retrievedAt": "2026-09-01T04:06:18.788Z",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "sso/prompt-users-for-mfa",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Prompt users for MFA",
+  "serviceId": "sso",
+  "summary": "Enable and disable MFA in IAM Identity Center for enhanced security in AWS accounts",
+  "tier": "tier1"
+}

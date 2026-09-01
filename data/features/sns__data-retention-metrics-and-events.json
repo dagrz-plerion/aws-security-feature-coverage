@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/wickr/latest/adminguide/sns-events.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "0d52f2a082e54b6c45160fb12b6126343dab7f2773c80feea4411dbee58fcc89",
+      "locator": "Manage network > Data retention metrics and events",
+      "quote": "[Amazon SNS events for your Wickr network](https://docs.aws.amazon.com/wickr/latest/adminguide/sns-events.md)",
+      "retrievedAt": "2026-09-01T04:06:20.346Z",
+      "sourceUrl": "https://docs.aws.amazon.com/wickr/latest/adminguide/llms.txt"
+    }
+  ],
+  "id": "sns/data-retention-metrics-and-events",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Data retention metrics and events",
+  "serviceId": "sns",
+  "summary": "The following events are posted to the Amazon SNS topic defined by the Amazon Resource Name (ARN) value identified using the WICKRIO_SNS_TOPIC_ARN environment variable or the sns_topic_arn Secrets Manager secret value.",
+  "tier": "tier2"
+}

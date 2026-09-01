@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Source.Encrypt.RDS.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "aafe4a17f6c0d6d4612cd67c188c4032894082531b0854edaeebabe1c2ecabe3",
+      "locator": "Connecting to source databases",
+      "quote": "[Connecting to encrypted Amazon RDS and and Aurora](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Source.Encrypt.RDS.md)",
+      "retrievedAt": "2026-09-01T04:06:01.975Z",
+      "sourceUrl": "https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "rds/connecting-to-source-databases",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Connecting to source databases",
+  "serviceId": "rds",
+  "summary": "This section explains how to connect the AWS Schema Conversion Tool to encrypted Amazon Relational Database Service and Amazon Aurora including configuring SSL/TLS connections and managing encryption keys for secure data transfer during the migration process..",
+  "tier": "tier2"
+}

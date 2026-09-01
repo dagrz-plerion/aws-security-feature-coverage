@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-tutorial-update-patch-golden-ami.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "08e1cef5478bbbe3ddf01ef5adad6aa9a90cec3c725d3e86ea1da0ec73ca4e8f",
+      "locator": "Using AWS Systems Manager tools > Updating AMIs",
+      "quote": "[Update a golden AMI using Automation, AWS Lambda, and Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-tutorial-update-patch-golden-ami.md)",
+      "retrievedAt": "2026-09-01T04:06:19.398Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "lambda/updating-amis",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Updating AMIs",
+  "serviceId": "lambda",
+  "summary": "Automatically apply operating system patches to a Windows AMI that is already considered to be the most up-to-date AMI.",
+  "tier": "tier2"
+}

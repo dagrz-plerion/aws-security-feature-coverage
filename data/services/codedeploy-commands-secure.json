@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "575091f35a08e4f74d25f97ad467e3b319baeab90d70de3b8d794a28094aad52",
+      "locator": "codedeploy-commands-secure.json .Name",
+      "quote": "codedeploy-commands-secure",
+      "retrievedAt": "2026-09-01T03:57:46.097Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/codedeploy-commands-secure/codedeploy-commands-secure.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "codedeploy-commands-secure",
+  "signals": [],
+  "tier": "not-security"
+}

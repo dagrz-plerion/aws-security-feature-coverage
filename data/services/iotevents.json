@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "d4676d3f023e080eae2eee4e2e029be5be96840eecdab2a93ca351d948ce11bb",
+      "locator": "iotevents.json .Name",
+      "quote": "iotevents",
+      "retrievedAt": "2026-09-01T03:57:52.967Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/iotevents/iotevents.json"
+    },
+    {
+      "bodySha256": "34ce17faff84f2e6f197c1266ef9030194eb61677cafeeb28e8ec8b8a4a710d9",
+      "locator": "aws-products directory item",
+      "quote": "AWS IoT Events",
+      "retrievedAt": "2026-09-01T03:58:07.905Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=2&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "iotevents",
+  "signals": [],
+  "tier": "not-security"
+}

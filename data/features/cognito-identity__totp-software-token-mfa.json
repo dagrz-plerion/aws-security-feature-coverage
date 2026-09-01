@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-mfa-totp.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "373f31a56031ece0ad054997a91a0752467e68c744b48b89c61a4c0405016c75",
+      "locator": "Amazon Cognito user pools > Adding MFA",
+      "quote": "[TOTP software token MFA](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-mfa-totp.md)",
+      "retrievedAt": "2026-09-01T04:06:05.789Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "cognito-identity/totp-software-token-mfa",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "TOTP software token MFA",
+  "serviceId": "cognito-identity",
+  "summary": "Activate TOTP software token MFA.",
+  "tier": "tier2"
+}

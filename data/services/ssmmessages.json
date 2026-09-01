@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "70153f5cef3311c5d6ccccdc3181e087ed5a3f1e6eacba218fa1434c9b34aab0",
+      "locator": "ssmmessages.json .Name",
+      "quote": "ssmmessages",
+      "retrievedAt": "2026-09-01T03:58:02.645Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/ssmmessages/ssmmessages.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "ssmmessages",
+  "signals": [],
+  "tier": "not-security"
+}

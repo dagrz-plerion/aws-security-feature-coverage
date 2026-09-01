@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "7034b66c085cc4d35718450300d2bb9f4690266d9e936e85137c2b8bb76154ae",
+          "locator": "https://docs.aws.amazon.com/eks/latest/userguide/sec-group-reqs.md ::  | column \"Destination\"",
+          "quote": "| Outbound | TCP | 443 | Cluster security group |",
+          "retrievedAt": "2026-09-01T04:29:24.659Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/sec-group-reqs.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "eks/security-group-requirements",
+      "id": "eks-security-group-requirements-resourcetype-aws-redshift-clustersecuritygroup-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Redshift::ClusterSecurityGroup",
+      "targetLabel": "Cluster security group"
+    }
+  ],
+  "featureId": "eks/security-group-requirements",
+  "generatedAt": "2026-09-01T04:41:17.395Z",
+  "serviceId": "eks",
+  "unresolvedTargets": []
+}

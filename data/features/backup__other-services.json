@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/eks/latest/userguide/integration-backup.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "daa7d251c6281e980634dbc5c455c8ed531244295a5db277294b4f9769077fda",
+      "locator": "Working with other services",
+      "quote": "[AWS Backup](https://docs.aws.amazon.com/eks/latest/userguide/integration-backup.md)",
+      "retrievedAt": "2026-09-01T04:06:07.864Z",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "backup/other-services",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "other services",
+  "serviceId": "backup",
+  "summary": "AWS Backup supports backups of Amazon EKS clusters, including Kubernetes cluster state and persistent storage attached to the EKS cluster via a persistent volume claim (EBS volumes, EFS file systems, and S3 buckets).",
+  "tier": "tier2"
+}

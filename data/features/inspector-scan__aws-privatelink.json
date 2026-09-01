@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/inspector/latest/user/vpc-interface-endpoints-inspector.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "3e681a82cacd536a27bde003d52a48bb9fb7ffb120da2d2e8f742672389902ff",
+      "locator": "Security > Monitoring Amazon Inspector",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/inspector/latest/user/vpc-interface-endpoints-inspector.md)",
+      "retrievedAt": "2026-09-01T04:06:10.920Z",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/llms.txt"
+    }
+  ],
+  "id": "inspector-scan/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "inspector-scan",
+  "summary": "You can use an AWS PrivateLink to create a private connection between your VPC and Amazon Inspector.",
+  "tier": "tier1"
+}

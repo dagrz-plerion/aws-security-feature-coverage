@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/appstream2/latest/developerguide/FIPS-for-administrative-use.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "7f2eb1a588759a457bea8e1ef21603eb6790ef5eead596155dee75e039baadda",
+      "locator": "Security > FIPS Endpoints",
+      "quote": "[FIPS Endpoints for Administrative Use](https://docs.aws.amazon.com/appstream2/latest/developerguide/FIPS-for-administrative-use.md)",
+      "retrievedAt": "2026-09-01T04:06:03.094Z",
+      "sourceUrl": "https://docs.aws.amazon.com/appstream2/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "workspaces/fips-endpoints-for-administrative-use",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "FIPS Endpoints for Administrative Use",
+  "serviceId": "workspaces",
+  "summary": "To specify a FIPS endpoint when you run an AWS CLI command for WorkSpaces Applications, use the endpoint-url parameter.",
+  "tier": "tier2"
+}

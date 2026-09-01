@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "647e42cd53ba31746d438489345338ab5968e7eb4a8b3d29145d0a17d1512021",
+      "locator": "Security > Identity-based policies for AWS Security Incident Response",
+      "quote": "[Using service-linked roles](https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md)",
+      "retrievedAt": "2026-09-01T04:06:18.185Z",
+      "sourceUrl": "https://docs.aws.amazon.com/security-ir/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "security-ir/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "security-ir",
+  "summary": "Learn about using service-linked roles.",
+  "tier": "tier1"
+}

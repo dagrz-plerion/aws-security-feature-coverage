@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/efs/latest/ug/manage-fs-access-update-mount-target-config-sg.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "89f34b9c5e8f4bef5e83eb0347330728204d47c522c8fe7b90610e6e48bb2db7",
+      "locator": "Managing file systems > Managing mount targets",
+      "quote": "[Changing mount target security groups](https://docs.aws.amazon.com/efs/latest/ug/manage-fs-access-update-mount-target-config-sg.md)",
+      "retrievedAt": "2026-09-01T04:06:07.786Z",
+      "sourceUrl": "https://docs.aws.amazon.com/efs/latest/ug/llms.txt"
+    }
+  ],
+  "id": "elasticfilesystem/changing-mount-target-security-groups",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "Changing mount target security groups",
+  "serviceId": "elasticfilesystem",
+  "summary": "Security groups define inbound and outbound access.",
+  "tier": "tier2"
+}

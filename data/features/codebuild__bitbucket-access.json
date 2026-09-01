@@ -1,0 +1,25 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/codebuild/latest/userguide/connections-bitbucket-app.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5cf4aa94bbe779ec0a9a9b846acf6a3efbd905bdd9f0801ff46950dcf21a5786",
+      "locator": "Security > Bitbucket access",
+      "quote": "[Bitbucket App connections](https://docs.aws.amazon.com/codebuild/latest/userguide/connections-bitbucket-app.md)",
+      "retrievedAt": "2026-09-01T04:06:05.355Z",
+      "sourceUrl": "https://docs.aws.amazon.com/codebuild/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "codebuild/bitbucket-access",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Bitbucket access",
+  "serviceId": "codebuild",
+  "tier": "tier2"
+}

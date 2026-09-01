@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-non-root-behavior.md",
+    "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-analyze-ebs-resource-usage.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "e8920401360814f75558084d9a8d532cb690ae882f7b0b55c7379f24767f87bf",
+      "locator": "Task definitions > Amazon EBS",
+      "quote": "[Non-root user behavior](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-non-root-behavior.md)",
+      "retrievedAt": "2026-09-01T04:06:01.290Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "4f64722f627b4b796720af8a22bd6fc7e276b528c3cb721e9bab48cf80f4e8b5",
+      "locator": "Automation Runbook Reference > Amazon EBS",
+      "quote": "[AWSSupport-AnalyzeEBSResourceUsage](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-analyze-ebs-resource-usage.md)",
+      "retrievedAt": "2026-09-01T04:06:19.357Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ec2/amazon-ebs",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon EBS",
+  "serviceId": "ec2",
+  "summary": "When you specify a non-root user in your container definition, Amazon ECS automatically configures the Amazon EBS volume with group-based permissions that allow the specified user to read and write to the volume.",
+  "tier": "tier2"
+}

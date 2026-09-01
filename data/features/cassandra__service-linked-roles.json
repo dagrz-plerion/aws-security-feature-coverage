@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/keyspaces/latest/devguide/using-service-linked-roles-app-auto-scaling.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "3358290af0b8294352c5967decdead86ba985abaf246cc0e175e3e29115d4370",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Application auto scaling](https://docs.aws.amazon.com/keyspaces/latest/devguide/using-service-linked-roles-app-auto-scaling.md)",
+      "retrievedAt": "2026-09-01T04:06:11.793Z",
+      "sourceUrl": "https://docs.aws.amazon.com/keyspaces/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "cassandra/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "cassandra",
+  "summary": "How to use service-linked roles to give Amazon Keyspaces access to resources in your AWS account.",
+  "tier": "tier2"
+}

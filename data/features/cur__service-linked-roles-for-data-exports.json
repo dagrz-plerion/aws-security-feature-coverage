@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cost-management/latest/userguide/data-exports-SLR.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "be45950af4d485153461e94fb2e377e738a4e46e1913a7381c1d3e10cef4aec7",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Service-linked roles for Data Exports](https://docs.aws.amazon.com/cost-management/latest/userguide/data-exports-SLR.md)",
+      "retrievedAt": "2026-09-01T04:06:06.486Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cost-management/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cur/service-linked-roles-for-data-exports",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Service-linked roles for Data Exports",
+  "serviceId": "cur",
+  "summary": "Data Exports uses AWS Identity and Access Management (IAM) service-linked roles.",
+  "tier": "tier2"
+}

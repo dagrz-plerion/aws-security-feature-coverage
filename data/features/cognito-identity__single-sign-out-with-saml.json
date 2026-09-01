@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-saml-idp-sign-out.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "373f31a56031ece0ad054997a91a0752467e68c744b48b89c61a4c0405016c75",
+      "locator": "Amazon Cognito user pools > SAML providers",
+      "quote": "[Single sign-out with SAML](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-saml-idp-sign-out.md)",
+      "retrievedAt": "2026-09-01T04:06:05.789Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "cognito-identity/single-sign-out-with-saml",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Single sign-out with SAML",
+  "serviceId": "cognito-identity",
+  "summary": "User pools can send a single logout (SLO) request when users want to sign out of your application.",
+  "tier": "tier2"
+}

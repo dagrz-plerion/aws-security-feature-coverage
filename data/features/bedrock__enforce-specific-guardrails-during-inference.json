@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-permissions-id.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ceb0365a55aa0d587356fabcbd2130c8a84b24251a466d0b789f744fd7458b74",
+      "locator": "Security, Guardrails, and Observability > Set up permissions",
+      "quote": "[Enforce specific guardrails during inference](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-permissions-id.md)",
+      "retrievedAt": "2026-09-01T04:06:04.269Z",
+      "sourceUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "bedrock/enforce-specific-guardrails-during-inference",
+  "kind": "control-set",
+  "method": "deterministic",
+  "name": "Enforce specific guardrails during inference",
+  "serviceId": "bedrock",
+  "summary": "You can enforce the use of a specific guardrail for model inference by including the bedrock:GuardrailIdentifier condition key in your IAM policy.",
+  "tier": "tier2"
+}

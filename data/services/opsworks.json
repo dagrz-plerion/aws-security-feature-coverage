@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "335434424f4f584a18adcacd0801a89962abf9a14b2ac0b5757fe6edee724764",
+      "locator": "opsworks.json .Name",
+      "quote": "opsworks",
+      "retrievedAt": "2026-09-01T03:57:57.241Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/opsworks/opsworks.json"
+    },
+    {
+      "bodySha256": "34ce17faff84f2e6f197c1266ef9030194eb61677cafeeb28e8ec8b8a4a710d9",
+      "locator": "aws-products directory item",
+      "quote": "AWS OpsWorks",
+      "retrievedAt": "2026-09-01T03:58:07.905Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=2&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: permission-management-actions). Scanned at low priority. Promoted to tier 2: 1 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "opsworks",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

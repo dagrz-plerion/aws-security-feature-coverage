@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/kms/latest/developerguide/rotating-keys-on-demand.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "0ba3e6f8bc82eaecae04851380ae183a4d968bbb98ce29dec74d9b204f1ef846",
+      "locator": "Rotate keys",
+      "quote": "[Perform on-demand key rotation](https://docs.aws.amazon.com/kms/latest/developerguide/rotating-keys-on-demand.md)",
+      "retrievedAt": "2026-09-01T04:06:11.963Z",
+      "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "kms/perform-on-demand-key-rotation",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Perform on-demand key rotation",
+  "serviceId": "kms",
+  "summary": "You can perform on-demand rotation of the key material in customer managed KMS keys, regardless of whether or not automatic key rotation is enabled.",
+  "tier": "tier1"
+}

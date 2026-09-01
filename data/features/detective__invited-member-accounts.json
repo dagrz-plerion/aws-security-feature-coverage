@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "guide-subchapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/detective/latest/userguide/accounts-invited-members-add-individual.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b4e540d07d68924645799f11c8ab8d109107ec8b22413b786007b49d3c2f1c4f",
+      "locator": "Managing accounts > Managing invited member accounts",
+      "quote": "[Inviting individual accounts to a behavior graph](https://docs.aws.amazon.com/detective/latest/userguide/accounts-invited-members-add-individual.md)",
+      "retrievedAt": "2026-09-01T04:06:06.948Z",
+      "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "detective/invited-member-accounts",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "invited member accounts",
+  "serviceId": "detective",
+  "summary": "You can manually specify the member accounts to invite to contribute their data to a behavior graph.",
+  "tier": "tier1"
+}

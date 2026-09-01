@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/memorydb/latest/devguide/memorydb-privatelink.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "7b2b06b4778b369411ccaa88919c29f527b20dd81679c0ddcb34751770858337",
+      "locator": "Security > Subnets and subnet groups",
+      "quote": "[MemoryDB API and interface VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/memorydb/latest/devguide/memorydb-privatelink.md)",
+      "retrievedAt": "2026-09-01T04:06:13.430Z",
+      "sourceUrl": "https://docs.aws.amazon.com/memorydb/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "memorydb/memorydb-api-and-interface-vpc-endpoints-aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "MemoryDB API and interface VPC endpoints (AWS PrivateLink)",
+  "serviceId": "memorydb",
+  "summary": "You can establish a private connection between your VPC and MemoryDB API endpoints by creating an interface VPC endpoint.",
+  "tier": "tier2"
+}

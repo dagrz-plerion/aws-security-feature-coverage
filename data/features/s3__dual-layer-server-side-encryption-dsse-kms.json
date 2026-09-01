@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-dsse-encryption.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Security > Dual-layer server-side encryption (DSSE-KMS)",
+      "quote": "[Specifying DSSE-KMS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-dsse-encryption.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "s3/dual-layer-server-side-encryption-dsse-kms",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Dual-layer server-side encryption (DSSE-KMS)",
+  "serviceId": "s3",
+  "summary": "Learn how to add dual-layer server-side encryption to an Amazon S3 object.",
+  "tier": "tier2"
+}

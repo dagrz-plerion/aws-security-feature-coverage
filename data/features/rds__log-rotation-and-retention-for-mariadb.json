@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MariaDB.LogFileSize.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "a6652b8041761406ae90ef56f105e72901bda456025f1da24fbe0f9c188e9f82",
+      "locator": "Monitoring events, logs, and database activity streams > MariaDB database log files",
+      "quote": "[Log rotation and retention for MariaDB](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.MariaDB.LogFileSize.md)",
+      "retrievedAt": "2026-09-01T04:06:01.518Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/llms.txt"
+    }
+  ],
+  "id": "rds/log-rotation-and-retention-for-mariadb",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "Log rotation and retention for MariaDB",
+  "serviceId": "rds",
+  "summary": "Learn how Amazon RDS rotates and retains logs for RDS for MariaDB databases to maintain storage thresholds.",
+  "tier": "tier2"
+}

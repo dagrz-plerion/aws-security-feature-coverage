@@ -1,0 +1,34 @@
+{
+  "candidate": false,
+  "confidence": 0.2,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "4eec68c5e5c08809807aa6189ab0620a4357343e61cdd748f774606ff0f324a1",
+      "locator": "aws-products directory item",
+      "quote": "AWS Wavelength",
+      "retrievedAt": "2026-09-01T03:58:08.144Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=3&item.locale=en_US"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide wavelength/latest/developerguide",
+      "quote": "AWS Wavelength Developer Guide",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "This entry did not join to an AWS service id, so it is held for alias review rather than classified.",
+  "score": 1,
+  "serviceId": "product:aws-wavelength",
+  "signals": [
+    {
+      "detail": "2 documentation pages describe security capability, for example \"Resilience\".",
+      "id": "security-doc-pages",
+      "weight": 1
+    }
+  ],
+  "synthetic": true,
+  "tier": "not-security"
+}

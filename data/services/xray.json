@@ -1,0 +1,38 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "ba5f0838306d77cf6404ce284006c2e56f8df74ac10d8e7038b614812d7c9a23",
+      "locator": "xray.json .Name",
+      "quote": "xray",
+      "retrievedAt": "2026-09-01T03:58:05.732Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/xray/xray.json"
+    },
+    {
+      "bodySha256": "4eec68c5e5c08809807aa6189ab0620a4357343e61cdd748f774606ff0f324a1",
+      "locator": "aws-products directory item",
+      "quote": "AWS X-Ray",
+      "retrievedAt": "2026-09-01T03:58:08.144Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=3&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Security signals present (score 4: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given.",
+  "score": 4,
+  "serviceId": "xray",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    },
+    {
+      "detail": "10 documentation pages describe security capability, for example \"Data protection\".",
+      "id": "security-doc-pages",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

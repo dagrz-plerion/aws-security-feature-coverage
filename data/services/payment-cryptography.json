@@ -1,0 +1,43 @@
+{
+  "candidate": true,
+  "confidence": 0.85,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "377a357ac4a769c10d48986e031bc89a3ac73025ea46e55c998004c135aa932b",
+      "locator": "payment-cryptography.json .Name",
+      "quote": "payment-cryptography",
+      "retrievedAt": "2026-09-01T03:57:57.592Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/payment-cryptography/payment-cryptography.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide payment-cryptography/latest/APIReference",
+      "quote": "AWS Payment Cryptography Control Plane API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "llm",
+  "reason": "AWS Payment Cryptography performs payment key management and cryptographic operations.",
+  "score": 9,
+  "serviceId": "payment-cryptography",
+  "signals": [
+    {
+      "detail": "The name contains \"payment cryptography\".",
+      "id": "security-name-strong",
+      "weight": 5
+    },
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    },
+    {
+      "detail": "8 documentation pages describe security capability, for example \"Data protection\".",
+      "id": "security-doc-pages",
+      "weight": 2
+    }
+  ],
+  "tier": "tier1"
+}

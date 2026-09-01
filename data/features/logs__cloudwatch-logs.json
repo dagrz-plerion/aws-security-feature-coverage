@@ -1,0 +1,67 @@
+{
+  "aliases": [
+    "Amazon CloudWatch Logs",
+    "using CloudWatch Logs",
+    "with CloudWatch Logs"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/batch/latest/userguide/cwl_iam_policy.md",
+    "https://docs.aws.amazon.com/chatbot/latest/adminguide/cloudwatch-logs.md",
+    "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.envhealth.md",
+    "https://docs.aws.amazon.com/entityresolution/latest/userguide/cloudwatch-logs.md",
+    "https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/logging-cw.md",
+    "https://docs.aws.amazon.com/iot-wireless/latest/developerguide/cwl-format.md",
+    "https://docs.aws.amazon.com/medialive/latest/ug/monitoring-logs-about.md",
+    "https://docs.aws.amazon.com/prometheus/latest/userguide/CW-logs.md",
+    "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/viewing-CloudWatch-logs.md",
+    "https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/viewing-CloudWatch-logs.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "8b58f2ac330581bae573dd4a27cba59797b4e0b846a41a9323bfab11bd56acc5",
+      "locator": "Monitor AWS Batch > CloudWatch Logs",
+      "quote": "[Tutorial: Add a CloudWatch Logs IAM policy](https://docs.aws.amazon.com/batch/latest/userguide/cwl_iam_policy.md)",
+      "retrievedAt": "2026-09-01T04:06:04.224Z",
+      "sourceUrl": "https://docs.aws.amazon.com/batch/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "96d5696eafeda228779b9b421f0dd710ee156362c794dcbfda2d1cc702f3c528",
+      "locator": "Monitoring > Monitoring Amazon Q Developer in chat applications",
+      "quote": "[CloudWatch Logs](https://docs.aws.amazon.com/chatbot/latest/adminguide/cloudwatch-logs.md)",
+      "retrievedAt": "2026-09-01T04:06:04.511Z",
+      "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/llms.txt"
+    },
+    {
+      "bodySha256": "79d80bc8923df8eb5c8b48968ea8f1e34df0066563a1235f6f5a0abd157bd60f",
+      "locator": "Working with AWS services > Amazon CloudWatch Logs",
+      "quote": "[Viewing CloudWatch log groups and log streams](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/viewing-CloudWatch-logs.md)",
+      "retrievedAt": "2026-09-01T04:06:19.598Z",
+      "sourceUrl": "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "0665cafeee178d2b6e1148304c90267ea1d7234f929c3095e0ce43905e035ec5",
+      "locator": "Working with AWS > Amazon CloudWatch Logs",
+      "quote": "[Viewing CloudWatch log groups and log streams](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/viewing-CloudWatch-logs.md)",
+      "retrievedAt": "2026-09-01T04:06:19.601Z",
+      "sourceUrl": "https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "106a2bb833633da9096cc4076ba40e7e82f6128a8ed64a5f15962696afcb4a72",
+      "locator": "Integrating AWS services > CloudWatch Logs",
+      "quote": "[Streaming environment health](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.envhealth.md)",
+      "retrievedAt": "2026-09-01T04:06:07.968Z",
+      "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/llms.txt"
+    }
+  ],
+  "id": "logs/cloudwatch-logs",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "CloudWatch Logs",
+  "serviceId": "logs",
+  "summary": "Before your jobs can send log data and detailed metrics to CloudWatch Logs, you must create an IAM policy that uses the CloudWatch Logs APIs.",
+  "tier": "tier2"
+}

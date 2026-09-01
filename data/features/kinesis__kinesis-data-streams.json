@@ -1,0 +1,44 @@
+{
+  "aliases": [
+    "Amazon Kinesis Data Streams"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds_gettingstarted.md",
+    "https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-create.md",
+    "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/aws-enablekinesisstreamencryption.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "65fa952f72247c64dd874c79b751a9fb873b2554b92a36037f197c6343deb650",
+      "locator": "Working with DynamoDB > Working with Kinesis Data Streams",
+      "quote": "[Getting started](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds_gettingstarted.md)",
+      "retrievedAt": "2026-09-01T04:06:02.421Z",
+      "sourceUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "b4d6919bcd713363111e214cae12b44ec4d662ff421caa86ebbd82eb2595f32a",
+      "locator": "Functions > Kinesis Data Streams",
+      "quote": "[Create mapping](https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-create.md)",
+      "retrievedAt": "2026-09-01T04:06:12.065Z",
+      "sourceUrl": "https://docs.aws.amazon.com/lambda/latest/dg/llms.txt"
+    },
+    {
+      "bodySha256": "4f64722f627b4b796720af8a22bd6fc7e276b528c3cb721e9bab48cf80f4e8b5",
+      "locator": "Automation Runbook Reference > Amazon Kinesis Data Streams",
+      "quote": "[AWS-EnableKinesisStreamEncryption](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/aws-enablekinesisstreamencryption.md)",
+      "retrievedAt": "2026-09-01T04:06:19.357Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "kinesis/kinesis-data-streams",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Kinesis Data Streams",
+  "serviceId": "kinesis",
+  "summary": "Learn how to capture data changes in DynamoDB table items using Kinesis Data Streams.",
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/macie/latest/user/allow-lists-delete.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b0c7ddf7411249e915067439ba54eca7e3f97b07297d1da0b5fd3ccc4140b0f1",
+      "locator": "Discovering sensitive data > Defining sensitive data exceptions with allow lists",
+      "quote": "[Deleting an allow list](https://docs.aws.amazon.com/macie/latest/user/allow-lists-delete.md)",
+      "retrievedAt": "2026-09-01T04:06:12.700Z",
+      "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/llms.txt"
+    }
+  ],
+  "id": "macie2/deleting-an-allow-list",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Deleting an allow list",
+  "serviceId": "macie2",
+  "summary": "Learn how to delete an allow list that defines text or a text pattern for Amazon Macie to ignore when inspecting Amazon S3 objects for sensitive data.",
+  "tier": "tier1"
+}

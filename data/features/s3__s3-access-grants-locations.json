@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-location-register.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Access control > Working with S3 Access Grants locations",
+      "quote": "[Register a location](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-location-register.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "s3/s3-access-grants-locations",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "S3 Access Grants locations",
+  "serviceId": "s3",
+  "summary": "Learn how to register an Amazon S3 location path with an associated AWS Identity and Access Management (IAM) role, so that S3 Access Grants can assume this role to manage access to this location.",
+  "tier": "tier2"
+}

@@ -1,0 +1,34 @@
+{
+  "candidate": false,
+  "confidence": 0.2,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide sdk-for-java/latest/developer-guide",
+      "quote": "AWS SDK for Java 2.x Developer Guide for version 2.x",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide sdk-for-java/v1/developer-guide",
+      "quote": "AWS SDK for Java 1.x Developer Guide for version 1.x",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "This entry did not join to an AWS service id, so it is held for alias review rather than classified.",
+  "score": 3,
+  "serviceId": "doc:sdk-for-java",
+  "signals": [
+    {
+      "detail": "25 documentation pages describe security capability, for example \"Default credentials provider chain\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "synthetic": true,
+  "tier": "not-security"
+}

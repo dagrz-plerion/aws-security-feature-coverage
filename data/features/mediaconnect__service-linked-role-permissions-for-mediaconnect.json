@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/mediaconnect/latest/ug/slr-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "74ec9896f35e67906bb1764d48a1bbf617ffae194550947b12df571bbed4c8f1",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Service-linked role permissions for MediaConnect](https://docs.aws.amazon.com/mediaconnect/latest/ug/slr-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:13.148Z",
+      "sourceUrl": "https://docs.aws.amazon.com/mediaconnect/latest/ug/llms.txt"
+    }
+  ],
+  "id": "mediaconnect/service-linked-role-permissions-for-mediaconnect",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Service-linked role permissions for MediaConnect",
+  "serviceId": "mediaconnect",
+  "summary": "MediaConnect uses the service-linked role named AWSServiceRoleForMediaConnect.",
+  "tier": "tier2"
+}

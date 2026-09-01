@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "1d20bff0ab9791a12083b86b86fb1702608b948e25d81014ddd044d63a6bd50c",
+      "locator": "airflow.json .Name",
+      "quote": "airflow",
+      "retrievedAt": "2026-09-01T03:57:41.941Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/airflow/airflow.json"
+    },
+    {
+      "bodySha256": "f8cc3b8015cdbcd2f27d589972bd64fab954f8cf14ae451713f7a7ee191a2887",
+      "locator": "https://docs.aws.amazon.com/general/latest/gr/mwaa.html service endpoints",
+      "quote": "| US East (Ohio) | us-east-2 |  api.airflow.us-east-2.amazonaws.com <br /> env.airflow.us-east-2.api.aws <br /> ops.airflow.us-east-2.amazonaws.com <br /> api.airflow.us-east-2.api.aws <br /> env.airflow-fips.us-east-2.api.aws <br /> env.airflow-fips.us-east-2.amazonaws.com <br /> api.airflow-fips.us-east-2.api.aws <br /> api.airflow-fips.us-east-2.amazonaws.com <br /> env.airflow.us-east-2.amazonaws.com  | HTTPS<br />HTTPS<br />HTTPS<br />HTTPS<br />HTTPS<br />HTTPS<br />HTTPS<br />HTTPS<br />HTTPS |",
+      "retrievedAt": "2026-09-01T03:59:37.098Z",
+      "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/mwaa.md"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "airflow",
+  "signals": [],
+  "tier": "not-security"
+}

@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-metrics-dimensions.md",
+    "https://docs.aws.amazon.com/timestream/latest/developerguide/metrics-dimensions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Working with Amazon S3 Tables and table buckets > Monitoring metrics with Amazon CloudWatch",
+      "quote": "[Metrics and dimensions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-metrics-dimensions.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "f0872098a2365fa136b183fa7982d6d32f37e85506c7f91e7a1f1775cf6e959b",
+      "locator": "Amazon Timestream for LiveAnalytics > Monitoring with Amazon CloudWatch",
+      "quote": "[Metrics and dimensions](https://docs.aws.amazon.com/timestream/latest/developerguide/metrics-dimensions.md)",
+      "retrievedAt": "2026-09-01T04:06:19.449Z",
+      "sourceUrl": "https://docs.aws.amazon.com/timestream/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "cloudwatch/metrics-and-dimensions",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Metrics and dimensions",
+  "serviceId": "cloudwatch",
+  "summary": "Discover the metrics and dimensions available for tables and table buckets in CloudWatch",
+  "tier": "tier2"
+}

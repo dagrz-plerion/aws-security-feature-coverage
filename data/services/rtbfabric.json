@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "7a5f01f2afebd637d74d8beea33685c4540c822d38f68a7ba27e69d614cf42b5",
+      "locator": "rtbfabric.json .Name",
+      "quote": "rtbfabric",
+      "retrievedAt": "2026-09-01T03:58:00.247Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/rtbfabric/rtbfabric.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide rtb-fabric/latest/api",
+      "quote": "AWS RTB Fabric API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 1 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "rtbfabric",
+  "signals": [
+    {
+      "detail": "7 documentation pages describe security capability, for example \"How RTB Fabric works with IAM\".",
+      "id": "security-doc-pages",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/ebs/latest/userguide/encryption-by-default.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "f62461adf29d3ded7b4b5de353f9320d8559f6aea466d5dba22afe08f9d74faa",
+      "locator": "EBS encryption",
+      "quote": "[Enable encryption by default](https://docs.aws.amazon.com/ebs/latest/userguide/encryption-by-default.md)",
+      "retrievedAt": "2026-09-01T04:06:07.692Z",
+      "sourceUrl": "https://docs.aws.amazon.com/ebs/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ec2/encryption-by-default",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "encryption by default",
+  "serviceId": "ec2",
+  "summary": "Enable or disable Amazon EBS encryption by default for EBS resources in a specific Region.",
+  "tier": "tier2"
+}

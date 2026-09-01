@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "09dae225b6b711c053d8bf0af0304c20e0677c5e57535e214cce6c8b300eb08e",
+      "locator": "Security > Key pairs",
+      "quote": "[Create a key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.md)",
+      "retrievedAt": "2026-09-01T04:06:00.831Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/llms.txt"
+    }
+  ],
+  "id": "ec2/key-pairs",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Key pairs",
+  "serviceId": "ec2",
+  "summary": "Learn how to create key pairs using Amazon EC2 or a third-party tool.",
+  "tier": "tier2"
+}

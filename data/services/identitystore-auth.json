@@ -1,0 +1,26 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "c353da17a879f19c24eaac62cc3965765997ea4065c3942363c8a72864d23f37",
+      "locator": "identitystore-auth.json .Name",
+      "quote": "identitystore-auth",
+      "retrievedAt": "2026-09-01T03:57:52.174Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/identitystore-auth/identitystore-auth.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "identitystore-auth",
+  "signals": [
+    {
+      "detail": "The name contains \"auth\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

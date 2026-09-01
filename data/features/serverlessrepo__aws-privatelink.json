@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "d97c8ea5b0d42315eba691d7980da769a2b6a188d4e3535aedb11025e9bbe796",
+      "locator": "Security > Logging and Monitoring",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/serverlessrepo/latest/devguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:18.401Z",
+      "sourceUrl": "https://docs.aws.amazon.com/serverlessrepo/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "serverlessrepo/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "serverlessrepo",
+  "summary": "You can use an AWS PrivateLink to create a private connection between your VPC and AWS Serverless Application Repository.",
+  "tier": "tier2"
+}

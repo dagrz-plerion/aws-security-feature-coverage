@@ -1,0 +1,33 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "65f2d621790bed373e09fddb055abc5351dfad4bd0ea441e9db7de981dbf873a",
+      "locator": "opensearch.json .Name",
+      "quote": "opensearch",
+      "retrievedAt": "2026-09-01T03:57:57.209Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/opensearch/opensearch.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide reference-architecture-diagrams/latest/opensearch-trending-queries",
+      "quote": "Amazon OpenSearch Trending Queries with AWS Glue and Amazon Bedrock Architecture Diagrams",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: permission-management-actions). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "opensearch",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

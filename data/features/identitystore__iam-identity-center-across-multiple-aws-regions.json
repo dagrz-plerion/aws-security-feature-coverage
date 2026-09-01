@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/singlesignon/latest/userguide/replicate-to-additional-region.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5e339cfafb670f842f8888bdbf08877a16d942765c442220072f6d7917172f94",
+      "locator": "Using IAM Identity Center across multiple AWS Regions",
+      "quote": "[Replicate IAM Identity Center to an additional Region](https://docs.aws.amazon.com/singlesignon/latest/userguide/replicate-to-additional-region.md)",
+      "retrievedAt": "2026-09-01T04:06:18.788Z",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "identitystore/iam-identity-center-across-multiple-aws-regions",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "IAM Identity Center across multiple AWS Regions",
+  "serviceId": "identitystore",
+  "summary": "If your environment meets the prerequisites, such as configuring IAM Identity Center with a multi-Region customer managed KMS key, complete the following steps to replicate your IAM Identity Center instance to an additional Region.",
+  "tier": "tier1"
+}

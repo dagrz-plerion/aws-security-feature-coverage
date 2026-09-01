@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "guide-subchapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/security-lake/latest/userguide/update-role-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "9bb27a8de3b567f546c664f09ed29b51544a1769d5aec4d0d8e19e25a9199172",
+      "locator": "Source management > Collecting data from AWS services",
+      "quote": "[Updating role permissions](https://docs.aws.amazon.com/security-lake/latest/userguide/update-role-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:18.243Z",
+      "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "securitylake/collecting-data-from-aws-services",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Collecting data from AWS services",
+  "serviceId": "securitylake",
+  "summary": "If you don't have the required role permissions or resources—new AWS Lambda function and Amazon Simple Queue Service (Amazon SQS) queue—to ingest data from a new version of the data source, you must update your AmazonSecurityLakeMetaStoreManagerV2 role permissions and create a new set of resources to process data from your sources.",
+  "tier": "tier1"
+}

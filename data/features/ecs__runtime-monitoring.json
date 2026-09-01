@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/guardduty/latest/ug/how-runtime-monitoring-works-ecs-fargate.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "3ddece1bd1b140842141362e4adea0c0415850ead561cd1a6797e3bac48bc3fc",
+      "locator": "Runtime Monitoring > How it works",
+      "quote": "[With Fargate (Amazon ECS only)](https://docs.aws.amazon.com/guardduty/latest/ug/how-runtime-monitoring-works-ecs-fargate.md)",
+      "retrievedAt": "2026-09-01T04:06:10.249Z",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/llms.txt"
+    }
+  ],
+  "id": "ecs/runtime-monitoring",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "Runtime Monitoring",
+  "serviceId": "ecs",
+  "summary": "When you enable Runtime Monitoring, GuardDuty becomes ready to consume the runtime events from a task.",
+  "tier": "tier2"
+}

@@ -1,0 +1,33 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "8813bf8ef694cb4477ec6f17c83988d47248d066a15f0a40ee0773238d3e182f",
+      "locator": "arc-zonal-shift.json .Name",
+      "quote": "arc-zonal-shift",
+      "retrievedAt": "2026-09-01T03:57:43.297Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/arc-zonal-shift/arc-zonal-shift.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide arc-zonal-shift/latest/api",
+      "quote": "Amazon Application Recovery Controller API Reference Guide for Zonal Shift and Zonal Autoshift",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "arc-zonal-shift",
+  "signals": [
+    {
+      "detail": "The name contains \"control\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

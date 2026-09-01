@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-transition-to-orgs.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
+      "locator": "AWS Security Hub CSPM > Managing accounts by invitation",
+      "quote": "[Transitioning to AWS Organizations](https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-transition-to-orgs.md)",
+      "retrievedAt": "2026-09-01T04:06:18.321Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "organizations/accounts-by-invitation",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "accounts by invitation",
+  "serviceId": "organizations",
+  "summary": "Learn how to change from manual account management in AWS Security Hub CSPM to account management that uses AWS Organizations.",
+  "tier": "tier2"
+}

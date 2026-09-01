@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "bff15e3f309942f39e8118b170c2d31f7873087f3e3cb0636d11191e7b6c0ef6",
+      "locator": "networkmanager.json .Name",
+      "quote": "networkmanager",
+      "retrievedAt": "2026-09-01T03:57:56.566Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/networkmanager/networkmanager.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide network-manager/latest/cloudwan",
+      "quote": "AWS Network Manager AWS Cloud WAN User Guide",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: permission-management-actions). Scanned at low priority. Promoted to tier 2: 2 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "networkmanager",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

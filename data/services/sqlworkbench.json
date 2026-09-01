@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "3440368bfef6683cde84899f227eb7fbea19b9792c90b64d44892229ae0b7f9a",
+      "locator": "sqlworkbench.json .Name",
+      "quote": "sqlworkbench",
+      "retrievedAt": "2026-09-01T03:58:02.335Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/sqlworkbench/sqlworkbench.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "sqlworkbench",
+  "signals": [],
+  "tier": "not-security"
+}

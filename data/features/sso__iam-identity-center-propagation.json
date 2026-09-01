@@ -1,0 +1,25 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/redshift/latest/dg/federated-permisisons-offboarding-deregister-catalog.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "9f1279fbac1bc82beb08fc6034a65e3c6d164b5ad2075f64f28718f9b8493f3e",
+      "locator": "Federated permissions > Disabling IAM Identity Center propagation",
+      "quote": "[Deregister from AWS Glue Data Catalog](https://docs.aws.amazon.com/redshift/latest/dg/federated-permisisons-offboarding-deregister-catalog.md)",
+      "retrievedAt": "2026-09-01T04:06:16.074Z",
+      "sourceUrl": "https://docs.aws.amazon.com/redshift/latest/dg/llms.txt"
+    }
+  ],
+  "id": "sso/iam-identity-center-propagation",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "IAM Identity Center propagation",
+  "serviceId": "sso",
+  "tier": "tier1"
+}

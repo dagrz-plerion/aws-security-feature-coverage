@@ -1,0 +1,50 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/rds-external-defaultvpc.md",
+    "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/rds-mysql.md",
+    "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/create-encrypted-rds-snapshot.md",
+    "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/rds-access-prerequisities.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "79d80bc8923df8eb5c8b48968ea8f1e34df0066563a1235f6f5a0abd157bd60f",
+      "locator": "Working with AWS services > Amazon RDS",
+      "quote": "[Prerequisites for accessing Amazon RDS databases](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/rds-access-prerequisities.md)",
+      "retrievedAt": "2026-09-01T04:06:19.598Z",
+      "sourceUrl": "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "106a2bb833633da9096cc4076ba40e7e82f6128a8ed64a5f15962696afcb4a72",
+      "locator": "Integrating AWS services > Amazon RDS",
+      "quote": "[Amazon RDS in default VPC](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/rds-external-defaultvpc.md)",
+      "retrievedAt": "2026-09-01T04:06:07.968Z",
+      "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/llms.txt"
+    },
+    {
+      "bodySha256": "fe513c5ff926e7b5855e8be27732077db798c7e8cae22b85b23c61fe302d8392",
+      "locator": "Amazon OpenSearch Ingestion > Amazon RDS",
+      "quote": "[RDS for MySQL](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/rds-mysql.md)",
+      "retrievedAt": "2026-09-01T04:06:14.653Z",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "4f64722f627b4b796720af8a22bd6fc7e276b528c3cb721e9bab48cf80f4e8b5",
+      "locator": "Automation Runbook Reference > Amazon RDS",
+      "quote": "[AWS-CreateEncryptedRdsSnapshot](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/create-encrypted-rds-snapshot.md)",
+      "retrievedAt": "2026-09-01T04:06:19.357Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "rds/amazon-rds",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon RDS",
+  "serviceId": "rds",
+  "summary": "Before you can connect to an Amazon RDS database using AWS Toolkit for JetBrains, you need to complete the following tasks:",
+  "tier": "tier2"
+}

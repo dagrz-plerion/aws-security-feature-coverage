@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "c3c0a3cd2bfb19c5489ad46251ea07a7328f239a0bdaf5ad919d4262cf1972b0",
+      "locator": "aws-marketplace-management.json .Name",
+      "quote": "aws-marketplace-management",
+      "retrievedAt": "2026-09-01T03:57:43.584Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/aws-marketplace-management/aws-marketplace-management.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "aws-marketplace-management",
+  "signals": [],
+  "tier": "not-security"
+}

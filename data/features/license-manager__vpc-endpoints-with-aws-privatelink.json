@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/license-manager/latest/userguide/interface-vpc-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "d68ab7178ee006ca5f728ba4c0e6f48ecb8c485de964b0fbe48f41e1fc312394",
+      "locator": "Security > Service-linked roles",
+      "quote": "[VPC endpoints with AWS PrivateLink](https://docs.aws.amazon.com/license-manager/latest/userguide/interface-vpc-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:12.280Z",
+      "sourceUrl": "https://docs.aws.amazon.com/license-manager/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "license-manager/vpc-endpoints-with-aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "VPC endpoints with AWS PrivateLink",
+  "serviceId": "license-manager",
+  "summary": "Access AWS License Manager from your VPC without sending traffic over the internet by creating an interface VPC endpoint powered by AWS PrivateLink.",
+  "tier": "tier2"
+}

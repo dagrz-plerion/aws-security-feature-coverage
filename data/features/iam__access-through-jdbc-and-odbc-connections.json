@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/athena/latest/ug/policy-actions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "baac4979e3329df2b3d5b05e1169bcb2776243e0450182873d78fbc2228be215",
+      "locator": "Use Athena SQL > Identity and access management",
+      "quote": "[Access through JDBC and ODBC connections](https://docs.aws.amazon.com/athena/latest/ug/policy-actions.md)",
+      "retrievedAt": "2026-09-01T04:06:03.348Z",
+      "sourceUrl": "https://docs.aws.amazon.com/athena/latest/ug/llms.txt"
+    }
+  ],
+  "id": "iam/access-through-jdbc-and-odbc-connections",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Access through JDBC and ODBC connections",
+  "serviceId": "iam",
+  "summary": "To gain access to AWS services and resources, such as Athena and the Amazon S3 buckets, provide the JDBC or ODBC driver credentials to your application.",
+  "tier": "tier1"
+}

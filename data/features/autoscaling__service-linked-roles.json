@@ -1,0 +1,54 @@
+{
+  "aliases": [
+    "Service-linked roles"
+  ],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md",
+    "https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-service-linked-role.md",
+    "https://docs.aws.amazon.com/autoscaling/plans/userguide/aws-auto-scaling-service-linked-roles.md",
+    "https://docs.aws.amazon.com/keyspaces/latest/devguide/using-service-linked-roles-app-auto-scaling.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "d9936368da1d4fd7fa178a5336f4187a6cacc426e07609ff07e4587c2287c2c4",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[Service-linked roles](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md)",
+      "retrievedAt": "2026-09-01T04:06:03.506Z",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "ae89d4739697837c28d4c614a2fbd3f3c30150022e5ffbf094f61494a5f5a8d6",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[Service-linked roles](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-service-linked-role.md)",
+      "retrievedAt": "2026-09-01T04:06:03.507Z",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "f2800dc974468a498ac299236370c1dbefc016a45f1c0229da730bff82f9b989",
+      "locator": "Security > Identity and access management",
+      "quote": "[Service-linked roles](https://docs.aws.amazon.com/autoscaling/plans/userguide/aws-auto-scaling-service-linked-roles.md)",
+      "retrievedAt": "2026-09-01T04:06:03.567Z",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/plans/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "3358290af0b8294352c5967decdead86ba985abaf246cc0e175e3e29115d4370",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Application auto scaling](https://docs.aws.amazon.com/keyspaces/latest/devguide/using-service-linked-roles-app-auto-scaling.md)",
+      "retrievedAt": "2026-09-01T04:06:11.793Z",
+      "sourceUrl": "https://docs.aws.amazon.com/keyspaces/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "autoscaling/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "autoscaling",
+  "summary": "Learn about service-linked roles in Application Auto Scaling and how they provide secure, managed permissions for interacting with other AWS services on your behalf.",
+  "tier": "tier2"
+}

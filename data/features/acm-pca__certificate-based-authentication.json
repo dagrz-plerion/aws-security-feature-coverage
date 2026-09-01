@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/appstream2/latest/developerguide/certificate-based-authentication-manage-CA.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "7f2eb1a588759a457bea8e1ef21603eb6790ef5eead596155dee75e039baadda",
+      "locator": "Using Active Directory > Manage Certificate-based Authentication",
+      "quote": "[Private CA Certificate](https://docs.aws.amazon.com/appstream2/latest/developerguide/certificate-based-authentication-manage-CA.md)",
+      "retrievedAt": "2026-09-01T04:06:03.094Z",
+      "sourceUrl": "https://docs.aws.amazon.com/appstream2/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "acm-pca/certificate-based-authentication",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Certificate-based Authentication",
+  "serviceId": "acm-pca",
+  "summary": "In a typical configuration, the private CA certificate has a validity period of 10 years.",
+  "tier": "tier1"
+}

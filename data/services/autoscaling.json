@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "995caf26e92ec86f5f3d9f62ea0c09f25b28a1bf2d6af2b2fec262a099129e5e",
+      "locator": "autoscaling.json .Name",
+      "quote": "autoscaling",
+      "retrievedAt": "2026-09-01T03:57:43.324Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/autoscaling/autoscaling.json"
+    },
+    {
+      "bodySha256": "dba2dd6d1282362ee8c86c7c13df4a190f1d205f28fc70d504e5da33f17cc340",
+      "locator": "aws-products directory item",
+      "quote": "AWS Auto Scaling",
+      "retrievedAt": "2026-09-01T03:58:07.224Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=1&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 44 named security features were found in its documentation.",
+  "score": 3,
+  "serviceId": "autoscaling",
+  "signals": [
+    {
+      "detail": "31 documentation pages describe security capability, for example \"Data protection\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

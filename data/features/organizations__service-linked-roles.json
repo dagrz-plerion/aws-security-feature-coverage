@@ -1,0 +1,36 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/notifications/latest/userguide/slr-call-services.md",
+    "https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen-org-slrs.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "cf46a5071ad19b987c8eae2bdeae9c66b3ea65b9e9a264f0fb2281f99a37597b",
+      "locator": "Security > Using Service-Linked Roles",
+      "quote": "[Service-linked role for calling AWS services, publishing metrics, and using AWS Organizations](https://docs.aws.amazon.com/notifications/latest/userguide/slr-call-services.md)",
+      "retrievedAt": "2026-09-01T04:06:14.316Z",
+      "sourceUrl": "https://docs.aws.amazon.com/notifications/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "0450800325ae92c20b74997c608130edcb1194d81136d7a79ae6f814e4610f9e",
+      "locator": "Next generation Resilience Hub > AWS Organizations integration",
+      "quote": "[Service-Linked Roles](https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen-org-slrs.md)",
+      "retrievedAt": "2026-09-01T04:06:17.150Z",
+      "sourceUrl": "https://docs.aws.amazon.com/resilience-hub/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "organizations/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Service-Linked Roles",
+  "serviceId": "organizations",
+  "summary": "User Notifications uses the service-linked role named AWSServiceRoleForAWSUserNotifications.",
+  "tier": "tier2"
+}

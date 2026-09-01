@@ -1,0 +1,18 @@
+{
+  "candidate": true,
+  "confidence": 0.85,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [],
+  "method": "llm",
+  "reason": "The data plane of AWS Payment Cryptography, which performs the cryptographic operations.",
+  "score": 5,
+  "serviceId": "dataplane.payment-cryptography",
+  "signals": [
+    {
+      "detail": "The name contains \"payment cryptography\".",
+      "id": "security-name-strong",
+      "weight": 5
+    }
+  ],
+  "tier": "tier1"
+}

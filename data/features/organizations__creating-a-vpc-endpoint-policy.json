@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/organizations/latest/userguide/create-vpc-endpoint-policy.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "baa4ec799d67dcdaf1483e278d642bc114fd38431155b4667e3ce008b0d145af",
+      "locator": "Security > AWS PrivateLink",
+      "quote": "[Creating a VPC endpoint policy](https://docs.aws.amazon.com/organizations/latest/userguide/create-vpc-endpoint-policy.md)",
+      "retrievedAt": "2026-09-01T04:06:14.665Z",
+      "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "organizations/creating-a-vpc-endpoint-policy",
+  "kind": "policy-type",
+  "method": "deterministic",
+  "name": "Creating a VPC endpoint policy",
+  "serviceId": "organizations",
+  "summary": "You can attach an endpoint policy to your VPC endpoint that controls access to Organizations.",
+  "tier": "tier2"
+}

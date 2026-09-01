@@ -1,0 +1,34 @@
+{
+  "candidate": false,
+  "confidence": 0.2,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide reference-architecture-diagrams/latest/42q-cloud-mes",
+      "quote": "42Q Cloud MES on AWS Architecture diagrams for manufacturing",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide reference-architecture-diagrams/latest/account-security-data-platform",
+      "quote": "Account and Security Strategy for the Serverless Data Platform Architecture diagrams for travel",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "This entry did not join to an AWS service id, so it is held for alias review rather than classified.",
+  "score": 5,
+  "serviceId": "doc:reference-architecture-diagrams",
+  "signals": [
+    {
+      "detail": "The name contains \"security\".",
+      "id": "security-name-strong",
+      "weight": 5
+    }
+  ],
+  "synthetic": true,
+  "tier": "not-security"
+}

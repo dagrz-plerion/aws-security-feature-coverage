@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/waf/latest/developerguide/waf-api-sdk.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "c4a1d08847c7d6491c1b218f6b7cf6a57f3d182e5e3184ef264649d65abf4a84",
+      "locator": "Using the AWS WAF and AWS Shield Advanced API",
+      "quote": "[Using the AWS SDKs](https://docs.aws.amazon.com/waf/latest/developerguide/waf-api-sdk.md)",
+      "retrievedAt": "2026-09-01T04:06:20.284Z",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "shield/aws-waf-and-aws-shield-advanced-api",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "AWS WAF and AWS Shield Advanced API",
+  "serviceId": "shield",
+  "summary": "If you use a language that AWS provides an SDK for, use the SDK rather than trying to work your way through the APIs.",
+  "tier": "tier1"
+}

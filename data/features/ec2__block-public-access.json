@@ -1,0 +1,42 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/ebs/latest/userguide/block-public-access-snapshots-disable.md",
+    "https://docs.aws.amazon.com/ebs/latest/userguide/block-public-access-snapshots-enable.md",
+    "https://docs.aws.amazon.com/ebs/latest/userguide/block-public-access-snapshots-events.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "f62461adf29d3ded7b4b5de353f9320d8559f6aea466d5dba22afe08f9d74faa",
+      "locator": "EBS snapshots > Block public access for snapshots",
+      "quote": "[Configure block public access](https://docs.aws.amazon.com/ebs/latest/userguide/block-public-access-snapshots-enable.md)",
+      "retrievedAt": "2026-09-01T04:06:07.692Z",
+      "sourceUrl": "https://docs.aws.amazon.com/ebs/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "f62461adf29d3ded7b4b5de353f9320d8559f6aea466d5dba22afe08f9d74faa",
+      "locator": "EBS snapshots > Block public access for snapshots",
+      "quote": "[Disable block public access](https://docs.aws.amazon.com/ebs/latest/userguide/block-public-access-snapshots-disable.md)",
+      "retrievedAt": "2026-09-01T04:06:07.692Z",
+      "sourceUrl": "https://docs.aws.amazon.com/ebs/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "f62461adf29d3ded7b4b5de353f9320d8559f6aea466d5dba22afe08f9d74faa",
+      "locator": "EBS snapshots > Block public access for snapshots",
+      "quote": "[Monitor block public access](https://docs.aws.amazon.com/ebs/latest/userguide/block-public-access-snapshots-events.md)",
+      "retrievedAt": "2026-09-01T04:06:07.692Z",
+      "sourceUrl": "https://docs.aws.amazon.com/ebs/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ec2/block-public-access",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "block public access",
+  "serviceId": "ec2",
+  "summary": "Enable block public access for Amazon EBS snapshots to prevent public sharing.",
+  "tier": "tier2"
+}

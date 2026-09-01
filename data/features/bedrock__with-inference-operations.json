@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-tagging.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ceb0365a55aa0d587356fabcbd2130c8a84b24251a466d0b789f744fd7458b74",
+      "locator": "Security, Guardrails, and Observability > Use with inference operations",
+      "quote": "[Apply tags to user input](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-tagging.md)",
+      "retrievedAt": "2026-09-01T04:06:04.269Z",
+      "sourceUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "bedrock/with-inference-operations",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "with inference operations",
+  "serviceId": "bedrock",
+  "summary": "Input tags allow you to mark specific content within the input text that you want to be processed by guardrails.",
+  "tier": "tier2"
+}

@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "9dc82026e94578069560545cbcbde250628d150d8ce0c83c69739615ffda9fe6",
+      "locator": "application-transformation.json .Name",
+      "quote": "application-transformation",
+      "retrievedAt": "2026-09-01T03:57:42.636Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/application-transformation/application-transformation.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "application-transformation",
+  "signals": [],
+  "tier": "not-security"
+}

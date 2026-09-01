@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/efs/latest/ug/access-points-iam-policy.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "89f34b9c5e8f4bef5e83eb0347330728204d47c522c8fe7b90610e6e48bb2db7",
+      "locator": "Securing your data > Working with access points",
+      "quote": "[Using access points in IAM policies](https://docs.aws.amazon.com/efs/latest/ug/access-points-iam-policy.md)",
+      "retrievedAt": "2026-09-01T04:06:07.786Z",
+      "sourceUrl": "https://docs.aws.amazon.com/efs/latest/ug/llms.txt"
+    }
+  ],
+  "id": "elasticfilesystem/access-points-in-iam-policies",
+  "kind": "policy-type",
+  "method": "deterministic",
+  "name": "access points in IAM policies",
+  "serviceId": "elasticfilesystem",
+  "summary": "Use an IAM policy to enforce that a specific NFS client can only access a specific access point.",
+  "tier": "tier2"
+}

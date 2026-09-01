@@ -1,0 +1,35 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instance-task-scale-in-protection-endpoint.md",
+    "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-scale-in-protection-endpoint.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "e8920401360814f75558084d9a8d532cb690ae882f7b0b55c7379f24767f87bf",
+      "locator": "Clusters > Task scale-in protection",
+      "quote": "[Task scale-in protection endpoint](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instance-task-scale-in-protection-endpoint.md)",
+      "retrievedAt": "2026-09-01T04:06:01.290Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "e8920401360814f75558084d9a8d532cb690ae882f7b0b55c7379f24767f87bf",
+      "locator": "Schedule your containers > Task scale-in protection",
+      "quote": "[Task scale-in protection endpoint](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-scale-in-protection-endpoint.md)",
+      "retrievedAt": "2026-09-01T04:06:01.290Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "ecs/task-scale-in-protection",
+  "kind": "protection-plan",
+  "method": "deterministic",
+  "name": "Task scale-in protection",
+  "serviceId": "ecs",
+  "summary": "Learn about the Amazon ECS task scale-in protection endpoint request and response parameters.",
+  "tier": "tier2"
+}

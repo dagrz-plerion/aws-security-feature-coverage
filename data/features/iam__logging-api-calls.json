@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/sh-securityhub-ct.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
+      "locator": "AWS Security Hub > Identity and access management",
+      "quote": "[Logging API calls](https://docs.aws.amazon.com/securityhub/latest/userguide/sh-securityhub-ct.md)",
+      "retrievedAt": "2026-09-01T04:06:18.321Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "iam/logging-api-calls",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "Logging API calls",
+  "serviceId": "iam",
+  "summary": "Monitor API calls by using AWS CloudTrail log entries and events that provide records of actions taken by users, roles, and other AWS services.",
+  "tier": "tier1"
+}

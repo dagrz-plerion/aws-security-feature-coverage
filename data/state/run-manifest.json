@@ -1,0 +1,110 @@
+{
+  "fetch": {
+    "cacheHit": 6574,
+    "failed": 5,
+    "network": 0,
+    "revalidated": 0
+  },
+  "finishedAt": "2026-09-01T04:41:17.854Z",
+  "stages": [
+    {
+      "counts": {
+        "actions": 21810,
+        "dataSources": 23,
+        "docGuides": 1236,
+        "iamPrefixedServices": 526,
+        "partitions": 8,
+        "products": 358,
+        "regions": 46,
+        "resourceTypes": 3134,
+        "services": 692
+      },
+      "finishedAt": "2026-09-01T04:41:02.575Z",
+      "id": "stage1-universes",
+      "notes": [
+        "1312 service reference resources joined to an existing resource type"
+      ],
+      "startedAt": "2026-09-01T04:40:16.166Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "failed": 29,
+        "guides": 1236,
+        "indexed": 1207,
+        "pages": 103576
+      },
+      "finishedAt": "2026-09-01T04:41:03.236Z",
+      "id": "stage2-doc-pages",
+      "startedAt": "2026-09-01T04:41:02.577Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "adjudicated": 692,
+        "candidates": 309,
+        "notSecurity": 383,
+        "overridesApplied": 33,
+        "pendingJudgement": 49,
+        "prunedStaleRecords": 0,
+        "sraMatched": 31,
+        "synthetic": 166,
+        "tier1": 45,
+        "tier2": 13
+      },
+      "finishedAt": "2026-09-01T04:41:03.983Z",
+      "id": "stage3-discovery",
+      "notes": [
+        "49 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, directconnect, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier"
+      ],
+      "startedAt": "2026-09-01T04:41:03.237Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "aliasesApplied": 11,
+        "aliasesUnmatched": 2,
+        "features": 4796,
+        "noFeatureFound": 53,
+        "promotedToTier2": 205,
+        "prunedStaleRecords": 0,
+        "scanned": 309,
+        "servicesWithFeatures": 256
+      },
+      "finishedAt": "2026-09-01T04:41:09.164Z",
+      "id": "stage4-features",
+      "startedAt": "2026-09-01T04:41:03.983Z",
+      "status": "ok"
+    },
+    {
+      "counts": {
+        "claims": 6294,
+        "conflicts": 0,
+        "covered": 6294,
+        "featuresWithCoverage": 52,
+        "notCovered": 0,
+        "pagesConsidered": 4602,
+        "pagesFailed": 1,
+        "pagesRead": 69,
+        "prunedStaleRecords": 0,
+        "unattachedPages": 178,
+        "unresolvedTargets": 218
+      },
+      "finishedAt": "2026-09-01T04:41:17.437Z",
+      "id": "stage5-coverage",
+      "startedAt": "2026-09-01T04:41:09.164Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "features": 4793,
+        "services": 263
+      },
+      "finishedAt": "2026-09-01T04:41:17.854Z",
+      "id": "report",
+      "startedAt": "2026-09-01T04:41:17.438Z",
+      "status": "ok"
+    }
+  ],
+  "startedAt": "2026-09-01T04:40:16.164Z"
+}

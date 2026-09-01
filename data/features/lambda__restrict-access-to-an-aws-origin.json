@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-lambda.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "003b337f8a5250f1d9decebbc697cae0335f9bb3910a2f27bc79c44f4da7c313",
+      "locator": "Configure secure access and restrict access to content > Restrict access to an AWS origin",
+      "quote": "[Restrict access to an AWS Lambda function URL origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-lambda.md)",
+      "retrievedAt": "2026-09-01T04:06:01.059Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/llms.txt"
+    }
+  ],
+  "id": "lambda/restrict-access-to-an-aws-origin",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Restrict access to an AWS origin",
+  "serviceId": "lambda",
+  "summary": "Restrict access to an AWS Lambda function URL with Amazon CloudFront origin access control (OAC).",
+  "tier": "tier2"
+}

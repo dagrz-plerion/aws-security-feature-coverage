@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/aws-backup/latest/devguide/vault-lock.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "689be80af9ff3cc12dc19fbdffc6f84d0738780e47720ed540244828e9692f24",
+      "locator": "Backup vaults > Multi-party approval for logically air-gapped vaults",
+      "quote": "[Vault Lock](https://docs.aws.amazon.com/aws-backup/latest/devguide/vault-lock.md)",
+      "retrievedAt": "2026-09-01T04:06:03.549Z",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "backup/vault-lock",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Vault Lock",
+  "serviceId": "backup",
+  "summary": "A vault lock set in compliance or governance mode can add additional security to your vault and the backups within it.",
+  "tier": "tier2"
+}

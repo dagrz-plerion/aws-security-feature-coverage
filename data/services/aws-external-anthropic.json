@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "eb6986da0919466b50f47c86222a10384c77e0beead2865c470991c7680a8264",
+      "locator": "aws-external-anthropic.json .Name",
+      "quote": "aws-external-anthropic",
+      "retrievedAt": "2026-09-01T03:57:43.357Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/aws-external-anthropic/aws-external-anthropic.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "aws-external-anthropic",
+  "signals": [],
+  "tier": "not-security"
+}

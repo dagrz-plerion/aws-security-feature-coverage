@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-dns-firewall-vpc-configuration.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "24d4c43a6666ecbcdf8d5ff41b357f5f44fc5b21fcea0293f82e7f5bf4ee0a46",
+      "locator": "Resolver DNS Firewall > Enabling DNS Firewall protections for your VPC",
+      "quote": "[DNS Firewall VPC configuration](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-dns-firewall-vpc-configuration.md)",
+      "retrievedAt": "2026-09-01T04:06:01.984Z",
+      "sourceUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/llms.txt"
+    }
+  ],
+  "id": "route53/dns-firewall-vpc-configuration",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "DNS Firewall VPC configuration",
+  "serviceId": "route53",
+  "summary": "The DNS Firewall configuration for your VPC determines whether Route 53 VPC Resolver allows queries through or blocks them during failures, for example when DNS Firewall is impaired, unresponsive, or not available in the zone.",
+  "tier": "tier2"
+}

@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "0ba3e6f8bc82eaecae04851380ae183a4d968bbb98ce29dec74d9b204f1ef846",
+      "locator": "KMS key access and permissions > Attribute-based access control (ABAC)",
+      "quote": "[Cross-account access](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.md)",
+      "retrievedAt": "2026-09-01T04:06:11.963Z",
+      "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "account-access/attribute-based-access-control-abac",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Attribute-based access control (ABAC)",
+  "serviceId": "account-access",
+  "summary": "You can allow users or roles in a different AWS account to use a KMS key in your account.",
+  "tier": "tier2"
+}

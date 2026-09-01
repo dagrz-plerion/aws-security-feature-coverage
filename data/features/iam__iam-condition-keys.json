@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/artifact/latest/ug/using-condition-keys.md",
+    "https://docs.aws.amazon.com/transfer/latest/userguide/transfer-condition-keys.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ac73dcb3984e195b4c6f90a44522c06f266c94dba6ea33a073839bd640a17cf4",
+      "locator": "Identity and access management",
+      "quote": "[Using IAM condition keys](https://docs.aws.amazon.com/artifact/latest/ug/using-condition-keys.md)",
+      "retrievedAt": "2026-09-01T04:06:03.289Z",
+      "sourceUrl": "https://docs.aws.amazon.com/artifact/latest/ug/llms.txt"
+    },
+    {
+      "bodySha256": "f7ab53309516e56fad0e5fc4320f63f688e45e112ff7ef9a1621fa10f7dd3dea",
+      "locator": "Security > Identity and access management",
+      "quote": "[IAM condition keys](https://docs.aws.amazon.com/transfer/latest/userguide/transfer-condition-keys.md)",
+      "retrievedAt": "2026-09-01T04:06:19.678Z",
+      "sourceUrl": "https://docs.aws.amazon.com/transfer/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "iam/iam-condition-keys",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "IAM condition keys",
+  "serviceId": "iam",
+  "summary": "You can use IAM condition keys to provide fine-grained access to reports on AWS Artifact, based on specific report categories and series.",
+  "tier": "tier1"
+}

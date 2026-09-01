@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-pool-deletion-protection.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "9a409ee75a215a6c2767022d2e458119ba626bb528cf3426066fd3d32074a397",
+      "locator": "Phone pools",
+      "quote": "[Using phone pool deletion protection](https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-pool-deletion-protection.md)",
+      "retrievedAt": "2026-09-01T04:06:18.903Z",
+      "sourceUrl": "https://docs.aws.amazon.com/sms-voice/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "sms-voice/phone-pool-deletion-protection",
+  "kind": "protection-plan",
+  "method": "deterministic",
+  "name": "phone pool deletion protection",
+  "serviceId": "sms-voice",
+  "summary": "Use deletion protection to keep from accidentally deleting your resources.",
+  "tier": "tier2"
+}

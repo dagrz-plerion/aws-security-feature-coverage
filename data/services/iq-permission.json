@@ -1,0 +1,26 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "0efe947ba6560538b452d9e1511b14e0c877159d2e410685ce1ba3096fe6d314",
+      "locator": "iq-permission.json .Name",
+      "quote": "iq-permission",
+      "retrievedAt": "2026-09-01T03:57:53.531Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/iq-permission/iq-permission.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "iq-permission",
+  "signals": [
+    {
+      "detail": "The name contains \"permission\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

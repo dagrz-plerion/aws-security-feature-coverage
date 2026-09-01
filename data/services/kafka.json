@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "7bc0b9d57f68cc160289039eff149ede8f061ccd6d9e36a0d632122035a8b77f",
+      "locator": "kafka.json .Name",
+      "quote": "kafka",
+      "retrievedAt": "2026-09-01T03:57:53.537Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/kafka/kafka.json"
+    },
+    {
+      "bodySha256": "f497d9efab05b296c211c19e968763b1af3f4768f605c8fba059ff532c6d1bc5",
+      "locator": "https://docs.aws.amazon.com/general/latest/gr/msk.html service endpoints",
+      "quote": "| US East (Ohio) | us-east-2 |  kafka.us-east-2.amazonaws.com <br /> kafka-api-fips.us-east-2.api.aws <br /> kafka-fips.us-east-2.amazonaws.com <br /> kafka-api.us-east-2.api.aws  | HTTPS<br />HTTPS<br />HTTPS<br />HTTPS |",
+      "retrievedAt": "2026-09-01T03:59:37.188Z",
+      "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/msk.md"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "kafka",
+  "signals": [],
+  "tier": "not-security"
+}

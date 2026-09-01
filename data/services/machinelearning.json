@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "4cc4495c2adf5f0511bd866d215962ee8981d9a5f79a2ee217b8b09174e582fe",
+      "locator": "machinelearning.json .Name",
+      "quote": "machinelearning",
+      "retrievedAt": "2026-09-01T03:57:54.877Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/machinelearning/machinelearning.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide aws-certification/latest/machine-learning-engineer-associate-01",
+      "quote": "AWS Certified Machine Learning Engineer - Associate Exam Guide (MLA-C01)",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 5: security-name-strong). Scanning for a named security feature before any tier is given. Promoted to tier 2: 173 named security features were found in its documentation.",
+  "score": 5,
+  "serviceId": "machinelearning",
+  "signals": [
+    {
+      "detail": "The name contains \"waf\".",
+      "id": "security-name-strong",
+      "weight": 5
+    }
+  ],
+  "tier": "tier2"
+}

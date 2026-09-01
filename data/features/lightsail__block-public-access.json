@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-block-public-access-for-buckets.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "a9fbb9006ea80486bcba3d29b87238cf45a3ce005234eefd83fccf959defe6ce",
+      "locator": "Buckets",
+      "quote": "[Block public access](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-block-public-access-for-buckets.md)",
+      "retrievedAt": "2026-09-01T04:06:12.303Z",
+      "sourceUrl": "https://docs.aws.amazon.com/lightsail/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "lightsail/block-public-access",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Block public access",
+  "serviceId": "lightsail",
+  "summary": "Discover how to block public access to your Amazon Lightsail buckets and objects using account-level block public access configurations in Amazon S3.",
+  "tier": "tier2"
+}

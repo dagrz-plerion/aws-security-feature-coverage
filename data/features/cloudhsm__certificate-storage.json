@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "guide-subchapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-certificate-storage-configuration.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "40168a9d137882d27d81e97c1cca0c17ceefcd5177947d8edd37426974206ee4",
+      "locator": "Client SDKs > Certificate storage",
+      "quote": "[Enable certificate storage](https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-certificate-storage-configuration.md)",
+      "retrievedAt": "2026-09-01T04:06:05.112Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudhsm/certificate-storage",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Certificate storage",
+  "serviceId": "cloudhsm",
+  "summary": "You can enable certificate storage on hsm2m.medium clusters using the PKCS #11 library configuration tool.",
+  "tier": "tier1"
+}

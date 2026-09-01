@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "3f88cd24f611436b206ca7b341984f979efddd5e6dce87c03ab1e3a0cb190a2e",
+      "locator": "bcm-recommended-actions.json .Name",
+      "quote": "bcm-recommended-actions",
+      "retrievedAt": "2026-09-01T03:57:44.253Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/bcm-recommended-actions/bcm-recommended-actions.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "bcm-recommended-actions",
+  "signals": [],
+  "tier": "not-security"
+}

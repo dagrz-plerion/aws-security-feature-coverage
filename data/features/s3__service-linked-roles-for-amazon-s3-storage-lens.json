@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-service-linked-roles.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Access control > Walkthroughs using policies",
+      "quote": "[Using service-linked roles for Amazon S3 Storage Lens](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-service-linked-roles.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "s3/service-linked-roles-for-amazon-s3-storage-lens",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles for Amazon S3 Storage Lens",
+  "serviceId": "s3",
+  "summary": "How to use service-linked roles to give S3 Storage Lens access to resources to your AWS Organizations account.",
+  "tier": "tier2"
+}

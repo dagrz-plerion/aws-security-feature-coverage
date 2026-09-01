@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "b7ddb8d66de90ab60f1ac422613a3bd4f6e223024fba6d7472b956c1643d11ee",
+      "locator": "translate.json .Name",
+      "quote": "translate",
+      "retrievedAt": "2026-09-01T03:58:04.320Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/translate/translate.json"
+    },
+    {
+      "bodySha256": "dba2dd6d1282362ee8c86c7c13df4a190f1d205f28fc70d504e5da33f17cc340",
+      "locator": "aws-products directory item",
+      "quote": "Amazon Translate",
+      "retrievedAt": "2026-09-01T03:58:07.224Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=1&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 2 named security features were found in its documentation.",
+  "score": 3,
+  "serviceId": "translate",
+  "signals": [
+    {
+      "detail": "13 documentation pages describe security capability, for example \"Encryption at rest\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

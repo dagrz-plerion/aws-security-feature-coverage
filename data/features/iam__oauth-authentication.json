@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/agent-toolkit/latest/userguide/oauth-authentication.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "d2ce10bd296b0096538d29fdbfae31ef36ecce90e0ce0fb885924b5837b1452c",
+      "locator": "Security > Identity and access management",
+      "quote": "[OAuth authentication](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/oauth-authentication.md)",
+      "retrievedAt": "2026-09-01T04:06:02.190Z",
+      "sourceUrl": "https://docs.aws.amazon.com/agent-toolkit/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "iam/oauth-authentication",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "OAuth authentication",
+  "serviceId": "iam",
+  "summary": "Connect OAuth-compatible MCP clients directly to AWS MCP Server using AWS Sign-in without requiring local proxy software.",
+  "tier": "tier1"
+}

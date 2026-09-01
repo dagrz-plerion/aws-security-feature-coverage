@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/detective/latest/userguide/source-data-types-EKS.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b4e540d07d68924645799f11c8ab8d109107ec8b22413b786007b49d3c2f1c4f",
+      "locator": "Data in a behavior graph > Source data used in a behavior graph",
+      "quote": "[Amazon EKS audit logs](https://docs.aws.amazon.com/detective/latest/userguide/source-data-types-EKS.md)",
+      "retrievedAt": "2026-09-01T04:06:06.948Z",
+      "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "eks/data-in-a-behavior-graph",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "Data in a behavior graph",
+  "serviceId": "eks",
+  "summary": "Learn about the benefits of enabling Amazon EKS audit logs as an optional data source package in Detective.",
+  "tier": "tier2"
+}

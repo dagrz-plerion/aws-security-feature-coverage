@@ -1,0 +1,38 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "edc101e71d9712a9c347279192842e28f7933614a3236a0d8b5965e9439988d1",
+      "locator": "monitron.json .Name",
+      "quote": "monitron",
+      "retrievedAt": "2026-09-01T03:57:56.168Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/monitron/monitron.json"
+    },
+    {
+      "bodySha256": "dba2dd6d1282362ee8c86c7c13df4a190f1d205f28fc70d504e5da33f17cc340",
+      "locator": "aws-products directory item",
+      "quote": "Amazon Monitron",
+      "retrievedAt": "2026-09-01T03:58:07.224Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=1&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given.",
+  "score": 5,
+  "serviceId": "monitron",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    },
+    {
+      "detail": "22 documentation pages describe security capability, for example \"Data at rest\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "not-security"
+}

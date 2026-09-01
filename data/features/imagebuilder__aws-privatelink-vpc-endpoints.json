@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/imagebuilder/latest/userguide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "138b12d86941e522f518d6972af99b6e94f7ae810d88768d3ec8124a9c9b6e9b",
+      "locator": "Configure custom images > Infrastructure configurations",
+      "quote": "[AWS PrivateLink VPC endpoints](https://docs.aws.amazon.com/imagebuilder/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:10.834Z",
+      "sourceUrl": "https://docs.aws.amazon.com/imagebuilder/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "imagebuilder/aws-privatelink-vpc-endpoints",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink VPC endpoints",
+  "serviceId": "imagebuilder",
+  "summary": "You can use an interface VPC endpoint to create a private connection between your VPC and Image Builder without requiring access over the internet or through a NAT device, a VPN connection, or an Direct Connect connection.",
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/security-ir/latest/userguide/cloudshell-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "647e42cd53ba31746d438489345338ab5968e7eb4a8b3d29145d0a17d1512021",
+      "locator": "Using AWS CloudShell",
+      "quote": "[Obtaining IAM permissions for AWS CloudShell](https://docs.aws.amazon.com/security-ir/latest/userguide/cloudshell-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:18.185Z",
+      "sourceUrl": "https://docs.aws.amazon.com/security-ir/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudshell/aws-cloudshell",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS CloudShell",
+  "serviceId": "cloudshell",
+  "summary": "Using the access management resources provided by AWS Identity and Access Management, administrators can grant permissions to IAM users so they can access AWS CloudShell and use the environment's features.",
+  "tier": "tier2"
+}

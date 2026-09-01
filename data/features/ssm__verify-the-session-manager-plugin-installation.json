@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-verify.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "08e1cef5478bbbe3ddf01ef5adad6aa9a90cec3c725d3e86ea1da0ec73ca4e8f",
+      "locator": "Using AWS Systems Manager tools > Install the Session Manager plugin on Linux",
+      "quote": "[Verify the Session Manager plugin installation](https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-verify.md)",
+      "retrievedAt": "2026-09-01T04:06:19.398Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ssm/verify-the-session-manager-plugin-installation",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Verify the Session Manager plugin installation",
+  "serviceId": "ssm",
+  "summary": "Learn how to confirm that the Session Manager plugin is properly installed and configured.",
+  "tier": "tier2"
+}

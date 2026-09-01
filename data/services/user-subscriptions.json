@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "8db8555a1f8c1604dce67698cf1ae3af293e3025543e64e2c65ec0acf849fda8",
+      "locator": "user-subscriptions.json .Name",
+      "quote": "user-subscriptions",
+      "retrievedAt": "2026-09-01T03:58:04.377Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/user-subscriptions/user-subscriptions.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "user-subscriptions",
+  "signals": [],
+  "tier": "not-security"
+}

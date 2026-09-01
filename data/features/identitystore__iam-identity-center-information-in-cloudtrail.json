@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/singlesignon/latest/userguide/understanding-sso-entries.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5e339cfafb670f842f8888bdbf08877a16d942765c442220072f6d7917172f94",
+      "locator": "Security > IAM Identity Center information in CloudTrail",
+      "quote": "[CloudTrail events for IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/understanding-sso-entries.md)",
+      "retrievedAt": "2026-09-01T04:06:18.788Z",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "identitystore/iam-identity-center-information-in-cloudtrail",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "IAM Identity Center information in CloudTrail",
+  "serviceId": "identitystore",
+  "summary": "A trail is a configuration that enables delivery of events to an Amazon S3 bucket that you specify.",
+  "tier": "tier1"
+}

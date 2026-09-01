@@ -1,0 +1,44 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "14d99355d1254c7c3895f78dd07ccf3fa1b63b6895685b515aa0037aa0eeca7b",
+      "locator": "datazone.json .Name",
+      "quote": "datazone",
+      "retrievedAt": "2026-09-01T03:57:48.017Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/datazone/datazone.json"
+    },
+    {
+      "bodySha256": "cbebbb5de0c7a2a48b82adba893a8b7ee0a336ac503f3690b75b65e342e58919",
+      "locator": "aws-products directory item",
+      "quote": "Amazon DataZone",
+      "retrievedAt": "2026-09-01T03:58:06.968Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=0&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 7: security-name-weak, permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 23 named security features were found in its documentation.",
+  "score": 7,
+  "serviceId": "datazone",
+  "signals": [
+    {
+      "detail": "The name contains \"log\".",
+      "id": "security-name-weak",
+      "weight": 2
+    },
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    },
+    {
+      "detail": "32 documentation pages describe security capability, for example \"Assign authorization policies to projects within a domain unit\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

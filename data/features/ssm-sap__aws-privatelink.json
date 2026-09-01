@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/ssm-sap/latest/userguide/privatelink.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "e6a2c9348e5b240bacd7902aadd60ebc94badfa0099c1ca6ba18d20a15e7c8cc",
+      "locator": "Security",
+      "quote": "[Using AWS PrivateLink](https://docs.aws.amazon.com/ssm-sap/latest/userguide/privatelink.md)",
+      "retrievedAt": "2026-09-01T04:06:19.128Z",
+      "sourceUrl": "https://docs.aws.amazon.com/ssm-sap/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ssm-sap/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "ssm-sap",
+  "summary": "You can use AWS PrivateLink to establish a private connection between your VPC and AWS Systems Manager for SAP by creating an interface VPC endpoint.",
+  "tier": "tier2"
+}

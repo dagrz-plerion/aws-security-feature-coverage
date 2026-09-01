@@ -1,0 +1,33 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "8574337ab3979d2a041be05e10c7325fcf9f239eac5ac53e5f4c1dca604f4d62",
+      "locator": "networkflowmonitor.json .Name",
+      "quote": "networkflowmonitor",
+      "retrievedAt": "2026-09-01T03:57:56.492Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/networkflowmonitor/networkflowmonitor.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide networkflowmonitor/2.0/APIReference",
+      "quote": "Network Flow Monitor API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "networkflowmonitor",
+  "signals": [
+    {
+      "detail": "The name contains \"monitor\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

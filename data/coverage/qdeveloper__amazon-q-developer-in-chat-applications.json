@@ -1,0 +1,57 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "9ed114d046d1d8c16a4ad4962c873d7a89e001618901884072f6da93ddc99478",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-services.md :: Supported services for Amazon Q Developer in chat applications",
+          "quote": "+ Amazon CloudWatch",
+          "retrievedAt": "2026-09-01T04:29:39.103Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-cloudwatch-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudwatch",
+      "targetLabel": "Amazon CloudWatch"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "9ed114d046d1d8c16a4ad4962c873d7a89e001618901884072f6da93ddc99478",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-services.md :: Supported services for Amazon Q Developer in chat applications",
+          "quote": "+ Amazon CodeCatalyst",
+          "retrievedAt": "2026-09-01T04:29:39.103Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-codecatalyst-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codecatalyst",
+      "targetLabel": "Amazon CodeCatalyst"
+    }
+  ],
+  "featureId": "qdeveloper/amazon-q-developer-in-chat-applications",
+  "generatedAt": "2026-09-01T04:41:17.395Z",
+  "serviceId": "qdeveloper",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "AWS Cost Anomaly Detection",
+      "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-services.md"
+    }
+  ]
+}

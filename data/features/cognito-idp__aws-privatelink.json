@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cognito/latest/developerguide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "373f31a56031ece0ad054997a91a0752467e68c744b48b89c61a4c0405016c75",
+      "locator": "Security > CloudTrail logs",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/cognito/latest/developerguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:05.789Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "cognito-idp/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "cognito-idp",
+  "summary": "Learn how to set up AWS PrivateLink to create a private connection between your VPC and Amazon Cognito user pools and identity pools.",
+  "tier": "tier1"
+}

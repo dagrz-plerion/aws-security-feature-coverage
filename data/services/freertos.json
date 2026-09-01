@@ -1,0 +1,39 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "62760dcac58bc81f3e692778f3002fd43945cad8dd34c5caffc94a116e5214a1",
+      "locator": "freertos.json .Name",
+      "quote": "freertos",
+      "retrievedAt": "2026-09-01T03:57:50.862Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/freertos/freertos.json"
+    },
+    {
+      "bodySha256": "4eec68c5e5c08809807aa6189ab0620a4357343e61cdd748f774606ff0f324a1",
+      "locator": "aws-products directory item",
+      "quote": "FreeRTOS",
+      "retrievedAt": "2026-09-01T03:58:08.144Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=3&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 8: security-name-strong, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 1 named security features were found in its documentation.",
+  "score": 8,
+  "serviceId": "freertos",
+  "signals": [
+    {
+      "detail": "The name contains \"security\".",
+      "id": "security-name-strong",
+      "weight": 5
+    },
+    {
+      "detail": "25 documentation pages describe security capability, for example \"coreHTTP mutual authentication\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/translate/latest/dg/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "fefe4f8e7337423c7dadbaab0fd68cd2560696ca9207d647c79e8f879690b9c0",
+      "locator": "Security > Monitoring",
+      "quote": "[VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/translate/latest/dg/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:19.817Z",
+      "sourceUrl": "https://docs.aws.amazon.com/translate/latest/dg/llms.txt"
+    }
+  ],
+  "id": "translate/vpc-endpoints-aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "VPC endpoints (AWS PrivateLink)",
+  "serviceId": "translate",
+  "summary": "You can use an interface VPC endpoint to create a private connection between your VPC and Amazon Translate without requiring access over the internet or through a NAT device, a VPN connection, or an Direct Connect connection.",
+  "tier": "tier2"
+}

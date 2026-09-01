@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "a7c35a542ecf05877d1f71fda0f367c72d19196fc5cb212f7cb96799b54941f6",
+      "locator": "researchstudio.json .Name",
+      "quote": "researchstudio",
+      "retrievedAt": "2026-09-01T03:57:59.592Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/researchstudio/researchstudio.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "researchstudio",
+  "signals": [],
+  "tier": "not-security"
+}

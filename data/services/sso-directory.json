@@ -1,0 +1,26 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "c03548fa4533682f3953b9b0ab583dd612beff2134c1425aa3f390e25ef5f70b",
+      "locator": "sso-directory.json .Name",
+      "quote": "sso-directory",
+      "retrievedAt": "2026-09-01T03:58:02.714Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/sso-directory/sso-directory.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "sso-directory",
+  "signals": [
+    {
+      "detail": "The name contains \"directory\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/vpc/latest/userguide/security-group-sharing.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "806081e0accc96971afd6c563111611671637d2792b6bb3187b6589373660258",
+      "locator": "Security > Security groups",
+      "quote": "[Share security groups with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/userguide/security-group-sharing.md)",
+      "retrievedAt": "2026-09-01T04:06:20.127Z",
+      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ec2/share-security-groups-with-aws-organizations",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "Share security groups with AWS Organizations",
+  "serviceId": "ec2",
+  "summary": "Learn how to share security groups with AWS Organizations",
+  "tier": "tier2"
+}

@@ -1,0 +1,42 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/config/latest/developerguide/monitor-resource-changes.md",
+    "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/aws-enablesqsencryption.md",
+    "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/sqs-queues.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "61f42a7e2265018d7cbfb2e44ed42b1252701b97373063a0a68aed3c31aa5fbc",
+      "locator": "Logging and Monitoring > Monitoring",
+      "quote": "[Using Amazon SQS](https://docs.aws.amazon.com/config/latest/developerguide/monitor-resource-changes.md)",
+      "retrievedAt": "2026-09-01T04:06:06.011Z",
+      "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "79d80bc8923df8eb5c8b48968ea8f1e34df0066563a1235f6f5a0abd157bd60f",
+      "locator": "Working with AWS services > Amazon SQS",
+      "quote": "[Amazon SQS queues](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/sqs-queues.md)",
+      "retrievedAt": "2026-09-01T04:06:19.598Z",
+      "sourceUrl": "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "4f64722f627b4b796720af8a22bd6fc7e276b528c3cb721e9bab48cf80f4e8b5",
+      "locator": "Automation Runbook Reference > Amazon SQS",
+      "quote": "[AWS-EnableSQSEncryption](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/aws-enablesqsencryption.md)",
+      "retrievedAt": "2026-09-01T04:06:19.357Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "sqs/amazon-sqs",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon SQS",
+  "serviceId": "sqs",
+  "summary": "Use Amazon SQS as the notification endpoint for Amazon SNS if you want to create a program that uses data from AWS Config.",
+  "tier": "tier2"
+}

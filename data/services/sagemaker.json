@@ -1,0 +1,39 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "6732e0062050d4090ceb0b09ebd6234bc48f7f6814589b0ec8ed1ed3b0b65f08",
+      "locator": "sagemaker.json .Name",
+      "quote": "sagemaker",
+      "retrievedAt": "2026-09-01T03:58:00.601Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/sagemaker/sagemaker.json"
+    },
+    {
+      "bodySha256": "dba2dd6d1282362ee8c86c7c13df4a190f1d205f28fc70d504e5da33f17cc340",
+      "locator": "aws-products directory item",
+      "quote": "Amazon SageMaker",
+      "retrievedAt": "2026-09-01T03:58:07.224Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=1&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 5: security-name-weak, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 56 named security features were found in its documentation.",
+  "score": 5,
+  "serviceId": "sagemaker",
+  "signals": [
+    {
+      "detail": "The name contains \"governance\".",
+      "id": "security-name-weak",
+      "weight": 2
+    },
+    {
+      "detail": "82 documentation pages describe security capability, for example \"Assign authorization policies to users and groups within a domain unit\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

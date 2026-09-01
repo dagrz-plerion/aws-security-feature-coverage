@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption-tracking.md",
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/default-bucket-encryption.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Security > Setting default bucket encryption",
+      "quote": "[Configuring default encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/default-bucket-encryption.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Security > Setting default bucket encryption",
+      "quote": "[Monitoring default encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption-tracking.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "s3/default-encryption",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "default encryption",
+  "serviceId": "s3",
+  "summary": "Configure default encryption for an Amazon S3 bucket by using the S3 console, API, or AWS SDKs.",
+  "tier": "tier2"
+}

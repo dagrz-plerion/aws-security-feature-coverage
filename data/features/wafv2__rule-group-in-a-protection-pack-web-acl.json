@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-group-using.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "c4a1d08847c7d6491c1b218f6b7cf6a57f3d182e5e3184ef264649d65abf4a84",
+      "locator": "AWS WAF > Managing your own rule groups",
+      "quote": "[Using your rule group in a protection pack (web ACL)](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-group-using.md)",
+      "retrievedAt": "2026-09-01T04:06:20.284Z",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "wafv2/rule-group-in-a-protection-pack-web-acl",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "rule group in a protection pack (web ACL)",
+  "serviceId": "wafv2",
+  "summary": "To use a rule group in a protection pack (web ACL), you add it to the protection pack (web ACL) in a rule group reference statement.",
+  "tier": "tier1"
+}

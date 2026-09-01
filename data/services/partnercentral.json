@@ -1,0 +1,33 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "1c0d285bb2d8d2657ce905cf3a40fc22905d91a266aea9a032865726395fad56",
+      "locator": "partnercentral.json .Name",
+      "quote": "partnercentral",
+      "retrievedAt": "2026-09-01T03:57:57.578Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/partnercentral/partnercentral.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide partner-central/latest/builder-guide",
+      "quote": "AWS Partner Central Builder Guide",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 1: security-doc-pages). Scanned at low priority.",
+  "score": 1,
+  "serviceId": "partnercentral",
+  "signals": [
+    {
+      "detail": "1 documentation pages describe security capability, for example \"Setup and authentication\".",
+      "id": "security-doc-pages",
+      "weight": 1
+    }
+  ],
+  "tier": "not-security"
+}

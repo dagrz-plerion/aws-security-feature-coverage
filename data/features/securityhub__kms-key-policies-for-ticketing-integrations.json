@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-integrations-key-policy.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
+      "locator": "AWS Security Hub > ServiceNow",
+      "quote": "[KMS key policies for ticketing integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-integrations-key-policy.md)",
+      "retrievedAt": "2026-09-01T04:06:18.321Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "securityhub/kms-key-policies-for-ticketing-integrations",
+  "kind": "policy-type",
+  "method": "deterministic",
+  "name": "KMS key policies for ticketing integrations",
+  "serviceId": "securityhub",
+  "summary": "Configure KMS key policies to allow Security Hub to access customer-managed KMS keys for ticketing integrations with Jira and ServiceNow.",
+  "tier": "tier1"
+}

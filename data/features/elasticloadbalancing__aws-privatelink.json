@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/load-balancer-vpc-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "7959e91d399288ba1aacef469135f9cdcfbb1239d402ee647a4780ac9edf97ce",
+      "locator": "Security > Identity and access management",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/load-balancer-vpc-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:08.125Z",
+      "sourceUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "elasticloadbalancing/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "elasticloadbalancing",
+  "summary": "Access the Elastic Load Balancing API from your VPC using private connections.",
+  "tier": "tier2"
+}

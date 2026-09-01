@@ -1,0 +1,50 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/lambda.md",
+    "https://docs.aws.amazon.com/signer/latest/developerguide/s3-source-lambda.md",
+    "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/lambda-runtimes.md",
+    "https://docs.aws.amazon.com/workmail/latest/adminguide/lambda-content.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b6b65c196548830210bd395e3eb98b1011f6a58282af082fb3914f00abdf096d",
+      "locator": "AWS Mobile SDK for Unity Developer Guide",
+      "quote": "[AWS Lambda](https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/lambda.md)",
+      "retrievedAt": "2026-09-01T04:06:13.674Z",
+      "sourceUrl": "https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "79d80bc8923df8eb5c8b48968ea8f1e34df0066563a1235f6f5a0abd157bd60f",
+      "locator": "Working with AWS services > AWS Lambda",
+      "quote": "[Lambda Runtimes](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/lambda-runtimes.md)",
+      "retrievedAt": "2026-09-01T04:06:19.598Z",
+      "sourceUrl": "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "cd338a443112283678904dfe325e98b9ca4cafd691c276922399ac84ed6be1ba",
+      "locator": "Code signing workflows > AWS Lambda",
+      "quote": "[Creating source S3 bucket](https://docs.aws.amazon.com/signer/latest/developerguide/s3-source-lambda.md)",
+      "retrievedAt": "2026-09-01T04:06:18.686Z",
+      "sourceUrl": "https://docs.aws.amazon.com/signer/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "6c836782f20bdb6934eedde1cf46417a81d9baaa759c919df29fa408de65a261",
+      "locator": "Working with organizations > Configuring AWS Lambda for Amazon WorkMail",
+      "quote": "[Retrieving message content with AWS Lambda](https://docs.aws.amazon.com/workmail/latest/adminguide/lambda-content.md)",
+      "retrievedAt": "2026-09-01T04:06:20.492Z",
+      "sourceUrl": "https://docs.aws.amazon.com/workmail/latest/adminguide/llms.txt"
+    }
+  ],
+  "id": "lambda/aws-lambda",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS Lambda",
+  "serviceId": "lambda",
+  "summary": "User Guide topic that describes AWS Lambda runtimes and other support information for the AWS Toolkit for JetBrains.",
+  "tier": "tier2"
+}

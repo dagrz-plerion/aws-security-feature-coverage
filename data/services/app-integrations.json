@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "63ba4abe958d9f1579a2f5ab9e47474d62718e40189d1ebdb291e90ca079c23c",
+      "locator": "app-integrations.json .Name",
+      "quote": "app-integrations",
+      "retrievedAt": "2026-09-01T03:57:41.932Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/app-integrations/app-integrations.json"
+    },
+    {
+      "bodySha256": "e22203353e86ed56ee2c78faa06d8d6e25e449d44a2cc81922ca430fce3e7ec8",
+      "locator": "https://docs.aws.amazon.com/general/latest/gr/connect_region.html service endpoints",
+      "quote": "| US East (N. Virginia) | us-east-1 |  connect.us-east-1.amazonaws.com <br /> connect-fips.us-east-1.amazonaws.com  | HTTPS<br />HTTPS |",
+      "retrievedAt": "2026-09-01T03:59:34.365Z",
+      "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/connect_region.md"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "app-integrations",
+  "signals": [],
+  "tier": "not-security"
+}

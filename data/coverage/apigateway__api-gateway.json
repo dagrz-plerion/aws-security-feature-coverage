@@ -1,0 +1,691 @@
+{
+  "axes": [
+    "region"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Hong Kong) | ap-east-1 | ape1-az2, ape1-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| ap-east-1 | 174803364771 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-ap-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-east-1",
+      "targetLabel": "Asia Pacific (Hong Kong)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Tokyo) | ap-northeast-1 | apne1-az1, apne1-az2, apne1-az4 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| ap-northeast-1 | 969236854626 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-ap-northeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-1",
+      "targetLabel": "Asia Pacific (Tokyo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Seoul) | ap-northeast-2 | apne2-az1, apne2-az2, apne2-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| ap-northeast-2 | 020402002396 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-ap-northeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-2",
+      "targetLabel": "Asia Pacific (Seoul)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Osaka) | ap-northeast-3 | apne3-az1, apne3-az2, apne3-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| ap-northeast-3 | 360671645888 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-ap-northeast-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-3",
+      "targetLabel": "Asia Pacific (Osaka)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Mumbai) | ap-south-1 | aps1-az1, aps1-az2, aps1-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| ap-south-1 | 507069717855 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-ap-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-1",
+      "targetLabel": "Asia Pacific (Mumbai)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| ap-south-2 | 644042651268 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-ap-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-2",
+      "targetLabel": "ap-south-2"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Singapore) | ap-southeast-1 | apse1-az1, apse1-az2, apse1-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| ap-southeast-1 | 195145609632 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-ap-southeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-1",
+      "targetLabel": "Asia Pacific (Singapore)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Sydney) | ap-southeast-2 | apse2-az1, apse2-az2, apse2-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| ap-southeast-2 | 798376113853 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-ap-southeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-2",
+      "targetLabel": "Asia Pacific (Sydney)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| ap-southeast-3 | 652364314486 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-ap-southeast-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-3",
+      "targetLabel": "ap-southeast-3"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| ap-southeast-4 | 849137399833 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-ap-southeast-4-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-4",
+      "targetLabel": "ap-southeast-4"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Canada (Central) | ca-central-1 | cac1-az1, cac1-az2 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| ca-central-1 | 796887884028 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-ca-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-central-1",
+      "targetLabel": "Canada (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Europe (Frankfurt) | eu-central-1 |  euc1-az1, euc1-az2, euc1-az3  |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| eu-central-1 | 474240146802 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-eu-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-1",
+      "targetLabel": "Europe (Frankfurt)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| eu-central-2 | 166639821150 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-eu-central-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-2",
+      "targetLabel": "eu-central-2"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Europe (Stockholm) | eu-north-1 | eun1-az1, eun1-az2, eun1-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| eu-north-1 | 394634713161 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-eu-north-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-north-1",
+      "targetLabel": "Europe (Stockholm)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| eu-south-1 | 753362059629 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-eu-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-1",
+      "targetLabel": "eu-south-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Europe (Spain) | eu-south-2 | eus2-az1, eus2-az2, eus2-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| eu-south-2 | 359345898052 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-eu-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-2",
+      "targetLabel": "Europe (Spain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Europe (Ireland) | eu-west-1 | euw1-az1, euw1-az2, euw1-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| eu-west-1 | 631144002099 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-eu-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-1",
+      "targetLabel": "Europe (Ireland)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Europe (London) | eu-west-2 | euw2-az1, euw2-az2, euw2-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| eu-west-2 | 544388816663 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-eu-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-2",
+      "targetLabel": "Europe (London)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Europe (Paris) | eu-west-3 | euw3-az1, euw3-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| eu-west-3 | 061510835048 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-eu-west-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-3",
+      "targetLabel": "Europe (Paris)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| me-central-1 | 614065512851 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-me-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "me-central-1",
+      "targetLabel": "me-central-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| Middle East (Bahrain) | me-south-1 | mes1-az1, mes1-az2, mes1-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| me-south-1 | 855739686837 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-me-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "me-south-1",
+      "targetLabel": "Middle East (Bahrain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| South America (São Paulo) | sa-east-1 | sae1-az1, sae1-az2, sae1-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| sa-east-1 | 287228555773 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-sa-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sa-east-1",
+      "targetLabel": "South America (São Paulo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| US East (N. Virginia) | us-east-1 | use1-az1, use1-az2, use1-az4, use1-az5, use1-az6 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| us-east-1 | 392220576650 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-us-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| US East (Ohio) | us-east-2 | use2-az1, use2-az2, use2-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| us-east-2 | 718770453195 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-us-east-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-2",
+      "targetLabel": "US East (Ohio)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| AWS GovCloud (US-West) | us-gov-west-1 | usgw1-az1, usgw1-az2, usgw1-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-us-gov-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| US West (N. California) | us-west-1 | usw1-az1, usw1-az3 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| us-west-1 | 968246515281 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-us-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-1",
+      "targetLabel": "US West (N. California)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca686f2d5d20876ad238ea98c68b1bd90dade8dfea1323254c2ae38239a21ff8",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md ::  | column \"Region name\"",
+          "quote": "| US West (Oregon) | us-west-2 | usw2-az1, usw2-az2, usw2-az3, usw2-az4 |",
+          "retrievedAt": "2026-09-01T04:28:58.865Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-vpc-links-v2.md"
+        },
+        {
+          "bodySha256": "26843a66df71a183a4716608d1a8067c58494c345d29f295307789d7bcfc8426",
+          "locator": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md :: API Gateway accounts used for private integrations (legacy) | column \"Region\"",
+          "quote": "| us-west-2 | 109351309407 |",
+          "retrievedAt": "2026-09-01T04:28:58.927Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-api-with-vpclink-accounts.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "apigateway/api-gateway",
+      "id": "apigateway-api-gateway-region-us-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
+    }
+  ],
+  "featureId": "apigateway/api-gateway",
+  "generatedAt": "2026-09-01T04:41:17.395Z",
+  "serviceId": "apigateway",
+  "unresolvedTargets": []
+}

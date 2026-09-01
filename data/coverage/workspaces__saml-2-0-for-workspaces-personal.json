@@ -1,0 +1,643 @@
+{
+  "axes": [
+    "region"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Africa (Cape Town) | af-south-1 | afs1-az1, afs1-az2, afs1-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Africa (Cape Town) | IPv4:<br />drp-cpt.amazonworkspaces.com/<br />IPv6:<br />drp-workspaces.af-south-1.api.aws | IPv4:<br />13.244.128.155<br />13.245.205.255<br />13.245.216.116<br />IPv6:<br />2406:da11:685:2400::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Africa (Cape Town) | af-south-1 | 13.246.120.0 - 13.246.123.255<br />2406:da32:1000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-af-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "af-south-1",
+      "targetLabel": "Africa (Cape Town)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Asia Pacific (Tokyo) | ap-northeast-1 | apne1-az1, apne1-az4 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Asia Pacific (Tokyo) | IPv4:<br />drp-nrt.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.ap-northeast-1.api.aws | IPv4:<br />18.178.102.247<br />54.64.174.128<br />IPv6:<br />2406:da14:785:5300::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Asia Pacific (Tokyo) | ap-northeast-1 | 18.180.178.0 - 18.180.178.255<br />18.180.180.0 - 18.180.181.255<br />54.250.251.0 - 54.250.251.255<br />2406:da32:4000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-ap-northeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-1",
+      "targetLabel": "Asia Pacific (Tokyo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Asia Pacific (Seoul) | ap-northeast-2 | apne2-az1, apne2-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Asia Pacific (Seoul) | IPv4:<br />drp-icn.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.ap-northeast-2.api.aws | IPv4:<br />13.124.44.166<br />13.124.203.105<br />52.78.44.253<br />52.79.54.102<br />IPv6:<br />2406:da12:c8c:4900::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Asia Pacific (Seoul) | ap-northeast-2 | 3.34.37.0 - 3.34.37.255<br />3.34.38.0 - 3.34.39.255<br />13.124.247.0 - 13.124.247.255<br />2406:da32:2000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-ap-northeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-2",
+      "targetLabel": "Asia Pacific (Seoul)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Asia Pacific (Mumbai) | ap-south-1 | aps1-az1, aps1-az2, aps1-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Asia Pacific (Mumbai) | IPv4:<br />drp-bom.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.ap-south-1.api.aws | IPv4:<br />13.127.57.82<br />13.234.250.73<br />IPv6:<br />2406:da1a:502:b800::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Asia Pacific (Mumbai) | ap-south-1 | 13.126.243.0 - 13.126.243.255<br />2406:da32:a000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-ap-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-1",
+      "targetLabel": "Asia Pacific (Mumbai)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Asia Pacific (Singapore) | ap-southeast-1 | apse1-az1, apse1-az2 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Asia Pacific (Singapore) | IPv4:<br />drp-sin.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.ap-southeast-1.api.aws | IPv4:<br />3.0.212.144<br />18.138.99.116<br />18.140.252.123<br />52.74.175.118<br />IPv6:<br />2406:da18:991:4a00::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Asia Pacific (Singapore) | ap-southeast-1 | 18.141.152.0 - 18.141.152.255<br />18.141.154.0 - 18.141.155.255<br />52.76.127.0 - 52.76.127.255<br />2406:da32:8000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-ap-southeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-1",
+      "targetLabel": "Asia Pacific (Singapore)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Asia Pacific (Sydney) | ap-southeast-2 | apse2-az1, apse2-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Asia Pacific (Sydney) | IPv4:<br />drp-syd.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.ap-southeast-2.api.aws | IPv4:<br />3.24.11.127<br />13.237.232.125<br />IPv6:<br />2406:da1c:9b5:9d00::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Asia Pacific (Sydney) | ap-southeast-2 | 3.25.43.0 - 3.25.43.255<br />3.25.44.0 - 3.25.45.255<br />54.153.254.0 - 54.153.254.255<br />2406:da32:c000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-ap-southeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-2",
+      "targetLabel": "Asia Pacific (Sydney)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Asia Pacific (Malaysia) | ap-southeast-5 | apse5-az1, apse5-az2, apse5-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Asia Pacific (Malaysia) | ap-southeast-5 |  +  43.217.232.0/22 <br />+  24.110.0.0/24 (AGA endpoints) <br />+  24.110.1.0/24 (AGA endpoints) <br />+  2406:da20:8018::/48   |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-ap-southeast-5-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-5",
+      "targetLabel": "Asia Pacific (Malaysia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Canada (Central) | ca-central-1 | cac1-az1, cac1-az2 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Canada (Central) | IPv4:<br />drp-yul.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.ca-central-1.api.aws | IPv4:<br />52.60.69.16<br />52.60.80.237<br />52.60.173.117<br />52.60.201.0<br />IPv6:<br />2600:1f11:759:d900::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Canada (Central) | ca-central-1 | 15.223.100.0 - 15.223.100.255<br />15.223.102.0 - 15.223.103.255<br />35.183.255.0 - 35.183.255.255<br />2600:1f32:1000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-ca-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-central-1",
+      "targetLabel": "Canada (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Europe (Frankfurt) | eu-central-1 | euc1-az2, euc1-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Europe (Frankfurt) | IPv4:<br />drp-fra.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.eu-central-1.api.aws | IPv4:<br />52.59.191.224<br />52.59.191.225<br />52.59.191.226<br />52.59.191.227<br />IPv6:<br />2a05:d014:b5c:500::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Europe (Frankfurt) | eu-central-1 | 18.156.52.0 - 18.156.52.255<br />18.156.54.0 - 18.156.55.255<br />52.59.127.0 - 52.59.127.255<br />2a05:d032:4000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-eu-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-1",
+      "targetLabel": "Europe (Frankfurt)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Europe (Ireland) | eu-west-1 | euw1-az1, euw1-az2, euw1-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Europe (Ireland) | IPv4:<br />drp-dub.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.eu-west-1.api.aws | IPv4:<br />18.200.177.86<br />52.48.86.38<br />54.76.137.224<br />IPv6:<br />2a05:d018:10ca:f400::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Europe (Ireland) | eu-west-1 | 3.249.28.0 - 3.249.29.255<br />52.19.124.0 - 52.19.125.255<br />2a05:d032:8000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-eu-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-1",
+      "targetLabel": "Europe (Ireland)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Europe (London) | eu-west-2 | euw2-az2, euw2-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Europe (London) | IPv4:<br />drp-lhr.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.eu-west-2.api.aws | IPv4:<br />35.176.62.54<br />35.177.255.44<br />52.56.46.102<br />52.56.111.36<br />IPv6:<br />2a05:d01c:263:f400::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Europe (London) | eu-west-2 | 18.132.21.0 - 18.132.21.255<br />18.132.22.0 - 18.132.23.255<br />35.176.32.0 - 35.176.32.255<br />2a05:d032:c000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-eu-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-2",
+      "targetLabel": "Europe (London)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Europe (Paris) | eu-west-3 | euw3-az1, euw3-az2, euw3-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Europe (Paris) | IPv4:<br />drp-cdg.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.eu-west-3.api.aws | IPv4:<br />51.17.52.90<br />51.17.109.231<br />51.16.190.43<br />IPv6:<br />2a05:d012:16:8600::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Europe (Paris) | eu-west-3 | 51.44.204.0-51.44.207.255 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-eu-west-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-3",
+      "targetLabel": "Europe (Paris)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| Israel (Tel Aviv) | il-central-1 | ilc1-az1, ilc1-az2, ilc1-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Israel (Tel Aviv) | IPv4:<br />drp-tlv.amazonworkspaces.com/<br />IPv6:<br />drp-workspaces.il-central-1.api.aws | IPv4:<br />51.17.52.90<br />51.17.109.231<br />51.16.190.43<br />IPv6:<br />2a05:d025:c78:fc00::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| Israel (Tel Aviv) | il-central-1 |  51.17.28.0-51.17.31.255<br />2a05:d032:5000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-il-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "il-central-1",
+      "targetLabel": "Israel (Tel Aviv)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| South America (São Paulo) | sa-east-1 | sae1-az1, sae1-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| South America (São Paulo) | IPv4:<br />drp-gru.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.sa-east-1.api.aws | IPv4:<br />18.231.0.105<br />52.67.55.29<br />54.233.156.245<br />54.233.216.234<br />IPv6:<br />2600:1f1e:bbf:fa00::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| South America (São Paulo) | sa-east-1 | 18.230.103.0 - 18.230.103.255<br />18.230.104.0 - 18.230.105.255<br />54.233.204.0 - 54.233.204.255<br />2600:1f32:e000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-sa-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sa-east-1",
+      "targetLabel": "South America (São Paulo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| US East (N. Virginia) | us-east-1 | use1-az2, use1-az4, use1-az6 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| US East (N. Virginia) | IPv4:<br />drp-iad.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.us-east-1.api.aws | IPv4:<br />3.209.215.252<br />3.212.50.30<br />3.225.55.35<br />3.226.24.234<br />34.200.29.95<br />52.200.219.150<br />IPv6:<br />2600:1f18:74e9:4400::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| US East (N. Virginia) | us-east-1 | 3.217.228.0 - 3.217.231.255<br />3.235.112.0 - 3.235.119.255<br />52.23.61.0 - 52.23.62.255<br />2600:1f32:8000::/39  |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-us-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| US East (Ohio) | us-east-2 | use2-az1, use2-az2, use2-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| US East (Ohio) | us-east-2 |  +  3.146.84.0/22 <br />+  93.77.130.0/24 (AGA endpoints) <br />+  93.77.131.0/24 (AGA endpoints) <br />+  2600:1f26:28::/48   |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-us-east-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-2",
+      "targetLabel": "US East (Ohio)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| AWS GovCloud (US-East) | us-gov-east-1 | usge1-az1, usge1-az2, usge1-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| AWS GovCloud (US-East) | IPv4:<br />drp-osu.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.us-gov-east-1.api.aws | IPv4:<br />18.253.251.70<br />18.254.0.118<br />IPv6:<br />2600:1f15:a45:3e00::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| AWS GovCloud (US-East) | us-gov-east-1 | 18.254.140.0 - 18.254.143.255<br />2600:1f32:5000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-us-gov-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| AWS GovCloud (US-West) | us-gov-west-1 | usgw1-az1, usgw1-az2, usgw1-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| AWS GovCloud (US-West) | IPv4:<br />drp-pdt.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.us-gov-west-1.api.aws | IPv4:<br />52.61.60.65<br />52.61.65.14<br />52.61.88.170<br />52.61.137.87<br />52.61.155.110<br />52.222.20.88<br />IPv6:<br />2600:1f12:28f:af00::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| AWS GovCloud (US-West) | us-gov-west-1 | 52.61.193.0 - 52.61.193.255<br />2600:1f32:2000::/40 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-us-gov-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "f95f1ad698bc7d855aed5bdc437720e1f13f514dcbd570c530259730b4e84b63",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md :: Availability Zones for WorkSpaces Personal | column \"Region name\"",
+          "quote": "| US West (Oregon) | us-west-2 | usw2-az1, usw2-az2, usw2-az3 |",
+          "retrievedAt": "2026-09-01T04:29:35.108Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| US West (Oregon) | IPv4:<br />drp-pdx.amazonworkspaces.com<br />IPv6:<br />drp-workspaces.us-west-2.api.aws | IPv4:<br />34.217.248.177<br />52.34.160.80<br />54.68.150.54<br />54.185.4.125<br />54.188.171.18<br />54.244.158.140<br />IPv6:<br />2600:1f14:278e:5700::/56 |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        },
+        {
+          "bodySha256": "18a30e1214234840a41d95d0bab69a0eb4cd6f0f98486f153ef349c884a526cd",
+          "locator": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md ::  | column \"Region\"",
+          "quote": "| US West (Oregon) | us-west-2 | 35.80.88.0 - 35.80.95.255<br />44.234.54.0 - 44.234.55.255<br />54.244.46.0 - 54.244.47.255<br />2600:1f32:4000::/39  |",
+          "retrievedAt": "2026-09-01T04:29:35.138Z",
+          "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+      "id": "workspaces-saml-2-0-for-workspaces-personal-region-us-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
+    }
+  ],
+  "featureId": "workspaces/saml-2-0-for-workspaces-personal",
+  "generatedAt": "2026-09-01T04:41:17.395Z",
+  "serviceId": "workspaces",
+  "unresolvedTargets": []
+}

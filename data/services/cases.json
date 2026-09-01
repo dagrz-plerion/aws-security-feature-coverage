@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "3bafaff5eb1cda664e890816da16b7013c401af289ae7dd0f4fcb9c3c29c4ed2",
+      "locator": "cases.json .Name",
+      "quote": "cases",
+      "retrievedAt": "2026-09-01T03:57:44.741Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/cases/cases.json"
+    },
+    {
+      "bodySha256": "9bfcca678b8f97cbccf33eb048403d6ea72502cbf3080bfbc7313155a9069c96",
+      "locator": "partitions.aws.services.cases",
+      "quote": "cases",
+      "retrievedAt": "2026-09-01T04:40:18.443Z",
+      "sourceUrl": "file:///opt/homebrew/Cellar/awscli/2.36.34/libexec/lib/python3.14/site-packages/awscli/botocore/data/endpoints.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "cases",
+  "signals": [],
+  "tier": "not-security"
+}

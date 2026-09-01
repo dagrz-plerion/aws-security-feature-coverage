@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/remove-admin-overview.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
+      "locator": "AWS Security Hub CSPM > Integrating with AWS Organizations",
+      "quote": "[Removing or changing the delegated administrator](https://docs.aws.amazon.com/securityhub/latest/userguide/remove-admin-overview.md)",
+      "retrievedAt": "2026-09-01T04:06:18.321Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "organizations/integrating-with-aws-organizations",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Integrating with AWS Organizations",
+  "serviceId": "organizations",
+  "summary": "Only the organization management account can remove the delegated Security Hub CSPM administrator account.",
+  "tier": "tier2"
+}

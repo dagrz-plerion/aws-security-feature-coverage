@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-access-points.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "689be80af9ff3cc12dc19fbdffc6f84d0738780e47720ed540244828e9692f24",
+      "locator": "Backup creation, maintenance, and restore > Backup and tag copy",
+      "quote": "[Access points](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-access-points.md)",
+      "retrievedAt": "2026-09-01T04:06:03.549Z",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "backup/access-points",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Access points",
+  "serviceId": "backup",
+  "summary": "Access Amazon S3 backup data directly through S3 access points, without initiating a restore.",
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "f17ea368f873330501b980e8613cc2dc8c228feb59695c09d4180c5d34daf951",
+      "locator": "application-signals-mcp.json .Name",
+      "quote": "application-signals-mcp",
+      "retrievedAt": "2026-09-01T03:57:42.640Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/application-signals-mcp/application-signals-mcp.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "application-signals-mcp",
+  "signals": [
+    {
+      "detail": "The name contains \"sign\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

@@ -1,0 +1,25 @@
+{
+  "aliases": [
+    "EC2_AGENT_MANAGEMENT"
+  ],
+  "confidence": 0.95,
+  "discoveredBy": [
+    "api-enum"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "eb74bb293f5193f0c57a9dc3cee4cb3cffd45599f50c95a812765d21236274e5",
+      "locator": "shapes.FeatureAdditionalConfiguration.enum",
+      "quote": "\"EC2_AGENT_MANAGEMENT\"",
+      "retrievedAt": "2026-09-01T04:41:07.803Z",
+      "sourceUrl": "https://github.com/aws/aws-sdk-js-v3/tree/main/codegen/sdk-codegen/aws-models/guardduty.json"
+    }
+  ],
+  "id": "guardduty/ec2-agent-management",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Ec2 Agent Management",
+  "serviceId": "guardduty",
+  "tier": "tier1"
+}

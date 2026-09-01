@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agent-tools-skills-safety.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "679a75379fa079e68ebe6ce667fe2c7210161070f0e920ac3d995b961ac2446e",
+      "locator": "Agent tools > ElastiCache agent skills",
+      "quote": "[Guardrails and tracking usage](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agent-tools-skills-safety.md)",
+      "retrievedAt": "2026-09-01T04:06:01.503Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/llms.txt"
+    }
+  ],
+  "id": "elasticache/guardrails-and-tracking-usage",
+  "kind": "control-set",
+  "method": "deterministic",
+  "name": "Guardrails and tracking usage",
+  "serviceId": "elasticache",
+  "summary": "The ElastiCache skill includes safety guidance for high-impact operations so agents do not treat destructive or disruptive changes as routine setup steps.",
+  "tier": "tier2"
+}

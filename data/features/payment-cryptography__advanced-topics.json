@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "guide-subchapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/payment-cryptography/latest/userguide/keyexchange-byoca.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "e26b220f747ecc064fcd709523eb7f1c7dd59ad01398a07fc78c65869c423aec",
+      "locator": "Managing keys > Advanced Topics",
+      "quote": "[Bring Your Own Certificate Authority (BYOCA)](https://docs.aws.amazon.com/payment-cryptography/latest/userguide/keyexchange-byoca.md)",
+      "retrievedAt": "2026-09-01T04:06:15.029Z",
+      "sourceUrl": "https://docs.aws.amazon.com/payment-cryptography/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "payment-cryptography/advanced-topics",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Advanced Topics",
+  "serviceId": "payment-cryptography",
+  "summary": "By default, when a public key certificate is needed for asymmetric(RSA,ECC) keys created within the service, these certificates are issued by a AWS Payment Cryptography and account-unique certificate authority(CA).",
+  "tier": "tier1"
+}

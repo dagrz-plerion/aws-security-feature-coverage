@@ -1,0 +1,39 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "09bdf66e7cb51f55cd876dfc10258ede7018f5ceda322fcaef0bb66fe19b8ee8",
+      "locator": "logs.json .Name",
+      "quote": "logs",
+      "retrievedAt": "2026-09-01T03:57:54.417Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/logs/logs.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide AmazonCloudWatchLogs/latest/APIReference",
+      "quote": "Amazon CloudWatch Logs API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 4: security-name-weak, permission-management-actions). Scanning for a named security feature before any tier is given. Promoted to tier 2: 59 named security features were found in its documentation.",
+  "score": 4,
+  "serviceId": "logs",
+  "signals": [
+    {
+      "detail": "The name contains \"log\".",
+      "id": "security-name-weak",
+      "weight": 2
+    },
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

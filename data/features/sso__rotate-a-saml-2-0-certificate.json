@@ -1,0 +1,28 @@
+{
+  "aliases": [
+    "Rotate SAML 2.0 certificates"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/singlesignon/latest/userguide/rotatesamlcert.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5e339cfafb670f842f8888bdbf08877a16d942765c442220072f6d7917172f94",
+      "locator": "Set up your workforce > Rotate SAML 2.0 certificates",
+      "quote": "[Rotate a SAML 2.0 certificate](https://docs.aws.amazon.com/singlesignon/latest/userguide/rotatesamlcert.md)",
+      "retrievedAt": "2026-09-01T04:06:18.788Z",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "sso/rotate-a-saml-2-0-certificate",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Rotate a SAML 2.0 certificate",
+  "serviceId": "sso",
+  "summary": "Learn how to rotate SAML 2.0 certificates used to form a trust between an external identity provider and IAM Identity Center.",
+  "tier": "tier1"
+}

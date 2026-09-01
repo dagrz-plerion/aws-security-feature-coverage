@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "b49fdf9c4388ca7ef7f743345c6057bda64c42ea88ea036e5d176a763b573408",
+      "locator": "lookoutmetrics.json .Name",
+      "quote": "lookoutmetrics",
+      "retrievedAt": "2026-09-01T03:57:54.449Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/lookoutmetrics/lookoutmetrics.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "lookoutmetrics",
+  "signals": [],
+  "tier": "not-security"
+}

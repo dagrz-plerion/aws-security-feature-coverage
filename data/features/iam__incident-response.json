@@ -1,0 +1,61 @@
+{
+  "aliases": [
+    "Incident Response"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/codedeploy/latest/userguide/incident-response.md",
+    "https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/incident-response.md",
+    "https://docs.aws.amazon.com/devicefarm/latest/developerguide/security-incident-response.md",
+    "https://docs.aws.amazon.com/inspector/v1/userguide/security-incident-response.md",
+    "https://docs.aws.amazon.com/nova-act/latest/userguide/incident-response.md",
+    "https://docs.aws.amazon.com/securityagent/latest/userguide/incident-response.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "e6478bd73880fe730cceb3c5fe3326be696c9d461901d47033be9b763de36064",
+      "locator": "Security > Identity and access management",
+      "quote": "[Incident response](https://docs.aws.amazon.com/codedeploy/latest/userguide/incident-response.md)",
+      "retrievedAt": "2026-09-01T04:06:05.582Z",
+      "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "81b1d4a3c91af4bdc3adb698b70ba7c66b88563f7c51ffc9608941e0dfd5ffe1",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[Incident Response](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/incident-response.md)",
+      "retrievedAt": "2026-09-01T04:06:06.670Z",
+      "sourceUrl": "https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/llms.txt"
+    },
+    {
+      "bodySha256": "e4c804026607412c2cbc0c1c76db9db752abeea8ffab37e96087290a81ebc784",
+      "locator": "Security > Identity and access management",
+      "quote": "[Incident response](https://docs.aws.amazon.com/devicefarm/latest/developerguide/security-incident-response.md)",
+      "retrievedAt": "2026-09-01T04:06:07.128Z",
+      "sourceUrl": "https://docs.aws.amazon.com/devicefarm/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "343251f705a29193f32630795e42d08b0279e4743f986eed63fa38ea6a8cb239",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[Incident response](https://docs.aws.amazon.com/inspector/v1/userguide/security-incident-response.md)",
+      "retrievedAt": "2026-09-01T04:06:10.945Z",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/v1/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "01bf2c9aca69534a974f17b1bc5b1e6e87fbef8e60b6971a21d09b72f49b2b80",
+      "locator": "Security > Identity and access management",
+      "quote": "[Incident response](https://docs.aws.amazon.com/nova-act/latest/userguide/incident-response.md)",
+      "retrievedAt": "2026-09-01T04:06:14.422Z",
+      "sourceUrl": "https://docs.aws.amazon.com/nova-act/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "iam/incident-response",
+  "kind": "response",
+  "method": "deterministic",
+  "name": "Incident response",
+  "serviceId": "iam",
+  "summary": "Describes monitoring, logging, and incident response in CodeDeploy.",
+  "tier": "tier1"
+}

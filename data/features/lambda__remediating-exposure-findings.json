@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-lambda-function.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
+      "locator": "AWS Security Hub > Remediating exposure findings",
+      "quote": "[Remediating exposures for AWS Lambda functions](https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-lambda-function.md)",
+      "retrievedAt": "2026-09-01T04:06:18.321Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "lambda/remediating-exposure-findings",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "Remediating exposure findings",
+  "serviceId": "lambda",
+  "summary": "AWS Security Hub can generate exposure findings for AWS Lambda functions.",
+  "tier": "tier2"
+}

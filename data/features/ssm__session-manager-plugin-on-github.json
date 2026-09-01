@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/systems-manager/latest/userguide/plugin-github.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "08e1cef5478bbbe3ddf01ef5adad6aa9a90cec3c725d3e86ea1da0ec73ca4e8f",
+      "locator": "Using AWS Systems Manager tools > Install the Session Manager plugin on Linux",
+      "quote": "[Session Manager plugin on GitHub](https://docs.aws.amazon.com/systems-manager/latest/userguide/plugin-github.md)",
+      "retrievedAt": "2026-09-01T04:06:19.398Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ssm/session-manager-plugin-on-github",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Session Manager plugin on GitHub",
+  "serviceId": "ssm",
+  "summary": "Discover how to access the Session Manager plugin source code and documentation on GitHub.",
+  "tier": "tier2"
+}

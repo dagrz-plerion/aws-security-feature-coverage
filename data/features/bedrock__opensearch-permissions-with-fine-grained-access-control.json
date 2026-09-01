@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-osm-permissions-console-fgap.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ceb0365a55aa0d587356fabcbd2130c8a84b24251a466d0b789f744fd7458b74",
+      "locator": "Additional capabilities > Prerequisites for OpenSearch Managed Clusters",
+      "quote": "[Configuring OpenSearch permissions with fine-grained access control](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-osm-permissions-console-fgap.md)",
+      "retrievedAt": "2026-09-01T04:06:04.269Z",
+      "sourceUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "bedrock/opensearch-permissions-with-fine-grained-access-control",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "OpenSearch permissions with fine-grained access control",
+  "serviceId": "bedrock",
+  "summary": "While optional, we strongly recommend that you enable fine-grained access control for your OpenSearch domain.",
+  "tier": "tier2"
+}

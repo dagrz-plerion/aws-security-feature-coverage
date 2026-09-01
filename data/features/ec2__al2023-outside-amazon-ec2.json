@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2-download.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "bda7fbd19093f8dc9d844e902ab5a630fc847de1738164bde44ed75ba1002464",
+      "locator": "AL2023 outside Amazon EC2",
+      "quote": "[Download AL2023 VM Images](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2-download.md)",
+      "retrievedAt": "2026-09-01T04:06:12.413Z",
+      "sourceUrl": "https://docs.aws.amazon.com/linux/al2023/ug/llms.txt"
+    }
+  ],
+  "id": "ec2/al2023-outside-amazon-ec2",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AL2023 outside Amazon EC2",
+  "serviceId": "ec2",
+  "summary": "Amazon Linux 2023 disk images for use with KVM, VMware, and Hyper-V can be downloaded from cdn.amazonlinux.com.",
+  "tier": "tier2"
+}

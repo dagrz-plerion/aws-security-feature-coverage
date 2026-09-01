@@ -1,0 +1,53 @@
+{
+  "aliases": [
+    "security groups"
+  ],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-ec2-sg.md",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-security-group.md",
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/eice-security-groups.md",
+    "https://docs.aws.amazon.com/vpc/latest/userguide/security-group-rules.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "bbc835fa20483f522d12cdd2eef011dfd7682ba58cc3c0e784fbc16855d4d66e",
+      "locator": "Working with templates > Amazon EC2",
+      "quote": "[Manage security groups](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-ec2-sg.md)",
+      "retrievedAt": "2026-09-01T04:06:00.822Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/llms.txt"
+    },
+    {
+      "bodySha256": "09dae225b6b711c053d8bf0af0304c20e0677c5e57535e214cce6c8b300eb08e",
+      "locator": "Security > Security groups",
+      "quote": "[Create a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-security-group.md)",
+      "retrievedAt": "2026-09-01T04:06:00.831Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/llms.txt"
+    },
+    {
+      "bodySha256": "09dae225b6b711c053d8bf0af0304c20e0677c5e57535e214cce6c8b300eb08e",
+      "locator": "Instances > Connect using a private IP and EC2 Instance Connect Endpoint",
+      "quote": "[Security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/eice-security-groups.md)",
+      "retrievedAt": "2026-09-01T04:06:00.831Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/llms.txt"
+    },
+    {
+      "bodySha256": "806081e0accc96971afd6c563111611671637d2792b6bb3187b6589373660258",
+      "locator": "Security > Security groups",
+      "quote": "[Security group rules](https://docs.aws.amazon.com/vpc/latest/userguide/security-group-rules.md)",
+      "retrievedAt": "2026-09-01T04:06:20.127Z",
+      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ec2/security-groups",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "Security groups",
+  "serviceId": "ec2",
+  "summary": "Use these example template snippets to manage security groups and Amazon EC2 instances with CloudFormation.",
+  "tier": "tier2"
+}

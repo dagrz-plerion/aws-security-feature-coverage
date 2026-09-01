@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/singlesignon/latest/userguide/tip-tutorial-s3.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5e339cfafb670f842f8888bdbf08877a16d942765c442220072f6d7917172f94",
+      "locator": "Application access > Authorization services",
+      "quote": "[Amazon S3 Access Grants](https://docs.aws.amazon.com/singlesignon/latest/userguide/tip-tutorial-s3.md)",
+      "retrievedAt": "2026-09-01T04:06:18.788Z",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "sso/amazon-s3-access-grants",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Amazon S3 Access Grants",
+  "serviceId": "sso",
+  "summary": "Amazon S3 Access Grants provides the flexibility to grant identity-based fine-grain access control to S3 locations.",
+  "tier": "tier1"
+}

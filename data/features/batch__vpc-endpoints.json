@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/batch/latest/userguide/vpc-endpoint-considerations.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "8b58f2ac330581bae573dd4a27cba59797b4e0b846a41a9323bfab11bd56acc5",
+      "locator": "Security in AWS Batch > VPC endpoints",
+      "quote": "[Considerations](https://docs.aws.amazon.com/batch/latest/userguide/vpc-endpoint-considerations.md)",
+      "retrievedAt": "2026-09-01T04:06:04.224Z",
+      "sourceUrl": "https://docs.aws.amazon.com/batch/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "batch/vpc-endpoints",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "VPC endpoints",
+  "serviceId": "batch",
+  "summary": "Before you set up an interface endpoint for AWS Batch, review Interface endpoint properties and limitations in the AWS PrivateLink Guide.",
+  "tier": "tier2"
+}

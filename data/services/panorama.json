@@ -1,0 +1,33 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "601b87021cb3a0a15bf717c7220855749bfc6ac1ddae019b29ffa7d0a64c0e97",
+      "locator": "panorama.json .Name",
+      "quote": "panorama",
+      "retrievedAt": "2026-09-01T03:57:57.584Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/panorama/panorama.json"
+    },
+    {
+      "bodySha256": "34ce17faff84f2e6f197c1266ef9030194eb61677cafeeb28e8ec8b8a4a710d9",
+      "locator": "aws-products directory item",
+      "quote": "AWS Panorama",
+      "retrievedAt": "2026-09-01T03:58:07.905Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=2&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given.",
+  "score": 3,
+  "serviceId": "panorama",
+  "signals": [
+    {
+      "detail": "12 documentation pages describe security capability, for example \"Security features\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "not-security"
+}

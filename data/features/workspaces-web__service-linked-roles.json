@@ -1,0 +1,37 @@
+{
+  "aliases": [
+    "Service-linked roles"
+  ],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/workspaces-web/latest/adminguide/security_iam_service-with-iam-roles-service-linked.md",
+    "https://docs.aws.amazon.com/workspaces-web/latest/adminguide/slr-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "7307b783c69ae019e84c02ee95ab97e70e5f480730ed9b46ed105bf249a21fc3",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Service-linked role permissions](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/slr-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:20.710Z",
+      "sourceUrl": "https://docs.aws.amazon.com/workspaces-web/latest/adminguide/llms.txt"
+    },
+    {
+      "bodySha256": "7307b783c69ae019e84c02ee95ab97e70e5f480730ed9b46ed105bf249a21fc3",
+      "locator": "Security > How Amazon WorkSpaces Secure Browser works with IAM",
+      "quote": "[Service-linked roles](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/security_iam_service-with-iam-roles-service-linked.md)",
+      "retrievedAt": "2026-09-01T04:06:20.710Z",
+      "sourceUrl": "https://docs.aws.amazon.com/workspaces-web/latest/adminguide/llms.txt"
+    }
+  ],
+  "id": "workspaces-web/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "workspaces-web",
+  "summary": "Supports service-linked roles: Yes",
+  "tier": "tier2"
+}

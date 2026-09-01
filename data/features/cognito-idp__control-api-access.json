@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-controlling-access-to-apis-cognito-user-pool.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b409e744a26bb1a50b8a42145ace54d644255c6aab7cccd3025fe2c096adf71b",
+      "locator": "Develop your application > Control API access",
+      "quote": "[Amazon Cognito user pool example](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-controlling-access-to-apis-cognito-user-pool.md)",
+      "retrievedAt": "2026-09-01T04:06:18.320Z",
+      "sourceUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "cognito-idp/control-api-access",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Control API access",
+  "serviceId": "cognito-idp",
+  "summary": "You can control access to your APIs by defining Amazon Cognito user pools within your AWS SAM template.",
+  "tier": "tier1"
+}

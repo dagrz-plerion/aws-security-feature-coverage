@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/drs/latest/userguide/using-service-linked-roles.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "2ae86736b1a1c9eefac1517d699dcf145216e2c33ea70cf10db7d7c3771cfe67",
+      "locator": "Security > Using identity-based policies",
+      "quote": "[Using service-linked roles](https://docs.aws.amazon.com/drs/latest/userguide/using-service-linked-roles.md)",
+      "retrievedAt": "2026-09-01T04:06:07.572Z",
+      "sourceUrl": "https://docs.aws.amazon.com/drs/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "drs/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "drs",
+  "summary": "How to use service-linked roles to give AWS Elastic Disaster Recovery access to resources in your AWS account.",
+  "tier": "tier2"
+}

@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/transfer/latest/userguide/directory-services-users.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "f7ab53309516e56fad0e5fc4320f63f688e45e112ff7ef9a1621fa10f7dd3dea",
+      "locator": "Transfer Family for SFTP, FTPS, FTP > Custom identity provider",
+      "quote": "[Directory service for MS AD](https://docs.aws.amazon.com/transfer/latest/userguide/directory-services-users.md)",
+      "retrievedAt": "2026-09-01T04:06:19.678Z",
+      "sourceUrl": "https://docs.aws.amazon.com/transfer/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ds/custom-identity-provider",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Custom identity provider",
+  "serviceId": "ds",
+  "summary": "Use AWS Directory Service for Microsoft Active Directory to authenticate Transfer users that use Microsoft Active Directory.",
+  "tier": "tier1"
+}

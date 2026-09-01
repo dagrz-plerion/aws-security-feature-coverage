@@ -1,0 +1,36 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/audit-manager/latest/userguide/using-service-linked-roles.md",
+    "https://docs.aws.amazon.com/aws-backup/latest/devguide/using-service-linked-roles-AWSServiceRoleForBackupReports.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "12cf1ae4a0a2ec66da2a335e3958099234da5dec408614dcb0dca7b43329c214",
+      "locator": "Security > Identity and access management",
+      "quote": "[Using service-linked roles](https://docs.aws.amazon.com/audit-manager/latest/userguide/using-service-linked-roles.md)",
+      "retrievedAt": "2026-09-01T04:06:03.320Z",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "689be80af9ff3cc12dc19fbdffc6f84d0738780e47720ed540244828e9692f24",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[AWS Backup Audit Manager](https://docs.aws.amazon.com/aws-backup/latest/devguide/using-service-linked-roles-AWSServiceRoleForBackupReports.md)",
+      "retrievedAt": "2026-09-01T04:06:03.549Z",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "auditmanager/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "auditmanager",
+  "summary": "Learn how to use service-linked roles to give Audit Manager access to resources in your AWS account.",
+  "tier": "tier1"
+}

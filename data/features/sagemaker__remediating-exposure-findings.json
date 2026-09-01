@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-sagemaker-notebook-instance.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
+      "locator": "AWS Security Hub > Remediating exposure findings",
+      "quote": "[Remediating exposures for Amazon SageMaker notebook instances](https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-sagemaker-notebook-instance.md)",
+      "retrievedAt": "2026-09-01T04:06:18.321Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "sagemaker/remediating-exposure-findings",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "Remediating exposure findings",
+  "serviceId": "sagemaker",
+  "summary": "AWS Security Hub can generate exposure findings for Amazon SageMaker notebook instances.",
+  "tier": "tier2"
+}

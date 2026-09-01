@@ -1,0 +1,39 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "2dd4971999138b8aeace45256835d542af29e11fc93836c38985b3f2c65329e4",
+      "locator": "directconnect.json .Name",
+      "quote": "directconnect",
+      "retrievedAt": "2026-09-01T03:57:48.092Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/directconnect/directconnect.json"
+    },
+    {
+      "bodySha256": "34ce17faff84f2e6f197c1266ef9030194eb61677cafeeb28e8ec8b8a4a710d9",
+      "locator": "aws-products directory item",
+      "quote": "AWS Direct Connect",
+      "retrievedAt": "2026-09-01T03:58:07.905Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=2&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 7: security-name-strong, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 5 named security features were found in its documentation.",
+  "score": 7,
+  "serviceId": "directconnect",
+  "signals": [
+    {
+      "detail": "The name contains \"encryption\".",
+      "id": "security-name-strong",
+      "weight": 5
+    },
+    {
+      "detail": "11 documentation pages describe security capability, for example \"Internetwork traffic privacy\".",
+      "id": "security-doc-pages",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

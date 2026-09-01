@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "bde8c9e5a8ccc0c03e1c3f94b0a5919d562f5d4929a195a975e1f66436c0cd73",
+      "locator": "uxc.json .Name",
+      "quote": "uxc",
+      "retrievedAt": "2026-09-01T03:58:04.403Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/uxc/uxc.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide awsconsolehelpdocs/latest/APIReference",
+      "quote": "AWS User Experience Customization Service API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "uxc",
+  "signals": [],
+  "tier": "not-security"
+}

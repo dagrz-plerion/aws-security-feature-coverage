@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/singlesignon/latest/userguide/baseline-KMS-key-policy.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5e339cfafb670f842f8888bdbf08877a16d942765c442220072f6d7917172f94",
+      "locator": "Data protection > Encryption at rest",
+      "quote": "[Baseline KMS key policy](https://docs.aws.amazon.com/singlesignon/latest/userguide/baseline-KMS-key-policy.md)",
+      "retrievedAt": "2026-09-01T04:06:18.788Z",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "sso/baseline-kms-key-policy",
+  "kind": "policy-type",
+  "method": "deterministic",
+  "name": "Baseline KMS key policy",
+  "serviceId": "sso",
+  "summary": "The following KMS key policy covers the most common deployment scenario: an IAM Identity Center instance with delegated administrators and AWS managed applications, including AWS Control Tower, SSO to Amazon EC2 instances, and custom workflows.",
+  "tier": "tier1"
+}

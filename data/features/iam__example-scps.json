@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/ram/latest/userguide/security-scp.md",
+    "https://docs.aws.amazon.com/resource-explorer/latest/userguide/security_iam_scp.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b05bdfb9c53ce58f38ceac5630a15114b9fa42d1b750a36088d4deea2d0665b9",
+      "locator": "Security > Identity and access management",
+      "quote": "[Example SCPs](https://docs.aws.amazon.com/ram/latest/userguide/security-scp.md)",
+      "retrievedAt": "2026-09-01T04:06:15.904Z",
+      "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "58e5dd8eb899acd49309d513ad305f8378001b6259cdaa15f2143ab08939246e",
+      "locator": "Security > Identity and access management",
+      "quote": "[Example SCPs](https://docs.aws.amazon.com/resource-explorer/latest/userguide/security_iam_scp.md)",
+      "retrievedAt": "2026-09-01T04:06:17.189Z",
+      "sourceUrl": "https://docs.aws.amazon.com/resource-explorer/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "iam/example-scps",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Example SCPs",
+  "serviceId": "iam",
+  "summary": "AWS RAM supports service control policies (SCPs).",
+  "tier": "tier1"
+}

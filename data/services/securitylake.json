@@ -1,0 +1,43 @@
+{
+  "candidate": true,
+  "confidence": 1,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "0a7d81b334acb027daa7a8d5f284abf578f39e0bbe671f2eb539cf23fa13b348",
+      "locator": "securitylake.json .Name",
+      "quote": "securitylake",
+      "retrievedAt": "2026-09-01T03:58:01.276Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/securitylake/securitylake.json"
+    },
+    {
+      "bodySha256": "dba2dd6d1282362ee8c86c7c13df4a190f1d205f28fc70d504e5da33f17cc340",
+      "locator": "aws-products directory item",
+      "quote": "Amazon Security Lake",
+      "retrievedAt": "2026-09-01T03:58:07.224Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=1&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "AWS files this product under \"Security, Identity, & Compliance\".",
+  "score": 18,
+  "serviceId": "securitylake",
+  "signals": [
+    {
+      "detail": "AWS files this product under \"Security, Identity, & Compliance\".",
+      "id": "products-security-category",
+      "weight": 10
+    },
+    {
+      "detail": "The name contains \"security\".",
+      "id": "security-name-strong",
+      "weight": 5
+    },
+    {
+      "detail": "24 documentation pages describe security capability, for example \"Amazon EKS Audit Logs\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier1"
+}

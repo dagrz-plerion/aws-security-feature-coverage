@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-delegated-administrator-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "13ddefb7216ae6bf57290558c70fc2ba503a0f36fdd7e5f79e9222169acdda9f",
+      "locator": "Configure CloudTrail settings > Organization delegated administrator",
+      "quote": "[Required permissions to assign a delegated administrator](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-delegated-administrator-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:04.006Z",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudtrail/organization-delegated-administrator",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Organization delegated administrator",
+  "serviceId": "cloudtrail",
+  "summary": "This page lists the required permissions for adding or removing a CloudTrail delegated administrator.",
+  "tier": "tier1"
+}

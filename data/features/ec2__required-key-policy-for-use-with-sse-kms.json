@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-s3-cmk-policy.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "806081e0accc96971afd6c563111611671637d2792b6bb3187b6589373660258",
+      "locator": "Monitoring > Publish to Amazon S3",
+      "quote": "[Required key policy for use with SSE-KMS](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-s3-cmk-policy.md)",
+      "retrievedAt": "2026-09-01T04:06:20.127Z",
+      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ec2/required-key-policy-for-use-with-sse-kms",
+  "kind": "policy-type",
+  "method": "deterministic",
+  "name": "Required key policy for use with SSE-KMS",
+  "serviceId": "ec2",
+  "summary": "You can protect the data in your Amazon S3 bucket by enabling either Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3) or Server-Side Encryption with KMS Keys (SSE-KMS) on your S3 bucket.",
+  "tier": "tier2"
+}

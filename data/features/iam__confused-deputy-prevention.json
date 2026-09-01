@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/frauddetector/latest/ug/confused-deputy-prevention.md",
+    "https://docs.aws.amazon.com/transcribe/latest/dg/security-iam-confused-deputy.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "0450f68c0417713e1661c1c58db529417fce7d0641f708184e98fc2daa8a377f",
+      "locator": "Security > Identity and access management",
+      "quote": "[Confused deputy prevention](https://docs.aws.amazon.com/frauddetector/latest/ug/confused-deputy-prevention.md)",
+      "retrievedAt": "2026-09-01T04:06:09.395Z",
+      "sourceUrl": "https://docs.aws.amazon.com/frauddetector/latest/ug/llms.txt"
+    },
+    {
+      "bodySha256": "fee55b93e4c6b14fc158bb4791aee26c93537f4e9b84d7693b9cd22cc73d8c90",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[Confused deputy prevention](https://docs.aws.amazon.com/transcribe/latest/dg/security-iam-confused-deputy.md)",
+      "retrievedAt": "2026-09-01T04:06:19.666Z",
+      "sourceUrl": "https://docs.aws.amazon.com/transcribe/latest/dg/llms.txt"
+    }
+  ],
+  "id": "iam/confused-deputy-prevention",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Confused deputy prevention",
+  "serviceId": "iam",
+  "summary": "The confused deputy problem occurs when an entity that doesn't have permission to perform an action can coerce a more-privileged entity to perform the action.",
+  "tier": "tier1"
+}

@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "9d10eaeb654a1436865da8dda6c69d0c813301db0a8a7adf9079aee5222bda78",
+      "locator": "comprehendmedical.json .Name",
+      "quote": "comprehendmedical",
+      "retrievedAt": "2026-09-01T03:57:46.853Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/comprehendmedical/comprehendmedical.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide comprehend-medical/latest/api",
+      "quote": "Amazon Comprehend Medical API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 1 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "comprehendmedical",
+  "signals": [
+    {
+      "detail": "10 documentation pages describe security capability, for example \"VPC endpoints (AWS PrivateLink)\".",
+      "id": "security-doc-pages",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/appflow/latest/userguide/connectors-amazon-connect.md",
+    "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-associate-phone-numbers-to-connect-contact-flows.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5c24f0414567e746522dbf45df68a3494414bad22883b69b39a06bed73e4c78d",
+      "locator": "Supported applications",
+      "quote": "[Connect Customer](https://docs.aws.amazon.com/appflow/latest/userguide/connectors-amazon-connect.md)",
+      "retrievedAt": "2026-09-01T04:06:02.865Z",
+      "sourceUrl": "https://docs.aws.amazon.com/appflow/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "4f64722f627b4b796720af8a22bd6fc7e276b528c3cb721e9bab48cf80f4e8b5",
+      "locator": "Automation Runbook Reference > Connect Customer",
+      "quote": "[AWSSupport-AssociatePhoneNumbersToConnectContactFlows](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-associate-phone-numbers-to-connect-contact-flows.md)",
+      "retrievedAt": "2026-09-01T04:06:19.357Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "connect/connect-customer",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Connect Customer",
+  "serviceId": "connect",
+  "summary": "Use Amazon AppFlow to transfer data from supported data sources to Connect Customer Customer Profiles.",
+  "tier": "tier2"
+}

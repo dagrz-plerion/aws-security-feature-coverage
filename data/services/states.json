@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "3db481fef7c75921624c66254104afb9de8ed66b0fade3c77cc2e36bd6410a16",
+      "locator": "states.json .Name",
+      "quote": "states",
+      "retrievedAt": "2026-09-01T03:58:02.950Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/states/states.json"
+    },
+    {
+      "bodySha256": "4eec68c5e5c08809807aa6189ab0620a4357343e61cdd748f774606ff0f324a1",
+      "locator": "aws-products directory item",
+      "quote": "AWS Step Functions",
+      "retrievedAt": "2026-09-01T03:58:08.144Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=3&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 1: security-doc-pages). Scanned at low priority. Promoted to tier 2: 9 named security features were found in its documentation.",
+  "score": 1,
+  "serviceId": "states",
+  "signals": [
+    {
+      "detail": "1 documentation pages describe security capability, for example \"Versions and alias authorization\".",
+      "id": "security-doc-pages",
+      "weight": 1
+    }
+  ],
+  "tier": "tier2"
+}

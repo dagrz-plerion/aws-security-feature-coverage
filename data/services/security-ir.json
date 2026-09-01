@@ -1,0 +1,55 @@
+{
+  "candidate": true,
+  "confidence": 1,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "a8a2f9a15b854ea66a353d80839f51d7b225407453741c844619b4975a75729f",
+      "locator": "AWS SRA appendix",
+      "quote": "+ [AWS Security Incident Response](https://aws.amazon.com/security-incident-response/) – Automate security incident response, investigation, and remediation with pre-built playbooks and workflows.",
+      "retrievedAt": "2026-09-01T04:07:16.433Z",
+      "sourceUrl": "https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/appendix.md"
+    },
+    {
+      "bodySha256": "58feab6638f94dac529e825ab7e7d7813737f0412c5f729c35dac9a6a239c65e",
+      "locator": "security-ir.json .Name",
+      "quote": "security-ir",
+      "retrievedAt": "2026-09-01T03:58:01.232Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/security-ir/security-ir.json"
+    },
+    {
+      "bodySha256": "4eec68c5e5c08809807aa6189ab0620a4357343e61cdd748f774606ff0f324a1",
+      "locator": "aws-products directory item",
+      "quote": "AWS Security Incident Response",
+      "retrievedAt": "2026-09-01T03:58:08.144Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=3&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "AWS files this product under \"Security, Identity & Compliance\".",
+  "score": 26,
+  "serviceId": "security-ir",
+  "signals": [
+    {
+      "detail": "AWS files this product under \"Security, Identity & Compliance\".",
+      "id": "products-security-category",
+      "weight": 10
+    },
+    {
+      "detail": "The AWS Security Reference Architecture appendix lists this under threat-detection.",
+      "id": "sra-appendix",
+      "weight": 8
+    },
+    {
+      "detail": "The name contains \"security\".",
+      "id": "security-name-strong",
+      "weight": 5
+    },
+    {
+      "detail": "35 documentation pages describe security capability, for example \"Encryption at rest\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier1"
+}

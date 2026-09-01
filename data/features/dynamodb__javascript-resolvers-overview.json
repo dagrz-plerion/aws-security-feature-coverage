@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/appsync/latest/devguide/writing-code.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "964b1b70019279ef71b4cabd775a7b46954fd878101cba3bf54773fff8858114",
+      "locator": "Resolver reference (JavaScript) > JavaScript resolvers overview",
+      "quote": "[Example pipeline resolver with Amazon DynamoDB](https://docs.aws.amazon.com/appsync/latest/devguide/writing-code.md)",
+      "retrievedAt": "2026-09-01T04:06:03.109Z",
+      "sourceUrl": "https://docs.aws.amazon.com/appsync/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "dynamodb/javascript-resolvers-overview",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "JavaScript resolvers overview",
+  "serviceId": "dynamodb",
+  "summary": "Suppose you wanted to attach a pipeline resolver on a field named getPost(id:ID!) that returns a Post type from an Amazon DynamoDB data source with the following GraphQL query:",
+  "tier": "tier2"
+}

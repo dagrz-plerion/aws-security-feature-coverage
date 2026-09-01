@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/datasync/latest/userguide/using-service-linked-roles-service-action-2.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "c9490d2faa24a9aa24b0f20f0dfe5611232030330ecadb50ee9af6ddd65fd164",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[DataSync role](https://docs.aws.amazon.com/datasync/latest/userguide/using-service-linked-roles-service-action-2.md)",
+      "retrievedAt": "2026-09-01T04:06:06.676Z",
+      "sourceUrl": "https://docs.aws.amazon.com/datasync/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "datasync/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "datasync",
+  "summary": "How to use service-linked roles to give DataSync access to resources in your AWS account.",
+  "tier": "tier2"
+}

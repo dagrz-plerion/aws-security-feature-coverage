@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/mediatailor/latest/ug/delete-slr.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5177aeb7afacf1d08b4539b59957ff1b8a30155157892bbfa9c7377fea127063",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Deleting a service-linked role](https://docs.aws.amazon.com/mediatailor/latest/ug/delete-slr.md)",
+      "retrievedAt": "2026-09-01T04:06:13.520Z",
+      "sourceUrl": "https://docs.aws.amazon.com/mediatailor/latest/ug/llms.txt"
+    }
+  ],
+  "id": "mediatailor/deleting-a-service-linked-role",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Deleting a service-linked role",
+  "serviceId": "mediatailor",
+  "summary": "If you no longer need to use a feature or service that requires a service-linked role, we recommend that you delete that role.",
+  "tier": "tier2"
+}

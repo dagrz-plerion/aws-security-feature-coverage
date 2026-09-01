@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-vpc-endpoints.md",
+    "https://docs.aws.amazon.com/autoscaling/plans/userguide/scaling-plan-vpc-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "d9936368da1d4fd7fa178a5336f4187a6cacc426e07609ff07e4587c2287c2c4",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-vpc-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:03.506Z",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "f2800dc974468a498ac299236370c1dbefc016a45f1c0229da730bff82f9b989",
+      "locator": "Security",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/autoscaling/plans/userguide/scaling-plan-vpc-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:03.567Z",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/plans/userguide/llms.txt"
+    }
+  ],
+  "id": "autoscaling/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "autoscaling",
+  "summary": "Create a private connection between your VPC and Application Auto Scaling using AWS PrivateLink, enabling secure access without public internet exposure.",
+  "tier": "tier2"
+}

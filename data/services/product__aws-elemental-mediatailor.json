@@ -1,0 +1,28 @@
+{
+  "candidate": false,
+  "confidence": 0.2,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "34ce17faff84f2e6f197c1266ef9030194eb61677cafeeb28e8ec8b8a4a710d9",
+      "locator": "aws-products directory item",
+      "quote": "AWS Elemental MediaTailor",
+      "retrievedAt": "2026-09-01T03:58:07.905Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=2&item.locale=en_US"
+    },
+    {
+      "bodySha256": "93c76bef2905fc06a3194f1899f913d89c7365c40f2b91befcd40b60d1aac260",
+      "locator": "regional services table",
+      "quote": "AWS Elemental MediaTailor",
+      "retrievedAt": "2026-09-01T03:58:10.266Z",
+      "sourceUrl": "https://api.regional-table.region-services.aws.a2z.com/index.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "This entry did not join to an AWS service id, so it is held for alias review rather than classified.",
+  "score": 0,
+  "serviceId": "product:aws-elemental-mediatailor",
+  "signals": [],
+  "synthetic": true,
+  "tier": "not-security"
+}

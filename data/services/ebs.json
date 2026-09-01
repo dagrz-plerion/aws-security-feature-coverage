@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "8d5cc0283206e636a9b5171e36436208532df31967734035f02a1036da0ff666",
+      "locator": "ebs.json .Name",
+      "quote": "ebs",
+      "retrievedAt": "2026-09-01T03:57:48.724Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/ebs/ebs.json"
+    },
+    {
+      "bodySha256": "cbebbb5de0c7a2a48b82adba893a8b7ee0a336ac503f3690b75b65e342e58919",
+      "locator": "aws-products directory item",
+      "quote": "Amazon EBS Snapshots Archive",
+      "retrievedAt": "2026-09-01T03:58:06.968Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=0&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority. Promoted to tier 2: 21 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "ebs",
+  "signals": [
+    {
+      "detail": "The name contains \"backup\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

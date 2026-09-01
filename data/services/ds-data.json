@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "cc0907cf927d08491f9f297d60e6555154f837aef72636fbaf90b401c6faa8b8",
+      "locator": "ds-data.json .Name",
+      "quote": "ds-data",
+      "retrievedAt": "2026-09-01T03:57:48.716Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/ds-data/ds-data.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide directoryservicedata/latest/DirectoryServiceDataAPIReference",
+      "quote": "AWS Directory Service Data API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority. Promoted to tier 2: 3 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "ds-data",
+  "signals": [
+    {
+      "detail": "The name contains \"directory\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

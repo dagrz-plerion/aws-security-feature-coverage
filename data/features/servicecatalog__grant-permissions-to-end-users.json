@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstarted-iamenduser.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "163bb64354c3a3d4a9466a760c0ba47a9f29b80f286e70a10d4ba1a1e189590b",
+      "locator": "Setting Up",
+      "quote": "[Grant permissions to end users](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstarted-iamenduser.md)",
+      "retrievedAt": "2026-09-01T04:06:18.469Z",
+      "sourceUrl": "https://docs.aws.amazon.com/servicecatalog/latest/adminguide/llms.txt"
+    }
+  ],
+  "id": "servicecatalog/grant-permissions-to-end-users",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Grant permissions to end users",
+  "serviceId": "servicecatalog",
+  "summary": "Grant IAM permissions to the AWS Service Catalog end users who will launch your product.",
+  "tier": "tier2"
+}

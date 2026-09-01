@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging-iam-policy.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "1c603bde349c1e7632cc3ccae619d562f62414468ae4ae6f7211dbf73f1c2b88",
+      "locator": "Tagging",
+      "quote": "[Attribute-based access control](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging-iam-policy.md)",
+      "retrievedAt": "2026-09-01T04:06:02.655Z",
+      "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "apigateway/attribute-based-access-control",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Attribute-based access control",
+  "serviceId": "apigateway",
+  "summary": "Conditions in AWS Identity and Access Management policies are part of the syntax that you use to specify permissions to API Gateway resources.",
+  "tier": "tier2"
+}

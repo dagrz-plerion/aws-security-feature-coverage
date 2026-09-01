@@ -1,0 +1,33 @@
+{
+  "candidate": true,
+  "confidence": 0.85,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "c63e0fe605dabc11e149eac77ae7d081c8ba89bb0f109f34a32aed0efc8dfc31",
+      "locator": "route53resolver.json .Name",
+      "quote": "route53resolver",
+      "retrievedAt": "2026-09-01T03:58:00.287Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/route53resolver/route53resolver.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide reference-architecture-diagrams/latest/hybrid-dns-route53",
+      "quote": "Hybrid DNS Resolution with Amazon Route 53 Resolver Endpoints Architecture Diagrams",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "llm",
+  "reason": "Route 53 Resolver carries DNS Firewall, which the AWS Security Reference Architecture lists as a network protection service.",
+  "score": 2,
+  "serviceId": "route53resolver",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

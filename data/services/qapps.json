@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "ce2dc26bc89739949e1ae666788925c6454c260ea25b31b5513739b8a3c3dad8",
+      "locator": "qapps.json .Name",
+      "quote": "qapps",
+      "retrievedAt": "2026-09-01T03:57:58.580Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/qapps/qapps.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "qapps",
+  "signals": [],
+  "tier": "not-security"
+}

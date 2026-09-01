@@ -1,0 +1,38 @@
+{
+  "candidate": true,
+  "confidence": 0.85,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "08309e35dbb05ee9bf9365ce69a096df6f57a9f9402faacfd41a55fd3cb2435a",
+      "locator": "securityagent.json .Name",
+      "quote": "securityagent",
+      "retrievedAt": "2026-09-01T03:58:01.260Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/securityagent/securityagent.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide securityagent/latest/APIReference",
+      "quote": "AWS Security Agent API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "llm",
+  "reason": "An AWS security service whose actions cover penetration tests, threat models, code reviews and security requirements.",
+  "score": 8,
+  "serviceId": "securityagent",
+  "signals": [
+    {
+      "detail": "The name contains \"security\".",
+      "id": "security-name-strong",
+      "weight": 5
+    },
+    {
+      "detail": "27 documentation pages describe security capability, for example \"Authentication\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier1"
+}

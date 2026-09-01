@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/entityresolution/latest/userguide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "cb69a5530c0539118e67aaf7c648de2054c179db02efdbfa47988eb16f5721e4",
+      "locator": "Security > Data protection",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/entityresolution/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:08.924Z",
+      "sourceUrl": "https://docs.aws.amazon.com/entityresolution/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "entityresolution/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "entityresolution",
+  "summary": "You can use an AWS PrivateLink to create a private connection between your VPC and AWS Entity Resolution.",
+  "tier": "tier2"
+}

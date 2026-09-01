@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/grafana/latest/userguide/using-service-linked-roles.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "fb4693f608ea60b529044869fdb8a5d9b626adc8414071cbf12e2c1454f1f488",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[Using service-linked roles](https://docs.aws.amazon.com/grafana/latest/userguide/using-service-linked-roles.md)",
+      "retrievedAt": "2026-09-01T04:06:10.028Z",
+      "sourceUrl": "https://docs.aws.amazon.com/grafana/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "grafana/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "grafana",
+  "summary": "How to use service-linked roles to give Amazon Managed Grafana access to resources in your AWS account.",
+  "tier": "tier2"
+}

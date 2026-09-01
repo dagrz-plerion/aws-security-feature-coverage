@@ -1,0 +1,26 @@
+{
+  "name": "aws-security-feature-coverage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "pipeline": "tsx src/cli/run.ts",
+    "challenge": "tsx src/cli/challenge.ts",
+    "audit": "tsx src/cli/audit.ts",
+    "query": "tsx src/cli/query.ts",
+    "report": "tsx src/report/build.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  }
+}

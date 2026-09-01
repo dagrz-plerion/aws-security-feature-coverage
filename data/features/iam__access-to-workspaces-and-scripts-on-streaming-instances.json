@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/workspaces/latest/adminguide/using-iam-roles-to-grant-permissions-to-applications-scripts-streaming-instances.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "50eb4009c870b6505e9da540a31cba6e396c2776a8852c0ef759128741a3b56a",
+      "locator": "Security > Identity and access management",
+      "quote": "[Access to WorkSpaces and scripts on streaming instances](https://docs.aws.amazon.com/workspaces/latest/adminguide/using-iam-roles-to-grant-permissions-to-applications-scripts-streaming-instances.md)",
+      "retrievedAt": "2026-09-01T04:06:20.709Z",
+      "sourceUrl": "https://docs.aws.amazon.com/workspaces/latest/adminguide/llms.txt"
+    }
+  ],
+  "id": "iam/access-to-workspaces-and-scripts-on-streaming-instances",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Access to WorkSpaces and scripts on streaming instances",
+  "serviceId": "iam",
+  "summary": "Applications and scripts that run on WorkSpaces streaming instances must include AWS credentials in their AWS API requests.",
+  "tier": "tier1"
+}

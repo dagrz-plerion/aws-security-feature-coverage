@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "9bfcca678b8f97cbccf33eb048403d6ea72502cbf3080bfbc7313155a9069c96",
+      "locator": "partitions.aws.services.appconfigdata",
+      "quote": "appconfigdata",
+      "retrievedAt": "2026-09-01T04:40:18.443Z",
+      "sourceUrl": "file:///opt/homebrew/Cellar/awscli/2.36.34/libexec/lib/python3.14/site-packages/awscli/botocore/data/endpoints.json"
+    },
+    {
+      "bodySha256": "9bfcca678b8f97cbccf33eb048403d6ea72502cbf3080bfbc7313155a9069c96",
+      "locator": "partitions.aws-cn.services.appconfigdata",
+      "quote": "appconfigdata",
+      "retrievedAt": "2026-09-01T04:40:18.443Z",
+      "sourceUrl": "file:///opt/homebrew/Cellar/awscli/2.36.34/libexec/lib/python3.14/site-packages/awscli/botocore/data/endpoints.json"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority. Promoted to tier 2: 1 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "appconfigdata",
+  "signals": [
+    {
+      "detail": "The name contains \"config\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

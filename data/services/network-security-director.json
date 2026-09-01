@@ -1,0 +1,26 @@
+{
+  "candidate": true,
+  "confidence": 0.85,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "ac1609b10f33077c99da3bd4ee965d0728ad43d2e2a0c7075aaca50e4a431d69",
+      "locator": "network-security-director.json .Name",
+      "quote": "network-security-director",
+      "retrievedAt": "2026-09-01T03:57:56.402Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/network-security-director/network-security-director.json"
+    }
+  ],
+  "method": "llm",
+  "reason": "AWS Network Security Director reports network security findings, resources, insights and remediations.",
+  "score": 5,
+  "serviceId": "network-security-director",
+  "signals": [
+    {
+      "detail": "The name contains \"security\".",
+      "id": "security-name-strong",
+      "weight": 5
+    }
+  ],
+  "tier": "tier1"
+}

@@ -1,0 +1,39 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "964846d02017c570251dbd4704c8fd60076dd58c0fcbc9c637df741dad252b2a",
+      "locator": "ses.json .Name",
+      "quote": "ses",
+      "retrievedAt": "2026-09-01T03:58:01.699Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/ses/ses.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide ses/latest/APIReference-V2",
+      "quote": "Amazon Simple Email Service API v2 Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 4 named security features were found in its documentation.",
+  "score": 5,
+  "serviceId": "ses",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    },
+    {
+      "detail": "15 documentation pages describe security capability, for example \"Types of credentials\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

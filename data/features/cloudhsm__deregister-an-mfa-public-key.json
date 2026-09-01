@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cloudhsm/latest/userguide/deregister-mfa-cloudhsm-cli.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "40168a9d137882d27d81e97c1cca0c17ceefcd5177947d8edd37426974206ee4",
+      "locator": "HSM users > Manage user MFA",
+      "quote": "[Deregister an MFA public key](https://docs.aws.amazon.com/cloudhsm/latest/userguide/deregister-mfa-cloudhsm-cli.md)",
+      "retrievedAt": "2026-09-01T04:06:05.112Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudhsm/deregister-an-mfa-public-key",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Deregister an MFA public key",
+  "serviceId": "cloudhsm",
+  "summary": "Follow these steps to deregister a multi-factor authentication (MFA) public key for AWS CloudHSM admin users when MFA public key is registered.",
+  "tier": "tier1"
+}

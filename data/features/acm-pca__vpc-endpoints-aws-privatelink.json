@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/privateca/latest/userguide/vpc-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "9ac8c369118ad6c5c10e86b2280aa75ae81f1e08d4f5b48113caa07f6100f056",
+      "locator": "Security > Infrastructure security",
+      "quote": "[VPC Endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/privateca/latest/userguide/vpc-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:15.563Z",
+      "sourceUrl": "https://docs.aws.amazon.com/privateca/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "acm-pca/vpc-endpoints-aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "VPC Endpoints (AWS PrivateLink)",
+  "serviceId": "acm-pca",
+  "summary": "Use a VPC endpoint to create a private connection between your VPC and AWS Private Certificate Authority without requiring access over the internet or through a NAT instance, a VPN connection, or Direct Connect.",
+  "tier": "tier1"
+}

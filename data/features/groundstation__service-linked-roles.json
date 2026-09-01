@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/ground-station/latest/ug/using-service-linked-roles.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ebf9614aabe172014cd37750533936c057115c528e5bcd5f25711b2c9f23a05f",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[Use service-linked roles](https://docs.aws.amazon.com/ground-station/latest/ug/using-service-linked-roles.md)",
+      "retrievedAt": "2026-09-01T04:06:10.210Z",
+      "sourceUrl": "https://docs.aws.amazon.com/ground-station/latest/ug/llms.txt"
+    }
+  ],
+  "id": "groundstation/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "groundstation",
+  "summary": "How to use service-linked roles to give Ground Station access to resources in your AWS account.",
+  "tier": "tier2"
+}

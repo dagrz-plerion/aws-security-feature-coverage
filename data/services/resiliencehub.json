@@ -1,0 +1,39 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "1b1045aabb0dcc52e3ec0d0878cf2980ea16116caf44d7c091ae361937eb2f3d",
+      "locator": "resiliencehub.json .Name",
+      "quote": "resiliencehub",
+      "retrievedAt": "2026-09-01T03:57:59.200Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/resiliencehub/resiliencehub.json"
+    },
+    {
+      "bodySha256": "34ce17faff84f2e6f197c1266ef9030194eb61677cafeeb28e8ec8b8a4a710d9",
+      "locator": "aws-products directory item",
+      "quote": "AWS Resilience Hub",
+      "retrievedAt": "2026-09-01T03:58:07.905Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=2&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 4: security-name-weak, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 7 named security features were found in its documentation.",
+  "score": 4,
+  "serviceId": "resiliencehub",
+  "signals": [
+    {
+      "detail": "The name contains \"resilience\".",
+      "id": "security-name-weak",
+      "weight": 2
+    },
+    {
+      "detail": "6 documentation pages describe security capability, for example \"Data protection\".",
+      "id": "security-doc-pages",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

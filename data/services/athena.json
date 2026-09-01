@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "2a650da892ce9b26204c6c0380bdd03e2e3ec5b59b201ac91bf0550d1f8d6d49",
+      "locator": "athena.json .Name",
+      "quote": "athena",
+      "retrievedAt": "2026-09-01T03:57:43.329Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/athena/athena.json"
+    },
+    {
+      "bodySha256": "cbebbb5de0c7a2a48b82adba893a8b7ee0a336ac503f3690b75b65e342e58919",
+      "locator": "aws-products directory item",
+      "quote": "Amazon Athena",
+      "retrievedAt": "2026-09-01T03:58:06.968Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=0&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 17 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "athena",
+  "signals": [
+    {
+      "detail": "10 documentation pages describe security capability, for example \"Snowflake authentication\".",
+      "id": "security-doc-pages",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

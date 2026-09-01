@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_mfa.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "920c2475f5a2c690c771e1a56137df8edaf6dd8ce07a81bd583279fa948e87fa",
+      "locator": "AWS Managed Microsoft AD > Understanding password policies",
+      "quote": "[Enabling multi-factor authentication](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_mfa.md)",
+      "retrievedAt": "2026-09-01T04:06:07.342Z",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/llms.txt"
+    }
+  ],
+  "id": "ds/multi-factor-authentication",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "multi-factor authentication",
+  "serviceId": "ds",
+  "summary": "You can enable multi-factor authentication (MFA) for your AWS Managed Microsoft AD directory to increase security when your users specify their AD credentials to access Supported Amazon Enterprise applications.",
+  "tier": "tier1"
+}

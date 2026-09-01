@@ -1,0 +1,28 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access_examples_cross.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "d310fb71d3f7920465e5364aefa311e48096d0dfdafd438fff4f9c7e4a0ee8bb",
+      "locator": "Security > Authentication and access control",
+      "quote": "[Cross-account access](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access_examples_cross.md)",
+      "retrievedAt": "2026-09-01T04:06:18.101Z",
+      "sourceUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "account-access/authentication-and-access-control",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Authentication and access control",
+  "serviceId": "account-access",
+  "summary": "Learn how to allow users in other accounts to access your secrets.",
+  "tier": "tier2"
+}

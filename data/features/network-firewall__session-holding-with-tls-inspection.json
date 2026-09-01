@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/network-firewall/latest/developerguide/session-holding-tls.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "59ab20835e7dcb0a2fa57d4fd2a6322576e74bbd288e6dfd2ace961728a391e1",
+      "locator": "TLS inspection configurations",
+      "quote": "[Session holding with TLS inspection](https://docs.aws.amazon.com/network-firewall/latest/developerguide/session-holding-tls.md)",
+      "retrievedAt": "2026-09-01T04:06:14.103Z",
+      "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "network-firewall/session-holding-with-tls-inspection",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "Session holding with TLS inspection",
+  "serviceId": "network-firewall",
+  "summary": "Configure session holding to enhance security for TLS inspection by controlling when connection establishment packets reach destination servers.",
+  "tier": "tier1"
+}

@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "afc6e3ff678323f5120099013b2ab775a4059f23233872ae199d69ab2f3d3539",
+      "locator": "elastictranscoder.json .Name",
+      "quote": "elastictranscoder",
+      "retrievedAt": "2026-09-01T03:57:49.485Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/elastictranscoder/elastictranscoder.json"
+    },
+    {
+      "bodySha256": "cbebbb5de0c7a2a48b82adba893a8b7ee0a336ac503f3690b75b65e342e58919",
+      "locator": "aws-products directory item",
+      "quote": "Amazon Elastic Transcoder",
+      "retrievedAt": "2026-09-01T03:58:06.968Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=0&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "elastictranscoder",
+  "signals": [],
+  "tier": "not-security"
+}

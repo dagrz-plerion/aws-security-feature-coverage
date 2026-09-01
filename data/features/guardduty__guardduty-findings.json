@@ -1,0 +1,35 @@
+{
+  "aliases": [],
+  "confidence": 0.85,
+  "discoveredBy": [
+    "guide-chapter",
+    "guide-subchapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/guardduty/latest/ug/filter-lifecycle-metadata.md",
+    "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-summary.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "3ddece1bd1b140842141362e4adea0c0415850ead561cd1a6797e3bac48bc3fc",
+      "locator": "Managing GuardDuty findings > Filtering GuardDuty findings",
+      "quote": "[Lifecycle metadata](https://docs.aws.amazon.com/guardduty/latest/ug/filter-lifecycle-metadata.md)",
+      "retrievedAt": "2026-09-01T04:06:10.249Z",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/llms.txt"
+    },
+    {
+      "bodySha256": "3ddece1bd1b140842141362e4adea0c0415850ead561cd1a6797e3bac48bc3fc",
+      "locator": "Managing GuardDuty findings",
+      "quote": "[GuardDuty Summary dashboard](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-summary.md)",
+      "retrievedAt": "2026-09-01T04:06:10.249Z",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/llms.txt"
+    }
+  ],
+  "id": "guardduty/guardduty-findings",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "GuardDuty findings",
+  "serviceId": "guardduty",
+  "summary": "Lifecycle metadata fields help you audit filter history and detect unexpected changes to your suppression rules.",
+  "tier": "tier1"
+}

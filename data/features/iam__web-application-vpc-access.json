@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/transform/latest/userguide/vpc-webapp-access.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ce97d1cf0f93346ca9c65c7cbddf0881a539b64181eee42450500fbbaa962c40",
+      "locator": "Security > Identity and access management",
+      "quote": "[Web application VPC access](https://docs.aws.amazon.com/transform/latest/userguide/vpc-webapp-access.md)",
+      "retrievedAt": "2026-09-01T04:06:19.755Z",
+      "sourceUrl": "https://docs.aws.amazon.com/transform/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "iam/web-application-vpc-access",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Web application VPC access",
+  "serviceId": "iam",
+  "summary": "Configure controlled internet egress from your VPC to access the AWS Transform web application when using AWS PrivateLink.",
+  "tier": "tier1"
+}

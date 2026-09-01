@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/devguide/ingestion-grant-permission.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "88ecdc3e20919fda7a01e0f03d55485d621317b8180be7ef7b5ece51f74ff6cc",
+      "locator": "Ingest and store media",
+      "quote": "[Grant permission](https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/devguide/ingestion-grant-permission.md)",
+      "retrievedAt": "2026-09-01T04:06:11.929Z",
+      "sourceUrl": "https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "kinesisvideo/grant-permission",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Grant permission",
+  "serviceId": "kinesisvideo",
+  "summary": "You must grant stream permission to your IAM roles in order to ingest streams in Amazon Kinesis Video Streams with WebRTC.",
+  "tier": "tier2"
+}

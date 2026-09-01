@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/TrackingChanges.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "003b337f8a5250f1d9decebbc697cae0335f9bb3910a2f27bc79c44f4da7c313",
+      "locator": "Reports, metrics, and logs > Access logs (standard logs)",
+      "quote": "[Track configuration changes with AWS Config](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/TrackingChanges.md)",
+      "retrievedAt": "2026-09-01T04:06:01.059Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/llms.txt"
+    }
+  ],
+  "id": "config/access-logs-standard-logs",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "Access logs (standard logs)",
+  "serviceId": "config",
+  "summary": "Use AWS Config to record configuration changes for Amazon CloudFront distribution settings changes.",
+  "tier": "tier1"
+}

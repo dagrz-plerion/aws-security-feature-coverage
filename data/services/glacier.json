@@ -1,0 +1,39 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "ea2c29ad0c8972c01e4fb416f20c1c738ee9f90fc0bd08cd23b31397cc1e392e",
+      "locator": "glacier.json .Name",
+      "quote": "glacier",
+      "retrievedAt": "2026-09-01T03:57:51.417Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/glacier/glacier.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide amazonglacier/latest/dev",
+      "quote": "Amazon Glacier Developer Guide",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 2 named security features were found in its documentation.",
+  "score": 5,
+  "serviceId": "glacier",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    },
+    {
+      "detail": "14 documentation pages describe security capability, for example \"Audit Logging with AWS CloudTrail\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

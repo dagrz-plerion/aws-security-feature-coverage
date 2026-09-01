@@ -1,0 +1,35 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-vpc-iam.md",
+    "https://docs.aws.amazon.com/config/latest/developerguide/create-VPC-endpoint-for-Config.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "61f42a7e2265018d7cbfb2e44ed42b1252701b97373063a0a68aed3c31aa5fbc",
+      "locator": "Amazon VPC endpoints",
+      "quote": "[Create a VPC Endpoint](https://docs.aws.amazon.com/config/latest/developerguide/create-VPC-endpoint-for-Config.md)",
+      "retrievedAt": "2026-09-01T04:06:06.011Z",
+      "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "37b074c32f45f6ef539ded73b0ed456a41a89ce436c3359f331eeea660ba26e6",
+      "locator": "Security > Amazon VPC endpoints",
+      "quote": "[Endpoint Policies](https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-vpc-iam.md)",
+      "retrievedAt": "2026-09-01T04:06:02.615Z",
+      "sourceUrl": "https://docs.aws.amazon.com/amazonswf/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "ec2/amazon-vpc-endpoints",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon VPC endpoints",
+  "serviceId": "ec2",
+  "summary": "Create a VPC endpoint for AWS Config.",
+  "tier": "tier2"
+}

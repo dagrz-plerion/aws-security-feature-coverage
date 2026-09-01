@@ -1,0 +1,38 @@
+{
+  "candidate": true,
+  "confidence": 0.85,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "01d0998fc868aebc14cca9f4b8a1914693661ec67f8ca824ac92093ba516af43",
+      "locator": "controlcatalog.json .Name",
+      "quote": "controlcatalog",
+      "retrievedAt": "2026-09-01T03:57:47.384Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/controlcatalog/controlcatalog.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide controlcatalog/latest/APIReference",
+      "quote": "AWS Control Catalog Welcome",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "llm",
+  "reason": "AWS Control Catalog publishes the common controls, domains and objectives that governance and compliance services draw on.",
+  "score": 7,
+  "serviceId": "controlcatalog",
+  "signals": [
+    {
+      "detail": "The name contains \"security\".",
+      "id": "security-name-strong",
+      "weight": 5
+    },
+    {
+      "detail": "7 documentation pages describe security capability, for example \"Data protection\".",
+      "id": "security-doc-pages",
+      "weight": 2
+    }
+  ],
+  "tier": "tier1"
+}

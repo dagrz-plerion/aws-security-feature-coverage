@@ -1,0 +1,26 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "9bbb30fdc5471280f593d0bfe24c23cf5b6aef558a6bdc0e37c415e52c77b99f",
+      "locator": "backup-storage.json .Name",
+      "quote": "backup-storage",
+      "retrievedAt": "2026-09-01T03:57:44.007Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/backup-storage/backup-storage.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "backup-storage",
+  "signals": [
+    {
+      "detail": "The name contains \"backup\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

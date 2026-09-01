@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/parallelcluster/v2/ug/cloudwatch-logs.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "f8b05ffb9752939cce9118693fa6f1cbb0fdcfa44acd5f5327d6d6a84b890ead",
+      "locator": "Using AWS ParallelCluster > AWS Batch",
+      "quote": "[Integration with Amazon CloudWatch Logs](https://docs.aws.amazon.com/parallelcluster/v2/ug/cloudwatch-logs.md)",
+      "retrievedAt": "2026-09-01T04:06:14.891Z",
+      "sourceUrl": "https://docs.aws.amazon.com/parallelcluster/v2/ug/llms.txt"
+    }
+  ],
+  "id": "logs/aws-batch",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS Batch",
+  "serviceId": "logs",
+  "summary": "Starting with AWS ParallelCluster version 2.6.0, common logs are stored in CloudWatch Logs by default.",
+  "tier": "tier2"
+}

@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/encryption-custom-job.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ceb0365a55aa0d587356fabcbd2130c8a84b24251a466d0b789f744fd7458b74",
+      "locator": "Security, Guardrails, and Observability > Data encryption",
+      "quote": "[Encryption of custom models](https://docs.aws.amazon.com/bedrock/latest/userguide/encryption-custom-job.md)",
+      "retrievedAt": "2026-09-01T04:06:04.269Z",
+      "sourceUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "bedrock/data-encryption",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Data encryption",
+  "serviceId": "bedrock",
+  "summary": "Amazon Bedrock uses your training data with the CreateModelCustomizationJob action, or with the console, to create a custom model which is a fine tuned version of an Amazon Bedrock foundational model.",
+  "tier": "tier2"
+}

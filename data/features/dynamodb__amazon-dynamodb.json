@@ -1,0 +1,50 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/client-server-side.md",
+    "https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/dynamodb.md",
+    "https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/dynamodb-integration-docmodel.md",
+    "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/dynamodb-overview.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "575a3521bbd0e46aaee6cfc8a1315898d50c8b888b58f652e112ec4b05f0e21f",
+      "locator": "Amazon DynamoDB",
+      "quote": "[Client-side and server-side encryption](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/client-server-side.md)",
+      "retrievedAt": "2026-09-01T04:06:06.483Z",
+      "sourceUrl": "https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/llms.txt"
+    },
+    {
+      "bodySha256": "b6b65c196548830210bd395e3eb98b1011f6a58282af082fb3914f00abdf096d",
+      "locator": "AWS Mobile SDK for Unity Developer Guide",
+      "quote": "[Amazon DynamoDB](https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/dynamodb.md)",
+      "retrievedAt": "2026-09-01T04:06:13.674Z",
+      "sourceUrl": "https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "43605c98d5772d8e043c7f7439695a2e43a5cca4a41b992a0f3d34db1b79610b",
+      "locator": "Amazon DynamoDB",
+      "quote": "[Using the Document Model](https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/dynamodb-integration-docmodel.md)",
+      "retrievedAt": "2026-09-01T04:06:13.736Z",
+      "sourceUrl": "https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "79d80bc8923df8eb5c8b48968ea8f1e34df0066563a1235f6f5a0abd157bd60f",
+      "locator": "Working with AWS services > Amazon DynamoDB",
+      "quote": "[Working with Amazon DynamoDB](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/dynamodb-overview.md)",
+      "retrievedAt": "2026-09-01T04:06:19.598Z",
+      "sourceUrl": "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "dynamodb/amazon-dynamodb",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon DynamoDB",
+  "serviceId": "dynamodb",
+  "summary": "The Document Model provides wrapper classes around the low-level .NET API.",
+  "tier": "tier2"
+}

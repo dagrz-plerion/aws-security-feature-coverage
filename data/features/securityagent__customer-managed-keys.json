@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/securityagent/latest/userguide/customer-managed-keys.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ed7d5eb1f67e08a4ba059f9c88a187efa96eccd85188e616e13a95d28d866a84",
+      "locator": "For administrators (console) > Manage users and access",
+      "quote": "[Customer managed keys](https://docs.aws.amazon.com/securityagent/latest/userguide/customer-managed-keys.md)",
+      "retrievedAt": "2026-09-01T04:06:18.269Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityagent/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "securityagent/customer-managed-keys",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Customer managed keys",
+  "serviceId": "securityagent",
+  "summary": "By default, AWS Security Agent encrypts all data at rest using AWS-managed encryption keys.",
+  "tier": "tier1"
+}

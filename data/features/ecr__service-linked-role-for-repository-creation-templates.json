@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonECR/latest/userguide/slr-rct.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "750f4f0567bc583ea6ebd282f968e238388d2289bea529964a60a0b78e2234bc",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Service-linked role for repository creation templates](https://docs.aws.amazon.com/AmazonECR/latest/userguide/slr-rct.md)",
+      "retrievedAt": "2026-09-01T04:06:01.292Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ecr/service-linked-role-for-repository-creation-templates",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Service-linked role for repository creation templates",
+  "serviceId": "ecr",
+  "summary": "Amazon ECR uses a service-linked role named AWSServiceRoleForECRTemplate which gives permission for Amazon ECR to perform actions on your behalf to complete repository creation template actions.",
+  "tier": "tier2"
+}

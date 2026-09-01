@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "a6652b8041761406ae90ef56f105e72901bda456025f1da24fbe0f9c188e9f82",
+      "locator": "Security > Connecting to your DB instance using IAM authentication",
+      "quote": "[Controlling access with security groups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.md)",
+      "retrievedAt": "2026-09-01T04:06:01.518Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/llms.txt"
+    }
+  ],
+  "id": "rds/controlling-access-with-security-groups",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "Controlling access with security groups",
+  "serviceId": "rds",
+  "summary": "Control the access the traffic in and out of a DB instance with security groups.",
+  "tier": "tier2"
+}

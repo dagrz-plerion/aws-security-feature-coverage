@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_IDENTITY_PROVIDER.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "9f1279fbac1bc82beb08fc6034a65e3c6d164b5ad2075f64f28718f9b8493f3e",
+      "locator": "SQL reference > SQL commands",
+      "quote": "[ALTER IDENTITY PROVIDER](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_IDENTITY_PROVIDER.md)",
+      "retrievedAt": "2026-09-01T04:06:16.074Z",
+      "sourceUrl": "https://docs.aws.amazon.com/redshift/latest/dg/llms.txt"
+    }
+  ],
+  "id": "redshift/alter-identity-provider",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "ALTER IDENTITY PROVIDER",
+  "serviceId": "redshift",
+  "summary": "Alters an identity provider to assign new parameters and values.",
+  "tier": "tier2"
+}

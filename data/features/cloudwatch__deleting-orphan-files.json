@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/glue/latest/dg/view-optimization-metrics.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "1d628b17316beace57b0747efb99ff3c2de60a332a67592618c3ae82921b685b",
+      "locator": "Data discovery and cataloging > Deleting orphan files",
+      "quote": "[Viewing Amazon CloudWatch metrics](https://docs.aws.amazon.com/glue/latest/dg/view-optimization-metrics.md)",
+      "retrievedAt": "2026-09-01T04:06:09.925Z",
+      "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/llms.txt"
+    }
+  ],
+  "id": "cloudwatch/deleting-orphan-files",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Deleting orphan files",
+  "serviceId": "cloudwatch",
+  "summary": "After running the table optimizers successfully, the service creates Amazon CloudWatch metrics on the optimization job performance.",
+  "tier": "tier2"
+}

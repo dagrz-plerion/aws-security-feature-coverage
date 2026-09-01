@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "4dffe0bd9f952c41b25dab8d8bb77538d45b773302259aae4bd3cd6cc28bfe97",
+      "locator": "snowball.json .Name",
+      "quote": "snowball",
+      "retrievedAt": "2026-09-01T03:58:02.319Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/snowball/snowball.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide snowball/latest/developer-guide",
+      "quote": "AWS Snowball Edge Developer Guide",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 2 named security features were found in its documentation.",
+  "score": 3,
+  "serviceId": "snowball",
+  "signals": [
+    {
+      "detail": "13 documentation pages describe security capability, for example \"Controlling network traffic with security groups\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

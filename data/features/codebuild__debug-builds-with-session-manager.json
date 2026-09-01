@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/codebuild/latest/userguide/session-manager.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5cf4aa94bbe779ec0a9a9b846acf6a3efbd905bdd9f0801ff46950dcf21a5786",
+      "locator": "Builds > Debug builds with CodeBuild sandbox",
+      "quote": "[Debug builds with Session Manager](https://docs.aws.amazon.com/codebuild/latest/userguide/session-manager.md)",
+      "retrievedAt": "2026-09-01T04:06:05.355Z",
+      "sourceUrl": "https://docs.aws.amazon.com/codebuild/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "codebuild/debug-builds-with-session-manager",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Debug builds with Session Manager",
+  "serviceId": "codebuild",
+  "summary": "Use Session Manager to debug a running CodeBuild build.",
+  "tier": "tier2"
+}

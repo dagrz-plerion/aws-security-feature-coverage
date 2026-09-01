@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-naming.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Access control > Working with access points",
+      "quote": "[Referencing access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-naming.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "s3/referencing-access-points",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Referencing access points",
+  "serviceId": "s3",
+  "summary": "Referencing access points with ARNs, access point aliases, or virtual-hosted–style URIs based on use cases.",
+  "tier": "tier2"
+}

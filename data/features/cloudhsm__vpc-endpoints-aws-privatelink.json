@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-vpc-endpoint.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "40168a9d137882d27d81e97c1cca0c17ceefcd5177947d8edd37426974206ee4",
+      "locator": "Security > Compliance validation",
+      "quote": "[VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-vpc-endpoint.md)",
+      "retrievedAt": "2026-09-01T04:06:05.112Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudhsm/vpc-endpoints-aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "VPC endpoints (AWS PrivateLink)",
+  "serviceId": "cloudhsm",
+  "summary": "You can use an interface VPC endpoint to create a private connection between your VPC and AWS CloudHSM without requiring access over the internet or through a NAT device, a VPN connection, or an Direct Connect connection.",
+  "tier": "tier1"
+}

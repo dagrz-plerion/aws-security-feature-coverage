@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/detective/latest/userguide/member-invitation-response.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b4e540d07d68924645799f11c8ab8d109107ec8b22413b786007b49d3c2f1c4f",
+      "locator": "Managing accounts > For member accounts: Managing invitations and memberships",
+      "quote": "[Responding to a behavior graph invitation](https://docs.aws.amazon.com/detective/latest/userguide/member-invitation-response.md)",
+      "retrievedAt": "2026-09-01T04:06:06.948Z",
+      "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "detective/responding-to-a-behavior-graph-invitation",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "Responding to a behavior graph invitation",
+  "serviceId": "detective",
+  "summary": "Use the Amazon Detective console or API to accept or decline a behavior graph invitation.",
+  "tier": "tier1"
+}

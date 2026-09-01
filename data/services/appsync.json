@@ -1,0 +1,39 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "0b6281876910ac083b71b8a14182e74ab659062d68702293c19b8620a8e74ebb",
+      "locator": "appsync.json .Name",
+      "quote": "appsync",
+      "retrievedAt": "2026-09-01T03:57:42.648Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/appsync/appsync.json"
+    },
+    {
+      "bodySha256": "dba2dd6d1282362ee8c86c7c13df4a190f1d205f28fc70d504e5da33f17cc340",
+      "locator": "aws-products directory item",
+      "quote": "AWS AppSync",
+      "retrievedAt": "2026-09-01T03:58:07.224Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=1&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 4: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 14 named security features were found in its documentation.",
+  "score": 4,
+  "serviceId": "appsync",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    },
+    {
+      "detail": "10 documentation pages describe security capability, for example \"Access control use cases for securing requests and responses\".",
+      "id": "security-doc-pages",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

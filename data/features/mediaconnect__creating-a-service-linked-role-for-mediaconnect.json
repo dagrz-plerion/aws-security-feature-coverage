@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/mediaconnect/latest/ug/create-slr.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "74ec9896f35e67906bb1764d48a1bbf617ffae194550947b12df571bbed4c8f1",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Creating a service-linked role for MediaConnect](https://docs.aws.amazon.com/mediaconnect/latest/ug/create-slr.md)",
+      "retrievedAt": "2026-09-01T04:06:13.148Z",
+      "sourceUrl": "https://docs.aws.amazon.com/mediaconnect/latest/ug/llms.txt"
+    }
+  ],
+  "id": "mediaconnect/creating-a-service-linked-role-for-mediaconnect",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Creating a service-linked role for MediaConnect",
+  "serviceId": "mediaconnect",
+  "summary": "You don't need to manually create a service-linked role.",
+  "tier": "tier2"
+}

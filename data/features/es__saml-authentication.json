@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-saml.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "fe513c5ff926e7b5855e8be27732077db798c7e8cae22b85b23c61fe302d8392",
+      "locator": "Amazon OpenSearch Serverless > FIPS compliance",
+      "quote": "[SAML authentication](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-saml.md)",
+      "retrievedAt": "2026-09-01T04:06:14.653Z",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "es/saml-authentication",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "SAML authentication",
+  "serviceId": "es",
+  "summary": "Configure SAML authentication for OpenSearch Serverless to enable secure single sign-on access to your collections using your existing identity provider.",
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/connect-decisions/latest/adminguide/access-control-filter-toggle.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "92732d9884b5d23e0e85c2fbb2febe3bf12e82374ff34194207a30e657752cdf",
+      "locator": "System Configuration",
+      "quote": "[Access Control Filter Toggle](https://docs.aws.amazon.com/connect-decisions/latest/adminguide/access-control-filter-toggle.md)",
+      "retrievedAt": "2026-09-01T04:06:06.003Z",
+      "sourceUrl": "https://docs.aws.amazon.com/connect-decisions/latest/adminguide/llms.txt"
+    }
+  ],
+  "id": "connect/access-control-filter-toggle",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Access Control Filter Toggle",
+  "serviceId": "connect",
+  "summary": "As stated earlier, all users can view all exceptions, irrespective of whether they have the appropriate products and sites configured (mutate actions still require appropriate access).",
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/data-exchange/latest/userguide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "1ecb075b1dea89dd95c6870c068d20b3506dc13093815c59fd9175d01ec0e183",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/data-exchange/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:06.466Z",
+      "sourceUrl": "https://docs.aws.amazon.com/data-exchange/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "dataexchange/vpc-endpoints-aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "VPC endpoints (AWS PrivateLink)",
+  "serviceId": "dataexchange",
+  "summary": "You can use an interface VPC endpoint to create a private connection between your VPC and AWS Data Exchange without requiring access over the internet or through a NAT device, a VPN connection, or an AWS Direct Connect connection.",
+  "tier": "tier2"
+}

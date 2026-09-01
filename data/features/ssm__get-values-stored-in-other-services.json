@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references-ssm.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "bbc835fa20483f522d12cdd2eef011dfd7682ba58cc3c0e784fbc16855d4d66e",
+      "locator": "Working with templates > Get values stored in other services",
+      "quote": "[Get Systems Manager plaintext value](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references-ssm.md)",
+      "retrievedAt": "2026-09-01T04:06:00.822Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/llms.txt"
+    }
+  ],
+  "id": "ssm/get-values-stored-in-other-services",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Get values stored in other services",
+  "serviceId": "ssm",
+  "summary": "When you're creating a CloudFormation template, you might want to use plaintext values stored in Parameter Store.",
+  "tier": "tier2"
+}

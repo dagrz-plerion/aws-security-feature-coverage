@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "d252895904d1b78157a61e6409008a07b80fbcc9b9b546c5245f38d0eb1246d1",
+      "locator": "mediapackage-vod.json .Name",
+      "quote": "mediapackage-vod",
+      "retrievedAt": "2026-09-01T03:57:55.493Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/mediapackage-vod/mediapackage-vod.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide mediapackage-vod/latest/apireference",
+      "quote": "AWS Elemental MediaPackage VOD API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "mediapackage-vod",
+  "signals": [],
+  "tier": "not-security"
+}

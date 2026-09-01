@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "7fa7dad5263199ac4f74ff22b4daa56f474d9c13d2f249d24164c62f945cd6e6",
+      "locator": "Security > Identity and access management",
+      "quote": "[VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:13.656Z",
+      "sourceUrl": "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "migrationhub-strategy/vpc-endpoints-aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "VPC endpoints (AWS PrivateLink)",
+  "serviceId": "migrationhub-strategy",
+  "summary": "You can use an interface VPC endpoint to create private connections between your VPC and Strategy Recommendations.",
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-posix-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Working with Amazon S3 Files > How S3 Files works with IAM",
+      "quote": "[POSIX permissions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-posix-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "s3files/posix-permissions",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "POSIX permissions",
+  "serviceId": "s3files",
+  "summary": "Learn how S3 Files maps POSIX ownership and permissions to S3 object metadata and how to apply metadata to objects uploaded directly to your bucket.",
+  "tier": "tier2"
+}

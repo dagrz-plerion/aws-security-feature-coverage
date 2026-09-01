@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/glue/latest/dg/console-security-configurations.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "1d628b17316beace57b0747efb99ff3c2de60a332a67592618c3ae82921b685b",
+      "locator": "Security > Encrypting data written by AWS Glue",
+      "quote": "[Managing security configurations on the AWS Glue console](https://docs.aws.amazon.com/glue/latest/dg/console-security-configurations.md)",
+      "retrievedAt": "2026-09-01T04:06:09.925Z",
+      "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/llms.txt"
+    }
+  ],
+  "id": "glue/encrypting-data-written-by-aws-glue",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Encrypting data written by AWS Glue",
+  "serviceId": "glue",
+  "summary": "Create security configurations on the AWS Glue console to provide the encryption properties used by crawlers, jobs, and development endpoints.",
+  "tier": "tier2"
+}

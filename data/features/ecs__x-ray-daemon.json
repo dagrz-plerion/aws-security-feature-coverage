@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/xray/latest/devguide/xray-daemon-ecs.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "dd7c9bf43ab458e2841df51d55493b5d4400686110159bb9e13fcf53499ecb68",
+      "locator": "X-Ray daemon",
+      "quote": "[On Amazon ECS](https://docs.aws.amazon.com/xray/latest/devguide/xray-daemon-ecs.md)",
+      "retrievedAt": "2026-09-01T04:06:20.778Z",
+      "sourceUrl": "https://docs.aws.amazon.com/xray/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "ecs/x-ray-daemon",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "X-Ray daemon",
+  "serviceId": "ecs",
+  "summary": "Use a Docker image to run the X-Ray daemon on your Amazon ECS clusters.",
+  "tier": "tier2"
+}

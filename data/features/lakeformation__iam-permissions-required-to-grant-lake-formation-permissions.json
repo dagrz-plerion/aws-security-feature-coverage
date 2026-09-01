@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/lake-formation/latest/dg/required-permissions-for-grant.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "f4c2e2bbf4522b4fdb451f2e5b39ccca48ee6f29b7591e07d303dcf2881cde89",
+      "locator": "Managing Lake Formation permissions > Granting data permissions",
+      "quote": "[IAM permissions required to grant Lake Formation permissions](https://docs.aws.amazon.com/lake-formation/latest/dg/required-permissions-for-grant.md)",
+      "retrievedAt": "2026-09-01T04:06:12.057Z",
+      "sourceUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/llms.txt"
+    }
+  ],
+  "id": "lakeformation/iam-permissions-required-to-grant-lake-formation-permissions",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "IAM permissions required to grant Lake Formation permissions",
+  "serviceId": "lakeformation",
+  "summary": "All principals, including the data lake administrator, need the following AWS Identity and Access Management (IAM) permissions to grant or revoke AWS Lake Formation Data Catalog permissions or data location permissions with the Lake Formation API or the AWS CLI:",
+  "tier": "tier2"
+}

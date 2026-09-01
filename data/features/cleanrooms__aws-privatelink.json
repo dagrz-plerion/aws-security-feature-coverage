@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/clean-rooms/latest/userguide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "a63730bb9fc25206d9dc0b3aa2a5f848461d7b7b407391ffeab87b9c54521206",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/clean-rooms/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:04.725Z",
+      "sourceUrl": "https://docs.aws.amazon.com/clean-rooms/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cleanrooms/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "cleanrooms",
+  "summary": "You can use AWS PrivateLink to create a private connection between your VPC and AWS Clean Rooms or AWS Clean Rooms ML.",
+  "tier": "tier2"
+}

@@ -1,0 +1,27 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "d747d8d34eda4a5d6edde66fb13ecb80b2a4df51352d10865abdcb0c25f0f582",
+      "locator": "backup-search.json .Name",
+      "quote": "backup-search",
+      "retrievedAt": "2026-09-01T03:57:44.026Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/backup-search/backup-search.json"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority. Promoted to tier 2: 1 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "backup-search",
+  "signals": [
+    {
+      "detail": "The name contains \"backup\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

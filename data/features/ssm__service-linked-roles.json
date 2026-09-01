@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/systems-manager/latest/userguide/using-service-linked-roles-service-action-1.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "08e1cef5478bbbe3ddf01ef5adad6aa9a90cec3c725d3e86ea1da0ec73ca4e8f",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Inventory and Explorer data role](https://docs.aws.amazon.com/systems-manager/latest/userguide/using-service-linked-roles-service-action-1.md)",
+      "retrievedAt": "2026-09-01T04:06:19.398Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ssm/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "ssm",
+  "summary": "Learn how to use service-linked roles to give permissions to Inventory and Explorer that must call other AWS services on your behalf.",
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/configuring-trusted-identity-propagation-for-emr-on-eks.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5a254b896897614a34fdba7a3af2c47fc974e9a32a7d8da0d9591b204c1191f6",
+      "locator": "Blueprints > Getting started with Amazon EMR on EKS",
+      "quote": "[Configuring trusted identity propagation](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/configuring-trusted-identity-propagation-for-emr-on-eks.md)",
+      "retrievedAt": "2026-09-01T04:06:17.376Z",
+      "sourceUrl": "https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/llms.txt"
+    }
+  ],
+  "id": "elasticmapreduce/trusted-identity-propagation",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "trusted identity propagation",
+  "serviceId": "elasticmapreduce",
+  "summary": "Amazon EMR on EKS requires additional IAM permissions to enable trusted identity propagation.",
+  "tier": "tier2"
+}

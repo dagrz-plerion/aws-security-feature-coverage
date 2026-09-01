@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/ram/latest/userguide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b05bdfb9c53ce58f38ceac5630a15114b9fa42d1b750a36088d4deea2d0665b9",
+      "locator": "Security > Logging and monitoring",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/ram/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:15.904Z",
+      "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ram/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "ram",
+  "summary": "You can use an AWS PrivateLink to create a private connection between your VPC and AWS Resource Access Manager.",
+  "tier": "tier1"
+}

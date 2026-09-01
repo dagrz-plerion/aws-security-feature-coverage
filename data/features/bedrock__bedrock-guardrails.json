@@ -1,0 +1,28 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-how.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ceb0365a55aa0d587356fabcbd2130c8a84b24251a466d0b789f744fd7458b74",
+      "locator": "Security, Guardrails, and Observability > Bedrock Guardrails",
+      "quote": "[Overview](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-how.md)",
+      "retrievedAt": "2026-09-01T04:06:04.269Z",
+      "sourceUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "bedrock/bedrock-guardrails",
+  "kind": "control-set",
+  "method": "deterministic",
+  "name": "Bedrock Guardrails",
+  "serviceId": "bedrock",
+  "summary": "Guardrails helps block harmful content using word and image filters, policies, and contextual grounding checks.",
+  "tier": "tier2"
+}

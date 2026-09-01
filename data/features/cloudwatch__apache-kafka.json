@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/iot/latest/developerguide/cloudwatch-logs-rule-action.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "a96d7f592a966bceaba614864ee131db94f8aac8baebe89a9850932d4bc41340",
+      "locator": "Rules > Apache Kafka",
+      "quote": "[CloudWatch Logs](https://docs.aws.amazon.com/iot/latest/developerguide/cloudwatch-logs-rule-action.md)",
+      "retrievedAt": "2026-09-01T04:06:11.501Z",
+      "sourceUrl": "https://docs.aws.amazon.com/iot/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "cloudwatch/apache-kafka",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Apache Kafka",
+  "serviceId": "cloudwatch",
+  "summary": "Use the CloudWatch Logs rule action to send an MQTT message from AWS IoT to Amazon CloudWatch Logs.",
+  "tier": "tier2"
+}

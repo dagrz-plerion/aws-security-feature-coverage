@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/mpa/latest/userguide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "240d456f14c802a4547bcc2e169fd05a4024763362da7d7e30d2993acc2285be",
+      "locator": "Security > Identity and access management",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/mpa/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:13.801Z",
+      "sourceUrl": "https://docs.aws.amazon.com/mpa/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "mpa/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "mpa",
+  "summary": "You can use an AWS PrivateLink to create a private connection between your VPC and Multi-party approval.",
+  "tier": "tier2"
+}

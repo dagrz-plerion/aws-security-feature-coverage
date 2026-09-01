@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/kms/latest/developerguide/about-xks-connecting.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "0ba3e6f8bc82eaecae04851380ae183a4d968bbb98ce29dec74d9b204f1ef846",
+      "locator": "Key stores > Connect and disconnect external key stores",
+      "quote": "[Connect an external key store](https://docs.aws.amazon.com/kms/latest/developerguide/about-xks-connecting.md)",
+      "retrievedAt": "2026-09-01T04:06:11.963Z",
+      "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "kms/connect-an-external-key-store",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Connect an external key store",
+  "serviceId": "kms",
+  "summary": "When your external key store is connected to its external key store proxy, you can create KMS keys in your external key store and use its existing KMS keys in cryptographic operations.",
+  "tier": "tier1"
+}

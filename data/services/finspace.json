@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "a5d610ae1aaf50f159c62b42d4beff780896fea4e6de632cbdde5049c60835e6",
+      "locator": "finspace.json .Name",
+      "quote": "finspace",
+      "retrievedAt": "2026-09-01T03:57:50.455Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/finspace/finspace.json"
+    },
+    {
+      "bodySha256": "cbebbb5de0c7a2a48b82adba893a8b7ee0a336ac503f3690b75b65e342e58919",
+      "locator": "aws-products directory item",
+      "quote": "Amazon FinSpace",
+      "retrievedAt": "2026-09-01T03:58:06.968Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=0&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 2 named security features were found in its documentation.",
+  "score": 3,
+  "serviceId": "finspace",
+  "signals": [
+    {
+      "detail": "23 documentation pages describe security capability, for example \"Credentials\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

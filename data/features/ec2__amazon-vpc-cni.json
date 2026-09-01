@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/eks/latest/userguide/vpc-add-on-create.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "daa7d251c6281e980634dbc5c455c8ed531244295a5db277294b4f9769077fda",
+      "locator": "Configure networking > Amazon VPC CNI",
+      "quote": "[Create](https://docs.aws.amazon.com/eks/latest/userguide/vpc-add-on-create.md)",
+      "retrievedAt": "2026-09-01T04:06:07.864Z",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ec2/amazon-vpc-cni",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon VPC CNI",
+  "serviceId": "ec2",
+  "summary": "Use the following steps to create the Amazon VPC CNI plugin for Kubernetes Amazon EKS add-on.",
+  "tier": "tier2"
+}

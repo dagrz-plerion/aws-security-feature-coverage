@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/redshift/latest/dg/t_role_hierarchy.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "9f1279fbac1bc82beb08fc6034a65e3c6d164b5ad2075f64f28718f9b8493f3e",
+      "locator": "Database security > Role-based access control",
+      "quote": "[Role hierarchy](https://docs.aws.amazon.com/redshift/latest/dg/t_role_hierarchy.md)",
+      "retrievedAt": "2026-09-01T04:06:16.074Z",
+      "sourceUrl": "https://docs.aws.amazon.com/redshift/latest/dg/llms.txt"
+    }
+  ],
+  "id": "redshift/role-based-access-control",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Role-based access control",
+  "serviceId": "redshift",
+  "summary": "Learn about role hierarchy and role authorization cycle when working with role-based access control (RBAC) in Amazon Redshift.",
+  "tier": "tier2"
+}

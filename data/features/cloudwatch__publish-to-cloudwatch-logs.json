@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-iam-role.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "806081e0accc96971afd6c563111611671637d2792b6bb3187b6589373660258",
+      "locator": "Monitoring > Publish to CloudWatch Logs",
+      "quote": "[IAM role for publishing flow logs to CloudWatch Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-iam-role.md)",
+      "retrievedAt": "2026-09-01T04:06:20.127Z",
+      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudwatch/publish-to-cloudwatch-logs",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "Publish to CloudWatch Logs",
+  "serviceId": "cloudwatch",
+  "summary": "The IAM role that's associated with your flow log must have sufficient permissions to publish flow logs to the specified log group in CloudWatch Logs.",
+  "tier": "tier2"
+}

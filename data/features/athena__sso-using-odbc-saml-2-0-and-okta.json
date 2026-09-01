@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/athena/latest/ug/okta-saml-sso.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "baac4979e3329df2b3d5b05e1169bcb2776243e0450182873d78fbc2228be215",
+      "locator": "Use Athena SQL > ODBC 1.x",
+      "quote": "[SSO using ODBC, SAML 2.0, and Okta](https://docs.aws.amazon.com/athena/latest/ug/okta-saml-sso.md)",
+      "retrievedAt": "2026-09-01T04:06:03.348Z",
+      "sourceUrl": "https://docs.aws.amazon.com/athena/latest/ug/llms.txt"
+    }
+  ],
+  "id": "athena/sso-using-odbc-saml-2-0-and-okta",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "SSO using ODBC, SAML 2.0, and Okta",
+  "serviceId": "athena",
+  "summary": "Configure single sign-on for Athena using SAML 2.0 and the Okta identity provider",
+  "tier": "tier2"
+}

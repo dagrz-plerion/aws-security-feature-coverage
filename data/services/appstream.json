@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "4c905bbff3c1630d22da80bb5de4d5c7d1c112a309379a585412ae5553534946",
+      "locator": "appstream.json .Name",
+      "quote": "appstream",
+      "retrievedAt": "2026-09-01T03:57:42.636Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/appstream/appstream.json"
+    },
+    {
+      "bodySha256": "cbebbb5de0c7a2a48b82adba893a8b7ee0a336ac503f3690b75b65e342e58919",
+      "locator": "aws-products directory item",
+      "quote": "Amazon AppStream 2.0",
+      "retrievedAt": "2026-09-01T03:58:06.968Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=0&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "appstream",
+  "signals": [],
+  "tier": "not-security"
+}

@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "guide-subchapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/filters-dashboard.md",
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/resource-view.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
+      "locator": "AWS Security Hub > Summary dashboard",
+      "quote": "[Viewing details about resources in Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/resource-view.md)",
+      "retrievedAt": "2026-09-01T04:06:18.321Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
+      "locator": "AWS Security Hub CSPM > Summary dashboard",
+      "quote": "[Filtering the dashboard](https://docs.aws.amazon.com/securityhub/latest/userguide/filters-dashboard.md)",
+      "retrievedAt": "2026-09-01T04:06:18.321Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "securityhub/summary-dashboard",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Summary dashboard",
+  "serviceId": "securityhub",
+  "summary": "The Resources page tracks common resources across your account and organization.",
+  "tier": "tier1"
+}

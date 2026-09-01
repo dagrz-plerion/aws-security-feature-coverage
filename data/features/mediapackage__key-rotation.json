@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/mediapackage/latest/userguide/drm-content-key-rotation.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5efb27c109512114a296ddb2d61221d133a60e44551e6a95c44e1c41621802ff",
+      "locator": "MediaPackage features > Content encryption and DRM",
+      "quote": "[Key rotation](https://docs.aws.amazon.com/mediapackage/latest/userguide/drm-content-key-rotation.md)",
+      "retrievedAt": "2026-09-01T04:06:13.324Z",
+      "sourceUrl": "https://docs.aws.amazon.com/mediapackage/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "mediapackage/key-rotation",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Key rotation",
+  "serviceId": "mediapackage",
+  "summary": "Understand how MediaPackage handles key rotation for live content, including retrieval intervals and fallback behavior when keys are unavailable.",
+  "tier": "tier2"
+}

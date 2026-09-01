@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/bedrock/latest/userguide/ltm-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ceb0365a55aa0d587356fabcbd2130c8a84b24251a466d0b789f744fd7458b74",
+      "locator": "Security, Guardrails, and Observability > Encryption of agent resources with customer managed keys (CMK)",
+      "quote": "[Encrypt agent sessions with customer managed key (CMK)](https://docs.aws.amazon.com/bedrock/latest/userguide/ltm-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:04.269Z",
+      "sourceUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "bedrock/encrypt-agent-sessions-with-customer-managed-key-cmk",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Encrypt agent sessions with customer managed key (CMK)",
+  "serviceId": "bedrock",
+  "summary": "If you've enabled memory for your agent and if you encrypt agent sessions with a customer managed key, you must configure the following key policy and the calling identity IAM permissions to configure your customer managed key.",
+  "tier": "tier2"
+}

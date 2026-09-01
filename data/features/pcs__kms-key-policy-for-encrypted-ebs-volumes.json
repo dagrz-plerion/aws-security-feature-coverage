@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/pcs/latest/userguide/security-key-policy-for-encrypted-volumes.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "2b56744836073131c38b8f9382d79f2f8e12dbf07950f3b964af64fa758d4d59",
+      "locator": "Security > Data protection",
+      "quote": "[KMS key policy for encrypted EBS volumes](https://docs.aws.amazon.com/pcs/latest/userguide/security-key-policy-for-encrypted-volumes.md)",
+      "retrievedAt": "2026-09-01T04:06:15.188Z",
+      "sourceUrl": "https://docs.aws.amazon.com/pcs/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "pcs/kms-key-policy-for-encrypted-ebs-volumes",
+  "kind": "policy-type",
+  "method": "deterministic",
+  "name": "KMS key policy for encrypted EBS volumes",
+  "serviceId": "pcs",
+  "summary": "AWS PCS uses service-linked roles to delegate permissions to other AWS services.",
+  "tier": "tier2"
+}

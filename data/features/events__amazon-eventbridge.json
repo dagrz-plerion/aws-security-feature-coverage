@@ -1,0 +1,63 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/acm/latest/userguide/supported-events.md",
+    "https://docs.aws.amazon.com/appflow/latest/userguide/EventBridge.md",
+    "https://docs.aws.amazon.com/autoscaling/application/userguide/monitoring-eventbridge.md",
+    "https://docs.aws.amazon.com/config/latest/developerguide/monitor-config-with-cloudwatchevents.md",
+    "https://docs.aws.amazon.com/ebs/latest/userguide/using_lambda.md",
+    "https://docs.aws.amazon.com/guardduty/latest/ug/monitor-with-eventbridge-s3-malware-protection.md",
+    "https://docs.aws.amazon.com/health/latest/ug/cloud-watch-events-integration.md",
+    "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_cloudwatch-integration.md",
+    "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/eventbridge-schemas.md",
+    "https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/eventbridge-schemas.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "96274a59005cc7ab1d62de75f2c68acb04c6b187e39f866f5f3eb56cfb06d997",
+      "locator": "Monitor and log > Amazon EventBridge",
+      "quote": "[Supported events](https://docs.aws.amazon.com/acm/latest/userguide/supported-events.md)",
+      "retrievedAt": "2026-09-01T04:06:02.179Z",
+      "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "5c24f0414567e746522dbf45df68a3494414bad22883b69b39a06bed73e4c78d",
+      "locator": "Supported applications",
+      "quote": "[Amazon EventBridge](https://docs.aws.amazon.com/appflow/latest/userguide/EventBridge.md)",
+      "retrievedAt": "2026-09-01T04:06:02.865Z",
+      "sourceUrl": "https://docs.aws.amazon.com/appflow/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "d9936368da1d4fd7fa178a5336f4187a6cacc426e07609ff07e4587c2287c2c4",
+      "locator": "Monitoring",
+      "quote": "[Amazon EventBridge](https://docs.aws.amazon.com/autoscaling/application/userguide/monitoring-eventbridge.md)",
+      "retrievedAt": "2026-09-01T04:06:03.506Z",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "61f42a7e2265018d7cbfb2e44ed42b1252701b97373063a0a68aed3c31aa5fbc",
+      "locator": "Logging and Monitoring > Monitoring",
+      "quote": "[Using Amazon EventBridge](https://docs.aws.amazon.com/config/latest/developerguide/monitor-config-with-cloudwatchevents.md)",
+      "retrievedAt": "2026-09-01T04:06:06.011Z",
+      "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "79d80bc8923df8eb5c8b48968ea8f1e34df0066563a1235f6f5a0abd157bd60f",
+      "locator": "Working with AWS services > Amazon EventBridge",
+      "quote": "[Working with Amazon EventBridge schemas](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/eventbridge-schemas.md)",
+      "retrievedAt": "2026-09-01T04:06:19.598Z",
+      "sourceUrl": "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "events/amazon-eventbridge",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon EventBridge",
+  "serviceId": "events",
+  "summary": "List of supported by ACM",
+  "tier": "tier2"
+}

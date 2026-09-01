@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/aws-backup/latest/devguide/using-service-linked-roles-AWSServiceRoleForBackup.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "689be80af9ff3cc12dc19fbdffc6f84d0738780e47720ed540244828e9692f24",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[Backup and copy](https://docs.aws.amazon.com/aws-backup/latest/devguide/using-service-linked-roles-AWSServiceRoleForBackup.md)",
+      "retrievedAt": "2026-09-01T04:06:03.549Z",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "backup/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "backup",
+  "summary": "How to use service-linked roles to give AWS Backup access to resources in your AWS account.",
+  "tier": "tier2"
+}

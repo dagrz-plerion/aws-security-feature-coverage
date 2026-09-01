@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-findings-sample.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
+      "locator": "AWS Security Hub > Generating exposure findings",
+      "quote": "[Sample exposure finding](https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-findings-sample.md)",
+      "retrievedAt": "2026-09-01T04:06:18.321Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "securityhub/generating-exposure-findings",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "Generating exposure findings",
+  "serviceId": "securityhub",
+  "summary": "Shows an example of an exposure finding.",
+  "tier": "tier1"
+}

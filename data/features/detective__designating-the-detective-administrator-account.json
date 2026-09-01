@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "guide-subchapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/detective/latest/userguide/accounts-designate-admin-console.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b4e540d07d68924645799f11c8ab8d109107ec8b22413b786007b49d3c2f1c4f",
+      "locator": "Managing accounts > Designating the Detective administrator account",
+      "quote": "[Designating a Detective administrator](https://docs.aws.amazon.com/detective/latest/userguide/accounts-designate-admin-console.md)",
+      "retrievedAt": "2026-09-01T04:06:06.948Z",
+      "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "detective/designating-the-detective-administrator-account",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "Designating the Detective administrator account",
+  "serviceId": "detective",
+  "summary": "The organization management account can use the Detective console to designate the Detective administrator account.",
+  "tier": "tier1"
+}

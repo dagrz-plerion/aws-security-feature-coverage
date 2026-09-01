@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "95b9f2e0732f072736b9de6c5fa8fe958245a1240631a8e3c6ffce3d7bb19553",
+      "locator": "qldb.json .Name",
+      "quote": "qldb",
+      "retrievedAt": "2026-09-01T03:57:58.896Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/qldb/qldb.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "qldb",
+  "signals": [],
+  "tier": "not-security"
+}

@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "080c318c0853eba928fb9a91d2a18debff0296b897c357375e9a17e65e094131",
+      "locator": "simspaceweaver.json .Name",
+      "quote": "simspaceweaver",
+      "retrievedAt": "2026-09-01T03:58:01.939Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/simspaceweaver/simspaceweaver.json"
+    },
+    {
+      "bodySha256": "4eec68c5e5c08809807aa6189ab0620a4357343e61cdd748f774606ff0f324a1",
+      "locator": "aws-products directory item",
+      "quote": "AWS SimSpace Weaver",
+      "retrievedAt": "2026-09-01T03:58:08.144Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=3&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "simspaceweaver",
+  "signals": [],
+  "tier": "not-security"
+}

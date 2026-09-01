@@ -1,0 +1,31 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "ae931e09aa690d229e5313c5dcf453d8000d8896713466feeba388a4cbfcaa43",
+      "locator": "route53-recovery-control-config.json .Name",
+      "quote": "route53-recovery-control-config",
+      "retrievedAt": "2026-09-01T03:57:59.904Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/route53-recovery-control-config/route53-recovery-control-config.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Security signals present (score 4: security-name-weak, permission-management-actions). Scanning for a named security feature before any tier is given.",
+  "score": 4,
+  "serviceId": "route53-recovery-control-config",
+  "signals": [
+    {
+      "detail": "The name contains \"config\".",
+      "id": "security-name-weak",
+      "weight": 2
+    },
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

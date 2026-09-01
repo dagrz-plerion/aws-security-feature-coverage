@@ -1,0 +1,44 @@
+{
+  "aliases": [
+    "Amazon CloudWatch metrics"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-managing-cloudwatch-metrics.md",
+    "https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.md",
+    "https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-delivery-iceberg-metrics.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "1c603bde349c1e7632cc3ccae619d562f62414468ae4ae6f7211dbf73f1c2b88",
+      "locator": "API Gateway REST APIs > CloudWatch metrics",
+      "quote": "[CloudWatch logs](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.md)",
+      "retrievedAt": "2026-09-01T04:06:02.655Z",
+      "sourceUrl": "https://docs.aws.amazon.com/apigateway/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "7fea753525a3136c78cbe4fc94d3d894cb548d9e8209705bfe8396687e605f15",
+      "locator": "MSK Data Delivery > Monitoring",
+      "quote": "[Amazon CloudWatch metrics](https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-delivery-iceberg-metrics.md)",
+      "retrievedAt": "2026-09-01T04:06:13.873Z",
+      "sourceUrl": "https://docs.aws.amazon.com/msk/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Working with Amazon S3 Tables and table buckets > Monitoring metrics with Amazon CloudWatch",
+      "quote": "[Managing CloudWatch metrics](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-managing-cloudwatch-metrics.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudwatch/cloudwatch-metrics",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "CloudWatch metrics",
+  "serviceId": "cloudwatch",
+  "summary": "Learn how to set up CloudWatch logging in Amazon API Gateway.",
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-ec2-default-instance-types.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "81b1d4a3c91af4bdc3adb698b70ba7c66b88563f7c51ffc9608941e0dfd5ffe1",
+      "locator": "What is AWS Data Pipeline? > Supported Instance Types for Pipeline Work Activities",
+      "quote": "[Default Amazon EC2 Instances by AWS Region](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-ec2-default-instance-types.md)",
+      "retrievedAt": "2026-09-01T04:06:06.670Z",
+      "sourceUrl": "https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/llms.txt"
+    }
+  ],
+  "id": "ec2/default-amazon-ec2-instances-by-aws-region",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Default Amazon EC2 Instances by AWS Region",
+  "serviceId": "ec2",
+  "summary": "If you do not specify an instance type in your pipeline definition, AWS Data Pipeline launches an instance by default.",
+  "tier": "tier2"
+}

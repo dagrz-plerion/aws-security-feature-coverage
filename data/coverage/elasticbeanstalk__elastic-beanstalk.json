@@ -1,0 +1,171 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "134512057ce60ec2edb6865a7b9c52a1da1b1b4722619319b24cb867683a66eb",
+          "locator": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md :: The following policy gives users permissions for all actions required to use Elastic Beanstalk. This policy also allows Elastic Beanstalk to provision and manage resources on your behalf in the following services. Elastic Beanstalk relies on these additional services to provision underlying resources when creating an environment.",
+          "quote": "+ Auto Scaling",
+          "retrievedAt": "2026-09-01T04:29:39.844Z",
+          "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "elasticbeanstalk/elastic-beanstalk",
+      "id": "elasticbeanstalk-elastic-beanstalk-service-autoscaling-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "autoscaling",
+      "targetLabel": "Auto Scaling"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "134512057ce60ec2edb6865a7b9c52a1da1b1b4722619319b24cb867683a66eb",
+          "locator": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md :: The following policy gives users permissions for all actions required to use Elastic Beanstalk. This policy also allows Elastic Beanstalk to provision and manage resources on your behalf in the following services. Elastic Beanstalk relies on these additional services to provision underlying resources when creating an environment.",
+          "quote": "+ CloudFormation",
+          "retrievedAt": "2026-09-01T04:29:39.844Z",
+          "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "elasticbeanstalk/elastic-beanstalk",
+      "id": "elasticbeanstalk-elastic-beanstalk-service-cloudformation-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudformation",
+      "targetLabel": "CloudFormation"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "134512057ce60ec2edb6865a7b9c52a1da1b1b4722619319b24cb867683a66eb",
+          "locator": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md :: The following policy gives users permissions for all actions required to use Elastic Beanstalk. This policy also allows Elastic Beanstalk to provision and manage resources on your behalf in the following services. Elastic Beanstalk relies on these additional services to provision underlying resources when creating an environment.",
+          "quote": "+ Amazon CloudWatch",
+          "retrievedAt": "2026-09-01T04:29:39.844Z",
+          "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "elasticbeanstalk/elastic-beanstalk",
+      "id": "elasticbeanstalk-elastic-beanstalk-service-cloudwatch-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudwatch",
+      "targetLabel": "Amazon CloudWatch"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "134512057ce60ec2edb6865a7b9c52a1da1b1b4722619319b24cb867683a66eb",
+          "locator": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md :: The following policy gives users permissions for all actions required to use Elastic Beanstalk. This policy also allows Elastic Beanstalk to provision and manage resources on your behalf in the following services. Elastic Beanstalk relies on these additional services to provision underlying resources when creating an environment.",
+          "quote": "+ Amazon Elastic Compute Cloud",
+          "retrievedAt": "2026-09-01T04:29:39.844Z",
+          "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "elasticbeanstalk/elastic-beanstalk",
+      "id": "elasticbeanstalk-elastic-beanstalk-service-ec2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Amazon Elastic Compute Cloud"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "134512057ce60ec2edb6865a7b9c52a1da1b1b4722619319b24cb867683a66eb",
+          "locator": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md :: The following policy gives users permissions for all actions required to use Elastic Beanstalk. This policy also allows Elastic Beanstalk to provision and manage resources on your behalf in the following services. Elastic Beanstalk relies on these additional services to provision underlying resources when creating an environment.",
+          "quote": "+ Elastic Load Balancing",
+          "retrievedAt": "2026-09-01T04:29:39.844Z",
+          "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "elasticbeanstalk/elastic-beanstalk",
+      "id": "elasticbeanstalk-elastic-beanstalk-service-elasticloadbalancing-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticloadbalancing",
+      "targetLabel": "Elastic Load Balancing"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "134512057ce60ec2edb6865a7b9c52a1da1b1b4722619319b24cb867683a66eb",
+          "locator": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md :: The following policy gives users permissions for all actions required to use Elastic Beanstalk. This policy also allows Elastic Beanstalk to provision and manage resources on your behalf in the following services. Elastic Beanstalk relies on these additional services to provision underlying resources when creating an environment.",
+          "quote": "+ Amazon Relational Database Service",
+          "retrievedAt": "2026-09-01T04:29:39.844Z",
+          "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "elasticbeanstalk/elastic-beanstalk",
+      "id": "elasticbeanstalk-elastic-beanstalk-service-rds-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "rds",
+      "targetLabel": "Amazon Relational Database Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "134512057ce60ec2edb6865a7b9c52a1da1b1b4722619319b24cb867683a66eb",
+          "locator": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md :: The following policy gives users permissions for all actions required to use Elastic Beanstalk. This policy also allows Elastic Beanstalk to provision and manage resources on your behalf in the following services. Elastic Beanstalk relies on these additional services to provision underlying resources when creating an environment.",
+          "quote": "+ Amazon Simple Storage Service",
+          "retrievedAt": "2026-09-01T04:29:39.844Z",
+          "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "elasticbeanstalk/elastic-beanstalk",
+      "id": "elasticbeanstalk-elastic-beanstalk-service-s3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Amazon Simple Storage Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "134512057ce60ec2edb6865a7b9c52a1da1b1b4722619319b24cb867683a66eb",
+          "locator": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md :: The following policy gives users permissions for all actions required to use Elastic Beanstalk. This policy also allows Elastic Beanstalk to provision and manage resources on your behalf in the following services. Elastic Beanstalk relies on these additional services to provision underlying resources when creating an environment.",
+          "quote": "+ Amazon Simple Notification Service",
+          "retrievedAt": "2026-09-01T04:29:39.844Z",
+          "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolicies_AEB.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "elasticbeanstalk/elastic-beanstalk",
+      "id": "elasticbeanstalk-elastic-beanstalk-service-sns-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sns",
+      "targetLabel": "Amazon Simple Notification Service"
+    }
+  ],
+  "featureId": "elasticbeanstalk/elastic-beanstalk",
+  "generatedAt": "2026-09-01T04:41:17.395Z",
+  "serviceId": "elasticbeanstalk",
+  "unresolvedTargets": []
+}

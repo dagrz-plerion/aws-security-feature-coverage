@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/efs/latest/ug/fips-enabling.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "89f34b9c5e8f4bef5e83eb0347330728204d47c522c8fe7b90610e6e48bb2db7",
+      "locator": "Installing the EFS client > Upgrading stunnel",
+      "quote": "[Enabling FIPS mode](https://docs.aws.amazon.com/efs/latest/ug/fips-enabling.md)",
+      "retrievedAt": "2026-09-01T04:06:07.786Z",
+      "sourceUrl": "https://docs.aws.amazon.com/efs/latest/ug/llms.txt"
+    }
+  ],
+  "id": "elasticfilesystem/fips-mode",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "FIPS mode",
+  "serviceId": "elasticfilesystem",
+  "summary": "Learn how to enable FIPS mode in the Amazon EFS client by modifying the efs-utils.conf file when your system requires FIPS-compliant endpoints.",
+  "tier": "tier2"
+}

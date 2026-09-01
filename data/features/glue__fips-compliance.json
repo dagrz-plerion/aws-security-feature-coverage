@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/glue/latest/dg/fips-compliance.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "1d628b17316beace57b0747efb99ff3c2de60a332a67592618c3ae82921b685b",
+      "locator": "Security > Encrypting data written by AWS Glue",
+      "quote": "[FIPS compliance](https://docs.aws.amazon.com/glue/latest/dg/fips-compliance.md)",
+      "retrievedAt": "2026-09-01T04:06:09.925Z",
+      "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/llms.txt"
+    }
+  ],
+  "id": "glue/fips-compliance",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "FIPS compliance",
+  "serviceId": "glue",
+  "summary": "If you require FIPS 140-2 validated cryptographic modules when accessing AWS through a command line interface or an API, use a FIPS endpoint.",
+  "tier": "tier2"
+}

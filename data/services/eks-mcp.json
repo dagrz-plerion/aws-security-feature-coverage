@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "5ba764f331d863ce2e16e53ed3e879f568fd19e30732c6feaaa7b52b34edb170",
+      "locator": "eks-mcp.json .Name",
+      "quote": "eks-mcp",
+      "retrievedAt": "2026-09-01T03:57:49.350Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/eks-mcp/eks-mcp.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "eks-mcp",
+  "signals": [],
+  "tier": "not-security"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/guardduty/latest/ug/compromised-ec2.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "3ddece1bd1b140842141362e4adea0c0415850ead561cd1a6797e3bac48bc3fc",
+      "locator": "Remediating findings",
+      "quote": "[Remediating a potentially compromised Amazon EC2 instance](https://docs.aws.amazon.com/guardduty/latest/ug/compromised-ec2.md)",
+      "retrievedAt": "2026-09-01T04:06:10.249Z",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/llms.txt"
+    }
+  ],
+  "id": "ec2/remediating-findings",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "Remediating findings",
+  "serviceId": "ec2",
+  "summary": "When GuardDuty generates finding types that indicate potentially compromised Amazon EC2 resources, then your Resource will be Instance.",
+  "tier": "tier2"
+}

@@ -1,0 +1,61 @@
+{
+  "aliases": [
+    "AWS CloudTrail"
+  ],
+  "confidence": 0.85,
+  "discoveredBy": [
+    "attributed-page",
+    "guide-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-cloudtrail.md",
+    "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-delegated-administrator-permissions.md",
+    "https://docs.aws.amazon.com/cloudhsm/latest/userguide/get-api-logs-using-cloudtrail.md",
+    "https://docs.aws.amazon.com/eks/latest/userguide/service-name-info-in-cloudtrail.md",
+    "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_cloudtrail-integration.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "12cf1ae4a0a2ec66da2a335e3958099234da5dec408614dcb0dca7b43329c214",
+      "locator": "Supported data sources",
+      "quote": "[AWS CloudTrail](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-cloudtrail.md)",
+      "retrievedAt": "2026-09-01T04:06:03.320Z",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "40168a9d137882d27d81e97c1cca0c17ceefcd5177947d8edd37426974206ee4",
+      "locator": "Monitoring",
+      "quote": "[AWS CloudTrail](https://docs.aws.amazon.com/cloudhsm/latest/userguide/get-api-logs-using-cloudtrail.md)",
+      "retrievedAt": "2026-09-01T04:06:05.112Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "13ddefb7216ae6bf57290558c70fc2ba503a0f36fdd7e5f79e9222169acdda9f",
+      "locator": "Configure CloudTrail settings > Organization delegated administrator",
+      "quote": "[Required permissions to assign a delegated administrator](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-delegated-administrator-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:04.006Z",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "daa7d251c6281e980634dbc5c455c8ed531244295a5db277294b4f9769077fda",
+      "locator": "Monitor clusters > AWS CloudTrail",
+      "quote": "[References](https://docs.aws.amazon.com/eks/latest/userguide/service-name-info-in-cloudtrail.md)",
+      "retrievedAt": "2026-09-01T04:06:07.864Z",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "baa4ec799d67dcdaf1483e278d642bc114fd38431155b4667e3ce008b0d145af",
+      "locator": "Security > Logging and monitoring",
+      "quote": "[AWS CloudTrail](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_cloudtrail-integration.md)",
+      "retrievedAt": "2026-09-01T04:06:14.665Z",
+      "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudtrail/cloudtrail-settings",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "CloudTrail settings",
+  "serviceId": "cloudtrail",
+  "summary": "Review a list of the CloudTrail event names that are not currently supported as data sources in Audit Manager.",
+  "tier": "tier1"
+}

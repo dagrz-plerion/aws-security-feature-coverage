@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "85085d1a34044dc5db0626fc2163daf746d252e93348d0fd8e69789aa0753da2",
+      "locator": "cognito-identity.json .Name",
+      "quote": "cognito-identity",
+      "retrievedAt": "2026-09-01T03:57:46.746Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/cognito-identity/cognito-identity.json"
+    },
+    {
+      "bodySha256": "cce7aa437485ec7af1dc04fe1e4e40e9db4d30637f11c39119f284e4cc1cdd5c",
+      "locator": "https://docs.aws.amazon.com/general/latest/gr/cognito.html service endpoints",
+      "quote": "| US East (Ohio) | us-east-2 |  cognito-idp.us-east-2.amazonaws.com <br /> cognito-idp-fips.us-east-2.amazonaws.com  | HTTPS<br />HTTPS |",
+      "retrievedAt": "2026-09-01T03:59:34.268Z",
+      "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/cognito.md"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority. Promoted to tier 2: 41 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "cognito-identity",
+  "signals": [
+    {
+      "detail": "The name contains \"cognito\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

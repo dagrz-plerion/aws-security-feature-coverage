@@ -1,0 +1,36 @@
+{
+  "aliases": [
+    "Permissions for Amazon SNS topics"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/config/latest/developerguide/sns-topic-policy.md",
+    "https://docs.aws.amazon.com/devops-guru/latest/userguide/sns-required-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "61f42a7e2265018d7cbfb2e44ed42b1252701b97373063a0a68aed3c31aa5fbc",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[Permissions for the Amazon SNS Topic](https://docs.aws.amazon.com/config/latest/developerguide/sns-topic-policy.md)",
+      "retrievedAt": "2026-09-01T04:06:06.011Z",
+      "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "3b82cbf2c34c3cf06c9b8f2ee303940cc9a5ca3662857b7d1ea9238757ae6ca6",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[Permissions for Amazon SNS topics](https://docs.aws.amazon.com/devops-guru/latest/userguide/sns-required-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:07.116Z",
+      "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "sns/permissions-for-the-amazon-sns-topic",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Permissions for the Amazon SNS Topic",
+  "serviceId": "sns",
+  "summary": "In AWS Config, create a policy for an Amazon SNS topic to send notifications.",
+  "tier": "tier2"
+}

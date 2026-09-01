@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/athena/latest/ug/lf-athena-access.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "baac4979e3329df2b3d5b05e1169bcb2776243e0450182873d78fbc2228be215",
+      "locator": "Use Athena SQL > Use Athena with Lake Formation",
+      "quote": "[How data access works](https://docs.aws.amazon.com/athena/latest/ug/lf-athena-access.md)",
+      "retrievedAt": "2026-09-01T04:06:03.348Z",
+      "sourceUrl": "https://docs.aws.amazon.com/athena/latest/ug/llms.txt"
+    }
+  ],
+  "id": "lakeformation/athena-with-lake-formation",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Athena with Lake Formation",
+  "serviceId": "lakeformation",
+  "summary": "The access workflow described in this section applies when you run Athena queries on Amazon S3 locations, data catalogs, or metadata objects that are registered with Lake Formation.",
+  "tier": "tier2"
+}

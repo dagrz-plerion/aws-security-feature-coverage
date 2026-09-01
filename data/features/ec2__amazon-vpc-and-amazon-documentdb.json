@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "attributed-page",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/documentdb/latest/devguide/vpc-clusters.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "7e59218fe412dc7ecb7ba41e85cddee3b1dda4374bb986404313e3775338a326",
+      "locator": "Security > Amazon VPC and Amazon DocumentDB",
+      "quote": "[DocumentDB clusters in a VPC](https://docs.aws.amazon.com/documentdb/latest/devguide/vpc-clusters.md)",
+      "retrievedAt": "2026-09-01T04:06:07.562Z",
+      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "ec2/amazon-vpc-and-amazon-documentdb",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon VPC and Amazon DocumentDB",
+  "serviceId": "ec2",
+  "summary": "Amazon DocumentDB clusters operate within Amazon VPC environments, providing logical isolation with subnet organization and IP addressing options, while offering guidance on cluster creation and management within these virtual networks.",
+  "tier": "tier2"
+}

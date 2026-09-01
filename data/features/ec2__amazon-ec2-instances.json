@@ -1,0 +1,44 @@
+{
+  "aliases": [
+    "With Amazon EC2 instances"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-ec2-create.md",
+    "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.ec2.instance-types.md",
+    "https://docs.aws.amazon.com/guardduty/latest/ug/how-runtime-monitoring-works-ec2.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "e6478bd73880fe730cceb3c5fe3326be696c9d461901d47033be9b763de36064",
+      "locator": "Working with instances > Working with Amazon EC2 instances",
+      "quote": "[Create an Amazon EC2 instance for CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-ec2-create.md)",
+      "retrievedAt": "2026-09-01T04:06:05.582Z",
+      "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "106a2bb833633da9096cc4076ba40e7e82f6128a8ed64a5f15962696afcb4a72",
+      "locator": "Configuring environments > Amazon EC2 instances",
+      "quote": "[Amazon EC2 instance types](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.managing.ec2.instance-types.md)",
+      "retrievedAt": "2026-09-01T04:06:07.968Z",
+      "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/llms.txt"
+    },
+    {
+      "bodySha256": "3ddece1bd1b140842141362e4adea0c0415850ead561cd1a6797e3bac48bc3fc",
+      "locator": "Runtime Monitoring > How it works",
+      "quote": "[With Amazon EC2 instances](https://docs.aws.amazon.com/guardduty/latest/ug/how-runtime-monitoring-works-ec2.md)",
+      "retrievedAt": "2026-09-01T04:06:10.249Z",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/llms.txt"
+    }
+  ],
+  "id": "ec2/amazon-ec2-instances",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon EC2 instances",
+  "serviceId": "ec2",
+  "summary": "Learn how to launch an Amazon EC2 instance configured for use in CodeDeploy deployments.",
+  "tier": "tier2"
+}

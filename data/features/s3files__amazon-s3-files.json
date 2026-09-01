@@ -1,0 +1,44 @@
+{
+  "aliases": [
+    "Amazon S3 Files"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-s3files-config.md",
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-prereq-policies.md",
+    "https://docs.aws.amazon.com/quick/latest/userguide/supported-manifest-file-format.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "02eb964f90adb43e0a5edd53a1d7332e87a7920b29eb17b3f8082df45fdc8fd4",
+      "locator": "Visualize, analyze, and share data with Amazon Quick Sight > Amazon S3 files",
+      "quote": "[Supported formats for Amazon S3 manifest files](https://docs.aws.amazon.com/quick/latest/userguide/supported-manifest-file-format.md)",
+      "retrievedAt": "2026-09-01T04:06:15.669Z",
+      "sourceUrl": "https://docs.aws.amazon.com/quick/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "e8920401360814f75558084d9a8d532cb690ae882f7b0b55c7379f24767f87bf",
+      "locator": "Task definitions > Amazon S3 Files",
+      "quote": "[Specify an S3 Files volume in a task definition](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-s3files-config.md)",
+      "retrievedAt": "2026-09-01T04:06:01.290Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Working with Amazon S3 Files",
+      "quote": "[Prerequisites](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-prereq-policies.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "s3files/amazon-s3-files",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon S3 files",
+  "serviceId": "s3files",
+  "summary": "Find the supported manifest formats for importing Amazon S3 files into Quick Sight.",
+  "tier": "tier2"
+}

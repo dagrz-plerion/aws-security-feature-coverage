@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/transfer/latest/userguide/custom-lambda-idp.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "f7ab53309516e56fad0e5fc4320f63f688e45e112ff7ef9a1621fa10f7dd3dea",
+      "locator": "Transfer Family for SFTP, FTPS, FTP > Custom identity provider",
+      "quote": "[Lambda as an identity provider](https://docs.aws.amazon.com/transfer/latest/userguide/custom-lambda-idp.md)",
+      "retrievedAt": "2026-09-01T04:06:19.678Z",
+      "sourceUrl": "https://docs.aws.amazon.com/transfer/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "transfer/lambda-as-an-identity-provider",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Lambda as an identity provider",
+  "serviceId": "transfer",
+  "summary": "Use a Lambda function as an identity provider for Transfer Family",
+  "tier": "tier2"
+}

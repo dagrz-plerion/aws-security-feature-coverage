@@ -1,0 +1,36 @@
+{
+  "aliases": [
+    "Auto Scaling group"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-autoscaling-launch-templates.md",
+    "https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-shift.resource-types.ec2-auto-scaling-groups.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "404175affeb5a6a35cea30627cde9e9107ff14717dfa30f2af5acdd6a7fc7ab4",
+      "locator": "Multi-AZ recovery > Supported resources",
+      "quote": "[Auto Scaling groups](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-shift.resource-types.ec2-auto-scaling-groups.md)",
+      "retrievedAt": "2026-09-01T04:06:15.813Z",
+      "sourceUrl": "https://docs.aws.amazon.com/r53recovery/latest/dg/llms.txt"
+    },
+    {
+      "bodySha256": "106a2bb833633da9096cc4076ba40e7e82f6128a8ed64a5f15962696afcb4a72",
+      "locator": "Configuring environments > Auto Scaling group",
+      "quote": "[Launch templates](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-autoscaling-launch-templates.md)",
+      "retrievedAt": "2026-09-01T04:06:07.968Z",
+      "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/llms.txt"
+    }
+  ],
+  "id": "autoscaling/auto-scaling-groups",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Auto Scaling groups",
+  "serviceId": "autoscaling",
+  "summary": "An Amazon EC2 Auto Scaling group contains a collection of Amazon EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management.",
+  "tier": "tier2"
+}

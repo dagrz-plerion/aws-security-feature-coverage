@@ -1,0 +1,44 @@
+{
+  "aliases": [
+    "Step Functions"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/batch/latest/userguide/stepfunctions-configure.md",
+    "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/aws-enablestepfunctionsstatemachinelogging.md",
+    "https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/building-stepfunctions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "8b58f2ac330581bae573dd4a27cba59797b4e0b846a41a9323bfab11bd56acc5",
+      "locator": "AWS Step Functions",
+      "quote": "[Tutorial: View state machine details](https://docs.aws.amazon.com/batch/latest/userguide/stepfunctions-configure.md)",
+      "retrievedAt": "2026-09-01T04:06:04.224Z",
+      "sourceUrl": "https://docs.aws.amazon.com/batch/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "0665cafeee178d2b6e1148304c90267ea1d7234f929c3095e0ce43905e035ec5",
+      "locator": "Working with AWS > AWS Step Functions",
+      "quote": "[Working with Step Functions](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/building-stepfunctions.md)",
+      "retrievedAt": "2026-09-01T04:06:19.601Z",
+      "sourceUrl": "https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "4f64722f627b4b796720af8a22bd6fc7e276b528c3cb721e9bab48cf80f4e8b5",
+      "locator": "Automation Runbook Reference > Step Functions",
+      "quote": "[AWS-EnableStepFunctionsStateMachineLogging](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/aws-enablestepfunctionsstatemachinelogging.md)",
+      "retrievedAt": "2026-09-01T04:06:19.357Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "states/aws-step-functions",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS Step Functions",
+  "serviceId": "states",
+  "summary": "The AWS Batch console displays a list of your state machines in the current AWS Region that contain at least one workflow step that submits a AWS Batch job.",
+  "tier": "tier2"
+}

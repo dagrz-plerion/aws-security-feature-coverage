@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "e87d8da30422cb05f27299c1e33d98689bbf79e373adf42563b2884258c41b8e",
+      "locator": "serverlessrepo.json .Name",
+      "quote": "serverlessrepo",
+      "retrievedAt": "2026-09-01T03:58:01.611Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/serverlessrepo/serverlessrepo.json"
+    },
+    {
+      "bodySha256": "4eec68c5e5c08809807aa6189ab0620a4357343e61cdd748f774606ff0f324a1",
+      "locator": "aws-products directory item",
+      "quote": "AWS Serverless Application Repository",
+      "retrievedAt": "2026-09-01T03:58:08.144Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=3&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 2 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "serverlessrepo",
+  "signals": [
+    {
+      "detail": "11 documentation pages describe security capability, for example \"Data Protection\".",
+      "id": "security-doc-pages",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

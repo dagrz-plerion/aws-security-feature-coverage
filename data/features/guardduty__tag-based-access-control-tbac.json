@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/guardduty/latest/ug/tag-based-access-s3-malware-protection.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "3ddece1bd1b140842141362e4adea0c0415850ead561cd1a6797e3bac48bc3fc",
+      "locator": "Malware Protection for S3 > Configuring Malware Protection for S3 for your bucket",
+      "quote": "[Using tag-based access control (TBAC)](https://docs.aws.amazon.com/guardduty/latest/ug/tag-based-access-s3-malware-protection.md)",
+      "retrievedAt": "2026-09-01T04:06:10.249Z",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/llms.txt"
+    }
+  ],
+  "id": "guardduty/tag-based-access-control-tbac",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "tag-based access control (TBAC)",
+  "serviceId": "guardduty",
+  "summary": "When enabling Malware Protection for S3 for your bucket, you can optionally choose to enable tagging.",
+  "tier": "tier1"
+}

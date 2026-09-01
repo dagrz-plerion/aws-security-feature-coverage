@@ -1,0 +1,46 @@
+{
+  "aliases": [
+    "channel security group",
+    "channel security groups"
+  ],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/medialive/latest/ug/channel-security-groups-about.md",
+    "https://docs.aws.amazon.com/medialive/latest/ug/channel-security-groups-create-isg.md",
+    "https://docs.aws.amazon.com/medialive/latest/ug/channel-security-groups-view.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "582b80be02492a396a7f7cccd2123a678b041c4edeff4852d24c037fed43e748",
+      "locator": "Features of MediaLive > Channel security groups",
+      "quote": "[About channel security groups](https://docs.aws.amazon.com/medialive/latest/ug/channel-security-groups-about.md)",
+      "retrievedAt": "2026-09-01T04:06:13.203Z",
+      "sourceUrl": "https://docs.aws.amazon.com/medialive/latest/ug/llms.txt"
+    },
+    {
+      "bodySha256": "582b80be02492a396a7f7cccd2123a678b041c4edeff4852d24c037fed43e748",
+      "locator": "Features of MediaLive > Managing channel security groups",
+      "quote": "[Viewing channel security group details](https://docs.aws.amazon.com/medialive/latest/ug/channel-security-groups-view.md)",
+      "retrievedAt": "2026-09-01T04:06:13.203Z",
+      "sourceUrl": "https://docs.aws.amazon.com/medialive/latest/ug/llms.txt"
+    },
+    {
+      "bodySha256": "582b80be02492a396a7f7cccd2123a678b041c4edeff4852d24c037fed43e748",
+      "locator": "Features of MediaLive > Setting up a channel security group",
+      "quote": "[Step 1: Create or identify an input security group](https://docs.aws.amazon.com/medialive/latest/ug/channel-security-groups-create-isg.md)",
+      "retrievedAt": "2026-09-01T04:06:13.203Z",
+      "sourceUrl": "https://docs.aws.amazon.com/medialive/latest/ug/llms.txt"
+    }
+  ],
+  "id": "medialive/channel-security-groups",
+  "kind": "network-control",
+  "method": "deterministic",
+  "name": "Channel security groups",
+  "serviceId": "medialive",
+  "summary": "A channel security group allows you to control which IP addresses can connect to your MediaLive channel outputs.",
+  "tier": "tier2"
+}

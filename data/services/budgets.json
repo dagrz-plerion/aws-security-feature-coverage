@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "1a26314a5862bcece2b1468f82a288f2b7b0c3a5fb3034753dab4406671b0a12",
+      "locator": "budgets.json .Name",
+      "quote": "budgets",
+      "retrievedAt": "2026-09-01T03:57:44.686Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/budgets/budgets.json"
+    },
+    {
+      "bodySha256": "dba2dd6d1282362ee8c86c7c13df4a190f1d205f28fc70d504e5da33f17cc340",
+      "locator": "aws-products directory item",
+      "quote": "AWS Budgets",
+      "retrievedAt": "2026-09-01T03:58:07.224Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=1&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "budgets",
+  "signals": [],
+  "tier": "not-security"
+}

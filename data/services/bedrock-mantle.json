@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "86bddac1764bcf51953b14edb62570b4fbf5f961ac3faf5909477fd1529526fa",
+      "locator": "bedrock-mantle.json .Name",
+      "quote": "bedrock-mantle",
+      "retrievedAt": "2026-09-01T03:57:44.658Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/bedrock-mantle/bedrock-mantle.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "bedrock-mantle",
+  "signals": [],
+  "tier": "not-security"
+}

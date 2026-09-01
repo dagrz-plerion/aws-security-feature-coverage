@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/privateca/latest/userguide/pca-ram.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "9ac8c369118ad6c5c10e86b2280aa75ae81f1e08d4f5b48113caa07f6100f056",
+      "locator": "Certificate authorities > Control access",
+      "quote": "[Attach a policy for cross-account access](https://docs.aws.amazon.com/privateca/latest/userguide/pca-ram.md)",
+      "retrievedAt": "2026-09-01T04:06:15.563Z",
+      "sourceUrl": "https://docs.aws.amazon.com/privateca/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "account-access/certificate-authorities",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Certificate authorities",
+  "serviceId": "account-access",
+  "summary": "Assign permissions when the CA administrator and the certificate issuer reside in different accounts.",
+  "tier": "tier2"
+}

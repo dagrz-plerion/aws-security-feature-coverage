@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-service-linked-roles.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "003b337f8a5250f1d9decebbc697cae0335f9bb3910a2f27bc79c44f4da7c313",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[Use service-linked roles](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-service-linked-roles.md)",
+      "retrievedAt": "2026-09-01T04:06:01.059Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/llms.txt"
+    }
+  ],
+  "id": "cloudfront/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "cloudfront",
+  "summary": "How to use service-linked roles to give CloudFront access to resources in your AWS account.",
+  "tier": "tier2"
+}

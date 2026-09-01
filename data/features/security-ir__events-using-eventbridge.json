@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "guide-subchapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/security-ir/latest/userguide/events-detail-reference-full.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "647e42cd53ba31746d438489345338ab5968e7eb4a8b3d29145d0a17d1512021",
+      "locator": "[](https://docs.aws.amazon.com/security-ir/latest/userguide/eventbridge.md) > Managing events using EventBridge",
+      "quote": "[Events detail reference](https://docs.aws.amazon.com/security-ir/latest/userguide/events-detail-reference-full.md)",
+      "retrievedAt": "2026-09-01T04:06:18.185Z",
+      "sourceUrl": "https://docs.aws.amazon.com/security-ir/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "security-ir/events-using-eventbridge",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "events using EventBridge",
+  "serviceId": "security-ir",
+  "summary": "All events from AWS services have a common set of fields containing metadata about the event, such as the AWS service that is the source of the event, the time the event was generated, the account and region in which the event took place, and others.",
+  "tier": "tier1"
+}

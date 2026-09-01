@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "fa00a76e39bbc7758e006f54e0eb67b50356fb53ab9cfecd52ee1a361b432d30",
+      "locator": "synthetics.json .Name",
+      "quote": "synthetics",
+      "retrievedAt": "2026-09-01T03:58:02.965Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/synthetics/synthetics.json"
+    },
+    {
+      "bodySha256": "8b6ed35f3b8e23319e8b24d0a98609b22f7392c6d47fec359e09a01abb894c5e",
+      "locator": "https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.html service endpoints",
+      "quote": "| US East (Ohio) | us-east-2 |  synthetics.us-east-2.amazonaws.com <br /> synthetics-fips.us-east-2.api.aws <br /> synthetics-fips.us-east-2.amazonaws.com <br /> synthetics.us-east-2.api.aws  | HTTPS<br />HTTPS<br />HTTPS<br />HTTPS |",
+      "retrievedAt": "2026-09-01T03:59:33.857Z",
+      "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/cw-synthetics_region.md"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "synthetics",
+  "signals": [],
+  "tier": "not-security"
+}

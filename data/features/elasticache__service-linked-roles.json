@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/using-service-linked-roles.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "679a75379fa079e68ebe6ce667fe2c7210161070f0e920ac3d995b961ac2446e",
+      "locator": "Security > Overview of managing access",
+      "quote": "[Using Service-Linked Roles](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/using-service-linked-roles.md)",
+      "retrievedAt": "2026-09-01T04:06:01.503Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/llms.txt"
+    }
+  ],
+  "id": "elasticache/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Service-Linked Roles",
+  "serviceId": "elasticache",
+  "summary": "How to use service-linked roles to give Amazon ElastiCache access to resources in your AWS account.",
+  "tier": "tier2"
+}

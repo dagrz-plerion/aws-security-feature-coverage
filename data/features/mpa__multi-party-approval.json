@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mpa.md",
+    "https://docs.aws.amazon.com/payment-cryptography/latest/userguide/mpa.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "baa4ec799d67dcdaf1483e278d642bc114fd38431155b4667e3ce008b0d145af",
+      "locator": "AWS Organizations User Guide",
+      "quote": "[Multi-party approval](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mpa.md)",
+      "retrievedAt": "2026-09-01T04:06:14.665Z",
+      "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "e26b220f747ecc064fcd709523eb7f1c7dd59ad01398a07fc78c65869c423aec",
+      "locator": "Identity and access management",
+      "quote": "[Multi-party approval](https://docs.aws.amazon.com/payment-cryptography/latest/userguide/mpa.md)",
+      "retrievedAt": "2026-09-01T04:06:15.029Z",
+      "sourceUrl": "https://docs.aws.amazon.com/payment-cryptography/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "mpa/multi-party-approval",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Multi-party approval",
+  "serviceId": "mpa",
+  "summary": "Learn how to use Multi-party approval with AWS Payment Cryptography to require approval from multiple users before performing critical operations.",
+  "tier": "tier2"
+}

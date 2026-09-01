@@ -1,0 +1,27 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "ffeeeeec6ed0235e2c1838762938c684ec30bff5ec1a3e5de06502f462ca027b",
+      "locator": "schemas.json .Name",
+      "quote": "schemas",
+      "retrievedAt": "2026-09-01T03:58:01.067Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/schemas/schemas.json"
+    },
+    {
+      "bodySha256": "a5b2ce9125cc79ed5a25f75fe8d8557579b41af7bb84430c680aa060b2dc0898",
+      "locator": "https://docs.aws.amazon.com/general/latest/gr/eventbridgeschemas.html service endpoints",
+      "quote": "| US East (Ohio) | us-east-2 |  schemas.us-east-2.amazonaws.com  | HTTPS |",
+      "retrievedAt": "2026-09-01T03:59:35.468Z",
+      "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/eventbridgeschemas.md"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "schemas",
+  "signals": [],
+  "tier": "not-security"
+}

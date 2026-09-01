@@ -1,0 +1,44 @@
+{
+  "aliases": [
+    "identity-based policies (IAM policies)"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/clouddirectory/latest/developerguide/iam_auth_access_accesscontrol_identitybased.md",
+    "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/IAM_Auth_Access_IdentityBased.md",
+    "https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.IAM.AccessControl.IdentityBased.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "aeb4055fdc753e052f989c0edc78d8754da6d4facbb7c85de454e3517e00053b",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[Using Identity-Based Policies (IAM Policies)](https://docs.aws.amazon.com/clouddirectory/latest/developerguide/iam_auth_access_accesscontrol_identitybased.md)",
+      "retrievedAt": "2026-09-01T04:06:05.072Z",
+      "sourceUrl": "https://docs.aws.amazon.com/clouddirectory/latest/developerguide/llms.txt"
+    },
+    {
+      "bodySha256": "920c2475f5a2c690c771e1a56137df8edaf6dd8ce07a81bd583279fa948e87fa",
+      "locator": "Security > Identity and access management",
+      "quote": "[Using identity-based policies (IAM policies)](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/IAM_Auth_Access_IdentityBased.md)",
+      "retrievedAt": "2026-09-01T04:06:07.342Z",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/llms.txt"
+    },
+    {
+      "bodySha256": "7e59218fe412dc7ecb7ba41e85cddee3b1dda4374bb986404313e3775338a326",
+      "locator": "Security > Identity and Access Management",
+      "quote": "[Using identity-based policies (IAM policies)](https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.IAM.AccessControl.IdentityBased.md)",
+      "retrievedAt": "2026-09-01T04:06:07.562Z",
+      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "iam/identity-based-policies-iam-policies",
+  "kind": "policy-type",
+  "method": "deterministic",
+  "name": "Identity-Based Policies (IAM Policies)",
+  "serviceId": "iam",
+  "summary": "This topic provides examples of identity-based policies in which an account administrator can attach permissions policies to IAM identities (that is, users, groups, and roles).",
+  "tier": "tier1"
+}

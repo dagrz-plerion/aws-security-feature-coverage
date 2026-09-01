@@ -1,0 +1,71 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "7acef13f7a98314ae33285e98d2fe20d97a1843b0860ae5c091dd37ef693f868",
+          "locator": "https://docs.aws.amazon.com/location/latest/developerguide/cloudtrail.md ::  | column \"Data event type (console)\"",
+          "quote": "| Geo Maps | AWS::GeoMaps::Provider | See the Amazon [GeoMaps API](https://docs.aws.amazon.com/location/latest/APIReference/Welcome.html#Welcome_Amazon_Location_Service_Maps) reference |",
+          "retrievedAt": "2026-09-01T04:29:01.033Z",
+          "sourceUrl": "https://docs.aws.amazon.com/location/latest/developerguide/cloudtrail.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/data-events",
+      "id": "cloudtrail-data-events-service-geo-maps-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "geo-maps",
+      "targetLabel": "Geo Maps"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "7acef13f7a98314ae33285e98d2fe20d97a1843b0860ae5c091dd37ef693f868",
+          "locator": "https://docs.aws.amazon.com/location/latest/developerguide/cloudtrail.md ::  | column \"Data event type (console)\"",
+          "quote": "| Geo Places | AWS::GeoPlaces::Provider | See the Amazon [GeoPlaces API](https://docs.aws.amazon.com/location/latest/APIReference/Welcome.html#Welcome_Amazon_Location_Service_Places) reference |",
+          "retrievedAt": "2026-09-01T04:29:01.033Z",
+          "sourceUrl": "https://docs.aws.amazon.com/location/latest/developerguide/cloudtrail.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/data-events",
+      "id": "cloudtrail-data-events-service-geo-places-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "geo-places",
+      "targetLabel": "Geo Places"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "7acef13f7a98314ae33285e98d2fe20d97a1843b0860ae5c091dd37ef693f868",
+          "locator": "https://docs.aws.amazon.com/location/latest/developerguide/cloudtrail.md ::  | column \"Data event type (console)\"",
+          "quote": "| Geo Routes | AWS::GeoRoutes::Provider | See the Amazon [GeoRoutes API](https://docs.aws.amazon.com/location/latest/APIReference/Welcome.html#Welcome_Amazon_Location_Service_Routes) reference |",
+          "retrievedAt": "2026-09-01T04:29:01.033Z",
+          "sourceUrl": "https://docs.aws.amazon.com/location/latest/developerguide/cloudtrail.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/data-events",
+      "id": "cloudtrail-data-events-service-geo-routes-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "geo-routes",
+      "targetLabel": "Geo Routes"
+    }
+  ],
+  "featureId": "cloudtrail/data-events",
+  "generatedAt": "2026-09-01T04:41:17.395Z",
+  "serviceId": "cloudtrail",
+  "unresolvedTargets": []
+}

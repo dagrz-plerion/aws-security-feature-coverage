@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-federation-space-existing.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ba71e698c12f96ae270b53abc1618e28e891c3df756284284e2e08cd40b0f706",
+      "locator": "Administering federated spaces",
+      "quote": "[Configure an existing CodeCatalyst space for identity federation](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-federation-space-existing.md)",
+      "retrievedAt": "2026-09-01T04:06:05.367Z",
+      "sourceUrl": "https://docs.aws.amazon.com/codecatalyst/latest/adminguide/llms.txt"
+    }
+  ],
+  "id": "codecatalyst/existing-codecatalyst-space-for-identity-federation",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "existing CodeCatalyst space for identity federation",
+  "serviceId": "codecatalyst",
+  "summary": "You must have the Space administrator role and access to the billing account for the space in order to view SSO users and groups for your space.",
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/athena/latest/ug/lf-athena-limitations-cross-account.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "baac4979e3329df2b3d5b05e1169bcb2776243e0450182873d78fbc2228be215",
+      "locator": "Use Athena SQL > Use Athena with Lake Formation",
+      "quote": "[Cross-account access](https://docs.aws.amazon.com/athena/latest/ug/lf-athena-limitations-cross-account.md)",
+      "retrievedAt": "2026-09-01T04:06:03.348Z",
+      "sourceUrl": "https://docs.aws.amazon.com/athena/latest/ug/llms.txt"
+    }
+  ],
+  "id": "account-access/athena-with-lake-formation",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Athena with Lake Formation",
+  "serviceId": "account-access",
+  "summary": "To access a data catalog in another account, you can use Athena's cross-account AWS Glue feature or set up cross-account access in Lake Formation.",
+  "tier": "tier2"
+}

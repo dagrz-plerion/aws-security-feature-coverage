@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "38194ffbca175cf1d5a03f4050b505fba8dd7fbd3e2641bd5444cc0db877662a",
+      "locator": "ivs.json .Name",
+      "quote": "ivs",
+      "retrievedAt": "2026-09-01T03:57:53.525Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/ivs/ivs.json"
+    },
+    {
+      "bodySha256": "cbebbb5de0c7a2a48b82adba893a8b7ee0a336ac503f3690b75b65e342e58919",
+      "locator": "aws-products directory item",
+      "quote": "Amazon Interactive Video Service",
+      "retrievedAt": "2026-09-01T03:58:06.968Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=0&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 1 named security features were found in its documentation.",
+  "score": 3,
+  "serviceId": "ivs",
+  "signals": [
+    {
+      "detail": "17 documentation pages describe security capability, for example \"Chat Data Protection\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "tier2"
+}

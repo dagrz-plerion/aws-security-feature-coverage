@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "4f9cda4be2a601186dc9d94f11cf5f0ea5ffd1c34ac0b0ce767bc19b820874ab",
+      "locator": "opsworks-cm.json .Name",
+      "quote": "opsworks-cm",
+      "retrievedAt": "2026-09-01T03:57:57.214Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/opsworks-cm/opsworks-cm.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "opsworks-cm",
+  "signals": [],
+  "tier": "not-security"
+}

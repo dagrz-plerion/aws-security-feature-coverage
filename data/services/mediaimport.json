@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "a8b2f959debe2e0201539fac984180135a056c7f228f75665218b4c8bfe0cd38",
+      "locator": "mediaimport.json .Name",
+      "quote": "mediaimport",
+      "retrievedAt": "2026-09-01T03:57:55.170Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/mediaimport/mediaimport.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "mediaimport",
+  "signals": [],
+  "tier": "not-security"
+}

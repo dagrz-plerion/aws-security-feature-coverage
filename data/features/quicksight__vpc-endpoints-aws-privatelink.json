@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/quicksight/latest/developerguide/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5cbabc2f9d60783c20358a596928f9011de4e9e280d5ece4cd2ca169b324deba",
+      "locator": "Operations > IP and VPC endpoint restriction operations",
+      "quote": "[VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/quicksight/latest/developerguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:15.767Z",
+      "sourceUrl": "https://docs.aws.amazon.com/quicksight/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "quicksight/vpc-endpoints-aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "VPC endpoints (AWS PrivateLink)",
+  "serviceId": "quicksight",
+  "summary": "You can use an interface VPC endpoint to create a private connection between your VPC and Quick without requiring access over the internet or through a NAT device, a VPN connection, or an Direct Connect connection.",
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/macie/latest/user/vpc-interface-endpoints-macie.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b0c7ddf7411249e915067439ba54eca7e3f97b07297d1da0b5fd3ccc4140b0f1",
+      "locator": "Security > Identity and access management",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/macie/latest/user/vpc-interface-endpoints-macie.md)",
+      "retrievedAt": "2026-09-01T04:06:12.700Z",
+      "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/llms.txt"
+    }
+  ],
+  "id": "macie2/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "macie2",
+  "summary": "Learn about using an interface VPC endpoint, powered by AWS PrivateLink, to establish a private connection between your VPC and Amazon Macie.",
+  "tier": "tier1"
+}

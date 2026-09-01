@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/medialive/latest/ug/requirements-for-EC2.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "582b80be02492a396a7f7cccd2123a678b041c4edeff4852d24c037fed43e748",
+      "locator": "IAM permissions for users",
+      "quote": "[Systems Manager parameter store](https://docs.aws.amazon.com/medialive/latest/ug/requirements-for-EC2.md)",
+      "retrievedAt": "2026-09-01T04:06:13.203Z",
+      "sourceUrl": "https://docs.aws.amazon.com/medialive/latest/ug/llms.txt"
+    }
+  ],
+  "id": "medialive/systems-manager-parameter-store",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Systems Manager parameter store",
+  "serviceId": "medialive",
+  "summary": "The AWS Elemental MediaLive console includes a feature that lets a user create a password parameter in the AWS Systems Manager Parameter Store.",
+  "tier": "tier2"
+}

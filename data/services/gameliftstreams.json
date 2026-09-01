@@ -1,0 +1,33 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "45fa9a8375bf3aea3aaaaead50d8c69bcbb00cd9f9b1e8142be43c53f980ad73",
+      "locator": "gameliftstreams.json .Name",
+      "quote": "gameliftstreams",
+      "retrievedAt": "2026-09-01T03:57:51.071Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/gameliftstreams/gameliftstreams.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide gameliftstreams/latest/apireference",
+      "quote": "Amazon GameLift Streams API Reference",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given.",
+  "score": 3,
+  "serviceId": "gameliftstreams",
+  "signals": [
+    {
+      "detail": "16 documentation pages describe security capability, for example \"Setting up session credentials\".",
+      "id": "security-doc-pages",
+      "weight": 3
+    }
+  ],
+  "tier": "not-security"
+}

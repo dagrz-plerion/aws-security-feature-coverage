@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/autoscaling/ec2/userguide/getting-started-elastic-load-balancing.md",
+    "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-drop-alb-headers.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "ae89d4739697837c28d4c614a2fbd3f3c30150022e5ffbf094f61494a5f5a8d6",
+      "locator": "Work with other services > Elastic Load Balancing",
+      "quote": "[Prepare to attach a load balancer](https://docs.aws.amazon.com/autoscaling/ec2/userguide/getting-started-elastic-load-balancing.md)",
+      "retrievedAt": "2026-09-01T04:06:03.507Z",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "4f64722f627b4b796720af8a22bd6fc7e276b528c3cb721e9bab48cf80f4e8b5",
+      "locator": "Automation Runbook Reference > Elastic Load Balancing",
+      "quote": "[AWSConfigRemediation-DropInvalidHeadersForALB](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-drop-alb-headers.md)",
+      "retrievedAt": "2026-09-01T04:06:19.357Z",
+      "sourceUrl": "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "elasticloadbalancing/elastic-load-balancing",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Elastic Load Balancing",
+  "serviceId": "elasticloadbalancing",
+  "summary": "Discover how to complete the prerequisites for using Elastic Load Balancing to distribute traffic across the instances in your Auto Scaling group.",
+  "tier": "tier2"
+}

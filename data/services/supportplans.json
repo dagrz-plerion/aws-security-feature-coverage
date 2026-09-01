@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "55194fd1868d14f674ceed6ac317e4dd7d5eb6146575e2a8267fecb5261ff54a",
+      "locator": "supportplans.json .Name",
+      "quote": "supportplans",
+      "retrievedAt": "2026-09-01T03:58:03.357Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/supportplans/supportplans.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "supportplans",
+  "signals": [],
+  "tier": "not-security"
+}

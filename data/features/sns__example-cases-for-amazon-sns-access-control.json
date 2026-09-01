@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "83f90a5a40b2bc4d14c8b4fa78ca2a518117d0dd7566468c22de96ecdf4c92e4",
+      "locator": "Security > Identity and access management",
+      "quote": "[Example cases for Amazon SNS access control](https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md)",
+      "retrievedAt": "2026-09-01T04:06:18.939Z",
+      "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/llms.txt"
+    }
+  ],
+  "id": "sns/example-cases-for-amazon-sns-access-control",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Example cases for Amazon SNS access control",
+  "serviceId": "sns",
+  "summary": "Provides detailed examples of common access control scenarios for Amazon SNS, including how to grant AWS account access to a topic, limit subscriptions to HTTPS, and configure permissions for publishing messages from various AWS services like Amazon S3 and CloudWatch to an Amazon SNS topic.",
+  "tier": "tier2"
+}

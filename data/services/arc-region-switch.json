@@ -1,0 +1,38 @@
+{
+  "candidate": true,
+  "confidence": 0.4,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "881636b646652735733f1b4ea1c976915a45c13e862fcc9aeacd744c85823b12",
+      "locator": "arc-region-switch.json .Name",
+      "quote": "arc-region-switch",
+      "retrievedAt": "2026-09-01T03:57:43.294Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/arc-region-switch/arc-region-switch.json"
+    },
+    {
+      "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
+      "locator": "docs llms.txt guide arc-region-switch/latest/api",
+      "quote": "Amazon Application Recovery Controller API Reference Guide for Region Switch",
+      "retrievedAt": "2026-09-01T03:58:08.488Z",
+      "sourceUrl": "https://docs.aws.amazon.com/llms.txt"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Security signals present (score 4: security-name-weak, permission-management-actions). Scanning for a named security feature before any tier is given.",
+  "score": 4,
+  "serviceId": "arc-region-switch",
+  "signals": [
+    {
+      "detail": "The name contains \"control\".",
+      "id": "security-name-weak",
+      "weight": 2
+    },
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

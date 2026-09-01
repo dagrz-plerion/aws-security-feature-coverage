@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "3decf3e6a3853b8b7aff4f9cc04dd2b585b04d4ee7b89e7302671cd02cdcc379",
+      "locator": "datapipeline.json .Name",
+      "quote": "datapipeline",
+      "retrievedAt": "2026-09-01T03:57:47.647Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/datapipeline/datapipeline.json"
+    },
+    {
+      "bodySha256": "34ce17faff84f2e6f197c1266ef9030194eb61677cafeeb28e8ec8b8a4a710d9",
+      "locator": "aws-products directory item",
+      "quote": "AWS Data Pipeline",
+      "retrievedAt": "2026-09-01T03:58:07.905Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=2&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 5 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "datapipeline",
+  "signals": [
+    {
+      "detail": "10 documentation pages describe security capability, for example \"Data Protection\".",
+      "id": "security-doc-pages",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

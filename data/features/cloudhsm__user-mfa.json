@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "guide-subchapter",
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cloudhsm/latest/userguide/quorum-mfa-cloudhsm-cli.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "40168a9d137882d27d81e97c1cca0c17ceefcd5177947d8edd37426974206ee4",
+      "locator": "HSM users > Manage user MFA",
+      "quote": "[Quorum authentication](https://docs.aws.amazon.com/cloudhsm/latest/userguide/quorum-mfa-cloudhsm-cli.md)",
+      "retrievedAt": "2026-09-01T04:06:05.112Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudhsm/user-mfa",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "user MFA",
+  "serviceId": "cloudhsm",
+  "summary": "The AWS CloudHSM cluster uses the same key for quorum authentication and for multi-factor authentication (MFA).",
+  "tier": "tier1"
+}

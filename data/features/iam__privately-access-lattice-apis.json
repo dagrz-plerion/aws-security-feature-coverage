@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/vpc-lattice/latest/ug/vpc-interface-endpoints.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "324b789bf1d282d947c3087f2f30feb0d72295dfb34fdc1b9148ca6928559fa7",
+      "locator": "Security > Identity and access management",
+      "quote": "[Privately access Lattice APIs](https://docs.aws.amazon.com/vpc-lattice/latest/ug/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:19.975Z",
+      "sourceUrl": "https://docs.aws.amazon.com/vpc-lattice/latest/ug/llms.txt"
+    }
+  ],
+  "id": "iam/privately-access-lattice-apis",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "Privately access Lattice APIs",
+  "serviceId": "iam",
+  "summary": "You can use an interface VPC endpoint to create a private connection between your VPC and Amazon VPC Lattice without requiring access over the internet or through a NAT device, a VPN connection, or an Direct Connect connection.",
+  "tier": "tier1"
+}

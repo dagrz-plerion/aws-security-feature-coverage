@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "1669c12cb73e83da28ecb14edc3c0628385d717d1cc8deeffe312149bb0d0a2b",
+      "locator": "s3express.json .Name",
+      "quote": "s3express",
+      "retrievedAt": "2026-09-01T03:57:59.870Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/s3express/s3express.json"
+    },
+    {
+      "bodySha256": "dba2dd6d1282362ee8c86c7c13df4a190f1d205f28fc70d504e5da33f17cc340",
+      "locator": "aws-products directory item",
+      "quote": "Amazon S3 Express One Zone",
+      "retrievedAt": "2026-09-01T03:58:07.224Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=1&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: permission-management-actions). Scanned at low priority. Promoted to tier 2: 11 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "s3express",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

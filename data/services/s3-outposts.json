@@ -1,0 +1,34 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "59b4615304eac202413eeb5f00320e17be0a6b906eaf708fcd1cc4e4a34e5e30",
+      "locator": "s3-outposts.json .Name",
+      "quote": "s3-outposts",
+      "retrievedAt": "2026-09-01T03:58:00.346Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/s3-outposts/s3-outposts.json"
+    },
+    {
+      "bodySha256": "93c76bef2905fc06a3194f1899f913d89c7365c40f2b91befcd40b60d1aac260",
+      "locator": "regional services table",
+      "quote": "Amazon S3 on Outposts",
+      "retrievedAt": "2026-09-01T03:58:10.266Z",
+      "sourceUrl": "https://api.regional-table.region-services.aws.a2z.com/index.json"
+    }
+  ],
+  "method": "deterministic",
+  "promoted": true,
+  "reason": "Weak security signal only (score 2: permission-management-actions). Scanned at low priority. Promoted to tier 2: 1 named security features were found in its documentation.",
+  "score": 2,
+  "serviceId": "s3-outposts",
+  "signals": [
+    {
+      "detail": "The IAM service reference marks one or more actions as permission management.",
+      "id": "permission-management-actions",
+      "weight": 2
+    }
+  ],
+  "tier": "tier2"
+}

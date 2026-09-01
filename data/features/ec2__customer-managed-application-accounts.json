@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/managedservices/latest/userguide/application-account-cust-man-connect-tg.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b318c4d043448487210bc49842f676471990a2ad50a1d3bed3eebb821b5f3125",
+      "locator": "Network architecture > Customer Managed application accounts",
+      "quote": "[Connecting your CMA with Transit Gateway](https://docs.aws.amazon.com/managedservices/latest/userguide/application-account-cust-man-connect-tg.md)",
+      "retrievedAt": "2026-09-01T04:06:12.970Z",
+      "sourceUrl": "https://docs.aws.amazon.com/managedservices/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ec2/customer-managed-application-accounts",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Customer Managed application accounts",
+  "serviceId": "ec2",
+  "summary": "AMS does not manage the network setup of Customer Managed accounts.",
+  "tier": "tier2"
+}

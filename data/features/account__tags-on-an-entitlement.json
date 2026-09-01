@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/mediaconnect/latest/ug/entitlements-subscriber.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "74ec9896f35e67906bb1764d48a1bbf617ffae194550947b12df571bbed4c8f1",
+      "locator": "Using flows > Managing tags on an entitlement",
+      "quote": "[Subscribing to content provided by another AWS account](https://docs.aws.amazon.com/mediaconnect/latest/ug/entitlements-subscriber.md)",
+      "retrievedAt": "2026-09-01T04:06:13.148Z",
+      "sourceUrl": "https://docs.aws.amazon.com/mediaconnect/latest/ug/llms.txt"
+    }
+  ],
+  "id": "account/tags-on-an-entitlement",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "tags on an entitlement",
+  "serviceId": "account",
+  "summary": "When another AWS account (originator account) grants an entitlement to your AWS account (subscriber account), you can create an AWS Elemental MediaConnect flow that uses the originator's content as your source.",
+  "tier": "tier2"
+}

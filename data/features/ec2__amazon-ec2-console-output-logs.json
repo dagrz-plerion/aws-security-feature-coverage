@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/parallelcluster/latest/ug/console-logs-v3.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "f773b352589d02208c871e609d307719c542e54f6547e8804ad61f77291c1036",
+      "locator": "Using AWS ParallelCluster > Monitoring AWS ParallelCluster and logs",
+      "quote": "[Amazon EC2 console output logs](https://docs.aws.amazon.com/parallelcluster/latest/ug/console-logs-v3.md)",
+      "retrievedAt": "2026-09-01T04:06:14.873Z",
+      "sourceUrl": "https://docs.aws.amazon.com/parallelcluster/latest/ug/llms.txt"
+    }
+  ],
+  "id": "ec2/amazon-ec2-console-output-logs",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "Amazon EC2 console output logs",
+  "serviceId": "ec2",
+  "summary": "AWS ParallelCluster attempts to retrieve the Amazon EC2 console output from an unexpectedly terminated node instance to obtain troubleshooting information.",
+  "tier": "tier2"
+}

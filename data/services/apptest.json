@@ -1,0 +1,20 @@
+{
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "5351c60ae98ddb1805006f9714d1a9702fff3c568861f3e5e0cbea46ce34bd90",
+      "locator": "apptest.json .Name",
+      "quote": "apptest",
+      "retrievedAt": "2026-09-01T03:57:43.311Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/apptest/apptest.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
+  "serviceId": "apptest",
+  "signals": [],
+  "tier": "not-security"
+}

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/eks/latest/userguide/envelope-encryption.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "daa7d251c6281e980634dbc5c455c8ed531244295a5db277294b4f9769077fda",
+      "locator": "Security > Considerations for Kubernetes",
+      "quote": "[Default envelope encryption for all Kubernetes API Data](https://docs.aws.amazon.com/eks/latest/userguide/envelope-encryption.md)",
+      "retrievedAt": "2026-09-01T04:06:07.864Z",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "eks/default-envelope-encryption-for-all-kubernetes-api-data",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Default envelope encryption for all Kubernetes API Data",
+  "serviceId": "eks",
+  "summary": "Amazon Elastic Kubernetes Service (Amazon EKS) provides default envelope encryption for all Kubernetes API data in EKS clusters running Kubernetes version 1.28 or higher.",
+  "tier": "tier2"
+}

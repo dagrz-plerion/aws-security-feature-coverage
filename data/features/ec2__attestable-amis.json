@@ -1,0 +1,25 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/build-sample-ami.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "09dae225b6b711c053d8bf0af0304c20e0677c5e57535e214cce6c8b300eb08e",
+      "locator": "Security > Attestable AMIs",
+      "quote": "[Build the sample image description](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/build-sample-ami.md)",
+      "retrievedAt": "2026-09-01T04:06:00.831Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/llms.txt"
+    }
+  ],
+  "id": "ec2/attestable-amis",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Attestable AMIs",
+  "serviceId": "ec2",
+  "tier": "tier2"
+}

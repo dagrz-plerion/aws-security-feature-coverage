@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/redshift/latest/dg/copy-parameters-data-source-emr.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "9f1279fbac1bc82beb08fc6034a65e3c6d164b5ad2075f64f28718f9b8493f3e",
+      "locator": "SQL reference > Data sources",
+      "quote": "[COPY from Amazon EMR](https://docs.aws.amazon.com/redshift/latest/dg/copy-parameters-data-source-emr.md)",
+      "retrievedAt": "2026-09-01T04:06:16.074Z",
+      "sourceUrl": "https://docs.aws.amazon.com/redshift/latest/dg/llms.txt"
+    }
+  ],
+  "id": "elasticmapreduce/data-sources",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Data sources",
+  "serviceId": "elasticmapreduce",
+  "summary": "You can use the COPY command to load data in parallel from an Amazon EMR cluster configured to write text files to the cluster's Hadoop Distributed File System (HDFS) in the form of fixed-width files, character-delimited files, CSV files, JSON-formatted files, or Avro files.",
+  "tier": "tier2"
+}

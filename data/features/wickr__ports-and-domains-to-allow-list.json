@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/wickr/latest/adminguide/allow-list-ports-domains.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "0d52f2a082e54b6c45160fb12b6126343dab7f2773c80feea4411dbee58fcc89",
+      "locator": "Manage network > What is ATAK?",
+      "quote": "[Ports and domains to allow list](https://docs.aws.amazon.com/wickr/latest/adminguide/allow-list-ports-domains.md)",
+      "retrievedAt": "2026-09-01T04:06:20.346Z",
+      "sourceUrl": "https://docs.aws.amazon.com/wickr/latest/adminguide/llms.txt"
+    }
+  ],
+  "id": "wickr/ports-and-domains-to-allow-list",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Ports and domains to allow list",
+  "serviceId": "wickr",
+  "summary": "Learn the ports you should open and the domains to allow list on your network for AWS Wickr to function correctly.",
+  "tier": "tier2"
+}

@@ -1,0 +1,26 @@
+{
+  "candidate": true,
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "57397149b6c01ae8ab41a1bea08098ad7b292469e0beb41644cc143825afe8ec",
+      "locator": "cloudfront-keyvaluestore.json .Name",
+      "quote": "cloudfront-keyvaluestore",
+      "retrievedAt": "2026-09-01T03:57:45.386Z",
+      "sourceUrl": "https://servicereference.us-east-1.amazonaws.com/v1/cloudfront-keyvaluestore/cloudfront-keyvaluestore.json"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority.",
+  "score": 2,
+  "serviceId": "cloudfront-keyvaluestore",
+  "signals": [
+    {
+      "detail": "The name contains \"key\".",
+      "id": "security-name-weak",
+      "weight": 2
+    }
+  ],
+  "tier": "not-security"
+}

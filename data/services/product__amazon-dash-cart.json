@@ -1,0 +1,21 @@
+{
+  "candidate": false,
+  "confidence": 0.2,
+  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "evidence": [
+    {
+      "bodySha256": "cbebbb5de0c7a2a48b82adba893a8b7ee0a336ac503f3690b75b65e342e58919",
+      "locator": "aws-products directory item",
+      "quote": "Amazon Dash Cart",
+      "retrievedAt": "2026-09-01T03:58:06.968Z",
+      "sourceUrl": "https://aws.amazon.com/api/dirs/items/search?item.directoryId=aws-products&sort_by=item.additionalFields.productNameLowercase&sort_order=asc&size=100&page=0&item.locale=en_US"
+    }
+  ],
+  "method": "deterministic",
+  "reason": "This entry did not join to an AWS service id, so it is held for alias review rather than classified.",
+  "score": 0,
+  "serviceId": "product:amazon-dash-cart",
+  "signals": [],
+  "synthetic": true,
+  "tier": "not-security"
+}

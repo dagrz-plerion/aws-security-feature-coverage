@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "named-control"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/neptune-analytics/latest/userguide/gettingStarted-connecting-private-link-types.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b3ffb8e6a22ec48283a397b2279afaf48b4600b26bcd54336dbc928642de2f47",
+      "locator": "Getting started > AWS PrivateLink",
+      "quote": "[Types of interface endpoint services for Neptune Analytics](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/gettingStarted-connecting-private-link-types.md)",
+      "retrievedAt": "2026-09-01T04:06:14.040Z",
+      "sourceUrl": "https://docs.aws.amazon.com/neptune-analytics/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "rds/aws-privatelink",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS PrivateLink",
+  "serviceId": "rds",
+  "summary": "Neptune Analytics supports two services via interface VPC endpoints on AWS PrivateLink: neptune-graph for accessing Neptune Analytics control plane API operations like CreateGraph, DeleteGraph etc. and neptune-graph-data for accessing Neptune Analytics data plane API operations like GetQuery, ListQueries, ExecuteQuery etc.",
+  "tier": "tier2"
+}

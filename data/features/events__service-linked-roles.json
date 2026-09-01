@@ -1,0 +1,27 @@
+{
+  "aliases": [],
+  "confidence": 0.75,
+  "discoveredBy": [
+    "named-control",
+    "security-chapter"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/eventbridge/latest/userguide/using-service-linked-roles-service-action-1.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "4c951000f68a27d526e24aae5477818440448558012ed98a1ee8a308cbb17444",
+      "locator": "Security > Using service-linked roles",
+      "quote": "[API destination role](https://docs.aws.amazon.com/eventbridge/latest/userguide/using-service-linked-roles-service-action-1.md)",
+      "retrievedAt": "2026-09-01T04:06:09.138Z",
+      "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "events/service-linked-roles",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "service-linked roles",
+  "serviceId": "events",
+  "summary": "Learn how EventBridge uses an IAM service-linked role to enables access to the Secrets Manager secrets created by EventBridge.",
+  "tier": "tier2"
+}
