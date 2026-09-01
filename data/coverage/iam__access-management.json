@@ -707,23 +707,23 @@
     },
     {
       "axis": "resourceType",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "214e2f95c551176e8f70f458333408024796468b001a905d286520449b38599e",
-          "locator": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-inventory.md :: Topics",
-          "quote": "+ [Security groups](#vpc-network-security-groups)",
-          "retrievedAt": "2026-09-01T04:58:59.521Z",
-          "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-inventory.md"
+          "bodySha256": "b54465c79f237abfe3653d515e1377c8fb93b4c92038036320da30443309a49a",
+          "locator": "https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.IAM.AccessControl.Overview.md ::  | column \"Resource Type\"",
+          "quote": "| Security group | `arn:aws:rds:{{region}}:{{account-id}}:secgrp:{{security-group-name}}` |",
+          "retrievedAt": "2026-09-01T04:59:21.358Z",
+          "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.IAM.AccessControl.Overview.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-table",
       "featureId": "iam/access-management",
-      "id": "iam-access-management-resourcetype-aws-ec2-securitygroup-md-bullet-list",
+      "id": "iam-access-management-resourcetype-aws-ec2-securitygroup-md-table",
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::EC2::SecurityGroup",
-      "targetLabel": "Security groups"
+      "targetLabel": "Security group"
     },
     {
       "axis": "resourceType",
@@ -1250,11 +1250,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "eb03eeb4ce1fe8e98ef5450b4e448e7ecca4486f0cd48f3195f1d66a77273837",
-          "locator": "https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_service-with-iam-zonalautoshift.md :: heading level 2",
+          "bodySha256": "4bb2147a8b8268f7c236ae5cf22ff430c600abbd271212d6479f6f5b8b5302d5",
+          "locator": "https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_service-with-iam-routing.md :: heading level 2",
           "quote": "## Identity-based policies for ARC",
-          "retrievedAt": "2026-09-01T04:58:58.228Z",
-          "sourceUrl": "https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_service-with-iam-zonalautoshift.md"
+          "retrievedAt": "2026-09-01T04:58:58.302Z",
+          "sourceUrl": "https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_service-with-iam-routing.md"
         }
       ],
       "extractorId": "md-heading-series",
@@ -1410,11 +1410,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "42ef37dd66d4a3862bb1aa43cc9137df877981fe3e75179e92180121019e498f",
-          "locator": "https://docs.aws.amazon.com/cloudshell/latest/userguide/logging-and-monitoring.md :: heading level 2",
-          "quote": "## Monitoring activity with CloudTrail",
-          "retrievedAt": "2026-09-01T04:58:53.775Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cloudshell/latest/userguide/logging-and-monitoring.md"
+          "bodySha256": "7a99a3942b3971d54a9a2e4b5bcbfbf7f8609ad134b8fc93d8025d65d178b141",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for CloudTrail",
+          "retrievedAt": "2026-09-01T04:58:53.823Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/security_iam_service-with-iam.md"
         }
       ],
       "extractorId": "md-heading-series",
@@ -1423,7 +1423,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudtrail",
-      "targetLabel": "Monitoring activity with CloudTrail"
+      "targetLabel": "Identity-based policies for CloudTrail"
     },
     {
       "axis": "service",
@@ -1730,11 +1730,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "65c2044d8a12233f5dcffcc38d7707da67ff500b7509279353bc99c79f7d188b",
-          "locator": "https://docs.aws.amazon.com/app-mesh/latest/userguide/proxy-authorization.md :: heading level 4",
-          "quote": "#### [ Amazon ECS ]",
-          "retrievedAt": "2026-09-01T04:58:51.104Z",
-          "sourceUrl": "https://docs.aws.amazon.com/app-mesh/latest/userguide/proxy-authorization.md"
+          "bodySha256": "2132877aa265412391b293708c8c5d5a33fe13bf7a8d63396913f514b1cbe32c",
+          "locator": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon ECS",
+          "retrievedAt": "2026-09-01T04:58:59.747Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.md"
         }
       ],
       "extractorId": "md-heading-series",
@@ -1743,7 +1743,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ecs",
-      "targetLabel": "[ Amazon ECS ]"
+      "targetLabel": "Identity-based policies for Amazon ECS"
     },
     {
       "axis": "service",
@@ -1810,11 +1810,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "bc38c49f232bebbe01b9b73a67cd6d6fa16558fce4a72c50ff648be2aca1a6be",
-          "locator": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
-          "quote": "## Identity-based policies for Elastic Load Balancing",
-          "retrievedAt": "2026-09-01T04:59:00.233Z",
-          "sourceUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/security_iam_service-with-iam.md"
+          "bodySha256": "ecfd37e7b213a0c5a1b8ba90502a13fb32b17ecc7eb43c3adc7f98e322c74b12",
+          "locator": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/load-balancer-vpc-endpoints.md :: heading level 2",
+          "quote": "## Create an interface endpoint for Elastic Load Balancing",
+          "retrievedAt": "2026-09-01T04:59:00.408Z",
+          "sourceUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/load-balancer-vpc-endpoints.md"
         }
       ],
       "extractorId": "md-heading-series",
@@ -1823,7 +1823,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "elasticloadbalancing",
-      "targetLabel": "Identity-based policies for Elastic Load Balancing"
+      "targetLabel": "Create an interface endpoint for Elastic Load Balancing"
     },
     {
       "axis": "service",
@@ -2670,11 +2670,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "d84be1a7eec8f3a135f33308be87ce3607aa02e399fe6577f6d1930cfc6325b9",
-          "locator": "https://docs.aws.amazon.com/mediaconnect/latest/ug/iam-policy-examples-asm-secrets.md :: Policy examples for accessing MediaConnect encryption keys in Secrets Manager",
-          "quote": "+ [Allow read access to specific secrets in Secrets Manager](#iam-policy-examples-asm-specific-secrets)",
-          "retrievedAt": "2026-09-01T04:59:18.240Z",
-          "sourceUrl": "https://docs.aws.amazon.com/mediaconnect/latest/ug/iam-policy-examples-asm-secrets.md"
+          "bodySha256": "c8e1b3de0c3944551858c31b2b0250ce7deb11f866745e353bd42c642fc45853",
+          "locator": "https://docs.aws.amazon.com/documentdb/latest/devguide/security.managing-users.md :: For more information about AWS Secrets Manager and native integration with Amazon DocumentDB, see the following:",
+          "quote": "+ [Blog: How to rotate Amazon DocumentDB and Amazon Redshift credentials in AWS Secrets Manager](https://aws.amazon.com/blogs/security/how-to-rotate-amazon-documentdb-and-amazon-redshift-credentials-in-aws-secrets-manager/)",
+          "retrievedAt": "2026-09-01T04:59:21.572Z",
+          "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/security.managing-users.md"
         }
       ],
       "extractorId": "md-bullet-list",
@@ -2683,7 +2683,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "secretsmanager",
-      "targetLabel": "Allow read access to specific secrets in Secrets Manager"
+      "targetLabel": "Blog: How to rotate Amazon DocumentDB and Amazon Redshift credentials in AWS Secrets Manager"
     },
     {
       "axis": "service",
@@ -2710,11 +2710,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "b0561bca5b95b7eb78e089c3d7282f1ea7b78744925d2757b5641e31f44d5ace",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh_security_iam_service-with-iam.md :: heading level 2",
-          "quote": "## Identity-based policies for Security Hub",
-          "retrievedAt": "2026-09-01T04:59:24.362Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh_security_iam_service-with-iam.md"
+          "bodySha256": "df219037960b49c44f908ff394e0eb68abbdd4fb2bfd5b92a0dad39295b3428a",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Security Hub CSPM",
+          "retrievedAt": "2026-09-01T04:59:24.583Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/security_iam_service-with-iam.md"
         }
       ],
       "extractorId": "md-heading-series",
@@ -2723,7 +2723,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "securityhub",
-      "targetLabel": "Identity-based policies for Security Hub"
+      "targetLabel": "Identity-based policies for Security Hub CSPM"
     },
     {
       "axis": "service",
@@ -2799,10 +2799,10 @@
       ],
       "extractorId": "md-heading-series",
       "featureId": "iam/access-management",
-      "id": "iam-access-management-service-ssm-incidents-md-heading-series",
+      "id": "iam-access-management-service-ssm-contacts-md-heading-series",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "ssm-incidents",
+      "targetId": "ssm-contacts",
       "targetLabel": "Identity-based policies for Incident Manager"
     },
     {
@@ -3027,7 +3027,7 @@
     }
   ],
   "featureId": "iam/access-management",
-  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "generatedAt": "2026-09-01T05:16:49.209Z",
   "serviceId": "iam",
   "unresolvedTargets": [
     {
@@ -3039,6 +3039,16 @@
       "axis": "service",
       "raw": "Workforce identity · (Users managed in IAM Identity Center)",
       "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/infrastructure-security.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon RDS identity-based policies",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/security_iam_service-with-iam.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Attribute-based access control (ABAC) in policies with Amazon RDS tags",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/security_iam_service-with-iam.md"
     },
     {
       "axis": "service",
@@ -3101,14 +3111,39 @@
       "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/security_iam_troubleshoot.md"
     },
     {
-      "axis": "resourceType",
-      "raw": "DHCP option set",
-      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-inventory.md"
+      "axis": "service",
+      "raw": "What is AWS Secrets Manager?",
+      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/security.managing-users.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Rotate AWS Secrets Manager secrets",
+      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/security.managing-users.md"
     },
     {
       "axis": "resourceType",
-      "raw": "DHCP option set",
-      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-inventory.md"
+      "raw": "Cluster",
+      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.IAM.AccessControl.Overview.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Instance",
+      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.IAM.AccessControl.Overview.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Cluster",
+      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.IAM.AccessControl.Overview.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Instance",
+      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.IAM.AccessControl.Overview.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Considerations for HealthImaging VPC endpoints",
+      "sourceUrl": "https://docs.aws.amazon.com/healthimaging/latest/devguide/vpc-interface-endpoints.md"
     },
     {
       "axis": "resourceType",
@@ -3121,11 +3156,6 @@
       "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/vpc-interface-endpoints-macie.md"
     },
     {
-      "axis": "service",
-      "raw": "Considerations for HealthImaging VPC endpoints",
-      "sourceUrl": "https://docs.aws.amazon.com/healthimaging/latest/devguide/vpc-interface-endpoints.md"
-    },
-    {
       "axis": "resourceType",
       "raw": "User Notifications Identity-based policies",
       "sourceUrl": "https://docs.aws.amazon.com/notifications/latest/userguide/security_iam_service-with-iam.md"
@@ -3134,46 +3164,6 @@
       "axis": "resourceType",
       "raw": "Pool",
       "sourceUrl": "https://docs.aws.amazon.com/pinpoint/latest/developerguide/security_iam_service-with-iam.md"
-    },
-    {
-      "axis": "resourceType",
-      "raw": "Cluster",
-      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.IAM.AccessControl.Overview.md"
-    },
-    {
-      "axis": "resourceType",
-      "raw": "Instance",
-      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.IAM.AccessControl.Overview.md"
-    },
-    {
-      "axis": "resourceType",
-      "raw": "Cluster",
-      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.IAM.AccessControl.Overview.md"
-    },
-    {
-      "axis": "resourceType",
-      "raw": "Instance",
-      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/UsingWithRDS.IAM.AccessControl.Overview.md"
-    },
-    {
-      "axis": "service",
-      "raw": "What is AWS Secrets Manager?",
-      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/security.managing-users.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Rotate AWS Secrets Manager secrets",
-      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/security.managing-users.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon RDS identity-based policies",
-      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/security_iam_service-with-iam.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Attribute-based access control (ABAC) in policies with Amazon RDS tags",
-      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/security_iam_service-with-iam.md"
     },
     {
       "axis": "resourceType",
@@ -3203,22 +3193,22 @@
     {
       "axis": "service",
       "raw": "Workforce identity · (Users managed in IAM Identity Center)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh-security_iam_troubleshoot.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh-security_iam_troubleshoot.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/security_iam_troubleshoot.md"
     },
     {
       "axis": "service",
       "raw": "Workforce identity · (Users managed in IAM Identity Center)",
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/security_iam_troubleshoot.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh-security_iam_troubleshoot.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh-security_iam_troubleshoot.md"
     },
     {
       "axis": "resourceType",
@@ -3264,6 +3254,16 @@
       "axis": "service",
       "raw": "Controlling Access to Services with VPC Endpoints",
       "sourceUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/vpc-endpoints.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "DHCP option set",
+      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-inventory.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "DHCP option set",
+      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-inventory.md"
     }
   ]
 }

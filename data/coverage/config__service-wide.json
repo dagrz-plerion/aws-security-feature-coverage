@@ -1890,20 +1890,20 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "08c003d7ad8cc4d237a6752f1c20f0f6c0bc38ae2c6f742441553293a2ad8696",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
-          "quote": "## Identity-based policies for AWS Config",
-          "retrievedAt": "2026-09-01T04:58:55.116Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/security_iam_service-with-iam.md"
+          "bodySha256": "97f8af5b277db49489c9a57a18668048a3672a2e69a43b0efbfab26bb20c3012",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/monitor-config-with-cloudwatchevents.md :: Monitoring AWS Config with Amazon EventBridge",
+          "quote": "+ [Amazon EventBridge format for AWS Config](#cloudwatch-event-format-for-awsconfig)",
+          "retrievedAt": "2026-09-01T04:59:58.185Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/monitor-config-with-cloudwatchevents.md"
         }
       ],
-      "extractorId": "md-heading-series",
+      "extractorId": "md-bullet-list",
       "featureId": "config/service-wide",
-      "id": "config-service-wide-service-config-md-heading-series",
+      "id": "config-service-wide-service-config-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "config",
-      "targetLabel": "Identity-based policies for AWS Config"
+      "targetLabel": "Amazon EventBridge format for AWS Config"
     },
     {
       "axis": "service",
@@ -2710,20 +2710,20 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "7152947020254144d8cdd011773f28c0243f802fd22125df9fae560a8ce7307a",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/service-integrations.md :: heading level 2",
-          "quote": "## AWS Trusted Advisor",
-          "retrievedAt": "2026-09-01T04:29:04.165Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/service-integrations.md"
+          "bodySha256": "98872c2a204119a0cf7a602bcd63a1d0c951c74f308cad7cf003ee9726013f06",
+          "locator": "https://docs.aws.amazon.com/awssupport/latest/user/aws-config-integration-with-ta.md :: View AWS Trusted Advisor checks powered by AWS Config > Troubleshooting",
+          "quote": "+ [I deployed the same AWS Config managed rule twice, what will I see in Trusted Advisor?](#config-managed-rule-deployed-twice)",
+          "retrievedAt": "2026-09-01T04:59:58.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awssupport/latest/user/aws-config-integration-with-ta.md"
         }
       ],
-      "extractorId": "md-heading-series",
+      "extractorId": "md-bullet-list",
       "featureId": "config/service-wide",
-      "id": "config-service-wide-service-trustedadvisor-md-heading-series",
+      "id": "config-service-wide-service-trustedadvisor-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "trustedadvisor",
-      "targetLabel": "AWS Trusted Advisor"
+      "targetLabel": "I deployed the same AWS Config managed rule twice, what will I see in Trusted Advisor?"
     },
     {
       "axis": "service",
@@ -2787,9 +2787,14 @@
     }
   ],
   "featureId": "config/service-wide",
-  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "generatedAt": "2026-09-01T05:16:49.209Z",
   "serviceId": "config",
   "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "I just enabled recording and managed rules for AWS Config, but I don’t see corresponding Trusted Advisor checks.",
+      "sourceUrl": "https://docs.aws.amazon.com/awssupport/latest/user/aws-config-integration-with-ta.md"
+    },
     {
       "axis": "resourceType",
       "raw": "AWS::EC2::NetworkACL",
@@ -3264,11 +3269,6 @@
       "axis": "service",
       "raw": "ElasticSearch",
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/controls-config-resources.md"
-    },
-    {
-      "axis": "service",
-      "raw": "I just enabled recording and managed rules for AWS Config, but I don’t see corresponding Trusted Advisor checks.",
-      "sourceUrl": "https://docs.aws.amazon.com/awssupport/latest/user/aws-config-integration-with-ta.md"
     }
   ]
 }

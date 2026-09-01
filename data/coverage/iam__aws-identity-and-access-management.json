@@ -46,23 +46,23 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "606e023e1c57415dc1e1a30fbc72faa0988f6e21b59b4b324a1a5c169bc66bd3",
-          "locator": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md :: AWS Identity and Access Management (IAM) > Create access keys for your user | column \"Which user needs programmatic access?\"",
-          "quote": "| IAM | (Recommended) Use console credentials as temporary credentials to sign programmatic requests to the AWS CLI, AWS SDKs, or AWS APIs. | Following the instructions for the interface that you want to use.+  For the AWS CLI, see [Login for AWS local development](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sign-in.html) in the *AWS Command Line Interface User Guide*. <br />+  For AWS SDKs, see [Login for AWS local development](https://docs.aws.amazon.com/sdkref/latest/guide/access-login.html) in the *AWS SDKs and Tools Reference Guide*.  |",
-          "retrievedAt": "2026-09-01T04:58:58.707Z",
-          "sourceUrl": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md"
+          "bodySha256": "55c00827273b7ecc9457e6e669cf1e218891cd33833daf195bd8a52ef39776c4",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-iam.md :: heading level 2",
+          "quote": "## Enabling trusted access with IAM",
+          "retrievedAt": "2026-09-01T04:59:20.364Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-iam.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-heading-series",
       "featureId": "iam/aws-identity-and-access-management",
-      "id": "iam-aws-identity-and-access-management-service-iam-md-table",
+      "id": "iam-aws-identity-and-access-management-service-iam-md-heading-series",
       "method": "deterministic",
       "status": "covered",
       "targetId": "iam",
-      "targetLabel": "IAM"
+      "targetLabel": "Enabling trusted access with IAM"
     },
     {
       "axis": "service",
@@ -86,18 +86,18 @@
     }
   ],
   "featureId": "iam/aws-identity-and-access-management",
-  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "generatedAt": "2026-09-01T05:16:49.209Z",
   "serviceId": "iam",
   "unresolvedTargets": [
     {
       "axis": "service",
-      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
-      "sourceUrl": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md"
+      "raw": "IAM User Guide",
+      "sourceUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/IAMRoute53.md"
     },
     {
       "axis": "service",
-      "raw": "IAM User Guide",
-      "sourceUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/IAMRoute53.md"
+      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
+      "sourceUrl": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md"
     }
   ]
 }

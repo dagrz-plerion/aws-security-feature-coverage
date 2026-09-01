@@ -1,5 +1,6 @@
 import path from "node:path";
 import { paths } from "../core/paths.js";
+import { guidePrefixOverrides, serviceNameOverrides } from "../core/seeds.js";
 import { writeJson } from "../core/store.js";
 import { makeEvidence } from "../core/evidence.js";
 import { slug } from "../core/ids.js";
@@ -31,116 +32,7 @@ export type ServiceUniverse = {
  * Overrides for joins that name matching cannot make. Each entry exists because a
  * deterministic match failed, and the failure was recorded as a gap first.
  */
-const GUIDE_PREFIX_OVERRIDES: Record<string, string> = {
-  IAM: "iam",
-  AWSCloudFormation: "cloudformation",
-  AWSEC2: "ec2",
-  AmazonS3: "s3",
-  AmazonCloudWatch: "cloudwatch",
-  AmazonRDS: "rds",
-  AmazonCloudFront: "cloudfront",
-  awscloudtrail: "cloudtrail",
-  AWSCloudTrail: "cloudtrail",
-  AmazonECS: "ecs",
-  AmazonECR: "ecr",
-  AmazonVPC: "ec2",
-  vpc: "ec2",
-  macie: "macie2",
-  inspector: "inspector2",
-  waf: "wafv2",
-  singlesignon: "sso",
-  cognito: "cognito-idp",
-  directoryservice: "ds",
-  aws_backup: "backup",
-  privateca: "acm-pca",
-  payment_cryptography: "payment-cryptography",
-  organizations: "organizations",
-  controltower: "controltower",
-  service_authorization: "iam",
-  IAMUserGuide: "iam",
-  ebs: "ec2",
-  "aws-backup": "backup",
-  amazonglacier: "glacier",
-  AmazonElastiCache: "elasticache",
-  Route53: "route53",
-  route53: "route53",
-  AmazonCloudWatch_Logs: "logs",
-  "systems-manager": "ssm",
-  incident_manager: "ssm-incidents",
-  "resource-explorer": "resource-explorer-2",
-  "verified-access": "verified-access",
-  "network-firewall": "network-firewall",
-  securitylake: "securitylake",
-  "security-ir": "security-ir",
-};
 
-const NAME_OVERRIDES: Record<string, string> = {
-  "aws waf": "wafv2",
-  "aws wafv2": "wafv2",
-  "amazon macie": "macie2",
-  "amazon inspector": "inspector2",
-  "amazon inspector classic": "inspector",
-  "aws iam identity center": "sso",
-  "aws single sign-on": "sso",
-  "amazon cognito": "cognito-idp",
-  "aws directory service": "ds",
-  "aws private certificate authority": "acm-pca",
-  "aws certificate manager private certificate authority": "acm-pca",
-  "amazon virtual private cloud": "ec2",
-  "aws identity and access management": "iam",
-  "aws security token service": "sts",
-  "aws key management service": "kms",
-  "aws resource access manager": "ram",
-  "aws firewall manager": "fms",
-  "aws network firewall": "network-firewall",
-  "aws security hub": "securityhub",
-  "amazon security lake": "securitylake",
-  "aws audit manager": "auditmanager",
-  "aws secrets manager": "secretsmanager",
-  "aws systems manager": "ssm",
-  "aws config": "config",
-  "aws cloudtrail": "cloudtrail",
-  "aws organizations": "organizations",
-  "aws control tower": "controltower",
-  "aws backup": "backup",
-  "aws artifact": "artifact",
-  "aws shield": "shield",
-  "aws signer": "signer",
-  "aws payment cryptography": "payment-cryptography",
-  "aws cloudhsm": "cloudhsm",
-  "amazon guardduty": "guardduty",
-  "amazon detective": "detective",
-  "amazon verified permissions": "verifiedpermissions",
-  "aws security incident response": "security-ir",
-  "aws resilience hub": "resiliencehub",
-  "aws trusted advisor": "trustedadvisor",
-  "amazon vpc": "ec2",
-  "vpc": "ec2",
-  "amazon virtual private cloud vpc": "ec2",
-  "aws transit gateway": "ec2",
-  "amazon vpc lattice": "vpc-lattice",
-  "aws verified access": "verified-access",
-  "amazon route 53 dns firewall": "route53resolver",
-  "route 53 resolver dns firewall": "route53resolver",
-  "route 53 resolver endpoints": "route53resolver",
-  "amazon route 53 resolver": "route53resolver",
-  "aws config rules": "config",
-  "aws security hub cspm": "securityhub",
-  "security hub cspm": "securityhub",
-  "aws cloudhsm classic": "cloudhsm",
-  "aws private ca": "acm-pca",
-  "aws privateca": "acm-pca",
-  "iam access analyzer": "access-analyzer",
-  "aws iam access analyzer": "access-analyzer",
-  "aws identity and access management iam access analyzer": "access-analyzer",
-  "aws identity and access management access analyzer": "access-analyzer",
-  "aws identity store": "identitystore",
-  "aws iam identity center identity store": "identitystore",
-  "amazon codeguru security": "codeguru-security",
-  "aws control catalog": "controlcatalog",
-  "aws systems manager incident manager": "ssm-incidents",
-  "aws resource explorer": "resource-explorer-2",
-};
 
 const STOP_SUFFIXES =
   /\s+(user guide|developer guide|administration guide|admin guide|api reference|cli reference|getting started guide|reference guide|release notes|best practices|management guide|user guide for .*|guide)$/i;
@@ -169,6 +61,7 @@ const VARIANT_WORDS = new Set([
 /** Index of every known alias to a service id, so later sources join deterministically. */
 export class ServiceIndex {
   private byAlias = new Map<string, string>();
+  constructor(private readonly nameOverrides: Record<string, string> = {}) {}
 
   add(id: string, alias: string): void {
     const canonical = canonicalName(alias);
@@ -181,7 +74,7 @@ export class ServiceIndex {
   lookup(name: string): string | undefined {
     if (!name) return undefined;
     const canonical = canonicalName(name);
-    const override = NAME_OVERRIDES[canonical];
+    const override = this.nameOverrides[canonical];
     if (override) return override;
     return this.byAlias.get(canonical) ?? this.byAlias.get(flatten(name));
   }
@@ -195,7 +88,7 @@ export class ServiceIndex {
     const words = canonicalName(name).split(/\s+/).filter(Boolean);
     for (let take = words.length; take >= 1; take -= 1) {
       const head = words.slice(0, take).join(" ");
-      const id = NAME_OVERRIDES[head] ?? this.byAlias.get(head) ?? this.byAlias.get(flatten(head));
+      const id = this.nameOverrides[head] ?? this.byAlias.get(head) ?? this.byAlias.get(flatten(head));
       if (!id) continue;
       const remainder = words.slice(take);
       if (take === words.length) return { id, remainder: "" };
@@ -214,7 +107,7 @@ export class ServiceIndex {
     for (let start = 0; start < words.length; start += 1) {
       for (let end = words.length; end > start + 1; end -= 1) {
         const phrase = words.slice(start, end).join(" ");
-        const id = NAME_OVERRIDES[phrase] ?? this.byAlias.get(phrase) ?? this.byAlias.get(flatten(phrase));
+        const id = this.nameOverrides[phrase] ?? this.byAlias.get(phrase) ?? this.byAlias.get(flatten(phrase));
         if (id && (!best || end - start > best.length)) best = { id, matched: phrase, length: end - start };
       }
     }
@@ -229,7 +122,9 @@ export class ServiceIndex {
 export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUniverse> {
   const notes: string[] = [];
   const services = new Map<string, Service>();
-  const index = new ServiceIndex();
+  const nameOverrides = await serviceNameOverrides();
+  const guideOverrides = await guidePrefixOverrides();
+  const index = new ServiceIndex(nameOverrides);
 
   const ensure = (id: string): Service => {
     let existing = services.get(id);
@@ -327,7 +222,7 @@ export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUn
   for (const guide of guides) {
     const prefix = guide.guideKey.split("/")[0] ?? guide.guideKey;
     const id =
-      GUIDE_PREFIX_OVERRIDES[prefix] ??
+      guideOverrides[prefix] ??
       (services.has(prefix.toLowerCase()) ? prefix.toLowerCase() : undefined) ??
       index.resolve(guide.title) ??
       index.lookup(prefix) ??
@@ -344,7 +239,7 @@ export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUn
     // Only a guide that joined by its own prefix contributes a name. A guide matched
     // loosely (a tutorial, an exam guide, an architecture diagram) names a document,
     // not a service, and letting it through pollutes every later name match.
-    const joinedByPrefix = GUIDE_PREFIX_OVERRIDES[prefix] !== undefined || services.has(prefix.toLowerCase());
+    const joinedByPrefix = guideOverrides[prefix] !== undefined || services.has(prefix.toLowerCase());
     if (joinedByPrefix) service.names.push(guide.title.replace(STOP_SUFFIXES, "").trim());
     if (service.evidence.length < 8) {
       service.evidence.push(makeEvidence(guidesResult, guide.title, `docs llms.txt guide ${guide.guideKey}`));
@@ -371,7 +266,7 @@ export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUn
     bucket.regions.add(entry.region);
   }
   for (const [key, bucket] of byService) {
-    const viaDocs = bucket.url ? guidePrefixToServiceId(bucket.url, services, index) : undefined;
+    const viaDocs = bucket.url ? guidePrefixToServiceId(bucket.url, services, index, guideOverrides) : undefined;
     const id = index.resolve(bucket.name) ?? viaDocs ?? `regional:${slug(key)}`;
     const service = ensure(id);
     service.seenIn.push("regional-table");
@@ -467,11 +362,12 @@ function guidePrefixToServiceId(
   docUrl: string,
   services: Map<string, Service>,
   index: ServiceIndex,
+  guideOverrides: Record<string, string>,
 ): string | undefined {
   const match = /^https?:\/\/docs\.aws\.amazon\.com\/([^/]+)\//.exec(docUrl);
   const prefix = match?.[1];
   if (!prefix) return undefined;
-  const override = GUIDE_PREFIX_OVERRIDES[prefix];
+  const override = guideOverrides[prefix];
   if (override && services.has(override)) return override;
   if (services.has(prefix.toLowerCase())) return prefix.toLowerCase();
   return index.lookup(prefix);

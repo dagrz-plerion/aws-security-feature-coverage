@@ -14923,8 +14923,8 @@
     {
       "axes": {
         "service": {
-          "covered": 219,
-          "notCovered": 8,
+          "covered": 226,
+          "notCovered": 1,
           "partial": 0,
           "total": 227,
           "unknown": 0
@@ -42017,7 +42017,7 @@
           "securitylake",
           "servicediscovery",
           "social-messaging",
-          "ssm-incidents",
+          "ssm-contacts",
           "states",
           "sustainability",
           "tnb",
@@ -44946,8 +44946,8 @@
     {
       "axes": {
         "region": {
-          "covered": 31,
-          "notCovered": 7,
+          "covered": 38,
+          "notCovered": 0,
           "partial": 0,
           "total": 38,
           "unknown": 0
@@ -45079,7 +45079,7 @@
           "securityhub",
           "ses",
           "social-messaging",
-          "ssm-incidents",
+          "ssm-contacts",
           "verified-access",
           "vpc-lattice",
           "waf",
@@ -63855,26 +63855,6 @@
     {
       "axes": {},
       "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "pinpoint/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "Amazon Pinpoint: stated for the service as a whole",
-      "serviceId": "pinpoint",
-      "serviceName": "Amazon Pinpoint",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {},
-      "tier": "tier2",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
       "confidence": 0.6,
       "discoveredBy": [
         "attributed-page"
@@ -66191,8 +66171,8 @@
           "unknown": 0
         },
         "service": {
-          "covered": 10,
-          "notCovered": 0,
+          "covered": 9,
+          "notCovered": 1,
           "partial": 0,
           "total": 10,
           "unknown": 0
@@ -80970,51 +80950,6 @@
     {
       "axes": {},
       "claimCount": 0,
-      "confidence": 0.75,
-      "discoveredBy": [
-        "attributed-page",
-        "named-control"
-      ],
-      "docUrls": [
-        "https://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-custom-lambda-trust-policy-assign.md"
-      ],
-      "id": "sms-voice/grant-permission-to-invoke-the-function",
-      "kind": "identity-control",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "Grant permission to invoke the function",
-      "serviceId": "sms-voice",
-      "serviceName": "sms-voice",
-      "summary": "You can use the AWS Command Line Interface (AWS CLI) to add permissions to the Lambda function policy assigned to your Lambda function.",
-      "targets": {},
-      "tier": "tier2",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
-      "confidence": 0.6,
-      "discoveredBy": [
-        "attributed-page"
-      ],
-      "docUrls": [
-        "https://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-custom-lambda-response-format.md"
-      ],
-      "id": "sms-voice/lambda-function-response-format",
-      "kind": "response",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "Lambda function response format",
-      "serviceId": "sms-voice",
-      "serviceName": "sms-voice",
-      "summary": "If you want to use the journey multivariate or yes/no split to determine the endpoint path after a custom channel activity you must structure your Lambda function response into a f",
-      "targets": {},
-      "tier": "tier2",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
       "confidence": 0.6,
       "discoveredBy": [
         "guide-subchapter"
@@ -81074,28 +81009,6 @@
       "serviceId": "sms-voice",
       "serviceName": "sms-voice",
       "summary": "Create a protect configuration in AWS End User Messaging SMS.",
-      "targets": {},
-      "tier": "tier2",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
-      "confidence": 0.6,
-      "discoveredBy": [
-        "attributed-page"
-      ],
-      "docUrls": [
-        "https://docs.aws.amazon.com/pinpoint/latest/userguide/tutorials-using-postman-sample-requests.md"
-      ],
-      "id": "sms-voice/send-requests",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "Send requests",
-      "serviceId": "sms-voice",
-      "serviceName": "sms-voice",
-      "summary": "When you finish configuring and testing Postman, you can start sending additional requests to the Amazon Pinpoint API.",
       "targets": {},
       "tier": "tier2",
       "unresolved": 0
@@ -83222,14 +83135,14 @@
           "unknown": 0
         },
         "service": {
-          "covered": 7,
+          "covered": 8,
           "notCovered": 0,
           "partial": 0,
-          "total": 7,
+          "total": 8,
           "unknown": 0
         }
       },
-      "claimCount": 16,
+      "claimCount": 17,
       "confidence": 0.6,
       "discoveredBy": [
         "attributed-page"
@@ -83264,6 +83177,7 @@
           "devops-guru",
           "events",
           "securityhub",
+          "ssm-contacts",
           "ssm-incidents"
         ]
       },
@@ -85193,40 +85107,6 @@
       "targets": {},
       "tier": "tier2",
       "unresolved": 0
-    },
-    {
-      "axes": {
-        "service": {
-          "covered": 3,
-          "notCovered": 0,
-          "partial": 0,
-          "total": 3,
-          "unknown": 0
-        }
-      },
-      "claimCount": 3,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "timestream/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "Amazon Timestream: stated for the service as a whole",
-      "serviceId": "timestream",
-      "serviceName": "Amazon Timestream",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {
-        "service": [
-          "AWS::Lambda::Function",
-          "grafana",
-          "regional:amazon-managed-service-for-apache-flink"
-        ]
-      },
-      "tier": "tier2",
-      "unresolved": 1
     },
     {
       "axes": {},
@@ -92856,6 +92736,13 @@
       "subject": "unresolved:doc:glossary"
     },
     {
+      "detail": "1261 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
+      "id": "7ed3b17ee87f1b7d",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved coverage targets"
+    },
+    {
       "detail": "\"AWS Regions and Availability Zones\" did not join to a service prefix. Score 0, signals none.",
       "id": "7ef60aaeec090559",
       "kind": "alias",
@@ -93892,6 +93779,13 @@
       "subject": "unresolved:doc:r53recovery"
     },
     {
+      "detail": "9 rules were broken in the last run, starting with \"every claim belongs to a feature\".",
+      "id": "e46489bfa4ec952f",
+      "kind": "recall",
+      "stage": "stage6-validate",
+      "subject": "validation violations"
+    },
+    {
       "detail": "\"doc:encryption-sdk\" did not join to a service prefix. Score 5, signals security-name-strong.",
       "id": "e488ff05f057496e",
       "kind": "alias",
@@ -94200,50 +94094,141 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-01T05:10:03.793Z",
+  "generatedAt": "2026-09-01T05:17:08.018Z",
   "manifest": {
     "fetch": {
-      "cacheHit": 10985,
-      "failed": 0,
+      "cacheHit": 12956,
+      "failed": 5,
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-01T05:09:48.583Z",
+    "finishedAt": "2026-09-01T05:16:50.513Z",
     "stages": [
       {
         "counts": {
-          "claims": 13049,
-          "conflicts": 0,
-          "covered": 12939,
-          "featuresWithCoverage": 322,
-          "notCovered": 108,
-          "openAxes": 6,
-          "openAxisMembers": 1536,
-          "pagesConsidered": 10985,
-          "pagesFailed": 1,
-          "pagesRead": 834,
-          "prunedStaleRecords": 0,
-          "serviceWideRecords": 94,
-          "unattachedPages": 0,
-          "unresolvedTargets": 1262
+          "actions": 21810,
+          "dataSources": 23,
+          "docGuides": 1236,
+          "iamPrefixedServices": 526,
+          "partitions": 8,
+          "products": 358,
+          "regions": 46,
+          "resourceTypes": 3134,
+          "services": 692
         },
-        "finishedAt": "2026-09-01T05:09:48.080Z",
-        "id": "stage5-coverage",
-        "startedAt": "2026-09-01T05:09:16.336Z",
+        "finishedAt": "2026-09-01T05:16:12.782Z",
+        "id": "stage1-universes",
+        "notes": [
+          "1312 service reference resources joined to an existing resource type"
+        ],
+        "startedAt": "2026-09-01T05:15:32.948Z",
         "status": "partial"
       },
       {
         "counts": {
-          "features": 3372,
-          "services": 228
+          "failed": 29,
+          "guides": 1236,
+          "indexed": 1207,
+          "pages": 103576
         },
-        "finishedAt": "2026-09-01T05:09:48.583Z",
+        "finishedAt": "2026-09-01T05:16:13.335Z",
+        "id": "stage2-doc-pages",
+        "startedAt": "2026-09-01T05:16:12.783Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "adjudicated": 692,
+          "candidates": 307,
+          "notSecurity": 385,
+          "overridesApplied": 33,
+          "pendingJudgement": 43,
+          "prunedStaleRecords": 0,
+          "sraMatched": 31,
+          "synthetic": 166,
+          "tier1": 45,
+          "tier2": 13
+        },
+        "finishedAt": "2026-09-01T05:16:13.786Z",
+        "id": "stage3-discovery",
+        "notes": [
+          "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
+        ],
+        "startedAt": "2026-09-01T05:16:13.335Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "aliasesApplied": 13,
+          "aliasesUnmatched": 0,
+          "features": 3275,
+          "noFeatureFound": 88,
+          "promotedToTier2": 169,
+          "prunedStaleRecords": 93,
+          "scanned": 307,
+          "servicesWithFeatures": 219
+        },
+        "finishedAt": "2026-09-01T05:16:17.872Z",
+        "id": "stage4-features",
+        "startedAt": "2026-09-01T05:16:13.787Z",
+        "status": "ok"
+      },
+      {
+        "counts": {
+          "claims": 13047,
+          "conflicts": 0,
+          "covered": 12950,
+          "empty": 10326,
+          "enabled": 10984,
+          "featuresWithCoverage": 321,
+          "from_tier1-sweep": 6522,
+          "from_title-match": 4462,
+          "newlyDiscovered": 0,
+          "notCovered": 95,
+          "openAxes": 6,
+          "openAxisMembers": 1536,
+          "pagesConsidered": 10984,
+          "pagesFailed": 1,
+          "pagesRead": 833,
+          "prunedStaleRecords": 0,
+          "registered": 10984,
+          "serviceWideRecords": 93,
+          "unattachedPages": 0,
+          "unresolvedTargets": 1261,
+          "yielding": 657
+        },
+        "finishedAt": "2026-09-01T05:16:49.436Z",
+        "id": "stage5-coverage",
+        "startedAt": "2026-09-01T05:16:17.872Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "claims": 13047,
+          "features": 3367,
+          "quotesChecked": 250,
+          "recallFound": 73,
+          "recallTotal": 73,
+          "services": 692,
+          "violations": 0
+        },
+        "finishedAt": "2026-09-01T05:16:50.046Z",
+        "id": "stage6-validate",
+        "startedAt": "2026-09-01T05:16:49.436Z",
+        "status": "ok"
+      },
+      {
+        "counts": {
+          "features": 3367,
+          "services": 227
+        },
+        "finishedAt": "2026-09-01T05:16:50.513Z",
         "id": "report",
-        "startedAt": "2026-09-01T05:09:48.080Z",
+        "startedAt": "2026-09-01T05:16:50.046Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-01T05:09:16.334Z"
+    "startedAt": "2026-09-01T05:15:32.946Z"
   },
   "outOfScope": [
     {
@@ -96627,6 +96612,12 @@
       "method": "deterministic",
       "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
       "score": 0
+    },
+    {
+      "id": "repostspace",
+      "method": "deterministic",
+      "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority.",
+      "score": 2
     },
     {
       "id": "researchstudio",
@@ -99370,7 +99361,7 @@
       "id": "account",
       "method": "deterministic",
       "name": "AWS Account",
-      "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 64 named security features were found in its documentation.",
+      "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 62 named security features were found in its documentation.",
       "regions": 0,
       "score": 2,
       "signals": [
@@ -99606,7 +99597,7 @@
       "id": "appconfig",
       "method": "deterministic",
       "name": "AWS AppConfig",
-      "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority. Promoted to tier 2: 2 named security features were found in its documentation.",
+      "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority. Promoted to tier 2: 1 named security features were found in its documentation.",
       "regions": 48,
       "score": 2,
       "signals": [
@@ -99803,7 +99794,7 @@
       "id": "appsync",
       "method": "deterministic",
       "name": "AWS AppSync",
-      "reason": "Security signals present (score 4: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 10 named security features were found in its documentation.",
+      "reason": "Security signals present (score 4: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 1 named security features were found in its documentation.",
       "regions": 33,
       "score": 4,
       "signals": [
@@ -100086,7 +100077,7 @@
       "id": "bedrock",
       "method": "deterministic",
       "name": "Amazon Bedrock Agents",
-      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 41 named security features were found in its documentation.",
+      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 40 named security features were found in its documentation.",
       "regions": 40,
       "score": 5,
       "signals": [
@@ -100112,7 +100103,7 @@
       "id": "billing",
       "method": "deterministic",
       "name": "AWS Billing",
-      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 9 named security features were found in its documentation.",
+      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 7 named security features were found in its documentation.",
       "regions": 0,
       "score": 5,
       "signals": [
@@ -100206,7 +100197,7 @@
       "id": "cassandra",
       "method": "deterministic",
       "name": "Amazon Keyspaces (for Apache Cassandra)",
-      "reason": "Security signals present (score 5: security-name-weak, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 4 named security features were found in its documentation.",
+      "reason": "Security signals present (score 5: security-name-weak, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 3 named security features were found in its documentation.",
       "regions": 29,
       "score": 5,
       "signals": [
@@ -100646,7 +100637,7 @@
       "id": "codebuild",
       "method": "deterministic",
       "name": "AWS CodeBuild",
-      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 9 named security features were found in its documentation.",
+      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 7 named security features were found in its documentation.",
       "regions": 40,
       "score": 5,
       "signals": [
@@ -101309,7 +101300,7 @@
       "id": "datazone",
       "method": "deterministic",
       "name": "Amazon DataZone",
-      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 21 named security features were found in its documentation.",
+      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 10 named security features were found in its documentation.",
       "regions": 39,
       "score": 5,
       "signals": [
@@ -101522,7 +101513,7 @@
       "id": "discovery",
       "method": "deterministic",
       "name": "AWS Application Discovery Service",
-      "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 6 named security features were found in its documentation.",
+      "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 5 named security features were found in its documentation.",
       "regions": 7,
       "score": 2,
       "signals": [
@@ -101888,7 +101879,7 @@
       "id": "eks",
       "method": "deterministic",
       "name": "Amazon Elastic Kubernetes Service (EKS)",
-      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 64 named security features were found in its documentation.",
+      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 63 named security features were found in its documentation.",
       "regions": 52,
       "score": 3,
       "signals": [
@@ -101919,7 +101910,7 @@
       "id": "elasticache",
       "method": "deterministic",
       "name": "Amazon ElastiCache",
-      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 8 named security features were found in its documentation.",
+      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 7 named security features were found in its documentation.",
       "regions": 46,
       "score": 3,
       "signals": [
@@ -102244,7 +102235,7 @@
       "id": "events",
       "method": "deterministic",
       "name": "Amazon EventBridge",
-      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 33 named security features were found in its documentation.",
+      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 32 named security features were found in its documentation.",
       "regions": 52,
       "score": 5,
       "signals": [
@@ -102363,7 +102354,7 @@
       "id": "firehose",
       "method": "deterministic",
       "name": "Amazon Data Firehose",
-      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 5 named security features were found in its documentation.",
+      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 3 named security features were found in its documentation.",
       "regions": 52,
       "score": 3,
       "signals": [
@@ -102477,7 +102468,7 @@
       "id": "frauddetector",
       "method": "deterministic",
       "name": "Amazon Fraud Detector",
-      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 5 named security features were found in its documentation.",
+      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 3 named security features were found in its documentation.",
       "regions": 6,
       "score": 3,
       "signals": [
@@ -102564,7 +102555,7 @@
       "id": "fsx",
       "method": "deterministic",
       "name": "Amazon FSx Intelligent-Tiering for FSx for OpenZFS",
-      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 10 named security features were found in its documentation.",
+      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 8 named security features were found in its documentation.",
       "regions": 71,
       "score": 5,
       "signals": [
@@ -102608,7 +102599,7 @@
       "id": "gamelift",
       "method": "deterministic",
       "name": "Amazon GameLift",
-      "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 16 named security features were found in its documentation.",
+      "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 11 named security features were found in its documentation.",
       "regions": 27,
       "score": 2,
       "signals": [
@@ -102744,7 +102735,7 @@
       "id": "grafana",
       "method": "deterministic",
       "name": "Amazon Managed Grafana",
-      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 3 named security features were found in its documentation.",
+      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 2 named security features were found in its documentation.",
       "regions": 12,
       "score": 5,
       "signals": [
@@ -103235,7 +103226,7 @@
       "id": "kendra",
       "method": "deterministic",
       "name": "Amazon Kendra",
-      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 3 named security features were found in its documentation.",
+      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 2 named security features were found in its documentation.",
       "regions": 16,
       "score": 3,
       "signals": [
@@ -103729,7 +103720,7 @@
       "id": "mediaconvert",
       "method": "deterministic",
       "name": "AWS Elemental MediaConvert",
-      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 7 named security features were found in its documentation.",
+      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 6 named security features were found in its documentation.",
       "regions": 29,
       "score": 3,
       "signals": [
@@ -104436,7 +104427,7 @@
           "url": "https://docs.aws.amazon.com/pinpoint/latest/archguide/welcome.md"
         }
       ],
-      "featureCount": 6,
+      "featureCount": 5,
       "id": "pinpoint",
       "method": "deterministic",
       "name": "Amazon Pinpoint",
@@ -104521,7 +104512,7 @@
       "id": "qbusiness",
       "method": "deterministic",
       "name": "Amazon Q Business index",
-      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 10 named security features were found in its documentation.",
+      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 8 named security features were found in its documentation.",
       "regions": 39,
       "score": 5,
       "signals": [
@@ -104578,7 +104569,7 @@
       "id": "quicksight",
       "method": "deterministic",
       "name": "New expanded API capabilities in Amazon QuickSight",
-      "reason": "Security signals present (score 3: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 17 named security features were found in its documentation.",
+      "reason": "Security signals present (score 3: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 9 named security features were found in its documentation.",
       "regions": 28,
       "score": 3,
       "signals": [
@@ -104769,52 +104760,9 @@
       "id": "rekognition",
       "method": "deterministic",
       "name": "Amazon Rekognition",
-      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 5 named security features were found in its documentation.",
+      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 3 named security features were found in its documentation.",
       "regions": 22,
       "score": 3,
-      "signals": [
-        "security-doc-pages"
-      ],
-      "tier": "tier2"
-    },
-    {
-      "actionCount": 19,
-      "category": "",
-      "claimCount": 0,
-      "confidence": 0.6,
-      "docGuides": [
-        {
-          "description": "Use AWS re:Post Private to access curated content and a private discussion forum.",
-          "llmsTxt": "https://docs.aws.amazon.com/repostprivate/latest/adminguide/llms.txt",
-          "title": "AWS re:Post Private re:Post Private Administration Guide",
-          "url": "https://docs.aws.amazon.com/repostprivate/latest/adminguide/what-is.md"
-        },
-        {
-          "description": "AWS re:Post Private is a private version of AWS re:Post for enterprises with Enterprise Support or Enterprise On-Ramp Support plans.",
-          "llmsTxt": "https://docs.aws.amazon.com/repostprivate/latest/APIReference/llms.txt",
-          "title": "AWS re:Post Private Welcome",
-          "url": "https://docs.aws.amazon.com/repostprivate/latest/APIReference/Welcome.md"
-        },
-        {
-          "description": "Use AWS re:Post Private to access curated content and a private discussion forum.",
-          "llmsTxt": "https://docs.aws.amazon.com/repostprivate/latest/caguide/llms.txt",
-          "title": "AWS re:Post Private Console Administration Guide",
-          "url": "https://docs.aws.amazon.com/repostprivate/latest/caguide/what-is.md"
-        },
-        {
-          "description": "Use AWS re:Post Private to access curated content and a private discussion forum.",
-          "llmsTxt": "https://docs.aws.amazon.com/repostprivate/latest/userguide/llms.txt",
-          "title": "AWS re:Post Private User Guide",
-          "url": "https://docs.aws.amazon.com/repostprivate/latest/userguide/what-is.md"
-        }
-      ],
-      "featureCount": 0,
-      "id": "repostspace",
-      "method": "deterministic",
-      "name": "AWS re:Post Private",
-      "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 1 named security features were found in its documentation.",
-      "regions": 7,
-      "score": 2,
       "signals": [
         "security-doc-pages"
       ],
@@ -104974,7 +104922,7 @@
       "id": "route53",
       "method": "deterministic",
       "name": "Amazon Route 53",
-      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 27 named security features were found in its documentation.",
+      "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 26 named security features were found in its documentation.",
       "regions": 37,
       "score": 3,
       "signals": [
@@ -104992,7 +104940,7 @@
       "id": "route53globalresolver",
       "method": "deterministic",
       "name": "Amazon Route 53 Global Resolver",
-      "reason": "Weak security signal only (score 2: permission-management-actions). Scanned at low priority. Promoted to tier 2: 7 named security features were found in its documentation.",
+      "reason": "Weak security signal only (score 2: permission-management-actions). Scanned at low priority. Promoted to tier 2: 4 named security features were found in its documentation.",
       "regions": 0,
       "score": 2,
       "signals": [
@@ -105722,11 +105670,11 @@
           "url": "https://docs.aws.amazon.com/sms-voice/latest/userguide/what-is-sms-mms.md"
         }
       ],
-      "featureCount": 10,
+      "featureCount": 7,
       "id": "sms-voice",
       "method": "deterministic",
       "name": "AWS End User Messaging",
-      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 10 named security features were found in its documentation.",
+      "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 7 named security features were found in its documentation.",
       "regions": 45,
       "score": 5,
       "signals": [
@@ -105891,7 +105839,7 @@
     {
       "actionCount": 164,
       "category": "Management & Governance",
-      "claimCount": 56,
+      "claimCount": 57,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -106225,7 +106173,7 @@
     {
       "actionCount": 37,
       "category": "Databases",
-      "claimCount": 3,
+      "claimCount": 0,
       "confidence": 0.4,
       "docGuides": [
         {
@@ -106235,7 +106183,7 @@
           "url": "https://docs.aws.amazon.com/timestream/latest/developerguide/what-is-timestream.md"
         }
       ],
-      "featureCount": 7,
+      "featureCount": 6,
       "id": "timestream",
       "method": "deterministic",
       "name": "Amazon Timestream",

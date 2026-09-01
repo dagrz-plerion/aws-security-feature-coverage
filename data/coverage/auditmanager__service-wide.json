@@ -6090,11 +6090,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0ac2545226d5456c03a664a14442bd9e1cc68df6cfd9910e34a74a55fbb11225",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/disable.md :: heading level 4",
+          "bodySha256": "994d63fc727ceed0af14514c2bc0f747072385ebfa0727628ef2c2d871cb18c1",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/access-assessments.md :: heading level 4",
           "quote": "#### [ Audit Manager API ]",
-          "retrievedAt": "2026-09-01T05:00:00.376Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/disable.md"
+          "retrievedAt": "2026-09-01T05:00:00.664Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/access-assessments.md"
         }
       ],
       "extractorId": "md-heading-series",
@@ -6230,11 +6230,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0ac2545226d5456c03a664a14442bd9e1cc68df6cfd9910e34a74a55fbb11225",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/disable.md :: heading level 4",
+          "bodySha256": "994d63fc727ceed0af14514c2bc0f747072385ebfa0727628ef2c2d871cb18c1",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/access-assessments.md :: heading level 4",
           "quote": "#### [ Audit Manager console ]",
-          "retrievedAt": "2026-09-01T05:00:00.376Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/disable.md"
+          "retrievedAt": "2026-09-01T05:00:00.664Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/access-assessments.md"
         }
       ],
       "extractorId": "md-heading-series",
@@ -6267,23 +6267,23 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "25bc9844340fa2930848d7350fe8e4b4c3c5f5a9458e9d80763becac773d98cb",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/sdk-general-information-section.md :: Using AWS Audit Manager with an AWS SDK | column \"Audit Manager specific documentation\"",
-          "quote": "| [AWS SDK for C\\+\\+](https://docs.aws.amazon.com/sdk-for-cpp) | [AWS SDK for C\\+\\+ API reference for Audit Manager](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-auditmanager/html/namespace_aws_1_1_audit_manager.html) | [AWS SDK for C\\+\\+ code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp) |",
-          "retrievedAt": "2026-09-01T05:00:00.572Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/sdk-general-information-section.md"
+          "bodySha256": "30d26efd9f47484f3bbba2bff3e90463416df123924acd795d2cd404b0d51afb",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.md :: You can delete individual Audit Manager resources at any time. For instructions, see the following:",
+          "quote": "+ [Deleting an assessment in AWS Audit Manager](delete-assessment.md)",
+          "retrievedAt": "2026-09-01T05:00:02.207Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "auditmanager/service-wide",
-      "id": "auditmanager-service-wide-service-auditmanager-md-table",
+      "id": "auditmanager-service-wide-service-auditmanager-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "auditmanager",
-      "targetLabel": "AWS SDK for C\\+\\+ API reference for Audit Manager"
+      "targetLabel": "Deleting an assessment in AWS Audit Manager"
     },
     {
       "axis": "service",
@@ -6427,14 +6427,9 @@
     }
   ],
   "featureId": "auditmanager/service-wide",
-  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "generatedAt": "2026-09-01T05:16:49.209Z",
   "serviceId": "auditmanager",
   "unresolvedTargets": [
-    {
-      "axis": "service",
-      "raw": "AWS Well-Architected Framework documentation",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/well-architected.md"
-    },
     {
       "axis": "service",
       "raw": "Amazon Simple Notification Service (Amazon SNS)",
@@ -6491,9 +6486,14 @@
       "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
     },
     {
-      "axis": "resourceType",
-      "raw": "Core controls",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/review-controls.md"
+      "axis": "service",
+      "raw": "Deleting an assessment report",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Deleting an assessment report",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.md"
     },
     {
       "axis": "resourceType",
@@ -6512,18 +6512,18 @@
     },
     {
       "axis": "resourceType",
+      "raw": "Core controls",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/review-controls.md"
+    },
+    {
+      "axis": "resourceType",
       "raw": "Example policy for a KMS key that's used with an SNS topic",
       "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.md"
     },
     {
       "axis": "service",
-      "raw": "Deleting an assessment report",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Deleting an assessment report",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.md"
+      "raw": "AWS Well-Architected Framework documentation",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/well-architected.md"
     }
   ]
 }

@@ -5,6 +5,7 @@ import { storeSyntheticBody } from "../core/fetch.js";
 import { listLocalModels, readLocalModel } from "../core/aws.js";
 import { idToFilename } from "../core/ids.js";
 import { recordGap } from "../core/ops.js";
+import { featureAliases } from "../core/seeds.js";
 import { extractFeatureCandidates } from "../features/extract.js";
 import { mergeCandidates } from "../features/merge.js";
 import { readGuideIndex } from "../sources/guidePages.js";
@@ -97,9 +98,7 @@ export const stage4: Stage = {
     }
 
     // Historical and short-form names people search by. These only add search terms.
-    const aliasSeed = await readJson<{ aliases: { featureId: string; alias: string; note: string; sourceUrl: string }[] }>(
-      path.join(paths.data, "seeds", "feature-aliases.json"),
-    );
+    const aliasSeed = { aliases: await featureAliases() };
     const featureById = new Map(allFeatures.map((f) => [f.id, f]));
     let aliasesApplied = 0;
     let aliasesUnmatched = 0;

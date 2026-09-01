@@ -8,16 +8,16 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "84ee961d96571abe6d89100f83b2eaaa6a49158617517541245558df1377038d",
-          "locator": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-creds.md :: heading level 3",
-          "quote": "### AWS CloudFormation",
+          "bodySha256": "89ea7bb441cbe4f9521c464a530f0b81b9d0cf1a07412cdae1b2f0b024f7d31b",
+          "locator": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cluster-update.md :: You can enable EKS Hybrid Nodes in an existing cluster by using:",
+          "quote": "+  [AWS CloudFormation](#hybrid-nodes-cluster-enable-cfn)",
           "retrievedAt": "2026-09-01T04:34:50.255Z",
-          "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-creds.md"
+          "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cluster-update.md"
         }
       ],
-      "extractorId": "md-heading-series",
+      "extractorId": "md-bullet-list",
       "featureId": "eks/service-wide",
-      "id": "eks-service-wide-service-cloudformation-md-heading-series",
+      "id": "eks-service-wide-service-cloudformation-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudformation",
@@ -48,16 +48,16 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "84ee961d96571abe6d89100f83b2eaaa6a49158617517541245558df1377038d",
-          "locator": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-creds.md :: heading level 3",
-          "quote": "### AWS Management Console",
+          "bodySha256": "89ea7bb441cbe4f9521c464a530f0b81b9d0cf1a07412cdae1b2f0b024f7d31b",
+          "locator": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cluster-update.md :: You can enable EKS Hybrid Nodes in an existing cluster by using:",
+          "quote": "+  [AWS Management Console](#hybrid-nodes-cluster-enable-console)",
           "retrievedAt": "2026-09-01T04:34:50.255Z",
-          "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-creds.md"
+          "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cluster-update.md"
         }
       ],
-      "extractorId": "md-heading-series",
+      "extractorId": "md-bullet-list",
       "featureId": "eks/service-wide",
-      "id": "eks-service-wide-service-product-aws-management-console-md-heading-series",
+      "id": "eks-service-wide-service-product-aws-management-console-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "product:aws-management-console",
@@ -65,7 +65,7 @@
     }
   ],
   "featureId": "eks/service-wide",
-  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "generatedAt": "2026-09-01T05:16:49.209Z",
   "serviceId": "eks",
   "unresolvedTargets": [
     {

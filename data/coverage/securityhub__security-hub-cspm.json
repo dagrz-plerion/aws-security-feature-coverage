@@ -11332,11 +11332,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "8c82f8b670b7308dbd693a1eb193783b2b2876acc440bd7dc4a2e782e8f339ad",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/enable-controls-overview.md :: heading level 4",
+          "bodySha256": "4b0d0ac3824ef1c01f4b3e835e9cf98005ec21996480584a2d93ad1f5531bf48",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/controls-auto-enable.md :: heading level 4",
           "quote": "#### [ Security Hub CSPM API ]",
-          "retrievedAt": "2026-09-01T04:29:33.976Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/enable-controls-overview.md"
+          "retrievedAt": "2026-09-01T05:00:04.617Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/controls-auto-enable.md"
         }
       ],
       "extractorId": "md-heading-series",
@@ -11412,11 +11412,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "8c82f8b670b7308dbd693a1eb193783b2b2876acc440bd7dc4a2e782e8f339ad",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/enable-controls-overview.md :: heading level 4",
+          "bodySha256": "4b0d0ac3824ef1c01f4b3e835e9cf98005ec21996480584a2d93ad1f5531bf48",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/controls-auto-enable.md :: heading level 4",
           "quote": "#### [ Security Hub CSPM console ]",
-          "retrievedAt": "2026-09-01T04:29:33.976Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/enable-controls-overview.md"
+          "retrievedAt": "2026-09-01T05:00:04.617Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/controls-auto-enable.md"
         }
       ],
       "extractorId": "md-heading-series",
@@ -11932,11 +11932,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "a34e2631f413904fd812d990389e579fd7a93edb781f1a0be69a5cd6cc15959c",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md ::  | column \"AWS service\"",
-          "quote": "| AWS Identity and Access Management (IAM) | `AWS::IAM::Group`, `AWS::IAM::Policy`, `AWS::IAM::Role`, `AWS::IAM::User` |",
-          "retrievedAt": "2026-09-01T04:29:32.824Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+          "bodySha256": "5e02cebc350796fb4355260022037cac894ac2f7695226c28ebf21438ba4718e",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/security_iam_troubleshoot.md ::  | column \"Which user needs programmatic access?\"",
+          "quote": "| IAM | (Recommended) Use console credentials as temporary credentials to sign programmatic requests to the AWS CLI, AWS SDKs, or AWS APIs. | Following the instructions for the interface that you want to use.+  For the AWS CLI, see [Login for AWS local development](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sign-in.html) in the *AWS Command Line Interface User Guide*. <br />+  For AWS SDKs, see [Login for AWS local development](https://docs.aws.amazon.com/sdkref/latest/guide/access-login.html) in the *AWS SDKs and Tools Reference Guide*.  |",
+          "retrievedAt": "2026-09-01T04:59:24.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/security_iam_troubleshoot.md"
         }
       ],
       "extractorId": "md-table",
@@ -11945,7 +11945,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "iam",
-      "targetLabel": "AWS Identity and Access Management (IAM)"
+      "targetLabel": "IAM"
     },
     {
       "axis": "service",
@@ -12289,7 +12289,7 @@
     }
   ],
   "featureId": "securityhub/security-hub-cspm",
-  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "generatedAt": "2026-09-01T05:16:49.209Z",
   "serviceId": "securityhub",
   "unresolvedTargets": [
     {
@@ -12314,223 +12314,13 @@
     },
     {
       "axis": "service",
-      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/security_iam_troubleshoot.md"
     },
     {
       "axis": "service",
-      "raw": "Amazon Elastic Container Registry (Amazon ECR)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Container Service (Amazon ECS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic File System (Amazon EFS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Kubernetes Service (Amazon EKS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon ElasticSearch",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Key Management Service (AWS KMS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Managed Streaming for Apache Kafka (Amazon MSK)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Relational Database Service (Amazon RDS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Storage Service (Amazon S3)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Notification Service (Amazon SNS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Queue Service (Amazon SQS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EC2 Systems Manager (SSM)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Container Registry (Amazon ECR)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Container Service (Amazon ECS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic File System (Amazon EFS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Kubernetes Service (Amazon EKS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon ElasticSearch",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Key Management Service (AWS KMS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Managed Streaming for Apache Kafka (Amazon MSK)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Relational Database Service (Amazon RDS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Storage Service (Amazon S3)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Notification Service (Amazon SNS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Queue Service (Amazon SQS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EC2 Systems Manager (SSM)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Key Management Service (AWS KMS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Storage Service (Amazon S3)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Notification Service (Amazon SNS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Systems Manager (SSM)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Key Management Service (AWS KMS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Storage Service (Amazon S3)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Notification Service (Amazon SNS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Systems Manager (SSM)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Route 53 Resolver DNS Firewall",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Systems Manager Patch Manager",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Q Developer in chat applications",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Systems Manager Explorer and OpsCenter",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Route 53 Resolver DNS Firewall",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Systems Manager Patch Manager",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Q Developer in chat applications",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Systems Manager Explorer and OpsCenter",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/security_iam_troubleshoot.md"
     },
     {
       "axis": "service",
@@ -12544,13 +12334,223 @@
     },
     {
       "axis": "service",
-      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/security_iam_troubleshoot.md"
+      "raw": "Amazon Route 53 Resolver DNS Firewall",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
     },
     {
       "axis": "service",
-      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/security_iam_troubleshoot.md"
+      "raw": "AWS Systems Manager Patch Manager",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Q Developer in chat applications",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Systems Manager Explorer and OpsCenter",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Route 53 Resolver DNS Firewall",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Systems Manager Patch Manager",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Q Developer in chat applications",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Systems Manager Explorer and OpsCenter",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Container Registry (Amazon ECR)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Container Service (Amazon ECS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic File System (Amazon EFS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Kubernetes Service (Amazon EKS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon ElasticSearch",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Key Management Service (AWS KMS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Managed Streaming for Apache Kafka (Amazon MSK)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Relational Database Service (Amazon RDS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Storage Service (Amazon S3)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Queue Service (Amazon SQS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EC2 Systems Manager (SSM)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Container Registry (Amazon ECR)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Container Service (Amazon ECS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic File System (Amazon EFS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Kubernetes Service (Amazon EKS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon ElasticSearch",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Key Management Service (AWS KMS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Managed Streaming for Apache Kafka (Amazon MSK)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Relational Database Service (Amazon RDS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Storage Service (Amazon S3)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Queue Service (Amazon SQS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EC2 Systems Manager (SSM)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Key Management Service (AWS KMS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Storage Service (Amazon S3)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Systems Manager (SSM)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Key Management Service (AWS KMS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Storage Service (Amazon S3)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Systems Manager (SSM)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
     }
   ]
 }

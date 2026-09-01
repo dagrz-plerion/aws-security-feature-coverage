@@ -122,7 +122,7 @@ export function extractFromTable(table: MdTable, resolver: TargetResolver, servi
       if (seen.has(hit.targetId)) continue;
       seen.add(hit.targetId);
       claims.push({
-        axis: best.axis,
+        axis: hit.axis,
         targetId: hit.targetId,
         targetLabel: hit.label,
         status,
@@ -172,7 +172,7 @@ export function extractFromList(list: MdList, resolver: TargetResolver, serviceI
       if (seen.has(hit.targetId)) continue;
       seen.add(hit.targetId);
       claims.push({
-        axis: best.axis,
+        axis: hit.axis,
         targetId: hit.targetId,
         targetLabel: hit.label,
         status: negated ? "not-covered" : "covered",
@@ -293,7 +293,7 @@ export function extractFromHeadings(body: string, resolver: TargetResolver, serv
       if (seen.has(hit.targetId)) continue;
       seen.add(hit.targetId);
       claims.push({
-        axis: best.axis,
+        axis: hit.axis,
         targetId: hit.targetId,
         targetLabel: hit.label,
         status: "covered",

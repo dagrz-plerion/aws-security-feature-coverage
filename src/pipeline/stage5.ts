@@ -11,6 +11,9 @@ import { attributeGuides } from "../features/attribution.js";
 import { guideKeyFromUrl, toMarkdownUrl } from "../sources/docsIndex.js";
 import type { DocPage } from "../sources/docsIndex.js";
 import { TargetResolver } from "../coverage/resolvers.js";
+import { targetAliases } from "../core/seeds.js";
+import { allPages, loadRegistry, recordResult, saveRegistry, summarise, upsert } from "../coverage/registry.js";
+import type { CoveragePage } from "../coverage/registry.js";
 import { extractFromPage } from "../coverage/extractors.js";
 import { parseMarkdown } from "../core/markdown.js";
 import { adjudicationSchema } from "../core/schema.js";
@@ -80,8 +83,7 @@ export const stage5: Stage = {
     const regions = await wrapped<Region>(path.join(u, "regions.json"), "regions");
     const resourceTypes = await wrapped<ResourceType>(path.join(u, "resource-types.json"), "resourceTypes");
     const dataSources = await wrapped<DataSource>(path.join(u, "data-sources.json"), "dataSources");
-    const aliasFile = await readJson<Record<string, string>>(path.join(paths.data, "seeds", "target-aliases.json"));
-    const resolver = new TargetResolver({ regions, services, resourceTypes, dataSources, aliases: aliasFile ?? {} });
+    const resolver = new TargetResolver({ regions, services, resourceTypes, dataSources, aliases: await targetAliases() });
 
     const adjudications = await readAllJson<Adjudication>(paths.services, adjudicationSchema);
     const tierById = new Map(adjudications.map((a) => [a.serviceId, a.tier]));
@@ -104,34 +106,52 @@ export const stage5: Stage = {
     }
     const attributions = attributeGuides(services, guides, inScope);
 
-    // One work item per coverage page, tied to the feature it documents.
-    type Job = { serviceId: string; page: DocPage; features: Feature[] };
-    const jobs: Job[] = [];
-    const unattached: { serviceId: string; url: string; title: string }[] = [];
-    const seenPages = new Set<string>();
-
+    // Discovery adds to the registry; it never decides what gets read. Anything
+    // registered on an earlier run, or added by hand, is read again regardless of
+    // whether today's rules would have found it.
+    const registry = await loadRegistry();
+    let discovered = 0;
     for (const [serviceId, list] of attributions) {
       const tier = tierById.get(serviceId);
       if (tier !== "tier1" && tier !== "tier2") continue;
-      const own = featuresByService.get(serviceId) ?? [];
-      if (own.length === 0) continue;
+      if ((featuresByService.get(serviceId) ?? []).length === 0) continue;
       for (const attribution of list) {
-        // A security service documents its coverage all over its guide, not only on
-        // pages with "supported" in the title. GuardDuty finding types and WAF rule
-        // groups never say it, so tier 1 guides are read in full.
-        const readEverything = tier === "tier1" && attribution.pages.length > guide2Threshold(attribution.pages.length);
         for (const page of attribution.pages) {
           const haystack = [page.title, ...page.section].join(" | ");
-          if (!readEverything && !COVERAGE_PAGE.test(haystack)) continue;
-          const key = `${serviceId}|${page.url}`;
-          if (seenPages.has(key)) continue;
-          seenPages.add(key);
-          jobs.push({ serviceId, page, features: own });
+          const byTitle = COVERAGE_PAGE.test(haystack);
+          if (!byTitle && tier !== "tier1") continue;
+          const { added } = upsert(registry, {
+            url: page.url,
+            serviceId,
+            source: byTitle ? "title-match" : "tier1-sweep",
+          });
+          if (added) discovered += 1;
         }
       }
     }
-    ctx.log(`  ${jobs.length} coverage pages to read, ${unattached.length} not attached to a feature`);
 
+    const pageBySection = new Map<string, DocPage>();
+    for (const list of attributions.values()) {
+      for (const attribution of list) {
+        for (const page of attribution.pages) pageBySection.set(toMarkdownUrl(page.url), page);
+      }
+    }
+
+    type Job = { page: CoveragePage; doc: DocPage; features: Feature[] };
+    const jobs: Job[] = [];
+    for (const page of allPages(registry)) {
+      if (!page.enabled) continue;
+      const own = featuresByService.get(page.serviceId) ?? [];
+      const doc = pageBySection.get(page.url) ?? {
+        title: page.url.split("/").pop()?.replace(/\.md$/, "") ?? page.url,
+        url: page.url,
+        section: [],
+      };
+      jobs.push({ page, doc, features: own });
+    }
+    ctx.log(`  registry holds ${allPages(registry).length} coverage pages (${discovered} new); reading them`);
+
+    const unattached: { serviceId: string; url: string; title: string }[] = [];
     const claimsByFeature = new Map<string, CoverageClaim[]>();
     const serviceWideUsed = new Set<string>();
     const unresolvedByFeature = new Map<string, { axis: string; raw: string; sourceUrl: string }[]>();
@@ -139,11 +159,12 @@ export const stage5: Stage = {
     let failed = 0;
 
     await mapPool(jobs, 10, async (job) => {
+      const url = job.page.url;
       try {
-        const url = toMarkdownUrl(job.page.url);
         const result = await cachedFetch(url, { maxAgeMs: ctx.maxAgeMs, allowStatus: [404] });
         if (result.status === 404) {
           failed += 1;
+          recordResult(job.page, { claims: 0, axes: [], status: "failed", detail: "page is gone (404)" });
           return;
         }
 
@@ -157,29 +178,36 @@ export const stage5: Stage = {
         }
         // The whole page is read as well. On a finding-types page the headings are
         // themselves the catalog, so splitting by heading would hide it.
-        blocks.push({ headings: [job.page.title, ...job.page.section], body: result.body });
+        blocks.push({ headings: [job.doc.title, ...job.doc.section], body: result.body });
 
         let attachedAny = false;
+        let blockClaims = 0;
+        const seenAxes = new Set<string>();
         for (const block of blocks) {
-          const outcome = extractFromPage(block.body, resolver, job.serviceId);
+          const outcome = extractFromPage(block.body, resolver, job.page.serviceId);
           if (outcome.claims.length === 0) continue;
           // The heading nearest the list decides. Only when it names no feature do
           // we fall back to the page as a whole.
+          // A pinned feature wins; otherwise the nearest heading decides.
+          const pinned = job.page.featureId ? job.features.find((f) => f.id === job.page.featureId) : undefined;
           const named =
+            pinned ??
             bestFeatureFor(block.headings, job.features) ??
-            bestFeatureFor([job.page.title, ...job.page.section], job.features);
-          const feature = named ?? serviceWideFeature(job.serviceId, serviceById, featuresByService);
+            bestFeatureFor([job.doc.title, ...job.doc.section], job.features);
+          const feature = named ?? serviceWideFeature(job.page.serviceId, serviceById, featuresByService);
           if (!feature) {
-            unattached.push({ serviceId: job.serviceId, url: job.page.url, title: block.headings[0] ?? job.page.title });
+            unattached.push({ serviceId: job.page.serviceId, url: url, title: block.headings[0] ?? job.doc.title });
             continue;
           }
-          if (!named) serviceWideUsed.add(job.serviceId);
+          if (!named) serviceWideUsed.add(job.page.serviceId);
           attachedAny = true;
           const list = claimsByFeature.get(feature.id) ?? [];
           const already = new Set(list.map((c) => `${c.axis}|${c.targetId}`));
           for (const raw of outcome.claims) {
             if (already.has(`${raw.axis}|${raw.targetId}`)) continue;
             already.add(`${raw.axis}|${raw.targetId}`);
+            blockClaims += 1;
+            seenAxes.add(raw.axis);
             list.push({
               id: slug(`${feature.id}-${raw.axis}-${raw.targetId}-${raw.extractorId}`),
               featureId: feature.id,
@@ -202,12 +230,23 @@ export const stage5: Stage = {
           }
         }
         if (attachedAny) read += 1;
+        recordResult(job.page, {
+          claims: blockClaims,
+          axes: [...seenAxes].sort(),
+          status: blockClaims > 0 ? "ok" : "empty",
+        });
       } catch (error) {
         failed += 1;
+        recordResult(job.page, {
+          claims: 0,
+          axes: [],
+          status: "failed",
+          detail: error instanceof Error ? error.message.slice(0, 200) : String(error),
+        });
         await quarantine({
           stage: "stage5-coverage",
-          subject: `${job.serviceId} :: ${job.page.title}`,
-          sourceUrl: job.page.url,
+          subject: `${job.page.serviceId} :: ${job.doc.title}`,
+          sourceUrl: url,
           extractorId: "coverage-page",
           reason: "coverage page could not be read",
           detail: error instanceof Error ? error.message : String(error),
@@ -273,6 +312,9 @@ export const stage5: Stage = {
     }
     await pruneDir(paths.conflicts, conflictFiles);
 
+    const registered = await saveRegistry(registry);
+    void registered;
+
     const totalUnresolved = [...unresolvedByFeature.values()].reduce((sum, list) => sum + list.length, 0);
     if (totalUnresolved > 0) {
       await recordGap({
@@ -295,6 +337,8 @@ export const stage5: Stage = {
     return {
       status: failed > 0 ? "partial" : "ok",
       counts: {
+        ...summarise(registry),
+        newlyDiscovered: discovered,
         pagesConsidered: jobs.length,
         pagesRead: read,
         pagesFailed: failed,

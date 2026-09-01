@@ -87,43 +87,43 @@
     },
     {
       "axis": "resourceType",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "bffa2e49953ea8af87bac58248ff6e8c45e647274f2f83215111eafd509d1f79",
-          "locator": "https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.md :: Filter network traffic using AWS Network Firewall | column \"Network Firewall resource\"",
-          "quote": "| Firewall policy | A firewall policy defines the monitoring and protection behavior for a firewall. The details of the behavior are defined in the rule groups that you add to your policy, and in some policy default settings. To use a firewall policy, you associate it with one or more firewalls. For more information, see [Firewall policies in AWS Network Firewall](https://docs.aws.amazon.com/network-firewall/latest/developerguide/firewall-policies.html). |",
-          "retrievedAt": "2026-09-01T05:00:19.236Z",
-          "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.md"
+          "bodySha256": "ed98c9016525ab2c1307f0364f66a572b8b3e5fed5d964e17d024afc3bd24c02",
+          "locator": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/tagging.md :: Tagging AWS Network Firewall resources > Supported resources in Network Firewall",
+          "quote": "+ Firewall policies",
+          "retrievedAt": "2026-09-01T05:00:19.402Z",
+          "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/tagging.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "network-firewall/service-wide",
-      "id": "network-firewall-service-wide-resourcetype-aws-networkfirewall-firewallpolicy-md-table",
+      "id": "network-firewall-service-wide-resourcetype-aws-networkfirewall-firewallpolicy-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::NetworkFirewall::FirewallPolicy",
-      "targetLabel": "Firewall policy"
+      "targetLabel": "Firewall policies"
     },
     {
       "axis": "resourceType",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "bffa2e49953ea8af87bac58248ff6e8c45e647274f2f83215111eafd509d1f79",
-          "locator": "https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.md :: Filter network traffic using AWS Network Firewall | column \"Network Firewall resource\"",
-          "quote": "| Rule group | A rule group is a reusable set of criteria for inspecting and handling network traffic. You add one or more rule groups to a firewall policy as part of your policy configuration. You can define stateless rule groups to inspect each network packet in isolation. Stateless rule groups are similar in behavior and use to Amazon VPC network access control lists (ACLs). You can also define stateful rule groups to inspect packets in the context of their traffic flow. Stateful rule groups are similar in behavior and use to Amazon VPC security groups.For more information, see [Rule groups…",
-          "retrievedAt": "2026-09-01T05:00:19.236Z",
-          "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.md"
+          "bodySha256": "ed98c9016525ab2c1307f0364f66a572b8b3e5fed5d964e17d024afc3bd24c02",
+          "locator": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/tagging.md :: Tagging AWS Network Firewall resources > Supported resources in Network Firewall",
+          "quote": "+ Rule groups",
+          "retrievedAt": "2026-09-01T05:00:19.402Z",
+          "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/tagging.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "network-firewall/service-wide",
-      "id": "network-firewall-service-wide-resourcetype-aws-networkfirewall-rulegroup-md-table",
+      "id": "network-firewall-service-wide-resourcetype-aws-networkfirewall-rulegroup-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::NetworkFirewall::RuleGroup",
-      "targetLabel": "Rule group"
+      "targetLabel": "Rule groups"
     },
     {
       "axis": "service",
@@ -150,11 +150,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "62592823a11d9225cd76da0530fba48d83fac701345d71d0c925e90f9bef3fed",
-          "locator": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
-          "quote": "## Identity-based policies for Network Firewall",
-          "retrievedAt": "2026-09-01T04:59:19.580Z",
-          "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/security_iam_service-with-iam.md"
+          "bodySha256": "af83a42185994a3c4170c0031454f3c4d29f351c4d1f2910debba504f6619297",
+          "locator": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/logging-cw-logs.md :: heading level 2",
+          "quote": "## (Optional) Permissions to access CloudWatch log metrics in Network Firewall",
+          "retrievedAt": "2026-09-01T05:00:21.020Z",
+          "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/logging-cw-logs.md"
         }
       ],
       "extractorId": "md-heading-series",
@@ -163,7 +163,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "network-firewall",
-      "targetLabel": "Identity-based policies for Network Firewall"
+      "targetLabel": "(Optional) Permissions to access CloudWatch log metrics in Network Firewall"
     },
     {
       "axis": "service",
@@ -187,18 +187,18 @@
     }
   ],
   "featureId": "network-firewall/service-wide",
-  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "generatedAt": "2026-09-01T05:16:49.209Z",
   "serviceId": "network-firewall",
   "unresolvedTargets": [
     {
       "axis": "resourceType",
-      "raw": "Firewall",
-      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.md"
+      "raw": "Firewalls",
+      "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/tagging.md"
     },
     {
       "axis": "resourceType",
-      "raw": "Firewalls",
-      "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/tagging.md"
+      "raw": "Firewall",
+      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/network-firewall.md"
     }
   ]
 }

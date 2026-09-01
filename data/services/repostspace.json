@@ -1,7 +1,7 @@
 {
   "candidate": true,
   "confidence": 0.6,
-  "decidedAt": "2026-09-01T04:53:01.297Z",
+  "decidedAt": "2026-09-01T05:16:13.355Z",
   "evidence": [
     {
       "bodySha256": "1cf590c4a9a2ec4bfc852296a4d8e33e12393c5d9b12f761091e6cc51549d3c6",
@@ -19,8 +19,7 @@
     }
   ],
   "method": "deterministic",
-  "promoted": true,
-  "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 1 named security features were found in its documentation.",
+  "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority.",
   "score": 2,
   "serviceId": "repostspace",
   "signals": [
@@ -30,5 +29,5 @@
       "weight": 2
     }
   ],
-  "tier": "tier2"
+  "tier": "not-security"
 }

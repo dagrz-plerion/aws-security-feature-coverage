@@ -1086,9 +1086,14 @@
     }
   ],
   "featureId": "resiliencehub/service-wide",
-  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "generatedAt": "2026-09-01T05:16:49.209Z",
   "serviceId": "resiliencehub",
   "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "AWS::EKS::Pod",
+      "sourceUrl": "https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen-troubleshoot-ephemeral-resources.md"
+    },
     {
       "axis": "resourceType",
       "raw": "AWS::EC2::Snapshot",
@@ -1103,11 +1108,6 @@
       "axis": "resourceType",
       "raw": "AWS::CDK::Metadata",
       "sourceUrl": "https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen-troubleshoot-non-billable.md"
-    },
-    {
-      "axis": "resourceType",
-      "raw": "AWS::EKS::Pod",
-      "sourceUrl": "https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen-troubleshoot-ephemeral-resources.md"
     }
   ]
 }

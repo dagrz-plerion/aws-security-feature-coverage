@@ -108,11 +108,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "d6ed7a890e6ed536e7e9db2fbe8728bbc939a68889a8b94f5743e06aef76cf3a",
-          "locator": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/usecase1.md :: Use Case 1: Sign in to AWS applications and services with Active Directory credentials > FSx for Windows File Server integration with AWS Managed Microsoft AD > Common Amazon FSx use cases and resources > Home folders and roaming user profile support",
-          "quote": "+ [Windows home directories made easy with Amazon FSx](https://aws.amazon.com/blogs/storage/windows-home-directories-and-file-shares-made-easy-with-amazon-fsx/)",
-          "retrievedAt": "2026-09-01T05:00:29.895Z",
-          "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/usecase1.md"
+          "bodySha256": "f19a8f81812ef562ce790dd4f5b76924157ded2398291d31a35a637ea116c958",
+          "locator": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md :: User accounts are provisioned only in your AWS Managed Microsoft AD to be used with supported AWS applications, such as the following:",
+          "quote": "+ Amazon FSx",
+          "retrievedAt": "2026-09-01T05:00:30.363Z",
+          "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md"
         }
       ],
       "extractorId": "md-bullet-list",
@@ -121,7 +121,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "fsx",
-      "targetLabel": "Windows home directories made easy with Amazon FSx"
+      "targetLabel": "Amazon FSx"
     },
     {
       "axis": "service",
@@ -288,11 +288,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "d6ed7a890e6ed536e7e9db2fbe8728bbc939a68889a8b94f5743e06aef76cf3a",
-          "locator": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/usecase1.md :: Use Case 1: Sign in to AWS applications and services with Active Directory credentials > FSx for Windows File Server integration with AWS Managed Microsoft AD > Common Amazon FSx use cases and resources > Home folders and roaming user profile support",
-          "quote": "+ [Using FSx for Windows File Server with WorkSpaces](https://aws.amazon.com/blogs/desktop-and-application-streaming/using-amazon-fsx-for-windows-file-server-with-amazon-workspaces/)",
-          "retrievedAt": "2026-09-01T05:00:29.895Z",
-          "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/usecase1.md"
+          "bodySha256": "f19a8f81812ef562ce790dd4f5b76924157ded2398291d31a35a637ea116c958",
+          "locator": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md :: All user accounts are provisioned in your AWS Managed Microsoft AD or trusted Active Directory to be used with supported AWS applications, such as the following:",
+          "quote": "+ Amazon WorkSpaces",
+          "retrievedAt": "2026-09-01T05:00:30.363Z",
+          "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md"
         }
       ],
       "extractorId": "md-bullet-list",
@@ -301,37 +301,37 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "workspaces",
-      "targetLabel": "Using FSx for Windows File Server with WorkSpaces"
+      "targetLabel": "Amazon WorkSpaces"
     }
   ],
   "featureId": "ds/aws-managed-microsoft-ad",
-  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "generatedAt": "2026-09-01T05:16:49.209Z",
   "serviceId": "ds",
   "unresolvedTargets": [
     {
       "axis": "service",
+      "raw": "Amazon EC2 instances",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EC2 instances",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EC2 instances",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EC2 instances",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md"
+    },
+    {
+      "axis": "service",
       "raw": "Deploying roaming user profiles",
       "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/usecase1.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EC2 instances",
-      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EC2 instances",
-      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EC2 instances",
-      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EC2 instances",
-      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md"
     }
   ]
 }

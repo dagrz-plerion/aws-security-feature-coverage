@@ -17,7 +17,9 @@
     "typecheck": "tsc --noEmit",
     "deploy": "tsx src/cli/deploy.ts",
     "recall": "tsx src/cli/recall.ts",
-    "serve": "npx --yes http-server docs -p 8080 -c-1"
+    "serve": "npx --yes http-server docs -p 8080 -c-1",
+    "add-page": "tsx src/cli/add-page.ts",
+    "validate": "tsx src/cli/run.ts --only stage6"
   },
   "dependencies": {
     "zod": "^3.24.1"

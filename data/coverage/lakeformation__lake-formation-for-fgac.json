@@ -105,9 +105,14 @@
     }
   ],
   "featureId": "lakeformation/lake-formation-for-fgac",
-  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "generatedAt": "2026-09-01T05:16:49.209Z",
   "serviceId": "lakeformation",
   "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Amazon EMR Serverless (EMR 7.13 or later)",
+      "sourceUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/accessing-s3-locations.md"
+    },
     {
       "axis": "service",
       "raw": "Amazon Redshift Spectrum",
@@ -117,11 +122,6 @@
       "axis": "service",
       "raw": "Amazon Quick Enterprise Edition",
       "sourceUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/service-integrations.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EMR Serverless (EMR 7.13 or later)",
-      "sourceUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/accessing-s3-locations.md"
     }
   ]
 }

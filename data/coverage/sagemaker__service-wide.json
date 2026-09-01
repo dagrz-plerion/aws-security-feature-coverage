@@ -87,19 +87,19 @@
     },
     {
       "axis": "region",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "f3b94a8e3c0717cde4eae7e2d53836923807dd7e391000887ed362aa10555f42",
-          "locator": "https://docs.aws.amazon.com/sagemaker/latest/dg/remote-access-supported-regions.md :: Supported AWS Regions | column \"AWS Region\"",
-          "quote": "| ap-northeast-3 | Supported | Supported | Supported |",
-          "retrievedAt": "2026-09-01T04:29:42.465Z",
-          "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/remote-access-supported-regions.md"
+          "bodySha256": "1cdc4ea8328f694c691620e3dd82a32bbd7b28ed175c4d958f15b2e43316064c",
+          "locator": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-model-parallel-support-v2.md :: SMP v2 is available in the following AWS Regions. If you'd like to use the SMP Docker image URIs or the SMP Conda channel, check the following list and choose the AWS Region matching with yours, and update the image URI or the channel URL accordingly.",
+          "quote": "+ ap-northeast-3",
+          "retrievedAt": "2026-09-01T04:35:03.661Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-model-parallel-support-v2.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "sagemaker/service-wide",
-      "id": "sagemaker-service-wide-region-ap-northeast-3-md-table",
+      "id": "sagemaker-service-wide-region-ap-northeast-3-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-northeast-3",
@@ -507,19 +507,19 @@
     },
     {
       "axis": "region",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "f3b94a8e3c0717cde4eae7e2d53836923807dd7e391000887ed362aa10555f42",
-          "locator": "https://docs.aws.amazon.com/sagemaker/latest/dg/remote-access-supported-regions.md :: Supported AWS Regions | column \"AWS Region\"",
-          "quote": "| us-west-1 | Supported | Supported | Supported |",
-          "retrievedAt": "2026-09-01T04:29:42.465Z",
-          "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/remote-access-supported-regions.md"
+          "bodySha256": "1cdc4ea8328f694c691620e3dd82a32bbd7b28ed175c4d958f15b2e43316064c",
+          "locator": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-model-parallel-support-v2.md :: SMP v2 is available in the following AWS Regions. If you'd like to use the SMP Docker image URIs or the SMP Conda channel, check the following list and choose the AWS Region matching with yours, and update the image URI or the channel URL accordingly.",
+          "quote": "+ us-west-1",
+          "retrievedAt": "2026-09-01T04:35:03.661Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-model-parallel-support-v2.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "sagemaker/service-wide",
-      "id": "sagemaker-service-wide-region-us-west-1-md-table",
+      "id": "sagemaker-service-wide-region-us-west-1-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-west-1",
@@ -570,20 +570,20 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "86dc068e8e95967954204b270011357230a29767c515a9e759752a846069463d",
-          "locator": "https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropagation-compatibility.md :: Trusted identity propagation for Amazon SageMaker Studio integrates with compatible AWS services, where trusted identity propagation is enabled. See use cases for a comprehensive list with examples on how to enable trusted identity propagation. The trusted identity propagation compatible services include the following.",
-          "quote": "+  [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/workgroups-identity-center.html)",
-          "retrievedAt": "2026-09-01T04:29:42.506Z",
-          "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropagation-compatibility.md"
+          "bodySha256": "bcc33ca0275105780066057eb1222eff34b81ca5170283a156ebb419db95e577",
+          "locator": "https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extension-datasources-glue-connection.md :: heading level 3",
+          "quote": "### Configure an AWS Glue connection for Athena",
+          "retrievedAt": "2026-09-01T04:35:03.136Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extension-datasources-glue-connection.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-heading-series",
       "featureId": "sagemaker/service-wide",
-      "id": "sagemaker-service-wide-service-athena-md-bullet-list",
+      "id": "sagemaker-service-wide-service-athena-md-heading-series",
       "method": "deterministic",
       "status": "covered",
       "targetId": "athena",
-      "targetLabel": "Amazon Athena"
+      "targetLabel": "Configure an AWS Glue connection for Athena"
     },
     {
       "axis": "service",
@@ -707,31 +707,11 @@
     }
   ],
   "featureId": "sagemaker/service-wide",
-  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "generatedAt": "2026-09-01T05:16:49.209Z",
   "serviceId": "sagemaker",
   "unresolvedTargets": [
     {
       "axis": "service",
-      "raw": "Amazon S3 (via Amazon S3 Access Grants)",
-      "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropagation-compatibility.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Glue Connections",
-      "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropagation-compatibility.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon S3 (via Amazon S3 Access Grants)",
-      "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropagation-compatibility.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Glue Connections",
-      "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropagation-compatibility.md"
-    },
-    {
-      "axis": "service",
       "raw": "K-Nearest Neighbors (k-NN) Algorithm",
       "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/multi-model-support.md"
     },
@@ -759,6 +739,26 @@
       "axis": "service",
       "raw": "Random Cut Forest (RCF) Algorithm",
       "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/multi-model-support.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon S3 (via Amazon S3 Access Grants)",
+      "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropagation-compatibility.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Glue Connections",
+      "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropagation-compatibility.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon S3 (via Amazon S3 Access Grants)",
+      "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropagation-compatibility.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Glue Connections",
+      "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropagation-compatibility.md"
     }
   ]
 }

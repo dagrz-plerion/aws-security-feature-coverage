@@ -172,7 +172,12 @@ export class TargetResolver {
     const aliased = this.aliases.get(key);
     if (aliased) {
       const [aliasAxis, id] = aliased.split("|");
-      if (aliasAxis && id) return { axis: aliasAxis as Universe, targetId: id, label: text };
+      // An alias must not answer a question about a different axis. Returning a
+      // resource type when a service was asked for put AWS::Lambda::Function on the
+      // service axis.
+      if (aliasAxis && id && (axis === undefined || axis === aliasAxis)) {
+        return { axis: aliasAxis as Universe, targetId: id, label: text };
+      }
     }
 
     const tryRegion = (): Resolution | undefined => {
