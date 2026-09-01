@@ -230,26 +230,6 @@
         {
           "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
           "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
-          "quote": "| [Bank account number](mdis-reference-financial.md#mdis-reference-BAN) | Financial information | BANK\\_ACCOUNT\\_NUMBER (for both Canada and the US) | Yes | Canada, US |",
-          "retrievedAt": "2026-09-01T05:00:45.504Z",
-          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
-        }
-      ],
-      "extractorId": "recipe:macie-managed-data-identifiers",
-      "featureId": "macie2/managed-data-identifiers",
-      "id": "macie2-managed-data-identifiers-dataidentifier-bank-account-number-recipe-macie-managed-data-identifiers",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "BANK_ACCOUNT_NUMBER",
-      "targetLabel": "BANK_ACCOUNT_NUMBER (for both Canada and the US)"
-    },
-    {
-      "axis": "dataIdentifier",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
-          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
           "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
           "retrievedAt": "2026-09-01T05:00:45.504Z",
           "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
@@ -302,26 +282,6 @@
       "status": "covered",
       "targetId": "BRAZIL_BANK_ACCOUNT_NUMBER",
       "targetLabel": "BRAZIL_BANK_ACCOUNT_NUMBER"
-    },
-    {
-      "axis": "dataIdentifier",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
-          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
-          "quote": "| [Mailing address](mdis-reference-pii.md#mdis-reference-mailing-address) | Personal information: PII | ADDRESS, BRAZIL\\_CEP\\_CODE (for Brazil's Código de Endereçamento Postal) | Varies | Australia, Brazil, Canada, France, Germany, Italy, Spain, UK, US |",
-          "retrievedAt": "2026-09-01T05:00:45.504Z",
-          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
-        }
-      ],
-      "extractorId": "recipe:macie-managed-data-identifiers",
-      "featureId": "macie2/managed-data-identifiers",
-      "id": "macie2-managed-data-identifiers-dataidentifier-brazil-cep-code-recipe-macie-managed-data-identifiers",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "BRAZIL_CEP_CODE",
-      "targetLabel": "BRAZIL_CEP_CODE (for Brazil's Código de Endereçamento Postal)"
     },
     {
       "axis": "dataIdentifier",
@@ -690,46 +650,6 @@
         {
           "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
           "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
-          "quote": "| [Credit card number](mdis-reference-financial.md#mdis-reference-CC-number) | Financial information | CREDIT\\_CARD\\_NUMBER (for credit card numbers in proximity of a keyword), CREDIT\\_CARD\\_NUMBER\\_(NO\\_KEYWORD) (for credit card numbers not in proximity of a keyword) | Varies | Any |",
-          "retrievedAt": "2026-09-01T05:00:45.504Z",
-          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
-        }
-      ],
-      "extractorId": "recipe:macie-managed-data-identifiers",
-      "featureId": "macie2/managed-data-identifiers",
-      "id": "macie2-managed-data-identifiers-dataidentifier-credit-card-number-recipe-macie-managed-data-identifiers",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "CREDIT_CARD_NUMBER",
-      "targetLabel": "CREDIT_CARD_NUMBER (for credit card numbers in proximity of a keyword)"
-    },
-    {
-      "axis": "dataIdentifier",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
-          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
-          "quote": "| [Credit card number](mdis-reference-financial.md#mdis-reference-CC-number) | Financial information | CREDIT\\_CARD\\_NUMBER (for credit card numbers in proximity of a keyword), CREDIT\\_CARD\\_NUMBER\\_(NO\\_KEYWORD) (for credit card numbers not in proximity of a keyword) | Varies | Any |",
-          "retrievedAt": "2026-09-01T05:00:45.504Z",
-          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
-        }
-      ],
-      "extractorId": "recipe:macie-managed-data-identifiers",
-      "featureId": "macie2/managed-data-identifiers",
-      "id": "macie2-managed-data-identifiers-dataidentifier-credit-card-number-recipe-macie-managed-data-identifiers",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "CREDIT_CARD_NUMBER_",
-      "targetLabel": "CREDIT_CARD_NUMBER_(NO_KEYWORD) (for credit card numbers not in proximity of a keyword)"
-    },
-    {
-      "axis": "dataIdentifier",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
-          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
           "quote": "| [Credit card verification code](mdis-reference-financial.md#mdis-reference-CC-verification-code) | Financial information | CREDIT\\_CARD\\_SECURITY\\_CODE | Yes | Any |",
           "retrievedAt": "2026-09-01T05:00:45.504Z",
           "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
@@ -942,26 +862,6 @@
       "status": "covered",
       "targetId": "DOMINICAN_REPUBLIC_BANK_ACCOUNT_NUMBER",
       "targetLabel": "DOMINICAN_REPUBLIC_BANK_ACCOUNT_NUMBER"
-    },
-    {
-      "axis": "dataIdentifier",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
-          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
-          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
-          "retrievedAt": "2026-09-01T05:00:45.504Z",
-          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
-        }
-      ],
-      "extractorId": "recipe:macie-managed-data-identifiers",
-      "featureId": "macie2/managed-data-identifiers",
-      "id": "macie2-managed-data-identifiers-dataidentifier-drivers-license-recipe-macie-managed-data-identifiers",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "DRIVERS_LICENSE",
-      "targetLabel": "DRIVERS_LICENSE (for the US)"
     },
     {
       "axis": "dataIdentifier",
@@ -2290,26 +2190,6 @@
         {
           "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
           "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
-          "quote": "| [Phone number](mdis-reference-pii.md#mdis-reference-phone-num) | Personal information: PII | Depending on country or region:<br />BRAZIL\\_PHONE\\_NUMBER, FRANCE\\_PHONE\\_NUMBER, GERMANY\\_PHONE\\_NUMBER, ITALY\\_PHONE\\_NUMBER, PHONE\\_NUMBER (for Canada and the US), SPAIN\\_PHONE\\_NUMBER, UK\\_PHONE\\_NUMBER | Varies | Brazil, Canada, France, Germany, Italy, Spain, UK, US |",
-          "retrievedAt": "2026-09-01T05:00:45.504Z",
-          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
-        }
-      ],
-      "extractorId": "recipe:macie-managed-data-identifiers",
-      "featureId": "macie2/managed-data-identifiers",
-      "id": "macie2-managed-data-identifiers-dataidentifier-phone-number-recipe-macie-managed-data-identifiers",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "PHONE_NUMBER",
-      "targetLabel": "PHONE_NUMBER (for Canada and the US)"
-    },
-    {
-      "axis": "dataIdentifier",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
-          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
           "quote": "| [Public-Key Cryptography Standard (PKCS) private key](mdis-reference-credentials.md#mdis-reference-PKCS) | Credentials | PKCS | No | Any |",
           "retrievedAt": "2026-09-01T05:00:45.504Z",
           "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
@@ -3302,30 +3182,10 @@
       "status": "covered",
       "targetId": "VEHICLE_IDENTIFICATION_NUMBER",
       "targetLabel": "VEHICLE_IDENTIFICATION_NUMBER"
-    },
-    {
-      "axis": "dataIdentifier",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
-          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
-          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
-          "retrievedAt": "2026-09-01T05:00:45.504Z",
-          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
-        }
-      ],
-      "extractorId": "recipe:macie-managed-data-identifiers",
-      "featureId": "macie2/managed-data-identifiers",
-      "id": "macie2-managed-data-identifiers-dataidentifier-virgin-islands-bank-account-number-recipe-macie-managed-data-identifiers",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "VIRGIN_ISLANDS_BANK_ACCOUNT_NUMBER",
-      "targetLabel": "VIRGIN_ISLANDS_BANK_ACCOUNT_NUMBER (for the British Virgin Islands)"
     }
   ],
   "featureId": "macie2/managed-data-identifiers",
-  "generatedAt": "2026-09-01T11:14:54.031Z",
+  "generatedAt": "2026-09-01T11:20:16.828Z",
   "serviceId": "macie2",
   "unresolvedTargets": []
 }

@@ -89,7 +89,7 @@ function imagesToWords(text: string): string {
 export function cleanText(text: string): string {
   return stripLinks(imagesToWords(text))
     .replace(/<br\s*\/?>/gi, " · ")
-    .replace(/\\([_*`~\[\]\\!])/g, "$1")
+    .replace(/\\([^A-Za-z0-9\s])/g, "$1")
     .replace(/`([^`]*)`/g, "$1")
     .replace(/\*\*([^*]*)\*\*/g, "$1")
     .replace(/\*([^*]*)\*/g, "$1")

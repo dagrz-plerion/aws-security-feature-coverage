@@ -10,26 +10,6 @@
         {
           "bodySha256": "13e4746276aebf1b1840463ecbc44dfd1f9b551a17ad21babe7cf907015ea8cc",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md :: Supported Regions for AWS Shield network security director service-linked roles",
-          "quote": "| Africa (Cape Town) | ap-south-1 |",
-          "retrievedAt": "2026-09-01T05:00:49.221Z",
-          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md"
-        }
-      ],
-      "extractorId": "recipe:shield-nsd-service-linked-role-regions",
-      "featureId": "shield/service-linked-roles",
-      "id": "shield-service-linked-roles-region-af-south-1-recipe-shield-nsd-service-linked-role-regions",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "af-south-1",
-      "targetLabel": "Africa (Cape Town)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "13e4746276aebf1b1840463ecbc44dfd1f9b551a17ad21babe7cf907015ea8cc",
-          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md :: Supported Regions for AWS Shield network security director service-linked roles",
           "quote": "| Asia Pacific (Hong Kong) | ap-east-1 |",
           "retrievedAt": "2026-09-01T05:00:49.221Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md"
@@ -41,7 +21,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-east-1",
-      "targetLabel": "Asia Pacific (Hong Kong)"
+      "targetLabel": "ap-east-1"
     },
     {
       "axis": "region",
@@ -61,7 +41,27 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-northeast-1",
-      "targetLabel": "Asia Pacific (Tokyo)"
+      "targetLabel": "ap-northeast-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "13e4746276aebf1b1840463ecbc44dfd1f9b551a17ad21babe7cf907015ea8cc",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md :: Supported Regions for AWS Shield network security director service-linked roles",
+          "quote": "| Africa (Cape Town) | ap-south-1 |",
+          "retrievedAt": "2026-09-01T05:00:49.221Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md"
+        }
+      ],
+      "extractorId": "recipe:shield-nsd-service-linked-role-regions",
+      "featureId": "shield/service-linked-roles",
+      "id": "shield-service-linked-roles-region-ap-south-1-recipe-shield-nsd-service-linked-role-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-1",
+      "targetLabel": "ap-south-1"
     },
     {
       "axis": "region",
@@ -81,7 +81,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-southeast-1",
-      "targetLabel": "Asia Pacific (Singapore)"
+      "targetLabel": "ap-southeast-1"
     },
     {
       "axis": "region",
@@ -101,7 +101,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-southeast-2",
-      "targetLabel": "Asia Pacific (Sydney)"
+      "targetLabel": "ap-southeast-2"
     },
     {
       "axis": "region",
@@ -121,7 +121,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-southeast-5",
-      "targetLabel": "Asia Pacific (Malaysia)"
+      "targetLabel": "ap-southeast-5"
     },
     {
       "axis": "region",
@@ -141,7 +141,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-southeast-7",
-      "targetLabel": "Asia Pacific (Thailand)"
+      "targetLabel": "ap-southeast-7"
     },
     {
       "axis": "region",
@@ -161,7 +161,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "eu-central-1",
-      "targetLabel": "Europe (Frankfurt)"
+      "targetLabel": "eu-central-1"
     },
     {
       "axis": "region",
@@ -181,7 +181,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "eu-north-1",
-      "targetLabel": "Europe (Stockholm)"
+      "targetLabel": "eu-north-1"
     },
     {
       "axis": "region",
@@ -201,7 +201,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "eu-south-2",
-      "targetLabel": "Europe (Spain)"
+      "targetLabel": "eu-south-2"
     },
     {
       "axis": "region",
@@ -221,7 +221,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "eu-west-1",
-      "targetLabel": "Europe (Ireland)"
+      "targetLabel": "eu-west-1"
     },
     {
       "axis": "region",
@@ -241,7 +241,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-east-1",
-      "targetLabel": "US East (N. Virginia)"
+      "targetLabel": "us-east-1"
     },
     {
       "axis": "region",
@@ -261,7 +261,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-east-2",
-      "targetLabel": "US East (Ohio)"
+      "targetLabel": "us-east-2"
     },
     {
       "axis": "region",
@@ -281,11 +281,11 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-west-2",
-      "targetLabel": "US West (Oregon)"
+      "targetLabel": "us-west-2"
     }
   ],
   "featureId": "shield/service-linked-roles",
-  "generatedAt": "2026-09-01T11:14:54.031Z",
+  "generatedAt": "2026-09-01T11:20:16.828Z",
   "serviceId": "shield",
   "unresolvedTargets": []
 }

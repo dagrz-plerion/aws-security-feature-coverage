@@ -1663,7 +1663,7 @@
     },
     {
       "axis": "dataIdentifier",
-      "count": 166,
+      "count": 159,
       "members": [
         "ADDRESS",
         "ALBANIA_BANK_ACCOUNT_NUMBER",
@@ -1676,11 +1676,9 @@
         "AUSTRALIA_TAX_FILE_NUMBER",
         "AUSTRIA_DRIVERS_LICENSE",
         "AWS_CREDENTIALS",
-        "BANK_ACCOUNT_NUMBER",
         "BELGIUM_DRIVERS_LICENSE",
         "BOSNIA_AND_HERZEGOVINA_BANK_ACCOUNT_NUMBER",
         "BRAZIL_BANK_ACCOUNT_NUMBER",
-        "BRAZIL_CEP_CODE",
         "BRAZIL_CNPJ_NUMBER",
         "BRAZIL_CPF_NUMBER",
         "BRAZIL_PHONE_NUMBER",
@@ -1699,8 +1697,6 @@
         "COSTA_RICA_BANK_ACCOUNT_NUMBER",
         "CREDIT_CARD_EXPIRATION",
         "CREDIT_CARD_MAGNETIC_STRIPE",
-        "CREDIT_CARD_NUMBER",
-        "CREDIT_CARD_NUMBER_",
         "CREDIT_CARD_SECURITY_CODE",
         "CROATIA_BANK_ACCOUNT_NUMBER",
         "CROATIA_DRIVERS_LICENSE",
@@ -1712,7 +1708,6 @@
         "DENMARK_BANK_ACCOUNT_NUMBER",
         "DENMARK_DRIVERS_LICENSE",
         "DOMINICAN_REPUBLIC_BANK_ACCOUNT_NUMBER",
-        "DRIVERS_LICENSE",
         "EGYPT_BANK_ACCOUNT_NUMBER",
         "ESTONIA_BANK_ACCOUNT_NUMBER",
         "ESTONIA_DRIVERS_LICENSE",
@@ -1779,7 +1774,6 @@
         "NORTH_MACEDONIA_BANK_ACCOUNT_NUMBER",
         "OPENSSH_PRIVATE_KEY",
         "PGP_PRIVATE_KEY",
-        "PHONE_NUMBER",
         "PKCS",
         "POLAND_BANK_ACCOUNT_NUMBER",
         "POLAND_DRIVERS_LICENSE",
@@ -1829,8 +1823,7 @@
         "USA_PASSPORT_NUMBER",
         "USA_SOCIAL_SECURITY_NUMBER",
         "US_DRUG_ENFORCEMENT_AGENCY_NUMBER",
-        "VEHICLE_IDENTIFICATION_NUMBER",
-        "VIRGIN_ISLANDS_BANK_ACCOUNT_NUMBER"
+        "VEHICLE_IDENTIFICATION_NUMBER"
       ]
     },
     {
@@ -1914,9 +1907,9 @@
         "Red Hat Enterprise Linux (RHEL) 7",
         "Red Hat Enterprise Linux (RHEL) 8",
         "Red Hat Enterprise Linux (RHEL) 9",
-        "Red Hat Enterprise Linux 10 (10.0\\+)",
-        "Red Hat Enterprise Linux 8 (8.3\\+)",
-        "Red Hat Enterprise Linux 9 (9.2\\+)",
+        "Red Hat Enterprise Linux 10 (10.0+)",
+        "Red Hat Enterprise Linux 8 (8.3+)",
+        "Red Hat Enterprise Linux 9 (9.2+)",
         "Rocky Linux 10",
         "Rocky Linux 8",
         "Rocky Linux 9",
@@ -2026,6 +2019,51 @@
       ]
     },
     {
+      "axis": "packageEcosystem",
+      "count": 39,
+      "members": [
+        "7-Zip",
+        "AI IDE extensions",
+        "AI agent skills",
+        "Amazon Q Developer",
+        "Anthropic",
+        "Anysphere",
+        "Apache",
+        "Atlassian",
+        "Codeium",
+        "Conda",
+        "Curl",
+        "Docker binaries",
+        "Elasticsearch",
+        "Generic AI/ML Models",
+        "GitHub",
+        "Google",
+        "HuggingFace",
+        "Jan",
+        "Java",
+        "Jenkins",
+        "Kiro",
+        "LM Studio",
+        "MariaDB and MySQL",
+        "Microsoft SQL Server",
+        "Microsoft applications",
+        "MongoDB",
+        "Nginx",
+        "Node",
+        "Node.JS",
+        "Nomic AI",
+        "Ollama",
+        "OpenSSH",
+        "OpenSSL",
+        "Oracle",
+        "PHP",
+        "Redis",
+        "TabbyML",
+        "WordPress",
+        "Zed Industries"
+      ]
+    },
+    {
       "axis": "conditionKey",
       "count": 38,
       "members": [
@@ -2067,48 +2105,6 @@
         "kms:ViaService",
         "kms:WrappingAlgorithm",
         "kms:WrappingKeySpec"
-      ]
-    },
-    {
-      "axis": "packageEcosystem",
-      "count": 36,
-      "members": [
-        "7-Zip",
-        "AI Agent Skills",
-        "AI IDE extensions",
-        "Amazon Q Developer",
-        "Apache",
-        "Atlassian",
-        "Claude Code",
-        "Conda",
-        "Curl",
-        "Cursor",
-        "Docker binaries",
-        "Elasticsearch",
-        "Generic AI/ML Models",
-        "GitHub Copilot",
-        "Google",
-        "HuggingFace",
-        "Java",
-        "Jenkins",
-        "Kiro CLI",
-        "MariaDB and MySQL",
-        "Microsoft SQL Server",
-        "Microsoft applications",
-        "MongoDB",
-        "Nginx",
-        "Node.JS",
-        "Ollama",
-        "Ollama Model Collector",
-        "OpenSSH",
-        "OpenSSL",
-        "Oracle Database",
-        "PHP",
-        "Redis",
-        "Standalone AI applications",
-        "Windsurf",
-        "WordPress",
-        "Zed"
       ]
     },
     {
@@ -2280,8 +2276,9 @@
     },
     {
       "axis": "programmingLanguage",
-      "count": 9,
+      "count": 10,
       "members": [
+        "C#",
         "Go",
         "Go toolchain",
         "Java",
@@ -2348,6 +2345,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-01T11:14:54.029Z",
+  "generatedAt": "2026-09-01T11:20:16.827Z",
   "note": "Axes AWS defines only inside its documentation. Membership is everything the catalogs name."
 }

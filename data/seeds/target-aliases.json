@@ -8,5 +8,17 @@
   "aws lambda functions": "resourceType|AWS::Lambda::Function",
   "aws lambda layers": "resourceType|lambda:layer",
   "amazon dynamodb streams": "resourceType|AWS::DynamoDB::Stream",
-  "amazon dynamodb tables": "resourceType|AWS::DynamoDB::Table"
+  "amazon dynamodb tables": "resourceType|AWS::DynamoDB::Table",
+  "amazon cloudfront distributions": "resourceType|AWS::CloudFront::Distribution",
+  "amazon route 53 hosted zones": "resourceType|AWS::Route53::HostedZone",
+  "aws global accelerator standard accelerators": "resourceType|AWS::GlobalAccelerator::Accelerator",
+  "amazon ec2 elastic ip addresses": "resourceType|AWS::EC2::EIP",
+  "amazon ec2 instances": "resourceType|AWS::EC2::Instance",
+  "application load balancers": "resourceType|AWS::ElasticLoadBalancingV2::LoadBalancer",
+  "classic load balancers": "resourceType|AWS::ElasticLoadBalancing::LoadBalancer",
+  "network load balancers": "resourceType|AWS::ElasticLoadBalancingV2::LoadBalancer",
+  "billing and cost management": "service|billing",
+  "aws data exports": "service|bcm-data-exports",
+  "aws pricing calculator": "service|bcm-pricing-calculator",
+  "amazon lookout for equipment": "service|lookoutequipment"
 }

@@ -150,6 +150,46 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ AWS Data Exports",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-bcm-data-exports-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "bcm-data-exports",
+      "targetLabel": "AWS Data Exports"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ AWS Pricing Calculator",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-bcm-pricing-calculator-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "bcm-pricing-calculator",
+      "targetLabel": "AWS Pricing Calculator"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
           "quote": "+ Amazon Bedrock",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
@@ -177,10 +217,10 @@
       ],
       "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-budgets-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-billing-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "budgets",
+      "targetId": "billing",
       "targetLabel": "Billing and Cost Management"
     },
     {
@@ -382,26 +422,6 @@
       "status": "covered",
       "targetId": "config",
       "targetLabel": "AWS Config"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Data Exports",
-          "retrievedAt": "2026-09-01T04:59:40.214Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-cur-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "cur",
-      "targetLabel": "AWS Data Exports"
     },
     {
       "axis": "service",
@@ -1225,13 +1245,7 @@
     }
   ],
   "featureId": "cloudtrail/network-activity-events",
-  "generatedAt": "2026-09-01T11:14:54.031Z",
+  "generatedAt": "2026-09-01T11:20:16.828Z",
   "serviceId": "cloudtrail",
-  "unresolvedTargets": [
-    {
-      "axis": "service",
-      "raw": "AWS Pricing Calculator",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
-    }
-  ]
+  "unresolvedTargets": []
 }

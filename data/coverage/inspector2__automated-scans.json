@@ -4361,6 +4361,26 @@
         {
           "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
           "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported programming languages: Amazon EC2 agentless scanning",
+          "quote": "+ C\\#",
+          "retrievedAt": "2026-09-01T04:35:11.330Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-languages",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-programminglanguage-c-recipe-inspector-languages",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "C#",
+      "targetLabel": "C#"
+    },
+    {
+      "axis": "programmingLanguage",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported programming languages: Amazon EC2 agentless scanning",
           "quote": "+ Go",
           "retrievedAt": "2026-09-01T04:35:11.330Z",
           "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
@@ -4536,7 +4556,7 @@
     }
   ],
   "featureId": "inspector2/automated-scans",
-  "generatedAt": "2026-09-01T11:14:54.031Z",
+  "generatedAt": "2026-09-01T11:20:16.828Z",
   "serviceId": "inspector2",
   "unresolvedTargets": []
 }

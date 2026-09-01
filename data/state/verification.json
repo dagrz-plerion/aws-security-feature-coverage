@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-09-01T11:15:04.686Z",
-  "pages": 64,
-  "problems": 1,
+  "generatedAt": "2026-09-01T11:20:28.515Z",
+  "pages": 63,
+  "problems": 2,
   "verdicts": [
     {
       "candidates": 7,
       "claims": 2,
       "featureIds": [
-        "guardduty/all-protection-plans"
+        "guardduty/guardduty-findings"
       ],
       "labelsNotInQuote": 0,
       "note": "read 2 of about 7 candidate values on the page",
@@ -15,6 +15,20 @@
       "quotesMissing": 0,
       "readRatio": 0.29,
       "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md",
+      "verdict": "partial-read"
+    },
+    {
+      "candidates": 65,
+      "claims": 26,
+      "featureIds": [
+        "guardduty/guardduty-findings"
+      ],
+      "labelsNotInQuote": 0,
+      "note": "read 26 of about 65 candidate values on the page",
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 0.4,
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md",
       "verdict": "partial-read"
     },
     {
@@ -70,19 +84,6 @@
       "verdict": "ok"
     },
     {
-      "candidates": 39,
-      "claims": 36,
-      "featureIds": [
-        "inspector2/amazon-inspector-sbom-generator"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 0.92,
-      "url": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md",
-      "verdict": "ok"
-    },
-    {
       "candidates": 19,
       "claims": 18,
       "featureIds": [
@@ -110,7 +111,7 @@
     },
     {
       "candidates": 209,
-      "claims": 198,
+      "claims": 199,
       "featureIds": [
         "inspector2/automated-scans"
       ],
@@ -119,19 +120,6 @@
       "quotesMissing": 0,
       "readRatio": 0.95,
       "url": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 65,
-      "claims": 64,
-      "featureIds": [
-        "guardduty/guardduty-findings"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 0.98,
-      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md",
       "verdict": "ok"
     },
     {
@@ -159,6 +147,19 @@
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/privateca/latest/userguide/vpc-endpoints.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 25,
+      "claims": 25,
+      "featureIds": [
+        "artifact/service-wide"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md",
       "verdict": "ok"
     },
     {
@@ -202,7 +203,7 @@
     },
     {
       "candidates": 4,
-      "claims": 61,
+      "claims": 62,
       "featureIds": [
         "cloudtrail/network-activity-events"
       ],
@@ -279,32 +280,6 @@
       "verdict": "ok"
     },
     {
-      "candidates": 11,
-      "claims": 11,
-      "featureIds": [
-        "connect/service-linked-roles"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 11,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 0,
-      "claims": 5,
-      "featureIds": [
-        "detective/vpc-endpoints-aws-privatelink"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 5,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/detective/latest/userguide/detective-security-vpc-endpoints-privatelink.md",
-      "verdict": "ok"
-    },
-    {
       "candidates": 27,
       "claims": 27,
       "featureIds": [
@@ -321,7 +296,7 @@
       "candidates": 0,
       "claims": 8,
       "featureIds": [
-        "fms/security-group-policies"
+        "fms/service-wide"
       ],
       "labelsNotInQuote": 0,
       "quotesChecked": 8,
@@ -358,58 +333,6 @@
     },
     {
       "candidates": 0,
-      "claims": 40,
-      "featureIds": [
-        "guardduty/all-protection-plans"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 0,
-      "claims": 21,
-      "featureIds": [
-        "guardduty/all-protection-plans"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 21,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 0,
-      "claims": 28,
-      "featureIds": [
-        "guardduty/all-protection-plans"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 0,
-      "claims": 20,
-      "featureIds": [
-        "guardduty/all-protection-plans"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 20,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 0,
       "claims": 33,
       "featureIds": [
         "guardduty/eks-protection"
@@ -432,6 +355,58 @@
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 0,
+      "claims": 40,
+      "featureIds": [
+        "guardduty/guardduty-findings"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 0,
+      "claims": 21,
+      "featureIds": [
+        "guardduty/guardduty-findings"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 21,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 0,
+      "claims": 28,
+      "featureIds": [
+        "guardduty/guardduty-findings"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 0,
+      "claims": 20,
+      "featureIds": [
+        "guardduty/guardduty-findings"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 20,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md",
       "verdict": "ok"
     },
     {
@@ -513,6 +488,19 @@
       "verdict": "ok"
     },
     {
+      "candidates": 39,
+      "claims": 39,
+      "featureIds": [
+        "inspector2/amazon-inspector-sbom-generator"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md",
+      "verdict": "ok"
+    },
+    {
       "candidates": 96,
       "claims": 115,
       "featureIds": [
@@ -527,7 +515,7 @@
     },
     {
       "candidates": 0,
-      "claims": 166,
+      "claims": 159,
       "featureIds": [
         "macie2/managed-data-identifiers"
       ],
@@ -579,7 +567,7 @@
     },
     {
       "candidates": 0,
-      "claims": 62,
+      "claims": 64,
       "featureIds": [
         "ram/shared-resources"
       ],
@@ -608,7 +596,7 @@
       "candidates": 0,
       "claims": 48,
       "featureIds": [
-        "secretsmanager/integration-partners"
+        "secretsmanager/secrets-managed-by-other-services"
       ],
       "labelsNotInQuote": 0,
       "quotesChecked": 25,
@@ -684,12 +672,12 @@
     },
     {
       "candidates": 0,
-      "claims": 3,
+      "claims": 7,
       "featureIds": [
         "shield/aws-shield-advanced"
       ],
       "labelsNotInQuote": 0,
-      "quotesChecked": 3,
+      "quotesChecked": 7,
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md",

@@ -99,7 +99,7 @@
           "axis": "findingType",
           "status": "covered",
           "requireMin": 15,
-          "featureId": "guardduty/all-protection-plans"
+          "featureId": "guardduty/guardduty-findings"
         }
       ]
     },
@@ -117,7 +117,7 @@
             "extract": "regex",
             "matches": "^[A-Z][A-Z0-9_]{2,}$",
             "split": "\\s*\u00b7\\s*|\\s*,\\s*|:\\s+",
-            "pattern": "^([A-Z][A-Z0-9_]*)"
+            "pattern": "^([A-Z][A-Z0-9_]*(?:\\s*\\([^)]*\\))?)"
           },
           "axis": "dataIdentifier",
           "status": "covered",
@@ -334,15 +334,14 @@
           "id": "inspector-sbom-ecosystems",
           "blocks": "whole-page",
           "select": {
-            "from": "headings",
-            "level": 2,
-            "extract": "regex",
-            "pattern": "^(.*?)(?:\\s+(?:ecosystem|runtime|[Ss]erver)\\s+[Cc]ollection)?$",
-            "matches": "^(?!Supported ecosystems)(?!See also)(?!Topics).{3,60}$"
+            "from": "table-column",
+            "headerMatches": "ecosystem",
+            "extract": "whole",
+            "matches": "^[A-Za-z0-9][A-Za-z0-9 .+/&'-]{2,50}$"
           },
           "axis": "packageEcosystem",
           "status": "covered",
-          "requireMin": 35,
+          "requireMin": 30,
           "featureId": "inspector2/amazon-inspector-sbom-generator"
         }
       ]
@@ -506,7 +505,7 @@
           "axis": "service",
           "status": "covered",
           "requireMin": 40,
-          "featureId": "secretsmanager/integration-partners"
+          "featureId": "secretsmanager/secrets-managed-by-other-services"
         }
       ]
     },
@@ -527,7 +526,7 @@
           "axis": "findingType",
           "status": "not-covered",
           "requireMin": 15,
-          "featureId": "guardduty/all-protection-plans"
+          "featureId": "guardduty/guardduty-findings"
         }
       ]
     },
@@ -731,11 +730,12 @@
           "select": {
             "from": "list-items",
             "extract": "regex",
-            "pattern": "^((?:Amazon|AWS)[A-Za-z0-9 ()]+?)(?:\\.|,|$)"
+            "pattern": "^((?:Amazon|AWS)?\\s*[A-Z][A-Za-z0-9 ]{2,60}?)(?:\\s*[,.]|\\s+through|\\s+for|$)",
+            "depth": "any"
           },
           "axis": "resourceType",
           "status": "covered",
-          "requireMin": 3,
+          "requireMin": 5,
           "featureId": "shield/aws-shield-advanced"
         }
       ]
@@ -753,11 +753,11 @@
             "headerMatches": "resource type and code",
             "extract": "whole",
             "split": "\\s+\u00b7\\s+",
-            "matches": "^[a-z0-9-]+:[A-Za-z][A-Za-z0-9]*$"
+            "matches": "^[a-z0-9-]+:[A-Za-z][A-Za-z0-9-]*$"
           },
           "axis": "resourceType",
           "status": "covered",
-          "requireMin": 28,
+          "requireMin": 30,
           "featureId": "ram/shared-resources"
         },
         {
@@ -768,7 +768,7 @@
             "headerMatches": "resource type and code",
             "extract": "whole",
             "split": "\\s+\u00b7\\s+",
-            "matches": "^[a-z0-9-]+:[A-Za-z][A-Za-z0-9]*$"
+            "matches": "^[a-z0-9-]+:[A-Za-z][A-Za-z0-9-]*$"
           },
           "axis": "resourceType",
           "status": "from-column",
@@ -778,7 +778,7 @@
             "from": "constant",
             "value": "outside-organization"
           },
-          "requireMin": 28,
+          "requireMin": 30,
           "featureId": "ram/shared-resources"
         }
       ]
@@ -897,12 +897,12 @@
           "select": {
             "from": "list-items",
             "extract": "regex",
-            "pattern": "Setting up AWS Firewall Manager.?\\s*(.+?) policies$"
+            "pattern": "Setting up AWS Firewall Manager[\u200b\\s]*(.+?) policies$"
           },
           "axis": "policyType",
           "status": "covered",
           "requireMin": 6,
-          "featureId": "fms/security-group-policies"
+          "featureId": "fms/service-wide"
         }
       ]
     },
@@ -1079,13 +1079,14 @@
           "onlyBlocksMatching": "Supported Regions",
           "select": {
             "from": "table-column",
-            "headerMatches": "Region Name",
+            "headerMatches": "^region$",
             "extract": "whole"
           },
           "axis": "region",
           "status": "covered",
           "featureId": "shield/service-linked-roles",
-          "requireMin": 13
+          "requireMin": 13,
+          "qualifier": "AWS Shield network security director is in preview; Region support may change."
         }
       ]
     },
@@ -1125,7 +1126,7 @@
           },
           "axis": "region",
           "status": "not-covered",
-          "featureId": "guardduty/all-protection-plans",
+          "featureId": "guardduty/guardduty-findings",
           "requireMin": 1
         }
       ]
@@ -1166,7 +1167,7 @@
             "value": "kms:ViaService"
           },
           "featureId": "kms/condition-keys",
-          "requireMin": 60
+          "requireMin": 75
         }
       ]
     },
@@ -1232,6 +1233,47 @@
           "status": "covered",
           "featureId": "waf/service-linked-roles",
           "requireMin": 10
+        }
+      ]
+    },
+    {
+      "urlPattern": "artifact/latest/ug/using-service-linked-roles\\.md$",
+      "serviceId": "artifact",
+      "note": "Where the AWSServiceRoleForArtifact role can be used. The page says outright this is not where AWS Artifact is available, and its third column says Yes for only three Regions.",
+      "recipes": [
+        {
+          "id": "artifact-slr-regions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "region",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "from-column",
+          "statusColumn": "support in aws artifact",
+          "featureId": "artifact/service-wide",
+          "requireMin": 20
+        }
+      ]
+    },
+    {
+      "urlPattern": "guardduty/latest/ug/gd-findings-initiate-malware-protection-scan\\.md$",
+      "serviceId": "guardduty",
+      "note": "The finding types that can trigger a GuardDuty-initiated malware scan, one per H2.",
+      "recipes": [
+        {
+          "id": "guardduty-scan-initiating-findings",
+          "blocks": "whole-page",
+          "select": {
+            "from": "list-items",
+            "extract": "whole",
+            "matches": "^[A-Z][A-Za-z]*:[A-Za-z0-9]+/[A-Za-z0-9._!&-]+$"
+          },
+          "axis": "findingType",
+          "status": "covered",
+          "featureId": "guardduty/guardduty-initiated-malware-scan",
+          "requireMin": 55
         }
       ]
     }

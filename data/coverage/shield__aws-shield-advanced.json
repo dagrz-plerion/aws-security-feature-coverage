@@ -30,6 +30,26 @@
         {
           "bodySha256": "030b9fc5fd0e17dabc7754a987b2e55e53dc840fd7ca1da87eb542ece30cd5ee",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md :: List of resources that AWS Shield Advanced protects",
+          "quote": "+ Amazon EC2 Elastic IP addresses. Shield Advanced protects the resources that are associated with protected Elastic IP addresses.",
+          "retrievedAt": "2026-09-01T05:00:48.065Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
+        }
+      ],
+      "extractorId": "recipe:shield-advanced-protected-resources",
+      "featureId": "shield/aws-shield-advanced",
+      "id": "shield-aws-shield-advanced-resourcetype-aws-ec2-eip-recipe-shield-advanced-protected-resources",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::EC2::EIP",
+      "targetLabel": "Amazon EC2 Elastic IP addresses. Shield Advanced protects the resources that are associated with protected Elastic IP addresses."
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "030b9fc5fd0e17dabc7754a987b2e55e53dc840fd7ca1da87eb542ece30cd5ee",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md :: List of resources that AWS Shield Advanced protects",
           "quote": "+ Amazon EC2 instances, through association to Amazon EC2 Elastic IP addresses.",
           "retrievedAt": "2026-09-01T05:00:48.065Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
@@ -42,6 +62,66 @@
       "status": "covered",
       "targetId": "AWS::EC2::Instance",
       "targetLabel": "Amazon EC2 instances, through association to Amazon EC2 Elastic IP addresses."
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "030b9fc5fd0e17dabc7754a987b2e55e53dc840fd7ca1da87eb542ece30cd5ee",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md :: List of resources that AWS Shield Advanced protects",
+          "quote": "+ Classic Load Balancers.",
+          "retrievedAt": "2026-09-01T05:00:48.065Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
+        }
+      ],
+      "extractorId": "recipe:shield-advanced-protected-resources",
+      "featureId": "shield/aws-shield-advanced",
+      "id": "shield-aws-shield-advanced-resourcetype-aws-elasticloadbalancing-loadbalancer-recipe-shield-advanced-protected-resources",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::ElasticLoadBalancing::LoadBalancer",
+      "targetLabel": "Classic Load Balancers."
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "030b9fc5fd0e17dabc7754a987b2e55e53dc840fd7ca1da87eb542ece30cd5ee",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md :: List of resources that AWS Shield Advanced protects",
+          "quote": "+ Application Load Balancers.",
+          "retrievedAt": "2026-09-01T05:00:48.065Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
+        }
+      ],
+      "extractorId": "recipe:shield-advanced-protected-resources",
+      "featureId": "shield/aws-shield-advanced",
+      "id": "shield-aws-shield-advanced-resourcetype-aws-elasticloadbalancingv2-loadbalancer-recipe-shield-advanced-protected-resourc",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::ElasticLoadBalancingV2::LoadBalancer",
+      "targetLabel": "Application Load Balancers."
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "030b9fc5fd0e17dabc7754a987b2e55e53dc840fd7ca1da87eb542ece30cd5ee",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md :: List of resources that AWS Shield Advanced protects",
+          "quote": "+ AWS Global Accelerator standard accelerators.",
+          "retrievedAt": "2026-09-01T05:00:48.065Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
+        }
+      ],
+      "extractorId": "recipe:shield-advanced-protected-resources",
+      "featureId": "shield/aws-shield-advanced",
+      "id": "shield-aws-shield-advanced-resourcetype-aws-globalaccelerator-accelerator-recipe-shield-advanced-protected-resources",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::GlobalAccelerator::Accelerator",
+      "targetLabel": "AWS Global Accelerator standard accelerators."
     },
     {
       "axis": "resourceType",
@@ -65,7 +145,7 @@
     }
   ],
   "featureId": "shield/aws-shield-advanced",
-  "generatedAt": "2026-09-01T11:14:54.031Z",
+  "generatedAt": "2026-09-01T11:20:16.828Z",
   "serviceId": "shield",
   "unresolvedTargets": []
 }
