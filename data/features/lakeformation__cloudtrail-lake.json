@@ -1,14 +1,11 @@
 {
-  "aliases": [
-    "AWS CloudTrail Lake"
-  ],
+  "aliases": [],
   "confidence": 0.6,
   "discoveredBy": [
     "named-control"
   ],
   "docUrls": [
-    "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-federation-lake-formation.md",
-    "https://docs.aws.amazon.com/lake-formation/latest/dg/cloudtrail-lake-integ-lf.md"
+    "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-federation-lake-formation.md"
   ],
   "evidence": [
     {
@@ -17,13 +14,6 @@
       "quote": "[Managing CloudTrail Lake federation resources with AWS Lake Formation](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-federation-lake-formation.md)",
       "retrievedAt": "2026-09-01T04:06:04.006Z",
       "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/llms.txt"
-    },
-    {
-      "bodySha256": "f4c2e2bbf4522b4fdb451f2e5b39ccca48ee6f29b7591e07d303dcf2881cde89",
-      "locator": "Working with other AWS services",
-      "quote": "[AWS CloudTrail Lake](https://docs.aws.amazon.com/lake-formation/latest/dg/cloudtrail-lake-integ-lf.md)",
-      "retrievedAt": "2026-09-01T04:06:12.057Z",
-      "sourceUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/llms.txt"
     }
   ],
   "id": "lakeformation/cloudtrail-lake",

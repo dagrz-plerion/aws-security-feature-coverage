@@ -164,7 +164,7 @@ export function parseMarkdown(body: string): MdDocument {
         raw: rawLines.join("\n"),
         startLine: i,
       });
-      if (current) current.body += `${rawLines.join("\n")}\n`;
+      if (current) current.body += `${rawLines.slice(1).join("\n")}\n`;
       i = j - 1;
       continue;
     }
@@ -208,7 +208,7 @@ export function parseMarkdown(body: string): MdDocument {
         startLine: i,
         ...(introLine ? { intro: introLine } : {}),
       });
-      if (current) current.body += `${rawLines.join("\n")}\n`;
+      if (current) current.body += `${rawLines.slice(1).join("\n")}\n`;
       i = j - 1;
       continue;
     }

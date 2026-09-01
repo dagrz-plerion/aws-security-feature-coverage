@@ -2,6 +2,43 @@
   "_comment": "How to read a page whose shape the generic reader cannot handle. Each rule applies to every page whose URL matches urlPattern. See docs/specs/coverage-extraction.md for the fields. A recipe that stops producing what it promises is reported, never silently dropped.",
   "rules": [
     {
+      "urlPattern": "IAM/latest/UserGuide/access-analyzer-resources\\.md$",
+      "serviceId": "access-analyzer",
+      "note": "One page, three analyzer types, three different resource lists. Each H2 names the analyzer type, so each is pinned to its own feature.",
+      "recipes": [
+        {
+          "id": "access-analyzer-external-resources",
+          "blocks": "h2-sections",
+          "select": {
+            "from": "list-items",
+            "extract": "whole",
+            "matches": "^(Amazon|AWS) ",
+            "split": "\\s+and\\s+(?=layers$)"
+          },
+          "axis": "resourceType",
+          "status": "covered",
+          "featureId": "access-analyzer/external-access-analyzer",
+          "requireMin": 10,
+          "onlyBlocksMatching": "external access"
+        },
+        {
+          "id": "access-analyzer-internal-resources",
+          "blocks": "h2-sections",
+          "select": {
+            "from": "list-items",
+            "extract": "whole",
+            "matches": "^(Amazon|AWS) ",
+            "split": "\\s+and\\s+(?=layers$)"
+          },
+          "axis": "resourceType",
+          "status": "covered",
+          "featureId": "access-analyzer/internal-access-analyzer",
+          "requireMin": 4,
+          "onlyBlocksMatching": "internal access"
+        }
+      ]
+    },
+    {
       "urlPattern": "securityhub/latest/userguide/regions-controls\\.md$",
       "serviceId": "securityhub",
       "note": "One H2 per Region, each listing the controls that are NOT available there. The control id is the bracketed prefix of each bullet.",

@@ -1,131 +1,91 @@
 {
   "axes": [
-    "logSource"
+    "region"
   ],
   "claims": [
     {
-      "axis": "logSource",
-      "confidence": 0.95,
+      "axis": "region",
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "e4209541147d6efd515b32c43d28ca992572380d36962f569b4531f622583150",
-          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md :: internal-sources",
-          "quote": "+ Amazon Elastic Kubernetes Service (Amazon EKS) Audit Logs",
-          "retrievedAt": "2026-09-01T06:12:38.949Z",
-          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md"
+          "bodySha256": "0fb114df21a52d41c69aac67ba5fec78ae8e9a4bda0d0eee3f9a83b120dafd45",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md :: Security Lake supports FIPS VPC endpoints only in the following Regions where FIPS exists:",
+          "quote": "+ US East (N. Virginia)",
+          "retrievedAt": "2026-09-01T05:00:42.939Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md"
         }
       ],
-      "extractorId": "recipe:securitylake-native-sources",
+      "extractorId": "md-bullet-list",
       "featureId": "securitylake/service-wide",
-      "id": "securitylake-service-wide-logsource-amazon-elastic-kubernetes-service-amazon-eks-audit-logs-recipe-securitylake-native-s",
+      "id": "securitylake-service-wide-region-us-east-1-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "Amazon Elastic Kubernetes Service (Amazon EKS) Audit Logs",
-      "targetLabel": "Amazon Elastic Kubernetes Service (Amazon EKS) Audit Logs"
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
     },
     {
-      "axis": "logSource",
-      "confidence": 0.95,
+      "axis": "region",
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "e4209541147d6efd515b32c43d28ca992572380d36962f569b4531f622583150",
-          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md :: internal-sources",
-          "quote": "+ Amazon Route 53 resolver query logs",
-          "retrievedAt": "2026-09-01T06:12:38.949Z",
-          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md"
+          "bodySha256": "0fb114df21a52d41c69aac67ba5fec78ae8e9a4bda0d0eee3f9a83b120dafd45",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md :: Security Lake supports FIPS VPC endpoints only in the following Regions where FIPS exists:",
+          "quote": "+ US East (Ohio)",
+          "retrievedAt": "2026-09-01T05:00:42.939Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md"
         }
       ],
-      "extractorId": "recipe:securitylake-native-sources",
+      "extractorId": "md-bullet-list",
       "featureId": "securitylake/service-wide",
-      "id": "securitylake-service-wide-logsource-amazon-route-53-resolver-query-logs-recipe-securitylake-native-sources",
+      "id": "securitylake-service-wide-region-us-east-2-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "Amazon Route 53 resolver query logs",
-      "targetLabel": "Amazon Route 53 resolver query logs"
+      "targetId": "us-east-2",
+      "targetLabel": "US East (Ohio)"
     },
     {
-      "axis": "logSource",
-      "confidence": 0.95,
+      "axis": "region",
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "e4209541147d6efd515b32c43d28ca992572380d36962f569b4531f622583150",
-          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md :: internal-sources",
-          "quote": "+ Amazon Virtual Private Cloud (Amazon VPC) Flow Logs",
-          "retrievedAt": "2026-09-01T06:12:38.949Z",
-          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md"
+          "bodySha256": "0fb114df21a52d41c69aac67ba5fec78ae8e9a4bda0d0eee3f9a83b120dafd45",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md :: Security Lake supports FIPS VPC endpoints only in the following Regions where FIPS exists:",
+          "quote": "+ US West (N. California)",
+          "retrievedAt": "2026-09-01T05:00:42.939Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md"
         }
       ],
-      "extractorId": "recipe:securitylake-native-sources",
+      "extractorId": "md-bullet-list",
       "featureId": "securitylake/service-wide",
-      "id": "securitylake-service-wide-logsource-amazon-virtual-private-cloud-amazon-vpc-flow-logs-recipe-securitylake-native-sources",
+      "id": "securitylake-service-wide-region-us-west-1-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "Amazon Virtual Private Cloud (Amazon VPC) Flow Logs",
-      "targetLabel": "Amazon Virtual Private Cloud (Amazon VPC) Flow Logs"
+      "targetId": "us-west-1",
+      "targetLabel": "US West (N. California)"
     },
     {
-      "axis": "logSource",
-      "confidence": 0.95,
+      "axis": "region",
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "e4209541147d6efd515b32c43d28ca992572380d36962f569b4531f622583150",
-          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md :: internal-sources",
-          "quote": "+ AWS CloudTrail management and data events (S3, Lambda)",
-          "retrievedAt": "2026-09-01T06:12:38.949Z",
-          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md"
+          "bodySha256": "0fb114df21a52d41c69aac67ba5fec78ae8e9a4bda0d0eee3f9a83b120dafd45",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md :: Security Lake supports FIPS VPC endpoints only in the following Regions where FIPS exists:",
+          "quote": "+ US West (Oregon)",
+          "retrievedAt": "2026-09-01T05:00:42.939Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md"
         }
       ],
-      "extractorId": "recipe:securitylake-native-sources",
+      "extractorId": "md-bullet-list",
       "featureId": "securitylake/service-wide",
-      "id": "securitylake-service-wide-logsource-aws-cloudtrail-management-and-data-events-s3-lambda-recipe-securitylake-native-sourc",
+      "id": "securitylake-service-wide-region-us-west-2-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "AWS CloudTrail management and data events (S3, Lambda)",
-      "targetLabel": "AWS CloudTrail management and data events (S3, Lambda)"
-    },
-    {
-      "axis": "logSource",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "e4209541147d6efd515b32c43d28ca992572380d36962f569b4531f622583150",
-          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md :: internal-sources",
-          "quote": "+ AWS Security Hub CSPM findings",
-          "retrievedAt": "2026-09-01T06:12:38.949Z",
-          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md"
-        }
-      ],
-      "extractorId": "recipe:securitylake-native-sources",
-      "featureId": "securitylake/service-wide",
-      "id": "securitylake-service-wide-logsource-aws-security-hub-cspm-findings-recipe-securitylake-native-sources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS Security Hub CSPM findings",
-      "targetLabel": "AWS Security Hub CSPM findings"
-    },
-    {
-      "axis": "logSource",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "e4209541147d6efd515b32c43d28ca992572380d36962f569b4531f622583150",
-          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md :: internal-sources",
-          "quote": "+ AWS WAFv2 logs",
-          "retrievedAt": "2026-09-01T06:12:38.949Z",
-          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md"
-        }
-      ],
-      "extractorId": "recipe:securitylake-native-sources",
-      "featureId": "securitylake/service-wide",
-      "id": "securitylake-service-wide-logsource-aws-wafv2-logs-recipe-securitylake-native-sources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS WAFv2 logs",
-      "targetLabel": "AWS WAFv2 logs"
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
     }
   ],
   "featureId": "securitylake/service-wide",
-  "generatedAt": "2026-09-01T06:27:22.542Z",
+  "generatedAt": "2026-09-01T06:38:30.924Z",
   "serviceId": "securitylake",
   "unresolvedTargets": []
 }

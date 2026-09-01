@@ -8,14 +8,14 @@
     "guide-subchapter"
   ],
   "docUrls": [
-    "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-concepts.md",
-    "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-setup-prereqs.md"
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/local-configuration.md",
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-concepts.md"
   ],
   "evidence": [
     {
       "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
       "locator": "AWS Security Hub CSPM > Enabling Security Hub CSPM",
-      "quote": "[Configuring AWS Config](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-setup-prereqs.md)",
+      "quote": "[Local configuration](https://docs.aws.amazon.com/securityhub/latest/userguide/local-configuration.md)",
       "retrievedAt": "2026-09-01T04:06:18.321Z",
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
     },
@@ -32,6 +32,6 @@
   "method": "deterministic",
   "name": "Security Hub CSPM",
   "serviceId": "securityhub",
-  "summary": "Enabling and configuring AWS Config is required to receive Security Hub CSPM control findings.",
+  "summary": "Under local configuration, you must configure the Security Hub CSPM service, standards, and controls separately in each AWS Region and account.",
   "tier": "tier1"
 }

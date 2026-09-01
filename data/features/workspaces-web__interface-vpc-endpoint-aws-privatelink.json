@@ -6,13 +6,13 @@
     "security-chapter"
   ],
   "docUrls": [
-    "https://docs.aws.amazon.com/workspaces-web/latest/adminguide/vpc-endpoint-considerations.md"
+    "https://docs.aws.amazon.com/workspaces-web/latest/adminguide/vpc-endpoint-policy.md"
   ],
   "evidence": [
     {
       "bodySha256": "7307b783c69ae019e84c02ee95ab97e70e5f480730ed9b46ed105bf249a21fc3",
       "locator": "Security > Interface VPC endpoint (AWS PrivateLink)",
-      "quote": "[Considerations for Amazon WorkSpaces Secure Browser](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/vpc-endpoint-considerations.md)",
+      "quote": "[Creating an endpoint policy for your interface VPC endpoint](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/vpc-endpoint-policy.md)",
       "retrievedAt": "2026-09-01T04:06:20.710Z",
       "sourceUrl": "https://docs.aws.amazon.com/workspaces-web/latest/adminguide/llms.txt"
     }
@@ -22,6 +22,6 @@
   "method": "deterministic",
   "name": "Interface VPC endpoint (AWS PrivateLink)",
   "serviceId": "workspaces-web",
-  "summary": "Before you set up an interface VPC endpoint for Amazon WorkSpaces Secure Browser APIs, make sure to review the \"Prerequisites\" in Access AWS services through AWS PrivateLink.",
+  "summary": "An endpoint policy is an IAM resource that you can attach to an interface VPC endpoint.",
   "tier": "tier2"
 }

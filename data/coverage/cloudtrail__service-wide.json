@@ -1,8 +1,729 @@
 {
   "axes": [
+    "region",
     "service"
   ],
   "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Africa (Cape Town) | af-south-1 | cloudtrail.af-south-1.amazonaws.com | HTTPS | 04/22/2020 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-af-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "af-south-1",
+      "targetLabel": "Africa (Cape Town)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Asia Pacific (Hong Kong) | ap-east-1 | cloudtrail.ap-east-1.amazonaws.com | HTTPS | 04/24/2019 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ap-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-east-1",
+      "targetLabel": "Asia Pacific (Hong Kong)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Asia Pacific (Tokyo) | ap-northeast-1 | cloudtrail.ap-northeast-1.amazonaws.com | HTTPS | 06/30/2014 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ap-northeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-1",
+      "targetLabel": "Asia Pacific (Tokyo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Asia Pacific (Seoul) | ap-northeast-2 | cloudtrail.ap-northeast-2.amazonaws.com | HTTPS | 01/06/2016 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ap-northeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-2",
+      "targetLabel": "Asia Pacific (Seoul)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Asia Pacific (Osaka) | ap-northeast-3 | cloudtrail.ap-northeast-3.amazonaws.com | HTTPS | 02/12/2018 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ap-northeast-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-3",
+      "targetLabel": "Asia Pacific (Osaka)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Asia Pacific (Mumbai) | ap-south-1 | cloudtrail.ap-south-1.amazonaws.com | HTTPS | 06/27/2016 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ap-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-1",
+      "targetLabel": "Asia Pacific (Mumbai)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Asia Pacific (Hyderabad) | ap-south-2 | cloudtrail.ap-south-2.amazonaws.com | HTTPS | 11/22/2022 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ap-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-2",
+      "targetLabel": "Asia Pacific (Hyderabad)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Asia Pacific (Singapore) | ap-southeast-1 | cloudtrail.ap-southeast-1.amazonaws.com | HTTPS | 06/30/2014 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ap-southeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-1",
+      "targetLabel": "Asia Pacific (Singapore)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Asia Pacific (Sydney) | ap-southeast-2 | cloudtrail.ap-southeast-2.amazonaws.com | HTTPS | 05/13/2014 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ap-southeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-2",
+      "targetLabel": "Asia Pacific (Sydney)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Asia Pacific (Jakarta) | ap-southeast-3 | cloudtrail.ap-southeast-3.amazonaws.com | HTTPS | 12/13/2021 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ap-southeast-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-3",
+      "targetLabel": "Asia Pacific (Jakarta)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Asia Pacific (Melbourne) | ap-southeast-4 | cloudtrail.ap-southeast-4.amazonaws.com | HTTPS | 01/23/2023 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ap-southeast-4-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-4",
+      "targetLabel": "Asia Pacific (Melbourne)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Asia Pacific (Malaysia) | ap-southeast-5 | cloudtrail.ap-southeast-5.amazonaws.com | HTTPS | 08/22/2024 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ap-southeast-5-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-5",
+      "targetLabel": "Asia Pacific (Malaysia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Asia Pacific (Thailand) | ap-southeast-7 | cloudtrail.ap-southeast-7.amazonaws.com | HTTPS | 01/07/2025 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ap-southeast-7-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-7",
+      "targetLabel": "Asia Pacific (Thailand)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Canada (Central) | ca-central-1 | cloudtrail.ca-central-1.amazonaws.com | HTTPS | 12/08/2016 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ca-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-central-1",
+      "targetLabel": "Canada (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Canada West (Calgary) | ca-west-1 | cloudtrail.ca-west-1.amazonaws.com | HTTPS | 12/20/2023 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-ca-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-west-1",
+      "targetLabel": "Canada West (Calgary)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| China (Beijing) | cn-north-1 | cloudtrail.cn-north-1.amazonaws.com.cn | HTTPS | 03/01/2014 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-cn-north-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cn-north-1",
+      "targetLabel": "China (Beijing)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| China (Ningxia) | cn-northwest-1 | cloudtrail.cn-northwest-1.amazonaws.com.cn | HTTPS | 12/11/2017 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-cn-northwest-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cn-northwest-1",
+      "targetLabel": "China (Ningxia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Europe (Frankfurt) | eu-central-1 | cloudtrail.eu-central-1.amazonaws.com | HTTPS | 10/23/2014 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-eu-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-1",
+      "targetLabel": "Europe (Frankfurt)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Europe (Zurich) | eu-central-2 | cloudtrail.eu-central-2.amazonaws.com | HTTPS | 11/09/2022 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-eu-central-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-2",
+      "targetLabel": "Europe (Zurich)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Europe (Stockholm) | eu-north-1 | cloudtrail.eu-north-1.amazonaws.com | HTTPS | 12/11/2018 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-eu-north-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-north-1",
+      "targetLabel": "Europe (Stockholm)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Europe (Milan) | eu-south-1 | cloudtrail.eu-south-1.amazonaws.com | HTTPS | 04/27/2020 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-eu-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-1",
+      "targetLabel": "Europe (Milan)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Europe (Spain) | eu-south-2 | cloudtrail.eu-south-2.amazonaws.com | HTTPS | 11/16/2022 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-eu-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-2",
+      "targetLabel": "Europe (Spain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Europe (Ireland) | eu-west-1 | cloudtrail.eu-west-1.amazonaws.com | HTTPS | 05/13/2014 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-eu-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-1",
+      "targetLabel": "Europe (Ireland)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Europe (London) | eu-west-2 | cloudtrail.eu-west-2.amazonaws.com | HTTPS | 12/13/2016 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-eu-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-2",
+      "targetLabel": "Europe (London)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Europe (Paris) | eu-west-3 | cloudtrail.eu-west-3.amazonaws.com | HTTPS | 12/18/2017 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-eu-west-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-3",
+      "targetLabel": "Europe (Paris)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Israel (Tel Aviv) | il-central-1 | cloudtrail.il-central-1.amazonaws.com | HTTPS | 07/31/2023 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-il-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "il-central-1",
+      "targetLabel": "Israel (Tel Aviv)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Middle East (UAE) | me-central-1 | cloudtrail.me-central-1.amazonaws.com | HTTPS | 08/30/2022 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-me-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "me-central-1",
+      "targetLabel": "Middle East (UAE)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Middle East (Bahrain) | me-south-1 | cloudtrail.me-south-1.amazonaws.com | HTTPS | 07/29/2019 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-me-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "me-south-1",
+      "targetLabel": "Middle East (Bahrain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| Mexico (Central) | mx-central-1 | cloudtrail.mx-central-1.amazonaws.com | HTTPS | 01/13/2025 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-mx-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mx-central-1",
+      "targetLabel": "Mexico (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| South America (São Paulo) | sa-east-1 | cloudtrail.sa-east-1.amazonaws.com | HTTPS | 06/30/2014 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-sa-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sa-east-1",
+      "targetLabel": "South America (São Paulo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| US East (N. Virginia) | us-east-1 | cloudtrail.us-east-1.amazonaws.com | HTTPS | 11/13/2013 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-us-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| US East (Ohio) | us-east-2 | cloudtrail.us-east-2.amazonaws.com | HTTPS | 10/17/2016 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-us-east-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-2",
+      "targetLabel": "US East (Ohio)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| AWS GovCloud (US-East) | us-gov-east-1 | cloudtrail.us-gov-east-1.amazonaws.com | HTTPS | 11/12/2018 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-us-gov-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| AWS GovCloud (US-West) | us-gov-west-1 | cloudtrail.us-gov-west-1.amazonaws.com | HTTPS | 08/16/2011 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-us-gov-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| US West (N. California) | us-west-1 | cloudtrail.us-west-1.amazonaws.com | HTTPS | 05/13/2014 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-us-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-1",
+      "targetLabel": "US West (N. California)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
+          "quote": "| US West (Oregon) | us-west-2 | cloudtrail.us-west-2.amazonaws.com | HTTPS | 11/13/2013 |",
+          "retrievedAt": "2026-09-01T04:29:00.761Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-region-us-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
+    },
     {
       "axis": "service",
       "confidence": 0.9,
@@ -962,6 +1683,26 @@
       "status": "covered",
       "targetId": "cognito-identity",
       "targetLabel": "Amazon Cognito"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Cognito Sync",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-service-cognito-sync-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cognito-sync",
+      "targetLabel": "Amazon Cognito Sync"
     },
     {
       "axis": "service",
@@ -2145,6 +2886,26 @@
     },
     {
       "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS IoT FleetWise",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-service-iotfleetwise-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iotfleetwise",
+      "targetLabel": "AWS IoT FleetWise"
+    },
+    {
+      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -2182,6 +2943,26 @@
       "status": "covered",
       "targetId": "iottwinmaker",
       "targetLabel": "AWS IoT TwinMaker"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS IoT Wireless",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-service-iotwireless-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iotwireless",
+      "targetLabel": "AWS IoT Wireless"
     },
     {
       "axis": "service",
@@ -2282,6 +3063,26 @@
       "status": "covered",
       "targetId": "kinesisvideo",
       "targetLabel": "Amazon Kinesis Video Streams"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS KMS",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-service-kms-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kms",
+      "targetLabel": "AWS KMS"
     },
     {
       "axis": "service",
@@ -3505,6 +4306,26 @@
     },
     {
       "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon EventBridge Scheduler",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-service-scheduler-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "scheduler",
+      "targetLabel": "Amazon EventBridge Scheduler"
+    },
+    {
+      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -4028,6 +4849,26 @@
       "confidence": 0.8,
       "evidence": [
         {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Transfer Family",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/service-wide",
+      "id": "cloudtrail-service-wide-service-transfer-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "transfer",
+      "targetLabel": "AWS Transfer Family"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
           "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
           "quote": "+ AWS Transform",
@@ -4285,7 +5126,7 @@
     }
   ],
   "featureId": "cloudtrail/service-wide",
-  "generatedAt": "2026-09-01T06:27:22.542Z",
+  "generatedAt": "2026-09-01T06:38:30.924Z",
   "serviceId": "cloudtrail",
   "unresolvedTargets": [
     {
@@ -4837,6 +5678,56 @@
       "axis": "service",
       "raw": "Amazon Transform Custom",
       "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Connect Customer Voice ID",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS HealthImaging",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Email Service (Amazon SES)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Timestream for InfluxDB",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Connect Customer Voice ID",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS HealthImaging",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Email Service (Amazon SES)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Timestream for InfluxDB",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
     }
   ]
 }

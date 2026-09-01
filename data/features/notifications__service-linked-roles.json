@@ -6,13 +6,13 @@
     "security-chapter"
   ],
   "docUrls": [
-    "https://docs.aws.amazon.com/notifications/latest/userguide/slr-call-services.md"
+    "https://docs.aws.amazon.com/notifications/latest/userguide/ev-managed-rules.md"
   ],
   "evidence": [
     {
       "bodySha256": "cf46a5071ad19b987c8eae2bdeae9c66b3ea65b9e9a264f0fb2281f99a37597b",
       "locator": "Security > Using Service-Linked Roles",
-      "quote": "[Service-linked role for calling AWS services, publishing metrics, and using AWS Organizations](https://docs.aws.amazon.com/notifications/latest/userguide/slr-call-services.md)",
+      "quote": "[Managed rules](https://docs.aws.amazon.com/notifications/latest/userguide/ev-managed-rules.md)",
       "retrievedAt": "2026-09-01T04:06:14.316Z",
       "sourceUrl": "https://docs.aws.amazon.com/notifications/latest/userguide/llms.txt"
     }
@@ -22,6 +22,6 @@
   "method": "deterministic",
   "name": "Service-Linked Roles",
   "serviceId": "notifications",
-  "summary": "User Notifications uses the service-linked role named AWSServiceRoleForAWSUserNotifications.",
+  "summary": "How to use Amazon EventBridge managed rules in AWS User Notifications.",
   "tier": "tier2"
 }

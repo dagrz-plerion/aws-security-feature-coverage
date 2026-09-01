@@ -6,13 +6,13 @@
     "security-chapter"
   ],
   "docUrls": [
-    "https://docs.aws.amazon.com/kms/latest/developerguide/authorize-kms.md"
+    "https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-auth-slr.md"
   ],
   "evidence": [
     {
       "bodySha256": "0ba3e6f8bc82eaecae04851380ae183a4d968bbb98ce29dec74d9b204f1ef846",
       "locator": "Security > Service-linked roles",
-      "quote": "[Authorizing AWS KMS to manage AWS CloudHSM and Amazon EC2 resources](https://docs.aws.amazon.com/kms/latest/developerguide/authorize-kms.md)",
+      "quote": "[Authorizing AWS KMS to synchronize multi-Region keys](https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-auth-slr.md)",
       "retrievedAt": "2026-09-01T04:06:11.963Z",
       "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/llms.txt"
     }
@@ -22,6 +22,6 @@
   "method": "deterministic",
   "name": "Service-linked roles",
   "serviceId": "kms",
-  "summary": "To support your AWS CloudHSM key stores, AWS KMS needs permission to get information about your AWS CloudHSM clusters.",
+  "summary": "To support multi-Region keys, AWS KMS needs permission to synchronize the shared properties of a multi-Region primary key with its replica keys.",
   "tier": "tier1"
 }

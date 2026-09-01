@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "managedRuleGroup"
+  ],
+  "claims": [
+    {
+      "axis": "managedRuleGroup",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c63ed59c53499ce6a26a849a4035273ffb168eabdc35a06143f0e39dee4dfef0",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-bot.md :: AWS WAF Bot Control rule group",
+          "quote": "VendorName: `AWS`, Name: `AWSManagedRulesBotControlRuleSet`, WCU: 50",
+          "retrievedAt": "2026-09-01T04:29:46.379Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-bot.md"
+        }
+      ],
+      "extractorId": "recipe:waf-managed-rule-group-names",
+      "featureId": "wafv2/bot-control-rule-group",
+      "id": "wafv2-bot-control-rule-group-managedrulegroup-awsmanagedrulesbotcontrolruleset-recipe-waf-managed-rule-group-names",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWSManagedRulesBotControlRuleSet",
+      "targetLabel": "AWSManagedRulesBotControlRuleSet"
+    }
+  ],
+  "featureId": "wafv2/bot-control-rule-group",
+  "generatedAt": "2026-09-01T06:38:30.924Z",
+  "serviceId": "wafv2",
+  "unresolvedTargets": []
+}

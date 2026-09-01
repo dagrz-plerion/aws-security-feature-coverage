@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { TargetResolver } from "../src/coverage/resolvers.js";
 import { assertsCoverage, isNavigation, neverStatesCoverage } from "../src/coverage/extractors.js";
+import { isSubjectOf } from "../src/pipeline/stage5.js";
 import type { DataSource, Region, ResourceType, Service } from "../src/core/schema.js";
 
 const evidence = [{ sourceUrl: "https://example.test/x", bodySha256: "a".repeat(64), retrievedAt: "2026-01-01T00:00:00Z", quote: "x" }];
@@ -122,6 +123,13 @@ describe("what is not coverage", () => {
     expect(neverStatesCoverage("Supported operating systems: Amazon EC2 scanning")).toBe(false);
   });
 
+  it("judges the page on its own title, not on the chapter above it", () => {
+    // The IAM guide files this page under "Getting started with IAM Access Analyzer".
+    expect(neverStatesCoverage("Supported resource types", "IAM Access Analyzer Getting started with IAM Access Analyzer")).toBe(false);
+    // A page with nothing to say for itself does inherit the chapter's verdict.
+    expect(neverStatesCoverage("Step 3", "Getting started with IAM Access Analyzer")).toBe(true);
+  });
+
   it("requires a page to assert coverage before reading a list", () => {
     expect(assertsCoverage("Supported resource types")).toBe(true);
     // A page about limits is not read generically. Security Hub's regional limits
@@ -135,5 +143,23 @@ describe("what is not coverage", () => {
     expect(isNavigation("See also")).toBe(true);
     expect(isNavigation("Security > Topics")).toBe(true);
     expect(isNavigation("Supported resource types")).toBe(false);
+  });
+});
+
+describe("which feature a heading is about", () => {
+  it("accepts a heading that opens with the feature name", () => {
+    expect(isSubjectOf("eks protection", "eks protection")).toBe(true);
+    expect(isSubjectOf("malware protection for s3", "malware protection for s3 quotas")).toBe(true);
+    expect(isSubjectOf("runtime monitoring", "configuring runtime monitoring")).toBe(true);
+  });
+
+  it("refuses a name that is only mentioned in passing", () => {
+    // The heading is about dual-stack mode, not about the MySQL engine.
+    expect(isSubjectOf("rds for mysql", "dual-stack mode with rds for mysql")).toBe(false);
+    expect(isSubjectOf("data encryption", "security > data encryption > using ssl/tls to encrypt a connection")).toBe(false);
+  });
+
+  it("refuses a name the heading does not contain", () => {
+    expect(isSubjectOf("eks protection", "s3 protection")).toBe(false);
   });
 });

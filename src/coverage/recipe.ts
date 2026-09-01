@@ -38,6 +38,8 @@ export type Recipe = {
     value?: string;
   };
   featureId?: string;
+  /** Read only the blocks whose heading matches. One page, several features. */
+  onlyBlocksMatching?: string;
   requireMin?: number;
 };
 
@@ -130,7 +132,11 @@ export function runRecipe(
   resolver: TargetResolver,
 ): RecipeOutcome {
   const doc = parseMarkdown(body);
-  const blocks = blocksFor(doc, body, recipe, pageTitle);
+  let blocks = blocksFor(doc, body, recipe, pageTitle);
+  if (recipe.onlyBlocksMatching) {
+    const wanted = new RegExp(recipe.onlyBlocksMatching, "i");
+    blocks = blocks.filter((block) => wanted.test(block.title));
+  }
   const claims: RawClaim[] = [];
   const seen = new Set<string>();
   let dropped = 0;

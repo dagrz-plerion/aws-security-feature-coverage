@@ -118,14 +118,24 @@ const MIN_CLAIM_PHRASE = 10;
  */
 export function attributePage(page: DocPage, ownerId: string, phrases: PhraseIndex): string[] {
   const haystack = [page.title, ...page.section].join(" | ").toLowerCase();
+  // A chapter named after another service, or a page titled after it, belongs to
+  // that service alone. The IAM guide's "IAM Access Analyzer" chapter is Access
+  // Analyzer's, and leaving it with IAM as well produced the same feature twice.
+  const dedicated = `${page.title} | ${page.section[0] ?? ""}`.toLowerCase();
+  // Phrases the owner answers to as well. "Amazon Inspector" belongs to both
+  // Inspector and Inspector Classic, so it can never take a page off its owner.
+  const ownerPhrases = new Set(phrases.filter((p) => p.serviceId === ownerId).map((p) => p.phrase));
   const claimants = new Set<string>();
-  if (ownerId) claimants.add(ownerId);
+  let owned = true;
   for (const entry of phrases) {
     if (entry.serviceId === ownerId) continue;
     if (entry.phrase.length < MIN_CLAIM_PHRASE) continue;
     if (!entry.phrase.includes(" ")) continue;
-    if (haystack.includes(entry.phrase)) claimants.add(entry.serviceId);
+    if (!haystack.includes(entry.phrase)) continue;
+    claimants.add(entry.serviceId);
+    if (dedicated.includes(entry.phrase) && !ownerPhrases.has(entry.phrase)) owned = false;
   }
+  if (ownerId && owned) claimants.add(ownerId);
   return [...claimants];
 }
 

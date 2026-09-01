@@ -5,21 +5,21 @@
   "claims": [
     {
       "axis": "region",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Amazon Pinpoint isn't available in the following Regions. Amazon Cognito user pools in these Regions don't support analytics.",
-          "quote": "+ Africa (Cape Town)",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Africa (Cape Town) | In-Region only | Africa (Cape Town) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-table",
       "featureId": "cognito-idp/amazon-cognito-user-pools",
-      "id": "cognito-idp-amazon-cognito-user-pools-region-af-south-1-md-bullet-list",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-af-south-1-md-table",
       "method": "deterministic",
-      "status": "not-covered",
+      "status": "covered",
       "targetId": "af-south-1",
       "targetLabel": "Africa (Cape Town)"
     },
@@ -48,11 +48,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Using Amazon Pinpoint for user pool analytics > Amazon Cognito and Amazon Pinpoint Region availability | column \"Amazon Cognito user pool Region\"",
-          "quote": "| ap-northeast-1 | us-east-1 |",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Tokyo) | Backwards compatible | Asia Pacific (Tokyo), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
       "extractorId": "md-table",
@@ -61,18 +61,18 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-northeast-1",
-      "targetLabel": "ap-northeast-1"
+      "targetLabel": "Asia Pacific (Tokyo)"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Using Amazon Pinpoint for user pool analytics > Amazon Cognito and Amazon Pinpoint Region availability | column \"Amazon Cognito user pool Region\"",
-          "quote": "| ap-northeast-2 | us-east-1 |",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Seoul) | Backwards compatible | Asia Pacific (Seoul), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
       "extractorId": "md-table",
@@ -81,25 +81,25 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-northeast-2",
-      "targetLabel": "ap-northeast-2"
+      "targetLabel": "Asia Pacific (Seoul)"
     },
     {
       "axis": "region",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Amazon Pinpoint isn't available in the following Regions. Amazon Cognito user pools in these Regions don't support analytics.",
-          "quote": "+ Asia Pacific (Osaka)",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Osaka) | In-Region only | Asia Pacific (Osaka) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-table",
       "featureId": "cognito-idp/amazon-cognito-user-pools",
-      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-northeast-3-md-bullet-list",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-northeast-3-md-table",
       "method": "deterministic",
-      "status": "not-covered",
+      "status": "covered",
       "targetId": "ap-northeast-3",
       "targetLabel": "Asia Pacific (Osaka)"
     },
@@ -108,11 +108,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Using Amazon Pinpoint for user pool analytics > Amazon Cognito and Amazon Pinpoint Region availability | column \"Amazon Cognito user pool Region\"",
-          "quote": "| ap-south-1 | us-east-1, ap-south-1 |",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Mumbai) | Backwards compatible | Asia Pacific (Mumbai), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
       "extractorId": "md-table",
@@ -121,7 +121,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-south-1",
-      "targetLabel": "ap-south-1"
+      "targetLabel": "Asia Pacific (Mumbai)"
     },
     {
       "axis": "region",
@@ -148,11 +148,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Using Amazon Pinpoint for user pool analytics > Amazon Cognito and Amazon Pinpoint Region availability | column \"Amazon Cognito user pool Region\"",
-          "quote": "| ap-southeast-1 | us-east-1 |",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Singapore) | Backwards compatible | Asia Pacific (Singapore), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
       "extractorId": "md-table",
@@ -161,18 +161,18 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-southeast-1",
-      "targetLabel": "ap-southeast-1"
+      "targetLabel": "Asia Pacific (Singapore)"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Using Amazon Pinpoint for user pool analytics > Amazon Cognito and Amazon Pinpoint Region availability | column \"Amazon Cognito user pool Region\"",
-          "quote": "| ap-southeast-2 | us-east-1, ap-southeast-2 |",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Sydney) | Backwards compatible | Asia Pacific (Sydney), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
       "extractorId": "md-table",
@@ -181,25 +181,25 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-southeast-2",
-      "targetLabel": "ap-southeast-2"
+      "targetLabel": "Asia Pacific (Sydney)"
     },
     {
       "axis": "region",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Amazon Pinpoint isn't available in the following Regions. Amazon Cognito user pools in these Regions don't support analytics.",
-          "quote": "+ Asia Pacific (Jakarta)",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Jakarta) | In-Region only | Asia Pacific (Jakarta) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-table",
       "featureId": "cognito-idp/amazon-cognito-user-pools",
-      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-southeast-3-md-bullet-list",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-southeast-3-md-table",
       "method": "deterministic",
-      "status": "not-covered",
+      "status": "covered",
       "targetId": "ap-southeast-3",
       "targetLabel": "Asia Pacific (Jakarta)"
     },
@@ -225,21 +225,21 @@
     },
     {
       "axis": "region",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Amazon Pinpoint isn't available in the following Regions. Amazon Cognito user pools in these Regions don't support analytics.",
-          "quote": "+ Asia Pacific (Malaysia)",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Malaysia) | Alternate Region | Asia Pacific (Sydney), Asia Pacific (Singapore)[1](#cognito-email-alternate-regions-note) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-table",
       "featureId": "cognito-idp/amazon-cognito-user-pools",
-      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-southeast-5-md-bullet-list",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-southeast-5-md-table",
       "method": "deterministic",
-      "status": "not-covered",
+      "status": "covered",
       "targetId": "ap-southeast-5",
       "targetLabel": "Asia Pacific (Malaysia)"
     },
@@ -268,11 +268,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Using Amazon Pinpoint for user pool analytics > Amazon Cognito and Amazon Pinpoint Region availability | column \"Amazon Cognito user pool Region\"",
-          "quote": "| ca-central-1 | us-east-1 |",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Canada (Central) | Backwards compatible | Canada (Central), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
       "extractorId": "md-table",
@@ -281,7 +281,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ca-central-1",
-      "targetLabel": "ca-central-1"
+      "targetLabel": "Canada (Central)"
     },
     {
       "axis": "region",
@@ -308,11 +308,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Using Amazon Pinpoint for user pool analytics > Amazon Cognito and Amazon Pinpoint Region availability | column \"Amazon Cognito user pool Region\"",
-          "quote": "| eu-central-1 | us-east-1, eu-central-1 |",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Europe (Frankfurt) | Backwards compatible | Europe (Frankfurt), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
       "extractorId": "md-table",
@@ -321,7 +321,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "eu-central-1",
-      "targetLabel": "eu-central-1"
+      "targetLabel": "Europe (Frankfurt)"
     },
     {
       "axis": "region",
@@ -365,21 +365,21 @@
     },
     {
       "axis": "region",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Amazon Pinpoint isn't available in the following Regions. Amazon Cognito user pools in these Regions don't support analytics.",
-          "quote": "+ Europe (Milan)",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Europe (Milan) | In-Region only | Europe (Milan) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-table",
       "featureId": "cognito-idp/amazon-cognito-user-pools",
-      "id": "cognito-idp-amazon-cognito-user-pools-region-eu-south-1-md-bullet-list",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-eu-south-1-md-table",
       "method": "deterministic",
-      "status": "not-covered",
+      "status": "covered",
       "targetId": "eu-south-1",
       "targetLabel": "Europe (Milan)"
     },
@@ -408,11 +408,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Using Amazon Pinpoint for user pool analytics > Amazon Cognito and Amazon Pinpoint Region availability | column \"Amazon Cognito user pool Region\"",
-          "quote": "| eu-west-1 | us-east-1, eu-west-1 |",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Europe (Ireland) | Backwards compatible | US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
       "extractorId": "md-table",
@@ -421,18 +421,18 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "eu-west-1",
-      "targetLabel": "eu-west-1"
+      "targetLabel": "Europe (Ireland)"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Using Amazon Pinpoint for user pool analytics > Amazon Cognito and Amazon Pinpoint Region availability | column \"Amazon Cognito user pool Region\"",
-          "quote": "| eu-west-2 | us-east-1 |",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Europe (London) | Backwards compatible | Europe (London), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
       "extractorId": "md-table",
@@ -441,7 +441,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "eu-west-2",
-      "targetLabel": "eu-west-2"
+      "targetLabel": "Europe (London)"
     },
     {
       "axis": "region",
@@ -465,21 +465,21 @@
     },
     {
       "axis": "region",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Amazon Pinpoint isn't available in the following Regions. Amazon Cognito user pools in these Regions don't support analytics.",
-          "quote": "+ Israel (Tel Aviv)",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Israel (Tel Aviv) | In-Region only | Israel (Tel Aviv) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-table",
       "featureId": "cognito-idp/amazon-cognito-user-pools",
-      "id": "cognito-idp-amazon-cognito-user-pools-region-il-central-1-md-bullet-list",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-il-central-1-md-table",
       "method": "deterministic",
-      "status": "not-covered",
+      "status": "covered",
       "targetId": "il-central-1",
       "targetLabel": "Israel (Tel Aviv)"
     },
@@ -505,21 +505,21 @@
     },
     {
       "axis": "region",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Amazon Pinpoint isn't available in the following Regions. Amazon Cognito user pools in these Regions don't support analytics.",
-          "quote": "+ Middle East (Bahrain)",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Middle East (Bahrain) | In-Region only | Middle East (Bahrain) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-table",
       "featureId": "cognito-idp/amazon-cognito-user-pools",
-      "id": "cognito-idp-amazon-cognito-user-pools-region-me-south-1-md-bullet-list",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-me-south-1-md-table",
       "method": "deterministic",
-      "status": "not-covered",
+      "status": "covered",
       "targetId": "me-south-1",
       "targetLabel": "Middle East (Bahrain)"
     },
@@ -568,11 +568,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Using Amazon Pinpoint for user pool analytics > Amazon Cognito and Amazon Pinpoint Region availability | column \"Amazon Cognito user pool Region\"",
-          "quote": "| us-east-1 | us-east-1 |",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| US East (N. Virginia) | Backwards compatible | US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
       "extractorId": "md-table",
@@ -581,18 +581,18 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-east-1",
-      "targetLabel": "us-east-1"
+      "targetLabel": "US East (N. Virginia)"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Using Amazon Pinpoint for user pool analytics > Amazon Cognito and Amazon Pinpoint Region availability | column \"Amazon Cognito user pool Region\"",
-          "quote": "| us-east-2 | us-east-1 |",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| US East (Ohio) | Backwards compatible | US East (Ohio), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
       "extractorId": "md-table",
@@ -601,7 +601,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-east-2",
-      "targetLabel": "us-east-2"
+      "targetLabel": "US East (Ohio)"
     },
     {
       "axis": "region",
@@ -628,11 +628,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "2c8c08decf0c883d49fad81374dc7beedb3953d78685b11da302781fb90e73e9",
-          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md :: Using Amazon Pinpoint for user pool analytics > Amazon Cognito and Amazon Pinpoint Region availability | column \"Amazon Cognito user pool Region\"",
-          "quote": "| us-west-2 | us-east-1, us-west-2 |",
-          "retrievedAt": "2026-09-01T04:59:50.833Z",
-          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-pinpoint-integration.md"
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| US West (Oregon) | Backwards compatible | US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
         }
       ],
       "extractorId": "md-table",
@@ -641,11 +641,11 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-west-2",
-      "targetLabel": "us-west-2"
+      "targetLabel": "US West (Oregon)"
     }
   ],
   "featureId": "cognito-idp/amazon-cognito-user-pools",
-  "generatedAt": "2026-09-01T06:27:22.542Z",
+  "generatedAt": "2026-09-01T06:38:30.924Z",
   "serviceId": "cognito-idp",
   "unresolvedTargets": []
 }

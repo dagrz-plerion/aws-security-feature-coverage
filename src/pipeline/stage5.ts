@@ -143,13 +143,20 @@ export const stage5: Stage = {
     // A recipe is reference metadata: it says how to read one page shape. Seed rules
     // attach by URL pattern, so a recipe covers every page of that shape.
     const rules = (await recipeRules()).map((rule) => ({ ...rule, re: new RegExp(rule.urlPattern) }));
+    // A URL someone wrote a recipe for is read that way and no other way, whichever
+    // service registered it. Otherwise the guide's owner reads it generically too and
+    // collects a second, vaguer copy of the same claims.
+    const recipeUrls = new Set<string>();
     let recipesAttached = 0;
     for (const page of allPages(registry)) {
       const rule = rules.find((r) => r.re.test(page.url));
       if (!rule) continue;
-      page.recipes = rule.recipes as Recipe[];
-      if (rule.note) page.note = rule.note;
-      recipesAttached += page.recipes.length;
+      if (page.serviceId === rule.serviceId) {
+        page.recipes = rule.recipes as Recipe[];
+        if (rule.note) page.note = rule.note;
+        recipesAttached += page.recipes.length;
+      }
+      recipeUrls.add(page.url);
     }
 
     const pageBySection = new Map<string, DocPage>();
@@ -238,14 +245,45 @@ export const stage5: Stage = {
         // A single page often documents several features, one per heading. Each
         // heading is read on its own so its list lands on the right feature.
         const doc = parseMarkdown(body);
+        // The table of contents label and the page's own H1 can disagree, and the H1
+        // wins. The RDS guide lists its TLS page under a label of "Data encryption",
+        // and trusting the label attached certificate Regions to a feature about
+        // encrypting data at rest.
+        const pageTitle = doc.title?.trim() || job.doc.title;
+
+        if (!job.page.recipes?.length) {
+          // A page in someone else's guide has to name this service, or its lists are
+          // about that other service. A Detective page is not IAM coverage.
+          // Naming a service is not the same as being about it. Every AWS guide
+          // mentions CloudWatch Logs. Only the owning guide is read generically;
+          // anything else needs a recipe someone wrote on purpose.
+          if (recipeUrls.has(job.page.url)) {
+            rejectedPages += 1;
+            recordResult(job.page, { claims: 0, axes: [], status: "empty", detail: "another service reads this page with a recipe" });
+            return;
+          }
+          if (!job.ownsGuide) {
+            rejectedPages += 1;
+            recordResult(job.page, { claims: 0, axes: [], status: "empty", detail: "page belongs to another service's guide" });
+            return;
+          }
+          if (neverStatesCoverage(pageTitle, `${job.doc.title} ${job.doc.section.join(" ")} ${url}`)) {
+            rejectedPages += 1;
+            recordResult(job.page, { claims: 0, axes: [], status: "empty", detail: "page kind never states coverage" });
+            return;
+          }
+        }
+
         const blocks: { headings: string[]; body: string }[] = [];
         const headed = doc.sections.filter((section) => section.level === 2 && section.body.trim());
         if (headed.length >= 2) {
           for (const section of headed) blocks.push({ headings: [section.title], body: section.body });
         }
-        // The whole page is read as well. On a finding-types page the headings are
-        // themselves the catalog, so splitting by heading would hide it.
-        blocks.push({ headings: [job.doc.title, ...job.doc.section], body: result.body });
+        // The whole page is read last. On a finding-types page the headings are
+        // themselves the catalog, so splitting by heading would hide it. Anything a
+        // heading already claimed is left alone, or the page-level pass would pull
+        // every heading's list back into one record.
+        blocks.push({ headings: [pageTitle], body });
 
         let attachedAny = false;
         let blockClaims = 0;
@@ -254,26 +292,10 @@ export const stage5: Stage = {
         // A recipe may read any page, because a person chose it deliberately. The
         // generic reader may not touch a page whose own title says it is a quota
         // list, a price list or a walkthrough.
-        if (!job.page.recipes?.length) {
-          // A page in someone else's guide has to name this service, or its lists are
-          // about that other service. A Detective page is not IAM coverage.
-          if (!job.ownsGuide && !job.namesService) {
-            rejectedPages += 1;
-            recordResult(job.page, { claims: 0, axes: [], status: "empty", detail: "page belongs to another service" });
-            return;
-          }
-          const pageContext = `${job.doc.title} ${job.doc.section.join(" ")} ${url}`;
-          if (neverStatesCoverage(pageContext)) {
-            rejectedPages += 1;
-            recordResult(job.page, { claims: 0, axes: [], status: "empty", detail: "page kind never states coverage" });
-            return;
-          }
-        }
-
         if (job.page.recipes?.length) {
           const failures: string[] = [];
           for (const recipe of job.page.recipes) {
-            const outcome = runRecipe(recipe, body, job.doc.title, resolver);
+            const outcome = runRecipe(recipe, body, pageTitle, resolver);
             if (outcome.failure) {
               recipeFailures += 1;
               failures.push(outcome.failure);
@@ -287,7 +309,7 @@ export const stage5: Stage = {
             const pinned = recipe.featureId ?? job.page.featureId;
             const feature =
               (pinned ? job.features.find((f) => f.id === pinned) : undefined) ??
-              bestFeatureFor([job.doc.title, ...job.doc.section], job.features) ??
+              bestFeatureFor([pageTitle], job.features) ??
               serviceWideFeature(job.page.serviceId, serviceById, featuresByService, tierById.get(job.page.serviceId), true);
             if (!feature) continue;
             const list = claimsByFeature.get(feature.id) ?? [];
@@ -326,20 +348,23 @@ export const stage5: Stage = {
           return;
         }
 
-        for (const block of blocks) {
-          const outcome = extractFromPage(block.body, resolver, job.page.serviceId);
+        const claimedByHeading = new Set<string>();
+        for (let blockIndex = 0; blockIndex < blocks.length; blockIndex += 1) {
+          const block = blocks[blockIndex] as { headings: string[]; body: string };
+          const isWholePage = blockIndex === blocks.length - 1 && blocks.length > 1;
+          const outcome = extractFromPage(block.body, resolver, job.page.serviceId, block.headings.join(" "));
           if (outcome.claims.length === 0) continue;
           // The heading nearest the list decides. Only when it names no feature do
           // we fall back to the page as a whole.
           // A pinned feature wins; otherwise the nearest heading decides.
           const pinned = job.page.featureId ? job.features.find((f) => f.id === job.page.featureId) : undefined;
-          const named =
-            pinned ??
-            bestFeatureFor(block.headings, job.features) ??
-            bestFeatureFor([job.doc.title, ...job.doc.section], job.features);
+          // The nearest heading, then the page's own title. An ancestor chapter is
+          // not evidence: an RDS page about TLS certificates sits under a chapter
+          // called "Data encryption", and that is not what the page states.
+          const named = pinned ?? bestFeatureFor(block.headings, job.features) ?? bestFeatureFor([pageTitle], job.features);
           const feature = named ?? serviceWideFeature(job.page.serviceId, serviceById, featuresByService, tierById.get(job.page.serviceId));
           if (!feature) {
-            unattached.push({ serviceId: job.page.serviceId, url: url, title: block.headings[0] ?? job.doc.title });
+            unattached.push({ serviceId: job.page.serviceId, url: url, title: block.headings[0] ?? pageTitle });
             continue;
           }
           if (!named) serviceWideUsed.add(job.page.serviceId);
@@ -347,8 +372,11 @@ export const stage5: Stage = {
           const list = claimsByFeature.get(feature.id) ?? [];
           const already = new Set(list.map((c) => `${c.axis}|${c.targetId}`));
           for (const raw of outcome.claims) {
+            const pageKey = `${raw.axis}|${raw.targetId}|${raw.scope?.targetId ?? ""}`;
+            if (isWholePage && claimedByHeading.has(pageKey)) continue;
             if (already.has(`${raw.axis}|${raw.targetId}`)) continue;
             already.add(`${raw.axis}|${raw.targetId}`);
+            if (!isWholePage) claimedByHeading.add(pageKey);
             blockClaims += 1;
             seenAxes.add(raw.axis);
             list.push({
@@ -505,53 +533,47 @@ export const stage5: Stage = {
   },
 };
 
-const STOPWORD = new Set([
-  "a", "an", "the", "of", "for", "in", "on", "to", "with", "and", "or", "your",
-  "aws", "amazon", "supported", "support", "types", "type", "using", "use",
-]);
-
-function distinctiveWords(text: string): string[] {
-  return [
-    ...new Set(
-      text
-        .toLowerCase()
-        .replace(/[^a-z0-9\s]/g, " ")
-        .split(/\s+/)
-        .filter((w) => w.length > 2 && !STOPWORD.has(w)),
-    ),
-  ];
-}
-
 /**
- * The feature a heading documents. An exact name match wins. Otherwise the feature
- * whose distinctive words the heading mostly repeats wins, which is how "Supported
- * resource types for external access" reaches the external access analyzer.
+ * The feature a heading documents. The name has to appear in the heading, verbatim.
+ *
+ * There used to be a fallback that scored word overlap, and it was wrong far more
+ * often than it was right: an RDS page about TLS certificates landed on a feature
+ * called "Data encryption", and a page about dual-stack mode landed on "RDS for
+ * MySQL". A claim on the wrong feature is worse than no claim, so a page that names
+ * no feature now yields nothing and is reported instead.
  */
 export function bestFeatureFor(headings: string[], features: Feature[]): Feature | undefined {
-  const haystack = headings.join(" | ").toLowerCase();
-  const hayWords = new Set(distinctiveWords(haystack));
-  let exact: { feature: Feature; length: number } | undefined;
-  let fuzzy: { feature: Feature; score: number; size: number } | undefined;
-
-  for (const feature of features) {
-    for (const name of [feature.name, ...feature.aliases]) {
-      const needle = name.toLowerCase();
-      // A single word is never specific enough to claim a coverage list.
-      if (needle.includes(" ") && needle.length >= 8 && haystack.includes(needle)) {
-        if (!exact || needle.length > exact.length) exact = { feature, length: needle.length };
-      }
-      const words = distinctiveWords(name);
-      if (words.length < 2) continue;
-      const shared = words.filter((w) => hayWords.has(w));
-      if (shared.length < 2) continue;
-      const score = shared.length / words.length;
-      if (score < 0.6) continue;
-      if (!fuzzy || score > fuzzy.score || (score === fuzzy.score && words.length > fuzzy.size)) {
-        fuzzy = { feature, score, size: words.length };
+  let best: { feature: Feature; length: number } | undefined;
+  for (const heading of headings) {
+    const text = (heading ?? "").toLowerCase().trim();
+    if (!text) continue;
+    for (const feature of features) {
+      for (const name of [feature.name, ...feature.aliases]) {
+        const needle = name.toLowerCase().trim();
+        if (needle.length < 8 || !needle.includes(" ")) continue;
+        if (!isSubjectOf(needle, text)) continue;
+        if (!best || needle.length > best.length) best = { feature, length: needle.length };
       }
     }
   }
-  return exact?.feature ?? fuzzy?.feature;
+  return best?.feature;
+}
+
+/** Words a heading may open with before it names its subject. */
+const HEADING_LEAD =
+  /^(the|a|an|using|use|configuring|configure|managing|manage|understanding|understand|about|supported|working with|how)\s+/;
+
+/**
+ * The name has to BE what the heading is about, not something mentioned in passing.
+ * "Dual-stack mode with RDS for MySQL" contains "RDS for MySQL", but the heading is
+ * about dual-stack mode, and attaching Region coverage to the MySQL engine was wrong.
+ */
+export function isSubjectOf(needle: string, heading: string): boolean {
+  if (!heading.includes(needle)) return false;
+  const lead = heading.replace(HEADING_LEAD, "");
+  if (lead.startsWith(needle)) return true;
+  // Otherwise the name has to account for most of the heading.
+  return needle.length / heading.length >= 0.5;
 }
 
 /** Same target, different answer, means the sources disagree. We record both. */

@@ -1,7 +1,8 @@
 {
   "axes": [
     "findingType",
-    "region"
+    "region",
+    "s3Feature"
   ],
   "claims": [
     {
@@ -10,7 +11,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Backdoor:EC2/C&CActivity.B",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -30,7 +31,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Backdoor:EC2/C&CActivity.B\\!DNS",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -50,7 +51,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Backdoor:EC2/DenialOfService.Dns",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -70,7 +71,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Backdoor:EC2/DenialOfService.Tcp",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -90,7 +91,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Backdoor:EC2/DenialOfService.Udp",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -110,7 +111,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Backdoor:EC2/DenialOfService.UdpOnTcpPorts",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -130,7 +131,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Backdoor:EC2/DenialOfService.UnusualProtocol",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -150,7 +151,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Backdoor:EC2/Spambot",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -190,7 +191,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Behavior:EC2/NetworkPortUnusual",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -210,7 +211,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Behavior:EC2/TrafficVolumeUnusual",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -250,7 +251,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## CredentialAccess:IAMUser/AnomalousBehavior",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -270,7 +271,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## CredentialAccess:IAMUser/CompromisedCredentials",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -310,7 +311,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## CryptoCurrency:EC2/BitcoinTool.B",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -330,7 +331,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## CryptoCurrency:EC2/BitcoinTool.B\\!DNS",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -350,7 +351,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## DefenseEvasion:EC2/UnusualDNSResolver",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -370,7 +371,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## DefenseEvasion:EC2/UnusualDoHActivity",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -390,7 +391,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## DefenseEvasion:EC2/UnusualDoTActivity",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -410,7 +411,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## DefenseEvasion:IAMUser/AnomalousBehavior",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -430,7 +431,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## DefenseEvasion:IAMUser/BedrockLoggingDisabled",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -450,7 +451,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## Discovery:IAMUser/AnomalousBehavior",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -463,6 +464,26 @@
       "status": "covered",
       "targetId": "Discovery:IAMUser/AnomalousBehavior",
       "targetLabel": "Discovery:IAMUser/AnomalousBehavior"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Discovery:S3/AnomalousBehavior",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-discovery-s3-anomalousbehavior-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Discovery:S3/AnomalousBehavior",
+      "targetLabel": "Discovery:S3/AnomalousBehavior"
     },
     {
       "axis": "findingType",
@@ -489,8 +510,68 @@
       "confidence": 0.95,
       "evidence": [
         {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Discovery:S3/MaliciousIPCaller",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-discovery-s3-maliciousipcaller-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Discovery:S3/MaliciousIPCaller",
+      "targetLabel": "Discovery:S3/MaliciousIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Discovery:S3/MaliciousIPCaller.Custom",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-discovery-s3-maliciousipcaller-custom-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Discovery:S3/MaliciousIPCaller.Custom",
+      "targetLabel": "Discovery:S3/MaliciousIPCaller.Custom"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Discovery:S3/TorIPCaller",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-discovery-s3-toripcaller-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Discovery:S3/TorIPCaller",
+      "targetLabel": "Discovery:S3/TorIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## Exfiltration:IAMUser/AnomalousBehavior",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -503,6 +584,46 @@
       "status": "covered",
       "targetId": "Exfiltration:IAMUser/AnomalousBehavior",
       "targetLabel": "Exfiltration:IAMUser/AnomalousBehavior"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Exfiltration:S3/AnomalousBehavior",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-exfiltration-s3-anomalousbehavior-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Exfiltration:S3/AnomalousBehavior",
+      "targetLabel": "Exfiltration:S3/AnomalousBehavior"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Exfiltration:S3/MaliciousIPCaller",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-exfiltration-s3-maliciousipcaller-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Exfiltration:S3/MaliciousIPCaller",
+      "targetLabel": "Exfiltration:S3/MaliciousIPCaller"
     },
     {
       "axis": "findingType",
@@ -530,7 +651,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Impact:EC2/AbusedDomainRequest.Reputation",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -550,7 +671,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Impact:EC2/BitcoinDomainRequest.Reputation",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -570,7 +691,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Impact:EC2/MaliciousDomainRequest.Custom",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -590,7 +711,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Impact:EC2/MaliciousDomainRequest.Reputation",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -610,7 +731,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Impact:EC2/PortSweep",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -630,7 +751,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Impact:EC2/SuspiciousDomainRequest.Reputation",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -650,7 +771,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Impact:EC2/WinRMBruteForce",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -670,7 +791,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## Impact:IAMUser/AnomalousBehavior",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -683,6 +804,86 @@
       "status": "covered",
       "targetId": "Impact:IAMUser/AnomalousBehavior",
       "targetLabel": "Impact:IAMUser/AnomalousBehavior"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Impact:S3/AnomalousBehavior.Delete",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-impact-s3-anomalousbehavior-delete-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Impact:S3/AnomalousBehavior.Delete",
+      "targetLabel": "Impact:S3/AnomalousBehavior.Delete"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Impact:S3/AnomalousBehavior.Permission",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-impact-s3-anomalousbehavior-permission-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Impact:S3/AnomalousBehavior.Permission",
+      "targetLabel": "Impact:S3/AnomalousBehavior.Permission"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Impact:S3/AnomalousBehavior.Write",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-impact-s3-anomalousbehavior-write-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Impact:S3/AnomalousBehavior.Write",
+      "targetLabel": "Impact:S3/AnomalousBehavior.Write"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Impact:S3/MaliciousIPCaller",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-impact-s3-maliciousipcaller-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Impact:S3/MaliciousIPCaller",
+      "targetLabel": "Impact:S3/MaliciousIPCaller"
     },
     {
       "axis": "findingType",
@@ -730,7 +931,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## InitialAccess:IAMUser/AnomalousBehavior",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -750,7 +951,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## PenTest:IAMUser/KaliLinux",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -770,7 +971,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## PenTest:IAMUser/ParrotLinux",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -790,7 +991,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## PenTest:IAMUser/PentooLinux",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -809,8 +1010,68 @@
       "confidence": 0.95,
       "evidence": [
         {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## PenTest:S3/KaliLinux",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-pentest-s3-kalilinux-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PenTest:S3/KaliLinux",
+      "targetLabel": "PenTest:S3/KaliLinux"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## PenTest:S3/ParrotLinux",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-pentest-s3-parrotlinux-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PenTest:S3/ParrotLinux",
+      "targetLabel": "PenTest:S3/ParrotLinux"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## PenTest:S3/PentooLinux",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-pentest-s3-pentoolinux-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PenTest:S3/PentooLinux",
+      "targetLabel": "PenTest:S3/PentooLinux"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## Persistence:IAMUser/AnomalousBehavior",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -910,7 +1171,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## Policy:IAMUser/RootCredentialUsage",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -930,7 +1191,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## Policy:IAMUser/ShortTermRootCredentialUsage",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -943,6 +1204,86 @@
       "status": "covered",
       "targetId": "Policy:IAMUser/ShortTermRootCredentialUsage",
       "targetLabel": "Policy:IAMUser/ShortTermRootCredentialUsage"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Policy:S3/AccountBlockPublicAccessDisabled",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-policy-s3-accountblockpublicaccessdisabled-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Policy:S3/AccountBlockPublicAccessDisabled",
+      "targetLabel": "Policy:S3/AccountBlockPublicAccessDisabled"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Policy:S3/BucketAnonymousAccessGranted",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-policy-s3-bucketanonymousaccessgranted-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Policy:S3/BucketAnonymousAccessGranted",
+      "targetLabel": "Policy:S3/BucketAnonymousAccessGranted"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Policy:S3/BucketBlockPublicAccessDisabled",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-policy-s3-bucketblockpublicaccessdisabled-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Policy:S3/BucketBlockPublicAccessDisabled",
+      "targetLabel": "Policy:S3/BucketBlockPublicAccessDisabled"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Policy:S3/BucketPublicAccessGranted",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-policy-s3-bucketpublicaccessgranted-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Policy:S3/BucketPublicAccessGranted",
+      "targetLabel": "Policy:S3/BucketPublicAccessGranted"
     },
     {
       "axis": "findingType",
@@ -970,7 +1311,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## PrivilegeEscalation:IAMUser/AnomalousBehavior",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1010,7 +1351,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Recon:EC2/PortProbeEMRUnprotectedPort",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1030,7 +1371,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Recon:EC2/PortProbeUnprotectedPort",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1050,7 +1391,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Recon:EC2/Portscan",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1070,7 +1411,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## Recon:IAMUser/MaliciousIPCaller",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1090,7 +1431,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## Recon:IAMUser/MaliciousIPCaller.Custom",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1150,7 +1491,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## Recon:IAMUser/TorIPCaller",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1210,7 +1551,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## Stealth:IAMUser/CloudTrailLoggingDisabled",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1250,7 +1591,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## Stealth:IAMUser/PasswordPolicyChange",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1269,8 +1610,28 @@
       "confidence": 0.95,
       "evidence": [
         {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## Stealth:S3/ServerAccessLoggingDisabled",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-stealth-s3-serveraccessloggingdisabled-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Stealth:S3/ServerAccessLoggingDisabled",
+      "targetLabel": "Stealth:S3/ServerAccessLoggingDisabled"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Trojan:EC2/BlackholeTraffic",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1290,7 +1651,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Trojan:EC2/BlackholeTraffic\\!DNS",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1310,7 +1671,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Trojan:EC2/DGADomainRequest.B",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1330,7 +1691,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Trojan:EC2/DGADomainRequest.C\\!DNS",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1350,7 +1711,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Trojan:EC2/DNSDataExfiltration",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1370,7 +1731,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Trojan:EC2/DriveBySourceTraffic\\!DNS",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1390,7 +1751,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Trojan:EC2/DropPoint",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1410,7 +1771,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Trojan:EC2/DropPoint\\!DNS",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1430,7 +1791,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## Trojan:EC2/PhishingDomainRequest\\!DNS",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1450,7 +1811,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## UnauthorizedAccess:EC2/MaliciousIPCaller.Custom",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1470,7 +1831,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## UnauthorizedAccess:EC2/MetadataDNSRebind",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1490,7 +1851,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## UnauthorizedAccess:EC2/RDPBruteForce",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1510,7 +1871,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## UnauthorizedAccess:EC2/SSHBruteForce",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1530,7 +1891,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## UnauthorizedAccess:EC2/TorClient",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1570,7 +1931,7 @@
       "evidence": [
         {
           "bodySha256": "157a4fc8fffcd772551412a574407515ceb2829d63395eca853547c358b981d4",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: EC2 finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md :: GuardDuty EC2 finding types",
           "quote": "## UnauthorizedAccess:EC2/TorRelay",
           "retrievedAt": "2026-09-01T04:29:43.642Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md"
@@ -1610,7 +1971,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## UnauthorizedAccess:IAMUser/ConsoleLoginSuccess.B",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1630,7 +1991,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.InsideAWS",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1650,7 +2011,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.OutsideAWS",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1670,7 +2031,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## UnauthorizedAccess:IAMUser/MaliciousIPCaller",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1690,7 +2051,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## UnauthorizedAccess:IAMUser/MaliciousIPCaller.Custom",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1710,7 +2071,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.InsideAWS",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1730,7 +2091,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.OutsideAWS",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1750,7 +2111,7 @@
       "evidence": [
         {
           "bodySha256": "ae27e839b99a0a8dfbffd562809f27f21dc894e1023f7210806a41f3337b779e",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: IAM finding types",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md :: GuardDuty IAM finding types",
           "quote": "## UnauthorizedAccess:IAMUser/TorIPCaller",
           "retrievedAt": "2026-09-01T04:29:43.805Z",
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md"
@@ -1785,6 +2146,46 @@
       "targetLabel": "UnauthorizedAccess:IAMUser/UnusualASNCaller"
     },
     {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## UnauthorizedAccess:S3/MaliciousIPCaller.Custom",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-s3-maliciousipcaller-custom-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UnauthorizedAccess:S3/MaliciousIPCaller.Custom",
+      "targetLabel": "UnauthorizedAccess:S3/MaliciousIPCaller.Custom"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "82e0078d3a857e52a238236293b5675195b261bd0b096a3edd015ddfbf08b9ee",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md :: GuardDuty S3 Protection finding types",
+          "quote": "## UnauthorizedAccess:S3/TorIPCaller",
+          "retrievedAt": "2026-09-01T04:29:43.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-finding-type-headings",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-s3-toripcaller-recipe-guardduty-finding-type-headings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UnauthorizedAccess:S3/TorIPCaller",
+      "targetLabel": "UnauthorizedAccess:S3/TorIPCaller"
+    },
+    {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
@@ -1809,6 +2210,66 @@
       "confidence": 0.9,
       "evidence": [
         {
+          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
+          "quote": "| Asia Pacific (Seoul) | ap-northeast-2 |",
+          "retrievedAt": "2026-09-01T05:00:37.081Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-region-ap-northeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-2",
+      "targetLabel": "Asia Pacific (Seoul)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
+          "quote": "| Asia Pacific (Osaka) | ap-northeast-3 |",
+          "retrievedAt": "2026-09-01T05:00:37.081Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-region-ap-northeast-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-3",
+      "targetLabel": "Asia Pacific (Osaka)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
+          "quote": "| Asia Pacific (Jakarta) | ap-southeast-3 |",
+          "retrievedAt": "2026-09-01T05:00:37.081Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-region-ap-southeast-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-3",
+      "targetLabel": "Asia Pacific (Jakarta)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
           "bodySha256": "cf8e4b2d75a8b8fc4521030397266b3f5995b1e9328ad7bc9b0d33d8dc9115f2",
           "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md ::  | column \"GuardDuty Region\"",
           "quote": "| United States | Canada (Central) | Canada (Central), US East (N. Virginia), US East (Ohio), US West (Oregon) |",
@@ -1823,6 +2284,46 @@
       "status": "covered",
       "targetId": "ca-central-1",
       "targetLabel": "Canada (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
+          "quote": "| China (Beijing) | cn-north-1 |",
+          "retrievedAt": "2026-09-01T05:00:37.081Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-region-cn-north-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cn-north-1",
+      "targetLabel": "China (Beijing)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
+          "quote": "| China (Ningxia) | cn-northwest-1 |",
+          "retrievedAt": "2026-09-01T05:00:37.081Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-region-cn-northwest-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cn-northwest-1",
+      "targetLabel": "China (Ningxia)"
     },
     {
       "axis": "region",
@@ -1969,6 +2470,46 @@
       "confidence": 0.9,
       "evidence": [
         {
+          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
+          "quote": "| AWS GovCloud (US-East) | us-gov-east-1 |",
+          "retrievedAt": "2026-09-01T05:00:37.081Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-region-us-gov-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
+          "quote": "| AWS GovCloud (US-West) | us-gov-west-1 |",
+          "retrievedAt": "2026-09-01T05:00:37.081Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-region-us-gov-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
           "bodySha256": "cf8e4b2d75a8b8fc4521030397266b3f5995b1e9328ad7bc9b0d33d8dc9115f2",
           "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md ::  | column \"GuardDuty Region\"",
           "quote": "| United States | US West (Oregon) | US East (N. Virginia), US East (Ohio), US West (Oregon) |",
@@ -1983,10 +2524,470 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| Amazon S3 on Outposts | No | Malware Protection for S3 is not supported on Outposts. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-amazon-s3-on-outposts-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "Amazon S3 on Outposts",
+      "targetLabel": "Amazon S3 on Outposts"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| Data Encryption - S3-SSE<br />Data Encryption - SSE-KMS<br />Data Encryption - DSSE-KMS<br />AWS KMS - Customer managed key | Yes | GuardDuty supports malware scans for S3 objects that are encrypted with managed and customer managed keys. Ensure that the IAM role includes the permission to use the key. For more information, see [Adding IAM policy permissions](malware-protection-s3-iam-policy-prerequisite.md#attach-iam-policy-s3-malware-protection). |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-aws-kms-customer-managed-key-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS KMS - Customer managed key",
+      "targetLabel": "AWS KMS - Customer managed key"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| Client side encryption | No | When your Amazon S3 objects are encrypted by using Amazon S3 Encryption Client, your objects aren't exposed to any third party, including AWS. For information on why this is not supported, see [Protecting data by using client-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingClientSideEncryption.html). CSE-KMS encrypted objects are received as an encrypted blob where the encryption can't be determined. Therefore, GuardDuty processes them as they are received, and scans the encrypted blob as a regular file. GuardDuty doesn't return an `U…",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-client-side-encryption-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "Client side encryption",
+      "targetLabel": "Client side encryption"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| Data Encryption - S3-SSE<br />Data Encryption - SSE-KMS<br />Data Encryption - DSSE-KMS<br />AWS KMS - Customer managed key | Yes | GuardDuty supports malware scans for S3 objects that are encrypted with managed and customer managed keys. Ensure that the IAM role includes the permission to use the key. For more information, see [Adding IAM policy permissions](malware-protection-s3-iam-policy-prerequisite.md#attach-iam-policy-s3-malware-protection). |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-data-encryption-dsse-kms-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Data Encryption - DSSE-KMS",
+      "targetLabel": "Data Encryption - DSSE-KMS"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| Data Encryption - S3-SSE<br />Data Encryption - SSE-KMS<br />Data Encryption - DSSE-KMS<br />AWS KMS - Customer managed key | Yes | GuardDuty supports malware scans for S3 objects that are encrypted with managed and customer managed keys. Ensure that the IAM role includes the permission to use the key. For more information, see [Adding IAM policy permissions](malware-protection-s3-iam-policy-prerequisite.md#attach-iam-policy-s3-malware-protection). |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-data-encryption-s3-sse-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Data Encryption - S3-SSE",
+      "targetLabel": "Data Encryption - S3-SSE"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| Data Encryption - SSE-C | No | Malware Protection for S3 doesn't support scanning S3 objects that are encrypted with keys that are not accessible. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-data-encryption-sse-c-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "Data Encryption - SSE-C",
+      "targetLabel": "Data Encryption - SSE-C"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| Data Encryption - S3-SSE<br />Data Encryption - SSE-KMS<br />Data Encryption - DSSE-KMS<br />AWS KMS - Customer managed key | Yes | GuardDuty supports malware scans for S3 objects that are encrypted with managed and customer managed keys. Ensure that the IAM role includes the permission to use the key. For more information, see [Adding IAM policy permissions](malware-protection-s3-iam-policy-prerequisite.md#attach-iam-policy-s3-malware-protection). |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-data-encryption-sse-kms-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Data Encryption - SSE-KMS",
+      "targetLabel": "Data Encryption - SSE-KMS"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| Requester pays | Yes | Malware Protection for S3 can scan the buckets that are set up with *Requester Pays*. The requester will pay for the S3 calls. For more information, see [Using Requester Pays buckets for storage transfers and usage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html) in the *Amazon S3 User Guide*. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-requester-pays-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Requester pays",
+      "targetLabel": "Requester pays"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 Annotations | No | Malware Protection for S3 scans only the S3 object content. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-annotations-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "S3 Annotations",
+      "targetLabel": "S3 Annotations"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 object lock and legal hold | Yes | Locked S3 objects are locked based on WORM - Write Once Read Many. Malware Protection for S3 can access and scan the objects. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-object-lock-and-legal-hold-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "S3 object lock and legal hold",
+      "targetLabel": "S3 object lock and legal hold"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 Replication - scan replicated object | Yes | If the destination bucket is a protected resource, then GuardDuty will scan all the S3 objects that are replicated to the prefixes that are protected and monitored. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-replication-scan-replicated-object-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "S3 Replication - scan replicated object",
+      "targetLabel": "S3 Replication - scan replicated object"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 Replication: Replicate on scan result tag | No | You can't define a replication rule based on the scan result tag. Amazon S3 does't support replication for tag, except for on create. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-replication-replicate-on-scan-result-tag-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "S3 Replication: Replicate on scan result tag",
+      "targetLabel": "S3 Replication: Replicate on scan result tag"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 Storage Class - S3 Express One Zone (Directory bucket) | No | GuardDuty supports only general purpose buckets for Malware Protection for S3. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-express-one-zone-directory-bucket-recipe-guardduty-s3-feature-suppo",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "S3 Storage Class - S3 Express One Zone (Directory bucket)",
+      "targetLabel": "S3 Storage Class - S3 Express One Zone (Directory bucket)"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 Storage Class - S3 Glacier Flexible Retrieval<br />S3 Storage Class - S3 Glacier Deep Archive | No | The S3 objects must be restored before they can be accessed. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-glacier-deep-archive-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "S3 Storage Class - S3 Glacier Deep Archive",
+      "targetLabel": "S3 Storage Class - S3 Glacier Deep Archive"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 Storage Class - S3 Glacier Flexible Retrieval<br />S3 Storage Class - S3 Glacier Deep Archive | No | The S3 objects must be restored before they can be accessed. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-glacier-flexible-retrieval-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "S3 Storage Class - S3 Glacier Flexible Retrieval",
+      "targetLabel": "S3 Storage Class - S3 Glacier Flexible Retrieval"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 Storage Class - S3 Standard<br />S3 Storage Class - S3 Standard-Infrequent Access<br />S3 Storage Class - S3 One Zone-Infrequent Access<br />S3 Storage Class - S3 Glacier Instant Retrieval | Yes | S3 objects can be retrieved without restoring asynchronously. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-glacier-instant-retrieval-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "S3 Storage Class - S3 Glacier Instant Retrieval",
+      "targetLabel": "S3 Storage Class - S3 Glacier Instant Retrieval"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 Storage Class - S3 Intelligent-Tiering | Conditional |  +  Intelligent Tiering support is available for S3 objects in the Frequent, Infrequent, and Archive Instance Access tiers. <br />+  The opt-in Archive and Deep Archive tiers are not supported. <br />+  Intelligent Tiering always creates a new object in Frequent Access tier. Therefore, object scan on create is supported. <br />+  Future Intelligent tiering features might start out objects in Archive. Therefore, this is not supported.   |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-intelligent-tiering-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "unknown",
+      "targetId": "S3 Storage Class - S3 Intelligent-Tiering",
+      "targetLabel": "S3 Storage Class - S3 Intelligent-Tiering"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 Storage Class - S3 Standard<br />S3 Storage Class - S3 Standard-Infrequent Access<br />S3 Storage Class - S3 One Zone-Infrequent Access<br />S3 Storage Class - S3 Glacier Instant Retrieval | Yes | S3 objects can be retrieved without restoring asynchronously. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-one-zone-infrequent-access-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "S3 Storage Class - S3 One Zone-Infrequent Access",
+      "targetLabel": "S3 Storage Class - S3 One Zone-Infrequent Access"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 Storage Class - S3 Standard<br />S3 Storage Class - S3 Standard-Infrequent Access<br />S3 Storage Class - S3 One Zone-Infrequent Access<br />S3 Storage Class - S3 Glacier Instant Retrieval | Yes | S3 objects can be retrieved without restoring asynchronously. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-standard-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "S3 Storage Class - S3 Standard",
+      "targetLabel": "S3 Storage Class - S3 Standard"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 Storage Class - S3 Standard<br />S3 Storage Class - S3 Standard-Infrequent Access<br />S3 Storage Class - S3 One Zone-Infrequent Access<br />S3 Storage Class - S3 Glacier Instant Retrieval | Yes | S3 objects can be retrieved without restoring asynchronously. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-standard-infrequent-access-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "S3 Storage Class - S3 Standard-Infrequent Access",
+      "targetLabel": "S3 Storage Class - S3 Standard-Infrequent Access"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3 versioning | Yes | All the uploaded S3 objects are scanned for malware. If you uploaded an object with file version v1 and immediately uploaded another version override with v2, then GuardDuty will scan both the object file versions v1 and v2. However, the scan start time might not be in the same order. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-versioning-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "S3 versioning",
+      "targetLabel": "S3 versioning"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3: Storage lifecycle | Yes | You can define lifecycle policies based on the scan result tag. For example, auto-delete malicious objects. For more information about lifcycle configuration, see [Managing your storage lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html) in the *Amazon S3 User Guide*. |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-storage-lifecycle-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "S3: Storage lifecycle",
+      "targetLabel": "S3: Storage lifecycle"
+    },
+    {
+      "axis": "s3Feature",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
+          "quote": "| S3: Tag-based access control (TBAC) | Yes | You can define bucket resource policies based on your S3 object scan result tag. For example, prevent access to S3 objects that are not yet scanned, or GuardDuty detected threats. For more information, see [Using tag-based access control (TBAC) with Malware Protection for S3](tag-based-access-s3-malware-protection.md). |",
+          "retrievedAt": "2026-09-01T05:00:38.720Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-s3-feature-support",
+      "featureId": "guardduty/service-wide",
+      "id": "guardduty-service-wide-s3feature-s3-tag-based-access-control-tbac-recipe-guardduty-s3-feature-support",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "S3: Tag-based access control (TBAC)",
+      "targetLabel": "S3: Tag-based access control (TBAC)"
     }
   ],
   "featureId": "guardduty/service-wide",
-  "generatedAt": "2026-09-01T06:27:22.542Z",
+  "generatedAt": "2026-09-01T06:38:30.924Z",
   "serviceId": "guardduty",
   "unresolvedTargets": []
 }

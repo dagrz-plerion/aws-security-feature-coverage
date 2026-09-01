@@ -228,46 +228,6 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
-          "quote": "| Asia Pacific (Malaysia) | ap-southeast-5 | cloudtrail.ap-southeast-5.amazonaws.com | HTTPS | 08/22/2024 |",
-          "retrievedAt": "2026-09-01T04:29:00.761Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "cloudtrail/cloudtrail-lake-supported-regions",
-      "id": "cloudtrail-cloudtrail-lake-supported-regions-region-ap-southeast-5-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-5",
-      "targetLabel": "Asia Pacific (Malaysia)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
-          "quote": "| Asia Pacific (Thailand) | ap-southeast-7 | cloudtrail.ap-southeast-7.amazonaws.com | HTTPS | 01/07/2025 |",
-          "retrievedAt": "2026-09-01T04:29:00.761Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "cloudtrail/cloudtrail-lake-supported-regions",
-      "id": "cloudtrail-cloudtrail-lake-supported-regions-region-ap-southeast-7-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-7",
-      "targetLabel": "Asia Pacific (Thailand)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
           "bodySha256": "7ade1c34e4182802e53b8975d3d42b916526cb9128c2dc221ad4cdc34a5ebb59",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-supported-regions.md :: CloudTrail Lake supported Regions | column \"Region Name\"",
           "quote": "| Canada (Central) | ca-central-1 |",
@@ -282,66 +242,6 @@
       "status": "covered",
       "targetId": "ca-central-1",
       "targetLabel": "Canada (Central)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
-          "quote": "| Canada West (Calgary) | ca-west-1 | cloudtrail.ca-west-1.amazonaws.com | HTTPS | 12/20/2023 |",
-          "retrievedAt": "2026-09-01T04:29:00.761Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "cloudtrail/cloudtrail-lake-supported-regions",
-      "id": "cloudtrail-cloudtrail-lake-supported-regions-region-ca-west-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ca-west-1",
-      "targetLabel": "Canada West (Calgary)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
-          "quote": "| China (Beijing) | cn-north-1 | cloudtrail.cn-north-1.amazonaws.com.cn | HTTPS | 03/01/2014 |",
-          "retrievedAt": "2026-09-01T04:29:00.761Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "cloudtrail/cloudtrail-lake-supported-regions",
-      "id": "cloudtrail-cloudtrail-lake-supported-regions-region-cn-north-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "cn-north-1",
-      "targetLabel": "China (Beijing)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
-          "quote": "| China (Ningxia) | cn-northwest-1 | cloudtrail.cn-northwest-1.amazonaws.com.cn | HTTPS | 12/11/2017 |",
-          "retrievedAt": "2026-09-01T04:29:00.761Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "cloudtrail/cloudtrail-lake-supported-regions",
-      "id": "cloudtrail-cloudtrail-lake-supported-regions-region-cn-northwest-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "cn-northwest-1",
-      "targetLabel": "China (Ningxia)"
     },
     {
       "axis": "region",
@@ -568,26 +468,6 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "14c38d9167b6889664a395864832b5e2d097206083db18e842e071c8cee4d89e",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md :: CloudTrail supported Regions | column \"Region name\"",
-          "quote": "| Mexico (Central) | mx-central-1 | cloudtrail.mx-central-1.amazonaws.com | HTTPS | 01/13/2025 |",
-          "retrievedAt": "2026-09-01T04:29:00.761Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "cloudtrail/cloudtrail-lake-supported-regions",
-      "id": "cloudtrail-cloudtrail-lake-supported-regions-region-mx-central-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "mx-central-1",
-      "targetLabel": "Mexico (Central)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
           "bodySha256": "7ade1c34e4182802e53b8975d3d42b916526cb9128c2dc221ad4cdc34a5ebb59",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-supported-regions.md :: CloudTrail Lake supported Regions | column \"Region Name\"",
           "quote": "| South America (São Paulo) | sa-east-1 |",
@@ -725,7 +605,7 @@
     }
   ],
   "featureId": "cloudtrail/cloudtrail-lake-supported-regions",
-  "generatedAt": "2026-09-01T06:27:22.542Z",
+  "generatedAt": "2026-09-01T06:38:30.924Z",
   "serviceId": "cloudtrail",
   "unresolvedTargets": []
 }

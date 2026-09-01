@@ -43,8 +43,17 @@ const ASSERTS_COVERAGE =
 const NEVER_COVERAGE =
   /\b(quotas?|limits?|pricing|price|cost|billing|troubleshoot\w*|release notes|document history|tutorial|walkthrough|getting started|what'?s new|api reference|code examples?|sample code)\b/i;
 
-export function neverStatesCoverage(context: string): boolean {
-  return NEVER_COVERAGE.test(context);
+/**
+ * A page is judged on its own title. An ancestor chapter must not veto it: the IAM
+ * guide files "Supported resource types" under "Getting started with IAM Access
+ * Analyzer", and letting the chapter decide threw the page away.
+ */
+export function neverStatesCoverage(title: string, ancestors = ""): boolean {
+  if (NEVER_COVERAGE.test(title)) return true;
+  if (!ancestors) return false;
+  // The chapter only counts when the title itself says nothing either way.
+  if (assertsCoverage(title)) return false;
+  return NEVER_COVERAGE.test(ancestors);
 }
 
 /** Headings whose lists are navigation, never data. */
@@ -128,10 +137,10 @@ function statusFrom(value: string | undefined): CoverageStatus | undefined {
  * every universe; the column that resolves best names the targets. A table that
  * resolves poorly is left alone rather than guessed at.
  */
-export function extractFromTable(table: MdTable, resolver: TargetResolver, serviceId: string): ExtractionOutcome {
+export function extractFromTable(table: MdTable, resolver: TargetResolver, serviceId: string, blockHeading = ""): ExtractionOutcome {
   const unresolved: { axis: string; raw: string }[] = [];
   if (table.rows.length < MIN_VALUES) return { claims: [], unresolved };
-  const context = `${table.section.join(" > ")} | ${table.headers.join(" | ")}`;
+  const context = `${blockHeading} | ${table.section.join(" > ")} | ${table.headers.join(" | ")}`;
   if (isNavigation(context) || neverStatesCoverage(context) || !assertsCoverage(context)) {
     return { claims: [], unresolved };
   }
@@ -146,7 +155,7 @@ export function extractFromTable(table: MdTable, resolver: TargetResolver, servi
     }
   }
   if (!best) {
-    const catalog = catalogFromTable(table, serviceId);
+    const catalog = catalogFromTable(table, serviceId, blockHeading);
     if (catalog.length > 0) return { claims: catalog, unresolved };
     return { claims: [], unresolved, failure: "no column resolved to a known universe" };
   }
@@ -157,7 +166,7 @@ export function extractFromTable(table: MdTable, resolver: TargetResolver, servi
   ]);
   const qualifierColumn = findColumn(table.headers, [/note/i, /condition/i, /requirement/i, /comment/i]);
 
-  const tableNegated = statesAbsence(table.section.join(" "));
+  const tableNegated = statesAbsence(`${blockHeading} ${table.section.join(" ")}`);
   const claims: RawClaim[] = [];
   const seen = new Set<string>();
   for (let index = 0; index < table.rows.length; index += 1) {
@@ -198,11 +207,11 @@ function enoughTargets(claims: RawClaim[]): RawClaim[] {
 }
 
 /** A bullet list of supported things. Same resolution-rate test as a table column. */
-export function extractFromList(list: MdList, resolver: TargetResolver, serviceId: string): ExtractionOutcome {
+export function extractFromList(list: MdList, resolver: TargetResolver, serviceId: string, blockHeading = ""): ExtractionOutcome {
   const unresolved: { axis: string; raw: string }[] = [];
   const items = list.items.filter((item) => item.depth === 0).map((item) => item.text);
   if (items.length < MIN_VALUES) return { claims: [], unresolved };
-  const context = `${list.section.join(" > ")} | ${list.intro ?? ""}`;
+  const context = `${blockHeading} | ${list.section.join(" > ")} | ${list.intro ?? ""}`;
   if (isNavigation(context) || neverStatesCoverage(context) || !assertsCoverage(context)) {
     return { claims: [], unresolved };
   }
@@ -218,14 +227,14 @@ export function extractFromList(list: MdList, resolver: TargetResolver, serviceI
       "md-bullet-list",
       list.section.join(" > ") || (list.intro ?? ""),
       serviceId,
-      `${list.section.join(" ")} ${list.intro ?? ""}`,
-      statesAbsence(`${list.intro ?? ""} ${list.section.join(" ")}`),
+      `${blockHeading} ${list.section.join(" ")} ${list.intro ?? ""}`,
+      statesAbsence(`${blockHeading} ${list.intro ?? ""} ${list.section.join(" ")}`),
       list.intro,
     );
     return { claims: catalog, unresolved };
   }
 
-  const negated = statesAbsence(`${list.intro ?? ""} ${list.section.join(" ")}`);
+  const negated = statesAbsence(`${blockHeading} ${list.intro ?? ""} ${list.section.join(" ")}`);
   const claims: RawClaim[] = [];
   const seen = new Set<string>();
   for (const item of list.items) {
@@ -307,7 +316,7 @@ export function extractFromCodeSpans(body: string, serviceId: string): RawClaim[
   return catalogFromValues(values, "md-code-span", "inline code", serviceId, body.slice(0, 4000));
 }
 
-function catalogFromTable(table: MdTable, serviceId: string): RawClaim[] {
+function catalogFromTable(table: MdTable, serviceId: string, blockHeading = ""): RawClaim[] {
   for (let column = 0; column < table.headers.length; column += 1) {
     const values = table.rows
       .map((row, index) => ({ value: row[column] ?? "", quote: table.rawRows[index] ?? row[column] ?? "" }))
@@ -317,8 +326,8 @@ function catalogFromTable(table: MdTable, serviceId: string): RawClaim[] {
       "md-table",
       `${table.section.join(" > ")} | column "${table.headers[column] ?? column}"`,
       serviceId,
-      `${table.section.join(" ")} ${table.headers[column] ?? ""}`,
-      statesAbsence(table.section.join(" ")),
+      `${blockHeading} ${table.section.join(" ")} ${table.headers[column] ?? ""}`,
+      statesAbsence(`${blockHeading} ${table.section.join(" ")}`),
       table.section.at(-1),
     );
     if (claims.length > 0) return claims;
@@ -327,7 +336,7 @@ function catalogFromTable(table: MdTable, serviceId: string): RawClaim[] {
 }
 
 /** A run of headings, each naming one supported thing. */
-export function extractFromHeadings(body: string, resolver: TargetResolver, serviceId: string): ExtractionOutcome {
+export function extractFromHeadings(body: string, resolver: TargetResolver, serviceId: string, blockHeading = ""): ExtractionOutcome {
   const doc = parseMarkdown(body);
   const unresolved: { axis: string; raw: string }[] = [];
   const byLevel = new Map<number, { title: string; line: number }[]>();
@@ -340,7 +349,7 @@ export function extractFromHeadings(body: string, resolver: TargetResolver, serv
   for (const [level, sections] of byLevel) {
     const titles = sections.map((s) => s.title);
     if (titles.length < MIN_VALUES) continue;
-    const headingContext = `${doc.title ?? ""} ${titles.slice(0, 6).join(" ")}`;
+    const headingContext = `${blockHeading} ${doc.title ?? ""} ${titles.slice(0, 6).join(" ")}`;
     if (neverStatesCoverage(headingContext) || !assertsCoverage(headingContext)) continue;
     let best: { axis: Universe; rate: number } | undefined;
     for (const axis of AXES) {
@@ -353,7 +362,7 @@ export function extractFromHeadings(body: string, resolver: TargetResolver, serv
         "md-heading-series",
         `heading level ${level}`,
         serviceId,
-        `${doc.title ?? ""} ${titles.slice(0, 3).join(" ")}`,
+        `${blockHeading} ${doc.title ?? ""} ${titles.slice(0, 3).join(" ")}`,
         statesAbsence(doc.title ?? ""),
       );
       claims.push(...catalog);
@@ -382,24 +391,29 @@ export function extractFromHeadings(body: string, resolver: TargetResolver, serv
   return { claims: enoughTargets(claims), unresolved };
 }
 
-export function extractFromPage(body: string, resolver: TargetResolver, serviceId: string): ExtractionOutcome {
+/**
+ * `blockHeading` is the heading the block was cut from. Splitting a page by heading
+ * removes that line from the body, so without it the guards see no context at all and
+ * throw away the very lists the split was meant to separate.
+ */
+export function extractFromPage(body: string, resolver: TargetResolver, serviceId: string, blockHeading = ""): ExtractionOutcome {
   const doc = parseMarkdown(body);
   const claims: RawClaim[] = [];
   const unresolved: { axis: string; raw: string }[] = [];
   const failures: string[] = [];
 
   for (const table of doc.tables) {
-    const outcome = extractFromTable(table, resolver, serviceId);
+    const outcome = extractFromTable(table, resolver, serviceId, blockHeading);
     claims.push(...outcome.claims);
     unresolved.push(...outcome.unresolved);
     if (outcome.failure) failures.push(outcome.failure);
   }
   for (const list of doc.lists) {
-    const outcome = extractFromList(list, resolver, serviceId);
+    const outcome = extractFromList(list, resolver, serviceId, blockHeading);
     claims.push(...outcome.claims);
     unresolved.push(...outcome.unresolved);
   }
-  const headings = extractFromHeadings(body, resolver, serviceId);
+  const headings = extractFromHeadings(body, resolver, serviceId, blockHeading);
   claims.push(...headings.claims);
   if (claims.length === 0) unresolved.push(...headings.unresolved);
   claims.push(...extractFromCodeSpans(body, serviceId));
