@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "pipeline": "tsx src/cli/run.ts",
     "challenge": "tsx src/cli/challenge.ts",
@@ -12,7 +14,10 @@
     "report": "tsx src/report/build.ts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy": "tsx src/cli/deploy.ts",
+    "recall": "tsx src/cli/recall.ts",
+    "serve": "npx --yes http-server docs -p 8080 -c-1"
   },
   "dependencies": {
     "zod": "^3.24.1"
