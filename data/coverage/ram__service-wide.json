@@ -1,0 +1,752 @@
+{
+  "axes": [
+    "region",
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b463c66aeaaa450a7e2914a092dd504a396872a7bf0b4e415e84d1535254f963",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ram.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-East)",
+          "retrievedAt": "2026-09-01T05:00:40.658Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ram.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-region-us-gov-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b463c66aeaaa450a7e2914a092dd504a396872a7bf0b4e415e84d1535254f963",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ram.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-West)",
+          "retrievedAt": "2026-09-01T05:00:40.658Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ram.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-region-us-gov-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Private Certificate Authority",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-acm-pca-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "acm-pca",
+      "targetLabel": "AWS Private Certificate Authority"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Amazon API Gateway",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-apigateway-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "apigateway",
+      "targetLabel": "Amazon API Gateway"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS App Mesh",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-appmesh-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "appmesh",
+      "targetLabel": "AWS App Mesh"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Backup",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-backup-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "backup",
+      "targetLabel": "AWS Backup"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Amazon Bedrock",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-bedrock-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "bedrock",
+      "targetLabel": "Amazon Bedrock"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Billing and Cost Management",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-budgets-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "budgets",
+      "targetLabel": "Billing and Cost Management"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Amazon CloudFront",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-cloudfront-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudfront",
+      "targetLabel": "Amazon CloudFront"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS CloudHSM",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-cloudhsm-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudhsm",
+      "targetLabel": "AWS CloudHSM"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS CodeBuild",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-codebuild-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codebuild",
+      "targetLabel": "AWS CodeBuild"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS CodeConnections",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-codeconnections-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codeconnections",
+      "targetLabel": "AWS CodeConnections"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Amazon DataZone",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-datazone-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "datazone",
+      "targetLabel": "Amazon DataZone"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Amazon EC2",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-ec2-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Amazon EC2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Elastic Load Balancing",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-elasticloadbalancing-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticloadbalancing",
+      "targetLabel": "Elastic Load Balancing"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Amazon FSx for OpenZFS",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-fsx-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "fsx",
+      "targetLabel": "Amazon FSx for OpenZFS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Glue",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-glue-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "glue",
+      "targetLabel": "AWS Glue"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## EC2 Image Builder",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-imagebuilder-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "imagebuilder",
+      "targetLabel": "EC2 Image Builder"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS License Manager",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-license-manager-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "license-manager",
+      "targetLabel": "AWS License Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Marketplace",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-marketplacecommerceanalytics-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "marketplacecommerceanalytics",
+      "targetLabel": "AWS Marketplace"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Multi-party approval",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-mpa-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mpa",
+      "targetLabel": "Multi-party approval"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Network Firewall",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-network-firewall-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "network-firewall",
+      "targetLabel": "AWS Network Firewall"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Oracle Database@AWS",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-odb-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "odb",
+      "targetLabel": "Oracle Database@AWS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Outposts",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-outposts-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "outposts",
+      "targetLabel": "AWS Outposts"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS End User Messaging SMS",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-pinpoint-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "pinpoint",
+      "targetLabel": "AWS End User Messaging SMS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Amazon Aurora",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-product-amazon-aurora-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "product:amazon-aurora",
+      "targetLabel": "Amazon Aurora"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Cloud WAN",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-product-aws-cloud-wan-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "product:aws-cloud-wan",
+      "targetLabel": "AWS Cloud WAN"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Migration Hub Refactor Spaces",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-refactor-spaces-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "refactor-spaces",
+      "targetLabel": "AWS Migration Hub Refactor Spaces"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Resource Explorer",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-resource-explorer-2-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "resource-explorer-2",
+      "targetLabel": "AWS Resource Explorer"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Resource Groups",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-resource-groups-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "resource-groups",
+      "targetLabel": "AWS Resource Groups"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Amazon Route 53",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-route53-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "route53",
+      "targetLabel": "Amazon Route 53"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Amazon S3 on Outposts",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-s3-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Amazon S3 on Outposts"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Amazon SageMaker AI",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-sagemaker-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sagemaker",
+      "targetLabel": "Amazon SageMaker AI"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Cloud Map",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-servicediscovery-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "servicediscovery",
+      "targetLabel": "AWS Cloud Map"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Systems Manager",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-ssm-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ssm",
+      "targetLabel": "AWS Systems Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## AWS Systems Manager Incident Manager",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-ssm-incidents-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ssm-incidents",
+      "targetLabel": "AWS Systems Manager Incident Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: heading level 2",
+          "quote": "## Amazon VPC Lattice",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-service-vpc-lattice-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "vpc-lattice",
+      "targetLabel": "Amazon VPC Lattice"
+    }
+  ],
+  "featureId": "ram/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "ram",
+  "unresolvedTargets": []
+}

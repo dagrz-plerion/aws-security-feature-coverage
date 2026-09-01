@@ -1,0 +1,651 @@
+{
+  "axes": [
+    "region"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Africa (Cape Town) | In-Region only | Africa (Cape Town) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-af-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "af-south-1",
+      "targetLabel": "Africa (Cape Town)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Hong Kong) | Alternate Region | Asia Pacific (Singapore), Asia Pacific (Tokyo)[1](#cognito-email-alternate-regions-note) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-east-1",
+      "targetLabel": "Asia Pacific (Hong Kong)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Tokyo) | Backwards compatible | Asia Pacific (Tokyo), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-northeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-1",
+      "targetLabel": "Asia Pacific (Tokyo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Seoul) | Backwards compatible | Asia Pacific (Seoul), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-northeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-2",
+      "targetLabel": "Asia Pacific (Seoul)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Osaka) | In-Region only | Asia Pacific (Osaka) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-northeast-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-3",
+      "targetLabel": "Asia Pacific (Osaka)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Mumbai) | Backwards compatible | Asia Pacific (Mumbai), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-1",
+      "targetLabel": "Asia Pacific (Mumbai)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Hyderabad) | Alternate Region | Asia Pacific (Mumbai), Asia Pacific (Singapore)[1](#cognito-email-alternate-regions-note) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-2",
+      "targetLabel": "Asia Pacific (Hyderabad)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Singapore) | Backwards compatible | Asia Pacific (Singapore), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-southeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-1",
+      "targetLabel": "Asia Pacific (Singapore)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Sydney) | Backwards compatible | Asia Pacific (Sydney), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-southeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-2",
+      "targetLabel": "Asia Pacific (Sydney)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Jakarta) | In-Region only | Asia Pacific (Jakarta) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-southeast-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-3",
+      "targetLabel": "Asia Pacific (Jakarta)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Melbourne) | Alternate Region | Asia Pacific (Sydney), Asia Pacific (Singapore)[1](#cognito-email-alternate-regions-note) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-southeast-4-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-4",
+      "targetLabel": "Asia Pacific (Melbourne)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Malaysia) | Alternate Region | Asia Pacific (Sydney), Asia Pacific (Singapore)[1](#cognito-email-alternate-regions-note) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-southeast-5-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-5",
+      "targetLabel": "Asia Pacific (Malaysia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Asia Pacific (Thailand) | Alternate Region | Asia Pacific (Singapore), Asia Pacific (Mumbai)[1](#cognito-email-alternate-regions-note) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ap-southeast-7-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-7",
+      "targetLabel": "Asia Pacific (Thailand)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Canada (Central) | Backwards compatible | Canada (Central), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ca-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-central-1",
+      "targetLabel": "Canada (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Canada West (Calgary) | Alternate Region | Canada (Central), US West (N. California)[1](#cognito-email-alternate-regions-note) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-ca-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-west-1",
+      "targetLabel": "Canada West (Calgary)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Europe (Frankfurt) | Backwards compatible | Europe (Frankfurt), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-eu-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-1",
+      "targetLabel": "Europe (Frankfurt)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Europe (Zurich) | Alternate Region | Europe (Frankfurt), Europe (London)[1](#cognito-email-alternate-regions-note) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-eu-central-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-2",
+      "targetLabel": "Europe (Zurich)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Europe (Stockholm) | In-Region only | Europe (Stockholm) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-eu-north-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-north-1",
+      "targetLabel": "Europe (Stockholm)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Europe (Milan) | In-Region only | Europe (Milan) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-eu-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-1",
+      "targetLabel": "Europe (Milan)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Europe (Spain) | Alternate Region | Europe (Paris), Europe (Stockholm)[1](#cognito-email-alternate-regions-note) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-eu-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-2",
+      "targetLabel": "Europe (Spain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Europe (Ireland) | Backwards compatible | US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-eu-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-1",
+      "targetLabel": "Europe (Ireland)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Europe (London) | Backwards compatible | Europe (London), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-eu-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-2",
+      "targetLabel": "Europe (London)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Europe (Paris) | In-Region only | Europe (Paris) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-eu-west-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-3",
+      "targetLabel": "Europe (Paris)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Israel (Tel Aviv) | In-Region only | Israel (Tel Aviv) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-il-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "il-central-1",
+      "targetLabel": "Israel (Tel Aviv)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Middle East (UAE) | Alternate Region | Europe (Frankfurt), Europe (London)[1](#cognito-email-alternate-regions-note) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-me-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "me-central-1",
+      "targetLabel": "Middle East (UAE)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Middle East (Bahrain) | In-Region only | Middle East (Bahrain) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-me-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "me-south-1",
+      "targetLabel": "Middle East (Bahrain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| Mexico (Central) | Alternate Region | US East (N. Virginia), US West (Oregon)[1](#cognito-email-alternate-regions-note) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-mx-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mx-central-1",
+      "targetLabel": "Mexico (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| South America (São Paulo) | In-Region only | South America (São Paulo) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-sa-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sa-east-1",
+      "targetLabel": "South America (São Paulo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| US East (N. Virginia) | Backwards compatible | US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-us-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| US East (Ohio) | Backwards compatible | US East (Ohio), US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-us-east-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-2",
+      "targetLabel": "US East (Ohio)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| US West (N. California) | In-Region only | US West (N. California) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-us-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-1",
+      "targetLabel": "US West (N. California)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "0e927ebb0c71a508a5ef506979e01e3610c12f8b4019ed636f29983ee83f84b2",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md :: Email settings for Amazon Cognito user pools > Amazon SES email configuration > Amazon SES email configuration Regions | column \"User pool Region\"",
+          "quote": "| US West (Oregon) | Backwards compatible | US East (N. Virginia), US West (Oregon), Europe (Ireland) |",
+          "retrievedAt": "2026-09-01T04:59:50.752Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-region-us-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
+    }
+  ],
+  "featureId": "cognito-idp/amazon-cognito-user-pools",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "cognito-idp",
+  "unresolvedTargets": []
+}

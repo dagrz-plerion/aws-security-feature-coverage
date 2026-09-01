@@ -1,0 +1,191 @@
+{
+  "axes": [
+    "region"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "970292dc8440231c54f52976c21f857cefefd80074418b7bb546d9974a88d075",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Tokyo) | `ap-northeast-1` | `apne1-az1`<br />`apne1-az4` | `s3express-control.ap-northeast-1.amazonaws.com`<br />`s3express-control-dualstack.ap-northeast-1.amazonaws.com` | `s3express-apne1-az1.ap-northeast-1.amazonaws.com`<br />`s3express-apne1-az1.dualstack.ap-northeast-1.amazonaws.com`<br />`s3express-apne1-az4.ap-northeast-1.amazonaws.com`<br />`s3express-apne1-az4.dualstack.ap-northeast-1.amazonaws.com` |",
+          "retrievedAt": "2026-09-01T04:29:30.380Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "s3/service-wide",
+      "id": "s3-service-wide-region-ap-northeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-1",
+      "targetLabel": "Asia Pacific (Tokyo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "970292dc8440231c54f52976c21f857cefefd80074418b7bb546d9974a88d075",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Mumbai) | `ap-south-1` | `aps1-az1`<br />`aps1-az3` | `s3express-control.ap-south-1.amazonaws.com`<br />`s3express-control-dualstack.ap-south-1.amazonaws.com` | `s3express-aps1-az1.ap-south-1.amazonaws.com`<br />`s3express-aps1-az1.dualstack.ap-south-1.amazonaws.com`<br />`s3express-aps1-az3.ap-south-1.amazonaws.com`<br />`s3express-aps1-az3.dualstack.ap-south-1.amazonaws.com` |",
+          "retrievedAt": "2026-09-01T04:29:30.380Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "s3/service-wide",
+      "id": "s3-service-wide-region-ap-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-1",
+      "targetLabel": "Asia Pacific (Mumbai)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0ece72f57ebed66cc36a19f2c4ce0d801730b579628e55186f96568c9b80ab7c",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md :: Using Multi-Region Access Points with supported API operations > Update a Multi-Region Access Point route configuration",
+          "quote": "+ `ap-southeast-2`",
+          "retrievedAt": "2026-09-01T04:34:56.967Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "s3/service-wide",
+      "id": "s3-service-wide-region-ap-southeast-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-2",
+      "targetLabel": "ap-southeast-2"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "970292dc8440231c54f52976c21f857cefefd80074418b7bb546d9974a88d075",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md ::  | column \"Region name\"",
+          "quote": "| Europe (Frankfurt) | `eu-central-1` | `euc1-az1`<br />`euc1-az2` | `s3express-control.eu-central-1.amazonaws.com`<br />`s3express-control-dualstack.eu-central-1.amazonaws.com` | `s3express-euc1-az1.eu-central-1.amazonaws.com`<br />`s3express-euc1-az1.dualstack.eu-central-1.amazonaws.com`<br />`s3express-euc1-az2.eu-central-1.amazonaws.com`<br />`s3express-euc1-az2.dualstack.eu-central-1.amazonaws.com` |",
+          "retrievedAt": "2026-09-01T04:29:30.380Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "s3/service-wide",
+      "id": "s3-service-wide-region-eu-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-1",
+      "targetLabel": "Europe (Frankfurt)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "970292dc8440231c54f52976c21f857cefefd80074418b7bb546d9974a88d075",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md ::  | column \"Region name\"",
+          "quote": "| Europe (Stockholm) | `eu-north-1` | `eun1-az1`<br />`eun1-az2`<br />`eun1-az3` | `s3express-control.eu-north-1.amazonaws.com`<br />`s3express-control-dualstack.eu-north-1.amazonaws.com` | `s3express-eun1-az1.eu-north-1.amazonaws.com`<br />`s3express-eun1-az1.dualstack.eu-north-1.amazonaws.com`<br />`s3express-eun1-az2.eu-north-1.amazonaws.com`<br />`s3express-eun1-az2.dualstack.eu-north-1.amazonaws.com`<br />`s3express-eun1-az3.eu-north-1.amazonaws.com`<br />`s3express-eun1-az3.dualstack.eu-north-1.amazonaws.com` |",
+          "retrievedAt": "2026-09-01T04:29:30.380Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "s3/service-wide",
+      "id": "s3-service-wide-region-eu-north-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-north-1",
+      "targetLabel": "Europe (Stockholm)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "970292dc8440231c54f52976c21f857cefefd80074418b7bb546d9974a88d075",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md ::  | column \"Region name\"",
+          "quote": "| Europe (Ireland) | `eu-west-1` | `euw1-az1`<br />`euw1-az3` | `s3express-control.eu-west-1.amazonaws.com`<br />`s3express-control-dualstack.eu-west-1.amazonaws.com` | `s3express-euw1-az1.eu-west-1.amazonaws.com`<br />`s3express-euw1-az1.dualstack.eu-west-1.amazonaws.com`<br />`s3express-euw1-az3.eu-west-1.amazonaws.com`<br />`s3express-euw1-az3.dualstack.eu-west-1.amazonaws.com` |",
+          "retrievedAt": "2026-09-01T04:29:30.380Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "s3/service-wide",
+      "id": "s3-service-wide-region-eu-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-1",
+      "targetLabel": "Europe (Ireland)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "970292dc8440231c54f52976c21f857cefefd80074418b7bb546d9974a88d075",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md ::  | column \"Region name\"",
+          "quote": "| US East (N. Virginia) | `us-east-1` | `use1-az4`<br />`use1-az5`<br />`use1-az6` | `s3express-control.us-east-1.amazonaws.com`<br />`s3express-control-dualstack.us-east-1.amazonaws.com ` | `s3express-use1-az4.us-east-1.amazonaws.com`<br />`s3express-use1-az4.dualstack.us-east-1.amazonaws.com`<br />`s3express-use1-az5.us-east-1.amazonaws.com`<br />`s3express-use1-az5.dualstack.us-east-1.amazonaws.com`<br />`s3express-use1-az6.us-east-1.amazonaws.com`<br />`s3express-use1-az6.dualstack.us-east-1.amazonaws.com` |",
+          "retrievedAt": "2026-09-01T04:29:30.380Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "s3/service-wide",
+      "id": "s3-service-wide-region-us-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "970292dc8440231c54f52976c21f857cefefd80074418b7bb546d9974a88d075",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md ::  | column \"Region name\"",
+          "quote": "| US East (Ohio) | `us-east-2` | `use2-az1`<br />`use2-az2` | `s3express-control.us-east-2.amazonaws.com`<br />`s3express-control-dualstack.us-east-2.amazonaws.com` | `s3express-use2-az1.us-east-2.amazonaws.com`<br />`s3express-use2-az1.dualstack.us-east-2.amazonaws.com`<br />`s3express-use2-az2.us-east-2.amazonaws.com`<br />`s3express-use2-az2.dualstack.us-east-2.amazonaws.com` |",
+          "retrievedAt": "2026-09-01T04:29:30.380Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "s3/service-wide",
+      "id": "s3-service-wide-region-us-east-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-2",
+      "targetLabel": "US East (Ohio)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "970292dc8440231c54f52976c21f857cefefd80074418b7bb546d9974a88d075",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md ::  | column \"Region name\"",
+          "quote": "| US West (Oregon) | `us-west-2` | `usw2-az1`<br />`usw2-az3`<br />`usw2-az4` | `s3express-control.us-west-2.amazonaws.com`<br />`s3express-control-dualstack.us-west-2.amazonaws.com` | `s3express-usw2-az1.us-west-2.amazonaws.com`<br />`s3express-usw2-az1.dualstack.us-west-2.amazonaws.com`<br />`s3express-usw2-az3.us-west-2.amazonaws.com`<br />`s3express-usw2-az3.dualstack.us-west-2.amazonaws.com`<br />`s3express-usw2-az4.us-west-2.amazonaws.com`<br />`s3express-usw2-az4.dualstack.us-west-2.amazonaws.com` |",
+          "retrievedAt": "2026-09-01T04:29:30.380Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-az-networking.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "s3/service-wide",
+      "id": "s3-service-wide-region-us-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
+    }
+  ],
+  "featureId": "s3/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "s3",
+  "unresolvedTargets": []
+}

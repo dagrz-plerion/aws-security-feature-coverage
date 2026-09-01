@@ -4,9 +4,10 @@ import { makeEvidence } from "../core/evidence.js";
 import type { FetchResult } from "../core/fetch.js";
 import type { CoverageStatus } from "../core/schema.js";
 import type { TargetResolver, Universe } from "./resolvers.js";
+import { catalogTargetId, classifyCatalog, splitCatalogCell } from "./catalog.js";
 
 export type RawClaim = {
-  axis: Universe;
+  axis: Universe | string;
   targetId: string;
   targetLabel: string;
   status: CoverageStatus;
@@ -79,7 +80,7 @@ function statusFrom(value: string | undefined): CoverageStatus | undefined {
  * every universe; the column that resolves best names the targets. A table that
  * resolves poorly is left alone rather than guessed at.
  */
-export function extractFromTable(table: MdTable, resolver: TargetResolver): ExtractionOutcome {
+export function extractFromTable(table: MdTable, resolver: TargetResolver, serviceId: string): ExtractionOutcome {
   const unresolved: { axis: string; raw: string }[] = [];
   if (table.rows.length < MIN_VALUES) return { claims: [], unresolved };
 
@@ -92,7 +93,11 @@ export function extractFromTable(table: MdTable, resolver: TargetResolver): Extr
       if (rate >= MIN_RESOLUTION_RATE && (!best || rate > best.rate)) best = { axis, column, rate };
     }
   }
-  if (!best) return { claims: [], unresolved, failure: "no column resolved to a known universe" };
+  if (!best) {
+    const catalog = catalogFromTable(table, serviceId);
+    if (catalog.length > 0) return { claims: catalog, unresolved };
+    return { claims: [], unresolved, failure: "no column resolved to a known universe" };
+  }
 
   const statusColumn = findColumn(table.headers, [
     /support/i, /available/i, /status/i, /covered/i, /enabled/i, /^yes/i,
@@ -132,7 +137,7 @@ export function extractFromTable(table: MdTable, resolver: TargetResolver): Extr
 }
 
 /** A bullet list of supported things. Same resolution-rate test as a table column. */
-export function extractFromList(list: MdList, resolver: TargetResolver): ExtractionOutcome {
+export function extractFromList(list: MdList, resolver: TargetResolver, serviceId: string): ExtractionOutcome {
   const unresolved: { axis: string; raw: string }[] = [];
   const items = list.items.filter((item) => item.depth === 0).map((item) => item.text);
   if (items.length < MIN_VALUES) return { claims: [], unresolved };
@@ -142,7 +147,16 @@ export function extractFromList(list: MdList, resolver: TargetResolver): Extract
     const { rate } = resolver.rate(items, axis);
     if (rate >= MIN_RESOLUTION_RATE && (!best || rate > best.rate)) best = { axis, rate };
   }
-  if (!best) return { claims: [], unresolved };
+  if (!best) {
+    const catalog = catalogFromValues(
+      list.items.filter((i) => i.depth === 0).map((i) => ({ value: i.text, quote: i.raw })),
+      "md-bullet-list",
+      list.section.join(" > ") || (list.intro ?? ""),
+      serviceId,
+      `${list.section.join(" ")} ${list.intro ?? ""}`,
+    );
+    return { claims: catalog, unresolved };
+  }
 
   const negated = /\bnot\b.*\b(support|available|include)/i.test(list.intro ?? "");
   const claims: RawClaim[] = [];
@@ -171,8 +185,76 @@ export function extractFromList(list: MdList, resolver: TargetResolver): Extract
   return { claims, unresolved };
 }
 
+/** Build claims from a set of values that form a known catalog. */
+export function catalogFromValues(
+  values: { value: string; quote: string }[],
+  extractorId: string,
+  locator: string,
+  serviceId: string,
+  context: string,
+): RawClaim[] {
+  const expanded = values.flatMap((entry) =>
+    splitCatalogCell(entry.value).map((value) => ({ value, quote: entry.quote })),
+  );
+  const match = classifyCatalog(expanded.map((v) => v.value), serviceId, context);
+  if (!match) return [];
+  const claims: RawClaim[] = [];
+  const seen = new Set<string>();
+  for (const entry of expanded) {
+    const value = entry.value.trim();
+    if (!match.shape.test.test(value)) continue;
+    if (value.length > (match.shape.maxLength ?? 120)) continue;
+    const targetId = catalogTargetId(match.shape.axis, value);
+    if (seen.has(targetId)) continue;
+    seen.add(targetId);
+    claims.push({
+      axis: match.shape.axis,
+      targetId,
+      targetLabel: value,
+      status: "covered",
+      extractorId,
+      quote: entry.quote.trim(),
+      locator,
+    });
+  }
+  return claims;
+}
+
+/**
+ * Some catalogs are named only in running text, marked as code. AWS WAF lists its
+ * managed rule groups that way: "VendorName: `AWS`, Name: `AWSManagedRulesCommonRuleSet`".
+ */
+export function extractFromCodeSpans(body: string, serviceId: string): RawClaim[] {
+  const lines = body.split("\n");
+  const values: { value: string; quote: string }[] = [];
+  for (const line of lines) {
+    for (const m of line.matchAll(/`([^`\n]{3,80})`/g)) {
+      values.push({ value: (m[1] ?? "").trim(), quote: line.trim() });
+    }
+  }
+  if (values.length < 3) return [];
+  return catalogFromValues(values, "md-code-span", "inline code", serviceId, body.slice(0, 4000));
+}
+
+function catalogFromTable(table: MdTable, serviceId: string): RawClaim[] {
+  for (let column = 0; column < table.headers.length; column += 1) {
+    const values = table.rows
+      .map((row, index) => ({ value: row[column] ?? "", quote: table.rawRows[index] ?? row[column] ?? "" }))
+      .filter((v) => v.value);
+    const claims = catalogFromValues(
+      values,
+      "md-table",
+      `${table.section.join(" > ")} | column "${table.headers[column] ?? column}"`,
+      serviceId,
+      `${table.section.join(" ")} ${table.headers[column] ?? ""}`,
+    );
+    if (claims.length > 0) return claims;
+  }
+  return [];
+}
+
 /** A run of headings, each naming one supported thing. */
-export function extractFromHeadings(body: string, resolver: TargetResolver): ExtractionOutcome {
+export function extractFromHeadings(body: string, resolver: TargetResolver, serviceId: string): ExtractionOutcome {
   const doc = parseMarkdown(body);
   const unresolved: { axis: string; raw: string }[] = [];
   const byLevel = new Map<number, { title: string; line: number }[]>();
@@ -190,7 +272,17 @@ export function extractFromHeadings(body: string, resolver: TargetResolver): Ext
       const { rate } = resolver.rate(titles, axis);
       if (rate >= MIN_RESOLUTION_RATE && (!best || rate > best.rate)) best = { axis, rate };
     }
-    if (!best) continue;
+    if (!best) {
+      const catalog = catalogFromValues(
+        sections.map((section) => ({ value: section.title, quote: (doc.lines[section.line] ?? section.title).trim() })),
+        "md-heading-series",
+        `heading level ${level}`,
+        serviceId,
+        `${doc.title ?? ""} ${titles.slice(0, 3).join(" ")}`,
+      );
+      claims.push(...catalog);
+      continue;
+    }
     const seen = new Set<string>();
     for (const section of sections) {
       const hit = resolver.resolve(section.title, best.axis);
@@ -214,28 +306,27 @@ export function extractFromHeadings(body: string, resolver: TargetResolver): Ext
   return { claims, unresolved };
 }
 
-export function extractFromPage(body: string, resolver: TargetResolver): ExtractionOutcome {
+export function extractFromPage(body: string, resolver: TargetResolver, serviceId: string): ExtractionOutcome {
   const doc = parseMarkdown(body);
   const claims: RawClaim[] = [];
   const unresolved: { axis: string; raw: string }[] = [];
   const failures: string[] = [];
 
   for (const table of doc.tables) {
-    const outcome = extractFromTable(table, resolver);
+    const outcome = extractFromTable(table, resolver, serviceId);
     claims.push(...outcome.claims);
     unresolved.push(...outcome.unresolved);
     if (outcome.failure) failures.push(outcome.failure);
   }
   for (const list of doc.lists) {
-    const outcome = extractFromList(list, resolver);
+    const outcome = extractFromList(list, resolver, serviceId);
     claims.push(...outcome.claims);
     unresolved.push(...outcome.unresolved);
   }
-  if (claims.length === 0) {
-    const outcome = extractFromHeadings(body, resolver);
-    claims.push(...outcome.claims);
-    unresolved.push(...outcome.unresolved);
-  }
+  const headings = extractFromHeadings(body, resolver, serviceId);
+  claims.push(...headings.claims);
+  if (claims.length === 0) unresolved.push(...headings.unresolved);
+  claims.push(...extractFromCodeSpans(body, serviceId));
   return {
     claims,
     unresolved,

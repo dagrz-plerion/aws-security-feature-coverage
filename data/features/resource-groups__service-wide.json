@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "service-level"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "130a3f7e18bca7e6f044b5549a6b59c5f81b33dea7573f5dc542c643d18b521a",
+      "locator": "Security > Identity and access management",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/ARG/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:00.822Z",
+      "sourceUrl": "https://docs.aws.amazon.com/ARG/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "resource-groups/service-wide",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "resource-groups: stated for the service as a whole",
+  "serviceId": "resource-groups",
+  "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+  "tier": "tier2"
+}

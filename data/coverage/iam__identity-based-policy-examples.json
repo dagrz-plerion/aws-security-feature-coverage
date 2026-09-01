@@ -1,0 +1,433 @@
+{
+  "axes": [
+    "resourceType",
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0742a7e00f273263bebd56a777c9efdff721b6c226ac5a1cedba7d59addbd634",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md :: Topics",
+          "quote": "+ [Neptune clusters](#permissions-for-neptune-clusters)",
+          "retrievedAt": "2026-09-01T04:58:52.227Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-resourcetype-aps-cluster-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "aps:cluster",
+      "targetLabel": "Neptune clusters"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0742a7e00f273263bebd56a777c9efdff721b6c226ac5a1cedba7d59addbd634",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md :: Topics",
+          "quote": "+ [AppStream 2.0 fleets](#permissions-for-appstream-fleets)",
+          "retrievedAt": "2026-09-01T04:58:52.227Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-resourcetype-aws-appstream-fleet-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::AppStream::Fleet",
+      "targetLabel": "AppStream 2.0 fleets"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0742a7e00f273263bebd56a777c9efdff721b6c226ac5a1cedba7d59addbd634",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md :: Topics",
+          "quote": "+ [Amazon Keyspaces tables](#permissions-for-keyspaces-tables)",
+          "retrievedAt": "2026-09-01T04:58:52.227Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-resourcetype-aws-cassandra-table-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Cassandra::Table",
+      "targetLabel": "Amazon Keyspaces tables"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0742a7e00f273263bebd56a777c9efdff721b6c226ac5a1cedba7d59addbd634",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md :: Topics",
+          "quote": "+ [Custom resources](#permissions-for-custom-resources)",
+          "retrievedAt": "2026-09-01T04:58:52.227Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-resourcetype-aws-cloudformation-customresource-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::CloudFormation::CustomResource",
+      "targetLabel": "Custom resources"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0742a7e00f273263bebd56a777c9efdff721b6c226ac5a1cedba7d59addbd634",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md :: Topics",
+          "quote": "+ [DynamoDB tables and global secondary indexes](#permissions-for-dynamodb-tables-and-gsis)",
+          "retrievedAt": "2026-09-01T04:58:52.227Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-resourcetype-aws-dynamodb-table-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::DynamoDB::Table",
+      "targetLabel": "DynamoDB tables"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0742a7e00f273263bebd56a777c9efdff721b6c226ac5a1cedba7d59addbd634",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md :: Topics",
+          "quote": "+ [ECS services](#permissions-for-ecs-services)",
+          "retrievedAt": "2026-09-01T04:58:52.227Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-resourcetype-aws-ecs-service-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::ECS::Service",
+      "targetLabel": "ECS services"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0742a7e00f273263bebd56a777c9efdff721b6c226ac5a1cedba7d59addbd634",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md :: Topics",
+          "quote": "+ [ElastiCache replication groups](#permissions-for-elasticache)",
+          "retrievedAt": "2026-09-01T04:58:52.227Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-resourcetype-aws-elasticache-replicationgroup-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::ElastiCache::ReplicationGroup",
+      "targetLabel": "ElastiCache replication groups"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0742a7e00f273263bebd56a777c9efdff721b6c226ac5a1cedba7d59addbd634",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md :: Topics",
+          "quote": "+ [Amazon EMR clusters](#permissions-for-emr-clusters)",
+          "retrievedAt": "2026-09-01T04:58:52.227Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-resourcetype-aws-emr-cluster-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::EMR::Cluster",
+      "targetLabel": "Amazon EMR clusters"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0742a7e00f273263bebd56a777c9efdff721b6c226ac5a1cedba7d59addbd634",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md :: Topics",
+          "quote": "+ [Lambda functions](#permissions-for-lambda-functions)",
+          "retrievedAt": "2026-09-01T04:58:52.227Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-resourcetype-aws-lambda-function-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Lambda::Function",
+      "targetLabel": "Lambda functions"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "79d3ad034be1804b4475b2c75fc2a1df456d591e925bb16e668c0ed7b704711c",
+          "locator": "https://docs.aws.amazon.com/transcribe/latest/dg/security_iam_id-based-policy-examples.md :: heading level 3",
+          "quote": "### Amazon S3 input bucket policy",
+          "retrievedAt": "2026-09-01T04:59:27.730Z",
+          "sourceUrl": "https://docs.aws.amazon.com/transcribe/latest/dg/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-resourcetype-aws-s3-bucketpolicy-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::S3::BucketPolicy",
+      "targetLabel": "Amazon S3 input bucket policy"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0742a7e00f273263bebd56a777c9efdff721b6c226ac5a1cedba7d59addbd634",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md :: Topics",
+          "quote": "+ [SageMaker AI endpoints](#permissions-for-sagemaker-endpoints)",
+          "retrievedAt": "2026-09-01T04:58:52.227Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-resourcetype-aws-sagemaker-endpoint-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::SageMaker::Endpoint",
+      "targetLabel": "SageMaker AI endpoints"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18477d8bc7ad72224876d6519eeba6b7ef560dca55f33c2c12a30fafc0c132eb",
+          "locator": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md :: If you use the CodeDeploy console, you must have a minimum set of permissions that allows you to describe other AWS resources for your AWS account. To use CodeDeploy in the CodeDeploy console, you must have permissions from the following services:",
+          "quote": "+ Amazon EC2 Auto Scaling",
+          "retrievedAt": "2026-09-01T04:58:54.655Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-service-autoscaling-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "autoscaling",
+      "targetLabel": "Amazon EC2 Auto Scaling"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18477d8bc7ad72224876d6519eeba6b7ef560dca55f33c2c12a30fafc0c132eb",
+          "locator": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md :: If you use the CodeDeploy console, you must have a minimum set of permissions that allows you to describe other AWS resources for your AWS account. To use CodeDeploy in the CodeDeploy console, you must have permissions from the following services:",
+          "quote": "+ Amazon CloudWatch",
+          "retrievedAt": "2026-09-01T04:58:54.655Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-service-cloudwatch-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudwatch",
+      "targetLabel": "Amazon CloudWatch"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18477d8bc7ad72224876d6519eeba6b7ef560dca55f33c2c12a30fafc0c132eb",
+          "locator": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md :: If you use the CodeDeploy console, you must have a minimum set of permissions that allows you to describe other AWS resources for your AWS account. To use CodeDeploy in the CodeDeploy console, you must have permissions from the following services:",
+          "quote": "+ AWS CodeDeploy",
+          "retrievedAt": "2026-09-01T04:58:54.655Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-service-codedeploy-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codedeploy",
+      "targetLabel": "AWS CodeDeploy"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18477d8bc7ad72224876d6519eeba6b7ef560dca55f33c2c12a30fafc0c132eb",
+          "locator": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md :: If you use the CodeDeploy console, you must have a minimum set of permissions that allows you to describe other AWS resources for your AWS account. To use CodeDeploy in the CodeDeploy console, you must have permissions from the following services:",
+          "quote": "+ Amazon Elastic Compute Cloud",
+          "retrievedAt": "2026-09-01T04:58:54.655Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-service-ec2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Amazon Elastic Compute Cloud"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18477d8bc7ad72224876d6519eeba6b7ef560dca55f33c2c12a30fafc0c132eb",
+          "locator": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md :: If you use the CodeDeploy console, you must have a minimum set of permissions that allows you to describe other AWS resources for your AWS account. To use CodeDeploy in the CodeDeploy console, you must have permissions from the following services:",
+          "quote": "+ Elastic Load Balancing",
+          "retrievedAt": "2026-09-01T04:58:54.655Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-service-elasticloadbalancing-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticloadbalancing",
+      "targetLabel": "Elastic Load Balancing"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18477d8bc7ad72224876d6519eeba6b7ef560dca55f33c2c12a30fafc0c132eb",
+          "locator": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md :: If you use the CodeDeploy console, you must have a minimum set of permissions that allows you to describe other AWS resources for your AWS account. To use CodeDeploy in the CodeDeploy console, you must have permissions from the following services:",
+          "quote": "+ AWS Identity and Access Management",
+          "retrievedAt": "2026-09-01T04:58:54.655Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-service-iam-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iam",
+      "targetLabel": "AWS Identity and Access Management"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18477d8bc7ad72224876d6519eeba6b7ef560dca55f33c2c12a30fafc0c132eb",
+          "locator": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md :: If you use the CodeDeploy console, you must have a minimum set of permissions that allows you to describe other AWS resources for your AWS account. To use CodeDeploy in the CodeDeploy console, you must have permissions from the following services:",
+          "quote": "+ Amazon Simple Storage Service",
+          "retrievedAt": "2026-09-01T04:58:54.655Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-service-s3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Amazon Simple Storage Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18477d8bc7ad72224876d6519eeba6b7ef560dca55f33c2c12a30fafc0c132eb",
+          "locator": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md :: If you use the CodeDeploy console, you must have a minimum set of permissions that allows you to describe other AWS resources for your AWS account. To use CodeDeploy in the CodeDeploy console, you must have permissions from the following services:",
+          "quote": "+ Amazon Simple Notification Service",
+          "retrievedAt": "2026-09-01T04:58:54.655Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-service-sns-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sns",
+      "targetLabel": "Amazon Simple Notification Service"
+    }
+  ],
+  "featureId": "iam/identity-based-policy-examples",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "iam",
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "Aurora replicas",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Amazon Comprehend document classification and entity recognizer endpoints",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Amazon Managed Streaming for Apache Kafka (MSK) broker storage",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Spot Fleets (Amazon EC2)",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Aurora replicas",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Amazon Comprehend document classification and entity recognizer endpoints",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Amazon Managed Streaming for Apache Kafka (MSK) broker storage",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Spot Fleets (Amazon EC2)",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+    }
+  ]
+}

@@ -71,6 +71,8 @@ export function extractLinks(text: string): { text: string; href: string }[] {
 /** Remove Markdown emphasis and inline code fences from a cell or item. */
 export function cleanText(text: string): string {
   return stripLinks(text)
+    .replace(/<br\s*\/?>/gi, " · ")
+    .replace(/\\([_*`~\[\]\\!])/g, "$1")
     .replace(/`([^`]*)`/g, "$1")
     .replace(/\*\*([^*]*)\*\*/g, "$1")
     .replace(/\*([^*]*)\*/g, "$1")

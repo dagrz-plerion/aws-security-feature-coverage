@@ -1,0 +1,71 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7725f8a3d060b3d08edd819e4366ee542acfb65928141bb1e088335d83df68da",
+          "locator": "https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-vended-logs-and-metrics.md :: Vended Logs and Metrics > Vended logs > Configure log delivery (CloudWatch API) > AWS CloudFormation",
+          "quote": "+ [AWS::Logs::Delivery](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-delivery.html)",
+          "retrievedAt": "2026-09-01T04:28:58.252Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-vended-logs-and-metrics.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "events/vended-logs-and-metrics",
+      "id": "events-vended-logs-and-metrics-resourcetype-aws-logs-delivery-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Logs::Delivery",
+      "targetLabel": "AWS::Logs::Delivery"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7725f8a3d060b3d08edd819e4366ee542acfb65928141bb1e088335d83df68da",
+          "locator": "https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-vended-logs-and-metrics.md :: Vended Logs and Metrics > Vended logs > Configure log delivery (CloudWatch API) > AWS CloudFormation",
+          "quote": "+ [AWS::Logs::DeliveryDestination](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-deliverydestination.html)",
+          "retrievedAt": "2026-09-01T04:28:58.252Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-vended-logs-and-metrics.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "events/vended-logs-and-metrics",
+      "id": "events-vended-logs-and-metrics-resourcetype-aws-logs-deliverydestination-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Logs::DeliveryDestination",
+      "targetLabel": "AWS::Logs::DeliveryDestination"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7725f8a3d060b3d08edd819e4366ee542acfb65928141bb1e088335d83df68da",
+          "locator": "https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-vended-logs-and-metrics.md :: Vended Logs and Metrics > Vended logs > Configure log delivery (CloudWatch API) > AWS CloudFormation",
+          "quote": "+ [AWS::Logs::DeliverySource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-deliverysource.html)",
+          "retrievedAt": "2026-09-01T04:28:58.252Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-vended-logs-and-metrics.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "events/vended-logs-and-metrics",
+      "id": "events-vended-logs-and-metrics-resourcetype-aws-logs-deliverysource-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Logs::DeliverySource",
+      "targetLabel": "AWS::Logs::DeliverySource"
+    }
+  ],
+  "featureId": "events/vended-logs-and-metrics",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "events",
+  "unresolvedTargets": []
+}

@@ -1,0 +1,209 @@
+{
+  "axes": [
+    "region",
+    "resourceType",
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "211f26b0860e2488a073f02a8c1b7f4d90f2c498ea9db72ac6e97b94b8f8e274",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-cog.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-East)",
+          "retrievedAt": "2026-09-01T04:59:52.044Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-cog.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/service-wide",
+      "id": "cognito-idp-service-wide-region-us-gov-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "211f26b0860e2488a073f02a8c1b7f4d90f2c498ea9db72ac6e97b94b8f8e274",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-cog.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-West)",
+          "retrievedAt": "2026-09-01T04:59:52.044Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-cog.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/service-wide",
+      "id": "cognito-idp-service-wide-region-us-gov-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8425a57b0f8f5efac946e9ebbbb8e28cbfed8ab4aa4421987402a350f34665bf",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/tagging.md :: The following resources in Amazon Cognito support tagging:",
+          "quote": "+ Identity pools",
+          "retrievedAt": "2026-09-01T04:59:48.375Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/tagging.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/service-wide",
+      "id": "cognito-idp-service-wide-resourcetype-aws-cognito-identitypool-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Cognito::IdentityPool",
+      "targetLabel": "Identity pools"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8425a57b0f8f5efac946e9ebbbb8e28cbfed8ab4aa4421987402a350f34665bf",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/tagging.md :: The following resources in Amazon Cognito support tagging:",
+          "quote": "+ User pools",
+          "retrievedAt": "2026-09-01T04:59:48.375Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/tagging.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/service-wide",
+      "id": "cognito-idp-service-wide-resourcetype-aws-cognito-userpool-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Cognito::UserPool",
+      "targetLabel": "User pools"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "272842fe9ff8f6658d48b717027bb10a8e6c1dbfa55cc1c46ff3d8b7b204e9f0",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity_example_cross_TextractExplorer_section.md :: Create an Amazon Textract explorer application > [ JavaScript ]",
+          "quote": "+ Amazon Cognito Identity",
+          "retrievedAt": "2026-09-01T04:59:48.692Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity_example_cross_TextractExplorer_section.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/service-wide",
+      "id": "cognito-idp-service-wide-service-cognito-identity-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cognito-identity",
+      "targetLabel": "Amazon Cognito Identity"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "272842fe9ff8f6658d48b717027bb10a8e6c1dbfa55cc1c46ff3d8b7b204e9f0",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity_example_cross_TextractExplorer_section.md :: Create an Amazon Textract explorer application > [ JavaScript ]",
+          "quote": "+ Amazon S3",
+          "retrievedAt": "2026-09-01T04:59:48.692Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity_example_cross_TextractExplorer_section.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/service-wide",
+      "id": "cognito-idp-service-wide-service-s3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Amazon S3"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "272842fe9ff8f6658d48b717027bb10a8e6c1dbfa55cc1c46ff3d8b7b204e9f0",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity_example_cross_TextractExplorer_section.md :: Create an Amazon Textract explorer application > [ JavaScript ]",
+          "quote": "+ Amazon SNS",
+          "retrievedAt": "2026-09-01T04:59:48.692Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity_example_cross_TextractExplorer_section.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/service-wide",
+      "id": "cognito-idp-service-wide-service-sns-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sns",
+      "targetLabel": "Amazon SNS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "272842fe9ff8f6658d48b717027bb10a8e6c1dbfa55cc1c46ff3d8b7b204e9f0",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity_example_cross_TextractExplorer_section.md :: Create an Amazon Textract explorer application > [ JavaScript ]",
+          "quote": "+ Amazon SQS",
+          "retrievedAt": "2026-09-01T04:59:48.692Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity_example_cross_TextractExplorer_section.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/service-wide",
+      "id": "cognito-idp-service-wide-service-sqs-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sqs",
+      "targetLabel": "Amazon SQS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "272842fe9ff8f6658d48b717027bb10a8e6c1dbfa55cc1c46ff3d8b7b204e9f0",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity_example_cross_TextractExplorer_section.md :: Create an Amazon Textract explorer application > [ JavaScript ]",
+          "quote": "+ Amazon Textract",
+          "retrievedAt": "2026-09-01T04:59:48.692Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity_example_cross_TextractExplorer_section.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/service-wide",
+      "id": "cognito-idp-service-wide-service-textract-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "textract",
+      "targetLabel": "Amazon Textract"
+    }
+  ],
+  "featureId": "cognito-idp/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "cognito-idp",
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "General",
+      "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-terms.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "IAM role that has the AmazonOpenSearchServiceCognitoAccess policy attached (CognitoAccessForAmazonOpenSearch)",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/cognito-auth.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "IAM role that has the AmazonOpenSearchServiceCognitoAccess policy attached (CognitoAccessForAmazonOpenSearch)",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/cognito-auth.md"
+    }
+  ]
+}

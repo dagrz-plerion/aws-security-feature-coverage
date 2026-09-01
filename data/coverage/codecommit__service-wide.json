@@ -1,0 +1,247 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b6b3024dbd779de6c13121ec05c9b783b2c01e1a7d9432fd86d94a415ec1df93",
+          "locator": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md ::  | column \"\"",
+          "quote": "| AWS Amplify | [AWS Amplify](https://aws.amazon.com/amplify/) makes it easy to create, configure, and implement scalable mobile applications powered by AWS. Amplify seamlessly provisions and manages your mobile backend and provides a simple framework to easily integrate your backend with your iOS, Android, Web, and React Native frontends. Amplify also automates the application release process of both your frontend and backend, which makes it possible for you to deliver features faster.<br />You can connect your CodeCommit repository in the Amplify console. After you authorize the Amplify cons…",
+          "retrievedAt": "2026-09-01T04:35:10.846Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "codecommit/service-wide",
+      "id": "codecommit-service-wide-service-amplify-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "amplify",
+      "targetLabel": "AWS Amplify"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b6b3024dbd779de6c13121ec05c9b783b2c01e1a7d9432fd86d94a415ec1df93",
+          "locator": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md ::  | column \"\"",
+          "quote": "| AWS Cloud9 | [AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/) contains a collection of tools that you use to code, build, run, test, debug, and release software in the cloud. This collection of tools is referred to as the AWS Cloud9 integrated development environment, or IDE. <br />You access the AWS Cloud9 IDE through a web browser. The IDE offers a rich code-editing experience with support for several programming languages and runtime debuggers, and a built-in terminal. <br />Learn more:+  [AWS Cloud9 User Guide](https://docs.aws.amazon.com/cloud9/latest/user-guide/welco…",
+          "retrievedAt": "2026-09-01T04:35:10.846Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "codecommit/service-wide",
+      "id": "codecommit-service-wide-service-cloud9-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloud9",
+      "targetLabel": "AWS Cloud9"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b6b3024dbd779de6c13121ec05c9b783b2c01e1a7d9432fd86d94a415ec1df93",
+          "locator": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md ::  | column \"\"",
+          "quote": "| CloudFormation | [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/) is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources and more time focusing on your applications. You create a template that describes resources, including a CodeCommit repository, and CloudFormation takes care of provisioning and configuring those resources for you.<br />Learn more:+  [AWS CodeCommit Repository resource page](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html…",
+          "retrievedAt": "2026-09-01T04:35:10.846Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "codecommit/service-wide",
+      "id": "codecommit-service-wide-service-cloudformation-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudformation",
+      "targetLabel": "CloudFormation"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b6b3024dbd779de6c13121ec05c9b783b2c01e1a7d9432fd86d94a415ec1df93",
+          "locator": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md ::  | column \"\"",
+          "quote": "| AWS CloudTrail | [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/) captures AWS API calls and related events made by or on behalf of an Amazon Web Services account and delivers log files to an Amazon S3 bucket that you specify. You can configure CloudTrail to capture API calls from the AWS CodeCommit console, CodeCommit commands from the AWS CLI, the local Git client, and from the CodeCommit API. <br />Learn more:+  [Logging AWS CodeCommit API calls with AWS CloudTrail](integ-cloudtrail.md)  |",
+          "retrievedAt": "2026-09-01T04:35:10.846Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "codecommit/service-wide",
+      "id": "codecommit-service-wide-service-cloudtrail-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudtrail",
+      "targetLabel": "AWS CloudTrail"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b6b3024dbd779de6c13121ec05c9b783b2c01e1a7d9432fd86d94a415ec1df93",
+          "locator": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md ::  | column \"\"",
+          "quote": "| AWS CodeBuild | [CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html) is a fully managed build service in the cloud that compiles your source code, runs unit tests, and produces artifacts that are ready to deploy. You can store the source code to be built and the build specification in a CodeCommit repository. You can use CodeBuild directly with CodeCommit, or you can incorporate both CodeBuild and CodeCommit in a continuous delivery pipeline with CodePipeline.<br />Learn more:+  [Plan a Build](https://docs.aws.amazon.com/codebuild/latest/userguide/planning.html) <…",
+          "retrievedAt": "2026-09-01T04:35:10.846Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "codecommit/service-wide",
+      "id": "codecommit-service-wide-service-codebuild-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codebuild",
+      "targetLabel": "AWS CodeBuild"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b6b3024dbd779de6c13121ec05c9b783b2c01e1a7d9432fd86d94a415ec1df93",
+          "locator": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md ::  | column \"\"",
+          "quote": "| Amazon CodeGuru Reviewer | Amazon CodeGuru Reviewer is an automated code review service that uses program analysis and machine learning to detect common issues and recommend fixes in your Java or Python code. You can associate repositories in your Amazon Web Services account with CodeGuru Reviewer. When you do, CodeGuru Reviewer creates a service-linked role that allows CodeGuru Reviewer to analyze code in all pull requests created after the association is made. Learn more:+  [Amazon CodeGuru Reviewer and AWS CodeCommit](how-to-amazon-codeguru-reviewer.md) <br />+  [Amazon CodeGuru Reviewer …",
+          "retrievedAt": "2026-09-01T04:35:10.846Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "codecommit/service-wide",
+      "id": "codecommit-service-wide-service-codeguru-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codeguru",
+      "targetLabel": "Amazon CodeGuru Reviewer"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b6b3024dbd779de6c13121ec05c9b783b2c01e1a7d9432fd86d94a415ec1df93",
+          "locator": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md ::  | column \"\"",
+          "quote": "| AWS CodePipeline | [CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/) is a continuous delivery service you can use to model, visualize, and automate the steps required to release your software. You can configure CodePipeline to use a CodeCommit repository as a source action in a pipeline, and automate building, testing, and deploying your changes.<br />Learn more:+  [Simple Pipeline Walkthrough with CodePipeline and AWS CodeCommit](https://docs.aws.amazon.com/codepipeline/latest/userguide/getting-started-cc.html) <br />+  [Migrate to Amazon CloudWatch Events Change De…",
+          "retrievedAt": "2026-09-01T04:35:10.846Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "codecommit/service-wide",
+      "id": "codecommit-service-wide-service-codepipeline-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codepipeline",
+      "targetLabel": "AWS CodePipeline"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b6b3024dbd779de6c13121ec05c9b783b2c01e1a7d9432fd86d94a415ec1df93",
+          "locator": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md ::  | column \"\"",
+          "quote": "| AWS Elastic Beanstalk | [Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/) is a managed service that makes it easy to deploy and manage applications in the AWS cloud without worrying about the infrastructure that runs those applications. You can use the Elastic Beanstalk command line interface (EB CLI) to deploy your application directly from a new or existing CodeCommit repository.<br />Learn more:+  [Using the EB CLI with AWS CodeCommit](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli-codecommit.html) <br />+  [Using an Existing AWS CodeCommit Reposi…",
+          "retrievedAt": "2026-09-01T04:35:10.846Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "codecommit/service-wide",
+      "id": "codecommit-service-wide-service-elasticbeanstalk-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticbeanstalk",
+      "targetLabel": "AWS Elastic Beanstalk"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b6b3024dbd779de6c13121ec05c9b783b2c01e1a7d9432fd86d94a415ec1df93",
+          "locator": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md ::  | column \"\"",
+          "quote": "| AWS Key Management Service | [AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/) is a managed service that makes it easy for you to create and control the encryption keys used to encrypt your data. By default, CodeCommit uses AWS KMS to encrypt repositories. <br />Learn more:+  [AWS KMS and encryption](encryption.md)  |",
+          "retrievedAt": "2026-09-01T04:35:10.846Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "codecommit/service-wide",
+      "id": "codecommit-service-wide-service-kms-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kms",
+      "targetLabel": "AWS Key Management Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b6b3024dbd779de6c13121ec05c9b783b2c01e1a7d9432fd86d94a415ec1df93",
+          "locator": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md ::  | column \"\"",
+          "quote": "| AWS Lambda | [Lambda](https://docs.aws.amazon.com/lambda/latest/dg/) lets you run code without provisioning or managing servers. You can configure triggers for CodeCommit repositories that invoke Lambda functions in response to repository events. <br />Learn more:+  [Create a trigger for a Lambda function](how-to-notify-lambda.md) <br />+  [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/)  |",
+          "retrievedAt": "2026-09-01T04:35:10.846Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "codecommit/service-wide",
+      "id": "codecommit-service-wide-service-lambda-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lambda",
+      "targetLabel": "AWS Lambda"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b6b3024dbd779de6c13121ec05c9b783b2c01e1a7d9432fd86d94a415ec1df93",
+          "locator": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md ::  | column \"\"",
+          "quote": "| Amazon Simple Notification Service | [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/) is a web service that enables applications, end users, and devices to instantly send and receive notifications from the cloud. You can configure triggers for CodeCommit repositories that send Amazon SNS notifications in response to repository events. You can also use Amazon SNS notifications to integrate with other AWS services. For example, you can use an Amazon SNS notification to send messages to an Amazon Simple Queue Service queue.<br />Learn more:+  [Create a trigger for an Amazon SNS topic](h…",
+          "retrievedAt": "2026-09-01T04:35:10.846Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "codecommit/service-wide",
+      "id": "codecommit-service-wide-service-sns-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sns",
+      "targetLabel": "Amazon Simple Notification Service"
+    }
+  ],
+  "featureId": "codecommit/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "codecommit",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "---",
+      "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon CloudWatch Events",
+      "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon CloudWatch Events",
+      "sourceUrl": "https://docs.aws.amazon.com/codecommit/latest/userguide/integrations.md"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "axes": [
+    "region",
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "4e755dc0fb9387317cb5232767057163c707a42d7c88324d6015d0f7a33fba3a",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-iam.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-East)",
+          "retrievedAt": "2026-09-01T04:58:57.776Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-iam.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/aws-identity-and-access-management",
+      "id": "iam-aws-identity-and-access-management-region-us-gov-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "4e755dc0fb9387317cb5232767057163c707a42d7c88324d6015d0f7a33fba3a",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-iam.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-West)",
+          "retrievedAt": "2026-09-01T04:58:57.776Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-iam.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/aws-identity-and-access-management",
+      "id": "iam-aws-identity-and-access-management-region-us-gov-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "606e023e1c57415dc1e1a30fbc72faa0988f6e21b59b4b324a1a5c169bc66bd3",
+          "locator": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md :: AWS Identity and Access Management (IAM) > Create access keys for your user | column \"Which user needs programmatic access?\"",
+          "quote": "| IAM | (Recommended) Use console credentials as temporary credentials to sign programmatic requests to the AWS CLI, AWS SDKs, or AWS APIs. | Following the instructions for the interface that you want to use.+  For the AWS CLI, see [Login for AWS local development](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sign-in.html) in the *AWS Command Line Interface User Guide*. <br />+  For AWS SDKs, see [Login for AWS local development](https://docs.aws.amazon.com/sdkref/latest/guide/access-login.html) in the *AWS SDKs and Tools Reference Guide*.  |",
+          "retrievedAt": "2026-09-01T04:58:58.707Z",
+          "sourceUrl": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/aws-identity-and-access-management",
+      "id": "iam-aws-identity-and-access-management-service-iam-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iam",
+      "targetLabel": "IAM"
+    }
+  ],
+  "featureId": "iam/aws-identity-and-access-management",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "iam",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
+      "sourceUrl": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md"
+    }
+  ]
+}

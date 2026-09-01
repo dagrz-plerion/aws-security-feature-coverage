@@ -106,3 +106,43 @@ maybe("coverage claims", () => {
     expect(failures).toEqual([]);
   });
 });
+
+maybe("open axes", () => {
+  it("keeps every catalog member in the shape its axis expects", async () => {
+    const open = await readJson<{ axes: { axis: string; members: string[] }[] }>(
+      path.join(paths.universes, "open-axes.json"),
+    );
+    const shapes: Record<string, RegExp> = {
+      findingType: /^[A-Z][A-Za-z]*:[A-Za-z0-9]+\/.+$/,
+      control: /^[A-Z][A-Za-z0-9]{1,20}\.\d{1,3}$/,
+      configRule: /^[a-z][a-z0-9]*(-[a-z0-9]+){2,}$/,
+      dataIdentifier: /^[A-Z][A-Z0-9]*(_[A-Z0-9]+)+$/,
+      // AWS publishes both the code name and the prose name for a rule group.
+      managedRuleGroup: /^(AWSManagedRules[A-Za-z0-9]+|[A-Za-z][A-Za-z0-9 ]+managed rule group)$/i,
+    };
+    const bad: string[] = [];
+    for (const axis of open?.axes ?? []) {
+      const shape = shapes[axis.axis];
+      if (!shape) continue;
+      for (const member of axis.members) if (!shape.test(member)) bad.push(`${axis.axis}: ${member}`);
+    }
+    expect(bad.slice(0, 10)).toEqual([]);
+  });
+
+  it("never counts more covered targets than the axis has members", async () => {
+    const open = await readJson<{ axes: { axis: string; members: string[] }[] }>(
+      path.join(paths.universes, "open-axes.json"),
+    );
+    const sizes = new Map((open?.axes ?? []).map((a) => [a.axis, a.members.length]));
+    const over: string[] = [];
+    for (const record of coverage) {
+      const byAxis = new Map<string, number>();
+      for (const claim of record.claims) byAxis.set(claim.axis, (byAxis.get(claim.axis) ?? 0) + 1);
+      for (const [axis, count] of byAxis) {
+        const size = sizes.get(axis);
+        if (size !== undefined && count > size) over.push(`${record.featureId} ${axis}: ${count} > ${size}`);
+      }
+    }
+    expect(over).toEqual([]);
+  });
+});

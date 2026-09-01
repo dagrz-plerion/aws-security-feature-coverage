@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "region"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "a7f92ffe59aa1a00a4cdd9170b4d01220f226bd2e2c2c4a45835e4d83a791a6a",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-cloudhsm.md :: AWS CloudHSM is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-East)",
+          "retrievedAt": "2026-09-01T05:00:16.098Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-cloudhsm.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudhsmv2/service-wide",
+      "id": "cloudhsmv2-service-wide-region-us-gov-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "a7f92ffe59aa1a00a4cdd9170b4d01220f226bd2e2c2c4a45835e4d83a791a6a",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-cloudhsm.md :: AWS CloudHSM is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-West)",
+          "retrievedAt": "2026-09-01T05:00:16.098Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-cloudhsm.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudhsmv2/service-wide",
+      "id": "cloudhsmv2-service-wide-region-us-gov-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    }
+  ],
+  "featureId": "cloudhsmv2/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "cloudhsmv2",
+  "unresolvedTargets": []
+}

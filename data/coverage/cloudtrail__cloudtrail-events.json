@@ -1,0 +1,1212 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Certificate Manager",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-acm-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "acm",
+      "targetLabel": "AWS Certificate Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: Enrich CloudTrail events by adding resource tag keys and IAM global condition keys > AWS services supporting resource tags > Resource tag updates in CloudTrail for enriched events",
+          "quote": "+ Amazon Keyspaces (for Apache Cassandra)",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-cassandra-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cassandra",
+      "targetLabel": "Amazon Keyspaces (for Apache Cassandra)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS CloudTrail",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-cloudtrail-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudtrail",
+      "targetLabel": "AWS CloudTrail"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon CloudWatch",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-cloudwatch-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudwatch",
+      "targetLabel": "Amazon CloudWatch"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS CodeBuild",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-codebuild-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codebuild",
+      "targetLabel": "AWS CodeBuild"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS CodeCommit",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-codecommit-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codecommit",
+      "targetLabel": "AWS CodeCommit"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: Enrich CloudTrail events by adding resource tag keys and IAM global condition keys > AWS services supporting resource tags > Resource tag updates in CloudTrail for enriched events",
+          "quote": "+ AWS CodeConnections",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-codeconnections-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codeconnections",
+      "targetLabel": "AWS CodeConnections"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS CodeDeploy",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-codedeploy-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codedeploy",
+      "targetLabel": "AWS CodeDeploy"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Cognito Sync",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-cognito-sync-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cognito-sync",
+      "targetLabel": "Amazon Cognito Sync"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Comprehend",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-comprehend-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "comprehend",
+      "targetLabel": "Amazon Comprehend"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Comprehend Medical",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-comprehendmedical-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "comprehendmedical",
+      "targetLabel": "Amazon Comprehend Medical"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Control Tower",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-controltower-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "controltower",
+      "targetLabel": "AWS Control Tower"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: Enrich CloudTrail events by adding resource tag keys and IAM global condition keys > AWS services supporting resource tags > Resource tag updates in CloudTrail for enriched events",
+          "quote": "+ AWS Direct Connect",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-directconnect-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "directconnect",
+      "targetLabel": "AWS Direct Connect"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: Enrich CloudTrail events by adding resource tag keys and IAM global condition keys > AWS services supporting resource tags > Resource tag updates in CloudTrail for enriched events",
+          "quote": "+ Amazon DynamoDB",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-dynamodb-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "dynamodb",
+      "targetLabel": "Amazon DynamoDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Elastic Block Store",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-ebs-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ebs",
+      "targetLabel": "Amazon Elastic Block Store"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: Enrich CloudTrail events by adding resource tag keys and IAM global condition keys > AWS services supporting resource tags > Resource tag updates in CloudTrail for enriched events",
+          "quote": "+ Amazon ElastiCache",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-elasticache-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticache",
+      "targetLabel": "Amazon ElastiCache"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Elastic Load Balancing",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-elasticloadbalancing-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticloadbalancing",
+      "targetLabel": "Elastic Load Balancing"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon EventBridge",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-events-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "events",
+      "targetLabel": "Amazon EventBridge"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Data Firehose",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-firehose-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "firehose",
+      "targetLabel": "Amazon Data Firehose"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon FSx",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-fsx-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "fsx",
+      "targetLabel": "Amazon FSx"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS IoT FleetWise",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-iotfleetwise-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iotfleetwise",
+      "targetLabel": "AWS IoT FleetWise"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS IoT SiteWise",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-iotsitewise-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iotsitewise",
+      "targetLabel": "AWS IoT SiteWise"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS IoT TwinMaker",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-iottwinmaker-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iottwinmaker",
+      "targetLabel": "AWS IoT TwinMaker"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS IoT Wireless",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-iotwireless-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iotwireless",
+      "targetLabel": "AWS IoT Wireless"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Kendra",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-kendra-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kendra",
+      "targetLabel": "Amazon Kendra"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: Enrich CloudTrail events by adding resource tag keys and IAM global condition keys > AWS services supporting resource tags > Resource tag updates in CloudTrail for enriched events",
+          "quote": "+ Amazon Kinesis",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-kinesis-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kinesis",
+      "targetLabel": "Amazon Kinesis"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS KMS",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-kms-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kms",
+      "targetLabel": "AWS KMS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Lambda",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-lambda-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lambda",
+      "targetLabel": "AWS Lambda"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: Enrich CloudTrail events by adding resource tag keys and IAM global condition keys > AWS services supporting resource tags > Resource tag updates in CloudTrail for enriched events",
+          "quote": "+ Amazon Lex",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-lex-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lex",
+      "targetLabel": "Amazon Lex"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS License Manager",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-license-manager-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "license-manager",
+      "targetLabel": "AWS License Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Lookout for Equipment",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-lookoutequipment-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lookoutequipment",
+      "targetLabel": "Amazon Lookout for Equipment"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: Enrich CloudTrail events by adding resource tag keys and IAM global condition keys > AWS services supporting resource tags > Resource tag updates in CloudTrail for enriched events",
+          "quote": "+ Amazon MemoryDB",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-memorydb-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "memorydb",
+      "targetLabel": "Amazon MemoryDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Network Firewall",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-network-firewall-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "network-firewall",
+      "targetLabel": "AWS Network Firewall"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: Enrich CloudTrail events by adding resource tag keys and IAM global condition keys > AWS services supporting resource tags > Resource tag updates in CloudTrail for enriched events",
+          "quote": "+ AWS Organizations",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-organizations-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "organizations",
+      "targetLabel": "AWS Organizations"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Payment Cryptography",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-payment-cryptography-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "payment-cryptography",
+      "targetLabel": "AWS Payment Cryptography"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Personalize",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-personalize-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "personalize",
+      "targetLabel": "Amazon Personalize"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Lookout for Vision",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-product-amazon-lookout-for-vision-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "product:amazon-lookout-for-vision",
+      "targetLabel": "Amazon Lookout for Vision"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Proton",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-proton-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "proton",
+      "targetLabel": "AWS Proton"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Rekognition",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-rekognition-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "rekognition",
+      "targetLabel": "Amazon Rekognition"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: Enrich CloudTrail events by adding resource tag keys and IAM global condition keys > AWS services supporting resource tags > Resource tag updates in CloudTrail for enriched events",
+          "quote": "+ Amazon S3",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-s3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Amazon S3"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon SageMaker AI",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-sagemaker-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sagemaker",
+      "targetLabel": "Amazon SageMaker AI"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon EventBridge Scheduler",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-scheduler-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "scheduler",
+      "targetLabel": "Amazon EventBridge Scheduler"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Supply Chain",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-scn-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "scn",
+      "targetLabel": "AWS Supply Chain"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Secrets Manager",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-secretsmanager-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "secretsmanager",
+      "targetLabel": "AWS Secrets Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: Enrich CloudTrail events by adding resource tag keys and IAM global condition keys > AWS services supporting resource tags > Resource tag updates in CloudTrail for enriched events",
+          "quote": "+ Amazon Security Lake",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-securitylake-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securitylake",
+      "targetLabel": "Amazon Security Lake"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS End User Messaging Social",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-social-messaging-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "social-messaging",
+      "targetLabel": "AWS End User Messaging Social"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon SQS",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-sqs-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sqs",
+      "targetLabel": "Amazon SQS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: Enrich CloudTrail events by adding resource tag keys and IAM global condition keys > AWS services supporting resource tags > Resource tag updates in CloudTrail for enriched events",
+          "quote": "+ AWS IAM Identity Center",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-sso-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sso",
+      "targetLabel": "AWS IAM Identity Center"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Step Functions",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-states-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "states",
+      "targetLabel": "AWS Step Functions"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Storage Gateway",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-storagegateway-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "storagegateway",
+      "targetLabel": "AWS Storage Gateway"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon SWF",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-swf-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "swf",
+      "targetLabel": "Amazon SWF"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Timestream",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-timestream-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "timestream",
+      "targetLabel": "Amazon Timestream"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Transcribe",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-transcribe-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "transcribe",
+      "targetLabel": "Amazon Transcribe"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Transfer Family",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-transfer-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "transfer",
+      "targetLabel": "AWS Transfer Family"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Trusted Advisor",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-trustedadvisor-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "trustedadvisor",
+      "targetLabel": "AWS Trusted Advisor"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon WorkSpaces",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-workspaces-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "workspaces",
+      "targetLabel": "Amazon WorkSpaces"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS X-Ray",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/cloudtrail-events",
+      "id": "cloudtrail-cloudtrail-events-service-xray-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "xray",
+      "targetLabel": "AWS X-Ray"
+    }
+  ],
+  "featureId": "cloudtrail/cloudtrail-events",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "cloudtrail",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Amazon Connect Customer Voice ID",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS HealthImaging",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Email Service (Amazon SES)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Timestream for InfluxDB",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Chime Voice Connector",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Marketplace Vendor Insights",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Connect Customer Voice ID",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS HealthImaging",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Email Service (Amazon SES)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Timestream for InfluxDB",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    }
+  ]
+}

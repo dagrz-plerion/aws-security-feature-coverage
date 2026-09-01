@@ -1,6 +1,7 @@
 {
   "axes": [
-    "region"
+    "region",
+    "service"
   ],
   "claims": [
     {
@@ -8,18 +9,18 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "91e8ad6ab0a49ff27b8ef9c021c5b79c3ec4ed8753eaab4ea8b055c02991b028",
-          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md ::  | column \"Region name\"",
-          "quote": "| Africa (Cape Town) | af-south-1 | Yes |",
-          "retrievedAt": "2026-09-01T04:28:57.752Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md"
+          "bodySha256": "4ef041fac0a99b356ca11fe22e3baebcf0a06ddf719fcf945f330d8dc867a925",
+          "locator": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Africa (Cape Town) | af-south-1 | No |",
+          "retrievedAt": "2026-09-01T04:58:51.544Z",
+          "sourceUrl": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md"
         }
       ],
       "extractorId": "md-table",
       "featureId": "iam/service-linked-roles",
       "id": "iam-service-linked-roles-region-af-south-1-md-table",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "af-south-1",
       "targetLabel": "Africa (Cape Town)"
     },
@@ -28,11 +29,51 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "91e8ad6ab0a49ff27b8ef9c021c5b79c3ec4ed8753eaab4ea8b055c02991b028",
-          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md ::  | column \"Region name\"",
+          "bodySha256": "4ef041fac0a99b356ca11fe22e3baebcf0a06ddf719fcf945f330d8dc867a925",
+          "locator": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Hong Kong) | ap-east-1 | No |",
+          "retrievedAt": "2026-09-01T04:58:51.544Z",
+          "sourceUrl": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-ap-east-1-md-table",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "ap-east-1",
+      "targetLabel": "Asia Pacific (Hong Kong)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "db66ac0c162a1f61c2e1ea5a7645fc761f8f94b2d573e6d5c117acf1760667e8",
+          "locator": "https://docs.aws.amazon.com/vpc/latest/userguide/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Taipei) | ap-east-2 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:59.590Z",
+          "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-ap-east-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-east-2",
+      "targetLabel": "Asia Pacific (Taipei)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
           "quote": "| Asia Pacific (Tokyo) | ap-northeast-1 | Yes |",
-          "retrievedAt": "2026-09-01T04:28:57.752Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md"
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
         }
       ],
       "extractorId": "md-table",
@@ -41,18 +82,18 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-northeast-1",
-      "targetLabel": "Asia Pacific (Tokyo)"
+      "targetLabel": "ap-northeast-1"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "91e8ad6ab0a49ff27b8ef9c021c5b79c3ec4ed8753eaab4ea8b055c02991b028",
-          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md ::  | column \"Region name\"",
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
           "quote": "| Asia Pacific (Seoul) | ap-northeast-2 | Yes |",
-          "retrievedAt": "2026-09-01T04:28:57.752Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md"
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
         }
       ],
       "extractorId": "md-table",
@@ -61,18 +102,38 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-northeast-2",
-      "targetLabel": "Asia Pacific (Seoul)"
+      "targetLabel": "ap-northeast-2"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "91e8ad6ab0a49ff27b8ef9c021c5b79c3ec4ed8753eaab4ea8b055c02991b028",
-          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md ::  | column \"Region name\"",
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
+          "quote": "| Asia Pacific (Osaka) | ap-northeast-3 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-ap-northeast-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-3",
+      "targetLabel": "ap-northeast-3"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
           "quote": "| Asia Pacific (Mumbai) | ap-south-1 | Yes |",
-          "retrievedAt": "2026-09-01T04:28:57.752Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md"
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
         }
       ],
       "extractorId": "md-table",
@@ -81,18 +142,38 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-south-1",
-      "targetLabel": "Asia Pacific (Mumbai)"
+      "targetLabel": "ap-south-1"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "91e8ad6ab0a49ff27b8ef9c021c5b79c3ec4ed8753eaab4ea8b055c02991b028",
-          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md ::  | column \"Region name\"",
+          "bodySha256": "1a209289ad9012136a4dff8400d3f394a651e0d0c7574b529338014dcd22744a",
+          "locator": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Hyderabad) | ap-south-2 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:53.542Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-ap-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-2",
+      "targetLabel": "Asia Pacific (Hyderabad)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
           "quote": "| Asia Pacific (Singapore) | ap-southeast-1 | Yes |",
-          "retrievedAt": "2026-09-01T04:28:57.752Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md"
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
         }
       ],
       "extractorId": "md-table",
@@ -101,18 +182,18 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-southeast-1",
-      "targetLabel": "Asia Pacific (Singapore)"
+      "targetLabel": "ap-southeast-1"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "91e8ad6ab0a49ff27b8ef9c021c5b79c3ec4ed8753eaab4ea8b055c02991b028",
-          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md ::  | column \"Region name\"",
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
           "quote": "| Asia Pacific (Sydney) | ap-southeast-2 | Yes |",
-          "retrievedAt": "2026-09-01T04:28:57.752Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md"
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
         }
       ],
       "extractorId": "md-table",
@@ -121,18 +202,118 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-southeast-2",
-      "targetLabel": "Asia Pacific (Sydney)"
+      "targetLabel": "ap-southeast-2"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "91e8ad6ab0a49ff27b8ef9c021c5b79c3ec4ed8753eaab4ea8b055c02991b028",
-          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md ::  | column \"Region name\"",
+          "bodySha256": "4ef041fac0a99b356ca11fe22e3baebcf0a06ddf719fcf945f330d8dc867a925",
+          "locator": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Jakarta) | ap-southeast-3 | No |",
+          "retrievedAt": "2026-09-01T04:58:51.544Z",
+          "sourceUrl": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-ap-southeast-3-md-table",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "ap-southeast-3",
+      "targetLabel": "Asia Pacific (Jakarta)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "1a209289ad9012136a4dff8400d3f394a651e0d0c7574b529338014dcd22744a",
+          "locator": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Melbourne) | ap-southeast-4 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:53.542Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-ap-southeast-4-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-4",
+      "targetLabel": "Asia Pacific (Melbourne)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "db66ac0c162a1f61c2e1ea5a7645fc761f8f94b2d573e6d5c117acf1760667e8",
+          "locator": "https://docs.aws.amazon.com/vpc/latest/userguide/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Malaysia) | ap-southeast-5 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:59.590Z",
+          "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-ap-southeast-5-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-5",
+      "targetLabel": "Asia Pacific (Malaysia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "db66ac0c162a1f61c2e1ea5a7645fc761f8f94b2d573e6d5c117acf1760667e8",
+          "locator": "https://docs.aws.amazon.com/vpc/latest/userguide/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (New Zealand) | ap-southeast-6 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:59.590Z",
+          "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-ap-southeast-6-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-6",
+      "targetLabel": "Asia Pacific (New Zealand)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "db66ac0c162a1f61c2e1ea5a7645fc761f8f94b2d573e6d5c117acf1760667e8",
+          "locator": "https://docs.aws.amazon.com/vpc/latest/userguide/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Asia Pacific (Thailand) | ap-southeast-7 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:59.590Z",
+          "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-ap-southeast-7-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-7",
+      "targetLabel": "Asia Pacific (Thailand)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
           "quote": "| Canada (Central) | ca-central-1 | Yes |",
-          "retrievedAt": "2026-09-01T04:28:57.752Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md"
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
         }
       ],
       "extractorId": "md-table",
@@ -141,18 +322,78 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ca-central-1",
-      "targetLabel": "Canada (Central)"
+      "targetLabel": "ca-central-1"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "91e8ad6ab0a49ff27b8ef9c021c5b79c3ec4ed8753eaab4ea8b055c02991b028",
-          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md ::  | column \"Region name\"",
+          "bodySha256": "1a209289ad9012136a4dff8400d3f394a651e0d0c7574b529338014dcd22744a",
+          "locator": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Canada West (Calgary) | ca-west-1 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:53.542Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-ca-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-west-1",
+      "targetLabel": "Canada West (Calgary)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "3635c36bf66e551d0ca2a177b392ed347b29963eb770c70a7898cbdf10263941",
+          "locator": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/using-service-linked-roles.md ::  | column \"Region identity\"",
+          "quote": "| China (Beijing) | cn-north-1 | Yes |",
+          "retrievedAt": "2026-09-01T04:59:23.471Z",
+          "sourceUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-cn-north-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cn-north-1",
+      "targetLabel": "cn-north-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "3635c36bf66e551d0ca2a177b392ed347b29963eb770c70a7898cbdf10263941",
+          "locator": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/using-service-linked-roles.md ::  | column \"Region identity\"",
+          "quote": "| China (Ningxia) | cn-northwest-1 | Yes |",
+          "retrievedAt": "2026-09-01T04:59:23.471Z",
+          "sourceUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-cn-northwest-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cn-northwest-1",
+      "targetLabel": "cn-northwest-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
           "quote": "| Europe (Frankfurt) | eu-central-1 | Yes |",
-          "retrievedAt": "2026-09-01T04:28:57.752Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md"
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
         }
       ],
       "extractorId": "md-table",
@@ -161,18 +402,118 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "eu-central-1",
-      "targetLabel": "Europe (Frankfurt)"
+      "targetLabel": "eu-central-1"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "91e8ad6ab0a49ff27b8ef9c021c5b79c3ec4ed8753eaab4ea8b055c02991b028",
-          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md ::  | column \"Region name\"",
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
+          "quote": "| Europe (Zurich) | eu-central-2 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-eu-central-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-2",
+      "targetLabel": "eu-central-2"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ef041fac0a99b356ca11fe22e3baebcf0a06ddf719fcf945f330d8dc867a925",
+          "locator": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Europe (Stockholm) | eu-north-1 | No |",
+          "retrievedAt": "2026-09-01T04:58:51.544Z",
+          "sourceUrl": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-eu-north-1-md-table",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "eu-north-1",
+      "targetLabel": "Europe (Stockholm)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ef041fac0a99b356ca11fe22e3baebcf0a06ddf719fcf945f330d8dc867a925",
+          "locator": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Europe (Milan) | eu-south-1 | No |",
+          "retrievedAt": "2026-09-01T04:58:51.544Z",
+          "sourceUrl": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-eu-south-1-md-table",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "eu-south-1",
+      "targetLabel": "Europe (Milan)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "1a209289ad9012136a4dff8400d3f394a651e0d0c7574b529338014dcd22744a",
+          "locator": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Europe (Spain) | eu-south-2 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:53.542Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-eu-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-2",
+      "targetLabel": "Europe (Spain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
+          "quote": "| Europe (Ireland) | eu-west-1 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-eu-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-1",
+      "targetLabel": "eu-west-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
           "quote": "| Europe (London) | eu-west-2 | Yes |",
-          "retrievedAt": "2026-09-01T04:28:57.752Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md"
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
         }
       ],
       "extractorId": "md-table",
@@ -181,18 +522,138 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "eu-west-2",
-      "targetLabel": "Europe (London)"
+      "targetLabel": "eu-west-2"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "91e8ad6ab0a49ff27b8ef9c021c5b79c3ec4ed8753eaab4ea8b055c02991b028",
-          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md ::  | column \"Region name\"",
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
+          "quote": "| Europe (Paris) | eu-west-3 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-eu-west-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-3",
+      "targetLabel": "eu-west-3"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "1a209289ad9012136a4dff8400d3f394a651e0d0c7574b529338014dcd22744a",
+          "locator": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Israel (Tel Aviv) | il-central-1 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:53.542Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-il-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "il-central-1",
+      "targetLabel": "Israel (Tel Aviv)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ef041fac0a99b356ca11fe22e3baebcf0a06ddf719fcf945f330d8dc867a925",
+          "locator": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Middle East (UAE) | me-central-1 | No |",
+          "retrievedAt": "2026-09-01T04:58:51.544Z",
+          "sourceUrl": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-me-central-1-md-table",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "me-central-1",
+      "targetLabel": "Middle East (UAE)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ef041fac0a99b356ca11fe22e3baebcf0a06ddf719fcf945f330d8dc867a925",
+          "locator": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Middle East (Bahrain) | me-south-1 | No |",
+          "retrievedAt": "2026-09-01T04:58:51.544Z",
+          "sourceUrl": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-me-south-1-md-table",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "me-south-1",
+      "targetLabel": "Middle East (Bahrain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "db66ac0c162a1f61c2e1ea5a7645fc761f8f94b2d573e6d5c117acf1760667e8",
+          "locator": "https://docs.aws.amazon.com/vpc/latest/userguide/using-service-linked-roles.md ::  | column \"Region name\"",
+          "quote": "| Mexico (Central) | mx-central-1 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:59.590Z",
+          "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-mx-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mx-central-1",
+      "targetLabel": "Mexico (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
+          "quote": "| South America (São Paulo) | sa-east-1 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-sa-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sa-east-1",
+      "targetLabel": "sa-east-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
           "quote": "| US East (N. Virginia) | us-east-1 | Yes |",
-          "retrievedAt": "2026-09-01T04:28:57.752Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md"
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
         }
       ],
       "extractorId": "md-table",
@@ -201,18 +662,98 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-east-1",
-      "targetLabel": "US East (N. Virginia)"
+      "targetLabel": "us-east-1"
     },
     {
       "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "91e8ad6ab0a49ff27b8ef9c021c5b79c3ec4ed8753eaab4ea8b055c02991b028",
-          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md ::  | column \"Region name\"",
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
+          "quote": "| US East (Ohio) | us-east-2 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-us-east-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-2",
+      "targetLabel": "us-east-2"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
+          "quote": "| AWS GovCloud (US-East) East | us-gov-east-1 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-us-gov-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "us-gov-east-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
+          "quote": "| AWS GovCloud (US-West) | us-gov-west-1 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-us-gov-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "us-gov-west-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
+          "quote": "| US West (N. California) | us-west-1 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-region-us-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-1",
+      "targetLabel": "us-west-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md ::  | column \"Region identity\"",
           "quote": "| US West (Oregon) | us-west-2 | Yes |",
-          "retrievedAt": "2026-09-01T04:28:57.752Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md"
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
         }
       ],
       "extractorId": "md-table",
@@ -221,11 +762,282 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-west-2",
-      "targetLabel": "US West (Oregon)"
+      "targetLabel": "us-west-2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14288b56a104a70fd08b088f3466eae6925ff839c96cf710b8de4ab51af6a5d1",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md ::  | column \"Service\"",
+          "quote": "| AppStream 2.0 | arn:aws:iam::{{012345678910}}:role/aws-service-role/appstream.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\\_AppStreamFleet |",
+          "retrievedAt": "2026-09-01T04:58:52.173Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-service-appstream-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "appstream",
+      "targetLabel": "AppStream 2.0"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14288b56a104a70fd08b088f3466eae6925ff839c96cf710b8de4ab51af6a5d1",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md ::  | column \"Service\"",
+          "quote": "| Keyspaces | arn:aws:iam::{{012345678910}}:role/aws-service-role/cassandra.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\\_CassandraTable |",
+          "retrievedAt": "2026-09-01T04:58:52.173Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-service-cassandra-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cassandra",
+      "targetLabel": "Keyspaces"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14288b56a104a70fd08b088f3466eae6925ff839c96cf710b8de4ab51af6a5d1",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md ::  | column \"Service\"",
+          "quote": "| Comprehend | arn:aws:iam::{{012345678910}}:role/aws-service-role/comprehend.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\\_ComprehendEndpoint |",
+          "retrievedAt": "2026-09-01T04:58:52.173Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-service-comprehend-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "comprehend",
+      "targetLabel": "Comprehend"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14288b56a104a70fd08b088f3466eae6925ff839c96cf710b8de4ab51af6a5d1",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md ::  | column \"Service\"",
+          "quote": "| DynamoDB | arn:aws:iam::{{012345678910}}:role/aws-service-role/dynamodb.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\\_DynamoDBTable |",
+          "retrievedAt": "2026-09-01T04:58:52.173Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-service-dynamodb-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "dynamodb",
+      "targetLabel": "DynamoDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14288b56a104a70fd08b088f3466eae6925ff839c96cf710b8de4ab51af6a5d1",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md ::  | column \"Service\"",
+          "quote": "| ECS | arn:aws:iam::{{012345678910}}:role/aws-service-role/ecs.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\\_ECSService |",
+          "retrievedAt": "2026-09-01T04:58:52.173Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-service-ecs-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ecs",
+      "targetLabel": "ECS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14288b56a104a70fd08b088f3466eae6925ff839c96cf710b8de4ab51af6a5d1",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md ::  | column \"Service\"",
+          "quote": "| ElastiCache | arn:aws:iam::{{012345678910}}:role/aws-service-role/elasticache.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\\_ElastiCacheRG |",
+          "retrievedAt": "2026-09-01T04:58:52.173Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-service-elasticache-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticache",
+      "targetLabel": "ElastiCache"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14288b56a104a70fd08b088f3466eae6925ff839c96cf710b8de4ab51af6a5d1",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md ::  | column \"Service\"",
+          "quote": "| MSK | arn:aws:iam::{{012345678910}}:role/aws-service-role/kafka.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\\_KafkaCluster |",
+          "retrievedAt": "2026-09-01T04:58:52.173Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-service-kafka-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kafka",
+      "targetLabel": "MSK"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14288b56a104a70fd08b088f3466eae6925ff839c96cf710b8de4ab51af6a5d1",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md ::  | column \"Service\"",
+          "quote": "| Lambda | arn:aws:iam::{{012345678910}}:role/aws-service-role/lambda.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\\_LambdaConcurrency |",
+          "retrievedAt": "2026-09-01T04:58:52.173Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-service-lambda-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lambda",
+      "targetLabel": "Lambda"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14288b56a104a70fd08b088f3466eae6925ff839c96cf710b8de4ab51af6a5d1",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md ::  | column \"Service\"",
+          "quote": "| Aurora | arn:aws:iam::{{012345678910}}:role/aws-service-role/rds.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\\_RDSCluster |",
+          "retrievedAt": "2026-09-01T04:58:52.173Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-service-product-amazon-aurora-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "product:amazon-aurora",
+      "targetLabel": "Aurora"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14288b56a104a70fd08b088f3466eae6925ff839c96cf710b8de4ab51af6a5d1",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md ::  | column \"Service\"",
+          "quote": "| Neptune | arn:aws:iam::{{012345678910}}:role/aws-service-role/neptune.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\\_NeptuneCluster |",
+          "retrievedAt": "2026-09-01T04:58:52.173Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-service-rds-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "rds",
+      "targetLabel": "Neptune"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14288b56a104a70fd08b088f3466eae6925ff839c96cf710b8de4ab51af6a5d1",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md ::  | column \"Service\"",
+          "quote": "| SageMaker AI | arn:aws:iam::{{012345678910}}:role/aws-service-role/sagemaker.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\\_SageMakerEndpoint |",
+          "retrievedAt": "2026-09-01T04:58:52.173Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-service-sagemaker-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sagemaker",
+      "targetLabel": "SageMaker AI"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14288b56a104a70fd08b088f3466eae6925ff839c96cf710b8de4ab51af6a5d1",
+          "locator": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md ::  | column \"Service\"",
+          "quote": "| WorkSpaces | arn:aws:iam::{{012345678910}}:role/aws-service-role/workspaces.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling\\_WorkSpacesPool |",
+          "retrievedAt": "2026-09-01T04:58:52.173Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/service-linked-roles",
+      "id": "iam-service-linked-roles-service-workspaces-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "workspaces",
+      "targetLabel": "WorkSpaces"
     }
   ],
   "featureId": "iam/service-linked-roles",
-  "generatedAt": "2026-09-01T04:53:52.577Z",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
   "serviceId": "iam",
-  "unresolvedTargets": []
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Spot Fleets",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Custom resources",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Spot Fleets",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Custom resources",
+      "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.md"
+    },
+    {
+      "axis": "region",
+      "raw": "Middle East (Saudi Arabia)",
+      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/using-service-linked-roles.md"
+    },
+    {
+      "axis": "region",
+      "raw": "Middle East (Saudi Arabia)",
+      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/using-service-linked-roles.md"
+    }
+  ]
 }

@@ -1,0 +1,724 @@
+{
+  "axes": [
+    "region",
+    "resourceType",
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ca3b244a7e22b41889a087745660ce796f611a6e7f7e4cbb314759ff5732c16",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md ::  | column \"Region Name\"",
+          "quote": "| Africa (Cape Town) | af-south-1 |  connect.af-south-1.amazonaws.com  | HTTPS |",
+          "retrievedAt": "2026-09-01T04:29:25.802Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-region-af-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "af-south-1",
+      "targetLabel": "Africa (Cape Town)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ca3b244a7e22b41889a087745660ce796f611a6e7f7e4cbb314759ff5732c16",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md ::  | column \"Region Name\"",
+          "quote": "| Asia Pacific (Tokyo) | ap-northeast-1 |  connect.ap-northeast-1.amazonaws.com  | HTTPS |",
+          "retrievedAt": "2026-09-01T04:29:25.802Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-region-ap-northeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-1",
+      "targetLabel": "Asia Pacific (Tokyo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ca3b244a7e22b41889a087745660ce796f611a6e7f7e4cbb314759ff5732c16",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md ::  | column \"Region Name\"",
+          "quote": "| Asia Pacific (Seoul) | ap-northeast-2 |  connect.ap-northeast-2.amazonaws.com  | HTTPS |",
+          "retrievedAt": "2026-09-01T04:29:25.802Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-region-ap-northeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-2",
+      "targetLabel": "Asia Pacific (Seoul)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ca3b244a7e22b41889a087745660ce796f611a6e7f7e4cbb314759ff5732c16",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md ::  | column \"Region Name\"",
+          "quote": "| Asia Pacific (Singapore) | ap-southeast-1 |  connect.ap-southeast-1.amazonaws.com  | HTTPS |",
+          "retrievedAt": "2026-09-01T04:29:25.802Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-region-ap-southeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-1",
+      "targetLabel": "Asia Pacific (Singapore)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ca3b244a7e22b41889a087745660ce796f611a6e7f7e4cbb314759ff5732c16",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md ::  | column \"Region Name\"",
+          "quote": "| Asia Pacific (Sydney) | ap-southeast-2 |  connect.ap-southeast-2.amazonaws.com  | HTTPS |",
+          "retrievedAt": "2026-09-01T04:29:25.802Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-region-ap-southeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-2",
+      "targetLabel": "Asia Pacific (Sydney)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ca3b244a7e22b41889a087745660ce796f611a6e7f7e4cbb314759ff5732c16",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md ::  | column \"Region Name\"",
+          "quote": "| Canada (Central) | ca-central-1 |  connect.ca-central-1.amazonaws.com <br /> connect-fips.ca-central-1.amazonaws.com  | HTTPS<br />HTTPS |",
+          "retrievedAt": "2026-09-01T04:29:25.802Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-region-ca-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-central-1",
+      "targetLabel": "Canada (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ca3b244a7e22b41889a087745660ce796f611a6e7f7e4cbb314759ff5732c16",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md ::  | column \"Region Name\"",
+          "quote": "| Europe (Frankfurt) | eu-central-1 |  connect.eu-central-1.amazonaws.com  | HTTPS |",
+          "retrievedAt": "2026-09-01T04:29:25.802Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-region-eu-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-1",
+      "targetLabel": "Europe (Frankfurt)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ca3b244a7e22b41889a087745660ce796f611a6e7f7e4cbb314759ff5732c16",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md ::  | column \"Region Name\"",
+          "quote": "| Europe (London) | eu-west-2 |  connect.eu-west-2.amazonaws.com  | HTTPS |",
+          "retrievedAt": "2026-09-01T04:29:25.802Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-region-eu-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-2",
+      "targetLabel": "Europe (London)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ca3b244a7e22b41889a087745660ce796f611a6e7f7e4cbb314759ff5732c16",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md ::  | column \"Region Name\"",
+          "quote": "| US East (N. Virginia) | us-east-1 |  connect.us-east-1.amazonaws.com <br /> connect-fips.us-east-1.amazonaws.com  | HTTPS<br />HTTPS |",
+          "retrievedAt": "2026-09-01T04:29:25.802Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-region-us-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ca3b244a7e22b41889a087745660ce796f611a6e7f7e4cbb314759ff5732c16",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md ::  | column \"Region Name\"",
+          "quote": "|  AWS GovCloud (US-West) | us-gov-west-1 |  connect.us-gov-west-1.amazonaws.com  | HTTPS |",
+          "retrievedAt": "2026-09-01T04:29:25.802Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-region-us-gov-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4ca3b244a7e22b41889a087745660ce796f611a6e7f7e4cbb314759ff5732c16",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md ::  | column \"Region Name\"",
+          "quote": "| US West (Oregon) | us-west-2 |  connect.us-west-2.amazonaws.com <br /> connect-fips.us-west-2.amazonaws.com  | HTTPS<br />HTTPS |",
+          "retrievedAt": "2026-09-01T04:29:25.802Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-region-us-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::ApprovedOrigin](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-approvedorigin.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-approvedorigin-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::ApprovedOrigin",
+      "targetLabel": "AWS::Connect::ApprovedOrigin"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::ContactFlow](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-contactflow.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-contactflow-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::ContactFlow",
+      "targetLabel": "AWS::Connect::ContactFlow"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::ContactFlowModule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-contactflowmodule.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-contactflowmodule-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::ContactFlowModule",
+      "targetLabel": "AWS::Connect::ContactFlowModule"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::EvaluationForm](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-evaluationform.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-evaluationform-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::EvaluationForm",
+      "targetLabel": "AWS::Connect::EvaluationForm"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::HoursOfOperation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-hoursofoperation.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-hoursofoperation-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::HoursOfOperation",
+      "targetLabel": "AWS::Connect::HoursOfOperation"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::Instance](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-instance.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-instance-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::Instance",
+      "targetLabel": "AWS::Connect::Instance"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::InstanceStorageConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-instancestorageconfig.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-instancestorageconfig-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::InstanceStorageConfig",
+      "targetLabel": "AWS::Connect::InstanceStorageConfig"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::IntegrationAssociation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-integrationassociation.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-integrationassociation-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::IntegrationAssociation",
+      "targetLabel": "AWS::Connect::IntegrationAssociation"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::PhoneNumber](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-phonenumber.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-phonenumber-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::PhoneNumber",
+      "targetLabel": "AWS::Connect::PhoneNumber"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::Prompt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-prompt.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-prompt-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::Prompt",
+      "targetLabel": "AWS::Connect::Prompt"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::Queue](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-queue.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-queue-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::Queue",
+      "targetLabel": "AWS::Connect::Queue"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::QuickConnect](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-quickconnect.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-quickconnect-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::QuickConnect",
+      "targetLabel": "AWS::Connect::QuickConnect"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::RoutingProfile](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-routingprofile.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-routingprofile-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::RoutingProfile",
+      "targetLabel": "AWS::Connect::RoutingProfile"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::Rule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-rule.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-rule-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::Rule",
+      "targetLabel": "AWS::Connect::Rule"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::SecurityKey](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-securitykey.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-securitykey-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::SecurityKey",
+      "targetLabel": "AWS::Connect::SecurityKey"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::TaskTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-tasktemplate.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-tasktemplate-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::TaskTemplate",
+      "targetLabel": "AWS::Connect::TaskTemplate"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::TrafficDistributionGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-trafficdistributiongroup.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-trafficdistributiongroup-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::TrafficDistributionGroup",
+      "targetLabel": "AWS::Connect::TrafficDistributionGroup"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::User](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-user.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-user-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::User",
+      "targetLabel": "AWS::Connect::User"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::UserHierarchyGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-userhierarchygroup.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-userhierarchygroup-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::UserHierarchyGroup",
+      "targetLabel": "AWS::Connect::UserHierarchyGroup"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::View](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-view.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-view-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::View",
+      "targetLabel": "AWS::Connect::View"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: The following Connect Customer resource APIs support CloudFormation templates:",
+          "quote": "+ [AWS::Connect::ViewVersion](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-connect-viewversion.html)",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-resourcetype-aws-connect-viewversion-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::ViewVersion",
+      "targetLabel": "AWS::Connect::ViewVersion"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: heading level 2",
+          "quote": "## CloudFormation",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-service-cloudformation-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudformation",
+      "targetLabel": "CloudFormation"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: heading level 2",
+          "quote": "## CloudTrail",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-service-cloudtrail-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudtrail",
+      "targetLabel": "CloudTrail"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
+          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: heading level 2",
+          "quote": "## EventBridge",
+          "retrievedAt": "2026-09-01T04:29:26.371Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "connect/service-wide",
+      "id": "connect-service-wide-service-events-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "events",
+      "targetLabel": "EventBridge"
+    }
+  ],
+  "featureId": "connect/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "connect",
+  "unresolvedTargets": [
+    {
+      "axis": "region",
+      "raw": "Asia Pacific (Osaka) Region - This Region is for replicas only. For more information, see the Note at the top of Create a replica of your existing Connect Customer instance.",
+      "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+    },
+    {
+      "axis": "region",
+      "raw": "Asia Pacific (Osaka) Region - This Region is for replicas only. For more information, see the Note at the top of Create a replica of your existing Connect Customer instance.",
+      "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
+    }
+  ]
+}

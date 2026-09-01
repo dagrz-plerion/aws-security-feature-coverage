@@ -77,6 +77,8 @@ export function toBrowserModel(data: ReportData) {
     resourceType: data.resourceTypes.length,
     dataSource: data.dataSources.length,
   };
+  // An open axis is as big as the catalog AWS publishes for it.
+  for (const open of data.openAxes) universeSizes[open.axis] = open.count;
 
   return {
     generatedAt: data.generatedAt,

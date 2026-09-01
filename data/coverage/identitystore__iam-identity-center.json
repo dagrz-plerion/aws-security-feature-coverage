@@ -1,0 +1,1413 @@
+{
+  "axes": [
+    "region",
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Africa (Cape Town)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-af-south-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "af-south-1",
+      "targetLabel": "Africa (Cape Town)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
+          "quote": "| ap-east-1 | Asia Pacific (Hong Kong) | ap-northeast-2 | Asia Pacific (Seoul) |",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-east-1",
+      "targetLabel": "ap-east-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
+          "quote": "| ap-east-2 | Asia Pacific (Taipei) | ap-northeast-1 | Asia Pacific (Tokyo) |",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-east-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-east-2",
+      "targetLabel": "ap-east-2"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ Asia Pacific (Tokyo)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-northeast-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-1",
+      "targetLabel": "Asia Pacific (Tokyo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ Asia Pacific (Seoul)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-northeast-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-2",
+      "targetLabel": "Asia Pacific (Seoul)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ Asia Pacific (Osaka)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-northeast-3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-3",
+      "targetLabel": "Asia Pacific (Osaka)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ Asia Pacific (Mumbai)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-south-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-1",
+      "targetLabel": "Asia Pacific (Mumbai)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
+          "quote": "| ap-south-2 | Asia Pacific (Hyderabad) | ap-south-1 | Asia Pacific (Mumbai) |",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-2",
+      "targetLabel": "ap-south-2"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ Asia Pacific (Singapore)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-southeast-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-1",
+      "targetLabel": "Asia Pacific (Singapore)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ Asia Pacific (Sydney)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-southeast-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-2",
+      "targetLabel": "Asia Pacific (Sydney)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Asia Pacific (Jakarta)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-southeast-3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-3",
+      "targetLabel": "Asia Pacific (Jakarta)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
+          "quote": "| ap-southeast-4 | Asia Pacific (Melbourne) | ap-southeast-2 | Asia Pacific (Sydney) |",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-southeast-4-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-4",
+      "targetLabel": "ap-southeast-4"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
+          "quote": "| ap-southeast-5 | Asia Pacific (Malaysia) | ap-southeast-1 | Asia Pacific (Singapore) |",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-southeast-5-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-5",
+      "targetLabel": "ap-southeast-5"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
+          "quote": "| ap-southeast-6 | Asia Pacific (New Zealand) | ap-southeast-2 | Asia Pacific (Sydney) |",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-southeast-6-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-6",
+      "targetLabel": "ap-southeast-6"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
+          "quote": "| ap-southeast-7 | Asia Pacific (Thailand) | ap-northeast-3 | Asia Pacific (Osaka) |",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ap-southeast-7-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-7",
+      "targetLabel": "ap-southeast-7"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ Canada (Central)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ca-central-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-central-1",
+      "targetLabel": "Canada (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
+          "quote": "| ca-west-1 | Canada West (Calgary) | ca-central-1 | Canada (Central) |",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-ca-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-west-1",
+      "targetLabel": "ca-west-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ Europe (Frankfurt)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-eu-central-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-1",
+      "targetLabel": "Europe (Frankfurt)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
+          "quote": "| eu-central-2 | Europe (Zurich) | eu-central-1 | Europe (Frankfurt) |",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-eu-central-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-2",
+      "targetLabel": "eu-central-2"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ Europe (Stockholm)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-eu-north-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-north-1",
+      "targetLabel": "Europe (Stockholm)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Europe (Milan)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-eu-south-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-1",
+      "targetLabel": "Europe (Milan)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
+          "quote": "| eu-south-2 | Europe (Spain) | eu-west-3 | Europe (Paris) |",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-eu-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-2",
+      "targetLabel": "eu-south-2"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ Europe (Ireland)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-eu-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-1",
+      "targetLabel": "Europe (Ireland)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ Europe (London)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-eu-west-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-2",
+      "targetLabel": "Europe (London)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ Europe (Paris)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-eu-west-3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-3",
+      "targetLabel": "Europe (Paris)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Israel (Tel Aviv)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-il-central-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "il-central-1",
+      "targetLabel": "Israel (Tel Aviv)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
+          "quote": "| me-central-1 | Middle East (UAE) | eu-central-1 | Europe (Frankfurt) |",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-me-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "me-central-1",
+      "targetLabel": "me-central-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Middle East (Bahrain)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-me-south-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "me-south-1",
+      "targetLabel": "Middle East (Bahrain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
+          "quote": "| mx-central-1 | Mexico (Central) | us-east-2 | US East (Ohio) |",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-mx-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mx-central-1",
+      "targetLabel": "mx-central-1"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ South America (São Paulo)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-sa-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sa-east-1",
+      "targetLabel": "South America (São Paulo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ US East (N. Virginia)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-us-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ US East (Ohio)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-us-east-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-2",
+      "targetLabel": "US East (Ohio)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "1948c9f975334945ce9863f25349cc651f5c917e4b704f4e26f6dd3e080071dc",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-sso.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-East)",
+          "retrievedAt": "2026-09-01T04:59:32.906Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-sso.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-us-gov-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "1948c9f975334945ce9863f25349cc651f5c917e4b704f4e26f6dd3e080071dc",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-sso.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-West)",
+          "retrievedAt": "2026-09-01T04:59:32.906Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-sso.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-us-gov-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ US West (N. California)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-us-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-1",
+      "targetLabel": "US West (N. California)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
+          "quote": "+ US West (Oregon)",
+          "retrievedAt": "2026-09-01T04:59:33.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-region-us-west-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS DevOps Agent | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-aidevops-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "aidevops",
+      "targetLabel": "AWS DevOps Agent"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS App Studio  | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-appstudio-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "appstudio",
+      "targetLabel": "AWS App Studio"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon CodeCatalyst | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-codecatalyst-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codecatalyst",
+      "targetLabel": "Amazon CodeCatalyst"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon DataZone | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-datazone-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "datazone",
+      "targetLabel": "Amazon DataZone"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS Deadline Cloud | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-deadline-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "deadline",
+      "targetLabel": "AWS Deadline Cloud"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon EMR Serverless | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-emr-serverless-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "emr-serverless",
+      "targetLabel": "Amazon EMR Serverless"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon OpenSearch Service | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-es-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "es",
+      "targetLabel": "Amazon OpenSearch Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS Glue | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-glue-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "glue",
+      "targetLabel": "AWS Glue"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon Managed Grafana | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-grafana-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "grafana",
+      "targetLabel": "Amazon Managed Grafana"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS IoT Events | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-iotevents-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iotevents",
+      "targetLabel": "AWS IoT Events"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS IoT SiteWise | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-iotsitewise-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iotsitewise",
+      "targetLabel": "AWS IoT SiteWise"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon Kendra | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-kendra-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kendra",
+      "targetLabel": "Amazon Kendra"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS Lake Formation | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-lakeformation-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lakeformation",
+      "targetLabel": "AWS Lake Formation"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon Monitron | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-monitron-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "monitron",
+      "targetLabel": "Amazon Monitron"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Multi-party approval | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-mpa-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mpa",
+      "targetLabel": "Multi-party approval"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon Q Business | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-qbusiness-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "qbusiness",
+      "targetLabel": "Amazon Q Business"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon Quick | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-quicksight-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "quicksight",
+      "targetLabel": "Amazon Quick"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon Redshift | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes2 | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-redshift-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "redshift",
+      "targetLabel": "Amazon Redshift"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS re:Post Private | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-repostspace-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "repostspace",
+      "targetLabel": "AWS re:Post Private"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon SageMaker Studio | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-sagemaker-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sagemaker",
+      "targetLabel": "Amazon SageMaker Studio"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS Supply Chain | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-scn-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "scn",
+      "targetLabel": "AWS Supply Chain"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS Security Agent | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-securityagent-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securityagent",
+      "targetLabel": "AWS Security Agent"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS Systems Manager | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes - Fleet Manager Remote Desktop |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-ssm-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ssm",
+      "targetLabel": "AWS Systems Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS Transform | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-transform-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "transform",
+      "targetLabel": "AWS Transform"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| AWS Verified Access | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-verified-access-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "verified-access",
+      "targetLabel": "AWS Verified Access"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon WorkMail | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-workmail-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "workmail",
+      "targetLabel": "Amazon WorkMail"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon WorkSpaces | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-workspaces-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "workspaces",
+      "targetLabel": "Amazon WorkSpaces"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon WorkSpaces Secure Browser | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "identitystore/iam-identity-center",
+      "id": "identitystore-iam-identity-center-service-workspaces-web-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "workspaces-web",
+      "targetLabel": "Amazon WorkSpaces Secure Browser"
+    }
+  ],
+  "featureId": "identitystore/iam-identity-center",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "identitystore",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Amazon Athena SQL",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EKS Capabilities",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EMR on EC2",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EMR on EKS",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EMR Studio",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon OpenSearch Service Serverless Service",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon S3 Access Grants",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon SageMaker Unified Studio",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS account access (account access manager)",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Transfer Family web apps",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Kiro",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "OpenSearch user interface (Dashboards)",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Athena SQL",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EKS Capabilities",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EMR on EC2",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EMR on EKS",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EMR Studio",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon OpenSearch Service Serverless Service",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon S3 Access Grants",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon SageMaker Unified Studio",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS account access (account access manager)",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Transfer Family web apps",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Kiro",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    },
+    {
+      "axis": "service",
+      "raw": "OpenSearch user interface (Dashboards)",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    }
+  ]
+}

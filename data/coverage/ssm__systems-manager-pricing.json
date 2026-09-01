@@ -1,6 +1,7 @@
 {
   "axes": [
-    "region"
+    "region",
+    "service"
   ],
   "claims": [
     {
@@ -182,10 +183,110 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "510f7b8438c2a7c6bad0d1ff19fb653f355a3823bee3c2988f9d761bda94c1e4",
+          "locator": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md :: Integrate OpsCenter with other AWS services",
+          "quote": "+ [Amazon CloudWatch Application Insights](#OpsCenter-about-cloudwatch-insights)",
+          "retrievedAt": "2026-09-01T04:29:36.660Z",
+          "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "ssm/systems-manager-pricing",
+      "id": "ssm-systems-manager-pricing-service-applicationinsights-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "applicationinsights",
+      "targetLabel": "Amazon CloudWatch Application Insights"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "510f7b8438c2a7c6bad0d1ff19fb653f355a3823bee3c2988f9d761bda94c1e4",
+          "locator": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md :: Integrate OpsCenter with other AWS services",
+          "quote": "+ [Amazon CloudWatch](#OpsCenter-about-cloudwatch)",
+          "retrievedAt": "2026-09-01T04:29:36.660Z",
+          "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "ssm/systems-manager-pricing",
+      "id": "ssm-systems-manager-pricing-service-cloudwatch-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudwatch",
+      "targetLabel": "Amazon CloudWatch"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "510f7b8438c2a7c6bad0d1ff19fb653f355a3823bee3c2988f9d761bda94c1e4",
+          "locator": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md :: Integrate OpsCenter with other AWS services",
+          "quote": "+ [AWS Config](#OpsCenter-about-AWS-config)",
+          "retrievedAt": "2026-09-01T04:29:36.660Z",
+          "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "ssm/systems-manager-pricing",
+      "id": "ssm-systems-manager-pricing-service-config-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "config",
+      "targetLabel": "AWS Config"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "510f7b8438c2a7c6bad0d1ff19fb653f355a3823bee3c2988f9d761bda94c1e4",
+          "locator": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md :: Integrate OpsCenter with other AWS services",
+          "quote": "+ [Amazon EventBridge](#OpsCenter-about-eventbridge)",
+          "retrievedAt": "2026-09-01T04:29:36.660Z",
+          "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "ssm/systems-manager-pricing",
+      "id": "ssm-systems-manager-pricing-service-events-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "events",
+      "targetLabel": "Amazon EventBridge"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "510f7b8438c2a7c6bad0d1ff19fb653f355a3823bee3c2988f9d761bda94c1e4",
+          "locator": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md :: Integrate OpsCenter with other AWS services",
+          "quote": "+ [AWS Systems Manager Incident Manager](#OpsCenter-about-incident-manager)",
+          "retrievedAt": "2026-09-01T04:29:36.660Z",
+          "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "ssm/systems-manager-pricing",
+      "id": "ssm-systems-manager-pricing-service-ssm-incidents-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ssm-incidents",
+      "targetLabel": "AWS Systems Manager Incident Manager"
     }
   ],
   "featureId": "ssm/systems-manager-pricing",
-  "generatedAt": "2026-09-01T04:53:52.577Z",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
   "serviceId": "ssm",
   "unresolvedTargets": []
 }

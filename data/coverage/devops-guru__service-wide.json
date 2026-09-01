@@ -1,0 +1,411 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru creates reactive insights for services such as the following:",
+          "quote": "+ Amazon API Gateway",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-apigateway-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "apigateway",
+      "targetLabel": "Amazon API Gateway"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru creates reactive insights for services such as the following:",
+          "quote": "+ Amazon CloudFront",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-cloudfront-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudfront",
+      "targetLabel": "Amazon CloudFront"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru creates reactive insights for services such as the following:",
+          "quote": "+ Amazon DynamoDB",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-dynamodb-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "dynamodb",
+      "targetLabel": "Amazon DynamoDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru creates reactive insights for services such as the following:",
+          "quote": "+ Amazon EC2",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-ec2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Amazon EC2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Amazon ECS",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-ecs-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ecs",
+      "targetLabel": "Amazon ECS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Amazon EKS",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-eks-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eks",
+      "targetLabel": "Amazon EKS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ AWS Elastic Beanstalk",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-elasticbeanstalk-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticbeanstalk",
+      "targetLabel": "AWS Elastic Beanstalk"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Elastic Load Balancing",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-elasticloadbalancing-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticloadbalancing",
+      "targetLabel": "Elastic Load Balancing"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Amazon OpenSearch Service",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-es-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "es",
+      "targetLabel": "Amazon OpenSearch Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Amazon Kinesis",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-kinesis-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kinesis",
+      "targetLabel": "Amazon Kinesis"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ AWS Lambda",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-lambda-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lambda",
+      "targetLabel": "AWS Lambda"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Amazon RDS",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-pi-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "pi",
+      "targetLabel": "Amazon RDS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Amazon Redshift",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-redshift-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "redshift",
+      "targetLabel": "Amazon Redshift"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Amazon Route 53",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-route53-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "route53",
+      "targetLabel": "Amazon Route 53"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Amazon S3",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-s3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Amazon S3"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Amazon SageMaker AI",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-sagemaker-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sagemaker",
+      "targetLabel": "Amazon SageMaker AI"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Amazon SNS",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-sns-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sns",
+      "targetLabel": "Amazon SNS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Amazon SQS",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-sqs-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sqs",
+      "targetLabel": "Amazon SQS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ AWS Step Functions",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-states-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "states",
+      "targetLabel": "AWS Step Functions"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "52adc6646d1a043071fe3a7345c04167d16d2720e7b49441c7fbefeee96bf2ce",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md :: DevOps Guru monitoring is at an Auto Scaling group level, and not at a single instance level.",
+          "quote": "+ Amazon SWF",
+          "retrievedAt": "2026-09-01T04:35:13.645Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/coverage.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "devops-guru/service-wide",
+      "id": "devops-guru-service-wide-service-swf-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "swf",
+      "targetLabel": "Amazon SWF"
+    }
+  ],
+  "featureId": "devops-guru/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "devops-guru",
+  "unresolvedTargets": []
+}

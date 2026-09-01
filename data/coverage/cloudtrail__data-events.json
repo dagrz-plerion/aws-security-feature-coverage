@@ -1,8 +1,49 @@
 {
   "axes": [
+    "resourceType",
     "service"
   ],
   "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6df463f86ff2b8a833829666a5a7f0ade4ac6d671b3c58c505ec12c6f31d5889",
+          "locator": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/logging-using-cloudtrail.md ::  | column \"Data event type (console)\"",
+          "quote": "| AWS IoT SiteWise asset |  AWS::IoTSiteWise::Asset  |  +  [BatchPutAssetPropertyValue](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchPutAssetPropertyValue.html) <br />+  [GetAssetPropertyValue](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_GetAssetPropertyValue.html) <br />+  [GetAssetPropertyValueHistory](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_GetAssetPropertyValueHistory.html) <br />+  [GetAssetPropertyAggregates](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_GetAssetPropertyAggregates.html) <br />+  [Ge…",
+          "retrievedAt": "2026-09-01T04:59:41.994Z",
+          "sourceUrl": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/logging-using-cloudtrail.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/data-events",
+      "id": "cloudtrail-data-events-resourcetype-aws-iotsitewise-asset-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::IoTSiteWise::Asset",
+      "targetLabel": "AWS IoT SiteWise asset"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6df463f86ff2b8a833829666a5a7f0ade4ac6d671b3c58c505ec12c6f31d5889",
+          "locator": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/logging-using-cloudtrail.md ::  | column \"Data event type (console)\"",
+          "quote": "| AWS IoT SiteWise Assistant |  AWS::SitewiseAssistant::Conversation  |  +   [InvokeAssistant](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_InvokeAssistant.html)   |",
+          "retrievedAt": "2026-09-01T04:59:41.994Z",
+          "sourceUrl": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/logging-using-cloudtrail.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cloudtrail/data-events",
+      "id": "cloudtrail-data-events-resourcetype-aws-wisdom-assistant-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Wisdom::Assistant",
+      "targetLabel": "AWS IoT SiteWise Assistant"
+    },
     {
       "axis": "service",
       "confidence": 0.9,
@@ -65,7 +106,13 @@
     }
   ],
   "featureId": "cloudtrail/data-events",
-  "generatedAt": "2026-09-01T04:53:52.577Z",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
   "serviceId": "cloudtrail",
-  "unresolvedTargets": []
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "AWS IoT SiteWise time series",
+      "sourceUrl": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/logging-using-cloudtrail.md"
+    }
+  ]
 }

@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "25ed871bbd97364c4dd9c9a2ff39ea6f72bb3b9c09d9ccf0d1fa98de2cbd31b9",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-orgs-auto-enable.md :: heading level 4",
+          "quote": "#### [ Security Hub CSPM API ]",
+          "retrievedAt": "2026-09-01T04:29:32.738Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-orgs-auto-enable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "organizations/automatically-enabling-security-hub-cspm-in-new-accounts",
+      "id": "organizations-automatically-enabling-security-hub-cspm-in-new-accounts-resourcetype-amplifybackend-api-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "amplifybackend:api",
+      "targetLabel": "[ Security Hub CSPM API ]"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "25ed871bbd97364c4dd9c9a2ff39ea6f72bb3b9c09d9ccf0d1fa98de2cbd31b9",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-orgs-auto-enable.md :: heading level 4",
+          "quote": "#### [ Security Hub CSPM console ]",
+          "retrievedAt": "2026-09-01T04:29:32.738Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-orgs-auto-enable.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "organizations/automatically-enabling-security-hub-cspm-in-new-accounts",
+      "id": "organizations-automatically-enabling-security-hub-cspm-in-new-accounts-resourcetype-signin-console-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "signin:console",
+      "targetLabel": "[ Security Hub CSPM console ]"
+    }
+  ],
+  "featureId": "organizations/automatically-enabling-security-hub-cspm-in-new-accounts",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "organizations",
+  "unresolvedTargets": []
+}

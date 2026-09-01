@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "service-level"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "12cf1ae4a0a2ec66da2a335e3958099234da5dec408614dcb0dca7b43329c214",
+      "locator": "Settings",
+      "quote": "[Adding a delegated administrator](https://docs.aws.amazon.com/audit-manager/latest/userguide/add-delegated-admin.md)",
+      "retrievedAt": "2026-09-01T04:06:03.320Z",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "auditmanager/service-wide",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS Audit Manager: stated for the service as a whole",
+  "serviceId": "auditmanager",
+  "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+  "tier": "tier1"
+}

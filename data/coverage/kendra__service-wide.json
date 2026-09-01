@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "da226abaa248665a6892637c422676cbfe286b300f1124c8284e0cad586830d3",
+          "locator": "https://docs.aws.amazon.com/kendra/latest/dg/data-source-database.md :: Amazon RDS/Aurora",
+          "quote": "+ Amazon Aurora MySQL",
+          "retrievedAt": "2026-09-01T04:29:26.668Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kendra/latest/dg/data-source-database.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "kendra/service-wide",
+      "id": "kendra-service-wide-service-product-amazon-aurora-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "product:amazon-aurora",
+      "targetLabel": "Amazon Aurora MySQL"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "da226abaa248665a6892637c422676cbfe286b300f1124c8284e0cad586830d3",
+          "locator": "https://docs.aws.amazon.com/kendra/latest/dg/data-source-database.md :: Amazon RDS/Aurora",
+          "quote": "+ Amazon RDS for MySQL",
+          "retrievedAt": "2026-09-01T04:29:26.668Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kendra/latest/dg/data-source-database.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "kendra/service-wide",
+      "id": "kendra-service-wide-service-rds-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "rds",
+      "targetLabel": "Amazon RDS for MySQL"
+    }
+  ],
+  "featureId": "kendra/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "kendra",
+  "unresolvedTargets": []
+}

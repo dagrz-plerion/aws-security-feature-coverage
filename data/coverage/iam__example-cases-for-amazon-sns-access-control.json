@@ -1,0 +1,237 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "46fc855b4ce8244645c3437f268613cfb17dafca5df2abb515b6f94535edba1e",
+          "locator": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md :: Example cases for Amazon SNS access control > Allow Amazon SES to publish to a topic that is owned by another account > [ JSON ]",
+          "quote": "+ Amazon API Gateway",
+          "retrievedAt": "2026-09-01T04:59:26.032Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/example-cases-for-amazon-sns-access-control",
+      "id": "iam-example-cases-for-amazon-sns-access-control-service-apigateway-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "apigateway",
+      "targetLabel": "Amazon API Gateway"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "46fc855b4ce8244645c3437f268613cfb17dafca5df2abb515b6f94535edba1e",
+          "locator": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md :: Example cases for Amazon SNS access control > Allow Amazon SES to publish to a topic that is owned by another account > [ JSON ]",
+          "quote": "+ Amazon CloudWatch",
+          "retrievedAt": "2026-09-01T04:59:26.032Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/example-cases-for-amazon-sns-access-control",
+      "id": "iam-example-cases-for-amazon-sns-access-control-service-cloudwatch-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudwatch",
+      "targetLabel": "Amazon CloudWatch"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "46fc855b4ce8244645c3437f268613cfb17dafca5df2abb515b6f94535edba1e",
+          "locator": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md :: Example cases for Amazon SNS access control > Allow Amazon SES to publish to a topic that is owned by another account > [ JSON ]",
+          "quote": "+ AWS CodeCommit",
+          "retrievedAt": "2026-09-01T04:59:26.032Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/example-cases-for-amazon-sns-access-control",
+      "id": "iam-example-cases-for-amazon-sns-access-control-service-codecommit-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codecommit",
+      "targetLabel": "AWS CodeCommit"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "46fc855b4ce8244645c3437f268613cfb17dafca5df2abb515b6f94535edba1e",
+          "locator": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md :: Example cases for Amazon SNS access control > Allow Amazon SES to publish to a topic that is owned by another account > [ JSON ]",
+          "quote": "+ Amazon DevOps Guru",
+          "retrievedAt": "2026-09-01T04:59:26.032Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/example-cases-for-amazon-sns-access-control",
+      "id": "iam-example-cases-for-amazon-sns-access-control-service-devops-guru-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "devops-guru",
+      "targetLabel": "Amazon DevOps Guru"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "46fc855b4ce8244645c3437f268613cfb17dafca5df2abb515b6f94535edba1e",
+          "locator": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md :: Example cases for Amazon SNS access control > Allow Amazon SES to publish to a topic that is owned by another account > [ JSON ]",
+          "quote": "+ Directory Service",
+          "retrievedAt": "2026-09-01T04:59:26.032Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/example-cases-for-amazon-sns-access-control",
+      "id": "iam-example-cases-for-amazon-sns-access-control-service-ds-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ds",
+      "targetLabel": "Directory Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "46fc855b4ce8244645c3437f268613cfb17dafca5df2abb515b6f94535edba1e",
+          "locator": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md :: Example cases for Amazon SNS access control > Allow Amazon SES to publish to a topic that is owned by another account > [ JSON ]",
+          "quote": "+ Amazon SES",
+          "retrievedAt": "2026-09-01T04:59:26.032Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/example-cases-for-amazon-sns-access-control",
+      "id": "iam-example-cases-for-amazon-sns-access-control-service-email-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "email",
+      "targetLabel": "Amazon SES"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "46fc855b4ce8244645c3437f268613cfb17dafca5df2abb515b6f94535edba1e",
+          "locator": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md :: Example cases for Amazon SNS access control > Allow Amazon SES to publish to a topic that is owned by another account > [ JSON ]",
+          "quote": "+ Amazon GameLift Servers",
+          "retrievedAt": "2026-09-01T04:59:26.032Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/example-cases-for-amazon-sns-access-control",
+      "id": "iam-example-cases-for-amazon-sns-access-control-service-gamelift-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "gamelift",
+      "targetLabel": "Amazon GameLift Servers"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "46fc855b4ce8244645c3437f268613cfb17dafca5df2abb515b6f94535edba1e",
+          "locator": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md :: Example cases for Amazon SNS access control > Allow Amazon SES to publish to a topic that is owned by another account > [ JSON ]",
+          "quote": "+ AWS Lambda",
+          "retrievedAt": "2026-09-01T04:59:26.032Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/example-cases-for-amazon-sns-access-control",
+      "id": "iam-example-cases-for-amazon-sns-access-control-service-lambda-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lambda",
+      "targetLabel": "AWS Lambda"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "46fc855b4ce8244645c3437f268613cfb17dafca5df2abb515b6f94535edba1e",
+          "locator": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md :: Example cases for Amazon SNS access control > Allow Amazon SES to publish to a topic that is owned by another account > [ JSON ]",
+          "quote": "+ Amazon RDS",
+          "retrievedAt": "2026-09-01T04:59:26.032Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/example-cases-for-amazon-sns-access-control",
+      "id": "iam-example-cases-for-amazon-sns-access-control-service-pi-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "pi",
+      "targetLabel": "Amazon RDS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "46fc855b4ce8244645c3437f268613cfb17dafca5df2abb515b6f94535edba1e",
+          "locator": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md :: Example cases for Amazon SNS access control > Allow Amazon SES to publish to a topic that is owned by another account > [ JSON ]",
+          "quote": "+ Amazon Redshift",
+          "retrievedAt": "2026-09-01T04:59:26.032Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/example-cases-for-amazon-sns-access-control",
+      "id": "iam-example-cases-for-amazon-sns-access-control-service-redshift-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "redshift",
+      "targetLabel": "Amazon Redshift"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "46fc855b4ce8244645c3437f268613cfb17dafca5df2abb515b6f94535edba1e",
+          "locator": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md :: Example cases for Amazon SNS access control > Allow Amazon SES to publish to a topic that is owned by another account > [ JSON ]",
+          "quote": "+ AWS Systems Manager Incident Manager",
+          "retrievedAt": "2026-09-01T04:59:26.032Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/example-cases-for-amazon-sns-access-control",
+      "id": "iam-example-cases-for-amazon-sns-access-control-service-ssm-incidents-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ssm-incidents",
+      "targetLabel": "AWS Systems Manager Incident Manager"
+    }
+  ],
+  "featureId": "iam/example-cases-for-amazon-sns-access-control",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "iam",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Amazon Pinpoint SMS and Voice API",
+      "sourceUrl": "https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.md"
+    }
+  ]
+}

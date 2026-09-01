@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "region"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "28592a3098aa8ec2d5637ad384e2eec2b25a7a35add68ceca95daf44816bf134",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-verifiedpermissions.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-East)",
+          "retrievedAt": "2026-09-01T04:59:47.255Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-verifiedpermissions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "verifiedpermissions/service-wide",
+      "id": "verifiedpermissions-service-wide-region-us-gov-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "28592a3098aa8ec2d5637ad384e2eec2b25a7a35add68ceca95daf44816bf134",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-verifiedpermissions.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-West)",
+          "retrievedAt": "2026-09-01T04:59:47.255Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-verifiedpermissions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "verifiedpermissions/service-wide",
+      "id": "verifiedpermissions-service-wide-region-us-gov-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    }
+  ],
+  "featureId": "verifiedpermissions/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "verifiedpermissions",
+  "unresolvedTargets": []
+}

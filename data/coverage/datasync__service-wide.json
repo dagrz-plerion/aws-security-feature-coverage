@@ -1,0 +1,62 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "e6d60194d90e7eacc45381e0520f96901068c533d1fec654076758f0c65dfff5",
+          "locator": "https://docs.aws.amazon.com/datasync/latest/userguide/datasync-network.md ::  | column \"From\"",
+          "quote": "| DataSync agent  | NFS file server | TCP | 2049 (for NFS versions 4.1 and 4.0)<br />111 and 2049 (for NFS version 3.x) | Mounts the NFS file server. <br />DataSync supports NFS versions 3.x, 4.0, and 4.1. |",
+          "retrievedAt": "2026-09-01T04:35:13.274Z",
+          "sourceUrl": "https://docs.aws.amazon.com/datasync/latest/userguide/datasync-network.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "datasync/service-wide",
+      "id": "datasync-service-wide-resourcetype-aws-datasync-agent-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::DataSync::Agent",
+      "targetLabel": "DataSync agent"
+    }
+  ],
+  "featureId": "datasync/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "datasync",
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "Your web browser",
+      "sourceUrl": "https://docs.aws.amazon.com/datasync/latest/userguide/datasync-network.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Your client",
+      "sourceUrl": "https://docs.aws.amazon.com/datasync/latest/userguide/datasync-network.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Your web browser",
+      "sourceUrl": "https://docs.aws.amazon.com/datasync/latest/userguide/datasync-network.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Your web browser",
+      "sourceUrl": "https://docs.aws.amazon.com/datasync/latest/userguide/datasync-network.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Your client",
+      "sourceUrl": "https://docs.aws.amazon.com/datasync/latest/userguide/datasync-network.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Your web browser",
+      "sourceUrl": "https://docs.aws.amazon.com/datasync/latest/userguide/datasync-network.md"
+    }
+  ]
+}

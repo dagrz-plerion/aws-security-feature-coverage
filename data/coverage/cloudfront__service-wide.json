@@ -1,0 +1,71 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f211367d7a96623a868d739a2940115b22e759f3d5f266eda9db86052292978f",
+          "locator": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/standard-logging.md :: To see the required permissions for each logging destination, choose from the following topics in the Amazon CloudWatch Logs User Guide.",
+          "quote": "+ [CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-logs-infrastructure-V2-CloudWatchLogs)",
+          "retrievedAt": "2026-09-01T04:35:09.180Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/standard-logging.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudfront/service-wide",
+      "id": "cloudfront-service-wide-service-cloudwatch-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudwatch",
+      "targetLabel": "CloudWatch Logs"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f211367d7a96623a868d739a2940115b22e759f3d5f266eda9db86052292978f",
+          "locator": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/standard-logging.md :: To see the required permissions for each logging destination, choose from the following topics in the Amazon CloudWatch Logs User Guide.",
+          "quote": "+ [Firehose](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-logs-infrastructure-V2-Firehose)",
+          "retrievedAt": "2026-09-01T04:35:09.180Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/standard-logging.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudfront/service-wide",
+      "id": "cloudfront-service-wide-service-firehose-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "firehose",
+      "targetLabel": "Firehose"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f211367d7a96623a868d739a2940115b22e759f3d5f266eda9db86052292978f",
+          "locator": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/standard-logging.md :: To see the required permissions for each logging destination, choose from the following topics in the Amazon CloudWatch Logs User Guide.",
+          "quote": "+ [Amazon S3](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html#AWS-logs-infrastructure-V2-S3)",
+          "retrievedAt": "2026-09-01T04:35:09.180Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/standard-logging.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudfront/service-wide",
+      "id": "cloudfront-service-wide-service-s3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Amazon S3"
+    }
+  ],
+  "featureId": "cloudfront/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "cloudfront",
+  "unresolvedTargets": []
+}

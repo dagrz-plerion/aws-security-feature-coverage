@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "service-level"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
+      "locator": "AWS Security Hub CSPM > Controls reference",
+      "quote": "[Amazon Detective controls](https://docs.aws.amazon.com/securityhub/latest/userguide/detective-controls.md)",
+      "retrievedAt": "2026-09-01T04:06:18.321Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "detective/service-wide",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon Detective: stated for the service as a whole",
+  "serviceId": "detective",
+  "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+  "tier": "tier1"
+}

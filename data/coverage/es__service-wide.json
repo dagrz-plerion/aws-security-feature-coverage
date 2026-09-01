@@ -1,0 +1,172 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "33de80a6d28fbace095df74c459dfcab1a6f84806d938ecbe1272e2ad4f26d60",
+          "locator": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md :: Sources :",
+          "quote": "+ [DynamoDB](https://opensearch.org/docs/latest/data-prepper/pipelines/configuration/sources/dynamo-db/)",
+          "retrievedAt": "2026-09-01T04:34:57.451Z",
+          "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "es/service-wide",
+      "id": "es-service-wide-service-dynamodb-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "dynamodb",
+      "targetLabel": "DynamoDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "33de80a6d28fbace095df74c459dfcab1a6f84806d938ecbe1272e2ad4f26d60",
+          "locator": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md :: Sources :",
+          "quote": "+ [Kafka](https://opensearch.org/docs/latest/data-prepper/pipelines/configuration/sources/kafka/)",
+          "retrievedAt": "2026-09-01T04:34:57.451Z",
+          "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "es/service-wide",
+      "id": "es-service-wide-service-kafka-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kafka",
+      "targetLabel": "Kafka"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "33de80a6d28fbace095df74c459dfcab1a6f84806d938ecbe1272e2ad4f26d60",
+          "locator": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md :: Sources :",
+          "quote": "+ [Kinesis](https://opensearch.org/docs/latest/data-prepper/pipelines/configuration/sources/kinesis/)",
+          "retrievedAt": "2026-09-01T04:34:57.451Z",
+          "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "es/service-wide",
+      "id": "es-service-wide-service-kinesis-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kinesis",
+      "targetLabel": "Kinesis"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "33de80a6d28fbace095df74c459dfcab1a6f84806d938ecbe1272e2ad4f26d60",
+          "locator": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md :: Sources :",
+          "quote": "+ [OpenSearch](https://opensearch.org/docs/latest/data-prepper/pipelines/configuration/sources/opensearch/)",
+          "retrievedAt": "2026-09-01T04:34:57.451Z",
+          "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "es/service-wide",
+      "id": "es-service-wide-service-opensearch-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "opensearch",
+      "targetLabel": "OpenSearch"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "33de80a6d28fbace095df74c459dfcab1a6f84806d938ecbe1272e2ad4f26d60",
+          "locator": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md :: Sources :",
+          "quote": "+ [DocumentDB](https://opensearch.org/docs/latest/data-prepper/pipelines/configuration/sources/documentdb/)",
+          "retrievedAt": "2026-09-01T04:34:57.451Z",
+          "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "es/service-wide",
+      "id": "es-service-wide-service-product-amazon-documentdb-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "product:amazon-documentdb",
+      "targetLabel": "DocumentDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "33de80a6d28fbace095df74c459dfcab1a6f84806d938ecbe1272e2ad4f26d60",
+          "locator": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md :: Sources :",
+          "quote": "+ [S3](https://opensearch.org/docs/latest/data-prepper/pipelines/configuration/sources/s3/)",
+          "retrievedAt": "2026-09-01T04:34:57.451Z",
+          "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "es/service-wide",
+      "id": "es-service-wide-service-s3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "S3"
+    }
+  ],
+  "featureId": "es/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "es",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "HTTP",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+    },
+    {
+      "axis": "service",
+      "raw": "OTel logs",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+    },
+    {
+      "axis": "service",
+      "raw": "OTel metrics",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+    },
+    {
+      "axis": "service",
+      "raw": "OTel trace",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+    },
+    {
+      "axis": "service",
+      "raw": "HTTP",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+    },
+    {
+      "axis": "service",
+      "raw": "OTel logs",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+    },
+    {
+      "axis": "service",
+      "raw": "OTel metrics",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+    },
+    {
+      "axis": "service",
+      "raw": "OTel trace",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/pipeline-config-reference.md"
+    }
+  ]
+}

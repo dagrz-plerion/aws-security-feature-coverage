@@ -7,6 +7,8 @@ export function renderPage(model: unknown): string {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AWS Security Feature Coverage</title>
 <meta name="description" content="Every AWS security feature, and what each one actually covers, with a source for every claim.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -41,7 +43,12 @@ body{margin:0;background:var(--bg);color:var(--fg);font:400 14px/1.55 var(--sans
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding:16px 22px 0}
-.titlebar{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.titlebar{display:flex;align-items:center;gap:13px;flex-wrap:wrap;margin-bottom:14px}
+.pleri{width:46px;height:46px;object-fit:contain;flex:none;filter:drop-shadow(0 2px 6px rgba(255,115,46,.28))}
+.themetoggle{width:26px;height:26px;padding:0;border-radius:50%;cursor:pointer;flex:none;
+  border:1px solid var(--line2);background:linear-gradient(105deg,var(--violet-0) 0 50%,var(--blue-light) 50% 100%)}
+.themetoggle:hover{border-color:var(--accent)}
+.themetoggle span{display:block;width:100%;height:100%;border-radius:50%}
 h1{font-size:18px;font-weight:700;margin:0;letter-spacing:-.3px}
 h1 .mark{color:var(--accent)}
 .sub{color:var(--dim2);font-size:12px}
@@ -99,26 +106,21 @@ tr.detail>td{background:var(--panel);padding:0}
 .card h3{margin:0 0 7px;font-size:13px;font-weight:600}
 .scroll{overflow-x:auto}
 .axisrow{display:flex;gap:7px;align-items:center;margin-bottom:3px}
-footer{padding:22px;border-top:1px solid var(--line);color:var(--dim2);font-size:11.5px}
 </style>
 </head>
 <body>
 <header>
   <div class="titlebar">
+    <img class="pleri" src="pleri.png" alt="Pleri, Plerion's AI cloud security engineer" width="46" height="46">
     <h1>AWS Security Feature <span class="mark">Coverage</span></h1>
     <span class="sub" id="stamp"></span>
     <span class="spacer"></span>
-    <button class="ghost" id="theme">theme</button>
+    <button id="theme" class="themetoggle" type="button" aria-label="Switch between the dark and light theme"><span></span></button>
   </div>
   <div class="stats" id="stats"></div>
   <nav id="tabs"></nav>
 </header>
 <main id="main"></main>
-<footer>
-  Every claim on this page points at an AWS documentation URL and a verbatim quote from it.
-  Nothing is inferred: a source that does not state coverage leaves the target unstated, never "not covered".
-  Built by walking the AWS service reference, the documentation index, the regional services table and the CloudFormation registry.
-</footer>
 <script id="model" type="application/json">${json}</script>
 <script>
 const M = JSON.parse(document.getElementById("model").textContent);
@@ -346,9 +348,7 @@ const VIEWS = {
     const rows = M.features.filter((f) => f.claimCount > 0 && match(f, [f.id, f.name, f.serviceId]));
     if (!rows.length) return filters({ placeholder: "search" }) + '<div class="empty">No coverage claims extracted yet.</div>';
     const axes = [...new Set(rows.flatMap((f) => Object.keys(f.axes)))].sort();
-    return filters({ placeholder: "search mapped features" }) +
-      '<div class="muted" style="margin-bottom:10px">Each bar is measured against the whole axis, not against the length of the table it was read from: ' +
-      Object.entries(US).map(([k, v]) => k + " " + v).join(", ") + ".</div>" + LEGEND +
+    return filters({ placeholder: "search mapped features" }) + LEGEND +
       table([
         { id: "feature", label: "Feature", value: (r) => r.id, cell: (r) => '<span class="mono">' + esc(r.serviceId) + "</span> " + esc(r.name) },
         ...axes.map((a) => ({ id: a, label: a + " (of " + (US[a] ?? "?") + ")", value: (r) => (r.axes[a] ? r.axes[a].covered : -1),

@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "service-level"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "ec1c3f0fd5882850e1dd040cdfeb191147c82ae49556d7ace3e7e20ef957b9fa",
+      "locator": "Security > Incident response",
+      "quote": "[AWS PrivateLink for Amazon Location](https://docs.aws.amazon.com/location/latest/developerguide/privatelink-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:12.478Z",
+      "sourceUrl": "https://docs.aws.amazon.com/location/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "geo/service-wide",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon Location Service: stated for the service as a whole",
+  "serviceId": "geo",
+  "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+  "tier": "tier2"
+}

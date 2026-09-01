@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "service-level"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "1d628b17316beace57b0747efb99ff3c2de60a332a67592618c3ae82921b685b",
+      "locator": "Security > Lake Formation for FGAC",
+      "quote": "[Using Amazon S3 Access Grants with AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/security-s3-access-grants.md)",
+      "retrievedAt": "2026-09-01T04:06:09.925Z",
+      "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/llms.txt"
+    }
+  ],
+  "id": "glue/service-wide",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS Glue for Ray : stated for the service as a whole",
+  "serviceId": "glue",
+  "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+  "tier": "tier2"
+}

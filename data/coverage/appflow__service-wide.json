@@ -1,0 +1,112 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "354b848ecdcb10fde42ede143495c8c7b27add1463a3f92fb389a0f3c20718ed",
+          "locator": "https://docs.aws.amazon.com/appflow/latest/userguide/sapodata.md :: When you create a flow that uses SAP OData as the data source, you can set the destination to any of the following connectors:",
+          "quote": "+ Amazon Connect Customer",
+          "retrievedAt": "2026-09-01T04:34:52.850Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appflow/latest/userguide/sapodata.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "appflow/service-wide",
+      "id": "appflow-service-wide-service-connect-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "connect",
+      "targetLabel": "Amazon Connect Customer"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "89403ce483971734b4dade3d6659151140f4ffc3e7542b628685f39c5d62613b",
+          "locator": "https://docs.aws.amazon.com/appflow/latest/userguide/amplitude.md :: When you create a flow that uses Amplitude as the data source, you can set the destination to any of the following connectors:",
+          "quote": "+ Lookout for Metrics",
+          "retrievedAt": "2026-09-01T04:34:51.634Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appflow/latest/userguide/amplitude.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "appflow/service-wide",
+      "id": "appflow-service-wide-service-product-amazon-lookout-for-metrics-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "product:amazon-lookout-for-metrics",
+      "targetLabel": "Lookout for Metrics"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "354b848ecdcb10fde42ede143495c8c7b27add1463a3f92fb389a0f3c20718ed",
+          "locator": "https://docs.aws.amazon.com/appflow/latest/userguide/sapodata.md :: When you create a flow that uses SAP OData as the data source, you can set the destination to any of the following connectors:",
+          "quote": "+ Amazon Redshift",
+          "retrievedAt": "2026-09-01T04:34:52.850Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appflow/latest/userguide/sapodata.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "appflow/service-wide",
+      "id": "appflow-service-wide-service-redshift-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "redshift",
+      "targetLabel": "Amazon Redshift"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "89403ce483971734b4dade3d6659151140f4ffc3e7542b628685f39c5d62613b",
+          "locator": "https://docs.aws.amazon.com/appflow/latest/userguide/amplitude.md :: When you create a flow that uses Amplitude as the data source, you can set the destination to any of the following connectors:",
+          "quote": "+ Amazon S3",
+          "retrievedAt": "2026-09-01T04:34:51.634Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appflow/latest/userguide/amplitude.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "appflow/service-wide",
+      "id": "appflow-service-wide-service-s3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Amazon S3"
+    }
+  ],
+  "featureId": "appflow/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "appflow",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Upsolver",
+      "sourceUrl": "https://docs.aws.amazon.com/appflow/latest/userguide/google-analytics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Upsolver",
+      "sourceUrl": "https://docs.aws.amazon.com/appflow/latest/userguide/google-analytics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "SAP OData",
+      "sourceUrl": "https://docs.aws.amazon.com/appflow/latest/userguide/sapodata.md"
+    },
+    {
+      "axis": "service",
+      "raw": "SAP OData",
+      "sourceUrl": "https://docs.aws.amazon.com/appflow/latest/userguide/sapodata.md"
+    }
+  ]
+}

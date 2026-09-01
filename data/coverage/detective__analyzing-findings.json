@@ -1,0 +1,91 @@
+{
+  "axes": [
+    "region"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "88184d19dbeaab1995d63a9eadf26c3ea2164a87731bcbdd42a64079c4cb9f5a",
+          "locator": "https://docs.aws.amazon.com/detective/latest/userguide/finding-group-summary.md :: Finding group summary is available in the following AWS Regions.",
+          "quote": "+ Asia Pacific (Tokyo)",
+          "retrievedAt": "2026-09-01T05:00:28.540Z",
+          "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/finding-group-summary.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "detective/analyzing-findings",
+      "id": "detective-analyzing-findings-region-ap-northeast-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-1",
+      "targetLabel": "Asia Pacific (Tokyo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "88184d19dbeaab1995d63a9eadf26c3ea2164a87731bcbdd42a64079c4cb9f5a",
+          "locator": "https://docs.aws.amazon.com/detective/latest/userguide/finding-group-summary.md :: Finding group summary is available in the following AWS Regions.",
+          "quote": "+ Europe (Frankfurt)",
+          "retrievedAt": "2026-09-01T05:00:28.540Z",
+          "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/finding-group-summary.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "detective/analyzing-findings",
+      "id": "detective-analyzing-findings-region-eu-central-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-1",
+      "targetLabel": "Europe (Frankfurt)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "88184d19dbeaab1995d63a9eadf26c3ea2164a87731bcbdd42a64079c4cb9f5a",
+          "locator": "https://docs.aws.amazon.com/detective/latest/userguide/finding-group-summary.md :: Finding group summary is available in the following AWS Regions.",
+          "quote": "+ US East (N. Virginia)",
+          "retrievedAt": "2026-09-01T05:00:28.540Z",
+          "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/finding-group-summary.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "detective/analyzing-findings",
+      "id": "detective-analyzing-findings-region-us-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "88184d19dbeaab1995d63a9eadf26c3ea2164a87731bcbdd42a64079c4cb9f5a",
+          "locator": "https://docs.aws.amazon.com/detective/latest/userguide/finding-group-summary.md :: Finding group summary is available in the following AWS Regions.",
+          "quote": "+ US West (Oregon)",
+          "retrievedAt": "2026-09-01T05:00:28.540Z",
+          "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/finding-group-summary.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "detective/analyzing-findings",
+      "id": "detective-analyzing-findings-region-us-west-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
+    }
+  ],
+  "featureId": "detective/analyzing-findings",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "detective",
+  "unresolvedTargets": []
+}

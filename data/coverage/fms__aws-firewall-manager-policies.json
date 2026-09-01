@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "region"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "1538b2e17c9b211c748d75f66a5b3f1ebf1052bd076136ffb03e4534731dca58",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-fms.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-East)",
+          "retrievedAt": "2026-09-01T05:00:26.647Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-fms.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "fms/aws-firewall-manager-policies",
+      "id": "fms-aws-firewall-manager-policies-region-us-gov-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "1538b2e17c9b211c748d75f66a5b3f1ebf1052bd076136ffb03e4534731dca58",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-fms.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-West)",
+          "retrievedAt": "2026-09-01T05:00:26.647Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-fms.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "fms/aws-firewall-manager-policies",
+      "id": "fms-aws-firewall-manager-policies-region-us-gov-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    }
+  ],
+  "featureId": "fms/aws-firewall-manager-policies",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "fms",
+  "unresolvedTargets": []
+}

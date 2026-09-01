@@ -1,0 +1,631 @@
+{
+  "axes": [
+    "dataIdentifier"
+  ],
+  "claims": [
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-australia-tax-file-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AUSTRALIA_TAX_FILE_NUMBER",
+      "targetLabel": "AUSTRALIA_TAX_FILE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| AWS secret access key | AWS\\_CREDENTIALS |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-aws-credentials-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS_CREDENTIALS",
+      "targetLabel": "AWS_CREDENTIALS"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-brazil-cpf-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "BRAZIL_CPF_NUMBER",
+      "targetLabel": "BRAZIL_CPF_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Driver’s license identification number | CANADA\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), UK\\_DRIVERS\\_LICENSE |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-canada-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CANADA_DRIVERS_LICENSE",
+      "targetLabel": "CANADA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-canada-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CANADA_PASSPORT_NUMBER",
+      "targetLabel": "CANADA_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Social Insurance Number (SIN) | CANADA\\_SOCIAL\\_INSURANCE\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-canada-social-insurance-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CANADA_SOCIAL_INSURANCE_NUMBER",
+      "targetLabel": "CANADA_SOCIAL_INSURANCE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| National identification number | FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, SPAIN\\_DNI\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-france-national-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "FRANCE_NATIONAL_IDENTIFICATION_NUMBER",
+      "targetLabel": "FRANCE_NATIONAL_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-france-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "FRANCE_PASSPORT_NUMBER",
+      "targetLabel": "FRANCE_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-france-tax-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "FRANCE_TAX_IDENTIFICATION_NUMBER",
+      "targetLabel": "FRANCE_TAX_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| National identification number | FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, SPAIN\\_DNI\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-germany-national-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GERMANY_NATIONAL_IDENTIFICATION_NUMBER",
+      "targetLabel": "GERMANY_NATIONAL_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-germany-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GERMANY_PASSPORT_NUMBER",
+      "targetLabel": "GERMANY_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-germany-tax-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GERMANY_TAX_IDENTIFICATION_NUMBER",
+      "targetLabel": "GERMANY_TAX_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| HTTP Basic Authorization header | HTTP\\_BASIC\\_AUTH\\_HEADER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-http-basic-auth-header-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "HTTP_BASIC_AUTH_HEADER",
+      "targetLabel": "HTTP_BASIC_AUTH_HEADER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| National identification number | FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, SPAIN\\_DNI\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-italy-national-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ITALY_NATIONAL_IDENTIFICATION_NUMBER",
+      "targetLabel": "ITALY_NATIONAL_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-italy-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ITALY_PASSPORT_NUMBER",
+      "targetLabel": "ITALY_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| OpenSSH private key | OPENSSH\\_PRIVATE\\_KEY |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-openssh-private-key-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "OPENSSH_PRIVATE_KEY",
+      "targetLabel": "OPENSSH_PRIVATE_KEY"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| PGP private key | PGP\\_PRIVATE\\_KEY |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-pgp-private-key-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PGP_PRIVATE_KEY",
+      "targetLabel": "PGP_PRIVATE_KEY"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| PuTTY private key | PUTTY\\_PRIVATE\\_KEY |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-putty-private-key-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PUTTY_PRIVATE_KEY",
+      "targetLabel": "PUTTY_PRIVATE_KEY"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| National identification number | FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, SPAIN\\_DNI\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-spain-dni-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_DNI_NUMBER",
+      "targetLabel": "SPAIN_DNI_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-spain-nie-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_NIE_NUMBER",
+      "targetLabel": "SPAIN_NIE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-spain-nif-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_NIF_NUMBER",
+      "targetLabel": "SPAIN_NIF_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-spain-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_PASSPORT_NUMBER",
+      "targetLabel": "SPAIN_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Social Security number (SSN) | SPAIN\\_SOCIAL\\_SECURITY\\_NUMBER, USA\\_SOCIAL\\_SECURITY\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-spain-social-security-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_SOCIAL_SECURITY_NUMBER",
+      "targetLabel": "SPAIN_SOCIAL_SECURITY_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-spain-tax-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_TAX_IDENTIFICATION_NUMBER",
+      "targetLabel": "SPAIN_TAX_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Driver’s license identification number | CANADA\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), UK\\_DRIVERS\\_LICENSE |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-uk-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK_DRIVERS_LICENSE",
+      "targetLabel": "UK_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Electoral roll number | UK\\_ELECTORAL\\_ROLL\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-uk-electoral-roll-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK_ELECTORAL_ROLL_NUMBER",
+      "targetLabel": "UK_ELECTORAL_ROLL_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| National Insurance Number (NINO) | UK\\_NATIONAL\\_INSURANCE\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-uk-national-insurance-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK_NATIONAL_INSURANCE_NUMBER",
+      "targetLabel": "UK_NATIONAL_INSURANCE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-uk-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK_PASSPORT_NUMBER",
+      "targetLabel": "UK_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-usa-individual-tax-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "USA_INDIVIDUAL_TAX_IDENTIFICATION_NUMBER",
+      "targetLabel": "USA_INDIVIDUAL_TAX_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-usa-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "USA_PASSPORT_NUMBER",
+      "targetLabel": "USA_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "4429520adcef57b992d7e435c83fc1c0bfa69a0e76f71ac155760cc34dc1134f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md ::  | column \"Managed data identifier ID\"",
+          "quote": "| Social Security number (SSN) | SPAIN\\_SOCIAL\\_SECURITY\\_NUMBER, USA\\_SOCIAL\\_SECURITY\\_NUMBER |",
+          "retrievedAt": "2026-09-01T05:00:46.205Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-jobs-mdis-recommended.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+      "id": "macie2-managed-data-identifiers-recommended-for-jobs-dataidentifier-usa-social-security-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "USA_SOCIAL_SECURITY_NUMBER",
+      "targetLabel": "USA_SOCIAL_SECURITY_NUMBER"
+    }
+  ],
+  "featureId": "macie2/managed-data-identifiers-recommended-for-jobs",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "macie2",
+  "unresolvedTargets": []
+}

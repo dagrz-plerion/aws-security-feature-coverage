@@ -1,0 +1,117 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b1aa640f4da3f3bc83f6909c227e0ea221b4c8d586d74a013ffb03d339cb1a50",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/event-lambda-response.md :: Responding to an event with a Lambda function > [ JSON ]",
+          "quote": "+ CloudWatch Events rule",
+          "retrievedAt": "2026-09-01T04:58:48.694Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/event-lambda-response.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "acm/example-actions",
+      "id": "acm-example-actions-resourcetype-aws-events-rule-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Events::Rule",
+      "targetLabel": "CloudWatch Events rule"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b1aa640f4da3f3bc83f6909c227e0ea221b4c8d586d74a013ffb03d339cb1a50",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/event-lambda-response.md :: Responding to an event with a Lambda function > [ JSON ]",
+          "quote": "+ IAM policy and role",
+          "retrievedAt": "2026-09-01T04:58:48.694Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/event-lambda-response.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "acm/example-actions",
+      "id": "acm-example-actions-resourcetype-aws-iam-policy-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::IAM::Policy",
+      "targetLabel": "IAM policy"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b1aa640f4da3f3bc83f6909c227e0ea221b4c8d586d74a013ffb03d339cb1a50",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/event-lambda-response.md :: Responding to an event with a Lambda function > [ JSON ]",
+          "quote": "+ IAM policy and role",
+          "retrievedAt": "2026-09-01T04:58:48.694Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/event-lambda-response.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "acm/example-actions",
+      "id": "acm-example-actions-resourcetype-aws-iam-role-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::IAM::Role",
+      "targetLabel": "IAM role"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b1aa640f4da3f3bc83f6909c227e0ea221b4c8d586d74a013ffb03d339cb1a50",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/event-lambda-response.md :: Responding to an event with a Lambda function > [ JSON ]",
+          "quote": "+ Lambda function",
+          "retrievedAt": "2026-09-01T04:58:48.694Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/event-lambda-response.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "acm/example-actions",
+      "id": "acm-example-actions-resourcetype-aws-lambda-function-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Lambda::Function",
+      "targetLabel": "Lambda function"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b1aa640f4da3f3bc83f6909c227e0ea221b4c8d586d74a013ffb03d339cb1a50",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/event-lambda-response.md :: Responding to an event with a Lambda function > [ JSON ]",
+          "quote": "+ SNS Topic",
+          "retrievedAt": "2026-09-01T04:58:48.694Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/event-lambda-response.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "acm/example-actions",
+      "id": "acm-example-actions-resourcetype-aws-sns-topic-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::SNS::Topic",
+      "targetLabel": "SNS Topic"
+    }
+  ],
+  "featureId": "acm/example-actions",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "acm",
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "CloudWatch Logs associated with Lambda",
+      "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/event-lambda-response.md"
+    }
+  ]
+}

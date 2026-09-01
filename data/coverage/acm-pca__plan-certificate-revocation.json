@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "10e73326a89a309cb62f4daa1a84a93378f29b8b85eda04e5ffea923d9cc30fe",
+          "locator": "https://docs.aws.amazon.com/privateca/latest/userguide/short-lived-certificates.md :: Use of short-lived certificates is supported by the following AWS services:",
+          "quote": "+ [Amazon AppStream](https://docs.aws.amazon.com/appstream/latest/developerguide/)",
+          "retrievedAt": "2026-09-01T04:59:30.830Z",
+          "sourceUrl": "https://docs.aws.amazon.com/privateca/latest/userguide/short-lived-certificates.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "acm-pca/plan-certificate-revocation",
+      "id": "acm-pca-plan-certificate-revocation-service-appstream-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "appstream",
+      "targetLabel": "Amazon AppStream"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "10e73326a89a309cb62f4daa1a84a93378f29b8b85eda04e5ffea923d9cc30fe",
+          "locator": "https://docs.aws.amazon.com/privateca/latest/userguide/short-lived-certificates.md :: Use of short-lived certificates is supported by the following AWS services:",
+          "quote": "+ [Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/)",
+          "retrievedAt": "2026-09-01T04:59:30.830Z",
+          "sourceUrl": "https://docs.aws.amazon.com/privateca/latest/userguide/short-lived-certificates.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "acm-pca/plan-certificate-revocation",
+      "id": "acm-pca-plan-certificate-revocation-service-workspaces-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "workspaces",
+      "targetLabel": "Amazon WorkSpaces"
+    }
+  ],
+  "featureId": "acm-pca/plan-certificate-revocation",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "acm-pca",
+  "unresolvedTargets": []
+}

@@ -1,0 +1,671 @@
+{
+  "axes": [
+    "findingType"
+  ],
+  "claims": [
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [CredentialAccess:Kubernetes/AnomalousBehavior.SecretsAccessed](#credaccess-kubernetes-anomalousbehavior-secretsaccessed)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-credentialaccess-kubernetes-anomalousbehavior-secretsaccessed-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CredentialAccess:Kubernetes/AnomalousBehavior.SecretsAccessed",
+      "targetLabel": "CredentialAccess:Kubernetes/AnomalousBehavior.SecretsAccessed"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [CredentialAccess:Kubernetes/MaliciousIPCaller](#credentialaccess-kubernetes-maliciousipcaller)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-credentialaccess-kubernetes-maliciousipcaller-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CredentialAccess:Kubernetes/MaliciousIPCaller",
+      "targetLabel": "CredentialAccess:Kubernetes/MaliciousIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [CredentialAccess:Kubernetes/MaliciousIPCaller.Custom](#credentialaccess-kubernetes-maliciousipcallercustom)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-credentialaccess-kubernetes-maliciousipcaller-custom-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CredentialAccess:Kubernetes/MaliciousIPCaller.Custom",
+      "targetLabel": "CredentialAccess:Kubernetes/MaliciousIPCaller.Custom"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [CredentialAccess:Kubernetes/SuccessfulAnonymousAccess](#credentialaccess-kubernetes-successfulanonymousaccess)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-credentialaccess-kubernetes-successfulanonymousaccess-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CredentialAccess:Kubernetes/SuccessfulAnonymousAccess",
+      "targetLabel": "CredentialAccess:Kubernetes/SuccessfulAnonymousAccess"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [CredentialAccess:Kubernetes/TorIPCaller](#credentialaccess-kubernetes-toripcaller)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-credentialaccess-kubernetes-toripcaller-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CredentialAccess:Kubernetes/TorIPCaller",
+      "targetLabel": "CredentialAccess:Kubernetes/TorIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [DefenseEvasion:Kubernetes/MaliciousIPCaller](#defenseevasion-kubernetes-maliciousipcaller)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-defenseevasion-kubernetes-maliciousipcaller-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "DefenseEvasion:Kubernetes/MaliciousIPCaller",
+      "targetLabel": "DefenseEvasion:Kubernetes/MaliciousIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [DefenseEvasion:Kubernetes/MaliciousIPCaller.Custom](#defenseevasion-kubernetes-maliciousipcallercustom)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-defenseevasion-kubernetes-maliciousipcaller-custom-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "DefenseEvasion:Kubernetes/MaliciousIPCaller.Custom",
+      "targetLabel": "DefenseEvasion:Kubernetes/MaliciousIPCaller.Custom"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [DefenseEvasion:Kubernetes/SuccessfulAnonymousAccess](#defenseevasion-kubernetes-successfulanonymousaccess)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-defenseevasion-kubernetes-successfulanonymousaccess-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "DefenseEvasion:Kubernetes/SuccessfulAnonymousAccess",
+      "targetLabel": "DefenseEvasion:Kubernetes/SuccessfulAnonymousAccess"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [DefenseEvasion:Kubernetes/TorIPCaller](#defenseevasion-kubernetes-toripcaller)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-defenseevasion-kubernetes-toripcaller-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "DefenseEvasion:Kubernetes/TorIPCaller",
+      "targetLabel": "DefenseEvasion:Kubernetes/TorIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Discovery:Kubernetes/AnomalousBehavior.PermissionChecked](#discovery-kubernetes-anomalousbehavrior-permissionchecked)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-discovery-kubernetes-anomalousbehavior-permissionchecked-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Discovery:Kubernetes/AnomalousBehavior.PermissionChecked",
+      "targetLabel": "Discovery:Kubernetes/AnomalousBehavior.PermissionChecked"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Discovery:Kubernetes/MaliciousIPCaller](#discovery-kubernetes-maliciousipcaller)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-discovery-kubernetes-maliciousipcaller-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Discovery:Kubernetes/MaliciousIPCaller",
+      "targetLabel": "Discovery:Kubernetes/MaliciousIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Discovery:Kubernetes/MaliciousIPCaller.Custom](#discovery-kubernetes-maliciousipcallercustom)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-discovery-kubernetes-maliciousipcaller-custom-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Discovery:Kubernetes/MaliciousIPCaller.Custom",
+      "targetLabel": "Discovery:Kubernetes/MaliciousIPCaller.Custom"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Discovery:Kubernetes/SuccessfulAnonymousAccess](#discovery-kubernetes-successfulanonymousaccess)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-discovery-kubernetes-successfulanonymousaccess-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Discovery:Kubernetes/SuccessfulAnonymousAccess",
+      "targetLabel": "Discovery:Kubernetes/SuccessfulAnonymousAccess"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Discovery:Kubernetes/TorIPCaller](#discovery-kubernetes-toripcaller)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-discovery-kubernetes-toripcaller-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Discovery:Kubernetes/TorIPCaller",
+      "targetLabel": "Discovery:Kubernetes/TorIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Execution:Kubernetes/AnomalousBehavior.ExecInPod](#execution-kubernetes-anomalousbehvaior-execinprod)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-execution-kubernetes-anomalousbehavior-execinpod-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Execution:Kubernetes/AnomalousBehavior.ExecInPod",
+      "targetLabel": "Execution:Kubernetes/AnomalousBehavior.ExecInPod"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Execution:Kubernetes/AnomalousBehavior.WorkloadDeployed](#exec-kubernetes-anomalousbehavior-workloaddeployed)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-execution-kubernetes-anomalousbehavior-workloaddeployed-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Execution:Kubernetes/AnomalousBehavior.WorkloadDeployed",
+      "targetLabel": "Execution:Kubernetes/AnomalousBehavior.WorkloadDeployed"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Execution:Kubernetes/ExecInKubeSystemPod](#execution-kubernetes-execinkubesystempod)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-execution-kubernetes-execinkubesystempod-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Execution:Kubernetes/ExecInKubeSystemPod",
+      "targetLabel": "Execution:Kubernetes/ExecInKubeSystemPod"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Impact:Kubernetes/MaliciousIPCaller](#impact-kubernetes-maliciousipcaller)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-impact-kubernetes-maliciousipcaller-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Impact:Kubernetes/MaliciousIPCaller",
+      "targetLabel": "Impact:Kubernetes/MaliciousIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Impact:Kubernetes/MaliciousIPCaller.Custom](#impact-kubernetes-maliciousipcallercustom)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-impact-kubernetes-maliciousipcaller-custom-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Impact:Kubernetes/MaliciousIPCaller.Custom",
+      "targetLabel": "Impact:Kubernetes/MaliciousIPCaller.Custom"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Impact:Kubernetes/SuccessfulAnonymousAccess](#impact-kubernetes-successfulanonymousaccess)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-impact-kubernetes-successfulanonymousaccess-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Impact:Kubernetes/SuccessfulAnonymousAccess",
+      "targetLabel": "Impact:Kubernetes/SuccessfulAnonymousAccess"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Impact:Kubernetes/TorIPCaller](#impact-kubernetes-toripcaller)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-impact-kubernetes-toripcaller-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Impact:Kubernetes/TorIPCaller",
+      "targetLabel": "Impact:Kubernetes/TorIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Persistence:Kubernetes/AnomalousBehavior.WorkloadDeployed\\!ContainerWithSensitiveMount](#privesc-kubernetes-anomalousbehavior-workloaddeployed-containerwithsensitivemount)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-persistence-kubernetes-anomalousbehavior-workloaddeployed-containerwithsensitivemou",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Persistence:Kubernetes/AnomalousBehavior.WorkloadDeployed!ContainerWithSensitiveMount",
+      "targetLabel": "Persistence:Kubernetes/AnomalousBehavior.WorkloadDeployed!ContainerWithSensitiveMount"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Persistence:Kubernetes/MaliciousIPCaller](#persistence-kubernetes-maliciousipcaller)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-persistence-kubernetes-maliciousipcaller-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Persistence:Kubernetes/MaliciousIPCaller",
+      "targetLabel": "Persistence:Kubernetes/MaliciousIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Persistence:Kubernetes/MaliciousIPCaller.Custom](#persistence-kubernetes-maliciousipcallercustom)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-persistence-kubernetes-maliciousipcaller-custom-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Persistence:Kubernetes/MaliciousIPCaller.Custom",
+      "targetLabel": "Persistence:Kubernetes/MaliciousIPCaller.Custom"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Persistence:Kubernetes/SuccessfulAnonymousAccess](#persistence-kubernetes-successfulanonymousaccess)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-persistence-kubernetes-successfulanonymousaccess-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Persistence:Kubernetes/SuccessfulAnonymousAccess",
+      "targetLabel": "Persistence:Kubernetes/SuccessfulAnonymousAccess"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Persistence:Kubernetes/TorIPCaller](#persistence-kubernetes-toripcaller)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-persistence-kubernetes-toripcaller-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Persistence:Kubernetes/TorIPCaller",
+      "targetLabel": "Persistence:Kubernetes/TorIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Policy:Kubernetes/AdminAccessToDefaultServiceAccount](#policy-kubernetes-adminaccesstodefaultserviceaccount)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-policy-kubernetes-adminaccesstodefaultserviceaccount-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Policy:Kubernetes/AdminAccessToDefaultServiceAccount",
+      "targetLabel": "Policy:Kubernetes/AdminAccessToDefaultServiceAccount"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Policy:Kubernetes/AnonymousAccessGranted](#policy-kubernetes-anonymousaccessgranted)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-policy-kubernetes-anonymousaccessgranted-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Policy:Kubernetes/AnonymousAccessGranted",
+      "targetLabel": "Policy:Kubernetes/AnonymousAccessGranted"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Policy:Kubernetes/ExposedDashboard](#policy-kubernetes-exposeddashboard)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-policy-kubernetes-exposeddashboard-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Policy:Kubernetes/ExposedDashboard",
+      "targetLabel": "Policy:Kubernetes/ExposedDashboard"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [Policy:Kubernetes/KubeflowDashboardExposed](#policy-kubernetes-kubeflowdashboardexposed)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-policy-kubernetes-kubeflowdashboardexposed-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Policy:Kubernetes/KubeflowDashboardExposed",
+      "targetLabel": "Policy:Kubernetes/KubeflowDashboardExposed"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [PrivilegeEscalation:Kubernetes/AnomalousBehavior.RoleBindingCreated](#privesc-kubernetes-anomalousbehavior-rolebindingcreated)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-privilegeescalation-kubernetes-anomalousbehavior-rolebindingcreated-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PrivilegeEscalation:Kubernetes/AnomalousBehavior.RoleBindingCreated",
+      "targetLabel": "PrivilegeEscalation:Kubernetes/AnomalousBehavior.RoleBindingCreated"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [PrivilegeEscalation:Kubernetes/AnomalousBehavior.RoleCreated](#privesc-kubernetes-anomalousbehavior-rolecreated)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-privilegeescalation-kubernetes-anomalousbehavior-rolecreated-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PrivilegeEscalation:Kubernetes/AnomalousBehavior.RoleCreated",
+      "targetLabel": "PrivilegeEscalation:Kubernetes/AnomalousBehavior.RoleCreated"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e2bac63bf29055c2b2c5645014b0494fc14a89ba99111777d8cacbd217f6ab70",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md :: EKS Protection finding types",
+          "quote": "+ [PrivilegeEscalation:Kubernetes/AnomalousBehavior.WorkloadDeployed\\!PrivilegedContainer](#privesc-kubernetes-anomalousbehavior-workloaddeployed-privcontainer)",
+          "retrievedAt": "2026-09-01T04:29:43.856Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/eks-protection",
+      "id": "guardduty-eks-protection-findingtype-privilegeescalation-kubernetes-anomalousbehavior-workloaddeployed-privilegedcontain",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PrivilegeEscalation:Kubernetes/AnomalousBehavior.WorkloadDeployed!PrivilegedContainer",
+      "targetLabel": "PrivilegeEscalation:Kubernetes/AnomalousBehavior.WorkloadDeployed!PrivilegedContainer"
+    }
+  ],
+  "featureId": "guardduty/eks-protection",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "guardduty",
+  "unresolvedTargets": []
+}

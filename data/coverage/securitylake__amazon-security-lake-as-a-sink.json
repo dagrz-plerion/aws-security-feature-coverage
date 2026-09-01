@@ -1,0 +1,172 @@
+{
+  "axes": [
+    "region",
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0fb114df21a52d41c69aac67ba5fec78ae8e9a4bda0d0eee3f9a83b120dafd45",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md :: Security Lake supports FIPS VPC endpoints only in the following Regions where FIPS exists:",
+          "quote": "+ US East (N. Virginia)",
+          "retrievedAt": "2026-09-01T05:00:42.939Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "securitylake/amazon-security-lake-as-a-sink",
+      "id": "securitylake-amazon-security-lake-as-a-sink-region-us-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0fb114df21a52d41c69aac67ba5fec78ae8e9a4bda0d0eee3f9a83b120dafd45",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md :: Security Lake supports FIPS VPC endpoints only in the following Regions where FIPS exists:",
+          "quote": "+ US East (Ohio)",
+          "retrievedAt": "2026-09-01T05:00:42.939Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "securitylake/amazon-security-lake-as-a-sink",
+      "id": "securitylake-amazon-security-lake-as-a-sink-region-us-east-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-2",
+      "targetLabel": "US East (Ohio)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "6d2ee6919bae965d7b8bc8136e126054f5aef5a7d5c7523467e4e05a58196798",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-asl.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-East)",
+          "retrievedAt": "2026-09-01T05:00:41.668Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-asl.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "securitylake/amazon-security-lake-as-a-sink",
+      "id": "securitylake-amazon-security-lake-as-a-sink-region-us-gov-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "6d2ee6919bae965d7b8bc8136e126054f5aef5a7d5c7523467e4e05a58196798",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-asl.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-West)",
+          "retrievedAt": "2026-09-01T05:00:41.668Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-asl.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "securitylake/amazon-security-lake-as-a-sink",
+      "id": "securitylake-amazon-security-lake-as-a-sink-region-us-gov-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0fb114df21a52d41c69aac67ba5fec78ae8e9a4bda0d0eee3f9a83b120dafd45",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md :: Security Lake supports FIPS VPC endpoints only in the following Regions where FIPS exists:",
+          "quote": "+ US West (N. California)",
+          "retrievedAt": "2026-09-01T05:00:42.939Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "securitylake/amazon-security-lake-as-a-sink",
+      "id": "securitylake-amazon-security-lake-as-a-sink-region-us-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-1",
+      "targetLabel": "US West (N. California)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0fb114df21a52d41c69aac67ba5fec78ae8e9a4bda0d0eee3f9a83b120dafd45",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md :: Security Lake supports FIPS VPC endpoints only in the following Regions where FIPS exists:",
+          "quote": "+ US West (Oregon)",
+          "retrievedAt": "2026-09-01T05:00:42.939Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/security-vpc-endpoints.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "securitylake/amazon-security-lake-as-a-sink",
+      "id": "securitylake-amazon-security-lake-as-a-sink-region-us-west-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "2baee1a76084a1d5aff2fe964a3603d6d7752531d0c37d39a900c82fc123cdd9",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/cloudwatch-metrics.md :: heading level 4",
+          "quote": "#### [ CloudWatch API ]",
+          "retrievedAt": "2026-09-01T05:00:42.999Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/cloudwatch-metrics.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "securitylake/amazon-security-lake-as-a-sink",
+      "id": "securitylake-amazon-security-lake-as-a-sink-resourcetype-amplifybackend-api-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "amplifybackend:api",
+      "targetLabel": "[ CloudWatch API ]"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "2baee1a76084a1d5aff2fe964a3603d6d7752531d0c37d39a900c82fc123cdd9",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/cloudwatch-metrics.md :: heading level 4",
+          "quote": "#### [ CloudWatch console ]",
+          "retrievedAt": "2026-09-01T05:00:42.999Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/cloudwatch-metrics.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "securitylake/amazon-security-lake-as-a-sink",
+      "id": "securitylake-amazon-security-lake-as-a-sink-resourcetype-signin-console-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "signin:console",
+      "targetLabel": "[ CloudWatch console ]"
+    }
+  ],
+  "featureId": "securitylake/amazon-security-lake-as-a-sink",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "securitylake",
+  "unresolvedTargets": []
+}

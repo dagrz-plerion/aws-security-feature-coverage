@@ -1,0 +1,82 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "84ee961d96571abe6d89100f83b2eaaa6a49158617517541245558df1377038d",
+          "locator": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-creds.md :: heading level 3",
+          "quote": "### AWS CloudFormation",
+          "retrievedAt": "2026-09-01T04:34:50.255Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-creds.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "eks/service-wide",
+      "id": "eks-service-wide-service-cloudformation-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudformation",
+      "targetLabel": "AWS CloudFormation"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "84ee961d96571abe6d89100f83b2eaaa6a49158617517541245558df1377038d",
+          "locator": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-creds.md :: heading level 3",
+          "quote": "### AWS Management Console",
+          "retrievedAt": "2026-09-01T04:34:50.255Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-creds.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "eks/service-wide",
+      "id": "eks-service-wide-service-product-aws-management-console-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "product:aws-management-console",
+      "targetLabel": "AWS Management Console"
+    }
+  ],
+  "featureId": "eks/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "eks",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "AWS CLI",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cluster-update.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS CLI",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cluster-update.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS CLI",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cluster-update.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS CLI",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cluster-update.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS CLI",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cluster-update.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS CLI",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cluster-update.md"
+    }
+  ]
+}

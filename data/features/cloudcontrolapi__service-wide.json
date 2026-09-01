@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "service-level"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "bb96652789f4c617ce8e7d4972bd94aad6b534cc300ee8bc8302d240fab3e87f",
+      "locator": "Security",
+      "quote": "[VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:04.919Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudcontrolapi/service-wide",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS Cloud Control API: stated for the service as a whole",
+  "serviceId": "cloudcontrolapi",
+  "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+  "tier": "tier2"
+}

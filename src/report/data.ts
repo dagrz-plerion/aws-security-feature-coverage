@@ -30,6 +30,7 @@ export type ReportData = {
   quarantine: QuarantineItem[];
   gaps: Gap[];
   conflicts: Conflict[];
+  openAxes: { axis: string; count: number }[];
 };
 
 async function wrapped<T>(file: string, key: string): Promise<T[]> {
@@ -53,5 +54,7 @@ export async function loadReportData(): Promise<ReportData> {
     quarantine: await readAllJson<QuarantineItem>(paths.quarantine),
     gaps: await readAllJson<Gap>(paths.gaps),
     conflicts: await readAllJson<Conflict>(paths.conflicts),
+    openAxes:
+      (await readJson<{ axes: { axis: string; count: number }[] }>(path.join(u, "open-axes.json")))?.axes ?? [],
   };
 }

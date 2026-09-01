@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "service-level"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "920c2475f5a2c690c771e1a56137df8edaf6dd8ce07a81bd583279fa948e87fa",
+      "locator": "AWS Managed Microsoft AD > Access to AWS applications and services",
+      "quote": "[Application compatibility](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_app_compatibility.md)",
+      "retrievedAt": "2026-09-01T04:06:07.342Z",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/llms.txt"
+    }
+  ],
+  "id": "ds/service-wide",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS Directory Service: stated for the service as a whole",
+  "serviceId": "ds",
+  "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+  "tier": "tier1"
+}

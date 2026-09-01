@@ -1,0 +1,37 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "606e023e1c57415dc1e1a30fbc72faa0988f6e21b59b4b324a1a5c169bc66bd3",
+          "locator": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md ::  | column \"Which user needs programmatic access?\"",
+          "quote": "| IAM | (Recommended) Use console credentials as temporary credentials to sign programmatic requests to the AWS CLI, AWS SDKs, or AWS APIs. | Following the instructions for the interface that you want to use.+  For the AWS CLI, see [Login for AWS local development](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sign-in.html) in the *AWS Command Line Interface User Guide*. <br />+  For AWS SDKs, see [Login for AWS local development](https://docs.aws.amazon.com/sdkref/latest/guide/access-login.html) in the *AWS SDKs and Tools Reference Guide*.  |",
+          "retrievedAt": "2026-09-01T04:58:58.707Z",
+          "sourceUrl": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/control-the-use-of-access-keys",
+      "id": "iam-control-the-use-of-access-keys-service-iam-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iam",
+      "targetLabel": "IAM"
+    }
+  ],
+  "featureId": "iam/control-the-use-of-access-keys",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "iam",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
+      "sourceUrl": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md"
+    }
+  ]
+}

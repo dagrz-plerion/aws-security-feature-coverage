@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f0524b5c2dbbd2c67278cbd0e13881f3ec7cbd74dbf35b42518f68217d27b7f5",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/delete-custom-framework.md :: heading level 4",
+          "quote": "#### [ Audit Manager API ]",
+          "retrievedAt": "2026-09-01T05:00:01.535Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/delete-custom-framework.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "auditmanager/sharing-a-custom-framework",
+      "id": "auditmanager-sharing-a-custom-framework-resourcetype-amplifybackend-api-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "amplifybackend:api",
+      "targetLabel": "[ Audit Manager API ]"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f0524b5c2dbbd2c67278cbd0e13881f3ec7cbd74dbf35b42518f68217d27b7f5",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/delete-custom-framework.md :: heading level 4",
+          "quote": "#### [ Audit Manager console ]",
+          "retrievedAt": "2026-09-01T05:00:01.535Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/delete-custom-framework.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "auditmanager/sharing-a-custom-framework",
+      "id": "auditmanager-sharing-a-custom-framework-resourcetype-signin-console-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "signin:console",
+      "targetLabel": "[ Audit Manager console ]"
+    }
+  ],
+  "featureId": "auditmanager/sharing-a-custom-framework",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "auditmanager",
+  "unresolvedTargets": []
+}

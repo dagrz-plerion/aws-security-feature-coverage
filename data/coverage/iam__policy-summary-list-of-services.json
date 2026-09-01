@@ -1,0 +1,162 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "330cfcee66fb0d2da417ffea984e9c41e12543c17c273ac2bc5365a7dd44bd8f",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md ::  | column \"Service\"",
+          "quote": "| API Gateway | None | No access is defined in the policy. |",
+          "retrievedAt": "2026-09-01T04:59:09.111Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/policy-summary-list-of-services",
+      "id": "iam-policy-summary-list-of-services-service-apigateway-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "apigateway",
+      "targetLabel": "API Gateway"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "330cfcee66fb0d2da417ffea984e9c41e12543c17c273ac2bc5365a7dd44bd8f",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md ::  | column \"Service\"",
+          "quote": "| CloudWatch | Full: List | Access to all CloudWatch actions in the List access level, but no access to actions with the Read, Write, or Permissions management access level classification. |",
+          "retrievedAt": "2026-09-01T04:59:09.111Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/policy-summary-list-of-services",
+      "id": "iam-policy-summary-list-of-services-service-cloudwatch-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudwatch",
+      "targetLabel": "CloudWatch"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "330cfcee66fb0d2da417ffea984e9c41e12543c17c273ac2bc5365a7dd44bd8f",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md ::  | column \"Service\"",
+          "quote": "| CodeBuild | ![a white exclamation point on an orange triangle background.](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/console-alert-icon.console.png) No actions are defined. | No access because no actions are defined for the service. To learn how to understand and troubleshoot this issue, see [My policy does not grant the expected permissions](troubleshoot_policies.md#policy-summary-not-grant-permissions). |",
+          "retrievedAt": "2026-09-01T04:59:09.111Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/policy-summary-list-of-services",
+      "id": "iam-policy-summary-list-of-services-service-codebuild-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codebuild",
+      "targetLabel": "CodeBuild"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "330cfcee66fb0d2da417ffea984e9c41e12543c17c273ac2bc5365a7dd44bd8f",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md ::  | column \"Service\"",
+          "quote": "| Data Pipeline | Limited: List, Read | Access to at least one but not all AWS Data Pipeline actions in the List and Read access level, but not the Write or Permissions management actions. |",
+          "retrievedAt": "2026-09-01T04:59:09.111Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/policy-summary-list-of-services",
+      "id": "iam-policy-summary-list-of-services-service-datapipeline-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "datapipeline",
+      "targetLabel": "Data Pipeline"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "330cfcee66fb0d2da417ffea984e9c41e12543c17c273ac2bc5365a7dd44bd8f",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md ::  | column \"Service\"",
+          "quote": "| EC2 | Full: List, Read Limited: Write | Access to all Amazon EC2 List and Read actions and access to at least one but not all Amazon EC2 Write actions, but no access to actions with the Permissions management access level classification. |",
+          "retrievedAt": "2026-09-01T04:59:09.111Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/policy-summary-list-of-services",
+      "id": "iam-policy-summary-list-of-services-service-ec2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "EC2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "330cfcee66fb0d2da417ffea984e9c41e12543c17c273ac2bc5365a7dd44bd8f",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md ::  | column \"Service\"",
+          "quote": "| IAM | Full access | Access to all actions within the IAM service. |",
+          "retrievedAt": "2026-09-01T04:59:09.111Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/policy-summary-list-of-services",
+      "id": "iam-policy-summary-list-of-services-service-iam-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iam",
+      "targetLabel": "IAM"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "330cfcee66fb0d2da417ffea984e9c41e12543c17c273ac2bc5365a7dd44bd8f",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md ::  | column \"Service\"",
+          "quote": "| S3 | Limited: Read, Write, Permissions management | Access to at least one but not all Amazon S3 Read, Write and Permissions management actions. |",
+          "retrievedAt": "2026-09-01T04:59:09.111Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/policy-summary-list-of-services",
+      "id": "iam-policy-summary-list-of-services-service-s3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "S3"
+    }
+  ],
+  "featureId": "iam/policy-summary-list-of-services",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "iam",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "codedploy",
+      "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md"
+    },
+    {
+      "axis": "service",
+      "raw": "codedploy",
+      "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary-access-level-summaries.md"
+    }
+  ]
+}

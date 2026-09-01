@@ -1,0 +1,172 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3be5358eab20916f81ef84185384f3ae545d18461c4e1174042ed678ed26971a",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md :: AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to your protected web application resources. You can protect the following resource types:",
+          "quote": "+ Amazon Bedrock AgentCore Gateway",
+          "retrievedAt": "2026-09-01T05:00:47.418Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "wafv2/aws-shield",
+      "id": "wafv2-aws-shield-resourcetype-a4b-gateway-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "a4b:gateway",
+      "targetLabel": "Amazon Bedrock AgentCore Gateway"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3be5358eab20916f81ef84185384f3ae545d18461c4e1174042ed678ed26971a",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md :: AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to your protected web application resources. You can protect the following resource types:",
+          "quote": "+ AWS Verified Access instance",
+          "retrievedAt": "2026-09-01T05:00:47.418Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "wafv2/aws-shield",
+      "id": "wafv2-aws-shield-resourcetype-appstudio-instance-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "appstudio:instance",
+      "targetLabel": "AWS Verified Access instance"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3be5358eab20916f81ef84185384f3ae545d18461c4e1174042ed678ed26971a",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md :: AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to your protected web application resources. You can protect the following resource types:",
+          "quote": "+ Amazon API Gateway REST API",
+          "retrievedAt": "2026-09-01T05:00:47.418Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "wafv2/aws-shield",
+      "id": "wafv2-aws-shield-resourcetype-aws-apigateway-restapi-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::ApiGateway::RestApi",
+      "targetLabel": "Amazon API Gateway REST API"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3be5358eab20916f81ef84185384f3ae545d18461c4e1174042ed678ed26971a",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md :: AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to your protected web application resources. You can protect the following resource types:",
+          "quote": "+ AWS App Runner service",
+          "retrievedAt": "2026-09-01T05:00:47.418Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "wafv2/aws-shield",
+      "id": "wafv2-aws-shield-resourcetype-aws-apprunner-service-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::AppRunner::Service",
+      "targetLabel": "AWS App Runner service"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3be5358eab20916f81ef84185384f3ae545d18461c4e1174042ed678ed26971a",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md :: AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to your protected web application resources. You can protect the following resource types:",
+          "quote": "+ AWS AppSync GraphQL API",
+          "retrievedAt": "2026-09-01T05:00:47.418Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "wafv2/aws-shield",
+      "id": "wafv2-aws-shield-resourcetype-aws-appsync-api-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::AppSync::Api",
+      "targetLabel": "AWS AppSync GraphQL API"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3be5358eab20916f81ef84185384f3ae545d18461c4e1174042ed678ed26971a",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md :: AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to your protected web application resources. You can protect the following resource types:",
+          "quote": "+ Amazon CloudFront distribution",
+          "retrievedAt": "2026-09-01T05:00:47.418Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "wafv2/aws-shield",
+      "id": "wafv2-aws-shield-resourcetype-aws-cloudfront-distribution-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::CloudFront::Distribution",
+      "targetLabel": "Amazon CloudFront distribution"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3be5358eab20916f81ef84185384f3ae545d18461c4e1174042ed678ed26971a",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md :: AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to your protected web application resources. You can protect the following resource types:",
+          "quote": "+ Amazon Cognito user pool",
+          "retrievedAt": "2026-09-01T05:00:47.418Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "wafv2/aws-shield",
+      "id": "wafv2-aws-shield-resourcetype-aws-cognito-userpool-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Cognito::UserPool",
+      "targetLabel": "Amazon Cognito user pool"
+    }
+  ],
+  "featureId": "wafv2/aws-shield",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "wafv2",
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "Application Load Balancer",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "AWS Amplify",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Application Load Balancer",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "AWS Amplify",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
+    }
+  ]
+}

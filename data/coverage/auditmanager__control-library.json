@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "4d330788a9c8c0b701e2ff0a9f22ae0efe96c85cc88778f2fc4f6d9f3ada5a33",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/access-available-controls.md :: heading level 4",
+          "quote": "#### [ Audit Manager API ]",
+          "retrievedAt": "2026-09-01T05:00:01.535Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/access-available-controls.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "auditmanager/control-library",
+      "id": "auditmanager-control-library-resourcetype-amplifybackend-api-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "amplifybackend:api",
+      "targetLabel": "[ Audit Manager API ]"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "4d330788a9c8c0b701e2ff0a9f22ae0efe96c85cc88778f2fc4f6d9f3ada5a33",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/access-available-controls.md :: heading level 4",
+          "quote": "#### [ Audit Manager console ]",
+          "retrievedAt": "2026-09-01T05:00:01.535Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/access-available-controls.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "auditmanager/control-library",
+      "id": "auditmanager-control-library-resourcetype-signin-console-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "signin:console",
+      "targetLabel": "[ Audit Manager console ]"
+    }
+  ],
+  "featureId": "auditmanager/control-library",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "auditmanager",
+  "unresolvedTargets": []
+}

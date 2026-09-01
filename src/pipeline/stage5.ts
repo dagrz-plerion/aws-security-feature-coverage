@@ -24,6 +24,48 @@ import type { Stage, StageResult } from "../core/runner.js";
 const COVERAGE_PAGE =
   /(supported|support for|availabilit|^regions?$|resource types?|data sources?|coverage|compatib|integrat|prerequisit|requirement|scan types?|finding types?|managed rules?|standards?|controls? reference)/i;
 
+/** Read a whole guide only when it is substantial enough to be the service's own. */
+function guide2Threshold(_pages: number): number {
+  return 0;
+}
+
+/**
+ * Coverage is often stated for the service as a whole rather than for one feature —
+ * a region table for GuardDuty, a resource list for Backup. Rather than drop it, it
+ * lands on a service-wide record so the statement keeps its source.
+ */
+function serviceWideFeature(
+  serviceId: string,
+  serviceById: Map<string, Service>,
+  featuresByService: Map<string, Feature[]>,
+): Feature | undefined {
+  const id = `${serviceId}/service-wide`;
+  const own = featuresByService.get(serviceId) ?? [];
+  const existing = own.find((f) => f.id === id);
+  if (existing) return existing;
+  const service = serviceById.get(serviceId);
+  if (!service) return undefined;
+  const anchor = own[0];
+  if (!anchor) return undefined;
+  const record: Feature = {
+    id,
+    serviceId,
+    name: `${service.productName ?? serviceId}: stated for the service as a whole`,
+    aliases: [],
+    kind: "configuration",
+    tier: anchor.tier,
+    summary: "Coverage the documentation states for the whole service rather than for one named feature.",
+    docUrls: [],
+    method: "deterministic",
+    confidence: 0.7,
+    discoveredBy: ["service-level"],
+    evidence: anchor.evidence.slice(0, 1),
+  };
+  own.push(record);
+  featuresByService.set(serviceId, own);
+  return record;
+}
+
 async function wrapped<T>(file: string, key: string): Promise<T[]> {
   const value = await readJson<Record<string, T[]>>(file);
   return (value?.[key] as T[] | undefined) ?? [];
@@ -45,6 +87,7 @@ export const stage5: Stage = {
     const tierById = new Map(adjudications.map((a) => [a.serviceId, a.tier]));
     const inScope = new Set(adjudications.filter((a) => a.tier !== "not-security" || a.candidate).map((a) => a.serviceId));
 
+    const serviceById = new Map(services.map((s) => [s.id, s]));
     const features = await readAllJson<Feature>(paths.features);
     const featuresByService = new Map<string, Feature[]>();
     for (const feature of features) {
@@ -73,9 +116,13 @@ export const stage5: Stage = {
       const own = featuresByService.get(serviceId) ?? [];
       if (own.length === 0) continue;
       for (const attribution of list) {
+        // A security service documents its coverage all over its guide, not only on
+        // pages with "supported" in the title. GuardDuty finding types and WAF rule
+        // groups never say it, so tier 1 guides are read in full.
+        const readEverything = tier === "tier1" && attribution.pages.length > guide2Threshold(attribution.pages.length);
         for (const page of attribution.pages) {
           const haystack = [page.title, ...page.section].join(" | ");
-          if (!COVERAGE_PAGE.test(haystack)) continue;
+          if (!readEverything && !COVERAGE_PAGE.test(haystack)) continue;
           const key = `${serviceId}|${page.url}`;
           if (seenPages.has(key)) continue;
           seenPages.add(key);
@@ -86,6 +133,7 @@ export const stage5: Stage = {
     ctx.log(`  ${jobs.length} coverage pages to read, ${unattached.length} not attached to a feature`);
 
     const claimsByFeature = new Map<string, CoverageClaim[]>();
+    const serviceWideUsed = new Set<string>();
     const unresolvedByFeature = new Map<string, { axis: string; raw: string; sourceUrl: string }[]>();
     let read = 0;
     let failed = 0;
@@ -106,26 +154,32 @@ export const stage5: Stage = {
         const headed = doc.sections.filter((section) => section.level === 2 && section.body.trim());
         if (headed.length >= 2) {
           for (const section of headed) blocks.push({ headings: [section.title], body: section.body });
-        } else {
-          blocks.push({ headings: [job.page.title, ...job.page.section], body: result.body });
         }
+        // The whole page is read as well. On a finding-types page the headings are
+        // themselves the catalog, so splitting by heading would hide it.
+        blocks.push({ headings: [job.page.title, ...job.page.section], body: result.body });
 
         let attachedAny = false;
         for (const block of blocks) {
-          const outcome = extractFromPage(block.body, resolver);
+          const outcome = extractFromPage(block.body, resolver, job.serviceId);
           if (outcome.claims.length === 0) continue;
           // The heading nearest the list decides. Only when it names no feature do
           // we fall back to the page as a whole.
-          const feature =
+          const named =
             bestFeatureFor(block.headings, job.features) ??
             bestFeatureFor([job.page.title, ...job.page.section], job.features);
+          const feature = named ?? serviceWideFeature(job.serviceId, serviceById, featuresByService);
           if (!feature) {
             unattached.push({ serviceId: job.serviceId, url: job.page.url, title: block.headings[0] ?? job.page.title });
             continue;
           }
+          if (!named) serviceWideUsed.add(job.serviceId);
           attachedAny = true;
           const list = claimsByFeature.get(feature.id) ?? [];
+          const already = new Set(list.map((c) => `${c.axis}|${c.targetId}`));
           for (const raw of outcome.claims) {
+            if (already.has(`${raw.axis}|${raw.targetId}`)) continue;
+            already.add(`${raw.axis}|${raw.targetId}`);
             list.push({
               id: slug(`${feature.id}-${raw.axis}-${raw.targetId}-${raw.extractorId}`),
               featureId: feature.id,
@@ -161,12 +215,40 @@ export const stage5: Stage = {
       }
     });
 
+    // Persist any service-wide records that were created while reading.
+    for (const serviceId of serviceWideUsed) {
+      const record = (featuresByService.get(serviceId) ?? []).find((f) => f.id === `${serviceId}/service-wide`);
+      if (record) await writeJson(path.join(paths.features, `${idToFilename(record.id)}.json`), record);
+    }
+    const allFeatures = [...features, ...[...serviceWideUsed]
+      .map((id) => (featuresByService.get(id) ?? []).find((f) => f.id === `${id}/service-wide`))
+      .filter((f): f is Feature => Boolean(f))];
+
+    // An open axis has no universe until AWS publishes one. The universe is the union
+    // of everything the catalogs name, so a denominator still means something.
+    const openAxisMembers = new Map<string, Set<string>>();
+    for (const claims of claimsByFeature.values()) {
+      for (const claim of claims) {
+        if (["region", "partition", "service", "resourceType", "dataSource"].includes(claim.axis)) continue;
+        const set = openAxisMembers.get(claim.axis) ?? new Set<string>();
+        set.add(claim.targetId);
+        openAxisMembers.set(claim.axis, set);
+      }
+    }
+    await writeJson(path.join(paths.universes, "open-axes.json"), {
+      generatedAt: new Date().toISOString(),
+      note: "Axes AWS defines only inside its documentation. Membership is everything the catalogs name.",
+      axes: [...openAxisMembers.entries()]
+        .map(([axis, members]) => ({ axis, count: members.size, members: [...members].sort() }))
+        .sort((a, b) => b.count - a.count),
+    });
+
     // Write one coverage file per feature, and surface sources that disagree.
     const written = new Set<string>();
     const conflicts: Conflict[] = [];
     const generatedAt = new Date().toISOString();
     for (const [featureId, claims] of claimsByFeature) {
-      const feature = features.find((f) => f.id === featureId);
+      const feature = allFeatures.find((f) => f.id === featureId);
       if (!feature) continue;
       const deduped = dedupeClaims(claims, conflicts, generatedAt);
       const coverage: FeatureCoverage = {
@@ -217,6 +299,9 @@ export const stage5: Stage = {
         pagesRead: read,
         pagesFailed: failed,
         featuresWithCoverage: claimsByFeature.size,
+        serviceWideRecords: serviceWideUsed.size,
+        openAxes: openAxisMembers.size,
+        openAxisMembers: [...openAxisMembers.values()].reduce((sum, m) => sum + m.size, 0),
         claims: allClaims.length,
         covered: allClaims.filter((c) => c.status === "covered").length,
         notCovered: allClaims.filter((c) => c.status === "not-covered").length,

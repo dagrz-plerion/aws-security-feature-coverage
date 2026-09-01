@@ -1,0 +1,57 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ae280649c8ab5ec05dace786f134a619e103c6c223ca2b8dd2e59f94f54c0d83",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md ::  | column \"Resource evaluated\"",
+          "quote": "| UnusedIAMRole | An IAM role that has not been assumed within the 90-day lookback period. | IAM role |",
+          "retrievedAt": "2026-09-01T05:00:03.537Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/unused-access-findings",
+      "id": "securityhub-unused-access-findings-resourcetype-aws-iam-role-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::IAM::Role",
+      "targetLabel": "IAM role"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ae280649c8ab5ec05dace786f134a619e103c6c223ca2b8dd2e59f94f54c0d83",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md ::  | column \"Resource evaluated\"",
+          "quote": "| UnusedIAMUserAccessKey | An IAM user access key that has not been used to sign API requests within the 90-day lookback period. | IAM user |",
+          "retrievedAt": "2026-09-01T05:00:03.537Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/unused-access-findings",
+      "id": "securityhub-unused-access-findings-resourcetype-aws-iam-user-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::IAM::User",
+      "targetLabel": "IAM user"
+    }
+  ],
+  "featureId": "securityhub/unused-access-findings",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "securityhub",
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "IAM role or IAM user",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md"
+    }
+  ]
+}

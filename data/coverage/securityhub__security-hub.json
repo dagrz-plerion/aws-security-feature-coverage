@@ -1,0 +1,109 @@
+{
+  "axes": [
+    "region",
+    "resourceType",
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d726af2e28a00a85fc310ea1914bafdd7143d840a4a3aa9e73f651ef4b60ebf5",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ashv2.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-East)",
+          "retrievedAt": "2026-09-01T05:00:02.806Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ashv2.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "securityhub/security-hub",
+      "id": "securityhub-security-hub-region-us-gov-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d726af2e28a00a85fc310ea1914bafdd7143d840a4a3aa9e73f651ef4b60ebf5",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ashv2.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-West)",
+          "retrievedAt": "2026-09-01T05:00:02.806Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ashv2.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "securityhub/security-hub",
+      "id": "securityhub-security-hub-region-us-gov-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "9bac6a413c28add68bb77b387d5786dbef30d0290f79d59933ac7a7d0bec0c8c",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-recommendations.md :: Security Hub recommendations",
+          "quote": "+  Account controls",
+          "retrievedAt": "2026-09-01T05:00:02.869Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-recommendations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "securityhub/security-hub",
+      "id": "securityhub-security-hub-resourcetype-auditmanager-control-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "auditmanager:control",
+      "targetLabel": "Account controls"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "2c0614c6d660613a579aaa42b3d11cb17c518262fb1c5560a828cb4da67038ad",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh-security_iam_troubleshoot.md ::  | column \"Which user needs programmatic access?\"",
+          "quote": "| IAM | (Recommended) Use console credentials as temporary credentials to sign programmatic requests to the AWS CLI, AWS SDKs, or AWS APIs. | Following the instructions for the interface that you want to use.+  For the AWS CLI, see [Login for AWS local development](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sign-in.html) in the *AWS Command Line Interface User Guide*. <br />+  For AWS SDKs, see [Login for AWS local development](https://docs.aws.amazon.com/sdkref/latest/guide/access-login.html) in the *AWS SDKs and Tools Reference Guide*.  |",
+          "retrievedAt": "2026-09-01T04:59:24.450Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh-security_iam_troubleshoot.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub",
+      "id": "securityhub-security-hub-service-iam-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iam",
+      "targetLabel": "IAM"
+    }
+  ],
+  "featureId": "securityhub/security-hub",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "securityhub",
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "Amazon Relational Database Service (Amazon RDS) controls",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-recommendations.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh-security_iam_troubleshoot.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Workforce identity · (Users managed in IAM Identity Center)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh-security_iam_troubleshoot.md"
+    }
+  ]
+}

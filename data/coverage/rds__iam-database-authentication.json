@@ -1,6 +1,7 @@
 {
   "axes": [
-    "region"
+    "region",
+    "service"
   ],
   "claims": [
     {
@@ -762,10 +763,30 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d8781985d36404c175808c30e6fb1f4650f82ac5e2abbd3d753c91647878847a",
+          "locator": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.IamDatabaseAuthentication.md :: Supported Regions and DB engines for IAM database authentication in Amazon RDS",
+          "quote": "+ RDS for Db2",
+          "retrievedAt": "2026-09-01T04:29:26.963Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.IamDatabaseAuthentication.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "rds/iam-database-authentication",
+      "id": "rds-iam-database-authentication-service-rds-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "rds",
+      "targetLabel": "RDS for Db2"
     }
   ],
   "featureId": "rds/iam-database-authentication",
-  "generatedAt": "2026-09-01T04:53:52.577Z",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
   "serviceId": "rds",
   "unresolvedTargets": []
 }

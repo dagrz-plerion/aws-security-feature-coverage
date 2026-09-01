@@ -1,0 +1,111 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f124f570cedee0008b9ab4ddf4b5a2c6618fb057fef4032f212d7442b3683108",
+          "locator": "https://docs.aws.amazon.com/appsync/latest/devguide/attaching-a-data-source.md :: heading level 3",
+          "quote": "### Amazon DynamoDB",
+          "retrievedAt": "2026-09-01T04:34:57.229Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appsync/latest/devguide/attaching-a-data-source.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "appsync/service-wide",
+      "id": "appsync-service-wide-service-dynamodb-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "dynamodb",
+      "targetLabel": "Amazon DynamoDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f124f570cedee0008b9ab4ddf4b5a2c6618fb057fef4032f212d7442b3683108",
+          "locator": "https://docs.aws.amazon.com/appsync/latest/devguide/attaching-a-data-source.md :: heading level 3",
+          "quote": "### Amazon EventBridge",
+          "retrievedAt": "2026-09-01T04:34:57.229Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appsync/latest/devguide/attaching-a-data-source.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "appsync/service-wide",
+      "id": "appsync-service-wide-service-events-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "events",
+      "targetLabel": "Amazon EventBridge"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f124f570cedee0008b9ab4ddf4b5a2c6618fb057fef4032f212d7442b3683108",
+          "locator": "https://docs.aws.amazon.com/appsync/latest/devguide/attaching-a-data-source.md :: heading level 3",
+          "quote": "### AWS Lambda",
+          "retrievedAt": "2026-09-01T04:34:57.229Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appsync/latest/devguide/attaching-a-data-source.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "appsync/service-wide",
+      "id": "appsync-service-wide-service-lambda-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lambda",
+      "targetLabel": "AWS Lambda"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f124f570cedee0008b9ab4ddf4b5a2c6618fb057fef4032f212d7442b3683108",
+          "locator": "https://docs.aws.amazon.com/appsync/latest/devguide/attaching-a-data-source.md :: heading level 3",
+          "quote": "### OpenSearch",
+          "retrievedAt": "2026-09-01T04:34:57.229Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appsync/latest/devguide/attaching-a-data-source.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "appsync/service-wide",
+      "id": "appsync-service-wide-service-opensearch-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "opensearch",
+      "targetLabel": "OpenSearch"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f124f570cedee0008b9ab4ddf4b5a2c6618fb057fef4032f212d7442b3683108",
+          "locator": "https://docs.aws.amazon.com/appsync/latest/devguide/attaching-a-data-source.md :: heading level 3",
+          "quote": "### Amazon RDS",
+          "retrievedAt": "2026-09-01T04:34:57.229Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appsync/latest/devguide/attaching-a-data-source.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "appsync/service-wide",
+      "id": "appsync-service-wide-service-pi-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "pi",
+      "targetLabel": "Amazon RDS"
+    }
+  ],
+  "featureId": "appsync/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "appsync",
+  "unresolvedTargets": []
+}

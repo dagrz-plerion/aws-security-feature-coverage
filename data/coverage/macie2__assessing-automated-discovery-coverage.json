@@ -1,0 +1,1871 @@
+{
+  "axes": [
+    "dataIdentifier"
+  ],
+  "claims": [
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-australia-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AUSTRALIA_DRIVERS_LICENSE",
+      "targetLabel": "AUSTRALIA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-australia-tax-file-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AUSTRALIA_TAX_FILE_NUMBER",
+      "targetLabel": "AUSTRALIA_TAX_FILE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-austria-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AUSTRIA_DRIVERS_LICENSE",
+      "targetLabel": "AUSTRIA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Credentials | column \"Managed data identifier ID\"",
+          "quote": "| AWS secret access key | AWS\\_CREDENTIALS |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-aws-credentials-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS_CREDENTIALS",
+      "targetLabel": "AWS_CREDENTIALS"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-belgium-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "BELGIUM_DRIVERS_LICENSE",
+      "targetLabel": "BELGIUM_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Mailing address | ADDRESS, BRAZIL\\_CEP\\_CODE |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-brazil-cep-code-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "BRAZIL_CEP_CODE",
+      "targetLabel": "BRAZIL_CEP_CODE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CNPJ\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, UK\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-brazil-cnpj-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "BRAZIL_CNPJ_NUMBER",
+      "targetLabel": "BRAZIL_CNPJ_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-brazil-cpf-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "BRAZIL_CPF_NUMBER",
+      "targetLabel": "BRAZIL_CPF_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Phone number | BRAZIL\\_PHONE\\_NUMBER, FRANCE\\_PHONE\\_NUMBER, GERMANY\\_PHONE\\_NUMBER, ITALY\\_PHONE\\_NUMBER, PHONE\\_NUMBER (for Canada and the US), SPAIN\\_PHONE\\_NUMBER, UK\\_PHONE\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-brazil-phone-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "BRAZIL_PHONE_NUMBER",
+      "targetLabel": "BRAZIL_PHONE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | National identification number | BRAZIL\\_RG\\_NUMBER, FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, SPAIN\\_DNI\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-brazil-rg-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "BRAZIL_RG_NUMBER",
+      "targetLabel": "BRAZIL_RG_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-bulgaria-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "BULGARIA_DRIVERS_LICENSE",
+      "targetLabel": "BULGARIA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Driver’s license identification number | CANADA\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US),  UK\\_DRIVERS\\_LICENSE |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-canada-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CANADA_DRIVERS_LICENSE",
+      "targetLabel": "CANADA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PHI | Health insurance or medical identification number | CANADA\\_HEALTH\\_NUMBER, EUROPEAN\\_HEALTH\\_INSURANCE\\_CARD\\_NUMBER, FINLAND\\_EUROPEAN\\_HEALTH\\_INSURANCE\\_NUMBER, FRANCE\\_HEALTH\\_INSURANCE\\_NUMBER, UK\\_NHS\\_NUMBER, USA\\_MEDICARE\\_BENEFICIARY\\_IDENTIFIER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-canada-health-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CANADA_HEALTH_NUMBER",
+      "targetLabel": "CANADA_HEALTH_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Permanent residence number | CANADA\\_NATIONAL\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-canada-national-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CANADA_NATIONAL_IDENTIFICATION_NUMBER",
+      "targetLabel": "CANADA_NATIONAL_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-canada-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CANADA_PASSPORT_NUMBER",
+      "targetLabel": "CANADA_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Social Insurance Number (SIN) | CANADA\\_SOCIAL\\_INSURANCE\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-canada-social-insurance-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CANADA_SOCIAL_INSURANCE_NUMBER",
+      "targetLabel": "CANADA_SOCIAL_INSURANCE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Financial information | Credit card expiration date | CREDIT\\_CARD\\_EXPIRATION |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-credit-card-expiration-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CREDIT_CARD_EXPIRATION",
+      "targetLabel": "CREDIT_CARD_EXPIRATION"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Financial information | Credit card magnetic stripe data | CREDIT\\_CARD\\_MAGNETIC\\_STRIPE |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-credit-card-magnetic-stripe-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CREDIT_CARD_MAGNETIC_STRIPE",
+      "targetLabel": "CREDIT_CARD_MAGNETIC_STRIPE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Financial information | Credit card verification code | CREDIT\\_CARD\\_SECURITY\\_CODE |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-credit-card-security-code-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CREDIT_CARD_SECURITY_CODE",
+      "targetLabel": "CREDIT_CARD_SECURITY_CODE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-croatia-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CROATIA_DRIVERS_LICENSE",
+      "targetLabel": "CROATIA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-cyprus-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CYPRUS_DRIVERS_LICENSE",
+      "targetLabel": "CYPRUS_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-czechia-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CZECHIA_DRIVERS_LICENSE",
+      "targetLabel": "CZECHIA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: Personally identifiable information (PII) | Birth date | DATE\\_OF\\_BIRTH |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-date-of-birth-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "DATE_OF_BIRTH",
+      "targetLabel": "DATE_OF_BIRTH"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-denmark-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "DENMARK_DRIVERS_LICENSE",
+      "targetLabel": "DENMARK_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-estonia-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ESTONIA_DRIVERS_LICENSE",
+      "targetLabel": "ESTONIA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PHI | Health insurance or medical identification number | CANADA\\_HEALTH\\_NUMBER, EUROPEAN\\_HEALTH\\_INSURANCE\\_CARD\\_NUMBER, FINLAND\\_EUROPEAN\\_HEALTH\\_INSURANCE\\_NUMBER, FRANCE\\_HEALTH\\_INSURANCE\\_NUMBER, UK\\_NHS\\_NUMBER, USA\\_MEDICARE\\_BENEFICIARY\\_IDENTIFIER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-european-health-insurance-card-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "EUROPEAN_HEALTH_INSURANCE_CARD_NUMBER",
+      "targetLabel": "EUROPEAN_HEALTH_INSURANCE_CARD_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-finland-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "FINLAND_DRIVERS_LICENSE",
+      "targetLabel": "FINLAND_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PHI | Health insurance or medical identification number | CANADA\\_HEALTH\\_NUMBER, EUROPEAN\\_HEALTH\\_INSURANCE\\_CARD\\_NUMBER, FINLAND\\_EUROPEAN\\_HEALTH\\_INSURANCE\\_NUMBER, FRANCE\\_HEALTH\\_INSURANCE\\_NUMBER, UK\\_NHS\\_NUMBER, USA\\_MEDICARE\\_BENEFICIARY\\_IDENTIFIER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-finland-european-health-insurance-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "FINLAND_EUROPEAN_HEALTH_INSURANCE_NUMBER",
+      "targetLabel": "FINLAND_EUROPEAN_HEALTH_INSURANCE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Financial information | Bank account number | BANK\\_ACCOUNT\\_NUMBER (for Canadian and US bank account numbers), FRANCE\\_BANK\\_ACCOUNT\\_NUMBER, GERMANY\\_BANK\\_ACCOUNT\\_NUMBER, ITALY\\_BANK\\_ACCOUNT\\_NUMBER, SPAIN\\_BANK\\_ACCOUNT\\_NUMBER, UK\\_BANK\\_ACCOUNT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-france-bank-account-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "FRANCE_BANK_ACCOUNT_NUMBER",
+      "targetLabel": "FRANCE_BANK_ACCOUNT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-france-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "FRANCE_DRIVERS_LICENSE",
+      "targetLabel": "FRANCE_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PHI | Health insurance or medical identification number | CANADA\\_HEALTH\\_NUMBER, EUROPEAN\\_HEALTH\\_INSURANCE\\_CARD\\_NUMBER, FINLAND\\_EUROPEAN\\_HEALTH\\_INSURANCE\\_NUMBER, FRANCE\\_HEALTH\\_INSURANCE\\_NUMBER, UK\\_NHS\\_NUMBER, USA\\_MEDICARE\\_BENEFICIARY\\_IDENTIFIER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-france-health-insurance-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "FRANCE_HEALTH_INSURANCE_NUMBER",
+      "targetLabel": "FRANCE_HEALTH_INSURANCE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| National identification number | FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, SPAIN\\_DNI\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-france-national-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "FRANCE_NATIONAL_IDENTIFICATION_NUMBER",
+      "targetLabel": "FRANCE_NATIONAL_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-france-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "FRANCE_PASSPORT_NUMBER",
+      "targetLabel": "FRANCE_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Phone number | BRAZIL\\_PHONE\\_NUMBER, FRANCE\\_PHONE\\_NUMBER, GERMANY\\_PHONE\\_NUMBER, ITALY\\_PHONE\\_NUMBER, PHONE\\_NUMBER (for Canada and the US), SPAIN\\_PHONE\\_NUMBER, UK\\_PHONE\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-france-phone-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "FRANCE_PHONE_NUMBER",
+      "targetLabel": "FRANCE_PHONE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-france-tax-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "FRANCE_TAX_IDENTIFICATION_NUMBER",
+      "targetLabel": "FRANCE_TAX_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Financial information | Bank account number | BANK\\_ACCOUNT\\_NUMBER (for Canadian and US bank account numbers), FRANCE\\_BANK\\_ACCOUNT\\_NUMBER, GERMANY\\_BANK\\_ACCOUNT\\_NUMBER, ITALY\\_BANK\\_ACCOUNT\\_NUMBER, SPAIN\\_BANK\\_ACCOUNT\\_NUMBER, UK\\_BANK\\_ACCOUNT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-germany-bank-account-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GERMANY_BANK_ACCOUNT_NUMBER",
+      "targetLabel": "GERMANY_BANK_ACCOUNT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-germany-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GERMANY_DRIVERS_LICENSE",
+      "targetLabel": "GERMANY_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| National identification number | FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, SPAIN\\_DNI\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-germany-national-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GERMANY_NATIONAL_IDENTIFICATION_NUMBER",
+      "targetLabel": "GERMANY_NATIONAL_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-germany-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GERMANY_PASSPORT_NUMBER",
+      "targetLabel": "GERMANY_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Phone number | BRAZIL\\_PHONE\\_NUMBER, FRANCE\\_PHONE\\_NUMBER, GERMANY\\_PHONE\\_NUMBER, ITALY\\_PHONE\\_NUMBER, PHONE\\_NUMBER (for Canada and the US), SPAIN\\_PHONE\\_NUMBER, UK\\_PHONE\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-germany-phone-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GERMANY_PHONE_NUMBER",
+      "targetLabel": "GERMANY_PHONE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-germany-tax-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GERMANY_TAX_IDENTIFICATION_NUMBER",
+      "targetLabel": "GERMANY_TAX_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-greece-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GREECE_DRIVERS_LICENSE",
+      "targetLabel": "GREECE_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Credentials | column \"Managed data identifier ID\"",
+          "quote": "| HTTP Basic Authorization header | HTTP\\_BASIC\\_AUTH\\_HEADER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-http-basic-auth-header-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "HTTP_BASIC_AUTH_HEADER",
+      "targetLabel": "HTTP_BASIC_AUTH_HEADER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-hungary-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "HUNGARY_DRIVERS_LICENSE",
+      "targetLabel": "HUNGARY_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-ireland-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "IRELAND_DRIVERS_LICENSE",
+      "targetLabel": "IRELAND_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Financial information | Bank account number | BANK\\_ACCOUNT\\_NUMBER (for Canadian and US bank account numbers), FRANCE\\_BANK\\_ACCOUNT\\_NUMBER, GERMANY\\_BANK\\_ACCOUNT\\_NUMBER, ITALY\\_BANK\\_ACCOUNT\\_NUMBER, SPAIN\\_BANK\\_ACCOUNT\\_NUMBER, UK\\_BANK\\_ACCOUNT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-italy-bank-account-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ITALY_BANK_ACCOUNT_NUMBER",
+      "targetLabel": "ITALY_BANK_ACCOUNT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-italy-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ITALY_DRIVERS_LICENSE",
+      "targetLabel": "ITALY_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| National identification number | FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, SPAIN\\_DNI\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-italy-national-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ITALY_NATIONAL_IDENTIFICATION_NUMBER",
+      "targetLabel": "ITALY_NATIONAL_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-italy-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ITALY_PASSPORT_NUMBER",
+      "targetLabel": "ITALY_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Phone number | BRAZIL\\_PHONE\\_NUMBER, FRANCE\\_PHONE\\_NUMBER, GERMANY\\_PHONE\\_NUMBER, ITALY\\_PHONE\\_NUMBER, PHONE\\_NUMBER (for Canada and the US), SPAIN\\_PHONE\\_NUMBER, UK\\_PHONE\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-italy-phone-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ITALY_PHONE_NUMBER",
+      "targetLabel": "ITALY_PHONE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Global Positioning System (GPS) coordinates | LATITUDE\\_LONGITUDE |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-latitude-longitude-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "LATITUDE_LONGITUDE",
+      "targetLabel": "LATITUDE_LONGITUDE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-latvia-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "LATVIA_DRIVERS_LICENSE",
+      "targetLabel": "LATVIA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-lithuania-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "LITHUANIA_DRIVERS_LICENSE",
+      "targetLabel": "LITHUANIA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-luxembourg-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "LUXEMBOURG_DRIVERS_LICENSE",
+      "targetLabel": "LUXEMBOURG_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-malta-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "MALTA_DRIVERS_LICENSE",
+      "targetLabel": "MALTA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PHI | Unique device identifier (UDI) | MEDICAL\\_DEVICE\\_UDI |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-medical-device-udi-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "MEDICAL_DEVICE_UDI",
+      "targetLabel": "MEDICAL_DEVICE_UDI"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-netherlands-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "NETHERLANDS_DRIVERS_LICENSE",
+      "targetLabel": "NETHERLANDS_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Credentials | column \"Managed data identifier ID\"",
+          "quote": "| OpenSSH private key | OPENSSH\\_PRIVATE\\_KEY |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-openssh-private-key-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "OPENSSH_PRIVATE_KEY",
+      "targetLabel": "OPENSSH_PRIVATE_KEY"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Credentials | column \"Managed data identifier ID\"",
+          "quote": "| PGP private key | PGP\\_PRIVATE\\_KEY |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-pgp-private-key-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PGP_PRIVATE_KEY",
+      "targetLabel": "PGP_PRIVATE_KEY"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-poland-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "POLAND_DRIVERS_LICENSE",
+      "targetLabel": "POLAND_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-portugal-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PORTUGAL_DRIVERS_LICENSE",
+      "targetLabel": "PORTUGAL_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Credentials | column \"Managed data identifier ID\"",
+          "quote": "| PuTTY private key | PUTTY\\_PRIVATE\\_KEY |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-putty-private-key-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PUTTY_PRIVATE_KEY",
+      "targetLabel": "PUTTY_PRIVATE_KEY"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-romania-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ROMANIA_DRIVERS_LICENSE",
+      "targetLabel": "ROMANIA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-slovakia-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SLOVAKIA_DRIVERS_LICENSE",
+      "targetLabel": "SLOVAKIA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-slovenia-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SLOVENIA_DRIVERS_LICENSE",
+      "targetLabel": "SLOVENIA_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Financial information | Bank account number | BANK\\_ACCOUNT\\_NUMBER (for Canadian and US bank account numbers), FRANCE\\_BANK\\_ACCOUNT\\_NUMBER, GERMANY\\_BANK\\_ACCOUNT\\_NUMBER, ITALY\\_BANK\\_ACCOUNT\\_NUMBER, SPAIN\\_BANK\\_ACCOUNT\\_NUMBER, UK\\_BANK\\_ACCOUNT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-spain-bank-account-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_BANK_ACCOUNT_NUMBER",
+      "targetLabel": "SPAIN_BANK_ACCOUNT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| National identification number | FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, SPAIN\\_DNI\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-spain-dni-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_DNI_NUMBER",
+      "targetLabel": "SPAIN_DNI_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-spain-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_DRIVERS_LICENSE",
+      "targetLabel": "SPAIN_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-spain-nie-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_NIE_NUMBER",
+      "targetLabel": "SPAIN_NIE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-spain-nif-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_NIF_NUMBER",
+      "targetLabel": "SPAIN_NIF_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-spain-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_PASSPORT_NUMBER",
+      "targetLabel": "SPAIN_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Phone number | BRAZIL\\_PHONE\\_NUMBER, FRANCE\\_PHONE\\_NUMBER, GERMANY\\_PHONE\\_NUMBER, ITALY\\_PHONE\\_NUMBER, PHONE\\_NUMBER (for Canada and the US), SPAIN\\_PHONE\\_NUMBER, UK\\_PHONE\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-spain-phone-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_PHONE_NUMBER",
+      "targetLabel": "SPAIN_PHONE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Social Security number (SSN) | SPAIN\\_SOCIAL\\_SECURITY\\_NUMBER, USA\\_SOCIAL\\_SECURITY\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-spain-social-security-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_SOCIAL_SECURITY_NUMBER",
+      "targetLabel": "SPAIN_SOCIAL_SECURITY_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-spain-tax-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SPAIN_TAX_IDENTIFICATION_NUMBER",
+      "targetLabel": "SPAIN_TAX_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Driver’s license identification number | AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, IRELAND\\_DRIVERS\\_LICENSE, ITALY\\_DRIVERS\\_LICENSE, LATVIA\\_DRIVERS\\_LICENSE, LITHUANIA\\_DRIVE…",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-sweden-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "SWEDEN_DRIVERS_LICENSE",
+      "targetLabel": "SWEDEN_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Financial information | Bank account number | BANK\\_ACCOUNT\\_NUMBER (for Canadian and US bank account numbers), FRANCE\\_BANK\\_ACCOUNT\\_NUMBER, GERMANY\\_BANK\\_ACCOUNT\\_NUMBER, ITALY\\_BANK\\_ACCOUNT\\_NUMBER, SPAIN\\_BANK\\_ACCOUNT\\_NUMBER, UK\\_BANK\\_ACCOUNT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-uk-bank-account-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK_BANK_ACCOUNT_NUMBER",
+      "targetLabel": "UK_BANK_ACCOUNT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Driver’s license identification number | CANADA\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US),  UK\\_DRIVERS\\_LICENSE |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-uk-drivers-license-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK_DRIVERS_LICENSE",
+      "targetLabel": "UK_DRIVERS_LICENSE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Electoral roll number | UK\\_ELECTORAL\\_ROLL\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-uk-electoral-roll-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK_ELECTORAL_ROLL_NUMBER",
+      "targetLabel": "UK_ELECTORAL_ROLL_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| National Insurance Number (NINO) | UK\\_NATIONAL\\_INSURANCE\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-uk-national-insurance-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK_NATIONAL_INSURANCE_NUMBER",
+      "targetLabel": "UK_NATIONAL_INSURANCE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PHI | Health insurance or medical identification number | CANADA\\_HEALTH\\_NUMBER, EUROPEAN\\_HEALTH\\_INSURANCE\\_CARD\\_NUMBER, FINLAND\\_EUROPEAN\\_HEALTH\\_INSURANCE\\_NUMBER, FRANCE\\_HEALTH\\_INSURANCE\\_NUMBER, UK\\_NHS\\_NUMBER, USA\\_MEDICARE\\_BENEFICIARY\\_IDENTIFIER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-uk-nhs-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK_NHS_NUMBER",
+      "targetLabel": "UK_NHS_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-uk-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK_PASSPORT_NUMBER",
+      "targetLabel": "UK_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Phone number | BRAZIL\\_PHONE\\_NUMBER, FRANCE\\_PHONE\\_NUMBER, GERMANY\\_PHONE\\_NUMBER, ITALY\\_PHONE\\_NUMBER, PHONE\\_NUMBER (for Canada and the US), SPAIN\\_PHONE\\_NUMBER, UK\\_PHONE\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-uk-phone-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK_PHONE_NUMBER",
+      "targetLabel": "UK_PHONE_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CNPJ\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, UK\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-uk-tax-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK_TAX_IDENTIFICATION_NUMBER",
+      "targetLabel": "UK_TAX_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: Personal health information (PHI) | Drug Enforcement Agency (DEA) Registration Number | US\\_DRUG\\_ENFORCEMENT\\_AGENCY\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-us-drug-enforcement-agency-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "US_DRUG_ENFORCEMENT_AGENCY_NUMBER",
+      "targetLabel": "US_DRUG_ENFORCEMENT_AGENCY_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PHI | Health Insurance Claim Number (HICN) | USA\\_HEALTH\\_INSURANCE\\_CLAIM\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-usa-health-insurance-claim-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "USA_HEALTH_INSURANCE_CLAIM_NUMBER",
+      "targetLabel": "USA_HEALTH_INSURANCE_CLAIM_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PHI | Healthcare Common Procedure Coding System (HCPCS) code | USA\\_HEALTHCARE\\_PROCEDURE\\_CODE |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-usa-healthcare-procedure-code-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "USA_HEALTHCARE_PROCEDURE_CODE",
+      "targetLabel": "USA_HEALTHCARE_PROCEDURE_CODE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Taxpayer identification or reference number | AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, SPAIN\\_NIE\\_NUMBER, SPAIN\\_NIF\\_NUMBER, SPAIN\\_TAX\\_IDENTIFICATION\\_NUMBER, USA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-usa-individual-tax-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "USA_INDIVIDUAL_TAX_IDENTIFICATION_NUMBER",
+      "targetLabel": "USA_INDIVIDUAL_TAX_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PHI | Health insurance or medical identification number | CANADA\\_HEALTH\\_NUMBER, EUROPEAN\\_HEALTH\\_INSURANCE\\_CARD\\_NUMBER, FINLAND\\_EUROPEAN\\_HEALTH\\_INSURANCE\\_NUMBER, FRANCE\\_HEALTH\\_INSURANCE\\_NUMBER, UK\\_NHS\\_NUMBER, USA\\_MEDICARE\\_BENEFICIARY\\_IDENTIFIER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-usa-medicare-beneficiary-identifier-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "USA_MEDICARE_BENEFICIARY_IDENTIFIER",
+      "targetLabel": "USA_MEDICARE_BENEFICIARY_IDENTIFIER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PHI | National Drug Code (NDC) | USA\\_NATIONAL\\_DRUG\\_CODE |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-usa-national-drug-code-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "USA_NATIONAL_DRUG_CODE",
+      "targetLabel": "USA_NATIONAL_DRUG_CODE"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PHI | National Provider Identifier (NPI) | USA\\_NATIONAL\\_PROVIDER\\_IDENTIFIER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-usa-national-provider-identifier-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "USA_NATIONAL_PROVIDER_IDENTIFIER",
+      "targetLabel": "USA_NATIONAL_PROVIDER_IDENTIFIER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Passport number | CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-usa-passport-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "USA_PASSPORT_NUMBER",
+      "targetLabel": "USA_PASSPORT_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Default managed data identifiers for automated sensitive data discovery > Personally identifiable information (PII) | column \"Managed data identifier ID\"",
+          "quote": "| Social Security number (SSN) | SPAIN\\_SOCIAL\\_SECURITY\\_NUMBER, USA\\_SOCIAL\\_SECURITY\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-usa-social-security-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "USA_SOCIAL_SECURITY_NUMBER",
+      "targetLabel": "USA_SOCIAL_SECURITY_NUMBER"
+    },
+    {
+      "axis": "dataIdentifier",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a5aa1f1632c0072731af17d3aa0cd6c100b8173ad413d20a331d1b635c599e62",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md :: Default settings for automated sensitive data discovery > Updates to the default settings for automated sensitive data discovery | column \"Managed data identifier ID\"",
+          "quote": "| Personal information: PII | Vehicle identification number (VIN) | VEHICLE\\_IDENTIFICATION\\_NUMBER |",
+          "retrievedAt": "2026-09-01T04:29:45.709Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-settings-defaults.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "macie2/assessing-automated-discovery-coverage",
+      "id": "macie2-assessing-automated-discovery-coverage-dataidentifier-vehicle-identification-number-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "VEHICLE_IDENTIFICATION_NUMBER",
+      "targetLabel": "VEHICLE_IDENTIFICATION_NUMBER"
+    }
+  ],
+  "featureId": "macie2/assessing-automated-discovery-coverage",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "macie2",
+  "unresolvedTargets": []
+}

@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "service-level"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "ed7d5eb1f67e08a4ba059f9c88a187efa96eccd85188e616e13a95d28d866a84",
+      "locator": "For users and developers (web application and IDE) > Create a penetration test",
+      "quote": "[Review code security findings in pull requests](https://docs.aws.amazon.com/securityagent/latest/userguide/review-code-findings-github.md)",
+      "retrievedAt": "2026-09-01T04:06:18.269Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityagent/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "securityagent/service-wide",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "securityagent: stated for the service as a whole",
+  "serviceId": "securityagent",
+  "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+  "tier": "tier1"
+}

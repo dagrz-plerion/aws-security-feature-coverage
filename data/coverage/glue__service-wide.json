@@ -1,0 +1,732 @@
+{
+  "axes": [
+    "region",
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Africa (Cape Town) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-af-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "af-south-1",
+      "targetLabel": "Africa (Cape Town)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Asia Pacific (Hong Kong) | Available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ap-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-east-1",
+      "targetLabel": "Asia Pacific (Hong Kong)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ Asia Pacific (Tokyo)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ap-northeast-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-1",
+      "targetLabel": "Asia Pacific (Tokyo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ Asia Pacific (Seoul)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ap-northeast-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-2",
+      "targetLabel": "Asia Pacific (Seoul)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Asia Pacific (Osaka) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ap-northeast-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-3",
+      "targetLabel": "Asia Pacific (Osaka)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ Asia Pacific (Mumbai)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ap-south-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-1",
+      "targetLabel": "Asia Pacific (Mumbai)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Asia Pacific (Hyderabad) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ap-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-2",
+      "targetLabel": "Asia Pacific (Hyderabad)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ Asia Pacific (Singapore)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ap-southeast-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-1",
+      "targetLabel": "Asia Pacific (Singapore)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ Asia Pacific (Sydney)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ap-southeast-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-2",
+      "targetLabel": "Asia Pacific (Sydney)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ Asia Pacific (Jakarta)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ap-southeast-3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-3",
+      "targetLabel": "Asia Pacific (Jakarta)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Asia Pacific (Melbourne) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ap-southeast-4-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-4",
+      "targetLabel": "Asia Pacific (Melbourne)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Asia Pacific (Malaysia) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ap-southeast-5-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-5",
+      "targetLabel": "Asia Pacific (Malaysia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ Canada (Central)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ca-central-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-central-1",
+      "targetLabel": "Canada (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Canada West (Calgary) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-ca-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-west-1",
+      "targetLabel": "Canada West (Calgary)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| China (Beijing) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-cn-north-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cn-north-1",
+      "targetLabel": "China (Beijing)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| China (Ningxia) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-cn-northwest-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cn-northwest-1",
+      "targetLabel": "China (Ningxia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ Europe (Frankfurt)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-eu-central-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-1",
+      "targetLabel": "Europe (Frankfurt)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Europe (Zurich) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-eu-central-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-2",
+      "targetLabel": "Europe (Zurich)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ Europe (Stockholm)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-eu-north-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-north-1",
+      "targetLabel": "Europe (Stockholm)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Europe (Milan) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-eu-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-1",
+      "targetLabel": "Europe (Milan)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Europe (Spain) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-eu-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-2",
+      "targetLabel": "Europe (Spain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ Europe (Ireland)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-eu-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-1",
+      "targetLabel": "Europe (Ireland)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ Europe (London)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-eu-west-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-2",
+      "targetLabel": "Europe (London)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Europe (Paris) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-eu-west-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-3",
+      "targetLabel": "Europe (Paris)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Israel (Tel Aviv) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-il-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "il-central-1",
+      "targetLabel": "Israel (Tel Aviv)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Middle East (UAE) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-me-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "me-central-1",
+      "targetLabel": "Middle East (UAE)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| Middle East (Bahrain) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-me-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "me-south-1",
+      "targetLabel": "Middle East (Bahrain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ South America (São Paulo)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-sa-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sa-east-1",
+      "targetLabel": "South America (São Paulo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ US East (N. Virginia)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-us-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ US East (Ohio)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-us-east-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-2",
+      "targetLabel": "US East (Ohio)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| AWS GovCloud (US-East) | Available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-us-gov-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| AWS GovCloud (US-West) | Available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-us-gov-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "b5644d0173e54f1219cf7cebac5380c7ec7c90f6a87f64079c94ac86d124b1eb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md :: Supported Regions | column \"Region\"",
+          "quote": "| US West (N. California) | Not available |",
+          "retrievedAt": "2026-09-01T04:35:21.536Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/zero-etl-supported-regions.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-us-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-1",
+      "targetLabel": "US West (N. California)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8db59e60e1ca3bf160edf328b5d6c2821737e83c8abc620c1e6dd82fefcd674a",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md :: Supported Regions for table optimizers",
+          "quote": "+ US West (Oregon)",
+          "retrievedAt": "2026-09-01T04:35:19.768Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/regions-optimizers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-region-us-west-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "662153b417be67e0aa8822d5f7b893653d035ae75f47596ce3226b2a530ca7fb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/populate-dc-other-services.md :: heading level 2",
+          "quote": "## Amazon Athena",
+          "retrievedAt": "2026-09-01T04:29:44.692Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/populate-dc-other-services.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-service-athena-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "athena",
+      "targetLabel": "Amazon Athena"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "662153b417be67e0aa8822d5f7b893653d035ae75f47596ce3226b2a530ca7fb",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/populate-dc-other-services.md :: heading level 2",
+          "quote": "## AWS Lake Formation",
+          "retrievedAt": "2026-09-01T04:29:44.692Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/populate-dc-other-services.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "glue/service-wide",
+      "id": "glue-service-wide-service-lakeformation-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lakeformation",
+      "targetLabel": "AWS Lake Formation"
+    }
+  ],
+  "featureId": "glue/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "glue",
+  "unresolvedTargets": []
+}

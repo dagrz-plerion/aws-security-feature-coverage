@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "service-level"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "cd338a443112283678904dfe325e98b9ca4cafd691c276922399ac84ed6be1ba",
+      "locator": "Code signing workflows > AWS Lambda",
+      "quote": "[Creating source S3 bucket](https://docs.aws.amazon.com/signer/latest/developerguide/s3-source-lambda.md)",
+      "retrievedAt": "2026-09-01T04:06:18.686Z",
+      "sourceUrl": "https://docs.aws.amazon.com/signer/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "signer/service-wide",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "signer: stated for the service as a whole",
+  "serviceId": "signer",
+  "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+  "tier": "tier1"
+}

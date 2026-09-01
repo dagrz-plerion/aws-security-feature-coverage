@@ -1,6 +1,7 @@
 {
   "axes": [
-    "region"
+    "region",
+    "service"
   ],
   "claims": [
     {
@@ -325,6 +326,46 @@
     },
     {
       "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "bf7e3ac9b7f80e9bdb2bd2a8a91c75af32ef5c0f4f70c10ed889ada9b0c61fc9",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ds.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-East)",
+          "retrievedAt": "2026-09-01T05:00:29.449Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ds.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "ds/directory-service-data",
+      "id": "ds-directory-service-data-region-us-gov-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "bf7e3ac9b7f80e9bdb2bd2a8a91c75af32ef5c0f4f70c10ed889ada9b0c61fc9",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ds.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-West)",
+          "retrievedAt": "2026-09-01T05:00:29.449Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ds.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "ds/directory-service-data",
+      "id": "ds-directory-service-data-region-us-gov-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "region",
       "confidence": 0.9,
       "evidence": [
         {
@@ -362,10 +403,30 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "89629c0ae471bc948b88651d92a3d22d43052555d68369d77b67e33a996aeb75",
+          "locator": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.md :: heading level 4",
+          "quote": "#### [ AWS Directory Service for Microsoft Active Directory ]<a name=\"microsoftad\"></a>",
+          "retrievedAt": "2026-09-01T05:00:29.604Z",
+          "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "ds/directory-service-data",
+      "id": "ds-directory-service-data-service-ds-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ds",
+      "targetLabel": "[ AWS Directory Service for Microsoft Active Directory ]"
     }
   ],
   "featureId": "ds/directory-service-data",
-  "generatedAt": "2026-09-01T04:53:52.577Z",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
   "serviceId": "ds",
   "unresolvedTargets": []
 }

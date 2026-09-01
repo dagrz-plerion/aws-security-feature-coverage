@@ -1,0 +1,812 @@
+{
+  "axes": [
+    "region",
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Africa (Cape Town) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-af-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "af-south-1",
+      "targetLabel": "Africa (Cape Town)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Hong Kong) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-east-1",
+      "targetLabel": "Asia Pacific (Hong Kong)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Taipei) | ✓ | ✓ |  |  |  |  |  |  |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-east-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-east-2",
+      "targetLabel": "Asia Pacific (Taipei)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Tokyo) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-northeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-1",
+      "targetLabel": "Asia Pacific (Tokyo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Seoul) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-northeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-2",
+      "targetLabel": "Asia Pacific (Seoul)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Osaka) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-northeast-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-3",
+      "targetLabel": "Asia Pacific (Osaka)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Mumbai) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-1",
+      "targetLabel": "Asia Pacific (Mumbai)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Hyderabad) | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-2",
+      "targetLabel": "Asia Pacific (Hyderabad)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Singapore) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-southeast-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-1",
+      "targetLabel": "Asia Pacific (Singapore)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Sydney) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-southeast-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-2",
+      "targetLabel": "Asia Pacific (Sydney)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Jakarta) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-southeast-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-3",
+      "targetLabel": "Asia Pacific (Jakarta)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Melbourne) | ✓ | ✓ |  |  | ✓ |  |  | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-southeast-4-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-4",
+      "targetLabel": "Asia Pacific (Melbourne)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Malaysia) | ✓ | ✓ |  |  |  |  |  |  |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-southeast-5-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-5",
+      "targetLabel": "Asia Pacific (Malaysia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Asia Pacific (Thailand) | ✓ | ✓ |  |  |  |  |  | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ap-southeast-7-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-7",
+      "targetLabel": "Asia Pacific (Thailand)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Canada (Central) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ca-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-central-1",
+      "targetLabel": "Canada (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Canada West (Calgary) | ✓ | ✓ |  |  | ✓ |  |  |  |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-ca-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-west-1",
+      "targetLabel": "Canada West (Calgary)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| China (Beijing) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-cn-north-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cn-north-1",
+      "targetLabel": "China (Beijing)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| China (Ningxia) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-cn-northwest-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cn-northwest-1",
+      "targetLabel": "China (Ningxia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Europe (Frankfurt) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-eu-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-1",
+      "targetLabel": "Europe (Frankfurt)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Europe (Zurich) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-eu-central-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-2",
+      "targetLabel": "Europe (Zurich)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Europe (Stockholm) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-eu-north-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-north-1",
+      "targetLabel": "Europe (Stockholm)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Europe (Milan) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-eu-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-1",
+      "targetLabel": "Europe (Milan)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Europe (Spain) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-eu-south-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-south-2",
+      "targetLabel": "Europe (Spain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Europe (Ireland) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-eu-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-1",
+      "targetLabel": "Europe (Ireland)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Europe (London) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-eu-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-2",
+      "targetLabel": "Europe (London)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Europe (Paris) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-eu-west-3-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-3",
+      "targetLabel": "Europe (Paris)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Israel (Tel Aviv) | ✓ | ✓ |  |  | ✓ |  |  |  |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-il-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "il-central-1",
+      "targetLabel": "Israel (Tel Aviv)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Middle East (UAE) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-me-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "me-central-1",
+      "targetLabel": "Middle East (UAE)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Middle East (Bahrain) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | Public ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-me-south-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "me-south-1",
+      "targetLabel": "Middle East (Bahrain)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| Mexico (Central) | ✓ | ✓ |  |  |  |  |  |  |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-mx-central-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mx-central-1",
+      "targetLabel": "Mexico (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| South America (São Paulo) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-sa-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sa-east-1",
+      "targetLabel": "South America (São Paulo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| US East (N. Virginia) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-us-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| US East (Ohio) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-us-east-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-2",
+      "targetLabel": "US East (Ohio)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| AWS GovCloud (US-East) | ✓ | ✓ |  | ✓ | ✓ | ✓ |  |  |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-us-gov-east-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| AWS GovCloud (US-West) | ✓ | ✓ |  | ✓ | ✓ | ✓ |  |  |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-us-gov-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| US West (N. California) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-us-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-1",
+      "targetLabel": "US West (N. California)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "dc75b78bcd77b512acaf8501dda06ba66976dc489159d3d36d140f503b67d813",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md :: Amazon EventBridge feature availability by AWS Region | column \"Region\"",
+          "quote": "| US West (Oregon) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | Public ✓<br />Private ✓ |",
+          "retrievedAt": "2026-09-01T04:34:44.480Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/feature-availability.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-region-us-west-2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca8ae74ad2c204bddc56594a666da213e3d5f982803656487bd3f1942a89eeaa",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-saas-furls.md :: Receiving SaaS events from AWS Lambda function URLs in Amazon EventBridge > Quotas, error codes, and retrying delivery > Quotas | column \"Service\"",
+          "quote": "| Amazon EventBridge | 1 MB maximum entry size for PutEvents actions. <br />EventBridge enforces Region-based rate quotas. For more information, see [EventBridge event bus quotas](eb-quota.md#eb-limits). |",
+          "retrievedAt": "2026-09-01T04:34:44.986Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-saas-furls.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-service-events-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "events",
+      "targetLabel": "Amazon EventBridge"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca8ae74ad2c204bddc56594a666da213e3d5f982803656487bd3f1942a89eeaa",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-saas-furls.md :: Receiving SaaS events from AWS Lambda function URLs in Amazon EventBridge > Quotas, error codes, and retrying delivery > Quotas | column \"Service\"",
+          "quote": "| AWS Lambda | Default: 10 concurrent executions<br />For more information about quotas, including requesting quota increases, see [Lambda quotas](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html). |",
+          "retrievedAt": "2026-09-01T04:34:44.986Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-saas-furls.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-service-lambda-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lambda",
+      "targetLabel": "AWS Lambda"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ca8ae74ad2c204bddc56594a666da213e3d5f982803656487bd3f1942a89eeaa",
+          "locator": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-saas-furls.md :: Receiving SaaS events from AWS Lambda function URLs in Amazon EventBridge > Quotas, error codes, and retrying delivery > Quotas | column \"Service\"",
+          "quote": "| AWS Secrets Manager | Default: 5,000 requests per second<br />For more information about quotas, including requesting quota increases, see [AWS Secrets Manager quotas](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_limits.html).The number of requests per second is minimized using the [AWS Secrets Manager Python caching client](https://github.com/aws/aws-secretsmanager-caching-python#cache-configuration). |",
+          "retrievedAt": "2026-09-01T04:34:44.986Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-saas-furls.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "events/service-wide",
+      "id": "events-service-wide-service-secretsmanager-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "secretsmanager",
+      "targetLabel": "AWS Secrets Manager"
+    }
+  ],
+  "featureId": "events/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "events",
+  "unresolvedTargets": []
+}

@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "service-level"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "cf46a5071ad19b987c8eae2bdeae9c66b3ea65b9e9a264f0fb2281f99a37597b",
+      "locator": "Security > Using Service-Linked Roles",
+      "quote": "[Service-linked role for calling AWS services, publishing metrics, and using AWS Organizations](https://docs.aws.amazon.com/notifications/latest/userguide/slr-call-services.md)",
+      "retrievedAt": "2026-09-01T04:06:14.316Z",
+      "sourceUrl": "https://docs.aws.amazon.com/notifications/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "notifications/service-wide",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS User Notifications: stated for the service as a whole",
+  "serviceId": "notifications",
+  "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+  "tier": "tier2"
+}

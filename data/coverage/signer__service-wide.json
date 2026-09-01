@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "region"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "ad5c9851e341bdabb61821902b09212e838ff7f7f9112723d36b708b9f8d9c19",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-Signer.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-East)",
+          "retrievedAt": "2026-09-01T04:58:50.002Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-Signer.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "signer/service-wide",
+      "id": "signer-service-wide-region-us-gov-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "ad5c9851e341bdabb61821902b09212e838ff7f7f9112723d36b708b9f8d9c19",
+          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-Signer.md :: This service is available in the following AWS GovCloud (US) Regions:",
+          "quote": "+  AWS GovCloud (US-West)",
+          "retrievedAt": "2026-09-01T04:58:50.002Z",
+          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-Signer.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "signer/service-wide",
+      "id": "signer-service-wide-region-us-gov-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    }
+  ],
+  "featureId": "signer/service-wide",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "signer",
+  "unresolvedTargets": []
+}

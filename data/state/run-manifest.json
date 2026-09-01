@@ -1,57 +1,44 @@
 {
   "fetch": {
-    "cacheHit": 4463,
+    "cacheHit": 10985,
     "failed": 0,
     "network": 0,
     "revalidated": 0
   },
-  "finishedAt": "2026-09-01T04:53:52.976Z",
+  "finishedAt": "2026-09-01T05:06:51.269Z",
   "stages": [
     {
       "counts": {
-        "aliasesApplied": 13,
-        "aliasesUnmatched": 0,
-        "features": 3278,
-        "noFeatureFound": 88,
-        "promotedToTier2": 0,
-        "prunedStaleRecords": 134,
-        "scanned": 307,
-        "servicesWithFeatures": 219
-      },
-      "finishedAt": "2026-09-01T04:53:46.220Z",
-      "id": "stage4-features",
-      "startedAt": "2026-09-01T04:53:42.451Z",
-      "status": "ok"
-    },
-    {
-      "counts": {
-        "claims": 3774,
+        "claims": 12638,
         "conflicts": 0,
-        "covered": 3774,
-        "featuresWithCoverage": 37,
-        "notCovered": 0,
-        "pagesConsidered": 4463,
+        "covered": 12527,
+        "featuresWithCoverage": 227,
+        "notCovered": 109,
+        "openAxes": 6,
+        "openAxisMembers": 1536,
+        "pagesConsidered": 10985,
         "pagesFailed": 1,
-        "pagesRead": 51,
+        "pagesRead": 464,
         "prunedStaleRecords": 0,
-        "unattachedPages": 216,
-        "unresolvedTargets": 144
+        "serviceWideRecords": 76,
+        "unattachedPages": 0,
+        "unresolvedTargets": 1118
       },
-      "finishedAt": "2026-09-01T04:53:52.610Z",
+      "finishedAt": "2026-09-01T05:06:50.758Z",
       "id": "stage5-coverage",
-      "startedAt": "2026-09-01T04:53:46.220Z",
+      "startedAt": "2026-09-01T05:06:23.959Z",
       "status": "partial"
     },
     {
       "counts": {
-        "features": 3277,
+        "features": 3356,
         "services": 228
       },
-      "finishedAt": "2026-09-01T04:53:52.976Z",
+      "finishedAt": "2026-09-01T05:06:51.269Z",
       "id": "report",
-      "startedAt": "2026-09-01T04:53:52.610Z",
+      "startedAt": "2026-09-01T05:06:50.759Z",
       "status": "ok"
     }
   ],
-  "startedAt": "2026-09-01T04:53:42.449Z"
+  "startedAt": "2026-09-01T05:06:23.958Z"
 }

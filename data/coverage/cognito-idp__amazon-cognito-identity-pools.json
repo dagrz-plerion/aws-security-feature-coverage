@@ -1,0 +1,148 @@
+{
+  "axes": [
+    "region",
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "e7086cf8e48b1ab5b7e4af149957861ff1156aa35797d9bc88c72a3be0d6a3f3",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.md ::  | column \"AWS Region\"",
+          "quote": "| China (Beijing) | https://cognito-identity.cn-north-1.amazonaws.com.cn/.well-known/jwks\\_uri |",
+          "retrievedAt": "2026-09-01T04:59:51.340Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-identity-pools",
+      "id": "cognito-idp-amazon-cognito-identity-pools-region-cn-north-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cn-north-1",
+      "targetLabel": "China (Beijing)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "e7086cf8e48b1ab5b7e4af149957861ff1156aa35797d9bc88c72a3be0d6a3f3",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.md ::  | column \"AWS Region\"",
+          "quote": "| AWS GovCloud (US-West) | https://cognito-identity.us-gov-west-1.amazonaws.com/.well-known/jwks\\_uri |",
+          "retrievedAt": "2026-09-01T04:59:51.340Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-identity-pools",
+      "id": "cognito-idp-amazon-cognito-identity-pools-region-us-gov-west-1-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6b2447e71b3494b51ecbe5d0a6ad0d2127b301bff18b90f055091800452d814f",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.md :: IAM roles > Access policies > Services that unauthenticated users can access | column \"AWS service\"",
+          "quote": "| Amazon Location Service | `SearchPlaceIndex*`<br />`GetPlace`<br />`CalculateRoute*`<br />`*Geofence`<br />`*Geofences`<br />`*DevicePosition*` |",
+          "retrievedAt": "2026-09-01T04:59:51.341Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-identity-pools",
+      "id": "cognito-idp-amazon-cognito-identity-pools-service-geo-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "geo",
+      "targetLabel": "Amazon Location Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6b2447e71b3494b51ecbe5d0a6ad0d2127b301bff18b90f055091800452d814f",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.md :: IAM roles > Access policies > Services that unauthenticated users can access | column \"AWS service\"",
+          "quote": "| AWS Key Management Service | `Encrypt`<br />`Decrypt`<br />`ReEncryptTo`<br />`ReEncryptFrom`<br />`GenerateDataKey`<br />`GenerateDataKeyPair`<br />`GenerateDataKeyPair`<br />`GenerateDataKeyPairWithoutPlaintext`<br />`GenerateDataKeyWithoutPlaintext` |",
+          "retrievedAt": "2026-09-01T04:59:51.341Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-identity-pools",
+      "id": "cognito-idp-amazon-cognito-identity-pools-service-kms-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kms",
+      "targetLabel": "AWS Key Management Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6b2447e71b3494b51ecbe5d0a6ad0d2127b301bff18b90f055091800452d814f",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.md :: IAM roles > Access policies > Services that unauthenticated users can access | column \"AWS service\"",
+          "quote": "| Amazon SageMaker AI | `InvokeEndpoint` |",
+          "retrievedAt": "2026-09-01T04:59:51.341Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-identity-pools",
+      "id": "cognito-idp-amazon-cognito-identity-pools-service-sagemaker-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sagemaker",
+      "targetLabel": "Amazon SageMaker AI"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6b2447e71b3494b51ecbe5d0a6ad0d2127b301bff18b90f055091800452d814f",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.md :: IAM roles > Access policies > Services that unauthenticated users can access | column \"AWS service\"",
+          "quote": "| Amazon Textract | `DetectDocumentText`<br />`AnalyzeDocument` |",
+          "retrievedAt": "2026-09-01T04:59:51.341Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "cognito-idp/amazon-cognito-identity-pools",
+      "id": "cognito-idp-amazon-cognito-identity-pools-service-textract-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "textract",
+      "targetLabel": "Amazon Textract"
+    }
+  ],
+  "featureId": "cognito-idp/amazon-cognito-identity-pools",
+  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "serviceId": "cognito-idp",
+  "unresolvedTargets": [
+    {
+      "axis": "region",
+      "raw": "Opt-in Regions like Europe (Milan) and Africa (Cape Town)",
+      "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.md"
+    },
+    {
+      "axis": "region",
+      "raw": "Opt-in Regions like Europe (Milan) and Africa (Cape Town)",
+      "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Sumerian",
+      "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.md"
+    }
+  ]
+}
