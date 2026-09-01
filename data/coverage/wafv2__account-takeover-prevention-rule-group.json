@@ -1,10 +1,10 @@
 {
   "axes": [
-    "resourceTarget"
+    "resourceType"
   ],
   "claims": [
     {
-      "axis": "resourceTarget",
+      "axis": "resourceType",
       "confidence": 0.95,
       "evidence": [
         {
@@ -17,15 +17,15 @@
       ],
       "extractorId": "recipe:waf-fraud-control-cognito-exclusion",
       "featureId": "wafv2/account-takeover-prevention-rule-group",
-      "id": "wafv2-account-takeover-prevention-rule-group-resourcetarget-amazon-cognito-user-pools-recipe-waf-fraud-control-cognito-e",
+      "id": "wafv2-account-takeover-prevention-rule-group-resourcetype-aws-cognito-userpool-recipe-waf-fraud-control-cognito-exclusio",
       "method": "deterministic",
       "status": "not-covered",
-      "targetId": "Amazon Cognito user pools",
+      "targetId": "AWS::Cognito::UserPool",
       "targetLabel": "This rule group isn't available for use with Amazon Cognito user pools."
     }
   ],
   "featureId": "wafv2/account-takeover-prevention-rule-group",
-  "generatedAt": "2026-09-01T07:28:39.150Z",
+  "generatedAt": "2026-09-01T07:37:34.430Z",
   "serviceId": "wafv2",
   "unresolvedTargets": []
 }

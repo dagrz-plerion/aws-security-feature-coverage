@@ -1,6 +1,7 @@
 import path from "node:path";
 import { paths } from "../core/paths.js";
 import { readAllJson, readJson } from "../core/store.js";
+import { axisKinds } from "../core/seeds.js";
 import type {
   Adjudication,
   Conflict,
@@ -31,6 +32,18 @@ export type ReportData = {
   gaps: Gap[];
   conflicts: Conflict[];
   openAxes: { axis: string; count: number }[];
+  axisKinds: Record<string, { kind: string; label: string }>;
+  sources: {
+    url: string;
+    serviceId: string;
+    source: string;
+    note?: string;
+    recipes: number;
+    claims: number;
+    readRatio?: number;
+    verdict?: string;
+    dropped?: number;
+  }[];
 };
 
 async function wrapped<T>(file: string, key: string): Promise<T[]> {
@@ -56,5 +69,41 @@ export async function loadReportData(): Promise<ReportData> {
     conflicts: await readAllJson<Conflict>(paths.conflicts),
     openAxes:
       (await readJson<{ axes: { axis: string; count: number }[] }>(path.join(u, "open-axes.json")))?.axes ?? [],
+    sources: await loadSources(),
+    axisKinds: await axisKinds(),
   };
+}
+
+type RegistryFile = {
+  serviceId: string;
+  pages: {
+    url: string;
+    source: string;
+    note?: string;
+    recipes?: unknown[];
+    lastResult?: { claims: number; dropped?: number };
+    verified?: { readRatio: number; verdict: string };
+  }[];
+};
+
+/** Every page the map reads, with what the last verification pass made of it. */
+async function loadSources(): Promise<ReportData["sources"]> {
+  const files = await readAllJson<RegistryFile>(path.join(paths.data, "coverage-pages"));
+  const out: ReportData["sources"] = [];
+  for (const file of files) {
+    for (const page of file.pages) {
+      if (!page.lastResult?.claims) continue;
+      out.push({
+        url: page.url,
+        serviceId: file.serviceId,
+        source: page.source,
+        ...(page.note ? { note: page.note } : {}),
+        recipes: page.recipes?.length ?? 0,
+        claims: page.lastResult.claims,
+        ...(page.lastResult.dropped ? { dropped: page.lastResult.dropped } : {}),
+        ...(page.verified ? { readRatio: page.verified.readRatio, verdict: page.verified.verdict } : {}),
+      });
+    }
+  }
+  return out.sort((a, b) => (a.readRatio ?? 1) - (b.readRatio ?? 1) || b.claims - a.claims);
 }

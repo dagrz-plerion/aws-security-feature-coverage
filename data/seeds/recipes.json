@@ -705,9 +705,9 @@
             "from": "paragraph",
             "sentenceMatches": "is ?n'?t available for use with Amazon Cognito",
             "extract": "regex",
-            "pattern": "(Amazon Cognito user pools)"
+            "pattern": "(Amazon Cognito user pools?)"
           },
-          "axis": "resourceTarget",
+          "axis": "resourceType",
           "status": "not-covered",
           "requireMin": 1,
           "featureId": "wafv2/account-takeover-prevention-rule-group"
@@ -968,6 +968,27 @@
           "status": "covered",
           "featureId": "config/recording-aws-resources",
           "requireMin": 200
+        }
+      ]
+    },
+    {
+      "urlPattern": "securityhub/latest/userguide/securityhub-controls-reference\\.md$",
+      "serviceId": "securityhub",
+      "note": "Every Security Hub CSPM control. Without this the map held only the per-Region exclusions, so the feature read as zero controls covered.",
+      "recipes": [
+        {
+          "id": "securityhub-control-reference",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "security control id",
+            "extract": "whole",
+            "matches": "^[A-Z][A-Za-z0-9]{1,20}\\.\\d{1,3}$"
+          },
+          "axis": "control",
+          "status": "covered",
+          "featureId": "securityhub/aws-security-hub-cspm",
+          "requireMin": 550
         }
       ]
     }

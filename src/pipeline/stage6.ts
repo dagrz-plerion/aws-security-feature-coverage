@@ -111,6 +111,13 @@ export async function validate(sampleSize = 250): Promise<{ violations: Violatio
     }),
   );
 
+  // An axis with one or two members gives a denominator nobody can read: "0/1" looks
+  // like a failure when it is a single documented exclusion.
+  add(
+    "no axis is too small to be a denominator",
+    openAxes.filter((a) => a.members.length < 3).map((a) => `${a.axis} has only ${a.members.length} member(s)`),
+  );
+
   add(
     "every scoped claim names a target in the scope axis",
     [...new Set(

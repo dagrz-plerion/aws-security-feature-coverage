@@ -114,6 +114,8 @@ export function toBrowserModel(data: ReportData) {
       .filter((a) => a.tier === "not-security")
       .map((a) => ({ id: a.serviceId, reason: a.reason, score: a.score, method: a.method })),
     features,
+    sources: data.sources,
+    axisKinds: data.axisKinds,
     gaps: data.gaps.map((g) => ({ id: g.id, kind: g.kind, subject: g.subject, detail: g.detail, stage: g.suggestedStage })),
     quarantine: data.quarantine.map((q) => ({
       id: q.id,

@@ -57,3 +57,11 @@ export async function recipeRules(): Promise<RecipeRule[]> {
   const file = await load<SeedFile<{ rules: RecipeRule[] }>>("recipes.json", { rules: [] });
   return file.rules;
 }
+
+export type AxisKind = { kind: "external" | "catalogue"; label: string };
+
+/** Which axes are real universes and which are a service's own inventory. */
+export async function axisKinds(): Promise<Record<string, AxisKind>> {
+  const file = await load<SeedFile<{ axes: Record<string, AxisKind> }>>("axes.json", { axes: {} });
+  return file.axes;
+}

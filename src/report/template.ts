@@ -128,6 +128,8 @@ const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const state = { tab: "services", q: "", tier: "", method: "", sort: {}, open: new Set() };
 const US = M.universeSizes || {};
+const AXIS = M.axisKinds || {};
+const isCatalogue = (a) => (AXIS[a] || {}).kind === "catalogue";
 
 /* Evidence is fetched on demand so the page itself stays small. */
 let DETAIL = null, detailStatus = "idle";
@@ -172,6 +174,7 @@ const TABS = [
   ["coverage", "Coverage", () => M.features.filter((f) => f.claimCount > 0).length],
   ["regions", "Regions", () => M.regions.length],
   ["outofscope", "Ruled out", () => M.outOfScope.length],
+  ["sources", "Sources", () => (M.sources || []).length],
   ["gaps", "Gaps", () => M.gaps.length],
   ["quarantine", "Quarantine", () => M.quarantine.length],
   ["conflicts", "Conflicts", () => M.conflicts.length],
@@ -192,6 +195,15 @@ function axisTotal(axis, stats) {
 function axisBar(axis, stats) {
   const total = axisTotal(axis, stats);
   if (!total) return '<span class="muted">no claims</span>';
+  // A service always publishes all of its own catalogue, so a ratio there is 100% by
+  // construction and means nothing. Show the count, and the coverage only where a
+  // statement is scoped to something outside the service.
+  if (isCatalogue(axis)) {
+    return '<div class="axisrow"><span class="ratio">' + stats.covered + " published</span>" +
+      (stats.notCovered ? ' <span class="pill manual">' + stats.notCovered + " withdrawn</span>" : "") +
+      (stats.scoped ? ' <span class="chip" title="statements scoped to a Region or similar">' + stats.scoped + " scoped</span>" : "") +
+      "</div>";
+  }
   const unstated = Math.max(0, total - stats.covered - stats.notCovered - stats.partial);
   const pc = (v) => (v / total * 100).toFixed(3) + "%";
   const title = stats.covered + " stated as covered, " + stats.partial + " partial, " + stats.notCovered +
@@ -361,8 +373,15 @@ const VIEWS = {
     const columns = STANDARD.filter((a) => usage[a]);
     const others = Object.keys(usage).filter((a) => !STANDARD.includes(a)).sort();
 
+    const catalogueCell = (r) => {
+      const mine = others.filter((a) => isCatalogue(a) && r.axes[a]);
+      if (!mine.length) return '<span class="muted">—</span>';
+      return '<div class="chips">' + mine.map((a) =>
+        '<span class="chip" title="' + esc((AXIS[a] || {}).label || a) + '">' + esc(a) + " " + r.axes[a].covered +
+        (r.axes[a].scoped ? " · " + r.axes[a].scoped + " scoped" : "") + "</span>").join("") + "</div>";
+    };
     const otherCell = (r) => {
-      const mine = others.filter((a) => r.axes[a]);
+      const mine = others.filter((a) => !isCatalogue(a) && r.axes[a]);
       if (!mine.length) return '<span class="muted">—</span>';
       return '<div class="chips">' + mine.map((a) =>
         '<span class="chip" title="' + esc(a) + ': ' + r.axes[a].covered + " of " + (US[a] ?? r.axes[a].total) +
@@ -370,13 +389,18 @@ const VIEWS = {
     };
 
     return filters({ placeholder: "search mapped features" }) + LEGEND +
-      (others.length ? '<div class="muted" style="margin-bottom:10px">' + others.length +
-        ' further axes apply to only a few features and are shown together under Other coverage.</div>' : "") +
+      '<div class="muted" style="margin-bottom:10px">' +
+        '<b>Coverage</b> is measured against a universe that exists whether or not the feature does: Regions, services, resource types, operating systems. ' +
+        '<b>Published catalogue</b> is a list the service publishes about itself — GuardDuty finding types, Config managed rules, Security Hub controls. ' +
+        'A service holds all of its own catalogue by definition, so those are counts, not coverage.</div>' +
       table([
         { id: "feature", label: "Feature", value: (r) => r.id, cell: (r) => '<span class="mono">' + esc(r.serviceId) + "</span> " + esc(r.name) },
         ...columns.map((a) => ({ id: a, label: a + " (of " + (US[a] ?? "?") + ")", value: (r) => (r.axes[a] ? r.axes[a].covered : -1),
           cell: (r) => r.axes[a] ? axisBar(a, r.axes[a]) : '<span class="muted">—</span>' })),
-        ...(others.length ? [{ id: "other", label: "Other coverage", value: (r) => others.filter((a) => r.axes[a]).length, cell: otherCell }] : []),
+        ...(others.filter((a) => !isCatalogue(a)).length
+          ? [{ id: "other", label: "Other coverage", value: (r) => others.filter((a) => !isCatalogue(a) && r.axes[a]).length, cell: otherCell }] : []),
+        ...(others.filter(isCatalogue).length
+          ? [{ id: "cat", label: "Published catalogue", value: (r) => others.filter((a) => isCatalogue(a) && r.axes[a]).length, cell: catalogueCell }] : []),
       ], rows, (r) => {
         const cov = detailFor("coverage:" + r.id);
         if (typeof cov === "string") return cov;
@@ -391,6 +415,28 @@ const VIEWS = {
               '<a href="' + esc(String(c.evidence[0].sourceUrl).replace(/\\.md$/, ".html")) + '" target="_blank" rel="noopener">source</a>' : "") + "</div>").join("") +
           "</section>";
       });
+  },
+  sources() {
+    const all = M.sources || [];
+    const rows = all.filter((s) => match(s, [s.url, s.serviceId, s.source, s.note, s.verdict]));
+    const pct = (v) => (v === undefined ? "—" : (v * 100).toFixed(0) + "%");
+    return filters({ placeholder: "search source pages" }) +
+      '<div class="muted" style="margin-bottom:10px">Every AWS page the map reads. <b>Read</b> is how much of the page became coverage, checked against the live page on every run. A low number means the page holds more than we took from it.</div>' +
+      table([
+        { id: "service", label: "Service", value: (s) => s.serviceId, cell: (s) => '<span class="mono">' + esc(s.serviceId) + "</span>" },
+        { id: "page", label: "Page", value: (s) => s.url,
+          cell: (s) => '<a href="' + esc(s.url.replace(/\.md$/, ".html")) + '" target="_blank" rel="noopener">' + esc(s.url.split("/").pop()) + "</a>" },
+        { id: "how", label: "Found by", value: (s) => s.source, cell: (s) => '<span class="chip">' + esc(s.source) + "</span>" },
+        { id: "recipes", label: "Recipes", value: (s) => s.recipes, cell: (s) => s.recipes || '<span class="muted">generic</span>' },
+        { id: "claims", label: "Claims", value: (s) => s.claims, cell: (s) => s.claims },
+        { id: "read", label: "Read", value: (s) => (s.readRatio === undefined ? 2 : s.readRatio),
+          cell: (s) => s.verdict === "ok" ? '<span class="ratio">' + pct(s.readRatio) + "</span>"
+            : '<span class="pill llm">' + pct(s.readRatio) + "</span>" },
+        { id: "dropped", label: "Unresolved", value: (s) => s.dropped || 0, cell: (s) => s.dropped ? '<span class="muted">' + s.dropped + "</span>" : "" },
+      ], rows.map((s, i) => ({ ...s, id: s.url + i })), (s) =>
+        (s.note ? '<section><h4>why this page</h4>' + esc(s.note) + "</section>" : "") +
+        '<section><h4>source</h4><a href="' + esc(s.url.replace(/\.md$/, ".html")) + '" target="_blank" rel="noopener">' + esc(s.url) + "</a></section>" +
+        (s.dropped ? '<section><h4>unresolved</h4>' + s.dropped + ' value(s) on this page did not match anything in the universes, so no claim was made for them.</section>' : ""));
   },
   regions() {
     const rows = M.regions.filter((r) => match(r, [r.id, r.name, r.partition]));

@@ -1,4 +1,94 @@
 {
+  "axisKinds": {
+    "auditFramework": {
+      "kind": "catalogue",
+      "label": "audit frameworks the service ships"
+    },
+    "complianceStandard": {
+      "kind": "catalogue",
+      "label": "compliance standards the service evaluates"
+    },
+    "configRule": {
+      "kind": "catalogue",
+      "label": "managed rules the service publishes"
+    },
+    "control": {
+      "kind": "catalogue",
+      "label": "controls the service publishes"
+    },
+    "dataIdentifier": {
+      "kind": "catalogue",
+      "label": "data identifiers the service publishes"
+    },
+    "dataSource": {
+      "kind": "external",
+      "label": "signal inputs"
+    },
+    "fileExtension": {
+      "kind": "external",
+      "label": "file formats"
+    },
+    "findingType": {
+      "kind": "catalogue",
+      "label": "finding types the service publishes"
+    },
+    "ipsRule": {
+      "kind": "catalogue",
+      "label": "rule groups the service publishes"
+    },
+    "logSource": {
+      "kind": "external",
+      "label": "log sources"
+    },
+    "managedRuleGroup": {
+      "kind": "catalogue",
+      "label": "managed rule groups the service publishes"
+    },
+    "operatingSystem": {
+      "kind": "external",
+      "label": "operating systems"
+    },
+    "packageEcosystem": {
+      "kind": "external",
+      "label": "package ecosystems"
+    },
+    "partition": {
+      "kind": "external",
+      "label": "AWS partitions"
+    },
+    "policyType": {
+      "kind": "catalogue",
+      "label": "policy types the service enforces"
+    },
+    "programmingLanguage": {
+      "kind": "external",
+      "label": "programming languages"
+    },
+    "region": {
+      "kind": "external",
+      "label": "AWS Regions"
+    },
+    "resourceType": {
+      "kind": "external",
+      "label": "AWS resource types"
+    },
+    "s3Feature": {
+      "kind": "external",
+      "label": "Amazon S3 features"
+    },
+    "service": {
+      "kind": "external",
+      "label": "AWS services"
+    },
+    "storageClass": {
+      "kind": "external",
+      "label": "S3 storage classes"
+    },
+    "threatCategory": {
+      "kind": "catalogue",
+      "label": "threat categories the service publishes"
+    }
+  },
   "conflicts": [],
   "features": [
     {
@@ -34906,15 +34996,15 @@
     {
       "axes": {
         "control": {
-          "covered": 0,
+          "covered": 589,
           "notCovered": 522,
           "partial": 0,
           "scoped": 6313,
-          "total": 522,
+          "total": 591,
           "unknown": 0
         }
       },
-      "claimCount": 6313,
+      "claimCount": 6902,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter"
@@ -34979,12 +35069,14 @@
           "Batch.2",
           "Batch.3",
           "Batch.4",
+          "Bedrock.1",
           "BedrockAgentCore.1",
           "BedrockAgentCore.2",
           "BedrockAgentCore.3",
           "BedrockAgentCore.4",
           "BedrockAgentCore.5",
           "BedrockAgentCore.6",
+          "BedrockAgentCore.7",
           "CloudFormation.2",
           "CloudFormation.3",
           "CloudFormation.4",
@@ -35003,11 +35095,32 @@
           "CloudFront.7",
           "CloudFront.8",
           "CloudFront.9",
+          "CloudTrail.1",
           "CloudTrail.10",
+          "CloudTrail.2",
+          "CloudTrail.3",
+          "CloudTrail.4",
+          "CloudTrail.5",
           "CloudTrail.6",
           "CloudTrail.7",
           "CloudTrail.9",
+          "CloudWatch.1",
+          "CloudWatch.10",
+          "CloudWatch.11",
+          "CloudWatch.12",
+          "CloudWatch.13",
+          "CloudWatch.14",
+          "CloudWatch.15",
+          "CloudWatch.16",
           "CloudWatch.17",
+          "CloudWatch.2",
+          "CloudWatch.3",
+          "CloudWatch.4",
+          "CloudWatch.5",
+          "CloudWatch.6",
+          "CloudWatch.7",
+          "CloudWatch.8",
+          "CloudWatch.9",
           "CodeArtifact.1",
           "CodeBuild.1",
           "CodeBuild.2",
@@ -35022,6 +35135,7 @@
           "Cognito.4",
           "Cognito.5",
           "Cognito.6",
+          "Config.1",
           "Connect.1",
           "Connect.2",
           "DataFirehose.1",
@@ -35047,6 +35161,8 @@
           "DocumentDB.4",
           "DocumentDB.5",
           "DocumentDB.6",
+          "DynamoDB.1",
+          "DynamoDB.2",
           "DynamoDB.3",
           "DynamoDB.4",
           "DynamoDB.5",
@@ -35054,7 +35170,12 @@
           "DynamoDB.7",
           "EC2.1",
           "EC2.10",
+          "EC2.12",
+          "EC2.13",
           "EC2.14",
+          "EC2.15",
+          "EC2.16",
+          "EC2.17",
           "EC2.170",
           "EC2.171",
           "EC2.172",
@@ -35065,11 +35186,13 @@
           "EC2.177",
           "EC2.178",
           "EC2.179",
+          "EC2.18",
           "EC2.180",
           "EC2.181",
           "EC2.182",
           "EC2.183",
           "EC2.19",
+          "EC2.2",
           "EC2.20",
           "EC2.21",
           "EC2.22",
@@ -35077,6 +35200,7 @@
           "EC2.24",
           "EC2.25",
           "EC2.28",
+          "EC2.3",
           "EC2.33",
           "EC2.34",
           "EC2.35",
@@ -35104,7 +35228,11 @@
           "EC2.56",
           "EC2.57",
           "EC2.58",
+          "EC2.6",
           "EC2.60",
+          "EC2.7",
+          "EC2.8",
+          "EC2.9",
           "ECR.1",
           "ECR.2",
           "ECR.3",
@@ -35152,6 +35280,7 @@
           "ElasticBeanstalk.1",
           "ElasticBeanstalk.2",
           "ElasticBeanstalk.3",
+          "ELB.1",
           "ELB.10",
           "ELB.12",
           "ELB.13",
@@ -35163,8 +35292,12 @@
           "ELB.21",
           "ELB.22",
           "ELB.3",
+          "ELB.4",
+          "ELB.5",
+          "ELB.6",
           "ELB.7",
           "ELB.8",
+          "ELB.9",
           "EMR.1",
           "EMR.2",
           "EMR.3",
@@ -35266,6 +35399,7 @@
           "KMS.1",
           "KMS.2",
           "KMS.3",
+          "KMS.4",
           "KMS.5",
           "Lambda.1",
           "Lambda.2",
@@ -35318,12 +35452,16 @@
           "PCA.1",
           "PCA.2",
           "RDS.1",
+          "RDS.10",
+          "RDS.11",
           "RDS.12",
+          "RDS.13",
           "RDS.14",
           "RDS.15",
           "RDS.16",
           "RDS.17",
           "RDS.19",
+          "RDS.2",
           "RDS.20",
           "RDS.21",
           "RDS.22",
@@ -35334,6 +35472,7 @@
           "RDS.27",
           "RDS.28",
           "RDS.29",
+          "RDS.3",
           "RDS.30",
           "RDS.31",
           "RDS.32",
@@ -35354,9 +35493,13 @@
           "RDS.46",
           "RDS.47",
           "RDS.48",
+          "RDS.5",
           "RDS.50",
           "RDS.51",
+          "RDS.6",
           "RDS.7",
+          "RDS.8",
+          "RDS.9",
           "Redshift.1",
           "Redshift.10",
           "Redshift.11",
@@ -35381,18 +35524,27 @@
           "RedshiftServerless.6",
           "Route53.1",
           "Route53.2",
+          "S3.1",
           "S3.10",
           "S3.11",
           "S3.12",
           "S3.13",
+          "S3.14",
+          "S3.15",
           "S3.17",
           "S3.19",
+          "S3.2",
           "S3.20",
           "S3.22",
           "S3.23",
           "S3.24",
           "S3.25",
+          "S3.3",
+          "S3.5",
+          "S3.6",
           "S3.7",
+          "S3.8",
+          "S3.9",
           "SageMaker.1",
           "SageMaker.10",
           "SageMaker.11",
@@ -35405,6 +35557,12 @@
           "SageMaker.18",
           "SageMaker.19",
           "SageMaker.2",
+          "SageMaker.20",
+          "SageMaker.21",
+          "SageMaker.22",
+          "SageMaker.23",
+          "SageMaker.24",
+          "SageMaker.25",
           "SageMaker.3",
           "SageMaker.4",
           "SageMaker.5",
@@ -35421,6 +35579,7 @@
           "SES.1",
           "SES.2",
           "SES.3",
+          "SNS.1",
           "SNS.3",
           "SNS.4",
           "SQS.1",
@@ -40674,7 +40833,7 @@
     },
     {
       "axes": {
-        "resourceTarget": {
+        "resourceType": {
           "covered": 0,
           "notCovered": 1,
           "partial": 0,
@@ -40700,8 +40859,8 @@
       "serviceName": "AWS WAF",
       "summary": "Learn about the AWS WAF Fraud Control account takeover prevention (ATP) managed rule group available from AWS Managed Rules.",
       "targets": {
-        "resourceTarget": [
-          "Amazon Cognito user pools"
+        "resourceType": [
+          "AWS::Cognito::UserPool"
         ]
       },
       "tier": "tier1",
@@ -45648,41 +45807,82 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-01T07:29:35.027Z",
+  "generatedAt": "2026-09-01T07:39:08.450Z",
   "manifest": {
     "fetch": {
-      "cacheHit": 61,
+      "cacheHit": 10413,
       "failed": 0,
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-01T07:29:27.065Z",
+    "finishedAt": "2026-09-01T07:37:36.206Z",
     "stages": [
       {
         "counts": {
-          "clean": 58,
-          "empty": 0,
-          "pagesChecked": 61,
-          "partialRead": 3,
-          "staleQuotes": 0
+          "claims": 49353,
+          "conflicts": 0,
+          "covered": 37723,
+          "duplicateRegistrationsSkipped": 1493,
+          "empty": 11720,
+          "enabled": 11783,
+          "featuresWithCoverage": 51,
+          "from_agent": 29,
+          "from_tier1-sweep": 6516,
+          "from_title-match": 5238,
+          "newlyDiscovered": 0,
+          "notCovered": 11630,
+          "openAxes": 16,
+          "openAxisMembers": 2144,
+          "pagesConsidered": 10290,
+          "pagesFailed": 1,
+          "pagesRead": 62,
+          "pagesRejectedByKind": 2636,
+          "prunedStaleRecords": 0,
+          "recipeFailures": 0,
+          "recipeRulesWithNoPage": 0,
+          "recipes": 57,
+          "recipesAttached": 57,
+          "registered": 11783,
+          "serviceWideRecords": 3,
+          "tablesRecoveredFromHtml": 360,
+          "unattachedPages": 193,
+          "unresolvedTargets": 30,
+          "valuesDroppedUnresolved": 836,
+          "withRecipe": 42,
+          "yielding": 62
         },
-        "finishedAt": "2026-09-01T07:29:26.446Z",
-        "id": "stage7-verify",
-        "startedAt": "2026-09-01T07:29:26.103Z",
+        "finishedAt": "2026-09-01T07:37:34.887Z",
+        "id": "stage5-coverage",
+        "startedAt": "2026-09-01T07:37:20.732Z",
         "status": "partial"
+      },
+      {
+        "counts": {
+          "claims": 49353,
+          "features": 1755,
+          "quotesChecked": 250,
+          "recallFound": 73,
+          "recallTotal": 73,
+          "services": 692,
+          "violations": 0
+        },
+        "finishedAt": "2026-09-01T07:37:35.514Z",
+        "id": "stage6-validate",
+        "startedAt": "2026-09-01T07:37:34.887Z",
+        "status": "ok"
       },
       {
         "counts": {
           "features": 1755,
           "services": 211
         },
-        "finishedAt": "2026-09-01T07:29:27.065Z",
+        "finishedAt": "2026-09-01T07:37:36.206Z",
         "id": "report",
-        "startedAt": "2026-09-01T07:29:26.447Z",
+        "startedAt": "2026-09-01T07:37:35.514Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-01T07:29:26.101Z"
+    "startedAt": "2026-09-01T07:37:20.730Z"
   },
   "outOfScope": [
     {
@@ -56493,7 +56693,7 @@
     {
       "actionCount": 129,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 6321,
+      "claimCount": 6910,
       "confidence": 1,
       "docGuides": [
         {
@@ -57803,11 +58003,621 @@
       "tier": "tier2"
     }
   ],
+  "sources": [
+    {
+      "claims": 5,
+      "readRatio": 0.17,
+      "recipes": 0,
+      "serviceId": "s3",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md",
+      "verdict": "partial-read"
+    },
+    {
+      "claims": 5,
+      "readRatio": 0.36,
+      "recipes": 0,
+      "serviceId": "sso",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md",
+      "verdict": "partial-read"
+    },
+    {
+      "claims": 6,
+      "readRatio": 0.43,
+      "recipes": 0,
+      "serviceId": "wafv2",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md",
+      "verdict": "partial-read"
+    },
+    {
+      "claims": 1,
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",
+      "readRatio": 0.5,
+      "recipes": 1,
+      "serviceId": "wafv2",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 38,
+      "readRatio": 0.68,
+      "recipes": 0,
+      "serviceId": "ds",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 77,
+      "readRatio": 0.8,
+      "recipes": 0,
+      "serviceId": "kms",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 36,
+      "readRatio": 0.86,
+      "recipes": 0,
+      "serviceId": "config",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/config/latest/developerguide/config-region-support.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 36,
+      "note": "Third-party application ecosystems the SBOM generator can inventory.",
+      "readRatio": 0.92,
+      "recipes": 1,
+      "serviceId": "inspector2",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 198,
+      "note": "Operating systems by scan method, plus the languages and runtimes Inspector reads. Each axis gets its own recipe.",
+      "readRatio": 0.95,
+      "recipes": 5,
+      "serviceId": "inspector2",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 60,
+      "readRatio": 0.95,
+      "recipes": 0,
+      "serviceId": "guardduty",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/gd-findings-initiate-malware-protection-scan.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 64,
+      "readRatio": 0.98,
+      "recipes": 0,
+      "serviceId": "guardduty",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 21391,
+      "note": "Which managed rules exist in which Region. Each H2 is a Region and scopes the rules beneath it.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "config",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/config/latest/developerguide/managing-rules-by-region-availability.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 17954,
+      "dropped": 652,
+      "note": "Resource type by Region. The types run down the first column and the Regions across the header, so every cell is one statement.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "config",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/config/latest/developerguide/what-is-resource-config-coverage.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 6313,
+      "note": "One H2 per Region, each listing the controls that are NOT available there. The control id is the bracketed prefix of each bullet.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "securityhub",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/regions-controls.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 822,
+      "note": "The full catalogue of AWS Config managed rules, one bullet each.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "config",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 589,
+      "note": "Every Security Hub CSPM control. Without this the map held only the per-Region exclusions, so the feature read as zero controls covered.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "securityhub",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 585,
+      "dropped": 19,
+      "note": "The authoritative reference of every resource type AWS Config records, in the Resource Type Value column.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "config",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 166,
+      "note": "The managed data identifier catalogue, in the identifier ID column.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "macie2",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 90,
+      "dropped": 30,
+      "note": "AWS managed applications that work with IAM Identity Center, with four independent Yes/No columns.",
+      "readRatio": 1,
+      "recipes": 3,
+      "serviceId": "sso",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 78,
+      "dropped": 24,
+      "note": "Which AWS services support trusted access with Organizations. Yes and No arrive as icons, which the parser turns back into words.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "organizations",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 62,
+      "dropped": 100,
+      "note": "Forty-two services, each with a table of the resource types RAM can share and how far each can be shared.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "ram",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 61,
+      "readRatio": 1,
+      "recipes": 0,
+      "serviceId": "cloudtrail",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 48,
+      "note": "The Category column of the threat signature rule group table.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "network-firewall",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/aws-managed-rule-groups-threat-signature.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 48,
+      "dropped": 8,
+      "note": "The AWS services that use Secrets Manager secrets.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "secretsmanager",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrating.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 46,
+      "note": "GuardDuty Runtime Monitoring finding types, one per H2.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-runtime-monitoring.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 40,
+      "note": "Each H2 is one active GuardDuty finding type. The retired page is read by its own rule, because it states the opposite.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 36,
+      "readRatio": 1,
+      "recipes": 0,
+      "serviceId": "cloudtrail",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 33,
+      "note": "EKS Protection finding types.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 32,
+      "readRatio": 1,
+      "recipes": 0,
+      "serviceId": "cognito-idp",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-email.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 32,
+      "readRatio": 1,
+      "recipes": 0,
+      "serviceId": "config",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/config/latest/developerguide/using-service-linked-roles-config-third-party.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 30,
+      "readRatio": 1,
+      "recipes": 0,
+      "serviceId": "cloudtrail",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-supported-regions.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 29,
+      "readRatio": 1,
+      "recipes": 0,
+      "serviceId": "acm-pca",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/privateca/latest/userguide/vpc-endpoints.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 29,
+      "note": "The S3 storage classes Macie reads, and the file formats it can open. Extensions are comma separated inside one cell.",
+      "readRatio": 1,
+      "recipes": 3,
+      "serviceId": "macie2",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/macie/latest/user/discovery-supported-storage.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 28,
+      "note": "Each H2 is one active GuardDuty finding type. The retired page is read by its own rule, because it states the opposite.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 27,
+      "readRatio": 1,
+      "recipes": 0,
+      "serviceId": "ds",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/using-service-linked-roles.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 24,
+      "readRatio": 1,
+      "recipes": 0,
+      "serviceId": "security-ir",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 22,
+      "dropped": 1,
+      "note": "Which S3 features Malware Protection for S3 can and cannot handle. Several features share one cell, joined by a line break.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 21,
+      "note": "One page, three analyzer types, three different resource lists. Each H2 names the analyzer type, so each is pinned to its own feature.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "access-analyzer",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 21,
+      "note": "The prebuilt audit frameworks Audit Manager ships.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "auditmanager",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/framework-overviews.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 21,
+      "note": "These finding types are retired: the page says GuardDuty no longer generates them. Recording them as covered asserted the inverse.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 20,
+      "note": "Each H2 is one active GuardDuty finding type. The retired page is read by its own rule, because it states the opposite.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 16,
+      "note": "The operating systems the CloudHSM CLI runs on, by CPU architecture. The older Client SDK 3 tool page uses a different table and needs its own recipe.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "cloudhsm",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 16,
+      "readRatio": 1,
+      "recipes": 0,
+      "serviceId": "wafv2",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/classic-using-service-linked-roles.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 11,
+      "readRatio": 1,
+      "recipes": 0,
+      "serviceId": "connect",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/appintegrations-slr.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 9,
+      "note": "RDS Protection finding types.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 8,
+      "note": "The policy types Firewall Manager can enforce, one per bullet.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "fms",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/getting-started-fms-intro.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 8,
+      "note": "Malware Protection for EC2 finding types.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-malware-protection.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 8,
+      "note": "Each standard is a bold-led bullet: the name sits before the dash.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "securityhub",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 7,
+      "note": "Lambda Protection finding types.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/lambda-protection-finding-types.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 6,
+      "note": "The AWS log sources Security Lake can ingest natively.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "securitylake",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 6,
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "wafv2",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-use-case.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 5,
+      "readRatio": 1,
+      "recipes": 0,
+      "serviceId": "detective",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/detective/latest/userguide/detective-security-vpc-endpoints-privatelink.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 5,
+      "note": "Attack sequence finding types, emitted by Extended Threat Detection.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 5,
+      "readRatio": 1,
+      "recipes": 0,
+      "serviceId": "verified-access",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 4,
+      "note": "Malware Protection for AWS Backup finding types.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-malware-protection-backup.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 3,
+      "note": "AI Protection finding types.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-ai-protection.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 3,
+      "dropped": 2,
+      "note": "The resource types Shield Advanced protects, one per bullet.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "shield",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 3,
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "wafv2",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-baseline.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 2,
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability. Both fraud-control rule groups state they cannot be used with Amazon Cognito user pools. The exclusion is in prose beside the rule group name.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "wafv2",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 2,
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "wafv2",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-ip-rep.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 1,
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability. Both fraud-control rule groups state they cannot be used with Amazon Cognito user pools. The exclusion is in prose beside the rule group name.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "wafv2",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 1,
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "wafv2",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-bot.md",
+      "verdict": "ok"
+    }
+  ],
   "universeSizes": {
     "auditFramework": 21,
     "complianceStandard": 8,
     "configRule": 828,
-    "control": 522,
+    "control": 591,
     "dataIdentifier": 166,
     "dataSource": 23,
     "fileExtension": 22,
@@ -57820,7 +58630,6 @@
     "policyType": 8,
     "programmingLanguage": 9,
     "region": 46,
-    "resourceTarget": 1,
     "resourceType": 3134,
     "s3Feature": 22,
     "service": 526,
