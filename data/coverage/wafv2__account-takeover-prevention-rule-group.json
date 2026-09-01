@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "resourceTarget"
+  ],
+  "claims": [
+    {
+      "axis": "resourceTarget",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
+          "quote": "This rule group isn't available for use with Amazon Cognito user pools.",
+          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
+        }
+      ],
+      "extractorId": "recipe:waf-fraud-control-cognito-exclusion",
+      "featureId": "wafv2/account-takeover-prevention-rule-group",
+      "id": "wafv2-account-takeover-prevention-rule-group-resourcetarget-amazon-cognito-user-pools-recipe-waf-fraud-control-cognito-e",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "Amazon Cognito user pools",
+      "targetLabel": "This rule group isn't available for use with Amazon Cognito user pools."
+    }
+  ],
+  "featureId": "wafv2/account-takeover-prevention-rule-group",
+  "generatedAt": "2026-09-01T07:18:07.665Z",
+  "serviceId": "wafv2",
+  "unresolvedTargets": []
+}

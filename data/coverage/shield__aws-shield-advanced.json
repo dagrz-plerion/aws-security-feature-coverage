@@ -16,8 +16,8 @@
         }
       ],
       "extractorId": "recipe:shield-advanced-protected-resources",
-      "featureId": "shield/service-wide",
-      "id": "shield-service-wide-resourcetype-aws-cloudfront-distribution-recipe-shield-advanced-protected-resources",
+      "featureId": "shield/aws-shield-advanced",
+      "id": "shield-aws-shield-advanced-resourcetype-aws-cloudfront-distribution-recipe-shield-advanced-protected-resources",
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::CloudFront::Distribution",
@@ -36,8 +36,8 @@
         }
       ],
       "extractorId": "recipe:shield-advanced-protected-resources",
-      "featureId": "shield/service-wide",
-      "id": "shield-service-wide-resourcetype-aws-ec2-instance-recipe-shield-advanced-protected-resources",
+      "featureId": "shield/aws-shield-advanced",
+      "id": "shield-aws-shield-advanced-resourcetype-aws-ec2-instance-recipe-shield-advanced-protected-resources",
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::EC2::Instance",
@@ -56,16 +56,16 @@
         }
       ],
       "extractorId": "recipe:shield-advanced-protected-resources",
-      "featureId": "shield/service-wide",
-      "id": "shield-service-wide-resourcetype-aws-route53-hostedzone-recipe-shield-advanced-protected-resources",
+      "featureId": "shield/aws-shield-advanced",
+      "id": "shield-aws-shield-advanced-resourcetype-aws-route53-hostedzone-recipe-shield-advanced-protected-resources",
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::Route53::HostedZone",
       "targetLabel": "Amazon Route 53 hosted zones."
     }
   ],
-  "featureId": "shield/service-wide",
-  "generatedAt": "2026-09-01T07:11:32.953Z",
+  "featureId": "shield/aws-shield-advanced",
+  "generatedAt": "2026-09-01T07:18:07.665Z",
   "serviceId": "shield",
   "unresolvedTargets": []
 }

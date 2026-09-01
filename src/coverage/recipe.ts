@@ -136,14 +136,25 @@ function splitValue(value: string, recipe: Recipe): string[] {
 
 type Block = { title: string; body: string };
 
+/**
+ * A block runs from its heading to the next heading at the same level or shallower.
+ * A section's own body stops at the next heading of ANY level, so an H2 block was
+ * losing everything nested under its H3s — which is where AWS puts the actual lists.
+ */
 function blocksFor(doc: MdDocument, body: string, recipe: Recipe, pageTitle: string): Block[] {
   const level = recipe.blocks === "h3-sections" ? 3 : 2;
-  if (recipe.blocks === "h2-sections" || recipe.blocks === "h3-sections") {
-    return doc.sections
-      .filter((section) => section.level === level && section.body.trim())
-      .map((section) => ({ title: section.title, body: section.body }));
+  if (recipe.blocks !== "h2-sections" && recipe.blocks !== "h3-sections") {
+    return [{ title: pageTitle, body }];
   }
-  return [{ title: pageTitle, body }];
+  const heads = doc.sections.filter((section) => section.level === level);
+  const blocks: Block[] = [];
+  for (const head of heads) {
+    const next = doc.sections.find((s) => s.startLine > head.startLine && s.level <= level);
+    const end = next ? next.startLine : doc.lines.length;
+    const text = doc.lines.slice(head.startLine + 1, end).join("\n");
+    if (text.trim()) blocks.push({ title: head.title, body: text });
+  }
+  return blocks;
 }
 
 /**

@@ -57,7 +57,7 @@
             "axis": "region",
             "from": "block-title"
           },
-          "featureId": "securityhub/security-hub-cspm",
+          "featureId": "securityhub/aws-security-hub-cspm",
           "requireMin": 5000
         }
       ]
@@ -77,7 +77,8 @@
           },
           "axis": "configRule",
           "status": "covered",
-          "requireMin": 700
+          "requireMin": 700,
+          "featureId": "config/aws-config-rules"
         }
       ]
     },
@@ -97,7 +98,8 @@
           },
           "axis": "findingType",
           "status": "covered",
-          "requireMin": 15
+          "requireMin": 15,
+          "featureId": "guardduty/all-protection-plans"
         }
       ]
     },
@@ -119,14 +121,15 @@
           },
           "axis": "dataIdentifier",
           "status": "covered",
-          "requireMin": 140
+          "requireMin": 140,
+          "featureId": "macie2/managed-data-identifiers"
         }
       ]
     },
     {
-      "urlPattern": "waf/latest/developerguide/aws-managed-rule-groups-[a-z-]+\\.md$",
+      "urlPattern": "waf/latest/developerguide/aws-managed-rule-groups-(?!changelog|list)[a-z-]+\\.md$",
       "serviceId": "wafv2",
-      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules\u2026`.",
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules\u2026`. The changelog and index pages are excluded: neither states capability.",
       "recipes": [
         {
           "id": "waf-managed-rule-group-names",
@@ -138,7 +141,8 @@
           },
           "axis": "managedRuleGroup",
           "status": "covered",
-          "requireMin": 1
+          "requireMin": 1,
+          "featureId": "wafv2/aws-managed-rules-rule-groups-list"
         }
       ]
     },
@@ -167,7 +171,8 @@
             "value": "agentless"
           },
           "requireMin": 30,
-          "onlyBlocksMatching": "Amazon EC2 scanning"
+          "onlyBlocksMatching": "Amazon EC2 scanning",
+          "featureId": "inspector2/automated-scans"
         },
         {
           "id": "inspector-os-agent-based",
@@ -189,7 +194,8 @@
             "value": "agent-based"
           },
           "requireMin": 30,
-          "onlyBlocksMatching": "Amazon EC2 scanning"
+          "onlyBlocksMatching": "Amazon EC2 scanning",
+          "featureId": "inspector2/automated-scans"
         },
         {
           "id": "inspector-languages",
@@ -202,7 +208,8 @@
           },
           "axis": "programmingLanguage",
           "status": "covered",
-          "requireMin": 5
+          "requireMin": 5,
+          "featureId": "inspector2/automated-scans"
         },
         {
           "id": "inspector-discontinued-os",
@@ -218,7 +225,8 @@
           },
           "axis": "operatingSystem",
           "status": "not-covered",
-          "requireMin": 8
+          "requireMin": 8,
+          "featureId": "inspector2/automated-scans"
         },
         {
           "id": "inspector-ecr-os",
@@ -239,7 +247,8 @@
             "from": "constant",
             "value": "ecr-scanning"
           },
-          "requireMin": 8
+          "requireMin": 8,
+          "featureId": "inspector2/automated-scans"
         }
       ]
     },
@@ -258,7 +267,8 @@
           },
           "axis": "storageClass",
           "status": "covered",
-          "requireMin": 6
+          "requireMin": 6,
+          "featureId": "macie2/running-sensitive-data-discovery-jobs"
         },
         {
           "id": "macie-file-extensions",
@@ -272,7 +282,8 @@
           },
           "axis": "fileExtension",
           "status": "covered",
-          "requireMin": 20
+          "requireMin": 20,
+          "featureId": "macie2/running-sensitive-data-discovery-jobs"
         },
         {
           "id": "macie-unsupported-storage-classes",
@@ -286,7 +297,8 @@
           },
           "axis": "storageClass",
           "status": "not-covered",
-          "requireMin": 1
+          "requireMin": 1,
+          "featureId": "macie2/running-sensitive-data-discovery-jobs"
         }
       ]
     },
@@ -329,7 +341,8 @@
           },
           "axis": "packageEcosystem",
           "status": "covered",
-          "requireMin": 35
+          "requireMin": 35,
+          "featureId": "inspector2/amazon-inspector-sbom-generator"
         }
       ]
     },
@@ -348,7 +361,8 @@
           },
           "axis": "complianceStandard",
           "status": "covered",
-          "requireMin": 8
+          "requireMin": 8,
+          "featureId": "securityhub/standards-reference"
         }
       ]
     },
@@ -367,7 +381,8 @@
           },
           "axis": "auditFramework",
           "status": "covered",
-          "requireMin": 20
+          "requireMin": 20,
+          "featureId": "auditmanager/framework-library"
         }
       ]
     },
@@ -386,7 +401,8 @@
           },
           "axis": "logSource",
           "status": "covered",
-          "requireMin": 6
+          "requireMin": 6,
+          "featureId": "securitylake/collecting-data-from-aws-services"
         }
       ]
     },
@@ -405,7 +421,8 @@
           },
           "axis": "threatCategory",
           "status": "covered",
-          "requireMin": 14
+          "requireMin": 14,
+          "featureId": "network-firewall/threat-signature-managed-rule-groups"
         },
         {
           "id": "network-firewall-threat-rule-groups",
@@ -419,7 +436,8 @@
           },
           "axis": "managedRuleGroup",
           "status": "covered",
-          "requireMin": 24
+          "requireMin": 24,
+          "featureId": "network-firewall/threat-signature-managed-rule-groups"
         }
       ]
     },
@@ -441,7 +459,8 @@
           "axis": "service",
           "status": "from-column",
           "statusColumn": "trusted access",
-          "requireMin": 35
+          "requireMin": 35,
+          "featureId": "organizations/delegated-administrator-for-integrated-aws-services"
         },
         {
           "id": "organizations-delegated-administrator",
@@ -461,7 +480,8 @@
             "from": "constant",
             "value": "delegated-administrator"
           },
-          "requireMin": 30
+          "requireMin": 30,
+          "featureId": "organizations/delegated-administrator-for-integrated-aws-services"
         }
       ]
     },
@@ -479,7 +499,8 @@
           },
           "axis": "service",
           "status": "covered",
-          "requireMin": 40
+          "requireMin": 40,
+          "featureId": "secretsmanager/integration-partners"
         }
       ]
     },
@@ -499,7 +520,8 @@
           },
           "axis": "findingType",
           "status": "not-covered",
-          "requireMin": 15
+          "requireMin": 15,
+          "featureId": "guardduty/all-protection-plans"
         }
       ]
     },
@@ -582,7 +604,8 @@
           },
           "axis": "findingType",
           "status": "covered",
-          "requireMin": 3
+          "requireMin": 3,
+          "featureId": "guardduty/malware-protection-for-backup-finding-types"
         }
       ]
     },
@@ -686,7 +709,8 @@
           },
           "axis": "resourceTarget",
           "status": "not-covered",
-          "requireMin": 1
+          "requireMin": 1,
+          "featureId": "wafv2/account-takeover-prevention-rule-group"
         }
       ]
     },
@@ -705,7 +729,8 @@
           },
           "axis": "resourceType",
           "status": "covered",
-          "requireMin": 3
+          "requireMin": 3,
+          "featureId": "shield/aws-shield-advanced"
         }
       ]
     },
@@ -726,7 +751,8 @@
           },
           "axis": "resourceType",
           "status": "covered",
-          "requireMin": 28
+          "requireMin": 28,
+          "featureId": "ram/shared-resources"
         },
         {
           "id": "ram-shareable-outside-organization",
@@ -746,7 +772,8 @@
             "from": "constant",
             "value": "outside-organization"
           },
-          "requireMin": 28
+          "requireMin": 28,
+          "featureId": "ram/shared-resources"
         }
       ]
     },
@@ -765,7 +792,8 @@
           },
           "axis": "service",
           "status": "covered",
-          "requireMin": 30
+          "requireMin": 30,
+          "featureId": "sso/aws-managed-applications"
         },
         {
           "id": "identity-center-trusted-identity-propagation",
@@ -783,7 +811,8 @@
             "from": "constant",
             "value": "trusted-identity-propagation"
           },
-          "requireMin": 25
+          "requireMin": 25,
+          "featureId": "sso/aws-managed-applications"
         },
         {
           "id": "identity-center-customer-managed-key",
@@ -801,7 +830,8 @@
             "from": "constant",
             "value": "customer-managed-kms-key"
           },
-          "requireMin": 25
+          "requireMin": 25,
+          "featureId": "sso/aws-managed-applications"
         }
       ]
     },
@@ -826,7 +856,8 @@
             "from": "constant",
             "value": "x86_64"
           },
-          "requireMin": 4
+          "requireMin": 4,
+          "featureId": "cloudhsm/cloudhsm-cli"
         },
         {
           "id": "cloudhsm-platforms-arm",
@@ -844,7 +875,8 @@
             "from": "constant",
             "value": "arm64"
           },
-          "requireMin": 4
+          "requireMin": 4,
+          "featureId": "cloudhsm/cloudhsm-cli"
         }
       ]
     },
@@ -863,7 +895,53 @@
           },
           "axis": "policyType",
           "status": "covered",
-          "requireMin": 6
+          "requireMin": 6,
+          "featureId": "fms/security-group-policies"
+        }
+      ]
+    },
+    {
+      "urlPattern": "config/latest/developerguide/what-is-resource-config-coverage\\.md$",
+      "serviceId": "config",
+      "note": "The resource types AWS Config can record, per Region. Belongs to resource recording, not to the service as a whole.",
+      "recipes": [
+        {
+          "id": "config-recordable-resource-types",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "resource type",
+            "extract": "whole",
+            "matches": "^AWS::[A-Za-z0-9]+::[A-Za-z0-9]+$"
+          },
+          "axis": "resourceType",
+          "status": "covered",
+          "featureId": "config/recording-aws-resources",
+          "requireMin": 400
+        }
+      ]
+    },
+    {
+      "urlPattern": "config/latest/developerguide/managing-rules-by-region-availability\\.md$",
+      "serviceId": "config",
+      "note": "Which managed rules exist in which Region. Each H2 is a Region and scopes the rules beneath it.",
+      "recipes": [
+        {
+          "id": "config-rules-by-region",
+          "blocks": "h2-sections",
+          "select": {
+            "from": "list-items",
+            "extract": "whole",
+            "matches": "^[a-z][a-z0-9]*(-[a-z0-9]+){1,}$"
+          },
+          "axis": "configRule",
+          "status": "covered",
+          "featureId": "config/aws-config-rules",
+          "scope": {
+            "axis": "region",
+            "from": "block-title"
+          },
+          "requireMin": 100
         }
       ]
     }

@@ -1,7 +1,6 @@
 {
   "axes": [
-    "findingType",
-    "region"
+    "findingType"
   ],
   "claims": [
     {
@@ -17,8 +16,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-backdoor-ec2-c-and-cactivity-b-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-backdoor-ec2-c-and-cactivity-b-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Backdoor:EC2/C&CActivity.B",
@@ -37,8 +36,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-backdoor-ec2-c-and-cactivity-b-dns-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-backdoor-ec2-c-and-cactivity-b-dns-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Backdoor:EC2/C&CActivity.B!DNS",
@@ -57,8 +56,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-backdoor-ec2-denialofservice-dns-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-backdoor-ec2-denialofservice-dns-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Backdoor:EC2/DenialOfService.Dns",
@@ -77,8 +76,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-backdoor-ec2-denialofservice-tcp-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-backdoor-ec2-denialofservice-tcp-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Backdoor:EC2/DenialOfService.Tcp",
@@ -97,8 +96,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-backdoor-ec2-denialofservice-udp-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-backdoor-ec2-denialofservice-udp-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Backdoor:EC2/DenialOfService.Udp",
@@ -117,8 +116,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-backdoor-ec2-denialofservice-udpontcpports-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-backdoor-ec2-denialofservice-udpontcpports-recipe-guardduty-finding-type-head",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Backdoor:EC2/DenialOfService.UdpOnTcpPorts",
@@ -137,8 +136,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-backdoor-ec2-denialofservice-unusualprotocol-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-backdoor-ec2-denialofservice-unusualprotocol-recipe-guardduty-finding-type-he",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Backdoor:EC2/DenialOfService.UnusualProtocol",
@@ -157,8 +156,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-backdoor-ec2-spambot-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-backdoor-ec2-spambot-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Backdoor:EC2/Spambot",
@@ -177,8 +176,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-backdoor-ec2-xorddos-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-backdoor-ec2-xorddos-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Backdoor:EC2/XORDDOS",
@@ -197,8 +196,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-behavior-ec2-networkportunusual-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-behavior-ec2-networkportunusual-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Behavior:EC2/NetworkPortUnusual",
@@ -217,8 +216,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-behavior-ec2-trafficvolumeunusual-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-behavior-ec2-trafficvolumeunusual-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Behavior:EC2/TrafficVolumeUnusual",
@@ -237,8 +236,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-behavior-iamuser-instancelaunchunusual-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-behavior-iamuser-instancelaunchunusual-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Behavior:IAMUser/InstanceLaunchUnusual",
@@ -257,8 +256,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-credentialaccess-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-credentialaccess-iamuser-anomalousbehavior-recipe-guardduty-finding-type-head",
       "method": "deterministic",
       "status": "covered",
       "targetId": "CredentialAccess:IAMUser/AnomalousBehavior",
@@ -277,8 +276,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-credentialaccess-iamuser-compromisedcredentials-recipe-guardduty-finding-type-heading",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-credentialaccess-iamuser-compromisedcredentials-recipe-guardduty-finding-type",
       "method": "deterministic",
       "status": "covered",
       "targetId": "CredentialAccess:IAMUser/CompromisedCredentials",
@@ -297,8 +296,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-cryptocurrency-ec2-bitcointool-a-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-cryptocurrency-ec2-bitcointool-a-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "CryptoCurrency:EC2/BitcoinTool.A",
@@ -317,8 +316,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-cryptocurrency-ec2-bitcointool-b-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-cryptocurrency-ec2-bitcointool-b-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "CryptoCurrency:EC2/BitcoinTool.B",
@@ -337,8 +336,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-cryptocurrency-ec2-bitcointool-b-dns-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-cryptocurrency-ec2-bitcointool-b-dns-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "CryptoCurrency:EC2/BitcoinTool.B!DNS",
@@ -357,8 +356,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-defenseevasion-ec2-unusualdnsresolver-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-defenseevasion-ec2-unusualdnsresolver-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "DefenseEvasion:EC2/UnusualDNSResolver",
@@ -377,8 +376,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-defenseevasion-ec2-unusualdohactivity-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-defenseevasion-ec2-unusualdohactivity-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "DefenseEvasion:EC2/UnusualDoHActivity",
@@ -397,8 +396,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-defenseevasion-ec2-unusualdotactivity-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-defenseevasion-ec2-unusualdotactivity-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "DefenseEvasion:EC2/UnusualDoTActivity",
@@ -417,8 +416,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-defenseevasion-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-defenseevasion-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headin",
       "method": "deterministic",
       "status": "covered",
       "targetId": "DefenseEvasion:IAMUser/AnomalousBehavior",
@@ -437,8 +436,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-defenseevasion-iamuser-bedrockloggingdisabled-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-defenseevasion-iamuser-bedrockloggingdisabled-recipe-guardduty-finding-type-h",
       "method": "deterministic",
       "status": "covered",
       "targetId": "DefenseEvasion:IAMUser/BedrockLoggingDisabled",
@@ -457,8 +456,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-discovery-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-discovery-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Discovery:IAMUser/AnomalousBehavior",
@@ -477,8 +476,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-discovery-s3-anomalousbehavior-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-discovery-s3-anomalousbehavior-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Discovery:S3/AnomalousBehavior",
@@ -497,8 +496,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-discovery-s3-bucketenumeration-unusual-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-discovery-s3-bucketenumeration-unusual-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Discovery:S3/BucketEnumeration.Unusual",
@@ -517,8 +516,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-discovery-s3-maliciousipcaller-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-discovery-s3-maliciousipcaller-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Discovery:S3/MaliciousIPCaller",
@@ -537,8 +536,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-discovery-s3-maliciousipcaller-custom-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-discovery-s3-maliciousipcaller-custom-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Discovery:S3/MaliciousIPCaller.Custom",
@@ -557,8 +556,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-discovery-s3-toripcaller-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-discovery-s3-toripcaller-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Discovery:S3/TorIPCaller",
@@ -577,8 +576,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-exfiltration-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-exfiltration-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Exfiltration:IAMUser/AnomalousBehavior",
@@ -597,8 +596,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-exfiltration-s3-anomalousbehavior-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-exfiltration-s3-anomalousbehavior-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Exfiltration:S3/AnomalousBehavior",
@@ -617,8 +616,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-exfiltration-s3-maliciousipcaller-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-exfiltration-s3-maliciousipcaller-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Exfiltration:S3/MaliciousIPCaller",
@@ -637,8 +636,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-exfiltration-s3-objectread-unusual-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-exfiltration-s3-objectread-unusual-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Exfiltration:S3/ObjectRead.Unusual",
@@ -657,8 +656,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-ec2-abuseddomainrequest-reputation-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-ec2-abuseddomainrequest-reputation-recipe-guardduty-finding-type-headi",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Impact:EC2/AbusedDomainRequest.Reputation",
@@ -677,8 +676,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-ec2-bitcoindomainrequest-reputation-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-ec2-bitcoindomainrequest-reputation-recipe-guardduty-finding-type-head",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Impact:EC2/BitcoinDomainRequest.Reputation",
@@ -697,8 +696,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-ec2-maliciousdomainrequest-custom-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-ec2-maliciousdomainrequest-custom-recipe-guardduty-finding-type-headin",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Impact:EC2/MaliciousDomainRequest.Custom",
@@ -717,8 +716,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-ec2-maliciousdomainrequest-reputation-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-ec2-maliciousdomainrequest-reputation-recipe-guardduty-finding-type-he",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Impact:EC2/MaliciousDomainRequest.Reputation",
@@ -737,8 +736,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-ec2-portsweep-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-ec2-portsweep-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Impact:EC2/PortSweep",
@@ -757,8 +756,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-ec2-suspiciousdomainrequest-reputation-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-ec2-suspiciousdomainrequest-reputation-recipe-guardduty-finding-type-h",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Impact:EC2/SuspiciousDomainRequest.Reputation",
@@ -777,8 +776,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-ec2-winrmbruteforce-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-ec2-winrmbruteforce-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Impact:EC2/WinRMBruteForce",
@@ -797,8 +796,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Impact:IAMUser/AnomalousBehavior",
@@ -817,8 +816,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-s3-anomalousbehavior-delete-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-s3-anomalousbehavior-delete-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Impact:S3/AnomalousBehavior.Delete",
@@ -837,8 +836,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-s3-anomalousbehavior-permission-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-s3-anomalousbehavior-permission-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Impact:S3/AnomalousBehavior.Permission",
@@ -857,8 +856,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-s3-anomalousbehavior-write-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-s3-anomalousbehavior-write-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Impact:S3/AnomalousBehavior.Write",
@@ -877,8 +876,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-s3-maliciousipcaller-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-s3-maliciousipcaller-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Impact:S3/MaliciousIPCaller",
@@ -897,8 +896,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-s3-objectdelete-unusual-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-s3-objectdelete-unusual-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Impact:S3/ObjectDelete.Unusual",
@@ -917,8 +916,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-s3-permissionsmodification-unusual-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-impact-s3-permissionsmodification-unusual-recipe-guardduty-retired-finding-ty",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Impact:S3/PermissionsModification.Unusual",
@@ -937,8 +936,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-initialaccess-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-initialaccess-iamuser-anomalousbehavior-recipe-guardduty-finding-type-heading",
       "method": "deterministic",
       "status": "covered",
       "targetId": "InitialAccess:IAMUser/AnomalousBehavior",
@@ -957,8 +956,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-pentest-iamuser-kalilinux-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-pentest-iamuser-kalilinux-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "PenTest:IAMUser/KaliLinux",
@@ -977,8 +976,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-pentest-iamuser-parrotlinux-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-pentest-iamuser-parrotlinux-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "PenTest:IAMUser/ParrotLinux",
@@ -997,8 +996,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-pentest-iamuser-pentoolinux-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-pentest-iamuser-pentoolinux-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "PenTest:IAMUser/PentooLinux",
@@ -1017,8 +1016,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-pentest-s3-kalilinux-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-pentest-s3-kalilinux-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "PenTest:S3/KaliLinux",
@@ -1037,8 +1036,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-pentest-s3-parrotlinux-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-pentest-s3-parrotlinux-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "PenTest:S3/ParrotLinux",
@@ -1057,8 +1056,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-pentest-s3-pentoolinux-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-pentest-s3-pentoolinux-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "PenTest:S3/PentooLinux",
@@ -1077,8 +1076,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-persistence-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-persistence-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Persistence:IAMUser/AnomalousBehavior",
@@ -1097,8 +1096,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-persistence-iamuser-networkpermissions-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-persistence-iamuser-networkpermissions-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Persistence:IAMUser/NetworkPermissions",
@@ -1117,8 +1116,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-persistence-iamuser-resourcepermissions-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-persistence-iamuser-resourcepermissions-recipe-guardduty-retired-finding-type",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Persistence:IAMUser/ResourcePermissions",
@@ -1137,8 +1136,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-persistence-iamuser-userpermissions-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-persistence-iamuser-userpermissions-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Persistence:IAMUser/UserPermissions",
@@ -1157,8 +1156,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-persistence-kubernetes-containerwithsensitivemount-recipe-guardduty-retired-finding-t",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-persistence-kubernetes-containerwithsensitivemount-recipe-guardduty-retired-f",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Persistence:Kubernetes/ContainerWithSensitiveMount",
@@ -1177,8 +1176,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-policy-iamuser-rootcredentialusage-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-policy-iamuser-rootcredentialusage-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Policy:IAMUser/RootCredentialUsage",
@@ -1197,8 +1196,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-policy-iamuser-shorttermrootcredentialusage-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-policy-iamuser-shorttermrootcredentialusage-recipe-guardduty-finding-type-hea",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Policy:IAMUser/ShortTermRootCredentialUsage",
@@ -1217,8 +1216,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-policy-s3-accountblockpublicaccessdisabled-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-policy-s3-accountblockpublicaccessdisabled-recipe-guardduty-finding-type-head",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Policy:S3/AccountBlockPublicAccessDisabled",
@@ -1237,8 +1236,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-policy-s3-bucketanonymousaccessgranted-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-policy-s3-bucketanonymousaccessgranted-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Policy:S3/BucketAnonymousAccessGranted",
@@ -1257,8 +1256,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-policy-s3-bucketblockpublicaccessdisabled-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-policy-s3-bucketblockpublicaccessdisabled-recipe-guardduty-finding-type-headi",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Policy:S3/BucketBlockPublicAccessDisabled",
@@ -1277,8 +1276,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-policy-s3-bucketpublicaccessgranted-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-policy-s3-bucketpublicaccessgranted-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Policy:S3/BucketPublicAccessGranted",
@@ -1297,8 +1296,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-privilegeescalation-iamuser-administrativepermissions-recipe-guardduty-retired-findin",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-privilegeescalation-iamuser-administrativepermissions-recipe-guardduty-retire",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "PrivilegeEscalation:IAMUser/AdministrativePermissions",
@@ -1317,8 +1316,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-privilegeescalation-iamuser-anomalousbehavior-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-privilegeescalation-iamuser-anomalousbehavior-recipe-guardduty-finding-type-h",
       "method": "deterministic",
       "status": "covered",
       "targetId": "PrivilegeEscalation:IAMUser/AnomalousBehavior",
@@ -1337,8 +1336,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-privilegeescalation-kubernetes-privilegedcontainer-recipe-guardduty-retired-finding-t",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-privilegeescalation-kubernetes-privilegedcontainer-recipe-guardduty-retired-f",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "PrivilegeEscalation:Kubernetes/PrivilegedContainer",
@@ -1357,8 +1356,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-recon-ec2-portprobeemrunprotectedport-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-recon-ec2-portprobeemrunprotectedport-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Recon:EC2/PortProbeEMRUnprotectedPort",
@@ -1377,8 +1376,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-recon-ec2-portprobeunprotectedport-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-recon-ec2-portprobeunprotectedport-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Recon:EC2/PortProbeUnprotectedPort",
@@ -1397,8 +1396,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-recon-ec2-portscan-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-recon-ec2-portscan-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Recon:EC2/Portscan",
@@ -1417,8 +1416,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-recon-iamuser-maliciousipcaller-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-recon-iamuser-maliciousipcaller-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Recon:IAMUser/MaliciousIPCaller",
@@ -1437,8 +1436,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-recon-iamuser-maliciousipcaller-custom-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-recon-iamuser-maliciousipcaller-custom-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Recon:IAMUser/MaliciousIPCaller.Custom",
@@ -1457,8 +1456,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-recon-iamuser-networkpermissions-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-recon-iamuser-networkpermissions-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Recon:IAMUser/NetworkPermissions",
@@ -1477,8 +1476,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-recon-iamuser-resourcepermissions-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-recon-iamuser-resourcepermissions-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Recon:IAMUser/ResourcePermissions",
@@ -1497,8 +1496,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-recon-iamuser-toripcaller-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-recon-iamuser-toripcaller-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Recon:IAMUser/TorIPCaller",
@@ -1517,8 +1516,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-recon-iamuser-userpermissions-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-recon-iamuser-userpermissions-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Recon:IAMUser/UserPermissions",
@@ -1537,8 +1536,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-resourceconsumption-iamuser-computeresources-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-resourceconsumption-iamuser-computeresources-recipe-guardduty-retired-finding",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "ResourceConsumption:IAMUser/ComputeResources",
@@ -1557,8 +1556,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-stealth-iamuser-cloudtrailloggingdisabled-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-stealth-iamuser-cloudtrailloggingdisabled-recipe-guardduty-finding-type-headi",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Stealth:IAMUser/CloudTrailLoggingDisabled",
@@ -1577,8 +1576,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-stealth-iamuser-loggingconfigurationmodified-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-stealth-iamuser-loggingconfigurationmodified-recipe-guardduty-retired-finding",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Stealth:IAMUser/LoggingConfigurationModified",
@@ -1597,8 +1596,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-stealth-iamuser-passwordpolicychange-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-stealth-iamuser-passwordpolicychange-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Stealth:IAMUser/PasswordPolicyChange",
@@ -1617,8 +1616,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-stealth-s3-serveraccessloggingdisabled-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-stealth-s3-serveraccessloggingdisabled-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Stealth:S3/ServerAccessLoggingDisabled",
@@ -1637,8 +1636,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-trojan-ec2-blackholetraffic-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-trojan-ec2-blackholetraffic-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Trojan:EC2/BlackholeTraffic",
@@ -1657,8 +1656,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-trojan-ec2-blackholetraffic-dns-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-trojan-ec2-blackholetraffic-dns-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Trojan:EC2/BlackholeTraffic!DNS",
@@ -1677,8 +1676,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-trojan-ec2-dgadomainrequest-b-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-trojan-ec2-dgadomainrequest-b-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Trojan:EC2/DGADomainRequest.B",
@@ -1697,8 +1696,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-trojan-ec2-dgadomainrequest-c-dns-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-trojan-ec2-dgadomainrequest-c-dns-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Trojan:EC2/DGADomainRequest.C!DNS",
@@ -1717,8 +1716,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-trojan-ec2-dnsdataexfiltration-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-trojan-ec2-dnsdataexfiltration-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Trojan:EC2/DNSDataExfiltration",
@@ -1737,8 +1736,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-trojan-ec2-drivebysourcetraffic-dns-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-trojan-ec2-drivebysourcetraffic-dns-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Trojan:EC2/DriveBySourceTraffic!DNS",
@@ -1757,8 +1756,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-trojan-ec2-droppoint-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-trojan-ec2-droppoint-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Trojan:EC2/DropPoint",
@@ -1777,8 +1776,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-trojan-ec2-droppoint-dns-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-trojan-ec2-droppoint-dns-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Trojan:EC2/DropPoint!DNS",
@@ -1797,8 +1796,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-trojan-ec2-phishingdomainrequest-dns-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-trojan-ec2-phishingdomainrequest-dns-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Trojan:EC2/PhishingDomainRequest!DNS",
@@ -1817,8 +1816,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-ec2-maliciousipcaller-custom-recipe-guardduty-finding-type-heading",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-ec2-maliciousipcaller-custom-recipe-guardduty-finding-type",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:EC2/MaliciousIPCaller.Custom",
@@ -1837,8 +1836,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-ec2-metadatadnsrebind-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-ec2-metadatadnsrebind-recipe-guardduty-finding-type-headin",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:EC2/MetadataDNSRebind",
@@ -1857,8 +1856,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-ec2-rdpbruteforce-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-ec2-rdpbruteforce-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:EC2/RDPBruteForce",
@@ -1877,8 +1876,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-ec2-sshbruteforce-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-ec2-sshbruteforce-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:EC2/SSHBruteForce",
@@ -1897,8 +1896,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-ec2-torclient-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-ec2-torclient-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:EC2/TorClient",
@@ -1917,8 +1916,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-ec2-toripcaller-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-ec2-toripcaller-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "UnauthorizedAccess:EC2/TorIPCaller",
@@ -1937,8 +1936,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-ec2-torrelay-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-ec2-torrelay-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:EC2/TorRelay",
@@ -1957,8 +1956,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-consolelogin-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-iamuser-consolelogin-recipe-guardduty-retired-finding-type",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "UnauthorizedAccess:IAMUser/ConsoleLogin",
@@ -1977,8 +1976,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-consoleloginsuccess-b-recipe-guardduty-finding-type-headin",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-iamuser-consoleloginsuccess-b-recipe-guardduty-finding-typ",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:IAMUser/ConsoleLoginSuccess.B",
@@ -1997,8 +1996,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-instancecredentialexfiltration-insideaws-recipe-guardduty-",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-iamuser-instancecredentialexfiltration-insideaws-recipe-gu",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.InsideAWS",
@@ -2017,8 +2016,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-instancecredentialexfiltration-outsideaws-recipe-guardduty",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-iamuser-instancecredentialexfiltration-outsideaws-recipe-g",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.OutsideAWS",
@@ -2037,8 +2036,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-maliciousipcaller-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-iamuser-maliciousipcaller-recipe-guardduty-finding-type-he",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:IAMUser/MaliciousIPCaller",
@@ -2057,8 +2056,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-maliciousipcaller-custom-recipe-guardduty-finding-type-hea",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-iamuser-maliciousipcaller-custom-recipe-guardduty-finding-",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:IAMUser/MaliciousIPCaller.Custom",
@@ -2077,8 +2076,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-resourcecredentialexfiltration-insideaws-recipe-guardduty-",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-iamuser-resourcecredentialexfiltration-insideaws-recipe-gu",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.InsideAWS",
@@ -2097,8 +2096,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-resourcecredentialexfiltration-outsideaws-recipe-guardduty",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-iamuser-resourcecredentialexfiltration-outsideaws-recipe-g",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.OutsideAWS",
@@ -2117,8 +2116,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-toripcaller-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-iamuser-toripcaller-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:IAMUser/TorIPCaller",
@@ -2137,8 +2136,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-retired-finding-types",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-unusualasncaller-recipe-guardduty-retired-finding-types",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-iamuser-unusualasncaller-recipe-guardduty-retired-finding-",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "UnauthorizedAccess:IAMUser/UnusualASNCaller",
@@ -2157,8 +2156,8 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-s3-maliciousipcaller-custom-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-s3-maliciousipcaller-custom-recipe-guardduty-finding-type-",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:S3/MaliciousIPCaller.Custom",
@@ -2177,356 +2176,16 @@
         }
       ],
       "extractorId": "recipe:guardduty-finding-type-headings",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-s3-toripcaller-recipe-guardduty-finding-type-headings",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-findingtype-unauthorizedaccess-s3-toripcaller-recipe-guardduty-finding-type-headings",
       "method": "deterministic",
       "status": "covered",
       "targetId": "UnauthorizedAccess:S3/TorIPCaller",
       "targetLabel": "UnauthorizedAccess:S3/TorIPCaller"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "cf8e4b2d75a8b8fc4521030397266b3f5995b1e9328ad7bc9b0d33d8dc9115f2",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md ::  | column \"GuardDuty Region\"",
-          "quote": "| Japan | Asia Pacific (Tokyo) | Asia Pacific (Tokyo), Asia Pacific (Osaka) |",
-          "retrievedAt": "2026-09-01T05:00:36.862Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-ap-northeast-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-northeast-1",
-      "targetLabel": "Asia Pacific (Tokyo)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
-          "quote": "| Asia Pacific (Seoul) | ap-northeast-2 |",
-          "retrievedAt": "2026-09-01T05:00:37.081Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-ap-northeast-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-northeast-2",
-      "targetLabel": "Asia Pacific (Seoul)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
-          "quote": "| Asia Pacific (Osaka) | ap-northeast-3 |",
-          "retrievedAt": "2026-09-01T05:00:37.081Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-ap-northeast-3-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-northeast-3",
-      "targetLabel": "Asia Pacific (Osaka)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
-          "quote": "| Asia Pacific (Jakarta) | ap-southeast-3 |",
-          "retrievedAt": "2026-09-01T05:00:37.081Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-ap-southeast-3-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-3",
-      "targetLabel": "Asia Pacific (Jakarta)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "cf8e4b2d75a8b8fc4521030397266b3f5995b1e9328ad7bc9b0d33d8dc9115f2",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md ::  | column \"GuardDuty Region\"",
-          "quote": "| United States | Canada (Central) | Canada (Central), US East (N. Virginia), US East (Ohio), US West (Oregon) |",
-          "retrievedAt": "2026-09-01T05:00:36.862Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-ca-central-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ca-central-1",
-      "targetLabel": "Canada (Central)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
-          "quote": "| China (Beijing) | cn-north-1 |",
-          "retrievedAt": "2026-09-01T05:00:37.081Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-cn-north-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "cn-north-1",
-      "targetLabel": "China (Beijing)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
-          "quote": "| China (Ningxia) | cn-northwest-1 |",
-          "retrievedAt": "2026-09-01T05:00:37.081Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-cn-northwest-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "cn-northwest-1",
-      "targetLabel": "China (Ningxia)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "cf8e4b2d75a8b8fc4521030397266b3f5995b1e9328ad7bc9b0d33d8dc9115f2",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md ::  | column \"GuardDuty Region\"",
-          "quote": "| Europe | Europe (Frankfurt) | Europe (Frankfurt), Europe (Stockholm), Europe (Milan), Europe (Spain), Europe (Ireland), Europe (Paris) |",
-          "retrievedAt": "2026-09-01T05:00:36.862Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-eu-central-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-central-1",
-      "targetLabel": "Europe (Frankfurt)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "cf8e4b2d75a8b8fc4521030397266b3f5995b1e9328ad7bc9b0d33d8dc9115f2",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md ::  | column \"GuardDuty Region\"",
-          "quote": "| Europe | Europe (Stockholm) | Europe (Frankfurt), Europe (Stockholm), Europe (Milan), Europe (Spain), Europe (Ireland), Europe (Paris) |",
-          "retrievedAt": "2026-09-01T05:00:36.862Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-eu-north-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-north-1",
-      "targetLabel": "Europe (Stockholm)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "cf8e4b2d75a8b8fc4521030397266b3f5995b1e9328ad7bc9b0d33d8dc9115f2",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md ::  | column \"GuardDuty Region\"",
-          "quote": "| Europe | Europe (Ireland) | Europe (Frankfurt), Europe (Stockholm), Europe (Milan), Europe (Spain), Europe (Ireland), Europe (Paris) |",
-          "retrievedAt": "2026-09-01T05:00:36.862Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-eu-west-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-west-1",
-      "targetLabel": "Europe (Ireland)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "cf8e4b2d75a8b8fc4521030397266b3f5995b1e9328ad7bc9b0d33d8dc9115f2",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md ::  | column \"GuardDuty Region\"",
-          "quote": "| Europe | Europe (London) | Europe (Frankfurt), Europe (Stockholm), Europe (Milan), Europe (Spain), Europe (Ireland), Europe (London), Europe (Paris) |",
-          "retrievedAt": "2026-09-01T05:00:36.862Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-eu-west-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-west-2",
-      "targetLabel": "Europe (London)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "cf8e4b2d75a8b8fc4521030397266b3f5995b1e9328ad7bc9b0d33d8dc9115f2",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md ::  | column \"GuardDuty Region\"",
-          "quote": "| Europe | Europe (Paris) | Europe (Frankfurt), Europe (Stockholm), Europe (Milan), Europe (Spain), Europe (Ireland), Europe (Paris) |",
-          "retrievedAt": "2026-09-01T05:00:36.862Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-eu-west-3-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-west-3",
-      "targetLabel": "Europe (Paris)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "cf8e4b2d75a8b8fc4521030397266b3f5995b1e9328ad7bc9b0d33d8dc9115f2",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md ::  | column \"GuardDuty Region\"",
-          "quote": "| United States | US East (N. Virginia) | US East (N. Virginia), US East (Ohio), US West (Oregon) |",
-          "retrievedAt": "2026-09-01T05:00:36.862Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-us-east-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-east-1",
-      "targetLabel": "US East (N. Virginia)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "cf8e4b2d75a8b8fc4521030397266b3f5995b1e9328ad7bc9b0d33d8dc9115f2",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md ::  | column \"GuardDuty Region\"",
-          "quote": "| United States | US East (Ohio) | US East (N. Virginia), US East (Ohio), US West (Oregon) |",
-          "retrievedAt": "2026-09-01T05:00:36.862Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-us-east-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-east-2",
-      "targetLabel": "US East (Ohio)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
-          "quote": "| AWS GovCloud (US-East) | us-gov-east-1 |",
-          "retrievedAt": "2026-09-01T05:00:37.081Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-us-gov-east-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-gov-east-1",
-      "targetLabel": "AWS GovCloud (US-East)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md ::  | column \"AWS Region\"",
-          "quote": "| AWS GovCloud (US-West) | us-gov-west-1 |",
-          "retrievedAt": "2026-09-01T05:00:37.081Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-us-gov-west-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-gov-west-1",
-      "targetLabel": "AWS GovCloud (US-West)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "cf8e4b2d75a8b8fc4521030397266b3f5995b1e9328ad7bc9b0d33d8dc9115f2",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md ::  | column \"GuardDuty Region\"",
-          "quote": "| United States | US West (Oregon) | US East (N. Virginia), US East (Ohio), US West (Oregon) |",
-          "retrievedAt": "2026-09-01T05:00:36.862Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigation.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-region-us-west-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-west-2",
-      "targetLabel": "US West (Oregon)"
     }
   ],
-  "featureId": "guardduty/service-wide",
-  "generatedAt": "2026-09-01T07:11:32.953Z",
+  "featureId": "guardduty/all-protection-plans",
+  "generatedAt": "2026-09-01T07:18:07.665Z",
   "serviceId": "guardduty",
   "unresolvedTargets": []
 }

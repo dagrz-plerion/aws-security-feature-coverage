@@ -1,9 +1,7 @@
 {
   "axes": [
     "operatingSystem",
-    "programmingLanguage",
-    "region",
-    "resourceType"
+    "programmingLanguage"
   ],
   "claims": [
     {
@@ -19,8 +17,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-almalinux-10-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-almalinux-10-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -44,8 +42,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-almalinux-10-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-almalinux-10-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -69,8 +67,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-almalinux-10-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-almalinux-10-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -94,8 +92,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-almalinux-8-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-almalinux-8-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -119,8 +117,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-almalinux-8-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-almalinux-8-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -144,8 +142,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-almalinux-8-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-almalinux-8-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -169,8 +167,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-almalinux-9-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-almalinux-9-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -194,8 +192,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-almalinux-9-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-almalinux-9-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -219,8 +217,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-almalinux-9-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-almalinux-9-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -244,8 +242,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-10-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-10-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.10",
@@ -264,8 +262,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-11-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-11-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.11",
@@ -284,8 +282,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-12-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-12-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.12",
@@ -304,8 +302,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-13-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-13-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.13",
@@ -324,8 +322,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-14-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-14-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.14",
@@ -344,8 +342,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-15-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-15-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.15",
@@ -364,8 +362,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-16-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-16-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.16",
@@ -384,8 +382,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-17-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-17-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.17",
@@ -404,8 +402,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-18-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-18-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.18",
@@ -424,8 +422,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-19-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-19-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.19",
@@ -444,8 +442,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-2-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-2-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.2",
@@ -464,8 +462,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-20-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-20-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.20",
@@ -484,8 +482,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-21-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-21-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -509,8 +507,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-22-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-22-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -534,8 +532,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-23-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-23-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -559,8 +557,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-24-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-24-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -584,8 +582,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-3-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-3-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.3",
@@ -604,8 +602,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-4-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-4-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.4",
@@ -624,8 +622,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-5-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-5-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.5",
@@ -644,8 +642,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-6-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-6-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.6",
@@ -664,8 +662,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-7-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-7-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.7",
@@ -684,8 +682,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-8-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-8-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.8",
@@ -704,8 +702,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-alpine-linux-3-9-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-alpine-linux-3-9-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Alpine Linux 3.9",
@@ -724,8 +722,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-amazon-linux-al1-2012-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-amazon-linux-al1-2012-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Amazon Linux (AL1) 2012",
@@ -744,8 +742,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-amazon-linux-2-al2-al2-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-amazon-linux-2-al2-al2-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Amazon Linux 2 (AL2) AL2",
@@ -764,8 +762,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-amazon-linux-2023-al2023-al2023-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-amazon-linux-2023-al2023-al2023-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -789,8 +787,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-amazon-linux-2023-al2023-al2023-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-amazon-linux-2023-al2023-al2023-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -814,8 +812,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-amazon-linux-2023-al2023-al2023-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-amazon-linux-2023-al2023-al2023-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -839,8 +837,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-azure-linux-3-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-azure-linux-3-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -864,8 +862,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-bottlerocket-1-7-0-and-later-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-bottlerocket-1-7-0-and-later-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -889,8 +887,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-bottlerocket-1-7-0-and-later-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-bottlerocket-1-7-0-and-later-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -914,8 +912,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-busybox-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-busybox-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -939,8 +937,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-centos-linux-centos-7-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-centos-linux-centos-7-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "CentOS Linux (CentOS) 7",
@@ -959,8 +957,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-centos-linux-centos-8-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-centos-linux-centos-8-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "CentOS Linux (CentOS) 8",
@@ -979,8 +977,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-chainguard-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-chainguard-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1004,8 +1002,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-debian-server-bookworm-12-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-debian-server-bookworm-12-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1029,8 +1027,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-debian-server-bookworm-12-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-debian-server-bookworm-12-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1054,8 +1052,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-debian-server-bookworm-12-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-debian-server-bookworm-12-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1079,8 +1077,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-debian-server-bullseye-11-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-debian-server-bullseye-11-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Debian Server (Bullseye) 11",
@@ -1099,8 +1097,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-debian-server-buster-10-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-debian-server-buster-10-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Debian Server (Buster) 10",
@@ -1119,8 +1117,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-debian-server-jessie-8-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-debian-server-jessie-8-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Debian Server (Jessie) 8",
@@ -1139,8 +1137,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-debian-server-stretch-9-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-debian-server-stretch-9-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Debian Server (Stretch) 9",
@@ -1159,8 +1157,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-debian-server-trixie-13-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-debian-server-trixie-13-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1184,8 +1182,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-debian-server-trixie-13-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-debian-server-trixie-13-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1209,8 +1207,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-debian-server-trixie-13-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-debian-server-trixie-13-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1234,8 +1232,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-echo-2-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-echo-2-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1259,8 +1257,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-33-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-33-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Fedora 33",
@@ -1279,8 +1277,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-34-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-34-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Fedora 34",
@@ -1299,8 +1297,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-35-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-35-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Fedora 35",
@@ -1319,8 +1317,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-36-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-36-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Fedora 36",
@@ -1339,8 +1337,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-37-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-37-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Fedora 37",
@@ -1359,8 +1357,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-38-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-38-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Fedora 38",
@@ -1379,8 +1377,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-39-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-39-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Fedora 39",
@@ -1399,8 +1397,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-40-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-40-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Fedora 40",
@@ -1419,8 +1417,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-41-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-41-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Fedora 41",
@@ -1439,8 +1437,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-42-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-42-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Fedora 42",
@@ -1459,8 +1457,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-43-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-43-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1484,8 +1482,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-43-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-43-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1509,8 +1507,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-43-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-43-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1534,8 +1532,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-44-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-44-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1559,8 +1557,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-44-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-44-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1584,8 +1582,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-fedora-44-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-fedora-44-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1609,8 +1607,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-hummingbird-os-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-hummingbird-os-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1634,8 +1632,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-big-sur-11-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-big-sur-11-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1659,8 +1657,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-big-sur-11-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-big-sur-11-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1684,8 +1682,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-catalina-10-15-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-catalina-10-15-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1709,8 +1707,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-catalina-10-15-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-catalina-10-15-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1734,8 +1732,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-mojave-10-14-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-mojave-10-14-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1759,8 +1757,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-mojave-10-14-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-mojave-10-14-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1784,8 +1782,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-monterey-12-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-monterey-12-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1809,8 +1807,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-monterey-12-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-monterey-12-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1834,8 +1832,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-sequoia-15-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-sequoia-15-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1859,8 +1857,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-sequoia-15-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-sequoia-15-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1884,8 +1882,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-sonoma-14-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-sonoma-14-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1909,8 +1907,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-sonoma-14-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-sonoma-14-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1934,8 +1932,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-tahoe-26-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-tahoe-26-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1959,8 +1957,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-tahoe-26-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-tahoe-26-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -1984,8 +1982,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-ventura-13-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-ventura-13-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2009,8 +2007,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-macos-ventura-13-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-macos-ventura-13-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2034,8 +2032,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-minimos-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-minimos-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2059,8 +2057,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-opensuse-leap-15-2-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-opensuse-leap-15-2-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "OpenSUSE Leap 15.2",
@@ -2079,8 +2077,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-opensuse-leap-15-3-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-opensuse-leap-15-3-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "OpenSUSE Leap 15.3",
@@ -2099,8 +2097,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-opensuse-leap-15-4-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-opensuse-leap-15-4-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "OpenSUSE Leap 15.4",
@@ -2119,8 +2117,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-opensuse-leap-15-5-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-opensuse-leap-15-5-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "OpenSUSE Leap 15.5",
@@ -2139,8 +2137,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-opensuse-leap-15-6-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-opensuse-leap-15-6-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "OpenSUSE Leap 15.6",
@@ -2159,8 +2157,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-oracle-linux-10-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-oracle-linux-10-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2184,8 +2182,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-oracle-linux-10-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-oracle-linux-10-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2209,8 +2207,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-oracle-linux-10-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-oracle-linux-10-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2234,8 +2232,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-oracle-linux-6-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-oracle-linux-6-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Oracle Linux 6",
@@ -2254,8 +2252,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-oracle-linux-7-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-oracle-linux-7-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Oracle Linux 7",
@@ -2274,8 +2272,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-oracle-linux-8-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-oracle-linux-8-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2299,8 +2297,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-oracle-linux-8-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-oracle-linux-8-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2324,8 +2322,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-oracle-linux-8-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-oracle-linux-8-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2349,8 +2347,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-oracle-linux-9-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-oracle-linux-9-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2374,8 +2372,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-oracle-linux-9-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-oracle-linux-9-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2399,8 +2397,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-oracle-linux-9-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-oracle-linux-9-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2424,8 +2422,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-photon-os-2-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-photon-os-2-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Photon OS 2",
@@ -2444,8 +2442,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-photon-os-3-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-photon-os-3-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Photon OS 3",
@@ -2464,8 +2462,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-photon-os-4-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-photon-os-4-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2489,8 +2487,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-photon-os-5-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-photon-os-5-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2514,8 +2512,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-red-hat-enterprise-linux-rhel-10-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-red-hat-enterprise-linux-rhel-10-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2539,8 +2537,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-red-hat-enterprise-linux-rhel-10-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-red-hat-enterprise-linux-rhel-10-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2564,8 +2562,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-red-hat-enterprise-linux-rhel-10-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-red-hat-enterprise-linux-rhel-10-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2589,8 +2587,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-red-hat-enterprise-linux-rhel-6-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-red-hat-enterprise-linux-rhel-6-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Red Hat Enterprise Linux (RHEL) 6",
@@ -2609,8 +2607,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-red-hat-enterprise-linux-rhel-7-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-red-hat-enterprise-linux-rhel-7-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Red Hat Enterprise Linux (RHEL) 7",
@@ -2629,8 +2627,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-red-hat-enterprise-linux-rhel-8-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-red-hat-enterprise-linux-rhel-8-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2654,8 +2652,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-red-hat-enterprise-linux-rhel-8-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-red-hat-enterprise-linux-rhel-8-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2679,8 +2677,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-red-hat-enterprise-linux-rhel-8-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-red-hat-enterprise-linux-rhel-8-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2704,8 +2702,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-red-hat-enterprise-linux-rhel-9-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-red-hat-enterprise-linux-rhel-9-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2729,8 +2727,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-red-hat-enterprise-linux-rhel-9-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-red-hat-enterprise-linux-rhel-9-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2754,8 +2752,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-red-hat-enterprise-linux-rhel-9-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-red-hat-enterprise-linux-rhel-9-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2779,8 +2777,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-rocky-linux-10-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-rocky-linux-10-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2804,8 +2802,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-rocky-linux-10-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-rocky-linux-10-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2829,8 +2827,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-rocky-linux-10-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-rocky-linux-10-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2854,8 +2852,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-rocky-linux-8-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-rocky-linux-8-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2879,8 +2877,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-rocky-linux-8-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-rocky-linux-8-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2904,8 +2902,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-rocky-linux-8-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-rocky-linux-8-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2929,8 +2927,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-rocky-linux-9-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-rocky-linux-9-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2954,8 +2952,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-rocky-linux-9-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-rocky-linux-9-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -2979,8 +2977,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-rocky-linux-9-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-rocky-linux-9-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3004,8 +3002,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-12-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-12-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 12",
@@ -3024,8 +3022,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-12-1-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-12-1-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 12.1",
@@ -3044,8 +3042,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-12-2-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-12-2-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 12.2",
@@ -3064,8 +3062,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-12-3-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-12-3-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 12.3",
@@ -3084,8 +3082,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-12-4-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-12-4-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 12.4",
@@ -3104,8 +3102,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-12-5-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-12-5-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 12.5",
@@ -3124,8 +3122,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-15-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-15-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 15",
@@ -3144,8 +3142,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-15-1-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-15-1-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 15.1",
@@ -3164,8 +3162,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-15-2-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-15-2-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 15.2",
@@ -3184,8 +3182,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-15-3-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-15-3-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 15.3",
@@ -3204,8 +3202,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-15-4-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-15-4-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 15.4",
@@ -3224,8 +3222,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-15-5-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-15-5-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 15.5",
@@ -3244,8 +3242,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-15-6-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-15-6-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "SUSE Linux Enterprise Server (SLES) 15.6",
@@ -3264,8 +3262,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-15-7-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-15-7-agentless-recipe-inspector-os-agentles",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3289,8 +3287,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-15-7-agent-based-recipe-inspector-os-agent-bas",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-15-7-agent-based-recipe-inspector-os-agent-",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3314,8 +3312,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-15-7-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-15-7-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3339,8 +3337,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-16-0-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-16-0-agentless-recipe-inspector-os-agentles",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3364,8 +3362,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-16-0-agent-based-recipe-inspector-os-agent-bas",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-16-0-agent-based-recipe-inspector-os-agent-",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3389,8 +3387,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-suse-linux-enterprise-server-sles-16-0-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-suse-linux-enterprise-server-sles-16-0-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3414,8 +3412,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-bionic-18-04-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-bionic-18-04-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3439,8 +3437,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-bionic-18-04-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-bionic-18-04-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3464,8 +3462,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-bionic-18-04-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-bionic-18-04-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3489,8 +3487,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-focal-20-04-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-focal-20-04-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3514,8 +3512,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-focal-20-04-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-focal-20-04-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3539,8 +3537,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-focal-20-04-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-focal-20-04-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3564,8 +3562,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-groovy-20-10-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-groovy-20-10-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Ubuntu (Groovy) 20.10",
@@ -3584,8 +3582,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-hirsute-21-04-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-hirsute-21-04-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Ubuntu (Hirsute) 21.04",
@@ -3604,8 +3602,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-impish-21-10-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-impish-21-10-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Ubuntu (Impish) 21.10",
@@ -3624,8 +3622,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-jammy-22-04-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-jammy-22-04-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3649,8 +3647,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-jammy-22-04-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-jammy-22-04-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3674,8 +3672,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-jammy-22-04-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-jammy-22-04-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3699,8 +3697,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-kinetic-22-10-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-kinetic-22-10-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Ubuntu (Kinetic) 22.10",
@@ -3719,8 +3717,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-lunar-23-04-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-lunar-23-04-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Ubuntu (Lunar) 23.04",
@@ -3739,8 +3737,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-mantic-23-10-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-mantic-23-10-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Ubuntu (Mantic) 23.10",
@@ -3759,8 +3757,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-noble-24-04-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-noble-24-04-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3784,8 +3782,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-noble-24-04-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-noble-24-04-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3809,8 +3807,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-noble-24-04-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-noble-24-04-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3834,8 +3832,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-oracular-24-10-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-oracular-24-10-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Ubuntu (Oracular) 24.10",
@@ -3854,8 +3852,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-plucky-25-04-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-plucky-25-04-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Ubuntu (Plucky) 25.04",
@@ -3874,8 +3872,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-precise-12-04-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-precise-12-04-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Ubuntu (Precise) 12.04",
@@ -3894,8 +3892,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-questing-25-10-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-questing-25-10-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Ubuntu (Questing) 25.10",
@@ -3914,8 +3912,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-resolute-26-04-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-resolute-26-04-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3939,8 +3937,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-resolute-26-04-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-resolute-26-04-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3964,8 +3962,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-resolute-26-04-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-resolute-26-04-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -3989,8 +3987,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-trusty-14-04-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-trusty-14-04-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Ubuntu (Trusty) 14.04",
@@ -4009,8 +4007,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-ubuntu-xenial-16-04-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-ubuntu-xenial-16-04-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Ubuntu (Xenial) 16.04",
@@ -4029,8 +4027,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2012-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2012-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Windows Server 2012",
@@ -4049,8 +4047,8 @@
         }
       ],
       "extractorId": "recipe:inspector-discontinued-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2012-r2-recipe-inspector-discontinued-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2012-r2-recipe-inspector-discontinued-os",
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "Windows Server 2012 R2",
@@ -4069,8 +4067,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2016-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2016-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -4094,8 +4092,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2016-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2016-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -4119,8 +4117,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2019-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2019-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -4144,8 +4142,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2019-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2019-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -4169,8 +4167,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2019-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2019-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -4194,8 +4192,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2022-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2022-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -4219,8 +4217,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2022-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2022-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -4244,8 +4242,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2022-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2022-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -4269,8 +4267,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agentless",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2025-agentless-recipe-inspector-os-agentless",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2025-agentless-recipe-inspector-os-agentless",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -4294,8 +4292,8 @@
         }
       ],
       "extractorId": "recipe:inspector-os-agent-based",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2025-agent-based-recipe-inspector-os-agent-based",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2025-agent-based-recipe-inspector-os-agent-based",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -4319,8 +4317,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-windows-server-2025-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-windows-server-2025-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -4344,8 +4342,8 @@
         }
       ],
       "extractorId": "recipe:inspector-ecr-os",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-operatingsystem-wolfi-ecr-scanning-recipe-inspector-ecr-os",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-operatingsystem-wolfi-ecr-scanning-recipe-inspector-ecr-os",
       "method": "deterministic",
       "scope": {
         "axis": "scanMethod",
@@ -4369,8 +4367,8 @@
         }
       ],
       "extractorId": "recipe:inspector-languages",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-programminglanguage-go-recipe-inspector-languages",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-programminglanguage-go-recipe-inspector-languages",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Go",
@@ -4389,8 +4387,8 @@
         }
       ],
       "extractorId": "recipe:inspector-languages",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-programminglanguage-go-toolchain-recipe-inspector-languages",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-programminglanguage-go-toolchain-recipe-inspector-languages",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Go toolchain",
@@ -4409,8 +4407,8 @@
         }
       ],
       "extractorId": "recipe:inspector-languages",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-programminglanguage-java-recipe-inspector-languages",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-programminglanguage-java-recipe-inspector-languages",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Java",
@@ -4429,8 +4427,8 @@
         }
       ],
       "extractorId": "recipe:inspector-languages",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-programminglanguage-java-jdk-recipe-inspector-languages",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-programminglanguage-java-jdk-recipe-inspector-languages",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Java JDK",
@@ -4449,8 +4447,8 @@
         }
       ],
       "extractorId": "recipe:inspector-languages",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-programminglanguage-javascript-recipe-inspector-languages",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-programminglanguage-javascript-recipe-inspector-languages",
       "method": "deterministic",
       "status": "covered",
       "targetId": "JavaScript",
@@ -4469,8 +4467,8 @@
         }
       ],
       "extractorId": "recipe:inspector-languages",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-programminglanguage-php-recipe-inspector-languages",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-programminglanguage-php-recipe-inspector-languages",
       "method": "deterministic",
       "status": "covered",
       "targetId": "PHP",
@@ -4489,8 +4487,8 @@
         }
       ],
       "extractorId": "recipe:inspector-languages",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-programminglanguage-python-recipe-inspector-languages",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-programminglanguage-python-recipe-inspector-languages",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Python",
@@ -4509,8 +4507,8 @@
         }
       ],
       "extractorId": "recipe:inspector-languages",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-programminglanguage-ruby-recipe-inspector-languages",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-programminglanguage-ruby-recipe-inspector-languages",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Ruby",
@@ -4529,776 +4527,16 @@
         }
       ],
       "extractorId": "recipe:inspector-languages",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-programminglanguage-rust-recipe-inspector-languages",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-programminglanguage-rust-recipe-inspector-languages",
       "method": "deterministic",
       "status": "covered",
       "targetId": "Rust",
       "targetLabel": "Rust"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Africa (Cape Town) | af-south-1 |  inspector-scan.af-south-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-af-south-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "af-south-1",
-      "targetLabel": "Africa (Cape Town)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Hong Kong) | ap-east-1 |  inspector-scan.ap-east-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-east-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-east-1",
-      "targetLabel": "Asia Pacific (Hong Kong)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Taipei) | ap-east-2 |  inspector-scan.ap-east-2.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-east-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-east-2",
-      "targetLabel": "Asia Pacific (Taipei)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Tokyo) | ap-northeast-1 |  inspector-scan.ap-northeast-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-northeast-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-northeast-1",
-      "targetLabel": "Asia Pacific (Tokyo)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Seoul) | ap-northeast-2 |  inspector-scan.ap-northeast-2.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-northeast-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-northeast-2",
-      "targetLabel": "Asia Pacific (Seoul)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Osaka) | ap-northeast-3 |  inspector-scan.ap-northeast-3.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-northeast-3-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-northeast-3",
-      "targetLabel": "Asia Pacific (Osaka)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Mumbai) | ap-south-1 |  inspector-scan.ap-south-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-south-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-south-1",
-      "targetLabel": "Asia Pacific (Mumbai)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Hyderabad) | ap-south-2 |  inspector-scan.ap-south-2.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-south-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-south-2",
-      "targetLabel": "Asia Pacific (Hyderabad)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Singapore) | ap-southeast-1 |  inspector-scan.ap-southeast-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-southeast-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-1",
-      "targetLabel": "Asia Pacific (Singapore)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Sydney) | ap-southeast-2 |  inspector-scan.ap-southeast-2.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-southeast-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-2",
-      "targetLabel": "Asia Pacific (Sydney)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Jakarta) | ap-southeast-3 |  inspector-scan.ap-southeast-3.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-southeast-3-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-3",
-      "targetLabel": "Asia Pacific (Jakarta)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Melbourne) | ap-southeast-4 |  inspector-scan.ap-southeast-4.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-southeast-4-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-4",
-      "targetLabel": "Asia Pacific (Melbourne)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Malaysia) | ap-southeast-5 |  inspector-scan.ap-southeast-5.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-southeast-5-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-5",
-      "targetLabel": "Asia Pacific (Malaysia)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Thailand) | ap-southeast-7 |  inspector-scan.ap-southeast-7.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ap-southeast-7-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-7",
-      "targetLabel": "Asia Pacific (Thailand)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Canada (Central) | ca-central-1 |  inspector-scan.ca-central-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ca-central-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ca-central-1",
-      "targetLabel": "Canada (Central)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Canada West (Calgary) | ca-west-1 |  inspector-scan.ca-west-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-ca-west-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ca-west-1",
-      "targetLabel": "Canada West (Calgary)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Europe (Frankfurt) | eu-central-1 |  inspector-scan.eu-central-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-eu-central-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-central-1",
-      "targetLabel": "Europe (Frankfurt)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Europe (Zurich) | eu-central-2 |  inspector-scan.eu-central-2.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-eu-central-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-central-2",
-      "targetLabel": "Europe (Zurich)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Europe (Stockholm) | eu-north-1 |  inspector-scan.eu-north-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-eu-north-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-north-1",
-      "targetLabel": "Europe (Stockholm)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Europe (Milan) | eu-south-1 |  inspector-scan.eu-south-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-eu-south-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-south-1",
-      "targetLabel": "Europe (Milan)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Europe (Spain) | eu-south-2 |  inspector-scan.eu-south-2.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-eu-south-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-south-2",
-      "targetLabel": "Europe (Spain)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Europe (Ireland) | eu-west-1 |  inspector-scan.eu-west-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-eu-west-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-west-1",
-      "targetLabel": "Europe (Ireland)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Europe (London) | eu-west-2 |  inspector-scan.eu-west-2.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-eu-west-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-west-2",
-      "targetLabel": "Europe (London)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Europe (Paris) | eu-west-3 |  inspector-scan.eu-west-3.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-eu-west-3-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-west-3",
-      "targetLabel": "Europe (Paris)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Israel (Tel Aviv) | il-central-1 |  inspector-scan.il-central-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-il-central-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "il-central-1",
-      "targetLabel": "Israel (Tel Aviv)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Middle East (UAE) | me-central-1 |  inspector-scan.me-central-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-me-central-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "me-central-1",
-      "targetLabel": "Middle East (UAE)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Middle East (Bahrain) | me-south-1 |  inspector-scan.me-south-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-me-south-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "me-south-1",
-      "targetLabel": "Middle East (Bahrain)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| Mexico (Central) | mx-central-1 |  inspector-scan.mx-central-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-mx-central-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "mx-central-1",
-      "targetLabel": "Mexico (Central)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| South America (São Paulo) | sa-east-1 |  inspector-scan.sa-east-1.amazonaws.com  | HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-sa-east-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "sa-east-1",
-      "targetLabel": "South America (São Paulo)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| US East (N. Virginia) | us-east-1 |  inspector-scan.us-east-1.amazonaws.com <br /> inspector-scan-fips.us-east-1.amazonaws.com  | HTTPS<br />HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-us-east-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-east-1",
-      "targetLabel": "US East (N. Virginia)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| US East (Ohio) | us-east-2 |  inspector-scan.us-east-2.amazonaws.com <br /> inspector-scan-fips.us-east-2.amazonaws.com  | HTTPS<br />HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-us-east-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-east-2",
-      "targetLabel": "US East (Ohio)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "|  AWS GovCloud (US-East) | us-gov-east-1 |  inspector-scan.us-gov-east-1.amazonaws.com <br /> inspector-scan-fips.us-gov-east-1.amazonaws.com  | HTTPS<br />HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-us-gov-east-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-gov-east-1",
-      "targetLabel": "AWS GovCloud (US-East)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "|  AWS GovCloud (US-West) | us-gov-west-1 |  inspector-scan.us-gov-west-1.amazonaws.com <br /> inspector-scan-fips.us-gov-west-1.amazonaws.com  | HTTPS<br />HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-us-gov-west-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-gov-west-1",
-      "targetLabel": "AWS GovCloud (US-West)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| US West (N. California) | us-west-1 |  inspector-scan.us-west-1.amazonaws.com <br /> inspector-scan-fips.us-west-1.amazonaws.com  | HTTPS<br />HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-us-west-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-west-1",
-      "targetLabel": "US West (N. California)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "ce23ebcce42e169625e28c70c2f1677af35b54e7b177a4c11f7683d138dfef2f",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md ::  | column \"Region Name\"",
-          "quote": "| US West (Oregon) | us-west-2 |  inspector-scan.us-west-2.amazonaws.com <br /> inspector-scan-fips.us-west-2.amazonaws.com  | HTTPS<br />HTTPS |",
-          "retrievedAt": "2026-09-01T05:00:18.412Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-region-us-west-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-west-2",
-      "targetLabel": "US West (Oregon)"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "80f029102fb23ec21975c9c0d6b2fd541024f484021265b1f42b40972721219d",
-          "locator": "https://docs.aws.amazon.com/inspector/v1/userguide/inspector_cloudformation-integration.md :: Configuring Amazon Inspector Classic using AWS CloudFormation",
-          "quote": "+ [`AWS::Inspector::AssessmentTarget`](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html)",
-          "retrievedAt": "2026-09-01T05:00:17.687Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/v1/userguide/inspector_cloudformation-integration.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-resourcetype-aws-inspector-assessmenttarget-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::Inspector::AssessmentTarget",
-      "targetLabel": "AWS::Inspector::AssessmentTarget"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "80f029102fb23ec21975c9c0d6b2fd541024f484021265b1f42b40972721219d",
-          "locator": "https://docs.aws.amazon.com/inspector/v1/userguide/inspector_cloudformation-integration.md :: Configuring Amazon Inspector Classic using AWS CloudFormation",
-          "quote": "+ [`AWS::Inspector::AssessmentTemplate`](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html)",
-          "retrievedAt": "2026-09-01T05:00:17.687Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/v1/userguide/inspector_cloudformation-integration.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-resourcetype-aws-inspector-assessmenttemplate-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::Inspector::AssessmentTemplate",
-      "targetLabel": "AWS::Inspector::AssessmentTemplate"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "80f029102fb23ec21975c9c0d6b2fd541024f484021265b1f42b40972721219d",
-          "locator": "https://docs.aws.amazon.com/inspector/v1/userguide/inspector_cloudformation-integration.md :: Configuring Amazon Inspector Classic using AWS CloudFormation",
-          "quote": "+ [`AWS::Inspector::ResourceGroup`](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-resourcegroup.html)",
-          "retrievedAt": "2026-09-01T05:00:17.687Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/v1/userguide/inspector_cloudformation-integration.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "inspector2/service-wide",
-      "id": "inspector2-service-wide-resourcetype-aws-inspector-resourcegroup-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::Inspector::ResourceGroup",
-      "targetLabel": "AWS::Inspector::ResourceGroup"
     }
   ],
-  "featureId": "inspector2/service-wide",
-  "generatedAt": "2026-09-01T07:11:32.953Z",
+  "featureId": "inspector2/automated-scans",
+  "generatedAt": "2026-09-01T07:18:07.665Z",
   "serviceId": "inspector2",
   "unresolvedTargets": []
 }

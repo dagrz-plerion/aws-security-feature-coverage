@@ -4,6 +4,7 @@ import { readAllJson, readJson } from "../core/store.js";
 import { verifyEvidence } from "../core/evidence.js";
 import { recordGap } from "../core/ops.js";
 import { runRecall } from "../cli/recall.js";
+import { recipeRules } from "../core/seeds.js";
 import type { Stage, StageResult } from "../core/runner.js";
 import type {
   Adjudication, CoverageClaim, DataSource, Feature, FeatureCoverage,
@@ -45,6 +46,26 @@ export async function validate(sampleSize = 250): Promise<{ violations: Violatio
   add("every service is adjudicated", services.filter((s) => !decided.has(s.id)).map((s) => s.id));
   add("every decision states a reason", adjudications.filter((a) => a.reason.trim().length < 10).map((a) => a.serviceId));
   add("every feature carries evidence", features.filter((f) => f.evidence.length === 0).map((f) => f.id));
+
+  // A recipe pinned to a feature that does not exist loses every claim it reads, in
+  // silence. Security Hub's 6,313 regional exclusions vanished this way.
+  const pinnable = new Set(features.map((f) => f.id));
+  const rules = await recipeRules();
+  // A recipe with no pin has nowhere to put its claims and loses them silently.
+  add(
+    "every recipe names the feature it is for",
+    rules.flatMap((rule) =>
+      (rule.recipes as { id: string; featureId?: string }[]).filter((r) => !r.featureId).map((r) => r.id),
+    ),
+  );
+  add(
+    "every recipe is pinned to a feature that exists",
+    rules.flatMap((rule) =>
+      (rule.recipes as { id: string; featureId?: string }[])
+        .filter((r) => r.featureId && !pinnable.has(r.featureId))
+        .map((r) => `${r.id} -> ${r.featureId}`),
+    ),
+  );
 
   // A service cannot run in a Region that does not exist. FIPS endpoint keys read
   // like Region codes and made services appear to span more Regions than there are.

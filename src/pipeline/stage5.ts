@@ -40,6 +40,9 @@ function guide2Threshold(_pages: number): number {
  * a region table for GuardDuty, a resource list for Backup. Rather than drop it, it
  * lands on a service-wide record so the statement keeps its source.
  */
+/** A page is about the service as a whole only when it states where the service runs. */
+const SERVICE_WIDE_PAGE = /\b(supported regions?|region(al)? (support|availability)|availability|endpoints and quotas|where .* available)\b/i;
+
 function serviceWideFeature(
   serviceId: string,
   serviceById: Map<string, Service>,
@@ -47,7 +50,12 @@ function serviceWideFeature(
   tier: string | undefined,
   /** A page someone chose deliberately is not a sweep, so the tier rule is relaxed. */
   chosenByHand = false,
+  pageTitle = "",
 ): Feature | undefined {
+  // "Stated for the service as a whole" has to mean something. A list of Config
+  // checks is not a statement about AWS Config as a service, and letting any
+  // unattached page fall here turned the record into a dumping ground.
+  if (pageTitle && !SERVICE_WIDE_PAGE.test(pageTitle)) return undefined;
   // Only a security service can state coverage "for the service as a whole". For a
   // storage or deployment service, a page about what the service supports is not a
   // statement about security, and sweeping it in buried the map in noise.
@@ -361,7 +369,7 @@ export const stage5: Stage = {
               bestFeatureFor([pageTitle], job.features);
             const feature =
               namedByPage ??
-              serviceWideFeature(job.page.serviceId, serviceById, featuresByService, tierById.get(job.page.serviceId), true);
+              serviceWideFeature(job.page.serviceId, serviceById, featuresByService, tierById.get(job.page.serviceId), true, pageTitle);
             if (!feature) continue;
             // A service-wide record made here has to be registered, or it is not in
             // the set the writer looks at and every claim on it is dropped in silence.
@@ -418,7 +426,7 @@ export const stage5: Stage = {
           // not evidence: an RDS page about TLS certificates sits under a chapter
           // called "Data encryption", and that is not what the page states.
           const named = pinned ?? bestFeatureFor(block.headings, job.features) ?? bestFeatureFor([pageTitle], job.features);
-          const feature = named ?? serviceWideFeature(job.page.serviceId, serviceById, featuresByService, tierById.get(job.page.serviceId));
+          const feature = named ?? serviceWideFeature(job.page.serviceId, serviceById, featuresByService, tierById.get(job.page.serviceId), false, pageTitle);
           if (!feature) {
             unattached.push({ serviceId: job.page.serviceId, url: url, title: block.headings[0] ?? pageTitle });
             continue;
