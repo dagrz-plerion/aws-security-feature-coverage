@@ -1,14 +1,11 @@
 {
   "aliases": [],
-  "confidence": 0.75,
+  "confidence": 0.6,
   "discoveredBy": [
-    "attributed-page",
-    "named-control",
-    "security-chapter"
+    "named-control"
   ],
   "docUrls": [
-    "https://docs.aws.amazon.com/audit-manager/latest/userguide/using-service-linked-roles.md",
-    "https://docs.aws.amazon.com/aws-backup/latest/devguide/using-service-linked-roles-AWSServiceRoleForBackupReports.md"
+    "https://docs.aws.amazon.com/audit-manager/latest/userguide/using-service-linked-roles.md"
   ],
   "evidence": [
     {
@@ -17,13 +14,6 @@
       "quote": "[Using service-linked roles](https://docs.aws.amazon.com/audit-manager/latest/userguide/using-service-linked-roles.md)",
       "retrievedAt": "2026-09-01T04:06:03.320Z",
       "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/llms.txt"
-    },
-    {
-      "bodySha256": "689be80af9ff3cc12dc19fbdffc6f84d0738780e47720ed540244828e9692f24",
-      "locator": "Security > Using service-linked roles",
-      "quote": "[AWS Backup Audit Manager](https://docs.aws.amazon.com/aws-backup/latest/devguide/using-service-linked-roles-AWSServiceRoleForBackupReports.md)",
-      "retrievedAt": "2026-09-01T04:06:03.549Z",
-      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/llms.txt"
     }
   ],
   "id": "auditmanager/service-linked-roles",

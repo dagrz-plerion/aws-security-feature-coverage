@@ -21,6 +21,8 @@ export const STRUCTURAL_TITLE = [
   /^step \d/i,
   /^(view|list|create|delete|update|edit|modify|add|remove|assign|deactivate|resynchronize|recover|check|generate|download|upload|import|export|copy|move|untag|enable|disable|start|stop|turn)\b/i,
   /^migrating\b/i, /^what's new/i,
+  // Pricing and trial pages describe commercial terms, not capability.
+  /^\d+[- ]day\b/i, /free trial/i, /^pricing/i, /^cost/i, /^billing/i,
 ];
 
 /**

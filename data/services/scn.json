@@ -1,7 +1,7 @@
 {
   "candidate": true,
   "confidence": 0.4,
-  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "decidedAt": "2026-09-01T04:53:01.297Z",
   "evidence": [
     {
       "bodySha256": "42b3e34518a9063b46cc5d193f83f70aad12e8f0c05b319666114892c16b4974",
@@ -20,15 +20,10 @@
   ],
   "method": "deterministic",
   "promoted": true,
-  "reason": "Security signals present (score 5: security-name-weak, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 4 named security features were found in its documentation.",
-  "score": 5,
+  "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 3 named security features were found in its documentation.",
+  "score": 3,
   "serviceId": "scn",
   "signals": [
-    {
-      "detail": "The name contains \"log\".",
-      "id": "security-name-weak",
-      "weight": 2
-    },
     {
       "detail": "15 documentation pages describe security capability, for example \"Data protection\".",
       "id": "security-doc-pages",

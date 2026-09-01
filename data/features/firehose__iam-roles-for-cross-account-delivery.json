@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/vpc/latest/userguide/firehose-cross-account-delivery.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "806081e0accc96971afd6c563111611671637d2792b6bb3187b6589373660258",
+      "locator": "Monitoring > Publish to Amazon Data Firehose",
+      "quote": "[IAM roles for cross account delivery](https://docs.aws.amazon.com/vpc/latest/userguide/firehose-cross-account-delivery.md)",
+      "retrievedAt": "2026-09-01T04:06:20.127Z",
+      "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "firehose/iam-roles-for-cross-account-delivery",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "IAM roles for cross account delivery",
+  "serviceId": "firehose",
+  "summary": "When you publish to Amazon Data Firehose, you can choose a delivery stream that's in the same account as the resource to monitor (the source account), or in a different account (the destination account).",
+  "tier": "tier2"
+}

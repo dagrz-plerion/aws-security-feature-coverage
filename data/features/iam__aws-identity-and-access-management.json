@@ -1,16 +1,13 @@
 {
   "aliases": [],
-  "confidence": 0.75,
+  "confidence": 0.7,
   "discoveredBy": [
-    "attributed-page",
     "security-chapter"
   ],
   "docUrls": [
-    "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/IAMRoute53.md",
     "https://docs.aws.amazon.com/infrastructure-composer/latest/dg/security_iam_service-with-iam.md",
     "https://docs.aws.amazon.com/keyspaces/latest/devguide/security_iam_service-with-iam.md",
-    "https://docs.aws.amazon.com/mwaa/latest/userguide/security_iam_troubleshoot.md",
-    "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md"
+    "https://docs.aws.amazon.com/mwaa/latest/userguide/security_iam_troubleshoot.md"
   ],
   "evidence": [
     {
@@ -28,25 +25,11 @@
       "sourceUrl": "https://docs.aws.amazon.com/infrastructure-composer/latest/dg/llms.txt"
     },
     {
-      "bodySha256": "51a5587e843c5da46f8c9d120264426e659702eba134c0b00dcfe16efae42312",
-      "locator": "Security",
-      "quote": "[AWS Identity and Access Management](https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md)",
-      "retrievedAt": "2026-09-01T04:06:19.469Z",
-      "sourceUrl": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/llms.txt"
-    },
-    {
       "bodySha256": "dbb5da1fb03e0f11f2d089bfcf8c21025b36ddd151cc8eb0ae1f81db0216dca3",
       "locator": "Security > AWS Identity and Access Management",
       "quote": "[Troubleshooting Amazon Managed Workflows for Apache Airflow identity and access](https://docs.aws.amazon.com/mwaa/latest/userguide/security_iam_troubleshoot.md)",
       "retrievedAt": "2026-09-01T04:06:13.981Z",
       "sourceUrl": "https://docs.aws.amazon.com/mwaa/latest/userguide/llms.txt"
-    },
-    {
-      "bodySha256": "24d4c43a6666ecbcdf8d5ff41b357f5f44fc5b21fcea0293f82e7f5bf4ee0a46",
-      "locator": "What is Amazon Route 53?",
-      "quote": "[AWS Identity and Access Management](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/IAMRoute53.md)",
-      "retrievedAt": "2026-09-01T04:06:01.984Z",
-      "sourceUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/llms.txt"
     }
   ],
   "id": "iam/aws-identity-and-access-management",
@@ -54,6 +37,5 @@
   "method": "deterministic",
   "name": "AWS Identity and Access Management",
   "serviceId": "iam",
-  "summary": "Learn how Amazon Keyspaces works with IAM",
   "tier": "tier1"
 }

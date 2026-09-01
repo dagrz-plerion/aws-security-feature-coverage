@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/efs/latest/ug/using-aws-transfer-integration.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "89f34b9c5e8f4bef5e83eb0347330728204d47c522c8fe7b90610e6e48bb2db7",
+      "locator": "Transferring data",
+      "quote": "[Using AWS Transfer Family](https://docs.aws.amazon.com/efs/latest/ug/using-aws-transfer-integration.md)",
+      "retrievedAt": "2026-09-01T04:06:07.786Z",
+      "sourceUrl": "https://docs.aws.amazon.com/efs/latest/ug/llms.txt"
+    }
+  ],
+  "id": "transfer/aws-transfer-family",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS Transfer Family",
+  "serviceId": "transfer",
+  "summary": "Use AWS Transfer Family to transfer files into and out of Amazon EFS file systems over certain protocols, such as Secure Shell (SSH) File Transfer Protocol (SFTP) (AWS Transfer for SFTP) and File Transfer Protocol Secure (FTPS) (AWS Transfer for FTPS).",
+  "tier": "tier2"
+}

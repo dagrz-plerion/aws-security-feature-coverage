@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-ecs-eks-connections.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "54546ec7b57f3a127a0aef18c33ab21d3179f468be9fa9c06186fbf8e306790f",
+      "locator": "Best practices > Amazon ECS and Amazon EKS",
+      "quote": "[Connection lifecycle](https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-ecs-eks-connections.md)",
+      "retrievedAt": "2026-09-01T04:06:14.107Z",
+      "sourceUrl": "https://docs.aws.amazon.com/neptune/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ecs/connection-lifecycle",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Connection lifecycle",
+  "serviceId": "ecs",
+  "summary": "Managing connections to Neptune effectively is essential in containerized environments where containers (pods in Kubernetes) start, stop, and scale frequently.",
+  "tier": "tier2"
+}

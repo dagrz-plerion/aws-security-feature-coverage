@@ -2,21 +2,12 @@
   "aliases": [],
   "confidence": 0.85,
   "discoveredBy": [
-    "attributed-page",
     "guide-chapter"
   ],
   "docUrls": [
-    "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-choosing-managed-or-inline.md",
-    "https://docs.aws.amazon.com/datasync/latest/userguide/managing-access-overview.md"
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-choosing-managed-or-inline.md"
   ],
   "evidence": [
-    {
-      "bodySha256": "c9490d2faa24a9aa24b0f20f0dfe5611232030330ecadb50ee9af6ddd65fd164",
-      "locator": "Security > Identity and access management",
-      "quote": "[Access management](https://docs.aws.amazon.com/datasync/latest/userguide/managing-access-overview.md)",
-      "retrievedAt": "2026-09-01T04:06:06.676Z",
-      "sourceUrl": "https://docs.aws.amazon.com/datasync/latest/userguide/llms.txt"
-    },
     {
       "bodySha256": "0545bfec709c10797d4e76b5baba1b22a597e8bbbf46b49e7498c537ba25a24f",
       "locator": "Access management > Managed policies and inline policies",
@@ -30,6 +21,5 @@
   "method": "deterministic",
   "name": "Access management",
   "serviceId": "iam",
-  "summary": "Attach permissions policies to AWS Identity and Access Management (IAM) identities, users, groups, roles, services, and resources.",
   "tier": "tier1"
 }

@@ -1,7 +1,7 @@
 {
   "candidate": true,
   "confidence": 0.4,
-  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "decidedAt": "2026-09-01T04:53:01.297Z",
   "evidence": [
     {
       "bodySha256": "528f1ebb4c3b2c39450731f1465814d62c1945fbc2a3d0625bad8c50400ada8b",
@@ -19,8 +19,7 @@
     }
   ],
   "method": "deterministic",
-  "promoted": true,
-  "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 4 named security features were found in its documentation.",
+  "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given.",
   "score": 3,
   "serviceId": "codeguru",
   "signals": [
@@ -30,5 +29,5 @@
       "weight": 3
     }
   ],
-  "tier": "tier2"
+  "tier": "not-security"
 }

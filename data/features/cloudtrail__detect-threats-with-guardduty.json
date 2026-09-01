@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/secretsmanager/latest/userguide/monitoring-guardduty.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "d310fb71d3f7920465e5364aefa311e48096d0dfdafd438fff4f9c7e4a0ee8bb",
+      "locator": "Monitor secrets > Log with AWS CloudTrail",
+      "quote": "[Detect threats with GuardDuty](https://docs.aws.amazon.com/secretsmanager/latest/userguide/monitoring-guardduty.md)",
+      "retrievedAt": "2026-09-01T04:06:18.101Z",
+      "sourceUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudtrail/detect-threats-with-guardduty",
+  "kind": "detection-capability",
+  "method": "deterministic",
+  "name": "Detect threats with GuardDuty",
+  "serviceId": "cloudtrail",
+  "summary": "Learn how to use GuardDuty for AWS Secrets Manager secrets.",
+  "tier": "tier1"
+}

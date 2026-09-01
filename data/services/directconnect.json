@@ -1,7 +1,7 @@
 {
   "candidate": true,
-  "confidence": 0.4,
-  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "confidence": 0.6,
+  "decidedAt": "2026-09-01T04:53:01.297Z",
   "evidence": [
     {
       "bodySha256": "2dd4971999138b8aeace45256835d542af29e11fc93836c38985b3f2c65329e4",
@@ -20,15 +20,10 @@
   ],
   "method": "deterministic",
   "promoted": true,
-  "reason": "Security signals present (score 7: security-name-strong, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 5 named security features were found in its documentation.",
-  "score": 7,
+  "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 2 named security features were found in its documentation.",
+  "score": 2,
   "serviceId": "directconnect",
   "signals": [
-    {
-      "detail": "The name contains \"encryption\".",
-      "id": "security-name-strong",
-      "weight": 5
-    },
     {
       "detail": "11 documentation pages describe security capability, for example \"Internetwork traffic privacy\".",
       "id": "security-doc-pages",

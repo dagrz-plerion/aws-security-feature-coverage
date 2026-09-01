@@ -5,31 +5,15 @@
     "attributed-page"
   ],
   "docUrls": [
-    "https://docs.aws.amazon.com/athena/latest/ug/vpc-flow-logs-create-table-statement.md",
-    "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc-ec2migration.md",
-    "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/close-security-group.md"
+    "https://docs.aws.amazon.com/kendra/latest/dg/connector-vpc-steps.md"
   ],
   "evidence": [
     {
-      "bodySha256": "baac4979e3329df2b3d5b05e1169bcb2776243e0450182873d78fbc2228be215",
-      "locator": "Use Athena SQL > Amazon VPC",
-      "quote": "[Create a table](https://docs.aws.amazon.com/athena/latest/ug/vpc-flow-logs-create-table-statement.md)",
-      "retrievedAt": "2026-09-01T04:06:03.348Z",
-      "sourceUrl": "https://docs.aws.amazon.com/athena/latest/ug/llms.txt"
-    },
-    {
-      "bodySha256": "106a2bb833633da9096cc4076ba40e7e82f6128a8ed64a5f15962696afcb4a72",
-      "locator": "Configuring environments > Amazon VPC",
-      "quote": "[Migrating from EC2-Classic to a VPC](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc-ec2migration.md)",
-      "retrievedAt": "2026-09-01T04:06:07.968Z",
-      "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/llms.txt"
-    },
-    {
-      "bodySha256": "4f64722f627b4b796720af8a22bd6fc7e276b528c3cb721e9bab48cf80f4e8b5",
-      "locator": "Automation Runbook Reference > Amazon VPC",
-      "quote": "[AWS-CloseSecurityGroup](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/close-security-group.md)",
-      "retrievedAt": "2026-09-01T04:06:19.357Z",
-      "sourceUrl": "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/llms.txt"
+      "bodySha256": "20ed590a70ee151c1dd6479b93fe346a28caad993246d785f3d7bd1d71a56d41",
+      "locator": "Creating a data source connector > Configuring Amazon Kendra to use an Amazon VPC",
+      "quote": "[Configuring Amazon VPC](https://docs.aws.amazon.com/kendra/latest/dg/connector-vpc-steps.md)",
+      "retrievedAt": "2026-09-01T04:06:11.660Z",
+      "sourceUrl": "https://docs.aws.amazon.com/kendra/latest/dg/llms.txt"
     }
   ],
   "id": "ec2/amazon-vpc",
@@ -37,6 +21,6 @@
   "method": "deterministic",
   "name": "Amazon VPC",
   "serviceId": "ec2",
-  "summary": "The following procedure creates an Amazon VPC table for Amazon VPC flow logs.",
+  "summary": "To configure Amazon VPC for use with your Amazon Kendra connectors, take the following steps.",
   "tier": "tier2"
 }

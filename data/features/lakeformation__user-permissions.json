@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/athena/latest/ug/lf-athena-user-permissions.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "baac4979e3329df2b3d5b05e1169bcb2776243e0450182873d78fbc2228be215",
+      "locator": "Use Athena SQL > Use Athena with Lake Formation",
+      "quote": "[Manage user permissions](https://docs.aws.amazon.com/athena/latest/ug/lf-athena-user-permissions.md)",
+      "retrievedAt": "2026-09-01T04:06:03.348Z",
+      "sourceUrl": "https://docs.aws.amazon.com/athena/latest/ug/llms.txt"
+    }
+  ],
+  "id": "lakeformation/user-permissions",
+  "kind": "identity-control",
+  "method": "deterministic",
+  "name": "user permissions",
+  "serviceId": "lakeformation",
+  "summary": "Lake Formation vends credentials to query Amazon S3 data stores or federated catalogs that are registered with Lake Formation.",
+  "tier": "tier2"
+}

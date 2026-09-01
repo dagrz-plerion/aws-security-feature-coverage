@@ -5,28 +5,10 @@
     "attributed-page"
   ],
   "docUrls": [
-    "https://docs.aws.amazon.com/appflow/latest/userguide/redshift.md",
-    "https://docs.aws.amazon.com/grafana/latest/userguide/Redshift-prereq.md",
-    "https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/compute-prerequisite-redshift.md",
-    "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awssupport-troubleshootec2connectivitytoredshift.md",
-    "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/redshift-access-prerequisities.md",
+    "https://docs.aws.amazon.com/grafana/latest/userguide/Redshift-config.md",
     "https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/redshift-overview.md"
   ],
   "evidence": [
-    {
-      "bodySha256": "5c24f0414567e746522dbf45df68a3494414bad22883b69b39a06bed73e4c78d",
-      "locator": "Supported applications",
-      "quote": "[Amazon Redshift](https://docs.aws.amazon.com/appflow/latest/userguide/redshift.md)",
-      "retrievedAt": "2026-09-01T04:06:02.865Z",
-      "sourceUrl": "https://docs.aws.amazon.com/appflow/latest/userguide/llms.txt"
-    },
-    {
-      "bodySha256": "79d80bc8923df8eb5c8b48968ea8f1e34df0066563a1235f6f5a0abd157bd60f",
-      "locator": "Working with AWS services > Amazon Redshift",
-      "quote": "[Prerequisites for accessing Amazon Redshift clusters](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/redshift-access-prerequisities.md)",
-      "retrievedAt": "2026-09-01T04:06:19.598Z",
-      "sourceUrl": "https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/llms.txt"
-    },
     {
       "bodySha256": "0665cafeee178d2b6e1148304c90267ea1d7234f929c3095e0ce43905e035ec5",
       "locator": "Working with AWS > Amazon Redshift",
@@ -37,16 +19,9 @@
     {
       "bodySha256": "fb4693f608ea60b529044869fdb8a5d9b626adc8414071cbf12e2c1454f1f488",
       "locator": "Use your Grafana workspace > Amazon Redshift",
-      "quote": "[Prerequisites](https://docs.aws.amazon.com/grafana/latest/userguide/Redshift-prereq.md)",
+      "quote": "[Configuring Amazon Redshift](https://docs.aws.amazon.com/grafana/latest/userguide/Redshift-config.md)",
       "retrievedAt": "2026-09-01T04:06:10.028Z",
       "sourceUrl": "https://docs.aws.amazon.com/grafana/latest/userguide/llms.txt"
-    },
-    {
-      "bodySha256": "4c4c2716f0cb4df1f9acb3ea9bca80240836b0d9eb76ed28a1ca51cbd6f7af4f",
-      "locator": "Compute > Amazon Redshift",
-      "quote": "[Gaining access to Amazon Redshift resources](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/compute-prerequisite-redshift.md)",
-      "retrievedAt": "2026-09-01T04:06:17.488Z",
-      "sourceUrl": "https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/llms.txt"
     }
   ],
   "id": "redshift/amazon-redshift",
@@ -54,6 +29,6 @@
   "method": "deterministic",
   "name": "Amazon Redshift",
   "serviceId": "redshift",
-  "summary": "Connect Amazon AppFlow to your Amazon Redshift database so that you can transfer data from AWS services and supported applications.",
+  "summary": "User Guide topic that describes how to work with Amazon Redshift from the AWS Toolkit for Visual Studio Code.",
   "tier": "tier2"
 }

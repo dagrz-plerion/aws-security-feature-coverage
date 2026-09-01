@@ -1,7 +1,7 @@
 {
   "candidate": true,
   "confidence": 0.6,
-  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "decidedAt": "2026-09-01T04:53:01.297Z",
   "evidence": [
     {
       "bodySha256": "c480c8165ac445ef0e836a98ea7ffaf3269960265455903db616c99475a0bf5c",
@@ -19,8 +19,7 @@
     }
   ],
   "method": "deterministic",
-  "promoted": true,
-  "reason": "Weak security signal only (score 2: permission-management-actions). Scanned at low priority. Promoted to tier 2: 2 named security features were found in its documentation.",
+  "reason": "Weak security signal only (score 2: permission-management-actions). Scanned at low priority.",
   "score": 2,
   "serviceId": "codeguru-profiler",
   "signals": [
@@ -30,5 +29,5 @@
       "weight": 2
     }
   ],
-  "tier": "tier2"
+  "tier": "not-security"
 }

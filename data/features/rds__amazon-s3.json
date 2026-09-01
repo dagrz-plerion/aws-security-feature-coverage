@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.S3.md",
+    "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/configure-client-s3.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "106a2bb833633da9096cc4076ba40e7e82f6128a8ed64a5f15962696afcb4a72",
+      "locator": "Integrating AWS services > Amazon RDS",
+      "quote": "[Amazon S3](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.S3.md)",
+      "retrievedAt": "2026-09-01T04:06:07.968Z",
+      "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/llms.txt"
+    },
+    {
+      "bodySha256": "fe513c5ff926e7b5855e8be27732077db798c7e8cae22b85b23c61fe302d8392",
+      "locator": "Amazon OpenSearch Ingestion > Amazon RDS",
+      "quote": "[Amazon S3](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/configure-client-s3.md)",
+      "retrievedAt": "2026-09-01T04:06:14.653Z",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "rds/amazon-s3",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon S3",
+  "serviceId": "rds",
+  "summary": "You can use Elastic Beanstalk with Amazon S3 simple web service to provide highly durable, fault-tolerant data storage.",
+  "tier": "tier2"
+}

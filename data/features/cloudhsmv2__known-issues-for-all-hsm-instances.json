@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cloudhsm/latest/userguide/ki-all.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "40168a9d137882d27d81e97c1cca0c17ceefcd5177947d8edd37426974206ee4",
+      "locator": "Troubleshooting > AWS CloudHSM known issues",
+      "quote": "[Known issues for all HSM instances](https://docs.aws.amazon.com/cloudhsm/latest/userguide/ki-all.md)",
+      "retrievedAt": "2026-09-01T04:06:05.112Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudhsmv2/known-issues-for-all-hsm-instances",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Known issues for all HSM instances",
+  "serviceId": "cloudhsmv2",
+  "summary": "The following issues impact all AWS CloudHSM users regardless of whether they use the key_mgmt_util command line tool, the PKCS #11 SDK, the JCE SDK, or the OpenSSL SDK.",
+  "tier": "tier1"
+}

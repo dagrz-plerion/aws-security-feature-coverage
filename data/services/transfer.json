@@ -1,7 +1,7 @@
 {
   "candidate": true,
   "confidence": 0.4,
-  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "decidedAt": "2026-09-01T04:53:01.297Z",
   "evidence": [
     {
       "bodySha256": "f7aa24fc08e992331c8a2a6c1af8fe778ad1f57709082e222adba87b5a6383f1",
@@ -20,15 +20,10 @@
   ],
   "method": "deterministic",
   "promoted": true,
-  "reason": "Security signals present (score 8: security-name-strong, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 12 named security features were found in its documentation.",
-  "score": 8,
+  "reason": "Security signals present (score 3: security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 8 named security features were found in its documentation.",
+  "score": 3,
   "serviceId": "transfer",
   "signals": [
-    {
-      "detail": "The name contains \"threat\".",
-      "id": "security-name-strong",
-      "weight": 5
-    },
     {
       "detail": "26 documentation pages describe security capability, for example \"Detect Malware Threats Using AWS Transfer Family\".",
       "id": "security-doc-pages",

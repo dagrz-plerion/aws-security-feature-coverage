@@ -1,0 +1,36 @@
+{
+  "aliases": [
+    "integration with Organizations"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/macie/latest/user/accounts-mgmt-ao-disable.md",
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/disable-orgs-integration.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b0c7ddf7411249e915067439ba54eca7e3f97b07297d1da0b5fd3ccc4140b0f1",
+      "locator": "Managing multiple accounts > Managing accounts with AWS Organizations",
+      "quote": "[Disabling integration with AWS Organizations](https://docs.aws.amazon.com/macie/latest/user/accounts-mgmt-ao-disable.md)",
+      "retrievedAt": "2026-09-01T04:06:12.700Z",
+      "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/llms.txt"
+    },
+    {
+      "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
+      "locator": "AWS Security Hub CSPM > Integrating with AWS Organizations",
+      "quote": "[Disabling integration with Organizations](https://docs.aws.amazon.com/securityhub/latest/userguide/disable-orgs-integration.md)",
+      "retrievedAt": "2026-09-01T04:06:18.321Z",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "organizations/integration-with-aws-organizations",
+  "kind": "integration",
+  "method": "deterministic",
+  "name": "integration with AWS Organizations",
+  "serviceId": "organizations",
+  "summary": "Learn how to disable Amazon Macie as a trusted service for an organization in AWS Organizations.",
+  "tier": "tier2"
+}

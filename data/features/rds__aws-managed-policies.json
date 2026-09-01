@@ -2,24 +2,15 @@
   "aliases": [
     "managed policies"
   ],
-  "confidence": 0.75,
+  "confidence": 0.7,
   "discoveredBy": [
-    "attributed-page",
     "security-chapter"
   ],
   "docUrls": [
-    "https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-managed-policies.md",
     "https://docs.aws.amazon.com/neptune-analytics/latest/userguide/security-iam-awsmanpol-graph-read-only.md",
     "https://docs.aws.amazon.com/neptune/latest/userguide/read-only-access-iam-managed-policy.md"
   ],
   "evidence": [
-    {
-      "bodySha256": "7e59218fe412dc7ecb7ba41e85cddee3b1dda4374bb986404313e3775338a326",
-      "locator": "Security > Identity and Access Management",
-      "quote": "[AWS managed policies for Amazon DocumentDB](https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-managed-policies.md)",
-      "retrievedAt": "2026-09-01T04:06:07.562Z",
-      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/llms.txt"
-    },
     {
       "bodySha256": "b3ffb8e6a22ec48283a397b2279afaf48b4600b26bcd54336dbc928642de2f47",
       "locator": "Security > AWS managed policies",
@@ -40,6 +31,5 @@
   "method": "deterministic",
   "name": "AWS managed policies",
   "serviceId": "rds",
-  "summary": "Managed policies",
   "tier": "tier2"
 }

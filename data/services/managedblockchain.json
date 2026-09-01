@@ -1,7 +1,7 @@
 {
   "candidate": true,
   "confidence": 0.4,
-  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "decidedAt": "2026-09-01T04:53:01.297Z",
   "evidence": [
     {
       "bodySha256": "6c1fe6574786539d3da3a8bcc981eb34cc4b2cc09f19e9d13a6cdeb5ff7ae372",
@@ -19,16 +19,10 @@
     }
   ],
   "method": "deterministic",
-  "promoted": true,
-  "reason": "Security signals present (score 7: security-name-weak, permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 1 named security features were found in its documentation.",
-  "score": 7,
+  "reason": "Security signals present (score 5: permission-management-actions, security-doc-pages). Scanning for a named security feature before any tier is given.",
+  "score": 5,
   "serviceId": "managedblockchain",
   "signals": [
-    {
-      "detail": "The name contains \"access\".",
-      "id": "security-name-weak",
-      "weight": 2
-    },
     {
       "detail": "The IAM service reference marks one or more actions as permission management.",
       "id": "permission-management-actions",
@@ -40,5 +34,5 @@
       "weight": 3
     }
   ],
-  "tier": "tier2"
+  "tier": "not-security"
 }

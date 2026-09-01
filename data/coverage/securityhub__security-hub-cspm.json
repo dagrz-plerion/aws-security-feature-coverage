@@ -123,18 +123,38 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
-          "quote": "| AWS Certificate Manager (ACM) | `AWS::ACM::Certificate` |",
-          "retrievedAt": "2026-09-01T04:29:32.884Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-        },
+          "bodySha256": "12488d558b19b184f52f27a788f5968beed2ff580f19c29c7a770ad58b3d52ac",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md ::  | column \"Integrated AWS service\"",
+          "quote": "| [AWS Identity and Access Management Access Analyzer](#integration-iam-access-analyzer) | Sends findings |",
+          "retrievedAt": "2026-09-01T04:29:34.106Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub-cspm",
+      "id": "securityhub-security-hub-cspm-service-access-analyzer-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "access-analyzer",
+      "targetLabel": "AWS Identity and Access Management Access Analyzer"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
         {
           "bodySha256": "a34e2631f413904fd812d990389e579fd7a93edb781f1a0be69a5cd6cc15959c",
           "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md ::  | column \"AWS service\"",
           "quote": "| AWS Certificate Manager (ACM) | `AWS::ACM::Certificate` |",
           "retrievedAt": "2026-09-01T04:29:32.824Z",
           "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+        },
+        {
+          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
+          "quote": "| AWS Certificate Manager (ACM) | `AWS::ACM::Certificate` |",
+          "retrievedAt": "2026-09-01T04:29:32.884Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
         }
       ],
       "extractorId": "md-table",
@@ -150,18 +170,18 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
-          "quote": "| Amazon API Gateway | `AWS::ApiGateway::Stage` |",
-          "retrievedAt": "2026-09-01T04:29:32.884Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-        },
-        {
           "bodySha256": "a34e2631f413904fd812d990389e579fd7a93edb781f1a0be69a5cd6cc15959c",
           "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md ::  | column \"AWS service\"",
           "quote": "| Amazon API Gateway | `AWS::ApiGateway::Stage`, `AWS::ApiGatewayV2::Stage` |",
           "retrievedAt": "2026-09-01T04:29:32.824Z",
           "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+        },
+        {
+          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
+          "quote": "| Amazon API Gateway | `AWS::ApiGateway::Stage` |",
+          "retrievedAt": "2026-09-01T04:29:32.884Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
         }
       ],
       "extractorId": "md-table",
@@ -191,6 +211,26 @@
       "status": "covered",
       "targetId": "appsync",
       "targetLabel": "AWS AppSync"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "12488d558b19b184f52f27a788f5968beed2ff580f19c29c7a770ad58b3d52ac",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md ::  | column \"Integrated AWS service\"",
+          "quote": "| [AWS Audit Manager](#integration-aws-audit-manager) | Receives findings |",
+          "retrievedAt": "2026-09-01T04:29:34.106Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub-cspm",
+      "id": "securityhub-security-hub-cspm-service-auditmanager-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "auditmanager",
+      "targetLabel": "AWS Audit Manager"
     },
     {
       "axis": "service",
@@ -277,18 +317,18 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
-          "quote": "| Amazon CloudFront | `AWS::CloudFront::Distribution` |",
-          "retrievedAt": "2026-09-01T04:29:32.884Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-        },
-        {
           "bodySha256": "a34e2631f413904fd812d990389e579fd7a93edb781f1a0be69a5cd6cc15959c",
           "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md ::  | column \"AWS service\"",
           "quote": "| Amazon CloudFront | `AWS::CloudFront::Distribution` |",
           "retrievedAt": "2026-09-01T04:29:32.824Z",
           "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+        },
+        {
+          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
+          "quote": "| Amazon CloudFront | `AWS::CloudFront::Distribution` |",
+          "retrievedAt": "2026-09-01T04:29:32.884Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
         }
       ],
       "extractorId": "md-table",
@@ -304,18 +344,18 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
-          "quote": "| Amazon CloudWatch | `AWS::CloudWatch::Alarm` |",
-          "retrievedAt": "2026-09-01T04:29:32.884Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-        },
-        {
           "bodySha256": "a34e2631f413904fd812d990389e579fd7a93edb781f1a0be69a5cd6cc15959c",
           "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md ::  | column \"AWS service\"",
           "quote": "| Amazon CloudWatch | `AWS::CloudWatch::Alarm` |",
           "retrievedAt": "2026-09-01T04:29:32.824Z",
           "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+        },
+        {
+          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
+          "quote": "| Amazon CloudWatch | `AWS::CloudWatch::Alarm` |",
+          "retrievedAt": "2026-09-01T04:29:32.884Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
         }
       ],
       "extractorId": "md-table",
@@ -345,6 +385,46 @@
       "status": "covered",
       "targetId": "codebuild",
       "targetLabel": "AWS CodeBuild"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "12488d558b19b184f52f27a788f5968beed2ff580f19c29c7a770ad58b3d52ac",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md ::  | column \"Integrated AWS service\"",
+          "quote": "| [AWS Config](#integration-config) | Sends findings |",
+          "retrievedAt": "2026-09-01T04:29:34.106Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub-cspm",
+      "id": "securityhub-security-hub-cspm-service-config-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "config",
+      "targetLabel": "AWS Config"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "12488d558b19b184f52f27a788f5968beed2ff580f19c29c7a770ad58b3d52ac",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md ::  | column \"Integrated AWS service\"",
+          "quote": "| [Amazon Detective](#integration-amazon-detective) | Receives findings |",
+          "retrievedAt": "2026-09-01T04:29:34.106Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub-cspm",
+      "id": "securityhub-security-hub-cspm-service-detective-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "detective",
+      "targetLabel": "Amazon Detective"
     },
     {
       "axis": "service",
@@ -411,18 +491,18 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
-          "quote": "| Elastic Load Balancing | `AWS::ElasticLoadBalancing::LoadBalancer` |",
-          "retrievedAt": "2026-09-01T04:29:32.884Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-        },
-        {
           "bodySha256": "a34e2631f413904fd812d990389e579fd7a93edb781f1a0be69a5cd6cc15959c",
           "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md ::  | column \"AWS service\"",
           "quote": "| Elastic Load Balancing | `AWS::ElasticLoadBalancing::LoadBalancer`, `AWS::ElasticLoadBalancingV2::Listener`, `AWS::ElasticLoadBalancingV2::LoadBalancer` |",
           "retrievedAt": "2026-09-01T04:29:32.824Z",
           "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+        },
+        {
+          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
+          "quote": "| Elastic Load Balancing | `AWS::ElasticLoadBalancing::LoadBalancer` |",
+          "retrievedAt": "2026-09-01T04:29:32.884Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
         }
       ],
       "extractorId": "md-table",
@@ -498,6 +578,26 @@
       "confidence": 0.9,
       "evidence": [
         {
+          "bodySha256": "12488d558b19b184f52f27a788f5968beed2ff580f19c29c7a770ad58b3d52ac",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md ::  | column \"Integrated AWS service\"",
+          "quote": "| [AWS Firewall Manager](#integration-aws-firewall-manager) | Sends findings |",
+          "retrievedAt": "2026-09-01T04:29:34.106Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub-cspm",
+      "id": "securityhub-security-hub-cspm-service-fms-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "fms",
+      "targetLabel": "AWS Firewall Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
           "bodySha256": "a34e2631f413904fd812d990389e579fd7a93edb781f1a0be69a5cd6cc15959c",
           "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md ::  | column \"AWS service\"",
           "quote": "| AWS Glue | `AWS::Glue::Job` |",
@@ -518,18 +618,58 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
-          "quote": "| AWS Identity and Access Management (IAM) | `AWS::IAM::Policy`, `AWS::IAM::User` |",
-          "retrievedAt": "2026-09-01T04:29:32.884Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-        },
+          "bodySha256": "12488d558b19b184f52f27a788f5968beed2ff580f19c29c7a770ad58b3d52ac",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md ::  | column \"Integrated AWS service\"",
+          "quote": "| [Amazon GuardDuty](#integration-amazon-guardduty) | Sends findings |",
+          "retrievedAt": "2026-09-01T04:29:34.106Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub-cspm",
+      "id": "securityhub-security-hub-cspm-service-guardduty-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "guardduty",
+      "targetLabel": "Amazon GuardDuty"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "12488d558b19b184f52f27a788f5968beed2ff580f19c29c7a770ad58b3d52ac",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md ::  | column \"Integrated AWS service\"",
+          "quote": "| [AWS Health](#integration-health) | Sends findings |",
+          "retrievedAt": "2026-09-01T04:29:34.106Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub-cspm",
+      "id": "securityhub-security-hub-cspm-service-health-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "health",
+      "targetLabel": "AWS Health"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
         {
           "bodySha256": "a34e2631f413904fd812d990389e579fd7a93edb781f1a0be69a5cd6cc15959c",
           "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md ::  | column \"AWS service\"",
           "quote": "| AWS Identity and Access Management (IAM) | `AWS::IAM::Group`, `AWS::IAM::Policy`, `AWS::IAM::Role`, `AWS::IAM::User` |",
           "retrievedAt": "2026-09-01T04:29:32.824Z",
           "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+        },
+        {
+          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
+          "quote": "| AWS Identity and Access Management (IAM) | `AWS::IAM::Policy`, `AWS::IAM::User` |",
+          "retrievedAt": "2026-09-01T04:29:32.884Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
         }
       ],
       "extractorId": "md-table",
@@ -539,6 +679,46 @@
       "status": "covered",
       "targetId": "iam",
       "targetLabel": "AWS Identity and Access Management (IAM)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "12488d558b19b184f52f27a788f5968beed2ff580f19c29c7a770ad58b3d52ac",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md ::  | column \"Integrated AWS service\"",
+          "quote": "| [Amazon Inspector](#integration-amazon-inspector) | Sends findings |",
+          "retrievedAt": "2026-09-01T04:29:34.106Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub-cspm",
+      "id": "securityhub-security-hub-cspm-service-inspector-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "inspector",
+      "targetLabel": "Amazon Inspector"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "12488d558b19b184f52f27a788f5968beed2ff580f19c29c7a770ad58b3d52ac",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md ::  | column \"Integrated AWS service\"",
+          "quote": "| [AWS IoT Device Defender](#integration-iot-device-defender) | Sends findings |",
+          "retrievedAt": "2026-09-01T04:29:34.106Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub-cspm",
+      "id": "securityhub-security-hub-cspm-service-iot-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iot",
+      "targetLabel": "AWS IoT Device Defender"
     },
     {
       "axis": "service",
@@ -585,6 +765,26 @@
       "confidence": 0.9,
       "evidence": [
         {
+          "bodySha256": "12488d558b19b184f52f27a788f5968beed2ff580f19c29c7a770ad58b3d52ac",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md ::  | column \"Integrated AWS service\"",
+          "quote": "| [Amazon Macie](#integration-amazon-macie) | Sends findings |",
+          "retrievedAt": "2026-09-01T04:29:34.106Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub-cspm",
+      "id": "securityhub-security-hub-cspm-service-macie2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "macie2",
+      "targetLabel": "Amazon Macie"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
           "bodySha256": "a34e2631f413904fd812d990389e579fd7a93edb781f1a0be69a5cd6cc15959c",
           "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md ::  | column \"AWS service\"",
           "quote": "| Amazon MQ | `AWS::AmazonMQ::Broker` |",
@@ -605,18 +805,18 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
-          "quote": "| AWS Network Firewall | `AWS::NetworkFirewall::FirewallPolicy`, `AWS::NetworkFirewall::RuleGroup` |",
-          "retrievedAt": "2026-09-01T04:29:32.884Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-        },
-        {
           "bodySha256": "a34e2631f413904fd812d990389e579fd7a93edb781f1a0be69a5cd6cc15959c",
           "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md ::  | column \"AWS service\"",
           "quote": "| AWS Network Firewall | `AWS::NetworkFirewall::Firewall`, `AWS::NetworkFirewall::FirewallPolicy`, `AWS::NetworkFirewall::RuleGroup` |",
           "retrievedAt": "2026-09-01T04:29:32.824Z",
           "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+        },
+        {
+          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
+          "quote": "| AWS Network Firewall | `AWS::NetworkFirewall::FirewallPolicy`, `AWS::NetworkFirewall::RuleGroup` |",
+          "retrievedAt": "2026-09-01T04:29:32.884Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
         }
       ],
       "extractorId": "md-table",
@@ -712,6 +912,26 @@
       "confidence": 0.9,
       "evidence": [
         {
+          "bodySha256": "12488d558b19b184f52f27a788f5968beed2ff580f19c29c7a770ad58b3d52ac",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md ::  | column \"Integrated AWS service\"",
+          "quote": "| [Amazon Security Lake](#integration-security-lake) | Receives findings |",
+          "retrievedAt": "2026-09-01T04:29:34.106Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub-cspm",
+      "id": "securityhub-security-hub-cspm-service-securitylake-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securitylake",
+      "targetLabel": "Amazon Security Lake"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
           "bodySha256": "a34e2631f413904fd812d990389e579fd7a93edb781f1a0be69a5cd6cc15959c",
           "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md ::  | column \"AWS service\"",
           "quote": "| AWS Service Catalog | `AWS::ServiceCatalog::Portfolio` |",
@@ -752,18 +972,38 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
-          "quote": "| AWS WAF | `AWS::WAFv2::RuleGroup` |",
-          "retrievedAt": "2026-09-01T04:29:32.884Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-        },
+          "bodySha256": "12488d558b19b184f52f27a788f5968beed2ff580f19c29c7a770ad58b3d52ac",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md ::  | column \"Integrated AWS service\"",
+          "quote": "| [AWS Trusted Advisor](#integration-trusted-advisor) | Receives findings |",
+          "retrievedAt": "2026-09-01T04:29:34.106Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "securityhub/security-hub-cspm",
+      "id": "securityhub-security-hub-cspm-service-trustedadvisor-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "trustedadvisor",
+      "targetLabel": "AWS Trusted Advisor"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
         {
           "bodySha256": "a34e2631f413904fd812d990389e579fd7a93edb781f1a0be69a5cd6cc15959c",
           "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md ::  | column \"AWS service\"",
           "quote": "| AWS WAF | `AWS::WAF::Rule`, `AWS::WAF::RuleGroup`, `AWS::WAF::WebACL`, `AWS::WAFRegional::Rule`, `AWS::WAFRegional::RuleGroup`, `AWS::WAFRegional::WebACL`, `AWS::WAFv2::RuleGroup`, `AWS::WAFv2::WebACL` |",
           "retrievedAt": "2026-09-01T04:29:32.824Z",
           "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
+        },
+        {
+          "bodySha256": "67965889810ea702f3773a232a2581bc49889e80acde1a276b6114a07d145482",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md ::  | column \"AWS service\"",
+          "quote": "| AWS WAF | `AWS::WAFv2::RuleGroup` |",
+          "retrievedAt": "2026-09-01T04:29:32.884Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
         }
       ],
       "extractorId": "md-table",
@@ -776,34 +1016,9 @@
     }
   ],
   "featureId": "securityhub/security-hub-cspm",
-  "generatedAt": "2026-09-01T04:41:17.395Z",
+  "generatedAt": "2026-09-01T04:53:52.577Z",
   "serviceId": "securityhub",
   "unresolvedTargets": [
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Key Management Service (AWS KMS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Storage Service (Amazon S3)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Notification Service (Amazon SNS)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Systems Manager (SSM)",
-      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
-    },
     {
       "axis": "service",
       "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
@@ -870,6 +1085,31 @@
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-53.md"
     },
     {
+      "axis": "service",
+      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Key Management Service (AWS KMS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Storage Service (Amazon S3)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Systems Manager (SSM)",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.md"
+    },
+    {
       "axis": "resourceType",
       "raw": "[ AWS CLI ]",
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/controls-configure.md"
@@ -878,6 +1118,26 @@
       "axis": "resourceType",
       "raw": "[ AWS CLI ]",
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/disable-controls-standard.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Route 53 Resolver DNS Firewall",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Systems Manager Patch Manager",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Q Developer in chat applications",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Systems Manager Explorer and OpsCenter",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-internal-providers.md"
     }
   ]
 }

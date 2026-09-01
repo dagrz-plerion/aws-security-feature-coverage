@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-cli-sdk.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "54546ec7b57f3a127a0aef18c33ab21d3179f468be9fa9c06186fbf8e306790f",
+      "locator": "Best practices > Amazon ECS and Amazon EKS",
+      "quote": "[AWS CLI and SDKs](https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-cli-sdk.md)",
+      "retrievedAt": "2026-09-01T04:06:14.107Z",
+      "sourceUrl": "https://docs.aws.amazon.com/neptune/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ecs/aws-cli-and-sdks",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS CLI and SDKs",
+  "serviceId": "ecs",
+  "summary": "By default, the AWS CLI and AWS SDKs time out after 60 seconds and automatically retry failed requests.",
+  "tier": "tier2"
+}

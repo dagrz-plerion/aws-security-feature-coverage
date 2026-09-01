@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshooting-lost-connection.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "40168a9d137882d27d81e97c1cca0c17ceefcd5177947d8edd37426974206ee4",
+      "locator": "Troubleshooting > AWS CloudHSM known issues",
+      "quote": "[Lost connection](https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshooting-lost-connection.md)",
+      "retrievedAt": "2026-09-01T04:06:05.112Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudhsmv2/lost-connection",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Lost connection",
+  "serviceId": "cloudhsmv2",
+  "summary": "Update the AWS CloudHSM client configuration file to restore a lost connection to the HSMs in your AWS CloudHSM cluster.",
+  "tier": "tier1"
+}

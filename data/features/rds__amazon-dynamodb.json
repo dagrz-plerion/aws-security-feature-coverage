@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/configure-client-ddb.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "fe513c5ff926e7b5855e8be27732077db798c7e8cae22b85b23c61fe302d8392",
+      "locator": "Amazon OpenSearch Ingestion > Amazon Aurora",
+      "quote": "[Amazon DynamoDB](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/configure-client-ddb.md)",
+      "retrievedAt": "2026-09-01T04:06:14.653Z",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "rds/amazon-dynamodb",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Amazon DynamoDB",
+  "serviceId": "rds",
+  "summary": "Stream table events from Amazon Amazon DynamoDB to OpenSearch Service using ingestion pipelines to enable real-time search and analytics on your NoSQL data.",
+  "tier": "tier2"
+}

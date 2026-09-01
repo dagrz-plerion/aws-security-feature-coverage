@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonS3/latest/userguide/sal-cw-retention.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "6af0468fb7b562f2ed65105fc6240034b7324b39cae99e364969614447ac7c1e",
+      "locator": "Logging and monitoring > Delivering to CloudWatch Logs",
+      "quote": "[Managing log retention](https://docs.aws.amazon.com/AmazonS3/latest/userguide/sal-cw-retention.md)",
+      "retrievedAt": "2026-09-01T04:06:01.711Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudwatch/log-retention",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "log retention",
+  "serviceId": "cloudwatch",
+  "summary": "When you deliver server access logs to CloudWatch Logs, log retention is controlled by the retention setting on the log group.",
+  "tier": "tier2"
+}

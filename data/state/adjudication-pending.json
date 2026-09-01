@@ -1,6 +1,6 @@
 {
-  "count": 49,
-  "generatedAt": "2026-09-01T04:41:03.258Z",
+  "count": 43,
+  "generatedAt": "2026-09-01T04:53:01.297Z",
   "pending": [
     {
       "score": 5,
@@ -67,14 +67,9 @@
       ]
     },
     {
-      "score": 7,
+      "score": 5,
       "serviceId": "cloudformation",
       "signals": [
-        {
-          "detail": "The name contains \"guard\".",
-          "id": "security-name-weak",
-          "weight": 2
-        },
         {
           "detail": "The IAM service reference marks one or more actions as permission management.",
           "id": "permission-management-actions",
@@ -152,14 +147,9 @@
       ]
     },
     {
-      "score": 7,
+      "score": 5,
       "serviceId": "datazone",
       "signals": [
-        {
-          "detail": "The name contains \"log\".",
-          "id": "security-name-weak",
-          "weight": 2
-        },
         {
           "detail": "The IAM service reference marks one or more actions as permission management.",
           "id": "permission-management-actions",
@@ -185,22 +175,6 @@
           "detail": "53 documentation pages describe security capability, for example \"Configure credentials\".",
           "id": "security-doc-pages",
           "weight": 3
-        }
-      ]
-    },
-    {
-      "score": 7,
-      "serviceId": "directconnect",
-      "signals": [
-        {
-          "detail": "The name contains \"encryption\".",
-          "id": "security-name-strong",
-          "weight": 5
-        },
-        {
-          "detail": "11 documentation pages describe security capability, for example \"Internetwork traffic privacy\".",
-          "id": "security-doc-pages",
-          "weight": 2
         }
       ]
     },
@@ -451,22 +425,6 @@
     },
     {
       "score": 5,
-      "serviceId": "iotsitewise",
-      "signals": [
-        {
-          "detail": "The name contains \"monitor\".",
-          "id": "security-name-weak",
-          "weight": 2
-        },
-        {
-          "detail": "37 documentation pages describe security capability, for example \"Configure authorization using Linux\".",
-          "id": "security-doc-pages",
-          "weight": 3
-        }
-      ]
-    },
-    {
-      "score": 5,
       "serviceId": "kinesisvideo",
       "signals": [
         {
@@ -515,40 +473,8 @@
     },
     {
       "score": 5,
-      "serviceId": "lightsail",
-      "signals": [
-        {
-          "detail": "The name contains \"config\".",
-          "id": "security-name-weak",
-          "weight": 2
-        },
-        {
-          "detail": "28 documentation pages describe security capability, for example \"Firewall ports\".",
-          "id": "security-doc-pages",
-          "weight": 3
-        }
-      ]
-    },
-    {
-      "score": 5,
-      "serviceId": "machinelearning",
-      "signals": [
-        {
-          "detail": "The name contains \"waf\".",
-          "id": "security-name-strong",
-          "weight": 5
-        }
-      ]
-    },
-    {
-      "score": 7,
       "serviceId": "managedblockchain",
       "signals": [
-        {
-          "detail": "The name contains \"access\".",
-          "id": "security-name-weak",
-          "weight": 2
-        },
         {
           "detail": "The IAM service reference marks one or more actions as permission management.",
           "id": "permission-management-actions",
@@ -631,14 +557,9 @@
       ]
     },
     {
-      "score": 7,
+      "score": 5,
       "serviceId": "rds",
       "signals": [
-        {
-          "detail": "The name contains \"backup\".",
-          "id": "security-name-weak",
-          "weight": 2
-        },
         {
           "detail": "The IAM service reference marks one or more actions as permission management.",
           "id": "permission-management-actions",
@@ -678,22 +599,6 @@
         },
         {
           "detail": "82 documentation pages describe security capability, for example \"Assign authorization policies to users and groups within a domain unit\".",
-          "id": "security-doc-pages",
-          "weight": 3
-        }
-      ]
-    },
-    {
-      "score": 5,
-      "serviceId": "scn",
-      "signals": [
-        {
-          "detail": "The name contains \"log\".",
-          "id": "security-name-weak",
-          "weight": 2
-        },
-        {
-          "detail": "15 documentation pages describe security capability, for example \"Data protection\".",
           "id": "security-doc-pages",
           "weight": 3
         }
@@ -790,30 +695,9 @@
       ]
     },
     {
-      "score": 8,
-      "serviceId": "transfer",
-      "signals": [
-        {
-          "detail": "The name contains \"threat\".",
-          "id": "security-name-strong",
-          "weight": 5
-        },
-        {
-          "detail": "26 documentation pages describe security capability, for example \"Detect Malware Threats Using AWS Transfer Family\".",
-          "id": "security-doc-pages",
-          "weight": 3
-        }
-      ]
-    },
-    {
-      "score": 7,
+      "score": 5,
       "serviceId": "workspaces",
       "signals": [
-        {
-          "detail": "The name contains \"log\".",
-          "id": "security-name-weak",
-          "weight": 2
-        },
         {
           "detail": "The IAM service reference marks one or more actions as permission management.",
           "id": "permission-management-actions",

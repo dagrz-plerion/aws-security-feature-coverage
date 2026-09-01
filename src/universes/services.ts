@@ -341,7 +341,11 @@ export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUn
       ...(guide.llmsTxt ? { llmsTxt: guide.llmsTxt } : {}),
       ...(guide.description ? { description: guide.description } : {}),
     });
-    service.names.push(guide.title.replace(STOP_SUFFIXES, "").trim());
+    // Only a guide that joined by its own prefix contributes a name. A guide matched
+    // loosely (a tutorial, an exam guide, an architecture diagram) names a document,
+    // not a service, and letting it through pollutes every later name match.
+    const joinedByPrefix = GUIDE_PREFIX_OVERRIDES[prefix] !== undefined || services.has(prefix.toLowerCase());
+    if (joinedByPrefix) service.names.push(guide.title.replace(STOP_SUFFIXES, "").trim());
     if (service.evidence.length < 8) {
       service.evidence.push(makeEvidence(guidesResult, guide.title, `docs llms.txt guide ${guide.guideKey}`));
     }

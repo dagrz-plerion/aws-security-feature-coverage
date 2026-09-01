@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshoot-sdk5-key-replicate-failures.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "40168a9d137882d27d81e97c1cca0c17ceefcd5177947d8edd37426974206ee4",
+      "locator": "Troubleshooting > AWS CloudHSM known issues",
+      "quote": "[Client SDK 5 key replicate failures](https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshoot-sdk5-key-replicate-failures.md)",
+      "retrievedAt": "2026-09-01T04:06:05.112Z",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudhsmv2/client-sdk-5-key-replicate-failures",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Client SDK 5 key replicate failures",
+  "serviceId": "cloudhsmv2",
+  "summary": "The key replicate command in the CloudHSM CLI replicates a key from a source AWS CloudHSM cluster to a destination AWS CloudHSM cluster.",
+  "tier": "tier1"
+}

@@ -4,24 +4,14 @@
   ],
   "confidence": 0.85,
   "discoveredBy": [
-    "attributed-page",
     "guide-chapter",
     "guide-subchapter"
   ],
   "docUrls": [
-    "https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-ash.md",
     "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-concepts.md",
-    "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-setup-prereqs.md",
-    "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-enable-security-hub.md"
+    "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-setup-prereqs.md"
   ],
   "evidence": [
-    {
-      "bodySha256": "12cf1ae4a0a2ec66da2a335e3958099234da5dec408614dcb0dca7b43329c214",
-      "locator": "Supported data sources",
-      "quote": "[AWS Security Hub CSPM](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources-ash.md)",
-      "retrievedAt": "2026-09-01T04:06:03.320Z",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/llms.txt"
-    },
     {
       "bodySha256": "523cf91442799d3876d3e185827b703b5b416262b5cb9b2ff2ef194c5722273a",
       "locator": "AWS Security Hub CSPM > Enabling Security Hub CSPM",
@@ -35,13 +25,6 @@
       "quote": "[Concepts](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-concepts.md)",
       "retrievedAt": "2026-09-01T04:06:18.321Z",
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/llms.txt"
-    },
-    {
-      "bodySha256": "4f64722f627b4b796720af8a22bd6fc7e276b528c3cb721e9bab48cf80f4e8b5",
-      "locator": "Automation Runbook Reference > Security Hub CSPM",
-      "quote": "[AWSConfigRemediation-EnableSecurityHub](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-enable-security-hub.md)",
-      "retrievedAt": "2026-09-01T04:06:19.357Z",
-      "sourceUrl": "https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/llms.txt"
     }
   ],
   "id": "securityhub/security-hub-cspm",
@@ -49,6 +32,6 @@
   "method": "deterministic",
   "name": "Security Hub CSPM",
   "serviceId": "securityhub",
-  "summary": "Review a list of the supported Security Hub CSPM controls that Audit Manager can collect findings for.",
+  "summary": "Enabling and configuring AWS Config is required to receive Security Hub CSPM control findings.",
   "tier": "tier1"
 }

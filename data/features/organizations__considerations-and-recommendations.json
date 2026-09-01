@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/macie/latest/user/accounts-mgmt-ao-notes.md",
+    "https://docs.aws.amazon.com/security-ir/latest/userguide/considerations_important.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "b0c7ddf7411249e915067439ba54eca7e3f97b07297d1da0b5fd3ccc4140b0f1",
+      "locator": "Managing multiple accounts > Managing accounts with AWS Organizations",
+      "quote": "[Considerations and recommendations](https://docs.aws.amazon.com/macie/latest/user/accounts-mgmt-ao-notes.md)",
+      "retrievedAt": "2026-09-01T04:06:12.700Z",
+      "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/llms.txt"
+    },
+    {
+      "bodySha256": "647e42cd53ba31746d438489345338ab5968e7eb4a8b3d29145d0a17d1512021",
+      "locator": "Managing accounts with AWS Organizations",
+      "quote": "[Considerations and recommendations](https://docs.aws.amazon.com/security-ir/latest/userguide/considerations_important.md)",
+      "retrievedAt": "2026-09-01T04:06:18.185Z",
+      "sourceUrl": "https://docs.aws.amazon.com/security-ir/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "organizations/considerations-and-recommendations",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Considerations and recommendations",
+  "serviceId": "organizations",
+  "summary": "Consider these requirements and recommendations for configuring and managing Amazon Macie accounts for an organization in AWS Organizations.",
+  "tier": "tier2"
+}

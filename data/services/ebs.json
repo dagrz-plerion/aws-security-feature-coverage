@@ -1,7 +1,7 @@
 {
-  "candidate": true,
-  "confidence": 0.6,
-  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:53:01.297Z",
   "evidence": [
     {
       "bodySha256": "8d5cc0283206e636a9b5171e36436208532df31967734035f02a1036da0ff666",
@@ -19,16 +19,9 @@
     }
   ],
   "method": "deterministic",
-  "promoted": true,
-  "reason": "Weak security signal only (score 2: security-name-weak). Scanned at low priority. Promoted to tier 2: 21 named security features were found in its documentation.",
-  "score": 2,
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
   "serviceId": "ebs",
-  "signals": [
-    {
-      "detail": "The name contains \"backup\".",
-      "id": "security-name-weak",
-      "weight": 2
-    }
-  ],
-  "tier": "tier2"
+  "signals": [],
+  "tier": "not-security"
 }

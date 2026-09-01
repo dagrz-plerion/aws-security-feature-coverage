@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/ddb-searchable-encryption.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "575a3521bbd0e46aaee6cfc8a1315898d50c8b888b58f652e112ec4b05f0e21f",
+      "locator": "Amazon DynamoDB",
+      "quote": "[Searchable encryption in DynamoDB](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/ddb-searchable-encryption.md)",
+      "retrievedAt": "2026-09-01T04:06:06.483Z",
+      "sourceUrl": "https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "dynamodb/searchable-encryption-in-dynamodb",
+  "kind": "encryption",
+  "method": "deterministic",
+  "name": "Searchable encryption in DynamoDB",
+  "serviceId": "dynamodb",
+  "summary": "To configure your Amazon DynamoDB tables for searchable encryption, you must use the AWS KMS Hierarchical keyring to generate, encrypt, and decrypt the data keys used to protect your items.",
+  "tier": "tier2"
+}

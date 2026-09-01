@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-alertmanager-receiver-JSON.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "28534e200bc566d6b9b6de879eb94f84f4133554ee9d9c95d64e436e79fd0e8a",
+      "locator": "Alert manager > Amazon SNS",
+      "quote": "[Send messages as JSON](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-alertmanager-receiver-JSON.md)",
+      "retrievedAt": "2026-09-01T04:06:15.634Z",
+      "sourceUrl": "https://docs.aws.amazon.com/prometheus/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "sns/send-messages-as-json",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Send messages as JSON",
+  "serviceId": "sns",
+  "summary": "Learn how to configure alert manager to send Amazon Managed Service for Prometheus alerts in JSON rather than plain text.",
+  "tier": "tier2"
+}

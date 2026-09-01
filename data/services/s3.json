@@ -1,7 +1,7 @@
 {
   "candidate": true,
   "confidence": 0.85,
-  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "decidedAt": "2026-09-01T04:53:01.297Z",
   "evidence": [
     {
       "bodySha256": "3b21de4e8a34a1b730c94c360682bc408dd084cf2d67f8e9bd509163c1b0b67f",
@@ -20,14 +20,9 @@
   ],
   "method": "llm",
   "reason": "S3 carries Block Public Access, bucket policies, default encryption and Object Lock, but it is a storage service.",
-  "score": 10,
+  "score": 5,
   "serviceId": "s3",
   "signals": [
-    {
-      "detail": "The name contains \"encryption\".",
-      "id": "security-name-strong",
-      "weight": 5
-    },
     {
       "detail": "The IAM service reference marks one or more actions as permission management.",
       "id": "permission-management-actions",

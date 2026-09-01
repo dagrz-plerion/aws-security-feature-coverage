@@ -1,0 +1,36 @@
+{
+  "aliases": [
+    "log file entries"
+  ],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/eks/latest/userguide/understanding-service-name-entries.md",
+    "https://docs.aws.amazon.com/neptune/latest/userguide/cloudtrail.CloudTrail_Events.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "daa7d251c6281e980634dbc5c455c8ed531244295a5db277294b4f9769077fda",
+      "locator": "Monitor clusters > AWS CloudTrail",
+      "quote": "[Log file entries](https://docs.aws.amazon.com/eks/latest/userguide/understanding-service-name-entries.md)",
+      "retrievedAt": "2026-09-01T04:06:07.864Z",
+      "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/llms.txt"
+    },
+    {
+      "bodySha256": "54546ec7b57f3a127a0aef18c33ab21d3179f468be9fa9c06186fbf8e306790f",
+      "locator": "Monitoring Neptune > Logging Neptune API Calls with AWS CloudTrail",
+      "quote": "[Understanding log file entries](https://docs.aws.amazon.com/neptune/latest/userguide/cloudtrail.CloudTrail_Events.md)",
+      "retrievedAt": "2026-09-01T04:06:14.107Z",
+      "sourceUrl": "https://docs.aws.amazon.com/neptune/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "cloudtrail/log-file-entries",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "Log file entries",
+  "serviceId": "cloudtrail",
+  "summary": "A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify.",
+  "tier": "tier1"
+}

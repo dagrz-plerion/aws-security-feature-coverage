@@ -21,7 +21,15 @@ export type FeatureCandidate = {
 };
 
 /** Enum shapes whose values name capabilities rather than states. */
-const FEATURE_ENUM_SHAPE = /(Feature|ScanType|Protection|DataSource|AnalyzerType|PolicyType|StandardsControl|ControlStatus|Coverage)/;
+/**
+ * The shape must END with one of these. Matching anywhere caught CoverageSortKey
+ * and CoverageStatus, whose values are sort keys and states, not capabilities.
+ */
+const FEATURE_ENUM_SHAPE =
+  /(Feature|Features|ScanType|ScanTypes|DataSource|DataSources|AnalyzerType|PolicyType|ProtectionPlan|ProtectionType|StandardsControl)$/;
+/** Above this many values, an enum is a taxonomy rather than a set of capabilities. */
+const MAX_CAPABILITY_ENUM = 15;
+
 /** Shape names that describe a setting the API can switch on or off. */
 const TOGGLE_SHAPE = /(Preference|Preferences|Setting|Settings)$/;
 
@@ -60,6 +68,9 @@ const GENERIC_NAME = new Set([
 function isTooGeneric(name: string): boolean {
   const words = name.toLowerCase().split(/\s+/);
   if (words.length === 1) return true;
+  // Three words are specific enough even when each one is common on its own:
+  // "service control policies" is a real feature, "access control" is not.
+  if (words.length > 2) return false;
   return words.every((w) => GENERIC_NAME.has(w));
 }
 
@@ -73,6 +84,9 @@ function looksLikeSentence(name: string): boolean {
 
 const LEADING_VERB =
   /^(configuring|configure|using|use|working with|work with|setting up|set up|managing|manage|enabling|enable|disabling|disable|understanding|understand|reviewing|review|archiving|archive|filtering|filter|resolving|resolve|previewing|preview|monitoring|monitor|how)\s+(?:(?:an?|the|your)\s+)?/i;
+
+/** After a verb is stripped, a leading joining word means we cut a phrase in half. */
+const DANGLING_START = /^(and|or|for|with|in|to|by|of|the|a|an|from|on|at|as|that|which)\b/i;
 
 function normaliseName(raw: string): string {
   return raw
@@ -99,6 +113,8 @@ function makeGuideEvidence(guide: GuideIndex, body: string | undefined, page: Do
 
 export type ExtractInput = {
   serviceId: string;
+  /** Published names of the service, used to anchor features inside a borrowed guide. */
+  serviceNames: string[];
   tier: SecurityTier;
   /** Pages attributed to this service, grouped by the guide they came from. */
   attributions: { guide: GuideIndex; pages: DocPage[] }[];
@@ -116,6 +132,7 @@ export async function extractFeatureCandidates(input: ExtractInput): Promise<Fea
     const name = normaliseName(candidate.name);
     if (!name || name.length < 3 || name.length > 70) return;
     if (isTooGeneric(name)) return;
+    if (DANGLING_START.test(name)) return;
     if (isStructural(name)) return;
     if (looksLikeSentence(name)) return;
     out.push({ ...candidate, name, id: featureId(input.serviceId, name) });
@@ -205,14 +222,22 @@ export async function extractFeatureCandidates(input: ExtractInput): Promise<Fea
     // A2. When a service is documented inside another service's guide, the pages
     //     attributed to it are its own chapters.
     if (!ownsGuide && pages.length > 0) {
+      const ownNames = input.serviceNames.map((n) => n.toLowerCase());
+      const namesThisService = (text: string): boolean => {
+        const lower = text.toLowerCase();
+        return ownNames.some((n) => n.length >= 6 && lower.includes(n));
+      };
       const borrowed = new Map<string, DocPage>();
       for (const page of pages) {
-        const deepest = page.section.at(-1);
-        const label = deepest && !isStructural(deepest) ? deepest : page.title;
+        // The heading that names this service is the anchor. Its child is the feature.
+        const anchor = page.section.findIndex((s) => namesThisService(s));
+        let label: string | undefined;
+        if (anchor >= 0) label = page.section[anchor + 1] ?? page.title;
+        else if (matchesNamedControl(page.title)) label = page.title;
+        if (!label || isStructural(label)) continue;
         if (!borrowed.has(label)) borrowed.set(label, page);
       }
       for (const [label, page] of borrowed) {
-        if (isStructural(label)) continue;
         push({
           serviceId: input.serviceId,
           name: label,
@@ -310,6 +335,9 @@ export async function extractFeatureCandidates(input: ExtractInput): Promise<Fea
     const body = await readRawBody(api.bodySha256);
     for (const [shapeName, shape] of Object.entries(api.model.shapes)) {
       if (!shape.enum || !FEATURE_ENUM_SHAPE.test(shapeName)) continue;
+      // A capability list is short. ApplicationPolicyType has forty values because
+      // it is a taxonomy of certificate purposes, not a list of features.
+      if (shape.enum.length > MAX_CAPABILITY_ENUM) continue;
       for (const value of shape.enum) {
         if (STATE_ENUM_VALUE.test(value)) continue;
         const name = value.replace(/_/g, " ").toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());

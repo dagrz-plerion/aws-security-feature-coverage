@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc-bastion-host.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "106a2bb833633da9096cc4076ba40e7e82f6128a8ed64a5f15962696afcb4a72",
+      "locator": "Integrating AWS services > Amazon VPC",
+      "quote": "[Bastion hosts](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc-bastion-host.md)",
+      "retrievedAt": "2026-09-01T04:06:07.968Z",
+      "sourceUrl": "https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/llms.txt"
+    }
+  ],
+  "id": "ec2/bastion-hosts",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Bastion hosts",
+  "serviceId": "ec2",
+  "summary": "To connect to your instances, you need to create and connect to a bastion host in your public subnet.",
+  "tier": "tier2"
+}

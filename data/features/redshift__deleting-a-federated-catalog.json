@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/lake-formation/latest/dg/delete-rs-fed-catalog.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "f4c2e2bbf4522b4fdb451f2e5b39ccca48ee6f29b7591e07d303dcf2881cde89",
+      "locator": "Bringing your data into the Data Catalog > Bringing Amazon Redshift data into the Data Catalog",
+      "quote": "[Deleting a federated catalog](https://docs.aws.amazon.com/lake-formation/latest/dg/delete-rs-fed-catalog.md)",
+      "retrievedAt": "2026-09-01T04:06:12.057Z",
+      "sourceUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/llms.txt"
+    }
+  ],
+  "id": "redshift/deleting-a-federated-catalog",
+  "kind": "logging",
+  "method": "deterministic",
+  "name": "Deleting a federated catalog",
+  "serviceId": "redshift",
+  "summary": "You can delete the federated catalogs that you created in the AWS Glue Data Catalog using the glue:DeleteCatalog operation or the AWS Lake Formation console.",
+  "tier": "tier2"
+}

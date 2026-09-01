@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user-privileged-task.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "0545bfec709c10797d4e76b5baba1b22a597e8bbbf46b49e7498c537ba25a24f",
+      "locator": "Identities > AWS account root user",
+      "quote": "[Perform a privileged task](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user-privileged-task.md)",
+      "retrievedAt": "2026-09-01T04:06:01.738Z",
+      "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/llms.txt"
+    }
+  ],
+  "id": "account/perform-a-privileged-task",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Perform a privileged task",
+  "serviceId": "account",
+  "summary": "The AWS Organizations management account or a delegated administrator account for IAM can perform some privileged tasks on member accounts that would otherwise require root user credentials.",
+  "tier": "tier2"
+}

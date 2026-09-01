@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-non-root-behavior.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "e8920401360814f75558084d9a8d532cb690ae882f7b0b55c7379f24767f87bf",
+      "locator": "Task definitions > Amazon EBS",
+      "quote": "[Non-root user behavior](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-non-root-behavior.md)",
+      "retrievedAt": "2026-09-01T04:06:01.290Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "ec2/non-root-user-behavior",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Non-root user behavior",
+  "serviceId": "ec2",
+  "summary": "When you specify a non-root user in your container definition, Amazon ECS automatically configures the Amazon EBS volume with group-based permissions that allow the specified user to read and write to the volume.",
+  "tier": "tier2"
+}

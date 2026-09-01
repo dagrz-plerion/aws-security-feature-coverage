@@ -1,7 +1,7 @@
 {
   "candidate": false,
   "confidence": 0.2,
-  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "decidedAt": "2026-09-01T04:53:01.297Z",
   "evidence": [
     {
       "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
@@ -20,14 +20,9 @@
   ],
   "method": "deterministic",
   "reason": "This entry did not join to an AWS service id, so it is held for alias review rather than classified.",
-  "score": 4,
+  "score": 2,
   "serviceId": "doc:elemental-statmux",
   "signals": [
-    {
-      "detail": "The name contains \"config\".",
-      "id": "security-name-weak",
-      "weight": 2
-    },
     {
       "detail": "4 documentation pages describe security capability, for example \"Open Ports on the Firewall\".",
       "id": "security-doc-pages",

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/aurora-denormalized-joins.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "fe513c5ff926e7b5855e8be27732077db798c7e8cae22b85b23c61fe302d8392",
+      "locator": "Amazon OpenSearch Ingestion > Amazon Aurora",
+      "quote": "[Joining data from multiple tables](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/aurora-denormalized-joins.md)",
+      "retrievedAt": "2026-09-01T04:06:14.653Z",
+      "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/llms.txt"
+    }
+  ],
+  "id": "rds/joining-data-from-multiple-tables",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Joining data from multiple tables",
+  "serviceId": "rds",
+  "summary": "The joins configuration in the RDS source plugin enables automatic denormalization of normalized relational tables into single OpenSearch documents.",
+  "tier": "tier2"
+}

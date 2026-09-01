@@ -1,7 +1,7 @@
 {
   "candidate": true,
   "confidence": 0.4,
-  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "decidedAt": "2026-09-01T04:53:01.297Z",
   "evidence": [
     {
       "bodySha256": "f501fc920eea3a262f67f278423b1185f66d3152b2cf1c4644c13bb9ba14754c",
@@ -12,8 +12,7 @@
     }
   ],
   "method": "deterministic",
-  "promoted": true,
-  "reason": "Security signals present (score 3: security-name-weak, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 1 named security features were found in its documentation.",
+  "reason": "Security signals present (score 3: security-name-weak, security-doc-pages). Scanning for a named security feature before any tier is given.",
   "score": 3,
   "serviceId": "bedrock-agentcore-control",
   "signals": [
@@ -28,5 +27,5 @@
       "weight": 1
     }
   ],
-  "tier": "tier2"
+  "tier": "not-security"
 }

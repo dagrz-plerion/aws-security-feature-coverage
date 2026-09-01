@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/guardduty/latest/ug/delete-member-accounts-guardduty-organization.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "3ddece1bd1b140842141362e4adea0c0415850ead561cd1a6797e3bac48bc3fc",
+      "locator": "Multiple accounts in GuardDuty > Managing accounts with AWS Organizations",
+      "quote": "[Deleting member accounts from GuardDuty organization](https://docs.aws.amazon.com/guardduty/latest/ug/delete-member-accounts-guardduty-organization.md)",
+      "retrievedAt": "2026-09-01T04:06:10.249Z",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/llms.txt"
+    }
+  ],
+  "id": "organizations/deleting-member-accounts-from-guardduty-organization",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Deleting member accounts from GuardDuty organization",
+  "serviceId": "organizations",
+  "summary": "As a delegated GuardDuty administrator account, after you have disassociated a member account and you no longer want to keep that member account in the GuardDuty organization, you can delete that member account from your GuardDuty organization.",
+  "tier": "tier2"
+}

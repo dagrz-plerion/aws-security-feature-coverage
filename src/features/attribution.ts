@@ -17,24 +17,57 @@ const GENERIC_PHRASES = new Set([
   "console", "api", "sdk", "cli", "guide", "user guide", "developer guide",
 ]);
 
+/**
+ * Only a service's full published name may claim a page. A stripped variant is too
+ * weak: "machine learning" appears in every SageMaker heading, and letting Amazon
+ * Machine Learning claim those pages gave it 173 features that are not its own.
+ */
 function phrasesFor(service: Service): string[] {
   const raw = [service.productName, ...service.names].filter((n): n is string => Boolean(n));
   const out = new Set<string>();
   for (const name of raw) {
-    const clean = name
+    const cleaned = name
       .replace(/\s*\(.*?\)\s*/g, " ")
       .replace(/\s+/g, " ")
       .trim()
       .toLowerCase();
-    if (!clean || GENERIC_PHRASES.has(clean)) continue;
-    const words = clean.split(" ");
-    if (words.length < 2 && clean.length < 8) continue;
-    out.add(clean);
-    // Drop a leading vendor word so "amazon detective" also matches "detective".
-    const stripped = clean.replace(/^(amazon|aws)\s+/, "");
-    if (stripped !== clean && (stripped.split(" ").length >= 2 || stripped.length >= 8)) out.add(stripped);
+    if (!cleaned || GENERIC_PHRASES.has(cleaned)) continue;
+    if (cleaned.split(" ").length < 2 && cleaned.length < 8) continue;
+    if (looksLikeDocumentTitle(cleaned)) continue;
+    if (canClaim(cleaned)) out.add(cleaned);
+    const stripped = cleaned.replace(/^(amazon|aws)\s+/, "").trim();
+    if (stripped !== cleaned && isDistinctive(stripped)) out.add(stripped);
   }
   return [...out];
+}
+
+/**
+ * A phrase may claim a page only when it could not be ordinary English. A vendor
+ * word is enough ("aws shield"); otherwise the phrase must be distinctive.
+ * "machine learning" is neither, and it collected the whole SageMaker guide.
+ */
+function canClaim(phrase: string): boolean {
+  if (/\b(aws|amazon)\b/.test(phrase)) return true;
+  return isDistinctive(phrase);
+}
+
+/** Exam guides, tutorials and architecture diagrams name documents, not services. */
+function looksLikeDocumentTitle(phrase: string): boolean {
+  if (phrase.split(" ").length > 6) return true;
+  return /(exam guide|architecture diagram|hands-on|tutorial|whitepaper|release notes|:|reference architecture)/.test(phrase);
+}
+
+/**
+ * A name without its vendor word may still claim a page, but only when it could not
+ * be ordinary English. "route 53 resolver" and "guardduty" qualify; "machine
+ * learning" does not, and letting it through gave Amazon Machine Learning 173
+ * features lifted from the SageMaker guide.
+ */
+function isDistinctive(phrase: string): boolean {
+  const tokens = phrase.split(" ").filter(Boolean);
+  if (tokens.length >= 3) return true;
+  if (/\d/.test(phrase)) return true;
+  return tokens.some((t) => t.length >= 9);
 }
 
 /**
@@ -110,11 +143,25 @@ export function attributeGuides(
       if (!ownerByGuideKey.has(key)) ownerByGuideKey.set(key, service.id);
     }
   }
+  // A guide whose prefix names a service belongs to it, even when the service
+  // universe did not join the two.
+  const serviceIds = new Set(services.map((s) => s.id));
+  const flat = new Map<string, string>();
+  for (const id of serviceIds) flat.set(id.replace(/[^a-z0-9]/g, ""), id);
 
   const result = new Map<string, Attribution[]>();
+  let unowned = 0;
   for (const guide of guides) {
     if (!isCapabilityGuide(guide.guideKey)) continue;
-    const owner = ownerByGuideKey.get(guide.guideKey) ?? "";
+    const prefix = (guide.guideKey.split("/")[0] ?? "").toLowerCase().replace(/[^a-z0-9]/g, "");
+    const owner = ownerByGuideKey.get(guide.guideKey) ?? flat.get(prefix) ?? "";
+    // A guide nobody owns must not have its pages handed out to whichever service
+    // happens to share a word with a heading. That is how Amazon Machine Learning
+    // collected the SageMaker guide.
+    if (!owner) {
+      unowned += 1;
+      continue;
+    }
     const buckets = new Map<string, DocPage[]>();
     for (const page of guide.pages) {
       for (const serviceId of attributePage(page, owner, phrases)) {
@@ -131,5 +178,9 @@ export function attributeGuides(
       else result.set(serviceId, [attribution]);
     }
   }
+  if (unowned > 0) unownedGuideCount = unowned;
   return result;
 }
+
+/** Guides skipped in the last run because no service claimed them. */
+export let unownedGuideCount = 0;

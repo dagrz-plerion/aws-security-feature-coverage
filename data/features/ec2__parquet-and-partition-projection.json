@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/athena/latest/ug/vpc-flow-logs-partition-projection-parquet-example.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "baac4979e3329df2b3d5b05e1169bcb2776243e0450182873d78fbc2228be215",
+      "locator": "Use Athena SQL > Amazon VPC",
+      "quote": "[Use Parquet and partition projection](https://docs.aws.amazon.com/athena/latest/ug/vpc-flow-logs-partition-projection-parquet-example.md)",
+      "retrievedAt": "2026-09-01T04:06:03.348Z",
+      "sourceUrl": "https://docs.aws.amazon.com/athena/latest/ug/llms.txt"
+    }
+  ],
+  "id": "ec2/parquet-and-partition-projection",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Parquet and partition projection",
+  "serviceId": "ec2",
+  "summary": "The following partition projection CREATE TABLE statement for VPC flow logs is in Apache Parquet format, not Hive compatible, and partitioned by hour and by date instead of day.",
+  "tier": "tier2"
+}

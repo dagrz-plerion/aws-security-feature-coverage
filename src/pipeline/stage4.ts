@@ -9,7 +9,7 @@ import { extractFeatureCandidates } from "../features/extract.js";
 import { mergeCandidates } from "../features/merge.js";
 import { readGuideIndex } from "../sources/guidePages.js";
 import type { GuideIndex } from "../sources/guidePages.js";
-import { attributeGuides } from "../features/attribution.js";
+import { attributeGuides, unownedGuideCount } from "../features/attribution.js";
 import { guideKeyFromUrl } from "../sources/docsIndex.js";
 import type { Stage, StageResult } from "../core/runner.js";
 import { adjudicationSchema } from "../core/schema.js";
@@ -39,6 +39,14 @@ export const stage4: Stage = {
     const inScopeIds = new Set(inScope.map((a) => a.serviceId));
     const attributions = attributeGuides(services, guides, inScopeIds);
     ctx.log(`  ${guides.length} guides loaded, pages attributed across ${attributions.size} services`);
+    if (unownedGuideCount > 0) {
+      await recordGap({
+        kind: "alias",
+        subject: "guides with no owning service",
+        detail: `${unownedGuideCount} capability guides were skipped because no service claimed them. Their features are missing until the guide joins to a service.`,
+        suggestedStage: "stage1-universes",
+      });
+    }
 
     const allFeatures: Feature[] = [];
     const promoted: string[] = [];
@@ -55,6 +63,7 @@ export const stage4: Stage = {
       const candidates = await extractFeatureCandidates({
         serviceId: adjudication.serviceId,
         tier: adjudication.tier,
+        serviceNames: [service.productName, ...service.names].filter((n): n is string => Boolean(n)),
         attributions: serviceAttributions,
         ...(apiModel ? { apiModel } : {}),
       });

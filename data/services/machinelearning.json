@@ -1,7 +1,7 @@
 {
-  "candidate": true,
-  "confidence": 0.4,
-  "decidedAt": "2026-09-01T04:41:03.258Z",
+  "candidate": false,
+  "confidence": 0.9,
+  "decidedAt": "2026-09-01T04:53:01.297Z",
   "evidence": [
     {
       "bodySha256": "4cc4495c2adf5f0511bd866d215962ee8981d9a5f79a2ee217b8b09174e582fe",
@@ -19,16 +19,9 @@
     }
   ],
   "method": "deterministic",
-  "promoted": true,
-  "reason": "Security signals present (score 5: security-name-strong). Scanning for a named security feature before any tier is given. Promoted to tier 2: 173 named security features were found in its documentation.",
-  "score": 5,
+  "reason": "No security signal of any kind in the name, the IAM actions, or the documentation.",
+  "score": 0,
   "serviceId": "machinelearning",
-  "signals": [
-    {
-      "detail": "The name contains \"waf\".",
-      "id": "security-name-strong",
-      "weight": 5
-    }
-  ],
-  "tier": "tier2"
+  "signals": [],
+  "tier": "not-security"
 }

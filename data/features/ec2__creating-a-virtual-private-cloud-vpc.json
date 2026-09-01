@@ -1,0 +1,34 @@
+{
+  "aliases": [],
+  "confidence": 0.6,
+  "discoveredBy": [
+    "attributed-page"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/VPCs.CreatingVPC.md",
+    "https://docs.aws.amazon.com/memorydb/latest/devguide/VPCs.creatingVPC.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "679a75379fa079e68ebe6ce667fe2c7210161070f0e920ac3d995b961ac2446e",
+      "locator": "Security > Amazon VPCs and ElastiCache security",
+      "quote": "[Creating a Virtual Private Cloud (VPC)](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/VPCs.CreatingVPC.md)",
+      "retrievedAt": "2026-09-01T04:06:01.503Z",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/llms.txt"
+    },
+    {
+      "bodySha256": "7b2b06b4778b369411ccaa88919c29f527b20dd81679c0ddcb34751770858337",
+      "locator": "Security > MemoryDB and Amazon VPC",
+      "quote": "[Creating a Virtual Private Cloud (VPC)](https://docs.aws.amazon.com/memorydb/latest/devguide/VPCs.creatingVPC.md)",
+      "retrievedAt": "2026-09-01T04:06:13.430Z",
+      "sourceUrl": "https://docs.aws.amazon.com/memorydb/latest/devguide/llms.txt"
+    }
+  ],
+  "id": "ec2/creating-a-virtual-private-cloud-vpc",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "Creating a Virtual Private Cloud (VPC)",
+  "serviceId": "ec2",
+  "summary": "Create a virtual private cloud with a private subnet for each Availability Zone.",
+  "tier": "tier2"
+}
