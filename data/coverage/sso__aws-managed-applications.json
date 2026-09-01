@@ -5,19 +5,19 @@
   "claims": [
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS DevOps Agent | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-aidevops-md-table",
+      "id": "sso-aws-managed-applications-service-aidevops-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "aidevops",
@@ -25,19 +25,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS DevOps Agent | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-aidevops-trusted-identity-propagation-recipe-identity-center-trusted-identity-propa",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "aidevops",
+      "targetLabel": "AWS DevOps Agent"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS DevOps Agent | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-aidevops-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "aidevops",
+      "targetLabel": "AWS DevOps Agent"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS App Studio  | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-appstudio-md-table",
+      "id": "sso-aws-managed-applications-service-appstudio-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "appstudio",
@@ -45,19 +95,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS App Studio  | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-appstudio-trusted-identity-propagation-recipe-identity-center-trusted-identity-prop",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "appstudio",
+      "targetLabel": "AWS App Studio"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS App Studio  | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-appstudio-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "not-covered",
+      "targetId": "appstudio",
+      "targetLabel": "AWS App Studio"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon CodeCatalyst | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-codecatalyst-md-table",
+      "id": "sso-aws-managed-applications-service-codecatalyst-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "codecatalyst",
@@ -65,19 +165,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon CodeCatalyst | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-codecatalyst-trusted-identity-propagation-recipe-identity-center-trusted-identity-p",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "codecatalyst",
+      "targetLabel": "Amazon CodeCatalyst"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon CodeCatalyst | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-codecatalyst-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "codecatalyst",
+      "targetLabel": "Amazon CodeCatalyst"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon DataZone | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-datazone-md-table",
+      "id": "sso-aws-managed-applications-service-datazone-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "datazone",
@@ -85,19 +235,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon DataZone | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-datazone-trusted-identity-propagation-recipe-identity-center-trusted-identity-propa",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "datazone",
+      "targetLabel": "Amazon DataZone"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon DataZone | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-datazone-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "datazone",
+      "targetLabel": "Amazon DataZone"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS Deadline Cloud | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-deadline-md-table",
+      "id": "sso-aws-managed-applications-service-deadline-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "deadline",
@@ -105,19 +305,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Deadline Cloud | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-deadline-trusted-identity-propagation-recipe-identity-center-trusted-identity-propa",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "deadline",
+      "targetLabel": "AWS Deadline Cloud"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Deadline Cloud | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-deadline-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "not-covered",
+      "targetId": "deadline",
+      "targetLabel": "AWS Deadline Cloud"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon EMR on EC2 | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-ec2-md-table",
+      "id": "sso-aws-managed-applications-service-ec2-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ec2",
@@ -125,19 +375,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon EMR on EC2 | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-ec2-trusted-identity-propagation-recipe-identity-center-trusted-identity-propagatio",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Amazon EMR on EC2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon EMR on EC2 | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-ec2-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Amazon EMR on EC2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon EMR on EKS | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-eks-md-table",
+      "id": "sso-aws-managed-applications-service-eks-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "eks",
@@ -145,19 +445,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon EMR on EKS | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-eks-trusted-identity-propagation-recipe-identity-center-trusted-identity-propagatio",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "eks",
+      "targetLabel": "Amazon EMR on EKS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon EMR on EKS | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-eks-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "eks",
+      "targetLabel": "Amazon EMR on EKS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon EMR Serverless | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-emr-serverless-md-table",
+      "id": "sso-aws-managed-applications-service-emr-serverless-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "emr-serverless",
@@ -165,19 +515,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon EMR Serverless | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-emr-serverless-trusted-identity-propagation-recipe-identity-center-trusted-identity",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "emr-serverless",
+      "targetLabel": "Amazon EMR Serverless"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon EMR Serverless | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-emr-serverless-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "not-covered",
+      "targetId": "emr-serverless",
+      "targetLabel": "Amazon EMR Serverless"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon OpenSearch Service | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-es-md-table",
+      "id": "sso-aws-managed-applications-service-es-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "es",
@@ -185,19 +585,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon OpenSearch Service | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-es-trusted-identity-propagation-recipe-identity-center-trusted-identity-propagation",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "es",
+      "targetLabel": "Amazon OpenSearch Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon OpenSearch Service | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-es-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "es",
+      "targetLabel": "Amazon OpenSearch Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS Glue | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-glue-md-table",
+      "id": "sso-aws-managed-applications-service-glue-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "glue",
@@ -205,19 +655,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Glue | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-glue-trusted-identity-propagation-recipe-identity-center-trusted-identity-propagati",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "glue",
+      "targetLabel": "AWS Glue"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Glue | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-glue-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "glue",
+      "targetLabel": "AWS Glue"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon Managed Grafana | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-grafana-md-table",
+      "id": "sso-aws-managed-applications-service-grafana-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "grafana",
@@ -225,19 +725,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Managed Grafana | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-grafana-trusted-identity-propagation-recipe-identity-center-trusted-identity-propag",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "grafana",
+      "targetLabel": "Amazon Managed Grafana"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Managed Grafana | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-grafana-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "not-covered",
+      "targetId": "grafana",
+      "targetLabel": "Amazon Managed Grafana"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS IoT Events | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-iotevents-md-table",
+      "id": "sso-aws-managed-applications-service-iotevents-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "iotevents",
@@ -245,19 +795,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS IoT Events | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-iotevents-trusted-identity-propagation-recipe-identity-center-trusted-identity-prop",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "iotevents",
+      "targetLabel": "AWS IoT Events"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS IoT Events | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-iotevents-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "not-covered",
+      "targetId": "iotevents",
+      "targetLabel": "AWS IoT Events"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS IoT SiteWise | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-iotsitewise-md-table",
+      "id": "sso-aws-managed-applications-service-iotsitewise-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "iotsitewise",
@@ -265,19 +865,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS IoT SiteWise | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-iotsitewise-trusted-identity-propagation-recipe-identity-center-trusted-identity-pr",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "iotsitewise",
+      "targetLabel": "AWS IoT SiteWise"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS IoT SiteWise | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-iotsitewise-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "not-covered",
+      "targetId": "iotsitewise",
+      "targetLabel": "AWS IoT SiteWise"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon Kendra | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-kendra-md-table",
+      "id": "sso-aws-managed-applications-service-kendra-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "kendra",
@@ -285,19 +935,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Kendra | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-kendra-trusted-identity-propagation-recipe-identity-center-trusted-identity-propaga",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "kendra",
+      "targetLabel": "Amazon Kendra"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Kendra | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-kendra-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "kendra",
+      "targetLabel": "Amazon Kendra"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS Lake Formation | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-lakeformation-md-table",
+      "id": "sso-aws-managed-applications-service-lakeformation-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "lakeformation",
@@ -305,19 +1005,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Lake Formation | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-lakeformation-trusted-identity-propagation-recipe-identity-center-trusted-identity-",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "lakeformation",
+      "targetLabel": "AWS Lake Formation"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Lake Formation | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-lakeformation-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "lakeformation",
+      "targetLabel": "AWS Lake Formation"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon Monitron | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-monitron-md-table",
+      "id": "sso-aws-managed-applications-service-monitron-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "monitron",
@@ -325,19 +1075,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Monitron | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-monitron-trusted-identity-propagation-recipe-identity-center-trusted-identity-propa",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "monitron",
+      "targetLabel": "Amazon Monitron"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Monitron | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-monitron-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "monitron",
+      "targetLabel": "Amazon Monitron"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Multi-party approval | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-mpa-md-table",
+      "id": "sso-aws-managed-applications-service-mpa-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "mpa",
@@ -345,19 +1145,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Multi-party approval | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-mpa-trusted-identity-propagation-recipe-identity-center-trusted-identity-propagatio",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "mpa",
+      "targetLabel": "Multi-party approval"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Multi-party approval | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-mpa-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "mpa",
+      "targetLabel": "Multi-party approval"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon Q Business | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-qbusiness-md-table",
+      "id": "sso-aws-managed-applications-service-qbusiness-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "qbusiness",
@@ -365,19 +1215,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Q Business | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-qbusiness-trusted-identity-propagation-recipe-identity-center-trusted-identity-prop",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "qbusiness",
+      "targetLabel": "Amazon Q Business"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Q Business | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-qbusiness-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "qbusiness",
+      "targetLabel": "Amazon Q Business"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon Quick | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-quicksight-md-table",
+      "id": "sso-aws-managed-applications-service-quicksight-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "quicksight",
@@ -385,19 +1285,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Quick | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-quicksight-trusted-identity-propagation-recipe-identity-center-trusted-identity-pro",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "quicksight",
+      "targetLabel": "Amazon Quick"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Quick | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-quicksight-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "quicksight",
+      "targetLabel": "Amazon Quick"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon Redshift | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes2 | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-redshift-md-table",
+      "id": "sso-aws-managed-applications-service-redshift-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "redshift",
@@ -405,19 +1355,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Redshift | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes2 | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-redshift-trusted-identity-propagation-recipe-identity-center-trusted-identity-propa",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "redshift",
+      "targetLabel": "Amazon Redshift"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Redshift | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes2 | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-redshift-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "not-covered",
+      "targetId": "redshift",
+      "targetLabel": "Amazon Redshift"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS re:Post Private | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-repostspace-md-table",
+      "id": "sso-aws-managed-applications-service-repostspace-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "repostspace",
@@ -425,19 +1425,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS re:Post Private | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-repostspace-trusted-identity-propagation-recipe-identity-center-trusted-identity-pr",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "repostspace",
+      "targetLabel": "AWS re:Post Private"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS re:Post Private | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-repostspace-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "repostspace",
+      "targetLabel": "AWS re:Post Private"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon SageMaker Studio | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-sagemaker-md-table",
+      "id": "sso-aws-managed-applications-service-sagemaker-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "sagemaker",
@@ -445,19 +1495,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon SageMaker Studio | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-sagemaker-trusted-identity-propagation-recipe-identity-center-trusted-identity-prop",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "sagemaker",
+      "targetLabel": "Amazon SageMaker Studio"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon SageMaker Studio | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-sagemaker-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "not-covered",
+      "targetId": "sagemaker",
+      "targetLabel": "Amazon SageMaker Studio"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS Supply Chain | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-scn-md-table",
+      "id": "sso-aws-managed-applications-service-scn-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "scn",
@@ -465,19 +1565,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Supply Chain | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-scn-trusted-identity-propagation-recipe-identity-center-trusted-identity-propagatio",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "scn",
+      "targetLabel": "AWS Supply Chain"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Supply Chain | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-scn-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "scn",
+      "targetLabel": "AWS Supply Chain"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS Security Agent | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-securityagent-md-table",
+      "id": "sso-aws-managed-applications-service-securityagent-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "securityagent",
@@ -485,19 +1635,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Security Agent | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-securityagent-trusted-identity-propagation-recipe-identity-center-trusted-identity-",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "securityagent",
+      "targetLabel": "AWS Security Agent"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Security Agent | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-securityagent-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "securityagent",
+      "targetLabel": "AWS Security Agent"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS Systems Manager | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes - Fleet Manager Remote Desktop |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-ssm-md-table",
+      "id": "sso-aws-managed-applications-service-ssm-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ssm",
@@ -505,19 +1705,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Systems Manager | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes - Fleet Manager Remote Desktop |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-ssm-trusted-identity-propagation-recipe-identity-center-trusted-identity-propagatio",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "ssm",
+      "targetLabel": "AWS Systems Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Systems Manager | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes - Fleet Manager Remote Desktop |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-ssm-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "ssm",
+      "targetLabel": "AWS Systems Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS Transform | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-transform-md-table",
+      "id": "sso-aws-managed-applications-service-transform-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "transform",
@@ -525,19 +1775,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Transform | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-transform-trusted-identity-propagation-recipe-identity-center-trusted-identity-prop",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "transform",
+      "targetLabel": "AWS Transform"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Transform | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-transform-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "transform",
+      "targetLabel": "AWS Transform"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| AWS Verified Access | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-verified-access-md-table",
+      "id": "sso-aws-managed-applications-service-verified-access-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "verified-access",
@@ -545,19 +1845,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Verified Access | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-verified-access-trusted-identity-propagation-recipe-identity-center-trusted-identit",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "verified-access",
+      "targetLabel": "AWS Verified Access"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Verified Access | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-verified-access-customer-managed-kms-key-recipe-identity-center-customer-managed-ke",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "verified-access",
+      "targetLabel": "AWS Verified Access"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon WorkMail | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-workmail-md-table",
+      "id": "sso-aws-managed-applications-service-workmail-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "workmail",
@@ -565,19 +1915,69 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon WorkMail | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-workmail-trusted-identity-propagation-recipe-identity-center-trusted-identity-propa",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "covered",
+      "targetId": "workmail",
+      "targetLabel": "Amazon WorkMail"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon WorkMail | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-workmail-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "covered",
+      "targetId": "workmail",
+      "targetLabel": "Amazon WorkMail"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon WorkSpaces | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-workspaces-md-table",
+      "id": "sso-aws-managed-applications-service-workspaces-recipe-identity-center-managed-applications",
       "method": "deterministic",
       "status": "covered",
       "targetId": "workspaces",
@@ -585,128 +1985,127 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon WorkSpaces | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-workspaces-trusted-identity-propagation-recipe-identity-center-trusted-identity-pro",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "workspaces",
+      "targetLabel": "Amazon WorkSpaces"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon WorkSpaces | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-workspaces-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
+      "status": "not-covered",
+      "targetId": "workspaces",
+      "targetLabel": "Amazon WorkSpaces"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
           "quote": "| Amazon WorkSpaces Secure Browser | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "recipe:identity-center-managed-applications",
       "featureId": "sso/aws-managed-applications",
-      "id": "sso-aws-managed-applications-service-workspaces-web-md-table",
+      "id": "sso-aws-managed-applications-service-workspaces-web-recipe-identity-center-managed-applications",
       "method": "deterministic",
+      "status": "covered",
+      "targetId": "workspaces-web",
+      "targetLabel": "Amazon WorkSpaces Secure Browser"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon WorkSpaces Secure Browser | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-trusted-identity-propagation",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-workspaces-web-trusted-identity-propagation-recipe-identity-center-trusted-identity",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "trusted-identity-propagation",
+        "targetId": "trusted-identity-propagation"
+      },
+      "status": "not-covered",
+      "targetId": "workspaces-web",
+      "targetLabel": "Amazon WorkSpaces Secure Browser"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon WorkSpaces Secure Browser | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-customer-managed-key",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-workspaces-web-customer-managed-kms-key-recipe-identity-center-customer-managed-key",
+      "method": "deterministic",
+      "scope": {
+        "axis": "identityCenterCapability",
+        "label": "customer-managed-kms-key",
+        "targetId": "customer-managed-kms-key"
+      },
       "status": "covered",
       "targetId": "workspaces-web",
       "targetLabel": "Amazon WorkSpaces Secure Browser"
     }
   ],
   "featureId": "sso/aws-managed-applications",
-  "generatedAt": "2026-09-01T06:56:46.062Z",
+  "generatedAt": "2026-09-01T07:08:52.866Z",
   "serviceId": "sso",
-  "unresolvedTargets": [
-    {
-      "axis": "service",
-      "raw": "Amazon Athena SQL",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EKS Capabilities",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EMR Studio",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon OpenSearch Service Serverless Service",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon S3 Access Grants",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon SageMaker Unified Studio",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS account access (account access manager)",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Transfer Family web apps",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Kiro",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "OpenSearch user interface (Dashboards)",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Athena SQL",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EKS Capabilities",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EMR Studio",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon OpenSearch Service Serverless Service",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon S3 Access Grants",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon SageMaker Unified Studio",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS account access (account access manager)",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Transfer Family web apps",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Kiro",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "OpenSearch user interface (Dashboards)",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    }
-  ]
+  "unresolvedTargets": []
 }

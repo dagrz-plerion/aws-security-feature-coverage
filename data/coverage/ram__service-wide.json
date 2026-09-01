@@ -1,0 +1,1406 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Marketplace Catalog Entities<br />`aws-marketplace:Entity` | Create, manage, and share entities across AWS accounts or in your organization in AWS Marketplace. For more information, see [Resource sharing in AWS RAM](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/resource-sharing.html) in the *AWS Marketplace Catalog API Reference*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes <br />Can share with **any** AWS account. |  ![](http://docs.aws.amazon.com/ram/l…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-marketplace-entity-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "aws-marketplace:Entity",
+      "targetLabel": "aws-marketplace:Entity"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Marketplace Catalog Entities<br />`aws-marketplace:Entity` | Create, manage, and share entities across AWS accounts or in your organization in AWS Marketplace. For more information, see [Resource sharing in AWS RAM](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/resource-sharing.html) in the *AWS Marketplace Catalog API Reference*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes <br />Can share with **any** AWS account. |  ![](http://docs.aws.amazon.com/ram/l…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-marketplace-entity-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "aws-marketplace:Entity",
+      "targetLabel": "aws-marketplace:Entity"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Meshes<br />`appmesh:Mesh` | Create and manage a mesh centrally, and share it with other AWS accounts or your organization. A shared mesh allows resources created by different AWS accounts to communicate with each other in the same mesh. For more information, see [ Working with shared meshes](https://docs.aws.amazon.com/app-mesh/latest/userguide/sharing.html) in the *AWS App Mesh User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes <br />Can share with **any** AWS account.…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-appmesh-mesh-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::AppMesh::Mesh",
+      "targetLabel": "appmesh:Mesh"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Meshes<br />`appmesh:Mesh` | Create and manage a mesh centrally, and share it with other AWS accounts or your organization. A shared mesh allows resources created by different AWS accounts to communicate with each other in the same mesh. For more information, see [ Working with shared meshes](https://docs.aws.amazon.com/app-mesh/latest/userguide/sharing.html) in the *AWS App Mesh User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes <br />Can share with **any** AWS account.…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-appmesh-mesh-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::AppMesh::Mesh",
+      "targetLabel": "appmesh:Mesh"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| AppSync GraphyQL APIs<br />`appsync:Apis` | Manage AWS AppSync GraphQL APIs centrally, and share them with other AWS accounts or your organization. This lets multiple accounts share AWS AppSync APIs as part of creating a unified AWS AppSync Merged API which can access data from multiple subschema APIs across different accounts in the same Region. For more information, see [Merged APIs](https://docs.aws.amazon.com/appsync/latest/devguide/merged-api.html) in the * AWS AppSync Developer Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.a…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-appsync-graphqlapi-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::AppSync::GraphQLApi",
+      "targetLabel": "appsync:Apis"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| AppSync GraphyQL APIs<br />`appsync:Apis` | Manage AWS AppSync GraphQL APIs centrally, and share them with other AWS accounts or your organization. This lets multiple accounts share AWS AppSync APIs as part of creating a unified AWS AppSync Merged API which can access data from multiple subschema APIs across different accounts in the same Region. For more information, see [Merged APIs](https://docs.aws.amazon.com/appsync/latest/devguide/merged-api.html) in the * AWS AppSync Developer Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.a…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-appsync-graphqlapi-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::AppSync::GraphQLApi",
+      "targetLabel": "appsync:Apis"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| CodeBuild Projects<br />`codebuild:Project` | Create a project, and use it to run builds. Share the project with other AWS accounts or your organization. This lets multiple AWS accounts and users view information about a project and analyze its builds. For more information, see [Working with shared projects](https://docs.aws.amazon.com/codebuild/latest/userguide/project-sharing.html) in the * AWS CodeBuild User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes <br />Can shar…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-codebuild-project-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::CodeBuild::Project",
+      "targetLabel": "codebuild:Project"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| CodeBuild Projects<br />`codebuild:Project` | Create a project, and use it to run builds. Share the project with other AWS accounts or your organization. This lets multiple AWS accounts and users view information about a project and analyze its builds. For more information, see [Working with shared projects](https://docs.aws.amazon.com/codebuild/latest/userguide/project-sharing.html) in the * AWS CodeBuild User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes <br />Can shar…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-codebuild-project-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::CodeBuild::Project",
+      "targetLabel": "codebuild:Project"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Code Connections<br />`codeconnections:Connection` | Manage the reuse of code connections in multiple accounts. In other words, sharing code connections reduces the administrator burden and need for administrator access in every account that requires a code connection. For more information, see [Share connections with AWS accounts](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-share.html) in the *Developer Tools Console User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-codeconnections-connection-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::CodeConnections::Connection",
+      "targetLabel": "codeconnections:Connection"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Code Connections<br />`codeconnections:Connection` | Manage the reuse of code connections in multiple accounts. In other words, sharing code connections reduces the administrator burden and need for administrator access in every account that requires a code connection. For more information, see [Share connections with AWS accounts](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-share.html) in the *Developer Tools Console User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-codeconnections-connection-outside-organization-recipe-ram-shareable-outside-organizat",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::CodeConnections::Connection",
+      "targetLabel": "codeconnections:Connection"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Aurora DB Clusters<br />`rds:Cluster` | Create and manage a DB cluster centrally, and share it with other AWS accounts or your organization. This lets multiple AWS accounts clone a shared, centrally managed DB cluster. For more information, see [ Cross-account cloning with AWS RAM and Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Clone.html#Aurora.Managing.Clone.Cross-Account) in the *Amazon Aurora User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/ima…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-docdb-dbcluster-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::DocDB::DBCluster",
+      "targetLabel": "rds:Cluster"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Aurora DB Clusters<br />`rds:Cluster` | Create and manage a DB cluster centrally, and share it with other AWS accounts or your organization. This lets multiple AWS accounts clone a shared, centrally managed DB cluster. For more information, see [ Cross-account cloning with AWS RAM and Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Clone.html#Aurora.Managing.Clone.Cross-Account) in the *Amazon Aurora User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/ima…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-docdb-dbcluster-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::DocDB::DBCluster",
+      "targetLabel": "rds:Cluster"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Subnets<br />`ec2:Subnet` | Create and manage subnets centrally, and share them with AWS accounts within your organization. This lets multiple AWS accounts launch their application resources into centrally managed VPCs. These resources include Amazon EC2 instances, Amazon Relational Database Service (RDS) databases, Amazon Redshift clusters, and AWS Lambda functions. For more information, see [ Working with VPC sharing](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html) in the *Amazon VPC User Guide*. To include a subnet when you create a resource share, you must have the `ec…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-ec2-subnet-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::EC2::Subnet",
+      "targetLabel": "ec2:Subnet"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Subnets<br />`ec2:Subnet` | Create and manage subnets centrally, and share them with AWS accounts within your organization. This lets multiple AWS accounts launch their application resources into centrally managed VPCs. These resources include Amazon EC2 instances, Amazon Relational Database Service (RDS) databases, Amazon Redshift clusters, and AWS Lambda functions. For more information, see [ Working with VPC sharing](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html) in the *Amazon VPC User Guide*. To include a subnet when you create a resource share, you must have the `ec…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-ec2-subnet-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "not-covered",
+      "targetId": "AWS::EC2::Subnet",
+      "targetLabel": "ec2:Subnet"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| AWS Glue Databases<br />`glue:Database` | Create and manage data catalog databases centrally, and share them with AWS accounts or your organization. Databases are collections of data catalog tables. This enables users to run queries and extract, transform, and load (ETL) jobs that can join and query data across multiple accounts. For more information, see [ Sharing Data Catalog Tables and Databases Across AWS Accounts](https://docs.aws.amazon.com/lake-formation/latest/dg/sharing-catalog-resources.html) in the *AWS Lake Formation Developer Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-glue-database-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Glue::Database",
+      "targetLabel": "glue:Database"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| AWS Glue Databases<br />`glue:Database` | Create and manage data catalog databases centrally, and share them with AWS accounts or your organization. Databases are collections of data catalog tables. This enables users to run queries and extract, transform, and load (ETL) jobs that can join and query data across multiple accounts. For more information, see [ Sharing Data Catalog Tables and Databases Across AWS Accounts](https://docs.aws.amazon.com/lake-formation/latest/dg/sharing-catalog-resources.html) in the *AWS Lake Formation Developer Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-glue-database-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::Glue::Database",
+      "targetLabel": "glue:Database"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| AWS Glue Tables<br />`glue:Table` | Create and manage data catalog tables centrally, and share them with AWS accounts or your organization. Data catalog tables contain metadata about data tables in Amazon S3, JDBC data sources, Amazon Redshift, streaming sources, and other data stores. This enables users to run queries and ETL jobs that can join and query data across multiple accounts. For more information, see [Sharing Data Catalog Tables and Databases Across AWS Accounts](https://docs.aws.amazon.com/lake-formation/latest/dg/sharing-catalog-resources.html) in the *AWS Lake Formation Develop…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-glue-table-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Glue::Table",
+      "targetLabel": "glue:Table"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| AWS Glue Tables<br />`glue:Table` | Create and manage data catalog tables centrally, and share them with AWS accounts or your organization. Data catalog tables contain metadata about data tables in Amazon S3, JDBC data sources, Amazon Redshift, streaming sources, and other data stores. This enables users to run queries and ETL jobs that can join and query data across multiple accounts. For more information, see [Sharing Data Catalog Tables and Databases Across AWS Accounts](https://docs.aws.amazon.com/lake-formation/latest/dg/sharing-catalog-resources.html) in the *AWS Lake Formation Develop…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-glue-table-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::Glue::Table",
+      "targetLabel": "glue:Table"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Image Builder Components<br />`imagebuilder:Component` | Create and manage components centrally, and share them with other AWS accounts or your organization. Manage who can use predefined build and test components in their image recipes. For more information, see [ Share EC2 Image Builder resources](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-shared-resources.html) in the *EC2 Image Builder User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes <br />Can…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-imagebuilder-component-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::ImageBuilder::Component",
+      "targetLabel": "imagebuilder:Component"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Image Builder Components<br />`imagebuilder:Component` | Create and manage components centrally, and share them with other AWS accounts or your organization. Manage who can use predefined build and test components in their image recipes. For more information, see [ Share EC2 Image Builder resources](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-shared-resources.html) in the *EC2 Image Builder User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes <br />Can…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-imagebuilder-component-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::ImageBuilder::Component",
+      "targetLabel": "imagebuilder:Component"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Image Builder Images<br />`imagebuilder:Image` | Create and manage your golden images centrally, and share them with other AWS accounts or your organization. Manage who can use images created with EC2 Image Builder across your organization. For more information, see [ Share EC2 Image Builder resources](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-shared-resources.html) in the *EC2 Image Builder User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes <br />…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-imagebuilder-image-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::ImageBuilder::Image",
+      "targetLabel": "imagebuilder:Image"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Image Builder Images<br />`imagebuilder:Image` | Create and manage your golden images centrally, and share them with other AWS accounts or your organization. Manage who can use images created with EC2 Image Builder across your organization. For more information, see [ Share EC2 Image Builder resources](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-shared-resources.html) in the *EC2 Image Builder User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes <br />…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-imagebuilder-image-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::ImageBuilder::Image",
+      "targetLabel": "imagebuilder:Image"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Network Firewalls<br />`network-firewall:Firewall` | Create and manage firewalls centrally, and share them with other AWS accounts so they can create firewall endpoints. This enables multiple accounts to use the protections of a single firewall. For more information, see [Sharing AWS Network Firewall resources](https://docs.aws.amazon.com/network-firewall/latest/developerguide/sharing.html) in the *AWS Network Firewall Developer Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) …",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-networkfirewall-firewall-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::NetworkFirewall::Firewall",
+      "targetLabel": "network-firewall:Firewall"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Network Firewalls<br />`network-firewall:Firewall` | Create and manage firewalls centrally, and share them with other AWS accounts so they can create firewall endpoints. This enables multiple accounts to use the protections of a single firewall. For more information, see [Sharing AWS Network Firewall resources](https://docs.aws.amazon.com/network-firewall/latest/developerguide/sharing.html) in the *AWS Network Firewall Developer Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) …",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-networkfirewall-firewall-outside-organization-recipe-ram-shareable-outside-organizatio",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::NetworkFirewall::Firewall",
+      "targetLabel": "network-firewall:Firewall"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Outposts Sites<br />`outposts:Site` | Create and manage Outpost sites and share them with other AWS accounts in your organization. This lets multiple accounts create and manage Outposts at the shared site and supports split control between the Outpost resources and the site. For more information, see [ Working with shared AWS Outposts resources](https://docs.aws.amazon.com/outposts/latest/userguide/sharing-outposts.html) in the *AWS Outposts User Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/imag…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-outposts-site-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Outposts::Site",
+      "targetLabel": "outposts:Site"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Outposts Sites<br />`outposts:Site` | Create and manage Outpost sites and share them with other AWS accounts in your organization. This lets multiple accounts create and manage Outposts at the shared site and supports split control between the Outpost resources and the site. For more information, see [ Working with shared AWS Outposts resources](https://docs.aws.amazon.com/outposts/latest/userguide/sharing-outposts.html) in the *AWS Outposts User Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/imag…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-outposts-site-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::Outposts::Site",
+      "targetLabel": "outposts:Site"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Refactor Spaces Environment<br />`refactor-spaces:Environment` | Create a Refactor Spaces environment, and use it to contain your Refactor Spaces applications. Share the environment with other AWS accounts or all of the accounts in your organization. This lets multiple AWS accounts and users view information about the environment and the applications in it. For more information, see [Sharing Refactor Spaces environments using AWS RAM](https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/userguide/sharing.html) in the *AWS Migration Hub Refactor Spaces User Guide*. |  ![](http://do…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-refactorspaces-environment-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::RefactorSpaces::Environment",
+      "targetLabel": "refactor-spaces:Environment"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Refactor Spaces Environment<br />`refactor-spaces:Environment` | Create a Refactor Spaces environment, and use it to contain your Refactor Spaces applications. Share the environment with other AWS accounts or all of the accounts in your organization. This lets multiple AWS accounts and users view information about the environment and the applications in it. For more information, see [Sharing Refactor Spaces environments using AWS RAM](https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/userguide/sharing.html) in the *AWS Migration Hub Refactor Spaces User Guide*. |  ![](http://do…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-refactorspaces-environment-outside-organization-recipe-ram-shareable-outside-organizat",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::RefactorSpaces::Environment",
+      "targetLabel": "refactor-spaces:Environment"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Resource Explorer Views<br />`resource-explorer-2:View` | Create and configure Resource Explorer views centrally, and share them with other AWS accounts in your organization. This lets roles and users in multiple AWS accounts search for and discover the resources accessible through the view. For more information, see [Sharing Resource Explorer views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-share.html) in the *AWS Resource Explorer User Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-resourceexplorer2-view-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::ResourceExplorer2::View",
+      "targetLabel": "resource-explorer-2:View"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Resource Explorer Views<br />`resource-explorer-2:View` | Create and configure Resource Explorer views centrally, and share them with other AWS accounts in your organization. This lets roles and users in multiple AWS accounts search for and discover the resources accessible through the view. For more information, see [Sharing Resource Explorer views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-share.html) in the *AWS Resource Explorer User Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-resourceexplorer2-view-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "not-covered",
+      "targetId": "AWS::ResourceExplorer2::View",
+      "targetLabel": "resource-explorer-2:View"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Resource groups<br />`resource-groups:Group` | Create and manage a host resource group centrally, and share it with other AWS accounts in your organization. This lets multiple AWS accounts share a group of Amazon EC2 Dedicated Hosts created using AWS License Manager. For more information, see [ Host resource groups in AWS License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/host-resource-groups.html) in the *AWS License Manager User Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/ram/latest/use…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-resourcegroups-group-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::ResourceGroups::Group",
+      "targetLabel": "resource-groups:Group"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Resource groups<br />`resource-groups:Group` | Create and manage a host resource group centrally, and share it with other AWS accounts in your organization. This lets multiple AWS accounts share a group of Amazon EC2 Dedicated Hosts created using AWS License Manager. For more information, see [ Host resource groups in AWS License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/host-resource-groups.html) in the *AWS License Manager User Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/ram/latest/use…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-resourcegroups-group-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::ResourceGroups::Group",
+      "targetLabel": "resource-groups:Group"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Route 53 ARC Clusters<br />`route53-recovery-control:Cluster` | Create and manage ARC clusters centrally, and share them with other AWS accounts or your organization. This lets multiple accounts create control panels and routing controls in a single shared cluster, reducing complexity and the total number of clusters an organization requires. For more information, see [Sharing clusters across accounts](https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.failover-different-accounts.html) in the *Amazon Application Recovery Controller (ARC) Developer Guide*. |  ![](http://docs.aw…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-route53recoverycontrol-cluster-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Route53RecoveryControl::Cluster",
+      "targetLabel": "route53-recovery-control:Cluster"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Route 53 ARC Clusters<br />`route53-recovery-control:Cluster` | Create and manage ARC clusters centrally, and share them with other AWS accounts or your organization. This lets multiple accounts create control panels and routing controls in a single shared cluster, reducing complexity and the total number of clusters an organization requires. For more information, see [Sharing clusters across accounts](https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.failover-different-accounts.html) in the *Amazon Application Recovery Controller (ARC) Developer Guide*. |  ![](http://docs.aw…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-route53recoverycontrol-cluster-outside-organization-recipe-ram-shareable-outside-organ",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::Route53RecoveryControl::Cluster",
+      "targetLabel": "route53-recovery-control:Cluster"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| SageMaker AI Hubs<br />`sagemaker:Hub` | With Amazon SageMaker AI JumpStart, you can create and manage `sagemaker:Hub` centrally, and share them with other AWS accounts in the same organization. For more information, see [Control foundation model access using private curated hubs in Amazon SageMaker AI JumpStart](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hubs.html) in the *Amazon SageMaker AI Developer Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-sagemaker-hub-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::SageMaker::Hub",
+      "targetLabel": "sagemaker:Hub"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| SageMaker AI Hubs<br />`sagemaker:Hub` | With Amazon SageMaker AI JumpStart, you can create and manage `sagemaker:Hub` centrally, and share them with other AWS accounts in the same organization. For more information, see [Control foundation model access using private curated hubs in Amazon SageMaker AI JumpStart](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hubs.html) in the *Amazon SageMaker AI Developer Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-sagemaker-hub-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::SageMaker::Hub",
+      "targetLabel": "sagemaker:Hub"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| SageMaker AI pipelines<br />`sagemaker:Pipeline` | With Amazon SageMaker AI Model Building Pipelines, you can create, automate, and manage end-to-end machine learning workflows at scale. Share your pipelines with other AWS accounts or the accounts in your organization to achieve a multi-account strategy for your machine learning operations. This lets multiple AWS accounts and users view information about a pipeline and its executions with optional access to start, stop, and retry pipelines from other accounts. For more information, see [Cross-Account Support for SageMaker AI Pipelines](https…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-sagemaker-pipeline-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::SageMaker::Pipeline",
+      "targetLabel": "sagemaker:Pipeline"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| SageMaker AI pipelines<br />`sagemaker:Pipeline` | With Amazon SageMaker AI Model Building Pipelines, you can create, automate, and manage end-to-end machine learning workflows at scale. Share your pipelines with other AWS accounts or the accounts in your organization to achieve a multi-account strategy for your machine learning operations. This lets multiple AWS accounts and users view information about a pipeline and its executions with optional access to start, stop, and retry pipelines from other accounts. For more information, see [Cross-Account Support for SageMaker AI Pipelines](https…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-sagemaker-pipeline-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::SageMaker::Pipeline",
+      "targetLabel": "sagemaker:Pipeline"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| AppRegistry Applications<br />`servicecatalog:Applications` | Create an application, and use it to track the resources belonging to that application throughout your AWS environment. Share the application with other AWS accounts or your organization. This lets multiple AWS accounts and users view information about the application and associated resources with it locally. For more information, see [Creating applications](https://docs.aws.amazon.com/servicecatalog/latest/arguide/create-apps.html) in the *Service Catalog User Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-servicecatalogappregistry-application-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::ServiceCatalogAppRegistry::Application",
+      "targetLabel": "servicecatalog:Applications"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| AppRegistry Applications<br />`servicecatalog:Applications` | Create an application, and use it to track the resources belonging to that application throughout your AWS environment. Share the application with other AWS accounts or your organization. This lets multiple AWS accounts and users view information about the application and associated resources with it locally. For more information, see [Creating applications](https://docs.aws.amazon.com/servicecatalog/latest/arguide/create-apps.html) in the *Service Catalog User Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-servicecatalogappregistry-application-outside-organization-recipe-ram-shareable-outsid",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "not-covered",
+      "targetId": "AWS::ServiceCatalogAppRegistry::Application",
+      "targetLabel": "servicecatalog:Applications"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| SSM JITNA Auto-Deny policies<br />`ssm:Document` | Create an approval policy for just-in-time node access with Systems Manager. A deny-access policy explicitly prevents the auto-approval of access requests to the nodes you specify. Share the deny-access policy with other AWS accounts or your organization. This ensures your deny-access policy for just-in-time node access applies to all accounts in your organization. For more information, see [Just-in-time node access using Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-just-in-time-node-access.ht…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-ssm-document-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::SSM::Document",
+      "targetLabel": "ssm:Document"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| SSM JITNA Auto-Deny policies<br />`ssm:Document` | Create an approval policy for just-in-time node access with Systems Manager. A deny-access policy explicitly prevents the auto-approval of access requests to the nodes you specify. Share the deny-access policy with other AWS accounts or your organization. This ensures your deny-access policy for just-in-time node access applies to all accounts in your organization. For more information, see [Just-in-time node access using Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-just-in-time-node-access.ht…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-ssm-document-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::SSM::Document",
+      "targetLabel": "ssm:Document"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Parameter Store Advanced Parameters<br />`ssm:Parameter` | Create a parameter, and use it to store configuration data that you can reference in your scripts, commands, SSM documents, and configuration and automation workflows. Share the parameter with other AWS accounts or your organization. This lets multiple AWS accounts and users view information about the string and improve security by separating your data from your code. For more information, see [Working with shared parameters](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-shared-parameters.html) in the *…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-ssm-parameter-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::SSM::Parameter",
+      "targetLabel": "ssm:Parameter"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Parameter Store Advanced Parameters<br />`ssm:Parameter` | Create a parameter, and use it to store configuration data that you can reference in your scripts, commands, SSM documents, and configuration and automation workflows. Share the parameter with other AWS accounts or your organization. This lets multiple AWS accounts and users view information about the string and improve security by separating your data from your code. For more information, see [Working with shared parameters](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-shared-parameters.html) in the *…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-ssm-parameter-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::SSM::Parameter",
+      "targetLabel": "ssm:Parameter"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Amazon VPC Lattice services<br />`vpc-lattice:Service` | Create and manage Amazon VPC Lattice services centrally, and share them with individual AWS accounts or your organization. This allows service owners to connect, secure, and observe service-to-service communication in a multi-account environment. For more information, see [Working with shared resources](https://docs.aws.amazon.com/vpc-lattice/latest/ug/sharing.html) in the *VPC Lattice User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/image…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-vpclattice-service-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::VpcLattice::Service",
+      "targetLabel": "vpc-lattice:Service"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Amazon VPC Lattice services<br />`vpc-lattice:Service` | Create and manage Amazon VPC Lattice services centrally, and share them with individual AWS accounts or your organization. This allows service owners to connect, secure, and observe service-to-service communication in a multi-account environment. For more information, see [Working with shared resources](https://docs.aws.amazon.com/vpc-lattice/latest/ug/sharing.html) in the *VPC Lattice User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/image…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-vpclattice-service-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::VpcLattice::Service",
+      "targetLabel": "vpc-lattice:Service"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Amazon VPC Lattice service network<br />`vpc-lattice:ServiceNetwork` | Create and manage Amazon VPC Lattice service networks centrally, and share them with individual AWS accounts or your organization. This allows service network owners to connect, secure, and observe service-to-service communication in a multi-account environment. For more information, see [Working with shared resources](https://docs.aws.amazon.com/vpc-lattice/latest/ug/sharing.html) in the *Amazon VPC Lattice User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-vpclattice-servicenetwork-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::VpcLattice::ServiceNetwork",
+      "targetLabel": "vpc-lattice:ServiceNetwork"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Amazon VPC Lattice service network<br />`vpc-lattice:ServiceNetwork` | Create and manage Amazon VPC Lattice service networks centrally, and share them with individual AWS accounts or your organization. This allows service network owners to connect, secure, and observe service-to-service communication in a multi-account environment. For more information, see [Working with shared resources](https://docs.aws.amazon.com/vpc-lattice/latest/ug/sharing.html) in the *Amazon VPC Lattice User Guide*. |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-aws-vpclattice-servicenetwork-outside-organization-recipe-ram-shareable-outside-organizati",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "AWS::VpcLattice::ServiceNetwork",
+      "targetLabel": "vpc-lattice:ServiceNetwork"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| BCM Dashboards<br />`bcm-dashboards:dashboard` | Create and manage Billing and Cost Management dashboards and share them with other AWS accounts within or outside your organization. When you share a dashboard, only dashboard configurations are shared, not the underlying data. Recipients receive access to the dashboard layout and widget configurations, and will see data based on their own access permissions. This sharing capability allows organizations to establish common cost reporting practices and helps different teams view cost data consistently. For more information, see [Sharing dashboa…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-bcm-dashboards-dashboard-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "bcm-dashboards:dashboard",
+      "targetLabel": "bcm-dashboards:dashboard"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| BCM Dashboards<br />`bcm-dashboards:dashboard` | Create and manage Billing and Cost Management dashboards and share them with other AWS accounts within or outside your organization. When you share a dashboard, only dashboard configurations are shared, not the underlying data. Recipients receive access to the dashboard layout and widget configurations, and will see data based on their own access permissions. This sharing capability allows organizations to establish common cost reporting practices and helps different teams view cost data consistently. For more information, see [Sharing dashboa…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-bcm-dashboards-dashboard-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "bcm-dashboards:dashboard",
+      "targetLabel": "bcm-dashboards:dashboard"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| AWS CloudHSM Backups<br />`cloudhsm:Backup` | Manage AWS CloudHSM Backups centrally, and share them with other AWS accounts or your organization. This lets multiple AWS accounts and users view information about the Backup and use it to restore a AWS CloudHSM Cluster. For more information, see [Managing AWS CloudHSM backups](https://docs.aws.amazon.com/cloudhsm/latest/userguide/manage-backups.html) in the *AWS CloudHSM User Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  …",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-cloudhsm-backup-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudhsm:backup",
+      "targetLabel": "cloudhsm:Backup"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| AWS CloudHSM Backups<br />`cloudhsm:Backup` | Manage AWS CloudHSM Backups centrally, and share them with other AWS accounts or your organization. This lets multiple AWS accounts and users view information about the Backup and use it to restore a AWS CloudHSM Cluster. For more information, see [Managing AWS CloudHSM backups](https://docs.aws.amazon.com/cloudhsm/latest/userguide/manage-backups.html) in the *AWS CloudHSM User Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  …",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-cloudhsm-backup-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "cloudhsm:backup",
+      "targetLabel": "cloudhsm:Backup"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| ELB Trust stores<br />`elasticloadbalancing:TrustStore` | Create and manage Elastic Load Balancing trust stores centrally, and share them with other AWS accounts or your organization. Security admins can maintain a single or smaller number of trust stores and enable Mutual TLS configurations across Application Load Balancers. For more information, see [Share your Elastic Load Balancing trust store for Application Load Balancers ](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/trust-store-sharing.html) in the * User Guide for Application Load Balancers*.  |  ![](http://do…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-elasticloadbalancing-truststore-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticloadbalancing:truststore",
+      "targetLabel": "elasticloadbalancing:TrustStore"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| ELB Trust stores<br />`elasticloadbalancing:TrustStore` | Create and manage Elastic Load Balancing trust stores centrally, and share them with other AWS accounts or your organization. Security admins can maintain a single or smaller number of trust stores and enable Mutual TLS configurations across Application Load Balancers. For more information, see [Share your Elastic Load Balancing trust store for Application Load Balancers ](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/trust-store-sharing.html) in the * User Guide for Application Load Balancers*.  |  ![](http://do…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-elasticloadbalancing-truststore-outside-organization-recipe-ram-shareable-outside-organiza",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "elasticloadbalancing:truststore",
+      "targetLabel": "elasticloadbalancing:TrustStore"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Network Firewall Rule groups<br />`network-firewall:StatefulRuleGroup`<br />`network-firewall:StatelessRuleGroup` | Create and manage stateless and stateful rule groups centrally, and share them with other AWS accounts or your organization. This enables multiple accounts in an organization in AWS Organizations to share a set of criteria for inspecting and handling network traffic. For more information, see [Sharing AWS Network Firewall resources](https://docs.aws.amazon.com/network-firewall/latest/developerguide/sharing.html) in the *AWS Network Firewall Developer Guide*. |  ![](http://docs.…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-network-firewall-statefulrulegroup-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "network-firewall:StatefulRuleGroup",
+      "targetLabel": "network-firewall:StatefulRuleGroup"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Network Firewall Rule groups<br />`network-firewall:StatefulRuleGroup`<br />`network-firewall:StatelessRuleGroup` | Create and manage stateless and stateful rule groups centrally, and share them with other AWS accounts or your organization. This enables multiple accounts in an organization in AWS Organizations to share a set of criteria for inspecting and handling network traffic. For more information, see [Sharing AWS Network Firewall resources](https://docs.aws.amazon.com/network-firewall/latest/developerguide/sharing.html) in the *AWS Network Firewall Developer Guide*. |  ![](http://docs.…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-network-firewall-statefulrulegroup-outside-organization-recipe-ram-shareable-outside-organ",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "network-firewall:StatefulRuleGroup",
+      "targetLabel": "network-firewall:StatefulRuleGroup"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Network Firewall Rule groups<br />`network-firewall:StatefulRuleGroup`<br />`network-firewall:StatelessRuleGroup` | Create and manage stateless and stateful rule groups centrally, and share them with other AWS accounts or your organization. This enables multiple accounts in an organization in AWS Organizations to share a set of criteria for inspecting and handling network traffic. For more information, see [Sharing AWS Network Firewall resources](https://docs.aws.amazon.com/network-firewall/latest/developerguide/sharing.html) in the *AWS Network Firewall Developer Guide*. |  ![](http://docs.…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-network-firewall-statelessrulegroup-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "network-firewall:StatelessRuleGroup",
+      "targetLabel": "network-firewall:StatelessRuleGroup"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Network Firewall Rule groups<br />`network-firewall:StatefulRuleGroup`<br />`network-firewall:StatelessRuleGroup` | Create and manage stateless and stateful rule groups centrally, and share them with other AWS accounts or your organization. This enables multiple accounts in an organization in AWS Organizations to share a set of criteria for inspecting and handling network traffic. For more information, see [Sharing AWS Network Firewall resources](https://docs.aws.amazon.com/network-firewall/latest/developerguide/sharing.html) in the *AWS Network Firewall Developer Guide*. |  ![](http://docs.…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-network-firewall-statelessrulegroup-outside-organization-recipe-ram-shareable-outside-orga",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "covered",
+      "targetId": "network-firewall:StatelessRuleGroup",
+      "targetLabel": "network-firewall:StatelessRuleGroup"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Outposts<br />`outposts:Outpost` | Create and manage Outposts centrally, and share them with other AWS accounts in your organization. This lets multiple accounts create subnets and EBS volumes on your shared, centrally managed Outposts. For more information, see [ Working with shared AWS Outposts resources](https://docs.aws.amazon.com/outposts/latest/userguide/sharing-outposts.html) in the *AWS Outposts User Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No <br />Can share with…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-outposts-outpost-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "outposts:outpost",
+      "targetLabel": "outposts:Outpost"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| Outposts<br />`outposts:Outpost` | Create and manage Outposts centrally, and share them with other AWS accounts in your organization. This lets multiple accounts create subnets and EBS volumes on your shared, centrally managed Outposts. For more information, see [ Working with shared AWS Outposts resources](https://docs.aws.amazon.com/outposts/latest/userguide/sharing-outposts.html) in the *AWS Outposts User Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-no.png) No <br />Can share with…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-outposts-outpost-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "not-covered",
+      "targetId": "outposts:outpost",
+      "targetLabel": "outposts:Outpost"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| AWS Cloud Map Namespaces<br />`servicediscovery:Namespace` | Create and manage namespaces centrally, and share them with other AWS accounts within your organization. This lets multiple AWS accounts discover services and instances in the shared namespace without the need for temporary credentials. For more information, see [Shared AWS Cloud Map namespaces](https://docs.aws.amazon.com/cloud-map/latest/dg/sharing-namespaces.html) in the *AWS Cloud Map Developer Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-resource-types",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-servicediscovery-namespace-recipe-ram-shareable-resource-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "servicediscovery:namespace",
+      "targetLabel": "servicediscovery:Namespace"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+          "locator": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md :: Shareable AWS resources",
+          "quote": "| AWS Cloud Map Namespaces<br />`servicediscovery:Namespace` | Create and manage namespaces centrally, and share them with other AWS accounts within your organization. This lets multiple AWS accounts discover services and instances in the shared namespace without the need for temporary credentials. For more information, see [Shared AWS Cloud Map namespaces](https://docs.aws.amazon.com/cloud-map/latest/dg/sharing-namespaces.html) in the *AWS Cloud Map Developer Guide*.  |  ![](http://docs.aws.amazon.com/ram/latest/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/ram/latest/…",
+          "retrievedAt": "2026-09-01T05:00:40.675Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+        }
+      ],
+      "extractorId": "recipe:ram-shareable-outside-organization",
+      "featureId": "ram/service-wide",
+      "id": "ram-service-wide-resourcetype-servicediscovery-namespace-outside-organization-recipe-ram-shareable-outside-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "sharingScope",
+        "label": "outside-organization",
+        "targetId": "outside-organization"
+      },
+      "status": "not-covered",
+      "targetId": "servicediscovery:namespace",
+      "targetLabel": "servicediscovery:Namespace"
+    }
+  ],
+  "featureId": "ram/service-wide",
+  "generatedAt": "2026-09-01T07:08:52.866Z",
+  "serviceId": "ram",
+  "unresolvedTargets": []
+}

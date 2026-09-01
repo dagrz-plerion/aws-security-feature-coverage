@@ -30,7 +30,14 @@ export type CoveragePage = {
   recipes?: Recipe[];
   firstSeen: string;
   lastCheckedAt?: string;
-  lastResult?: { claims: number; axes: string[]; status: "ok" | "empty" | "failed"; detail?: string };
+  lastResult?: {
+    claims: number;
+    axes: string[];
+    status: "ok" | "empty" | "failed";
+    detail?: string;
+    /** Values a recipe read but could not resolve to a known id. */
+    dropped?: number;
+  };
   enabled: boolean;
 };
 
@@ -96,7 +103,7 @@ export function upsert(
 
 export function recordResult(
   page: CoveragePage,
-  result: { claims: number; axes: string[]; status: "ok" | "empty" | "failed"; detail?: string },
+  result: { claims: number; axes: string[]; status: "ok" | "empty" | "failed"; detail?: string; dropped?: number },
 ): void {
   page.lastCheckedAt = new Date().toISOString();
   page.lastResult = result;

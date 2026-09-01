@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "service-level"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "b05bdfb9c53ce58f38ceac5630a15114b9fa42d1b750a36088d4deea2d0665b9",
+      "locator": "Security > Logging and monitoring",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/ram/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:15.904Z",
+      "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "ram/service-wide",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "AWS Resource Access Manager: stated for the service as a whole",
+  "serviceId": "ram",
+  "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+  "tier": "tier1"
+}

@@ -689,6 +689,121 @@
           "requireMin": 1
         }
       ]
+    },
+    {
+      "urlPattern": "waf/latest/developerguide/ddos-protections-by-resource-type\\.md$",
+      "serviceId": "shield",
+      "note": "The resource types Shield Advanced protects, one per bullet.",
+      "recipes": [
+        {
+          "id": "shield-advanced-protected-resources",
+          "blocks": "whole-page",
+          "select": {
+            "from": "list-items",
+            "extract": "regex",
+            "pattern": "^((?:Amazon|AWS)[A-Za-z0-9 ()]+?)(?:\\.|,|$)"
+          },
+          "axis": "resourceType",
+          "status": "covered",
+          "requireMin": 3
+        }
+      ]
+    },
+    {
+      "urlPattern": "ram/latest/userguide/shareable\\.md$",
+      "serviceId": "ram",
+      "note": "Forty-two services, each with a table of the resource types RAM can share and how far each can be shared.",
+      "recipes": [
+        {
+          "id": "ram-shareable-resource-types",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "resource type and code",
+            "extract": "whole",
+            "split": "\\s+\u00b7\\s+",
+            "matches": "^[a-z0-9-]+:[A-Za-z][A-Za-z0-9]*$"
+          },
+          "axis": "resourceType",
+          "status": "covered",
+          "requireMin": 28
+        },
+        {
+          "id": "ram-shareable-outside-organization",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "resource type and code",
+            "extract": "whole",
+            "split": "\\s+\u00b7\\s+",
+            "matches": "^[a-z0-9-]+:[A-Za-z][A-Za-z0-9]*$"
+          },
+          "axis": "resourceType",
+          "status": "from-column",
+          "statusColumn": "outside its organization",
+          "scope": {
+            "axis": "sharingScope",
+            "from": "constant",
+            "value": "outside-organization"
+          },
+          "requireMin": 28
+        }
+      ]
+    },
+    {
+      "urlPattern": "singlesignon/latest/userguide/awsapps-that-work-with-identity-center\\.md$",
+      "serviceId": "sso",
+      "note": "AWS managed applications that work with IAM Identity Center, with four independent Yes/No columns.",
+      "recipes": [
+        {
+          "id": "identity-center-managed-applications",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "managed application",
+            "extract": "whole"
+          },
+          "axis": "service",
+          "status": "covered",
+          "requireMin": 30
+        },
+        {
+          "id": "identity-center-trusted-identity-propagation",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "managed application",
+            "extract": "whole"
+          },
+          "axis": "service",
+          "status": "from-column",
+          "statusColumn": "trusted identity propagation",
+          "scope": {
+            "axis": "identityCenterCapability",
+            "from": "constant",
+            "value": "trusted-identity-propagation"
+          },
+          "requireMin": 25
+        },
+        {
+          "id": "identity-center-customer-managed-key",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "managed application",
+            "extract": "whole"
+          },
+          "axis": "service",
+          "status": "from-column",
+          "statusColumn": "customer managed KMS key",
+          "scope": {
+            "axis": "identityCenterCapability",
+            "from": "constant",
+            "value": "customer-managed-kms-key"
+          },
+          "requireMin": 25
+        }
+      ]
     }
   ]
 }

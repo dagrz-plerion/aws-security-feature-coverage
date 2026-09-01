@@ -4,7 +4,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T06:56:45.643Z",
+      "lastCheckedAt": "2026-09-01T07:08:52.461Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -18,7 +18,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T06:56:45.643Z",
+      "lastCheckedAt": "2026-09-01T07:08:52.461Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -32,7 +32,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T06:56:45.643Z",
+      "lastCheckedAt": "2026-09-01T07:08:52.461Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -46,7 +46,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T06:56:45.643Z",
+      "lastCheckedAt": "2026-09-01T07:08:52.461Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -564,15 +564,32 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T06:48:34.838Z",
+      "lastCheckedAt": "2026-09-01T07:08:52.462Z",
       "lastResult": {
-        "axes": [],
-        "claims": 0,
-        "detail": "page belongs to another service's guide",
-        "status": "empty"
+        "axes": [
+          "resourceType"
+        ],
+        "claims": 3,
+        "dropped": 2,
+        "status": "ok"
       },
+      "note": "The resource types Shield Advanced protects, one per bullet.",
+      "recipes": [
+        {
+          "axis": "resourceType",
+          "blocks": "whole-page",
+          "id": "shield-advanced-protected-resources",
+          "requireMin": 3,
+          "select": {
+            "extract": "regex",
+            "from": "list-items",
+            "pattern": "^((?:Amazon|AWS)[A-Za-z0-9 ()]+?)(?:\\.|,|$)"
+          },
+          "status": "covered"
+        }
+      ],
       "serviceId": "shield",
-      "source": "tier1-sweep",
+      "source": "agent",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
     },
     {

@@ -20550,11 +20550,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "5d4582cd4a29ade9a5ee0d82ac2035128c2028f49db86bf8e8411bbe1882e7b7",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/what-is-resource-config-coverage.md :: Resource Coverage by Region Availability > North and South America Regions | column \"Resource type\"",
-          "quote": "| AWS::EC2::NetworkAcl |  ![](http://docs.aws.amazon.com/config/latest/developerguide/images/success_icon.png) Yes  |  ![](http://docs.aws.amazon.com/config/latest/developerguide/images/success_icon.png) Yes  |  ![](http://docs.aws.amazon.com/config/latest/developerguide/images/success_icon.png) Yes  |  ![](http://docs.aws.amazon.com/config/latest/developerguide/images/success_icon.png) Yes  |  ![](http://docs.aws.amazon.com/config/latest/developerguide/images/success_icon.png) Yes  |  ![](http://docs.aws.amazon.com/config/latest/developerguide/images/success_icon.png) Yes  |  ![](http://docs.…",
-          "retrievedAt": "2026-09-01T04:29:04.465Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/what-is-resource-config-coverage.md"
+          "bodySha256": "f405b79b4ba260d88f623ba829ee55fe5f0e18f7b128fd35c6b7362f8f74df02",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/faq.md :: Frequently Asked Questions > Indirect Relationships in AWS Config > Which indirect relationships does AWS Config support? | column \"Resource type\"",
+          "quote": "| AWS::EC2::NetworkACL | AWS::EC2::Subnet, AWS::EC2::VPC |",
+          "retrievedAt": "2026-09-01T04:59:53.021Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/faq.md"
         }
       ],
       "extractorId": "md-table",
@@ -20563,7 +20563,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::EC2::NetworkAcl",
-      "targetLabel": "AWS::EC2::NetworkAcl"
+      "targetLabel": "AWS::EC2::NetworkACL"
     },
     {
       "axis": "resourceType",
@@ -28067,14 +28067,9 @@
     }
   ],
   "featureId": "config/service-wide",
-  "generatedAt": "2026-09-01T06:56:46.062Z",
+  "generatedAt": "2026-09-01T07:08:52.866Z",
   "serviceId": "config",
   "unresolvedTargets": [
-    {
-      "axis": "resourceType",
-      "raw": "AWS::EC2::NetworkACL",
-      "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/faq.md"
-    },
     {
       "axis": "resourceType",
       "raw": "AWS::ACM::Certificate",

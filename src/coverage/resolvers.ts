@@ -103,9 +103,13 @@ export class TargetResolver {
       }
     }
     for (const type of input.resourceTypes) {
-      this.resourceById.set(type.id, type.id);
-      if (type.cfnTypeName) this.resourceById.set(type.cfnTypeName, type.id);
-      if (type.resourceExplorerType) this.resourceById.set(type.resourceExplorerType, type.id);
+      // AWS writes the same code both ways: "appmesh:Mesh" in the RAM tables,
+      // "appmesh:mesh" in Resource Explorer. Index both.
+      const ids = [type.id, type.cfnTypeName, type.resourceExplorerType].filter((v): v is string => Boolean(v));
+      for (const id of ids) {
+        this.resourceById.set(id, type.id);
+        if (!this.resourceById.has(id.toLowerCase())) this.resourceById.set(id.toLowerCase(), type.id);
+      }
       for (const name of this.humanNamesFor(type, input.services)) {
         for (const key of [clean(name), withoutBrackets(name)]) {
           if (!key) continue;
@@ -190,7 +194,7 @@ export class TargetResolver {
         const direct = this.resourceById.get(text);
         if (direct) return { axis: "resourceType", targetId: direct, label: text };
       }
-      const byId = this.resourceById.get(text);
+      const byId = this.resourceById.get(text) ?? this.resourceById.get(text.toLowerCase());
       if (byId) return { axis: "resourceType", targetId: byId, label: text };
       // A bare common word must not become a resource type. "Remediation" is a
       // heading in many guides and also the name of an SSM resource.

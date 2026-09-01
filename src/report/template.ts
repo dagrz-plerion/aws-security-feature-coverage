@@ -352,13 +352,14 @@ const VIEWS = {
     const rows = M.features.filter((f) => f.claimCount > 0 && match(f, [f.id, f.name, f.serviceId]));
     if (!rows.length) return filters({ placeholder: "search" }) + '<div class="empty">No coverage claims extracted yet.</div>';
 
-    // An axis earns a column only when it applies broadly. A narrow axis that would
-    // leave a dash on almost every row goes in one shared column instead.
+    // Region, service and resource type are the axes every AWS service is measured
+    // against, so they always get a column. Everything else is specific to one
+    // service — a finding type means nothing outside GuardDuty — and shares a column.
+    const STANDARD = ["region", "service", "resourceType"];
     const usage = {};
     for (const r of rows) for (const a of Object.keys(r.axes)) usage[a] = (usage[a] || 0) + 1;
-    const threshold = Math.max(3, rows.length * 0.15);
-    const columns = Object.keys(usage).filter((a) => usage[a] >= threshold).sort();
-    const others = Object.keys(usage).filter((a) => usage[a] < threshold).sort();
+    const columns = STANDARD.filter((a) => usage[a]);
+    const others = Object.keys(usage).filter((a) => !STANDARD.includes(a)).sort();
 
     const otherCell = (r) => {
       const mine = others.filter((a) => r.axes[a]);

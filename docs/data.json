@@ -10901,7 +10901,7 @@
         ]
       },
       "tier": "tier1",
-      "unresolved": 41
+      "unresolved": 40
     },
     {
       "axes": {},
@@ -30752,6 +30752,69 @@
       "unresolved": 0
     },
     {
+      "axes": {
+        "resourceType": {
+          "covered": 31,
+          "notCovered": 5,
+          "partial": 0,
+          "scoped": 31,
+          "total": 31,
+          "unknown": 0
+        }
+      },
+      "claimCount": 62,
+      "confidence": 0.7,
+      "discoveredBy": [
+        "service-level"
+      ],
+      "docUrls": [],
+      "id": "ram/service-wide",
+      "kind": "configuration",
+      "llmClaims": 0,
+      "method": "deterministic",
+      "name": "AWS Resource Access Manager: stated for the service as a whole",
+      "serviceId": "ram",
+      "serviceName": "AWS Resource Access Manager",
+      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+      "targets": {
+        "resourceType": [
+          "aws-marketplace:Entity",
+          "AWS::AppMesh::Mesh",
+          "AWS::AppSync::GraphQLApi",
+          "AWS::CodeBuild::Project",
+          "AWS::CodeConnections::Connection",
+          "AWS::DocDB::DBCluster",
+          "AWS::EC2::Subnet",
+          "AWS::Glue::Database",
+          "AWS::Glue::Table",
+          "AWS::ImageBuilder::Component",
+          "AWS::ImageBuilder::Image",
+          "AWS::NetworkFirewall::Firewall",
+          "AWS::Outposts::Site",
+          "AWS::RefactorSpaces::Environment",
+          "AWS::ResourceExplorer2::View",
+          "AWS::ResourceGroups::Group",
+          "AWS::Route53RecoveryControl::Cluster",
+          "AWS::SageMaker::Hub",
+          "AWS::SageMaker::Pipeline",
+          "AWS::ServiceCatalogAppRegistry::Application",
+          "AWS::SSM::Document",
+          "AWS::SSM::Parameter",
+          "AWS::VpcLattice::Service",
+          "AWS::VpcLattice::ServiceNetwork",
+          "bcm-dashboards:dashboard",
+          "cloudhsm:backup",
+          "elasticloadbalancing:truststore",
+          "network-firewall:StatefulRuleGroup",
+          "network-firewall:StatelessRuleGroup",
+          "outposts:outpost",
+          "servicediscovery:namespace"
+        ]
+      },
+      "tier": "tier1",
+      "unresolved": 0
+    },
+    {
       "axes": {},
       "claimCount": 0,
       "confidence": 0.85,
@@ -38075,6 +38138,41 @@
       "unresolved": 0
     },
     {
+      "axes": {
+        "resourceType": {
+          "covered": 3,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 3,
+          "unknown": 0
+        }
+      },
+      "claimCount": 3,
+      "confidence": 0.7,
+      "discoveredBy": [
+        "service-level"
+      ],
+      "docUrls": [],
+      "id": "shield/service-wide",
+      "kind": "configuration",
+      "llmClaims": 0,
+      "method": "deterministic",
+      "name": "AWS Shield: stated for the service as a whole",
+      "serviceId": "shield",
+      "serviceName": "AWS Shield",
+      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+      "targets": {
+        "resourceType": [
+          "AWS::CloudFront::Distribution",
+          "AWS::EC2::Instance",
+          "AWS::Route53::HostedZone"
+        ]
+      },
+      "tier": "tier1",
+      "unresolved": 0
+    },
+    {
       "axes": {},
       "claimCount": 0,
       "confidence": 0.6,
@@ -39549,14 +39647,14 @@
       "axes": {
         "service": {
           "covered": 30,
-          "notCovered": 0,
+          "notCovered": 18,
           "partial": 0,
-          "scoped": 0,
+          "scoped": 60,
           "total": 30,
           "unknown": 0
         }
       },
-      "claimCount": 30,
+      "claimCount": 90,
       "confidence": 0.6,
       "discoveredBy": [
         "guide-subchapter"
@@ -39607,7 +39705,7 @@
         ]
       },
       "tier": "tier1",
-      "unresolved": 20
+      "unresolved": 0
     },
     {
       "axes": {},
@@ -44334,6 +44432,13 @@
       "subject": "unresolved:product:aws-private-5g"
     },
     {
+      "detail": "recipe ram-shareable-resource-types produced 31 claims, fewer than the 40 it promises on https://docs.aws.amazon.com/ram/latest/userguide/shareable.md. The page shape has probably changed.",
+      "id": "37132d28af84a721",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:ram-shareable-resource-types"
+    },
+    {
       "detail": "\"AWS Microservice Extractor for .NET\" did not join to a service prefix. Score 0, signals none.",
       "id": "39db9be1cc3c879d",
       "kind": "alias",
@@ -44465,6 +44570,13 @@
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "coverage pages without a feature"
+    },
+    {
+      "detail": "recipe shield-advanced-protected-resources produced 3 claims, fewer than the 5 it promises on https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md. The page shape has probably changed.",
+      "id": "464488034822dc59",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:shield-advanced-protected-resources"
     },
     {
       "detail": "recipe securityhub-standards produced 1 claims, fewer than the 4 it promises on https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md. The page shape has probably changed.",
@@ -44985,6 +45097,13 @@
       "subject": "unresolved coverage targets"
     },
     {
+      "detail": "recipe ram-shareable-outside-organization produced 31 claims, fewer than the 40 it promises on https://docs.aws.amazon.com/ram/latest/userguide/shareable.md. The page shape has probably changed.",
+      "id": "82636f68fe19f7f4",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:ram-shareable-outside-organization"
+    },
+    {
       "detail": "\"VMware Cloud on AWS\" did not join to a service prefix. Score 0, signals none.",
       "id": "83173f73ae546af5",
       "kind": "alias",
@@ -45312,6 +45431,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:vm-import"
+    },
+    {
+      "detail": "321 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
+      "id": "968fa161eb97e857",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved coverage targets"
     },
     {
       "detail": "\"AWS SDK for JavaScript Developer Guide for SDK Version 3\" did not join to a service prefix. Score 3, signals security-doc-pages.",
@@ -45706,6 +45832,13 @@
       "subject": "unresolved:doc:elemental-cl3"
     },
     {
+      "detail": "320 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
+      "id": "be44f96c9ab7378b",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved coverage targets"
+    },
+    {
       "detail": "\"doc:sdk-for-go\" did not join to a service prefix. Score 3, signals security-doc-pages.",
       "id": "bed2d6f8732c1212",
       "kind": "alias",
@@ -45718,6 +45851,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:aws-deepracer"
+    },
+    {
+      "detail": "recipe ram-shareable-resource-types produced 0 claims, fewer than the 50 it promises on https://docs.aws.amazon.com/ram/latest/userguide/shareable.md. The page shape has probably changed.",
+      "id": "bf95ef874934d0cb",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:ram-shareable-resource-types"
     },
     {
       "detail": "\"doc:r53recovery\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -46026,6 +46166,13 @@
       "kind": "recall",
       "stage": "stage4-features",
       "subject": "features:fms"
+    },
+    {
+      "detail": "recipe ram-shareable-outside-organization produced 0 claims, fewer than the 50 it promises on https://docs.aws.amazon.com/ram/latest/userguide/shareable.md. The page shape has probably changed.",
+      "id": "df50b6d3cd13e1c5",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:ram-shareable-outside-organization"
     },
     {
       "detail": "1290 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
@@ -46399,7 +46546,7 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-01T06:57:03.461Z",
+  "generatedAt": "2026-09-01T07:09:12.163Z",
   "manifest": {
     "fetch": {
       "cacheHit": 10411,
@@ -46407,73 +46554,74 @@
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-01T06:56:46.949Z",
+    "finishedAt": "2026-09-01T07:08:53.753Z",
     "stages": [
       {
         "counts": {
-          "claims": 10207,
+          "claims": 10332,
           "conflicts": 0,
-          "covered": 3725,
+          "covered": 3821,
           "duplicateRegistrationsSkipped": 1493,
-          "empty": 11697,
+          "empty": 11695,
           "enabled": 11781,
-          "featuresWithCoverage": 52,
-          "from_agent": 22,
-          "from_tier1-sweep": 6519,
+          "featuresWithCoverage": 54,
+          "from_agent": 25,
+          "from_tier1-sweep": 6516,
           "from_title-match": 5240,
           "newlyDiscovered": 0,
-          "notCovered": 6482,
+          "notCovered": 6511,
           "openAxes": 17,
           "openAxisMembers": 2133,
           "pagesConsidered": 10288,
           "pagesFailed": 1,
-          "pagesRead": 85,
+          "pagesRead": 87,
           "pagesRejectedByKind": 2643,
           "prunedStaleRecords": 0,
           "recipeFailures": 0,
           "recipeRulesWithNoPage": 0,
-          "recipes": 45,
-          "recipesAttached": 45,
+          "recipes": 51,
+          "recipesAttached": 51,
           "registered": 11781,
-          "serviceWideRecords": 17,
+          "serviceWideRecords": 19,
           "tablesRecoveredFromHtml": 360,
           "unattachedPages": 106,
-          "unresolvedTargets": 341,
-          "withRecipe": 34,
-          "yielding": 83
+          "unresolvedTargets": 320,
+          "valuesDroppedUnresolved": 165,
+          "withRecipe": 37,
+          "yielding": 85
         },
-        "finishedAt": "2026-09-01T06:56:46.218Z",
+        "finishedAt": "2026-09-01T07:08:53.021Z",
         "id": "stage5-coverage",
-        "startedAt": "2026-09-01T06:56:35.078Z",
+        "startedAt": "2026-09-01T07:08:41.871Z",
         "status": "partial"
       },
       {
         "counts": {
-          "claims": 10207,
-          "features": 1751,
+          "claims": 10332,
+          "features": 1753,
           "quotesChecked": 250,
           "recallFound": 73,
           "recallTotal": 73,
           "services": 692,
           "violations": 0
         },
-        "finishedAt": "2026-09-01T06:56:46.646Z",
+        "finishedAt": "2026-09-01T07:08:53.444Z",
         "id": "stage6-validate",
-        "startedAt": "2026-09-01T06:56:46.219Z",
+        "startedAt": "2026-09-01T07:08:53.022Z",
         "status": "ok"
       },
       {
         "counts": {
-          "features": 1751,
+          "features": 1753,
           "services": 211
         },
-        "finishedAt": "2026-09-01T06:56:46.949Z",
+        "finishedAt": "2026-09-01T07:08:53.753Z",
         "id": "report",
-        "startedAt": "2026-09-01T06:56:46.646Z",
+        "startedAt": "2026-09-01T07:08:53.445Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-01T06:56:35.076Z"
+    "startedAt": "2026-09-01T07:08:41.869Z"
   },
   "outOfScope": [
     {
@@ -56557,7 +56705,7 @@
     {
       "actionCount": 35,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 0,
+      "claimCount": 62,
       "confidence": 1,
       "docGuides": [
         {
@@ -56573,7 +56721,7 @@
           "url": "https://docs.aws.amazon.com/ram/latest/userguide/what-is.md"
         }
       ],
-      "featureCount": 5,
+      "featureCount": 6,
       "id": "ram",
       "method": "deterministic",
       "name": "AWS Resource Access Manager",
@@ -57532,7 +57680,7 @@
     {
       "actionCount": 39,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 0,
+      "claimCount": 3,
       "confidence": 1,
       "docGuides": [
         {
@@ -57542,7 +57690,7 @@
           "url": "https://docs.aws.amazon.com/nspm/3.0/network-security-posture-management/latest/APIReference//Welcome.md"
         }
       ],
-      "featureCount": 24,
+      "featureCount": 25,
       "id": "shield",
       "method": "deterministic",
       "name": "AWS Shield",
@@ -57816,7 +57964,7 @@
     {
       "actionCount": 126,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 30,
+      "claimCount": 90,
       "confidence": 1,
       "docGuides": [
         {

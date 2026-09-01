@@ -254,6 +254,7 @@ export const stage5: Stage = {
     let tablesRecovered = 0;
     let recipeFailures = 0;
     let rejectedPages = 0;
+    let totalDropped = 0;
 
     await mapPool(jobs, 10, async (job) => {
       const url = job.page.url;
@@ -340,8 +341,10 @@ export const stage5: Stage = {
         // list, a price list or a walkthrough.
         if (job.page.recipes?.length) {
           const failures: string[] = [];
+          let droppedHere = 0;
           for (const recipe of job.page.recipes) {
             const outcome = runRecipe(recipe, body, pageTitle, resolver);
+            droppedHere += outcome.dropped ?? 0;
             if (outcome.failure) {
               recipeFailures += 1;
               failures.push(outcome.failure);
@@ -393,8 +396,10 @@ export const stage5: Stage = {
             claims: blockClaims,
             axes: [...seenAxes].sort(),
             status: failures.length ? "failed" : blockClaims > 0 ? "ok" : "empty",
+            ...(droppedHere ? { dropped: droppedHere } : {}),
             ...(failures.length ? { detail: failures.join("; ").slice(0, 300) } : {}),
           });
+          totalDropped += droppedHere;
           if (attachedAny) read += 1;
           return;
         }
@@ -579,6 +584,7 @@ export const stage5: Stage = {
         recipesAttached,
         recipeFailures,
         recipeRulesWithNoPage: orphanRules,
+        valuesDroppedUnresolved: totalDropped,
         featuresWithCoverage: claimsByFeature.size,
         serviceWideRecords: serviceWideUsed.size,
         openAxes: openAxisMembers.size,
