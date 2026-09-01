@@ -6,11 +6,12 @@ import { stage3 } from "../pipeline/stage3.js";
 import { stage4 } from "../pipeline/stage4.js";
 import { stage5 } from "../pipeline/stage5.js";
 import { stage6 } from "../pipeline/stage6.js";
+import { stage7 } from "../pipeline/stage7.js";
 import { buildReport } from "../report/build.js";
 import { fetchStats } from "../core/fetch.js";
 import { deploy } from "./deploy.js";
 
-const ALL: Stage[] = [stage1, stage2, stage3, stage4, stage5, stage6];
+const ALL: Stage[] = [stage1, stage2, stage3, stage4, stage5, stage6, stage7];
 
 function parseArgs(argv: string[]) {
   const only: string[] = [];

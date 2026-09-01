@@ -6011,15 +6011,15 @@
     {
       "axes": {
         "service": {
-          "covered": 0,
-          "notCovered": 13,
+          "covered": 61,
+          "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 13,
+          "total": 61,
           "unknown": 0
         }
       },
-      "claimCount": 13,
+      "claimCount": 61,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -6037,8 +6037,56 @@
       "summary": "Configure CloudTrail trails or event data stores to log network activity events.",
       "targets": {
         "service": [
+          "api.tunneling.iot",
+          "appconfig",
+          "application-signals",
+          "appmesh",
+          "athena",
+          "b2bi",
+          "backup-gateway",
+          "bedrock",
+          "budgets",
+          "cassandra",
+          "ce",
+          "cloudcontrolapi",
+          "cloudformation",
+          "cloudhsm",
+          "cloudtrail",
+          "cloudwatch",
+          "codedeploy",
+          "comprehendmedical",
+          "config",
+          "cur",
+          "ds",
+          "dynamodb",
+          "ec2",
+          "ecs",
+          "elasticfilesystem",
+          "elasticloadbalancing",
+          "events",
+          "firehose",
+          "frauddetector",
+          "freetier",
+          "fsx",
+          "glue",
+          "healthlake",
+          "invoicing",
+          "iotfleetwise",
+          "kms",
+          "lakeformation",
+          "lambda",
+          "license-manager",
+          "lookoutequipment",
+          "personalize",
+          "product:amazon-lookout-for-vision",
+          "qbusiness",
+          "rds",
+          "rekognition",
+          "s3",
           "sagemaker",
+          "scheduler",
           "secretsmanager",
+          "servicediscovery",
           "sns",
           "sqs",
           "ssm-incidents",
@@ -6053,7 +6101,7 @@
         ]
       },
       "tier": "tier1",
-      "unresolved": 0
+      "unresolved": 1
     },
     {
       "axes": {},
@@ -9444,14 +9492,14 @@
       "axes": {
         "resourceType": {
           "covered": 632,
-          "notCovered": 0,
+          "notCovered": 477,
           "partial": 0,
-          "scoped": 0,
+          "scoped": 17954,
           "total": 632,
           "unknown": 0
         }
       },
-      "claimCount": 632,
+      "claimCount": 18539,
       "confidence": 0.6,
       "discoveredBy": [
         "guide-subchapter"
@@ -18446,8 +18494,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "findingType": {
+          "covered": 64,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 64,
+          "unknown": 0
+        }
+      },
+      "claimCount": 64,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -18465,7 +18522,74 @@
       "serviceId": "guardduty",
       "serviceName": "Amazon GuardDuty",
       "summary": "Lifecycle metadata fields help you audit filter history and detect unexpected changes to your suppression rules.",
-      "targets": {},
+      "targets": {
+        "findingType": [
+          "AttackSequence:EKS/CompromisedCluster",
+          "AttackSequence:S3/CompromisedData",
+          "Backdoor:EC2/C&CActivity.B!DNS",
+          "Backdoor:EC2/DenialOfService.Dns",
+          "Backdoor:EC2/DenialOfService.Udp",
+          "Backdoor:Runtime/C&CActivity.B!DNS",
+          "CryptoCurrency:EC2/BitcoinTool.B!DNS",
+          "CryptoCurrency:Runtime/BitcoinTool.B!DNS",
+          "DefenseEvasion:Runtime/ProcessInjection.Ptrace",
+          "DefenseEvasion:Runtime/ProcessInjection.VirtualMemoryWrite",
+          "Discovery:Kubernetes/MaliciousIPCaller.Custom",
+          "Discovery:Kubernetes/SuccessfulAnonymousAccess",
+          "Discovery:Kubernetes/TorIPCaller",
+          "Discovery:S3/MaliciousIPCaller.Custom",
+          "Discovery:S3/TorIPCaller",
+          "Execution:Kubernetes/ExecInKubeSystemPod",
+          "Execution:Runtime/ReverseShell",
+          "Impact:EC2/AbusedDomainRequest.Reputation",
+          "Impact:EC2/BitcoinDomainRequest.Reputation",
+          "Impact:EC2/MaliciousDomainRequest.Reputation",
+          "Impact:EC2/SuspiciousDomainRequest.Reputation",
+          "Impact:Kubernetes/MaliciousIPCaller.Custom",
+          "Impact:Runtime/AbusedDomainRequest.Reputation",
+          "Impact:Runtime/BitcoinDomainRequest.Reputation",
+          "Impact:Runtime/MaliciousDomainRequest.Reputation",
+          "Impact:Runtime/SuspiciousDomainRequest.Reputation",
+          "PenTest:IAMUser/KaliLinux",
+          "PenTest:S3/KaliLinux",
+          "Persistence:Kubernetes/ContainerWithSensitiveMount",
+          "Policy:Kubernetes/AdminAccessToDefaultServiceAccount",
+          "Policy:Kubernetes/AnonymousAccessGranted",
+          "Policy:S3/AccountBlockPublicAccessDisabled",
+          "Policy:S3/BucketAnonymousAccessGranted",
+          "Policy:S3/BucketBlockPublicAccessDisabled",
+          "Policy:S3/BucketPublicAccessGranted",
+          "PrivilegeEscalation:Kubernetes/PrivilegedContainer",
+          "PrivilegeEscalation:Runtime/ContainerMountsHostDirectory",
+          "PrivilegeEscalation:Runtime/DockerSocketAccessed",
+          "Recon:EC2/Portscan",
+          "Recon:IAMUser/MaliciousIPCaller.Custom",
+          "Recon:IAMUser/TorIPCaller",
+          "Stealth:IAMUser/CloudTrailLoggingDisabled",
+          "Stealth:IAMUser/PasswordPolicyChange",
+          "Stealth:S3/ServerAccessLoggingDisabled",
+          "Trojan:EC2/BlackholeTraffic!DNS",
+          "Trojan:EC2/DGADomainRequest.C!DNS",
+          "Trojan:EC2/DNSDataExfiltration",
+          "Trojan:EC2/DriveBySourceTraffic!DNS",
+          "Trojan:EC2/DropPoint!DNS",
+          "Trojan:EC2/PhishingDomainRequest!DNS",
+          "Trojan:Runtime/BlackholeTraffic!DNS",
+          "Trojan:Runtime/DGADomainRequest.C!DNS",
+          "Trojan:Runtime/DriveBySourceTraffic!DNS",
+          "Trojan:Runtime/DropPoint!DNS",
+          "Trojan:Runtime/PhishingDomainRequest!DNS",
+          "UnauthorizedAccess:EC2/MaliciousIPCaller.Custom",
+          "UnauthorizedAccess:EC2/RDPBruteForce",
+          "UnauthorizedAccess:EC2/SSHBruteForce",
+          "UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.OutsideAWS",
+          "UnauthorizedAccess:IAMUser/MaliciousIPCaller.Custom",
+          "UnauthorizedAccess:IAMUser/TorIPCaller",
+          "UnauthorizedAccess:Lambda/MaliciousIPCaller.Custom",
+          "UnauthorizedAccess:S3/MaliciousIPCaller.Custom",
+          "UnauthorizedAccess:S3/TorIPCaller"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -39104,8 +39228,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "service": {
+          "covered": 5,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 5,
+          "unknown": 0
+        }
+      },
+      "claimCount": 5,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -39121,9 +39254,17 @@
       "serviceId": "sso",
       "serviceName": "AWS IAM Identity Center",
       "summary": "Understand how SAML 2.0 and OAuth 2.0 applications work with IAM Identity Center.",
-      "targets": {},
+      "targets": {
+        "service": [
+          "datazone",
+          "identitystore",
+          "redshift",
+          "transform",
+          "verified-access"
+        ]
+      },
       "tier": "tier1",
-      "unresolved": 0
+      "unresolved": 7
     },
     {
       "axes": {},
@@ -42959,6 +43100,13 @@
       "subject": "unresolved:doc:toolkit-for-jetbrains"
     },
     {
+      "detail": "read 6 of about 14 candidate values on the page. Either the page holds more than this feature, or a recipe is needed.",
+      "id": "08768c17c9859574",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "verify:https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md"
+    },
+    {
       "detail": "106 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions\".",
       "id": "0c3ba43632c63ca6",
       "kind": "parser",
@@ -43085,6 +43233,13 @@
       "subject": "unresolved:doc:amazonswf"
     },
     {
+      "detail": "193 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions for ACM SLRs\".",
+      "id": "1c24a834c72216a0",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "coverage pages without a feature"
+    },
+    {
       "detail": "\"AWS Application Composer \" did not join to a service prefix. Score 0, signals none.",
       "id": "1d7cfd83aac7ea20",
       "kind": "alias",
@@ -43153,6 +43308,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:aws-management-console"
+    },
+    {
+      "detail": "read 5 of about 14 candidate values on the page. Either the page holds more than this feature, or a recipe is needed.",
+      "id": "26514c207d3a4b95",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "verify:https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md"
     },
     {
       "detail": "333 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
@@ -44555,6 +44717,13 @@
       "subject": "coverage pages without a feature"
     },
     {
+      "detail": "29 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
+      "id": "b0116494a453ba5f",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved coverage targets"
+    },
+    {
       "detail": "\"doc:cloudformation-cli\" did not join to a service prefix. Score 0, signals none.",
       "id": "b0fab971be8ec1ab",
       "kind": "alias",
@@ -44567,6 +44736,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:snow"
+    },
+    {
+      "detail": "186 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions for ACM SLRs\".",
+      "id": "b1777d5d12e87233",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "coverage pages without a feature"
     },
     {
       "detail": "\"AWS Marketplace for Containers Anywhere\" did not join to a service prefix. Score 0, signals none.",
@@ -44658,6 +44834,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:tensorflow-on-aws"
+    },
+    {
+      "detail": "30 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
+      "id": "b82f9cd9085cd8f6",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved coverage targets"
     },
     {
       "detail": "226 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
@@ -45001,6 +45184,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:solutions"
+    },
+    {
+      "detail": "read 5 of about 30 candidate values on the page. Either the page holds more than this feature, or a recipe is needed.",
+      "id": "d5e40b913ee1fa98",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "verify:https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
     },
     {
       "detail": "\"Amazon DCV\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -45458,82 +45648,41 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-01T07:23:23.488Z",
+  "generatedAt": "2026-09-01T07:29:35.027Z",
   "manifest": {
     "fetch": {
-      "cacheHit": 10412,
+      "cacheHit": 61,
       "failed": 0,
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-01T07:23:14.054Z",
+    "finishedAt": "2026-09-01T07:29:27.065Z",
     "stages": [
       {
         "counts": {
-          "claims": 30740,
-          "conflicts": 0,
-          "covered": 24260,
-          "duplicateRegistrationsSkipped": 1493,
-          "empty": 11722,
-          "enabled": 11782,
-          "featuresWithCoverage": 49,
-          "from_agent": 28,
-          "from_tier1-sweep": 6516,
-          "from_title-match": 5238,
-          "newlyDiscovered": 0,
-          "notCovered": 6480,
-          "openAxes": 17,
-          "openAxisMembers": 2076,
-          "pagesConsidered": 10289,
-          "pagesFailed": 1,
-          "pagesRead": 59,
-          "pagesRejectedByKind": 2643,
-          "prunedStaleRecords": 0,
-          "recipeFailures": 0,
-          "recipeRulesWithNoPage": 0,
-          "recipes": 56,
-          "recipesAttached": 56,
-          "registered": 11782,
-          "serviceWideRecords": 3,
-          "tablesRecoveredFromHtml": 360,
-          "unattachedPages": 154,
-          "unresolvedTargets": 22,
-          "valuesDroppedUnresolved": 283,
-          "withRecipe": 41,
-          "yielding": 59
+          "clean": 58,
+          "empty": 0,
+          "pagesChecked": 61,
+          "partialRead": 3,
+          "staleQuotes": 0
         },
-        "finishedAt": "2026-09-01T07:23:12.977Z",
-        "id": "stage5-coverage",
-        "startedAt": "2026-09-01T07:23:03.206Z",
+        "finishedAt": "2026-09-01T07:29:26.446Z",
+        "id": "stage7-verify",
+        "startedAt": "2026-09-01T07:29:26.103Z",
         "status": "partial"
-      },
-      {
-        "counts": {
-          "claims": 30740,
-          "features": 1755,
-          "quotesChecked": 250,
-          "recallFound": 73,
-          "recallTotal": 73,
-          "services": 692,
-          "violations": 0
-        },
-        "finishedAt": "2026-09-01T07:23:13.524Z",
-        "id": "stage6-validate",
-        "startedAt": "2026-09-01T07:23:12.978Z",
-        "status": "ok"
       },
       {
         "counts": {
           "features": 1755,
           "services": 211
         },
-        "finishedAt": "2026-09-01T07:23:14.054Z",
+        "finishedAt": "2026-09-01T07:29:27.065Z",
         "id": "report",
-        "startedAt": "2026-09-01T07:23:13.525Z",
+        "startedAt": "2026-09-01T07:29:26.447Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-01T07:23:03.203Z"
+    "startedAt": "2026-09-01T07:29:26.101Z"
   },
   "outOfScope": [
     {
@@ -51919,7 +52068,7 @@
     {
       "actionCount": 66,
       "category": "Management & Governance",
-      "claimCount": 79,
+      "claimCount": 127,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -52289,7 +52438,7 @@
     {
       "actionCount": 102,
       "category": "Management & Governance",
-      "claimCount": 22913,
+      "claimCount": 40820,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -54015,7 +54164,7 @@
     {
       "actionCount": 91,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 306,
+      "claimCount": 370,
       "confidence": 1,
       "docGuides": [
         {
@@ -56876,7 +57025,7 @@
     {
       "actionCount": 126,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 90,
+      "claimCount": 95,
       "confidence": 1,
       "docGuides": [
         {

@@ -1,76 +1,35 @@
 {
   "fetch": {
-    "cacheHit": 10412,
+    "cacheHit": 61,
     "failed": 0,
     "network": 0,
     "revalidated": 0
   },
-  "finishedAt": "2026-09-01T07:23:14.054Z",
+  "finishedAt": "2026-09-01T07:29:27.065Z",
   "stages": [
     {
       "counts": {
-        "claims": 30740,
-        "conflicts": 0,
-        "covered": 24260,
-        "duplicateRegistrationsSkipped": 1493,
-        "empty": 11722,
-        "enabled": 11782,
-        "featuresWithCoverage": 49,
-        "from_agent": 28,
-        "from_tier1-sweep": 6516,
-        "from_title-match": 5238,
-        "newlyDiscovered": 0,
-        "notCovered": 6480,
-        "openAxes": 17,
-        "openAxisMembers": 2076,
-        "pagesConsidered": 10289,
-        "pagesFailed": 1,
-        "pagesRead": 59,
-        "pagesRejectedByKind": 2643,
-        "prunedStaleRecords": 0,
-        "recipeFailures": 0,
-        "recipeRulesWithNoPage": 0,
-        "recipes": 56,
-        "recipesAttached": 56,
-        "registered": 11782,
-        "serviceWideRecords": 3,
-        "tablesRecoveredFromHtml": 360,
-        "unattachedPages": 154,
-        "unresolvedTargets": 22,
-        "valuesDroppedUnresolved": 283,
-        "withRecipe": 41,
-        "yielding": 59
+        "clean": 58,
+        "empty": 0,
+        "pagesChecked": 61,
+        "partialRead": 3,
+        "staleQuotes": 0
       },
-      "finishedAt": "2026-09-01T07:23:12.977Z",
-      "id": "stage5-coverage",
-      "startedAt": "2026-09-01T07:23:03.206Z",
+      "finishedAt": "2026-09-01T07:29:26.446Z",
+      "id": "stage7-verify",
+      "startedAt": "2026-09-01T07:29:26.103Z",
       "status": "partial"
-    },
-    {
-      "counts": {
-        "claims": 30740,
-        "features": 1755,
-        "quotesChecked": 250,
-        "recallFound": 73,
-        "recallTotal": 73,
-        "services": 692,
-        "violations": 0
-      },
-      "finishedAt": "2026-09-01T07:23:13.524Z",
-      "id": "stage6-validate",
-      "startedAt": "2026-09-01T07:23:12.978Z",
-      "status": "ok"
     },
     {
       "counts": {
         "features": 1755,
         "services": 211
       },
-      "finishedAt": "2026-09-01T07:23:14.054Z",
+      "finishedAt": "2026-09-01T07:29:27.065Z",
       "id": "report",
-      "startedAt": "2026-09-01T07:23:13.525Z",
+      "startedAt": "2026-09-01T07:29:26.447Z",
       "status": "ok"
     }
   ],
-  "startedAt": "2026-09-01T07:23:03.203Z"
+  "startedAt": "2026-09-01T07:29:26.101Z"
 }

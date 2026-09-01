@@ -903,21 +903,25 @@
     {
       "urlPattern": "config/latest/developerguide/what-is-resource-config-coverage\\.md$",
       "serviceId": "config",
-      "note": "The resource types AWS Config can record, per Region. Belongs to resource recording, not to the service as a whole.",
+      "note": "Resource type by Region. The types run down the first column and the Regions across the header, so every cell is one statement.",
       "recipes": [
         {
-          "id": "config-recordable-resource-types",
+          "id": "config-resource-coverage-matrix",
           "blocks": "whole-page",
           "select": {
-            "from": "table-column",
+            "from": "matrix",
             "headerMatches": "resource type",
             "extract": "whole",
             "matches": "^AWS::[A-Za-z0-9]+::[A-Za-z0-9]+$"
           },
           "axis": "resourceType",
-          "status": "covered",
+          "status": "from-column",
+          "scope": {
+            "axis": "region",
+            "from": "column-header"
+          },
           "featureId": "config/recording-aws-resources",
-          "requireMin": 400
+          "requireMin": 2000
         }
       ]
     },

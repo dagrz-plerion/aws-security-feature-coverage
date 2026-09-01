@@ -29,6 +29,14 @@ export type CoveragePage = {
    */
   recipes?: Recipe[];
   firstSeen: string;
+  /** What the last verification pass found. Drift from this is a failure. */
+  verified?: {
+    at: string;
+    distinctTargets: number;
+    candidates: number;
+    readRatio: number;
+    verdict: "ok" | "partial-read" | "stale-quotes" | "empty";
+  };
   lastCheckedAt?: string;
   lastResult?: {
     claims: number;

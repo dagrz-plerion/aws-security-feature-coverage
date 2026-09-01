@@ -33,7 +33,7 @@ const AXES: Universe[] = ["region", "resourceType", "service", "dataSource"];
  * table of contents becomes a coverage claim.
  */
 const ASSERTS_COVERAGE =
-  /\b(support|supported|supports|available|availability|coverage|covers?|covered|works? with|integrat|compatib|applies to|apply to|can (scan|analy[sz]e|monitor|protect|detect|evaluate|record|back up)|scans?|analy[sz]es|monitors?|protects?|detects?|evaluates?|records?|retrieves?|includes?|enabled for|eligible|not supported|unsupported|excluded|prerequisite|requirement)\b/i;
+  /\b(support|supported|supports|available|availability|coverage|covers?|covered|works? with|integrat|compatib|applies to|apply to|can (scan|analy[sz]e|monitor|protect|detect|evaluate|record|back up)|scans?|analy[sz]es|monitors?|protects?|detects?|evaluates?|records?|retrieves?|includes?|enabled for|eligible|not supported|unsupported|excluded|prerequisite|requirement|logs?|logged|logging|captures?|captured|emits?|delivers?|ingests?|collects?|reports? on)\b/i;
 
 /**
  * Page kinds that never state coverage, however their tables happen to be shaped.
@@ -128,8 +128,13 @@ function resolveValues(resolver: TargetResolver, raw: string, axis: Universe) {
   if (fromParts.length > 1) return fromParts;
   return whole ? [whole] : fromParts;
 }
-/** Below this share of resolvable values we do not trust a column or list. */
-const MIN_RESOLUTION_RATE = 0.6;
+/**
+ * How well a column or list has to resolve before we believe it names things on that
+ * axis. Once an axis is chosen the values that do resolve are kept and the rest are
+ * recorded as unresolved: a list of 49 services where 25 are in the universe is still
+ * a coverage list, and dropping it whole lost real coverage.
+ */
+const MIN_RESOLUTION_RATE = 0.4;
 const MIN_VALUES = 3;
 
 const YES = /^(yes|supported|available|✓|✔|x|all|full|general availability|ga)$/i;
@@ -271,7 +276,14 @@ export function extractFromList(list: MdList, resolver: TargetResolver, serviceI
     return { claims: catalog, unresolved };
   }
 
-  const negated = statesAbsence(`${blockHeading} ${list.intro ?? ""} ${list.section.join(" ")}`);
+  // A sentence only speaks for the list when it introduces one. AWS drops notes into
+  // the middle of a list ("Amazon S3 Multi-Region Access Points are not supported."),
+  // which splits it, and the note then flipped the rest of the list to not-covered.
+  const intro = list.intro ?? "";
+  const isLeadIn = /:\s*$/.test(intro) || /\b(following|these|listed below)\b/i.test(intro);
+  const negated = isLeadIn
+    ? statesAbsence(`${intro} ${blockHeading}`)
+    : statesAbsence(`${blockHeading} ${list.section.join(" ")}`);
   const claims: RawClaim[] = [];
   const seen = new Set<string>();
   for (const item of list.items) {

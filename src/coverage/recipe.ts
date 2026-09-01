@@ -15,7 +15,7 @@ export type Recipe = {
   note?: string;
   blocks?: "whole-page" | "h2-sections" | "h3-sections";
   select: {
-    from: "list-items" | "table-column" | "headings" | "code-spans" | "paragraph";
+    from: "list-items" | "table-column" | "headings" | "code-spans" | "paragraph" | "matrix";
     /** paragraph only: the sentence must match this before its targets are taken. */
     sentenceMatches?: string;
     headerMatches?: string;
@@ -36,7 +36,7 @@ export type Recipe = {
   statusColumn?: string;
   scope?: {
     axis: string;
-    from: "block-title" | "page-title" | "column" | "constant";
+    from: "block-title" | "page-title" | "column" | "constant" | "column-header";
     column?: string;
     /** scope.from = "constant": the same scope applies to every claim on the page. */
     value?: string;
@@ -136,6 +136,18 @@ function splitValue(value: string, recipe: Recipe): string[] {
     .filter(Boolean);
 }
 
+function shapeOf(recipe: Recipe): RegExp | undefined {
+  return recipe.select.matches ? new RegExp(recipe.select.matches) : undefined;
+}
+
+/** A matrix cell says yes, no, or nothing at all. */
+function cellVerdict(value: string): CoverageStatus | undefined {
+  const first = (value.trim().split(/\s+/)[0] ?? "").trim();
+  if (NO.test(first) || NO.test(value.trim())) return "not-covered";
+  if (YES.test(first) || YES.test(value.trim())) return "covered";
+  return undefined;
+}
+
 type Block = { title: string; body: string };
 
 /**
@@ -191,6 +203,7 @@ export function runRecipe(
   for (const block of blocks) {
     const blockDoc = parseMarkdown(block.body);
     const values: { value: string; quote: string; row?: string[]; headers?: string[] }[] = [];
+    const matrixCells: { target: string; header: string; status: CoverageStatus; quote: string }[] = [];
 
     if (recipe.select.from === "list-items") {
       for (const list of blockDoc.lists) {
@@ -228,6 +241,30 @@ export function runRecipe(
         const raw = blockDoc.lines[section.startLine];
         values.push({ value: section.title, quote: (raw ?? `${"#".repeat(wanted)} ${section.title}`).trim() });
       }
+    } else if (recipe.select.from === "matrix") {
+      // A matrix names its targets down the first column and its scope across the
+      // header row: resource type by Region, feature by Region. Each cell is one
+      // statement, so the whole table is targets x scopes.
+      for (const table of blockDoc.tables) {
+        const keyCol = recipe.select.headerMatches
+          ? findColumn(table.headers, [new RegExp(recipe.select.headerMatches, "i")])
+          : 0;
+        if (keyCol < 0) continue;
+        for (let rowIndex = 0; rowIndex < table.rows.length; rowIndex += 1) {
+          const row = table.rows[rowIndex] as string[];
+          const target = extractTarget(row[keyCol] ?? "", recipe);
+          if (!target) continue;
+          if (shapeOf(recipe) && !shapeOf(recipe)?.test(target)) continue;
+          for (let col = 0; col < table.headers.length; col += 1) {
+            if (col === keyCol) continue;
+            const header = (table.headers[col] ?? "").trim();
+            if (!header) continue;
+            const cellStatus = cellVerdict(row[col] ?? "");
+            if (!cellStatus) continue;
+            matrixCells.push({ target, header, status: cellStatus, quote: (table.rawRows[rowIndex] ?? "").trim() });
+          }
+        }
+      }
     } else if (recipe.select.from === "paragraph") {
       // AWS states most of its exclusions in a sentence beside the list, never in the
       // list. "Macie doesn't analyze S3 objects that use other storage classes, such
@@ -253,6 +290,40 @@ export function runRecipe(
       const raw = recipe.scope.from === "page-title" ? pageTitle : block.title;
       const hit = resolver.resolve(raw, recipe.scope.axis as never);
       if (hit) scope = { axis: recipe.scope.axis, targetId: hit.targetId, label: raw };
+    }
+
+    // A matrix produces its own claims: one per cell.
+    if (recipe.select.from === "matrix") {
+      for (const cell of matrixCells) {
+        const targetId0 = catalogTargetId(recipe.axis, cell.target);
+        let targetId = targetId0;
+        if (CLOSED_AXES.has(recipe.axis)) {
+          const hit = resolver.resolve(cell.target, recipe.axis as never);
+          if (!hit) { dropped += 1; continue; }
+          targetId = hit.targetId;
+        }
+        let cellScope: RawClaim["scope"];
+        if (recipe.scope?.from === "column-header") {
+          const hit = resolver.resolve(cell.header.replace(/\s+Region$/i, ""), recipe.scope.axis as never);
+          if (!hit) { dropped += 1; continue; }
+          cellScope = { axis: recipe.scope.axis, targetId: hit.targetId, label: cell.header };
+        }
+        const key = `${targetId}|${cellScope?.targetId ?? cell.header}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        claims.push({
+          axis: recipe.axis,
+          targetId,
+          targetLabel: cell.target,
+          ...(cellScope ? { scope: cellScope } : {}),
+          status: cell.status,
+          extractorId: `recipe:${recipe.id}`,
+          quote: cell.quote,
+          locator: block.title,
+        });
+      }
+      matrixCells.length = 0;
+      continue;
     }
 
     const shape = recipe.select.matches ? new RegExp(recipe.select.matches) : undefined;

@@ -19,7 +19,8 @@
     "recall": "tsx src/cli/recall.ts",
     "serve": "npx --yes http-server docs -p 8080 -c-1",
     "add-page": "tsx src/cli/add-page.ts",
-    "validate": "tsx src/cli/run.ts --only stage6"
+    "validate": "tsx src/cli/run.ts --only stage6",
+    "verify": "tsx src/cli/verify.ts"
   },
   "dependencies": {
     "zod": "^3.24.1"

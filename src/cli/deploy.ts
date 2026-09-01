@@ -4,6 +4,7 @@ import path from "node:path";
 import { paths } from "../core/paths.js";
 import { buildReport } from "../report/build.js";
 import { validate } from "../pipeline/stage6.js";
+import { verify } from "./verify.js";
 
 const exec = promisify(execFile);
 
@@ -23,6 +24,17 @@ export async function deploy(
   const url = "https://dagrz-plerion.github.io/aws-security-feature-coverage/";
   // A run that broke its own rules does not get published.
   if (!options.skipValidation) {
+    // A page whose quotes no longer appear, or which produces nothing, is not
+    // publishable: the map would be citing something that is not there.
+    const verdicts = await verify();
+    const broken = verdicts.filter((v) => v.verdict === "stale-quotes" || v.verdict === "empty");
+    if (broken.length > 0) {
+      return {
+        published: false,
+        url,
+        note: `${broken.length} page(s) failed verification, starting with ${broken[0]?.url}. Fix them or pass --force.`,
+      };
+    }
     const { violations } = await validate(120);
     if (violations.length > 0) {
       return {
