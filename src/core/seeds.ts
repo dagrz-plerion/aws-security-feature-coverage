@@ -50,7 +50,7 @@ export function clearSeedCache(): void {
   cache.clear();
 }
 
-export type RecipeRule = { urlPattern: string; serviceId: string; recipe: unknown; note?: string };
+export type RecipeRule = { urlPattern: string; serviceId: string; recipes: unknown[]; note?: string };
 
 /** Recipes that apply to any page whose URL matches a pattern. */
 export async function recipeRules(): Promise<RecipeRule[]> {

@@ -1,0 +1,131 @@
+{
+  "axes": [
+    "logSource"
+  ],
+  "claims": [
+    {
+      "axis": "logSource",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e4209541147d6efd515b32c43d28ca992572380d36962f569b4531f622583150",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md :: internal-sources",
+          "quote": "+ Amazon Elastic Kubernetes Service (Amazon EKS) Audit Logs",
+          "retrievedAt": "2026-09-01T06:12:38.949Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md"
+        }
+      ],
+      "extractorId": "recipe:securitylake-native-sources",
+      "featureId": "securitylake/service-wide",
+      "id": "securitylake-service-wide-logsource-amazon-elastic-kubernetes-service-amazon-eks-audit-logs-recipe-securitylake-native-s",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Amazon Elastic Kubernetes Service (Amazon EKS) Audit Logs",
+      "targetLabel": "Amazon Elastic Kubernetes Service (Amazon EKS) Audit Logs"
+    },
+    {
+      "axis": "logSource",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e4209541147d6efd515b32c43d28ca992572380d36962f569b4531f622583150",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md :: internal-sources",
+          "quote": "+ Amazon Route 53 resolver query logs",
+          "retrievedAt": "2026-09-01T06:12:38.949Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md"
+        }
+      ],
+      "extractorId": "recipe:securitylake-native-sources",
+      "featureId": "securitylake/service-wide",
+      "id": "securitylake-service-wide-logsource-amazon-route-53-resolver-query-logs-recipe-securitylake-native-sources",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Amazon Route 53 resolver query logs",
+      "targetLabel": "Amazon Route 53 resolver query logs"
+    },
+    {
+      "axis": "logSource",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e4209541147d6efd515b32c43d28ca992572380d36962f569b4531f622583150",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md :: internal-sources",
+          "quote": "+ Amazon Virtual Private Cloud (Amazon VPC) Flow Logs",
+          "retrievedAt": "2026-09-01T06:12:38.949Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md"
+        }
+      ],
+      "extractorId": "recipe:securitylake-native-sources",
+      "featureId": "securitylake/service-wide",
+      "id": "securitylake-service-wide-logsource-amazon-virtual-private-cloud-amazon-vpc-flow-logs-recipe-securitylake-native-sources",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Amazon Virtual Private Cloud (Amazon VPC) Flow Logs",
+      "targetLabel": "Amazon Virtual Private Cloud (Amazon VPC) Flow Logs"
+    },
+    {
+      "axis": "logSource",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e4209541147d6efd515b32c43d28ca992572380d36962f569b4531f622583150",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md :: internal-sources",
+          "quote": "+ AWS CloudTrail management and data events (S3, Lambda)",
+          "retrievedAt": "2026-09-01T06:12:38.949Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md"
+        }
+      ],
+      "extractorId": "recipe:securitylake-native-sources",
+      "featureId": "securitylake/service-wide",
+      "id": "securitylake-service-wide-logsource-aws-cloudtrail-management-and-data-events-s3-lambda-recipe-securitylake-native-sourc",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS CloudTrail management and data events (S3, Lambda)",
+      "targetLabel": "AWS CloudTrail management and data events (S3, Lambda)"
+    },
+    {
+      "axis": "logSource",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e4209541147d6efd515b32c43d28ca992572380d36962f569b4531f622583150",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md :: internal-sources",
+          "quote": "+ AWS Security Hub CSPM findings",
+          "retrievedAt": "2026-09-01T06:12:38.949Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md"
+        }
+      ],
+      "extractorId": "recipe:securitylake-native-sources",
+      "featureId": "securitylake/service-wide",
+      "id": "securitylake-service-wide-logsource-aws-security-hub-cspm-findings-recipe-securitylake-native-sources",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS Security Hub CSPM findings",
+      "targetLabel": "AWS Security Hub CSPM findings"
+    },
+    {
+      "axis": "logSource",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e4209541147d6efd515b32c43d28ca992572380d36962f569b4531f622583150",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md :: internal-sources",
+          "quote": "+ AWS WAFv2 logs",
+          "retrievedAt": "2026-09-01T06:12:38.949Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md"
+        }
+      ],
+      "extractorId": "recipe:securitylake-native-sources",
+      "featureId": "securitylake/service-wide",
+      "id": "securitylake-service-wide-logsource-aws-wafv2-logs-recipe-securitylake-native-sources",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS WAFv2 logs",
+      "targetLabel": "AWS WAFv2 logs"
+    }
+  ],
+  "featureId": "securitylake/service-wide",
+  "generatedAt": "2026-09-01T06:14:11.697Z",
+  "serviceId": "securitylake",
+  "unresolvedTargets": []
+}

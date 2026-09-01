@@ -22,8 +22,12 @@ export type CoveragePage = {
   featureId?: string;
   source: PageSource;
   note?: string;
-  /** How to read this page, when the generic reader cannot. Reference metadata. */
-  recipe?: Recipe;
+  /**
+   * How to read this page, when the generic reader cannot. Reference metadata.
+   * A page can carry several: Inspector's support page states operating systems,
+   * languages, runtimes and CIS benchmark versions, each on its own axis.
+   */
+  recipes?: Recipe[];
   firstSeen: string;
   lastCheckedAt?: string;
   lastResult?: { claims: number; axes: string[]; status: "ok" | "empty" | "failed"; detail?: string };
@@ -57,7 +61,7 @@ export function upsert(
     source: PageSource;
     featureId?: string;
     note?: string;
-    recipe?: Recipe;
+    recipes?: Recipe[];
   },
 ): { page: CoveragePage; added: boolean } {
   const url = toMarkdownUrl(entry.url);
@@ -73,7 +77,7 @@ export function upsert(
       }
     }
     if (entry.featureId) existing.featureId = entry.featureId;
-    if (entry.recipe) existing.recipe = entry.recipe;
+    if (entry.recipes) existing.recipes = entry.recipes;
     return { page: existing, added: false };
   }
   const page: CoveragePage = {
@@ -82,7 +86,7 @@ export function upsert(
     ...(entry.featureId ? { featureId: entry.featureId } : {}),
     source: entry.source,
     ...(entry.note ? { note: entry.note } : {}),
-    ...(entry.recipe ? { recipe: entry.recipe } : {}),
+    ...(entry.recipes ? { recipes: entry.recipes } : {}),
     firstSeen: new Date().toISOString(),
     enabled: true,
   };
@@ -119,7 +123,8 @@ export function summarise(registry: Registry): Record<string, number> {
   for (const page of pages) bySource[`from_${page.source}`] = (bySource[`from_${page.source}`] ?? 0) + 1;
   return {
     registered: pages.length,
-    withRecipe: pages.filter((p) => p.recipe).length,
+    withRecipe: pages.filter((p) => p.recipes?.length).length,
+    recipes: pages.reduce((sum, p) => sum + (p.recipes?.length ?? 0), 0),
     enabled: pages.filter((p) => p.enabled).length,
     yielding: pages.filter((p) => p.lastResult?.status === "ok").length,
     empty: pages.filter((p) => p.lastResult?.status === "empty").length,

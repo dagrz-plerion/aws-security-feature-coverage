@@ -1,0 +1,171 @@
+{
+  "axes": [
+    "complianceStandard"
+  ],
+  "claims": [
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "8d568810cf17790d991f7335ac2df69e2ea60b19fd92b4c920e9319315370ab8",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md :: standards-reference",
+          "quote": "+ **AI Security Best Practices** – Developed by AWS security experts, this standard provides a curated set of controls that detect when deployed AI resources do not align with security best practices. It helps you identify areas where your AI workloads deviate from recommended security configurations, covering domains such as network isolation, encryption, VPC placement, and AWS KMS key usage.",
+          "retrievedAt": "2026-09-01T06:12:38.762Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-standards",
+      "featureId": "securityhub/standards-reference",
+      "id": "securityhub-standards-reference-compliancestandard-ai-security-best-practices-recipe-securityhub-standards",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AI Security Best Practices",
+      "targetLabel": "AI Security Best Practices – Developed by AWS security experts, this standard provides a curated set of controls that detect when deployed AI resources do not align with security best practices. It he"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "8d568810cf17790d991f7335ac2df69e2ea60b19fd92b4c920e9319315370ab8",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md :: standards-reference",
+          "quote": "+ **AWS Foundational Security Best Practices** – Developed by AWS and industry professionals, this standard is a compilation of security best practices for organizations, regardless of sector or size. It provides a set of controls that detect when your AWS accounts and resources deviate from security best practices. It also provides prescriptive guidance about how to improve and maintain your security posture.",
+          "retrievedAt": "2026-09-01T06:12:38.762Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-standards",
+      "featureId": "securityhub/standards-reference",
+      "id": "securityhub-standards-reference-compliancestandard-aws-foundational-security-best-practices-recipe-securityhub-standards",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS Foundational Security Best Practices",
+      "targetLabel": "AWS Foundational Security Best Practices – Developed by AWS and industry professionals, this standard is a compilation of security best practices for organizations, regardless of sector or size. It pr"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "8d568810cf17790d991f7335ac2df69e2ea60b19fd92b4c920e9319315370ab8",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md :: standards-reference",
+          "quote": "+ **AWS Resource Tagging** – Developed by Security Hub CSPM, this standard can help you determine whether your AWS resources have tags. A *tag* is a key-value pair that acts as metadata for an AWS resource. Tags can help you identify, categorize, manage, and search for AWS resources. For example, you can use tags to categorize resources by purpose, owner, or environment.",
+          "retrievedAt": "2026-09-01T06:12:38.762Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-standards",
+      "featureId": "securityhub/standards-reference",
+      "id": "securityhub-standards-reference-compliancestandard-aws-resource-tagging-recipe-securityhub-standards",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS Resource Tagging",
+      "targetLabel": "AWS Resource Tagging – Developed by Security Hub CSPM, this standard can help you determine whether your AWS resources have tags. A tag is a key-value pair that acts as metadata for an AWS resource. T"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "8d568810cf17790d991f7335ac2df69e2ea60b19fd92b4c920e9319315370ab8",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md :: standards-reference",
+          "quote": "+ **CIS AWS Foundations Benchmark** – Developed by the Center for Internet Security (CIS), this standard provides secure configuration guidelines for AWS. It specifies a set of security configuration guidelines and best practices for a subset of AWS services and resources, with an emphasis on foundational, testable, and architecture agnostic settings. The guidelines include clear, step-by-step implementation and assessment procedures.",
+          "retrievedAt": "2026-09-01T06:12:38.762Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-standards",
+      "featureId": "securityhub/standards-reference",
+      "id": "securityhub-standards-reference-compliancestandard-cis-aws-foundations-benchmark-recipe-securityhub-standards",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CIS AWS Foundations Benchmark",
+      "targetLabel": "CIS AWS Foundations Benchmark – Developed by the Center for Internet Security (CIS), this standard provides secure configuration guidelines for AWS. It specifies a set of security configuration guidel"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "8d568810cf17790d991f7335ac2df69e2ea60b19fd92b4c920e9319315370ab8",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md :: standards-reference",
+          "quote": "+ **NIST SP 800-171 Revision 2** – This standard aligns with NIST security recommendations and requirements for protecting the confidentiality of Controlled Unclassified Information (CUI) in systems and organizations that aren't part of the U.S. federal government. *CUI* is information that doesn't meet government criteria for classification, but is considered sensitive and is created or possessed by the U.S. federal government or other entities on behalf of the U.S. federal government.",
+          "retrievedAt": "2026-09-01T06:12:38.762Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-standards",
+      "featureId": "securityhub/standards-reference",
+      "id": "securityhub-standards-reference-compliancestandard-nist-sp-800-171-revision-2-recipe-securityhub-standards",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "NIST SP 800-171 Revision 2",
+      "targetLabel": "NIST SP 800-171 Revision 2 – This standard aligns with NIST security recommendations and requirements for protecting the confidentiality of Controlled Unclassified Information (CUI) in systems and org"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "8d568810cf17790d991f7335ac2df69e2ea60b19fd92b4c920e9319315370ab8",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md :: standards-reference",
+          "quote": "+ **NIST SP 800-53 Revision 5** – This standard aligns with National Institute of Standards and Technology (NIST) requirements for protecting the confidentiality, integrity, and availability of information systems and critical resources. The associated framework generally applies to U.S. federal agencies or organizations that work with U.S. federal agencies or information systems. However, private organizations can also use the requirements as a guiding framework.",
+          "retrievedAt": "2026-09-01T06:12:38.762Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-standards",
+      "featureId": "securityhub/standards-reference",
+      "id": "securityhub-standards-reference-compliancestandard-nist-sp-800-53-revision-5-recipe-securityhub-standards",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "NIST SP 800-53 Revision 5",
+      "targetLabel": "NIST SP 800-53 Revision 5 – This standard aligns with National Institute of Standards and Technology (NIST) requirements for protecting the confidentiality, integrity, and availability of information "
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "8d568810cf17790d991f7335ac2df69e2ea60b19fd92b4c920e9319315370ab8",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md :: standards-reference",
+          "quote": "+ **PCI DSS** – This standard aligns with the Payment Card Industry Data Security Standard (PCI DSS) compliance framework defined by the PCI Security Standards Council (SSC). The framework provides a set of rules and guidelines for safely handling credit and debit card information. The framework generally applies to organizations that store, process, or transmit cardholder data.",
+          "retrievedAt": "2026-09-01T06:12:38.762Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-standards",
+      "featureId": "securityhub/standards-reference",
+      "id": "securityhub-standards-reference-compliancestandard-pci-dss-recipe-securityhub-standards",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PCI DSS",
+      "targetLabel": "PCI DSS – This standard aligns with the Payment Card Industry Data Security Standard (PCI DSS) compliance framework defined by the PCI Security Standards Council (SSC). The framework provides a set of"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "8d568810cf17790d991f7335ac2df69e2ea60b19fd92b4c920e9319315370ab8",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md :: standards-reference",
+          "quote": "+ **Service-managed standard, AWS Control Tower** – This standard helps you configure the detective controls provided by Security Hub CSPM from AWS Control Tower. AWS Control Tower offers a straightforward way to set up and govern an AWS multi-account environment, following prescriptive best practices.",
+          "retrievedAt": "2026-09-01T06:12:38.762Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-standards",
+      "featureId": "securityhub/standards-reference",
+      "id": "securityhub-standards-reference-compliancestandard-service-managed-standard-aws-control-tower-recipe-securityhub-standar",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Service-managed standard, AWS Control Tower",
+      "targetLabel": "Service-managed standard, AWS Control Tower – This standard helps you configure the detective controls provided by Security Hub CSPM from AWS Control Tower. AWS Control Tower offers a straightforward "
+    }
+  ],
+  "featureId": "securityhub/standards-reference",
+  "generatedAt": "2026-09-01T06:14:11.697Z",
+  "serviceId": "securityhub",
+  "unresolvedTargets": []
+}

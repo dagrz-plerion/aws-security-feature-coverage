@@ -140,9 +140,9 @@ export const stage5: Stage = {
     for (const page of allPages(registry)) {
       const rule = rules.find((r) => r.re.test(page.url));
       if (!rule) continue;
-      page.recipe = rule.recipe as Recipe;
+      page.recipes = rule.recipes as Recipe[];
       if (rule.note) page.note = rule.note;
-      recipesAttached += 1;
+      recipesAttached += page.recipes.length;
     }
 
     const pageBySection = new Map<string, DocPage>();
@@ -224,23 +224,26 @@ export const stage5: Stage = {
         let blockClaims = 0;
         const seenAxes = new Set<string>();
 
-        if (job.page.recipe) {
-          const outcome = runRecipe(job.page.recipe, body, job.doc.title, resolver);
-          if (outcome.failure) {
-            recipeFailures += 1;
-            await recordGap({
-              kind: "parser",
-              subject: `recipe:${job.page.recipe.id}`,
-              detail: `${outcome.failure} on ${url}. The page shape has probably changed.`,
-              suggestedStage: "stage5-coverage",
-            });
-          }
-          const pinned = job.page.recipe.featureId ?? job.page.featureId;
-          const feature =
-            (pinned ? job.features.find((f) => f.id === pinned) : undefined) ??
-            bestFeatureFor([job.doc.title, ...job.doc.section], job.features) ??
-            serviceWideFeature(job.page.serviceId, serviceById, featuresByService);
-          if (feature) {
+        if (job.page.recipes?.length) {
+          const failures: string[] = [];
+          for (const recipe of job.page.recipes) {
+            const outcome = runRecipe(recipe, body, job.doc.title, resolver);
+            if (outcome.failure) {
+              recipeFailures += 1;
+              failures.push(outcome.failure);
+              await recordGap({
+                kind: "parser",
+                subject: `recipe:${recipe.id}`,
+                detail: `${outcome.failure} on ${url}. The page shape has probably changed.`,
+                suggestedStage: "stage5-coverage",
+              });
+            }
+            const pinned = recipe.featureId ?? job.page.featureId;
+            const feature =
+              (pinned ? job.features.find((f) => f.id === pinned) : undefined) ??
+              bestFeatureFor([job.doc.title, ...job.doc.section], job.features) ??
+              serviceWideFeature(job.page.serviceId, serviceById, featuresByService);
+            if (!feature) continue;
             const list = claimsByFeature.get(feature.id) ?? [];
             const already = new Set(list.map((c) => `${c.axis}|${c.targetId}|${c.scope?.targetId ?? ""}`));
             for (const raw of outcome.claims) {
@@ -265,13 +268,13 @@ export const stage5: Stage = {
               });
             }
             claimsByFeature.set(feature.id, list);
-            attachedAny = blockClaims > 0;
           }
+          attachedAny = blockClaims > 0;
           recordResult(job.page, {
             claims: blockClaims,
             axes: [...seenAxes].sort(),
-            status: outcome.failure ? "failed" : blockClaims > 0 ? "ok" : "empty",
-            ...(outcome.failure ? { detail: outcome.failure } : {}),
+            status: failures.length ? "failed" : blockClaims > 0 ? "ok" : "empty",
+            ...(failures.length ? { detail: failures.join("; ").slice(0, 300) } : {}),
           });
           if (attachedAny) read += 1;
           return;

@@ -351,14 +351,31 @@ const VIEWS = {
   coverage() {
     const rows = M.features.filter((f) => f.claimCount > 0 && match(f, [f.id, f.name, f.serviceId]));
     if (!rows.length) return filters({ placeholder: "search" }) + '<div class="empty">No coverage claims extracted yet.</div>';
-    const axes = [...new Set(rows.flatMap((f) => Object.keys(f.axes)))].sort();
+
+    // An axis earns a column only when it applies broadly. A narrow axis that would
+    // leave a dash on almost every row goes in one shared column instead.
+    const usage = {};
+    for (const r of rows) for (const a of Object.keys(r.axes)) usage[a] = (usage[a] || 0) + 1;
+    const threshold = Math.max(3, rows.length * 0.15);
+    const columns = Object.keys(usage).filter((a) => usage[a] >= threshold).sort();
+    const others = Object.keys(usage).filter((a) => usage[a] < threshold).sort();
+
+    const otherCell = (r) => {
+      const mine = others.filter((a) => r.axes[a]);
+      if (!mine.length) return '<span class="muted">—</span>';
+      return '<div class="chips">' + mine.map((a) =>
+        '<span class="chip" title="' + esc(a) + ': ' + r.axes[a].covered + " of " + (US[a] ?? r.axes[a].total) +
+        ' stated as covered">' + esc(a) + " " + r.axes[a].covered + "/" + (US[a] ?? r.axes[a].total) + "</span>").join("") + "</div>";
+    };
+
     return filters({ placeholder: "search mapped features" }) + LEGEND +
+      (others.length ? '<div class="muted" style="margin-bottom:10px">' + others.length +
+        ' further axes apply to only a few features and are shown together under Other coverage.</div>' : "") +
       table([
         { id: "feature", label: "Feature", value: (r) => r.id, cell: (r) => '<span class="mono">' + esc(r.serviceId) + "</span> " + esc(r.name) },
-        ...axes.map((a) => ({ id: a, label: a + " (of " + (US[a] ?? "?") + ")", value: (r) => (r.axes[a] ? r.axes[a].covered : -1),
+        ...columns.map((a) => ({ id: a, label: a + " (of " + (US[a] ?? "?") + ")", value: (r) => (r.axes[a] ? r.axes[a].covered : -1),
           cell: (r) => r.axes[a] ? axisBar(a, r.axes[a]) : '<span class="muted">—</span>' })),
-        { id: "llm", label: "Model-read", value: (r) => r.llmClaims, cell: (r) => r.llmClaims ? '<span class="pill llm">' + r.llmClaims + "</span>" : '<span class="muted">0</span>' },
-        { id: "unres", label: "Unresolved", value: (r) => r.unresolved, cell: (r) => r.unresolved || '<span class="muted">0</span>' },
+        ...(others.length ? [{ id: "other", label: "Other coverage", value: (r) => others.filter((a) => r.axes[a]).length, cell: otherCell }] : []),
       ], rows, (r) => {
         const cov = detailFor("coverage:" + r.id);
         if (typeof cov === "string") return cov;
@@ -371,10 +388,7 @@ const VIEWS = {
             (c.qualifier ? ' <span class="muted">' + esc(c.qualifier) + "</span>" : "") +
             (c.evidence && c.evidence[0] ? '<div class="quote">' + esc(c.evidence[0].quote) + "</div>" +
               '<a href="' + esc(String(c.evidence[0].sourceUrl).replace(/\\.md$/, ".html")) + '" target="_blank" rel="noopener">source</a>' : "") + "</div>").join("") +
-          "</section>" +
-          (cov.unresolved && cov.unresolved.length ?
-            '<section><h4>names that did not resolve</h4><div class="chips">' +
-            cov.unresolved.map((u) => '<span class="chip">' + esc(u.raw) + "</span>").join("") + "</div></section>" : "");
+          "</section>";
       });
   },
   regions() {

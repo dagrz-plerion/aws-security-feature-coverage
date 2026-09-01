@@ -22,11 +22,21 @@ export type Recipe = {
     pattern?: string;
     /** The extracted value must match this, so boilerplate headings are dropped. */
     matches?: string;
+    /** Combine several columns into one target: "AlmaLinux" + "8" = "AlmaLinux 8". */
+    joinColumns?: string[];
+    /** Split one cell into several targets, for a list crammed into a cell. */
+    split?: string;
   };
   axis: string;
   status?: "covered" | "not-covered" | "from-column" | "from-context";
   statusColumn?: string;
-  scope?: { axis: string; from: "block-title" | "page-title" | "column"; column?: string };
+  scope?: {
+    axis: string;
+    from: "block-title" | "page-title" | "column" | "constant";
+    column?: string;
+    /** scope.from = "constant": the same scope applies to every claim on the page. */
+    value?: string;
+  };
   featureId?: string;
   requireMin?: number;
 };
@@ -34,12 +44,21 @@ export type Recipe = {
 export type RecipeOutcome = {
   claims: RawClaim[];
   blocksRead: number;
+  /** Values that did not resolve to an id on a closed axis. */
+  dropped?: number;
   /** Set when the recipe produced less than it promised, which means it has broken. */
   failure?: string;
 };
 
 // AWS writes a linked, id-prefixed item as "[[S3.24] S3 Multi-Region Access Points…](url)",
 // so the opening bracket repeats and the id is the inner one.
+/**
+ * Axes with a universe of their own. A recipe may not put raw page text into one of
+ * these: the value has to resolve to a known id, or it is dropped. Open axes have no
+ * universe until the documentation defines one, so their values pass through.
+ */
+const CLOSED_AXES = new Set(["region", "partition", "service", "resourceType", "dataSource"]);
+
 const LEADING_BRACKET = /^\[+([^[\]]{2,60})\]/;
 const LEADING_TOKEN = /^([A-Za-z][A-Za-z0-9._:-]{1,40})\b/;
 
@@ -74,6 +93,15 @@ function statusFor(recipe: Recipe, row: string[] | undefined, headers: string[])
   return "covered";
 }
 
+/** One cell can hold a list. AWS joins those with a line break or a comma. */
+function splitValue(value: string, recipe: Recipe): string[] {
+  if (!recipe.select.split) return [value];
+  return value
+    .split(new RegExp(recipe.select.split))
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
 type Block = { title: string; body: string };
 
 function blocksFor(doc: MdDocument, body: string, recipe: Recipe, pageTitle: string): Block[] {
@@ -96,6 +124,7 @@ export function runRecipe(
   const blocks = blocksFor(doc, body, recipe, pageTitle);
   const claims: RawClaim[] = [];
   const seen = new Set<string>();
+  let dropped = 0;
 
   for (const block of blocks) {
     const blockDoc = parseMarkdown(block.body);
@@ -105,7 +134,7 @@ export function runRecipe(
       for (const list of blockDoc.lists) {
         for (const item of list.items) {
           if (item.depth !== 0) continue;
-          values.push({ value: item.text, quote: item.raw });
+          for (const value of splitValue(item.text, recipe)) values.push({ value, quote: item.raw });
         }
       }
     } else if (recipe.select.from === "table-column") {
@@ -114,10 +143,18 @@ export function runRecipe(
           ? findColumn(table.headers, [new RegExp(recipe.select.headerMatches, "i")])
           : 0;
         if (column < 0) continue;
+        const extra = (recipe.select.joinColumns ?? [])
+          .map((header) => findColumn(table.headers, [new RegExp(header, "i")]))
+          .filter((index) => index >= 0);
         for (let i = 0; i < table.rows.length; i += 1) {
           const row = table.rows[i] as string[];
-          const value = row[column] ?? "";
-          if (value) values.push({ value, quote: table.rawRows[i] ?? value, row, headers: table.headers });
+          const base = row[column] ?? "";
+          if (!base) continue;
+          const joined = [base, ...extra.map((index) => row[index] ?? "")].filter(Boolean).join(" ").trim();
+          const quote = table.rawRows[i] ?? base;
+          for (const value of splitValue(joined, recipe)) {
+            values.push({ value, quote, row, headers: table.headers });
+          }
         }
       }
     } else if (recipe.select.from === "headings") {
@@ -139,7 +176,9 @@ export function runRecipe(
 
     // The scope is the other dimension the block states, most often a Region.
     let scope: RawClaim["scope"];
-    if (recipe.scope) {
+    if (recipe.scope?.from === "constant" && recipe.scope.value) {
+      scope = { axis: recipe.scope.axis, targetId: recipe.scope.value, label: recipe.scope.value };
+    } else if (recipe.scope) {
       const raw = recipe.scope.from === "page-title" ? pageTitle : block.title;
       const hit = resolver.resolve(raw, recipe.scope.axis as never);
       if (hit) scope = { axis: recipe.scope.axis, targetId: hit.targetId, label: raw };
@@ -150,7 +189,15 @@ export function runRecipe(
       const target = extractTarget(entry.value, recipe);
       if (!target) continue;
       if (shape && !shape.test(target)) continue;
-      const targetId = catalogTargetId(recipe.axis, target);
+      let targetId = catalogTargetId(recipe.axis, target);
+      if (CLOSED_AXES.has(recipe.axis)) {
+        const hit = resolver.resolve(target, recipe.axis as never);
+        if (!hit) {
+          dropped += 1;
+          continue;
+        }
+        targetId = hit.targetId;
+      }
       const key = `${targetId}|${scope?.targetId ?? ""}`;
       if (seen.has(key)) continue;
       seen.add(key);
@@ -171,6 +218,7 @@ export function runRecipe(
   return {
     claims,
     blocksRead: blocks.length,
+    ...(dropped ? { dropped } : {}),
     ...(claims.length < min
       ? { failure: `recipe ${recipe.id} produced ${claims.length} claims, fewer than the ${min} it promises` }
       : {}),

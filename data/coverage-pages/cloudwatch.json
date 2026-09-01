@@ -4,7 +4,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:18:51.253Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.932Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.566Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -17,7 +17,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.933Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.565Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -30,7 +30,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.933Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.566Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -43,7 +43,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.933Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.566Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -56,7 +56,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.933Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.566Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -69,7 +69,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.935Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.567Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -82,7 +82,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.934Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.566Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -95,7 +95,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.936Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.567Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -108,7 +108,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.936Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.568Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -121,7 +121,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:18:51.253Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.946Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.573Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -134,7 +134,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.939Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.576Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -147,12 +147,44 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.941Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.577Z",
       "lastResult": {
-        "axes": [],
-        "claims": 0,
-        "status": "empty"
+        "axes": [
+          "fileExtension",
+          "storageClass"
+        ],
+        "claims": 27,
+        "status": "ok"
       },
+      "note": "The S3 storage classes Macie reads, and the file formats it can open. Extensions are comma separated inside one cell.",
+      "recipes": [
+        {
+          "axis": "storageClass",
+          "blocks": "h2-sections",
+          "id": "macie-storage-classes",
+          "requireMin": 4,
+          "select": {
+            "extract": "whole",
+            "from": "list-items",
+            "matches": "^(S3|Reduced)"
+          },
+          "status": "covered"
+        },
+        {
+          "axis": "fileExtension",
+          "blocks": "whole-page",
+          "id": "macie-file-extensions",
+          "requireMin": 8,
+          "select": {
+            "extract": "whole",
+            "from": "table-column",
+            "headerMatches": "file name extension",
+            "matches": "^\\.[a-z0-9]{1,8}$",
+            "split": "\\s*,\\s*"
+          },
+          "status": "covered"
+        }
+      ],
       "serviceId": "cloudwatch",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/macie/latest/user/discovery-supported-storage.md"
@@ -160,7 +192,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.947Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.577Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -173,7 +205,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.947Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.578Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -186,7 +218,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:18:51.253Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.947Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.578Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -199,7 +231,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.947Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.578Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -212,7 +244,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.948Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.578Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -225,7 +257,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.948Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.582Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -238,7 +270,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.948Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.579Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -251,7 +283,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:18:51.253Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.951Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.582Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -264,7 +296,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:09:02.972Z",
+      "lastCheckedAt": "2026-09-01T06:14:01.604Z",
       "lastResult": {
         "axes": [],
         "claims": 0,

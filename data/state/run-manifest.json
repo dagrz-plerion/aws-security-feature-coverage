@@ -1,49 +1,50 @@
 {
   "fetch": {
-    "cacheHit": 11907,
+    "cacheHit": 11913,
     "failed": 0,
     "network": 0,
     "revalidated": 0
   },
-  "finishedAt": "2026-09-01T06:09:14.185Z",
+  "finishedAt": "2026-09-01T06:14:13.059Z",
   "stages": [
     {
       "counts": {
-        "claims": 14924,
+        "claims": 15658,
         "conflicts": 0,
-        "covered": 8502,
-        "empty": 11610,
-        "enabled": 11774,
-        "featuresWithCoverage": 121,
-        "from_agent": 1,
-        "from_tier1-sweep": 6521,
-        "from_title-match": 5252,
+        "covered": 8994,
+        "empty": 11603,
+        "enabled": 11780,
+        "featuresWithCoverage": 130,
+        "from_agent": 11,
+        "from_tier1-sweep": 6519,
+        "from_title-match": 5250,
         "newlyDiscovered": 0,
-        "notCovered": 6420,
-        "openAxes": 6,
-        "openAxisMembers": 1591,
-        "pagesConsidered": 11774,
+        "notCovered": 6436,
+        "openAxes": 15,
+        "openAxisMembers": 1992,
+        "pagesConsidered": 11780,
         "pagesFailed": 1,
-        "pagesRead": 188,
+        "pagesRead": 202,
         "prunedStaleRecords": 0,
         "recipeFailures": 0,
-        "recipesAttached": 14,
-        "registered": 11774,
+        "recipes": 32,
+        "recipesAttached": 32,
+        "registered": 11780,
         "serviceWideRecords": 51,
         "tablesRecoveredFromHtml": 401,
         "unattachedPages": 0,
         "unresolvedTargets": 438,
-        "withRecipe": 14,
-        "yielding": 163
+        "withRecipe": 28,
+        "yielding": 176
       },
-      "finishedAt": "2026-09-01T06:09:13.040Z",
+      "finishedAt": "2026-09-01T06:14:11.898Z",
       "id": "stage5-coverage",
-      "startedAt": "2026-09-01T06:08:57.993Z",
+      "startedAt": "2026-09-01T06:13:56.532Z",
       "status": "partial"
     },
     {
       "counts": {
-        "claims": 14924,
+        "claims": 15658,
         "features": 3378,
         "quotesChecked": 250,
         "recallFound": 73,
@@ -51,9 +52,9 @@
         "services": 692,
         "violations": 0
       },
-      "finishedAt": "2026-09-01T06:09:13.690Z",
+      "finishedAt": "2026-09-01T06:14:12.563Z",
       "id": "stage6-validate",
-      "startedAt": "2026-09-01T06:09:13.040Z",
+      "startedAt": "2026-09-01T06:14:11.898Z",
       "status": "ok"
     },
     {
@@ -61,11 +62,11 @@
         "features": 3378,
         "services": 227
       },
-      "finishedAt": "2026-09-01T06:09:14.185Z",
+      "finishedAt": "2026-09-01T06:14:13.059Z",
       "id": "report",
-      "startedAt": "2026-09-01T06:09:13.691Z",
+      "startedAt": "2026-09-01T06:14:12.564Z",
       "status": "ok"
     }
   ],
-  "startedAt": "2026-09-01T06:08:57.991Z"
+  "startedAt": "2026-09-01T06:13:56.530Z"
 }
