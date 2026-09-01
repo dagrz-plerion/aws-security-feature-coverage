@@ -1,0 +1,57 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a3ba11c5fb4249d8beb1ff906d76d0a874806ddcb23185293ff74806ca1155e4",
+          "locator": "https://docs.aws.amazon.com/greengrass/v2/developerguide/operating-system-feature-support-matrix.md :: Greengrass feature compatibility | column \"Feature\"",
+          "quote": "| Connect to core devices with AWS IoT secure tunneling | <a name=\"polaris-yes-para\"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  | <a name=\"polaris-no-para\"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  | <a name=\"polaris-yes-para\"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  |",
+          "retrievedAt": "2026-09-01T04:29:01.707Z",
+          "sourceUrl": "https://docs.aws.amazon.com/greengrass/v2/developerguide/operating-system-feature-support-matrix.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iot/greengrass-feature-compatibility",
+      "id": "iot-greengrass-feature-compatibility-service-api-tunneling-iot-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "api.tunneling.iot",
+      "targetLabel": "Connect to core devices with AWS IoT secure tunneling"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "a3ba11c5fb4249d8beb1ff906d76d0a874806ddcb23185293ff74806ca1155e4",
+          "locator": "https://docs.aws.amazon.com/greengrass/v2/developerguide/operating-system-feature-support-matrix.md :: Greengrass feature compatibility | column \"Feature\"",
+          "quote": "| Manage core devices with AWS Systems Manager | <a name=\"polaris-yes-para\"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  | <a name=\"polaris-no-para\"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  | <a name=\"polaris-no-para\"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  |",
+          "retrievedAt": "2026-09-01T04:29:01.707Z",
+          "sourceUrl": "https://docs.aws.amazon.com/greengrass/v2/developerguide/operating-system-feature-support-matrix.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iot/greengrass-feature-compatibility",
+      "id": "iot-greengrass-feature-compatibility-service-ssm-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ssm",
+      "targetLabel": "Manage core devices with AWS Systems Manager"
+    }
+  ],
+  "featureId": "iot/greengrass-feature-compatibility",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "iot",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Perform secure, over-the-air (OTA) software updates",
+      "sourceUrl": "https://docs.aws.amazon.com/greengrass/v2/developerguide/operating-system-feature-support-matrix.md"
+    }
+  ]
+}

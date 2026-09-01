@@ -1887,6 +1887,26 @@
     },
     {
       "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "08c003d7ad8cc4d237a6752f1c20f0f6c0bc38ae2c6f742441553293a2ad8696",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Config",
+          "retrievedAt": "2026-09-01T04:58:55.116Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "config/service-wide",
+      "id": "config-service-wide-service-config-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "config",
+      "targetLabel": "Identity-based policies for AWS Config"
+    },
+    {
+      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -2767,7 +2787,7 @@
     }
   ],
   "featureId": "config/service-wide",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "config",
   "unresolvedTargets": [
     {
@@ -2793,6 +2813,11 @@
     {
       "axis": "resourceType",
       "raw": "AWS::Redshift::ClusterSnapshot",
+      "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/monitor-config-with-cloudwatchevents.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Considerations",
       "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/monitor-config-with-cloudwatchevents.md"
     },
     {
@@ -3239,6 +3264,11 @@
       "axis": "service",
       "raw": "ElasticSearch",
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/controls-config-resources.md"
+    },
+    {
+      "axis": "service",
+      "raw": "I just enabled recording and managed rules for AWS Config, but I don’t see corresponding Trusted Advisor checks.",
+      "sourceUrl": "https://docs.aws.amazon.com/awssupport/latest/user/aws-config-integration-with-ta.md"
     }
   ]
 }

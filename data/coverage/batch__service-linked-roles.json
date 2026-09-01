@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "975fdf9336822a01ebe7dc20d3b585df262983c104b6b1e1f3d9c5d000ea35c6",
+          "locator": "https://docs.aws.amazon.com/batch/latest/userguide/using-service-linked-roles-batch-general.md :: heading level 2",
+          "quote": "## Service-linked role permissions for AWS Batch",
+          "retrievedAt": "2026-09-01T04:29:37.563Z",
+          "sourceUrl": "https://docs.aws.amazon.com/batch/latest/userguide/using-service-linked-roles-batch-general.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "batch/service-linked-roles",
+      "id": "batch-service-linked-roles-service-batch-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "batch",
+      "targetLabel": "Service-linked role permissions for AWS Batch"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "975fdf9336822a01ebe7dc20d3b585df262983c104b6b1e1f3d9c5d000ea35c6",
+          "locator": "https://docs.aws.amazon.com/batch/latest/userguide/using-service-linked-roles-batch-general.md :: heading level 3",
+          "quote": "### Deleting a service-linked role in IAM (Console)",
+          "retrievedAt": "2026-09-01T04:29:37.563Z",
+          "sourceUrl": "https://docs.aws.amazon.com/batch/latest/userguide/using-service-linked-roles-batch-general.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "batch/service-linked-roles",
+      "id": "batch-service-linked-roles-service-iam-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iam",
+      "targetLabel": "Deleting a service-linked role in IAM (Console)"
+    }
+  ],
+  "featureId": "batch/service-linked-roles",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "batch",
+  "unresolvedTargets": []
+}

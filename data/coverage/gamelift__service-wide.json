@@ -1,0 +1,37 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8c0142b26850b92d1c766926bd3847dbf5a4766e7782a9ab5ddc009c8a2cb542",
+          "locator": "https://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-unity-server-sdk4.md :: Before integrating your game server, complete the following tasks:",
+          "quote": "+ [Set up an IAM service role for Amazon GameLift Servers](setting-up-role.md)",
+          "retrievedAt": "2026-09-01T04:35:19.548Z",
+          "sourceUrl": "https://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-unity-server-sdk4.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "gamelift/service-wide",
+      "id": "gamelift-service-wide-resourcetype-aqua-enterprise-server-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Aqua::Enterprise::Server",
+      "targetLabel": "Set up an IAM service role for Amazon GameLift Servers"
+    }
+  ],
+  "featureId": "gamelift/service-wide",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "gamelift",
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "Install and set up the plugin",
+      "sourceUrl": "https://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-unity-server-sdk4.md"
+    }
+  ]
+}

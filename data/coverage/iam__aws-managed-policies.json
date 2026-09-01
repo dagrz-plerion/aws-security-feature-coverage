@@ -1,0 +1,57 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "4d4cb6702d25cff4968d2110fff6af4d24dfba9e74f6446622334589d2399dd9",
+          "locator": "https://docs.aws.amazon.com/r53recovery/latest/dg/security-iam-awsmanpol.md :: AWS managed policies for Amazon Application Recovery Controller (ARC)",
+          "quote": "+ [Managed polices for routing control](security-iam-awsmanpol-routing.md)",
+          "retrievedAt": "2026-09-01T04:58:58.669Z",
+          "sourceUrl": "https://docs.aws.amazon.com/r53recovery/latest/dg/security-iam-awsmanpol.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/aws-managed-policies",
+      "id": "iam-aws-managed-policies-resourcetype-aws-route53recoverycontrol-routingcontrol-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Route53RecoveryControl::RoutingControl",
+      "targetLabel": "Managed polices for routing control"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "4d4cb6702d25cff4968d2110fff6af4d24dfba9e74f6446622334589d2399dd9",
+          "locator": "https://docs.aws.amazon.com/r53recovery/latest/dg/security-iam-awsmanpol.md :: AWS managed policies for Amazon Application Recovery Controller (ARC)",
+          "quote": "+ [Managed polices for readiness check](security-iam-awsmanpol-readiness.md)",
+          "retrievedAt": "2026-09-01T04:58:58.669Z",
+          "sourceUrl": "https://docs.aws.amazon.com/r53recovery/latest/dg/security-iam-awsmanpol.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/aws-managed-policies",
+      "id": "iam-aws-managed-policies-resourcetype-aws-route53recoveryreadiness-readinesscheck-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Route53RecoveryReadiness::ReadinessCheck",
+      "targetLabel": "Managed polices for readiness check"
+    }
+  ],
+  "featureId": "iam/aws-managed-policies",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "iam",
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "Managed polices for zonal autoshift",
+      "sourceUrl": "https://docs.aws.amazon.com/r53recovery/latest/dg/security-iam-awsmanpol.md"
+    }
+  ]
+}

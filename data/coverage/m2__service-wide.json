@@ -1,0 +1,42 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "ab62a3717713b04d5690b97af0c7ea05355cab2be2463a6bd14433e504ef5bc3",
+          "locator": "https://docs.aws.amazon.com/m2/latest/userguide/ba-infrastructure-setup.md :: Infrastructure setup requirements for AWS Transform for mainframe Runtime",
+          "quote": "+ [Running AWS Transform for mainframe Runtime on Amazon EC2](#ba-running-on-ec2)",
+          "retrievedAt": "2026-09-01T04:29:44.567Z",
+          "sourceUrl": "https://docs.aws.amazon.com/m2/latest/userguide/ba-infrastructure-setup.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "m2/service-wide",
+      "id": "m2-service-wide-service-ec2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Running AWS Transform for mainframe Runtime on Amazon EC2"
+    }
+  ],
+  "featureId": "m2/service-wide",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "m2",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Infrastructure requirements",
+      "sourceUrl": "https://docs.aws.amazon.com/m2/latest/userguide/ba-infrastructure-setup.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Running AWS Transform for mainframe Runtime on Amazon ECS managed by AWS Fargate",
+      "sourceUrl": "https://docs.aws.amazon.com/m2/latest/userguide/ba-infrastructure-setup.md"
+    }
+  ]
+}

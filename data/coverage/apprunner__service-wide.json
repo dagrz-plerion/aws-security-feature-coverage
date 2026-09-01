@@ -1,0 +1,57 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b5e05e3a514917eb4c2b01951841cf527a4f75fb88ab12a079a7d20da98c6d39",
+          "locator": "https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.md :: AWS App Runner availability change > Migration walkthrough > Step 5: Complete the migration",
+          "quote": "+ Route 53 weighted routing records for App Runner",
+          "retrievedAt": "2026-09-01T04:34:56.497Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "apprunner/service-wide",
+      "id": "apprunner-service-wide-service-apprunner-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "apprunner",
+      "targetLabel": "Route 53 weighted routing records for App Runner"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b5e05e3a514917eb4c2b01951841cf527a4f75fb88ab12a079a7d20da98c6d39",
+          "locator": "https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.md :: AWS App Runner availability change > Migration walkthrough > Step 5: Complete the migration",
+          "quote": "+ Unused container images from Amazon Elastic Container Registry",
+          "retrievedAt": "2026-09-01T04:34:56.497Z",
+          "sourceUrl": "https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "apprunner/service-wide",
+      "id": "apprunner-service-wide-service-ecr-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ecr",
+      "targetLabel": "Unused container images from Amazon Elastic Container Registry"
+    }
+  ],
+  "featureId": "apprunner/service-wide",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "apprunner",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "IAM roles created specifically for App Runner, if no longer needed",
+      "sourceUrl": "https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.md"
+    }
+  ]
+}

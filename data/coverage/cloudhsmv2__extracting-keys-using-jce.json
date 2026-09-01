@@ -1,0 +1,37 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3df65d07739fcb86b32508e6aef704251107cf26bc205ecf2781be783029d39f",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshoot-getencoded.md :: You or someone with access to your system has enabled clear key extraction. See the following pages for more information, including how to reset this configuration to the default disabled state.",
+          "quote": "+ [Key extraction using JCE for AWS CloudHSM](java-lib-configs-getencoded.md)",
+          "retrievedAt": "2026-09-01T05:00:15.869Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshoot-getencoded.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudhsmv2/extracting-keys-using-jce",
+      "id": "cloudhsmv2-extracting-keys-using-jce-service-cloudhsm-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudhsm",
+      "targetLabel": "Key extraction using JCE for AWS CloudHSM"
+    }
+  ],
+  "featureId": "cloudhsmv2/extracting-keys-using-jce",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "cloudhsmv2",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Protecting and extracting keys from an HSM",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshoot-getencoded.md"
+    }
+  ]
+}

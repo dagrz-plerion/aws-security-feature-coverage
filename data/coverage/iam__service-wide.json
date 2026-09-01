@@ -106,6 +106,46 @@
     },
     {
       "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7d4c33cb53556ea8069a0ee5e9d898d298d2ba6e900565d4a7f04973f5754389",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/resources.md :: heading level 3",
+          "quote": "### Using IAM with Amazon DynamoDB",
+          "retrievedAt": "2026-09-01T04:59:04.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/resources.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/service-wide",
+      "id": "iam-service-wide-service-dynamodb-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "dynamodb",
+      "targetLabel": "Using IAM with Amazon DynamoDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7d4c33cb53556ea8069a0ee5e9d898d298d2ba6e900565d4a7f04973f5754389",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/resources.md :: heading level 3",
+          "quote": "### Using IAM with Amazon EC2",
+          "retrievedAt": "2026-09-01T04:59:04.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/resources.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/service-wide",
+      "id": "iam-service-wide-service-ec2-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Using IAM with Amazon EC2"
+    },
+    {
+      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -166,6 +206,46 @@
     },
     {
       "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7d4c33cb53556ea8069a0ee5e9d898d298d2ba6e900565d4a7f04973f5754389",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/resources.md :: heading level 3",
+          "quote": "### Using IAM with Amazon RDS",
+          "retrievedAt": "2026-09-01T04:59:04.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/resources.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/service-wide",
+      "id": "iam-service-wide-service-pi-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "pi",
+      "targetLabel": "Using IAM with Amazon RDS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7d4c33cb53556ea8069a0ee5e9d898d298d2ba6e900565d4a7f04973f5754389",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/resources.md :: heading level 3",
+          "quote": "### Using IAM with Amazon S3",
+          "retrievedAt": "2026-09-01T04:59:04.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/resources.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/service-wide",
+      "id": "iam-service-wide-service-s3-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Using IAM with Amazon S3"
+    },
+    {
+      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -206,7 +286,7 @@
     }
   ],
   "featureId": "iam/service-wide",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "iam",
   "unresolvedTargets": [
     {

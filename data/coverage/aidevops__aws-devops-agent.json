@@ -1,7 +1,8 @@
 {
   "axes": [
     "region",
-    "resourceType"
+    "resourceType",
+    "service"
   ],
   "claims": [
     {
@@ -283,10 +284,70 @@
       "status": "covered",
       "targetId": "AWS::Logs::DeliverySource",
       "targetLabel": "AWS::Logs::DeliverySource"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7725f8a3d060b3d08edd819e4366ee542acfb65928141bb1e088335d83df68da",
+          "locator": "https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-vended-logs-and-metrics.md :: Vended Logs and Metrics > Vended logs > Permissions",
+          "quote": "+ [Logs sent to CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-infrastructure-V2-CloudWatchLogs.html)",
+          "retrievedAt": "2026-09-01T04:28:58.252Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-vended-logs-and-metrics.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "aidevops/aws-devops-agent",
+      "id": "aidevops-aws-devops-agent-service-cloudwatch-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudwatch",
+      "targetLabel": "Logs sent to CloudWatch Logs"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7725f8a3d060b3d08edd819e4366ee542acfb65928141bb1e088335d83df68da",
+          "locator": "https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-vended-logs-and-metrics.md :: Vended Logs and Metrics > Vended logs > Permissions",
+          "quote": "+ [Logs sent to Firehose](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-infrastructure-V2-Firehose.html)",
+          "retrievedAt": "2026-09-01T04:28:58.252Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-vended-logs-and-metrics.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "aidevops/aws-devops-agent",
+      "id": "aidevops-aws-devops-agent-service-firehose-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "firehose",
+      "targetLabel": "Logs sent to Firehose"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7725f8a3d060b3d08edd819e4366ee542acfb65928141bb1e088335d83df68da",
+          "locator": "https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-vended-logs-and-metrics.md :: Vended Logs and Metrics > Vended logs > Permissions",
+          "quote": "+ [Logs sent to Amazon S3](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-infrastructure-V2-S3.html)",
+          "retrievedAt": "2026-09-01T04:28:58.252Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-vended-logs-and-metrics.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "aidevops/aws-devops-agent",
+      "id": "aidevops-aws-devops-agent-service-s3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Logs sent to Amazon S3"
     }
   ],
   "featureId": "aidevops/aws-devops-agent",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "aidevops",
   "unresolvedTargets": []
 }

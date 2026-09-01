@@ -110,6 +110,46 @@
         {
           "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
           "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon EMR on EC2 | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-ec2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Amazon EMR on EC2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
+          "quote": "| Amazon EMR on EKS | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "sso/aws-managed-applications",
+      "id": "sso-aws-managed-applications-service-eks-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eks",
+      "targetLabel": "Amazon EMR on EKS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md ::  | column \"AWS managed application\"",
           "quote": "| Amazon EMR Serverless | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
           "retrievedAt": "2026-09-01T04:59:34.233Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
@@ -565,7 +605,7 @@
     }
   ],
   "featureId": "sso/aws-managed-applications",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "sso",
   "unresolvedTargets": [
     {
@@ -576,16 +616,6 @@
     {
       "axis": "service",
       "raw": "Amazon EKS Capabilities",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EMR on EC2",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EMR on EKS",
       "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
     },
     {
@@ -636,16 +666,6 @@
     {
       "axis": "service",
       "raw": "Amazon EKS Capabilities",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EMR on EC2",
-      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EMR on EKS",
       "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
     },
     {

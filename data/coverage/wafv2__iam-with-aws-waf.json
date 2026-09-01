@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "c545e777e1662dc6aac388109d2799dc96f8d032a8f9449257afe3db4d082310",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS WAF",
+          "retrievedAt": "2026-09-01T05:00:57.748Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "wafv2/iam-with-aws-waf",
+      "id": "wafv2-iam-with-aws-waf-service-waf-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "waf",
+      "targetLabel": "Identity-based policies for AWS WAF"
+    }
+  ],
+  "featureId": "wafv2/iam-with-aws-waf",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "wafv2",
+  "unresolvedTargets": []
+}

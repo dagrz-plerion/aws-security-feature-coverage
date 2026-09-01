@@ -1,6 +1,7 @@
 {
   "axes": [
     "region",
+    "resourceType",
     "service"
   ],
   "claims": [
@@ -765,6 +766,66 @@
       "targetLabel": "US West (Oregon)"
     },
     {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "50e9ee9a750c7e5b0edc3c23bc1f4222ece3734e911e0767440440e0c077be75",
+          "locator": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-efs-integration.network.md :: heading level 2",
+          "quote": "## Controlling network access with security groups",
+          "retrievedAt": "2026-09-01T04:29:28.291Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-efs-integration.network.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "rds/service-wide",
+      "id": "rds-service-wide-resourcetype-aws-ec2-securitygroup-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::EC2::SecurityGroup",
+      "targetLabel": "Controlling network access with security groups"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "50e9ee9a750c7e5b0edc3c23bc1f4222ece3734e911e0767440440e0c077be75",
+          "locator": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-efs-integration.network.md :: heading level 2",
+          "quote": "## Controlling network access with file system policies",
+          "retrievedAt": "2026-09-01T04:29:28.291Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-efs-integration.network.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "rds/service-wide",
+      "id": "rds-service-wide-resourcetype-aws-s3files-filesystempolicy-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::S3Files::FileSystemPolicy",
+      "targetLabel": "Controlling network access with file system policies"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "6df58c06b5b31c0a4c333383ce49aa5492b4b92a77c4a473bb95cdb207097d65",
+          "locator": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-setup-sqlserver.md :: You can configure your IAM instance profile role, virtual private cloud (VPC), and AWS KMS symmetric encryption key by using either of the following processes:",
+          "quote": "+ [Configuring with CloudFormation](#custom-setup-sqlserver.cf) (recommended)",
+          "retrievedAt": "2026-09-01T04:29:27.346Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-setup-sqlserver.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "rds/service-wide",
+      "id": "rds-service-wide-service-cloudformation-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudformation",
+      "targetLabel": "Configuring with CloudFormation (recommended)"
+    },
+    {
       "axis": "service",
       "confidence": 0.9,
       "evidence": [
@@ -845,6 +906,26 @@
       "status": "covered",
       "targetId": "rds",
       "targetLabel": "Amazon RDS for MySQL"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e8464d6deb7e3cf87e2ebbe3896db0a03dbb04acda49e58ea4267b8deefcd8e0",
+          "locator": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.describingmonitoring.md :: Viewing and monitoring Amazon RDS zero-ETL integrations",
+          "quote": "+ [Monitoring integrations using system tables for Amazon Redshift](#zero-etl.monitoring)",
+          "retrievedAt": "2026-09-01T04:34:55.406Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.describingmonitoring.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "rds/service-wide",
+      "id": "rds-service-wide-service-redshift-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "redshift",
+      "targetLabel": "Monitoring integrations using system tables for Amazon Redshift"
     },
     {
       "axis": "service",
@@ -932,7 +1013,7 @@
     }
   ],
   "featureId": "rds/service-wide",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "rds",
   "unresolvedTargets": [
     {
@@ -1044,6 +1125,26 @@
       "axis": "region",
       "raw": "Middle East (UAE) (opt-in Region)",
       "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.KerberosAuthentication.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Unsupported settings for create and modify workflows",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-reqs-limits.md"
+    },
+    {
+      "axis": "service",
+      "raw": "DB instance quotas for your AWS account",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-reqs-limits.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Configuring manually",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-setup-sqlserver.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Viewing integrations",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.describingmonitoring.md"
     }
   ]
 }

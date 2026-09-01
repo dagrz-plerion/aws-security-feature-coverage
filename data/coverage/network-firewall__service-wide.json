@@ -1,7 +1,8 @@
 {
   "axes": [
     "region",
-    "resourceType"
+    "resourceType",
+    "service"
   ],
   "claims": [
     {
@@ -123,10 +124,70 @@
       "status": "covered",
       "targetId": "AWS::NetworkFirewall::RuleGroup",
       "targetLabel": "Rule group"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "af83a42185994a3c4170c0031454f3c4d29f351c4d1f2910debba504f6619297",
+          "locator": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/logging-cw-logs.md :: heading level 2",
+          "quote": "## Permissions to publish logs to CloudWatch Logs",
+          "retrievedAt": "2026-09-01T05:00:21.020Z",
+          "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/logging-cw-logs.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "network-firewall/service-wide",
+      "id": "network-firewall-service-wide-service-cloudwatch-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudwatch",
+      "targetLabel": "Permissions to publish logs to CloudWatch Logs"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "62592823a11d9225cd76da0530fba48d83fac701345d71d0c925e90f9bef3fed",
+          "locator": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Network Firewall",
+          "retrievedAt": "2026-09-01T04:59:19.580Z",
+          "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "network-firewall/service-wide",
+      "id": "network-firewall-service-wide-service-network-firewall-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "network-firewall",
+      "targetLabel": "Identity-based policies for Network Firewall"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "2e4e7f5b9b8d3a8d13f0417421461c363bb2991f8fa9ed1fd996cf184b22c454",
+          "locator": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/sharing.md :: Sharing AWS Network Firewall resources",
+          "quote": "+ Specific AWS accounts inside or outside of its organization in AWS Organizations",
+          "retrievedAt": "2026-09-01T05:00:19.398Z",
+          "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/sharing.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "network-firewall/service-wide",
+      "id": "network-firewall-service-wide-service-organizations-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "organizations",
+      "targetLabel": "Specific AWS accounts inside or outside of its organization in AWS Organizations"
     }
   ],
   "featureId": "network-firewall/service-wide",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "network-firewall",
   "unresolvedTargets": [
     {

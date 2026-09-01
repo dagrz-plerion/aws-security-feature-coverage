@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "681ceac78baf8f870fc9fcc9855df9cfa9957e87b386b01e63752d527c933b26",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/fms-using-service-linked-roles.md :: heading level 2",
+          "quote": "## Service-linked role permissions for Firewall Manager",
+          "retrievedAt": "2026-09-01T04:59:29.148Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/fms-using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "fms/service-linked-roles",
+      "id": "fms-service-linked-roles-service-fms-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "fms",
+      "targetLabel": "Service-linked role permissions for Firewall Manager"
+    }
+  ],
+  "featureId": "fms/service-linked-roles",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "fms",
+  "unresolvedTargets": []
+}

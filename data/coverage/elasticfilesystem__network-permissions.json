@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "50e9ee9a750c7e5b0edc3c23bc1f4222ece3734e911e0767440440e0c077be75",
+          "locator": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-efs-integration.network.md :: heading level 2",
+          "quote": "## Controlling network access with security groups",
+          "retrievedAt": "2026-09-01T04:29:28.291Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-efs-integration.network.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "elasticfilesystem/network-permissions",
+      "id": "elasticfilesystem-network-permissions-resourcetype-aws-ec2-securitygroup-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::EC2::SecurityGroup",
+      "targetLabel": "Controlling network access with security groups"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "50e9ee9a750c7e5b0edc3c23bc1f4222ece3734e911e0767440440e0c077be75",
+          "locator": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-efs-integration.network.md :: heading level 2",
+          "quote": "## Controlling network access with file system policies",
+          "retrievedAt": "2026-09-01T04:29:28.291Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-efs-integration.network.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "elasticfilesystem/network-permissions",
+      "id": "elasticfilesystem-network-permissions-resourcetype-aws-s3files-filesystempolicy-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::S3Files::FileSystemPolicy",
+      "targetLabel": "Controlling network access with file system policies"
+    }
+  ],
+  "featureId": "elasticfilesystem/network-permissions",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "elasticfilesystem",
+  "unresolvedTargets": []
+}

@@ -1,6 +1,7 @@
 {
   "axes": [
-    "region"
+    "region",
+    "service"
   ],
   "claims": [
     {
@@ -42,10 +43,61 @@
       "status": "covered",
       "targetId": "us-gov-west-1",
       "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "16eb6a05e9f5858218a37b68d980a5c71c6f961b91e857b2abdfc74e2ffdc787",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/getting-started-setup-mtls.md :: Set up mutual TLS between client and AWS CloudHSM (recommended)",
+          "quote": "+ [Step 2. Enable mTLS for AWS CloudHSM](#getting-start-setup-mtl-sdk)",
+          "retrievedAt": "2026-09-01T05:00:08.414Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/getting-started-setup-mtls.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-service-cloudhsm-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudhsm",
+      "targetLabel": "Step 2. Enable mTLS for AWS CloudHSM"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "524b07d2bb207ae977f979ae9d835f8eb38af3c1bb078e06f15201a48b63f145",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/get-api-logs-using-cloudtrail.md :: heading level 2",
+          "quote": "## AWS CloudHSM information in CloudTrail",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/get-api-logs-using-cloudtrail.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-service-cloudtrail-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudtrail",
+      "targetLabel": "AWS CloudHSM information in CloudTrail"
     }
   ],
   "featureId": "cloudhsm/service-wide",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "cloudhsm",
-  "unresolvedTargets": []
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Step 1. Create and register a trust anchor onto the HSM",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/getting-started-setup-mtls.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Protecting and extracting keys from an HSM",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshoot-getencoded.md"
+    }
+  ]
 }

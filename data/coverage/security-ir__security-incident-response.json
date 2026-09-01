@@ -1,6 +1,7 @@
 {
   "axes": [
-    "region"
+    "region",
+    "service"
   ],
   "claims": [
     {
@@ -482,10 +483,50 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "574351cadd6a510f61ba231882120734a90f3d0835d83fa61dea1d9fae0a3a16",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-security-ir.md :: heading level 2",
+          "quote": "## Expected `CreateServiceLinkedRole` events in AWS CloudTrail",
+          "retrievedAt": "2026-09-01T05:00:49.391Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-security-ir.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "security-ir/security-incident-response",
+      "id": "security-ir-security-incident-response-service-cloudtrail-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudtrail",
+      "targetLabel": "Expected CreateServiceLinkedRole events in AWS CloudTrail"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "574351cadd6a510f61ba231882120734a90f3d0835d83fa61dea1d9fae0a3a16",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-security-ir.md :: heading level 2",
+          "quote": "## Enabling trusted access to Security Incident Response",
+          "retrievedAt": "2026-09-01T05:00:49.391Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-security-ir.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "security-ir/security-incident-response",
+      "id": "security-ir-security-incident-response-service-security-ir-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "security-ir",
+      "targetLabel": "Enabling trusted access to Security Incident Response"
     }
   ],
   "featureId": "security-ir/security-incident-response",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "security-ir",
   "unresolvedTargets": [
     {

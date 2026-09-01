@@ -42,6 +42,31 @@ const singular = (value: string): string => value.replace(/(ies)$/, "y").replace
 const REGION_CODE = /^[a-z]{2,4}(-[a-z]+)+-\d+$/;
 const CFN_TYPE = /^[A-Za-z0-9]+::[A-Za-z0-9]+::[A-Za-z0-9]+$/;
 
+/** Connective words after which a heading usually names its subject. */
+const CONNECTIVE = /\s+(?:in|with|for|on|to|from|across|against|within)\s+/gi;
+
+/**
+ * Tails of a phrase, longest first. Only used after a direct match fails, and only
+ * ever accepted when a whole column or list resolves consistently.
+ */
+export function phraseTails(text: string): string[] {
+  const trimmed = text.trim();
+  if (trimmed.split(/\s+/).length < 3) return [];
+  const tails: string[] = [];
+  for (const match of trimmed.matchAll(CONNECTIVE)) {
+    const start = (match.index ?? 0) + match[0].length;
+    const tail = trimmed.slice(start).trim();
+    if (tail && tail.split(/\s+/).length <= 6) tails.push(tail);
+  }
+  // Also try the tail with a trailing parenthetical removed.
+  const extra: string[] = [];
+  for (const tail of tails) {
+    const bare = tail.replace(/\s*\(.*?\)\s*$/, "").trim();
+    if (bare && bare !== tail) extra.push(bare);
+  }
+  return [...tails, ...extra];
+}
+
 /**
  * Turns the words used in documentation into universe ids. Every resolver is exact
  * or near-exact; nothing is guessed, so an unresolved name becomes a recorded gap
@@ -189,6 +214,14 @@ export class TargetResolver {
     for (const attempt of order) {
       const hit = attempt();
       if (hit) return hit;
+    }
+
+    // A heading often wraps the target in prose: "Detecting attack sequences in
+    // Amazon EKS clusters", "How Runtime Monitoring works with Amazon EC2 instances".
+    // The target is the tail after the connective word.
+    for (const tail of phraseTails(text)) {
+      const hit = this.resolve(tail, axis);
+      if (hit) return { ...hit, label: text };
     }
     return undefined;
   }

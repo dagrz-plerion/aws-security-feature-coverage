@@ -1,0 +1,77 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d9969a19069a0f9fb38c50590c49d55f734953a452525a8042762820ae429932",
+          "locator": "https://docs.aws.amazon.com/timestream/latest/developerguide/client-integrations.md :: Client applications and supported integrations",
+          "quote": "+  [ Best practices for working with AWS Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html)",
+          "retrievedAt": "2026-09-01T04:29:37.496Z",
+          "sourceUrl": "https://docs.aws.amazon.com/timestream/latest/developerguide/client-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "timestream/service-wide",
+      "id": "timestream-service-wide-service-aws-lambda-function-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Lambda::Function",
+      "targetLabel": "Best practices for working with AWS Lambda functions"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d9969a19069a0f9fb38c50590c49d55f734953a452525a8042762820ae429932",
+          "locator": "https://docs.aws.amazon.com/timestream/latest/developerguide/client-integrations.md :: Client applications and supported integrations",
+          "quote": "+ [ Best practices for creating dashboards in Grafana](https://grafana.com/docs/grafana/latest/best-practices/best-practices-for-creating-dashboards/)",
+          "retrievedAt": "2026-09-01T04:29:37.496Z",
+          "sourceUrl": "https://docs.aws.amazon.com/timestream/latest/developerguide/client-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "timestream/service-wide",
+      "id": "timestream-service-wide-service-grafana-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "grafana",
+      "targetLabel": "Best practices for creating dashboards in Grafana"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d9969a19069a0f9fb38c50590c49d55f734953a452525a8042762820ae429932",
+          "locator": "https://docs.aws.amazon.com/timestream/latest/developerguide/client-integrations.md :: Client applications and supported integrations",
+          "quote": "+ [ Best Practices for Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/best-practices.html)",
+          "retrievedAt": "2026-09-01T04:29:37.496Z",
+          "sourceUrl": "https://docs.aws.amazon.com/timestream/latest/developerguide/client-integrations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "timestream/service-wide",
+      "id": "timestream-service-wide-service-regional-amazon-managed-service-for-apache-flink-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "regional:amazon-managed-service-for-apache-flink",
+      "targetLabel": "Best Practices for Amazon Managed Service for Apache Flink"
+    }
+  ],
+  "featureId": "timestream/service-wide",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "timestream",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Best Practices for AWS Development with the AWS SDK for Java",
+      "sourceUrl": "https://docs.aws.amazon.com/timestream/latest/developerguide/client-integrations.md"
+    }
+  ]
+}

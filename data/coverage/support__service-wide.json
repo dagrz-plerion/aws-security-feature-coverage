@@ -1,0 +1,71 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3b26fea94295a978ba71b0311cedf8e1f89ea3328777c92030e75ed05e87fa71",
+          "locator": "https://docs.aws.amazon.com/awssupport/latest/user/support-app-permissions.md :: Managing access to the AWS Support App > Use an AWS managed policy or create a customer managed policy > Example IAM policy",
+          "quote": "+ [Actions, resources, and condition keys for AWS Identity and Access Management](https://docs.aws.amazon.com/service-authorization/latest/reference/list_identityandaccessmanagement.html)",
+          "retrievedAt": "2026-09-01T04:29:39.188Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awssupport/latest/user/support-app-permissions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "support/service-wide",
+      "id": "support-service-wide-service-iam-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iam",
+      "targetLabel": "Actions, resources, and condition keys for AWS Identity and Access Management"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3b26fea94295a978ba71b0311cedf8e1f89ea3328777c92030e75ed05e87fa71",
+          "locator": "https://docs.aws.amazon.com/awssupport/latest/user/support-app-permissions.md :: Managing access to the AWS Support App > Use an AWS managed policy or create a customer managed policy > Example IAM policy",
+          "quote": "+ [Actions, resources, and condition keys for Service Quotas](https://docs.aws.amazon.com/service-authorization/latest/reference/list_servicequotas.html)",
+          "retrievedAt": "2026-09-01T04:29:39.188Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awssupport/latest/user/support-app-permissions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "support/service-wide",
+      "id": "support-service-wide-service-servicequotas-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "servicequotas",
+      "targetLabel": "Actions, resources, and condition keys for Service Quotas"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3b26fea94295a978ba71b0311cedf8e1f89ea3328777c92030e75ed05e87fa71",
+          "locator": "https://docs.aws.amazon.com/awssupport/latest/user/support-app-permissions.md :: Managing access to the AWS Support App > Use an AWS managed policy or create a customer managed policy > Example IAM policy",
+          "quote": "+ [Actions, resources, and condition keys for AWS Support](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awssupport.html)",
+          "retrievedAt": "2026-09-01T04:29:39.188Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awssupport/latest/user/support-app-permissions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "support/service-wide",
+      "id": "support-service-wide-service-support-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "support",
+      "targetLabel": "Actions, resources, and condition keys for AWS Support"
+    }
+  ],
+  "featureId": "support/service-wide",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "support",
+  "unresolvedTargets": []
+}

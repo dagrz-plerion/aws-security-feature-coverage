@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "526a5e0943a7b4a127c4d9ad4eecca5be806a09b136e389d13509cba9e523f3f",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/sharing.md :: Working with shared backups in AWS CloudHSM",
+          "quote": "+ Specific AWS accounts inside or outside of its organization in AWS Organizations",
+          "retrievedAt": "2026-09-01T05:00:10.167Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/sharing.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudhsm/cluster-backups",
+      "id": "cloudhsm-cluster-backups-service-organizations-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "organizations",
+      "targetLabel": "Specific AWS accounts inside or outside of its organization in AWS Organizations"
+    }
+  ],
+  "featureId": "cloudhsm/cluster-backups",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "cloudhsm",
+  "unresolvedTargets": []
+}

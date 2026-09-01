@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "50ce7b0f3021857b0128c247e48fd6377564cf39c07391849c2d9ef946a6ee4e",
+          "locator": "https://docs.aws.amazon.com/mediaconnect/latest/ug/integrate-eml-with-router.md :: Before you start, ensure that:",
+          "quote": "+ You have administrator permissions for MediaConnect",
+          "retrievedAt": "2026-09-01T04:35:22.641Z",
+          "sourceUrl": "https://docs.aws.amazon.com/mediaconnect/latest/ug/integrate-eml-with-router.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "mediaconnect/service-wide",
+      "id": "mediaconnect-service-wide-service-mediaconnect-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mediaconnect",
+      "targetLabel": "You have administrator permissions for MediaConnect"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "50ce7b0f3021857b0128c247e48fd6377564cf39c07391849c2d9ef946a6ee4e",
+          "locator": "https://docs.aws.amazon.com/mediaconnect/latest/ug/integrate-eml-with-router.md :: Before you start, ensure that:",
+          "quote": "+ You can coordinate with a MediaLive operator who has administrator permissions for MediaLive",
+          "retrievedAt": "2026-09-01T04:35:22.641Z",
+          "sourceUrl": "https://docs.aws.amazon.com/mediaconnect/latest/ug/integrate-eml-with-router.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "mediaconnect/service-wide",
+      "id": "mediaconnect-service-wide-service-medialive-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "medialive",
+      "targetLabel": "You can coordinate with a MediaLive operator who has administrator permissions for MediaLive"
+    }
+  ],
+  "featureId": "mediaconnect/service-wide",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "mediaconnect",
+  "unresolvedTargets": []
+}

@@ -1,7 +1,8 @@
 {
   "axes": [
     "region",
-    "resourceType"
+    "resourceType",
+    "service"
   ],
   "claims": [
     {
@@ -163,10 +164,50 @@
       "status": "covered",
       "targetId": "signin:console",
       "targetLabel": "[ CloudWatch console ]"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "622624d64a05156166195405d02e86904fa90a89643592b1d350e3e059dbb125",
+          "locator": "https://docs.aws.amazon.com/eks/latest/userguide/integration-securitylake.md :: heading level 2",
+          "quote": "## Benefits of using Security Lake with Amazon EKS",
+          "retrievedAt": "2026-09-01T05:00:41.672Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/integration-securitylake.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "securitylake/amazon-security-lake-as-a-sink",
+      "id": "securitylake-amazon-security-lake-as-a-sink-service-eks-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eks",
+      "targetLabel": "Benefits of using Security Lake with Amazon EKS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "622624d64a05156166195405d02e86904fa90a89643592b1d350e3e059dbb125",
+          "locator": "https://docs.aws.amazon.com/eks/latest/userguide/integration-securitylake.md :: heading level 2",
+          "quote": "## Analyzing EKS Logs in Security Lake",
+          "retrievedAt": "2026-09-01T05:00:41.672Z",
+          "sourceUrl": "https://docs.aws.amazon.com/eks/latest/userguide/integration-securitylake.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "securitylake/amazon-security-lake-as-a-sink",
+      "id": "securitylake-amazon-security-lake-as-a-sink-service-securitylake-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securitylake",
+      "targetLabel": "Analyzing EKS Logs in Security Lake"
     }
   ],
   "featureId": "securitylake/amazon-security-lake-as-a-sink",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "securitylake",
   "unresolvedTargets": []
 }

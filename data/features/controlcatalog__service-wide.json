@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "confidence": 0.7,
+  "discoveredBy": [
+    "service-level"
+  ],
+  "docUrls": [],
+  "evidence": [
+    {
+      "bodySha256": "f3dc79646da8a92e337c4ea1caddeed2e7d3a8d2902c10afcabc015b719f34b7",
+      "locator": "AWS Control Catalog Security Information",
+      "quote": "[AWS PrivateLink](https://docs.aws.amazon.com/controlcatalog/latest/userguide/vpc-interface-endpoints.md)",
+      "retrievedAt": "2026-09-01T04:06:06.238Z",
+      "sourceUrl": "https://docs.aws.amazon.com/controlcatalog/latest/userguide/llms.txt"
+    }
+  ],
+  "id": "controlcatalog/service-wide",
+  "kind": "configuration",
+  "method": "deterministic",
+  "name": "controlcatalog: stated for the service as a whole",
+  "serviceId": "controlcatalog",
+  "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+  "tier": "tier1"
+}

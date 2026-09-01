@@ -6147,6 +6147,46 @@
     },
     {
       "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "1c2051678e88bc0fde7277fcde94b872d2745a405c94e45440567dcbd47925cb",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.md :: There are only two types of service-linked rule that Audit Manager collects evidence from:",
+          "quote": "+ Service-linked rules from Conformance Packs",
+          "retrievedAt": "2026-09-01T05:00:01.958Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "auditmanager/service-wide",
+      "id": "auditmanager-service-wide-resourcetype-aws-config-conformancepack-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Config::ConformancePack",
+      "targetLabel": "Service-linked rules from Conformance Packs"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "89f382a429f9b017af6c8dee564156980b8361a016f9f55689748defd4e085f0",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.md :: When the principal in a policy statement is an AWS service principal, we strongly recommend that you use the aws:SourceArn or aws:SourceAccount global condition keys in the policy. You can use these global condition context keys to help prevent the confused deputy scenario. The following documented policies show how you can use the aws:SourceArn and aws:SourceAccount global condition context keys in Audit Manager to prevent the confused deputy problem.",
+          "quote": "+ [Example policy for an SNS topic that's used for Audit Manager notifications](https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_id-based-policy-examples.html#sns-topic-permissions)",
+          "retrievedAt": "2026-09-01T04:58:51.787Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "auditmanager/service-wide",
+      "id": "auditmanager-service-wide-resourcetype-aws-connect-notification-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::Notification",
+      "targetLabel": "Example policy for an SNS topic that's used for Audit Manager notifications"
+    },
+    {
+      "axis": "resourceType",
       "confidence": 0.9,
       "evidence": [
         {
@@ -6224,6 +6264,26 @@
       "status": "covered",
       "targetId": "access-analyzer",
       "targetLabel": "IAM Access Analyzer"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "25bc9844340fa2930848d7350fe8e4b4c3c5f5a9458e9d80763becac773d98cb",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/sdk-general-information-section.md :: Using AWS Audit Manager with an AWS SDK | column \"Audit Manager specific documentation\"",
+          "quote": "| [AWS SDK for C\\+\\+](https://docs.aws.amazon.com/sdk-for-cpp) | [AWS SDK for C\\+\\+ API reference for Audit Manager](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-auditmanager/html/namespace_aws_1_1_audit_manager.html) | [AWS SDK for C\\+\\+ code examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp) |",
+          "retrievedAt": "2026-09-01T05:00:00.572Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/sdk-general-information-section.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "auditmanager/service-wide",
+      "id": "auditmanager-service-wide-service-auditmanager-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "auditmanager",
+      "targetLabel": "AWS SDK for C\\+\\+ API reference for Audit Manager"
     },
     {
       "axis": "service",
@@ -6367,7 +6427,7 @@
     }
   ],
   "featureId": "auditmanager/service-wide",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "auditmanager",
   "unresolvedTargets": [
     {
@@ -6436,6 +6496,11 @@
       "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/review-controls.md"
     },
     {
+      "axis": "resourceType",
+      "raw": "Service-linked rules from AWS Organizations",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.md"
+    },
+    {
       "axis": "service",
       "raw": "AWS API calls",
       "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.md"
@@ -6444,6 +6509,21 @@
       "axis": "service",
       "raw": "AWS API calls",
       "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Example policy for a KMS key that's used with an SNS topic",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Deleting an assessment report",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Deleting an assessment report",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.md"
     }
   ]
 }

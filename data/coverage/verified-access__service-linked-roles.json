@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f139c332773fe62e677af9e5d123aa919d75caf8bd00129d622ef1ee4ebfad8a",
+          "locator": "https://docs.aws.amazon.com/verified-access/latest/ug/using-service-linked-roles.md :: heading level 2",
+          "quote": "## Service-linked role permissions for Verified Access",
+          "retrievedAt": "2026-09-01T04:59:28.387Z",
+          "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "verified-access/service-linked-roles",
+      "id": "verified-access-service-linked-roles-service-verified-access-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "verified-access",
+      "targetLabel": "Service-linked role permissions for Verified Access"
+    }
+  ],
+  "featureId": "verified-access/service-linked-roles",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "verified-access",
+  "unresolvedTargets": []
+}

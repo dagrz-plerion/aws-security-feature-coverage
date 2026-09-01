@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "4a517cd39f5ab3829079d60391fde57eb71717747f4cd26376854d30706bec50",
+          "locator": "https://docs.aws.amazon.com/appstudio/latest/userguide/appstudio-service-linked-roles.md :: Service-linked roles for App Studio",
+          "quote": "+ [Service-linked role permissions for App Studio](#slr-permissions)",
+          "retrievedAt": "2026-09-01T04:58:51.324Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appstudio/latest/userguide/appstudio-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/app-studio-and-identity-and-access-management",
+      "id": "iam-app-studio-and-identity-and-access-management-service-appstudio-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "appstudio",
+      "targetLabel": "Service-linked role permissions for App Studio"
+    }
+  ],
+  "featureId": "iam/app-studio-and-identity-and-access-management",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "iam",
+  "unresolvedTargets": []
+}

@@ -1,0 +1,432 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: AWS Backup offers fully-managed backup and restore for Amazon S3 backups. To learn more, see Amazon S3 backups.",
+          "quote": "+ How to back up resources: [Getting started with AWS Backup](getting-started.md)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-backup-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "backup",
+      "targetLabel": "How to back up resources: Getting started with AWS Backup"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with CloudFormation](#working-with-cloudformation)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-cloudformation-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudformation",
+      "targetLabel": "Working with CloudFormation"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Aurora DSQL](#working-with-aurora-dsql)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-dsql-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "dsql",
+      "targetLabel": "Working with Aurora DSQL"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Amazon DynamoDB](#working-with-ddb)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-dynamodb-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "dynamodb",
+      "targetLabel": "Working with Amazon DynamoDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Amazon EBS](#working-with-ebs)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-ebs-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ebs",
+      "targetLabel": "Working with Amazon EBS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Amazon EC2](#working-with-ec2)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-ec2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Working with Amazon EC2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Amazon EKS](#working-with-eks)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-eks-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eks",
+      "targetLabel": "Working with Amazon EKS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Amazon EFS](#working-with-efs)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-elasticfilesystem-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticfilesystem",
+      "targetLabel": "Working with Amazon EFS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Amazon GuardDuty](#working-with-guardduty)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-guardduty-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "guardduty",
+      "targetLabel": "Working with Amazon GuardDuty"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with AWS Organizations](#working-with-orgs)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-organizations-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "organizations",
+      "targetLabel": "Working with AWS Organizations"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Amazon RDS and Aurora](#working-with-rds)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-pi-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "pi",
+      "targetLabel": "Working with Amazon RDS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Amazon RDS and Aurora](#working-with-rds)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-product-amazon-aurora-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "product:amazon-aurora",
+      "targetLabel": "Working with Amazon Aurora"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Amazon DocumentDB](#working-with-docdb)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-product-amazon-documentdb-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "product:amazon-documentdb",
+      "targetLabel": "Working with Amazon DocumentDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Amazon Neptune](#working-with-nep)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-rds-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "rds",
+      "targetLabel": "Working with Amazon Neptune"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Amazon Redshift and Amazon Redshift Serverless](#working-with-redshift)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-redshift-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "redshift",
+      "targetLabel": "Working with Amazon Redshift"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with AWS Storage Gateway](#working-with-storage-gateway)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-storagegateway-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "storagegateway",
+      "targetLabel": "Working with AWS Storage Gateway"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cb74de7c7937204d16c5922a030ce6698e0e3b0053b407505fa3383550e8b530",
+          "locator": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md :: How AWS Backup works with supported AWS services",
+          "quote": "+ [Working with Amazon Timestream](#working-with-timestream)",
+          "retrievedAt": "2026-09-01T04:35:05.022Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "backup/service-wide",
+      "id": "backup-service-wide-service-timestream-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "timestream",
+      "targetLabel": "Working with Amazon Timestream"
+    }
+  ],
+  "featureId": "backup/service-wide",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "backup",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "How to restore Amazon S3 data using AWS Backup: Restore S3 data using AWS Backup",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "How to restore DynamoDB resources: Restore a Amazon DynamoDB table",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "How to restore Amazon FSx resources: Restore an FSx file system",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "How to restore Amazon EC2 resources: Restore an Amazon EC2 instance",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "How to restore Amazon EFS resources: Restore an Amazon EFS file system",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "How to restore Amazon EBS volumes: Restore an Amazon EBS volume",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "How to restore Aurora DSQL clusters: Amazon Aurora DSQL restore",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "How to restore Storage Gateway resources: Restore a Storage Gateway volume.",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "How to restore Amazon DocumentDB resources: Restoring a DocumentDB cluster.",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "How to restore Amazon Neptune clusters: Restore a Neptune cluster.",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Working with Amazon S3 data",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Working with VMware virtual machines",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Working with Amazon FSx file systems",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Working with AWS BackInt",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Working with AWS BackInt, AWS Systems Manager for SAP, and SAP HANA",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    },
+    {
+      "axis": "service",
+      "raw": "How AWS services back up their own resources",
+      "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-supported-services.md"
+    }
+  ]
+}

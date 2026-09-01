@@ -1,6 +1,8 @@
 {
   "axes": [
-    "region"
+    "region",
+    "resourceType",
+    "service"
   ],
   "claims": [
     {
@@ -42,10 +44,50 @@
       "status": "covered",
       "targetId": "us-gov-west-1",
       "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e400d182b57c328725353856ad37ce5cf5b140e99db07c10ea3931745ad18163",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/migrate-waf-classic-fms.md :: heading level 2",
+          "quote": "## Migrating Web ACLs in AWS WAF Classic Policies",
+          "retrievedAt": "2026-09-01T04:59:29.310Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/migrate-waf-classic-fms.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "fms/aws-firewall-manager-policies",
+      "id": "fms-aws-firewall-manager-policies-resourcetype-aws-bedrockagentcore-policy-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::BedrockAgentCore::Policy",
+      "targetLabel": "Migrating Web ACLs in AWS WAF Classic Policies"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3dd75754110cf01d7e7b4c3514806947d6693e3d2517e9daaa4f054101ad08c0",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/policy-scope.md :: heading level 2",
+          "quote": "## Policy scope options in AWS Firewall Manager",
+          "retrievedAt": "2026-09-01T05:00:27.183Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/policy-scope.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "fms/aws-firewall-manager-policies",
+      "id": "fms-aws-firewall-manager-policies-service-fms-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "fms",
+      "targetLabel": "Policy scope options in AWS Firewall Manager"
     }
   ],
   "featureId": "fms/aws-firewall-manager-policies",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "fms",
   "unresolvedTargets": []
 }

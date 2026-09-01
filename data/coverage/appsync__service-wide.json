@@ -1,8 +1,49 @@
 {
   "axes": [
+    "resourceType",
     "service"
   ],
   "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "a21b2eae0a583ff683f1ad655e48658c6b22b2eba155e629f87b1cc5c1ee395c",
+          "locator": "https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-delta-sync.md :: Using Delta Sync operations on versioned data sources in AWS AppSync > One-Click Setup",
+          "quote": "+ 1 AWS AppSync API with API key",
+          "retrievedAt": "2026-09-01T04:34:57.231Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-delta-sync.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "appsync/service-wide",
+      "id": "appsync-service-wide-resourcetype-aws-apigateway-apikey-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::ApiGateway::ApiKey",
+      "targetLabel": "1 AWS AppSync API with API key"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "a21b2eae0a583ff683f1ad655e48658c6b22b2eba155e629f87b1cc5c1ee395c",
+          "locator": "https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-delta-sync.md :: Using Delta Sync operations on versioned data sources in AWS AppSync > One-Click Setup",
+          "quote": "+ 1 IAM Role with policy for DynamoDB tables",
+          "retrievedAt": "2026-09-01T04:34:57.231Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-delta-sync.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "appsync/service-wide",
+      "id": "appsync-service-wide-resourcetype-aws-dynamodb-table-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::DynamoDB::Table",
+      "targetLabel": "1 IAM Role with policy for DynamoDB tables"
+    },
     {
       "axis": "service",
       "confidence": 0.8,
@@ -105,7 +146,13 @@
     }
   ],
   "featureId": "appsync/service-wide",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "appsync",
-  "unresolvedTargets": []
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "2 DynamoDB tables (Base and Delta)",
+      "sourceUrl": "https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-delta-sync.md"
+    }
+  ]
 }

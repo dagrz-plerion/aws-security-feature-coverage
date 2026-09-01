@@ -1,0 +1,62 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "2de4bb03960501c27cc95b8f6ae54f352ac3c89405dc7b7a6b78780a567304f0",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon Inspector",
+          "retrievedAt": "2026-09-01T04:59:15.911Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "inspector2/amazon-inspector-code-security",
+      "id": "inspector2-amazon-inspector-code-security-service-inspector-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "inspector",
+      "targetLabel": "Identity-based policies for Amazon Inspector"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "ad78719dd17cd40773cf9307bf6e6c4e0ea7af79059a5f6ee3c2847147e2b9dd",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/securityhub-integration.md :: Amazon Inspector integration with AWS Security Hub CSPM",
+          "quote": "+ [Viewing Amazon Inspector findings in AWS Security Hub CSPM](#integrations-security-hub-viewing-findings)",
+          "retrievedAt": "2026-09-01T04:29:32.287Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/securityhub-integration.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "inspector2/amazon-inspector-code-security",
+      "id": "inspector2-amazon-inspector-code-security-service-securityhub-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securityhub",
+      "targetLabel": "Viewing Amazon Inspector findings in AWS Security Hub CSPM"
+    }
+  ],
+  "featureId": "inspector2/amazon-inspector-code-security",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "inspector2",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Activating Amazon Inspector from Security Hub CSPM using organization policy",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/securityhub-integration.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Disabling the flow of findings from an integration",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/securityhub-integration.md"
+    }
+  ]
+}

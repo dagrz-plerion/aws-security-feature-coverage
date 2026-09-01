@@ -1,6 +1,7 @@
 {
   "axes": [
     "region",
+    "resourceType",
     "service"
   ],
   "claims": [
@@ -43,6 +44,46 @@
       "status": "covered",
       "targetId": "us-gov-west-1",
       "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "881188bd9030f41f5d4266ea8ccaa5f50af6c24a260972fbf3f284200a4657b6",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-identity-pools-application.md :: Amazon Cognito user pools",
+          "quote": "+ [Authentication with Amazon Cognito user pools](authentication.md)",
+          "retrievedAt": "2026-09-01T04:59:48.493Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-identity-pools-application.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/amazon-cognito-identity-pools",
+      "id": "cognito-idp-amazon-cognito-identity-pools-resourcetype-aws-cognito-userpool-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Cognito::UserPool",
+      "targetLabel": "Authentication with Amazon Cognito user pools"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "07fd3f1860b1b389047f4824b1d8c31a6e88e8aa60a2685003b42ab5f8bf7e56",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon Cognito",
+          "retrievedAt": "2026-09-01T04:58:54.868Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "cognito-idp/amazon-cognito-identity-pools",
+      "id": "cognito-idp-amazon-cognito-identity-pools-service-cognito-identity-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cognito-identity",
+      "targetLabel": "Identity-based policies for Amazon Cognito"
     },
     {
       "axis": "service",
@@ -126,9 +167,14 @@
     }
   ],
   "featureId": "cognito-idp/amazon-cognito-identity-pools",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "cognito-idp",
   "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "Application-specific settings with app clients",
+      "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-identity-pools-application.md"
+    },
     {
       "axis": "region",
       "raw": "Opt-in Regions like Europe (Milan) and Africa (Cape Town)",

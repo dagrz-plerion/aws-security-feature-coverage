@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "a854d167e28e090aef3f7780e1936e28d51a22892e92583e688af7d29e2226fb",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/shd-security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Shield",
+          "retrievedAt": "2026-09-01T05:00:48.831Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/shd-security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "wafv2/iam-with-shield",
+      "id": "wafv2-iam-with-shield-service-shield-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "shield",
+      "targetLabel": "Identity-based policies for Shield"
+    }
+  ],
+  "featureId": "wafv2/iam-with-shield",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "wafv2",
+  "unresolvedTargets": []
+}

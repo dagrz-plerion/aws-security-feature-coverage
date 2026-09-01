@@ -1,0 +1,42 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "2c7765f1a0a5da6797944adc1f84cb2e10a8966808112ee21fd8f9ad2bae7d1d",
+          "locator": "https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-partners-github.md :: Topics",
+          "quote": "+ [GitHub authentication with applications in CodeDeploy](#behaviors-authentication)",
+          "retrievedAt": "2026-09-01T04:35:10.854Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-partners-github.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "codedeploy/service-wide",
+      "id": "codedeploy-service-wide-service-codedeploy-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codedeploy",
+      "targetLabel": "GitHub authentication with applications in CodeDeploy"
+    }
+  ],
+  "featureId": "codedeploy/service-wide",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "codedeploy",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "CodeDeploy interaction with private and public GitHub repositories",
+      "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-partners-github.md"
+    },
+    {
+      "axis": "service",
+      "raw": "CodeDeploy interaction with organization-managed GitHub repositories",
+      "sourceUrl": "https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-partners-github.md"
+    }
+  ]
+}

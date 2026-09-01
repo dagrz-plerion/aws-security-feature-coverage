@@ -1,0 +1,57 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "943353734ea3c132b349e0da3e832fa2e9d4c6c7d0b6b41d8895ac9880098808",
+          "locator": "https://docs.aws.amazon.com/detective/latest/userguide/behavior-graph-population-about.md :: How Detective populates a behavior graph",
+          "quote": "+ Findings from Amazon GuardDuty",
+          "retrievedAt": "2026-09-01T05:00:28.148Z",
+          "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/behavior-graph-population-about.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "detective/detective-populates-a-behavior-graph",
+      "id": "detective-detective-populates-a-behavior-graph-service-guardduty-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "guardduty",
+      "targetLabel": "Findings from Amazon GuardDuty"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "943353734ea3c132b349e0da3e832fa2e9d4c6c7d0b6b41d8895ac9880098808",
+          "locator": "https://docs.aws.amazon.com/detective/latest/userguide/behavior-graph-population-about.md :: How Detective populates a behavior graph",
+          "quote": "+ Findings from AWS Security Hub CSPM",
+          "retrievedAt": "2026-09-01T05:00:28.148Z",
+          "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/behavior-graph-population-about.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "detective/detective-populates-a-behavior-graph",
+      "id": "detective-detective-populates-a-behavior-graph-service-securityhub-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securityhub",
+      "targetLabel": "Findings from AWS Security Hub CSPM"
+    }
+  ],
+  "featureId": "detective/detective-populates-a-behavior-graph",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "detective",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Log data, including Amazon Virtual Private Cloud (Amazon VPC) and AWS CloudTrail",
+      "sourceUrl": "https://docs.aws.amazon.com/detective/latest/userguide/behavior-graph-population-about.md"
+    }
+  ]
+}

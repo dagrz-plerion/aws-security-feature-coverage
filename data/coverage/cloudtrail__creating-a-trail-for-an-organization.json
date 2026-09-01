@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "248129fc59bc1d95ef740d4fe0f686ed1f35c711334abf44b22fd1e83e52f3b2",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-an-organizational-trail-prepare.md :: For information about how to add condition keys to resource policies, see the following:",
+          "quote": "+ [Amazon S3 bucket policy for CloudTrail](create-s3-bucket-policy-for-cloudtrail.md)",
+          "retrievedAt": "2026-09-01T04:59:39.797Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-an-organizational-trail-prepare.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudtrail/creating-a-trail-for-an-organization",
+      "id": "cloudtrail-creating-a-trail-for-an-organization-service-cloudtrail-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudtrail",
+      "targetLabel": "Amazon S3 bucket policy for CloudTrail"
+    }
+  ],
+  "featureId": "cloudtrail/creating-a-trail-for-an-organization",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "cloudtrail",
+  "unresolvedTargets": []
+}

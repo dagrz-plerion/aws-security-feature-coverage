@@ -1,6 +1,7 @@
 {
   "axes": [
-    "region"
+    "region",
+    "service"
   ],
   "claims": [
     {
@@ -262,10 +263,50 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d0d05083c95ba5f948405aec92f3ea1867bf4b2206cd97251e3f23a048b60e9b",
+          "locator": "https://docs.aws.amazon.com/greengrass/v2/developerguide/dev-test-versions.md :: heading level 2",
+          "quote": "## Latest IDT version for AWS IoT Greengrass V2",
+          "retrievedAt": "2026-09-01T04:34:46.936Z",
+          "sourceUrl": "https://docs.aws.amazon.com/greengrass/v2/developerguide/dev-test-versions.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iot/aws-iot-greengrass",
+      "id": "iot-aws-iot-greengrass-service-greengrass-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "greengrass",
+      "targetLabel": "Latest IDT version for AWS IoT Greengrass V2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d0d05083c95ba5f948405aec92f3ea1867bf4b2206cd97251e3f23a048b60e9b",
+          "locator": "https://docs.aws.amazon.com/greengrass/v2/developerguide/dev-test-versions.md :: heading level 2",
+          "quote": "## Earlier IDT versions for AWS IoT Greengrass",
+          "retrievedAt": "2026-09-01T04:34:46.936Z",
+          "sourceUrl": "https://docs.aws.amazon.com/greengrass/v2/developerguide/dev-test-versions.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iot/aws-iot-greengrass",
+      "id": "iot-aws-iot-greengrass-service-iot-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iot",
+      "targetLabel": "Earlier IDT versions for AWS IoT Greengrass"
     }
   ],
   "featureId": "iot/aws-iot-greengrass",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "iot",
   "unresolvedTargets": []
 }

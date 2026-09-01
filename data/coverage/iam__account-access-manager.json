@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "1dc5cb654288bce7cf9a8e57b1d44cf77a862c151765e30850ae5f13b2f6a48b",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/aam-security.md :: heading level 2",
+          "quote": "## Identity and access management for account access manager",
+          "retrievedAt": "2026-09-01T04:59:09.545Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/aam-security.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/account-access-manager",
+      "id": "iam-account-access-manager-service-account-access-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "account-access",
+      "targetLabel": "Identity and access management for account access manager"
+    }
+  ],
+  "featureId": "iam/account-access-manager",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "iam",
+  "unresolvedTargets": []
+}

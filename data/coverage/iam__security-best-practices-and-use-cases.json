@@ -1,0 +1,57 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0b8ea2517bb2fb1ebc29076fecc46ed4d305ad31d26175c4deb471e0fcb98ff4",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/business-use-cases.md :: Business use cases for IAM",
+          "quote": "+ [Use case for IAM with Amazon EC2](#UseCase_EC2)",
+          "retrievedAt": "2026-09-01T04:59:04.489Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/business-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/security-best-practices-and-use-cases",
+      "id": "iam-security-best-practices-and-use-cases-service-ec2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Use case for IAM with Amazon EC2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0b8ea2517bb2fb1ebc29076fecc46ed4d305ad31d26175c4deb471e0fcb98ff4",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/business-use-cases.md :: Business use cases for IAM",
+          "quote": "+ [Use case for IAM with Amazon S3](#UseCase_S3)",
+          "retrievedAt": "2026-09-01T04:59:04.489Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/business-use-cases.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/security-best-practices-and-use-cases",
+      "id": "iam-security-best-practices-and-use-cases-service-s3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Use case for IAM with Amazon S3"
+    }
+  ],
+  "featureId": "iam/security-best-practices-and-use-cases",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "iam",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Initial setup of example corp",
+      "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/business-use-cases.md"
+    }
+  ]
+}

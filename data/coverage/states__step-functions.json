@@ -1,0 +1,42 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7a9d0151a909a654d730433b93307a013ca232ab2ce02b990077d6b92d070c33",
+          "locator": "https://docs.aws.amazon.com/step-functions/latest/dg/connect-stepfunctions.md :: For more information, see the following:",
+          "quote": "+ [Integrating services with Step Functions](integrate-services.md)",
+          "retrievedAt": "2026-09-01T04:29:37.788Z",
+          "sourceUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/connect-stepfunctions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "states/step-functions",
+      "id": "states-step-functions-service-states-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "states",
+      "targetLabel": "Integrating services with Step Functions"
+    }
+  ],
+  "featureId": "states/step-functions",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "states",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Start a new AWS Step Functions state machine from a running execution",
+      "sourceUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/connect-stepfunctions.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Start a new AWS Step Functions state machine from a running execution",
+      "sourceUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/connect-stepfunctions.md"
+    }
+  ]
+}

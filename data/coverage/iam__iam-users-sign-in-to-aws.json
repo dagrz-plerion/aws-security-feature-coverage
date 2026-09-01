@@ -1,0 +1,37 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "1d78aa3402f62c7fc07c78eb780fe6b5d178058307a8c5b2392f7db91deaeff4",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.md :: To add or remove permissions programmatically, you must add or remove the group memberships, attach or detach the managed policies, or add or delete the inline policies. For more information, see the following topics:",
+          "quote": "+ [Edit users in IAM groups](id_groups_manage_add-remove-users.md)",
+          "retrievedAt": "2026-09-01T04:59:05.054Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/iam-users-sign-in-to-aws",
+      "id": "iam-iam-users-sign-in-to-aws-resourcetype-aws-iam-group-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::IAM::Group",
+      "targetLabel": "Edit users in IAM groups"
+    }
+  ],
+  "featureId": "iam/iam-users-sign-in-to-aws",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "iam",
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "Adding and removing IAM identity permissions",
+      "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.md"
+    }
+  ]
+}

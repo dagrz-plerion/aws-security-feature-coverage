@@ -91,3 +91,19 @@ describe("column selection", () => {
     expect(rate).toBeCloseTo(2 / 3, 5);
   });
 });
+
+describe("phrase tails", () => {
+  it("finds the target a heading wraps in prose", () => {
+    expect(resolver.resolve("Detecting attack sequences in Amazon S3 buckets", "resourceType")?.targetId).toBe("AWS::S3::Bucket");
+    expect(resolver.resolve("How Runtime Monitoring works with Amazon S3 buckets", "resourceType")?.targetId).toBe("AWS::S3::Bucket");
+  });
+
+  it("keeps the original wording as the label", () => {
+    const hit = resolver.resolve("Encrypting data in Amazon S3 buckets", "resourceType");
+    expect(hit?.label).toBe("Encrypting data in Amazon S3 buckets");
+  });
+
+  it("does not reach past a short phrase", () => {
+    expect(resolver.resolve("in nothing")).toBeUndefined();
+  });
+});

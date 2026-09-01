@@ -25,6 +25,46 @@
     },
     {
       "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0d013ce578366cac245a63cee65aaab8e51664034a7cb54bce009964545f9ba7",
+          "locator": "https://docs.aws.amazon.com/lake-formation/latest/dg/accessing-s3-locations.md :: Write processed data (Lake Formation-based S3 Location access)",
+          "quote": "+ Amazon EMR on Amazon EC2 (EMR 7.13 or later)",
+          "retrievedAt": "2026-09-01T04:34:59.789Z",
+          "sourceUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/accessing-s3-locations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "lakeformation/lake-formation-for-fgac",
+      "id": "lakeformation-lake-formation-for-fgac-service-ec2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Amazon EMR on Amazon EC2 (EMR 7.13 or later)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0d013ce578366cac245a63cee65aaab8e51664034a7cb54bce009964545f9ba7",
+          "locator": "https://docs.aws.amazon.com/lake-formation/latest/dg/accessing-s3-locations.md :: Write processed data (Lake Formation-based S3 Location access)",
+          "quote": "+ Amazon EMR on EKS (EMR 7.13 or later)",
+          "retrievedAt": "2026-09-01T04:34:59.789Z",
+          "sourceUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/accessing-s3-locations.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "lakeformation/lake-formation-for-fgac",
+      "id": "lakeformation-lake-formation-for-fgac-service-eks-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eks",
+      "targetLabel": "Amazon EMR on EKS (EMR 7.13 or later)"
+    },
+    {
+      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -65,7 +105,7 @@
     }
   ],
   "featureId": "lakeformation/lake-formation-for-fgac",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "lakeformation",
   "unresolvedTargets": [
     {
@@ -77,6 +117,11 @@
       "axis": "service",
       "raw": "Amazon Quick Enterprise Edition",
       "sourceUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/service-integrations.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EMR Serverless (EMR 7.13 or later)",
+      "sourceUrl": "https://docs.aws.amazon.com/lake-formation/latest/dg/accessing-s3-locations.md"
     }
   ]
 }

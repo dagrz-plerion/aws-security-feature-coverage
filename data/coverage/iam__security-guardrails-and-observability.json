@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "6429b0fabeb74ddc76f4e50de3946626c425e1e29147d8d016b3c19960e4e013",
+          "locator": "https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon Bedrock",
+          "retrievedAt": "2026-09-01T04:58:52.870Z",
+          "sourceUrl": "https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/security-guardrails-and-observability",
+      "id": "iam-security-guardrails-and-observability-service-bedrock-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "bedrock",
+      "targetLabel": "Identity-based policies for Amazon Bedrock"
+    }
+  ],
+  "featureId": "iam/security-guardrails-and-observability",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "iam",
+  "unresolvedTargets": []
+}

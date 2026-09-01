@@ -251,6 +251,26 @@
         {
           "bodySha256": "510f7b8438c2a7c6bad0d1ff19fb653f355a3823bee3c2988f9d761bda94c1e4",
           "locator": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md :: Integrate OpsCenter with other AWS services",
+          "quote": "+ [Understanding OpsCenter integration with Amazon DevOps Guru](#OpsCenter-integrate-with-devops-guru)",
+          "retrievedAt": "2026-09-01T04:29:36.660Z",
+          "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "ssm/systems-manager-pricing",
+      "id": "ssm-systems-manager-pricing-service-devops-guru-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "devops-guru",
+      "targetLabel": "Understanding OpsCenter integration with Amazon DevOps Guru"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "510f7b8438c2a7c6bad0d1ff19fb653f355a3823bee3c2988f9d761bda94c1e4",
+          "locator": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md :: Integrate OpsCenter with other AWS services",
           "quote": "+ [Amazon EventBridge](#OpsCenter-about-eventbridge)",
           "retrievedAt": "2026-09-01T04:29:36.660Z",
           "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md"
@@ -263,6 +283,26 @@
       "status": "covered",
       "targetId": "events",
       "targetLabel": "Amazon EventBridge"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "510f7b8438c2a7c6bad0d1ff19fb653f355a3823bee3c2988f9d761bda94c1e4",
+          "locator": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md :: Integrate OpsCenter with other AWS services",
+          "quote": "+ [Understanding OpsCenter integration with AWS Security Hub CSPM](#OpsCenter-integrate-with-security-hub)",
+          "retrievedAt": "2026-09-01T04:29:36.660Z",
+          "sourceUrl": "https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-applications-that-integrate.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "ssm/systems-manager-pricing",
+      "id": "ssm-systems-manager-pricing-service-securityhub-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securityhub",
+      "targetLabel": "Understanding OpsCenter integration with AWS Security Hub CSPM"
     },
     {
       "axis": "service",
@@ -286,7 +326,7 @@
     }
   ],
   "featureId": "ssm/systems-manager-pricing",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "ssm",
   "unresolvedTargets": []
 }

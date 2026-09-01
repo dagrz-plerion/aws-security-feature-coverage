@@ -1,6 +1,7 @@
 {
   "axes": [
-    "region"
+    "region",
+    "service"
   ],
   "claims": [
     {
@@ -542,10 +543,36 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "bab793edeb5e79033ec34c1faa5c51d3997ec97092942ec06de54ae0c41f8880",
+          "locator": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/using-service-linked-roles.md :: Using service-linked roles for Directory Service",
+          "quote": "+ [Service-linked role permissions for Directory Service](#slr-permissions)",
+          "retrievedAt": "2026-09-01T04:58:58.957Z",
+          "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "ds/service-linked-roles",
+      "id": "ds-service-linked-roles-service-ds-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ds",
+      "targetLabel": "Service-linked role permissions for Directory Service"
     }
   ],
   "featureId": "ds/service-linked-roles",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "ds",
-  "unresolvedTargets": []
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Supported Regions for Directory Service service-linked roles",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/using-service-linked-roles.md"
+    }
+  ]
 }

@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e400d182b57c328725353856ad37ce5cf5b140e99db07c10ea3931745ad18163",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/migrate-waf-classic-fms.md :: heading level 2",
+          "quote": "## Migrating Web ACLs in AWS WAF Classic Policies",
+          "retrievedAt": "2026-09-01T04:59:29.310Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/migrate-waf-classic-fms.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "waf/web-acls",
+      "id": "waf-web-acls-resourcetype-aws-bedrockagentcore-policy-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::BedrockAgentCore::Policy",
+      "targetLabel": "Migrating Web ACLs in AWS WAF Classic Policies"
+    }
+  ],
+  "featureId": "waf/web-acls",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "waf",
+  "unresolvedTargets": []
+}

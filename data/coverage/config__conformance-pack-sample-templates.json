@@ -170,11 +170,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-4-material-workloads | [alb-waf-enabled](https://docs.aws.amazon.com/config/latest/developerguide/alb-waf-enabled.html) | Ensure AWS WAF is enabled on Elastic Load Balancers (ELB) to help protect web applications. A WAF helps to protect your web applications or APIs against common web exploits. These web exploits may affect availability, compromise security, or consume excessive resources within your environment. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Application\\_control | [alb-waf-enabled](https://docs.aws.amazon.com/config/latest/developerguide/alb-waf-enabled.html) | Ensure AWS WAF is enabled on Elastic Load Balancers (ELB) to help protect web applications. A WAF helps to protect your web applications or APIs against common web exploits. These web exploits may affect availability, compromise security, or consume excessive resources within your environment. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -190,11 +190,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-4-material-workloads | [api-gw-associated-with-waf](https://docs.aws.amazon.com/config/latest/developerguide/api-gw-associated-with-waf.html) | AWS WAF enables you to configure a set of rules (called a web access control list (web ACL)) that allow, block, or count web requests based on customizable web security rules and conditions that you define. Ensure your Amazon API Gateway stage is associated with a WAF Web ACL to protect it from malicious attacks |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Application\\_control | [api-gw-associated-with-waf](https://docs.aws.amazon.com/config/latest/developerguide/api-gw-associated-with-waf.html) | AWS WAF enables you to configure a set of rules (called a web access control list (web ACL)) that allow, block, or count web requests based on customizable web security rules and conditions that you define. Ensure your Amazon API Gateway stage is associated with a WAF Web ACL to protect it from malicious attacks |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -1130,11 +1130,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-6-standard-workloads | [cloudwatch-log-group-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/cloudwatch-log-group-encrypted.html) | To help protect sensitive data at rest, ensure encryption is enabled for your Amazon CloudWatch Log Groups. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Application\\_control | [cloudwatch-log-group-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/cloudwatch-log-group-encrypted.html) | Checks if Amazon CloudWatch Log Groups are encrypted with any AWS KMS key or a specified AWS KMS key Id. The rule is NON\\_COMPLIANT if a CloudWatch Log Group is not encrypted with a KMS key or is encrypted with a KMS key not supplied in the rule parameter. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -1390,11 +1390,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-14-material-workloads | [db-instance-backup-enabled](https://docs.aws.amazon.com/config/latest/developerguide/db-instance-backup-enabled.html) | The backup feature of Amazon RDS creates backups of your databases and transaction logs. Amazon RDS automatically creates a storage volume snapshot of your DB instance, backing up the entire DB instance. The system allows you to set specific retention periods to meet your resilience requirements. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Regular\\_backups | [db-instance-backup-enabled](https://docs.aws.amazon.com/config/latest/developerguide/db-instance-backup-enabled.html) | The backup feature of Amazon RDS creates backups of your databases and transaction logs. Amazon RDS automatically creates a storage volume snapshot of your DB instance, backing up the entire DB instance. The system allows you to set specific retention periods to meet your resilience requirements. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -1530,11 +1530,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-14-material-workloads | [dynamodb-in-backup-plan](https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-in-backup-plan.html) | To help with data back-up processes, ensure your Amazon DynamoDB tables are a part of an AWS Backup plan. AWS Backup is a fully managed backup service with a policy-based backup solution. This solution simplifies your backup management and enables you to meet your business and regulatory backup compliance requirements. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Regular\\_backups | [dynamodb-in-backup-plan](https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-in-backup-plan.html) | To help with data back-up processes, ensure your Amazon DynamoDB tables are a part of an AWS Backup plan. AWS Backup is a fully managed backup service with a policy-based backup solution. This solution simplifies your backup management and enables you to meet your business and regulatory backup compliance requirements. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -1730,11 +1730,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [ebs-snapshot-public-restorable-check](https://docs.aws.amazon.com/config/latest/developerguide/ebs-snapshot-public-restorable-check.html) | Manage access to the AWS Cloud by ensuring EBS snapshots are not publicly restorable. EBS volume snapshots can contain sensitive information and access control is required for such accounts. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "db24117fa4d8fdbd808dc1e87614382fbb8330abae4e52845baec0a162ad2141",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc-ism-part-2.md :: Operational Best Practices for ACSC ISM - Part 2 | column \"AWS Config Rule\"",
+          "quote": "| 1985 | [ebs-snapshot-public-restorable-check](https://docs.aws.amazon.com/config/latest/developerguide/ebs-snapshot-public-restorable-check.html) | Checks if Amazon Elastic Block Store (Amazon EBS) snapshots are not publicly restorable. The rule is NON\\_COMPLIANT if one or more snapshots with RestorableByUserIds field are set to all, that is, Amazon EBS snapshots are public. |",
+          "retrievedAt": "2026-09-01T04:59:55.053Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc-ism-part-2.md"
         }
       ],
       "extractorId": "md-table",
@@ -1850,11 +1850,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4a-govern-the-cloud-2-standard-workloads | [ec2-instance-managed-by-systems-manager](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-managed-by-systems-manager.html) | An inventory of the software platforms and applications within the organization is possible by managing Amazon Elastic Compute Cloud (Amazon EC2) instances with AWS Systems Manager. Use AWS Systems Manager to provide detailed system configurations, operating system patch levels, services name and type, software installations, application name, publisher and version, and other details about your env…",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Application\\_control | [ec2-instance-managed-by-systems-manager](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-managed-by-systems-manager.html) | An inventory of the software platforms and applications within the organization is possible by managing Amazon Elastic Compute Cloud (Amazon EC2) instances with AWS Systems Manager. Use AWS Systems Manager to provide detailed system configurations, operating system patch levels, services name and type, software installations, application name, publisher and version, and other details about your environment. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -1910,11 +1910,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [ec2-instance-profile-attached](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-profile-attached.html) | EC2 instance profiles pass an IAM role to an EC2 instance. Attaching an instance profile to your instances can assist with least privilege and permissions management. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Restrict\\_administrative\\_privileges | [ec2-instance-profile-attached](https://docs.aws.amazon.com/config/latest/developerguide/ec2-instance-profile-attached.html) | EC2 instance profiles pass an IAM role to an EC2 instance. Attaching an instance profile to your instances can assist with least privilege and permissions management. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -1970,11 +1970,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-2-standard-workloads | [ec2-managedinstance-association-compliance-status-check](https://docs.aws.amazon.com/config/latest/developerguide/ec2-managedinstance-association-compliance-status-check.html) | Use AWS Systems Manager Associations to help with inventory of software platforms and applications within an organization. AWS Systems Manager assigns a configuration state to your managed instances and allows you to set baselines of operating system patch levels, software installations, application configurations, and other details about your environment.…",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Application\\_control | [ec2-managedinstance-association-compliance-status-check](https://docs.aws.amazon.com/config/latest/developerguide/ec2-managedinstance-association-compliance-status-check.html) | Use AWS Systems Manager Associations to help with inventory of software platforms and applications within an organization. AWS Systems Manager assigns a configuration state to your managed instances and allows you to set baselines of operating system patch levels, software installations, application configurations, and other details about your environment. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -1990,11 +1990,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-2-standard-workloads | [ec2-managedinstance-patch-compliance-status-check](https://docs.aws.amazon.com/config/latest/developerguide/ec2-managedinstance-patch-compliance-status-check.html) | Enable this rule to help with identification and documentation of Amazon Elastic Compute Cloud (Amazon EC2) vulnerabilities. The rule checks if Amazon EC2 instance patch compliance in AWS Systems Manager as required by your organization's policies and procedures. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Patch\\_operating\\_systems | [ec2-managedinstance-patch-compliance-status-check](https://docs.aws.amazon.com/config/latest/developerguide/ec2-managedinstance-patch-compliance-status-check.html) | Enable this rule to help with identification and documentation of Amazon Elastic Compute Cloud (Amazon EC2) vulnerabilities. The rule checks if Amazon EC2 instance patch compliance in AWS Systems Manager as required by your organization's policies and procedures. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -2010,11 +2010,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "e5521cdaef605d2ad9178ab18b9704da89c461c251d12dd1f9202fbac77f5eb4",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-pci-dss-v4-excluding-global-resource-types.md :: Operational Best Practices for PCI DSS 4.0 (Excluding global resource types) | column \"AWS Config Rule\"",
-          "quote": "| 8.2.1 |  User identification and related accounts for users and administrators are strictly managed throughout an accounts lifecycle. (PCI-DSS-v4.0) | [ec2-no-amazon-key-pair](ec2-no-amazon-key-pair.md) | Ensure that running Amazon Elastic Compute Cloud (EC2) instances are not launched using amazon key pairs. The rule is NON\\_COMPLIANT if a running EC2 instance is launched with a key pair. |",
-          "retrievedAt": "2026-09-01T04:29:23.210Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-pci-dss-v4-excluding-global-resource-types.md"
+          "bodySha256": "c21bbf350851ee1cd3c83282462718fbfe380068e8d668993a753a5103d5b9dd",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-swift-csp.md :: Operational Best Practices for SWIFT CSP | column \"AWS Config Rule\"",
+          "quote": "| 1.1 | [ec2-no-amazon-key-pair](https://docs.aws.amazon.com/config/latest/developerguide/ec2-no-amazon-key-pair.html) | This rule checks if running Amazon Elastic Compute Cloud (Amazon EC2) instances are launched using amazon key pairs. This can assist in reducing the risk of compromised credentials. Amazon EC2 Instances without key pairs can still be accessed using Session Manager or Browser based SSH connection from the AWS console. |",
+          "retrievedAt": "2026-09-01T04:59:56.830Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-swift-csp.md"
         }
       ],
       "extractorId": "md-table",
@@ -2250,11 +2250,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e7ef32d34bdff65d362676535ff5fd1079ebe523663200bc20fe836ebf860f5",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-wa-Reliability-Pillar.md :: Operational Best Practices for AWS Well-Architected Framework Reliability Pillar | column \"AWS Config Rule\"",
-          "quote": "| REL-6 | How do you monitor workload resources? Logs and metrics are powerful tools to gain insight into the health of your workload. You can configure your workload to monitor logs and metrics and send notifications when thresholds are crossed or significant events occur. Monitoring enables your workload to recognize when low-performance thresholds are crossed or failures occur, so it can recover automatically in response.  | [ecs-container-insights-enabled](https://docs.aws.amazon.com/config/latest/developerguide/ecs-container-insights-enabled.html) | Monitoring is an important part of main…",
-          "retrievedAt": "2026-09-01T04:59:55.260Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-wa-Reliability-Pillar.md"
+          "bodySha256": "9c58d01acc7f68fe6488ee3ed7eb5442028c95f124ee90f17f5f0d2ac277dff3",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-wa-Security-Pillar.md :: Operational Best Practices for AWS Well-Architected Framework Security Pillar | column \"AWS Config Rule\"",
+          "quote": "| SEC-6 | How do you protect your compute resources? Compute resources in your workload require multiple layers of defense to help protect from external and internal threats. Compute resources include EC2 instances, containers, AWS Lambda functions, database services, IoT devices, and more. | [ecs-container-insights-enabled](https://docs.aws.amazon.com/config/latest/developerguide/ecs-container-insights-enabled.html) | Monitoring is an important part of maintaining the reliability, availability, and performance of Amazon Elastic Container Service (ECS) and your AWS solutions. Container Insight…",
+          "retrievedAt": "2026-09-01T04:59:55.279Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-wa-Security-Pillar.md"
         }
       ],
       "extractorId": "md-table",
@@ -2270,11 +2270,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [ecs-containers-nonprivileged](https://docs.aws.amazon.com/config/latest/developerguide/ecs-containers-nonprivileged.html) | To assist with implementing the principle of least privilege, Amazon Elastic Container Service (Amazon ECS) task definitions should not have elevated privilege enabled. When this parameter is true, the container is given elevated privileges on the host container instance (similar to the root user). |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Restrict\\_administrative\\_privileges | [ecs-containers-nonprivileged](https://docs.aws.amazon.com/config/latest/developerguide/ecs-containers-nonprivileged.html) | To assist with implementing the principle of least privilege, Amazon Elastic Container Service (Amazon ECS) task definitions should not have elevated privilege enabled. When this parameter is true, the container is given elevated privileges on the host container instance (similar to the root user). |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -2290,11 +2290,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "658dd2252e82d84496d40e532940b0591a689fa61baedb2cb0beebdce476ec87",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Standard.md :: Operational Best Practices for ABS CCIG 2.0 Standard Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [ecs-containers-readonly-access](https://docs.aws.amazon.com/config/latest/developerguide/ecs-containers-readonly-access.html) | Enabling read only access to Amazon Elastic Container Service (ECS) containers can assist in adhering to the principal of least privilege. This option can reduces attack vectors as the container instance’s filesystem cannot be modified unless it has explicit read-write permissions. |",
-          "retrievedAt": "2026-09-01T04:29:23.160Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Standard.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Restrict\\_administrative\\_privileges | [ecs-containers-readonly-access](https://docs.aws.amazon.com/config/latest/developerguide/ecs-containers-readonly-access.html) | Enabling read only access to Amazon Elastic Container Service (ECS) containers can assist in adhering to the principal of least privilege. This option can reduces attack vectors as the container instance’s filesystem cannot be modified unless it has explicit read-write permissions. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -2430,11 +2430,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [ecs-task-definition-user-for-host-mode-check](https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-user-for-host-mode-check.html) | If a task definition has elevated privileges it is because the customer has specifically opted-in to those configurations. This control checks for unexpected privilege escalation when a task definition has host networking enabled but the customer has not opted-in to elevated privileges. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Restrict\\_administrative\\_privileges | [ecs-task-definition-user-for-host-mode-check](https://docs.aws.amazon.com/config/latest/developerguide/ecs-task-definition-user-for-host-mode-check.html) | If a task definition has elevated privileges it is because the customer has specifically opted-in to those configurations. This control checks for unexpected privilege escalation when a task definition has host networking enabled but the customer has not opted-in to elevated privileges. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -2690,11 +2690,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4c-run-the-cloud-6-standard-workloads | [elastic-beanstalk-managed-updates-enabled](https://docs.aws.amazon.com/config/latest/developerguide/elastic-beanstalk-managed-updates-enabled.html) | Enabling managed platform updates for an Amazon Elastic Beanstalk environment ensures that the latest available platform fixes, updates, and features for the environment are installed. Keeping up to date with patch installation is a best practice in securing systems. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Patch\\_applications | [elastic-beanstalk-managed-updates-enabled](https://docs.aws.amazon.com/config/latest/developerguide/elastic-beanstalk-managed-updates-enabled.html) | Enabling managed platform updates for an Amazon Elastic Beanstalk environment ensures that the latest available platform fixes, updates, and features for the environment are installed. Keeping up to date with patch installation is a best practice in securing systems. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -3210,11 +3210,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [iam-customer-policy-blocked-kms-actions](https://docs.aws.amazon.com/config/latest/developerguide/iam-customer-policy-blocked-kms-actions.html) | AWS Identity and Access Management (IAM) can help you incorporate the principles of least privilege and separation of duties with access permissions and authorizations, restricting policies from containing blocked actions on all AWS Key Management Service keys. Having more privileges than needed to complete a task may violate the principle of least privilege and separation of duties. Thi…",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Restrict\\_administrative\\_privileges | [iam-customer-policy-blocked-kms-actions](https://docs.aws.amazon.com/config/latest/developerguide/iam-customer-policy-blocked-kms-actions.html) | AWS Identity and Access Management (IAM) can help you incorporate the principles of least privilege and separation of duties with access permissions and authorizations, restricting policies from containing blocked actions on all AWS Key Management Service keys. Having more privileges than needed to complete a task may violate the principle of least privilege and separation of duties. This rule allows you to s…",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -3250,11 +3250,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [iam-inline-policy-blocked-kms-actions](https://docs.aws.amazon.com/config/latest/developerguide/iam-inline-policy-blocked-kms-actions.html) | Ensure an AWS Identity and Access Management (IAM) user, IAM role or IAM group does not have an inline policy to allow blocked actions on all AWS Key Management Service keys. AWS recommends to use managed policies instead of inline policies. The managed policies allow reusability, versioning, rolling back, and delegating permissions management. This rule allows you to set the blockedActionsP…",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Restrict\\_administrative\\_privileges | [iam-inline-policy-blocked-kms-actions](https://docs.aws.amazon.com/config/latest/developerguide/iam-inline-policy-blocked-kms-actions.html) | Ensure an AWS Identity and Access Management (IAM) user, IAM role or IAM group does not have an inline policy to allow blocked actions on all AWS Key Management Service keys. AWS recommends to use managed policies instead of inline policies. The managed policies allow reusability, versioning, rolling back, and delegating permissions management. This rule allows you to set the blockedActionsPatterns parameter. (AW…",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -3270,11 +3270,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [iam-no-inline-policy-check](https://docs.aws.amazon.com/config/latest/developerguide/iam-no-inline-policy-check.html) | Ensure an AWS Identity and Access Management (IAM) user, IAM role or IAM group does not have an inline policy to control access to systems and assets. AWS recommends to use managed policies instead of inline policies. The managed policies allow reusability, versioning and rolling back, and delegating permissions management. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Restrict\\_administrative\\_privileges | [iam-no-inline-policy-check](https://docs.aws.amazon.com/config/latest/developerguide/iam-no-inline-policy-check.html) | Ensure an AWS Identity and Access Management (IAM) user, IAM role or IAM group does not have an inline policy to control access to systems and assets. AWS recommends to use managed policies instead of inline policies. The managed policies allow reusability, versioning and rolling back, and delegating permissions management. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -3330,11 +3330,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [iam-policy-no-statements-with-admin-access](https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-no-statements-with-admin-access.html) | AWS Identity and Access Management (IAM) can help you incorporate the principles of least privilege and separation of duties with access permissions and authorizations, restricting policies from containing \"Effect\": \"Allow\" with \"Action\": \"\\*\" over \"Resource\": \"\\*\". Allowing users to have more privileges than needed to complete a task may violate the principle of least privilege an…",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Restrict\\_administrative\\_privileges | [iam-policy-no-statements-with-admin-access](https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-no-statements-with-admin-access.html) | AWS Identity and Access Management (IAM) can help you incorporate the principles of least privilege and separation of duties with access permissions and authorizations, restricting policies from containing \"Effect\": \"Allow\" with \"Action\": \"\\*\" over \"Resource\": \"\\*\". Allowing users to have more privileges than needed to complete a task may violate the principle of least privilege and separation of duties…",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -3350,11 +3350,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [iam-policy-no-statements-with-full-access](https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-no-statements-with-full-access.html) | Ensure IAM Actions are restricted to only those actions that are needed. Allowing users to have more privileges than needed to complete a task may violate the principle of least privilege and separation of duties. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Restrict\\_administrative\\_privileges | [iam-policy-no-statements-with-full-access](https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-no-statements-with-full-access.html) | Ensure IAM Actions are restricted to only those actions that are needed. Allowing users to have more privileges than needed to complete a task may violate the principle of least privilege and separation of duties. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -3370,11 +3370,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [iam-root-access-key-check](https://docs.aws.amazon.com/config/latest/developerguide/iam-root-access-key-check.html) | Access to systems and assets can be controlled by checking that the root user does not have access keys attached to their AWS Identity and Access Management (IAM) role. Ensure that the root access keys are deleted. Instead, create and use role-based AWS accounts to help to incorporate the principle of least functionality. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Restrict\\_administrative\\_privileges | [iam-root-access-key-check](https://docs.aws.amazon.com/config/latest/developerguide/iam-root-access-key-check.html) | Access to systems and assets can be controlled by checking that the root user does not have access keys attached to their AWS Identity and Access Management (IAM) role. Ensure that the root access keys are deleted. Instead, create and use role-based AWS accounts to help to incorporate the principle of least functionality. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -3390,11 +3390,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [iam-user-group-membership-check](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-group-membership-check.html) | AWS Identity and Access Management (IAM) can help you restrict access permissions and authorizations, by ensuring users are members of at least one group. Allowing users more privileges than needed to complete a task may violate the principle of least privilege and separation of duties. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Restrict\\_administrative\\_privileges | [iam-user-group-membership-check](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-group-membership-check.html) | AWS Identity and Access Management (IAM) can help you restrict access permissions and authorizations, by ensuring users are members of at least one group. Allowing users more privileges than needed to complete a task may violate the principle of least privilege and separation of duties. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -3410,11 +3410,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [iam-user-mfa-enabled](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-mfa-enabled.html) | Enable this rule to restrict access to resources in the AWS Cloud. This rule ensures multi-factor authentication (MFA) is enabled for all users. MFA adds an extra layer of protection on top of a user name and password. Reduce the incidents of compromised accounts by requiring MFA for users. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Multi-factor\\_authentication | [iam-user-mfa-enabled](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-mfa-enabled.html) | Enable this rule to restrict access to resources in the AWS Cloud. This rule ensures multi-factor authentication (MFA) is enabled for all users. MFA adds an extra layer of protection on top of a user name and password. Reduce the incidents of compromised accounts by requiring MFA for users. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -3450,11 +3450,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [iam-user-unused-credentials-check](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-unused-credentials-check.html) | AWS Identity and Access Management (IAM) can help you with access permissions and authorizations by checking for IAM passwords and access keys that are not used for a specified time period. If these unused credentials are identified, you should disable and/or remove the credentials, as this may violate the principle of least privilege. This rule requires you to set a value to the maxCredentialUsageA…",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Restrict\\_administrative\\_privileges | [iam-user-unused-credentials-check](https://docs.aws.amazon.com/config/latest/developerguide/iam-user-unused-credentials-check.html) | AWS Identity and Access Management (IAM) can help you with access permissions and authorizations by checking for IAM passwords and access keys that are not used for a specified time period. If these unused credentials are identified, you should disable and/or remove the credentials, as this may violate the principle of least privilege. This rule requires you to set a value to the maxCredentialUsageAge (Config Default: 90…",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -3750,11 +3750,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [mfa-enabled-for-iam-console-access](https://docs.aws.amazon.com/config/latest/developerguide/mfa-enabled-for-iam-console-access.html) | Manage access to resources in the AWS Cloud by ensuring that MFA is enabled for all AWS Identity and Access Management (IAM) users that have a console password. MFA adds an extra layer of protection on top of sign-in credentials. By requiring MFA for users, you can reduce incidents of compromised accounts and keep sensitive data from being accessed by unauthorized users. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Multi-factor\\_authentication | [mfa-enabled-for-iam-console-access](https://docs.aws.amazon.com/config/latest/developerguide/mfa-enabled-for-iam-console-access.html) | Manage access to resources in the AWS Cloud by ensuring that MFA is enabled for all AWS Identity and Access Management (IAM) users that have a console password. MFA adds an extra layer of protection on top of sign-in credentials. By requiring MFA for users, you can reduce incidents of compromised accounts and keep sensitive data from being accessed by unauthorized users. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -4430,11 +4430,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-14-material-workloads | [rds-in-backup-plan](https://docs.aws.amazon.com/config/latest/developerguide/rds-in-backup-plan.html) | To help with data back-up processes, ensure your Amazon Relational Database Service (Amazon RDS) instances are a part of an AWS Backup plan. AWS Backup is a fully managed backup service with a policy-based backup solution. This solution simplifies your backup management and enables you to meet your business and regulatory backup compliance requirements. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Regular\\_backups | [rds-in-backup-plan](https://docs.aws.amazon.com/config/latest/developerguide/rds-in-backup-plan.html) | To help with data back-up processes, ensure your Amazon Relational Database Service (Amazon RDS) instances are a part of an AWS Backup plan. AWS Backup is a fully managed backup service with a policy-based backup solution. This solution simplifies your backup management and enables you to meet your business and regulatory backup compliance requirements. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -4710,11 +4710,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-14-material-workloads | [redshift-backup-enabled](https://docs.aws.amazon.com/config/latest/developerguide/redshift-backup-enabled.html) | To help with data back-up processes, ensure your Amazon Redshift clusters have automated snapshots. When automated snapshots are enabled for a cluster, Redshift periodically takes snapshots of that cluster. By default, Redshift takes a snapshot every eight hours or every 5 GB for each node of data changes, or whichever comes first. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Regular\\_backups | [redshift-backup-enabled](https://docs.aws.amazon.com/config/latest/developerguide/redshift-backup-enabled.html) | To help with data back-up processes, ensure your Amazon Redshift clusters have automated snapshots. When automated snapshots are enabled for a cluster, Redshift periodically takes snapshots of that cluster. By default, Redshift takes a snapshot every eight hours or every 5 GB for each node of data changes, or whichever comes first. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -4770,11 +4770,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-2-standard-workloads | [redshift-cluster-maintenancesettings-check](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-maintenancesettings-check.html) | This rule ensures that Amazon Redshift clusters have the preferred settings for your organization. Specifically, that they have preferred maintenance windows and automated snapshot retention periods for the database. This rule requires you to set the allowVersionUpgrade. The default is true. It also lets you optionally set the preferredMaintenanceWindow (the default is sat:16:00-sa…",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Patch\\_applications | [redshift-cluster-maintenancesettings-check](https://docs.aws.amazon.com/config/latest/developerguide/redshift-cluster-maintenancesettings-check.html) | This rule ensures that Amazon Redshift clusters have the preferred settings for your organization. Specifically, that they have preferred maintenance windows and automated snapshot retention periods for the database. This rule requires you to set the allowVersionUpgrade. The default is true. It also lets you optionally set the preferredMaintenanceWindow (the default is sat:16:00-sat:16:30), and the automatedSnapshotRete…",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -4910,11 +4910,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [root-account-hardware-mfa-enabled](https://docs.aws.amazon.com/config/latest/developerguide/root-account-hardware-mfa-enabled.html) | Manage access to resources in the AWS Cloud by ensuring hardware MFA is enabled for the root user. The root user is the most privileged user in an AWS account. The MFA adds an extra layer of protection for sign-in credentials. By requiring MFA for the root user, you can reduce the incidents of compromised AWS accounts. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Multi-factor\\_authentication | [root-account-hardware-mfa-enabled](https://docs.aws.amazon.com/config/latest/developerguide/root-account-hardware-mfa-enabled.html) | Manage access to resources in the AWS Cloud by ensuring hardware MFA is enabled for the root user. The root user is the most privileged user in an AWS account. The MFA adds an extra layer of protection for sign-in credentials. By requiring MFA for the root user, you can reduce the incidents of compromised AWS accounts. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -4930,11 +4930,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [root-account-mfa-enabled](https://docs.aws.amazon.com/config/latest/developerguide/root-account-mfa-enabled.html) | Manage access to resources in the AWS Cloud by ensuring MFA is enabled for the root user. The root user is the most privileged user in an AWS account. The MFA adds an extra layer of protection for a user name and password. By requiring MFA for the root user, you can reduce the incidents of compromised AWS accounts. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Multi-factor\\_authentication | [root-account-mfa-enabled](https://docs.aws.amazon.com/config/latest/developerguide/root-account-mfa-enabled.html) | Manage access to resources in the AWS Cloud by ensuring MFA is enabled for the root user. The root user is the most privileged user in an AWS account. The MFA adds an extra layer of protection for a user name and password. By requiring MFA for the root user, you can reduce the incidents of compromised AWS accounts. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -5070,11 +5070,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-14-standard-workloads | [s3-bucket-default-lock-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-default-lock-enabled.html) | Ensure that your Amazon Simple Storage Service (Amazon S3) bucket has lock enabled, by default. Because sensitive data can exist at rest in S3 buckets, enforce object locks at rest to help protect that data. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Regular\\_backups | [s3-bucket-default-lock-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-default-lock-enabled.html) | Checks if the S3 bucket has lock enabled, by default. The rule is NON\\_COMPLIANT if the lock is not enabled. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -5190,11 +5190,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [s3-bucket-public-read-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-read-prohibited.html) | Manage access to resources in the AWS Cloud by only allowing authorized users, processes, and devices access to Amazon Simple Storage Service (Amazon S3) buckets. The management of access should be consistent with the classification of the data. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "db24117fa4d8fdbd808dc1e87614382fbb8330abae4e52845baec0a162ad2141",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc-ism-part-2.md :: Operational Best Practices for ACSC ISM - Part 2 | column \"AWS Config Rule\"",
+          "quote": "| 1985 | [s3-bucket-public-read-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-read-prohibited.html) | Checks if your Amazon S3 buckets do not allow public read access. The rule checks the Block Public Access settings, the bucket policy, and the bucket access control list (ACL).<br />The rule is compliant when both of the following are true:+  The Block Public Access setting restricts public policies or the bucket policy does not allow public read access. <br />+  The Block Public Access setting restricts public ACLs or the bucket ACL does not allow publi…",
+          "retrievedAt": "2026-09-01T04:59:55.053Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc-ism-part-2.md"
         }
       ],
       "extractorId": "md-table",
@@ -5210,11 +5210,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-1-standard-workloads | [s3-bucket-public-write-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-write-prohibited.html) | Manage access to resources in the AWS Cloud by only allowing authorized users, processes, and devices access to Amazon Simple Storage Service (Amazon S3) buckets. The management of access should be consistent with the classification of the data. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "db24117fa4d8fdbd808dc1e87614382fbb8330abae4e52845baec0a162ad2141",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc-ism-part-2.md :: Operational Best Practices for ACSC ISM - Part 2 | column \"AWS Config Rule\"",
+          "quote": "| 1985 | [s3-bucket-public-write-prohibited](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-public-write-prohibited.html) | Checks if your Amazon S3 buckets do not allow public write access. The rule checks the Block Public Access settings, the bucket policy, and the bucket access control list (ACL).<br />The rule is compliant when both of the following are true:+  The Block Public Access setting restricts public policies or the bucket policy does not allow public write access. <br />+  The Block Public Access setting restricts public ACLs or the bucket ACL does not allow p…",
+          "retrievedAt": "2026-09-01T04:59:55.053Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc-ism-part-2.md"
         }
       ],
       "extractorId": "md-table",
@@ -5230,11 +5230,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-3-material-workloads | [s3-bucket-replication-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-replication-enabled.html) | Amazon Simple Storage Service (Amazon S3) Cross-Region Replication (CRR) supports maintaining adequate capacity and availability. CRR enables automatic, asynchronous copying of objects across Amazon S3 buckets to help ensure that data availability is maintained. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Regular\\_backups | [s3-bucket-replication-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-replication-enabled.html) | Amazon Simple Storage Service (Amazon S3) Cross-Region Replication (CRR) supports maintaining adequate capacity and availability. CRR enables automatic, asynchronous copying of objects across Amazon S3 buckets to help ensure that data availability is maintained. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -5290,11 +5290,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "c3acc25ae260095356c6de6746eb14805f2eaca6ff2bdaa7a935f257c6c97e52",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md :: Operational Best Practices for ABS CCIG 2.0 Material Workloads | column \"AWS Config Rule\"",
-          "quote": "| section4b-design-and-secure-the-cloud-14-standard-workloads | [s3-bucket-versioning-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-versioning-enabled.html) | Amazon Simple Storage Service (Amazon S3) bucket versioning helps keep multiple variants of an object in the same Amazon S3 bucket. Use versioning to preserve, retrieve, and restore every version of every object stored in your Amazon S3 bucket. Versioning helps you to easily recover from unintended user actions and application failures. |",
-          "retrievedAt": "2026-09-01T04:59:55.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-ABS-CCIGv2-Material.md"
+          "bodySha256": "a66c98098d30e6e93cf07afe236b36ca9dd1cc44f0c62ca8a02201a02094691f",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md :: Operational Best Practices for ACSC Essential 8 | column \"AWS Config Rule\"",
+          "quote": "| Regular\\_backups | [s3-bucket-versioning-enabled](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-versioning-enabled.html) | Amazon Simple Storage Service (Amazon S3) bucket versioning helps keep multiple variants of an object in the same Amazon S3 bucket. Use versioning to preserve, retrieve, and restore every version of every object stored in your Amazon S3 bucket. Versioning helps you to easily recover from unintended user actions and application failures. |",
+          "retrievedAt": "2026-09-01T04:59:55.042Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc_essential_8.md"
         }
       ],
       "extractorId": "md-table",
@@ -5490,11 +5490,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "22b69d0098c82f75838210807b55123b2f8d5cad979107a55b400ed1fffa5bac",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-apra_cpg_234.md :: Operational Best Practices for APRA CPG 234 | column \"AWS Config Rule\"",
-          "quote": "| 36e | [secretsmanager-rotation-enabled-check](https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-rotation-enabled-check.html) | This rule ensures AWS Secrets Manager secrets have rotation enabled. Rotating secrets on a regular schedule can shorten the period a secret is active, and potentially reduce the business impact if the secret is compromised. |",
-          "retrievedAt": "2026-09-01T04:59:55.212Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-apra_cpg_234.md"
+          "bodySha256": "9c58d01acc7f68fe6488ee3ed7eb5442028c95f124ee90f17f5f0d2ac277dff3",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-wa-Security-Pillar.md :: Operational Best Practices for AWS Well-Architected Framework Security Pillar | column \"AWS Config Rule\"",
+          "quote": "| SEC-2 | How do you manage identities for people and machines? There are two types of identities you need to manage when approaching operating secure AWS workloads. Understanding the type of identity you need to manage and grant access helps you ensure the right identities have access to the right resources under the right conditions. Human Identities: Your administrators, developers, operators, and end users require an identity to access your AWS environments and applications. These are members of your organization, or external users with whom you collaborate, and who interact with your AWS …",
+          "retrievedAt": "2026-09-01T04:59:55.279Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-wa-Security-Pillar.md"
         }
       ],
       "extractorId": "md-table",
@@ -5510,11 +5510,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "22b69d0098c82f75838210807b55123b2f8d5cad979107a55b400ed1fffa5bac",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-apra_cpg_234.md :: Operational Best Practices for APRA CPG 234 | column \"AWS Config Rule\"",
-          "quote": "| 36e | [secretsmanager-scheduled-rotation-success-check](https://docs.aws.amazon.com/config/latest/developerguide/secretsmanager-scheduled-rotation-success-check.html) | This rule ensures that AWS Secrets Manager secrets have rotated successfully according to the rotation schedule. Rotating secrets on a regular schedule can shorten the period that a secret is active, and potentially reduce the business impact if it is compromised. |",
-          "retrievedAt": "2026-09-01T04:59:55.212Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-apra_cpg_234.md"
+          "bodySha256": "9c58d01acc7f68fe6488ee3ed7eb5442028c95f124ee90f17f5f0d2ac277dff3",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-wa-Security-Pillar.md :: Operational Best Practices for AWS Well-Architected Framework Security Pillar | column \"AWS Config Rule\"",
+          "quote": "| SEC-2 | How do you manage identities for people and machines? There are two types of identities you need to manage when approaching operating secure AWS workloads. Understanding the type of identity you need to manage and grant access helps you ensure the right identities have access to the right resources under the right conditions. Human Identities: Your administrators, developers, operators, and end users require an identity to access your AWS environments and applications. These are members of your organization, or external users with whom you collaborate, and who interact with your AWS …",
+          "retrievedAt": "2026-09-01T04:59:55.279Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-wa-Security-Pillar.md"
         }
       ],
       "extractorId": "md-table",
@@ -5670,11 +5670,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "e5521cdaef605d2ad9178ab18b9704da89c461c251d12dd1f9202fbac77f5eb4",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-pci-dss-v4-excluding-global-resource-types.md :: Operational Best Practices for PCI DSS 4.0 (Excluding global resource types) | column \"AWS Config Rule\"",
-          "quote": "| 10.2.1.1 |  Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events. (PCI-DSS-v4.0) | [sns-topic-message-delivery-notification-enabled](sns-topic-message-delivery-notification-enabled.md) | Ensure that Amazon Simple Notification Service (SNS) logging is enabled for the delivery status of notification messages sent to a topic for the endpoints. The rule is NON\\_COMPLIANT if the delivery status notification for messages is not enabled. |",
-          "retrievedAt": "2026-09-01T04:29:23.210Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-pci-dss-v4-excluding-global-resource-types.md"
+          "bodySha256": "c21bbf350851ee1cd3c83282462718fbfe380068e8d668993a753a5103d5b9dd",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-swift-csp.md :: Operational Best Practices for SWIFT CSP | column \"AWS Config Rule\"",
+          "quote": "| 1.2 | [sns-topic-message-delivery-notification-enabled](https://docs.aws.amazon.com/config/latest/developerguide/sns-topic-message-delivery-notification-enabled.html) | To assist with logging requirements in your environment, ensure to enable delivery status notifications are enabled for your Amazon Simple Notification Service (Amazon SNS) topics. Logging message delivery status helps provide better operational insight, such as the following: Knowing whether a message was delivered to the Amazon SNS endpoint, identifying the response sent from the Amazon SNS endpoint to Amazon SNS, and deter…",
+          "retrievedAt": "2026-09-01T04:59:56.830Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-swift-csp.md"
         }
       ],
       "extractorId": "md-table",
@@ -7087,7 +7087,7 @@
     }
   ],
   "featureId": "config/conformance-pack-sample-templates",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "config",
   "unresolvedTargets": []
 }

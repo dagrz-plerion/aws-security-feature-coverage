@@ -1,6 +1,7 @@
 {
   "axes": [
-    "findingType"
+    "findingType",
+    "service"
   ],
   "claims": [
     {
@@ -4262,10 +4263,56 @@
       "status": "covered",
       "targetId": "UnauthorizedAccess:S3/TorIPCaller",
       "targetLabel": "UnauthorizedAccess:S3/TorIPCaller"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d175c92417705027c5b9b5e2a92170b688f231ba243318ad59effb77df0abf0d",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/securityhub-integration.md :: heading level 3",
+          "quote": "### Typical finding from GuardDuty",
+          "retrievedAt": "2026-09-01T04:29:32.262Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/securityhub-integration.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "guardduty/integration-with-aws-security-services",
+      "id": "guardduty-integration-with-aws-security-services-service-guardduty-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "guardduty",
+      "targetLabel": "Typical finding from GuardDuty"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d175c92417705027c5b9b5e2a92170b688f231ba243318ad59effb77df0abf0d",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/securityhub-integration.md :: Integrating with AWS Security Hub CSPM",
+          "quote": "+ [How Amazon GuardDuty sends findings to AWS Security Hub CSPM](#securityhub-integration-sending-findings)",
+          "retrievedAt": "2026-09-01T04:29:32.262Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/securityhub-integration.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "guardduty/integration-with-aws-security-services",
+      "id": "guardduty-integration-with-aws-security-services-service-securityhub-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securityhub",
+      "targetLabel": "How Amazon GuardDuty sends findings to AWS Security Hub CSPM"
     }
   ],
   "featureId": "guardduty/integration-with-aws-security-services",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "guardduty",
-  "unresolvedTargets": []
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Enabling and configuring the integration",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/securityhub-integration.md"
+    }
+  ]
 }

@@ -46,6 +46,26 @@
     },
     {
       "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "6df463f86ff2b8a833829666a5a7f0ade4ac6d671b3c58c505ec12c6f31d5889",
+          "locator": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/logging-using-cloudtrail.md :: heading level 2",
+          "quote": "## AWS IoT SiteWise information in CloudTrail",
+          "retrievedAt": "2026-09-01T04:59:41.994Z",
+          "sourceUrl": "https://docs.aws.amazon.com/iot-sitewise/latest/userguide/logging-using-cloudtrail.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "cloudtrail/cloudtrail-log-examples",
+      "id": "cloudtrail-cloudtrail-log-examples-service-cloudtrail-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudtrail",
+      "targetLabel": "AWS IoT SiteWise information in CloudTrail"
+    },
+    {
+      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -106,7 +126,7 @@
     }
   ],
   "featureId": "cloudtrail/cloudtrail-log-examples",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "cloudtrail",
   "unresolvedTargets": [
     {

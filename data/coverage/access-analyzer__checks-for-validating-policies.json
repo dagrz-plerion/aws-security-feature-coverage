@@ -1,0 +1,42 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "87a766523e20f8992b498f49fe15c17169767693980f9f9b92a4c512000313e6",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.md :: Related terms",
+          "quote": "+ [Quotas for AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.html)",
+          "retrievedAt": "2026-09-01T04:59:14.475Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "access-analyzer/checks-for-validating-policies",
+      "id": "access-analyzer-checks-for-validating-policies-service-organizations-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "organizations",
+      "targetLabel": "Quotas for AWS Organizations"
+    }
+  ],
+  "featureId": "access-analyzer/checks-for-validating-policies",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "access-analyzer",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "AWS Organizations service control policies",
+      "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Organizations resource control policies",
+      "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-reference-policy-checks.md"
+    }
+  ]
+}

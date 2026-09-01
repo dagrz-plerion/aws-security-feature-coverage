@@ -1,8 +1,49 @@
 {
   "axes": [
+    "resourceType",
     "service"
   ],
   "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7bfb055a5c0aee01642e97b2f6c068e86d835bb4da45e5f298f4dbbe88b15bd0",
+          "locator": "https://docs.aws.amazon.com/codepipeline/latest/userguide/integrations-action-type.md :: Integrations with CodePipeline action types > Deploy action integrations > OpsWorks deploy actions",
+          "quote": "+ [AWS OpsWorks Apps](https://docs.aws.amazon.com/opsworks/latest/userguide/workingapps.html)",
+          "retrievedAt": "2026-09-01T04:35:09.945Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codepipeline/latest/userguide/integrations-action-type.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "codepipeline/service-wide",
+      "id": "codepipeline-service-wide-resourcetype-aws-opsworks-app-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::OpsWorks::App",
+      "targetLabel": "AWS OpsWorks Apps"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7bfb055a5c0aee01642e97b2f6c068e86d835bb4da45e5f298f4dbbe88b15bd0",
+          "locator": "https://docs.aws.amazon.com/codepipeline/latest/userguide/integrations-action-type.md :: Integrations with CodePipeline action types > Deploy action integrations > OpsWorks deploy actions",
+          "quote": "+ [Using CodePipeline with AWS OpsWorks Stacks](https://docs.aws.amazon.com/opsworks/latest/userguide/other-services-cp.html)",
+          "retrievedAt": "2026-09-01T04:35:09.945Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codepipeline/latest/userguide/integrations-action-type.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "codepipeline/service-wide",
+      "id": "codepipeline-service-wide-resourcetype-aws-opsworks-stack-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::OpsWorks::Stack",
+      "targetLabel": "Using CodePipeline with AWS OpsWorks Stacks"
+    },
     {
       "axis": "service",
       "confidence": 0.9,
@@ -125,7 +166,13 @@
     }
   ],
   "featureId": "codepipeline/service-wide",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "codepipeline",
-  "unresolvedTargets": []
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "Cookbooks and Recipes",
+      "sourceUrl": "https://docs.aws.amazon.com/codepipeline/latest/userguide/integrations-action-type.md"
+    }
+  ]
 }

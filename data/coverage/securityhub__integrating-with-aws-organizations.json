@@ -8,11 +8,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "e7e3de6bb4288e7d2ce17de7bb1a415cfc58e52659cbe900cbe367cc7cd2d6d4",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/disable-orgs-integration.md :: heading level 4",
-          "quote": "#### [ Organizations API ]",
-          "retrievedAt": "2026-09-01T04:29:32.730Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/disable-orgs-integration.md"
+          "bodySha256": "25ed871bbd97364c4dd9c9a2ff39ea6f72bb3b9c09d9ccf0d1fa98de2cbd31b9",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-orgs-auto-enable.md :: heading level 4",
+          "quote": "#### [ Security Hub CSPM API ]",
+          "retrievedAt": "2026-09-01T04:29:32.738Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-orgs-auto-enable.md"
         }
       ],
       "extractorId": "md-heading-series",
@@ -21,18 +21,18 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "amplifybackend:api",
-      "targetLabel": "[ Organizations API ]"
+      "targetLabel": "[ Security Hub CSPM API ]"
     },
     {
       "axis": "resourceType",
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "e7e3de6bb4288e7d2ce17de7bb1a415cfc58e52659cbe900cbe367cc7cd2d6d4",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/disable-orgs-integration.md :: heading level 4",
-          "quote": "#### [ Organizations console ]",
-          "retrievedAt": "2026-09-01T04:29:32.730Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/disable-orgs-integration.md"
+          "bodySha256": "25ed871bbd97364c4dd9c9a2ff39ea6f72bb3b9c09d9ccf0d1fa98de2cbd31b9",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-orgs-auto-enable.md :: heading level 4",
+          "quote": "#### [ Security Hub CSPM console ]",
+          "retrievedAt": "2026-09-01T04:29:32.738Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-orgs-auto-enable.md"
         }
       ],
       "extractorId": "md-heading-series",
@@ -41,11 +41,11 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "signin:console",
-      "targetLabel": "[ Organizations console ]"
+      "targetLabel": "[ Security Hub CSPM console ]"
     }
   ],
   "featureId": "securityhub/integrating-with-aws-organizations",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "securityhub",
   "unresolvedTargets": []
 }

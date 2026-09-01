@@ -1,6 +1,8 @@
 {
   "axes": [
-    "region"
+    "region",
+    "resourceType",
+    "service"
   ],
   "claims": [
     {
@@ -642,10 +644,81 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "bf33c7616651abe03708871bf2de4ef12d6cccd66c07f966dfbfa496de1bc603",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-sms-settings.md :: Review the following links for information about securing your SMS message delivery architecture.",
+          "quote": "+ [Reduce risks of user sign-up fraud and SMS pumping with Amazon Cognito user pools](https://aws.amazon.com/blogs/security/reduce-risks-of-user-sign-up-fraud-and-sms-pumping-with-amazon-cognito-user-pools/)",
+          "retrievedAt": "2026-09-01T04:59:50.809Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-sms-settings.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-resourcetype-aws-cognito-userpool-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Cognito::UserPool",
+      "targetLabel": "Reduce risks of user sign-up fraud and SMS pumping with Amazon Cognito user pools"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "21ed4552620ca9c5374a573b250a51e95b18fac3b0a824ae8822b34bb25c27ba",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-define-resource-servers.md :: More resources",
+          "quote": "+ [Controlling and managing access to a REST API in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-to-api.html)",
+          "retrievedAt": "2026-09-01T04:59:50.674Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-define-resource-servers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-service-apigateway-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "apigateway",
+      "targetLabel": "Controlling and managing access to a REST API in API Gateway"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "21ed4552620ca9c5374a573b250a51e95b18fac3b0a824ae8822b34bb25c27ba",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-define-resource-servers.md :: More resources",
+          "quote": "+ [Authorization with Amazon Verified Permissions](amazon-cognito-authorization-with-avp.md)",
+          "retrievedAt": "2026-09-01T04:59:50.674Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-define-resource-servers.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cognito-idp/amazon-cognito-user-pools",
+      "id": "cognito-idp-amazon-cognito-user-pools-service-verifiedpermissions-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "verifiedpermissions",
+      "targetLabel": "Authorization with Amazon Verified Permissions"
     }
   ],
   "featureId": "cognito-idp/amazon-cognito-user-pools",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "cognito-idp",
-  "unresolvedTargets": []
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "Defending Against SMS Pumping: New AWS Features to Help Combat Artificially Inflated Traffic",
+      "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-sms-settings.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Defending Against SMS Pumping: New AWS Features to Help Combat Artificially Inflated Traffic",
+      "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-security-best-practices.md"
+    }
+  ]
 }

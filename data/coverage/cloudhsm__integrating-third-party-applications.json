@@ -1,0 +1,42 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "5d7a66419822106644d88c52f2adeea9e669b1609007d36b09ebde26fc756bbf",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/win-ca-overview-sdk5.md :: Configure Windows Server as a certificate authority (CA) with Client SDK 5",
+          "quote": "+ [Step 2: Create a Windows Server CA with AWS CloudHSM](#win-ca-setup-sdk5)",
+          "retrievedAt": "2026-09-01T04:29:40.659Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/win-ca-overview-sdk5.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "cloudhsm/integrating-third-party-applications",
+      "id": "cloudhsm-integrating-third-party-applications-service-cloudhsm-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudhsm",
+      "targetLabel": "Step 2: Create a Windows Server CA with AWS CloudHSM"
+    }
+  ],
+  "featureId": "cloudhsm/integrating-third-party-applications",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "cloudhsm",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Step 1: Set up the prerequisites",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/win-ca-overview-sdk5.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Step 1: Set up the prerequisites",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/win-ca-overview-sdk3.md"
+    }
+  ]
+}

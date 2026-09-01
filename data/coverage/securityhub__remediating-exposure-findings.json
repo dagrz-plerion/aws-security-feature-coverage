@@ -28,11 +28,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "ae280649c8ab5ec05dace786f134a619e103c6c223ca2b8dd2e59f94f54c0d83",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md :: Understanding unused access findings in Security Hub > Unused access in exposure findings",
-          "quote": "+ Amazon Elastic Compute Cloud instances",
-          "retrievedAt": "2026-09-01T05:00:03.537Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md"
+          "bodySha256": "62c712046ac9017d33e8ba725fff4ef15aa8dfc954288328c60e8a2b58417d75",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-ec2-instance.md :: Remediating exposures for EC2 instances",
+          "quote": "+ [Misconfiguration traits for EC2 instances](#ec2-misconfiguration)",
+          "retrievedAt": "2026-09-01T05:00:03.145Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-ec2-instance.md"
         }
       ],
       "extractorId": "md-bullet-list",
@@ -41,18 +41,18 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::EC2::Instance",
-      "targetLabel": "Amazon Elastic Compute Cloud instances"
+      "targetLabel": "Misconfiguration traits for EC2 instances"
     },
     {
       "axis": "resourceType",
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "ae280649c8ab5ec05dace786f134a619e103c6c223ca2b8dd2e59f94f54c0d83",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md :: Understanding unused access findings in Security Hub > Unused access in exposure findings",
-          "quote": "+ Amazon Elastic Container Service services",
-          "retrievedAt": "2026-09-01T05:00:03.537Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md"
+          "bodySha256": "c4fe409a67d525206c5dc5c17fbcd074cc1cd653fbde056be18771a6cc917fe8",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-ecs-service.md :: Remediating exposures for Amazon ECS services",
+          "quote": "+ [Misconfiguration traits for Amazon ECS services](#ecs-service-misconfiguration)",
+          "retrievedAt": "2026-09-01T05:00:03.109Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-ecs-service.md"
         }
       ],
       "extractorId": "md-bullet-list",
@@ -61,27 +61,27 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::ECS::Service",
-      "targetLabel": "Amazon Elastic Container Service services"
+      "targetLabel": "Misconfiguration traits for Amazon ECS services"
     },
     {
       "axis": "resourceType",
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "ae280649c8ab5ec05dace786f134a619e103c6c223ca2b8dd2e59f94f54c0d83",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md :: Understanding unused access findings in Security Hub > Unused access in exposure findings",
-          "quote": "+ Amazon Elastic Kubernetes Service clusters",
-          "retrievedAt": "2026-09-01T05:00:03.537Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md"
+          "bodySha256": "9e97fa0a9fb67f6f5334ed2546c3f5a1b098d2e784703d601dcfce19d04f79a8",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-eks-cluster.md :: heading level 2",
+          "quote": "## Misconfiguration traits for Amazon EKS clusters",
+          "retrievedAt": "2026-09-01T05:00:03.121Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-eks-cluster.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-heading-series",
       "featureId": "securityhub/remediating-exposure-findings",
-      "id": "securityhub-remediating-exposure-findings-resourcetype-aws-eks-cluster-md-bullet-list",
+      "id": "securityhub-remediating-exposure-findings-resourcetype-aws-eks-cluster-md-heading-series",
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::EKS::Cluster",
-      "targetLabel": "Amazon Elastic Kubernetes Service clusters"
+      "targetLabel": "Misconfiguration traits for Amazon EKS clusters"
     },
     {
       "axis": "resourceType",
@@ -105,34 +105,34 @@
     },
     {
       "axis": "resourceType",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "ae280649c8ab5ec05dace786f134a619e103c6c223ca2b8dd2e59f94f54c0d83",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md :: Understanding unused access findings in Security Hub > Unused access finding types | column \"Resource evaluated\"",
-          "quote": "| UnusedIAMUserAccessKey | An IAM user access key that has not been used to sign API requests within the 90-day lookback period. | IAM user |",
-          "retrievedAt": "2026-09-01T05:00:03.537Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md"
+          "bodySha256": "7ab8110fe4774dbd4750ecac68d75ac2830029b28164fc31788b401c434ec6f7",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-iam-user.md :: Remediating exposures for IAM users",
+          "quote": "+ [Misconfiguration traits for IAM users](#iam-user-misconfiguration)",
+          "retrievedAt": "2026-09-01T05:00:03.222Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-iam-user.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "securityhub/remediating-exposure-findings",
-      "id": "securityhub-remediating-exposure-findings-resourcetype-aws-iam-user-md-table",
+      "id": "securityhub-remediating-exposure-findings-resourcetype-aws-iam-user-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::IAM::User",
-      "targetLabel": "IAM user"
+      "targetLabel": "Misconfiguration traits for IAM users"
     },
     {
       "axis": "resourceType",
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "ae280649c8ab5ec05dace786f134a619e103c6c223ca2b8dd2e59f94f54c0d83",
-          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md :: Understanding unused access findings in Security Hub > Unused access in exposure findings",
-          "quote": "+ AWS Lambda functions",
-          "retrievedAt": "2026-09-01T05:00:03.537Z",
-          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/unused-access-findings.md"
+          "bodySha256": "ef38d16e4fca065060dfeb160a7ed3f5d008b0c669b3bfa3593a3f60530d81e0",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-lambda-function.md :: Remediating exposures for AWS Lambda functions",
+          "quote": "+ [Misconfiguration traits for Lambda functions](#lambda-function-misconfiguration)",
+          "retrievedAt": "2026-09-01T05:00:03.250Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-lambda-function.md"
         }
       ],
       "extractorId": "md-bullet-list",
@@ -141,7 +141,47 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::Lambda::Function",
-      "targetLabel": "AWS Lambda functions"
+      "targetLabel": "Misconfiguration traits for Lambda functions"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7fc236cb4ac2165e8c8cc655a42ffa2f723537d8454353bd08067739619b73ce",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-s3-bucket.md :: Remediating exposures for Amazon S3 buckets",
+          "quote": "+ [Misconfiguration traits for Amazon S3 buckets](#s3-bucket-misconfiguration)",
+          "retrievedAt": "2026-09-01T05:00:03.445Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-s3-bucket.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "securityhub/remediating-exposure-findings",
+      "id": "securityhub-remediating-exposure-findings-resourcetype-aws-s3-bucket-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::S3::Bucket",
+      "targetLabel": "Misconfiguration traits for Amazon S3 buckets"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "6f0493f8d3aadcdcf35c0dc7bde64dcd6ab73b6a7a69dc40e26824dd840c4b3e",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-sagemaker-notebook-instance.md :: Remediating exposures for Amazon SageMaker notebook instances",
+          "quote": "+ [Misconfiguration traits for Amazon SageMaker notebook instances](#sagemaker-misconfiguration)",
+          "retrievedAt": "2026-09-01T05:00:03.317Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-sagemaker-notebook-instance.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "securityhub/remediating-exposure-findings",
+      "id": "securityhub-remediating-exposure-findings-resourcetype-aws-sagemaker-notebookinstance-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::SageMaker::NotebookInstance",
+      "targetLabel": "Misconfiguration traits for Amazon SageMaker notebook instances"
     },
     {
       "axis": "resourceType",
@@ -165,7 +205,7 @@
     }
   ],
   "featureId": "securityhub/remediating-exposure-findings",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "securityhub",
   "unresolvedTargets": [
     {

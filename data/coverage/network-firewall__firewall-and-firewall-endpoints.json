@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "90da96bef343737fc89fcc5a3f267f4aca1e1f2412b0477af19185f25c6b5914",
+          "locator": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/vpc-interface-endpoints.md :: heading level 2",
+          "quote": "## Considerations for AWS Network Firewall",
+          "retrievedAt": "2026-09-01T04:59:19.794Z",
+          "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/vpc-interface-endpoints.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "network-firewall/firewall-and-firewall-endpoints",
+      "id": "network-firewall-firewall-and-firewall-endpoints-service-network-firewall-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "network-firewall",
+      "targetLabel": "Considerations for AWS Network Firewall"
+    }
+  ],
+  "featureId": "network-firewall/firewall-and-firewall-endpoints",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "network-firewall",
+  "unresolvedTargets": []
+}

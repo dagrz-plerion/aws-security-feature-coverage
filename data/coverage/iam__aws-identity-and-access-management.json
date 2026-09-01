@@ -63,16 +63,41 @@
       "status": "covered",
       "targetId": "iam",
       "targetLabel": "IAM"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "2e2403062480a27b12d68fefef6ad7a4337d5eb853c7ebd9e8637f909e2f51ae",
+          "locator": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/IAMRoute53.md :: AWS Identity and Access Management",
+          "quote": "+ [Identity and access management in Amazon Route 53](security-iam.md)",
+          "retrievedAt": "2026-09-01T04:59:23.452Z",
+          "sourceUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/IAMRoute53.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/aws-identity-and-access-management",
+      "id": "iam-aws-identity-and-access-management-service-route53-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "route53",
+      "targetLabel": "Identity and access management in Amazon Route 53"
     }
   ],
   "featureId": "iam/aws-identity-and-access-management",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "iam",
   "unresolvedTargets": [
     {
       "axis": "service",
       "raw": "Workforce identity · (Users managed in IAM Identity Center)",
       "sourceUrl": "https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/dotnet-refactoring-iam.md"
+    },
+    {
+      "axis": "service",
+      "raw": "IAM User Guide",
+      "sourceUrl": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/IAMRoute53.md"
     }
   ]
 }

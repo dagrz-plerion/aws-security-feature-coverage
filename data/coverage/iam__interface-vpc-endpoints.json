@@ -2131,6 +2131,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md ::  | column \"Service\"",
+          "quote": "|  [Amazon EMR on EKS](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amaz…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/interface-vpc-endpoints",
+      "id": "iam-interface-vpc-endpoints-service-eks-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eks",
+      "targetLabel": "Amazon EMR on EKS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md ::  | column \"Service\"",
           "quote": "|  [Amazon ElastiCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/IAM.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/…",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -2911,7 +2931,7 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md ::  | column \"Service\"",
-          "quote": "|  [AWS IoT](https://docs.aws.amazon.com/iot/latest/developerguide/iot-security-identity.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/iot/latest/developerguide/policy-actions.html) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/iot/latest/developerguide/action-resources.html) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-maybe.png) Partial ([Info](#swwiam_footnotes_iot)) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png…",
+          "quote": "|  [Fleet Hub for AWS IoT Device Management](https://docs.aws.amazon.com/iot/latest/fleethubuserguide/what-is-aws-iot-monitor.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) …",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
         }
@@ -2922,7 +2942,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "iot",
-      "targetLabel": "AWS IoT"
+      "targetLabel": "Fleet Hub for AWS IoT Device Management"
     },
     {
       "axis": "service",
@@ -3103,6 +3123,26 @@
       "status": "covered",
       "targetId": "ivschat",
       "targetLabel": "Amazon Interactive Video Service Chat"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md ::  | column \"Service\"",
+          "quote": "| [Amazon Managed Streaming for Kafka Connect](https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect.html) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https:/…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/interface-vpc-endpoints",
+      "id": "iam-interface-vpc-endpoints-service-kafkaconnect-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kafkaconnect",
+      "targetLabel": "Amazon Managed Streaming for Kafka Connect"
     },
     {
       "axis": "service",
@@ -5946,7 +5986,7 @@
     }
   ],
   "featureId": "iam/interface-vpc-endpoints",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "iam",
   "unresolvedTargets": [
     {

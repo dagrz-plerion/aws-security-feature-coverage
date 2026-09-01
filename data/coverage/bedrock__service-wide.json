@@ -1,6 +1,7 @@
 {
   "axes": [
-    "region"
+    "region",
+    "service"
   ],
   "claims": [
     {
@@ -442,10 +443,30 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "us-west-2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d92a063019351805634f98b6a70cb3a344fbbc75a3e0d41f71ef654c4517df03",
+          "locator": "https://docs.aws.amazon.com/redshift/latest/dg/machine-learning-br.md :: Amazon Redshift ML integration with Amazon Bedrock",
+          "quote": "+ [Creating or updating an IAM role for Amazon Redshift ML integration with Amazon Bedrock](#machine-learning-br-iam)",
+          "retrievedAt": "2026-09-01T04:29:03.582Z",
+          "sourceUrl": "https://docs.aws.amazon.com/redshift/latest/dg/machine-learning-br.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "bedrock/service-wide",
+      "id": "bedrock-service-wide-service-bedrock-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "bedrock",
+      "targetLabel": "Creating or updating an IAM role for Amazon Redshift ML integration with Amazon Bedrock"
     }
   ],
   "featureId": "bedrock/service-wide",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "bedrock",
   "unresolvedTargets": []
 }

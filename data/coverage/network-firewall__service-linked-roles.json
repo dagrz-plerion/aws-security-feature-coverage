@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "27af3ee15fa4deba74d2c77e468fb73f354e3e257913c7a1e599bf479af46166",
+          "locator": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/using-service-linked-roles.md :: heading level 2",
+          "quote": "## Service-linked role permissions for Network Firewall",
+          "retrievedAt": "2026-09-01T04:59:19.728Z",
+          "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "network-firewall/service-linked-roles",
+      "id": "network-firewall-service-linked-roles-service-network-firewall-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "network-firewall",
+      "targetLabel": "Service-linked role permissions for Network Firewall"
+    }
+  ],
+  "featureId": "network-firewall/service-linked-roles",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "network-firewall",
+  "unresolvedTargets": []
+}

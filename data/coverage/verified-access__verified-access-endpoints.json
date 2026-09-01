@@ -1,7 +1,8 @@
 {
   "axes": [
     "region",
-    "resourceType"
+    "resourceType",
+    "service"
   ],
   "claims": [
     {
@@ -103,10 +104,30 @@
       "status": "covered",
       "targetId": "AWS::EC2::VerifiedAccessTrustProvider",
       "targetLabel": "Verified Access trust provider"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dc2e5016a6deca39e4e61ef9fe6460401a4e698c316d8a1d76562979d5d503d9",
+          "locator": "https://docs.aws.amazon.com/verified-access/latest/ug/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Verified Access",
+          "retrievedAt": "2026-09-01T04:59:28.450Z",
+          "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "verified-access/verified-access-endpoints",
+      "id": "verified-access-verified-access-endpoints-service-verified-access-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "verified-access",
+      "targetLabel": "Identity-based policies for Verified Access"
     }
   ],
   "featureId": "verified-access/verified-access-endpoints",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "verified-access",
   "unresolvedTargets": []
 }

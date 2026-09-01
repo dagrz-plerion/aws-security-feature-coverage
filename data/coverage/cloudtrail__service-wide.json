@@ -8,11 +8,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Certificate Manager | [Using AWS CloudTrail](https://docs.aws.amazon.com/acm/latest/userguide/cloudtrail.html) | 03/25/2016 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS Signer | Signer API activity on signing jobs. | Signer signing job | AWS::Signer::SigningJob |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -21,7 +21,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "acm",
-      "targetLabel": "AWS Certificate Manager"
+      "targetLabel": "AWS Signer"
     },
     {
       "axis": "service",
@@ -128,11 +128,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS AppConfig | [Logging AWS AppConfig API calls using AWS CloudTrail](https://docs.aws.amazon.com/appconfig/latest/userguide/logging-using-cloudtrail.html) | Management events: 07/31/2020<br />Data events: 01/04/2024 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS AppConfig | [AWS AppConfig API activity](https://docs.aws.amazon.com/appconfig/latest/userguide/logging-using-cloudtrail.html#appconfig-data-events-cloudtrail) for configuration operations such as calls to `StartConfigurationSession` and `GetLatestConfiguration`. | AWS AppConfig | AWS::AppConfig::Configuration |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -225,19 +225,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS App Mesh | [Logging App Mesh API Calls with AWS CloudTrail](https://docs.aws.amazon.com/app-mesh/latest/userguide/logging-using-cloudtrail.html) | AWS App Mesh 10/30/2019<br />App Mesh Envoy Management Service 03/18/2022 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ AWS App Mesh",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-appmesh-md-table",
+      "id": "cloudtrail-service-wide-service-appmesh-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "appmesh",
@@ -268,11 +268,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS AppSync | [Logging AWS AppSync API Calls with AWS CloudTrail](https://docs.aws.amazon.com/appsync/latest/devguide/cloudtrail-logging.html) | 02/13/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS AppSync | [AWS AppSync API activity](https://docs.aws.amazon.com/appsync/latest/devguide/cloudtrail-logging.html#cloudtrail-data-events) on AppSync GraphQL APIs. | AppSync GraphQL | AWS::AppSync::GraphQLApi |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -325,19 +325,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Athena | [Logging Amazon Athena API Calls with AWS CloudTrail](https://docs.aws.amazon.com/athena/latest/ug/monitor-with-cloudtrail.html) | 05/19/2017 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon Athena",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-athena-md-table",
+      "id": "cloudtrail-service-wide-service-athena-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "athena",
@@ -388,11 +388,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS B2B Data Interchange | [Logging AWS B2B Data Interchange API calls using AWS CloudTrail](https://docs.aws.amazon.com/b2bi/latest/userguide/logging-using-cloudtrail.html) | 12/01/2023 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS B2B Data Interchange | B2B Data Interchange API activity for Transformer operations such as calls to `GetTransformerJob` and `StartTransformerJob`. | B2B Data Interchange | AWS::B2BI::Transformer |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -408,11 +408,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Backup | [Logging AWS Backup API Calls with AWS CloudTrail](https://docs.aws.amazon.com/aws-backup/latest/devguide/logging-using-cloudtrail.html) | 02/04/2019 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS Backup | AWS Backup Search Data API activity on search jobs. | AWS Backup Search Data APIs | AWS::Backup::SearchJob |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -468,11 +468,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Bedrock | [Log Amazon Bedrock API calls using AWS CloudTrail](https://docs.aws.amazon.com/bedrock/latest/userguide/logging-using-cloudtrail.html) | 10/23/2023 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Bedrock | [Amazon Bedrock API activity](https://docs.aws.amazon.com/bedrock/latest/userguide/logging-using-cloudtrail.html#service-name-data-events-cloudtrail) on an agent alias. | Bedrock agent alias | AWS::Bedrock::AgentAlias |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -588,11 +588,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Keyspaces (for Apache Cassandra) | [Logging Amazon Keyspaces API calls with AWS CloudTrail](https://docs.aws.amazon.com/keyspaces/latest/devguide/logging-using-cloudtrail.html) | 01/13/2020 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Keyspaces (for Apache Cassandra) | [Amazon Keyspaces API activity](https://docs.aws.amazon.com/keyspaces/latest/devguide/logging-using-cloudtrail.html#keyspaces-in-cloudtrail-dml) on a table. | Cassandra table | AWS::Cassandra::Table |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -725,19 +725,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS CloudFormation | [Logging AWS CloudFormation API Calls in AWS CloudTrail](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-api-logging-cloudtrail.html) | 04/02/2014 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ AWS CloudFormation",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-cloudformation-md-table",
+      "id": "cloudtrail-service-wide-service-cloudformation-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudformation",
@@ -748,11 +748,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon CloudFront | [Using AWS CloudTrail to Capture Requests Sent to the CloudFront API](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/logging_using_cloudtrail.html) | 05/28/2014 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon CloudFront | CloudFront API activity on a [KeyValueStore](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_KeyValueStore.html). | CloudFront KeyValueStore | AWS::CloudFront::KeyValueStore |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -765,19 +765,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS CloudHSM | [Logging AWS CloudHSM API Calls By Using AWS CloudTrail](https://docs.aws.amazon.com/cloudhsm/latest/userguide/get-api-logs-using-cloudtrail.html) | 01/08/2015 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ AWS CloudHSM",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-cloudhsm-md-table",
+      "id": "cloudtrail-service-wide-service-cloudhsm-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudhsm",
@@ -825,34 +825,34 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS CloudTrail | [AWS CloudTrail API Reference](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/) (All CloudTrail API calls are logged by CloudTrail.) | 11/13/2013 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "524b07d2bb207ae977f979ae9d835f8eb38af3c1bb078e06f15201a48b63f145",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/get-api-logs-using-cloudtrail.md :: heading level 2",
+          "quote": "## AWS CloudHSM information in CloudTrail",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/get-api-logs-using-cloudtrail.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-heading-series",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-cloudtrail-md-table",
+      "id": "cloudtrail-service-wide-service-cloudtrail-md-heading-series",
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudtrail",
-      "targetLabel": "AWS CloudTrail"
+      "targetLabel": "AWS CloudHSM information in CloudTrail"
     },
     {
       "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon CloudWatch | [Logging Amazon CloudWatch API Calls in AWS CloudTrail](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/logging_cw_api_calls.html)  | 04/30/2014 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon CloudWatch | [Amazon CloudWatch API activity](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/logging_cw_api_calls.html#CloudWatch-data-plane-events) on metrics. | CloudWatch metric | AWS::CloudWatch::Metric |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -945,19 +945,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS CodeDeploy | [Monitoring Deployments with AWS CloudTrail](https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-cloudtrail.html) | 12/16/2014 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ AWS CodeDeploy",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-codedeploy-md-table",
+      "id": "cloudtrail-service-wide-service-codedeploy-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "codedeploy",
@@ -968,11 +968,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon CodeGuru Reviewer | [Logging Amazon CodeGuru Reviewer API Calls with AWS CloudTrail](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/logging-using-cloudtrail.html) | 12/02/2019 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon CodeGuru Profiler | CodeGuru Profiler API activity on profiling groups. | CodeGuru Profiler profiling group | AWS::CodeGuruProfiler::ProfilingGroup |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -981,7 +981,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "codeguru",
-      "targetLabel": "Amazon CodeGuru Reviewer"
+      "targetLabel": "Amazon CodeGuru Profiler"
     },
     {
       "axis": "service",
@@ -1068,11 +1068,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Cognito | [Logging Amazon Cognito API Calls with AWS CloudTrail](https://docs.aws.amazon.com/cognito/latest/developerguide/logging-using-cloudtrail.html) | 02/18/2016 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Cognito | Amazon Cognito API activity on Amazon Cognito [identity pools](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-info-in-cloudtrail.html#identity-pools-cloudtrail-events). | Cognito Identity Pools | AWS::Cognito::IdentityPool |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -1105,19 +1105,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Comprehend Medical | [Logging Amazon Comprehend Medical API Calls by Using AWS CloudTrail](https://docs.aws.amazon.com/comprehend-medical/latest/dev/security-cloudtrail.html) | 11/27/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon Comprehend Medical",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-comprehendmedical-md-table",
+      "id": "cloudtrail-service-wide-service-comprehendmedical-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "comprehendmedical",
@@ -1125,19 +1125,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Config | [Logging AWS Config API Calls By with AWS CloudTrail](https://docs.aws.amazon.com/config/latest/developerguide/log-api-calls.html) | 02/10/2015 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ AWS Config",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-config-md-table",
+      "id": "cloudtrail-service-wide-service-config-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "config",
@@ -1288,11 +1288,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Deadline Cloud | [Logging Deadline Cloud API calls using AWS CloudTrail](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/logging-using-cloudtrail.html) | 04/02/2024 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS Deadline Cloud | [Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/logging-using-cloudtrail.html#cloudtrail-data-events) API activity on fleets. | **Deadline Cloud fleet** | `AWS::Deadline::Fleet` |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -1505,23 +1505,23 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Directory Service | [Logging Directory Service API Calls by Using CloudTrail](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/logging-using-cloudtrail-ads.html) | 05/14/2015 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ AWS Directory Service",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-ds-md-table",
+      "id": "cloudtrail-service-wide-service-ds-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ds",
-      "targetLabel": "Directory Service"
+      "targetLabel": "AWS Directory Service"
     },
     {
       "axis": "service",
@@ -1568,11 +1568,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon DynamoDB | [Logging DynamoDB Operations By Using AWS CloudTrail](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/logging-using-cloudtrail.html) | 05/28/2015 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon DynamoDB | [Amazon DynamoDB item-level API activity](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/logging-using-cloudtrail.html#ddb-data-plane-events-in-cloudtrail) on tables (for example, `PutItem`, `DeleteItem`, and `UpdateItem` API operations).For tables with streams enabled, the `resources` field in the data event contains both `AWS::DynamoDB::Stream` and `AWS::DynamoDB::Table`. If you specify `AWS::DynamoDB::Table` for the `resources.type`, it will log both DynamoDB table and DynamoDB streams events by default. To exclude [streams events](https://docs.aws.amaz…",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -1608,11 +1608,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon EC2 | [Log Amazon EC2 API calls using AWS CloudTrail](https://docs.aws.amazon.com/ec2/latest/devguide/using-cloudtrail.html) | 11/13/2013 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Elastic Compute Cloud | Amazon EC2 instance connect endpoint API activity. | **EC2 instance connect endpoint** | `AWS::EC2::InstanceConnectEndpoint` |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -1621,7 +1621,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ec2",
-      "targetLabel": "Amazon EC2"
+      "targetLabel": "Amazon Elastic Compute Cloud"
     },
     {
       "axis": "service",
@@ -1705,19 +1705,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Elastic Load Balancing | [AWS CloudTrail Logging for Your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/ELB-API-Logs.html) and [AWS CloudTrail Logging for Your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudtrail-logs.html) | 04/04/2014 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Elastic Load Balancing",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-elasticloadbalancing-md-table",
+      "id": "cloudtrail-service-wide-service-elasticloadbalancing-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "elasticloadbalancing",
@@ -1728,11 +1728,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon EMR | [Logging Amazon EMR API Calls using AWS CloudTrail](https://docs.aws.amazon.com/emr/latest/ManagementGuide/logging-using-cloudtrail.html) | 04/04/2014 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon EMR | [Amazon EMR API activity](https://docs.aws.amazon.com/emr/latest/ManagementGuide/logging-using-cloudtrail.html#cloudtrail-data-events) on a write-ahead log workspace. | EMR write-ahead log workspace | AWS::EMRWAL::Workspace |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -1825,19 +1825,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon EventBridge | [Logging Amazon EventBridge API calls using AWS CloudTrail](https://docs.aws.amazon.com/eventbridge/latest/userguide/logging-using-cloudtrail.html) | 07/11/2019 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon EventBridge",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-events-md-table",
+      "id": "cloudtrail-service-wide-service-events-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "events",
@@ -1848,11 +1848,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon FinSpace | [Querying AWS CloudTrail logs](https://docs.aws.amazon.com/finspace/latest/userguide/logging-cloudtrail-events.html) | 10/18/2022 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon FinSpace | [Amazon FinSpace](https://docs.aws.amazon.com/finspace/latest/userguide/logging-cloudtrail-events.html#finspace-dataplane-events) API activity on environments. | FinSpace | AWS::FinSpace::Environment |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -1868,11 +1868,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Data Firehose | [Monitoring Amazon Data Firehose API Calls with AWS CloudTrail](https://docs.aws.amazon.com/firehose/latest/dev/monitoring-using-cloudtrail.html) | 03/17/2016 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Data Firehose | Amazon Data Firehose delivery stream API activity. | **Amazon Data Firehose** | `AWS::KinesisFirehose::DeliveryStream` |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -1945,19 +1945,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Fraud Detector | [Logging Amazon Fraud Detector API Calls with AWS CloudTrail](https://docs.aws.amazon.com/frauddetector/latest/ug/logging-using-cloudtrail.html) | 01/09/2020 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon Fraud Detector",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-frauddetector-md-table",
+      "id": "cloudtrail-service-wide-service-frauddetector-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "frauddetector",
@@ -1985,23 +1985,23 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon FSx for Lustre | [Logging Amazon FSx for Lustre API Calls with AWS CloudTrail](https://docs.aws.amazon.com/fsx/latest/LustreGuide/logging-using-cloudtrail.html) | 01/11/2019 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon FSx",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-fsx-md-table",
+      "id": "cloudtrail-service-wide-service-fsx-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "fsx",
-      "targetLabel": "Amazon FSx for Lustre"
+      "targetLabel": "Amazon FSx"
     },
     {
       "axis": "service",
@@ -2028,11 +2028,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon GameLift Streams | [Logging Amazon GameLift Streams API calls using AWS CloudTrail](https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/logging-using-cloudtrail.html) | 03/05/2025 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon GameLift Streams | Amazon GameLift Streams [streaming API activity](https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/logging-using-cloudtrail.html#cloudtrail-data-events) on applications. | GameLift Streams application | AWS::GameLiftStreams::Application |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -2108,11 +2108,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Glue | [Logging AWS Glue Operations Using AWS CloudTrail](https://docs.aws.amazon.com/glue/latest/dg/monitor-cloudtrail.html) | 11/07/2017 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS Glue | AWS Glue API activity on tables that were created by Lake Formation. | Lake Formation | AWS::Glue::Table |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -2188,11 +2188,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon GuardDuty | [Logging Amazon GuardDuty API Calls with AWS CloudTrail](https://docs.aws.amazon.com/guardduty/latest/ug/logging-using-cloudtrail.html) | 02/12/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon GuardDuty | Amazon GuardDuty API activity for a [detector](https://docs.aws.amazon.com/guardduty/latest/ug/logging-using-cloudtrail.html#guardduty-data-events-in-cloudtrail). | GuardDuty detector | AWS::GuardDuty::Detector |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -2225,19 +2225,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS HealthLake | [Logging AWS HealthLake API calls with AWS CloudTrail](https://docs.aws.amazon.com/healthlake/latest/devguide/logging-using-cloudtrail.html) | 12/07/2020 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ AWS HealthLake",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-healthlake-md-table",
+      "id": "cloudtrail-service-wide-service-healthlake-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "healthlake",
@@ -2328,11 +2328,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS IoT | [Logging AWS IoT API Calls with AWS CloudTrail](https://docs.aws.amazon.com/iot/latest/developerguide/monitoring_overview.html#iot-using-cloudtrail) | 04/11/2016 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS IoT | [AWS IoT API activity](https://docs.aws.amazon.com/greengrass/v2/developerguide/logging-using-cloudtrail.html#greengrass-data-events-cloudtrail) on [certificates](https://docs.aws.amazon.com/iot/latest/developerguide/x509-client-certs.html). | IoT certificate | AWS::IoT::Certificate |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -2368,11 +2368,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS IoT SiteWise | [Logging AWS IoT SiteWise API calls with AWS CloudTrail](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/logging-using-cloudtrail.html) | 04/29/2020 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS IoT SiteWise | [IoT SiteWise API activity](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/logging-using-cloudtrail.html#service-name-data-events-cloudtrail) on [assets](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateAsset.html). | IoT SiteWise asset | AWS::IoTSiteWise::Asset |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -2468,11 +2468,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Kinesis Data Streams | [Logging Amazon Kinesis Data Streams API Calls Using AWS CloudTrail](https://docs.aws.amazon.com/streams/latest/dev/logging-using-cloudtrail.html) | 04/25/2014 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Kinesis Data Streams | Kinesis Data Streams API activity on [streams](https://docs.aws.amazon.com/streams/latest/dev/working-with-streams.html). | Kinesis stream | AWS::Kinesis::Stream |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -2488,11 +2488,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Kinesis Video Streams | [Logging Kinesis Video Streams API Calls with AWS CloudTrail](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/monitoring-cloudtrail.html) | 05/24/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Kinesis Video Streams | Kinesis Video Streams API activity on video streams, such as calls to GetMedia and PutMedia. | Kinesis video stream | AWS::KinesisVideo::Stream |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -2525,19 +2525,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Lake Formation | [Logging AWS Lake Formation API Calls Using AWS CloudTrail](https://docs.aws.amazon.com/lake-formation/latest/dg/logging-using-cloudtrail.html) | 08/09/2019 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ AWS Lake Formation",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-lakeformation-md-table",
+      "id": "cloudtrail-service-wide-service-lakeformation-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "lakeformation",
@@ -2548,11 +2548,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Lambda | [Logging AWS Lambda API Calls By Using AWS CloudTrail](https://docs.aws.amazon.com/lambda/latest/dg/logging-using-cloudtrail.html) | Management events: 04/09/2015<br />Data events: 11/30/2017 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS Lambda | AWS Lambda function execution activity (the `Invoke` API). | Lambda | AWS::Lambda::Function |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -2605,19 +2605,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS License Manager  | [Logging AWS License Manager API Calls with AWS CloudTrail](https://docs.aws.amazon.com/license-manager/latest/userguide/logging-using-cloudtrail.html) | 03/01/2019 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ AWS License Manager",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-license-manager-md-table",
+      "id": "cloudtrail-service-wide-service-license-manager-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "license-manager",
@@ -2645,19 +2645,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Lookout for Equipment | [Monitoring Amazon Lookout for Equipment](https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/monitoring-overview.html) | 12/01/2020 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon Lookout for Equipment",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-lookoutequipment-md-table",
+      "id": "cloudtrail-service-wide-service-lookoutequipment-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "lookoutequipment",
@@ -2688,11 +2688,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Machine Learning | [Logging Amazon ML API Calls By Using AWS CloudTrail](https://docs.aws.amazon.com/machine-learning/latest/dg/logging-using-cloudtrail.html) | 12/10/2015 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Machine Learning | Machine Learning API activity on ML models. | Maching Learning MlModel | AWS::MachineLearning::MlModel |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -2728,11 +2728,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Managed Blockchain | [Logging Amazon Managed Blockchain API calls using AWS CloudTrail](https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/logging-using-cloudtrail.html)<br />[Logging Ethereum for Managed Blockchain API calls using AWS CloudTrail](https://docs.aws.amazon.com/managed-blockchain/latest/ethereum-dev/logging-using-cloudtrail.html) (Preview) | 04/01/2019 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Managed Blockchain | Amazon Managed Blockchain API activity on a network. | Managed Blockchain network | AWS::ManagedBlockchain::Network |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -3048,11 +3048,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon One Enterprise | [Logging Amazon One Enterprise API calls using AWS CloudTrail](https://docs.aws.amazon.com/one-enterprise/latest/userguide/logging-using-cloudtrail.html) | 11/27/2023 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon One Enterprise | Amazon One Enterprise API activity on a UKey. | Amazon One UKey | AWS::One::UKey |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -3128,11 +3128,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Payment Cryptography | [Logging AWS Payment Cryptography API calls using AWS CloudTrail](https://docs.aws.amazon.com/payment-cryptography/latest/userguide/monitoring-cloudtrail.html) | 06/08/2023 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS Payment Cryptography | AWS Payment Cryptography API activity on aliases. | Payment Cryptography Alias | AWS::PaymentCryptography::Alias |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -3145,19 +3145,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Personalize | [Logging Amazon Personalize API Calls with AWS CloudTrail](https://docs.aws.amazon.com/personalize/latest/dg/logging-using-cloudtrail.html) | 11/28/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon Personalize",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-personalize-md-table",
+      "id": "cloudtrail-service-wide-service-personalize-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "personalize",
@@ -3188,11 +3188,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Pinpoint | [Logging Amazon Pinpoint API Calls with AWS CloudTrail](https://docs.aws.amazon.com/pinpoint/latest/developerguide/logging-using-cloudtrail.html) | 02/06/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS End User Messaging SMS | [AWS End User Messaging SMS](https://docs.aws.amazon.com/sms-voice/latest/userguide/logging-using-cloudtrail.html#cloudtrail-data-events) API activity on origination identities. | SMS Voice origination identity | AWS::SMSVoice::OriginationIdentity |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -3201,7 +3201,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "pinpoint",
-      "targetLabel": "Amazon Pinpoint"
+      "targetLabel": "AWS End User Messaging SMS"
     },
     {
       "axis": "service",
@@ -3285,19 +3285,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Lookout for Vision | [Logging Amazon Lookout for Vision calls with AWS CloudTrail](https://docs.aws.amazon.com/lookout-for-vision/latest/developer-guide/logging-using-cloudtrail.html) | 12/01/2020 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon Lookout for Vision",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-product-amazon-lookout-for-vision-md-table",
+      "id": "cloudtrail-service-wide-service-product-amazon-lookout-for-vision-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "product:amazon-lookout-for-vision",
@@ -3328,11 +3328,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Managed Workflows for Apache Airflow | [Viewing audit logs in AWS CloudTrail](https://docs.aws.amazon.com/mwaa/latest/userguide/monitoring-cloudtrail.html) | 11/24/2020 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Managed Workflows for Apache Airflow | Amazon MWAA API activity on environments. | Managed Apache Airflow | AWS::MWAA::Environment |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -3408,11 +3408,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Q Business | [Logging Amazon Q Business API calls using AWS CloudTrail](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/logging-using-cloudtrail.html) | 11/28/2023 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Q Business | [Amazon Q Business API activity](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/logging-using-cloudtrail.html#service-name-data-plane-events-cloudtrail) on an application. | Amazon Q Business application | AWS::QBusiness::Application |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -3428,11 +3428,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Q Developer | [Logging Amazon Q Developer API calls using AWS CloudTrail](https://docs.aws.amazon.com/amazonq/latest/aws-builder-use-ug/logging-using-cloudtrail.html) | 11/28/2023 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Q Developer | Amazon Q Developer API activity on an integration. | Q Developer integration | AWS::QDeveloper::Integration |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -3448,11 +3448,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Quick | [Logging Operations with CloudTrail](https://docs.aws.amazon.com/quick/latest/userguide/logging-using-cloudtrail.html) | 04/28/2017 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Quick | Amazon Quick API activity on an action connector. | AWSQuickSuite Actions | AWS::Quicksight::ActionConnector |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -3465,34 +3465,34 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Neptune | [Logging Amazon Neptune API Calls Using AWS CloudTrail](https://docs.aws.amazon.com/neptune/latest/userguide/cloudtrail.html) | 05/30/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon Relational Database Service",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-rds-md-table",
+      "id": "cloudtrail-service-wide-service-rds-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "rds",
-      "targetLabel": "Amazon Neptune"
+      "targetLabel": "Amazon Relational Database Service"
     },
     {
       "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Redshift | [Logging Amazon Redshift API Calls with AWS CloudTrail](https://docs.aws.amazon.com/redshift/latest/mgmt/db-auditing.html#rs-db-auditing-cloud-trail) | 06/10/2014 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Redshift | Redshift API activity on clusters. | Amazon Redshift Cluster | AWS::Redshift::Cluster |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -3525,19 +3525,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Rekognition | [Logging Amazon Rekognition API Calls Using AWS CloudTrail](https://docs.aws.amazon.com/rekognition/latest/dg/logging-using-cloudtrail.html) | 04/6/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon Rekognition",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-rekognition-md-table",
+      "id": "cloudtrail-service-wide-service-rekognition-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "rekognition",
@@ -3668,11 +3668,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon S3 | [Logging Amazon S3 API Calls By Using AWS CloudTrail](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudtrail-logging.html) | Management events: 09/01/2015<br />Data events: 11/21/2016 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon S3 | [Amazon S3 object-level API activity](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudtrail-logging-s3-info.html#cloudtrail-data-events) (for example, `GetObject`, `DeleteObject`, and `PutObject` API operations) on objects in general purpose buckets. | S3 | AWS::S3::Object |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -3728,11 +3728,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon SageMaker AI | [Logging Amazon SageMaker AI API Calls with AWS CloudTrail](https://docs.aws.amazon.com/sagemaker/latest/dg/logging-using-cloudtrail.html) | 01/11/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon SageMaker AI |  Amazon SageMaker AI [`InvokeEndpointWithResponseStream`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpointWithResponseStream.html) activity on endpoints. | SageMaker AI endpoint | AWS::SageMaker::Endpoint |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -3805,21 +3805,21 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Secrets Manager | [Monitor the Use of Your AWS Secrets Manager Secrets](https://docs.aws.amazon.com/secretsmanager/latest/userguide/monitoring.html#monitoring_cloudtrail) | 04/05/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ AWS Secrets Manager",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-secretsmanager-md-table",
+      "id": "cloudtrail-service-wide-service-secretsmanager-md-bullet-list",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "secretsmanager",
       "targetLabel": "AWS Secrets Manager"
     },
@@ -3948,11 +3948,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Cloud Map | [Logging AWS Cloud Map API Calls with AWS CloudTrail](https://docs.aws.amazon.com/cloud-map/latest/dg/logging-using-cloudtrail.html) | 11/28/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS Cloud Map | [AWS Cloud Map API activity](https://docs.aws.amazon.com/cloud-map/latest/dg/cloudtrail-data-events.html) on a [namespace](https://docs.aws.amazon.com/cloud-map/latest/api/API_Namespace.html). | AWS Cloud Map namespace | AWS::ServiceDiscovery::Namespace |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -4028,11 +4028,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS End User Messaging Social | [ Logging AWS End User Messaging Social API calls using AWS CloudTrail](https://docs.aws.amazon.com/social-messaging/latest/userguide/logging-using-cloudtrail.html) | 10/10/2024 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS End User Messaging Social | [AWS End User Messaging Social](https://docs.aws.amazon.com/social-messaging/latest/userguide/logging-using-cloudtrail.html#cloudtrail-data-events) API activity on phone number IDs. | Social-Messaging Phone Number Id | AWS::SocialMessaging::PhoneNumberId |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -4068,11 +4068,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Systems Manager | [Logging AWS Systems Manager API Calls with AWS CloudTrail](https://docs.aws.amazon.com/systems-manager/latest/userguide/monitoring-cloudtrail-logs.html) | 11/29/2017 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS Systems Manager | [Systems Manager API activity](https://docs.aws.amazon.com/systems-manager/latest/userguide/monitoring-cloudtrail-logs.html#cloudtrail-data-events) on control channels. | Systems Manager | AWS::SSMMessages::ControlChannel |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -4085,21 +4085,21 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Systems Manager Incident Manager | [Logging AWS Systems Manager Incident Manager API calls using AWS CloudTrail](https://docs.aws.amazon.com/incident-manager/latest/userguide/logging-using-cloudtrail.html) | 05/10/2021 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ AWS Systems Manager Incident Manager",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-ssm-incidents-md-table",
+      "id": "cloudtrail-service-wide-service-ssm-incidents-md-bullet-list",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "ssm-incidents",
       "targetLabel": "AWS Systems Manager Incident Manager"
     },
@@ -4128,11 +4128,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Step Functions | [Logging AWS Step Functions API Calls with AWS CloudTrail](https://docs.aws.amazon.com/step-functions/latest/dg/procedure-cloud-trail.html) | 12/01/2016 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS Step Functions | [Step Functions API activity](https://docs.aws.amazon.com/step-functions/latest/dg/procedure-cloud-trail.html#cloudtrail-data-events) on activities. | Step Functions | AWS::StepFunctions::Activity |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -4145,21 +4145,21 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS Storage Gateway | [Logging Storage Gateway API Calls by Using AWS CloudTrail](https://docs.aws.amazon.com/filegateway/latest/files3/logging-using-cloudtrail.html) | 12/16/2014 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ AWS Storage Gateway",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-storagegateway-md-table",
+      "id": "cloudtrail-service-wide-service-storagegateway-md-bullet-list",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "storagegateway",
       "targetLabel": "AWS Storage Gateway"
     },
@@ -4205,21 +4205,21 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Textract | [Logging Amazon Textract API Calls with AWS CloudTrail](https://docs.aws.amazon.com/textract/latest/dg/logging-using-cloudtrail.html) | 05/29/2019 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon Textract",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-textract-md-table",
+      "id": "cloudtrail-service-wide-service-textract-md-bullet-list",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "textract",
       "targetLabel": "Amazon Textract"
     },
@@ -4228,11 +4228,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon WorkSpaces Thin Client | [Logging Amazon WorkSpaces Thin Client API calls using AWS CloudTrail](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/logging-using-cloudtrail.html) | 11/26/2023 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon WorkSpaces Thin Client | WorkSpaces Thin Client API activity on a Device. | Thin Client Device | AWS::ThinClient::Device |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -4248,11 +4248,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Timestream | [Logging Timestream API calls with AWS CloudTrail](https://docs.aws.amazon.com/timestream/latest/developerguide/logging-using-cloudtrail.html) | 09/30/2020 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Timestream | Amazon Timestream [`Query`](https://docs.aws.amazon.com/timestream/latest/developerguide/API_query_Query.html) API activity on databases. | Timestream database | AWS::Timestream::Database |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -4265,21 +4265,21 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Transcribe | [Logging Amazon Transcribe API Calls with AWS CloudTrail](https://docs.aws.amazon.com/transcribe/latest/dg/monitoring-transcribe-cloud-trail.html) | 06/28/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon Transcribe",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-transcribe-md-table",
+      "id": "cloudtrail-service-wide-service-transcribe-md-bullet-list",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "transcribe",
       "targetLabel": "Amazon Transcribe"
     },
@@ -4305,21 +4305,21 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Translate | [Logging Amazon Translate API Calls with AWS CloudTrail](https://docs.aws.amazon.com/translate/latest/dg/logging-using-cloudtrail.html) | 04/04/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon Translate",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-translate-md-table",
+      "id": "cloudtrail-service-wide-service-translate-md-bullet-list",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "translate",
       "targetLabel": "Amazon Translate"
     },
@@ -4368,11 +4368,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon Verified Permissions | [Logging Amazon Verified Permissions API calls using AWS CloudTrail](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/cloudtrail.html) | 06/13/2023 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon Verified Permissions | Amazon Verified Permissions API activity on a policy store. | Amazon Verified Permissions | AWS::VerifiedPermissions::PolicyStore |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -4465,21 +4465,21 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon WorkMail | [Logging Amazon WorkMail API Calls Using AWS CloudTrail](https://docs.aws.amazon.com/workmail/latest/adminguide/logging-using-cloudtrail.html) | 12/12/2017 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
+          "quote": "+ Amazon WorkMail",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-workmail-md-table",
+      "id": "cloudtrail-service-wide-service-workmail-md-bullet-list",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "workmail",
       "targetLabel": "Amazon WorkMail"
     },
@@ -4488,11 +4488,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| Amazon WorkSpaces Applications | [Logging Amazon WorkSpaces Applications API Calls with AWS CloudTrail](https://docs.aws.amazon.com/appstream2/latest/developerguide/logging-using-cloudtrail.html) | 04/25/2019 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| Amazon WorkSpaces Applications | Agents accessing WorkSpaces Applications MCP tool events | Agent Access MCP Tools | AWS::AgentAccessMCP::Tools |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -4528,11 +4528,11 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "0e2fcf7723c7c7634c8024d7a672866b94aa597955945afd0608c5df964104be",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md ::  | column \"AWS Service\"",
-          "quote": "| AWS X-Ray | [Logging AWS X-Ray API Calls With CloudTrail](https://docs.aws.amazon.com/xray/latest/devguide/xray-api-cloudtrail.html) | 04/25/2018 |",
-          "retrievedAt": "2026-09-01T04:29:00.771Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
+          "quote": "| AWS X-Ray | [X-Ray API activity](https://docs.aws.amazon.com/xray/latest/devguide/xray-api-cloudtrail.html#cloudtrail-data-events) on [traces](https://docs.aws.amazon.com/xray/latest/devguide/xray-concepts.html#xray-concepts-traces). | X-Ray trace | AWS::XRay::Trace |",
+          "retrievedAt": "2026-09-01T04:59:38.112Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
         }
       ],
       "extractorId": "md-table",
@@ -4545,409 +4545,9 @@
     }
   ],
   "featureId": "cloudtrail/service-wide",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "cloudtrail",
   "unresolvedTargets": [
-    {
-      "axis": "service",
-      "raw": "Amazon EC2 Capacity Blocks",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Block Store (Amazon EBS) · EBS direct APIs",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Container Registry (Amazon ECR)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Container Service (Amazon ECS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic File System (Amazon EFS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Kubernetes Service (Amazon EKS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EMR on EKS",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Inspector Scan",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Pinpoint SMS and Voice API",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Quantum Ledger Database (Amazon QLDB)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Relational Database Service (Amazon RDS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon RDS Performance Insights",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Application Recovery Controller (ARC)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Email Service (Amazon SES)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Notification Service (Amazon SNS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Queue Service (Amazon SQS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Workflow Service (Amazon SWF)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Virtual Private Cloud (Amazon VPC)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon VPC Reachability Analyzer",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Account Management",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Application Transformation Service",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS BugBust",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Elastic Beanstalk (Elastic Beanstalk)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Health Dashboard",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS HealthImaging",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS IAM Identity Center – SCIM",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Key Management Service (AWS KMS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Marketplace Agreements",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Marketplace Metering Service",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Migration Hub Journeys",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS OpsWorks for Chef Automate",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS OpsWorks for Puppet Enterprise",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS OpsWorks Stacks",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Private Certificate Authority (AWS Private CA)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Resource Access Manager (AWS RAM)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Security Token Service (AWS STS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Snowball Edge Edge",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Support Recommendations (Preview)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Telco Network Builder (AWS TNB)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Transfer for SFTP",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EC2 Capacity Blocks",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Block Store (Amazon EBS) · EBS direct APIs",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Container Registry (Amazon ECR)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Container Service (Amazon ECS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic File System (Amazon EFS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Kubernetes Service (Amazon EKS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon EMR on EKS",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Inspector Scan",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Pinpoint SMS and Voice API",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Quantum Ledger Database (Amazon QLDB)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Relational Database Service (Amazon RDS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon RDS Performance Insights",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Application Recovery Controller (ARC)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Email Service (Amazon SES)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Notification Service (Amazon SNS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Queue Service (Amazon SQS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Workflow Service (Amazon SWF)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Virtual Private Cloud (Amazon VPC)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon VPC Reachability Analyzer",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Account Management",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Application Transformation Service",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS BugBust",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Elastic Beanstalk (Elastic Beanstalk)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Health Dashboard",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS HealthImaging",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS IAM Identity Center – SCIM",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Key Management Service (AWS KMS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Marketplace Agreements",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Marketplace Metering Service",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Migration Hub Journeys",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS OpsWorks for Chef Automate",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS OpsWorks for Puppet Enterprise",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS OpsWorks Stacks",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Private Certificate Authority (AWS Private CA)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Resource Access Manager (AWS RAM)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Security Token Service (AWS STS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Snowball Edge Edge",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Support Recommendations (Preview)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Telco Network Builder (AWS TNB)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Transfer for SFTP",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
-    },
     {
       "axis": "service",
       "raw": "Amazon CloudWatch Network Flow Monitor",
@@ -5102,6 +4702,406 @@
       "axis": "service",
       "raw": "AWS Pricing Calculator",
       "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EC2 Capacity Blocks",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Block Store (Amazon EBS) · EBS direct APIs",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Container Registry (Amazon ECR)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Container Service (Amazon ECS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic File System (Amazon EFS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Kubernetes Service (Amazon EKS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Inspector Scan",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Pinpoint SMS and Voice API",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Quantum Ledger Database (Amazon QLDB)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Relational Database Service (Amazon RDS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon RDS Performance Insights",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Application Recovery Controller (ARC)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Email Service (Amazon SES)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Queue Service (Amazon SQS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Workflow Service (Amazon SWF)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Virtual Private Cloud (Amazon VPC)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon VPC Reachability Analyzer",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Account Management",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Application Transformation Service",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS BugBust",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Elastic Beanstalk (Elastic Beanstalk)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Health Dashboard",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS HealthImaging",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS IAM Identity Center – SCIM",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Key Management Service (AWS KMS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Marketplace Agreements",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Marketplace Metering Service",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Migration Hub Journeys",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS OpsWorks for Chef Automate",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS OpsWorks for Puppet Enterprise",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS OpsWorks Stacks",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Private Certificate Authority (AWS Private CA)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Resource Access Manager (AWS RAM)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Security Token Service (AWS STS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Snowball Edge Edge",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Support Recommendations (Preview)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Telco Network Builder (AWS TNB)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Transfer for SFTP",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "FreeRTOS Over-the-Air Updates (OTA)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon EC2 Capacity Blocks",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Block Store (Amazon EBS) · EBS direct APIs",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Container Registry (Amazon ECR)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Container Service (Amazon ECS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic File System (Amazon EFS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Kubernetes Service (Amazon EKS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Inspector Scan",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Pinpoint SMS and Voice API",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Quantum Ledger Database (Amazon QLDB)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Relational Database Service (Amazon RDS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon RDS Performance Insights",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Application Recovery Controller (ARC)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Email Service (Amazon SES)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Queue Service (Amazon SQS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Workflow Service (Amazon SWF)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Virtual Private Cloud (Amazon VPC)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon VPC Reachability Analyzer",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Account Management",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Application Transformation Service",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS BugBust",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Elastic Beanstalk (Elastic Beanstalk)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Health Dashboard",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS HealthImaging",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS IAM Identity Center – SCIM",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Key Management Service (AWS KMS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Marketplace Agreements",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Marketplace Metering Service",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Migration Hub Journeys",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS OpsWorks for Chef Automate",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS OpsWorks for Puppet Enterprise",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS OpsWorks Stacks",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Private Certificate Authority (AWS Private CA)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Resource Access Manager (AWS RAM)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Security Token Service (AWS STS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Snowball Edge Edge",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Support Recommendations (Preview)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Telco Network Builder (AWS TNB)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS Transfer for SFTP",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
+    },
+    {
+      "axis": "service",
+      "raw": "FreeRTOS Over-the-Air Updates (OTA)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.md"
     }
   ]
 }

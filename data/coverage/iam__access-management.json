@@ -470,6 +470,106 @@
       "confidence": 0.8,
       "evidence": [
         {
+          "bodySha256": "777607d24721d89faa548cf7a07d08500622fad60734f41b9750b1db3653c9d6",
+          "locator": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/security-iam-ingestion.md :: Identity and Access Management for Amazon OpenSearch Ingestion",
+          "quote": "+ [Policy condition keys for OpenSearch Service](#security_iam_ingestion-conditionkeys)",
+          "retrievedAt": "2026-09-01T04:59:00.489Z",
+          "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/security-iam-ingestion.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-resourcetype-aidevops-service-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "aidevops:service",
+      "targetLabel": "Policy condition keys for OpenSearch Service"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e6360674f8d44166e3de84d51dafb780ab40d1ba6cbb25f0c41e8d8f02b2d4cf",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_service-with-iam.md :: How Connect Customer works with IAM",
+          "quote": "+ [Authorization based on Connect Customer tags](#security_iam_service-with-iam-tags)",
+          "retrievedAt": "2026-09-01T04:58:55.339Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-resourcetype-apigateway-tags-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "apigateway:Tags",
+      "targetLabel": "Authorization based on Connect Customer tags"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "777607d24721d89faa548cf7a07d08500622fad60734f41b9750b1db3653c9d6",
+          "locator": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/security-iam-ingestion.md :: Identity and Access Management for Amazon OpenSearch Ingestion",
+          "quote": "+ [Identity-based policies for OpenSearch Ingestion](#security-iam-ingestion-id-based-policies)",
+          "retrievedAt": "2026-09-01T04:59:00.489Z",
+          "sourceUrl": "https://docs.aws.amazon.com/opensearch-service/latest/developerguide/security-iam-ingestion.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-resourcetype-appfabric-ingestion-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "appfabric:ingestion",
+      "targetLabel": "Identity-based policies for OpenSearch Ingestion"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d21538786b3debb9c22ce1b1c5f12c06754ef039c94ef5e79e39c526a6eb6655",
+          "locator": "https://docs.aws.amazon.com/gameliftservers/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon GameLift Servers",
+          "retrievedAt": "2026-09-01T04:59:01.802Z",
+          "sourceUrl": "https://docs.aws.amazon.com/gameliftservers/latest/developerguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-resourcetype-aqua-enterprise-server-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Aqua::Enterprise::Server",
+      "targetLabel": "Identity-based policies for Amazon GameLift Servers"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3dab4b704189f8dcb7a09fa18448a51f96c87349ea09984dd64f1352c06f72c3",
+          "locator": "https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Image Builder",
+          "retrievedAt": "2026-09-01T04:59:15.690Z",
+          "sourceUrl": "https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-resourcetype-aws-appstream-imagebuilder-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::AppStream::ImageBuilder",
+      "targetLabel": "Identity-based policies for Image Builder"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
           "bodySha256": "5f84cab95b22cfe4a615cebd33edfe21a2469f4bc825e6c22eb4e642191ead1d",
           "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_resource-based-policy-examples.md :: heading level 2",
           "quote": "## AWS Key Management Service policy",
@@ -484,6 +584,26 @@
       "status": "covered",
       "targetId": "AWS::BedrockAgentCore::Policy",
       "targetLabel": "AWS Key Management Service policy"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "44b9978a9b98fddc2097b6eec23669b77fcc31c8fc61cdb6b36c7f86de31d92f",
+          "locator": "https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon GameLift Streams",
+          "retrievedAt": "2026-09-01T04:59:02.018Z",
+          "sourceUrl": "https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-resourcetype-aws-cassandra-stream-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Cassandra::Stream",
+      "targetLabel": "Identity-based policies for Amazon GameLift Streams"
     },
     {
       "axis": "resourceType",
@@ -710,6 +830,26 @@
       "confidence": 0.8,
       "evidence": [
         {
+          "bodySha256": "e6360674f8d44166e3de84d51dafb780ab40d1ba6cbb25f0c41e8d8f02b2d4cf",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_service-with-iam.md :: How Connect Customer works with IAM",
+          "quote": "+ [Connect Customer IAM roles](#security_iam_service-with-iam-roles)",
+          "retrievedAt": "2026-09-01T04:58:55.339Z",
+          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-resourcetype-aws-iam-role-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::IAM::Role",
+      "targetLabel": "Connect Customer IAM roles"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
           "bodySha256": "58328d5015c75102b6c778eeeeaa96234dd83eb14e1d13b2b081117d32ea649b",
           "locator": "https://docs.aws.amazon.com/codedeploy/latest/userguide/incident-response.md :: You can use Amazon CloudWatch Events to detect and react to changes in the state of an instance or a deployment (an event) in your CodeDeploy operations. Then, based on rules you create, CloudWatch Events invokes one or more target actions when a deployment or instance enters the state you specify in a rule. Depending on the type of state change, you might want to send notifications, capture state information, take corrective action, initiate events, or take other actions. You can select the following types of targets when you use CloudWatch Events as part of your CodeDeploy operations:",
           "quote": "+ Kinesis streams",
@@ -804,6 +944,26 @@
       "status": "covered",
       "targetId": "AWS::Redshift::ClusterParameterGroup",
       "targetLabel": "Cluster parameter group"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "4409396a406eff6bc962dea0c1ef677d75ea006a2bd12b6b6a51d415dcd69316",
+          "locator": "https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_service-with-iam-readiness.md :: heading level 2",
+          "quote": "## Identity-based policies for readiness check",
+          "retrievedAt": "2026-09-01T04:58:58.446Z",
+          "sourceUrl": "https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_service-with-iam-readiness.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-resourcetype-aws-route53recoveryreadiness-readinesscheck-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Route53RecoveryReadiness::ReadinessCheck",
+      "targetLabel": "Identity-based policies for readiness check"
     },
     {
       "axis": "resourceType",
@@ -950,6 +1110,326 @@
       "confidence": 0.8,
       "evidence": [
         {
+          "bodySha256": "2a64285c2e13af9b352a6ab08c20fe9024d734aedf88991c42602485343e6e7f",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for ACM",
+          "retrievedAt": "2026-09-01T04:58:48.474Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-acm-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "acm",
+      "targetLabel": "Identity-based policies for ACM"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "054552c6d6407bd1dfb05a9dd251a21aaf7228cafda387da1f6ac1661c773997",
+          "locator": "https://docs.aws.amazon.com/amplify/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amplify",
+          "retrievedAt": "2026-09-01T04:58:50.224Z",
+          "sourceUrl": "https://docs.aws.amazon.com/amplify/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-amplify-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "amplify",
+      "targetLabel": "Identity-based policies for Amplify"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7a9e00d6bd0f5406ef24ab1d4640662a7c1f28fab069276dedcfe60c61a07077",
+          "locator": "https://docs.aws.amazon.com/appfabric/latest/adminguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AppFabric",
+          "retrievedAt": "2026-09-01T04:58:50.638Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appfabric/latest/adminguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-appfabric-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "appfabric",
+      "targetLabel": "Identity-based policies for AppFabric"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dc8709da6b45b557f564d8232bd28a32aa51fe438ae97a2c36e6648dfbd64641",
+          "locator": "https://docs.aws.amazon.com/appflow/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon AppFlow",
+          "retrievedAt": "2026-09-01T04:58:50.863Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appflow/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-appflow-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "appflow",
+      "targetLabel": "Identity-based policies for Amazon AppFlow"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8427be036b6d7c18bdbd83ea40a4fcfe5cae17b6dd46c461c14c36adfe6e28cc",
+          "locator": "https://docs.aws.amazon.com/app2container/latest/UserGuide/iam-a2c.md :: heading level 4",
+          "quote": "#### IAM policy for AWS App Runner",
+          "retrievedAt": "2026-09-01T04:59:22.039Z",
+          "sourceUrl": "https://docs.aws.amazon.com/app2container/latest/UserGuide/iam-a2c.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-apprunner-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "apprunner",
+      "targetLabel": "IAM policy for AWS App Runner"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "520396d22d9700b3798869a71f07ba7a6daa0abbda581569556bb3c80441d7c4",
+          "locator": "https://docs.aws.amazon.com/appsync/latest/devguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS AppSync",
+          "retrievedAt": "2026-09-01T04:58:51.542Z",
+          "sourceUrl": "https://docs.aws.amazon.com/appsync/latest/devguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-appsync-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "appsync",
+      "targetLabel": "Identity-based policies for AWS AppSync"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e67579c9f20db81443e5b570a3ec73659a3decee2d2c7876916f7135d53531a8",
+          "locator": "https://docs.aws.amazon.com/prometheus/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon Managed Service for Prometheus",
+          "retrievedAt": "2026-09-01T04:59:21.759Z",
+          "sourceUrl": "https://docs.aws.amazon.com/prometheus/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-aps-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "aps",
+      "targetLabel": "Identity-based policies for Amazon Managed Service for Prometheus"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "eb03eeb4ce1fe8e98ef5450b4e448e7ecca4486f0cd48f3195f1d66a77273837",
+          "locator": "https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_service-with-iam-zonalautoshift.md :: heading level 2",
+          "quote": "## Identity-based policies for ARC",
+          "retrievedAt": "2026-09-01T04:58:58.228Z",
+          "sourceUrl": "https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_service-with-iam-zonalautoshift.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-arc-zonal-shift-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "arc-zonal-shift",
+      "targetLabel": "Identity-based policies for ARC"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "89f382a429f9b017af6c8dee564156980b8361a016f9f55689748defd4e085f0",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Audit Manager",
+          "retrievedAt": "2026-09-01T04:58:51.787Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-auditmanager-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "auditmanager",
+      "targetLabel": "Identity-based policies for AWS Audit Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "2368e29a78ecfb710073efcb05f2bd07f79ef0fdf9e60c3e8377c8b823e61c37",
+          "locator": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/control-access-using-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon EC2 Auto Scaling",
+          "retrievedAt": "2026-09-01T04:58:52.239Z",
+          "sourceUrl": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/control-access-using-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-autoscaling-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "autoscaling",
+      "targetLabel": "Identity-based policies for Amazon EC2 Auto Scaling"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d5889b617974cfb8cfbe97fc639ab1613de597c1b38a84638aa991f58f17e745",
+          "locator": "https://docs.aws.amazon.com/batch/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Batch",
+          "retrievedAt": "2026-09-01T04:58:52.693Z",
+          "sourceUrl": "https://docs.aws.amazon.com/batch/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-batch-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "batch",
+      "targetLabel": "Identity-based policies for AWS Batch"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "c21947f035befc4369f8e22d894237593c4dad0154c728f4a3dfb4d123c5786f",
+          "locator": "https://docs.aws.amazon.com/clean-rooms/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Clean Rooms",
+          "retrievedAt": "2026-09-01T04:58:53.071Z",
+          "sourceUrl": "https://docs.aws.amazon.com/clean-rooms/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-cleanrooms-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cleanrooms",
+      "targetLabel": "Identity-based policies for AWS Clean Rooms"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e740694fec9f1aec30bdcc16ffee39039c020320ea7abf5be596c09a7c5c6186",
+          "locator": "https://docs.aws.amazon.com/codecatalyst/latest/userguide/ipa-iam-roles.md :: heading level 3",
+          "quote": "### CodeCatalyst build role for CloudFormation",
+          "retrievedAt": "2026-09-01T04:58:54.442Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecatalyst/latest/userguide/ipa-iam-roles.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-cloudformation-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudformation",
+      "targetLabel": "CodeCatalyst build role for CloudFormation"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "721f545917ae182aa7cbff67dc65381d0d8a34d400ca9c36ec8c19a353350283",
+          "locator": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for CloudFront",
+          "retrievedAt": "2026-09-01T04:58:53.376Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-cloudfront-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudfront",
+      "targetLabel": "Identity-based policies for CloudFront"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "2d74c0edd3b250787c29e8817462ce521b2034ef8caffe0f9938a9643b03845d",
+          "locator": "https://docs.aws.amazon.com/cloudshell/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for CloudShell",
+          "retrievedAt": "2026-09-01T04:58:53.597Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudshell/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-cloudshell-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudshell",
+      "targetLabel": "Identity-based policies for CloudShell"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "42ef37dd66d4a3862bb1aa43cc9137df877981fe3e75179e92180121019e498f",
+          "locator": "https://docs.aws.amazon.com/cloudshell/latest/userguide/logging-and-monitoring.md :: heading level 2",
+          "quote": "## Monitoring activity with CloudTrail",
+          "retrievedAt": "2026-09-01T04:58:53.775Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudshell/latest/userguide/logging-and-monitoring.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-cloudtrail-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudtrail",
+      "targetLabel": "Monitoring activity with CloudTrail"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
           "bodySha256": "3f8e1bfc0920c648f0081645d8a4726747454cad6eb279b5cb29c2875953ce76",
           "locator": "https://docs.aws.amazon.com/codebuild/latest/userguide/auth-and-access-control-iam-identity-based-access-control.md :: A user who uses the AWS CodeBuild console must have a minimum set of permissions that allows the user to describe other AWS resources for the AWS account. You must have permissions from the following services:",
           "quote": "+ Amazon CloudWatch",
@@ -970,6 +1450,26 @@
       "confidence": 0.8,
       "evidence": [
         {
+          "bodySha256": "a10dca648145ce701bf3a952489236ca3d331ef546d430d9cf9a3743fab8e852",
+          "locator": "https://docs.aws.amazon.com/codeartifact/latest/ug/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for CodeArtifact",
+          "retrievedAt": "2026-09-01T04:58:54.018Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codeartifact/latest/ug/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-codeartifact-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "codeartifact",
+      "targetLabel": "Identity-based policies for CodeArtifact"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
           "bodySha256": "3f8e1bfc0920c648f0081645d8a4726747454cad6eb279b5cb29c2875953ce76",
           "locator": "https://docs.aws.amazon.com/codebuild/latest/userguide/auth-and-access-control-iam-identity-based-access-control.md :: A user who uses the AWS CodeBuild console must have a minimum set of permissions that allows the user to describe other AWS resources for the AWS account. You must have permissions from the following services:",
           "quote": "+ AWS CodeBuild",
@@ -984,6 +1484,226 @@
       "status": "covered",
       "targetId": "codebuild",
       "targetLabel": "AWS CodeBuild"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "07fd3f1860b1b389047f4824b1d8c31a6e88e8aa60a2685003b42ab5f8bf7e56",
+          "locator": "https://docs.aws.amazon.com/cognito/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon Cognito",
+          "retrievedAt": "2026-09-01T04:58:54.868Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cognito/latest/developerguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-cognito-identity-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cognito-identity",
+      "targetLabel": "Identity-based policies for Amazon Cognito"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cf13337a5711e21e4861edfcdb7ce48662bee35e43d9539ac8d0064229332022",
+          "locator": "https://docs.aws.amazon.com/comprehend/latest/dg/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon Comprehend",
+          "retrievedAt": "2026-09-01T04:58:54.894Z",
+          "sourceUrl": "https://docs.aws.amazon.com/comprehend/latest/dg/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-comprehend-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "comprehend",
+      "targetLabel": "Identity-based policies for Amazon Comprehend"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d87fc200cb548d9c56318b102818f6b33a41549f45e16e7a16f953eafe0c2969",
+          "locator": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam.md :: ",
+          "quote": "+ Troubleshooting — [Troubleshooting in Compute Optimizer](troubleshooting-account-opt-in.md)",
+          "retrievedAt": "2026-09-01T04:58:55.109Z",
+          "sourceUrl": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-compute-optimizer-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "compute-optimizer",
+      "targetLabel": "Troubleshooting — Troubleshooting in Compute Optimizer"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "08c003d7ad8cc4d237a6752f1c20f0f6c0bc38ae2c6f742441553293a2ad8696",
+          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Config",
+          "retrievedAt": "2026-09-01T04:58:55.116Z",
+          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-config-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "config",
+      "targetLabel": "Identity-based policies for AWS Config"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e440f1ca457e318ad90c5038237800ed6d506a0ec7c2672c46fe3c5e2c213bb5",
+          "locator": "https://docs.aws.amazon.com/controlcatalog/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Control Catalog",
+          "retrievedAt": "2026-09-01T04:58:55.632Z",
+          "sourceUrl": "https://docs.aws.amazon.com/controlcatalog/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-controlcatalog-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "controlcatalog",
+      "targetLabel": "Identity-based policies for AWS Control Catalog"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "32742f8d244e21f9390dc6dfde10f50237defefa832543e9afaba1a89d1ce4d2",
+          "locator": "https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Deadline Cloud",
+          "retrievedAt": "2026-09-01T04:58:56.425Z",
+          "sourceUrl": "https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-deadline-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "deadline",
+      "targetLabel": "Identity-based policies for Deadline Cloud"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "c267526aea066d25a8e60bc5e65040a4349f86efeeea81c899fdbfeea89e5db8",
+          "locator": "https://docs.aws.amazon.com/devops-guru/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for DevOps Guru",
+          "retrievedAt": "2026-09-01T04:58:57.116Z",
+          "sourceUrl": "https://docs.aws.amazon.com/devops-guru/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-devops-guru-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "devops-guru",
+      "targetLabel": "Identity-based policies for DevOps Guru"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "9ca4cee01f1712a8bde71ffaa1e87c7e31331d09d25035ff28b3d6b9672687be",
+          "locator": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Direct Connect",
+          "retrievedAt": "2026-09-01T04:58:57.308Z",
+          "sourceUrl": "https://docs.aws.amazon.com/directconnect/latest/UserGuide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-directconnect-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "directconnect",
+      "targetLabel": "Identity-based policies for Direct Connect"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7cc92e36cd3ac21c8a6aeeef5eb6743793134e5bff930384c6bf91b888bff302",
+          "locator": "https://docs.aws.amazon.com/aurora-dsql/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Aurora DSQL",
+          "retrievedAt": "2026-09-01T04:58:59.085Z",
+          "sourceUrl": "https://docs.aws.amazon.com/aurora-dsql/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-dsql-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "dsql",
+      "targetLabel": "Identity-based policies for Aurora DSQL"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "2fa584e042f8857c809b2c52c5ec755d65fe5d9142d611fa7929ae6d3e5e5350",
+          "locator": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for DynamoDB",
+          "retrievedAt": "2026-09-01T04:58:59.110Z",
+          "sourceUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-dynamodb-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "dynamodb",
+      "targetLabel": "Identity-based policies for DynamoDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "eb50f28bac8e300df14abf8e4e8a47d4416ff9fea208a1d16ad06b8bc826e21d",
+          "locator": "https://docs.aws.amazon.com/ebs/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon EBS",
+          "retrievedAt": "2026-09-01T04:58:59.145Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ebs/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-ebs-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ebs",
+      "targetLabel": "Identity-based policies for Amazon EBS"
     },
     {
       "axis": "service",
@@ -1047,6 +1767,326 @@
     },
     {
       "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "0117eb62290a92a745e807da6653cdfa014595b106a93793f738f9b216315eba",
+          "locator": "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for ElastiCache",
+          "retrievedAt": "2026-09-01T04:58:59.794Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-elasticache-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticache",
+      "targetLabel": "Identity-based policies for ElastiCache"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "c5cde3ef3fe556de869c1ce673bab4072a6077e68132460707eb4b527b76808e",
+          "locator": "https://docs.aws.amazon.com/efs/latest/ug/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon EFS",
+          "retrievedAt": "2026-09-01T04:59:00.012Z",
+          "sourceUrl": "https://docs.aws.amazon.com/efs/latest/ug/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-elasticfilesystem-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticfilesystem",
+      "targetLabel": "Identity-based policies for Amazon EFS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "bc38c49f232bebbe01b9b73a67cd6d6fa16558fce4a72c50ff648be2aca1a6be",
+          "locator": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Elastic Load Balancing",
+          "retrievedAt": "2026-09-01T04:59:00.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-elasticloadbalancing-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticloadbalancing",
+      "targetLabel": "Identity-based policies for Elastic Load Balancing"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "5d0f1d54009b1a349a68f8e94ec2a139dbcc72c6156f499ea058fd45e2b7c287",
+          "locator": "https://docs.aws.amazon.com/entityresolution/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Entity Resolution",
+          "retrievedAt": "2026-09-01T04:59:00.415Z",
+          "sourceUrl": "https://docs.aws.amazon.com/entityresolution/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-entityresolution-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "entityresolution",
+      "targetLabel": "Identity-based policies for AWS Entity Resolution"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "ddd07edc4ff58648d14a2b970568908978720384e462ff170a42709f0958e489",
+          "locator": "https://docs.aws.amazon.com/evs/latest/userguide/security_iam_service-with-iam.md :: How Amazon EVS works with IAM | column \"IAM feature\"",
+          "quote": "|  [Identity-based policies for Amazon EVS](#security_iam_service-with-iam-id-based-policies)  | Yes |",
+          "retrievedAt": "2026-09-01T04:59:00.701Z",
+          "sourceUrl": "https://docs.aws.amazon.com/evs/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-evs-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "evs",
+      "targetLabel": "Identity-based policies for Amazon EVS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b3a6591a852ba4d3151c4feca8d8cc5cddd66de74e1a48c2a066f119f3c3b47d",
+          "locator": "https://docs.aws.amazon.com/finops-agent/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS FinOps Agent",
+          "retrievedAt": "2026-09-01T04:59:00.852Z",
+          "sourceUrl": "https://docs.aws.amazon.com/finops-agent/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-finops-agent-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "finops-agent",
+      "targetLabel": "Identity-based policies for AWS FinOps Agent"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "6c7126ef14f95b8ce96347fe38410ba16f675e22a837686fbc71ad98880b8ef7",
+          "locator": "https://docs.aws.amazon.com/fis/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS FIS",
+          "retrievedAt": "2026-09-01T04:59:00.929Z",
+          "sourceUrl": "https://docs.aws.amazon.com/fis/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-fis-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "fis",
+      "targetLabel": "Identity-based policies for AWS FIS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "39f73d80950b6fd8d038881bb28913897bc1d98d5cf01254786720d648242205",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/fms-security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Firewall Manager",
+          "retrievedAt": "2026-09-01T04:59:29.070Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/fms-security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-fms-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "fms",
+      "targetLabel": "Identity-based policies for Firewall Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "4888ddd52cd90f8a0283ead2bab52d9c4398aac8fb7951d04bcfdb50375da878",
+          "locator": "https://docs.aws.amazon.com/forecast/latest/dg/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Forecast",
+          "retrievedAt": "2026-09-01T04:59:01.140Z",
+          "sourceUrl": "https://docs.aws.amazon.com/forecast/latest/dg/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-forecast-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "forecast",
+      "targetLabel": "Identity-based policies for Forecast"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f7f7499389ff55e0970035a259461cc574fd49a7f91f864708d191f27fd23486",
+          "locator": "https://docs.aws.amazon.com/freertos/archive/202012.00/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for FreeRTOS",
+          "retrievedAt": "2026-09-01T04:59:01.374Z",
+          "sourceUrl": "https://docs.aws.amazon.com/freertos/archive/202012.00/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-freertos-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "freertos",
+      "targetLabel": "Identity-based policies for FreeRTOS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "5f862194b630b62aa4ad02954ef16e26925f71fed4018400ef07f010a2f8908b",
+          "locator": "https://docs.aws.amazon.com/global-accelerator/latest/dg/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Global Accelerator",
+          "retrievedAt": "2026-09-01T04:59:02.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/global-accelerator/latest/dg/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-globalaccelerator-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "globalaccelerator",
+      "targetLabel": "Identity-based policies for Global Accelerator"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "051691b7b2d905b6f5ad0d3e29e38fa6b9266be7db59114996467116329cdb86",
+          "locator": "https://docs.aws.amazon.com/glue/latest/dg/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Glue",
+          "retrievedAt": "2026-09-01T04:59:02.466Z",
+          "sourceUrl": "https://docs.aws.amazon.com/glue/latest/dg/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-glue-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "glue",
+      "targetLabel": "Identity-based policies for AWS Glue"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "1e017ceeff5decd659222a4f2498a66500963b66e24c8e35a2b4e20733ad4a87",
+          "locator": "https://docs.aws.amazon.com/grafana/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon Managed Grafana",
+          "retrievedAt": "2026-09-01T04:59:02.467Z",
+          "sourceUrl": "https://docs.aws.amazon.com/grafana/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-grafana-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "grafana",
+      "targetLabel": "Identity-based policies for Amazon Managed Grafana"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d8492136a524c5ddb57eeb08acab153daf47ad336e03380b39afccd47c5a373e",
+          "locator": "https://docs.aws.amazon.com/ground-station/latest/ug/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Ground Station",
+          "retrievedAt": "2026-09-01T04:59:03.379Z",
+          "sourceUrl": "https://docs.aws.amazon.com/ground-station/latest/ug/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-groundstation-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "groundstation",
+      "targetLabel": "Identity-based policies for AWS Ground Station"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "a40cc35120542cba6f4f30c2383a9e8be4baf215bf06bd45ee3e56471dffb0bf",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for GuardDuty",
+          "retrievedAt": "2026-09-01T04:59:03.547Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-guardduty-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "guardduty",
+      "targetLabel": "Identity-based policies for GuardDuty"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8c615c474421530b93c23d96be22d7dc2d5b7737f3681e2a7e2619162a002500",
+          "locator": "https://docs.aws.amazon.com/healthlake/latest/devguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS HealthLake",
+          "retrievedAt": "2026-09-01T04:59:03.820Z",
+          "sourceUrl": "https://docs.aws.amazon.com/healthlake/latest/devguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-healthlake-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "healthlake",
+      "targetLabel": "Identity-based policies for AWS HealthLake"
+    },
+    {
+      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -1064,6 +2104,526 @@
       "status": "covered",
       "targetId": "iam",
       "targetLabel": "IAM"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "2de4bb03960501c27cc95b8f6ae54f352ac3c89405dc7b7a6b78780a567304f0",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon Inspector",
+          "retrievedAt": "2026-09-01T04:59:15.911Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-inspector-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "inspector",
+      "targetLabel": "Identity-based policies for Amazon Inspector"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "29161b4a85391def8a7db77e718aa0bbee09e18bead47334fc2d01da83de5f95",
+          "locator": "https://docs.aws.amazon.com/iot-device-defender/latest/devguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS IoT Device Defender",
+          "retrievedAt": "2026-09-01T04:59:16.349Z",
+          "sourceUrl": "https://docs.aws.amazon.com/iot-device-defender/latest/devguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-iot-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iot",
+      "targetLabel": "Identity-based policies for AWS IoT Device Defender"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "9e9b1be24bb5f69c7d7ecb3b40f7bdb568d8f8048e183213502e5043adc8cd4d",
+          "locator": "https://docs.aws.amazon.com/iot-wireless/latest/developerguide/security-compliance-resiliency.md :: Infrastructure security and compliance validation",
+          "quote": "+ [Compliance validation for AWS IoT Wireless](#compliance-validation)",
+          "retrievedAt": "2026-09-01T04:59:16.710Z",
+          "sourceUrl": "https://docs.aws.amazon.com/iot-wireless/latest/developerguide/security-compliance-resiliency.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-iotwireless-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iotwireless",
+      "targetLabel": "Compliance validation for AWS IoT Wireless"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e740694fec9f1aec30bdcc16ffee39039c020320ea7abf5be596c09a7c5c6186",
+          "locator": "https://docs.aws.amazon.com/codecatalyst/latest/userguide/ipa-iam-roles.md :: heading level 3",
+          "quote": "### CodeCatalyst deploy role for Lambda",
+          "retrievedAt": "2026-09-01T04:58:54.442Z",
+          "sourceUrl": "https://docs.aws.amazon.com/codecatalyst/latest/userguide/ipa-iam-roles.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-lambda-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lambda",
+      "targetLabel": "CodeCatalyst deploy role for Lambda"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e615892c69653ed6c905b345e1bf84dbf20b3a769efa3c5cf8358e0736289a0f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Macie",
+          "retrievedAt": "2026-09-01T04:59:17.939Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-macie2-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "macie2",
+      "targetLabel": "Identity-based policies for Macie"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dcad37538b91cfc3ea56bc09a21e0982bdaf4c2d9c6e591ef8bf4eea4b477cad",
+          "locator": "https://docs.aws.amazon.com/mediaconvert/latest/ug/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for MediaConvert",
+          "retrievedAt": "2026-09-01T04:59:18.240Z",
+          "sourceUrl": "https://docs.aws.amazon.com/mediaconvert/latest/ug/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-mediaconvert-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mediaconvert",
+      "targetLabel": "Identity-based policies for MediaConvert"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "c068b73dba8d8e3609ab671422241eed685b95d2b660e8aad6d66542b36d21a3",
+          "locator": "https://docs.aws.amazon.com/medialive/latest/ug/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for MediaLive",
+          "retrievedAt": "2026-09-01T04:59:18.380Z",
+          "sourceUrl": "https://docs.aws.amazon.com/medialive/latest/ug/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-medialive-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "medialive",
+      "targetLabel": "Identity-based policies for MediaLive"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3141dbf44bc48f650b6a1acf1f8e942890416f9c3f821e273581bcd127a8f676",
+          "locator": "https://docs.aws.amazon.com/mediapackage/latest/ug/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for MediaPackage",
+          "retrievedAt": "2026-09-01T04:59:18.479Z",
+          "sourceUrl": "https://docs.aws.amazon.com/mediapackage/latest/ug/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-mediapackage-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mediapackage",
+      "targetLabel": "Identity-based policies for MediaPackage"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "4f7d01191491906af1b06ce7d037fc995c7aa3ac1e1ff41a34827e01beb50849",
+          "locator": "https://docs.aws.amazon.com/mediatailor/latest/ug/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for MediaTailor",
+          "retrievedAt": "2026-09-01T04:59:18.817Z",
+          "sourceUrl": "https://docs.aws.amazon.com/mediatailor/latest/ug/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-mediatailor-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mediatailor",
+      "targetLabel": "Identity-based policies for MediaTailor"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "ea494786af92909569b207f15b5f0a8c503c3cc56fab587b1ca8d49118b7f45a",
+          "locator": "https://docs.aws.amazon.com/healthimaging/latest/devguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for HealthImaging",
+          "retrievedAt": "2026-09-01T04:59:18.841Z",
+          "sourceUrl": "https://docs.aws.amazon.com/healthimaging/latest/devguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-medical-imaging-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "medical-imaging",
+      "targetLabel": "Identity-based policies for HealthImaging"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b6bfa5888514d508b2483926b5839e838729a15f30fb01f09b81729a340bb8cf",
+          "locator": "https://docs.aws.amazon.com/memorydb/latest/devguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for MemoryDB",
+          "retrievedAt": "2026-09-01T04:59:19.123Z",
+          "sourceUrl": "https://docs.aws.amazon.com/memorydb/latest/devguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-memorydb-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "memorydb",
+      "targetLabel": "Identity-based policies for MemoryDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7eb1d2894ab95a2d4bf755799e40655eba41a359d2b9baa8dea04100b55e4af5",
+          "locator": "https://docs.aws.amazon.com/mpa/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Multi-party approval",
+          "retrievedAt": "2026-09-01T04:59:19.358Z",
+          "sourceUrl": "https://docs.aws.amazon.com/mpa/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-mpa-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mpa",
+      "targetLabel": "Identity-based policies for Multi-party approval"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "62592823a11d9225cd76da0530fba48d83fac701345d71d0c925e90f9bef3fed",
+          "locator": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Network Firewall",
+          "retrievedAt": "2026-09-01T04:59:19.580Z",
+          "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-network-firewall-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "network-firewall",
+      "targetLabel": "Identity-based policies for Network Firewall"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "ac6ce3d5ff678ea150afbb7322a01bd04377f73a08752811ab99557d0a8afa5e",
+          "locator": "https://docs.aws.amazon.com/odb/latest/UserGuide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Oracle Database@AWS",
+          "retrievedAt": "2026-09-01T04:59:20.183Z",
+          "sourceUrl": "https://docs.aws.amazon.com/odb/latest/UserGuide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-odb-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "odb",
+      "targetLabel": "Identity-based policies for Oracle Database@AWS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f9fe8662ea8676bc565350538943aeb4a6dd7aa457392ed6550b8fb49c9db285",
+          "locator": "https://docs.aws.amazon.com/incident-manager/latest/userguide/sharing.md :: Working with shared contacts and response plans in Incident Manager",
+          "quote": "+ Specific AWS accounts inside or outside of its organization in AWS Organizations",
+          "retrievedAt": "2026-09-01T04:58:57.858Z",
+          "sourceUrl": "https://docs.aws.amazon.com/incident-manager/latest/userguide/sharing.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-organizations-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "organizations",
+      "targetLabel": "Specific AWS accounts inside or outside of its organization in AWS Organizations"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "1d02502ef7723a0443a7f463a94874203508bb6fcc0345d366b7e6d67142ddcd",
+          "locator": "https://docs.aws.amazon.com/outposts/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Outposts",
+          "retrievedAt": "2026-09-01T04:59:20.580Z",
+          "sourceUrl": "https://docs.aws.amazon.com/outposts/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-outposts-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "outposts",
+      "targetLabel": "Identity-based policies for AWS Outposts"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80f7d25863f16ebb77c6ea8b5c4819aa69b6f679374339715671d404c40a4975",
+          "locator": "https://docs.aws.amazon.com/pcs/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS PCS",
+          "retrievedAt": "2026-09-01T04:59:20.847Z",
+          "sourceUrl": "https://docs.aws.amazon.com/pcs/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-pcs-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "pcs",
+      "targetLabel": "Identity-based policies for AWS PCS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "c76e72327b4f5de34b639c7d1829eead4249465dffa799869512c571e4d81c12",
+          "locator": "https://docs.aws.amazon.com/personalize/latest/dg/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon Personalize",
+          "retrievedAt": "2026-09-01T04:59:20.924Z",
+          "sourceUrl": "https://docs.aws.amazon.com/personalize/latest/dg/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-personalize-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "personalize",
+      "targetLabel": "Identity-based policies for Amazon Personalize"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b0ae96045ab09227aa23feb7d14252d506537f13298eca2eee8c3a8b2d12da9f",
+          "locator": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/security_iam_service-with-iam.md :: How Amazon RDS works with IAM",
+          "quote": "+ [Resource-based policies within Amazon RDS](#security_iam_service-with-iam-resource-based-policies)",
+          "retrievedAt": "2026-09-01T04:59:22.478Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-pi-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "pi",
+      "targetLabel": "Resource-based policies within Amazon RDS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "16dc4de90adcc1f04a16482ac56d2e4a07e91f3a41a058e6c3a4b462725df436",
+          "locator": "https://docs.aws.amazon.com/sms-voice/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS End User Messaging SMS",
+          "retrievedAt": "2026-09-01T04:59:25.599Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sms-voice/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-pinpoint-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "pinpoint",
+      "targetLabel": "Identity-based policies for AWS End User Messaging SMS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "013697411a7683262cb06c8e71cc97ea90bcd237aa6e48aa90b42ee246941258",
+          "locator": "https://docs.aws.amazon.com/polly/latest/dg/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon Polly",
+          "retrievedAt": "2026-09-01T04:59:21.134Z",
+          "sourceUrl": "https://docs.aws.amazon.com/polly/latest/dg/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-polly-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "polly",
+      "targetLabel": "Identity-based policies for Amazon Polly"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "bd24a04a6e103afde00d078fa50214ae22a4d2f127bc0c6b6c80260442db92cf",
+          "locator": "https://docs.aws.amazon.com/documentdb/latest/devguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon DocumentDB",
+          "retrievedAt": "2026-09-01T04:59:21.358Z",
+          "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-product-amazon-documentdb-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "product:amazon-documentdb",
+      "targetLabel": "Identity-based policies for Amazon DocumentDB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "6c24d8e01d12fd519e477bdc5c3d773c0836ccb8d0c512b018666854ca2d47a9",
+          "locator": "https://docs.aws.amazon.com/proton/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Proton",
+          "retrievedAt": "2026-09-01T04:59:22.299Z",
+          "sourceUrl": "https://docs.aws.amazon.com/proton/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-proton-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "proton",
+      "targetLabel": "Identity-based policies for AWS Proton"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "09a3717071d7f45f8e7de308e4ffcaf4481e662b68007db483986982d7f37ed2",
+          "locator": "https://docs.aws.amazon.com/neptune-analytics/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Neptune Analytics",
+          "retrievedAt": "2026-09-01T04:59:22.482Z",
+          "sourceUrl": "https://docs.aws.amazon.com/neptune-analytics/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-rds-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "rds",
+      "targetLabel": "Identity-based policies for Neptune Analytics"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "67cb7db9460880eee632f9625c127bc09a3d7a9fd173737a7ce84b2ae9e2357b",
+          "locator": "https://docs.aws.amazon.com/rolesanywhere/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for IAM Roles Anywhere",
+          "retrievedAt": "2026-09-01T04:59:23.302Z",
+          "sourceUrl": "https://docs.aws.amazon.com/rolesanywhere/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-rolesanywhere-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "rolesanywhere",
+      "targetLabel": "Identity-based policies for IAM Roles Anywhere"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "ed208c527b29e38f7e037d15caa65aa9e40772e21b05964d9280c0af2169970a",
+          "locator": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon S3",
+          "retrievedAt": "2026-09-01T04:59:23.894Z",
+          "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-s3-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Identity-based policies for Amazon S3"
     },
     {
       "axis": "service",
@@ -1104,10 +2664,370 @@
       "status": "covered",
       "targetId": "sagemaker-geospatial",
       "targetLabel": "Amazon SageMaker geospatial capabilities"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d84be1a7eec8f3a135f33308be87ce3607aa02e399fe6577f6d1930cfc6325b9",
+          "locator": "https://docs.aws.amazon.com/mediaconnect/latest/ug/iam-policy-examples-asm-secrets.md :: Policy examples for accessing MediaConnect encryption keys in Secrets Manager",
+          "quote": "+ [Allow read access to specific secrets in Secrets Manager](#iam-policy-examples-asm-specific-secrets)",
+          "retrievedAt": "2026-09-01T04:59:18.240Z",
+          "sourceUrl": "https://docs.aws.amazon.com/mediaconnect/latest/ug/iam-policy-examples-asm-secrets.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-secretsmanager-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "secretsmanager",
+      "targetLabel": "Allow read access to specific secrets in Secrets Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "14583320e4561d177962d9e2f22b9516b06bcdbccef8a014e2af996c935bc103",
+          "locator": "https://docs.aws.amazon.com/securityagent/latest/userguide/security_iam_service-with-iam.md :: How AWS Security Agent works with IAM | column \"IAM feature\"",
+          "quote": "|  [Identity-based policies for AWS Security Agent](#security_iam_service-with-iam-id-based-policies)  | Yes |",
+          "retrievedAt": "2026-09-01T04:59:24.064Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityagent/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-securityagent-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securityagent",
+      "targetLabel": "Identity-based policies for AWS Security Agent"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "b0561bca5b95b7eb78e089c3d7282f1ea7b78744925d2757b5641e31f44d5ace",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh_security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Security Hub",
+          "retrievedAt": "2026-09-01T04:59:24.362Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh_security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-securityhub-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securityhub",
+      "targetLabel": "Identity-based policies for Security Hub"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "bbc1a1f04e89eeea9ec8c169f2035099b277df49f48f3819294a7fcd0037d451",
+          "locator": "https://docs.aws.amazon.com/security-lake/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Security Lake",
+          "retrievedAt": "2026-09-01T04:59:24.807Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-securitylake-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securitylake",
+      "targetLabel": "Identity-based policies for Security Lake"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "822aafaa1f0cd451e32652762fde3680e9e39bf9d238b78702a487588c7ed3fa",
+          "locator": "https://docs.aws.amazon.com/cloud-map/latest/dg/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Cloud Map",
+          "retrievedAt": "2026-09-01T04:59:25.231Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloud-map/latest/dg/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-servicediscovery-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "servicediscovery",
+      "targetLabel": "Identity-based policies for AWS Cloud Map"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "9375849be8a1637816b75bfa31a75e65f7836162138b773c77e96aff9620c172",
+          "locator": "https://docs.aws.amazon.com/social-messaging/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS End User Messaging Social",
+          "retrievedAt": "2026-09-01T04:59:26.184Z",
+          "sourceUrl": "https://docs.aws.amazon.com/social-messaging/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-social-messaging-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "social-messaging",
+      "targetLabel": "Identity-based policies for AWS End User Messaging Social"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "5973f7fa36360f5aca00e88bffbdc20ea90db3c73945838e950c431ae0e6adb3",
+          "locator": "https://docs.aws.amazon.com/incident-manager/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Incident Manager",
+          "retrievedAt": "2026-09-01T04:58:57.776Z",
+          "sourceUrl": "https://docs.aws.amazon.com/incident-manager/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-ssm-incidents-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ssm-incidents",
+      "targetLabel": "Identity-based policies for Incident Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f589b16048d4a1373add8716604ffd9f3e5253920eb6dadbae523be407db6526",
+          "locator": "https://docs.aws.amazon.com/step-functions/latest/dg/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Step Functions",
+          "retrievedAt": "2026-09-01T04:59:26.553Z",
+          "sourceUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-states-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "states",
+      "targetLabel": "Identity-based policies for Step Functions"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "ec52ff0a6e11b1cbbe8a649cd2c15b91646ac1ab11a2530a03266b73a708b1d5",
+          "locator": "https://docs.aws.amazon.com/sustainability/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Sustainability",
+          "retrievedAt": "2026-09-01T04:59:26.898Z",
+          "sourceUrl": "https://docs.aws.amazon.com/sustainability/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-sustainability-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sustainability",
+      "targetLabel": "Identity-based policies for AWS Sustainability"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "718ef99c012e925507f60040d7dc62ddb399a69b17630fdcf007702876b59c1e",
+          "locator": "https://docs.aws.amazon.com/tnb/latest/ug/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS TNB",
+          "retrievedAt": "2026-09-01T04:59:27.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/tnb/latest/ug/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-tnb-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "tnb",
+      "targetLabel": "Identity-based policies for AWS TNB"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "1907c85231ac8cb9f0f745fff623d23b7277a605a2e5e15ba4541ad16bdc77b6",
+          "locator": "https://docs.aws.amazon.com/transcribe/latest/dg/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon Transcribe",
+          "retrievedAt": "2026-09-01T04:59:27.628Z",
+          "sourceUrl": "https://docs.aws.amazon.com/transcribe/latest/dg/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-transcribe-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "transcribe",
+      "targetLabel": "Identity-based policies for Amazon Transcribe"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "5d4b2c3c2b5b72e71345748e62473460c8c8167258848613a547227d75e2795e",
+          "locator": "https://docs.aws.amazon.com/transform/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS Transform",
+          "retrievedAt": "2026-09-01T04:59:27.995Z",
+          "sourceUrl": "https://docs.aws.amazon.com/transform/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-transform-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "transform",
+      "targetLabel": "Identity-based policies for AWS Transform"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "cfd607f2077959101c9675b149e2e3d6f20e7e3791060fbf061a7a7776d23398",
+          "locator": "https://docs.aws.amazon.com/translate/latest/dg/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Amazon Translate",
+          "retrievedAt": "2026-09-01T04:59:28.213Z",
+          "sourceUrl": "https://docs.aws.amazon.com/translate/latest/dg/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-translate-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "translate",
+      "targetLabel": "Identity-based policies for Amazon Translate"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "8dcb5690d9aec4d8348b877d54e9c59f50236a336d70bc2d2d15fd36e0cf38eb",
+          "locator": "https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for User Experience Customization",
+          "retrievedAt": "2026-09-01T04:59:22.256Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-uxc-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "uxc",
+      "targetLabel": "Identity-based policies for User Experience Customization"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "dc2e5016a6deca39e4e61ef9fe6460401a4e698c316d8a1d76562979d5d503d9",
+          "locator": "https://docs.aws.amazon.com/verified-access/latest/ug/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Verified Access",
+          "retrievedAt": "2026-09-01T04:59:28.450Z",
+          "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-verified-access-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "verified-access",
+      "targetLabel": "Identity-based policies for Verified Access"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3d653ee4a954f1ead7450c49400b45cba1a5bf78566b81e10a03aea6a57b7b1d",
+          "locator": "https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Verified Permissions",
+          "retrievedAt": "2026-09-01T04:59:28.487Z",
+          "sourceUrl": "https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-verifiedpermissions-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "verifiedpermissions",
+      "targetLabel": "Identity-based policies for Verified Permissions"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "07024482b6e39bc9e1478730e6770d6f5e43ff007cbe6acb3f52759a11798ee0",
+          "locator": "https://docs.aws.amazon.com/vpc-lattice/latest/ug/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for VPC Lattice",
+          "retrievedAt": "2026-09-01T04:59:28.655Z",
+          "sourceUrl": "https://docs.aws.amazon.com/vpc-lattice/latest/ug/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-vpc-lattice-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "vpc-lattice",
+      "targetLabel": "Identity-based policies for VPC Lattice"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f70c28a8f6524526e38c3113b05e029dc4bb864f5c046ef39271deb0dffbbc24",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/classic-security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for AWS WAF Classic",
+          "retrievedAt": "2026-09-01T04:59:28.847Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/classic-security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "iam/access-management",
+      "id": "iam-access-management-service-waf-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "waf",
+      "targetLabel": "Identity-based policies for AWS WAF Classic"
     }
   ],
   "featureId": "iam/access-management",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "iam",
   "unresolvedTargets": [
     {
@@ -1142,6 +3062,31 @@
     },
     {
       "axis": "service",
+      "raw": "Opting in to AWS Compute Optimizer",
+      "sourceUrl": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Using service-linked roles for Automation",
+      "sourceUrl": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Opting in to AWS Compute Optimizer",
+      "sourceUrl": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Using service-linked roles for Automation",
+      "sourceUrl": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Connect Customer identity-based policies",
+      "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_service-with-iam.md"
+    },
+    {
+      "axis": "service",
       "raw": "Workforce identity · (Users managed in IAM Identity Center)",
       "sourceUrl": "https://docs.aws.amazon.com/controltower/latest/userguide/assign-permissions.md"
     },
@@ -1164,6 +3109,26 @@
       "axis": "resourceType",
       "raw": "DHCP option set",
       "sourceUrl": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-inventory.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "AWS Interconnect Identity-based policies",
+      "sourceUrl": "https://docs.aws.amazon.com/interconnect/latest/userguide/security-iam-service-with-iam.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Considerations for Macie interface endpoints",
+      "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/vpc-interface-endpoints-macie.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Considerations for HealthImaging VPC endpoints",
+      "sourceUrl": "https://docs.aws.amazon.com/healthimaging/latest/devguide/vpc-interface-endpoints.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "User Notifications Identity-based policies",
+      "sourceUrl": "https://docs.aws.amazon.com/notifications/latest/userguide/security_iam_service-with-iam.md"
     },
     {
       "axis": "resourceType",
@@ -1192,6 +3157,31 @@
     },
     {
       "axis": "service",
+      "raw": "What is AWS Secrets Manager?",
+      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/security.managing-users.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Rotate AWS Secrets Manager secrets",
+      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/security.managing-users.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon RDS identity-based policies",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/security_iam_service-with-iam.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Attribute-based access control (ABAC) in policies with Amazon RDS tags",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/security_iam_service-with-iam.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Resource Explorer identity-based policies",
+      "sourceUrl": "https://docs.aws.amazon.com/resource-explorer/latest/userguide/security_iam_service-with-iam.md"
+    },
+    {
+      "axis": "service",
       "raw": "Amazon SageMaker Ground Truth Synthetic",
       "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/security_iam_service-with-iam.md"
     },
@@ -1202,6 +3192,16 @@
     },
     {
       "axis": "service",
+      "raw": "Authorization based on SageMaker AI tags",
+      "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/security_iam_service-with-iam.md"
+    },
+    {
+      "axis": "service",
+      "raw": "SageMaker AI IAM roles",
+      "sourceUrl": "https://docs.aws.amazon.com/sagemaker/latest/dg/security_iam_service-with-iam.md"
+    },
+    {
+      "axis": "service",
       "raw": "Workforce identity · (Users managed in IAM Identity Center)",
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/sh-security_iam_troubleshoot.md"
     },
@@ -1249,6 +3249,21 @@
       "axis": "resourceType",
       "raw": "Verified destination phone number",
       "sourceUrl": "https://docs.aws.amazon.com/sms-voice/latest/userguide/security_iam_service-with-iam.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Controlling Access to Services with VPC Endpoints",
+      "sourceUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/vpc-endpoints.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Controlling Access to Services with VPC Endpoints",
+      "sourceUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/vpc-endpoints.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Controlling Access to Services with VPC Endpoints",
+      "sourceUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/vpc-endpoints.md"
     }
   ]
 }

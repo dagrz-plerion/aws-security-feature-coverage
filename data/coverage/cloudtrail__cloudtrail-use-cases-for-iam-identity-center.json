@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "7a99a3942b3971d54a9a2e4b5bcbfbf7f8609ad134b8fc93d8025d65d178b141",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for CloudTrail",
+          "retrievedAt": "2026-09-01T04:58:53.823Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "cloudtrail/cloudtrail-use-cases-for-iam-identity-center",
+      "id": "cloudtrail-cloudtrail-use-cases-for-iam-identity-center-service-cloudtrail-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudtrail",
+      "targetLabel": "Identity-based policies for CloudTrail"
+    }
+  ],
+  "featureId": "cloudtrail/cloudtrail-use-cases-for-iam-identity-center",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "cloudtrail",
+  "unresolvedTargets": []
+}

@@ -1,0 +1,37 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "d1cd2924cb367b14044aaebdf487bf32572d026c33bac2e9b02e63161211d25a",
+          "locator": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/tls-inspection-certificate-requirements.md :: Before you begin, verify that you have the following:",
+          "quote": "+ A certificate authority (CA) with ACTIVE status in AWS Private CA",
+          "retrievedAt": "2026-09-01T05:00:20.767Z",
+          "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/tls-inspection-certificate-requirements.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "network-firewall/tls-inspection",
+      "id": "network-firewall-tls-inspection-service-acm-pca-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "acm-pca",
+      "targetLabel": "A certificate authority (CA) with ACTIVE status in AWS Private CA"
+    }
+  ],
+  "featureId": "network-firewall/tls-inspection",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "network-firewall",
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "OpenSSL installed on your system",
+      "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/tls-inspection-certificate-requirements.md"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3dd75754110cf01d7e7b4c3514806947d6693e3d2517e9daaa4f054101ad08c0",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/policy-scope.md :: heading level 2",
+          "quote": "## Policy scope options in AWS Firewall Manager",
+          "retrievedAt": "2026-09-01T05:00:27.183Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/policy-scope.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "wafv2/aws-firewall-manager-policies",
+      "id": "wafv2-aws-firewall-manager-policies-service-fms-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "fms",
+      "targetLabel": "Policy scope options in AWS Firewall Manager"
+    }
+  ],
+  "featureId": "wafv2/aws-firewall-manager-policies",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "wafv2",
+  "unresolvedTargets": []
+}

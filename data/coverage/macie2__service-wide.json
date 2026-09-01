@@ -1,7 +1,8 @@
 {
   "axes": [
     "findingType",
-    "resourceType"
+    "resourceType",
+    "service"
   ],
   "claims": [
     {
@@ -229,6 +230,26 @@
       "confidence": 0.8,
       "evidence": [
         {
+          "bodySha256": "dc2b83092764370aa2a9bdcc0ff0cf367676927389f1435dc82ec160d6c28636",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/tags-retrieve-update.md :: heading level 2",
+          "quote": "## Reviewing tags for Macie resources",
+          "retrievedAt": "2026-09-01T05:00:47.263Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/tags-retrieve-update.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "macie2/service-wide",
+      "id": "macie2-service-wide-resourcetype-aws-apigateway-resource-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::ApiGateway::Resource",
+      "targetLabel": "Reviewing tags for Macie resources"
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
           "bodySha256": "784a964d0074080ee33bb8a4627cbcc6a86e224ea55ef692bd0999a699e4c740",
           "locator": "https://docs.aws.amazon.com/macie/latest/user/creating-resources-with-cloudformation.md :: You can create CloudFormation templates for the following types of Macie resources:",
           "quote": "+ Allow lists",
@@ -263,10 +284,70 @@
       "status": "covered",
       "targetId": "AWS::Macie::CustomDataIdentifier",
       "targetLabel": "Custom data identifiers"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "ad034927b1d3fa07e724e48016eb0123b6b40a29d79cba56f0b3def448100703",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/macie-cloudtrail.md :: heading level 2",
+          "quote": "## Macie management events in AWS CloudTrail",
+          "retrievedAt": "2026-09-01T04:59:42.090Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/macie-cloudtrail.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "macie2/service-wide",
+      "id": "macie2-service-wide-service-cloudtrail-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "cloudtrail",
+      "targetLabel": "Macie management events in AWS CloudTrail"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "e615892c69653ed6c905b345e1bf84dbf20b3a769efa3c5cf8358e0736289a0f",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Macie",
+          "retrievedAt": "2026-09-01T04:59:17.939Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "macie2/service-wide",
+      "id": "macie2-service-wide-service-macie2-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "macie2",
+      "targetLabel": "Identity-based policies for Macie"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3d5c885c63720375360768ff97ddbb8dc0457697471edd01bafe663c2845a71a",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/securityhub-integration.md :: Evaluating Macie findings with AWS Security Hub CSPM",
+          "quote": "+ [How Macie publishes findings to Security Hub CSPM](#securityhub-integration-sending-findings)",
+          "retrievedAt": "2026-09-01T05:00:02.448Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/securityhub-integration.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "macie2/service-wide",
+      "id": "macie2-service-wide-service-securityhub-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securityhub",
+      "targetLabel": "How Macie publishes findings to Security Hub CSPM"
     }
   ],
   "featureId": "macie2/service-wide",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "macie2",
   "unresolvedTargets": [
     {

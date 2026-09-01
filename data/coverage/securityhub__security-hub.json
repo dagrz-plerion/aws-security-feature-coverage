@@ -67,6 +67,26 @@
     },
     {
       "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "00df91df9d065f6f67aaee83be2cde5c9dee9c1b3b33ecded7de4984aaf06bbd",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-da-policy.md :: heading level 3",
+          "quote": "### Threat analytics from GuardDuty",
+          "retrievedAt": "2026-09-01T05:00:02.662Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-da-policy.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "securityhub/security-hub",
+      "id": "securityhub-security-hub-service-guardduty-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "guardduty",
+      "targetLabel": "Threat analytics from GuardDuty"
+    },
+    {
+      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -84,10 +104,50 @@
       "status": "covered",
       "targetId": "iam",
       "targetLabel": "IAM"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "00df91df9d065f6f67aaee83be2cde5c9dee9c1b3b33ecded7de4984aaf06bbd",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-da-policy.md :: heading level 3",
+          "quote": "### Vulnerability management from Amazon Inspector",
+          "retrievedAt": "2026-09-01T05:00:02.662Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-da-policy.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "securityhub/security-hub",
+      "id": "securityhub-security-hub-service-inspector-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "inspector",
+      "targetLabel": "Vulnerability management from Amazon Inspector"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "00df91df9d065f6f67aaee83be2cde5c9dee9c1b3b33ecded7de4984aaf06bbd",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-da-policy.md :: heading level 3",
+          "quote": "### Posture management from AWS Security Hub CSPM",
+          "retrievedAt": "2026-09-01T05:00:02.662Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-da-policy.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "securityhub/security-hub",
+      "id": "securityhub-security-hub-service-securityhub-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securityhub",
+      "targetLabel": "Posture management from AWS Security Hub CSPM"
     }
   ],
   "featureId": "securityhub/security-hub",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "securityhub",
   "unresolvedTargets": [
     {

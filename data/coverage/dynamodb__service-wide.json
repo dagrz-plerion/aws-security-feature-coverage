@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "77dfbe37d108b64d1ea378f84dbbdb641ac31922b06db367393c877b5e9bca68",
+          "locator": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.SDKs.Interfaces.md :: Programmatic interfaces that work with DynamoDB",
+          "quote": "+ [Low-level interfaces that work with DynamoDB](#Programming.SDKs.Interfaces.LowLevel)",
+          "retrievedAt": "2026-09-01T04:34:56.738Z",
+          "sourceUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.SDKs.Interfaces.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "dynamodb/service-wide",
+      "id": "dynamodb-service-wide-service-dynamodb-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "dynamodb",
+      "targetLabel": "Low-level interfaces that work with DynamoDB"
+    }
+  ],
+  "featureId": "dynamodb/service-wide",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "dynamodb",
+  "unresolvedTargets": []
+}

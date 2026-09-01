@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "9577bc44c0f132cf1be9682a5f221b53fc7e482891e9be2b58593dfb5bf07c3c",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/shd-using-service-linked-roles.md :: heading level 2",
+          "quote": "## Service-Linked Role Permissions for Shield Advanced",
+          "retrievedAt": "2026-09-01T05:00:48.904Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/shd-using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "shield/service-linked-roles",
+      "id": "shield-service-linked-roles-service-shield-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "shield",
+      "targetLabel": "Service-Linked Role Permissions for Shield Advanced"
+    }
+  ],
+  "featureId": "shield/service-linked-roles",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "shield",
+  "unresolvedTargets": []
+}

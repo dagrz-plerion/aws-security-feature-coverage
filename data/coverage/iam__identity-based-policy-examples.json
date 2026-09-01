@@ -225,6 +225,46 @@
       "targetLabel": "SageMaker AI endpoints"
     },
     {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "9b7b4191f88322578340cd76554225d1d7422ecb436b7e673c91f561d9045904",
+          "locator": "https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/security_iam_id-based-policy-examples.md :: Identity-based policy examples for AWS User Experience Customization",
+          "quote": "+ [Read-only access to UXC Account Customizations](#security_iam_id-based-policy-examples-readonly)",
+          "retrievedAt": "2026-09-01T04:59:22.264Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-resourcetype-aws-uxc-accountcustomization-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::UXC::AccountCustomization",
+      "targetLabel": "Read-only access to UXC Account Customizations"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "32b6fd26068d5c7dcac0c7badcc05a0baa195ae0c9e6b71c406d4e60d0e4fc2e",
+          "locator": "https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_id-based-policy-examples.md :: Identity-based policy examples in Amazon Application Recovery Controller (ARC)",
+          "quote": "+ [Identity-based policy examples for zonal autoshift in ARC](security-iam-zonalshift.md)",
+          "retrievedAt": "2026-09-01T04:58:58.654Z",
+          "sourceUrl": "https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-service-arc-zonal-shift-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "arc-zonal-shift",
+      "targetLabel": "Identity-based policy examples for zonal autoshift in ARC"
+    },
+    {
       "axis": "service",
       "confidence": 0.8,
       "evidence": [
@@ -329,6 +369,26 @@
       "confidence": 0.8,
       "evidence": [
         {
+          "bodySha256": "c5961da925dd063cccdefc996ddc986a4620daba597482ebe0dacbb58a13d0a5",
+          "locator": "https://docs.aws.amazon.com/frauddetector/latest/ug/security_iam_id-based-policy-examples.md :: AmazonFraudDetectorFullAccess: Grants full access to Amazon Fraud Detector resources, actions and the supported operations including:",
+          "quote": "+ Allow IAM Pass Role to pass a role to Amazon Fraud Detector",
+          "retrievedAt": "2026-09-01T04:59:01.143Z",
+          "sourceUrl": "https://docs.aws.amazon.com/frauddetector/latest/ug/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-service-frauddetector-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "frauddetector",
+      "targetLabel": "Allow IAM Pass Role to pass a role to Amazon Fraud Detector"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
           "bodySha256": "18477d8bc7ad72224876d6519eeba6b7ef560dca55f33c2c12a30fafc0c132eb",
           "locator": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md :: If you use the CodeDeploy console, you must have a minimum set of permissions that allows you to describe other AWS resources for your AWS account. To use CodeDeploy in the CodeDeploy console, you must have permissions from the following services:",
           "quote": "+ AWS Identity and Access Management",
@@ -369,6 +429,26 @@
       "confidence": 0.8,
       "evidence": [
         {
+          "bodySha256": "c5961da925dd063cccdefc996ddc986a4620daba597482ebe0dacbb58a13d0a5",
+          "locator": "https://docs.aws.amazon.com/frauddetector/latest/ug/security_iam_id-based-policy-examples.md :: AmazonFraudDetectorFullAccess: Grants full access to Amazon Fraud Detector resources, actions and the supported operations including:",
+          "quote": "+ List and describe all model endpoints in Amazon SageMaker AI",
+          "retrievedAt": "2026-09-01T04:59:01.143Z",
+          "sourceUrl": "https://docs.aws.amazon.com/frauddetector/latest/ug/security_iam_id-based-policy-examples.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/identity-based-policy-examples",
+      "id": "iam-identity-based-policy-examples-service-sagemaker-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sagemaker",
+      "targetLabel": "List and describe all model endpoints in Amazon SageMaker AI"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
           "bodySha256": "18477d8bc7ad72224876d6519eeba6b7ef560dca55f33c2c12a30fafc0c132eb",
           "locator": "https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam_id-based-policy-examples.md :: If you use the CodeDeploy console, you must have a minimum set of permissions that allows you to describe other AWS resources for your AWS account. To use CodeDeploy in the CodeDeploy console, you must have permissions from the following services:",
           "quote": "+ Amazon Simple Notification Service",
@@ -386,7 +466,7 @@
     }
   ],
   "featureId": "iam/identity-based-policy-examples",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "iam",
   "unresolvedTargets": [
     {
@@ -428,6 +508,21 @@
       "axis": "resourceType",
       "raw": "Spot Fleets (Amazon EC2)",
       "sourceUrl": "https://docs.aws.amazon.com/autoscaling/application/userguide/security_iam_id-based-policy-examples.md"
+    },
+    {
+      "axis": "service",
+      "raw": "List all IAM roles in the account",
+      "sourceUrl": "https://docs.aws.amazon.com/frauddetector/latest/ug/security_iam_id-based-policy-examples.md"
+    },
+    {
+      "axis": "service",
+      "raw": "List all Amazon S3 buckets",
+      "sourceUrl": "https://docs.aws.amazon.com/frauddetector/latest/ug/security_iam_id-based-policy-examples.md"
+    },
+    {
+      "axis": "resourceType",
+      "raw": "Policy best practices",
+      "sourceUrl": "https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/security_iam_id-based-policy-examples.md"
     }
   ]
 }

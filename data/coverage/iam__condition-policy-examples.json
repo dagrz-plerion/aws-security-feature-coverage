@@ -1,0 +1,37 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "89f382a429f9b017af6c8dee564156980b8361a016f9f55689748defd4e085f0",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.md :: When the principal in a policy statement is an AWS service principal, we strongly recommend that you use the aws:SourceArn or aws:SourceAccount global condition keys in the policy. You can use these global condition context keys to help prevent the confused deputy scenario. The following documented policies show how you can use the aws:SourceArn and aws:SourceAccount global condition context keys in Audit Manager to prevent the confused deputy problem.",
+          "quote": "+ [Example policy for an SNS topic that's used for Audit Manager notifications](https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_id-based-policy-examples.html#sns-topic-permissions)",
+          "retrievedAt": "2026-09-01T04:58:51.787Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iam/condition-policy-examples",
+      "id": "iam-condition-policy-examples-resourcetype-aws-connect-notification-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::Connect::Notification",
+      "targetLabel": "Example policy for an SNS topic that's used for Audit Manager notifications"
+    }
+  ],
+  "featureId": "iam/condition-policy-examples",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "iam",
+  "unresolvedTargets": [
+    {
+      "axis": "resourceType",
+      "raw": "Example policy for a KMS key that's used with an SNS topic",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.md"
+    }
+  ]
+}

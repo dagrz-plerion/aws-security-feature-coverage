@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "5e916ee8683b9124fb07389d5df7defd9788f8ed13a28a608327d71efe4e4286",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/cmk-related-errors.md :: heading level 2",
+          "quote": "## AWS managed application login failures with a customer managed key enabled in IAM Identity Center",
+          "retrievedAt": "2026-09-01T04:59:34.728Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/cmk-related-errors.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "sso/customer-managed-applications",
+      "id": "sso-customer-managed-applications-service-identitystore-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "identitystore",
+      "targetLabel": "AWS managed application login failures with a customer managed key enabled in IAM Identity Center"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "5e916ee8683b9124fb07389d5df7defd9788f8ed13a28a608327d71efe4e4286",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/cmk-related-errors.md :: heading level 2",
+          "quote": "## KMS Permissions Issue: Configuring Customer Managed Key with AWS IAM Identity Center",
+          "retrievedAt": "2026-09-01T04:59:34.728Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/cmk-related-errors.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "sso/customer-managed-applications",
+      "id": "sso-customer-managed-applications-service-sso-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sso",
+      "targetLabel": "KMS Permissions Issue: Configuring Customer Managed Key with AWS IAM Identity Center"
+    }
+  ],
+  "featureId": "sso/customer-managed-applications",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
+  "serviceId": "sso",
+  "unresolvedTargets": []
+}

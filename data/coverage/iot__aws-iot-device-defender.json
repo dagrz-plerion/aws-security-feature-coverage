@@ -1,6 +1,7 @@
 {
   "axes": [
-    "region"
+    "region",
+    "service"
   ],
   "claims": [
     {
@@ -42,10 +43,56 @@
       "status": "covered",
       "targetId": "eu-west-1",
       "targetLabel": "Europe (Ireland)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f477572e523928dd69223f76b2f23cc2dc5adc5edb7021699d46b949c064ec42",
+          "locator": "https://docs.aws.amazon.com/iot-device-defender/latest/devguide/securityhub-integration.md :: Integration with AWS Security Hub CSPM",
+          "quote": "+ [Typical finding from AWS IoT Device Defender](#securityhub-integration-finding-example)",
+          "retrievedAt": "2026-09-01T04:29:32.306Z",
+          "sourceUrl": "https://docs.aws.amazon.com/iot-device-defender/latest/devguide/securityhub-integration.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iot/aws-iot-device-defender",
+      "id": "iot-aws-iot-device-defender-service-iot-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iot",
+      "targetLabel": "Typical finding from AWS IoT Device Defender"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "f477572e523928dd69223f76b2f23cc2dc5adc5edb7021699d46b949c064ec42",
+          "locator": "https://docs.aws.amazon.com/iot-device-defender/latest/devguide/securityhub-integration.md :: Integration with AWS Security Hub CSPM",
+          "quote": "+ [How AWS IoT Device Defender sends findings to Security Hub CSPM](#securityhub-integration-sending-findings)",
+          "retrievedAt": "2026-09-01T04:29:32.306Z",
+          "sourceUrl": "https://docs.aws.amazon.com/iot-device-defender/latest/devguide/securityhub-integration.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "iot/aws-iot-device-defender",
+      "id": "iot-aws-iot-device-defender-service-securityhub-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securityhub",
+      "targetLabel": "How AWS IoT Device Defender sends findings to Security Hub CSPM"
     }
   ],
   "featureId": "iot/aws-iot-device-defender",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "iot",
-  "unresolvedTargets": []
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Enabling and configuring the integration",
+      "sourceUrl": "https://docs.aws.amazon.com/iot-device-defender/latest/devguide/securityhub-integration.md"
+    }
+  ]
 }

@@ -1,6 +1,7 @@
 {
   "axes": [
-    "resourceType"
+    "resourceType",
+    "service"
   ],
   "claims": [
     {
@@ -42,10 +43,41 @@
       "status": "covered",
       "targetId": "signin:console",
       "targetLabel": "[ Audit Manager console ]"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "00e183a693309417b235282f563b88f70f3ef50ac58cdf659d5ee36ae275e3e3",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/share-custom-framework-concepts-and-terminology.md :: ",
+          "quote": "+ [Sending request to share a custom framework in AWS Audit Manager](framework-sharing.md)",
+          "retrievedAt": "2026-09-01T05:00:01.460Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/share-custom-framework-concepts-and-terminology.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "auditmanager/sharing-a-custom-framework",
+      "id": "auditmanager-sharing-a-custom-framework-service-auditmanager-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "auditmanager",
+      "targetLabel": "Sending request to share a custom framework in AWS Audit Manager"
     }
   ],
   "featureId": "auditmanager/sharing-a-custom-framework",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "auditmanager",
-  "unresolvedTargets": []
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Troubleshooting framework issues",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/share-custom-framework-concepts-and-terminology.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Troubleshooting framework issues",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/share-custom-framework-concepts-and-terminology.md"
+    }
+  ]
 }

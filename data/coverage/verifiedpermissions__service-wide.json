@@ -1,6 +1,7 @@
 {
   "axes": [
-    "region"
+    "region",
+    "service"
   ],
   "claims": [
     {
@@ -42,10 +43,30 @@
       "status": "covered",
       "targetId": "us-gov-west-1",
       "targetLabel": "AWS GovCloud (US-West)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "3d653ee4a954f1ead7450c49400b45cba1a5bf78566b81e10a03aea6a57b7b1d",
+          "locator": "https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/security_iam_service-with-iam.md :: heading level 2",
+          "quote": "## Identity-based policies for Verified Permissions",
+          "retrievedAt": "2026-09-01T04:59:28.487Z",
+          "sourceUrl": "https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/security_iam_service-with-iam.md"
+        }
+      ],
+      "extractorId": "md-heading-series",
+      "featureId": "verifiedpermissions/service-wide",
+      "id": "verifiedpermissions-service-wide-service-verifiedpermissions-md-heading-series",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "verifiedpermissions",
+      "targetLabel": "Identity-based policies for Verified Permissions"
     }
   ],
   "featureId": "verifiedpermissions/service-wide",
-  "generatedAt": "2026-09-01T05:06:50.595Z",
+  "generatedAt": "2026-09-01T05:09:47.919Z",
   "serviceId": "verifiedpermissions",
   "unresolvedTargets": []
 }
