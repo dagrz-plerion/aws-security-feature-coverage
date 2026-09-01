@@ -1,8 +1,7 @@
 {
   "axes": [
     "region",
-    "resourceType",
-    "service"
+    "resourceType"
   ],
   "claims": [
     {
@@ -191,7 +190,7 @@
       "evidence": [
         {
           "bodySha256": "4ca3b244a7e22b41889a087745660ce796f611a6e7f7e4cbb314759ff5732c16",
-          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md ::  | column \"Region Name\"",
+          "locator": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md :: Availability of Connect Customer features by Region > Connect Customer availability by Region | column \"Region Name\"",
           "quote": "|  AWS GovCloud (US-West) | us-gov-west-1 |  connect.us-gov-west-1.amazonaws.com  | HTTPS |",
           "retrievedAt": "2026-09-01T04:29:25.802Z",
           "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
@@ -644,77 +643,12 @@
       "status": "covered",
       "targetId": "AWS::Connect::ViewVersion",
       "targetLabel": "AWS::Connect::ViewVersion"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
-          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: heading level 2",
-          "quote": "## CloudFormation",
-          "retrievedAt": "2026-09-01T04:29:26.371Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "connect/service-wide",
-      "id": "connect-service-wide-service-cloudformation-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "cloudformation",
-      "targetLabel": "CloudFormation"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
-          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: heading level 2",
-          "quote": "## CloudTrail",
-          "retrievedAt": "2026-09-01T04:29:26.371Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "connect/service-wide",
-      "id": "connect-service-wide-service-cloudtrail-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "cloudtrail",
-      "targetLabel": "CloudTrail"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "18419efe97a07fc1dcd81b51519a32ea9e78297627bdead6e8c998c718616a7e",
-          "locator": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md :: heading level 2",
-          "quote": "## EventBridge",
-          "retrievedAt": "2026-09-01T04:29:26.371Z",
-          "sourceUrl": "https://docs.aws.amazon.com/connect/latest/devguide/resource-integrations.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "connect/service-wide",
-      "id": "connect-service-wide-service-events-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "events",
-      "targetLabel": "EventBridge"
     }
   ],
   "featureId": "connect/service-wide",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "connect",
   "unresolvedTargets": [
-    {
-      "axis": "region",
-      "raw": "Asia Pacific (Osaka) Region - This Region is for replicas only. For more information, see the Note at the top of Create a replica of your existing Connect Customer instance.",
-      "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/regions.md"
-    },
     {
       "axis": "region",
       "raw": "Asia Pacific (Osaka) Region - This Region is for replicas only. For more information, see the Note at the top of Create a replica of your existing Connect Customer instance.",

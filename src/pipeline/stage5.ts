@@ -1,7 +1,7 @@
 import path from "node:path";
 import { paths } from "../core/paths.js";
 import { pruneDir, readAllJson, readJson, writeJson } from "../core/store.js";
-import { cachedFetch, mapPool } from "../core/fetch.js";
+import { cachedFetch, mapPool, storeSyntheticBody } from "../core/fetch.js";
 import { makeEvidence } from "../core/evidence.js";
 import { idToFilename, slug } from "../core/ids.js";
 import { quarantine, recordGap } from "../core/ops.js";
@@ -11,11 +11,14 @@ import { attributeGuides } from "../features/attribution.js";
 import { guideKeyFromUrl, toMarkdownUrl } from "../sources/docsIndex.js";
 import type { DocPage } from "../sources/docsIndex.js";
 import { TargetResolver } from "../coverage/resolvers.js";
-import { targetAliases } from "../core/seeds.js";
+import { recipeRules, targetAliases } from "../core/seeds.js";
+import { runRecipe } from "../coverage/recipe.js";
+import type { Recipe } from "../coverage/recipe.js";
 import { allPages, loadRegistry, recordResult, saveRegistry, summarise, upsert } from "../coverage/registry.js";
 import type { CoveragePage } from "../coverage/registry.js";
 import { extractFromPage } from "../coverage/extractors.js";
 import { parseMarkdown } from "../core/markdown.js";
+import { hasElidedTables, htmlTablesToMarkdown, spliceRecoveredTables } from "../sources/htmlTables.js";
 import { adjudicationSchema } from "../core/schema.js";
 import type {
   Adjudication, Conflict, CoverageClaim, DataSource, Feature,
@@ -25,7 +28,7 @@ import type { Stage, StageResult } from "../core/runner.js";
 
 /** Page titles that promise a list of what a feature does and does not reach. */
 const COVERAGE_PAGE =
-  /(supported|support for|availabilit|^regions?$|resource types?|data sources?|coverage|compatib|integrat|prerequisit|requirement|scan types?|finding types?|managed rules?|standards?|controls? reference)/i;
+  /(supported|support for|supportabilit|availabilit|^regions?$|regional limits?|resource types?|data sources?|source data|coverage|compatib|integrat|prerequisit|requirement|scan types?|finding types?|managed rules?|standards?|controls? reference|services that|list of|capabilities of|quotas?|verified platforms?|ecosystem|discontinued|unsupported|not available|sample templates|storage classes?|operating systems?|file (types?|formats?)|encryption)/i;
 
 /** Read a whole guide only when it is substantial enough to be the service's own. */
 function guide2Threshold(_pages: number): number {
@@ -130,6 +133,18 @@ export const stage5: Stage = {
       }
     }
 
+    // A recipe is reference metadata: it says how to read one page shape. Seed rules
+    // attach by URL pattern, so a recipe covers every page of that shape.
+    const rules = (await recipeRules()).map((rule) => ({ ...rule, re: new RegExp(rule.urlPattern) }));
+    let recipesAttached = 0;
+    for (const page of allPages(registry)) {
+      const rule = rules.find((r) => r.re.test(page.url));
+      if (!rule) continue;
+      page.recipe = rule.recipe as Recipe;
+      if (rule.note) page.note = rule.note;
+      recipesAttached += 1;
+    }
+
     const pageBySection = new Map<string, DocPage>();
     for (const list of attributions.values()) {
       for (const attribution of list) {
@@ -157,6 +172,8 @@ export const stage5: Stage = {
     const unresolvedByFeature = new Map<string, { axis: string; raw: string; sourceUrl: string }[]>();
     let read = 0;
     let failed = 0;
+    let tablesRecovered = 0;
+    let recipeFailures = 0;
 
     await mapPool(jobs, 10, async (job) => {
       const url = job.page.url;
@@ -168,9 +185,32 @@ export const stage5: Stage = {
           return;
         }
 
+        // Some Markdown pages drop their tables and link to the HTML instead. The
+        // tables are recovered so the data is not silently lost.
+        let body = result.body;
+        let bodySha256 = result.bodySha256;
+        if (hasElidedTables(body)) {
+          const htmlUrl = url.replace(/\.md$/, ".html");
+          try {
+            const page = await cachedFetch(htmlUrl, { maxAgeMs: ctx.maxAgeMs, allowStatus: [404] });
+            if (page.status !== 404) {
+              const recovered = htmlTablesToMarkdown(page.body);
+              if (recovered.length > 0) {
+                body = spliceRecoveredTables(body, recovered);
+                // The quote now comes from the spliced text, so that is what must be
+                // stored and hashed, or the quote check has nothing to verify against.
+                bodySha256 = await storeSyntheticBody(body);
+                tablesRecovered += recovered.length;
+              }
+            }
+          } catch {
+            /* the Markdown still stands on its own */
+          }
+        }
+
         // A single page often documents several features, one per heading. Each
         // heading is read on its own so its list lands on the right feature.
-        const doc = parseMarkdown(result.body);
+        const doc = parseMarkdown(body);
         const blocks: { headings: string[]; body: string }[] = [];
         const headed = doc.sections.filter((section) => section.level === 2 && section.body.trim());
         if (headed.length >= 2) {
@@ -183,6 +223,60 @@ export const stage5: Stage = {
         let attachedAny = false;
         let blockClaims = 0;
         const seenAxes = new Set<string>();
+
+        if (job.page.recipe) {
+          const outcome = runRecipe(job.page.recipe, body, job.doc.title, resolver);
+          if (outcome.failure) {
+            recipeFailures += 1;
+            await recordGap({
+              kind: "parser",
+              subject: `recipe:${job.page.recipe.id}`,
+              detail: `${outcome.failure} on ${url}. The page shape has probably changed.`,
+              suggestedStage: "stage5-coverage",
+            });
+          }
+          const pinned = job.page.recipe.featureId ?? job.page.featureId;
+          const feature =
+            (pinned ? job.features.find((f) => f.id === pinned) : undefined) ??
+            bestFeatureFor([job.doc.title, ...job.doc.section], job.features) ??
+            serviceWideFeature(job.page.serviceId, serviceById, featuresByService);
+          if (feature) {
+            const list = claimsByFeature.get(feature.id) ?? [];
+            const already = new Set(list.map((c) => `${c.axis}|${c.targetId}|${c.scope?.targetId ?? ""}`));
+            for (const raw of outcome.claims) {
+              const key = `${raw.axis}|${raw.targetId}|${raw.scope?.targetId ?? ""}`;
+              if (already.has(key)) continue;
+              already.add(key);
+              blockClaims += 1;
+              seenAxes.add(raw.axis);
+              list.push({
+                id: slug(`${feature.id}-${raw.axis}-${raw.targetId}-${raw.scope?.targetId ?? ""}-${raw.extractorId}`),
+                featureId: feature.id,
+                axis: raw.axis,
+                targetId: raw.targetId,
+                targetLabel: raw.targetLabel,
+                ...(raw.scope ? { scope: raw.scope } : {}),
+                status: raw.status,
+                ...(raw.qualifier ? { qualifier: raw.qualifier } : {}),
+                method: "deterministic",
+                extractorId: raw.extractorId,
+                confidence: 0.95,
+                evidence: [makeEvidence({ ...result, body, bodySha256 }, raw.quote, `${url} :: ${raw.locator}`)],
+              });
+            }
+            claimsByFeature.set(feature.id, list);
+            attachedAny = blockClaims > 0;
+          }
+          recordResult(job.page, {
+            claims: blockClaims,
+            axes: [...seenAxes].sort(),
+            status: outcome.failure ? "failed" : blockClaims > 0 ? "ok" : "empty",
+            ...(outcome.failure ? { detail: outcome.failure } : {}),
+          });
+          if (attachedAny) read += 1;
+          return;
+        }
+
         for (const block of blocks) {
           const outcome = extractFromPage(block.body, resolver, job.page.serviceId);
           if (outcome.claims.length === 0) continue;
@@ -219,7 +313,7 @@ export const stage5: Stage = {
               method: "deterministic",
               extractorId: raw.extractorId,
               confidence: raw.extractorId === "md-table" ? 0.9 : 0.8,
-              evidence: [makeEvidence(result, raw.quote, `${url} :: ${raw.locator}`)],
+              evidence: [makeEvidence({ ...result, body, bodySha256 }, raw.quote, `${url} :: ${raw.locator}`)],
             });
           }
           claimsByFeature.set(feature.id, list);
@@ -342,6 +436,9 @@ export const stage5: Stage = {
         pagesConsidered: jobs.length,
         pagesRead: read,
         pagesFailed: failed,
+        tablesRecoveredFromHtml: tablesRecovered,
+        recipesAttached,
+        recipeFailures,
         featuresWithCoverage: claimsByFeature.size,
         serviceWideRecords: serviceWideUsed.size,
         openAxes: openAxisMembers.size,
@@ -411,7 +508,9 @@ export function bestFeatureFor(headings: string[], features: Feature[]): Feature
 function dedupeClaims(claims: CoverageClaim[], conflicts: Conflict[], detectedAt: string): CoverageClaim[] {
   const byTarget = new Map<string, CoverageClaim[]>();
   for (const claim of claims) {
-    const key = `${claim.axis}|${claim.targetId}`;
+    // A scoped claim is a different statement from an unscoped one. "Not supported
+    // in us-east-1" does not contradict "supported"; it narrows it.
+    const key = `${claim.axis}|${claim.targetId}|${claim.scope?.targetId ?? ""}`;
     const list = byTarget.get(key);
     if (list) list.push(claim);
     else byTarget.set(key, [claim]);

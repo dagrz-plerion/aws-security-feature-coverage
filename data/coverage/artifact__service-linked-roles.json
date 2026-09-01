@@ -1,7 +1,6 @@
 {
   "axes": [
-    "region",
-    "service"
+    "region"
   ],
   "claims": [
     {
@@ -503,30 +502,10 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "4ef041fac0a99b356ca11fe22e3baebcf0a06ddf719fcf945f330d8dc867a925",
-          "locator": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md :: heading level 2",
-          "quote": "## Service-linked role permissions for AWS Artifact",
-          "retrievedAt": "2026-09-01T04:58:51.544Z",
-          "sourceUrl": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "artifact/service-linked-roles",
-      "id": "artifact-service-linked-roles-service-artifact-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "artifact",
-      "targetLabel": "Service-linked role permissions for AWS Artifact"
     }
   ],
   "featureId": "artifact/service-linked-roles",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "artifact",
   "unresolvedTargets": []
 }

@@ -1,6 +1,7 @@
 {
   "axes": [
-    "region"
+    "region",
+    "service"
   ],
   "claims": [
     {
@@ -762,10 +763,236 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "us-west-2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6878516ec08ece526c0c918d228c93130581aeed50bcaca12f6f759b4f6de0bd",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md :: Quotas and service limits for AWS Organizations > Maximum and minimum values > Limits by AWS service | column \"AWS service\"",
+          "quote": "| AWS Audit Manager | 250 | Yes | [AWS Audit Manager Quotas](https://docs.aws.amazon.com/general/latest/gr/audit-manager.html) |",
+          "retrievedAt": "2026-09-01T05:19:22.476Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "organizations/service-wide",
+      "id": "organizations-service-wide-service-auditmanager-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "auditmanager",
+      "targetLabel": "AWS Audit Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6878516ec08ece526c0c918d228c93130581aeed50bcaca12f6f759b4f6de0bd",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md :: Quotas and service limits for AWS Organizations > Maximum and minimum values > Limits by AWS service | column \"AWS service\"",
+          "quote": "| AWS Control Tower | 10000 | No | [AWS Control Tower Quotas](https://docs.aws.amazon.com/controltower/latest/userguide/limits.html) |",
+          "retrievedAt": "2026-09-01T05:19:22.476Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "organizations/service-wide",
+      "id": "organizations-service-wide-service-controltower-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "controltower",
+      "targetLabel": "AWS Control Tower"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6878516ec08ece526c0c918d228c93130581aeed50bcaca12f6f759b4f6de0bd",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md :: Quotas and service limits for AWS Organizations > Maximum and minimum values > Limits by AWS service | column \"AWS service\"",
+          "quote": "| Amazon Detective | 1200 | Yes | [Amazon Detective Quotas](https://docs.aws.amazon.com/detective/latest/userguide/regions-limitations.html) |",
+          "retrievedAt": "2026-09-01T05:19:22.476Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "organizations/service-wide",
+      "id": "organizations-service-wide-service-detective-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "detective",
+      "targetLabel": "Amazon Detective"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6878516ec08ece526c0c918d228c93130581aeed50bcaca12f6f759b4f6de0bd",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md :: Quotas and service limits for AWS Organizations > Maximum and minimum values > Limits by AWS service | column \"AWS service\"",
+          "quote": "| Amazon DevOps Guru | 10000 | Yes | [Amazon DevOps Guru Quotas](https://docs.aws.amazon.com/devops-guru/latest/userguide/quotas.html) |",
+          "retrievedAt": "2026-09-01T05:19:22.476Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "organizations/service-wide",
+      "id": "organizations-service-wide-service-devops-guru-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "devops-guru",
+      "targetLabel": "Amazon DevOps Guru"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6878516ec08ece526c0c918d228c93130581aeed50bcaca12f6f759b4f6de0bd",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md :: Quotas and service limits for AWS Organizations > Maximum and minimum values > Limits by AWS service | column \"AWS service\"",
+          "quote": "| AWS Firewall Manager | 10000 | Yes | [AWS Firewall Manager Quotas](https://docs.aws.amazon.com/waf/latest/developerguide/fms-limits.html) |",
+          "retrievedAt": "2026-09-01T05:19:22.476Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "organizations/service-wide",
+      "id": "organizations-service-wide-service-fms-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "fms",
+      "targetLabel": "AWS Firewall Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6878516ec08ece526c0c918d228c93130581aeed50bcaca12f6f759b4f6de0bd",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md :: Quotas and service limits for AWS Organizations > Maximum and minimum values > Limits by AWS service | column \"AWS service\"",
+          "quote": "| Amazon Inspector | 10000 | No | [Amazon Inspector Quotas](https://docs.aws.amazon.com/inspector/latest/user/quotas.html) |",
+          "retrievedAt": "2026-09-01T05:19:22.476Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "organizations/service-wide",
+      "id": "organizations-service-wide-service-inspector-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "inspector",
+      "targetLabel": "Amazon Inspector"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6878516ec08ece526c0c918d228c93130581aeed50bcaca12f6f759b4f6de0bd",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md :: Quotas and service limits for AWS Organizations > Maximum and minimum values > Limits by AWS service | column \"AWS service\"",
+          "quote": "| Amazon Macie | 10000 | No | [Amazon Macie Quotas](https://docs.aws.amazon.com/macie/latest/user/macie-quotas.html) |",
+          "retrievedAt": "2026-09-01T05:19:22.476Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "organizations/service-wide",
+      "id": "organizations-service-wide-service-macie2-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "macie2",
+      "targetLabel": "Amazon Macie"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6878516ec08ece526c0c918d228c93130581aeed50bcaca12f6f759b4f6de0bd",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md :: Quotas and service limits for AWS Organizations > Maximum and minimum values > Limits by AWS service | column \"AWS service\"",
+          "quote": "| AWS Transform MGN | 5000 | No | [AWS Quotas](https://docs.aws.amazon.com/mgn/latest/ug/MGN-service-limits.html) |",
+          "retrievedAt": "2026-09-01T05:19:22.476Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "organizations/service-wide",
+      "id": "organizations-service-wide-service-mgn-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "mgn",
+      "targetLabel": "AWS Transform MGN"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6878516ec08ece526c0c918d228c93130581aeed50bcaca12f6f759b4f6de0bd",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md :: Quotas and service limits for AWS Organizations > Maximum and minimum values > Limits by AWS service | column \"AWS service\"",
+          "quote": "| AWS Security Hub | 10000 | No | [AWS Security Hub Quotas](https://docs.aws.amazon.com/general/latest/gr/sechub.html) |",
+          "retrievedAt": "2026-09-01T05:19:22.476Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "organizations/service-wide",
+      "id": "organizations-service-wide-service-securityhub-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "securityhub",
+      "targetLabel": "AWS Security Hub"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6878516ec08ece526c0c918d228c93130581aeed50bcaca12f6f759b4f6de0bd",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md :: Quotas and service limits for AWS Organizations > Maximum and minimum values > Limits by AWS service | column \"AWS service\"",
+          "quote": "| AWS Service Catalog | 15000 | No |  |",
+          "retrievedAt": "2026-09-01T05:19:22.476Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "organizations/service-wide",
+      "id": "organizations-service-wide-service-servicecatalog-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "servicecatalog",
+      "targetLabel": "AWS Service Catalog"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "bodySha256": "6878516ec08ece526c0c918d228c93130581aeed50bcaca12f6f759b4f6de0bd",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md :: Quotas and service limits for AWS Organizations > Maximum and minimum values > Limits by AWS service | column \"AWS service\"",
+          "quote": "| AWS IAM Identity Center | 7000 | Yes | [AWS IAM Identity Center Quotas](https://docs.aws.amazon.com/singlesignon/latest/userguide/limits.html) |",
+          "retrievedAt": "2026-09-01T05:19:22.476Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md"
+        }
+      ],
+      "extractorId": "md-table",
+      "featureId": "organizations/service-wide",
+      "id": "organizations-service-wide-service-sso-md-table",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sso",
+      "targetLabel": "AWS IAM Identity Center"
     }
   ],
   "featureId": "organizations/service-wide",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "organizations",
-  "unresolvedTargets": []
+  "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "AWS Directory Service (Directory sharing is available for AWS Managed Microsoft AD)",
+      "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.md"
+    }
+  ]
 }

@@ -129,18 +129,22 @@ maybe("open axes", () => {
     expect(bad.slice(0, 10)).toEqual([]);
   });
 
-  it("never counts more covered targets than the axis has members", async () => {
+  it("never counts more distinct targets than the axis has members", async () => {
     const open = await readJson<{ axes: { axis: string; members: string[] }[] }>(
       path.join(paths.universes, "open-axes.json"),
     );
     const sizes = new Map((open?.axes ?? []).map((a) => [a.axis, a.members.length]));
     const over: string[] = [];
     for (const record of coverage) {
-      const byAxis = new Map<string, number>();
-      for (const claim of record.claims) byAxis.set(claim.axis, (byAxis.get(claim.axis) ?? 0) + 1);
-      for (const [axis, count] of byAxis) {
+      const byAxis = new Map<string, Set<string>>();
+      for (const claim of record.claims) {
+        const set = byAxis.get(claim.axis) ?? new Set<string>();
+        set.add(claim.targetId);
+        byAxis.set(claim.axis, set);
+      }
+      for (const [axis, targets] of byAxis) {
         const size = sizes.get(axis);
-        if (size !== undefined && count > size) over.push(`${record.featureId} ${axis}: ${count} > ${size}`);
+        if (size !== undefined && targets.size > size) over.push(`${record.featureId} ${axis}: ${targets.size} > ${size}`);
       }
     }
     expect(over).toEqual([]);

@@ -2,6 +2,7 @@ import path from "node:path";
 import { paths } from "../core/paths.js";
 import { listJson, readJson, writeJson } from "../core/store.js";
 import { toMarkdownUrl } from "../sources/docsIndex.js";
+import type { Recipe } from "./recipe.js";
 
 /**
  * Every page we have ever decided documents coverage, kept as data.
@@ -21,6 +22,8 @@ export type CoveragePage = {
   featureId?: string;
   source: PageSource;
   note?: string;
+  /** How to read this page, when the generic reader cannot. Reference metadata. */
+  recipe?: Recipe;
   firstSeen: string;
   lastCheckedAt?: string;
   lastResult?: { claims: number; axes: string[]; status: "ok" | "empty" | "failed"; detail?: string };
@@ -48,7 +51,14 @@ export async function loadRegistry(): Promise<Registry> {
 /** Add a page, or refresh what we know about one already registered. */
 export function upsert(
   registry: Registry,
-  entry: { url: string; serviceId: string; source: PageSource; featureId?: string; note?: string },
+  entry: {
+    url: string;
+    serviceId: string;
+    source: PageSource;
+    featureId?: string;
+    note?: string;
+    recipe?: Recipe;
+  },
 ): { page: CoveragePage; added: boolean } {
   const url = toMarkdownUrl(entry.url);
   const forService = registry.get(entry.serviceId) ?? new Map<string, CoveragePage>();
@@ -63,6 +73,7 @@ export function upsert(
       }
     }
     if (entry.featureId) existing.featureId = entry.featureId;
+    if (entry.recipe) existing.recipe = entry.recipe;
     return { page: existing, added: false };
   }
   const page: CoveragePage = {
@@ -71,6 +82,7 @@ export function upsert(
     ...(entry.featureId ? { featureId: entry.featureId } : {}),
     source: entry.source,
     ...(entry.note ? { note: entry.note } : {}),
+    ...(entry.recipe ? { recipe: entry.recipe } : {}),
     firstSeen: new Date().toISOString(),
     enabled: true,
   };
@@ -107,6 +119,7 @@ export function summarise(registry: Registry): Record<string, number> {
   for (const page of pages) bySource[`from_${page.source}`] = (bySource[`from_${page.source}`] ?? 0) + 1;
   return {
     registered: pages.length,
+    withRecipe: pages.filter((p) => p.recipe).length,
     enabled: pages.filter((p) => p.enabled).length,
     yielding: pages.filter((p) => p.lastResult?.status === "ok").length,
     empty: pages.filter((p) => p.lastResult?.status === "empty").length,

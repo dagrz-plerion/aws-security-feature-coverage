@@ -1,135 +1,71 @@
 {
   "fetch": {
-    "cacheHit": 12956,
-    "failed": 5,
+    "cacheHit": 11907,
+    "failed": 0,
     "network": 0,
     "revalidated": 0
   },
-  "finishedAt": "2026-09-01T05:16:50.513Z",
+  "finishedAt": "2026-09-01T06:09:14.185Z",
   "stages": [
     {
       "counts": {
-        "actions": 21810,
-        "dataSources": 23,
-        "docGuides": 1236,
-        "iamPrefixedServices": 526,
-        "partitions": 8,
-        "products": 358,
-        "regions": 46,
-        "resourceTypes": 3134,
-        "services": 692
-      },
-      "finishedAt": "2026-09-01T05:16:12.782Z",
-      "id": "stage1-universes",
-      "notes": [
-        "1312 service reference resources joined to an existing resource type"
-      ],
-      "startedAt": "2026-09-01T05:15:32.948Z",
-      "status": "partial"
-    },
-    {
-      "counts": {
-        "failed": 29,
-        "guides": 1236,
-        "indexed": 1207,
-        "pages": 103576
-      },
-      "finishedAt": "2026-09-01T05:16:13.335Z",
-      "id": "stage2-doc-pages",
-      "startedAt": "2026-09-01T05:16:12.783Z",
-      "status": "partial"
-    },
-    {
-      "counts": {
-        "adjudicated": 692,
-        "candidates": 307,
-        "notSecurity": 385,
-        "overridesApplied": 33,
-        "pendingJudgement": 43,
-        "prunedStaleRecords": 0,
-        "sraMatched": 31,
-        "synthetic": 166,
-        "tier1": 45,
-        "tier2": 13
-      },
-      "finishedAt": "2026-09-01T05:16:13.786Z",
-      "id": "stage3-discovery",
-      "notes": [
-        "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
-      ],
-      "startedAt": "2026-09-01T05:16:13.335Z",
-      "status": "partial"
-    },
-    {
-      "counts": {
-        "aliasesApplied": 13,
-        "aliasesUnmatched": 0,
-        "features": 3275,
-        "noFeatureFound": 88,
-        "promotedToTier2": 169,
-        "prunedStaleRecords": 93,
-        "scanned": 307,
-        "servicesWithFeatures": 219
-      },
-      "finishedAt": "2026-09-01T05:16:17.872Z",
-      "id": "stage4-features",
-      "startedAt": "2026-09-01T05:16:13.787Z",
-      "status": "ok"
-    },
-    {
-      "counts": {
-        "claims": 13047,
+        "claims": 14924,
         "conflicts": 0,
-        "covered": 12950,
-        "empty": 10326,
-        "enabled": 10984,
-        "featuresWithCoverage": 321,
-        "from_tier1-sweep": 6522,
-        "from_title-match": 4462,
+        "covered": 8502,
+        "empty": 11610,
+        "enabled": 11774,
+        "featuresWithCoverage": 121,
+        "from_agent": 1,
+        "from_tier1-sweep": 6521,
+        "from_title-match": 5252,
         "newlyDiscovered": 0,
-        "notCovered": 95,
+        "notCovered": 6420,
         "openAxes": 6,
-        "openAxisMembers": 1536,
-        "pagesConsidered": 10984,
+        "openAxisMembers": 1591,
+        "pagesConsidered": 11774,
         "pagesFailed": 1,
-        "pagesRead": 833,
+        "pagesRead": 188,
         "prunedStaleRecords": 0,
-        "registered": 10984,
-        "serviceWideRecords": 93,
+        "recipeFailures": 0,
+        "recipesAttached": 14,
+        "registered": 11774,
+        "serviceWideRecords": 51,
+        "tablesRecoveredFromHtml": 401,
         "unattachedPages": 0,
-        "unresolvedTargets": 1261,
-        "yielding": 657
+        "unresolvedTargets": 438,
+        "withRecipe": 14,
+        "yielding": 163
       },
-      "finishedAt": "2026-09-01T05:16:49.436Z",
+      "finishedAt": "2026-09-01T06:09:13.040Z",
       "id": "stage5-coverage",
-      "startedAt": "2026-09-01T05:16:17.872Z",
+      "startedAt": "2026-09-01T06:08:57.993Z",
       "status": "partial"
     },
     {
       "counts": {
-        "claims": 13047,
-        "features": 3367,
+        "claims": 14924,
+        "features": 3378,
         "quotesChecked": 250,
         "recallFound": 73,
         "recallTotal": 73,
         "services": 692,
         "violations": 0
       },
-      "finishedAt": "2026-09-01T05:16:50.046Z",
+      "finishedAt": "2026-09-01T06:09:13.690Z",
       "id": "stage6-validate",
-      "startedAt": "2026-09-01T05:16:49.436Z",
+      "startedAt": "2026-09-01T06:09:13.040Z",
       "status": "ok"
     },
     {
       "counts": {
-        "features": 3367,
+        "features": 3378,
         "services": 227
       },
-      "finishedAt": "2026-09-01T05:16:50.513Z",
+      "finishedAt": "2026-09-01T06:09:14.185Z",
       "id": "report",
-      "startedAt": "2026-09-01T05:16:50.046Z",
+      "startedAt": "2026-09-01T06:09:13.691Z",
       "status": "ok"
     }
   ],
-  "startedAt": "2026-09-01T05:15:32.946Z"
+  "startedAt": "2026-09-01T06:08:57.991Z"
 }

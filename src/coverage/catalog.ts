@@ -93,11 +93,19 @@ const NOISE = /^(see also|next|previous|note|important|warning|example|overview|
  * "Depending on country or region: FRANCE_BANK_ACCOUNT_NUMBER, GERMANY_..." .
  */
 export function splitCatalogCell(value: string): string[] {
+  const out: string[] = [];
+  // A catalogued item is often introduced by its id: "[ElastiCache.4] ElastiCache
+  // replication groups should be encrypted at rest". The id is the target.
+  const leadingBracket = /^\[+([^[\]]{2,40})\]/.exec(value.trim());
+  if (leadingBracket?.[1]) out.push(leadingBracket[1].trim());
+  const leadingToken = /^([A-Za-z][A-Za-z0-9]{1,20}\.\d{1,3})\b/.exec(value.trim());
+  if (leadingToken?.[1]) out.push(leadingToken[1]);
+
   const parts = value
     .split(/[,;·]|\s+or\s+/)
     .map((p) => p.replace(/^[^A-Za-z0-9]+|[^A-Za-z0-9)\]]+$/g, "").trim())
     .filter(Boolean);
-  return parts.length > 1 ? [value.trim(), ...parts] : [value.trim()];
+  return [...new Set([value.trim(), ...out, ...(parts.length > 1 ? parts : [])])];
 }
 
 export type CatalogMatch = { shape: CatalogShape; values: string[]; rate: number };

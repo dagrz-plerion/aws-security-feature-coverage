@@ -8,6 +8,7 @@ import { catalogTargetId, classifyCatalog, splitCatalogCell } from "./catalog.js
 
 export type RawClaim = {
   axis: Universe | string;
+  scope?: { axis: string; targetId: string; label?: string };
   targetId: string;
   targetLabel: string;
   status: CoverageStatus;
@@ -25,6 +26,31 @@ export type ExtractionOutcome = {
 };
 
 const AXES: Universe[] = ["region", "resourceType", "service", "dataSource"];
+
+/**
+ * A list of names is not a statement of coverage. A page has to actually say that
+ * the feature reaches these things. Without this, every "See also" list and every
+ * table of contents becomes a coverage claim.
+ */
+const ASSERTS_COVERAGE =
+  /\b(support|supported|supports|available|availability|coverage|covers?|covered|works? with|integrat|compatib|applies to|apply to|can (scan|analy[sz]e|monitor|protect|detect|evaluate|record|back up)|scans?|analy[sz]es|monitors?|protects?|detects?|evaluates?|records?|retrieves?|includes?|enabled for|eligible|not supported|unsupported|excluded|limits?|quotas?|prerequisite|requirement)\b/i;
+
+/** Headings whose lists are navigation, never data. */
+const NAVIGATION_BLOCK = /^(topics?|contents?|see also|related( information| resources| topics)?|additional resources|more information|next steps?|in this (section|guide)|learn more)$/i;
+
+export function assertsCoverage(context: string): boolean {
+  return ASSERTS_COVERAGE.test(context);
+}
+
+export function isNavigation(context: string): boolean {
+  return context
+    .split(/\s*>\s*|\|/)
+    .map((part) => part.trim())
+    .some((part) => NAVIGATION_BLOCK.test(part));
+}
+
+/** Below this many distinct resolved targets, a list is not a coverage list. */
+const MIN_DISTINCT_TARGETS = 3;
 
 /**
  * "AWS Lambda functions and layers" names two things. The words before the
@@ -65,6 +91,16 @@ const YES = /^(yes|supported|available|✓|✔|x|all|full|general availability|g
 const NO = /^(no|not supported|unsupported|unavailable|n\/a|-|—|none)$/i;
 const PARTIAL = /^(partial|limited|preview|some|conditional)$/i;
 
+/**
+ * AWS states what a feature does not reach as often as what it does, and those
+ * statements are the most useful ones. They are phrased a dozen ways.
+ */
+export function statesAbsence(text: string): boolean {
+  return /\b(not supported|aren'?t supported|isn'?t supported|are not available|aren'?t available|is not available|isn'?t available|not currently available|does ?n'?t support|do ?n'?t support|can'?t (be used|scan|generate)|unsupported|excluded from|no longer supported|discontinued)\b/i.test(
+    text,
+  );
+}
+
 function statusFrom(value: string | undefined): CoverageStatus | undefined {
   if (value === undefined) return undefined;
   const text = value.trim();
@@ -83,6 +119,8 @@ function statusFrom(value: string | undefined): CoverageStatus | undefined {
 export function extractFromTable(table: MdTable, resolver: TargetResolver, serviceId: string): ExtractionOutcome {
   const unresolved: { axis: string; raw: string }[] = [];
   if (table.rows.length < MIN_VALUES) return { claims: [], unresolved };
+  const context = `${table.section.join(" > ")} | ${table.headers.join(" | ")}`;
+  if (isNavigation(context) || !assertsCoverage(context)) return { claims: [], unresolved };
 
   let best: { axis: Universe; column: number; rate: number } | undefined;
   for (let column = 0; column < table.headers.length; column += 1) {
@@ -104,6 +142,7 @@ export function extractFromTable(table: MdTable, resolver: TargetResolver, servi
   ]);
   const qualifierColumn = findColumn(table.headers, [/note/i, /condition/i, /requirement/i, /comment/i]);
 
+  const tableNegated = statesAbsence(table.section.join(" "));
   const claims: RawClaim[] = [];
   const seen = new Set<string>();
   for (let index = 0; index < table.rows.length; index += 1) {
@@ -116,7 +155,8 @@ export function extractFromTable(table: MdTable, resolver: TargetResolver, servi
       continue;
     }
     const status =
-      (statusColumn >= 0 && statusColumn !== best.column ? statusFrom(row[statusColumn]) : undefined) ?? "covered";
+      (statusColumn >= 0 && statusColumn !== best.column ? statusFrom(row[statusColumn]) : undefined) ??
+      (tableNegated ? "not-covered" : "covered");
     const qualifier = qualifierColumn >= 0 ? (row[qualifierColumn] ?? "").trim() : "";
     for (const hit of hits) {
       if (seen.has(hit.targetId)) continue;
@@ -133,7 +173,13 @@ export function extractFromTable(table: MdTable, resolver: TargetResolver, servi
       });
     }
   }
-  return { claims, unresolved };
+  return { claims: enoughTargets(claims), unresolved };
+}
+
+/** One or two names is a mention, not a coverage list. */
+function enoughTargets(claims: RawClaim[]): RawClaim[] {
+  const distinct = new Set(claims.map((c) => `${c.axis}|${c.targetId}`));
+  return distinct.size >= MIN_DISTINCT_TARGETS ? claims : [];
 }
 
 /** A bullet list of supported things. Same resolution-rate test as a table column. */
@@ -141,6 +187,8 @@ export function extractFromList(list: MdList, resolver: TargetResolver, serviceI
   const unresolved: { axis: string; raw: string }[] = [];
   const items = list.items.filter((item) => item.depth === 0).map((item) => item.text);
   if (items.length < MIN_VALUES) return { claims: [], unresolved };
+  const context = `${list.section.join(" > ")} | ${list.intro ?? ""}`;
+  if (isNavigation(context) || !assertsCoverage(context)) return { claims: [], unresolved };
 
   let best: { axis: Universe; rate: number } | undefined;
   for (const axis of AXES) {
@@ -154,11 +202,13 @@ export function extractFromList(list: MdList, resolver: TargetResolver, serviceI
       list.section.join(" > ") || (list.intro ?? ""),
       serviceId,
       `${list.section.join(" ")} ${list.intro ?? ""}`,
+      statesAbsence(`${list.intro ?? ""} ${list.section.join(" ")}`),
+      list.intro,
     );
     return { claims: catalog, unresolved };
   }
 
-  const negated = /\bnot\b.*\b(support|available|include)/i.test(list.intro ?? "");
+  const negated = statesAbsence(`${list.intro ?? ""} ${list.section.join(" ")}`);
   const claims: RawClaim[] = [];
   const seen = new Set<string>();
   for (const item of list.items) {
@@ -182,7 +232,7 @@ export function extractFromList(list: MdList, resolver: TargetResolver, serviceI
       });
     }
   }
-  return { claims, unresolved };
+  return { claims: enoughTargets(claims), unresolved };
 }
 
 /** Build claims from a set of values that form a known catalog. */
@@ -192,6 +242,9 @@ export function catalogFromValues(
   locator: string,
   serviceId: string,
   context: string,
+  /** When the surrounding text says these are NOT covered. */
+  negated = false,
+  qualifier?: string,
 ): RawClaim[] {
   const expanded = values.flatMap((entry) =>
     splitCatalogCell(entry.value).map((value) => ({ value, quote: entry.quote })),
@@ -211,7 +264,8 @@ export function catalogFromValues(
       axis: match.shape.axis,
       targetId,
       targetLabel: value,
-      status: "covered",
+      status: negated ? "not-covered" : "covered",
+      ...(qualifier ? { qualifier: qualifier.slice(0, 200) } : {}),
       extractorId,
       quote: entry.quote.trim(),
       locator,
@@ -247,6 +301,8 @@ function catalogFromTable(table: MdTable, serviceId: string): RawClaim[] {
       `${table.section.join(" > ")} | column "${table.headers[column] ?? column}"`,
       serviceId,
       `${table.section.join(" ")} ${table.headers[column] ?? ""}`,
+      statesAbsence(table.section.join(" ")),
+      table.section.at(-1),
     );
     if (claims.length > 0) return claims;
   }
@@ -267,6 +323,7 @@ export function extractFromHeadings(body: string, resolver: TargetResolver, serv
   for (const [level, sections] of byLevel) {
     const titles = sections.map((s) => s.title);
     if (titles.length < MIN_VALUES) continue;
+    if (!assertsCoverage(`${doc.title ?? ""} ${titles.slice(0, 6).join(" ")}`)) continue;
     let best: { axis: Universe; rate: number } | undefined;
     for (const axis of AXES) {
       const { rate } = resolver.rate(titles, axis);
@@ -279,6 +336,7 @@ export function extractFromHeadings(body: string, resolver: TargetResolver, serv
         `heading level ${level}`,
         serviceId,
         `${doc.title ?? ""} ${titles.slice(0, 3).join(" ")}`,
+        statesAbsence(doc.title ?? ""),
       );
       claims.push(...catalog);
       continue;
@@ -303,7 +361,7 @@ export function extractFromHeadings(body: string, resolver: TargetResolver, serv
       });
     }
   }
-  return { claims, unresolved };
+  return { claims: enoughTargets(claims), unresolved };
 }
 
 export function extractFromPage(body: string, resolver: TargetResolver, serviceId: string): ExtractionOutcome {

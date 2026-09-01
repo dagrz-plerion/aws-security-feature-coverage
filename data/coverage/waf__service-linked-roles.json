@@ -1,7 +1,6 @@
 {
   "axes": [
-    "region",
-    "service"
+    "region"
   ],
   "claims": [
     {
@@ -323,30 +322,10 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "d0bcacc7b1fedff5c00e05a3eeb6c2943bbcd9bf929d9765716b950b1f384eae",
-          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/classic-using-service-linked-roles.md :: heading level 2",
-          "quote": "## Service-linked role permissions for AWS WAF Classic",
-          "retrievedAt": "2026-09-01T04:59:28.882Z",
-          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/classic-using-service-linked-roles.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "waf/service-linked-roles",
-      "id": "waf-service-linked-roles-service-waf-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "waf",
-      "targetLabel": "Service-linked role permissions for AWS WAF Classic"
     }
   ],
   "featureId": "waf/service-linked-roles",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "waf",
   "unresolvedTargets": []
 }

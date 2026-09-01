@@ -49,3 +49,11 @@ export async function featureAliases(): Promise<FeatureAlias[]> {
 export function clearSeedCache(): void {
   cache.clear();
 }
+
+export type RecipeRule = { urlPattern: string; serviceId: string; recipe: unknown; note?: string };
+
+/** Recipes that apply to any page whose URL matches a pattern. */
+export async function recipeRules(): Promise<RecipeRule[]> {
+  const file = await load<SeedFile<{ rules: RecipeRule[] }>>("recipes.json", { rules: [] });
+  return file.rules;
+}

@@ -1,29 +1,8 @@
 {
   "axes": [
-    "resourceType",
     "service"
   ],
   "claims": [
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f590e13801ae1bd3ddb2ea5f7f0d0d3a2f1fe556b241d8a843a557320ae4f6b8",
-          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-aws.md :: AWS global condition keys",
-          "quote": "+ [Using the IP address condition in policies with AWS KMS permissions](#conditions-aws-ip-address)",
-          "retrievedAt": "2026-09-01T05:00:22.437Z",
-          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-aws.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "kms/kms-key-access-and-permissions",
-      "id": "kms-kms-key-access-and-permissions-resourcetype-aws-acmpca-permission-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::ACMPCA::Permission",
-      "targetLabel": "Using the IP address condition in policies with AWS KMS permissions"
-    },
     {
       "axis": "service",
       "confidence": 0.9,
@@ -1566,14 +1545,9 @@
     }
   ],
   "featureId": "kms/kms-key-access-and-permissions",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "kms",
   "unresolvedTargets": [
-    {
-      "axis": "resourceType",
-      "raw": "Using IPv6 addresses in IAM and AWS KMS key policies",
-      "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-aws.md"
-    },
     {
       "axis": "service",
       "raw": "Amazon Bedrock Model Copy",

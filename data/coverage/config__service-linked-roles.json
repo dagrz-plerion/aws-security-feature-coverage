@@ -1,8 +1,6 @@
 {
   "axes": [
-    "region",
-    "resourceType",
-    "service"
+    "region"
   ],
   "claims": [
     {
@@ -644,56 +642,10 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "us-west-2"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "6e201233952b50c51fab44411fb43b58e9a51dcdf73ecc449cbb9995340457f6",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/using-service-linked-roles-config.md :: The role permissions policy named AWSConfigServiceRolePolicy allows AWS Config to complete the following actions on the specified resources:",
-          "quote": "+ Read-only and write-only permissions for AWS Config resources",
-          "retrievedAt": "2026-09-01T04:59:57.976Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/using-service-linked-roles-config.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "config/service-linked-roles",
-      "id": "config-service-linked-roles-resourcetype-aws-apigateway-resource-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::ApiGateway::Resource",
-      "targetLabel": "Read-only and write-only permissions for AWS Config resources"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "6e201233952b50c51fab44411fb43b58e9a51dcdf73ecc449cbb9995340457f6",
-          "locator": "https://docs.aws.amazon.com/config/latest/developerguide/using-service-linked-roles-config.md :: heading level 2",
-          "quote": "## Service-Linked Role Permissions for AWS Config",
-          "retrievedAt": "2026-09-01T04:59:57.976Z",
-          "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/using-service-linked-roles-config.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "config/service-linked-roles",
-      "id": "config-service-linked-roles-service-config-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "config",
-      "targetLabel": "Service-Linked Role Permissions for AWS Config"
     }
   ],
   "featureId": "config/service-linked-roles",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "config",
-  "unresolvedTargets": [
-    {
-      "axis": "resourceType",
-      "raw": "Read-only permissions for resources in other services that AWS Config supports",
-      "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/using-service-linked-roles-config.md"
-    }
-  ]
+  "unresolvedTargets": []
 }

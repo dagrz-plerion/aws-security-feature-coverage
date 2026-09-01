@@ -1,10 +1,10 @@
 {
-  "count": 13,
+  "count": 15,
   "pages": [
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.478Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.231Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -17,7 +17,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.478Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.231Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -30,7 +30,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.478Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.231Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -43,7 +43,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.478Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.231Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -56,7 +56,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.483Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.232Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -69,7 +69,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.482Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.232Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -82,7 +82,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.481Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.232Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -95,7 +95,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.483Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.232Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -108,7 +108,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.483Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.232Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -120,8 +120,23 @@
     },
     {
       "enabled": true,
+      "firstSeen": "2026-09-01T05:18:51.271Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.236Z",
+      "lastResult": {
+        "axes": [
+          "region"
+        ],
+        "claims": 21,
+        "status": "ok"
+      },
+      "serviceId": "pcs",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/pcs/latest/userguide/service-endpoints-quotas.md"
+    },
+    {
+      "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.483Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.237Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -134,7 +149,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.484Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.237Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -147,7 +162,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.484Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.237Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -160,7 +175,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.144Z",
-      "lastCheckedAt": "2026-09-01T05:16:42.485Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.237Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -169,6 +184,19 @@
       "serviceId": "pcs",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/pcs/latest/userguide/working-with_networking_vpc-requirements.md"
+    },
+    {
+      "enabled": true,
+      "firstSeen": "2026-09-01T05:18:51.271Z",
+      "lastCheckedAt": "2026-09-01T06:09:10.237Z",
+      "lastResult": {
+        "axes": [],
+        "claims": 0,
+        "status": "empty"
+      },
+      "serviceId": "pcs",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrating_how-services-use-secrets_pcs.md"
     }
   ],
   "serviceId": "pcs"

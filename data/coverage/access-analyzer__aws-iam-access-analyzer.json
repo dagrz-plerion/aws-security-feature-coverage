@@ -108,66 +108,6 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "5e0dae91681cc8c6255ac197013cb931af77c94627b3b12e2f54aa9c047777e1",
-          "locator": "https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/iot-start.md :: heading level 2",
-          "quote": "## AWS IoT certificates",
-          "retrievedAt": "2026-09-01T05:00:45.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/iot-start.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "access-analyzer/aws-iam-access-analyzer",
-      "id": "access-analyzer-aws-iam-access-analyzer-resourcetype-aws-iot-certificate-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::IoT::Certificate",
-      "targetLabel": "AWS IoT certificates"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "5e0dae91681cc8c6255ac197013cb931af77c94627b3b12e2f54aa9c047777e1",
-          "locator": "https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/iot-start.md :: heading level 2",
-          "quote": "## AWS IoT policies",
-          "retrievedAt": "2026-09-01T05:00:45.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/iot-start.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "access-analyzer/aws-iam-access-analyzer",
-      "id": "access-analyzer-aws-iam-access-analyzer-resourcetype-aws-iot-policy-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::IoT::Policy",
-      "targetLabel": "AWS IoT policies"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "5e0dae91681cc8c6255ac197013cb931af77c94627b3b12e2f54aa9c047777e1",
-          "locator": "https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/iot-start.md :: heading level 2",
-          "quote": "## AWS IoT Things",
-          "retrievedAt": "2026-09-01T05:00:45.054Z",
-          "sourceUrl": "https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/iot-start.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "access-analyzer/aws-iam-access-analyzer",
-      "id": "access-analyzer-aws-iam-access-analyzer-resourcetype-aws-iot-thing-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::IoT::Thing",
-      "targetLabel": "AWS IoT Things"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
           "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: IAM Access Analyzer supported resource types for external and internal access > Supported resource types for external access",
           "quote": "+ [AWS Key Management Service keys](#access-analyzer-kms-key)",
@@ -385,7 +325,7 @@
     }
   ],
   "featureId": "access-analyzer/aws-iam-access-analyzer",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "access-analyzer",
   "unresolvedTargets": []
 }

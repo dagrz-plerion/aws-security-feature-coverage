@@ -65,15 +65,30 @@ export async function validate(sampleSize = 250): Promise<{ violations: Violatio
         .map((c) => `${c.axis}:${c.targetId}`),
     )],
   );
+  // Counted per distinct target, not per claim: one control excluded in forty Regions
+  // is forty statements about one control.
   add(
-    "no feature covers more than its axis holds",
+    "no feature covers more distinct targets than its axis holds",
     coverage.flatMap((record) => {
-      const byAxis = new Map<string, number>();
-      for (const claim of record.claims) byAxis.set(claim.axis, (byAxis.get(claim.axis) ?? 0) + 1);
+      const byAxis = new Map<string, Set<string>>();
+      for (const claim of record.claims) {
+        const set = byAxis.get(claim.axis) ?? new Set<string>();
+        set.add(claim.targetId);
+        byAxis.set(claim.axis, set);
+      }
       return [...byAxis.entries()]
-        .filter(([axis, count]) => universe[axis] && count > (universe[axis] as Set<string>).size)
-        .map(([axis, count]) => `${record.featureId} ${axis}: ${count} > ${(universe[axis] as Set<string>).size}`);
+        .filter(([axis, targets]) => universe[axis] && targets.size > (universe[axis] as Set<string>).size)
+        .map(([axis, targets]) => `${record.featureId} ${axis}: ${targets.size} > ${(universe[axis] as Set<string>).size}`);
     }),
+  );
+
+  add(
+    "every scoped claim names a target in the scope axis",
+    [...new Set(
+      claims
+        .filter((c) => c.scope && universe[c.scope.axis] && !(universe[c.scope.axis] as Set<string>).has(c.scope.targetId))
+        .map((c) => `${c.scope?.axis}:${c.scope?.targetId}`),
+    )],
   );
 
   // Quotes are the whole basis of the map, so a sample is re-checked every run.

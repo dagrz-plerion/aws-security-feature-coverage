@@ -1,7 +1,6 @@
 {
   "axes": [
-    "region",
-    "service"
+    "region"
   ],
   "claims": [
     {
@@ -383,30 +382,10 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "us-west-2"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
-          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md :: heading level 2",
-          "quote": "## SLR permissions for ACM",
-          "retrievedAt": "2026-09-01T04:58:48.671Z",
-          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "acm/service-linked-roles",
-      "id": "acm-service-linked-roles-service-acm-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "acm",
-      "targetLabel": "SLR permissions for ACM"
     }
   ],
   "featureId": "acm/service-linked-roles",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "acm",
   "unresolvedTargets": []
 }

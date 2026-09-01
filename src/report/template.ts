@@ -195,11 +195,14 @@ function axisBar(axis, stats) {
   const unstated = Math.max(0, total - stats.covered - stats.notCovered - stats.partial);
   const pc = (v) => (v / total * 100).toFixed(3) + "%";
   const title = stats.covered + " stated as covered, " + stats.partial + " partial, " + stats.notCovered +
-    " stated as not covered, " + unstated + " not stated, out of " + total + " known " + axis + " values";
+    " stated as not covered, " + unstated + " not stated, out of " + total + " known " + axis + " values" +
+    (stats.scoped ? " · " + stats.scoped + " statements are scoped to a Region or similar" : "");
   return '<div class="axisrow"><div class="bar" title="' + title + '">' +
     '<i class="c" style="width:' + pc(stats.covered) + '"></i><i class="p" style="width:' + pc(stats.partial) + '"></i>' +
     '<i class="n" style="width:' + pc(stats.notCovered) + '"></i></div>' +
-    '<span class="ratio">' + stats.covered + "/" + total + "</span></div>";
+    '<span class="ratio">' + stats.covered + "/" + total +
+    (stats.scoped ? ' <span class="chip" title="statements scoped to a Region or similar">' + stats.scoped + " scoped</span>" : "") +
+    "</span></div>";
 }
 function bar(axes) {
   const entries = Object.entries(axes);
@@ -336,6 +339,7 @@ const VIEWS = {
           '<section><h4>coverage by axis</h4>' + (Object.keys(r.axes).length ? Object.entries(r.axes).map(([a, v]) =>
             '<div style="margin-bottom:8px">' + esc(a) + " — " + v.covered + " of " + (US[a] ?? v.total) + " stated as covered" +
             (v.notCovered ? ", " + v.notCovered + " stated as not covered" : "") +
+            (v.scoped ? ", " + v.scoped + " of those statements name a Region or similar scope" : "") +
             '<div class="chips" style="margin-top:5px">' + ((r.targets && r.targets[a]) ? r.targets[a].slice(0, 80).map((t) => '<span class="chip">' + esc(t) + "</span>").join("") : "") + "</div></div>").join("")
             : '<span class="muted">No source states what this feature covers.</span>') + "</section>" +
           '<section><h4>documentation</h4>' + r.docUrls.map((u) => '<div><a href="' + esc(u.replace(/\\.md$/, ".html")) + '" target="_blank" rel="noopener">' + esc(u) + "</a></div>").join("") + "</section>" +
@@ -363,6 +367,7 @@ const VIEWS = {
           cov.claims.slice(0, 60).map((c) =>
             '<div style="margin-bottom:7px"><span class="chip">' + esc(c.axis) + '</span> <span class="mono">' + esc(c.targetId) + "</span> " +
             '<span class="pill ' + (c.status === "covered" ? "deterministic" : "manual") + '">' + esc(c.status) + "</span>" +
+            (c.scope ? ' <span class="chip">in ' + esc(c.scope.targetId) + "</span>" : "") +
             (c.qualifier ? ' <span class="muted">' + esc(c.qualifier) + "</span>" : "") +
             (c.evidence && c.evidence[0] ? '<div class="quote">' + esc(c.evidence[0].quote) + "</div>" +
               '<a href="' + esc(String(c.evidence[0].sourceUrl).replace(/\\.md$/, ".html")) + '" target="_blank" rel="noopener">source</a>' : "") + "</div>").join("") +

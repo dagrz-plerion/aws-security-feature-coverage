@@ -69,8 +69,25 @@ export function extractLinks(text: string): { text: string; href: string }[] {
 }
 
 /** Remove Markdown emphasis and inline code fences from a cell or item. */
+/** In AWS matrices a tick or cross is an image, so the image becomes its word. */
+function imagesToWords(text: string): string {
+  return text
+    .replace(/!\[[^\]]*\]\(([^)]*)\)/g, (whole, src: string) => {
+      if (/icon-yes|success_icon|checkmark_icon/i.test(src)) return " Yes ";
+      if (/icon-no|negative_icon|fail_icon/i.test(src)) return " No ";
+      return " ";
+      void whole;
+    })
+    .replace(/<img\b[^>]*src="([^"]*)"[^>]*>/gi, (whole, src: string) => {
+      if (/icon-yes|success_icon|checkmark_icon/i.test(src)) return " Yes ";
+      if (/icon-no|negative_icon|fail_icon/i.test(src)) return " No ";
+      return " ";
+      void whole;
+    });
+}
+
 export function cleanText(text: string): string {
-  return stripLinks(text)
+  return stripLinks(imagesToWords(text))
     .replace(/<br\s*\/?>/gi, " · ")
     .replace(/\\([_*`~\[\]\\!])/g, "$1")
     .replace(/`([^`]*)`/g, "$1")

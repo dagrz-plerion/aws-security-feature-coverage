@@ -170,12 +170,22 @@ export type Feature = z.infer<typeof featureSchema>;
 export const coverageStatus = z.enum(["covered", "not-covered", "partial", "unknown"]);
 export type CoverageStatus = z.infer<typeof coverageStatus>;
 
+/** The second dimension of a claim, when the source states one. */
+export const claimScopeSchema = z.object({
+  axis: z.string(),
+  targetId: z.string(),
+  label: z.string().optional(),
+});
+export type ClaimScope = z.infer<typeof claimScopeSchema>;
+
 export const claimSchema = z.object({
   id: z.string(),
   featureId: z.string(),
   axis: z.string(),
   targetId: z.string(),
   targetLabel: z.string().optional(),
+  /** "ElastiCache.4 is not supported in us-east-1" is about a control and a Region. */
+  scope: claimScopeSchema.optional(),
   status: coverageStatus,
   qualifier: z.string().optional(),
   method: z.enum(["deterministic", "llm", "manual"]),

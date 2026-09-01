@@ -26,43 +26,43 @@
     },
     {
       "axis": "region",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
           "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
-          "quote": "| ap-east-1 | Asia Pacific (Hong Kong) | ap-northeast-2 | Asia Pacific (Seoul) |",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Asia Pacific (Hong Kong)",
           "retrievedAt": "2026-09-01T04:59:33.604Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-east-1-md-table",
+      "id": "identitystore-iam-identity-center-region-ap-east-1-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-east-1",
-      "targetLabel": "ap-east-1"
+      "targetLabel": "Asia Pacific (Hong Kong)"
     },
     {
       "axis": "region",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
           "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
-          "quote": "| ap-east-2 | Asia Pacific (Taipei) | ap-northeast-1 | Asia Pacific (Tokyo) |",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Asia Pacific (Taipei)",
           "retrievedAt": "2026-09-01T04:59:33.604Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-east-2-md-table",
+      "id": "identitystore-iam-identity-center-region-ap-east-2-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-east-2",
-      "targetLabel": "ap-east-2"
+      "targetLabel": "Asia Pacific (Taipei)"
     },
     {
       "axis": "region",
@@ -70,139 +70,19 @@
       "evidence": [
         {
           "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ Asia Pacific (Tokyo)",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Asia Pacific (Hyderabad)",
           "retrievedAt": "2026-09-01T04:59:33.604Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
         }
       ],
       "extractorId": "md-bullet-list",
       "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-northeast-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-northeast-1",
-      "targetLabel": "Asia Pacific (Tokyo)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ Asia Pacific (Seoul)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-northeast-2-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-northeast-2",
-      "targetLabel": "Asia Pacific (Seoul)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ Asia Pacific (Osaka)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-northeast-3-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-northeast-3",
-      "targetLabel": "Asia Pacific (Osaka)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ Asia Pacific (Mumbai)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-south-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-south-1",
-      "targetLabel": "Asia Pacific (Mumbai)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
-          "quote": "| ap-south-2 | Asia Pacific (Hyderabad) | ap-south-1 | Asia Pacific (Mumbai) |",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-south-2-md-table",
+      "id": "identitystore-iam-identity-center-region-ap-south-2-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-south-2",
-      "targetLabel": "ap-south-2"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ Asia Pacific (Singapore)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-southeast-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-1",
-      "targetLabel": "Asia Pacific (Singapore)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ Asia Pacific (Sydney)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-southeast-2-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-2",
-      "targetLabel": "Asia Pacific (Sydney)"
+      "targetLabel": "Asia Pacific (Hyderabad)"
     },
     {
       "axis": "region",
@@ -226,83 +106,83 @@
     },
     {
       "axis": "region",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
           "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
-          "quote": "| ap-southeast-4 | Asia Pacific (Melbourne) | ap-southeast-2 | Asia Pacific (Sydney) |",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Asia Pacific (Melbourne)",
           "retrievedAt": "2026-09-01T04:59:33.604Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-southeast-4-md-table",
+      "id": "identitystore-iam-identity-center-region-ap-southeast-4-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-southeast-4",
-      "targetLabel": "ap-southeast-4"
+      "targetLabel": "Asia Pacific (Melbourne)"
     },
     {
       "axis": "region",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
           "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
-          "quote": "| ap-southeast-5 | Asia Pacific (Malaysia) | ap-southeast-1 | Asia Pacific (Singapore) |",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Asia Pacific (Malaysia)",
           "retrievedAt": "2026-09-01T04:59:33.604Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-southeast-5-md-table",
+      "id": "identitystore-iam-identity-center-region-ap-southeast-5-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-southeast-5",
-      "targetLabel": "ap-southeast-5"
+      "targetLabel": "Asia Pacific (Malaysia)"
     },
     {
       "axis": "region",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
           "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
-          "quote": "| ap-southeast-6 | Asia Pacific (New Zealand) | ap-southeast-2 | Asia Pacific (Sydney) |",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Asia Pacific (New Zealand)",
           "retrievedAt": "2026-09-01T04:59:33.604Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-southeast-6-md-table",
+      "id": "identitystore-iam-identity-center-region-ap-southeast-6-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-southeast-6",
-      "targetLabel": "ap-southeast-6"
+      "targetLabel": "Asia Pacific (New Zealand)"
     },
     {
       "axis": "region",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
           "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
-          "quote": "| ap-southeast-7 | Asia Pacific (Thailand) | ap-northeast-3 | Asia Pacific (Osaka) |",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Asia Pacific (Thailand)",
           "retrievedAt": "2026-09-01T04:59:33.604Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ap-southeast-7-md-table",
+      "id": "identitystore-iam-identity-center-region-ap-southeast-7-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ap-southeast-7",
-      "targetLabel": "ap-southeast-7"
+      "targetLabel": "Asia Pacific (Thailand)"
     },
     {
       "axis": "region",
@@ -310,39 +190,19 @@
       "evidence": [
         {
           "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ Canada (Central)",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Canada West (Calgary)",
           "retrievedAt": "2026-09-01T04:59:33.604Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
         }
       ],
       "extractorId": "md-bullet-list",
       "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ca-central-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ca-central-1",
-      "targetLabel": "Canada (Central)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
-          "quote": "| ca-west-1 | Canada West (Calgary) | ca-central-1 | Canada (Central) |",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-ca-west-1-md-table",
+      "id": "identitystore-iam-identity-center-region-ca-west-1-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ca-west-1",
-      "targetLabel": "ca-west-1"
+      "targetLabel": "Canada West (Calgary)"
     },
     {
       "axis": "region",
@@ -350,59 +210,19 @@
       "evidence": [
         {
           "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ Europe (Frankfurt)",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Europe (Zurich)",
           "retrievedAt": "2026-09-01T04:59:33.604Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
         }
       ],
       "extractorId": "md-bullet-list",
       "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-eu-central-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-central-1",
-      "targetLabel": "Europe (Frankfurt)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
-          "quote": "| eu-central-2 | Europe (Zurich) | eu-central-1 | Europe (Frankfurt) |",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-eu-central-2-md-table",
+      "id": "identitystore-iam-identity-center-region-eu-central-2-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "eu-central-2",
-      "targetLabel": "eu-central-2"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ Europe (Stockholm)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-eu-north-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-north-1",
-      "targetLabel": "Europe (Stockholm)"
+      "targetLabel": "Europe (Zurich)"
     },
     {
       "axis": "region",
@@ -426,83 +246,23 @@
     },
     {
       "axis": "region",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
           "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
-          "quote": "| eu-south-2 | Europe (Spain) | eu-west-3 | Europe (Paris) |",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Europe (Spain)",
           "retrievedAt": "2026-09-01T04:59:33.604Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-eu-south-2-md-table",
+      "id": "identitystore-iam-identity-center-region-eu-south-2-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "eu-south-2",
-      "targetLabel": "eu-south-2"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ Europe (Ireland)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-eu-west-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-west-1",
-      "targetLabel": "Europe (Ireland)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ Europe (London)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-eu-west-2-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-west-2",
-      "targetLabel": "Europe (London)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ Europe (Paris)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-eu-west-3-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-west-3",
-      "targetLabel": "Europe (Paris)"
+      "targetLabel": "Europe (Spain)"
     },
     {
       "axis": "region",
@@ -526,23 +286,23 @@
     },
     {
       "axis": "region",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
           "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
-          "quote": "| me-central-1 | Middle East (UAE) | eu-central-1 | Europe (Frankfurt) |",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Middle East (UAE)",
           "retrievedAt": "2026-09-01T04:59:33.604Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-me-central-1-md-table",
+      "id": "identitystore-iam-identity-center-region-me-central-1-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "me-central-1",
-      "targetLabel": "me-central-1"
+      "targetLabel": "Middle East (UAE)"
     },
     {
       "axis": "region",
@@ -566,163 +326,23 @@
     },
     {
       "axis": "region",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
           "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md ::  | column \"IAM Identity Center Region code\"",
-          "quote": "| mx-central-1 | Mexico (Central) | us-east-2 | US East (Ohio) |",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: Most AWS Regions are enabled for operations in all AWS services by default, but you must enable the following opt-in Regions if you want to use IAM Identity Center:",
+          "quote": "+ Mexico (Central)",
           "retrievedAt": "2026-09-01T04:59:33.604Z",
           "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-mx-central-1-md-table",
+      "id": "identitystore-iam-identity-center-region-mx-central-1-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "mx-central-1",
-      "targetLabel": "mx-central-1"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ South America (São Paulo)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-sa-east-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "sa-east-1",
-      "targetLabel": "South America (São Paulo)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ US East (N. Virginia)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-us-east-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-east-1",
-      "targetLabel": "US East (N. Virginia)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ US East (Ohio)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-us-east-2-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-east-2",
-      "targetLabel": "US East (Ohio)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "1948c9f975334945ce9863f25349cc651f5c917e4b704f4e26f6dd3e080071dc",
-          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-sso.md :: This service is available in the following AWS GovCloud (US) Regions:",
-          "quote": "+  AWS GovCloud (US-East)",
-          "retrievedAt": "2026-09-01T04:59:32.906Z",
-          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-sso.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-us-gov-east-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-gov-east-1",
-      "targetLabel": "AWS GovCloud (US-East)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "1948c9f975334945ce9863f25349cc651f5c917e4b704f4e26f6dd3e080071dc",
-          "locator": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-sso.md :: This service is available in the following AWS GovCloud (US) Regions:",
-          "quote": "+  AWS GovCloud (US-West)",
-          "retrievedAt": "2026-09-01T04:59:32.906Z",
-          "sourceUrl": "https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-sso.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-us-gov-west-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-gov-west-1",
-      "targetLabel": "AWS GovCloud (US-West)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ US West (N. California)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-us-west-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-west-1",
-      "targetLabel": "US West (N. California)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "dd1585b1afdd505f64e7491c7e52d26832fa635d4ad5fc90c88cf5815d339081",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md :: The following Regions are enabled by default and you can enable IAM Identity Center in these Regions.",
-          "quote": "+ US West (Oregon)",
-          "retrievedAt": "2026-09-01T04:59:33.604Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-region-us-west-2-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "us-west-2",
-      "targetLabel": "US West (Oregon)"
+      "targetLabel": "Mexico (Central)"
     },
     {
       "axis": "service",
@@ -943,26 +563,6 @@
       "status": "covered",
       "targetId": "grafana",
       "targetLabel": "Amazon Managed Grafana"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "5e916ee8683b9124fb07389d5df7defd9788f8ed13a28a608327d71efe4e4286",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/cmk-related-errors.md :: heading level 2",
-          "quote": "## AWS managed application login failures with a customer managed key enabled in IAM Identity Center",
-          "retrievedAt": "2026-09-01T04:59:34.728Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/cmk-related-errors.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-service-identitystore-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "identitystore",
-      "targetLabel": "AWS managed application login failures with a customer managed key enabled in IAM Identity Center"
     },
     {
       "axis": "service",
@@ -1246,26 +846,6 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "5e916ee8683b9124fb07389d5df7defd9788f8ed13a28a608327d71efe4e4286",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/cmk-related-errors.md :: heading level 2",
-          "quote": "## KMS Permissions Issue: Configuring Customer Managed Key with AWS IAM Identity Center",
-          "retrievedAt": "2026-09-01T04:59:34.728Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/cmk-related-errors.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "identitystore/iam-identity-center",
-      "id": "identitystore-iam-identity-center-service-sso-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "sso",
-      "targetLabel": "KMS Permissions Issue: Configuring Customer Managed Key with AWS IAM Identity Center"
-    },
-    {
-      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -1366,7 +946,7 @@
     }
   ],
   "featureId": "identitystore/iam-identity-center",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "identitystore",
   "unresolvedTargets": [
     {

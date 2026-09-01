@@ -1,7 +1,6 @@
 {
   "axes": [
-    "region",
-    "resourceType"
+    "region"
   ],
   "claims": [
     {
@@ -523,56 +522,10 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "0ef7aa5f3b960271313381f84358a6aab9b566a10485de7fca1941260404f513",
-          "locator": "https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-private-link.md :: Amazon DocumentDB API and interface VPC endpoints (AWS PrivateLink)",
-          "quote": "+ [Creating an interface VPC endpoint for Amazon DocumentDB API](#create-interface-endpoint)",
-          "retrievedAt": "2026-09-01T04:59:21.700Z",
-          "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-private-link.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "iam/vpc-endpoints-aws-privatelink",
-      "id": "iam-vpc-endpoints-aws-privatelink-resourcetype-amplifybackend-api-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "amplifybackend:api",
-      "targetLabel": "Creating an interface VPC endpoint for Amazon DocumentDB API"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "0ef7aa5f3b960271313381f84358a6aab9b566a10485de7fca1941260404f513",
-          "locator": "https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-private-link.md :: Amazon DocumentDB API and interface VPC endpoints (AWS PrivateLink)",
-          "quote": "+ [Considerations for VPC endpoints](#endpoint-considerations)",
-          "retrievedAt": "2026-09-01T04:59:21.700Z",
-          "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-private-link.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "iam/vpc-endpoints-aws-privatelink",
-      "id": "iam-vpc-endpoints-aws-privatelink-resourcetype-aws-opensearchserverless-vpcendpoint-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::OpenSearchServerless::VpcEndpoint",
-      "targetLabel": "Considerations for VPC endpoints"
     }
   ],
   "featureId": "iam/vpc-endpoints-aws-privatelink",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "iam",
-  "unresolvedTargets": [
-    {
-      "axis": "resourceType",
-      "raw": "Region availability",
-      "sourceUrl": "https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-private-link.md"
-    }
-  ]
+  "unresolvedTargets": []
 }

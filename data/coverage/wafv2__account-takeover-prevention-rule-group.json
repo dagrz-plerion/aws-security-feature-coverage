@@ -1,0 +1,31 @@
+{
+  "axes": [
+    "managedRuleGroup"
+  ],
+  "claims": [
+    {
+      "axis": "managedRuleGroup",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: Account takeover prevention rule group",
+          "quote": "VendorName: `AWS`, Name: `AWSManagedRulesATPRuleSet`, WCU: 50",
+          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
+        }
+      ],
+      "extractorId": "recipe:waf-managed-rule-group-names",
+      "featureId": "wafv2/account-takeover-prevention-rule-group",
+      "id": "wafv2-account-takeover-prevention-rule-group-managedrulegroup-awsmanagedrulesatpruleset-recipe-waf-managed-rule-group-na",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWSManagedRulesATPRuleSet",
+      "targetLabel": "AWSManagedRulesATPRuleSet"
+    }
+  ],
+  "featureId": "wafv2/account-takeover-prevention-rule-group",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
+  "serviceId": "wafv2",
+  "unresolvedTargets": []
+}

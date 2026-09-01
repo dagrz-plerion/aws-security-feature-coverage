@@ -5,43 +5,43 @@
   "claims": [
     {
       "axis": "resourceType",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "97ead628a74ee0c1882acec0996b13d22ef75f4819e9b0189f66b4f3173f632d",
-          "locator": "https://docs.aws.amazon.com/verified-access/latest/ug/encryption-at-rest.md :: Data encryption at rest for AWS Verified Access > Specifying a customer managed key for Verified Access resources",
-          "quote": "+ [Verified Access endpoint](verified-access-endpoints.md)",
-          "retrievedAt": "2026-09-01T05:00:44.837Z",
-          "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/encryption-at-rest.md"
+          "bodySha256": "cc6d82b894658cfec4e3022090f2afe6ed899e04ea21a540f5142af76d44d7e2",
+          "locator": "https://docs.aws.amazon.com/verified-access/latest/ug/verified-access-quotas.md :: Quotas for AWS Verified Access | column \"Name\"",
+          "quote": "|  Verified Access Endpoints  |  50  | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5D439CF7) |  The maximum number of Verified Access Endpoints that customers can create in the current Region.  |",
+          "retrievedAt": "2026-09-01T05:00:44.170Z",
+          "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/verified-access-quotas.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-table",
       "featureId": "verified-access/service-wide",
-      "id": "verified-access-service-wide-resourcetype-aws-ec2-verifiedaccessendpoint-md-bullet-list",
+      "id": "verified-access-service-wide-resourcetype-aws-ec2-verifiedaccessendpoint-md-table",
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::EC2::VerifiedAccessEndpoint",
-      "targetLabel": "Verified Access endpoint"
+      "targetLabel": "Verified Access Endpoints"
     },
     {
       "axis": "resourceType",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "97ead628a74ee0c1882acec0996b13d22ef75f4819e9b0189f66b4f3173f632d",
-          "locator": "https://docs.aws.amazon.com/verified-access/latest/ug/encryption-at-rest.md :: Data encryption at rest for AWS Verified Access > Specifying a customer managed key for Verified Access resources",
-          "quote": "+ [Verified Access group](verified-access-groups.md)",
-          "retrievedAt": "2026-09-01T05:00:44.837Z",
-          "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/encryption-at-rest.md"
+          "bodySha256": "cc6d82b894658cfec4e3022090f2afe6ed899e04ea21a540f5142af76d44d7e2",
+          "locator": "https://docs.aws.amazon.com/verified-access/latest/ug/verified-access-quotas.md :: Quotas for AWS Verified Access | column \"Name\"",
+          "quote": "|  Verified Access Groups  |  10  | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-3829BC77) |  The maximum number of Verified Access Groups that customers can create in the current Region.  |",
+          "retrievedAt": "2026-09-01T05:00:44.170Z",
+          "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/verified-access-quotas.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-table",
       "featureId": "verified-access/service-wide",
-      "id": "verified-access-service-wide-resourcetype-aws-ec2-verifiedaccessgroup-md-bullet-list",
+      "id": "verified-access-service-wide-resourcetype-aws-ec2-verifiedaccessgroup-md-table",
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::EC2::VerifiedAccessGroup",
-      "targetLabel": "Verified Access group"
+      "targetLabel": "Verified Access Groups"
     },
     {
       "axis": "resourceType",
@@ -65,27 +65,27 @@
     },
     {
       "axis": "resourceType",
-      "confidence": 0.8,
+      "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "97ead628a74ee0c1882acec0996b13d22ef75f4819e9b0189f66b4f3173f632d",
-          "locator": "https://docs.aws.amazon.com/verified-access/latest/ug/encryption-at-rest.md :: Data encryption at rest for AWS Verified Access > Specifying a customer managed key for Verified Access resources",
-          "quote": "+ [Verified Access trust provider](trust-providers.md)",
-          "retrievedAt": "2026-09-01T05:00:44.837Z",
-          "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/encryption-at-rest.md"
+          "bodySha256": "cc6d82b894658cfec4e3022090f2afe6ed899e04ea21a540f5142af76d44d7e2",
+          "locator": "https://docs.aws.amazon.com/verified-access/latest/ug/verified-access-quotas.md :: Quotas for AWS Verified Access | column \"Name\"",
+          "quote": "|  Verified Access Trust Providers  |  15  | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-AF309E5E) |  The maximum number of Verified Access Trust Providers that customers can create in the current Region.  |",
+          "retrievedAt": "2026-09-01T05:00:44.170Z",
+          "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/verified-access-quotas.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "md-table",
       "featureId": "verified-access/service-wide",
-      "id": "verified-access-service-wide-resourcetype-aws-ec2-verifiedaccesstrustprovider-md-bullet-list",
+      "id": "verified-access-service-wide-resourcetype-aws-ec2-verifiedaccesstrustprovider-md-table",
       "method": "deterministic",
       "status": "covered",
       "targetId": "AWS::EC2::VerifiedAccessTrustProvider",
-      "targetLabel": "Verified Access trust provider"
+      "targetLabel": "Verified Access Trust Providers"
     }
   ],
   "featureId": "verified-access/service-wide",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "verified-access",
   "unresolvedTargets": []
 }

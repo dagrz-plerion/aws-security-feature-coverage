@@ -28,46 +28,6 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "d6ed7a890e6ed536e7e9db2fbe8728bbc939a68889a8b94f5743e06aef76cf3a",
-          "locator": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/usecase1.md :: Use Case 1: Sign in to AWS applications and services with Active Directory credentials > FSx for Windows File Server integration with AWS Managed Microsoft AD > Common Amazon FSx use cases and resources > Amazon AppStream 2.0 support",
-          "quote": "+ [Walkthrough 4: Using Amazon FSx with Amazon AppStream 2.0](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/walkthrough04-fsx-with-appstream2.html)",
-          "retrievedAt": "2026-09-01T05:00:29.895Z",
-          "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/usecase1.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "ds/aws-managed-microsoft-ad",
-      "id": "ds-aws-managed-microsoft-ad-service-appstream-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "appstream",
-      "targetLabel": "Walkthrough 4: Using Amazon FSx with Amazon AppStream 2.0"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "d6ed7a890e6ed536e7e9db2fbe8728bbc939a68889a8b94f5743e06aef76cf3a",
-          "locator": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/usecase1.md :: Use Case 1: Sign in to AWS applications and services with Active Directory credentials > FSx for Windows File Server integration with AWS Managed Microsoft AD > Common Amazon FSx use cases and resources > Amazon AppStream 2.0 support",
-          "quote": "+ [Using Active Directory with WorkSpaces Applications](https://docs.aws.amazon.com/appstream2/latest/developerguide/active-directory.html)",
-          "retrievedAt": "2026-09-01T05:00:29.895Z",
-          "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/usecase1.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "ds/aws-managed-microsoft-ad",
-      "id": "ds-aws-managed-microsoft-ad-service-appstream2-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "appstream2",
-      "targetLabel": "Using Active Directory with WorkSpaces Applications"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
           "bodySha256": "f19a8f81812ef562ce790dd4f5b76924157ded2398291d31a35a637ea116c958",
           "locator": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md :: All user accounts are provisioned only in your AWS Managed Microsoft AD to be used with supported AWS applications, such as the following:",
           "quote": "+ Amazon Chime",
@@ -88,26 +48,6 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "371d7ed7816b9bb5e15be62b7cb9518749041fad5ad6ec999ba74e7d289c931e",
-          "locator": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_enable_log_forwarding.md :: heading level 3",
-          "quote": "### Step 1: Create a log group in CloudWatch Logs",
-          "retrievedAt": "2026-09-01T05:00:30.545Z",
-          "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_enable_log_forwarding.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "ds/aws-managed-microsoft-ad",
-      "id": "ds-aws-managed-microsoft-ad-service-cloudwatch-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "cloudwatch",
-      "targetLabel": "Step 1: Create a log group in CloudWatch Logs"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
           "bodySha256": "f19a8f81812ef562ce790dd4f5b76924157ded2398291d31a35a637ea116c958",
           "locator": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md :: User accounts are provisioned only in your AWS Managed Microsoft AD to be used with supported AWS applications, such as the following:",
           "quote": "+ Amazon FSx",
@@ -122,26 +62,6 @@
       "status": "covered",
       "targetId": "fsx",
       "targetLabel": "Amazon FSx"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "371d7ed7816b9bb5e15be62b7cb9518749041fad5ad6ec999ba74e7d289c931e",
-          "locator": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_enable_log_forwarding.md :: heading level 3",
-          "quote": "### Step 2: Create a CloudWatch Logs resource policy in IAM",
-          "retrievedAt": "2026-09-01T05:00:30.545Z",
-          "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_enable_log_forwarding.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "ds/aws-managed-microsoft-ad",
-      "id": "ds-aws-managed-microsoft-ad-service-iam-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "iam",
-      "targetLabel": "Step 2: Create a CloudWatch Logs resource policy in IAM"
     },
     {
       "axis": "service",
@@ -305,7 +225,7 @@
     }
   ],
   "featureId": "ds/aws-managed-microsoft-ad",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "ds",
   "unresolvedTargets": [
     {
@@ -327,11 +247,6 @@
       "axis": "service",
       "raw": "Amazon EC2 instances",
       "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Deploying roaming user profiles",
-      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/usecase1.md"
     }
   ]
 }

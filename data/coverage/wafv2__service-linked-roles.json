@@ -1,49 +1,8 @@
 {
   "axes": [
-    "region",
-    "service"
+    "region"
   ],
   "claims": [
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "13e4746276aebf1b1840463ecbc44dfd1f9b551a17ad21babe7cf907015ea8cc",
-          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md ::  | column \"Region Name\"",
-          "quote": "| Africa (Cape Town) | ap-south-1 |",
-          "retrievedAt": "2026-09-01T05:00:49.221Z",
-          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "wafv2/service-linked-roles",
-      "id": "wafv2-service-linked-roles-region-af-south-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "af-south-1",
-      "targetLabel": "Africa (Cape Town)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "13e4746276aebf1b1840463ecbc44dfd1f9b551a17ad21babe7cf907015ea8cc",
-          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Hong Kong) | ap-east-1 |",
-          "retrievedAt": "2026-09-01T05:00:49.221Z",
-          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "wafv2/service-linked-roles",
-      "id": "wafv2-service-linked-roles-region-ap-east-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-east-1",
-      "targetLabel": "Asia Pacific (Hong Kong)"
-    },
     {
       "axis": "region",
       "confidence": 0.9,
@@ -169,46 +128,6 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "bodySha256": "13e4746276aebf1b1840463ecbc44dfd1f9b551a17ad21babe7cf907015ea8cc",
-          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Malaysia) | ap-southeast-5 |",
-          "retrievedAt": "2026-09-01T05:00:49.221Z",
-          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "wafv2/service-linked-roles",
-      "id": "wafv2-service-linked-roles-region-ap-southeast-5-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-5",
-      "targetLabel": "Asia Pacific (Malaysia)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "13e4746276aebf1b1840463ecbc44dfd1f9b551a17ad21babe7cf907015ea8cc",
-          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md ::  | column \"Region Name\"",
-          "quote": "| Asia Pacific (Thailand) | ap-southeast-7 |",
-          "retrievedAt": "2026-09-01T05:00:49.221Z",
-          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "wafv2/service-linked-roles",
-      "id": "wafv2-service-linked-roles-region-ap-southeast-7-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ap-southeast-7",
-      "targetLabel": "Asia Pacific (Thailand)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
           "bodySha256": "d0bcacc7b1fedff5c00e05a3eeb6c2943bbcd9bf929d9765716b950b1f384eae",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/classic-using-service-linked-roles.md ::  | column \"Region Name\"",
           "quote": "| Canada (Central) | ca-central-1 | Yes |",
@@ -243,46 +162,6 @@
       "status": "covered",
       "targetId": "eu-central-1",
       "targetLabel": "Europe (Frankfurt)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "13e4746276aebf1b1840463ecbc44dfd1f9b551a17ad21babe7cf907015ea8cc",
-          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md ::  | column \"Region Name\"",
-          "quote": "| Europe (Stockholm) | eu-north-1 |",
-          "retrievedAt": "2026-09-01T05:00:49.221Z",
-          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "wafv2/service-linked-roles",
-      "id": "wafv2-service-linked-roles-region-eu-north-1-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-north-1",
-      "targetLabel": "Europe (Stockholm)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "13e4746276aebf1b1840463ecbc44dfd1f9b551a17ad21babe7cf907015ea8cc",
-          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md ::  | column \"Region Name\"",
-          "quote": "| Europe (Spain) | eu-south-2 |",
-          "retrievedAt": "2026-09-01T05:00:49.221Z",
-          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "wafv2/service-linked-roles",
-      "id": "wafv2-service-linked-roles-region-eu-south-2-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-south-2",
-      "targetLabel": "Europe (Spain)"
     },
     {
       "axis": "region",
@@ -443,50 +322,10 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "9577bc44c0f132cf1be9682a5f221b53fc7e482891e9be2b58593dfb5bf07c3c",
-          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/shd-using-service-linked-roles.md :: heading level 2",
-          "quote": "## Service-Linked Role Permissions for Shield Advanced",
-          "retrievedAt": "2026-09-01T05:00:48.904Z",
-          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/shd-using-service-linked-roles.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "wafv2/service-linked-roles",
-      "id": "wafv2-service-linked-roles-service-shield-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "shield",
-      "targetLabel": "Service-Linked Role Permissions for Shield Advanced"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "d0bcacc7b1fedff5c00e05a3eeb6c2943bbcd9bf929d9765716b950b1f384eae",
-          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/classic-using-service-linked-roles.md :: heading level 2",
-          "quote": "## Service-linked role permissions for AWS WAF Classic",
-          "retrievedAt": "2026-09-01T04:59:28.882Z",
-          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/classic-using-service-linked-roles.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "wafv2/service-linked-roles",
-      "id": "wafv2-service-linked-roles-service-waf-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "waf",
-      "targetLabel": "Service-linked role permissions for AWS WAF Classic"
     }
   ],
   "featureId": "wafv2/service-linked-roles",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "wafv2",
   "unresolvedTargets": []
 }

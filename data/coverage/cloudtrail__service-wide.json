@@ -85,26 +85,6 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ AWS IoT Secure Tunneling",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-api-tunneling-iot-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "api.tunneling.iot",
-      "targetLabel": "AWS IoT Secure Tunneling"
-    },
-    {
-      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -202,26 +182,6 @@
       "status": "covered",
       "targetId": "application-autoscaling",
       "targetLabel": "Application Auto Scaling"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ CloudWatch Application Signals",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-application-signals-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "application-signals",
-      "targetLabel": "CloudWatch Application Signals"
     },
     {
       "axis": "service",
@@ -425,26 +385,6 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ AWS Backup gateway",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-backup-gateway-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "backup-gateway",
-      "targetLabel": "AWS Backup gateway"
-    },
-    {
-      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -565,26 +505,6 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ Billing and Cost Management",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-budgets-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "budgets",
-      "targetLabel": "Billing and Cost Management"
-    },
-    {
-      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -602,26 +522,6 @@
       "status": "covered",
       "targetId": "cassandra",
       "targetLabel": "Amazon Keyspaces (for Apache Cassandra)"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ AWS Cost Explorer",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-ce-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ce",
-      "targetLabel": "AWS Cost Explorer"
     },
     {
       "axis": "service",
@@ -682,26 +582,6 @@
       "status": "covered",
       "targetId": "cloud9",
       "targetLabel": "AWS Cloud9"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ AWS Cloud Control API",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-cloudcontrolapi-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "cloudcontrolapi",
-      "targetLabel": "AWS Cloud Control API"
     },
     {
       "axis": "service",
@@ -1205,26 +1085,6 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ AWS Data Exports",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-cur-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "cur",
-      "targetLabel": "AWS Data Exports"
-    },
-    {
-      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -1685,26 +1545,6 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ Amazon Elastic File System",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-elasticfilesystem-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "elasticfilesystem",
-      "targetLabel": "Amazon Elastic File System"
-    },
-    {
-      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -1962,26 +1802,6 @@
       "status": "covered",
       "targetId": "frauddetector",
       "targetLabel": "Amazon Fraud Detector"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ AWS Free Tier",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-freetier-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "freetier",
-      "targetLabel": "AWS Free Tier"
     },
     {
       "axis": "service",
@@ -2305,26 +2125,6 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ AWS Invoicing",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-invoicing-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "invoicing",
-      "targetLabel": "AWS Invoicing"
-    },
-    {
-      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -2342,26 +2142,6 @@
       "status": "covered",
       "targetId": "iot",
       "targetLabel": "AWS IoT"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ AWS IoT FleetWise",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-iotfleetwise-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "iotfleetwise",
-      "targetLabel": "AWS IoT FleetWise"
     },
     {
       "axis": "service",
@@ -2502,26 +2282,6 @@
       "status": "covered",
       "targetId": "kinesisvideo",
       "targetLabel": "Amazon Kinesis Video Streams"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ AWS KMS",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-kms-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "kms",
-      "targetLabel": "AWS KMS"
     },
     {
       "axis": "service",
@@ -3745,26 +3505,6 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Network activity events",
-          "quote": "+ Amazon EventBridge Scheduler",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-scheduler-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "scheduler",
-      "targetLabel": "Amazon EventBridge Scheduler"
-    },
-    {
-      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -4545,7 +4285,7 @@
     }
   ],
   "featureId": "cloudtrail/service-wide",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "cloudtrail",
   "unresolvedTargets": [
     {
@@ -5096,11 +4836,6 @@
     {
       "axis": "service",
       "raw": "Amazon Transform Custom",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Pricing Calculator",
       "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
     }
   ]

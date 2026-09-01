@@ -1,7 +1,6 @@
 {
   "axes": [
-    "resourceType",
-    "service"
+    "resourceType"
   ],
   "claims": [
     {
@@ -63,30 +62,10 @@
       "status": "covered",
       "targetId": "AWS::Inspector::ResourceGroup",
       "targetLabel": "AWS::Inspector::ResourceGroup"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "c6ab589677920b660ee8266cff30e1c7c256a819aabf36f30a1a1dd98fa6347d",
-          "locator": "https://docs.aws.amazon.com/inspector/v1/userguide/security_iam_service-with-iam.md :: heading level 2",
-          "quote": "## Identity-based policies for Amazon Inspector",
-          "retrievedAt": "2026-09-01T04:59:15.981Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/v1/userguide/security_iam_service-with-iam.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "inspector2/amazon-inspector-classic-agents",
-      "id": "inspector2-amazon-inspector-classic-agents-service-inspector-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "inspector",
-      "targetLabel": "Identity-based policies for Amazon Inspector"
     }
   ],
   "featureId": "inspector2/amazon-inspector-classic-agents",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "inspector2",
   "unresolvedTargets": []
 }

@@ -1,57 +1,351 @@
 {
   "axes": [
-    "service"
+    "region"
   ],
   "claims": [
     {
-      "axis": "service",
+      "axis": "region",
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "9ed114d046d1d8c16a4ad4962c873d7a89e001618901884072f6da93ddc99478",
-          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-services.md :: Supported services for Amazon Q Developer in chat applications",
-          "quote": "+ Amazon CloudWatch",
-          "retrievedAt": "2026-09-01T04:29:39.103Z",
-          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-services.md"
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ Asia Pacific (Tokyo)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
         }
       ],
       "extractorId": "md-bullet-list",
       "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
-      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-service-cloudwatch-md-bullet-list",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-ap-northeast-1-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "cloudwatch",
-      "targetLabel": "Amazon CloudWatch"
+      "targetId": "ap-northeast-1",
+      "targetLabel": "Asia Pacific (Tokyo)"
     },
     {
-      "axis": "service",
+      "axis": "region",
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "9ed114d046d1d8c16a4ad4962c873d7a89e001618901884072f6da93ddc99478",
-          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-services.md :: Supported services for Amazon Q Developer in chat applications",
-          "quote": "+ Amazon CodeCatalyst",
-          "retrievedAt": "2026-09-01T04:29:39.103Z",
-          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-services.md"
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ Asia Pacific (Seoul)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
         }
       ],
       "extractorId": "md-bullet-list",
       "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
-      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-service-codecatalyst-md-bullet-list",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-ap-northeast-2-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "codecatalyst",
-      "targetLabel": "Amazon CodeCatalyst"
+      "targetId": "ap-northeast-2",
+      "targetLabel": "Asia Pacific (Seoul)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ Asia Pacific (Osaka)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-ap-northeast-3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-northeast-3",
+      "targetLabel": "Asia Pacific (Osaka)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ Asia Pacific (Mumbai)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-ap-south-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-south-1",
+      "targetLabel": "Asia Pacific (Mumbai)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ Asia Pacific (Singapore)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-ap-southeast-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-1",
+      "targetLabel": "Asia Pacific (Singapore)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ Asia Pacific (Sydney)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-ap-southeast-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ap-southeast-2",
+      "targetLabel": "Asia Pacific (Sydney)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ Canada (Central)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-ca-central-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ca-central-1",
+      "targetLabel": "Canada (Central)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ Europe (Frankfurt)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-eu-central-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-central-1",
+      "targetLabel": "Europe (Frankfurt)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ Europe (Stockholm)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-eu-north-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-north-1",
+      "targetLabel": "Europe (Stockholm)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ Europe (Ireland)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-eu-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-1",
+      "targetLabel": "Europe (Ireland)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ Europe (London)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-eu-west-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-2",
+      "targetLabel": "Europe (London)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ Europe (Paris)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-eu-west-3-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eu-west-3",
+      "targetLabel": "Europe (Paris)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ South America (São Paulo)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-sa-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sa-east-1",
+      "targetLabel": "South America (São Paulo)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ US East (N. Virginia)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-us-east-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (N. Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ US East (Ohio)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-us-east-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-2",
+      "targetLabel": "US East (Ohio)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ US West (N. California)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-us-west-1-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-1",
+      "targetLabel": "US West (N. California)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "bodySha256": "80045ee5341b8e73f4368ed062e1144ca966cddd013f90d784e4d104870d2215",
+          "locator": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md :: Supported Regions include:",
+          "quote": "+ US West (Oregon)",
+          "retrievedAt": "2026-09-01T05:18:55.271Z",
+          "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-regions.md"
+        }
+      ],
+      "extractorId": "md-bullet-list",
+      "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
+      "id": "qdeveloper-amazon-q-developer-in-chat-applications-service-rename-region-us-west-2-md-bullet-list",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-west-2",
+      "targetLabel": "US West (Oregon)"
     }
   ],
   "featureId": "qdeveloper/amazon-q-developer-in-chat-applications-service-rename",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "qdeveloper",
-  "unresolvedTargets": [
-    {
-      "axis": "service",
-      "raw": "AWS Cost Anomaly Detection",
-      "sourceUrl": "https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-services.md"
-    }
-  ]
+  "unresolvedTargets": []
 }

@@ -1,7 +1,6 @@
 {
   "axes": [
     "control",
-    "resourceType",
     "service"
   ],
   "claims": [
@@ -6086,166 +6085,6 @@
       "targetLabel": "WAF.8"
     },
     {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "994d63fc727ceed0af14514c2bc0f747072385ebfa0727628ef2c2d871cb18c1",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/access-assessments.md :: heading level 4",
-          "quote": "#### [ Audit Manager API ]",
-          "retrievedAt": "2026-09-01T05:00:00.664Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/access-assessments.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "auditmanager/service-wide",
-      "id": "auditmanager-service-wide-resourcetype-amplifybackend-api-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "amplifybackend:api",
-      "targetLabel": "[ Audit Manager API ]"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "f46e7bbb26e4164948633d89492a5c63b9f10f880ac5271f2d8d3139a0c70af6",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/review-controls.md :: Reviewing an assessment control in AWS Audit Manager > Procedure > Evidence sources tab | column \"Name\"",
-          "quote": "| Data sources | These are the individual data sources that collect evidence to support the assessment control.+  **Name** – The name of the data source. <br />+  **Type** – The type of data source that the evidence comes from.   If Audit Manager collects the evidence, the type can be *AWS Security Hub CSPM*, *AWS Config*, *AWS CloudTrail*, or *AWS API calls*.    If you upload your own evidence, the type is *Manual*. A description indicates if the required manual evidence is a *File upload* or a *Text response*.   <br />+  **Mapping** – The specific keyword that's used to collect evidence.   I…",
-          "retrievedAt": "2026-09-01T05:00:00.794Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/review-controls.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "auditmanager/service-wide",
-      "id": "auditmanager-service-wide-resourcetype-aws-appsync-datasource-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::AppSync::DataSource",
-      "targetLabel": "Data sources"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "5f84cab95b22cfe4a615cebd33edfe21a2469f4bc825e6c22eb4e642191ead1d",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_resource-based-policy-examples.md :: heading level 2",
-          "quote": "## AWS Key Management Service policy",
-          "retrievedAt": "2026-09-01T04:58:51.956Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_resource-based-policy-examples.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "auditmanager/service-wide",
-      "id": "auditmanager-service-wide-resourcetype-aws-bedrockagentcore-policy-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::BedrockAgentCore::Policy",
-      "targetLabel": "AWS Key Management Service policy"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "1c2051678e88bc0fde7277fcde94b872d2745a405c94e45440567dcbd47925cb",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.md :: There are only two types of service-linked rule that Audit Manager collects evidence from:",
-          "quote": "+ Service-linked rules from Conformance Packs",
-          "retrievedAt": "2026-09-01T05:00:01.958Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "auditmanager/service-wide",
-      "id": "auditmanager-service-wide-resourcetype-aws-config-conformancepack-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::Config::ConformancePack",
-      "targetLabel": "Service-linked rules from Conformance Packs"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "89f382a429f9b017af6c8dee564156980b8361a016f9f55689748defd4e085f0",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.md :: When the principal in a policy statement is an AWS service principal, we strongly recommend that you use the aws:SourceArn or aws:SourceAccount global condition keys in the policy. You can use these global condition context keys to help prevent the confused deputy scenario. The following documented policies show how you can use the aws:SourceArn and aws:SourceAccount global condition context keys in Audit Manager to prevent the confused deputy problem.",
-          "quote": "+ [Example policy for an SNS topic that's used for Audit Manager notifications](https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_id-based-policy-examples.html#sns-topic-permissions)",
-          "retrievedAt": "2026-09-01T04:58:51.787Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "auditmanager/service-wide",
-      "id": "auditmanager-service-wide-resourcetype-aws-connect-notification-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::Connect::Notification",
-      "targetLabel": "Example policy for an SNS topic that's used for Audit Manager notifications"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "f46e7bbb26e4164948633d89492a5c63b9f10f880ac5271f2d8d3139a0c70af6",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/review-controls.md :: Reviewing an assessment control in AWS Audit Manager > Procedure > Evidence sources tab | column \"Name\"",
-          "quote": "| **Common controls** | These are the common controls that collect evidence to support the assessment control.<br />Common controls collect evidence using underlying data sources that AWS manages for you. For every common control that’s listed, Audit Manager collects the relevant evidence for all of the supporting core controls. Choose a common control to see the related core controls. |",
-          "retrievedAt": "2026-09-01T05:00:00.794Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/review-controls.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "auditmanager/service-wide",
-      "id": "auditmanager-service-wide-resourcetype-aws-controlcatalog-commoncontrol-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::ControlCatalog::CommonControl",
-      "targetLabel": "Common controls"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "5f84cab95b22cfe4a615cebd33edfe21a2469f4bc825e6c22eb4e642191ead1d",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_resource-based-policy-examples.md :: heading level 2",
-          "quote": "## Amazon S3 bucket policy",
-          "retrievedAt": "2026-09-01T04:58:51.956Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_resource-based-policy-examples.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "auditmanager/service-wide",
-      "id": "auditmanager-service-wide-resourcetype-aws-s3-bucketpolicy-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::S3::BucketPolicy",
-      "targetLabel": "Amazon S3 bucket policy"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "994d63fc727ceed0af14514c2bc0f747072385ebfa0727628ef2c2d871cb18c1",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/access-assessments.md :: heading level 4",
-          "quote": "#### [ Audit Manager console ]",
-          "retrievedAt": "2026-09-01T05:00:00.664Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/access-assessments.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "auditmanager/service-wide",
-      "id": "auditmanager-service-wide-resourcetype-signin-console-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "signin:console",
-      "targetLabel": "[ Audit Manager console ]"
-    },
-    {
       "axis": "service",
       "confidence": 0.8,
       "evidence": [
@@ -6270,31 +6109,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "30d26efd9f47484f3bbba2bff3e90463416df123924acd795d2cd404b0d51afb",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.md :: You can delete individual Audit Manager resources at any time. For instructions, see the following:",
-          "quote": "+ [Deleting an assessment in AWS Audit Manager](delete-assessment.md)",
-          "retrievedAt": "2026-09-01T05:00:02.207Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "auditmanager/service-wide",
-      "id": "auditmanager-service-wide-service-auditmanager-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "auditmanager",
-      "targetLabel": "Deleting an assessment in AWS Audit Manager"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "4a914d66b8986f02cb707f2bc19e333a9d73341a44ea6528d69ecf2059d08b77",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-3.md :: CIS AWS Benchmark v1.3.0 provides guidance for configuring security options for a subset of AWS services with an emphasis on foundational, testable, and architecture agnostic settings. Some of the specific Amazon Web Services in scope for this document include the following:",
+          "bodySha256": "4ed80745477867886d25d26f7bcac3e75dfefecfdd99ae7fe1b171c8a3a8d3f4",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md :: The CIS AWS Benchmark v1.4.0 provides prescriptive guidance for configuring security options for a subset of Amazon Web Services. It has an emphasis on foundational, testable, and architecture agnostic settings. Some of the specific Amazon Web Services in scope for this document include the following:",
           "quote": "+ AWS CloudTrail",
-          "retrievedAt": "2026-09-01T04:29:31.596Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-3.md"
+          "retrievedAt": "2026-09-01T04:29:31.644Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
         }
       ],
       "extractorId": "md-bullet-list",
@@ -6310,11 +6129,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "4a914d66b8986f02cb707f2bc19e333a9d73341a44ea6528d69ecf2059d08b77",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-3.md :: CIS AWS Benchmark v1.3.0 provides guidance for configuring security options for a subset of AWS services with an emphasis on foundational, testable, and architecture agnostic settings. Some of the specific Amazon Web Services in scope for this document include the following:",
+          "bodySha256": "4ed80745477867886d25d26f7bcac3e75dfefecfdd99ae7fe1b171c8a3a8d3f4",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md :: The CIS AWS Benchmark v1.4.0 provides prescriptive guidance for configuring security options for a subset of Amazon Web Services. It has an emphasis on foundational, testable, and architecture agnostic settings. Some of the specific Amazon Web Services in scope for this document include the following:",
           "quote": "+ Amazon CloudWatch",
-          "retrievedAt": "2026-09-01T04:29:31.596Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-3.md"
+          "retrievedAt": "2026-09-01T04:29:31.644Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
         }
       ],
       "extractorId": "md-bullet-list",
@@ -6330,11 +6149,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "4a914d66b8986f02cb707f2bc19e333a9d73341a44ea6528d69ecf2059d08b77",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-3.md :: CIS AWS Benchmark v1.3.0 provides guidance for configuring security options for a subset of AWS services with an emphasis on foundational, testable, and architecture agnostic settings. Some of the specific Amazon Web Services in scope for this document include the following:",
+          "bodySha256": "4ed80745477867886d25d26f7bcac3e75dfefecfdd99ae7fe1b171c8a3a8d3f4",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md :: The CIS AWS Benchmark v1.4.0 provides prescriptive guidance for configuring security options for a subset of Amazon Web Services. It has an emphasis on foundational, testable, and architecture agnostic settings. Some of the specific Amazon Web Services in scope for this document include the following:",
           "quote": "+ AWS Config",
-          "retrievedAt": "2026-09-01T04:29:31.596Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-3.md"
+          "retrievedAt": "2026-09-01T04:29:31.644Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
         }
       ],
       "extractorId": "md-bullet-list",
@@ -6370,11 +6189,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "4a914d66b8986f02cb707f2bc19e333a9d73341a44ea6528d69ecf2059d08b77",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-3.md :: CIS AWS Benchmark v1.3.0 provides guidance for configuring security options for a subset of AWS services with an emphasis on foundational, testable, and architecture agnostic settings. Some of the specific Amazon Web Services in scope for this document include the following:",
+          "bodySha256": "4ed80745477867886d25d26f7bcac3e75dfefecfdd99ae7fe1b171c8a3a8d3f4",
+          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md :: The CIS AWS Benchmark v1.4.0 provides prescriptive guidance for configuring security options for a subset of Amazon Web Services. It has an emphasis on foundational, testable, and architecture agnostic settings. Some of the specific Amazon Web Services in scope for this document include the following:",
           "quote": "+ AWS Identity and Access Management (IAM)",
-          "retrievedAt": "2026-09-01T04:29:31.596Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-3.md"
+          "retrievedAt": "2026-09-01T04:29:31.644Z",
+          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
         }
       ],
       "extractorId": "md-bullet-list",
@@ -6384,52 +6203,52 @@
       "status": "covered",
       "targetId": "iam",
       "targetLabel": "AWS Identity and Access Management (IAM)"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.9,
-      "evidence": [
-        {
-          "bodySha256": "1c2051678e88bc0fde7277fcde94b872d2745a405c94e45440567dcbd47925cb",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.md ::  | column \"Data source type\"",
-          "quote": "| AWS Security Hub CSPM | Captures a snapshot of your resource security posture by reporting findings from Security Hub CSPM. | Based on the schedule of the Security Hub CSPM check (typically around every 12 hours) | Audit Manager retrieves the security finding directly from Security Hub CSPM. The finding is imported as **Compliance check** evidence. |",
-          "retrievedAt": "2026-09-01T05:00:01.958Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.md"
-        }
-      ],
-      "extractorId": "md-table",
-      "featureId": "auditmanager/service-wide",
-      "id": "auditmanager-service-wide-service-securityhub-md-table",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "securityhub",
-      "targetLabel": "AWS Security Hub CSPM"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "1f7a01152f8378c188a8246590c0e3f4e11008dc612f1e5a7979d856219bab72",
-          "locator": "https://docs.aws.amazon.com/audit-manager/latest/userguide/well-architected.md :: ",
-          "quote": "+ [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected)",
-          "retrievedAt": "2026-09-01T04:29:31.563Z",
-          "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/well-architected.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "auditmanager/service-wide",
-      "id": "auditmanager-service-wide-service-wellarchitected-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "wellarchitected",
-      "targetLabel": "AWS Well-Architected"
     }
   ],
   "featureId": "auditmanager/service-wide",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "auditmanager",
   "unresolvedTargets": [
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Storage Service (Amazon S3)",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Relational Database Service (Amazon RDS)",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Storage Service (Amazon S3)",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Relational Database Service (Amazon RDS)",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
+    },
     {
       "axis": "service",
       "raw": "Amazon Simple Notification Service (Amazon SNS)",
@@ -6444,86 +6263,6 @@
       "axis": "service",
       "raw": "Amazon Virtual Private Cloud (default)",
       "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-3.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Notification Service (Amazon SNS)",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Storage Service (Amazon S3)",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Relational Database Service (Amazon RDS)",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Notification Service (Amazon SNS)",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Storage Service (Amazon S3)",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Elastic Compute Cloud (Amazon EC2)",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Relational Database Service (Amazon RDS)",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Deleting an assessment report",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Deleting an assessment report",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/data-protection.md"
-    },
-    {
-      "axis": "resourceType",
-      "raw": "Service-linked rules from AWS Organizations",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS API calls",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS API calls",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-collection-issues.md"
-    },
-    {
-      "axis": "resourceType",
-      "raw": "Core controls",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/review-controls.md"
-    },
-    {
-      "axis": "resourceType",
-      "raw": "Example policy for a KMS key that's used with an SNS topic",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS Well-Architected Framework documentation",
-      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/well-architected.md"
     }
   ]
 }

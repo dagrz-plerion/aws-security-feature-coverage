@@ -1,49 +1,8 @@
 {
   "axes": [
-    "region",
     "resourceType"
   ],
   "claims": [
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "7c779d669286c2c3fcc48611fb9e9f532719c94e4efd508080cf61ed73be7e4f",
-          "locator": "https://docs.aws.amazon.com/iot-mi/latest/devguide/what-is-managedintegrations.md :: Managed Integrations for AWS IoT Device Management is supported in the following Regions:",
-          "quote": "+ Canada (Central)",
-          "retrievedAt": "2026-09-01T04:34:46.463Z",
-          "sourceUrl": "https://docs.aws.amazon.com/iot-mi/latest/devguide/what-is-managedintegrations.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "api.iotmanagedintegrations/service-wide",
-      "id": "api-iotmanagedintegrations-service-wide-region-ca-central-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ca-central-1",
-      "targetLabel": "Canada (Central)"
-    },
-    {
-      "axis": "region",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "7c779d669286c2c3fcc48611fb9e9f532719c94e4efd508080cf61ed73be7e4f",
-          "locator": "https://docs.aws.amazon.com/iot-mi/latest/devguide/what-is-managedintegrations.md :: Managed Integrations for AWS IoT Device Management is supported in the following Regions:",
-          "quote": "+ Europe (Ireland)",
-          "retrievedAt": "2026-09-01T04:34:46.463Z",
-          "sourceUrl": "https://docs.aws.amazon.com/iot-mi/latest/devguide/what-is-managedintegrations.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "api.iotmanagedintegrations/service-wide",
-      "id": "api-iotmanagedintegrations-service-wide-region-eu-west-1-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "eu-west-1",
-      "targetLabel": "Europe (Ireland)"
-    },
     {
       "axis": "resourceType",
       "confidence": 0.9,
@@ -106,7 +65,7 @@
     }
   ],
   "featureId": "api.iotmanagedintegrations/service-wide",
-  "generatedAt": "2026-09-01T05:16:49.209Z",
+  "generatedAt": "2026-09-01T06:09:12.842Z",
   "serviceId": "api.iotmanagedintegrations",
   "unresolvedTargets": [
     {

@@ -16,17 +16,33 @@ export function toBrowserModel(data: ReportData) {
   const features = data.features.map((feature) => {
     const coverage = coverageByFeature.get(feature.id);
     const claims = coverage?.claims ?? [];
-    const byAxis: Record<string, { covered: number; notCovered: number; partial: number; unknown: number; total: number }> = {};
+    // Counted per distinct target. A control excluded in forty Regions is one
+    // control with forty regional exclusions, not forty controls.
+    const perAxis = new Map<string, Map<string, Set<string>>>();
+    const scoped: Record<string, number> = {};
     for (const claim of claims) {
-      const bucket = (byAxis[claim.axis] ??= { covered: 0, notCovered: 0, partial: 0, unknown: 0, total: 0 });
-      bucket.total += 1;
-      if (claim.status === "covered") bucket.covered += 1;
-      else if (claim.status === "not-covered") bucket.notCovered += 1;
-      else if (claim.status === "partial") bucket.partial += 1;
-      else bucket.unknown += 1;
+      if (claim.scope) scoped[claim.axis] = (scoped[claim.axis] ?? 0) + 1;
+      const axis = perAxis.get(claim.axis) ?? new Map<string, Set<string>>();
+      const bucket = axis.get(claim.status) ?? new Set<string>();
+      bucket.add(claim.targetId);
+      axis.set(claim.status, bucket);
+      perAxis.set(claim.axis, axis);
+    }
+    const byAxis: Record<string, { covered: number; notCovered: number; partial: number; unknown: number; total: number; scoped: number }> = {};
+    for (const [axis, statuses] of perAxis) {
+      const covered = statuses.get("covered")?.size ?? 0;
+      const notCovered = statuses.get("not-covered")?.size ?? 0;
+      const partial = statuses.get("partial")?.size ?? 0;
+      const unknown = statuses.get("unknown")?.size ?? 0;
+      const all = new Set<string>();
+      for (const set of statuses.values()) for (const value of set) all.add(value);
+      byAxis[axis] = { covered, notCovered, partial, unknown, total: all.size, scoped: scoped[axis] ?? 0 };
     }
     const targets: Record<string, string[]> = {};
-    for (const claim of claims) (targets[claim.axis] ??= []).push(claim.targetId);
+    for (const claim of claims) {
+      const list = (targets[claim.axis] ??= []);
+      if (!list.includes(claim.targetId)) list.push(claim.targetId);
+    }
     return {
       id: feature.id,
       serviceId: feature.serviceId,
@@ -134,6 +150,7 @@ export function buildDetail(data: ReportData) {
     detail[`coverage:${coverage.featureId}`] = {
       claims: coverage.claims.map((c) => ({
         axis: c.axis, targetId: c.targetId, targetLabel: c.targetLabel, status: c.status,
+        ...(c.scope ? { scope: c.scope } : {}),
         qualifier: c.qualifier ?? "", extractorId: c.extractorId, method: c.method,
         evidence: c.evidence.slice(0, 2),
       })),
