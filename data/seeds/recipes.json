@@ -190,6 +190,56 @@
           },
           "requireMin": 30,
           "onlyBlocksMatching": "Amazon EC2 scanning"
+        },
+        {
+          "id": "inspector-languages",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "programming languages",
+          "select": {
+            "from": "list-items",
+            "extract": "whole",
+            "matches": "^[A-Za-z][A-Za-z0-9+#. ]{1,30}$"
+          },
+          "axis": "programmingLanguage",
+          "status": "covered",
+          "requireMin": 5
+        },
+        {
+          "id": "inspector-discontinued-os",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "Discontinued operating systems",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "operating system",
+            "joinColumns": [
+              "^version$"
+            ],
+            "extract": "whole"
+          },
+          "axis": "operatingSystem",
+          "status": "not-covered",
+          "requireMin": 8
+        },
+        {
+          "id": "inspector-ecr-os",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "Amazon ECR scanning",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "operating system",
+            "joinColumns": [
+              "^version$"
+            ],
+            "extract": "whole"
+          },
+          "axis": "operatingSystem",
+          "status": "covered",
+          "scope": {
+            "axis": "scanMethod",
+            "from": "constant",
+            "value": "ecr-scanning"
+          },
+          "requireMin": 8
         }
       ]
     },
@@ -223,6 +273,20 @@
           "axis": "fileExtension",
           "status": "covered",
           "requireMin": 20
+        },
+        {
+          "id": "macie-unsupported-storage-classes",
+          "blocks": "whole-page",
+          "select": {
+            "from": "paragraph",
+            "sentenceMatches": "does ?n'?t analyze",
+            "extract": "regex",
+            "pattern": "(S3 Glacier Deep Archive|S3 Express One Zone|S3 directory buckets)",
+            "split": "\\s+or\\s+|,\\s+"
+          },
+          "axis": "storageClass",
+          "status": "not-covered",
+          "requireMin": 1
         }
       ]
     },
@@ -342,6 +406,20 @@
           "axis": "threatCategory",
           "status": "covered",
           "requireMin": 14
+        },
+        {
+          "id": "network-firewall-threat-rule-groups",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "rule name",
+            "extract": "whole",
+            "split": "\\s*,\\s*",
+            "matches": "^ThreatSignatures[A-Za-z]+$"
+          },
+          "axis": "managedRuleGroup",
+          "status": "covered",
+          "requireMin": 24
         }
       ]
     },
@@ -364,6 +442,26 @@
           "status": "from-column",
           "statusColumn": "trusted access",
           "requireMin": 35
+        },
+        {
+          "id": "organizations-delegated-administrator",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "service",
+            "extract": "whole",
+            "split": "\\s+\u00b7\\s+",
+            "matches": "^(AWS|Amazon|IAM|EC2|Service|Tag)[A-Za-z0-9 ()\\-]{2,70}$"
+          },
+          "axis": "service",
+          "status": "from-column",
+          "statusColumn": "delegated administrator",
+          "scope": {
+            "axis": "integrationType",
+            "from": "constant",
+            "value": "delegated-administrator"
+          },
+          "requireMin": 30
         }
       ]
     },
@@ -402,6 +500,193 @@
           "axis": "findingType",
           "status": "not-covered",
           "requireMin": 15
+        }
+      ]
+    },
+    {
+      "urlPattern": "guardduty/latest/ug/findings-runtime-monitoring\\.md$",
+      "serviceId": "guardduty",
+      "note": "GuardDuty Runtime Monitoring finding types, one per H2.",
+      "recipes": [
+        {
+          "id": "guardduty-runtime-monitoring-findings",
+          "blocks": "whole-page",
+          "select": {
+            "from": "headings",
+            "level": 2,
+            "extract": "whole",
+            "matches": "^[A-Z][A-Za-z]*:[A-Za-z0-9]+/[A-Za-z0-9._!&-]+$"
+          },
+          "axis": "findingType",
+          "status": "covered",
+          "featureId": "guardduty/runtime-monitoring",
+          "requireMin": 40
+        }
+      ]
+    },
+    {
+      "urlPattern": "guardduty/latest/ug/guardduty-finding-types-eks-audit-logs\\.md$",
+      "serviceId": "guardduty",
+      "note": "EKS Protection finding types.",
+      "recipes": [
+        {
+          "id": "guardduty-eks-findings",
+          "blocks": "whole-page",
+          "select": {
+            "from": "headings",
+            "level": 2,
+            "extract": "whole",
+            "matches": "^[A-Z][A-Za-z]*:[A-Za-z0-9]+/[A-Za-z0-9._!&-]+$"
+          },
+          "axis": "findingType",
+          "status": "covered",
+          "featureId": "guardduty/eks-protection",
+          "requireMin": 28
+        }
+      ]
+    },
+    {
+      "urlPattern": "guardduty/latest/ug/findings-malware-protection\\.md$",
+      "serviceId": "guardduty",
+      "note": "Malware Protection for EC2 finding types.",
+      "recipes": [
+        {
+          "id": "guardduty-malware-ec2-findings",
+          "blocks": "whole-page",
+          "select": {
+            "from": "headings",
+            "level": 2,
+            "extract": "whole",
+            "matches": "^[A-Z][A-Za-z]*:[A-Za-z0-9]+/[A-Za-z0-9._!&-]+$"
+          },
+          "axis": "findingType",
+          "status": "covered",
+          "featureId": "guardduty/malware-protection-for-ec2",
+          "requireMin": 7
+        }
+      ]
+    },
+    {
+      "urlPattern": "guardduty/latest/ug/findings-malware-protection-backup\\.md$",
+      "serviceId": "guardduty",
+      "note": "Malware Protection for AWS Backup finding types.",
+      "recipes": [
+        {
+          "id": "guardduty-malware-backup-findings",
+          "blocks": "whole-page",
+          "select": {
+            "from": "headings",
+            "level": 2,
+            "extract": "whole",
+            "matches": "^[A-Z][A-Za-z]*:[A-Za-z0-9]+/[A-Za-z0-9._!&-]+$"
+          },
+          "axis": "findingType",
+          "status": "covered",
+          "requireMin": 3
+        }
+      ]
+    },
+    {
+      "urlPattern": "guardduty/latest/ug/findings-rds-protection\\.md$",
+      "serviceId": "guardduty",
+      "note": "RDS Protection finding types.",
+      "recipes": [
+        {
+          "id": "guardduty-rds-findings",
+          "blocks": "whole-page",
+          "select": {
+            "from": "headings",
+            "level": 2,
+            "extract": "whole",
+            "matches": "^[A-Z][A-Za-z]*:[A-Za-z0-9]+/[A-Za-z0-9._!&-]+$"
+          },
+          "axis": "findingType",
+          "status": "covered",
+          "featureId": "guardduty/rds-protection",
+          "requireMin": 8
+        }
+      ]
+    },
+    {
+      "urlPattern": "guardduty/latest/ug/lambda-protection-finding-types\\.md$",
+      "serviceId": "guardduty",
+      "note": "Lambda Protection finding types.",
+      "recipes": [
+        {
+          "id": "guardduty-lambda-findings",
+          "blocks": "whole-page",
+          "select": {
+            "from": "headings",
+            "level": 2,
+            "extract": "whole",
+            "matches": "^[A-Z][A-Za-z]*:[A-Za-z0-9]+/[A-Za-z0-9._!&-]+$"
+          },
+          "axis": "findingType",
+          "status": "covered",
+          "featureId": "guardduty/lambda-protection",
+          "requireMin": 6
+        }
+      ]
+    },
+    {
+      "urlPattern": "guardduty/latest/ug/findings-ai-protection\\.md$",
+      "serviceId": "guardduty",
+      "note": "AI Protection finding types.",
+      "recipes": [
+        {
+          "id": "guardduty-ai-findings",
+          "blocks": "whole-page",
+          "select": {
+            "from": "headings",
+            "level": 2,
+            "extract": "whole",
+            "matches": "^[A-Z][A-Za-z]*:[A-Za-z0-9]+/[A-Za-z0-9._!&-]+$"
+          },
+          "axis": "findingType",
+          "status": "covered",
+          "featureId": "guardduty/ai-protection",
+          "requireMin": 2
+        }
+      ]
+    },
+    {
+      "urlPattern": "guardduty/latest/ug/guardduty-attack-sequence-finding-types\\.md$",
+      "serviceId": "guardduty",
+      "note": "Attack sequence finding types, emitted by Extended Threat Detection.",
+      "recipes": [
+        {
+          "id": "guardduty-attack-sequence-findings",
+          "blocks": "whole-page",
+          "select": {
+            "from": "headings",
+            "level": 2,
+            "extract": "whole",
+            "matches": "^[A-Z][A-Za-z]*:[A-Za-z0-9]+/[A-Za-z0-9._!&-]+$"
+          },
+          "axis": "findingType",
+          "status": "covered",
+          "featureId": "guardduty/extended-threat-detection",
+          "requireMin": 4
+        }
+      ]
+    },
+    {
+      "urlPattern": "waf/latest/developerguide/aws-managed-rule-groups-(atp|acfp)\\.md$",
+      "serviceId": "wafv2",
+      "note": "Both fraud-control rule groups state they cannot be used with Amazon Cognito user pools. The exclusion is in prose beside the rule group name.",
+      "recipes": [
+        {
+          "id": "waf-fraud-control-cognito-exclusion",
+          "blocks": "whole-page",
+          "select": {
+            "from": "paragraph",
+            "sentenceMatches": "is ?n'?t available for use with Amazon Cognito",
+            "extract": "regex",
+            "pattern": "(Amazon Cognito user pools)"
+          },
+          "axis": "resourceTarget",
+          "status": "not-covered",
+          "requireMin": 1
         }
       ]
     }

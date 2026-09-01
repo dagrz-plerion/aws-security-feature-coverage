@@ -119,8 +119,10 @@ maybe("open axes", () => {
       configRule: /^[a-z][a-z0-9]*(-[a-z0-9]+){1,}$/,
       // Macie has single-token identifiers too: ADDRESS, NAME, PKCS.
       dataIdentifier: /^[A-Z][A-Z0-9_]{2,}$/,
-      // AWS publishes both the code name and the prose name for a rule group.
-      managedRuleGroup: /^(AWSManagedRules[A-Za-z0-9]+|[A-Za-z][A-Za-z0-9 ]+managed rule group)$/i,
+      // Three published forms: WAF's AWSManagedRules*, Network Firewall's
+      // ThreatSignatures*, and the prose name AWS uses in its own tables.
+      managedRuleGroup:
+        /^(AWSManagedRules[A-Za-z0-9]+|ThreatSignatures[A-Za-z]+|[A-Za-z][A-Za-z0-9 ]+managed rule group)$/i,
     };
     const bad: string[] = [];
     for (const axis of open?.axes ?? []) {

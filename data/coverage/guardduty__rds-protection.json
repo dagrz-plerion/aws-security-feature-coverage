@@ -1,0 +1,191 @@
+{
+  "axes": [
+    "findingType"
+  ],
+  "claims": [
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "67a60166db93755fa48f98faff7eb13cce2bd8d506e1c95921cedbfa8204cc47",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md :: GuardDuty RDS Protection finding types",
+          "quote": "## CredentialAccess:RDS/AnomalousBehavior.FailedLogin",
+          "retrievedAt": "2026-09-01T04:29:43.881Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-rds-findings",
+      "featureId": "guardduty/rds-protection",
+      "id": "guardduty-rds-protection-findingtype-credentialaccess-rds-anomalousbehavior-failedlogin-recipe-guardduty-rds-findings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CredentialAccess:RDS/AnomalousBehavior.FailedLogin",
+      "targetLabel": "CredentialAccess:RDS/AnomalousBehavior.FailedLogin"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "67a60166db93755fa48f98faff7eb13cce2bd8d506e1c95921cedbfa8204cc47",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md :: GuardDuty RDS Protection finding types",
+          "quote": "## CredentialAccess:RDS/AnomalousBehavior.SuccessfulBruteForce",
+          "retrievedAt": "2026-09-01T04:29:43.881Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-rds-findings",
+      "featureId": "guardduty/rds-protection",
+      "id": "guardduty-rds-protection-findingtype-credentialaccess-rds-anomalousbehavior-successfulbruteforce-recipe-guardduty-rds-fi",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CredentialAccess:RDS/AnomalousBehavior.SuccessfulBruteForce",
+      "targetLabel": "CredentialAccess:RDS/AnomalousBehavior.SuccessfulBruteForce"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "67a60166db93755fa48f98faff7eb13cce2bd8d506e1c95921cedbfa8204cc47",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md :: GuardDuty RDS Protection finding types",
+          "quote": "## CredentialAccess:RDS/AnomalousBehavior.SuccessfulLogin",
+          "retrievedAt": "2026-09-01T04:29:43.881Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-rds-findings",
+      "featureId": "guardduty/rds-protection",
+      "id": "guardduty-rds-protection-findingtype-credentialaccess-rds-anomalousbehavior-successfullogin-recipe-guardduty-rds-finding",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CredentialAccess:RDS/AnomalousBehavior.SuccessfulLogin",
+      "targetLabel": "CredentialAccess:RDS/AnomalousBehavior.SuccessfulLogin"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "67a60166db93755fa48f98faff7eb13cce2bd8d506e1c95921cedbfa8204cc47",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md :: GuardDuty RDS Protection finding types",
+          "quote": "## CredentialAccess:RDS/MaliciousIPCaller.FailedLogin",
+          "retrievedAt": "2026-09-01T04:29:43.881Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-rds-findings",
+      "featureId": "guardduty/rds-protection",
+      "id": "guardduty-rds-protection-findingtype-credentialaccess-rds-maliciousipcaller-failedlogin-recipe-guardduty-rds-findings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CredentialAccess:RDS/MaliciousIPCaller.FailedLogin",
+      "targetLabel": "CredentialAccess:RDS/MaliciousIPCaller.FailedLogin"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "67a60166db93755fa48f98faff7eb13cce2bd8d506e1c95921cedbfa8204cc47",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md :: GuardDuty RDS Protection finding types",
+          "quote": "## CredentialAccess:RDS/MaliciousIPCaller.SuccessfulLogin",
+          "retrievedAt": "2026-09-01T04:29:43.881Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-rds-findings",
+      "featureId": "guardduty/rds-protection",
+      "id": "guardduty-rds-protection-findingtype-credentialaccess-rds-maliciousipcaller-successfullogin-recipe-guardduty-rds-finding",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CredentialAccess:RDS/MaliciousIPCaller.SuccessfulLogin",
+      "targetLabel": "CredentialAccess:RDS/MaliciousIPCaller.SuccessfulLogin"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "67a60166db93755fa48f98faff7eb13cce2bd8d506e1c95921cedbfa8204cc47",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md :: GuardDuty RDS Protection finding types",
+          "quote": "## CredentialAccess:RDS/TorIPCaller.FailedLogin",
+          "retrievedAt": "2026-09-01T04:29:43.881Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-rds-findings",
+      "featureId": "guardduty/rds-protection",
+      "id": "guardduty-rds-protection-findingtype-credentialaccess-rds-toripcaller-failedlogin-recipe-guardduty-rds-findings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CredentialAccess:RDS/TorIPCaller.FailedLogin",
+      "targetLabel": "CredentialAccess:RDS/TorIPCaller.FailedLogin"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "67a60166db93755fa48f98faff7eb13cce2bd8d506e1c95921cedbfa8204cc47",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md :: GuardDuty RDS Protection finding types",
+          "quote": "## CredentialAccess:RDS/TorIPCaller.SuccessfulLogin",
+          "retrievedAt": "2026-09-01T04:29:43.881Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-rds-findings",
+      "featureId": "guardduty/rds-protection",
+      "id": "guardduty-rds-protection-findingtype-credentialaccess-rds-toripcaller-successfullogin-recipe-guardduty-rds-findings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CredentialAccess:RDS/TorIPCaller.SuccessfulLogin",
+      "targetLabel": "CredentialAccess:RDS/TorIPCaller.SuccessfulLogin"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "67a60166db93755fa48f98faff7eb13cce2bd8d506e1c95921cedbfa8204cc47",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md :: GuardDuty RDS Protection finding types",
+          "quote": "## Discovery:RDS/MaliciousIPCaller",
+          "retrievedAt": "2026-09-01T04:29:43.881Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-rds-findings",
+      "featureId": "guardduty/rds-protection",
+      "id": "guardduty-rds-protection-findingtype-discovery-rds-maliciousipcaller-recipe-guardduty-rds-findings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Discovery:RDS/MaliciousIPCaller",
+      "targetLabel": "Discovery:RDS/MaliciousIPCaller"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "67a60166db93755fa48f98faff7eb13cce2bd8d506e1c95921cedbfa8204cc47",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md :: GuardDuty RDS Protection finding types",
+          "quote": "## Discovery:RDS/TorIPCaller",
+          "retrievedAt": "2026-09-01T04:29:43.881Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-rds-findings",
+      "featureId": "guardduty/rds-protection",
+      "id": "guardduty-rds-protection-findingtype-discovery-rds-toripcaller-recipe-guardduty-rds-findings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Discovery:RDS/TorIPCaller",
+      "targetLabel": "Discovery:RDS/TorIPCaller"
+    }
+  ],
+  "featureId": "guardduty/rds-protection",
+  "generatedAt": "2026-09-01T06:55:44.613Z",
+  "serviceId": "guardduty",
+  "unresolvedTargets": []
+}

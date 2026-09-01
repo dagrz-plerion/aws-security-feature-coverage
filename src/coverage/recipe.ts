@@ -15,7 +15,9 @@ export type Recipe = {
   note?: string;
   blocks?: "whole-page" | "h2-sections" | "h3-sections";
   select: {
-    from: "list-items" | "table-column" | "headings" | "code-spans";
+    from: "list-items" | "table-column" | "headings" | "code-spans" | "paragraph";
+    /** paragraph only: the sentence must match this before its targets are taken. */
+    sentenceMatches?: string;
     headerMatches?: string;
     level?: number;
     extract?: "whole" | "leading-bracket" | "leading-token" | "regex";
@@ -83,7 +85,11 @@ function extractTarget(value: string, recipe: Recipe): string | undefined {
 const YES = /^(yes|supported|available|✓|✔|all|full)$/i;
 const NO = /^(no|not supported|unsupported|unavailable|n\/a|-|—|none)$/i;
 
-function statusFor(recipe: Recipe, row: string[] | undefined, headers: string[]): CoverageStatus {
+const ABSENCE =
+  /\b(not supported|aren'?t supported|isn'?t supported|are not available|aren'?t available|is not available|isn'?t available|not currently available|does ?n'?t (support|analy[sz]e|scan|include)|do ?n'?t (support|analy[sz]e|scan|include)|can'?t (be used|scan|generate)|unsupported|excluded|no longer|retired|only for|only in|only with)\b/i;
+
+function statusFor(recipe: Recipe, row: string[] | undefined, headers: string[], sentence?: string): CoverageStatus {
+  if (recipe.status === "from-context" && sentence) return ABSENCE.test(sentence) ? "not-covered" : "covered";
   if (recipe.status === "not-covered") return "not-covered";
   if (recipe.status === "from-column" && row) {
     const column = findColumn(headers, [new RegExp(recipe.statusColumn ?? "support", "i")]);
@@ -102,6 +108,21 @@ function statusFor(recipe: Recipe, row: string[] | undefined, headers: string[])
     return "unknown";
   }
   return "covered";
+}
+
+/** Prose split into sentences, with the Markdown markup taken off. */
+export function sentencesIn(body: string): string[] {
+  const prose = body
+    .split("\n")
+    .filter((line) => !/^\s*(\||[+*-]\s|#{1,6}\s|<a )/.test(line))
+    .join(" ")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/[*`]/g, "")
+    .replace(/\s+/g, " ");
+  return prose
+    .split(/(?<=[.:])\s+(?=[A-Z(])/)
+    .map((s) => s.trim())
+    .filter((s) => s.length > 20 && s.length < 600);
 }
 
 /** One cell can hold a list. AWS joins those with a line break or a comma. */
@@ -194,6 +215,15 @@ export function runRecipe(
         const raw = blockDoc.lines[section.startLine];
         values.push({ value: section.title, quote: (raw ?? `${"#".repeat(wanted)} ${section.title}`).trim() });
       }
+    } else if (recipe.select.from === "paragraph") {
+      // AWS states most of its exclusions in a sentence beside the list, never in the
+      // list. "Macie doesn't analyze S3 objects that use other storage classes, such
+      // as S3 Glacier Deep Archive or S3 Express One Zone."
+      const wanted = recipe.select.sentenceMatches ? new RegExp(recipe.select.sentenceMatches, "i") : undefined;
+      for (const sentence of sentencesIn(block.body)) {
+        if (wanted && !wanted.test(sentence)) continue;
+        for (const value of splitValue(sentence, recipe)) values.push({ value, quote: sentence });
+      }
     } else {
       for (const line of block.body.split("\n")) {
         for (const match of line.matchAll(/`([^`\n]{3,80})`/g)) {
@@ -229,7 +259,7 @@ export function runRecipe(
       const key = `${targetId}|${scope?.targetId ?? ""}`;
       if (seen.has(key)) continue;
       seen.add(key);
-      const status = statusFor(recipe, entry.row, entry.headers ?? []);
+      const status = statusFor(recipe, entry.row, entry.headers ?? [], entry.quote);
       // "unknown" means the status column was not on this table, so the row was not
       // the one the recipe is for. Inspector's OS recipe swept four unrelated tables
       // this way and scoped all of them to a scan method they say nothing about.

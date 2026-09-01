@@ -6602,8 +6602,8 @@
           "unknown": 0
         },
         "service": {
-          "covered": 219,
-          "notCovered": 1,
+          "covered": 212,
+          "notCovered": 8,
           "partial": 0,
           "scoped": 0,
           "total": 220,
@@ -18422,8 +18422,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "findingType": {
+          "covered": 3,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 3,
+          "unknown": 0
+        }
+      },
+      "claimCount": 3,
       "confidence": 0.95,
       "discoveredBy": [
         "api-enum",
@@ -18441,7 +18450,13 @@
       "serviceId": "guardduty",
       "serviceName": "Amazon GuardDuty",
       "summary": "In a multiple-account environment, only the delegated GuardDuty administrator account can enable or disable AI Protection for the member accounts in the organization.",
-      "targets": {},
+      "targets": {
+        "findingType": [
+          "Impact:IAMUser/AnomalousModelInvocation",
+          "Impact:IAMUser/CostHarvesting",
+          "Impact:IAMUser/PromptInjection.Direct"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -18655,8 +18670,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "findingType": {
+          "covered": 33,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 33,
+          "unknown": 0
+        }
+      },
+      "claimCount": 33,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -18673,7 +18697,43 @@
       "serviceId": "guardduty",
       "serviceName": "Amazon GuardDuty",
       "summary": "In a multiple-account environment, only the delegated GuardDuty administrator account has the option to enable or disable the EKS Protection; feature for the member accounts in the",
-      "targets": {},
+      "targets": {
+        "findingType": [
+          "CredentialAccess:Kubernetes/AnomalousBehavior.SecretsAccessed",
+          "CredentialAccess:Kubernetes/MaliciousIPCaller",
+          "CredentialAccess:Kubernetes/MaliciousIPCaller.Custom",
+          "CredentialAccess:Kubernetes/SuccessfulAnonymousAccess",
+          "CredentialAccess:Kubernetes/TorIPCaller",
+          "DefenseEvasion:Kubernetes/MaliciousIPCaller",
+          "DefenseEvasion:Kubernetes/MaliciousIPCaller.Custom",
+          "DefenseEvasion:Kubernetes/SuccessfulAnonymousAccess",
+          "DefenseEvasion:Kubernetes/TorIPCaller",
+          "Discovery:Kubernetes/AnomalousBehavior.PermissionChecked",
+          "Discovery:Kubernetes/MaliciousIPCaller",
+          "Discovery:Kubernetes/MaliciousIPCaller.Custom",
+          "Discovery:Kubernetes/SuccessfulAnonymousAccess",
+          "Discovery:Kubernetes/TorIPCaller",
+          "Execution:Kubernetes/AnomalousBehavior.ExecInPod",
+          "Execution:Kubernetes/AnomalousBehavior.WorkloadDeployed",
+          "Execution:Kubernetes/ExecInKubeSystemPod",
+          "Impact:Kubernetes/MaliciousIPCaller",
+          "Impact:Kubernetes/MaliciousIPCaller.Custom",
+          "Impact:Kubernetes/SuccessfulAnonymousAccess",
+          "Impact:Kubernetes/TorIPCaller",
+          "Persistence:Kubernetes/AnomalousBehavior.WorkloadDeployed!ContainerWithSensitiveMount",
+          "Persistence:Kubernetes/MaliciousIPCaller",
+          "Persistence:Kubernetes/MaliciousIPCaller.Custom",
+          "Persistence:Kubernetes/SuccessfulAnonymousAccess",
+          "Persistence:Kubernetes/TorIPCaller",
+          "Policy:Kubernetes/AdminAccessToDefaultServiceAccount",
+          "Policy:Kubernetes/AnonymousAccessGranted",
+          "Policy:Kubernetes/ExposedDashboard",
+          "Policy:Kubernetes/KubeflowDashboardExposed",
+          "PrivilegeEscalation:Kubernetes/AnomalousBehavior.RoleBindingCreated",
+          "PrivilegeEscalation:Kubernetes/AnomalousBehavior.RoleCreated",
+          "PrivilegeEscalation:Kubernetes/AnomalousBehavior.WorkloadDeployed!PrivilegedContainer"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -18769,8 +18829,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "findingType": {
+          "covered": 5,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 5,
+          "unknown": 0
+        }
+      },
+      "claimCount": 5,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -18786,7 +18855,15 @@
       "serviceId": "guardduty",
       "serviceName": "Amazon GuardDuty",
       "summary": "",
-      "targets": {},
+      "targets": {
+        "findingType": [
+          "AttackSequence:EC2/CompromisedInstanceGroup",
+          "AttackSequence:ECS/CompromisedCluster",
+          "AttackSequence:EKS/CompromisedCluster",
+          "AttackSequence:IAM/CompromisedCredentials",
+          "AttackSequence:S3/CompromisedData"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -19055,8 +19132,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "findingType": {
+          "covered": 7,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 7,
+          "unknown": 0
+        }
+      },
+      "claimCount": 7,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -19073,7 +19159,17 @@
       "serviceId": "guardduty",
       "serviceName": "Amazon GuardDuty",
       "summary": "In a multi-account environment, only the delegated GuardDuty administrator account has the option to enable or disable Lambda Protection for the member accounts in their organizati",
-      "targets": {},
+      "targets": {
+        "findingType": [
+          "Backdoor:Lambda/C&CActivity.B",
+          "CryptoCurrency:Lambda/BitcoinTool.B",
+          "Trojan:Lambda/BlackholeTraffic",
+          "Trojan:Lambda/DropPoint",
+          "UnauthorizedAccess:Lambda/MaliciousIPCaller.Custom",
+          "UnauthorizedAccess:Lambda/TorClient",
+          "UnauthorizedAccess:Lambda/TorRelay"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -19100,8 +19196,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "findingType": {
+          "covered": 4,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 4,
+          "unknown": 0
+        }
+      },
+      "claimCount": 4,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -19117,13 +19222,29 @@
       "serviceId": "guardduty",
       "serviceName": "Amazon GuardDuty",
       "summary": "GuardDuty Malware Protection for Backup provides a single finding for all threats detected during the scan of the requested resource.",
-      "targets": {},
+      "targets": {
+        "findingType": [
+          "Execution:EC2/MaliciousFile!AMI",
+          "Execution:EC2/MaliciousFile!RecoveryPoint",
+          "Execution:EC2/MaliciousFile!Snapshot",
+          "Execution:S3/MaliciousFile!RecoveryPoint"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "findingType": {
+          "covered": 8,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 8,
+          "unknown": 0
+        }
+      },
+      "claimCount": 8,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -19141,7 +19262,18 @@
       "serviceId": "guardduty",
       "serviceName": "Amazon GuardDuty",
       "summary": "This section explains how Malware Protection for EC2, including both GuardDuty-initiated malware scan and On-demand malware scan, scans the Amazon EBS volumes associated with your ",
-      "targets": {},
+      "targets": {
+        "findingType": [
+          "Execution:Container/MaliciousFile",
+          "Execution:Container/SuspiciousFile",
+          "Execution:EC2/MaliciousFile",
+          "Execution:EC2/SuspiciousFile",
+          "Execution:ECS/MaliciousFile",
+          "Execution:ECS/SuspiciousFile",
+          "Execution:Kubernetes/MaliciousFile",
+          "Execution:Kubernetes/SuspiciousFile"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -19374,8 +19506,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "findingType": {
+          "covered": 9,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 9,
+          "unknown": 0
+        }
+      },
+      "claimCount": 9,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -19392,7 +19533,19 @@
       "serviceId": "guardduty",
       "serviceName": "Amazon GuardDuty",
       "summary": "In a multiple-account environment, only the delegated GuardDuty administrator account has the option to enable or disable the RDS Protection feature for the member accounts in thei",
-      "targets": {},
+      "targets": {
+        "findingType": [
+          "CredentialAccess:RDS/AnomalousBehavior.FailedLogin",
+          "CredentialAccess:RDS/AnomalousBehavior.SuccessfulBruteForce",
+          "CredentialAccess:RDS/AnomalousBehavior.SuccessfulLogin",
+          "CredentialAccess:RDS/MaliciousIPCaller.FailedLogin",
+          "CredentialAccess:RDS/MaliciousIPCaller.SuccessfulLogin",
+          "CredentialAccess:RDS/TorIPCaller.FailedLogin",
+          "CredentialAccess:RDS/TorIPCaller.SuccessfulLogin",
+          "Discovery:RDS/MaliciousIPCaller",
+          "Discovery:RDS/TorIPCaller"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -19507,8 +19660,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "findingType": {
+          "covered": 46,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 46,
+          "unknown": 0
+        }
+      },
+      "claimCount": 46,
       "confidence": 0.95,
       "discoveredBy": [
         "api-enum",
@@ -19528,7 +19690,56 @@
       "serviceId": "guardduty",
       "serviceName": "Amazon GuardDuty",
       "summary": "Learn more about what to expect after you have enabled Runtime Monitoring and deployed the GuardDuty security agent.",
-      "targets": {},
+      "targets": {
+        "findingType": [
+          "Backdoor:Runtime/C&CActivity.B",
+          "Backdoor:Runtime/C&CActivity.B!DNS",
+          "CryptoCurrency:Runtime/BitcoinTool.B",
+          "CryptoCurrency:Runtime/BitcoinTool.B!DNS",
+          "DefenseEvasion:Runtime/FilelessExecution",
+          "DefenseEvasion:Runtime/KernelModuleLoaded",
+          "DefenseEvasion:Runtime/ProcessInjection.Proc",
+          "DefenseEvasion:Runtime/ProcessInjection.Ptrace",
+          "DefenseEvasion:Runtime/ProcessInjection.VirtualMemoryWrite",
+          "DefenseEvasion:Runtime/PtraceAntiDebugging",
+          "DefenseEvasion:Runtime/SensitiveFileModified",
+          "DefenseEvasion:Runtime/SuspiciousCommand",
+          "Discovery:Runtime/SuspiciousCommand",
+          "Execution:Runtime/MaliciousFileExecuted",
+          "Execution:Runtime/MaliciousFileExecuted.Custom",
+          "Execution:Runtime/NewBinaryExecuted",
+          "Execution:Runtime/NewLibraryLoaded",
+          "Execution:Runtime/ReverseShell",
+          "Execution:Runtime/SuspiciousCommand",
+          "Execution:Runtime/SuspiciousShellCreated",
+          "Execution:Runtime/SuspiciousTool",
+          "Impact:Runtime/AbusedDomainRequest.Reputation",
+          "Impact:Runtime/BitcoinDomainRequest.Reputation",
+          "Impact:Runtime/CryptoMinerExecuted",
+          "Impact:Runtime/MaliciousDomainRequest.Reputation",
+          "Impact:Runtime/SuspiciousDomainRequest.Reputation",
+          "Persistence:Runtime/SensitiveFileModified",
+          "Persistence:Runtime/SuspiciousCommand",
+          "PrivilegeEscalation:Runtime/CGroupsReleaseAgentModified",
+          "PrivilegeEscalation:Runtime/ContainerMountsHostDirectory",
+          "PrivilegeEscalation:Runtime/DockerSocketAccessed",
+          "PrivilegeEscalation:Runtime/ElevationToRoot",
+          "PrivilegeEscalation:Runtime/RuncContainerEscape",
+          "PrivilegeEscalation:Runtime/SensitiveFileModified",
+          "PrivilegeEscalation:Runtime/SuspiciousCommand",
+          "PrivilegeEscalation:Runtime/UserfaultfdUsage",
+          "Trojan:Runtime/BlackholeTraffic",
+          "Trojan:Runtime/BlackholeTraffic!DNS",
+          "Trojan:Runtime/DGADomainRequest.C!DNS",
+          "Trojan:Runtime/DriveBySourceTraffic!DNS",
+          "Trojan:Runtime/DropPoint",
+          "Trojan:Runtime/DropPoint!DNS",
+          "Trojan:Runtime/PhishingDomainRequest!DNS",
+          "UnauthorizedAccess:Runtime/MetadataDNSRebind",
+          "UnauthorizedAccess:Runtime/TorClient",
+          "UnauthorizedAccess:Runtime/TorRelay"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -23143,11 +23354,19 @@
     {
       "axes": {
         "operatingSystem": {
-          "covered": 37,
-          "notCovered": 8,
+          "covered": 50,
+          "notCovered": 83,
           "partial": 0,
-          "scoped": 74,
-          "total": 37,
+          "scoped": 114,
+          "total": 125,
+          "unknown": 0
+        },
+        "programmingLanguage": {
+          "covered": 9,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 9,
           "unknown": 0
         },
         "region": {
@@ -23167,7 +23386,7 @@
           "unknown": 0
         }
       },
-      "claimCount": 112,
+      "claimCount": 236,
       "confidence": 0.7,
       "discoveredBy": [
         "service-level"
@@ -23186,12 +23405,58 @@
           "AlmaLinux 10",
           "AlmaLinux 8",
           "AlmaLinux 9",
+          "Alpine Linux 3.10",
+          "Alpine Linux 3.11",
+          "Alpine Linux 3.12",
+          "Alpine Linux 3.13",
+          "Alpine Linux 3.14",
+          "Alpine Linux 3.15",
+          "Alpine Linux 3.16",
+          "Alpine Linux 3.17",
+          "Alpine Linux 3.18",
+          "Alpine Linux 3.19",
+          "Alpine Linux 3.2",
+          "Alpine Linux 3.20",
+          "Alpine Linux 3.21",
+          "Alpine Linux 3.22",
+          "Alpine Linux 3.23",
+          "Alpine Linux 3.24",
+          "Alpine Linux 3.3",
+          "Alpine Linux 3.4",
+          "Alpine Linux 3.5",
+          "Alpine Linux 3.6",
+          "Alpine Linux 3.7",
+          "Alpine Linux 3.8",
+          "Alpine Linux 3.9",
+          "Amazon Linux (AL1) 2012",
+          "Amazon Linux 2 (AL2) AL2",
           "Amazon Linux 2023 (AL2023) AL2023",
+          "Azure Linux 3",
           "Bottlerocket 1.7.0 and later",
+          "BusyBox –",
+          "CentOS Linux (CentOS) 7",
+          "CentOS Linux (CentOS) 8",
+          "Chainguard –",
           "Debian Server (Bookworm) 12",
+          "Debian Server (Bullseye) 11",
+          "Debian Server (Buster) 10",
+          "Debian Server (Jessie) 8",
+          "Debian Server (Stretch) 9",
           "Debian Server (Trixie) 13",
+          "Echo 2",
+          "Fedora 33",
+          "Fedora 34",
+          "Fedora 35",
+          "Fedora 36",
+          "Fedora 37",
+          "Fedora 38",
+          "Fedora 39",
+          "Fedora 40",
+          "Fedora 41",
+          "Fedora 42",
           "Fedora 43",
           "Fedora 44",
+          "Hummingbird OS –",
           "macOS (Big Sur) 11",
           "macOS (Catalina) 10.15",
           "macOS (Mojave) 10.14",
@@ -23200,26 +23465,79 @@
           "macOS (Sonoma) 14",
           "macOS (Tahoe) 26",
           "macOS (Ventura) 13",
+          "MinimOS –",
+          "OpenSUSE Leap 15.2",
+          "OpenSUSE Leap 15.3",
+          "OpenSUSE Leap 15.4",
+          "OpenSUSE Leap 15.5",
+          "OpenSUSE Leap 15.6",
           "Oracle Linux 10",
+          "Oracle Linux 6",
+          "Oracle Linux 7",
           "Oracle Linux 8",
           "Oracle Linux 9",
+          "Photon OS 2",
+          "Photon OS 3",
+          "Photon OS 4",
+          "Photon OS 5",
           "Red Hat Enterprise Linux (RHEL) 10",
+          "Red Hat Enterprise Linux (RHEL) 6",
+          "Red Hat Enterprise Linux (RHEL) 7",
           "Red Hat Enterprise Linux (RHEL) 8",
           "Red Hat Enterprise Linux (RHEL) 9",
           "Rocky Linux 10",
           "Rocky Linux 8",
           "Rocky Linux 9",
+          "SUSE Linux Enterprise Server (SLES) 12",
+          "SUSE Linux Enterprise Server (SLES) 12.1",
+          "SUSE Linux Enterprise Server (SLES) 12.2",
+          "SUSE Linux Enterprise Server (SLES) 12.3",
+          "SUSE Linux Enterprise Server (SLES) 12.4",
+          "SUSE Linux Enterprise Server (SLES) 12.5",
+          "SUSE Linux Enterprise Server (SLES) 15",
+          "SUSE Linux Enterprise Server (SLES) 15.1",
+          "SUSE Linux Enterprise Server (SLES) 15.2",
+          "SUSE Linux Enterprise Server (SLES) 15.3",
+          "SUSE Linux Enterprise Server (SLES) 15.4",
+          "SUSE Linux Enterprise Server (SLES) 15.5",
+          "SUSE Linux Enterprise Server (SLES) 15.6",
           "SUSE Linux Enterprise Server (SLES) 15.7",
           "SUSE Linux Enterprise Server (SLES) 16.0",
           "Ubuntu (Bionic) 18.04",
           "Ubuntu (Focal) 20.04",
+          "Ubuntu (Groovy) 20.10",
+          "Ubuntu (Hirsute) 21.04",
+          "Ubuntu (Impish) 21.10",
           "Ubuntu (Jammy) 22.04",
+          "Ubuntu (Kinetic) 22.10",
+          "Ubuntu (Lunar) 23.04",
+          "Ubuntu (Mantic) 23.10",
           "Ubuntu (Noble) 24.04",
+          "Ubuntu (Oracular) 24.10",
+          "Ubuntu (Plucky) 25.04",
+          "Ubuntu (Precise) 12.04",
+          "Ubuntu (Questing) 25.10",
           "Ubuntu (Resolute) 26.04",
+          "Ubuntu (Trusty) 14.04",
+          "Ubuntu (Xenial) 16.04",
+          "Windows Server 2012",
+          "Windows Server 2012 R2",
           "Windows Server 2016",
           "Windows Server 2019",
           "Windows Server 2022",
-          "Windows Server 2025"
+          "Windows Server 2025",
+          "Wolfi –"
+        ],
+        "programmingLanguage": [
+          "Go",
+          "Go toolchain",
+          "Java",
+          "Java JDK",
+          "JavaScript",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Rust"
         ],
         "region": [
           "af-south-1",
@@ -28387,6 +28705,14 @@
     },
     {
       "axes": {
+        "managedRuleGroup": {
+          "covered": 32,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 32,
+          "unknown": 0
+        },
         "threatCategory": {
           "covered": 16,
           "notCovered": 0,
@@ -28396,7 +28722,7 @@
           "unknown": 0
         }
       },
-      "claimCount": 16,
+      "claimCount": 48,
       "confidence": 0.75,
       "discoveredBy": [
         "guide-subchapter",
@@ -28414,6 +28740,40 @@
       "serviceName": "AWS Network Firewall",
       "summary": "Network Firewall provides full visibility into the threat signature rule content of its AWS managed rules.",
       "targets": {
+        "managedRuleGroup": [
+          "ThreatSignaturesBotnetActionOrder",
+          "ThreatSignaturesBotnetStrictOrder",
+          "ThreatSignaturesBotnetWebActionOrder",
+          "ThreatSignaturesBotnetWebStrictOrder",
+          "ThreatSignaturesBotnetWindowsActionOrder",
+          "ThreatSignaturesBotnetWindowsStrictOrder",
+          "ThreatSignaturesDoSActionOrder",
+          "ThreatSignaturesDoSStrictOrder",
+          "ThreatSignaturesEmergingEventsActionOrder",
+          "ThreatSignaturesEmergingEventsStrictOrder",
+          "ThreatSignaturesExploitsActionOrder",
+          "ThreatSignaturesExploitsStrictOrder",
+          "ThreatSignaturesFUPActionOrder",
+          "ThreatSignaturesFUPStrictOrder",
+          "ThreatSignaturesIOCActionOrder",
+          "ThreatSignaturesIOCStrictOrder",
+          "ThreatSignaturesMalwareActionOrder",
+          "ThreatSignaturesMalwareCoinminingActionOrder",
+          "ThreatSignaturesMalwareCoinminingStrictOrder",
+          "ThreatSignaturesMalwareMobileActionOrder",
+          "ThreatSignaturesMalwareMobileStrictOrder",
+          "ThreatSignaturesMalwareStrictOrder",
+          "ThreatSignaturesMalwareWebActionOrder",
+          "ThreatSignaturesMalwareWebStrictOrder",
+          "ThreatSignaturesPhishingActionOrder",
+          "ThreatSignaturesPhishingStrictOrder",
+          "ThreatSignaturesScannersActionOrder",
+          "ThreatSignaturesScannersStrictOrder",
+          "ThreatSignaturesSuspectActionOrder",
+          "ThreatSignaturesSuspectStrictOrder",
+          "ThreatSignaturesWebAttacksActionOrder",
+          "ThreatSignaturesWebAttacksStrictOrder"
+        ],
         "threatCategory": [
           "Botnet",
           "Botnet Web",
@@ -41120,9 +41480,17 @@
           "scoped": 0,
           "total": 1,
           "unknown": 0
+        },
+        "resourceTarget": {
+          "covered": 0,
+          "notCovered": 1,
+          "partial": 0,
+          "scoped": 0,
+          "total": 1,
+          "unknown": 0
         }
       },
-      "claimCount": 1,
+      "claimCount": 2,
       "confidence": 0.75,
       "discoveredBy": [
         "guide-subchapter",
@@ -41142,6 +41510,9 @@
       "targets": {
         "managedRuleGroup": [
           "AWSManagedRulesATPRuleSet"
+        ],
+        "resourceTarget": [
+          "Amazon Cognito user pools"
         ]
       },
       "tier": "tier1",
@@ -42201,6 +42572,14 @@
           "total": 14,
           "unknown": 0
         },
+        "resourceTarget": {
+          "covered": 0,
+          "notCovered": 1,
+          "partial": 0,
+          "scoped": 0,
+          "total": 1,
+          "unknown": 0
+        },
         "resourceType": {
           "covered": 7,
           "notCovered": 0,
@@ -42210,7 +42589,7 @@
           "unknown": 0
         }
       },
-      "claimCount": 22,
+      "claimCount": 23,
       "confidence": 0.7,
       "discoveredBy": [
         "service-level"
@@ -42243,6 +42622,9 @@
           "AWSManagedRulesUnixRuleSet",
           "AWSManagedRulesWindowsRuleSet",
           "AWSManagedRulesWordPressRuleSet"
+        ],
+        "resourceTarget": [
+          "Amazon Cognito user pools"
         ],
         "resourceType": [
           "a4b:gateway",
@@ -44992,6 +45374,13 @@
       "subject": "unresolved:doc:documentation"
     },
     {
+      "detail": "No registered page matches this rule, so its recipes never run. Register the page with \"npm run add-page\", or correct the pattern.",
+      "id": "bc975a2f5b400660",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe-rule:waf/latest/developerguide/aws-managed-rule-groups-(atp|acfp)\\.md$"
+    },
+    {
       "detail": "\"doc:elemental-cl3\" did not join to a service prefix. Score 2, signals security-doc-pages.",
       "id": "be14fe1463d51605",
       "kind": "alias",
@@ -45692,15 +46081,15 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-01T06:48:37.338Z",
+  "generatedAt": "2026-09-01T06:55:53.911Z",
   "manifest": {
     "fetch": {
-      "cacheHit": 13886,
+      "cacheHit": 12383,
       "failed": 5,
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-01T06:48:36.200Z",
+    "finishedAt": "2026-09-01T06:55:45.593Z",
     "stages": [
       {
         "counts": {
@@ -45714,12 +46103,12 @@
           "resourceTypes": 3134,
           "services": 692
         },
-        "finishedAt": "2026-09-01T06:48:18.850Z",
+        "finishedAt": "2026-09-01T06:55:28.211Z",
         "id": "stage1-universes",
         "notes": [
           "1312 service reference resources joined to an existing resource type"
         ],
-        "startedAt": "2026-09-01T06:47:38.297Z",
+        "startedAt": "2026-09-01T06:54:46.411Z",
         "status": "partial"
       },
       {
@@ -45729,9 +46118,9 @@
           "indexed": 1207,
           "pages": 103576
         },
-        "finishedAt": "2026-09-01T06:48:19.454Z",
+        "finishedAt": "2026-09-01T06:55:28.838Z",
         "id": "stage2-doc-pages",
-        "startedAt": "2026-09-01T06:48:18.851Z",
+        "startedAt": "2026-09-01T06:55:28.212Z",
         "status": "partial"
       },
       {
@@ -45747,12 +46136,12 @@
           "tier1": 45,
           "tier2": 13
         },
-        "finishedAt": "2026-09-01T06:48:19.916Z",
+        "finishedAt": "2026-09-01T06:55:29.349Z",
         "id": "stage3-discovery",
         "notes": [
           "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
         ],
-        "startedAt": "2026-09-01T06:48:19.455Z",
+        "startedAt": "2026-09-01T06:55:28.839Z",
         "status": "partial"
       },
       {
@@ -45766,51 +46155,52 @@
           "scanned": 307,
           "servicesWithFeatures": 203
         },
-        "finishedAt": "2026-09-01T06:48:24.017Z",
+        "finishedAt": "2026-09-01T06:55:33.302Z",
         "id": "stage4-features",
-        "startedAt": "2026-09-01T06:48:19.917Z",
+        "startedAt": "2026-09-01T06:55:29.350Z",
         "status": "ok"
       },
       {
         "counts": {
-          "claims": 9894,
+          "claims": 10207,
           "conflicts": 0,
-          "covered": 3500,
-          "empty": 11705,
+          "covered": 3718,
+          "duplicateRegistrationsSkipped": 1493,
+          "empty": 11697,
           "enabled": 11781,
-          "featuresWithCoverage": 44,
-          "from_agent": 12,
+          "featuresWithCoverage": 52,
+          "from_agent": 22,
           "from_tier1-sweep": 6519,
-          "from_title-match": 5250,
+          "from_title-match": 5240,
           "newlyDiscovered": 0,
-          "notCovered": 6394,
-          "openAxes": 15,
-          "openAxisMembers": 1920,
-          "pagesConsidered": 11781,
+          "notCovered": 6489,
+          "openAxes": 17,
+          "openAxisMembers": 2133,
+          "pagesConsidered": 10288,
           "pagesFailed": 1,
-          "pagesRead": 77,
-          "pagesRejectedByKind": 4136,
+          "pagesRead": 85,
+          "pagesRejectedByKind": 2643,
           "prunedStaleRecords": 0,
           "recipeFailures": 0,
           "recipeRulesWithNoPage": 0,
-          "recipes": 29,
-          "recipesAttached": 29,
+          "recipes": 45,
+          "recipesAttached": 45,
           "registered": 11781,
           "serviceWideRecords": 15,
-          "tablesRecoveredFromHtml": 401,
+          "tablesRecoveredFromHtml": 360,
           "unattachedPages": 106,
           "unresolvedTargets": 341,
-          "withRecipe": 26,
-          "yielding": 75
+          "withRecipe": 34,
+          "yielding": 83
         },
-        "finishedAt": "2026-09-01T06:48:35.438Z",
+        "finishedAt": "2026-09-01T06:55:44.766Z",
         "id": "stage5-coverage",
-        "startedAt": "2026-09-01T06:48:24.017Z",
+        "startedAt": "2026-09-01T06:55:33.303Z",
         "status": "partial"
       },
       {
         "counts": {
-          "claims": 9661,
+          "claims": 9934,
           "features": 1749,
           "quotesChecked": 250,
           "recallFound": 73,
@@ -45818,9 +46208,9 @@
           "services": 692,
           "violations": 0
         },
-        "finishedAt": "2026-09-01T06:48:35.863Z",
+        "finishedAt": "2026-09-01T06:55:45.242Z",
         "id": "stage6-validate",
-        "startedAt": "2026-09-01T06:48:35.438Z",
+        "startedAt": "2026-09-01T06:55:44.767Z",
         "status": "ok"
       },
       {
@@ -45828,13 +46218,13 @@
           "features": 1749,
           "services": 211
         },
-        "finishedAt": "2026-09-01T06:48:36.200Z",
+        "finishedAt": "2026-09-01T06:55:45.593Z",
         "id": "report",
-        "startedAt": "2026-09-01T06:48:35.864Z",
+        "startedAt": "2026-09-01T06:55:45.242Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-01T06:47:38.295Z"
+    "startedAt": "2026-09-01T06:54:46.409Z"
   },
   "outOfScope": [
     {
@@ -54316,7 +54706,7 @@
     {
       "actionCount": 91,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 208,
+      "claimCount": 323,
       "confidence": 1,
       "docGuides": [
         {
@@ -54522,7 +54912,7 @@
     {
       "actionCount": 81,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 148,
+      "claimCount": 272,
       "confidence": 1,
       "docGuides": [
         {
@@ -55443,7 +55833,7 @@
     {
       "actionCount": 84,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 16,
+      "claimCount": 48,
       "confidence": 1,
       "docGuides": [
         {
@@ -57769,7 +58159,7 @@
     {
       "actionCount": 61,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 47,
+      "claimCount": 49,
       "confidence": 1,
       "docGuides": [
         {
@@ -57963,18 +58353,20 @@
     "dataIdentifier": 166,
     "dataSource": 23,
     "fileExtension": 22,
-    "findingType": 142,
+    "findingType": 224,
     "ipsRule": 1,
     "logSource": 6,
-    "managedRuleGroup": 15,
-    "operatingSystem": 37,
+    "managedRuleGroup": 47,
+    "operatingSystem": 125,
     "packageEcosystem": 36,
     "partition": 8,
+    "programmingLanguage": 9,
     "region": 46,
+    "resourceTarget": 1,
     "resourceType": 3134,
     "s3Feature": 22,
     "service": 526,
-    "storageClass": 6,
+    "storageClass": 7,
     "threatCategory": 16
   },
   "universes": {

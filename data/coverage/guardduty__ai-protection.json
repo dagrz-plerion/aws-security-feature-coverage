@@ -1,0 +1,71 @@
+{
+  "axes": [
+    "findingType"
+  ],
+  "claims": [
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "35880a7766a0df80a8ca9ecf85ea44f19f431b09533dc6fe0be8e84a91b641e7",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-ai-protection.md :: GuardDuty AI Protection finding types",
+          "quote": "## Impact:IAMUser/AnomalousModelInvocation",
+          "retrievedAt": "2026-09-01T04:29:44.027Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-ai-protection.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-ai-findings",
+      "featureId": "guardduty/ai-protection",
+      "id": "guardduty-ai-protection-findingtype-impact-iamuser-anomalousmodelinvocation-recipe-guardduty-ai-findings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Impact:IAMUser/AnomalousModelInvocation",
+      "targetLabel": "Impact:IAMUser/AnomalousModelInvocation"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "35880a7766a0df80a8ca9ecf85ea44f19f431b09533dc6fe0be8e84a91b641e7",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-ai-protection.md :: GuardDuty AI Protection finding types",
+          "quote": "## Impact:IAMUser/CostHarvesting",
+          "retrievedAt": "2026-09-01T04:29:44.027Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-ai-protection.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-ai-findings",
+      "featureId": "guardduty/ai-protection",
+      "id": "guardduty-ai-protection-findingtype-impact-iamuser-costharvesting-recipe-guardduty-ai-findings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Impact:IAMUser/CostHarvesting",
+      "targetLabel": "Impact:IAMUser/CostHarvesting"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "35880a7766a0df80a8ca9ecf85ea44f19f431b09533dc6fe0be8e84a91b641e7",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-ai-protection.md :: GuardDuty AI Protection finding types",
+          "quote": "## Impact:IAMUser/PromptInjection.Direct",
+          "retrievedAt": "2026-09-01T04:29:44.027Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-ai-protection.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-ai-findings",
+      "featureId": "guardduty/ai-protection",
+      "id": "guardduty-ai-protection-findingtype-impact-iamuser-promptinjection-direct-recipe-guardduty-ai-findings",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Impact:IAMUser/PromptInjection.Direct",
+      "targetLabel": "Impact:IAMUser/PromptInjection.Direct"
+    }
+  ],
+  "featureId": "guardduty/ai-protection",
+  "generatedAt": "2026-09-01T06:55:44.613Z",
+  "serviceId": "guardduty",
+  "unresolvedTargets": []
+}

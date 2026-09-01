@@ -2,6 +2,7 @@
   "axes": [
     "ipsRule",
     "managedRuleGroup",
+    "resourceTarget",
     "resourceType"
   ],
   "claims": [
@@ -110,11 +111,11 @@
       "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "a036253922c54a8639cc18cf738ebd1e97886cd39a35ec967600070fd2d850c7",
-          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-application-integration-with-AMRs.md :: inline code",
-          "quote": "+ AWS WAF Fraud Control account takeover prevention (ATP) managed rule group `AWSManagedRulesATPRuleSet`.",
-          "retrievedAt": "2026-09-01T04:29:46.897Z",
-          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-application-integration-with-AMRs.md"
+          "bodySha256": "52d97c8ff8fefb637463485dbcc837bf7e0782bce59177016a434002c39c95c4",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-application-integration-location-in-console.md :: inline code",
+          "quote": "+ A list of the protection packs (web ACLs) that are enabled for intelligent threat application integration. The list includes each protection pack (web ACL) that uses the `AWSManagedRulesACFPRuleSet` managed rule group, the `AWSManagedRulesATPRuleSet` managed rule group, or the targeted protection level of the `AWSManagedRulesBotControlRuleSet` managed rule group. When you implement the intelligent threat APIs, you use the integration URL for the protection pack (web ACL) that you want to integrate with.",
+          "retrievedAt": "2026-09-01T04:29:46.950Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/waf-application-integration-location-in-console.md"
         }
       ],
       "extractorId": "md-code-span",
@@ -306,6 +307,26 @@
       "targetLabel": "AWSManagedRulesWordPressRuleSet"
     },
     {
+      "axis": "resourceTarget",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
+          "quote": "This rule group isn't available for use with Amazon Cognito user pools.",
+          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
+        }
+      ],
+      "extractorId": "recipe:waf-fraud-control-cognito-exclusion",
+      "featureId": "wafv2/service-wide",
+      "id": "wafv2-service-wide-resourcetarget-amazon-cognito-user-pools-recipe-waf-fraud-control-cognito-exclusion",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "Amazon Cognito user pools",
+      "targetLabel": "This rule group isn't available for use with Amazon Cognito user pools."
+    },
+    {
       "axis": "resourceType",
       "confidence": 0.8,
       "evidence": [
@@ -447,7 +468,7 @@
     }
   ],
   "featureId": "wafv2/service-wide",
-  "generatedAt": "2026-09-01T06:48:35.269Z",
+  "generatedAt": "2026-09-01T06:55:44.613Z",
   "serviceId": "wafv2",
   "unresolvedTargets": [
     {

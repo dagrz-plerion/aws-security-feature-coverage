@@ -1,0 +1,111 @@
+{
+  "axes": [
+    "findingType"
+  ],
+  "claims": [
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "773fb17b5d55c65f1993fafb5a1ae3145558d07c5f00a68f12b9797cd987bb7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md :: GuardDuty attack sequence finding types",
+          "quote": "## AttackSequence:EC2/CompromisedInstanceGroup",
+          "retrievedAt": "2026-09-01T04:29:43.827Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-attack-sequence-findings",
+      "featureId": "guardduty/extended-threat-detection",
+      "id": "guardduty-extended-threat-detection-findingtype-attacksequence-ec2-compromisedinstancegroup-recipe-guardduty-attack-sequ",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AttackSequence:EC2/CompromisedInstanceGroup",
+      "targetLabel": "AttackSequence:EC2/CompromisedInstanceGroup"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "773fb17b5d55c65f1993fafb5a1ae3145558d07c5f00a68f12b9797cd987bb7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md :: GuardDuty attack sequence finding types",
+          "quote": "## AttackSequence:ECS/CompromisedCluster",
+          "retrievedAt": "2026-09-01T04:29:43.827Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-attack-sequence-findings",
+      "featureId": "guardduty/extended-threat-detection",
+      "id": "guardduty-extended-threat-detection-findingtype-attacksequence-ecs-compromisedcluster-recipe-guardduty-attack-sequence-f",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AttackSequence:ECS/CompromisedCluster",
+      "targetLabel": "AttackSequence:ECS/CompromisedCluster"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "773fb17b5d55c65f1993fafb5a1ae3145558d07c5f00a68f12b9797cd987bb7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md :: GuardDuty attack sequence finding types",
+          "quote": "## AttackSequence:EKS/CompromisedCluster",
+          "retrievedAt": "2026-09-01T04:29:43.827Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-attack-sequence-findings",
+      "featureId": "guardduty/extended-threat-detection",
+      "id": "guardduty-extended-threat-detection-findingtype-attacksequence-eks-compromisedcluster-recipe-guardduty-attack-sequence-f",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AttackSequence:EKS/CompromisedCluster",
+      "targetLabel": "AttackSequence:EKS/CompromisedCluster"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "773fb17b5d55c65f1993fafb5a1ae3145558d07c5f00a68f12b9797cd987bb7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md :: GuardDuty attack sequence finding types",
+          "quote": "## AttackSequence:IAM/CompromisedCredentials",
+          "retrievedAt": "2026-09-01T04:29:43.827Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-attack-sequence-findings",
+      "featureId": "guardduty/extended-threat-detection",
+      "id": "guardduty-extended-threat-detection-findingtype-attacksequence-iam-compromisedcredentials-recipe-guardduty-attack-sequen",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AttackSequence:IAM/CompromisedCredentials",
+      "targetLabel": "AttackSequence:IAM/CompromisedCredentials"
+    },
+    {
+      "axis": "findingType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "773fb17b5d55c65f1993fafb5a1ae3145558d07c5f00a68f12b9797cd987bb7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md :: GuardDuty attack sequence finding types",
+          "quote": "## AttackSequence:S3/CompromisedData",
+          "retrievedAt": "2026-09-01T04:29:43.827Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-attack-sequence-findings",
+      "featureId": "guardduty/extended-threat-detection",
+      "id": "guardduty-extended-threat-detection-findingtype-attacksequence-s3-compromiseddata-recipe-guardduty-attack-sequence-findi",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AttackSequence:S3/CompromisedData",
+      "targetLabel": "AttackSequence:S3/CompromisedData"
+    }
+  ],
+  "featureId": "guardduty/extended-threat-detection",
+  "generatedAt": "2026-09-01T06:55:44.613Z",
+  "serviceId": "guardduty",
+  "unresolvedTargets": []
+}

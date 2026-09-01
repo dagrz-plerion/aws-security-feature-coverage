@@ -155,15 +155,17 @@ export const stage5: Stage = {
     let recipesAttached = 0;
     const matchedRules = new Set<string>();
     for (const page of allPages(registry)) {
-      const rule = rules.find((r) => r.re.test(page.url));
-      // Recipes are stored on the page, so a rule that no longer owns this
-      // registration has to have its recipes cleared, or a stale copy keeps running.
-      if (!rule || page.serviceId !== rule.serviceId) delete page.recipes;
-      if (!rule) continue;
-      matchedRules.add(rule.urlPattern);
-      if (page.serviceId === rule.serviceId) {
-        page.recipes = rule.recipes as Recipe[];
-        if (rule.note) page.note = rule.note;
+      // A page can match several rules: a general one for its shape and a specific one
+      // for an exclusion stated on it. All of them apply.
+      const matching = rules.filter((r) => r.re.test(page.url));
+      delete page.recipes;
+      if (matching.length === 0) continue;
+      for (const rule of matching) matchedRules.add(rule.urlPattern);
+      const mine = matching.filter((r) => page.serviceId === r.serviceId);
+      if (mine.length > 0) {
+        page.recipes = mine.flatMap((r) => r.recipes as Recipe[]);
+        const note = mine.map((r) => r.note).filter(Boolean).join(" ");
+        if (note) page.note = note;
         recipesAttached += page.recipes.length;
       }
       recipeUrls.add(page.url);
@@ -205,9 +207,28 @@ export const stage5: Stage = {
           .map((n) => n.toLowerCase()),
       );
     }
+    // One page, one owner. The Macie storage page is registered under macie2, logs and
+    // cloudwatch alike, and reading it three times wrote the same claims to three
+    // services. The service whose recipe reads it wins; failing that, the guide's owner.
+    const ownerForUrl = new Map<string, string>();
+    for (const page of allPages(registry)) {
+      const rule = rules.find((r) => r.re.test(page.url) && r.serviceId === page.serviceId);
+      const owns = ownedGuideKeys.get(page.serviceId)?.has(guideKeyFromUrl(page.url)) ?? false;
+      if (rule) ownerForUrl.set(page.url, page.serviceId);
+      else if (!ownerForUrl.has(page.url) && owns) ownerForUrl.set(page.url, page.serviceId);
+    }
+    for (const page of allPages(registry)) {
+      if (!ownerForUrl.has(page.url)) ownerForUrl.set(page.url, page.serviceId);
+    }
+
+    let duplicateRegistrations = 0;
     const jobs: Job[] = [];
     for (const page of allPages(registry)) {
       if (!page.enabled) continue;
+      if (ownerForUrl.get(page.url) !== page.serviceId) {
+        duplicateRegistrations += 1;
+        continue;
+      }
       const own = featuresByService.get(page.serviceId) ?? [];
       const doc = pageBySection.get(page.url) ?? {
         title: page.url.split("/").pop()?.replace(/\.md$/, "") ?? page.url,
@@ -549,6 +570,7 @@ export const stage5: Stage = {
         pagesFailed: failed,
         tablesRecoveredFromHtml: tablesRecovered,
         pagesRejectedByKind: rejectedPages,
+        duplicateRegistrationsSkipped: duplicateRegistrations,
         recipesAttached,
         recipeFailures,
         recipeRulesWithNoPage: orphanRules,
