@@ -353,11 +353,16 @@ export const stage5: Stage = {
               });
             }
             const pinned = recipe.featureId ?? job.page.featureId;
-            const feature =
+            const namedByPage =
               (pinned ? job.features.find((f) => f.id === pinned) : undefined) ??
-              bestFeatureFor([pageTitle], job.features) ??
+              bestFeatureFor([pageTitle], job.features);
+            const feature =
+              namedByPage ??
               serviceWideFeature(job.page.serviceId, serviceById, featuresByService, tierById.get(job.page.serviceId), true);
             if (!feature) continue;
+            // A service-wide record made here has to be registered, or it is not in
+            // the set the writer looks at and every claim on it is dropped in silence.
+            if (!namedByPage) serviceWideUsed.add(job.page.serviceId);
             const list = claimsByFeature.get(feature.id) ?? [];
             const already = new Set(list.map((c) => `${c.axis}|${c.targetId}|${c.scope?.targetId ?? ""}`));
             for (const raw of outcome.claims) {
