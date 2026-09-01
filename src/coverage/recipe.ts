@@ -85,7 +85,16 @@ function statusFor(recipe: Recipe, row: string[] | undefined, headers: string[])
   if (recipe.status === "not-covered") return "not-covered";
   if (recipe.status === "from-column" && row) {
     const column = findColumn(headers, [new RegExp(recipe.statusColumn ?? "support", "i")]);
+    // A status cell often carries an icon, then the word, then a link:
+    // "Yes · Learn more". The verdict is the leading word.
     const value = column >= 0 ? (row[column] ?? "").trim() : "";
+    // The icon becomes a word too, so the cell can read "Yes Yes · Learn more".
+    const lead = (value.split(/\s*·\s*|\s{2,}|\n/)[0] ?? value).trim();
+    const firstWord = (lead.split(/\s+/)[0] ?? "").trim();
+    if (NO.test(firstWord)) return "not-covered";
+    if (YES.test(firstWord)) return "covered";
+    if (NO.test(lead)) return "not-covered";
+    if (YES.test(lead)) return "covered";
     if (NO.test(value)) return "not-covered";
     if (YES.test(value)) return "covered";
     return "unknown";

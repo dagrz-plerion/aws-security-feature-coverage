@@ -16,7 +16,7 @@ import { runRecipe } from "../coverage/recipe.js";
 import type { Recipe } from "../coverage/recipe.js";
 import { allPages, loadRegistry, recordResult, saveRegistry, summarise, upsert } from "../coverage/registry.js";
 import type { CoveragePage } from "../coverage/registry.js";
-import { extractFromPage } from "../coverage/extractors.js";
+import { extractFromPage, neverStatesCoverage } from "../coverage/extractors.js";
 import { parseMarkdown } from "../core/markdown.js";
 import { hasElidedTables, htmlTablesToMarkdown, spliceRecoveredTables } from "../sources/htmlTables.js";
 import { adjudicationSchema } from "../core/schema.js";
@@ -44,7 +44,14 @@ function serviceWideFeature(
   serviceId: string,
   serviceById: Map<string, Service>,
   featuresByService: Map<string, Feature[]>,
+  tier: string | undefined,
+  /** A page someone chose deliberately is not a sweep, so the tier rule is relaxed. */
+  chosenByHand = false,
 ): Feature | undefined {
+  // Only a security service can state coverage "for the service as a whole". For a
+  // storage or deployment service, a page about what the service supports is not a
+  // statement about security, and sweeping it in buried the map in noise.
+  if (tier !== "tier1" && !chosenByHand) return undefined;
   const id = `${serviceId}/service-wide`;
   const own = featuresByService.get(serviceId) ?? [];
   const existing = own.find((f) => f.id === id);
@@ -152,7 +159,20 @@ export const stage5: Stage = {
       }
     }
 
-    type Job = { page: CoveragePage; doc: DocPage; features: Feature[] };
+    type Job = { page: CoveragePage; doc: DocPage; features: Feature[]; ownsGuide: boolean; namesService: boolean };
+    const ownedGuideKeys = new Map<string, Set<string>>();
+    for (const service of services) {
+      ownedGuideKeys.set(service.id, new Set(service.docGuides.map((g) => guideKeyFromUrl(g.url))));
+    }
+    const namesOf = new Map<string, string[]>();
+    for (const service of services) {
+      namesOf.set(
+        service.id,
+        [service.productName, ...service.names]
+          .filter((n): n is string => typeof n === "string" && n.length >= 6)
+          .map((n) => n.toLowerCase()),
+      );
+    }
     const jobs: Job[] = [];
     for (const page of allPages(registry)) {
       if (!page.enabled) continue;
@@ -162,7 +182,13 @@ export const stage5: Stage = {
         url: page.url,
         section: [],
       };
-      jobs.push({ page, doc, features: own });
+      const guideKey = guideKeyFromUrl(page.url);
+      const ownsGuide = ownedGuideKeys.get(page.serviceId)?.has(guideKey) ?? false;
+      const haystack = `${doc.title} ${doc.section.join(" ")} ${page.url}`.toLowerCase();
+      const namesService =
+        (namesOf.get(page.serviceId) ?? []).some((n) => haystack.includes(n)) ||
+        haystack.includes(`/${page.serviceId}/`);
+      jobs.push({ page, doc, features: own, ownsGuide, namesService });
     }
     ctx.log(`  registry holds ${allPages(registry).length} coverage pages (${discovered} new); reading them`);
 
@@ -174,6 +200,7 @@ export const stage5: Stage = {
     let failed = 0;
     let tablesRecovered = 0;
     let recipeFailures = 0;
+    let rejectedPages = 0;
 
     await mapPool(jobs, 10, async (job) => {
       const url = job.page.url;
@@ -224,6 +251,25 @@ export const stage5: Stage = {
         let blockClaims = 0;
         const seenAxes = new Set<string>();
 
+        // A recipe may read any page, because a person chose it deliberately. The
+        // generic reader may not touch a page whose own title says it is a quota
+        // list, a price list or a walkthrough.
+        if (!job.page.recipes?.length) {
+          // A page in someone else's guide has to name this service, or its lists are
+          // about that other service. A Detective page is not IAM coverage.
+          if (!job.ownsGuide && !job.namesService) {
+            rejectedPages += 1;
+            recordResult(job.page, { claims: 0, axes: [], status: "empty", detail: "page belongs to another service" });
+            return;
+          }
+          const pageContext = `${job.doc.title} ${job.doc.section.join(" ")} ${url}`;
+          if (neverStatesCoverage(pageContext)) {
+            rejectedPages += 1;
+            recordResult(job.page, { claims: 0, axes: [], status: "empty", detail: "page kind never states coverage" });
+            return;
+          }
+        }
+
         if (job.page.recipes?.length) {
           const failures: string[] = [];
           for (const recipe of job.page.recipes) {
@@ -242,7 +288,7 @@ export const stage5: Stage = {
             const feature =
               (pinned ? job.features.find((f) => f.id === pinned) : undefined) ??
               bestFeatureFor([job.doc.title, ...job.doc.section], job.features) ??
-              serviceWideFeature(job.page.serviceId, serviceById, featuresByService);
+              serviceWideFeature(job.page.serviceId, serviceById, featuresByService, tierById.get(job.page.serviceId), true);
             if (!feature) continue;
             const list = claimsByFeature.get(feature.id) ?? [];
             const already = new Set(list.map((c) => `${c.axis}|${c.targetId}|${c.scope?.targetId ?? ""}`));
@@ -291,7 +337,7 @@ export const stage5: Stage = {
             pinned ??
             bestFeatureFor(block.headings, job.features) ??
             bestFeatureFor([job.doc.title, ...job.doc.section], job.features);
-          const feature = named ?? serviceWideFeature(job.page.serviceId, serviceById, featuresByService);
+          const feature = named ?? serviceWideFeature(job.page.serviceId, serviceById, featuresByService, tierById.get(job.page.serviceId));
           if (!feature) {
             unattached.push({ serviceId: job.page.serviceId, url: url, title: block.headings[0] ?? job.doc.title });
             continue;
@@ -440,6 +486,7 @@ export const stage5: Stage = {
         pagesRead: read,
         pagesFailed: failed,
         tablesRecoveredFromHtml: tablesRecovered,
+        pagesRejectedByKind: rejectedPages,
         recipesAttached,
         recipeFailures,
         featuresWithCoverage: claimsByFeature.size,

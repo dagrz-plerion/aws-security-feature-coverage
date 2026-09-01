@@ -150,3 +150,24 @@ maybe("open axes", () => {
     expect(over).toEqual([]);
   });
 });
+
+maybe("pages a person chose", () => {
+  it("still reads the pages that carry a recipe", async () => {
+    const dir = path.join(paths.data, "coverage-pages");
+    const withRecipes: { url: string; status?: string; detail?: string }[] = [];
+    for (const name of await import("node:fs/promises").then((fs) => fs.readdir(dir))) {
+      if (!name.endsWith(".json")) continue;
+      const file = await readJson<{ pages: { url: string; recipes?: unknown[]; lastResult?: { status: string; detail?: string } }[] }>(
+        path.join(dir, name),
+      );
+      for (const page of file?.pages ?? []) {
+        if (page.recipes?.length) {
+          withRecipes.push({ url: page.url, status: page.lastResult?.status, detail: page.lastResult?.detail });
+        }
+      }
+    }
+    expect(withRecipes.length).toBeGreaterThan(0);
+    const broken = withRecipes.filter((p) => p.status !== "ok").map((p) => `${p.url}: ${p.detail ?? p.status}`);
+    expect(broken).toEqual([]);
+  });
+});

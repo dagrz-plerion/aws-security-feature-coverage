@@ -1,7 +1,7 @@
 import path from "node:path";
 import { paths } from "../core/paths.js";
 import { guidePrefixOverrides, serviceNameOverrides } from "../core/seeds.js";
-import { writeJson } from "../core/store.js";
+import { readJson, writeJson } from "../core/store.js";
 import { makeEvidence } from "../core/evidence.js";
 import { slug } from "../core/ids.js";
 import { quarantine, recordGap } from "../core/ops.js";
@@ -322,8 +322,18 @@ export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUn
         if (!id) continue;
         const service = ensure(id);
         service.seenIn.push("botocore-endpoints");
-        const regionIds = Object.keys(entry.endpoints ?? {}).filter((r) => /^[a-z]{2,4}(-[a-z]+)+-\d+$/.test(r));
+        // endpoints.json lists endpoint variants alongside Regions. "fips-us-east-1"
+        // is an endpoint in us-east-1, not a Region of its own, and counting it made
+        // services appear to run in more Regions than exist.
+        const endpointKeys = Object.keys(entry.endpoints ?? {}).filter((r) => /^[a-z]{2,4}(-[a-z]+)+-\d+$/.test(r));
+        const fips = endpointKeys.filter((r) => r.startsWith("fips-") || r.endsWith("-fips"));
+        const regionIds = endpointKeys.filter((r) => !fips.includes(r));
         service.regions = [...new Set([...service.regions, ...regionIds])].sort();
+        if (fips.length > 0) {
+          service.fipsEndpointRegions = [
+            ...new Set([...(service.fipsEndpointRegions ?? []), ...fips.map((r) => r.replace(/^fips-|-fips$/g, ""))]),
+          ].sort();
+        }
         if (service.evidence.length < 12 && regionIds.length > 0) {
           service.evidence.push({
             sourceUrl: `file://${endpointsJson.file}`,
@@ -337,7 +347,17 @@ export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUn
     }
   }
 
+  const regionUniverse = await readJson<{ regions: { id: string }[] }>(
+    path.join(paths.universes, "regions.json"),
+  );
+  const knownRegions = new Set((regionUniverse?.regions ?? []).map((r) => r.id));
+  let droppedRegionIds = 0;
   for (const service of services.values()) {
+    if (knownRegions.size > 0) {
+      const before = service.regions.length;
+      service.regions = service.regions.filter((r) => knownRegions.has(r));
+      droppedRegionIds += before - service.regions.length;
+    }
     service.names = [...new Set(service.names.filter(Boolean))].sort();
     service.seenIn = [...new Set(service.seenIn)].sort();
     service.docGuides.sort((a, b) => a.url.localeCompare(b.url));
@@ -355,6 +375,9 @@ export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUn
     actions,
   });
 
+  if (droppedRegionIds > 0) {
+    notes.push(`${droppedRegionIds} endpoint keys were not Regions and were removed from service Region lists`);
+  }
   return { services: list, actions, serviceReferenceDocs, guides, products, notes };
 }
 

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { TargetResolver } from "../src/coverage/resolvers.js";
+import { assertsCoverage, isNavigation, neverStatesCoverage } from "../src/coverage/extractors.js";
 import type { DataSource, Region, ResourceType, Service } from "../src/core/schema.js";
 
 const evidence = [{ sourceUrl: "https://example.test/x", bodySha256: "a".repeat(64), retrievedAt: "2026-01-01T00:00:00Z", quote: "x" }];
@@ -105,5 +106,34 @@ describe("phrase tails", () => {
 
   it("does not reach past a short phrase", () => {
     expect(resolver.resolve("in nothing")).toBeUndefined();
+  });
+});
+
+describe("what is not coverage", () => {
+  it("refuses a quota table, however much it looks like a matrix", () => {
+    expect(neverStatesCoverage("Verified Access quotas | Name | Default | Adjustable")).toBe(true);
+    expect(neverStatesCoverage("Service quotas for AWS WAF")).toBe(true);
+    expect(neverStatesCoverage("Pricing for Amazon Macie")).toBe(true);
+    expect(neverStatesCoverage("Troubleshooting GuardDuty")).toBe(true);
+  });
+
+  it("still accepts a real coverage page", () => {
+    expect(neverStatesCoverage("Supported resource types for external access")).toBe(false);
+    expect(neverStatesCoverage("Supported operating systems: Amazon EC2 scanning")).toBe(false);
+  });
+
+  it("requires a page to assert coverage before reading a list", () => {
+    expect(assertsCoverage("Supported resource types")).toBe(true);
+    // A page about limits is not read generically. Security Hub's regional limits
+    // page carries a recipe instead, because a person judged it worth reading.
+    expect(assertsCoverage("Regional limits on Security Hub CSPM controls")).toBe(false);
+    expect(assertsCoverage("Related information")).toBe(false);
+    expect(assertsCoverage("Document history")).toBe(false);
+  });
+
+  it("treats a table of contents as navigation", () => {
+    expect(isNavigation("See also")).toBe(true);
+    expect(isNavigation("Security > Topics")).toBe(true);
+    expect(isNavigation("Supported resource types")).toBe(false);
   });
 });

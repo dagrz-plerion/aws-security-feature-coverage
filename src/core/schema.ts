@@ -55,6 +55,8 @@ export const serviceSchema = z.object({
   ),
   regionalTableId: z.string().optional(),
   regions: z.array(z.string()),
+  /** FIPS endpoint variants. These are endpoints, not Regions, and are kept apart. */
+  fipsEndpointRegions: z.array(z.string()).optional(),
   actionCount: z.number().int().optional(),
   resourceNames: z.array(z.string()),
   seenIn: z.array(z.string()).min(1),

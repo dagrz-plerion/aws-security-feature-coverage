@@ -5,46 +5,47 @@
     "network": 0,
     "revalidated": 0
   },
-  "finishedAt": "2026-09-01T06:14:13.059Z",
+  "finishedAt": "2026-09-01T06:27:23.771Z",
   "stages": [
     {
       "counts": {
-        "claims": 15658,
+        "claims": 11044,
         "conflicts": 0,
-        "covered": 8994,
-        "empty": 11603,
+        "covered": 4476,
+        "empty": 11677,
         "enabled": 11780,
-        "featuresWithCoverage": 130,
+        "featuresWithCoverage": 78,
         "from_agent": 11,
         "from_tier1-sweep": 6519,
         "from_title-match": 5250,
         "newlyDiscovered": 0,
-        "notCovered": 6436,
+        "notCovered": 6379,
         "openAxes": 15,
         "openAxisMembers": 1992,
         "pagesConsidered": 11780,
         "pagesFailed": 1,
-        "pagesRead": 202,
+        "pagesRead": 105,
+        "pagesRejectedByKind": 2664,
         "prunedStaleRecords": 0,
         "recipeFailures": 0,
         "recipes": 32,
         "recipesAttached": 32,
         "registered": 11780,
-        "serviceWideRecords": 51,
+        "serviceWideRecords": 8,
         "tablesRecoveredFromHtml": 401,
-        "unattachedPages": 0,
-        "unresolvedTargets": 438,
+        "unattachedPages": 68,
+        "unresolvedTargets": 333,
         "withRecipe": 28,
-        "yielding": 176
+        "yielding": 102
       },
-      "finishedAt": "2026-09-01T06:14:11.898Z",
+      "finishedAt": "2026-09-01T06:27:22.722Z",
       "id": "stage5-coverage",
-      "startedAt": "2026-09-01T06:13:56.532Z",
+      "startedAt": "2026-09-01T06:27:11.368Z",
       "status": "partial"
     },
     {
       "counts": {
-        "claims": 15658,
+        "claims": 11044,
         "features": 3378,
         "quotesChecked": 250,
         "recallFound": 73,
@@ -52,9 +53,9 @@
         "services": 692,
         "violations": 0
       },
-      "finishedAt": "2026-09-01T06:14:12.563Z",
+      "finishedAt": "2026-09-01T06:27:23.333Z",
       "id": "stage6-validate",
-      "startedAt": "2026-09-01T06:14:11.898Z",
+      "startedAt": "2026-09-01T06:27:22.723Z",
       "status": "ok"
     },
     {
@@ -62,11 +63,11 @@
         "features": 3378,
         "services": 227
       },
-      "finishedAt": "2026-09-01T06:14:13.059Z",
+      "finishedAt": "2026-09-01T06:27:23.771Z",
       "id": "report",
-      "startedAt": "2026-09-01T06:14:12.564Z",
+      "startedAt": "2026-09-01T06:27:23.333Z",
       "status": "ok"
     }
   ],
-  "startedAt": "2026-09-01T06:13:56.530Z"
+  "startedAt": "2026-09-01T06:27:11.366Z"
 }

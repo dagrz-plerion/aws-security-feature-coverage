@@ -46,6 +46,14 @@ export async function validate(sampleSize = 250): Promise<{ violations: Violatio
   add("every decision states a reason", adjudications.filter((a) => a.reason.trim().length < 10).map((a) => a.serviceId));
   add("every feature carries evidence", features.filter((f) => f.evidence.length === 0).map((f) => f.id));
 
+  // A service cannot run in a Region that does not exist. FIPS endpoint keys read
+  // like Region codes and made services appear to span more Regions than there are.
+  const regionIds = new Set(regions.map((r) => r.id));
+  add(
+    "every Region a service claims exists",
+    [...new Set(services.flatMap((s) => s.regions.filter((r) => !regionIds.has(r)).map((r) => `${s.id}: ${r}`)))],
+  );
+
   const featureIds = new Set(features.map((f) => f.id));
   add("every claim belongs to a feature", [...new Set(claims.filter((c) => !featureIds.has(c.featureId)).map((c) => c.featureId))]);
   add("no claim is stated without evidence", claims.filter((c) => c.evidence.length === 0).map((c) => c.id));

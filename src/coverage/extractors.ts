@@ -33,7 +33,19 @@ const AXES: Universe[] = ["region", "resourceType", "service", "dataSource"];
  * table of contents becomes a coverage claim.
  */
 const ASSERTS_COVERAGE =
-  /\b(support|supported|supports|available|availability|coverage|covers?|covered|works? with|integrat|compatib|applies to|apply to|can (scan|analy[sz]e|monitor|protect|detect|evaluate|record|back up)|scans?|analy[sz]es|monitors?|protects?|detects?|evaluates?|records?|retrieves?|includes?|enabled for|eligible|not supported|unsupported|excluded|limits?|quotas?|prerequisite|requirement)\b/i;
+  /\b(support|supported|supports|available|availability|coverage|covers?|covered|works? with|integrat|compatib|applies to|apply to|can (scan|analy[sz]e|monitor|protect|detect|evaluate|record|back up)|scans?|analy[sz]es|monitors?|protects?|detects?|evaluates?|records?|retrieves?|includes?|enabled for|eligible|not supported|unsupported|excluded|prerequisite|requirement)\b/i;
+
+/**
+ * Page kinds that never state coverage, however their tables happen to be shaped.
+ * A service quota table lists resources with a "Yes" in an Adjustable column, which
+ * reads exactly like a coverage matrix and is not one.
+ */
+const NEVER_COVERAGE =
+  /\b(quotas?|limits?|pricing|price|cost|billing|troubleshoot\w*|release notes|document history|tutorial|walkthrough|getting started|what'?s new|api reference|code examples?|sample code)\b/i;
+
+export function neverStatesCoverage(context: string): boolean {
+  return NEVER_COVERAGE.test(context);
+}
 
 /** Headings whose lists are navigation, never data. */
 const NAVIGATION_BLOCK = /^(topics?|contents?|see also|related( information| resources| topics)?|additional resources|more information|next steps?|in this (section|guide)|learn more)$/i;
@@ -120,7 +132,9 @@ export function extractFromTable(table: MdTable, resolver: TargetResolver, servi
   const unresolved: { axis: string; raw: string }[] = [];
   if (table.rows.length < MIN_VALUES) return { claims: [], unresolved };
   const context = `${table.section.join(" > ")} | ${table.headers.join(" | ")}`;
-  if (isNavigation(context) || !assertsCoverage(context)) return { claims: [], unresolved };
+  if (isNavigation(context) || neverStatesCoverage(context) || !assertsCoverage(context)) {
+    return { claims: [], unresolved };
+  }
 
   let best: { axis: Universe; column: number; rate: number } | undefined;
   for (let column = 0; column < table.headers.length; column += 1) {
@@ -137,8 +151,9 @@ export function extractFromTable(table: MdTable, resolver: TargetResolver, servi
     return { claims: [], unresolved, failure: "no column resolved to a known universe" };
   }
 
+  // The header has to name support. "Adjustable" in a quota table also holds Yes.
   const statusColumn = findColumn(table.headers, [
-    /support/i, /available/i, /status/i, /covered/i, /enabled/i, /^yes/i,
+    /\bsupport(ed|s)?\b/i, /\bavailab(le|ility)\b/i, /\bcovered\b/i, /\benabled\b/i, /\bapplies\b/i,
   ]);
   const qualifierColumn = findColumn(table.headers, [/note/i, /condition/i, /requirement/i, /comment/i]);
 
@@ -188,7 +203,9 @@ export function extractFromList(list: MdList, resolver: TargetResolver, serviceI
   const items = list.items.filter((item) => item.depth === 0).map((item) => item.text);
   if (items.length < MIN_VALUES) return { claims: [], unresolved };
   const context = `${list.section.join(" > ")} | ${list.intro ?? ""}`;
-  if (isNavigation(context) || !assertsCoverage(context)) return { claims: [], unresolved };
+  if (isNavigation(context) || neverStatesCoverage(context) || !assertsCoverage(context)) {
+    return { claims: [], unresolved };
+  }
 
   let best: { axis: Universe; rate: number } | undefined;
   for (const axis of AXES) {
@@ -323,7 +340,8 @@ export function extractFromHeadings(body: string, resolver: TargetResolver, serv
   for (const [level, sections] of byLevel) {
     const titles = sections.map((s) => s.title);
     if (titles.length < MIN_VALUES) continue;
-    if (!assertsCoverage(`${doc.title ?? ""} ${titles.slice(0, 6).join(" ")}`)) continue;
+    const headingContext = `${doc.title ?? ""} ${titles.slice(0, 6).join(" ")}`;
+    if (neverStatesCoverage(headingContext) || !assertsCoverage(headingContext)) continue;
     let best: { axis: Universe; rate: number } | undefined;
     for (const axis of AXES) {
       const { rate } = resolver.rate(titles, axis);
