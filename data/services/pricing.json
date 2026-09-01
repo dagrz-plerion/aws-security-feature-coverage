@@ -1,7 +1,7 @@
 {
   "candidate": true,
   "confidence": 0.6,
-  "decidedAt": "2026-09-01T05:16:13.355Z",
+  "decidedAt": "2026-09-01T06:48:19.483Z",
   "evidence": [
     {
       "bodySha256": "645a95d3d7c0ce8033b47c2a04109039767f551a921c63be692b4766b7ca25f4",
@@ -19,8 +19,7 @@
     }
   ],
   "method": "deterministic",
-  "promoted": true,
-  "reason": "Weak security signal only (score 1: security-doc-pages). Scanned at low priority. Promoted to tier 2: 1 named security features were found in its documentation.",
+  "reason": "Weak security signal only (score 1: security-doc-pages). Scanned at low priority.",
   "score": 1,
   "serviceId": "pricing",
   "signals": [
@@ -30,5 +29,5 @@
       "weight": 1
     }
   ],
-  "tier": "tier2"
+  "tier": "not-security"
 }

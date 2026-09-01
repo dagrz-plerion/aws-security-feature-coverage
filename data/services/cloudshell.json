@@ -1,7 +1,7 @@
 {
   "candidate": true,
   "confidence": 0.6,
-  "decidedAt": "2026-09-01T05:16:13.355Z",
+  "decidedAt": "2026-09-01T06:48:19.483Z",
   "evidence": [
     {
       "bodySha256": "a834870c2d919ab201a47b87270311e0bfd63e32700fadae6bdfda784134b8c5",
@@ -19,8 +19,7 @@
     }
   ],
   "method": "deterministic",
-  "promoted": true,
-  "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority. Promoted to tier 2: 4 named security features were found in its documentation.",
+  "reason": "Weak security signal only (score 2: security-doc-pages). Scanned at low priority.",
   "score": 2,
   "serviceId": "cloudshell",
   "signals": [
@@ -30,5 +29,5 @@
       "weight": 2
     }
   ],
-  "tier": "tier2"
+  "tier": "not-security"
 }

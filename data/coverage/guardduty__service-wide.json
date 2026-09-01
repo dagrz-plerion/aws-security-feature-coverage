@@ -1,8 +1,7 @@
 {
   "axes": [
     "findingType",
-    "region",
-    "s3Feature"
+    "region"
   ],
   "claims": [
     {
@@ -177,11 +176,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-backdoor-ec2-xorddos-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-backdoor-ec2-xorddos-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Backdoor:EC2/XORDDOS",
       "targetLabel": "Backdoor:EC2/XORDDOS"
     },
@@ -237,11 +236,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-behavior-iamuser-instancelaunchunusual-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-behavior-iamuser-instancelaunchunusual-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Behavior:IAMUser/InstanceLaunchUnusual",
       "targetLabel": "Behavior:IAMUser/InstanceLaunchUnusual"
     },
@@ -297,11 +296,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-cryptocurrency-ec2-bitcointool-a-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-cryptocurrency-ec2-bitcointool-a-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "CryptoCurrency:EC2/BitcoinTool.A",
       "targetLabel": "CryptoCurrency:EC2/BitcoinTool.A"
     },
@@ -497,11 +496,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-discovery-s3-bucketenumeration-unusual-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-discovery-s3-bucketenumeration-unusual-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Discovery:S3/BucketEnumeration.Unusual",
       "targetLabel": "Discovery:S3/BucketEnumeration.Unusual"
     },
@@ -637,11 +636,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-exfiltration-s3-objectread-unusual-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-exfiltration-s3-objectread-unusual-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Exfiltration:S3/ObjectRead.Unusual",
       "targetLabel": "Exfiltration:S3/ObjectRead.Unusual"
     },
@@ -897,11 +896,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-s3-objectdelete-unusual-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-impact-s3-objectdelete-unusual-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Impact:S3/ObjectDelete.Unusual",
       "targetLabel": "Impact:S3/ObjectDelete.Unusual"
     },
@@ -917,11 +916,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-impact-s3-permissionsmodification-unusual-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-impact-s3-permissionsmodification-unusual-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Impact:S3/PermissionsModification.Unusual",
       "targetLabel": "Impact:S3/PermissionsModification.Unusual"
     },
@@ -1097,11 +1096,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-persistence-iamuser-networkpermissions-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-persistence-iamuser-networkpermissions-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Persistence:IAMUser/NetworkPermissions",
       "targetLabel": "Persistence:IAMUser/NetworkPermissions"
     },
@@ -1117,11 +1116,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-persistence-iamuser-resourcepermissions-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-persistence-iamuser-resourcepermissions-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Persistence:IAMUser/ResourcePermissions",
       "targetLabel": "Persistence:IAMUser/ResourcePermissions"
     },
@@ -1137,11 +1136,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-persistence-iamuser-userpermissions-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-persistence-iamuser-userpermissions-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Persistence:IAMUser/UserPermissions",
       "targetLabel": "Persistence:IAMUser/UserPermissions"
     },
@@ -1157,11 +1156,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-persistence-kubernetes-containerwithsensitivemount-recipe-guardduty-finding-type-head",
+      "id": "guardduty-service-wide-findingtype-persistence-kubernetes-containerwithsensitivemount-recipe-guardduty-retired-finding-t",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Persistence:Kubernetes/ContainerWithSensitiveMount",
       "targetLabel": "Persistence:Kubernetes/ContainerWithSensitiveMount"
     },
@@ -1297,11 +1296,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-privilegeescalation-iamuser-administrativepermissions-recipe-guardduty-finding-type-h",
+      "id": "guardduty-service-wide-findingtype-privilegeescalation-iamuser-administrativepermissions-recipe-guardduty-retired-findin",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "PrivilegeEscalation:IAMUser/AdministrativePermissions",
       "targetLabel": "PrivilegeEscalation:IAMUser/AdministrativePermissions"
     },
@@ -1337,11 +1336,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-privilegeescalation-kubernetes-privilegedcontainer-recipe-guardduty-finding-type-head",
+      "id": "guardduty-service-wide-findingtype-privilegeescalation-kubernetes-privilegedcontainer-recipe-guardduty-retired-finding-t",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "PrivilegeEscalation:Kubernetes/PrivilegedContainer",
       "targetLabel": "PrivilegeEscalation:Kubernetes/PrivilegedContainer"
     },
@@ -1457,11 +1456,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-recon-iamuser-networkpermissions-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-recon-iamuser-networkpermissions-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Recon:IAMUser/NetworkPermissions",
       "targetLabel": "Recon:IAMUser/NetworkPermissions"
     },
@@ -1477,11 +1476,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-recon-iamuser-resourcepermissions-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-recon-iamuser-resourcepermissions-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Recon:IAMUser/ResourcePermissions",
       "targetLabel": "Recon:IAMUser/ResourcePermissions"
     },
@@ -1517,11 +1516,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-recon-iamuser-userpermissions-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-recon-iamuser-userpermissions-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Recon:IAMUser/UserPermissions",
       "targetLabel": "Recon:IAMUser/UserPermissions"
     },
@@ -1537,11 +1536,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-resourceconsumption-iamuser-computeresources-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-resourceconsumption-iamuser-computeresources-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "ResourceConsumption:IAMUser/ComputeResources",
       "targetLabel": "ResourceConsumption:IAMUser/ComputeResources"
     },
@@ -1577,11 +1576,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-stealth-iamuser-loggingconfigurationmodified-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-stealth-iamuser-loggingconfigurationmodified-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "Stealth:IAMUser/LoggingConfigurationModified",
       "targetLabel": "Stealth:IAMUser/LoggingConfigurationModified"
     },
@@ -1917,11 +1916,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-ec2-toripcaller-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-ec2-toripcaller-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "UnauthorizedAccess:EC2/TorIPCaller",
       "targetLabel": "UnauthorizedAccess:EC2/TorIPCaller"
     },
@@ -1957,11 +1956,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-consolelogin-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-consolelogin-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "UnauthorizedAccess:IAMUser/ConsoleLogin",
       "targetLabel": "UnauthorizedAccess:IAMUser/ConsoleLogin"
     },
@@ -2137,11 +2136,11 @@
           "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-retired.md"
         }
       ],
-      "extractorId": "recipe:guardduty-finding-type-headings",
+      "extractorId": "recipe:guardduty-retired-finding-types",
       "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-unusualasncaller-recipe-guardduty-finding-type-headings",
+      "id": "guardduty-service-wide-findingtype-unauthorizedaccess-iamuser-unusualasncaller-recipe-guardduty-retired-finding-types",
       "method": "deterministic",
-      "status": "covered",
+      "status": "not-covered",
       "targetId": "UnauthorizedAccess:IAMUser/UnusualASNCaller",
       "targetLabel": "UnauthorizedAccess:IAMUser/UnusualASNCaller"
     },
@@ -2524,470 +2523,10 @@
       "status": "covered",
       "targetId": "us-west-2",
       "targetLabel": "US West (Oregon)"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| Amazon S3 on Outposts | No | Malware Protection for S3 is not supported on Outposts. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-amazon-s3-on-outposts-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "not-covered",
-      "targetId": "Amazon S3 on Outposts",
-      "targetLabel": "Amazon S3 on Outposts"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| Data Encryption - S3-SSE<br />Data Encryption - SSE-KMS<br />Data Encryption - DSSE-KMS<br />AWS KMS - Customer managed key | Yes | GuardDuty supports malware scans for S3 objects that are encrypted with managed and customer managed keys. Ensure that the IAM role includes the permission to use the key. For more information, see [Adding IAM policy permissions](malware-protection-s3-iam-policy-prerequisite.md#attach-iam-policy-s3-malware-protection). |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-aws-kms-customer-managed-key-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS KMS - Customer managed key",
-      "targetLabel": "AWS KMS - Customer managed key"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| Client side encryption | No | When your Amazon S3 objects are encrypted by using Amazon S3 Encryption Client, your objects aren't exposed to any third party, including AWS. For information on why this is not supported, see [Protecting data by using client-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingClientSideEncryption.html). CSE-KMS encrypted objects are received as an encrypted blob where the encryption can't be determined. Therefore, GuardDuty processes them as they are received, and scans the encrypted blob as a regular file. GuardDuty doesn't return an `U…",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-client-side-encryption-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "not-covered",
-      "targetId": "Client side encryption",
-      "targetLabel": "Client side encryption"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| Data Encryption - S3-SSE<br />Data Encryption - SSE-KMS<br />Data Encryption - DSSE-KMS<br />AWS KMS - Customer managed key | Yes | GuardDuty supports malware scans for S3 objects that are encrypted with managed and customer managed keys. Ensure that the IAM role includes the permission to use the key. For more information, see [Adding IAM policy permissions](malware-protection-s3-iam-policy-prerequisite.md#attach-iam-policy-s3-malware-protection). |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-data-encryption-dsse-kms-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "Data Encryption - DSSE-KMS",
-      "targetLabel": "Data Encryption - DSSE-KMS"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| Data Encryption - S3-SSE<br />Data Encryption - SSE-KMS<br />Data Encryption - DSSE-KMS<br />AWS KMS - Customer managed key | Yes | GuardDuty supports malware scans for S3 objects that are encrypted with managed and customer managed keys. Ensure that the IAM role includes the permission to use the key. For more information, see [Adding IAM policy permissions](malware-protection-s3-iam-policy-prerequisite.md#attach-iam-policy-s3-malware-protection). |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-data-encryption-s3-sse-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "Data Encryption - S3-SSE",
-      "targetLabel": "Data Encryption - S3-SSE"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| Data Encryption - SSE-C | No | Malware Protection for S3 doesn't support scanning S3 objects that are encrypted with keys that are not accessible. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-data-encryption-sse-c-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "not-covered",
-      "targetId": "Data Encryption - SSE-C",
-      "targetLabel": "Data Encryption - SSE-C"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| Data Encryption - S3-SSE<br />Data Encryption - SSE-KMS<br />Data Encryption - DSSE-KMS<br />AWS KMS - Customer managed key | Yes | GuardDuty supports malware scans for S3 objects that are encrypted with managed and customer managed keys. Ensure that the IAM role includes the permission to use the key. For more information, see [Adding IAM policy permissions](malware-protection-s3-iam-policy-prerequisite.md#attach-iam-policy-s3-malware-protection). |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-data-encryption-sse-kms-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "Data Encryption - SSE-KMS",
-      "targetLabel": "Data Encryption - SSE-KMS"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| Requester pays | Yes | Malware Protection for S3 can scan the buckets that are set up with *Requester Pays*. The requester will pay for the S3 calls. For more information, see [Using Requester Pays buckets for storage transfers and usage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html) in the *Amazon S3 User Guide*. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-requester-pays-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "Requester pays",
-      "targetLabel": "Requester pays"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 Annotations | No | Malware Protection for S3 scans only the S3 object content. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-annotations-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "not-covered",
-      "targetId": "S3 Annotations",
-      "targetLabel": "S3 Annotations"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 object lock and legal hold | Yes | Locked S3 objects are locked based on WORM - Write Once Read Many. Malware Protection for S3 can access and scan the objects. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-object-lock-and-legal-hold-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "S3 object lock and legal hold",
-      "targetLabel": "S3 object lock and legal hold"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 Replication - scan replicated object | Yes | If the destination bucket is a protected resource, then GuardDuty will scan all the S3 objects that are replicated to the prefixes that are protected and monitored. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-replication-scan-replicated-object-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "S3 Replication - scan replicated object",
-      "targetLabel": "S3 Replication - scan replicated object"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 Replication: Replicate on scan result tag | No | You can't define a replication rule based on the scan result tag. Amazon S3 does't support replication for tag, except for on create. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-replication-replicate-on-scan-result-tag-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "not-covered",
-      "targetId": "S3 Replication: Replicate on scan result tag",
-      "targetLabel": "S3 Replication: Replicate on scan result tag"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 Storage Class - S3 Express One Zone (Directory bucket) | No | GuardDuty supports only general purpose buckets for Malware Protection for S3. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-express-one-zone-directory-bucket-recipe-guardduty-s3-feature-suppo",
-      "method": "deterministic",
-      "status": "not-covered",
-      "targetId": "S3 Storage Class - S3 Express One Zone (Directory bucket)",
-      "targetLabel": "S3 Storage Class - S3 Express One Zone (Directory bucket)"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 Storage Class - S3 Glacier Flexible Retrieval<br />S3 Storage Class - S3 Glacier Deep Archive | No | The S3 objects must be restored before they can be accessed. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-glacier-deep-archive-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "not-covered",
-      "targetId": "S3 Storage Class - S3 Glacier Deep Archive",
-      "targetLabel": "S3 Storage Class - S3 Glacier Deep Archive"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 Storage Class - S3 Glacier Flexible Retrieval<br />S3 Storage Class - S3 Glacier Deep Archive | No | The S3 objects must be restored before they can be accessed. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-glacier-flexible-retrieval-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "not-covered",
-      "targetId": "S3 Storage Class - S3 Glacier Flexible Retrieval",
-      "targetLabel": "S3 Storage Class - S3 Glacier Flexible Retrieval"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 Storage Class - S3 Standard<br />S3 Storage Class - S3 Standard-Infrequent Access<br />S3 Storage Class - S3 One Zone-Infrequent Access<br />S3 Storage Class - S3 Glacier Instant Retrieval | Yes | S3 objects can be retrieved without restoring asynchronously. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-glacier-instant-retrieval-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "S3 Storage Class - S3 Glacier Instant Retrieval",
-      "targetLabel": "S3 Storage Class - S3 Glacier Instant Retrieval"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 Storage Class - S3 Intelligent-Tiering | Conditional |  +  Intelligent Tiering support is available for S3 objects in the Frequent, Infrequent, and Archive Instance Access tiers. <br />+  The opt-in Archive and Deep Archive tiers are not supported. <br />+  Intelligent Tiering always creates a new object in Frequent Access tier. Therefore, object scan on create is supported. <br />+  Future Intelligent tiering features might start out objects in Archive. Therefore, this is not supported.   |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-intelligent-tiering-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "unknown",
-      "targetId": "S3 Storage Class - S3 Intelligent-Tiering",
-      "targetLabel": "S3 Storage Class - S3 Intelligent-Tiering"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 Storage Class - S3 Standard<br />S3 Storage Class - S3 Standard-Infrequent Access<br />S3 Storage Class - S3 One Zone-Infrequent Access<br />S3 Storage Class - S3 Glacier Instant Retrieval | Yes | S3 objects can be retrieved without restoring asynchronously. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-one-zone-infrequent-access-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "S3 Storage Class - S3 One Zone-Infrequent Access",
-      "targetLabel": "S3 Storage Class - S3 One Zone-Infrequent Access"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 Storage Class - S3 Standard<br />S3 Storage Class - S3 Standard-Infrequent Access<br />S3 Storage Class - S3 One Zone-Infrequent Access<br />S3 Storage Class - S3 Glacier Instant Retrieval | Yes | S3 objects can be retrieved without restoring asynchronously. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-standard-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "S3 Storage Class - S3 Standard",
-      "targetLabel": "S3 Storage Class - S3 Standard"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 Storage Class - S3 Standard<br />S3 Storage Class - S3 Standard-Infrequent Access<br />S3 Storage Class - S3 One Zone-Infrequent Access<br />S3 Storage Class - S3 Glacier Instant Retrieval | Yes | S3 objects can be retrieved without restoring asynchronously. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-storage-class-s3-standard-infrequent-access-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "S3 Storage Class - S3 Standard-Infrequent Access",
-      "targetLabel": "S3 Storage Class - S3 Standard-Infrequent Access"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3 versioning | Yes | All the uploaded S3 objects are scanned for malware. If you uploaded an object with file version v1 and immediately uploaded another version override with v2, then GuardDuty will scan both the object file versions v1 and v2. However, the scan start time might not be in the same order. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-versioning-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "S3 versioning",
-      "targetLabel": "S3 versioning"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3: Storage lifecycle | Yes | You can define lifecycle policies based on the scan result tag. For example, auto-delete malicious objects. For more information about lifcycle configuration, see [Managing your storage lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html) in the *Amazon S3 User Guide*. |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-storage-lifecycle-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "S3: Storage lifecycle",
-      "targetLabel": "S3: Storage lifecycle"
-    },
-    {
-      "axis": "s3Feature",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1546bfc28f4c3066c312aa4544d327139587c4ac20361937246abf563b855944",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md :: Supportability of Amazon S3 features",
-          "quote": "| S3: Tag-based access control (TBAC) | Yes | You can define bucket resource policies based on your S3 object scan result tag. For example, prevent access to S3 objects that are not yet scanned, or GuardDuty detected threats. For more information, see [Using tag-based access control (TBAC) with Malware Protection for S3](tag-based-access-s3-malware-protection.md). |",
-          "retrievedAt": "2026-09-01T05:00:38.720Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md"
-        }
-      ],
-      "extractorId": "recipe:guardduty-s3-feature-support",
-      "featureId": "guardduty/service-wide",
-      "id": "guardduty-service-wide-s3feature-s3-tag-based-access-control-tbac-recipe-guardduty-s3-feature-support",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "S3: Tag-based access control (TBAC)",
-      "targetLabel": "S3: Tag-based access control (TBAC)"
     }
   ],
   "featureId": "guardduty/service-wide",
-  "generatedAt": "2026-09-01T06:38:30.924Z",
+  "generatedAt": "2026-09-01T06:48:35.269Z",
   "serviceId": "guardduty",
   "unresolvedTargets": []
 }

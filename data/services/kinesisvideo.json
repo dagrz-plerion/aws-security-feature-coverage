@@ -1,7 +1,7 @@
 {
   "candidate": true,
   "confidence": 0.4,
-  "decidedAt": "2026-09-01T05:16:13.355Z",
+  "decidedAt": "2026-09-01T06:48:19.483Z",
   "evidence": [
     {
       "bodySha256": "1cc672f3956db3c94844f1203cdab1791396353df49423eb95c1863bec000f34",
@@ -19,8 +19,7 @@
     }
   ],
   "method": "deterministic",
-  "promoted": true,
-  "reason": "Security signals present (score 5: security-name-weak, security-doc-pages). Scanning for a named security feature before any tier is given. Promoted to tier 2: 1 named security features were found in its documentation.",
+  "reason": "Security signals present (score 5: security-name-weak, security-doc-pages). Scanning for a named security feature before any tier is given.",
   "score": 5,
   "serviceId": "kinesisvideo",
   "signals": [
@@ -35,5 +34,5 @@
       "weight": 3
     }
   ],
-  "tier": "tier2"
+  "tier": "not-security"
 }

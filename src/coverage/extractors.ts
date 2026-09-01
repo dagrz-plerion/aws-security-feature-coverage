@@ -73,6 +73,18 @@ export function isNavigation(context: string): boolean {
 /** Below this many distinct resolved targets, a list is not a coverage list. */
 const MIN_DISTINCT_TARGETS = 3;
 
+/** Axes with a universe of their own; anything else is a catalogue we discovered. */
+const CLOSED_AXES = new Set(["region", "partition", "service", "resourceType", "dataSource"]);
+
+/**
+ * A heading names a topic. On a closed axis that is not a statement of coverage —
+ * "## AWS X-Ray" in a reference page produced 124 resource-type claims. On an open
+ * axis the heading often IS the catalogue entry, as with GuardDuty finding types.
+ */
+export function isBareHeading(quote: string): boolean {
+  return /^#{1,6}\s/.test(quote.trim());
+}
+
 /**
  * "AWS Lambda functions and layers" names two things. The words before the
  * conjunction carry the service, so they are carried onto the second half.
@@ -117,7 +129,7 @@ const PARTIAL = /^(partial|limited|preview|some|conditional)$/i;
  * statements are the most useful ones. They are phrased a dozen ways.
  */
 export function statesAbsence(text: string): boolean {
-  return /\b(not supported|aren'?t supported|isn'?t supported|are not available|aren'?t available|is not available|isn'?t available|not currently available|does ?n'?t support|do ?n'?t support|can'?t (be used|scan|generate)|unsupported|excluded from|no longer supported|discontinued)\b/i.test(
+  return /\b(not supported|aren'?t supported|isn'?t supported|are not available|aren'?t available|is not available|isn'?t available|not currently available|does ?n'?t support|do ?n'?t support|can'?t (be used|scan|generate)|unsupported|excluded from|no longer supported|no longer generated|retired|discontinued|deprecated)\b/i.test(
     text,
   );
 }
@@ -202,8 +214,9 @@ export function extractFromTable(table: MdTable, resolver: TargetResolver, servi
 
 /** One or two names is a mention, not a coverage list. */
 function enoughTargets(claims: RawClaim[]): RawClaim[] {
-  const distinct = new Set(claims.map((c) => `${c.axis}|${c.targetId}`));
-  return distinct.size >= MIN_DISTINCT_TARGETS ? claims : [];
+  const kept = claims.filter((c) => !(CLOSED_AXES.has(c.axis) && isBareHeading(c.quote)));
+  const distinct = new Set(kept.map((c) => `${c.axis}|${c.targetId}`));
+  return distinct.size >= MIN_DISTINCT_TARGETS ? kept : [];
 }
 
 /** A bullet list of supported things. Same resolution-rate test as a table column. */

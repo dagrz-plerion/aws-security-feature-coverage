@@ -19,10 +19,29 @@ export const STRUCTURAL_TITLE = [
   /^examples? (of|for)\b/i,
   /\bworks with (iam|aws)\b/i,
   /^step \d/i,
-  /^(view|list|create|delete|update|edit|modify|add|remove|assign|deactivate|resynchronize|recover|check|generate|download|upload|import|export|copy|move|untag|enable|disable|start|stop|turn)\b/i,
+  /^(view|viewing|list|listing|create|creating|delete|deleting|update|updating|edit|editing|modify|modifying|add|adding|remove|removing|assign|assigning|deactivate|resynchronize|recover|check|checking|generate|generating|download|downloading|upload|uploading|import|importing|export|exporting|copy|copying|move|moving|untag|enable|enabling|disable|disabling|start|starting|stop|stopping|turn|register|registering|deregister|designate|designating|grant|granting|retrieve|retrieving|install|installing|deploy|deploying|verify|verifying|duplicate|duplicating|set|setting|examine|examining|connect|connecting|disconnect|disconnecting|replace|replacing|apply|applying|attach|attaching|detach|specify|specifying|opt)\b/i,
   /^migrating\b/i, /^what's new/i,
   // Pricing and trial pages describe commercial terms, not capability.
   /^\d+[- ]day\b/i, /free trial/i, /^pricing/i, /^cost/i, /^billing/i,
+  /\bpolic(y|ies) examples?\b/i, /\bsyntax and examples?\b/i, /\bsample templates?\b/i,
+  /\bwalkthroughs?\b/i, /\bknown issues\b/i, /\bprevious versions\b/i,
+  /^prerequisites?/i, /\bterms and concepts\b/i, /\bterms & concepts\b/i,
+  /^user tasks$/i, /\bregional limits\b/i, /\bissues$/i, /\berrors$/i,
+  /\badvanced topics\b/i, /^get started/i, /\bconsiderations( and recommendations)?$/i,
+  /\bpricing$/i, /\bcosts$/i, /\bquotas?$/i, /\blimitations$/i, /\bconstraints$/i,
+  /\bfaq$/i, /\bhow it works$/i, /\bwork(s)?$/i,
+];
+
+/**
+ * Controls AWS itself names with a leading verb. Without this the verb rule would
+ * remove S3 Block Public Access and EC2 block public access, which are real.
+ */
+export const VERB_LED_ALLOWLIST = [
+  /^block(ing)?\s/i,
+  /^centralize root access/i,
+  /^rotate\b/i,
+  /^encrypt(ing)? (data|objects)\b/i,
+  /^controlling object ownership/i,
 ];
 
 /**
@@ -151,6 +170,7 @@ export const NAMED_CONTROL = [
   /\binternal access\b/i,
   /\bunused access\b/i,
   /\bpolicy validation\b/i,
+  /\bvalidating polic(y|ies)\b/i,
   /\bpolicy generation\b/i,
   /\bcustom policy check/i,
   /\bmanaged data identifier/i,

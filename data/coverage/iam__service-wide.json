@@ -1,289 +1,8 @@
 {
   "axes": [
-    "resourceType",
     "service"
   ],
   "claims": [
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [Amazon DynamoDB streams](#access-analyzer-ddb-stream)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-dynamodb-stream-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::DynamoDB::Stream",
-      "targetLabel": "Amazon DynamoDB streams"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [Amazon DynamoDB tables](#access-analyzer-ddb-table)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-dynamodb-table-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::DynamoDB::Table",
-      "targetLabel": "Amazon DynamoDB tables"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [Amazon Elastic Container Registry repositories](#access-analyzer-ecr)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-ecr-repository-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::ECR::Repository",
-      "targetLabel": "Amazon Elastic Container Registry repositories"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [Amazon Elastic File System file systems](#access-analyzer-efs)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-efs-filesystem-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::EFS::FileSystem",
-      "targetLabel": "Amazon Elastic File System file systems"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [AWS Identity and Access Management roles](#access-analyzer-iam-role)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-iam-role-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::IAM::Role",
-      "targetLabel": "AWS Identity and Access Management roles"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [AWS Key Management Service keys](#access-analyzer-kms-key)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-kms-key-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::KMS::Key",
-      "targetLabel": "AWS Key Management Service keys"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [Amazon Relational Database Service DB cluster snapshots](#access-analyzer-rds-db-cluster)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-rds-clustersnapshot-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::RDS::ClusterSnapshot",
-      "targetLabel": "Amazon Relational Database Service DB cluster snapshots"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [Amazon Relational Database Service DB snapshots](#access-analyzer-rds-db)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-rds-dbsnapshot-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::RDS::DBSnapshot",
-      "targetLabel": "Amazon Relational Database Service DB snapshots"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [Amazon Simple Storage Service buckets](#access-analyzer-s3)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-s3-bucket-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::S3::Bucket",
-      "targetLabel": "Amazon Simple Storage Service buckets"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [Amazon Simple Storage Service directory buckets](#access-analyzer-s3-directory)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-s3express-directorybucket-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::S3Express::DirectoryBucket",
-      "targetLabel": "Amazon Simple Storage Service directory buckets"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [AWS Secrets Manager secrets](#access-analyzer-secrets-manager)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-secretsmanager-secret-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::SecretsManager::Secret",
-      "targetLabel": "AWS Secrets Manager secrets"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [Amazon Simple Notification Service topics](#access-analyzer-sns)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-sns-topic-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::SNS::Topic",
-      "targetLabel": "Amazon Simple Notification Service topics"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [Amazon Simple Queue Service queues](#access-analyzer-sqs)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-aws-sqs-queue-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "AWS::SQS::Queue",
-      "targetLabel": "Amazon Simple Queue Service queues"
-    },
-    {
-      "axis": "resourceType",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: Supported resource types for external access",
-          "quote": "+ [Amazon Elastic Block Store volume snapshots](#access-analyzer-ebs)",
-          "retrievedAt": "2026-09-01T04:28:57.993Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
-        }
-      ],
-      "extractorId": "recipe:access-analyzer-external-resources",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-resourcetype-ebs-snapshot-recipe-access-analyzer-external-resources",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ebs:snapshot",
-      "targetLabel": "Amazon Elastic Block Store volume snapshots"
-    },
     {
       "axis": "service",
       "confidence": 0.9,
@@ -2246,26 +1965,6 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: heading level 3",
-          "quote": "### Amazon Elastic Compute Cloud",
-          "retrievedAt": "2026-09-01T04:59:14.985Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-service-ec2-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ec2",
-      "targetLabel": "Amazon Elastic Compute Cloud"
-    },
-    {
-      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -2283,26 +1982,6 @@
       "status": "covered",
       "targetId": "ec2-instance-connect",
       "targetLabel": "Amazon EC2 Instance Connect"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: heading level 3",
-          "quote": "### Amazon Elastic Container Service",
-          "retrievedAt": "2026-09-01T04:59:14.985Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-service-ecs-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "ecs",
-      "targetLabel": "Amazon Elastic Container Service"
     },
     {
       "axis": "service",
@@ -5046,26 +4725,6 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: heading level 3",
-          "quote": "### Amazon Simple Storage Service",
-          "retrievedAt": "2026-09-01T04:59:14.985Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-service-s3-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "s3",
-      "targetLabel": "Amazon Simple Storage Service"
-    },
-    {
-      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -5646,26 +5305,6 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
-          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: heading level 3",
-          "quote": "### AWS Security Token Service",
-          "retrievedAt": "2026-09-01T04:59:14.985Z",
-          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
-        }
-      ],
-      "extractorId": "md-heading-series",
-      "featureId": "iam/service-wide",
-      "id": "iam-service-wide-service-sts-md-heading-series",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "sts",
-      "targetLabel": "AWS Security Token Service"
-    },
-    {
-      "axis": "service",
       "confidence": 0.9,
       "evidence": [
         {
@@ -6166,7 +5805,7 @@
     }
   ],
   "featureId": "iam/service-wide",
-  "generatedAt": "2026-09-01T06:38:30.924Z",
+  "generatedAt": "2026-09-01T06:48:35.269Z",
   "serviceId": "iam",
   "unresolvedTargets": [
     {

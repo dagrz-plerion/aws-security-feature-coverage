@@ -115,8 +115,10 @@ maybe("open axes", () => {
     const shapes: Record<string, RegExp> = {
       findingType: /^[A-Z][A-Za-z]*:[A-Za-z0-9]+\/.+$/,
       control: /^[A-Z][A-Za-z0-9]{1,20}\.\d{1,3}$/,
-      configRule: /^[a-z][a-z0-9]*(-[a-z0-9]+){2,}$/,
-      dataIdentifier: /^[A-Z][A-Z0-9]*(_[A-Z0-9]+)+$/,
+      // One hyphen is enough: cloudtrail-enabled, encrypted-volumes, restricted-ssh.
+      configRule: /^[a-z][a-z0-9]*(-[a-z0-9]+){1,}$/,
+      // Macie has single-token identifiers too: ADDRESS, NAME, PKCS.
+      dataIdentifier: /^[A-Z][A-Z0-9_]{2,}$/,
       // AWS publishes both the code name and the prose name for a rule group.
       managedRuleGroup: /^(AWSManagedRules[A-Za-z0-9]+|[A-Za-z][A-Za-z0-9 ]+managed rule group)$/i,
     };

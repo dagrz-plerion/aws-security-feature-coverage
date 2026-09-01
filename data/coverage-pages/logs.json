@@ -4,7 +4,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:38:28.605Z",
+      "lastCheckedAt": "2026-09-01T06:48:32.974Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -18,7 +18,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:38:28.605Z",
+      "lastCheckedAt": "2026-09-01T06:48:32.974Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -32,7 +32,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:38:28.605Z",
+      "lastCheckedAt": "2026-09-01T06:48:32.974Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -46,7 +46,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:38:28.606Z",
+      "lastCheckedAt": "2026-09-01T06:48:32.974Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -60,7 +60,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:38:28.606Z",
+      "lastCheckedAt": "2026-09-01T06:48:32.975Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -74,7 +74,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:38:28.606Z",
+      "lastCheckedAt": "2026-09-01T06:48:32.974Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -88,7 +88,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:18:51.253Z",
-      "lastCheckedAt": "2026-09-01T06:38:28.606Z",
+      "lastCheckedAt": "2026-09-01T06:48:32.974Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -102,44 +102,14 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:38:28.606Z",
+      "lastCheckedAt": "2026-09-01T06:48:32.975Z",
       "lastResult": {
-        "axes": [
-          "fileExtension",
-          "storageClass"
-        ],
-        "claims": 27,
-        "status": "ok"
+        "axes": [],
+        "claims": 0,
+        "detail": "another service reads this page with a recipe",
+        "status": "empty"
       },
       "note": "The S3 storage classes Macie reads, and the file formats it can open. Extensions are comma separated inside one cell.",
-      "recipes": [
-        {
-          "axis": "storageClass",
-          "blocks": "h2-sections",
-          "id": "macie-storage-classes",
-          "requireMin": 4,
-          "select": {
-            "extract": "whole",
-            "from": "list-items",
-            "matches": "^(S3|Reduced)"
-          },
-          "status": "covered"
-        },
-        {
-          "axis": "fileExtension",
-          "blocks": "whole-page",
-          "id": "macie-file-extensions",
-          "requireMin": 8,
-          "select": {
-            "extract": "whole",
-            "from": "table-column",
-            "headerMatches": "file name extension",
-            "matches": "^\\.[a-z0-9]{1,8}$",
-            "split": "\\s*,\\s*"
-          },
-          "status": "covered"
-        }
-      ],
       "serviceId": "logs",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/macie/latest/user/discovery-supported-storage.md"
@@ -147,7 +117,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:38:28.607Z",
+      "lastCheckedAt": "2026-09-01T06:48:32.975Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -161,7 +131,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:38:28.607Z",
+      "lastCheckedAt": "2026-09-01T06:48:32.975Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -175,7 +145,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:38:28.607Z",
+      "lastCheckedAt": "2026-09-01T06:48:32.975Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -189,7 +159,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.126Z",
-      "lastCheckedAt": "2026-09-01T06:38:28.607Z",
+      "lastCheckedAt": "2026-09-01T06:48:32.975Z",
       "lastResult": {
         "axes": [],
         "claims": 0,

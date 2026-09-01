@@ -64,7 +64,46 @@ export function mergeCandidates(candidates: FeatureCandidate[], tier: SecurityTi
       evidence: evidence.slice(0, 5),
     });
   }
-  return features.sort((a, b) => a.id.localeCompare(b.id));
+  return foldSiblingsIntoParent(features).sort((a, b) => a.id.localeCompare(b.id));
+}
+
+/**
+ * A guide gives one capability a page per aspect: "Runtime Monitoring", then
+ * "Runtime Monitoring issues", "Runtime Monitoring finding types". Only the first is
+ * a feature; the rest describe it. They fold in as aliases so the words stay
+ * searchable without pretending to be separate capabilities.
+ */
+const ASPECT_SUFFIX =
+  /^(quotas?|limits?|limitations?|issues?|errors?|finding types?|considerations?|prerequisites?|configuration|settings?|status|troubleshooting|examples?|reference|concepts?|overview|faq|best practices|architecture|permissions?)$/i;
+
+export function foldSiblingsIntoParent(features: Feature[]): Feature[] {
+  const byService = new Map<string, Feature[]>();
+  for (const feature of features) {
+    const list = byService.get(feature.serviceId);
+    if (list) list.push(feature);
+    else byService.set(feature.serviceId, [feature]);
+  }
+  const dropped = new Set<string>();
+  for (const list of byService.values()) {
+    const sorted = list.slice().sort((a, b) => a.name.length - b.name.length);
+    for (const child of sorted) {
+      if (dropped.has(child.id)) continue;
+      for (const parent of sorted) {
+        if (parent.id === child.id || dropped.has(parent.id)) continue;
+        const parentName = parent.name.toLowerCase();
+        const childName = child.name.toLowerCase();
+        if (parentName.length >= childName.length) continue;
+        if (!childName.startsWith(`${parentName} `)) continue;
+        const remainder = childName.slice(parentName.length).trim();
+        if (!ASPECT_SUFFIX.test(remainder)) continue;
+        parent.aliases = [...new Set([...parent.aliases, child.name])].sort();
+        parent.docUrls = [...new Set([...parent.docUrls, ...child.docUrls])].sort();
+        dropped.add(child.id);
+        break;
+      }
+    }
+  }
+  return features.filter((f) => !dropped.has(f.id));
 }
 
 function confidenceFor(sources: string[]): number {

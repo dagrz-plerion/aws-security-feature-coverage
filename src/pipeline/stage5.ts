@@ -60,10 +60,15 @@ function serviceWideFeature(
   if (!service) return undefined;
   const anchor = own[0];
   if (!anchor) return undefined;
+  // productName is seeded from whatever source named the service, and a "What's New"
+  // headline sometimes wins. A headline has a colon or runs long; fall back to the id.
+  const candidate = service.productName ?? serviceId;
+  const looksLikeHeadline = candidate.includes(":") || candidate.split(/\s+/).length > 6;
+  const displayName = looksLikeHeadline ? serviceId : candidate;
   const record: Feature = {
     id,
     serviceId,
-    name: `${service.productName ?? serviceId}: stated for the service as a whole`,
+    name: `${displayName}: stated for the service as a whole`,
     aliases: [],
     kind: "configuration",
     tier: anchor.tier,
@@ -148,15 +153,35 @@ export const stage5: Stage = {
     // collects a second, vaguer copy of the same claims.
     const recipeUrls = new Set<string>();
     let recipesAttached = 0;
+    const matchedRules = new Set<string>();
     for (const page of allPages(registry)) {
       const rule = rules.find((r) => r.re.test(page.url));
+      // Recipes are stored on the page, so a rule that no longer owns this
+      // registration has to have its recipes cleared, or a stale copy keeps running.
+      if (!rule || page.serviceId !== rule.serviceId) delete page.recipes;
       if (!rule) continue;
+      matchedRules.add(rule.urlPattern);
       if (page.serviceId === rule.serviceId) {
         page.recipes = rule.recipes as Recipe[];
         if (rule.note) page.note = rule.note;
         recipesAttached += page.recipes.length;
       }
       recipeUrls.add(page.url);
+    }
+
+    // A rule whose page was never discovered fails silently: requireMin lives inside
+    // the recipe run, and the run never happens. The gate has to sit here too.
+    let orphanRules = 0;
+    for (const rule of rules) {
+      if (matchedRules.has(rule.urlPattern)) continue;
+      orphanRules += 1;
+      await recordGap({
+        kind: "parser",
+        subject: `recipe-rule:${rule.urlPattern}`,
+        detail: `No registered page matches this rule, so its recipes never run. Register the page with "npm run add-page", or correct the pattern.`,
+        suggestedStage: "stage5-coverage",
+      });
+      ctx.log(`  ✗ no page matches recipe rule ${rule.urlPattern}`);
     }
 
     const pageBySection = new Map<string, DocPage>();
@@ -371,7 +396,15 @@ export const stage5: Stage = {
           attachedAny = true;
           const list = claimsByFeature.get(feature.id) ?? [];
           const already = new Set(list.map((c) => `${c.axis}|${c.targetId}`));
-          for (const raw of outcome.claims) {
+          // A page whose headings are Regions is stating per-Region availability.
+          // Recording the claim without that scope asserts it holds everywhere, which
+          // is the opposite of what such a page exists to say.
+          const blockScope = scopeFromHeading(block.headings, resolver);
+          for (const rawClaim of outcome.claims) {
+            const raw =
+              blockScope && !rawClaim.scope && rawClaim.axis !== "region"
+                ? { ...rawClaim, scope: blockScope }
+                : rawClaim;
             const pageKey = `${raw.axis}|${raw.targetId}|${raw.scope?.targetId ?? ""}`;
             if (isWholePage && claimedByHeading.has(pageKey)) continue;
             if (already.has(`${raw.axis}|${raw.targetId}`)) continue;
@@ -386,6 +419,7 @@ export const stage5: Stage = {
               targetId: raw.targetId,
               targetLabel: raw.targetLabel,
               status: raw.status,
+              ...(raw.scope ? { scope: raw.scope } : {}),
               ...(raw.qualifier ? { qualifier: raw.qualifier } : {}),
               method: "deterministic",
               extractorId: raw.extractorId,
@@ -517,6 +551,7 @@ export const stage5: Stage = {
         pagesRejectedByKind: rejectedPages,
         recipesAttached,
         recipeFailures,
+        recipeRulesWithNoPage: orphanRules,
         featuresWithCoverage: claimsByFeature.size,
         serviceWideRecords: serviceWideUsed.size,
         openAxes: openAxisMembers.size,
@@ -557,6 +592,17 @@ export function bestFeatureFor(headings: string[], features: Feature[]): Feature
     }
   }
   return best?.feature;
+}
+
+/** A heading that names a Region scopes everything read beneath it to that Region. */
+function scopeFromHeading(headings: string[], resolver: TargetResolver): { axis: string; targetId: string; label?: string } | undefined {
+  for (const heading of headings) {
+    const text = (heading ?? "").trim();
+    if (!text) continue;
+    const hit = resolver.resolve(text.replace(/\s+Region$/i, ""), "region");
+    if (hit) return { axis: "region", targetId: hit.targetId, label: text };
+  }
+  return undefined;
 }
 
 /** Words a heading may open with before it names its subject. */

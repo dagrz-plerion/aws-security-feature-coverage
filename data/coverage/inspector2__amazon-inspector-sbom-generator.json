@@ -497,10 +497,10 @@
       ],
       "extractorId": "recipe:inspector-sbom-ecosystems",
       "featureId": "inspector2/amazon-inspector-sbom-generator",
-      "id": "inspector2-amazon-inspector-sbom-generator-packageecosystem-node-js-runtime-collection-recipe-inspector-sbom-ecosystems",
+      "id": "inspector2-amazon-inspector-sbom-generator-packageecosystem-node-js-recipe-inspector-sbom-ecosystems",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "Node.JS runtime collection",
+      "targetId": "Node.JS",
       "targetLabel": "Node.JS runtime collection"
     },
     {
@@ -577,10 +577,10 @@
       ],
       "extractorId": "recipe:inspector-sbom-ecosystems",
       "featureId": "inspector2/amazon-inspector-sbom-generator",
-      "id": "inspector2-amazon-inspector-sbom-generator-packageecosystem-openssl-ecosystem-collection-recipe-inspector-sbom-ecosystem",
+      "id": "inspector2-amazon-inspector-sbom-generator-packageecosystem-openssl-recipe-inspector-sbom-ecosystems",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "OpenSSL ecosystem Collection",
+      "targetId": "OpenSSL",
       "targetLabel": "OpenSSL ecosystem Collection"
     },
     {
@@ -597,10 +597,10 @@
       ],
       "extractorId": "recipe:inspector-sbom-ecosystems",
       "featureId": "inspector2/amazon-inspector-sbom-generator",
-      "id": "inspector2-amazon-inspector-sbom-generator-packageecosystem-oracle-database-server-collection-recipe-inspector-sbom-ecos",
+      "id": "inspector2-amazon-inspector-sbom-generator-packageecosystem-oracle-database-recipe-inspector-sbom-ecosystems",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "Oracle Database Server collection",
+      "targetId": "Oracle Database",
       "targetLabel": "Oracle Database Server collection"
     },
     {
@@ -650,26 +650,6 @@
         {
           "bodySha256": "fd4d4df1c4ea9cff8b9c34681f96526342946287e9a50138c4c2a399aa8c3b61",
           "locator": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md :: Amazon Inspector SBOM Generator comprehensive ecosystem collection",
-          "quote": "## See also",
-          "retrievedAt": "2026-09-01T05:00:17.201Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md"
-        }
-      ],
-      "extractorId": "recipe:inspector-sbom-ecosystems",
-      "featureId": "inspector2/amazon-inspector-sbom-generator",
-      "id": "inspector2-amazon-inspector-sbom-generator-packageecosystem-see-also-recipe-inspector-sbom-ecosystems",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "See also",
-      "targetLabel": "See also"
-    },
-    {
-      "axis": "packageEcosystem",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "fd4d4df1c4ea9cff8b9c34681f96526342946287e9a50138c4c2a399aa8c3b61",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md :: Amazon Inspector SBOM Generator comprehensive ecosystem collection",
           "quote": "## Standalone AI applications ecosystem collection",
           "retrievedAt": "2026-09-01T05:00:17.201Z",
           "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md"
@@ -682,26 +662,6 @@
       "status": "covered",
       "targetId": "Standalone AI applications",
       "targetLabel": "Standalone AI applications ecosystem collection"
-    },
-    {
-      "axis": "packageEcosystem",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "fd4d4df1c4ea9cff8b9c34681f96526342946287e9a50138c4c2a399aa8c3b61",
-          "locator": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md :: Amazon Inspector SBOM Generator comprehensive ecosystem collection",
-          "quote": "## Supported ecosystems",
-          "retrievedAt": "2026-09-01T05:00:17.201Z",
-          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md"
-        }
-      ],
-      "extractorId": "recipe:inspector-sbom-ecosystems",
-      "featureId": "inspector2/amazon-inspector-sbom-generator",
-      "id": "inspector2-amazon-inspector-sbom-generator-packageecosystem-supported-ecosystems-recipe-inspector-sbom-ecosystems",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "Supported ecosystems",
-      "targetLabel": "Supported ecosystems"
     },
     {
       "axis": "packageEcosystem",
@@ -765,7 +725,7 @@
     }
   ],
   "featureId": "inspector2/amazon-inspector-sbom-generator",
-  "generatedAt": "2026-09-01T06:38:30.924Z",
+  "generatedAt": "2026-09-01T06:48:35.269Z",
   "serviceId": "inspector2",
   "unresolvedTargets": []
 }

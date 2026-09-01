@@ -1,7 +1,7 @@
 {
   "candidate": true,
   "confidence": 0.6,
-  "decidedAt": "2026-09-01T05:16:13.355Z",
+  "decidedAt": "2026-09-01T06:48:19.483Z",
   "evidence": [
     {
       "bodySha256": "56c965fd755fb3dfe8ac8339109e17b173760d2512c10dd911a3953110432272",
@@ -19,8 +19,7 @@
     }
   ],
   "method": "deterministic",
-  "promoted": true,
-  "reason": "Weak security signal only (score 2: permission-management-actions). Scanned at low priority. Promoted to tier 2: 12 named security features were found in its documentation.",
+  "reason": "Weak security signal only (score 2: permission-management-actions). Scanned at low priority.",
   "score": 2,
   "serviceId": "s3tables",
   "signals": [
@@ -30,5 +29,5 @@
       "weight": 2
     }
   ],
-  "tier": "tier2"
+  "tier": "not-security"
 }

@@ -1,7 +1,7 @@
 import { readRawBody } from "../core/fetch.js";
 import { quoteAppearsIn } from "../core/evidence.js";
 import { featureId } from "../core/ids.js";
-import { isContainer, isStructural, matchesNamedControl } from "./patterns.js";
+import { isContainer, isStructural, matchesNamedControl, VERB_LED_ALLOWLIST } from "./patterns.js";
 import { guideKeyFromUrl } from "../sources/docsIndex.js";
 import type { GuideIndex } from "../sources/guidePages.js";
 import type { DocPage } from "../sources/docsIndex.js";
@@ -27,11 +27,29 @@ export type FeatureCandidate = {
  */
 const FEATURE_ENUM_SHAPE =
   /(Feature|Features|ScanType|ScanTypes|DataSource|DataSources|AnalyzerType|PolicyType|ProtectionPlan|ProtectionType|StandardsControl)$/;
+/** Acronyms AWS writes in capitals. Title casing an enum otherwise gives "Ec2". */
+const ACRONYM = new Set([
+  "AI", "API", "ARN", "ACL", "CIS", "CPU", "DNS", "EBS", "EC2", "ECR", "ECS", "EFS",
+  "EKS", "ELB", "FIPS", "HMAC", "IAM", "IP", "KMS", "MFA", "ML", "OIDC", "PHI", "PII",
+  "RDS", "S3", "SAML", "SBOM", "SNS", "SQS", "SSL", "SSM", "TLS", "VPC", "WAF", "XKS",
+  "DB", "OS", "URL", "HTTP", "HTTPS", "SSH", "RDP", "CVE", "SLR", "ASFF", "OCSF",
+]);
+
+export function enumToName(value: string): string {
+  return value
+    .split("_")
+    .map((word) => (ACRONYM.has(word) ? word : word.charAt(0) + word.slice(1).toLowerCase()))
+    .join(" ")
+    .replace(/^./, (c) => c.toUpperCase());
+}
+
 /** Above this many values, an enum is a taxonomy rather than a set of capabilities. */
 const MAX_CAPABILITY_ENUM = 15;
 
 /** Shape names that describe a setting the API can switch on or off. */
 const TOGGLE_SHAPE = /(Preference|Preferences|Setting|Settings)$/;
+
+const STATE_SUFFIX = /_(INITIATED|COMPLETED|STARTED|STOPPED|SKIPPED|RUNNING|QUEUED|CANCELLED|CANCELED|EXPIRED|PENDING|FAILED|SUCCEEDED|IN_PROGRESS)$/;
 
 const STATE_ENUM_VALUE = /^(ENABLED|DISABLED|ENABLING|DISABLING|ACTIVE|INACTIVE|PENDING|FAILED|SUCCEEDED|CREATING|DELETING|UPDATING|ALL|NONE|UNKNOWN|TRUE|FALSE)$/;
 
@@ -133,9 +151,15 @@ export async function extractFeatureCandidates(input: ExtractInput): Promise<Fea
     if (!name || name.length < 3 || name.length > 70) return;
     if (isTooGeneric(name)) return;
     if (DANGLING_START.test(name)) return;
-    if (isStructural(name)) return;
+    // AWS names its features in title case. A raw heading that starts lower case was
+    // cut out of the middle of a sentence: "accounts by invitation". A name that only
+    // starts lower case because a leading verb was stripped is fine, so it is the raw
+    // text that is judged, and the result is capitalised.
+    if (/^[a-z]/.test(candidate.name.trim())) return;
+    if (isStructural(name) && !VERB_LED_ALLOWLIST.some((p) => p.test(name))) return;
     if (looksLikeSentence(name)) return;
-    out.push({ ...candidate, name, id: featureId(input.serviceId, name) });
+    const display = name.charAt(0).toUpperCase() + name.slice(1);
+    out.push({ ...candidate, name: display, id: featureId(input.serviceId, display) });
   };
 
   for (const { guide, pages } of input.attributions) {
@@ -229,12 +253,13 @@ export async function extractFeatureCandidates(input: ExtractInput): Promise<Fea
       };
       const borrowed = new Map<string, DocPage>();
       for (const page of pages) {
-        // The heading that names this service is the anchor. Its child is the feature.
+        // A page in another service's guide only names a feature when it names a
+        // known control. Anything looser filed "Text files" under S3 and "Amazon RDS"
+        // under EC2, because the page merely mentioned the service.
         const anchor = page.section.findIndex((s) => namesThisService(s));
-        let label: string | undefined;
-        if (anchor >= 0) label = page.section[anchor + 1] ?? page.title;
-        else if (matchesNamedControl(page.title)) label = page.title;
+        const label = anchor >= 0 ? (page.section[anchor + 1] ?? page.title) : page.title;
         if (!label || isStructural(label)) continue;
+        if (!matchesNamedControl(label)) continue;
         if (!borrowed.has(label)) borrowed.set(label, page);
       }
       for (const [label, page] of borrowed) {
@@ -339,8 +364,8 @@ export async function extractFeatureCandidates(input: ExtractInput): Promise<Fea
       // it is a taxonomy of certificate purposes, not a list of features.
       if (shape.enum.length > MAX_CAPABILITY_ENUM) continue;
       for (const value of shape.enum) {
-        if (STATE_ENUM_VALUE.test(value)) continue;
-        const name = value.replace(/_/g, " ").toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
+        if (STATE_ENUM_VALUE.test(value) || STATE_SUFFIX.test(value)) continue;
+        const name = enumToName(value);
         const quote = `"${value}"`;
         push({
           serviceId: input.serviceId,

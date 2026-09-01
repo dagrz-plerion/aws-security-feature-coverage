@@ -125,12 +125,25 @@ function blocksFor(doc: MdDocument, body: string, recipe: Recipe, pageTitle: str
   return [{ title: pageTitle, body }];
 }
 
+/**
+ * Every AWS page now ends with a "See also" block carrying the same boilerplate
+ * bullet about AI coding assistants. Left in, it became a compliance framework in
+ * Audit Manager and a package ecosystem in Inspector. It is cut once, here, rather
+ * than guarded against in every recipe.
+ */
+export function stripBoilerplate(body: string): string {
+  const lines = body.split("\n");
+  const cut = lines.findIndex((line) => /^##\s+(see also|related (information|resources))\s*$/i.test(line.trim()));
+  return cut >= 0 ? lines.slice(0, cut).join("\n") : body;
+}
+
 export function runRecipe(
   recipe: Recipe,
-  body: string,
+  rawBody: string,
   pageTitle: string,
   resolver: TargetResolver,
 ): RecipeOutcome {
+  const body = stripBoilerplate(rawBody);
   const doc = parseMarkdown(body);
   let blocks = blocksFor(doc, body, recipe, pageTitle);
   if (recipe.onlyBlocksMatching) {
@@ -216,12 +229,20 @@ export function runRecipe(
       const key = `${targetId}|${scope?.targetId ?? ""}`;
       if (seen.has(key)) continue;
       seen.add(key);
+      const status = statusFor(recipe, entry.row, entry.headers ?? []);
+      // "unknown" means the status column was not on this table, so the row was not
+      // the one the recipe is for. Inspector's OS recipe swept four unrelated tables
+      // this way and scoped all of them to a scan method they say nothing about.
+      if (recipe.status === "from-column" && status === "unknown") {
+        dropped += 1;
+        continue;
+      }
       claims.push({
         axis: recipe.axis,
         targetId,
         targetLabel: entry.value.trim().slice(0, 200),
         ...(scope ? { scope } : {}),
-        status: statusFor(recipe, entry.row, entry.headers ?? []),
+        status,
         extractorId: `recipe:${recipe.id}`,
         quote: entry.quote.trim(),
         locator: block.title,

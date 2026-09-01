@@ -1,6 +1,5 @@
 {
   "aliases": [
-    "EKS Runtime Monitoring",
     "EKS_RUNTIME_MONITORING"
   ],
   "confidence": 0.95,
@@ -32,14 +31,14 @@
       "bodySha256": "eb74bb293f5193f0c57a9dc3cee4cb3cffd45599f50c95a812765d21236274e5",
       "locator": "shapes.DetectorFeature.enum",
       "quote": "\"EKS_RUNTIME_MONITORING\"",
-      "retrievedAt": "2026-09-01T06:33:13.830Z",
+      "retrievedAt": "2026-09-01T06:48:22.942Z",
       "sourceUrl": "https://github.com/aws/aws-sdk-js-v3/tree/main/codegen/sdk-codegen/aws-models/guardduty.json"
     }
   ],
   "id": "guardduty/eks-runtime-monitoring",
   "kind": "detection-capability",
   "method": "deterministic",
-  "name": "Eks Runtime Monitoring",
+  "name": "EKS Runtime Monitoring",
   "serviceId": "guardduty",
   "summary": "In a multiple-account environments, only the delegated GuardDuty administrator account can enable or disable EKS Runtime Monitoring for the member accounts, and manage GuardDuty agent management for the EKS clusters belonging to the member accounts in their organization.",
   "tier": "tier1"

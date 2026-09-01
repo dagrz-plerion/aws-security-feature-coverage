@@ -1,73 +1,143 @@
 {
   "fetch": {
-    "cacheHit": 11913,
-    "failed": 0,
+    "cacheHit": 13886,
+    "failed": 5,
     "network": 0,
     "revalidated": 0
   },
-  "finishedAt": "2026-09-01T06:38:32.160Z",
+  "finishedAt": "2026-09-01T06:48:36.200Z",
   "stages": [
     {
       "counts": {
-        "claims": 10392,
-        "conflicts": 0,
-        "covered": 3830,
-        "empty": 11696,
-        "enabled": 11780,
-        "featuresWithCoverage": 49,
-        "from_agent": 11,
-        "from_tier1-sweep": 6519,
-        "from_title-match": 5250,
-        "newlyDiscovered": 0,
-        "notCovered": 6373,
-        "openAxes": 15,
-        "openAxisMembers": 1992,
-        "pagesConsidered": 11780,
-        "pagesFailed": 1,
-        "pagesRead": 85,
-        "pagesRejectedByKind": 4131,
-        "prunedStaleRecords": 0,
-        "recipeFailures": 0,
-        "recipes": 36,
-        "recipesAttached": 28,
-        "registered": 11780,
-        "serviceWideRecords": 15,
-        "tablesRecoveredFromHtml": 401,
-        "unattachedPages": 102,
-        "unresolvedTargets": 363,
-        "withRecipe": 30,
-        "yielding": 83
+        "actions": 21810,
+        "dataSources": 23,
+        "docGuides": 1236,
+        "iamPrefixedServices": 526,
+        "partitions": 8,
+        "products": 358,
+        "regions": 46,
+        "resourceTypes": 3134,
+        "services": 692
       },
-      "finishedAt": "2026-09-01T06:38:31.084Z",
-      "id": "stage5-coverage",
-      "startedAt": "2026-09-01T06:38:19.901Z",
+      "finishedAt": "2026-09-01T06:48:18.850Z",
+      "id": "stage1-universes",
+      "notes": [
+        "1312 service reference resources joined to an existing resource type"
+      ],
+      "startedAt": "2026-09-01T06:47:38.297Z",
       "status": "partial"
     },
     {
       "counts": {
-        "claims": 10126,
-        "features": 3164,
+        "failed": 29,
+        "guides": 1236,
+        "indexed": 1207,
+        "pages": 103576
+      },
+      "finishedAt": "2026-09-01T06:48:19.454Z",
+      "id": "stage2-doc-pages",
+      "startedAt": "2026-09-01T06:48:18.851Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "adjudicated": 692,
+        "candidates": 307,
+        "notSecurity": 385,
+        "overridesApplied": 33,
+        "pendingJudgement": 43,
+        "prunedStaleRecords": 0,
+        "sraMatched": 31,
+        "synthetic": 166,
+        "tier1": 45,
+        "tier2": 13
+      },
+      "finishedAt": "2026-09-01T06:48:19.916Z",
+      "id": "stage3-discovery",
+      "notes": [
+        "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
+      ],
+      "startedAt": "2026-09-01T06:48:19.455Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "aliasesApplied": 13,
+        "aliasesUnmatched": 0,
+        "features": 1735,
+        "noFeatureFound": 104,
+        "promotedToTier2": 153,
+        "prunedStaleRecords": 15,
+        "scanned": 307,
+        "servicesWithFeatures": 203
+      },
+      "finishedAt": "2026-09-01T06:48:24.017Z",
+      "id": "stage4-features",
+      "startedAt": "2026-09-01T06:48:19.917Z",
+      "status": "ok"
+    },
+    {
+      "counts": {
+        "claims": 9894,
+        "conflicts": 0,
+        "covered": 3500,
+        "empty": 11705,
+        "enabled": 11781,
+        "featuresWithCoverage": 44,
+        "from_agent": 12,
+        "from_tier1-sweep": 6519,
+        "from_title-match": 5250,
+        "newlyDiscovered": 0,
+        "notCovered": 6394,
+        "openAxes": 15,
+        "openAxisMembers": 1920,
+        "pagesConsidered": 11781,
+        "pagesFailed": 1,
+        "pagesRead": 77,
+        "pagesRejectedByKind": 4136,
+        "prunedStaleRecords": 0,
+        "recipeFailures": 0,
+        "recipeRulesWithNoPage": 0,
+        "recipes": 29,
+        "recipesAttached": 29,
+        "registered": 11781,
+        "serviceWideRecords": 15,
+        "tablesRecoveredFromHtml": 401,
+        "unattachedPages": 106,
+        "unresolvedTargets": 341,
+        "withRecipe": 26,
+        "yielding": 75
+      },
+      "finishedAt": "2026-09-01T06:48:35.438Z",
+      "id": "stage5-coverage",
+      "startedAt": "2026-09-01T06:48:24.017Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "claims": 9661,
+        "features": 1749,
         "quotesChecked": 250,
         "recallFound": 73,
         "recallTotal": 73,
         "services": 692,
         "violations": 0
       },
-      "finishedAt": "2026-09-01T06:38:31.712Z",
+      "finishedAt": "2026-09-01T06:48:35.863Z",
       "id": "stage6-validate",
-      "startedAt": "2026-09-01T06:38:31.085Z",
+      "startedAt": "2026-09-01T06:48:35.438Z",
       "status": "ok"
     },
     {
       "counts": {
-        "features": 3164,
-        "services": 227
+        "features": 1749,
+        "services": 211
       },
-      "finishedAt": "2026-09-01T06:38:32.160Z",
+      "finishedAt": "2026-09-01T06:48:36.200Z",
       "id": "report",
-      "startedAt": "2026-09-01T06:38:31.713Z",
+      "startedAt": "2026-09-01T06:48:35.864Z",
       "status": "ok"
     }
   ],
-  "startedAt": "2026-09-01T06:38:19.899Z"
+  "startedAt": "2026-09-01T06:47:38.295Z"
 }
