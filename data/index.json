@@ -18004,9 +18004,17 @@
           "scoped": 0,
           "total": 109,
           "unknown": 0
+        },
+        "region": {
+          "covered": 0,
+          "notCovered": 2,
+          "partial": 0,
+          "scoped": 0,
+          "total": 2,
+          "unknown": 0
         }
       },
-      "claimCount": 112,
+      "claimCount": 114,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -18139,6 +18147,10 @@
           "UnauthorizedAccess:IAMUser/UnusualASNCaller",
           "UnauthorizedAccess:S3/MaliciousIPCaller.Custom",
           "UnauthorizedAccess:S3/TorIPCaller"
+        ],
+        "region": [
+          "ap-east-1",
+          "ap-east-2"
         ]
       },
       "tier": "tier1",
@@ -45212,6 +45224,13 @@
       "subject": "unresolved:doc:aws-managed-policy"
     },
     {
+      "detail": "read 2 of about 7 candidate values on the page. Either the page holds more than this feature, or a recipe is needed.",
+      "id": "ba6f83fa85b04688",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "verify:https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
+    },
+    {
       "detail": "\"Managed integrations Welcome\" did not join to a service prefix. Score 1, signals security-doc-pages.",
       "id": "bab62461f839ca44",
       "kind": "alias",
@@ -45996,41 +46015,41 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-01T07:44:58.999Z",
+  "generatedAt": "2026-09-01T07:46:04.352Z",
   "manifest": {
     "fetch": {
-      "cacheHit": 63,
+      "cacheHit": 64,
       "failed": 0,
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-01T07:44:56.629Z",
+    "finishedAt": "2026-09-01T07:46:03.210Z",
     "stages": [
       {
         "counts": {
           "clean": 63,
           "empty": 0,
-          "pagesChecked": 63,
-          "partialRead": 0,
+          "pagesChecked": 64,
+          "partialRead": 1,
           "staleQuotes": 0
         },
-        "finishedAt": "2026-09-01T07:44:56.027Z",
+        "finishedAt": "2026-09-01T07:46:02.608Z",
         "id": "stage7-verify",
-        "startedAt": "2026-09-01T07:44:55.686Z",
-        "status": "ok"
+        "startedAt": "2026-09-01T07:46:02.263Z",
+        "status": "partial"
       },
       {
         "counts": {
           "features": 1755,
           "services": 211
         },
-        "finishedAt": "2026-09-01T07:44:56.629Z",
+        "finishedAt": "2026-09-01T07:46:03.210Z",
         "id": "report",
-        "startedAt": "2026-09-01T07:44:56.028Z",
+        "startedAt": "2026-09-01T07:46:02.608Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-01T07:44:55.683Z"
+    "startedAt": "2026-09-01T07:46:02.261Z"
   },
   "outOfScope": [
     {
@@ -54519,7 +54538,7 @@
     {
       "actionCount": 91,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 373,
+      "claimCount": 375,
       "confidence": 1,
       "docGuides": [
         {
@@ -58159,6 +58178,16 @@
     }
   ],
   "sources": [
+    {
+      "claims": 2,
+      "note": "Region-specific feature availability, stated as prose beside each protection plan: 'RDS Protection is not supported in Asia Pacific (Taipei)'.",
+      "readRatio": 0.29,
+      "recipes": 1,
+      "serviceId": "guardduty",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md",
+      "verdict": "partial-read"
+    },
     {
       "claims": 1,
       "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",

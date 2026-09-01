@@ -1,7 +1,8 @@
 {
   "axes": [
     "dataSource",
-    "findingType"
+    "findingType",
+    "region"
   ],
   "claims": [
     {
@@ -2243,10 +2244,50 @@
       "status": "covered",
       "targetId": "UnauthorizedAccess:S3/TorIPCaller",
       "targetLabel": "UnauthorizedAccess:S3/TorIPCaller"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md :: Amazon GuardDuty Regions and endpoints",
+          "quote": "The DefenseEvasion:IAMUser/BedrockLoggingDisabled finding type is not supported in Asia Pacific (Hong Kong) (`ap-east-1`) Region.",
+          "retrievedAt": "2026-09-01T05:00:37.081Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-region-exclusions",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-region-ap-east-1-recipe-guardduty-region-exclusions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "ap-east-1",
+      "targetLabel": "The DefenseEvasion:IAMUser/BedrockLoggingDisabled finding type is not supported in Asia Pacific (Hong Kong) (ap-east-1) Region."
+    },
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md :: Amazon GuardDuty Regions and endpoints",
+          "quote": "RDS Protection is not supported in Asia Pacific (Taipei) (`ap-east-2`) Region.",
+          "retrievedAt": "2026-09-01T05:00:37.081Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-region-exclusions",
+      "featureId": "guardduty/all-protection-plans",
+      "id": "guardduty-all-protection-plans-region-ap-east-2-recipe-guardduty-region-exclusions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "ap-east-2",
+      "targetLabel": "RDS Protection is not supported in Asia Pacific (Taipei) (ap-east-2) Region."
     }
   ],
   "featureId": "guardduty/all-protection-plans",
-  "generatedAt": "2026-09-01T07:44:49.225Z",
+  "generatedAt": "2026-09-01T07:45:51.472Z",
   "serviceId": "guardduty",
   "unresolvedTargets": []
 }

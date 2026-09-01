@@ -471,7 +471,7 @@
         {
           "bodySha256": "b4bf5f77322faae9cfa14acad652e20a019c956e9f0902f8fdd140bfa553c7c5",
           "locator": "https://docs.aws.amazon.com/macie/latest/user/discovery-supported-storage.md :: Supported storage classes and formats",
-          "quote": "In addition, Macie doesn't analyze objects that are stored in S3 directory buckets.",
+          "quote": "Macie doesn’t analyze S3 objects that use other Amazon S3 storage classes, such as S3 Glacier Deep Archive or S3 Express One Zone. In addition, Macie doesn't analyze objects that are stored in S3 directory buckets.",
           "retrievedAt": "2026-09-01T04:29:01.481Z",
           "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-supported-storage.md"
         }
@@ -586,7 +586,7 @@
     }
   ],
   "featureId": "macie2/running-sensitive-data-discovery-jobs",
-  "generatedAt": "2026-09-01T07:44:49.225Z",
+  "generatedAt": "2026-09-01T07:45:51.472Z",
   "serviceId": "macie2",
   "unresolvedTargets": []
 }

@@ -112,19 +112,29 @@ function statusFor(recipe: Recipe, row: string[] | undefined, headers: string[],
   return "covered";
 }
 
-/** Prose split into sentences, with the Markdown markup taken off. */
-export function sentencesIn(body: string): string[] {
-  const prose = body
-    .split("\n")
-    .filter((line) => !/^\s*(\||[+*-]\s|#{1,6}\s|<a )/.test(line))
-    .join(" ")
-    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
-    .replace(/[*`]/g, "")
-    .replace(/\s+/g, " ");
-  return prose
-    .split(/(?<=[.:])\s+(?=[A-Z(])/)
-    .map((s) => s.trim())
-    .filter((s) => s.length > 20 && s.length < 600);
+/**
+ * Prose split into sentences, each carrying the source line it came from.
+ *
+ * The line is what gets quoted. Joining lines and re-splitting produced sentences
+ * that never appear on the page ("RDS Protection RDS Protection is not supported…"),
+ * which the evidence check rightly refused.
+ */
+export function sentencesIn(body: string): { text: string; raw: string }[] {
+  const out: { text: string; raw: string }[] = [];
+  for (const raw of body.split("\n")) {
+    if (/^\s*(\||[+*-]\s|#{1,6}\s|<a )/.test(raw)) continue;
+    const clean = raw
+      .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+      .replace(/[*`]/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+    if (!clean) continue;
+    for (const sentence of clean.split(/(?<=[.:])\s+(?=[A-Z(])/)) {
+      const text = sentence.trim();
+      if (text.length > 20 && text.length < 600) out.push({ text, raw: raw.trim() });
+    }
+  }
+  return out;
 }
 
 /** One cell can hold a list. AWS joins those with a line break or a comma. */
@@ -271,8 +281,8 @@ export function runRecipe(
       // as S3 Glacier Deep Archive or S3 Express One Zone."
       const wanted = recipe.select.sentenceMatches ? new RegExp(recipe.select.sentenceMatches, "i") : undefined;
       for (const sentence of sentencesIn(block.body)) {
-        if (wanted && !wanted.test(sentence)) continue;
-        for (const value of splitValue(sentence, recipe)) values.push({ value, quote: sentence });
+        if (wanted && !wanted.test(sentence.text)) continue;
+        for (const value of splitValue(sentence.text, recipe)) values.push({ value, quote: sentence.raw });
       }
     } else {
       for (const line of block.body.split("\n")) {
