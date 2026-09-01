@@ -5258,6 +5258,46 @@
       "unresolved": 0
     },
     {
+      "axes": {
+        "operatingSystem": {
+          "covered": 8,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 16,
+          "total": 8,
+          "unknown": 0
+        }
+      },
+      "claimCount": 16,
+      "confidence": 0.7,
+      "discoveredBy": [
+        "service-level"
+      ],
+      "docUrls": [],
+      "id": "cloudhsm/service-wide",
+      "kind": "configuration",
+      "llmClaims": 0,
+      "method": "deterministic",
+      "name": "AWS CloudHSM: stated for the service as a whole",
+      "serviceId": "cloudhsm",
+      "serviceName": "AWS CloudHSM",
+      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+      "targets": {
+        "operatingSystem": [
+          "Amazon Linux 2",
+          "Amazon Linux 2023",
+          "Red Hat Enterprise Linux 10 (10.0\\+)",
+          "Red Hat Enterprise Linux 8 (8.3\\+)",
+          "Red Hat Enterprise Linux 9 (9.2\\+)",
+          "Ubuntu 22.04 LTS",
+          "Ubuntu 24.04 LTS",
+          "Ubuntu 26.04 LTS"
+        ]
+      },
+      "tier": "tier1",
+      "unresolved": 0
+    },
+    {
       "axes": {},
       "claimCount": 0,
       "confidence": 0.6,
@@ -17695,6 +17735,46 @@
       "serviceName": "AWS Firewall Manager",
       "summary": "How to use service-linked roles to give Firewall Manager access to resources in your AWS account.",
       "targets": {},
+      "tier": "tier1",
+      "unresolved": 0
+    },
+    {
+      "axes": {
+        "policyType": {
+          "covered": 8,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 8,
+          "unknown": 0
+        }
+      },
+      "claimCount": 8,
+      "confidence": 0.7,
+      "discoveredBy": [
+        "service-level"
+      ],
+      "docUrls": [],
+      "id": "fms/service-wide",
+      "kind": "configuration",
+      "llmClaims": 0,
+      "method": "deterministic",
+      "name": "AWS Firewall Manager: stated for the service as a whole",
+      "serviceId": "fms",
+      "serviceName": "AWS Firewall Manager",
+      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+      "targets": {
+        "policyType": [
+          "Amazon VPC network ACL",
+          "Amazon VPC security group",
+          "AWS Network Firewall",
+          "AWS Shield Advanced",
+          "AWS WAF",
+          "DNS Firewall",
+          "Fortigate CNF",
+          "Palo Alto Networks Cloud Next Generation Firewall"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -44040,6 +44120,13 @@
   ],
   "gaps": [
     {
+      "detail": "recipe cloudhsm-platforms-arm produced 0 claims, fewer than the 4 it promises on https://docs.aws.amazon.com/cloudhsm/latest/userguide/cmu-support.md. The page shape has probably changed.",
+      "id": "003ed175b818bcd8",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:cloudhsm-platforms-arm"
+    },
+    {
       "detail": "\"doc:fedramp\" did not join to a service prefix. Score 0, signals none.",
       "id": "011096b67f7a8948",
       "kind": "alias",
@@ -44437,6 +44524,13 @@
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "recipe:ram-shareable-resource-types"
+    },
+    {
+      "detail": "recipe cloudhsm-platforms-x86 produced 0 claims, fewer than the 4 it promises on https://docs.aws.amazon.com/cloudhsm/latest/userguide/cmu-support.md. The page shape has probably changed.",
+      "id": "377057b590aefc53",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:cloudhsm-platforms-x86"
     },
     {
       "detail": "\"AWS Microservice Extractor for .NET\" did not join to a service prefix. Score 0, signals none.",
@@ -46546,82 +46640,151 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-01T07:09:12.163Z",
+  "generatedAt": "2026-09-01T07:11:42.805Z",
   "manifest": {
     "fetch": {
-      "cacheHit": 10411,
-      "failed": 0,
+      "cacheHit": 12384,
+      "failed": 5,
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-01T07:08:53.753Z",
+    "finishedAt": "2026-09-01T07:11:33.999Z",
     "stages": [
       {
         "counts": {
-          "claims": 10332,
-          "conflicts": 0,
-          "covered": 3821,
-          "duplicateRegistrationsSkipped": 1493,
-          "empty": 11695,
-          "enabled": 11781,
-          "featuresWithCoverage": 54,
-          "from_agent": 25,
-          "from_tier1-sweep": 6516,
-          "from_title-match": 5240,
-          "newlyDiscovered": 0,
-          "notCovered": 6511,
-          "openAxes": 17,
-          "openAxisMembers": 2133,
-          "pagesConsidered": 10288,
-          "pagesFailed": 1,
-          "pagesRead": 87,
-          "pagesRejectedByKind": 2643,
-          "prunedStaleRecords": 0,
-          "recipeFailures": 0,
-          "recipeRulesWithNoPage": 0,
-          "recipes": 51,
-          "recipesAttached": 51,
-          "registered": 11781,
-          "serviceWideRecords": 19,
-          "tablesRecoveredFromHtml": 360,
-          "unattachedPages": 106,
-          "unresolvedTargets": 320,
-          "valuesDroppedUnresolved": 165,
-          "withRecipe": 37,
-          "yielding": 85
+          "actions": 21810,
+          "dataSources": 23,
+          "docGuides": 1236,
+          "iamPrefixedServices": 526,
+          "partitions": 8,
+          "products": 358,
+          "regions": 46,
+          "resourceTypes": 3134,
+          "services": 692
         },
-        "finishedAt": "2026-09-01T07:08:53.021Z",
-        "id": "stage5-coverage",
-        "startedAt": "2026-09-01T07:08:41.871Z",
+        "finishedAt": "2026-09-01T07:11:15.718Z",
+        "id": "stage1-universes",
+        "notes": [
+          "1312 service reference resources joined to an existing resource type"
+        ],
+        "startedAt": "2026-09-01T07:10:33.327Z",
         "status": "partial"
       },
       {
         "counts": {
-          "claims": 10332,
-          "features": 1753,
+          "failed": 29,
+          "guides": 1236,
+          "indexed": 1207,
+          "pages": 103576
+        },
+        "finishedAt": "2026-09-01T07:11:16.320Z",
+        "id": "stage2-doc-pages",
+        "startedAt": "2026-09-01T07:11:15.719Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "adjudicated": 692,
+          "candidates": 307,
+          "notSecurity": 385,
+          "overridesApplied": 33,
+          "pendingJudgement": 43,
+          "prunedStaleRecords": 0,
+          "sraMatched": 31,
+          "synthetic": 166,
+          "tier1": 45,
+          "tier2": 13
+        },
+        "finishedAt": "2026-09-01T07:11:16.794Z",
+        "id": "stage3-discovery",
+        "notes": [
+          "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
+        ],
+        "startedAt": "2026-09-01T07:11:16.321Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "aliasesApplied": 13,
+          "aliasesUnmatched": 0,
+          "features": 1735,
+          "noFeatureFound": 104,
+          "promotedToTier2": 153,
+          "prunedStaleRecords": 21,
+          "scanned": 307,
+          "servicesWithFeatures": 203
+        },
+        "finishedAt": "2026-09-01T07:11:20.896Z",
+        "id": "stage4-features",
+        "startedAt": "2026-09-01T07:11:16.795Z",
+        "status": "ok"
+      },
+      {
+        "counts": {
+          "claims": 10356,
+          "conflicts": 0,
+          "covered": 3845,
+          "duplicateRegistrationsSkipped": 1493,
+          "empty": 11694,
+          "enabled": 11782,
+          "featuresWithCoverage": 56,
+          "from_agent": 28,
+          "from_tier1-sweep": 6516,
+          "from_title-match": 5238,
+          "newlyDiscovered": 0,
+          "notCovered": 6511,
+          "openAxes": 18,
+          "openAxisMembers": 2149,
+          "pagesConsidered": 10289,
+          "pagesFailed": 1,
+          "pagesRead": 89,
+          "pagesRejectedByKind": 2643,
+          "prunedStaleRecords": 1,
+          "recipeFailures": 0,
+          "recipeRulesWithNoPage": 0,
+          "recipes": 54,
+          "recipesAttached": 54,
+          "registered": 11782,
+          "serviceWideRecords": 21,
+          "tablesRecoveredFromHtml": 360,
+          "unattachedPages": 106,
+          "unresolvedTargets": 320,
+          "valuesDroppedUnresolved": 165,
+          "withRecipe": 39,
+          "yielding": 87
+        },
+        "finishedAt": "2026-09-01T07:11:33.159Z",
+        "id": "stage5-coverage",
+        "startedAt": "2026-09-01T07:11:20.897Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "claims": 10356,
+          "features": 1755,
           "quotesChecked": 250,
           "recallFound": 73,
           "recallTotal": 73,
           "services": 692,
           "violations": 0
         },
-        "finishedAt": "2026-09-01T07:08:53.444Z",
+        "finishedAt": "2026-09-01T07:11:33.663Z",
         "id": "stage6-validate",
-        "startedAt": "2026-09-01T07:08:53.022Z",
+        "startedAt": "2026-09-01T07:11:33.160Z",
         "status": "ok"
       },
       {
         "counts": {
-          "features": 1753,
+          "features": 1755,
           "services": 211
         },
-        "finishedAt": "2026-09-01T07:08:53.753Z",
+        "finishedAt": "2026-09-01T07:11:33.999Z",
         "id": "report",
-        "startedAt": "2026-09-01T07:08:53.445Z",
+        "startedAt": "2026-09-01T07:11:33.664Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-01T07:08:41.869Z"
+    "startedAt": "2026-09-01T07:10:33.325Z"
   },
   "outOfScope": [
     {
@@ -52936,7 +53099,7 @@
     {
       "actionCount": 18,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 0,
+      "claimCount": 16,
       "confidence": 1,
       "docGuides": [
         {
@@ -52952,7 +53115,7 @@
           "url": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.md"
         }
       ],
-      "featureCount": 46,
+      "featureCount": 47,
       "id": "cloudhsm",
       "method": "deterministic",
       "name": "AWS CloudHSM",
@@ -54715,7 +54878,7 @@
     {
       "actionCount": 42,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 0,
+      "claimCount": 8,
       "confidence": 1,
       "docGuides": [
         {
@@ -54725,7 +54888,7 @@
           "url": "https://docs.aws.amazon.com/fms/2018-01-01/APIReference/Welcome.md"
         }
       ],
-      "featureCount": 20,
+      "featureCount": 21,
       "id": "fms",
       "method": "deterministic",
       "name": "AWS Firewall Manager",
@@ -58754,9 +58917,10 @@
     "ipsRule": 1,
     "logSource": 6,
     "managedRuleGroup": 47,
-    "operatingSystem": 125,
+    "operatingSystem": 133,
     "packageEcosystem": 36,
     "partition": 8,
+    "policyType": 8,
     "programmingLanguage": 9,
     "region": 46,
     "resourceTarget": 1,

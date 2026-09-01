@@ -1838,7 +1838,7 @@
     },
     {
       "axis": "operatingSystem",
-      "count": 125,
+      "count": 133,
       "members": [
         "AlmaLinux 10",
         "AlmaLinux 8",
@@ -1867,7 +1867,9 @@
         "Alpine Linux 3.8",
         "Alpine Linux 3.9",
         "Amazon Linux (AL1) 2012",
+        "Amazon Linux 2",
         "Amazon Linux 2 (AL2) AL2",
+        "Amazon Linux 2023",
         "Amazon Linux 2023 (AL2023) AL2023",
         "Azure Linux 3",
         "Bottlerocket 1.7.0 and later",
@@ -1915,6 +1917,9 @@
         "Red Hat Enterprise Linux (RHEL) 7",
         "Red Hat Enterprise Linux (RHEL) 8",
         "Red Hat Enterprise Linux (RHEL) 9",
+        "Red Hat Enterprise Linux 10 (10.0\\+)",
+        "Red Hat Enterprise Linux 8 (8.3\\+)",
+        "Red Hat Enterprise Linux 9 (9.2\\+)",
         "Rocky Linux 10",
         "Rocky Linux 8",
         "Rocky Linux 9",
@@ -1950,6 +1955,9 @@
         "Ubuntu (Resolute) 26.04",
         "Ubuntu (Trusty) 14.04",
         "Ubuntu (Xenial) 16.04",
+        "Ubuntu 22.04 LTS",
+        "Ubuntu 24.04 LTS",
+        "Ubuntu 26.04 LTS",
         "Windows Server 2012",
         "Windows Server 2012 R2",
         "Windows Server 2016",
@@ -2183,6 +2191,20 @@
       ]
     },
     {
+      "axis": "policyType",
+      "count": 8,
+      "members": [
+        "AWS Network Firewall",
+        "AWS Shield Advanced",
+        "AWS WAF",
+        "Amazon VPC network ACL",
+        "Amazon VPC security group",
+        "DNS Firewall",
+        "Fortigate CNF",
+        "Palo Alto Networks Cloud Next Generation Firewall"
+      ]
+    },
+    {
       "axis": "complianceStandard",
       "count": 8,
       "members": [
@@ -2236,6 +2258,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-01T07:08:52.865Z",
+  "generatedAt": "2026-09-01T07:11:32.951Z",
   "note": "Axes AWS defines only inside its documentation. Membership is everything the catalogs name."
 }

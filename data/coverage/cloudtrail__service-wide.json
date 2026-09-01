@@ -2186,19 +2186,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
-          "quote": "| Amazon Elastic Block Store | [Amazon Elastic Block Store (EBS)](https://docs.aws.amazon.com/ebs/latest/userguide/logging-ebs-apis-using-cloudtrail.html) direct APIs, such as `PutSnapshotBlock`, `GetSnapshotBlock`, and `ListChangedBlocks` on Amazon EBS snapshots. | Amazon EBS direct APIs | AWS::EC2::Snapshot |",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon Elastic Block Store",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-ebs-md-table",
+      "id": "cloudtrail-service-wide-service-ebs-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ebs",
@@ -2926,19 +2926,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
-          "quote": "| AWS IoT TwinMaker | IoT TwinMaker API activity on an [entity](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateEntity.html). | IoT TwinMaker entity | AWS::IoTTwinMaker::Entity |",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS IoT TwinMaker",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-iottwinmaker-md-table",
+      "id": "cloudtrail-service-wide-service-iottwinmaker-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "iottwinmaker",
@@ -4326,23 +4326,23 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
-          "quote": "| Supply Chain | Supply Chain API activity on an instance. | Supply Chain | AWS::SCN::Instance |",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ AWS Supply Chain",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-scn-md-table",
+      "id": "cloudtrail-service-wide-service-scn-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "scn",
-      "targetLabel": "Supply Chain"
+      "targetLabel": "AWS Supply Chain"
     },
     {
       "axis": "service",
@@ -4606,19 +4606,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
-          "quote": "| Amazon SQS | [Amazon SQS API activity](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-logging-using-cloudtrail.html#sqs-data-events-in-cloud-trail) on messages. | SQS | AWS::SQS::Queue |",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon SQS",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-sqs-md-table",
+      "id": "cloudtrail-service-wide-service-sqs-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "sqs",
@@ -4746,19 +4746,19 @@
     },
     {
       "axis": "service",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "evidence": [
         {
-          "bodySha256": "f56bcd014f760645212b3964e6b2dd33c5ae7b2aef0090e3b7baa8b0b848199b",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md :: CloudTrail concepts > CloudTrail events > Data events > Data events supported by AWS CloudTrail | column \"AWS service\"",
-          "quote": "| Amazon SWF | [Amazon SWF API activity](https://docs.aws.amazon.com/amazonswf/latest/developerguide/ct-logging.html#cloudtrail-data-events) on [domains](https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-domains.html). | SWF domain | AWS::SWF::Domain |",
-          "retrievedAt": "2026-09-01T04:59:38.112Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
+          "bodySha256": "d53a62dba5cbe9b4dd3b1df535e747378c19873be1749aed2166bfa1f53bb627",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md :: The following AWS services support IAM global condition keys for enriched events:",
+          "quote": "+ Amazon SWF",
+          "retrievedAt": "2026-09-01T04:59:40.234Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
         }
       ],
-      "extractorId": "md-table",
+      "extractorId": "md-bullet-list",
       "featureId": "cloudtrail/service-wide",
-      "id": "cloudtrail-service-wide-service-swf-md-table",
+      "id": "cloudtrail-service-wide-service-swf-md-bullet-list",
       "method": "deterministic",
       "status": "covered",
       "targetId": "swf",
@@ -5126,7 +5126,7 @@
     }
   ],
   "featureId": "cloudtrail/service-wide",
-  "generatedAt": "2026-09-01T07:08:52.866Z",
+  "generatedAt": "2026-09-01T07:11:32.953Z",
   "serviceId": "cloudtrail",
   "unresolvedTargets": [
     {
@@ -5531,6 +5531,56 @@
     },
     {
       "axis": "service",
+      "raw": "Amazon Connect Customer Voice ID",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS HealthImaging",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Email Service (Amazon SES)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Timestream for InfluxDB",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Connect Customer Voice ID",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "AWS HealthImaging",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Email Service (Amazon SES)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Simple Notification Service (Amazon SNS)",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
+      "raw": "Amazon Timestream for InfluxDB",
+      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
+    },
+    {
+      "axis": "service",
       "raw": "Amazon CloudWatch Network Flow Monitor",
       "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
     },
@@ -5678,56 +5728,6 @@
       "axis": "service",
       "raw": "Amazon Transform Custom",
       "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Connect Customer Voice ID",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS HealthImaging",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Email Service (Amazon SES)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Notification Service (Amazon SNS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Timestream for InfluxDB",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Connect Customer Voice ID",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
-    },
-    {
-      "axis": "service",
-      "raw": "AWS HealthImaging",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Email Service (Amazon SES)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Simple Notification Service (Amazon SNS)",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
-    },
-    {
-      "axis": "service",
-      "raw": "Amazon Timestream for InfluxDB",
-      "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-context-events.md"
     }
   ]
 }

@@ -1,0 +1,411 @@
+{
+  "axes": [
+    "operatingSystem"
+  ],
+  "claims": [
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Amazon Linux 2 | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-x86",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-amazon-linux-2-x86-64-recipe-cloudhsm-platforms-x86",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "x86_64",
+        "targetId": "x86_64"
+      },
+      "status": "covered",
+      "targetId": "Amazon Linux 2",
+      "targetLabel": "Amazon Linux 2"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Amazon Linux 2 | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-arm",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-amazon-linux-2-arm64-recipe-cloudhsm-platforms-arm",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "arm64",
+        "targetId": "arm64"
+      },
+      "status": "covered",
+      "targetId": "Amazon Linux 2",
+      "targetLabel": "Amazon Linux 2"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Amazon Linux 2023 | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-x86",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-amazon-linux-2023-x86-64-recipe-cloudhsm-platforms-x86",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "x86_64",
+        "targetId": "x86_64"
+      },
+      "status": "covered",
+      "targetId": "Amazon Linux 2023",
+      "targetLabel": "Amazon Linux 2023"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Amazon Linux 2023 | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-arm",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-amazon-linux-2023-arm64-recipe-cloudhsm-platforms-arm",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "arm64",
+        "targetId": "arm64"
+      },
+      "status": "covered",
+      "targetId": "Amazon Linux 2023",
+      "targetLabel": "Amazon Linux 2023"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Red Hat Enterprise Linux 10 (10.0\\+) | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-x86",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-red-hat-enterprise-linux-10-10-0-x86-64-recipe-cloudhsm-platforms-x86",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "x86_64",
+        "targetId": "x86_64"
+      },
+      "status": "covered",
+      "targetId": "Red Hat Enterprise Linux 10 (10.0\\+)",
+      "targetLabel": "Red Hat Enterprise Linux 10 (10.0\\+)"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Red Hat Enterprise Linux 10 (10.0\\+) | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-arm",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-red-hat-enterprise-linux-10-10-0-arm64-recipe-cloudhsm-platforms-arm",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "arm64",
+        "targetId": "arm64"
+      },
+      "status": "covered",
+      "targetId": "Red Hat Enterprise Linux 10 (10.0\\+)",
+      "targetLabel": "Red Hat Enterprise Linux 10 (10.0\\+)"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Red Hat Enterprise Linux 8 (8.3\\+) | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-x86",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-red-hat-enterprise-linux-8-8-3-x86-64-recipe-cloudhsm-platforms-x86",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "x86_64",
+        "targetId": "x86_64"
+      },
+      "status": "covered",
+      "targetId": "Red Hat Enterprise Linux 8 (8.3\\+)",
+      "targetLabel": "Red Hat Enterprise Linux 8 (8.3\\+)"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Red Hat Enterprise Linux 8 (8.3\\+) | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-arm",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-red-hat-enterprise-linux-8-8-3-arm64-recipe-cloudhsm-platforms-arm",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "arm64",
+        "targetId": "arm64"
+      },
+      "status": "covered",
+      "targetId": "Red Hat Enterprise Linux 8 (8.3\\+)",
+      "targetLabel": "Red Hat Enterprise Linux 8 (8.3\\+)"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Red Hat Enterprise Linux 9 (9.2\\+) | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-x86",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-red-hat-enterprise-linux-9-9-2-x86-64-recipe-cloudhsm-platforms-x86",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "x86_64",
+        "targetId": "x86_64"
+      },
+      "status": "covered",
+      "targetId": "Red Hat Enterprise Linux 9 (9.2\\+)",
+      "targetLabel": "Red Hat Enterprise Linux 9 (9.2\\+)"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Red Hat Enterprise Linux 9 (9.2\\+) | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-arm",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-red-hat-enterprise-linux-9-9-2-arm64-recipe-cloudhsm-platforms-arm",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "arm64",
+        "targetId": "arm64"
+      },
+      "status": "covered",
+      "targetId": "Red Hat Enterprise Linux 9 (9.2\\+)",
+      "targetLabel": "Red Hat Enterprise Linux 9 (9.2\\+)"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Ubuntu 22.04 LTS | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-x86",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-ubuntu-22-04-lts-x86-64-recipe-cloudhsm-platforms-x86",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "x86_64",
+        "targetId": "x86_64"
+      },
+      "status": "covered",
+      "targetId": "Ubuntu 22.04 LTS",
+      "targetLabel": "Ubuntu 22.04 LTS"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Ubuntu 22.04 LTS | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-arm",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-ubuntu-22-04-lts-arm64-recipe-cloudhsm-platforms-arm",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "arm64",
+        "targetId": "arm64"
+      },
+      "status": "covered",
+      "targetId": "Ubuntu 22.04 LTS",
+      "targetLabel": "Ubuntu 22.04 LTS"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Ubuntu 24.04 LTS | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-x86",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-ubuntu-24-04-lts-x86-64-recipe-cloudhsm-platforms-x86",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "x86_64",
+        "targetId": "x86_64"
+      },
+      "status": "covered",
+      "targetId": "Ubuntu 24.04 LTS",
+      "targetLabel": "Ubuntu 24.04 LTS"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Ubuntu 24.04 LTS | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-arm",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-ubuntu-24-04-lts-arm64-recipe-cloudhsm-platforms-arm",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "arm64",
+        "targetId": "arm64"
+      },
+      "status": "covered",
+      "targetId": "Ubuntu 24.04 LTS",
+      "targetLabel": "Ubuntu 24.04 LTS"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Ubuntu 26.04 LTS | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-x86",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-ubuntu-26-04-lts-x86-64-recipe-cloudhsm-platforms-x86",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "x86_64",
+        "targetId": "x86_64"
+      },
+      "status": "covered",
+      "targetId": "Ubuntu 26.04 LTS",
+      "targetLabel": "Ubuntu 26.04 LTS"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "693bfd69f5864ace42a633fee319eea07ccc2514fac26764225968e63b25d37c",
+          "locator": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md :: AWS CloudHSM Command Line Interface (CLI) supported platforms",
+          "quote": "| Ubuntu 26.04 LTS | Yes | Yes |",
+          "retrievedAt": "2026-09-01T04:29:40.091Z",
+          "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md"
+        }
+      ],
+      "extractorId": "recipe:cloudhsm-platforms-arm",
+      "featureId": "cloudhsm/service-wide",
+      "id": "cloudhsm-service-wide-operatingsystem-ubuntu-26-04-lts-arm64-recipe-cloudhsm-platforms-arm",
+      "method": "deterministic",
+      "scope": {
+        "axis": "cpuArchitecture",
+        "label": "arm64",
+        "targetId": "arm64"
+      },
+      "status": "covered",
+      "targetId": "Ubuntu 26.04 LTS",
+      "targetLabel": "Ubuntu 26.04 LTS"
+    }
+  ],
+  "featureId": "cloudhsm/service-wide",
+  "generatedAt": "2026-09-01T07:11:32.953Z",
+  "serviceId": "cloudhsm",
+  "unresolvedTargets": []
+}

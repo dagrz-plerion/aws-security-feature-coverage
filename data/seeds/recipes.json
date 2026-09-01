@@ -804,6 +804,68 @@
           "requireMin": 25
         }
       ]
+    },
+    {
+      "urlPattern": "cloudhsm/latest/userguide/cloudhsm-cli-support\\.md$",
+      "serviceId": "cloudhsm",
+      "note": "The operating systems the CloudHSM CLI runs on, by CPU architecture. The older Client SDK 3 tool page uses a different table and needs its own recipe.",
+      "recipes": [
+        {
+          "id": "cloudhsm-platforms-x86",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "supported platforms",
+            "extract": "whole"
+          },
+          "axis": "operatingSystem",
+          "status": "from-column",
+          "statusColumn": "X86",
+          "scope": {
+            "axis": "cpuArchitecture",
+            "from": "constant",
+            "value": "x86_64"
+          },
+          "requireMin": 4
+        },
+        {
+          "id": "cloudhsm-platforms-arm",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "supported platforms",
+            "extract": "whole"
+          },
+          "axis": "operatingSystem",
+          "status": "from-column",
+          "statusColumn": "ARM",
+          "scope": {
+            "axis": "cpuArchitecture",
+            "from": "constant",
+            "value": "arm64"
+          },
+          "requireMin": 4
+        }
+      ]
+    },
+    {
+      "urlPattern": "waf/latest/developerguide/getting-started-fms-intro\\.md$",
+      "serviceId": "fms",
+      "note": "The policy types Firewall Manager can enforce, one per bullet.",
+      "recipes": [
+        {
+          "id": "firewall-manager-policy-types",
+          "blocks": "whole-page",
+          "select": {
+            "from": "list-items",
+            "extract": "regex",
+            "pattern": "Setting up AWS Firewall Manager.?\\s*(.+?) policies$"
+          },
+          "axis": "policyType",
+          "status": "covered",
+          "requireMin": 6
+        }
+      ]
     }
   ]
 }
