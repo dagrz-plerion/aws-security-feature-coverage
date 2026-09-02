@@ -27,6 +27,15 @@
       "summary": "Whether a service supports a policy attached to the resource itself, granting access across accounts.",
       "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md",
       "quote": "Resource-based policies"
+    },
+    {
+      "id": "kms/kms-viaservice-condition-key",
+      "serviceId": "kms",
+      "name": "kms:ViaService condition key",
+      "kind": "identity-control",
+      "summary": "Limits use of a KMS key to requests made through named AWS services.",
+      "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md",
+      "quote": "The `kms:ViaService` condition key limits use of an KMS key to requests from specified AWS services."
     }
   ]
 }

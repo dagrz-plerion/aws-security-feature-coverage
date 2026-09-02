@@ -5,8 +5,23 @@
     "network": 0,
     "revalidated": 0
   },
-  "finishedAt": "2026-09-02T02:00:30.103Z",
+  "finishedAt": "2026-09-02T02:15:30.425Z",
   "stages": [
+    {
+      "counts": {
+        "claims": 51160,
+        "features": 1741,
+        "quotesChecked": 250,
+        "recallFound": 73,
+        "recallTotal": 73,
+        "services": 692,
+        "violations": 0
+      },
+      "finishedAt": "2026-09-02T02:15:29.445Z",
+      "id": "stage6-validate",
+      "startedAt": "2026-09-02T02:15:28.779Z",
+      "status": "ok"
+    },
     {
       "counts": {
         "clean": 59,
@@ -15,21 +30,30 @@
         "partialRead": 2,
         "staleQuotes": 0
       },
-      "finishedAt": "2026-09-02T02:00:29.663Z",
+      "finishedAt": "2026-09-02T02:15:29.807Z",
       "id": "stage7-verify",
-      "startedAt": "2026-09-02T02:00:29.319Z",
+      "startedAt": "2026-09-02T02:15:29.446Z",
       "status": "partial"
     },
     {
       "counts": {
-        "features": 1740,
+        "expectations": 0
+      },
+      "finishedAt": "2026-09-02T02:15:29.945Z",
+      "id": "stage8-expectations",
+      "startedAt": "2026-09-02T02:15:29.807Z",
+      "status": "skipped"
+    },
+    {
+      "counts": {
+        "features": 1741,
         "services": 211
       },
-      "finishedAt": "2026-09-02T02:00:30.103Z",
+      "finishedAt": "2026-09-02T02:15:30.425Z",
       "id": "report",
-      "startedAt": "2026-09-02T02:00:29.664Z",
+      "startedAt": "2026-09-02T02:15:29.945Z",
       "status": "ok"
     }
   ],
-  "startedAt": "2026-09-02T02:00:29.317Z"
+  "startedAt": "2026-09-02T02:15:28.777Z"
 }

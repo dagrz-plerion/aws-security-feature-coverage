@@ -20,7 +20,8 @@
     "serve": "npx --yes http-server docs -p 8080 -c-1",
     "add-page": "tsx src/cli/add-page.ts",
     "validate": "tsx src/cli/run.ts --only stage6",
-    "verify": "tsx src/cli/verify.ts"
+    "verify": "tsx src/cli/verify.ts",
+    "record-expectations": "tsx src/cli/record-expectations.ts"
   },
   "dependencies": {
     "zod": "^3.24.1"

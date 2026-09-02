@@ -81,3 +81,36 @@ runs.
 | `data/seeds/recipes.json` | recipes that apply to any page matching a URL pattern |
 | `src/coverage/recipe.ts` | the engine that runs a recipe |
 | `src/coverage/extractors.ts` | the generic path, used when no recipe applies |
+
+## A row is named after what it measures
+
+If every claim on an axis is scoped to one member of a catalogue, the row is named
+after the parent but measures the member. Two examples, both of which shipped:
+
+- 92 services that support `kms:ViaService` were filed under a feature called
+  "Condition keys", so the map read *KMS condition keys reach 92 of 526 services* —
+  something the page never says. The condition key is the feature.
+- The IAM services table has six capability columns. Read as one row scoped by
+  capability, it answered six questions with one number, and hid the fact that
+  resource-based policies reach only 22 of 283 services.
+
+The rule: **a scope onto a catalogue member means the member is the feature.** A scope
+is for a genuine second dimension — per Region, per scan method — where the values
+vary. `stage6-validate` enforces it, and `tests/guards.test.ts` proves the check fires
+on the exact shape that got through.
+
+## Expectations
+
+`data/expectations/<page>.json` holds what an independent reader said a page should
+produce: which capabilities it documents, on which axes, how many values, and what
+must not be taken. Those readers are shown the page and nothing else — no recipe, no
+output, no prior decision to defend — because a reviewer handed an implementation
+tends to validate it.
+
+`stage8-expectations` checks every run against them. Every other check in this
+pipeline tests internal consistency: a quote matches its source, a target exists in a
+universe, a count fits its denominator. None of them can tell that a correctly parsed
+quota table is not coverage. Only an expectation written by someone who never saw the
+code can.
+
+Record them with `npm run record-expectations -- <specs.json>`.

@@ -20,6 +20,7 @@ export const paths = {
   gaps: path.join(DATA, "gaps"),
   history: path.join(DATA, "history"),
   state: path.join(DATA, "state"),
+  expectations: path.join(DATA, "expectations"),
   docs: DOCS,
 };
 

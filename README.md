@@ -75,6 +75,8 @@ npm run deploy            # rebuild and publish, refusing to publish a run that 
 | `stage4-features` | enumerate the named security features of every candidate service |
 | `stage5-coverage` | read every registered coverage page and extract what each feature reaches |
 | `stage6-validate` | check every rule the dataset must obey, and fail the run if one is broken |
+| `stage7-verify` | re-read every coverage page and check the quotes still stand and how much of it we took |
+| `stage8-expectations` | hold every page to what an independent reader said it should produce |
 
 The pipeline is re-runnable at any time. HTTP responses are cached and revalidated with
 `If-None-Match`, so an unchanged upstream costs one `304` and produces identical output.

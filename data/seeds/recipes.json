@@ -1134,7 +1134,7 @@
     {
       "urlPattern": "kms/latest/developerguide/conditions-kms\\.md$",
       "serviceId": "kms",
-      "note": "Each H2 is one KMS condition key. Only kms:ViaService carries a service list, and that list is coverage scoped to that one key, not to condition keys in general.",
+      "note": "Each H2 is one KMS condition key. kms:ViaService additionally lists the AWS services it accepts, and those services are that one key's coverage \u2014 not the coverage of condition keys in general.",
       "recipes": [
         {
           "id": "kms-condition-key-catalogue",
@@ -1163,12 +1163,7 @@
           },
           "axis": "service",
           "status": "covered",
-          "scope": {
-            "axis": "conditionKey",
-            "from": "constant",
-            "value": "kms:ViaService"
-          },
-          "featureId": "kms/condition-keys",
+          "featureId": "kms/kms-viaservice-condition-key",
           "requireMin": 90
         }
       ]
