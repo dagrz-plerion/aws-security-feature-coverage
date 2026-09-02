@@ -450,6 +450,26 @@
         {
           "bodySha256": "7420611f495353e05dd16a94548ed314ff758b184db83098f1f900e70201ec9e",
           "locator": "https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md :: Supported regions for AWS Security Incident Response service-linked roles",
+          "quote": "+ US East (Virginia)",
+          "retrievedAt": "2026-09-01T05:00:51.595Z",
+          "sourceUrl": "https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md"
+        }
+      ],
+      "extractorId": "recipe:security-ir-slr-regions",
+      "featureId": "security-ir/service-linked-roles",
+      "id": "security-ir-service-linked-roles-region-us-east-1-recipe-security-ir-slr-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-east-1",
+      "targetLabel": "US East (Virginia)"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "7420611f495353e05dd16a94548ed314ff758b184db83098f1f900e70201ec9e",
+          "locator": "https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md :: Supported regions for AWS Security Incident Response service-linked roles",
           "quote": "+ US East (Ohio)",
           "retrievedAt": "2026-09-01T05:00:51.595Z",
           "sourceUrl": "https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md"
@@ -485,7 +505,7 @@
     }
   ],
   "featureId": "security-ir/service-linked-roles",
-  "generatedAt": "2026-09-02T02:33:06.600Z",
+  "generatedAt": "2026-09-02T03:44:05.771Z",
   "serviceId": "security-ir",
   "unresolvedTargets": []
 }

@@ -2,7 +2,7 @@
   "axes": [
     {
       "axis": "configRule",
-      "count": 828,
+      "count": 822,
       "members": [
         "access-keys-rotated",
         "account-part-of-organizations",
@@ -151,7 +151,6 @@
         "clb-desync-mode-check",
         "clb-multiple-az",
         "cloud-trail-cloud-watch-logs-enabled",
-        "cloud-trail-enabled",
         "cloud-trail-encryption-enabled",
         "cloud-trail-log-file-validation-enabled",
         "cloudformation-stack-drift-detection-check",
@@ -283,7 +282,6 @@
         "ec2-imdsv2-check",
         "ec2-instance-detailed-monitoring-enabled",
         "ec2-instance-launched-with-allowed-ami",
-        "ec2-instance-managed-by-ssm",
         "ec2-instance-managed-by-systems-manager",
         "ec2-instance-multiple-eni-check",
         "ec2-instance-no-public-ip",
@@ -491,12 +489,10 @@
         "imagebuilder-imagerecipe-ebs-volumes-encrypted",
         "imagebuilder-imagerecipe-tagged",
         "imagebuilder-infrastructureconfiguration-tagged",
-        "incoming-ssh-disabled",
         "inspector-ec2-scan-enabled",
         "inspector-ecr-scan-enabled",
         "inspector-lambda-code-scan-enabled",
         "inspector-lambda-standard-scan-enabled",
-        "instances-in-vpc",
         "internet-gateway-authorized-vpc-only",
         "iot-authorizer-token-signing-enabled",
         "iot-job-template-tagged",
@@ -574,7 +570,6 @@
         "msk-enhanced-monitoring-enabled",
         "msk-in-cluster-node-require-tls",
         "msk-unrestricted-access-check",
-        "multi-region-cloud-trail-enabled",
         "multi-region-cloudtrail-enabled",
         "nacl-no-unrestricted-ssh-rdp",
         "neptune-cluster-backup-retention-check",
@@ -678,7 +673,6 @@
         "resiliencehub-app-tagged",
         "resiliencehub-resiliencypolicy-tagged",
         "restricted-common-ports",
-        "restricted-incoming-traffic",
         "restricted-ssh",
         "root-account-hardware-mfa-enabled",
         "root-account-mfa-enabled",
@@ -836,7 +830,7 @@
     },
     {
       "axis": "control",
-      "count": 591,
+      "count": 589,
       "members": [
         "ACM.1",
         "ACM.2",
@@ -861,11 +855,9 @@
         "AppFlow.1",
         "AppRunner.1",
         "AppRunner.2",
-        "AppSync.1",
         "AppSync.2",
         "AppSync.4",
         "AppSync.5",
-        "AppSync.6",
         "Athena.2",
         "Athena.3",
         "Athena.4",
@@ -1828,7 +1820,7 @@
     },
     {
       "axis": "operatingSystem",
-      "count": 134,
+      "count": 136,
       "members": [
         "AlmaLinux 10",
         "AlmaLinux 8",
@@ -1887,6 +1879,7 @@
         "Fedora 43",
         "Fedora 44",
         "Hummingbird OS –",
+        "Linux",
         "MinimOS –",
         "OpenSUSE Leap 15.2",
         "OpenSUSE Leap 15.3",
@@ -1956,6 +1949,7 @@
         "Windows Server 2022",
         "Windows Server 2025",
         "Wolfi –",
+        "macOS",
         "macOS (Big Sur) 11",
         "macOS (Catalina) 10.15",
         "macOS (Mojave) 10.14",
@@ -2281,6 +2275,42 @@
       ]
     },
     {
+      "axis": "runtime",
+      "count": 30,
+      "members": [
+        ".NET 10",
+        ".NET 6",
+        ".NET 8",
+        "AL2",
+        "AL2023",
+        "go1.x",
+        "java11",
+        "java17",
+        "java21",
+        "java25",
+        "java8",
+        "java8.al2",
+        "nodejs12.x",
+        "nodejs14.x",
+        "nodejs16.x",
+        "nodejs18.x",
+        "nodejs20.x",
+        "nodejs22.x",
+        "nodejs24.x",
+        "python3.10",
+        "python3.11",
+        "python3.12",
+        "python3.13",
+        "python3.14",
+        "python3.7",
+        "python3.8",
+        "python3.9",
+        "ruby2.7",
+        "ruby3.2",
+        "ruby3.3"
+      ]
+    },
+    {
       "axis": "auditFramework",
       "count": 29,
       "members": [
@@ -2347,37 +2377,6 @@
         ".yaml",
         ".yml",
         ".zip"
-      ]
-    },
-    {
-      "axis": "runtime",
-      "count": 25,
-      "members": [
-        "go1.x",
-        "java11",
-        "java17",
-        "java21",
-        "java25",
-        "java8",
-        "java8.al2",
-        "nodejs12.x",
-        "nodejs14.x",
-        "nodejs16.x",
-        "nodejs18.x",
-        "nodejs20.x",
-        "nodejs22.x",
-        "nodejs24.x",
-        "python3.10",
-        "python3.11",
-        "python3.12",
-        "python3.13",
-        "python3.14",
-        "python3.7",
-        "python3.8",
-        "python3.9",
-        "ruby2.7",
-        "ruby3.2",
-        "ruby3.3"
       ]
     },
     {
@@ -2550,6 +2549,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-02T02:33:06.599Z",
+  "generatedAt": "2026-09-02T03:44:05.769Z",
   "note": "Axes AWS defines only inside its documentation. Membership is everything the catalogs name."
 }

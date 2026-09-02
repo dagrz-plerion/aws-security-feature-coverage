@@ -70,6 +70,46 @@
         {
           "bodySha256": "4b91cf6e5f710bf11ecca29c8f8936af9a234283fb6a6971462f42299fb4893e",
           "locator": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md :: FIPS compliance for Verified Access",
+          "quote": "+ AWS GovCloud (US) East",
+          "retrievedAt": "2026-09-01T05:00:44.302Z",
+          "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md"
+        }
+      ],
+      "extractorId": "recipe:verified-access-fips-regions",
+      "featureId": "verified-access/fips-compliance",
+      "id": "verified-access-fips-compliance-region-us-gov-east-1-recipe-verified-access-fips-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US) East"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "4b91cf6e5f710bf11ecca29c8f8936af9a234283fb6a6971462f42299fb4893e",
+          "locator": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md :: FIPS compliance for Verified Access",
+          "quote": "+ AWS GovCloud (US) West",
+          "retrievedAt": "2026-09-01T05:00:44.302Z",
+          "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md"
+        }
+      ],
+      "extractorId": "recipe:verified-access-fips-regions",
+      "featureId": "verified-access/fips-compliance",
+      "id": "verified-access-fips-compliance-region-us-gov-west-1-recipe-verified-access-fips-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-west-1",
+      "targetLabel": "AWS GovCloud (US) West"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "4b91cf6e5f710bf11ecca29c8f8936af9a234283fb6a6971462f42299fb4893e",
+          "locator": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md :: FIPS compliance for Verified Access",
           "quote": "+ US West (N. California)",
           "retrievedAt": "2026-09-01T05:00:44.302Z",
           "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md"
@@ -105,7 +145,7 @@
     }
   ],
   "featureId": "verified-access/fips-compliance",
-  "generatedAt": "2026-09-02T02:33:06.600Z",
+  "generatedAt": "2026-09-02T03:44:05.771Z",
   "serviceId": "verified-access",
   "unresolvedTargets": []
 }

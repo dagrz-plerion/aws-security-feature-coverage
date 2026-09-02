@@ -4,6 +4,8 @@
     {
       "axis": "resourceType",
       "axisKind": "external",
+      "collapse": "The page names 11 things: eight it protects and three it does not. They are eight CloudFormation resource types. Application, Classic and Network Load Balancers are two types, not three, and a Gateway Load Balancer is the same type as the Application and Network ones \u2014 so that type reads partial, protected for some load balancers and not others. A custom routing accelerator is likewise the same type as the standard accelerator Shield does protect, so that reads partial too. NAT Gateway is the only exclusion with a type of its own, and reads not-covered.",
+      "distinctTargets": 8,
       "expectedCount": 11,
       "featureName": "Shield Advanced protections for each resource type (\"List of resources that AWS Shield Advanced protects\")",
       "reasoning": "The values are AWS resource types, not services: the page deliberately splits within a single service where the answers differ. Elastic Load Balancing yields three separate answers (ALB yes directly, CLB yes directly, NLB yes only via an Elastic IP) plus a fourth excluded one (Gateway Load Balancer). AWS Global Accelerator yields standard accelerators yes and custom routing accelerators no. Collapsing to a service axis would destroy exactly the information the page exists to convey. The axis is external because AWS resource types exist independently of Shield Advanced \u2014 Shield Advanced selects from that universe rather than publishing it, which is what makes a No meaningful here.",
@@ -13,6 +15,8 @@
     {
       "axis": "ipVersion",
       "axisKind": "external",
+      "collapse": "The page names 11 things: eight it protects and three it does not. They are eight CloudFormation resource types. Application, Classic and Network Load Balancers are two types, not three, and a Gateway Load Balancer is the same type as the Application and Network ones \u2014 so that type reads partial, protected for some load balancers and not others. A custom routing accelerator is likewise the same type as the standard accelerator Shield does protect, so that reads partial too. NAT Gateway is the only exclusion with a type of its own, and reads not-covered.",
+      "distinctTargets": 8,
       "expectedCount": 2,
       "featureName": "Shield Advanced IP version support (\"Shield Advanced supports IPv4, and does not support IPv6\")",
       "reasoning": "This is a genuine coverage claim of the shape \"capability X reaches Y / does not reach Y\" over an enumerable external set \u2014 the IP version universe is IPv4 and IPv6, and it exists independently of AWS. It is a separate capability from the resource-type list because the axis values are different and the statement applies across all resource types rather than to any one of them. It is small but it is not noise: an IPv6-only endpoint gets nothing from Shield Advanced, and that fact appears nowhere else on the page. A parser that only walks bullet lists and tables will miss it entirely, because it is a bare sentence in the opening paragraph.",

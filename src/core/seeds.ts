@@ -58,12 +58,34 @@ export async function recipeRules(): Promise<RecipeRule[]> {
   return file.rules;
 }
 
-export type AxisKind = { kind: "external" | "catalogue"; label: string };
+export type AxisKind = {
+  kind: "external" | "catalogue";
+  label: string;
+  /**
+   * Name of a closed universe file. When set, the denominator is every member of that
+   * universe and a member the page never mentions is unknown — never not-covered.
+   * Without it the denominator is only what the page named, so a page listing five
+   * Regions would read five of five.
+   */
+  universe?: string;
+};
 
 /** Which axes are real universes and which are a service's own inventory. */
 export async function axisKinds(): Promise<Record<string, AxisKind>> {
   const file = await load<SeedFile<{ axes: Record<string, AxisKind> }>>("axes.json", { axes: {} });
   return file.axes;
+}
+
+export type HighWaterReset = { recipeId: string; from: number; reason: string; at: string };
+
+/**
+ * Deliberate lowerings of a recipe's high-water mark, each with a written reason.
+ * The reset fires only while the stored best still equals `from`, so it clears once
+ * and the regression guard is live again from the new number.
+ */
+export async function highWaterResets(): Promise<Map<string, HighWaterReset>> {
+  const file = await load<SeedFile<{ resets: HighWaterReset[] }>>("highwater-resets.json", { resets: [] });
+  return new Map(file.resets.map((r) => [r.recipeId, r]));
 }
 
 export type ExtraFeature = {

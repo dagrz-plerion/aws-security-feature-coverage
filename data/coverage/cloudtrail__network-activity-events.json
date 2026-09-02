@@ -131,18 +131,18 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS IoT Secure Tunneling",
+          "quote": "+ `aco-automation.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
       "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-api-tunneling-iot-recipe-cloudtrail-network-activity-services",
+      "id": "cloudtrail-network-activity-events-service-aco-automation-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "api.tunneling.iot",
-      "targetLabel": "AWS IoT Secure Tunneling"
+      "targetId": "aco-automation",
+      "targetLabel": "aco-automation.amazonaws.com"
     },
     {
       "axis": "service",
@@ -151,7 +151,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS AppConfig",
+          "quote": "+ `appconfig.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -162,7 +162,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "appconfig",
-      "targetLabel": "AWS AppConfig"
+      "targetLabel": "appconfig.amazonaws.com"
     },
     {
       "axis": "service",
@@ -171,7 +171,27 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS App Mesh",
+          "quote": "+ `application-signals.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-application-signals-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "application-signals",
+      "targetLabel": "application-signals.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `appmesh.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -182,7 +202,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "appmesh",
-      "targetLabel": "AWS App Mesh"
+      "targetLabel": "appmesh.amazonaws.com"
     },
     {
       "axis": "service",
@@ -191,7 +211,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Athena",
+          "quote": "+ `athena.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -202,7 +222,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "athena",
-      "targetLabel": "Amazon Athena"
+      "targetLabel": "athena.amazonaws.com"
     },
     {
       "axis": "service",
@@ -211,7 +231,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS B2B Data Interchange",
+          "quote": "+ `b2bi.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -222,7 +242,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "b2bi",
-      "targetLabel": "AWS B2B Data Interchange"
+      "targetLabel": "b2bi.amazonaws.com"
     },
     {
       "axis": "service",
@@ -231,7 +251,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Backup gateway",
+          "quote": "+ `backup-gateway.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -242,7 +262,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "backup-gateway",
-      "targetLabel": "AWS Backup gateway"
+      "targetLabel": "backup-gateway.amazonaws.com"
     },
     {
       "axis": "service",
@@ -251,7 +271,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Data Exports",
+          "quote": "+ `bcm-data-exports.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -262,7 +282,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "bcm-data-exports",
-      "targetLabel": "AWS Data Exports"
+      "targetLabel": "bcm-data-exports.amazonaws.com"
     },
     {
       "axis": "service",
@@ -271,7 +291,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Pricing Calculator",
+          "quote": "+ `bcm-pricing-calculator.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -282,7 +302,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "bcm-pricing-calculator",
-      "targetLabel": "AWS Pricing Calculator"
+      "targetLabel": "bcm-pricing-calculator.amazonaws.com"
     },
     {
       "axis": "service",
@@ -291,7 +311,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Bedrock",
+          "quote": "+ `bedrock.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -302,7 +322,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "bedrock",
-      "targetLabel": "Amazon Bedrock"
+      "targetLabel": "bedrock.amazonaws.com"
     },
     {
       "axis": "service",
@@ -311,7 +331,47 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Keyspaces (for Apache Cassandra)",
+          "quote": "+ `bedrock-agentcore.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-bedrock-agentcore-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "bedrock-agentcore",
+      "targetLabel": "bedrock-agentcore.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `billing.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-billing-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "billing",
+      "targetLabel": "billing.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `cassandra.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -322,7 +382,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "cassandra",
-      "targetLabel": "Amazon Keyspaces (for Apache Cassandra)"
+      "targetLabel": "cassandra.amazonaws.com"
     },
     {
       "axis": "service",
@@ -331,7 +391,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Cost Explorer",
+          "quote": "+ `ce.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -342,7 +402,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ce",
-      "targetLabel": "AWS Cost Explorer"
+      "targetLabel": "ce.amazonaws.com"
     },
     {
       "axis": "service",
@@ -351,7 +411,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Cloud Control API",
+          "quote": "+ `cloudcontrolapi.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -362,7 +422,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudcontrolapi",
-      "targetLabel": "AWS Cloud Control API"
+      "targetLabel": "cloudcontrolapi.amazonaws.com"
     },
     {
       "axis": "service",
@@ -371,7 +431,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS CloudFormation",
+          "quote": "+ `cloudformation.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -382,7 +442,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudformation",
-      "targetLabel": "AWS CloudFormation"
+      "targetLabel": "cloudformation.amazonaws.com"
     },
     {
       "axis": "service",
@@ -391,7 +451,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS CloudHSM",
+          "quote": "+ `cloudhsm.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -402,7 +462,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudhsm",
-      "targetLabel": "AWS CloudHSM"
+      "targetLabel": "cloudhsm.amazonaws.com"
     },
     {
       "axis": "service",
@@ -411,7 +471,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS CloudTrail",
+          "quote": "+ `cloudtrail.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -422,7 +482,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudtrail",
-      "targetLabel": "AWS CloudTrail"
+      "targetLabel": "cloudtrail.amazonaws.com"
     },
     {
       "axis": "service",
@@ -431,7 +491,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon CloudWatch",
+          "quote": "+ `monitoring.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -442,7 +502,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudwatch",
-      "targetLabel": "Amazon CloudWatch"
+      "targetLabel": "monitoring.amazonaws.com"
     },
     {
       "axis": "service",
@@ -451,7 +511,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS CodeDeploy",
+          "quote": "+ `codedeploy.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -462,7 +522,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "codedeploy",
-      "targetLabel": "AWS CodeDeploy"
+      "targetLabel": "codedeploy.amazonaws.com"
     },
     {
       "axis": "service",
@@ -471,7 +531,27 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Comprehend Medical",
+          "quote": "+ `comprehend.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-comprehend-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "comprehend",
+      "targetLabel": "comprehend.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `comprehendmedical.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -482,7 +562,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "comprehendmedical",
-      "targetLabel": "Amazon Comprehend Medical"
+      "targetLabel": "comprehendmedical.amazonaws.com"
     },
     {
       "axis": "service",
@@ -491,7 +571,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Config",
+          "quote": "+ `config.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -502,7 +582,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "config",
-      "targetLabel": "AWS Config"
+      "targetLabel": "config.amazonaws.com"
     },
     {
       "axis": "service",
@@ -511,7 +591,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Directory Service",
+          "quote": "+ `ds.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -522,7 +602,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ds",
-      "targetLabel": "AWS Directory Service"
+      "targetLabel": "ds.amazonaws.com"
     },
     {
       "axis": "service",
@@ -531,7 +611,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon DynamoDB",
+          "quote": "+ `dynamodb.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -542,7 +622,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "dynamodb",
-      "targetLabel": "Amazon DynamoDB"
+      "targetLabel": "dynamodb.amazonaws.com"
     },
     {
       "axis": "service",
@@ -551,7 +631,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon EC2",
+          "quote": "+ `ec2.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -562,7 +642,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ec2",
-      "targetLabel": "Amazon EC2"
+      "targetLabel": "ec2.amazonaws.com"
     },
     {
       "axis": "service",
@@ -571,7 +651,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Elastic Container Service",
+          "quote": "+ `ecs.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -582,7 +662,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "ecs",
-      "targetLabel": "Amazon Elastic Container Service"
+      "targetLabel": "ecs.amazonaws.com"
     },
     {
       "axis": "service",
@@ -591,7 +671,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Elastic File System",
+          "quote": "+ `elasticfilesystem.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -602,7 +682,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "elasticfilesystem",
-      "targetLabel": "Amazon Elastic File System"
+      "targetLabel": "elasticfilesystem.amazonaws.com"
     },
     {
       "axis": "service",
@@ -611,7 +691,27 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon EventBridge",
+          "quote": "+ `elasticloadbalancing.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-elasticloadbalancing-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticloadbalancing",
+      "targetLabel": "elasticloadbalancing.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `events.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -622,7 +722,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "events",
-      "targetLabel": "Amazon EventBridge"
+      "targetLabel": "events.amazonaws.com"
     },
     {
       "axis": "service",
@@ -631,7 +731,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Data Firehose",
+          "quote": "+ `firehose.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -642,7 +742,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "firehose",
-      "targetLabel": "Amazon Data Firehose"
+      "targetLabel": "firehose.amazonaws.com"
     },
     {
       "axis": "service",
@@ -651,7 +751,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Fraud Detector",
+          "quote": "+ `frauddetector.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -662,7 +762,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "frauddetector",
-      "targetLabel": "Amazon Fraud Detector"
+      "targetLabel": "frauddetector.amazonaws.com"
     },
     {
       "axis": "service",
@@ -671,7 +771,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Free Tier",
+          "quote": "+ `freetier.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -682,7 +782,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "freetier",
-      "targetLabel": "AWS Free Tier"
+      "targetLabel": "freetier.amazonaws.com"
     },
     {
       "axis": "service",
@@ -691,7 +791,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon FSx",
+          "quote": "+ `fsx.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -702,7 +802,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "fsx",
-      "targetLabel": "Amazon FSx"
+      "targetLabel": "fsx.amazonaws.com"
     },
     {
       "axis": "service",
@@ -711,7 +811,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Glue",
+          "quote": "+ `glue.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -722,7 +822,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "glue",
-      "targetLabel": "AWS Glue"
+      "targetLabel": "glue.amazonaws.com"
     },
     {
       "axis": "service",
@@ -731,7 +831,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS HealthLake",
+          "quote": "+ `healthlake.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -742,7 +842,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "healthlake",
-      "targetLabel": "AWS HealthLake"
+      "targetLabel": "healthlake.amazonaws.com"
     },
     {
       "axis": "service",
@@ -751,7 +851,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Invoicing",
+          "quote": "+ `invoicing.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -762,7 +862,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "invoicing",
-      "targetLabel": "AWS Invoicing"
+      "targetLabel": "invoicing.amazonaws.com"
     },
     {
       "axis": "service",
@@ -771,7 +871,27 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS IoT FleetWise",
+          "quote": "+ `iot.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-iot-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "iot",
+      "targetLabel": "iot.amazonaws.com; iotsecuredtunneling.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `iotfleetwise.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -782,7 +902,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "iotfleetwise",
-      "targetLabel": "AWS IoT FleetWise"
+      "targetLabel": "iotfleetwise.amazonaws.com"
     },
     {
       "axis": "service",
@@ -791,7 +911,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS KMS",
+          "quote": "+ `kms.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -802,7 +922,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "kms",
-      "targetLabel": "AWS KMS"
+      "targetLabel": "kms.amazonaws.com"
     },
     {
       "axis": "service",
@@ -811,7 +931,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Lake Formation",
+          "quote": "+ `lakeformation.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -822,7 +942,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "lakeformation",
-      "targetLabel": "AWS Lake Formation"
+      "targetLabel": "lakeformation.amazonaws.com"
     },
     {
       "axis": "service",
@@ -831,7 +951,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Lambda",
+          "quote": "+ `lambda.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -842,7 +962,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "lambda",
-      "targetLabel": "AWS Lambda"
+      "targetLabel": "lambda.amazonaws.com"
     },
     {
       "axis": "service",
@@ -851,7 +971,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS License Manager",
+          "quote": "+ `license-manager.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -862,7 +982,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "license-manager",
-      "targetLabel": "AWS License Manager"
+      "targetLabel": "license-manager.amazonaws.com"
     },
     {
       "axis": "service",
@@ -871,7 +991,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Lookout for Equipment",
+          "quote": "+ `lookoutequipment.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -882,7 +1002,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "lookoutequipment",
-      "targetLabel": "Amazon Lookout for Equipment"
+      "targetLabel": "lookoutequipment.amazonaws.com"
     },
     {
       "axis": "service",
@@ -891,7 +1011,47 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Personalize",
+          "quote": "+ `lookoutvision.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-lookoutvision-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lookoutvision",
+      "targetLabel": "lookoutvision.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `nova-act.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-nova-act-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "nova-act",
+      "targetLabel": "nova-act.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `personalize.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -902,7 +1062,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "personalize",
-      "targetLabel": "Amazon Personalize"
+      "targetLabel": "personalize.amazonaws.com"
     },
     {
       "axis": "service",
@@ -911,27 +1071,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Lookout for Vision",
-          "retrievedAt": "2026-09-01T04:59:40.214Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
-        }
-      ],
-      "extractorId": "recipe:cloudtrail-network-activity-services",
-      "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-product-amazon-lookout-for-vision-recipe-cloudtrail-network-activity-services",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "product:amazon-lookout-for-vision",
-      "targetLabel": "Amazon Lookout for Vision"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Q Business",
+          "quote": "+ `qbusiness.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -942,7 +1082,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "qbusiness",
-      "targetLabel": "Amazon Q Business"
+      "targetLabel": "qbusiness.amazonaws.com"
     },
     {
       "axis": "service",
@@ -951,7 +1091,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Relational Database Service",
+          "quote": "+ `rds.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -962,7 +1102,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "rds",
-      "targetLabel": "Amazon Relational Database Service"
+      "targetLabel": "rds.amazonaws.com"
     },
     {
       "axis": "service",
@@ -971,7 +1111,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Rekognition",
+          "quote": "+ `rekognition.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -982,7 +1122,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "rekognition",
-      "targetLabel": "Amazon Rekognition"
+      "targetLabel": "rekognition.amazonaws.com"
     },
     {
       "axis": "service",
@@ -991,7 +1131,27 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon S3",
+          "quote": "+ `rolesanywhere.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-rolesanywhere-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "rolesanywhere",
+      "targetLabel": "rolesanywhere.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `s3.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1002,7 +1162,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "s3",
-      "targetLabel": "Amazon S3"
+      "targetLabel": "s3.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1011,7 +1171,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon SageMaker AI",
+          "quote": "+ `sagemaker.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1022,7 +1182,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "sagemaker",
-      "targetLabel": "Amazon SageMaker AI"
+      "targetLabel": "sagemaker.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1031,7 +1191,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon EventBridge Scheduler",
+          "quote": "+ `scheduler.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1042,7 +1202,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "scheduler",
-      "targetLabel": "Amazon EventBridge Scheduler"
+      "targetLabel": "scheduler.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1051,7 +1211,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Secrets Manager",
+          "quote": "+ `secretsmanager.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1062,7 +1222,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "secretsmanager",
-      "targetLabel": "AWS Secrets Manager"
+      "targetLabel": "secretsmanager.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1071,7 +1231,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Cloud Map",
+          "quote": "+ `servicediscovery.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1082,7 +1242,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "servicediscovery",
-      "targetLabel": "AWS Cloud Map"
+      "targetLabel": "servicediscovery.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1091,7 +1251,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Simple Notification Service",
+          "quote": "+ `sns.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1102,7 +1262,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "sns",
-      "targetLabel": "Amazon Simple Notification Service"
+      "targetLabel": "sns.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1111,7 +1271,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Simple Queue Service",
+          "quote": "+ `sqs.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1122,7 +1282,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "sqs",
-      "targetLabel": "Amazon Simple Queue Service"
+      "targetLabel": "sqs.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1131,18 +1291,18 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Systems Manager Incident Manager",
+          "quote": "+ `ssm.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
       "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-ssm-incidents-recipe-cloudtrail-network-activity-services",
+      "id": "cloudtrail-network-activity-events-service-ssm-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
-      "targetId": "ssm-incidents",
-      "targetLabel": "AWS Systems Manager Incident Manager"
+      "targetId": "ssm",
+      "targetLabel": "ssm.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1151,7 +1311,27 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Storage Gateway",
+          "quote": "+ `ssm-contacts.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-ssm-contacts-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ssm-contacts",
+      "targetLabel": "ssm-contacts.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `storagegateway.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1162,7 +1342,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "storagegateway",
-      "targetLabel": "AWS Storage Gateway"
+      "targetLabel": "storagegateway.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1171,7 +1351,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Simple Workflow Service",
+          "quote": "+ `swf.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1182,7 +1362,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "swf",
-      "targetLabel": "Amazon Simple Workflow Service"
+      "targetLabel": "swf.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1191,7 +1371,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Textract",
+          "quote": "+ `textract.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1202,7 +1382,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "textract",
-      "targetLabel": "Amazon Textract"
+      "targetLabel": "textract.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1211,7 +1391,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Transcribe",
+          "quote": "+ `transcribe.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1222,7 +1402,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "transcribe",
-      "targetLabel": "Amazon Transcribe"
+      "targetLabel": "transcribe.amazonaws.com; transcribestreaming.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1231,7 +1411,7 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ AWS Transform",
+          "quote": "+ `transform-agents.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1242,7 +1422,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "transform",
-      "targetLabel": "AWS Transform"
+      "targetLabel": "transform-agents.amazonaws.com; transform.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1251,7 +1431,27 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Translate",
+          "quote": "+ `transform-custom.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-transform-custom-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "transform-custom",
+      "targetLabel": "transform-custom.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `translate.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1262,7 +1462,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "translate",
-      "targetLabel": "Amazon Translate"
+      "targetLabel": "translate.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1271,7 +1471,27 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon Verified Permissions",
+          "quote": "+ `user-subscriptions.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-user-subscriptions-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "user-subscriptions",
+      "targetLabel": "user-subscriptions.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `verifiedpermissions.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1282,7 +1502,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "verifiedpermissions",
-      "targetLabel": "Amazon Verified Permissions"
+      "targetLabel": "verifiedpermissions.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1291,7 +1511,27 @@
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
           "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Amazon WorkMail",
+          "quote": "+ `voiceid.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-voiceid-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "voiceid",
+      "targetLabel": "voiceid.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `workmail.amazonaws.com`",
           "retrievedAt": "2026-09-01T04:59:40.214Z",
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
@@ -1302,11 +1542,31 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "workmail",
-      "targetLabel": "Amazon WorkMail"
+      "targetLabel": "workmail.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `workmailmessageflow.amazonaws.com`",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-activity-services",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-service-workmailmessageflow-recipe-cloudtrail-network-activity-services",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "workmailmessageflow",
+      "targetLabel": "workmailmessageflow.amazonaws.com"
     }
   ],
   "featureId": "cloudtrail/network-activity-events",
-  "generatedAt": "2026-09-02T02:33:06.600Z",
+  "generatedAt": "2026-09-02T03:44:05.771Z",
   "serviceId": "cloudtrail",
   "unresolvedTargets": []
 }

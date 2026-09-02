@@ -41,7 +41,7 @@
     {
       "urlPattern": "securityhub/latest/userguide/regions-controls\\.md$",
       "serviceId": "securityhub",
-      "note": "One H2 per Region, each listing the controls that are NOT available there. The control id is the bracketed prefix of each bullet.",
+      "note": "One H2 per Region listing the controls unavailable there. Read per control that is 6,313 statements about 589 individual controls, which would need a row each. At the feature level it says: Security Hub controls apply in this Region, with some unavailable \u2014 so one claim per Region, carrying the count.",
       "recipes": [
         {
           "id": "securityhub-regional-control-limits",
@@ -58,7 +58,8 @@
             "from": "block-title"
           },
           "featureId": "securityhub/aws-security-hub-cspm",
-          "requireMin": 5000
+          "requireMin": 30,
+          "emit": "scope-coverage"
         }
       ]
     },
@@ -274,7 +275,7 @@
             "from": "list-items",
             "depth": "any",
             "extract": "whole",
-            "matches": "^[a-z][a-z0-9]*[0-9]+(\\.[a-zA-Z0-9]+)*$"
+            "matches": "^(\\.NET \\d+|AL\\d+|[a-z][a-z0-9]*[0-9]+(\\.[a-zA-Z0-9]+)*)$"
           },
           "axis": "runtime",
           "status": "covered",
@@ -294,7 +295,7 @@
             "from": "list-items",
             "depth": "any",
             "extract": "whole",
-            "matches": "^[a-z][a-z0-9]*[0-9]+(\\.[a-zA-Z0-9]+)*$"
+            "matches": "^(\\.NET \\d+|AL\\d+|[a-z][a-z0-9]*[0-9]+(\\.[a-zA-Z0-9]+)*)$"
           },
           "axis": "runtime",
           "status": "covered",
@@ -406,14 +407,16 @@
           "blocks": "whole-page",
           "select": {
             "from": "paragraph",
-            "sentenceMatches": "Supported platforms",
+            "sentenceMatches": "^(Windows|Linux|macOS|Linux and macOS|Supported platforms\\s*[\u2013-]\\s*(?:Windows|Linux|macOS))\\.?$",
+            "split": "\\s+and\\s+",
             "extract": "regex",
-            "pattern": "Supported platforms\\s*[\u2013-]\\s*(Windows|Linux|macOS)"
+            "pattern": "(Windows|Linux|macOS)",
+            "minSentenceLength": 3
           },
           "axis": "operatingSystem",
           "status": "covered",
           "featureId": "inspector2/amazon-inspector-sbom-generator",
-          "requireMin": 1
+          "requireMin": 3
         },
         {
           "id": "inspector-sbom-model-formats",
@@ -823,7 +826,7 @@
     {
       "urlPattern": "waf/latest/developerguide/ddos-protections-by-resource-type\\.md$",
       "serviceId": "shield",
-      "note": "The resource types Shield Advanced protects, one per bullet.",
+      "note": "Two lists in one page. The bullets say what Shield Advanced protects; two notes say what it does not. A Gateway Load Balancer and a custom routing accelerator have the same CloudFormation type as the load balancers and accelerators Shield does protect, so those types come out partial, which is the accurate reading: covered for some of that type, not for others.",
       "recipes": [
         {
           "id": "shield-advanced-protected-resources",
@@ -837,6 +840,21 @@
           "axis": "resourceType",
           "status": "covered",
           "requireMin": 5,
+          "featureId": "shield/aws-shield-advanced"
+        },
+        {
+          "id": "shield-advanced-unprotected-resources",
+          "blocks": "whole-page",
+          "select": {
+            "from": "paragraph",
+            "sentenceMatches": "can't (use Shield Advanced to protect|protect)|handle outbound traffic only",
+            "extract": "regex",
+            "pattern": "(AWS Global Accelerator custom routing accelerators|Gateway Load Balancers|NAT Gateways)",
+            "split": "\\s+or\\s+"
+          },
+          "axis": "resourceType",
+          "status": "not-covered",
+          "requireMin": 2,
           "featureId": "shield/aws-shield-advanced"
         }
       ]
@@ -1035,7 +1053,7 @@
     {
       "urlPattern": "config/latest/developerguide/managing-rules-by-region-availability\\.md$",
       "serviceId": "config",
-      "note": "Which managed rules exist in which Region. Each H2 is a Region and scopes the rules beneath it.",
+      "note": "One H2 per Region listing the managed rules available there. Collapsed to one claim per Region carrying the rule count, rather than a statement per rule.",
       "recipes": [
         {
           "id": "config-rules-by-region",
@@ -1052,7 +1070,8 @@
             "axis": "region",
             "from": "block-title"
           },
-          "requireMin": 100
+          "requireMin": 30,
+          "emit": "scope-coverage"
         }
       ]
     },
@@ -1520,20 +1539,19 @@
     {
       "urlPattern": "awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail\\.md$",
       "serviceId": "cloudtrail",
-      "note": "The AWS services for which CloudTrail can log network activity events.",
+      "note": "The page lists the event sources that emit network activity events, one backticked service principal per bullet. The principal is the unambiguous identifier; the prose service names beside it are not all present.",
       "recipes": [
         {
           "id": "cloudtrail-network-activity-services",
           "blocks": "whole-page",
           "select": {
-            "from": "list-items",
-            "extract": "whole",
-            "matches": "^(AWS|Amazon|US|Europe|Asia|Africa|South|Canada|Middle|Israel|Mexico|China|AWS GovCloud)"
+            "from": "code-spans",
+            "matches": "^[a-z0-9][a-z0-9.-]*\\.amazonaws\\.com$"
           },
           "axis": "service",
           "status": "covered",
           "featureId": "cloudtrail/network-activity-events",
-          "requireMin": 50
+          "requireMin": 60
         },
         {
           "id": "cloudtrail-network-selector-fields",

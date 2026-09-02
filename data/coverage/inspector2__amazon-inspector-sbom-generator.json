@@ -133,6 +133,46 @@
         {
           "bodySha256": "fd4d4df1c4ea9cff8b9c34681f96526342946287e9a50138c4c2a399aa8c3b61",
           "locator": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md :: Amazon Inspector SBOM Generator comprehensive ecosystem collection",
+          "quote": "**Linux**",
+          "retrievedAt": "2026-09-01T05:00:17.201Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-sbom-collector-platforms",
+      "featureId": "inspector2/amazon-inspector-sbom-generator",
+      "id": "inspector2-amazon-inspector-sbom-generator-operatingsystem-linux-recipe-inspector-sbom-collector-platforms",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Linux",
+      "targetLabel": "Linux"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "fd4d4df1c4ea9cff8b9c34681f96526342946287e9a50138c4c2a399aa8c3b61",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md :: Amazon Inspector SBOM Generator comprehensive ecosystem collection",
+          "quote": "**macOS**",
+          "retrievedAt": "2026-09-01T05:00:17.201Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-sbom-collector-platforms",
+      "featureId": "inspector2/amazon-inspector-sbom-generator",
+      "id": "inspector2-amazon-inspector-sbom-generator-operatingsystem-macos-recipe-inspector-sbom-collector-platforms",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "macOS",
+      "targetLabel": "macOS"
+    },
+    {
+      "axis": "operatingSystem",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "fd4d4df1c4ea9cff8b9c34681f96526342946287e9a50138c4c2a399aa8c3b61",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md :: Amazon Inspector SBOM Generator comprehensive ecosystem collection",
           "quote": "**Supported platforms – Windows**",
           "retrievedAt": "2026-09-01T05:00:17.201Z",
           "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md"
@@ -1628,7 +1668,7 @@
     }
   ],
   "featureId": "inspector2/amazon-inspector-sbom-generator",
-  "generatedAt": "2026-09-02T02:33:06.600Z",
+  "generatedAt": "2026-09-02T03:44:05.771Z",
   "serviceId": "inspector2",
   "unresolvedTargets": []
 }

@@ -85,6 +85,8 @@ export class TargetResolver {
   /** service id -> [normalised resource noun, resource type id] */
   private resourceByServiceNoun = new Map<string, [string, string][]>();
   private serviceNamesByLength: { name: string; serviceId: string }[] = [];
+  /** documentation guide path ("accounts/latest/reference") -> service id */
+  private serviceByGuide = new Map<string, string>();
   private aliases: Map<string, string>;
 
   constructor(input: ResolverInput) {
@@ -102,6 +104,16 @@ export class TargetResolver {
           const stripped = key.replace(/^(amazon|aws)\s+/, "").trim();
           if (stripped && !this.serviceByName.has(stripped)) this.serviceByName.set(stripped, service.id);
         }
+      }
+    }
+    // AWS names a service one way in prose and another in a table. What does not
+    // drift is the guide it links to: "AWS Budget Service" and "AWS Budgets" both
+    // point at awsaccountbilling/latest/aboutv2. Indexing the guide path lets a row
+    // resolve by where it links rather than by what it is called.
+    for (const service of input.services) {
+      for (const guide of service.docGuides ?? []) {
+        const path = guidePath(guide.url);
+        if (path && !this.serviceByGuide.has(path)) this.serviceByGuide.set(path, service.id);
       }
     }
     for (const type of input.resourceTypes) {
@@ -126,6 +138,16 @@ export class TargetResolver {
       this.dataSourceByName.set(clean(source.name), source.id);
       for (const alias of source.aliases) this.dataSourceByName.set(clean(alias), source.id);
     }
+    // AWS names a service one way in prose and another in a table. What does not
+    // drift is the guide it links to: "AWS Budget Service" and "AWS Budgets" both
+    // point at awsaccountbilling/latest/aboutv2. Indexing the guide path lets a row
+    // resolve by where it links rather than by what it is called.
+    for (const service of input.services) {
+      for (const guide of service.docGuides ?? []) {
+        const path = guidePath(guide.url);
+        if (path && !this.serviceByGuide.has(path)) this.serviceByGuide.set(path, service.id);
+      }
+    }
     for (const type of input.resourceTypes) {
       const noun = type.cfnTypeName?.split("::")[2] ?? type.serviceReferenceName ?? "";
       if (noun) this.resourceNouns.add(clean(noun.replace(/([a-z0-9])([A-Z])/g, "$1 $2")));
@@ -135,6 +157,16 @@ export class TargetResolver {
     // ec2:CapacityReservation in the RAM tables. Index a form all three collapse to.
     const flatKey = (service: string, noun: string): string =>
       `${service.replace(/[^a-z0-9]/gi, "").toLowerCase()}|${noun.replace(/[^a-z0-9]/gi, "").toLowerCase()}`;
+    // AWS names a service one way in prose and another in a table. What does not
+    // drift is the guide it links to: "AWS Budget Service" and "AWS Budgets" both
+    // point at awsaccountbilling/latest/aboutv2. Indexing the guide path lets a row
+    // resolve by where it links rather than by what it is called.
+    for (const service of input.services) {
+      for (const guide of service.docGuides ?? []) {
+        const path = guidePath(guide.url);
+        if (path && !this.serviceByGuide.has(path)) this.serviceByGuide.set(path, service.id);
+      }
+    }
     for (const type of input.resourceTypes) {
       const parts = type.cfnTypeName?.split("::");
       const candidates: [string, string][] = [];
@@ -147,6 +179,16 @@ export class TargetResolver {
       for (const [svc, noun] of candidates) {
         const key = flatKey(svc, noun);
         if (!this.resourceByFlatKey.has(key)) this.resourceByFlatKey.set(key, type.id);
+      }
+    }
+    // AWS names a service one way in prose and another in a table. What does not
+    // drift is the guide it links to: "AWS Budget Service" and "AWS Budgets" both
+    // point at awsaccountbilling/latest/aboutv2. Indexing the guide path lets a row
+    // resolve by where it links rather than by what it is called.
+    for (const service of input.services) {
+      for (const guide of service.docGuides ?? []) {
+        const path = guidePath(guide.url);
+        if (path && !this.serviceByGuide.has(path)) this.serviceByGuide.set(path, service.id);
       }
     }
     for (const type of input.resourceTypes) {
@@ -245,8 +287,31 @@ export class TargetResolver {
       return split ? { axis: "resourceType", targetId: split, label: text } : undefined;
     };
     const tryService = (): Resolution | undefined => {
-      const id = this.serviceByName.get(key);
-      return id ? { axis: "service", targetId: id, label: text } : undefined;
+      // The IAM services table writes the long name and the short one together:
+      // "Amazon Elastic Compute Cloud (Amazon EC2)". Neither half was ever tried on
+      // its own, so EC2, EBS, ECR, ECS, EFS and EKS all went unresolved. Each
+      // candidate still has to be a service name we hold — this widens the query,
+      // not the universe.
+      const bracket = /^(.*?)\s*\(([^()]+)\)\s*$/.exec(text);
+      const candidates = [key];
+      if (bracket?.[1]) candidates.push(clean(bracket[1]));
+      if (bracket?.[2]) candidates.push(clean(bracket[2]));
+      // Stripping the "AWS "/"Amazon " prefix on the query side was tried and
+      // reverted: AWS lists "Billing and Cost Management" as a name of Budgets, so
+      // "AWS Billing and Cost Management" started resolving to the wrong service.
+      // Where a prefixed name needs to resolve, an alias records it one at a time.
+      // A service principal names a service exactly, and AWS uses it wherever a
+      // table needs an unambiguous identifier: "athena.amazonaws.com". The part
+      // before the suffix is the IAM prefix in almost every case, so try it as an id
+      // and as a name before giving up.
+      const principal = /^([a-z0-9][a-z0-9.-]*)\.amazonaws\.com$/i.exec(text.trim());
+      if (principal?.[1]) candidates.push(clean(principal[1]), clean(principal[1].split(".")[0] ?? ""));
+      for (const candidate of candidates) {
+        if (!candidate) continue;
+        const id = this.serviceByName.get(candidate);
+        if (id) return { axis: "service", targetId: id, label: text };
+      }
+      return undefined;
     };
     const tryDataSource = (): Resolution | undefined => {
       const id = this.dataSourceByName.get(key);
@@ -280,6 +345,16 @@ export class TargetResolver {
    * followed by a resource noun. Strip the longest service name we know, then match
    * the rest against that service's resource types, and finally against all of them.
    */
+  /**
+   * Resolve a service from a documentation link. The IAM services table names 440
+   * services in prose we cannot always match, but every row links to that service's
+   * guide, and the guide path is stable.
+   */
+  resolveByDocUrl(url: string): string | undefined {
+    const path = guidePath(url);
+    return path ? this.serviceByGuide.get(path) : undefined;
+  }
+
   private resolveByServicePrefix(key: string): string | undefined {
     for (const { name, serviceId } of this.serviceNamesByLength) {
       if (name.length < 4 || !key.startsWith(`${name} `)) continue;
@@ -307,4 +382,17 @@ export class TargetResolver {
     }
     return { rate: values.length ? resolved.length / values.length : 0, resolved };
   }
+}
+
+/** "https://docs.aws.amazon.com/accounts/latest/reference/x.html" -> "accounts/latest/reference" */
+function guidePath(url: string | undefined): string | undefined {
+  if (!url) return undefined;
+  const match = /^https?:\/\/docs\.aws\.amazon\.com\/([^?#]+)/i.exec(url.trim());
+  if (!match) return undefined;
+  const parts = (match[1] ?? "").split("/").filter(Boolean);
+  if (parts.length < 2) return undefined;
+  // Drop the page itself; keep the guide it belongs to.
+  const last = parts[parts.length - 1] ?? "";
+  const dirs = /\.(html?|md)$/i.test(last) ? parts.slice(0, -1) : parts;
+  return dirs.length >= 2 ? dirs.join("/").toLowerCase() : undefined;
 }

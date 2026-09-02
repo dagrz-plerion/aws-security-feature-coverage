@@ -29,6 +29,15 @@ export type Expectation = {
     axis: string;
     axisKind: "external" | "catalogue";
     expectedCount: number;
+    /**
+     * How many distinct universe members those rows name, when the two differ.
+     * The IAM services table has 440 rows but names 326 services: Billing alone gets
+     * nine rows. The rows are the page's granularity; the claims are the universe's.
+     * Comparing one against the other reports a drift that is really a unit mismatch,
+     * so when this is set it is what gets compared, and `collapse` says why.
+     */
+    distinctTargets?: number;
+    collapse?: string;
     statuses: string;
     scope?: string;
     reasoning: string;
@@ -89,11 +98,16 @@ export async function checkExpectations(): Promise<{ ok: string[]; drift: string
     for (const wanted of expectation.features) {
       if (wanted.waived) continue;
       const actual = actualByAxis.get(canonical(wanted.axis)) ?? 0;
-      const short = wanted.expectedCount > 0 && actual < wanted.expectedCount * (1 - TOLERANCE);
+      const target = wanted.distinctTargets ?? wanted.expectedCount;
+      const short = target > 0 && actual < target * (1 - TOLERANCE);
       const absent = actual === 0;
       const label = `${expectation.url.split("/").pop()} :: ${wanted.featureName} (${wanted.axis})`;
-      if (absent) unmet.push(`${label}: the page states ${wanted.expectedCount}, we take none`);
-      else if (short) drift.push(`${label}: the page states ${wanted.expectedCount}, we take ${actual}`);
+      const stated =
+        wanted.distinctTargets === undefined
+          ? `${wanted.expectedCount}`
+          : `${wanted.expectedCount} rows naming ${wanted.distinctTargets} ${wanted.axis} values`;
+      if (absent) unmet.push(`${label}: the page states ${stated}, we take none`);
+      else if (short) drift.push(`${label}: the page states ${stated}, we take ${actual}`);
       else ok.push(label);
     }
   }

@@ -32,7 +32,7 @@ export type ReportData = {
   gaps: Gap[];
   conflicts: Conflict[];
   openAxes: { axis: string; count: number }[];
-  axisKinds: Record<string, { kind: string; label: string }>;
+  axisKinds: Record<string, { kind: string; label: string; universe?: string }>;
   sources: {
     url: string;
     serviceId: string;

@@ -310,6 +310,26 @@
         {
           "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
           "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md :: Use a service-linked role (SLR) with ACM",
+          "quote": "| AWS GovCloud (US-East) East | us-gov-east-1 | Yes |",
+          "retrievedAt": "2026-09-01T04:58:48.671Z",
+          "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
+        }
+      ],
+      "extractorId": "recipe:acm-slr-regions",
+      "featureId": "acm/service-linked-roles",
+      "id": "acm-service-linked-roles-region-us-gov-east-1-recipe-acm-slr-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "us-gov-east-1",
+      "targetLabel": "AWS GovCloud (US-East) East"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "14c4afe53aa003cb24b661eda8c0db32220df506d0b13c200322177125ba8100",
+          "locator": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md :: Use a service-linked role (SLR) with ACM",
           "quote": "| AWS GovCloud (US-West) | us-gov-west-1 | Yes |",
           "retrievedAt": "2026-09-01T04:58:48.671Z",
           "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md"
@@ -365,7 +385,7 @@
     }
   ],
   "featureId": "acm/service-linked-roles",
-  "generatedAt": "2026-09-02T02:33:06.600Z",
+  "generatedAt": "2026-09-02T03:44:05.771Z",
   "serviceId": "acm",
   "unresolvedTargets": []
 }

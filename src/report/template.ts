@@ -201,13 +201,25 @@ function axisBar(axis, stats) {
   // construction and means nothing. Show the count, and the coverage only where a
   // statement is scoped to something outside the service.
   if (isCatalogue(axis)) {
-    return '<div class="axisrow"><span class="ratio">' + stats.covered + " published</span>" +
-      (stats.notCovered ? ' <span class="pill manual">' + stats.notCovered + " withdrawn</span>" : "") +
-      (stats.scoped ? ' <span class="chip" title="statements scoped to a Region or similar">' + stats.scoped + " scoped</span>" : "") +
-      "</div>";
+    // A count, and nothing that looks like a measurement. Saying how much of its own
+    // catalogue a service covers is always 100%, and saying how many members are
+    // available where is a claim about each member, which would need a row each.
+    return '<div class="axisrow"><span class="ratio">' + (stats.count ?? stats.total) + " published</span></div>";
   }
   const unstated = Math.max(0, total - stats.covered - stats.notCovered - stats.partial);
   const pc = (v) => (v / total * 100).toFixed(3) + "%";
+  // Some pages state only the exceptions. GuardDuty names the two Regions a finding
+  // type is missing from and says nothing about the other 44. Rendering that as
+  // "0/46" reads as unavailable everywhere, which is the opposite of what the page
+  // says. Where there is nothing stated as covered, report the exclusions as
+  // exclusions.
+  if (!stats.covered && !stats.partial && stats.notCovered) {
+    return '<div class="axisrow"><div class="bar" title="' + stats.notCovered +
+      " stated as not covered, " + unstated + " not stated, out of " + total + " known " + axis +
+      ' values. The page states exceptions only.">' +
+      '<i class="n" style="width:' + pc(stats.notCovered) + '"></i></div>' +
+      '<span class="ratio">' + stats.notCovered + " excluded of " + total + "</span></div>";
+  }
   const title = stats.covered + " stated as covered, " + stats.partial + " partial, " + stats.notCovered +
     " stated as not covered, " + unstated + " not stated, out of " + total + " known " + axis + " values" +
     (stats.scoped ? " · " + stats.scoped + " statements are scoped to a Region or similar" : "");

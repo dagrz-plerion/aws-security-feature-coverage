@@ -70,6 +70,26 @@
         {
           "bodySha256": "030b9fc5fd0e17dabc7754a987b2e55e53dc840fd7ca1da87eb542ece30cd5ee",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md :: List of resources that AWS Shield Advanced protects",
+          "quote": "NAT Gateways handle outbound traffic only, whereas Shield Advanced protects against inbound DDoS. For outbound traffic protection, use [AWS Network Firewall](https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html).",
+          "retrievedAt": "2026-09-01T05:00:48.065Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
+        }
+      ],
+      "extractorId": "recipe:shield-advanced-unprotected-resources",
+      "featureId": "shield/aws-shield-advanced",
+      "id": "shield-aws-shield-advanced-resourcetype-aws-ec2-natgateway-recipe-shield-advanced-unprotected-resources",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "AWS::EC2::NatGateway",
+      "targetLabel": "NAT Gateways handle outbound traffic only, whereas Shield Advanced protects against inbound DDoS."
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "030b9fc5fd0e17dabc7754a987b2e55e53dc840fd7ca1da87eb542ece30cd5ee",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md :: List of resources that AWS Shield Advanced protects",
           "quote": "+ Classic Load Balancers.",
           "retrievedAt": "2026-09-01T05:00:48.065Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
@@ -93,15 +113,23 @@
           "quote": "+ Application Load Balancers.",
           "retrievedAt": "2026-09-01T05:00:48.065Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
+        },
+        {
+          "bodySha256": "030b9fc5fd0e17dabc7754a987b2e55e53dc840fd7ca1da87eb542ece30cd5ee",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md :: List of resources that AWS Shield Advanced protects",
+          "quote": "You can't use Shield Advanced to protect any other resource type. For example, you can't protect AWS Global Accelerator custom routing accelerators or Gateway Load Balancers.",
+          "retrievedAt": "2026-09-01T05:00:48.065Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
         }
       ],
       "extractorId": "recipe:shield-advanced-protected-resources",
       "featureId": "shield/aws-shield-advanced",
       "id": "shield-aws-shield-advanced-resourcetype-aws-elasticloadbalancingv2-loadbalancer-recipe-shield-advanced-protected-resourc",
       "method": "deterministic",
-      "status": "covered",
+      "qualifier": "AWS states both covered and not-covered for this target; see the quotes",
+      "status": "partial",
       "targetId": "AWS::ElasticLoadBalancingV2::LoadBalancer",
-      "targetLabel": "Application Load Balancers."
+      "targetLabel": "Application Load Balancers.; Network Load Balancers, through associations to Amazon EC2 Elastic IP addresses."
     },
     {
       "axis": "resourceType",
@@ -113,13 +141,21 @@
           "quote": "+ AWS Global Accelerator standard accelerators.",
           "retrievedAt": "2026-09-01T05:00:48.065Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
+        },
+        {
+          "bodySha256": "030b9fc5fd0e17dabc7754a987b2e55e53dc840fd7ca1da87eb542ece30cd5ee",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md :: List of resources that AWS Shield Advanced protects",
+          "quote": "You can't use Shield Advanced to protect any other resource type. For example, you can't protect AWS Global Accelerator custom routing accelerators or Gateway Load Balancers.",
+          "retrievedAt": "2026-09-01T05:00:48.065Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
         }
       ],
       "extractorId": "recipe:shield-advanced-protected-resources",
       "featureId": "shield/aws-shield-advanced",
       "id": "shield-aws-shield-advanced-resourcetype-aws-globalaccelerator-accelerator-recipe-shield-advanced-protected-resources",
       "method": "deterministic",
-      "status": "covered",
+      "qualifier": "AWS states both covered and not-covered for this target; see the quotes",
+      "status": "partial",
       "targetId": "AWS::GlobalAccelerator::Accelerator",
       "targetLabel": "AWS Global Accelerator standard accelerators."
     },
@@ -145,7 +181,7 @@
     }
   ],
   "featureId": "shield/aws-shield-advanced",
-  "generatedAt": "2026-09-02T02:33:06.600Z",
+  "generatedAt": "2026-09-02T03:44:05.771Z",
   "serviceId": "shield",
   "unresolvedTargets": []
 }

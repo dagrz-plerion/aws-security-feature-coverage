@@ -90,7 +90,8 @@
     },
     "partition": {
       "kind": "external",
-      "label": "AWS partitions"
+      "label": "AWS partitions",
+      "universe": "partitions"
     },
     "policyType": {
       "kind": "catalogue",
@@ -102,7 +103,8 @@
     },
     "region": {
       "kind": "external",
-      "label": "AWS Regions"
+      "label": "AWS Regions",
+      "universe": "regions"
     },
     "resourceTarget": {
       "kind": "external",
@@ -153,7 +155,36 @@
       "label": "WordPress component types the scanner reads"
     }
   },
-  "conflicts": [],
+  "conflicts": [
+    {
+      "axis": "resourceType",
+      "featureId": "shield/aws-shield-advanced",
+      "id": "shield-aws-shield-advanced-resourcetype-aws-elasticloadbalancingv2-loadbalancer",
+      "sources": [
+        "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md",
+        "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
+      ],
+      "statuses": [
+        "covered (recipe:shield-advanced-protected-resources)",
+        "not-covered (recipe:shield-advanced-unprotected-resources)"
+      ],
+      "targetId": "AWS::ElasticLoadBalancingV2::LoadBalancer"
+    },
+    {
+      "axis": "resourceType",
+      "featureId": "shield/aws-shield-advanced",
+      "id": "shield-aws-shield-advanced-resourcetype-aws-globalaccelerator-accelerator",
+      "sources": [
+        "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md",
+        "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md"
+      ],
+      "statuses": [
+        "covered (recipe:shield-advanced-protected-resources)",
+        "not-covered (recipe:shield-advanced-unprotected-resources)"
+      ],
+      "targetId": "AWS::GlobalAccelerator::Accelerator"
+    }
+  ],
   "features": [
     {
       "axes": {},
@@ -208,8 +239,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 15,
-          "unknown": 0
+          "total": 3134,
+          "unknown": 3119
         }
       },
       "claimCount": 15,
@@ -322,8 +353,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 6,
-          "unknown": 0
+          "total": 3134,
+          "unknown": 3128
         }
       },
       "claimCount": 6,
@@ -1052,8 +1083,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 29,
-          "unknown": 0
+          "total": 46,
+          "unknown": 17
         }
       },
       "claimCount": 29,
@@ -1484,15 +1515,15 @@
     {
       "axes": {
         "region": {
-          "covered": 18,
+          "covered": 19,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 18,
-          "unknown": 0
+          "total": 46,
+          "unknown": 27
         }
       },
-      "claimCount": 18,
+      "claimCount": 19,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -1525,6 +1556,7 @@
           "sa-east-1",
           "us-east-1",
           "us-east-2",
+          "us-gov-east-1",
           "us-gov-west-1",
           "us-west-1",
           "us-west-2"
@@ -2289,7 +2321,8 @@
     {
       "axes": {
         "auditFramework": {
-          "covered": 29,
+          "count": 29,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -4398,8 +4431,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 16,
-          "total": 8,
-          "unknown": 0
+          "total": 136,
+          "unknown": 128
         }
       },
       "claimCount": 16,
@@ -5573,8 +5606,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 30,
-          "unknown": 0
+          "total": 46,
+          "unknown": 16
         }
       },
       "claimCount": 30,
@@ -6123,7 +6156,8 @@
     {
       "axes": {
         "selectorField": {
-          "covered": 6,
+          "count": 6,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -6131,15 +6165,15 @@
           "unknown": 0
         },
         "service": {
-          "covered": 59,
+          "covered": 72,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 59,
-          "unknown": 0
+          "total": 526,
+          "unknown": 454
         }
       },
-      "claimCount": 65,
+      "claimCount": 78,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -6165,8 +6199,9 @@
           "vpcEndpointId"
         ],
         "service": [
-          "api.tunneling.iot",
+          "aco-automation",
           "appconfig",
+          "application-signals",
           "appmesh",
           "athena",
           "b2bi",
@@ -6174,6 +6209,8 @@
           "bcm-data-exports",
           "bcm-pricing-calculator",
           "bedrock",
+          "bedrock-agentcore",
+          "billing",
           "cassandra",
           "ce",
           "cloudcontrolapi",
@@ -6182,6 +6219,7 @@
           "cloudtrail",
           "cloudwatch",
           "codedeploy",
+          "comprehend",
           "comprehendmedical",
           "config",
           "ds",
@@ -6189,6 +6227,7 @@
           "ec2",
           "ecs",
           "elasticfilesystem",
+          "elasticloadbalancing",
           "events",
           "firehose",
           "frauddetector",
@@ -6197,17 +6236,20 @@
           "glue",
           "healthlake",
           "invoicing",
+          "iot",
           "iotfleetwise",
           "kms",
           "lakeformation",
           "lambda",
           "license-manager",
           "lookoutequipment",
+          "lookoutvision",
+          "nova-act",
           "personalize",
-          "product:amazon-lookout-for-vision",
           "qbusiness",
           "rds",
           "rekognition",
+          "rolesanywhere",
           "s3",
           "sagemaker",
           "scheduler",
@@ -6215,15 +6257,20 @@
           "servicediscovery",
           "sns",
           "sqs",
-          "ssm-incidents",
+          "ssm",
+          "ssm-contacts",
           "storagegateway",
           "swf",
           "textract",
           "transcribe",
           "transform",
+          "transform-custom",
           "translate",
+          "user-subscriptions",
           "verifiedpermissions",
-          "workmail"
+          "voiceid",
+          "workmail",
+          "workmailmessageflow"
         ]
       },
       "tier": "tier1",
@@ -8311,15 +8358,24 @@
     {
       "axes": {
         "configRule": {
-          "covered": 828,
+          "count": 822,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
-          "scoped": 21391,
-          "total": 828,
+          "scoped": 0,
+          "total": 822,
           "unknown": 0
+        },
+        "region": {
+          "covered": 38,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 46,
+          "unknown": 8
         }
       },
-      "claimCount": 22213,
+      "claimCount": 860,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -8485,7 +8541,6 @@
           "clb-desync-mode-check",
           "clb-multiple-az",
           "cloud-trail-cloud-watch-logs-enabled",
-          "cloud-trail-enabled",
           "cloud-trail-encryption-enabled",
           "cloud-trail-log-file-validation-enabled",
           "cloudformation-stack-drift-detection-check",
@@ -8617,7 +8672,6 @@
           "ec2-imdsv2-check",
           "ec2-instance-detailed-monitoring-enabled",
           "ec2-instance-launched-with-allowed-ami",
-          "ec2-instance-managed-by-ssm",
           "ec2-instance-managed-by-systems-manager",
           "ec2-instance-multiple-eni-check",
           "ec2-instance-no-public-ip",
@@ -8825,12 +8879,10 @@
           "imagebuilder-imagerecipe-ebs-volumes-encrypted",
           "imagebuilder-imagerecipe-tagged",
           "imagebuilder-infrastructureconfiguration-tagged",
-          "incoming-ssh-disabled",
           "inspector-ec2-scan-enabled",
           "inspector-ecr-scan-enabled",
           "inspector-lambda-code-scan-enabled",
           "inspector-lambda-standard-scan-enabled",
-          "instances-in-vpc",
           "internet-gateway-authorized-vpc-only",
           "iot-authorizer-token-signing-enabled",
           "iot-job-template-tagged",
@@ -8908,7 +8960,6 @@
           "msk-enhanced-monitoring-enabled",
           "msk-in-cluster-node-require-tls",
           "msk-unrestricted-access-check",
-          "multi-region-cloud-trail-enabled",
           "multi-region-cloudtrail-enabled",
           "nacl-no-unrestricted-ssh-rdp",
           "neptune-cluster-backup-retention-check",
@@ -9012,7 +9063,6 @@
           "resiliencehub-app-tagged",
           "resiliencehub-resiliencypolicy-tagged",
           "restricted-common-ports",
-          "restricted-incoming-traffic",
           "restricted-ssh",
           "root-account-hardware-mfa-enabled",
           "root-account-mfa-enabled",
@@ -9166,6 +9216,46 @@
           "workspaces-root-volume-encryption-enabled",
           "workspaces-user-volume-encryption-enabled",
           "workspaces-workspace-tagged"
+        ],
+        "region": [
+          "af-south-1",
+          "ap-east-1",
+          "ap-east-2",
+          "ap-northeast-1",
+          "ap-northeast-2",
+          "ap-northeast-3",
+          "ap-south-1",
+          "ap-south-2",
+          "ap-southeast-1",
+          "ap-southeast-2",
+          "ap-southeast-3",
+          "ap-southeast-4",
+          "ap-southeast-5",
+          "ap-southeast-6",
+          "ap-southeast-7",
+          "ca-central-1",
+          "ca-west-1",
+          "cn-north-1",
+          "cn-northwest-1",
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3",
+          "il-central-1",
+          "me-central-1",
+          "me-south-1",
+          "mx-central-1",
+          "sa-east-1",
+          "us-east-1",
+          "us-east-2",
+          "us-gov-east-1",
+          "us-gov-west-1",
+          "us-west-1",
+          "us-west-2"
         ]
       },
       "tier": "tier1",
@@ -9489,8 +9579,8 @@
           "notCovered": 477,
           "partial": 0,
           "scoped": 17954,
-          "total": 632,
-          "unknown": 0
+          "total": 3134,
+          "unknown": 2502
         }
       },
       "claimCount": 18539,
@@ -12230,8 +12320,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 27,
-          "unknown": 0
+          "total": 46,
+          "unknown": 19
         }
       },
       "claimCount": 27,
@@ -17557,7 +17647,8 @@
     {
       "axes": {
         "findingType": {
-          "covered": 3,
+          "count": 3,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -17600,8 +17691,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 3,
-          "unknown": 0
+          "total": 23,
+          "unknown": 20
         }
       },
       "claimCount": 3,
@@ -17820,7 +17911,8 @@
     {
       "axes": {
         "findingType": {
-          "covered": 33,
+          "count": 33,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -17979,7 +18071,8 @@
     {
       "axes": {
         "findingType": {
-          "covered": 5,
+          "count": 5,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -18102,8 +18195,9 @@
     {
       "axes": {
         "findingType": {
-          "covered": 88,
-          "notCovered": 21,
+          "count": 109,
+          "covered": 0,
+          "notCovered": 0,
           "partial": 0,
           "scoped": 0,
           "total": 109,
@@ -18114,8 +18208,8 @@
           "notCovered": 2,
           "partial": 0,
           "scoped": 0,
-          "total": 2,
-          "unknown": 0
+          "total": 46,
+          "unknown": 44
         }
       },
       "claimCount": 111,
@@ -18259,7 +18353,8 @@
     {
       "axes": {
         "findingType": {
-          "covered": 60,
+          "count": 60,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -18415,7 +18510,8 @@
     {
       "axes": {
         "findingType": {
-          "covered": 7,
+          "count": 7,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -18479,7 +18575,8 @@
     {
       "axes": {
         "findingType": {
-          "covered": 4,
+          "count": 4,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -18517,7 +18614,8 @@
     {
       "axes": {
         "findingType": {
-          "covered": 8,
+          "count": 8,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -18789,7 +18887,8 @@
     {
       "axes": {
         "findingType": {
-          "covered": 9,
+          "count": 9,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -18943,7 +19042,8 @@
     {
       "axes": {
         "findingType": {
-          "covered": 46,
+          "count": 46,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -19379,15 +19479,15 @@
     {
       "axes": {
         "service": {
-          "covered": 288,
+          "covered": 328,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 288,
-          "unknown": 0
+          "total": 526,
+          "unknown": 198
         }
       },
-      "claimCount": 288,
+      "claimCount": 328,
       "confidence": 1,
       "discoveredBy": [
         "declared"
@@ -19405,8 +19505,10 @@
       "summary": "Whether a service publishes IAM actions that a policy can allow or deny.",
       "targets": {
         "service": [
+          "account",
           "account-access",
           "acm",
+          "acm-pca",
           "aiops",
           "amplify",
           "amplifyuibuilder",
@@ -19428,6 +19530,7 @@
           "athena",
           "auditmanager",
           "autoscaling",
+          "aws-marketplace",
           "b2bi",
           "backup",
           "backup-gateway",
@@ -19439,11 +19542,13 @@
           "bcm-recommended-actions",
           "bedrock",
           "bedrock-agentcore",
+          "billing",
           "billingconductor",
           "braket",
           "cassandra",
           "catalog.marketplace",
           "ce",
+          "chatbot",
           "chime",
           "cleanrooms",
           "cleanrooms-ml",
@@ -19472,6 +19577,7 @@
           "codestar-notifications",
           "codewhisperer",
           "cognito-identity",
+          "cognito-idp",
           "cognito-sync",
           "comprehend",
           "comprehendmedical",
@@ -19480,6 +19586,7 @@
           "connect",
           "controlcatalog",
           "controltower",
+          "cost-optimization-hub",
           "databrew",
           "dataexchange",
           "datapipeline",
@@ -19496,18 +19603,30 @@
           "discovery-marketplace",
           "dlm",
           "dms",
+          "doc:consolemobileapp",
+          "doc:marketplace",
+          "doc:microservice-extractor",
+          "doc:r53recovery",
           "docdb-elastic",
           "drs",
           "ds",
           "ds-data",
           "dsql",
           "dynamodb",
+          "ebs",
+          "ec2",
           "ec2-instance-connect",
+          "ecr",
+          "ecr-public",
+          "ecs",
           "eks",
           "elasticache",
           "elasticbeanstalk",
+          "elasticfilesystem",
+          "elasticloadbalancing",
           "elasticmapreduce",
           "elastictranscoder",
+          "elemental-appliances-software",
           "email",
           "emr-serverless",
           "entitlement.marketplace",
@@ -19541,6 +19660,7 @@
           "imagebuilder",
           "importexport",
           "inspector",
+          "inspector2",
           "internetmonitor",
           "invoicing",
           "iot",
@@ -19557,7 +19677,9 @@
           "kendra",
           "kendra-ranking",
           "kinesis",
+          "kinesisanalytics",
           "kinesisvideo",
+          "kms",
           "lakeformation",
           "lambda",
           "launchwizard",
@@ -19579,10 +19701,12 @@
           "mediapackage-vod",
           "mediastore",
           "mediatailor",
+          "medical-imaging",
           "memorydb",
           "mgh",
           "mgn",
           "migrationhub-orchestrator",
+          "migrationhub-strategy",
           "monitron",
           "mpa",
           "mq",
@@ -19602,6 +19726,7 @@
           "osis",
           "outposts",
           "panorama",
+          "partnercentral",
           "payment-cryptography",
           "pca-connector-ad",
           "pcs",
@@ -19614,16 +19739,21 @@
           "product:amazon-lookout-for-vision",
           "product:amazon-managed-streaming-for-apache-kafka-msk",
           "product:amazon-managed-workflows-for-apache-airflow-mwaa",
+          "product:amazon-quantum-ledger-database-qldb",
           "product:aws-app2container",
           "product:aws-cost-and-usage-report",
           "product:aws-deepcomposer",
           "product:aws-deepracer",
+          "product:aws-management-console",
           "product:aws-private-5g",
           "product:aws-privatelink",
+          "product:aws-vpn",
           "proton",
           "qbusiness",
           "qdeveloper",
           "quicksight",
+          "ram",
+          "rbin",
           "rds",
           "redshift",
           "redshift-data",
@@ -19637,9 +19767,12 @@
           "resource-explorer-2",
           "resource-groups",
           "robomaker",
+          "rolesanywhere",
           "route53",
           "route53domains",
           "route53resolver",
+          "rtbfabric",
+          "s3",
           "s3tables",
           "s3vectors",
           "sagemaker",
@@ -19655,12 +19788,16 @@
           "servicecatalog",
           "servicediscovery",
           "servicequotas",
+          "ses",
           "shield",
           "signin",
           "simspaceweaver",
+          "sms-voice",
           "sms-voice.pinpoint",
           "snowball",
+          "sns",
           "social-messaging",
+          "sqs",
           "ssm",
           "ssm-contacts",
           "ssm-guiconnect",
@@ -19669,9 +19806,11 @@
           "sso",
           "states",
           "storagegateway",
+          "sts",
           "support",
           "supportapp",
           "sustainability",
+          "swf",
           "tagging",
           "textract",
           "thinclient",
@@ -19686,6 +19825,7 @@
           "vpc-lattice",
           "waf",
           "waf-regional",
+          "wafv2",
           "wellarchitected",
           "wickr",
           "workmail",
@@ -19792,15 +19932,15 @@
     {
       "axes": {
         "service": {
-          "covered": 210,
-          "notCovered": 65,
-          "partial": 0,
+          "covered": 214,
+          "notCovered": 75,
+          "partial": 27,
           "scoped": 0,
-          "total": 275,
-          "unknown": 0
+          "total": 526,
+          "unknown": 210
         }
       },
-      "claimCount": 275,
+      "claimCount": 316,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -19818,9 +19958,12 @@
       "summary": "Implement a strategy that uses SAML session tags and resource tags for permissions management.",
       "targets": {
         "service": [
+          "account",
           "account-access",
           "acm",
+          "acm-pca",
           "aiops",
+          "amplify",
           "amplifyuibuilder",
           "aoss",
           "apigateway",
@@ -19840,6 +19983,7 @@
           "athena",
           "auditmanager",
           "autoscaling",
+          "aws-marketplace",
           "b2bi",
           "backup",
           "backup-gateway",
@@ -19850,11 +19994,13 @@
           "bcm-pricing-calculator",
           "bcm-recommended-actions",
           "bedrock",
+          "billing",
           "billingconductor",
           "braket",
           "cassandra",
           "catalog.marketplace",
           "ce",
+          "chatbot",
           "chime",
           "cleanrooms",
           "cleanrooms-ml",
@@ -19881,6 +20027,7 @@
           "codestar-notifications",
           "codewhisperer",
           "cognito-identity",
+          "cognito-idp",
           "cognito-sync",
           "comprehend",
           "comprehendmedical",
@@ -19889,6 +20036,7 @@
           "connect",
           "controlcatalog",
           "controltower",
+          "cost-optimization-hub",
           "databrew",
           "dataexchange",
           "datasync",
@@ -19904,18 +20052,28 @@
           "discovery-marketplace",
           "dlm",
           "dms",
+          "doc:consolemobileapp",
+          "doc:marketplace",
+          "doc:microservice-extractor",
+          "doc:r53recovery",
           "docdb-elastic",
           "drs",
           "ds",
           "ds-data",
           "dsql",
           "dynamodb",
+          "ebs",
+          "ec2",
           "ec2-instance-connect",
+          "ecr",
+          "ecr-public",
+          "ecs",
           "eks",
           "elasticache",
           "elasticbeanstalk",
           "elasticmapreduce",
           "elastictranscoder",
+          "elemental-appliances-software",
           "email",
           "emr-serverless",
           "entitlement.marketplace",
@@ -19942,9 +20100,11 @@
           "guardduty",
           "health",
           "healthlake",
+          "iam",
           "imagebuilder",
           "importexport",
           "inspector",
+          "inspector2",
           "internetmonitor",
           "invoicing",
           "iot",
@@ -19961,7 +20121,9 @@
           "kendra",
           "kendra-ranking",
           "kinesis",
+          "kinesisanalytics",
           "kinesisvideo",
+          "kms",
           "lakeformation",
           "launchwizard",
           "lex",
@@ -19981,10 +20143,12 @@
           "mediapackage-vod",
           "mediastore",
           "mediatailor",
+          "medical-imaging",
           "memorydb",
           "mgh",
           "mgn",
           "migrationhub-orchestrator",
+          "migrationhub-strategy",
           "monitron",
           "mq",
           "mturk-requester",
@@ -20003,6 +20167,7 @@
           "osis",
           "outposts",
           "panorama",
+          "partnercentral",
           "payment-cryptography",
           "pca-connector-ad",
           "pcs",
@@ -20015,16 +20180,21 @@
           "product:amazon-lookout-for-vision",
           "product:amazon-managed-streaming-for-apache-kafka-msk",
           "product:amazon-managed-workflows-for-apache-airflow-mwaa",
+          "product:amazon-quantum-ledger-database-qldb",
           "product:aws-app2container",
           "product:aws-cost-and-usage-report",
           "product:aws-deepcomposer",
           "product:aws-deepracer",
+          "product:aws-management-console",
           "product:aws-private-5g",
           "product:aws-privatelink",
+          "product:aws-vpn",
           "proton",
           "qbusiness",
           "qdeveloper",
           "quicksight",
+          "ram",
+          "rbin",
           "rds",
           "redshift",
           "redshift-data",
@@ -20038,9 +20208,12 @@
           "resource-explorer-2",
           "resource-groups",
           "robomaker",
+          "rolesanywhere",
           "route53",
           "route53domains",
           "route53resolver",
+          "rtbfabric",
+          "s3",
           "s3tables",
           "s3vectors",
           "sagemaker",
@@ -20056,22 +20229,29 @@
           "servicecatalog",
           "servicediscovery",
           "servicequotas",
+          "ses",
           "shield",
           "signin",
           "simspaceweaver",
+          "sms-voice",
           "sms-voice.pinpoint",
           "snowball",
+          "sns",
           "social-messaging",
+          "sqs",
           "ssm",
           "ssm-contacts",
           "ssm-guiconnect",
           "ssm-incidents",
           "ssm-sap",
+          "sso",
           "states",
           "storagegateway",
+          "sts",
           "support",
           "supportapp",
           "sustainability",
+          "swf",
           "tagging",
           "textract",
           "thinclient",
@@ -20087,6 +20267,7 @@
           "vpc-lattice",
           "waf",
           "waf-regional",
+          "wafv2",
           "wellarchitected",
           "wickr",
           "workmail",
@@ -21058,15 +21239,15 @@
     {
       "axes": {
         "service": {
-          "covered": 22,
-          "notCovered": 261,
-          "partial": 0,
+          "covered": 24,
+          "notCovered": 295,
+          "partial": 8,
           "scoped": 0,
-          "total": 283,
-          "unknown": 0
+          "total": 526,
+          "unknown": 199
         }
       },
-      "claimCount": 283,
+      "claimCount": 327,
       "confidence": 1,
       "discoveredBy": [
         "declared"
@@ -21084,8 +21265,10 @@
       "summary": "Whether a service supports a policy attached to the resource itself, granting access across accounts.",
       "targets": {
         "service": [
+          "account",
           "account-access",
           "acm",
+          "acm-pca",
           "aiops",
           "amplify",
           "amplifyuibuilder",
@@ -21107,6 +21290,7 @@
           "athena",
           "auditmanager",
           "autoscaling",
+          "aws-marketplace",
           "b2bi",
           "backup",
           "backup-gateway",
@@ -21118,11 +21302,13 @@
           "bcm-recommended-actions",
           "bedrock",
           "bedrock-agentcore",
+          "billing",
           "billingconductor",
           "braket",
           "cassandra",
           "catalog.marketplace",
           "ce",
+          "chatbot",
           "chime",
           "cleanrooms",
           "cleanrooms-ml",
@@ -21135,6 +21321,7 @@
           "cloudhsm",
           "cloudsearch",
           "cloudshell",
+          "cloudtrail",
           "cloudwatch",
           "codeartifact",
           "codebuild",
@@ -21150,6 +21337,7 @@
           "codestar-notifications",
           "codewhisperer",
           "cognito-identity",
+          "cognito-idp",
           "cognito-sync",
           "comprehend",
           "comprehendmedical",
@@ -21158,6 +21346,7 @@
           "connect",
           "controlcatalog",
           "controltower",
+          "cost-optimization-hub",
           "databrew",
           "dataexchange",
           "datapipeline",
@@ -21174,18 +21363,30 @@
           "discovery-marketplace",
           "dlm",
           "dms",
+          "doc:consolemobileapp",
+          "doc:marketplace",
+          "doc:microservice-extractor",
+          "doc:r53recovery",
           "docdb-elastic",
           "drs",
           "ds",
           "ds-data",
           "dsql",
           "dynamodb",
+          "ebs",
+          "ec2",
           "ec2-instance-connect",
+          "ecr",
+          "ecr-public",
+          "ecs",
           "eks",
           "elasticache",
           "elasticbeanstalk",
+          "elasticfilesystem",
+          "elasticloadbalancing",
           "elasticmapreduce",
           "elastictranscoder",
+          "elemental-appliances-software",
           "email",
           "emr-serverless",
           "entitlement.marketplace",
@@ -21214,9 +21415,11 @@
           "health",
           "health-agent",
           "healthlake",
+          "iam",
           "imagebuilder",
           "importexport",
           "inspector",
+          "inspector2",
           "internetmonitor",
           "invoicing",
           "iot",
@@ -21233,7 +21436,9 @@
           "kendra",
           "kendra-ranking",
           "kinesis",
+          "kinesisanalytics",
           "kinesisvideo",
+          "kms",
           "lakeformation",
           "lambda",
           "launchwizard",
@@ -21255,10 +21460,12 @@
           "mediapackage-vod",
           "mediastore",
           "mediatailor",
+          "medical-imaging",
           "memorydb",
           "mgh",
           "mgn",
           "migrationhub-orchestrator",
+          "migrationhub-strategy",
           "monitron",
           "mpa",
           "mq",
@@ -21278,6 +21485,7 @@
           "osis",
           "outposts",
           "panorama",
+          "partnercentral",
           "payment-cryptography",
           "pca-connector-ad",
           "pcs",
@@ -21288,17 +21496,23 @@
           "polly",
           "product:amazon-lookout-for-metrics",
           "product:amazon-lookout-for-vision",
+          "product:amazon-managed-streaming-for-apache-kafka-msk",
           "product:amazon-managed-workflows-for-apache-airflow-mwaa",
+          "product:amazon-quantum-ledger-database-qldb",
           "product:aws-app2container",
           "product:aws-cost-and-usage-report",
           "product:aws-deepcomposer",
           "product:aws-deepracer",
+          "product:aws-management-console",
           "product:aws-private-5g",
           "product:aws-privatelink",
+          "product:aws-vpn",
           "proton",
           "qbusiness",
           "qdeveloper",
           "quicksight",
+          "ram",
+          "rbin",
           "rds",
           "redshift",
           "redshift-data",
@@ -21311,9 +21525,12 @@
           "resource-explorer-2",
           "resource-groups",
           "robomaker",
+          "rolesanywhere",
           "route53",
           "route53domains",
           "route53resolver",
+          "rtbfabric",
+          "s3",
           "s3tables",
           "s3vectors",
           "sagemaker",
@@ -21329,12 +21546,17 @@
           "servicecatalog",
           "servicediscovery",
           "servicequotas",
+          "ses",
           "shield",
           "signin",
           "simspaceweaver",
+          "sms-voice",
           "sms-voice.pinpoint",
           "snowball",
+          "sns",
           "social-messaging",
+          "sqs",
+          "ssm",
           "ssm-contacts",
           "ssm-guiconnect",
           "ssm-incidents",
@@ -21342,9 +21564,11 @@
           "sso",
           "states",
           "storagegateway",
+          "sts",
           "support",
           "supportapp",
           "sustainability",
+          "swf",
           "tagging",
           "textract",
           "thinclient",
@@ -21360,6 +21584,7 @@
           "vpc-lattice",
           "waf",
           "waf-regional",
+          "wafv2",
           "wellarchitected",
           "wickr",
           "workmail",
@@ -21375,15 +21600,15 @@
     {
       "axes": {
         "service": {
-          "covered": 250,
-          "notCovered": 32,
-          "partial": 0,
+          "covered": 263,
+          "notCovered": 40,
+          "partial": 15,
           "scoped": 0,
-          "total": 282,
-          "unknown": 0
+          "total": 526,
+          "unknown": 208
         }
       },
-      "claimCount": 282,
+      "claimCount": 318,
       "confidence": 1,
       "discoveredBy": [
         "declared"
@@ -21401,8 +21626,10 @@
       "summary": "Whether a service lets a policy name individual resources by ARN rather than only *.",
       "targets": {
         "service": [
+          "account",
           "account-access",
           "acm",
+          "acm-pca",
           "aiops",
           "amplify",
           "amplifyuibuilder",
@@ -21424,6 +21651,7 @@
           "athena",
           "auditmanager",
           "autoscaling",
+          "aws-marketplace",
           "b2bi",
           "backup",
           "backup-gateway",
@@ -21434,11 +21662,13 @@
           "bcm-recommended-actions",
           "bedrock",
           "bedrock-agentcore",
+          "billing",
           "billingconductor",
           "braket",
           "cassandra",
           "catalog.marketplace",
           "ce",
+          "chatbot",
           "chime",
           "cleanrooms",
           "cleanrooms-ml",
@@ -21465,6 +21695,7 @@
           "codestar-notifications",
           "codewhisperer",
           "cognito-identity",
+          "cognito-idp",
           "cognito-sync",
           "comprehend",
           "comprehendmedical",
@@ -21472,6 +21703,7 @@
           "connect",
           "controlcatalog",
           "controltower",
+          "cost-optimization-hub",
           "databrew",
           "dataexchange",
           "datapipeline",
@@ -21488,17 +21720,26 @@
           "discovery-marketplace",
           "dlm",
           "dms",
+          "doc:consolemobileapp",
+          "doc:marketplace",
+          "doc:microservice-extractor",
+          "doc:r53recovery",
           "docdb-elastic",
           "drs",
           "ds",
           "ds-data",
           "dsql",
           "dynamodb",
+          "ec2",
           "ec2-instance-connect",
+          "ecr",
+          "ecr-public",
           "eks",
           "elasticache",
+          "elasticfilesystem",
           "elasticmapreduce",
           "elastictranscoder",
+          "elemental-appliances-software",
           "email",
           "emr-serverless",
           "entitlement.marketplace",
@@ -21532,6 +21773,7 @@
           "imagebuilder",
           "importexport",
           "inspector",
+          "inspector2",
           "internetmonitor",
           "invoicing",
           "iot",
@@ -21548,7 +21790,9 @@
           "kendra",
           "kendra-ranking",
           "kinesis",
+          "kinesisanalytics",
           "kinesisvideo",
+          "kms",
           "lakeformation",
           "lambda",
           "launchwizard",
@@ -21569,10 +21813,12 @@
           "mediapackage-vod",
           "mediastore",
           "mediatailor",
+          "medical-imaging",
           "memorydb",
           "mgh",
           "mgn",
           "migrationhub-orchestrator",
+          "migrationhub-strategy",
           "monitron",
           "mpa",
           "mq",
@@ -21592,6 +21838,7 @@
           "osis",
           "outposts",
           "panorama",
+          "partnercentral",
           "payment-cryptography",
           "pca-connector-ad",
           "pcs",
@@ -21604,16 +21851,21 @@
           "product:amazon-lookout-for-vision",
           "product:amazon-managed-streaming-for-apache-kafka-msk",
           "product:amazon-managed-workflows-for-apache-airflow-mwaa",
+          "product:amazon-quantum-ledger-database-qldb",
           "product:aws-app2container",
           "product:aws-cost-and-usage-report",
           "product:aws-deepcomposer",
           "product:aws-deepracer",
+          "product:aws-management-console",
           "product:aws-private-5g",
           "product:aws-privatelink",
+          "product:aws-vpn",
           "proton",
           "qbusiness",
           "qdeveloper",
           "quicksight",
+          "ram",
+          "rbin",
           "rds",
           "redshift",
           "redshift-data",
@@ -21627,9 +21879,12 @@
           "resource-explorer-2",
           "resource-groups",
           "robomaker",
+          "rolesanywhere",
           "route53",
           "route53domains",
           "route53resolver",
+          "rtbfabric",
+          "s3",
           "s3tables",
           "s3vectors",
           "sagemaker",
@@ -21645,12 +21900,16 @@
           "servicecatalog",
           "servicediscovery",
           "servicequotas",
+          "ses",
           "shield",
           "signin",
           "simspaceweaver",
+          "sms-voice",
           "sms-voice.pinpoint",
           "snowball",
+          "sns",
           "social-messaging",
+          "sqs",
           "ssm",
           "ssm-contacts",
           "ssm-guiconnect",
@@ -21662,6 +21921,7 @@
           "support",
           "supportapp",
           "sustainability",
+          "swf",
           "tagging",
           "textract",
           "thinclient",
@@ -21677,6 +21937,7 @@
           "vpc-lattice",
           "waf",
           "waf-regional",
+          "wafv2",
           "wellarchitected",
           "wickr",
           "workmail",
@@ -22004,15 +22265,15 @@
     {
       "axes": {
         "service": {
-          "covered": 117,
-          "notCovered": 165,
-          "partial": 0,
+          "covered": 110,
+          "notCovered": 190,
+          "partial": 25,
           "scoped": 0,
-          "total": 282,
-          "unknown": 0
+          "total": 526,
+          "unknown": 201
         }
       },
-      "claimCount": 282,
+      "claimCount": 325,
       "confidence": 0.75,
       "discoveredBy": [
         "attributed-page",
@@ -22033,8 +22294,10 @@
       "summary": "How to use service-linked roles to give ACM access to resources in your AWS account.",
       "targets": {
         "service": [
+          "account",
           "account-access",
           "acm",
+          "acm-pca",
           "aiops",
           "amplify",
           "amplifyuibuilder",
@@ -22056,6 +22319,7 @@
           "athena",
           "auditmanager",
           "autoscaling",
+          "aws-marketplace",
           "b2bi",
           "backup",
           "backup-gateway",
@@ -22067,11 +22331,13 @@
           "bcm-recommended-actions",
           "bedrock",
           "bedrock-agentcore",
+          "billing",
           "billingconductor",
           "braket",
           "cassandra",
           "catalog.marketplace",
           "ce",
+          "chatbot",
           "chime",
           "cleanrooms",
           "cleanrooms-ml",
@@ -22085,6 +22351,7 @@
           "cloudsearch",
           "cloudshell",
           "cloudtrail",
+          "cloudwatch",
           "codeartifact",
           "codebuild",
           "codecatalyst",
@@ -22099,6 +22366,7 @@
           "codestar-notifications",
           "codewhisperer",
           "cognito-identity",
+          "cognito-idp",
           "cognito-sync",
           "comprehend",
           "comprehendmedical",
@@ -22107,6 +22375,7 @@
           "connect",
           "controlcatalog",
           "controltower",
+          "cost-optimization-hub",
           "databrew",
           "dataexchange",
           "datapipeline",
@@ -22123,18 +22392,30 @@
           "discovery-marketplace",
           "dlm",
           "dms",
+          "doc:consolemobileapp",
+          "doc:marketplace",
+          "doc:microservice-extractor",
+          "doc:r53recovery",
           "docdb-elastic",
           "drs",
           "ds",
           "ds-data",
           "dsql",
           "dynamodb",
+          "ebs",
+          "ec2",
           "ec2-instance-connect",
+          "ecr",
+          "ecr-public",
+          "ecs",
           "eks",
           "elasticache",
           "elasticbeanstalk",
+          "elasticfilesystem",
+          "elasticloadbalancing",
           "elasticmapreduce",
           "elastictranscoder",
+          "elemental-appliances-software",
           "email",
           "emr-serverless",
           "entitlement.marketplace",
@@ -22166,6 +22447,7 @@
           "imagebuilder",
           "importexport",
           "inspector",
+          "inspector2",
           "internetmonitor",
           "invoicing",
           "iot",
@@ -22182,7 +22464,9 @@
           "kendra",
           "kendra-ranking",
           "kinesis",
+          "kinesisanalytics",
           "kinesisvideo",
+          "kms",
           "lakeformation",
           "launchwizard",
           "lex",
@@ -22199,12 +22483,15 @@
           "mediaconnect",
           "mediaconvert",
           "medialive",
+          "mediapackage",
           "mediastore",
           "mediatailor",
+          "medical-imaging",
           "memorydb",
           "mgh",
           "mgn",
           "migrationhub-orchestrator",
+          "migrationhub-strategy",
           "monitron",
           "mpa",
           "mq",
@@ -22224,6 +22511,7 @@
           "osis",
           "outposts",
           "panorama",
+          "partnercentral",
           "payment-cryptography",
           "pca-connector-ad",
           "pcs",
@@ -22236,16 +22524,21 @@
           "product:amazon-lookout-for-vision",
           "product:amazon-managed-streaming-for-apache-kafka-msk",
           "product:amazon-managed-workflows-for-apache-airflow-mwaa",
+          "product:amazon-quantum-ledger-database-qldb",
           "product:aws-app2container",
           "product:aws-cost-and-usage-report",
           "product:aws-deepcomposer",
           "product:aws-deepracer",
+          "product:aws-management-console",
           "product:aws-private-5g",
           "product:aws-privatelink",
+          "product:aws-vpn",
           "proton",
           "qbusiness",
           "qdeveloper",
           "quicksight",
+          "ram",
+          "rbin",
           "rds",
           "redshift",
           "redshift-data",
@@ -22259,11 +22552,15 @@
           "resource-explorer-2",
           "resource-groups",
           "robomaker",
+          "rolesanywhere",
           "route53",
           "route53domains",
           "route53resolver",
+          "rtbfabric",
+          "s3",
           "s3tables",
           "s3vectors",
+          "sagemaker",
           "savingsplans",
           "scheduler",
           "scn",
@@ -22276,12 +22573,16 @@
           "servicecatalog",
           "servicediscovery",
           "servicequotas",
+          "ses",
           "shield",
           "signin",
           "simspaceweaver",
+          "sms-voice",
           "sms-voice.pinpoint",
           "snowball",
+          "sns",
           "social-messaging",
+          "sqs",
           "ssm",
           "ssm-contacts",
           "ssm-guiconnect",
@@ -22290,9 +22591,11 @@
           "sso",
           "states",
           "storagegateway",
+          "sts",
           "support",
           "supportapp",
           "sustainability",
+          "swf",
           "tagging",
           "textract",
           "thinclient",
@@ -22308,6 +22611,7 @@
           "vpc-lattice",
           "waf",
           "waf-regional",
+          "wafv2",
           "wellarchitected",
           "wickr",
           "workmail",
@@ -22522,15 +22826,15 @@
     {
       "axes": {
         "service": {
-          "covered": 284,
+          "covered": 321,
           "notCovered": 2,
-          "partial": 0,
+          "partial": 4,
           "scoped": 0,
-          "total": 286,
-          "unknown": 0
+          "total": 526,
+          "unknown": 199
         }
       },
-      "claimCount": 286,
+      "claimCount": 327,
       "confidence": 0.6,
       "discoveredBy": [
         "guide-subchapter"
@@ -22548,8 +22852,10 @@
       "summary": "Learn more about the types and features of temporary security credentials from AWS Security Token Service.",
       "targets": {
         "service": [
+          "account",
           "account-access",
           "acm",
+          "acm-pca",
           "aiops",
           "amplify",
           "amplifyuibuilder",
@@ -22571,6 +22877,7 @@
           "athena",
           "auditmanager",
           "autoscaling",
+          "aws-marketplace",
           "b2bi",
           "backup",
           "backup-gateway",
@@ -22582,11 +22889,13 @@
           "bcm-recommended-actions",
           "bedrock",
           "bedrock-agentcore",
+          "billing",
           "billingconductor",
           "braket",
           "cassandra",
           "catalog.marketplace",
           "ce",
+          "chatbot",
           "chime",
           "cleanrooms",
           "cleanrooms-ml",
@@ -22615,6 +22924,7 @@
           "codestar-notifications",
           "codewhisperer",
           "cognito-identity",
+          "cognito-idp",
           "cognito-sync",
           "comprehend",
           "comprehendmedical",
@@ -22623,6 +22933,7 @@
           "connect",
           "controlcatalog",
           "controltower",
+          "cost-optimization-hub",
           "databrew",
           "dataexchange",
           "datapipeline",
@@ -22639,18 +22950,30 @@
           "discovery-marketplace",
           "dlm",
           "dms",
+          "doc:consolemobileapp",
+          "doc:marketplace",
+          "doc:microservice-extractor",
+          "doc:r53recovery",
           "docdb-elastic",
           "drs",
           "ds",
           "ds-data",
           "dsql",
           "dynamodb",
+          "ebs",
+          "ec2",
           "ec2-instance-connect",
+          "ecr",
+          "ecr-public",
+          "ecs",
           "eks",
           "elasticache",
           "elasticbeanstalk",
+          "elasticfilesystem",
+          "elasticloadbalancing",
           "elasticmapreduce",
           "elastictranscoder",
+          "elemental-appliances-software",
           "email",
           "emr-serverless",
           "entitlement.marketplace",
@@ -22680,9 +23003,11 @@
           "health",
           "health-agent",
           "healthlake",
+          "iam",
           "imagebuilder",
           "importexport",
           "inspector",
+          "inspector2",
           "internetmonitor",
           "invoicing",
           "iot",
@@ -22699,7 +23024,9 @@
           "kendra",
           "kendra-ranking",
           "kinesis",
+          "kinesisanalytics",
           "kinesisvideo",
+          "kms",
           "lakeformation",
           "lambda",
           "launchwizard",
@@ -22721,10 +23048,12 @@
           "mediapackage-vod",
           "mediastore",
           "mediatailor",
+          "medical-imaging",
           "memorydb",
           "mgh",
           "mgn",
           "migrationhub-orchestrator",
+          "migrationhub-strategy",
           "monitron",
           "mpa",
           "mq",
@@ -22744,6 +23073,7 @@
           "osis",
           "outposts",
           "panorama",
+          "partnercentral",
           "payment-cryptography",
           "pca-connector-ad",
           "pcs",
@@ -22756,16 +23086,21 @@
           "product:amazon-lookout-for-vision",
           "product:amazon-managed-streaming-for-apache-kafka-msk",
           "product:amazon-managed-workflows-for-apache-airflow-mwaa",
+          "product:amazon-quantum-ledger-database-qldb",
           "product:aws-app2container",
           "product:aws-cost-and-usage-report",
           "product:aws-deepcomposer",
           "product:aws-deepracer",
+          "product:aws-management-console",
           "product:aws-private-5g",
           "product:aws-privatelink",
+          "product:aws-vpn",
           "proton",
           "qbusiness",
           "qdeveloper",
           "quicksight",
+          "ram",
+          "rbin",
           "rds",
           "redshift",
           "redshift-data",
@@ -22777,10 +23112,14 @@
           "repostspace",
           "resiliencehub",
           "resource-explorer-2",
+          "resource-groups",
           "robomaker",
+          "rolesanywhere",
           "route53",
           "route53domains",
           "route53resolver",
+          "rtbfabric",
+          "s3",
           "s3tables",
           "s3vectors",
           "sagemaker",
@@ -22796,12 +23135,16 @@
           "servicecatalog",
           "servicediscovery",
           "servicequotas",
+          "ses",
           "shield",
           "signin",
           "simspaceweaver",
+          "sms-voice",
           "sms-voice.pinpoint",
           "snowball",
+          "sns",
           "social-messaging",
+          "sqs",
           "ssm",
           "ssm-contacts",
           "ssm-guiconnect",
@@ -22813,6 +23156,7 @@
           "support",
           "supportapp",
           "sustainability",
+          "swf",
           "tagging",
           "textract",
           "thinclient",
@@ -22827,6 +23171,7 @@
           "vpc-lattice",
           "waf",
           "waf-regional",
+          "wafv2",
           "wellarchitected",
           "wickr",
           "workmail",
@@ -23583,16 +23928,16 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 6,
-          "unknown": 0
+          "total": 28,
+          "unknown": 22
         },
         "operatingSystem": {
-          "covered": 1,
+          "covered": 3,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 1,
-          "unknown": 0
+          "total": 136,
+          "unknown": 133
         },
         "softwareApplication": {
           "covered": 71,
@@ -23603,7 +23948,8 @@
           "unknown": 0
         },
         "wordpressComponentType": {
-          "covered": 3,
+          "count": 3,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -23611,7 +23957,7 @@
           "unknown": 0
         }
       },
-      "claimCount": 81,
+      "claimCount": 83,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -23638,6 +23984,8 @@
           ".safetensors"
         ],
         "operatingSystem": [
+          "Linux",
+          "macOS",
           "Windows"
         ],
         "softwareApplication": [
@@ -23751,8 +24099,8 @@
           "notCovered": 12,
           "partial": 0,
           "scoped": 114,
-          "total": 125,
-          "unknown": 0
+          "total": 136,
+          "unknown": 11
         },
         "programmingLanguage": {
           "covered": 10,
@@ -23763,15 +24111,15 @@
           "unknown": 0
         },
         "runtime": {
-          "covered": 25,
+          "covered": 30,
           "notCovered": 0,
           "partial": 0,
-          "scoped": 48,
-          "total": 25,
+          "scoped": 55,
+          "total": 30,
           "unknown": 0
         }
       },
-      "claimCount": 247,
+      "claimCount": 254,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter"
@@ -23928,6 +24276,11 @@
           "Rust"
         ],
         "runtime": [
+          ".NET 10",
+          ".NET 6",
+          ".NET 8",
+          "AL2",
+          "AL2023",
           "go1.x",
           "java11",
           "java17",
@@ -25178,7 +25531,8 @@
     {
       "axes": {
         "apiOperation": {
-          "covered": 26,
+          "count": 26,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -25186,8 +25540,9 @@
           "unknown": 0
         },
         "conditionKey": {
-          "covered": 36,
-          "notCovered": 2,
+          "count": 38,
+          "covered": 0,
+          "notCovered": 0,
           "partial": 0,
           "scoped": 0,
           "total": 38,
@@ -25620,8 +25975,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 92,
-          "unknown": 0
+          "total": 526,
+          "unknown": 434
         }
       },
       "claimCount": 92,
@@ -27704,7 +28059,8 @@
           "unknown": 0
         },
         "dataIdentifier": {
-          "covered": 159,
+          "count": 159,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -28021,8 +28377,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 22,
-          "unknown": 0
+          "total": 28,
+          "unknown": 6
         },
         "storageClass": {
           "covered": 6,
@@ -29792,7 +30148,8 @@
     {
       "axes": {
         "managedRuleGroup": {
-          "covered": 32,
+          "count": 32,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -29800,7 +30157,8 @@
           "unknown": 0
         },
         "threatCategory": {
-          "covered": 16,
+          "count": 16,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -30261,15 +30619,15 @@
     {
       "axes": {
         "service": {
-          "covered": 38,
-          "notCovered": 10,
-          "partial": 0,
-          "scoped": 78,
-          "total": 39,
-          "unknown": 0
+          "covered": 46,
+          "notCovered": 11,
+          "partial": 1,
+          "scoped": 94,
+          "total": 526,
+          "unknown": 479
         }
       },
-      "claimCount": 78,
+      "claimCount": 94,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -30288,14 +30646,19 @@
       "targets": {
         "service": [
           "access-analyzer",
+          "account",
           "artifact",
           "auditmanager",
+          "aws-marketplace",
           "backup",
+          "billing",
+          "cloudformation",
           "cloudtrail",
           "cloudwatch",
           "compute-optimizer",
           "config",
           "controltower",
+          "cost-optimization-hub",
           "detective",
           "devops-guru",
           "ds",
@@ -30313,10 +30676,13 @@
           "mgn",
           "networkmanager",
           "notifications",
+          "organizations",
+          "product:aws-managed-services",
           "qdeveloper",
           "ram",
           "resiliencehub",
           "resource-explorer-2",
+          "s3",
           "security-ir",
           "securityhub",
           "securitylake",
@@ -31577,8 +31943,8 @@
           "notCovered": 13,
           "partial": 0,
           "scoped": 81,
-          "total": 81,
-          "unknown": 0
+          "total": 3134,
+          "unknown": 3053
         }
       },
       "claimCount": 162,
@@ -33670,8 +34036,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 5,
-          "unknown": 0
+          "total": 46,
+          "unknown": 41
         }
       },
       "claimCount": 5,
@@ -34266,7 +34632,8 @@
     {
       "axes": {
         "apiOperation": {
-          "covered": 30,
+          "count": 30,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -35974,8 +36341,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 48,
-          "unknown": 0
+          "total": 526,
+          "unknown": 478
         }
       },
       "claimCount": 48,
@@ -36338,15 +36705,15 @@
     {
       "axes": {
         "region": {
-          "covered": 24,
+          "covered": 25,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 24,
-          "unknown": 0
+          "total": 46,
+          "unknown": 21
         }
       },
-      "claimCount": 24,
+      "claimCount": 25,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -36386,6 +36753,7 @@
           "me-central-1",
           "me-south-1",
           "sa-east-1",
+          "us-east-1",
           "us-east-2",
           "us-west-2"
         ]
@@ -36665,7 +37033,8 @@
     {
       "axes": {
         "complianceStandard": {
-          "covered": 11,
+          "count": 11,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -36673,15 +37042,24 @@
           "unknown": 0
         },
         "control": {
-          "covered": 589,
-          "notCovered": 522,
+          "count": 589,
+          "covered": 0,
+          "notCovered": 0,
           "partial": 0,
-          "scoped": 6313,
-          "total": 591,
+          "scoped": 0,
+          "total": 589,
           "unknown": 0
+        },
+        "region": {
+          "covered": 0,
+          "notCovered": 0,
+          "partial": 38,
+          "scoped": 0,
+          "total": 46,
+          "unknown": 8
         }
       },
-      "claimCount": 6913,
+      "claimCount": 638,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter"
@@ -36735,11 +37113,9 @@
           "AppFlow.1",
           "AppRunner.1",
           "AppRunner.2",
-          "AppSync.1",
           "AppSync.2",
           "AppSync.4",
           "AppSync.5",
-          "AppSync.6",
           "Athena.2",
           "Athena.3",
           "Athena.4",
@@ -37303,6 +37679,46 @@
           "WAF.8",
           "WorkSpaces.1",
           "WorkSpaces.2"
+        ],
+        "region": [
+          "af-south-1",
+          "ap-east-1",
+          "ap-east-2",
+          "ap-northeast-1",
+          "ap-northeast-2",
+          "ap-northeast-3",
+          "ap-south-1",
+          "ap-south-2",
+          "ap-southeast-1",
+          "ap-southeast-2",
+          "ap-southeast-3",
+          "ap-southeast-4",
+          "ap-southeast-5",
+          "ap-southeast-6",
+          "ap-southeast-7",
+          "ca-central-1",
+          "ca-west-1",
+          "cn-north-1",
+          "cn-northwest-1",
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3",
+          "il-central-1",
+          "me-central-1",
+          "me-south-1",
+          "mx-central-1",
+          "sa-east-1",
+          "us-east-1",
+          "us-east-2",
+          "us-gov-east-1",
+          "us-gov-west-1",
+          "us-west-1",
+          "us-west-2"
         ]
       },
       "tier": "tier1",
@@ -38026,7 +38442,8 @@
     {
       "axes": {
         "complianceStandard": {
-          "covered": 8,
+          "count": 8,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -38671,15 +39088,15 @@
     {
       "axes": {
         "resourceType": {
-          "covered": 7,
-          "notCovered": 0,
-          "partial": 0,
+          "covered": 5,
+          "notCovered": 1,
+          "partial": 2,
           "scoped": 0,
-          "total": 7,
-          "unknown": 0
+          "total": 3134,
+          "unknown": 3126
         }
       },
-      "claimCount": 7,
+      "claimCount": 8,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -38701,6 +39118,7 @@
           "AWS::CloudFront::Distribution",
           "AWS::EC2::EIP",
           "AWS::EC2::Instance",
+          "AWS::EC2::NatGateway",
           "AWS::ElasticLoadBalancing::LoadBalancer",
           "AWS::ElasticLoadBalancingV2::LoadBalancer",
           "AWS::GlobalAccelerator::Accelerator",
@@ -38984,8 +39402,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 14,
-          "unknown": 0
+          "total": 46,
+          "unknown": 32
         }
       },
       "claimCount": 14,
@@ -40499,15 +40917,15 @@
     {
       "axes": {
         "service": {
-          "covered": 30,
-          "notCovered": 18,
-          "partial": 0,
-          "scoped": 60,
-          "total": 30,
-          "unknown": 0
+          "covered": 36,
+          "notCovered": 17,
+          "partial": 1,
+          "scoped": 72,
+          "total": 526,
+          "unknown": 490
         }
       },
-      "claimCount": 90,
+      "claimCount": 108,
       "confidence": 0.6,
       "discoveredBy": [
         "guide-subchapter"
@@ -40525,13 +40943,17 @@
       "summary": "Use IAM Identity Center to grant single sign-on access to AWS managed applications.",
       "targets": {
         "service": [
+          "account-access",
           "aidevops",
+          "aoss",
           "appstudio",
+          "athena",
           "codecatalyst",
           "datazone",
           "deadline",
           "ec2",
           "eks",
+          "elasticmapreduce",
           "emr-serverless",
           "es",
           "glue",
@@ -40546,10 +40968,12 @@
           "quicksight",
           "redshift",
           "repostspace",
+          "s3",
           "sagemaker",
           "scn",
           "securityagent",
           "ssm",
+          "transfer",
           "transform",
           "verified-access",
           "workmail",
@@ -41049,7 +41473,8 @@
     {
       "axes": {
         "accessScope": {
-          "covered": 12,
+          "count": 12,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -41061,8 +41486,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 5,
-          "unknown": 0
+          "total": 526,
+          "unknown": 521
         }
       },
       "claimCount": 17,
@@ -41838,15 +42263,15 @@
     {
       "axes": {
         "region": {
-          "covered": 5,
+          "covered": 7,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 5,
-          "unknown": 0
+          "total": 46,
+          "unknown": 39
         }
       },
-      "claimCount": 5,
+      "claimCount": 7,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -41867,6 +42292,8 @@
           "ca-central-1",
           "us-east-1",
           "us-east-2",
+          "us-gov-east-1",
+          "us-gov-west-1",
           "us-west-1",
           "us-west-2"
         ]
@@ -42453,8 +42880,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 16,
-          "unknown": 0
+          "total": 46,
+          "unknown": 30
         }
       },
       "claimCount": 16,
@@ -42548,8 +42975,8 @@
           "notCovered": 1,
           "partial": 0,
           "scoped": 0,
-          "total": 1,
-          "unknown": 0
+          "total": 3134,
+          "unknown": 3133
         }
       },
       "claimCount": 1,
@@ -42778,7 +43205,8 @@
     {
       "axes": {
         "managedRuleGroup": {
-          "covered": 15,
+          "count": 15,
+          "covered": 0,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
@@ -44838,6 +45266,13 @@
       "subject": "recipe:cloudhsm-platforms-arm"
     },
     {
+      "detail": "iam-matrix-temporary-credentials on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 14 service values. Verbatim: AWS Activate Console | Database Query Metadata Service | AWS Diagnostic tools | AWS Identity and Access Management (IAM) | AWS IoT Managed Integrations Service | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | AWS Resource Groups | Amazon SageMaker AI data science assistant | AWS Security Token Service (AWS STS) | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS Trusted Advisor",
+      "id": "007168a2b65dc1cf",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-temporary-credentials"
+    },
+    {
       "detail": "securityhub-controls-reference.md :: Applicable standards (securityStandard): the page states 10, we take none",
       "id": "00c515d38ba2543e",
       "kind": "recall",
@@ -44857,6 +45292,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:portingassistant"
+    },
+    {
+      "detail": "iam-matrix-resource-based on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 18 service values. Verbatim: AWS Activate Console | AWS CloudTrail | Database Query Metadata Service | AWS Diagnostic tools | AWS Glue | AWS Identity and Access Management (IAM) | AWS IoT | AWS IoT Managed Integrations Service | Amazon Managed Streaming for Apache Kafka (MSK) | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon Rekognition | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS Systems Manager | Amazon Virtual Private Cloud (Amazon VPC)",
+      "id": "01d3ab8bb2a6bb33",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-resource-based"
     },
     {
       "detail": "102 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions\".",
@@ -44943,11 +45385,32 @@
       "subject": "verify:https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md"
     },
     {
+      "detail": "awsapps-that-work-with-identity-center.md :: Supports IAM Identity Center configured with a customer managed KMS key (service): the page states 40, we take 31",
+      "id": "0a508de13da23d09",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
+      "detail": "organizations-delegated-administrator on https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md could not resolve 10 service values. Verbatim: AWS Account Management | AWS CloudFormation Stacksets | EC2 Capacity Manager | AWS Managed Services (AMS) Self-Service Reporting (SSR) | AWS Marketplace Private Marketplace | AWS Marketplace procurement insights dashboard | Amazon S3 Storage Lens | Tag policies | Amazon VPC IP Address Manager (IPAM) | Amazon VPC Reachability Analyzer",
+      "id": "0b4aa4cdaa2e0b56",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:organizations-delegated-administrator"
+    },
+    {
       "detail": "106 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions\".",
       "id": "0c3ba43632c63ca6",
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "coverage pages without a feature"
+    },
+    {
+      "detail": "read 38 of about 21391 candidate values on the page. Either the page holds more than this feature, or a recipe is needed.",
+      "id": "0ce7bddc62d71947",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "verify:https://docs.aws.amazon.com/config/latest/developerguide/managing-rules-by-region-availability.md"
     },
     {
       "detail": "\"Amazon Managed Streaming for Apache Kafka (MSK)\" did not join to a service prefix. Score 3, signals security-doc-pages.",
@@ -45020,11 +45483,32 @@
       "subject": "unresolved:doc:quick"
     },
     {
+      "detail": "identity-center-customer-managed-key on https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md could not resolve 10 service values. Verbatim: Amazon Athena SQL | Amazon EKS Capabilities | Amazon EMR Studio | Amazon OpenSearch Service Serverless Service | Amazon S3 Access Grants | Amazon SageMaker Unified Studio | AWS account access (account access manager) | AWS Transfer Family web apps | Kiro | OpenSearch user interface (Dashboards)",
+      "id": "1428dbe3f824a8c3",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:identity-center-customer-managed-key"
+    },
+    {
       "detail": "The alias \"IMDSv2\" points at ec2/instance-metadata-and-user-data, which no longer exists. Either the feature was renamed or the seed is stale.",
       "id": "146cb8adad857f1e",
       "kind": "alias",
       "stage": "stage4-features",
       "subject": "feature-alias:ec2/instance-metadata-and-user-data"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Resource-based policies (service): the page states 440, we take 328",
+      "id": "1621c8f99ca06c1c",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Resource-level permissions (service): the page states 440, we take 328",
+      "id": "1666a6190863816b",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"AWS Encryption SDK\" did not join to a service prefix. Score 5, signals security-name-strong.",
@@ -45097,6 +45581,13 @@
       "subject": "unresolved:doc:amazonswf"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Resource-level permissions (service): the page states 440, we take 262",
+      "id": "1c1c760cf2ce5ace",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "193 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions for ACM SLRs\".",
       "id": "1c24a834c72216a0",
       "kind": "parser",
@@ -45109,6 +45600,13 @@
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "recipe:inspector-sbom-model-formats"
+    },
+    {
+      "detail": "iam-matrix-resource-level produced 252 claims on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md, having previously produced 334. Something stopped resolving.",
+      "id": "1d38e6d914fc739f",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "regression:iam-matrix-resource-level"
     },
     {
       "detail": "\"AWS Application Composer \" did not join to a service prefix. Score 0, signals none.",
@@ -45181,6 +45679,13 @@
       "subject": "feature-alias:access-analyzer/checks-for-validating-policies"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Temporary credentials (service): the page states 440, we take 324",
+      "id": "25ef5e184afbf4f7",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS Management Console Mobile Application\" did not join to a service prefix. Score 0, signals none.",
       "id": "25f4debfd1ec3722",
       "kind": "alias",
@@ -45251,6 +45756,13 @@
       "subject": "unresolved:doc:vm-import"
     },
     {
+      "detail": "secretsmanager-integrations on https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrating.md could not resolve 8 service values. Verbatim: AWS Elemental Live | AWS Glue Studio | AWS ParallelCluster | AWS OpsWorks for Chef Automate | Amazon Redshift query editor v2 | AWS SCT | Amazon Timestream for InfluxDB | AWS Toolkit for JetBrains",
+      "id": "2b4059f55db2a505",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:secretsmanager-integrations"
+    },
+    {
       "detail": "recipe kms-viaservice-supported-services produced 77 claims, fewer than the 90 it promises on https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md. The page shape has probably changed.",
       "id": "2c2df660c89a9b72",
       "kind": "parser",
@@ -45314,6 +45826,13 @@
       "subject": "unresolved:doc:silk"
     },
     {
+      "detail": "ram-shareable-outside-organization on https://docs.aws.amazon.com/ram/latest/userguide/shareable.md could not resolve 2 resourceType values. Verbatim: s3-outposts:Outpost | s3:AccessGrants",
+      "id": "30f4c1487e1b8592",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:ram-shareable-outside-organization"
+    },
+    {
       "detail": "108 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions\".",
       "id": "328af6245c5051f1",
       "kind": "parser",
@@ -45342,6 +45861,27 @@
       "subject": "expectation not met"
     },
     {
+      "detail": "securityhub-regional-control-limits produced 38 claims on https://docs.aws.amazon.com/securityhub/latest/userguide/regions-controls.md, having previously produced 6313. Something stopped resolving.",
+      "id": "3426a37ca16106d6",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "regression:securityhub-regional-control-limits"
+    },
+    {
+      "detail": "identity-center-trusted-identity-propagation on https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md could not resolve 9 service values. Verbatim: Amazon Athena SQL | Amazon EKS Capabilities | Amazon EMR Studio | Amazon OpenSearch Service Serverless Service | Amazon S3 Access Grants | Amazon SageMaker Unified Studio | AWS Transfer Family web apps | Kiro | OpenSearch user interface (Dashboards)",
+      "id": "3429c381814c13cf",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:identity-center-trusted-identity-propagation"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Resource-level permissions (service): the page states 440, we take 324",
+      "id": "343ac9bfe017412d",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS Wavelength\" did not join to a service prefix. Score 1, signals security-doc-pages.",
       "id": "344acbb88cb966df",
       "kind": "alias",
@@ -45354,6 +45894,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:aws-private-5g"
+    },
+    {
+      "detail": "organizations-trusted-access on https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md could not resolve 12 service values. Verbatim: AWS Account Management | AWS Billing and Cost Management | AWS CloudFormation Stacksets | AWS Cost Optimization Hub | EC2 Capacity Manager | AWS Managed Services (AMS) Self-Service Reporting (SSR) | AWS Marketplace Private Marketplace | AWS Marketplace procurement insights dashboard | Amazon S3 Storage Lens | Tag policies | Amazon VPC IP Address Manager (IPAM) | Amazon VPC Reachability Analyzer",
+      "id": "35f8f3199094fbd3",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:organizations-trusted-access"
     },
     {
       "detail": "recipe ram-shareable-resource-types produced 31 claims, fewer than the 40 it promises on https://docs.aws.amazon.com/ram/latest/userguide/shareable.md. The page shape has probably changed.",
@@ -45370,6 +45917,13 @@
       "subject": "recipe:cloudhsm-platforms-x86"
     },
     {
+      "detail": "iam-matrix-resource-based on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 144 service values. Verbatim: AWS Account Management | AWS Action Recommendations | AWS Activate Console | AWS Amplify Admin | Apache Kafka APIs for Amazon MSK clusters | Amazon API Gateway Management | Amazon API Gateway Management V2 | Amazon AppIntegrations | AWS Application Discovery Arsenal | Amazon Application Recovery Controller - Zonal Shift | AWS Application Transformation Service | AWS App Mesh Preview | Amazon ARC Region Switch | AWS Backup storage | AWS Billing and Cost Management | AWS Budget Service | Amazon Q Developer in chat applications | AWS CloudTrail | AWS CloudTrail Data | Amazon CloudWatch Evidently | Amazon CloudWatch Network Synthetic Monitor | Amazon CloudWatch Observability Admin Service | Amazon CloudWatch RUM | Amazon CloudWatch Synthetics | AWS CodeDeploy secure host commands service | Amazon Cognito user pools | Amazon Connect Customer Cases | Amazon Connect Customer Customer Profiles | Amazon Connect Customer Outbound Campaigns | Amazon Connect Customer Voice ID | AWS Console Mobile Application | AWS Consolidated Billing | AWS Cost Optimization Hub | AWS Customer Verification Service | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | Amazon Elastic Block Store (Amazon EBS) | Amazon Elastic Container Registry (Amazon ECR) | Amazon Elastic Container Registry Public (Amazon ECR Public) | Amazon Elastic Container Service (Amazon ECS) | Amazon Elastic File System (Amazon EFS) | Amazon Elastic Kubernetes Service (Amazon EKS) | Amazon Elastic Kubernetes Service (Amazon EKS) Auth | AWS Elastic Load Balancing | AWS Elemental Appliances and Software Activation Service | AWS Elemental Appliances and Software | AWS Elemental Support Cases | AWS Elemental Support Content | AWS End User Messaging SMS and Voice V2 | Amazon EventBridge Schemas | Amazon FinSpace API | AWS Glue | Amazon Ground Truth Labeling | AWS HealthImaging | IAM Identity Center Directory | IAM Identity Center Identity Store | IAM Identity Center OIDC service | AWS Identity and Access Management (IAM) | AWS Identity and Access Management and Access Analyzer",
+      "id": "379aee536d68f4e3",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-resource-based"
+    },
+    {
       "detail": "reference_aws-services-that-work-with-iam.md :: Resource-level permissions (service): the page states 440, we take 289",
       "id": "37b1343bdc5acf6d",
       "kind": "recall",
@@ -45384,6 +45938,20 @@
       "subject": "unresolved:doc:microservice-extractor"
     },
     {
+      "detail": "acm-slr-regions on https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md could not resolve 1 region values. Verbatim: AWS GovCloud (US-East) East",
+      "id": "3a32f435416e6269",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:acm-slr-regions"
+    },
+    {
+      "detail": "awsapps-that-work-with-identity-center.md :: Supports deployment in additional Regions of IAM Identity Center (service): the page states 40, we take 31",
+      "id": "3a5ac0b2d9e464af",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "recipe cloudtrail-network-selector-fields produced 0 claims, fewer than the 4 it promises on https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md. The page shape has probably changed.",
       "id": "3bdcc85366fd4da3",
       "kind": "parser",
@@ -45396,6 +45964,13 @@
       "kind": "recall",
       "stage": "stage4-features",
       "subject": "features:inspector2-telemetry"
+    },
+    {
+      "detail": "iam-matrix-resource-based on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 17 service values. Verbatim: AWS Activate Console | AWS CloudTrail | Database Query Metadata Service | AWS Diagnostic tools | AWS Glue | AWS Identity and Access Management (IAM) | AWS IoT Managed Integrations Service | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon Quantum Ledger Database (Amazon QLDB) | Amazon Rekognition | Amazon SageMaker AI data science assistant | AWS Security Token Service (AWS STS) | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management",
+      "id": "3c29a88415c0dd97",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-resource-based"
     },
     {
       "detail": "supported.md :: Supported runtimes: Amazon Inspector Lambda code scanning (runtime): the page states 25, we take none",
@@ -45489,6 +46064,13 @@
       "subject": "feature-alias:inspector2/amazon-inspector-code-security"
     },
     {
+      "detail": "ddos-protections-by-resource-type.md :: Shield Advanced protections for each resource type (\"List of resources that AWS Shield Advanced protects\") (resourceType): the page states 11, we take 8",
+      "id": "426fd75706f6a557",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"doc:quick\" did not join to a service prefix. Score 3, signals security-doc-pages.",
       "id": "42ce39506b8aac22",
       "kind": "alias",
@@ -45510,6 +46092,13 @@
       "subject": "expectation not met"
     },
     {
+      "detail": "iam-matrix-resource-level on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 23 service values. Verbatim: AWS Activate Console | AWS Batch | AWS CodePipeline | AWS CodeStar | AWS Config | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | AWS Elastic Beanstalk | Amazon Elastic Block Store (Amazon EBS) | Amazon Elastic Container Service (Amazon ECS) | AWS Elastic Load Balancing | AWS IoT Managed Integrations Service | Amazon Lightsail | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon SageMaker AI data science assistant | AWS Security Token Service (AWS STS) | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | Amazon Virtual Private Cloud (Amazon VPC) | AWS X-Ray",
+      "id": "445f926641efaf2f",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-resource-level"
+    },
+    {
       "detail": "\"AWS Partner Revenue Measurement Onboarding guide for AWS Partner Revenue Measurement\" did not join to a service prefix. Score 0, signals none.",
       "id": "44c5cbe595f195dc",
       "kind": "alias",
@@ -45524,6 +46113,13 @@
       "subject": "recipe:config-resource-type-reference"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Resource-level permissions (service): the page states 440, we take 329",
+      "id": "45a958ae2a990b9d",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"doc:sdk-for-php\" did not join to a service prefix. Score 3, signals security-doc-pages.",
       "id": "45c3d7c5faad2a79",
       "kind": "alias",
@@ -45536,6 +46132,13 @@
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "coverage pages without a feature"
+    },
+    {
+      "detail": "iam-matrix-service-linked-roles on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 22 service values. Verbatim: AWS Activate Console | Amazon CloudWatch | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | AWS Elemental MediaPackage | AWS Elemental MediaPackage VOD | AWS Firewall Manager | AWS Identity and Access Management and Access Analyzer | AWS IoT Managed Integrations Service | AWS Lambda | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon Glacier | Amazon SageMaker AI | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | Amazon Simple Storage Service (Amazon S3) | AWS Snowball Edge Device Management | Amazon Virtual Private Cloud (Amazon VPC)",
+      "id": "46291ef119c08bae",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-service-linked-roles"
     },
     {
       "detail": "recipe shield-advanced-protected-resources produced 3 claims, fewer than the 5 it promises on https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md. The page shape has probably changed.",
@@ -45578,6 +46181,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:quick-setup"
+    },
+    {
+      "detail": "iam-matrix-resource-level on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 23 service values. Verbatim: AWS Activate Console | AWS Batch | AWS CodePipeline | AWS CodeStar | AWS Config | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | AWS Elastic Beanstalk | Amazon Elastic Block Store (Amazon EBS) | Amazon Elastic Container Service (Amazon ECS) | AWS Elastic Load Balancing | AWS IoT Managed Integrations Service | Amazon Lightsail | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon SageMaker AI data science assistant | AWS Security Token Service (AWS STS) | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS X-Ray",
+      "id": "4a3aa7ca2e29c0c2",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-resource-level"
     },
     {
       "detail": "89 coverage-shaped pages could not be tied to a named feature, for example \"Supported resource types\".",
@@ -45643,6 +46253,13 @@
       "subject": "unresolved:doc:elemental-statmux"
     },
     {
+      "detail": "176 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions\".",
+      "id": "51d90e9a838656c0",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "coverage pages without a feature"
+    },
+    {
       "detail": "\"AWS Trainium2\" did not join to a service prefix. Score 0, signals none.",
       "id": "52168efb12ce1a57",
       "kind": "alias",
@@ -45676,6 +46293,20 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:aws-managed-policy"
+    },
+    {
+      "detail": "kms-viaservice-supported-services on https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md could not resolve 2 service values. Verbatim: custom-packages | ards",
+      "id": "542c95e7a997be99",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:kms-viaservice-supported-services"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: ABAC (authorization based on tags) (service): the page states 440, we take 262",
+      "id": "542d50fc77cbd766",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"doc:microservice-extractor\" did not join to a service prefix. Score 0, signals none.",
@@ -45713,6 +46344,20 @@
       "subject": "expectation not met"
     },
     {
+      "detail": "iam-matrix-actions on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 12 service values. Verbatim: AWS Activate Console | Database Query Metadata Service | AWS Diagnostic tools | AWS IoT Managed Integrations Service | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS Trusted Advisor",
+      "id": "56a415a9d6e44191",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-actions"
+    },
+    {
+      "detail": "iam-matrix-resource-based produced 260 claims on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md, having previously produced 342. Something stopped resolving.",
+      "id": "56c33f5455fa4207",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "regression:iam-matrix-resource-based"
+    },
+    {
       "detail": "\"AWS Distro for OpenTelemetry\" did not join to a service prefix. Score 0, signals none.",
       "id": "57d2e308819b9fef",
       "kind": "alias",
@@ -45741,11 +46386,25 @@
       "subject": "feature-alias:organizations/service-control-policies-scps"
     },
     {
+      "detail": "security-ir-slr-regions on https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md could not resolve 1 region values. Verbatim: US East (Virginia)",
+      "id": "5aa707bfea763a05",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:security-ir-slr-regions"
+    },
+    {
       "detail": "\"Amazon Application Recovery Controller Recovery Readiness API\" did not join to a service prefix. Score 2, signals security-name-weak.",
       "id": "5ba8ca499660fc20",
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:recovery-readiness"
+    },
+    {
+      "detail": "iam-matrix-abac on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 28 service values. Verbatim: AWS Activate Console | Amazon Bedrock Agentcore | Amazon CloudFront | AWS CodeBuild | Amazon Connect Health | Database Query Metadata Service | AWS Data Pipeline | AWS Diagnostic tools | Amazon Elastic File System (Amazon EFS) | AWS Elastic Load Balancing | AWS Glue | AWS IAM Identity Center | AWS Identity and Access Management (IAM) | AWS IoT Greengrass V2 | AWS IoT Managed Integrations Service | AWS Lambda | Amazon Lightsail | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | Multi-party approval | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon Quantum Ledger Database (Amazon QLDB) | Amazon SageMaker AI data science assistant | AWS Security Token Service (AWS STS) | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS X-Ray",
+      "id": "5be2aad64b51d933",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-abac"
     },
     {
       "detail": "recipe macie-unsupported-storage-classes produced 0 claims, fewer than the 1 it promises on https://docs.aws.amazon.com/macie/latest/user/discovery-supported-storage.md. The page shape has probably changed.",
@@ -45818,6 +46477,13 @@
       "subject": "unresolved:doc:elemental-live"
     },
     {
+      "detail": "awsapps-that-work-with-identity-center.md :: Integrated with account instances of IAM Identity Center (service): the page states 40, we take 31",
+      "id": "612a36a975c0a9ab",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"Research and Engineering Studio\" did not join to a service prefix. Score 0, signals none.",
       "id": "6172ebbdd06dd623",
       "kind": "alias",
@@ -45827,6 +46493,13 @@
     {
       "detail": "internal-sources.md :: Collecting data from AWS services in Security Lake (natively-supported AWS services as log sources) (service): the page states 6, we take none",
       "id": "62aa39cfeb9d1979",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Temporary credentials (service): the page states 440, we take 329",
+      "id": "63809de4defd52dd",
       "kind": "recall",
       "stage": "stage5-coverage",
       "subject": "expectation not met"
@@ -45881,6 +46554,20 @@
       "subject": "unresolved:doc:recovery-readiness"
     },
     {
+      "detail": "organizations-trusted-access on https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md could not resolve 10 service values. Verbatim: AWS Account Management | AWS CloudFormation Stacksets | EC2 Capacity Manager | AWS Managed Services (AMS) Self-Service Reporting (SSR) | AWS Marketplace Private Marketplace | AWS Marketplace procurement insights dashboard | Amazon S3 Storage Lens | Tag policies | Amazon VPC IP Address Manager (IPAM) | Amazon VPC Reachability Analyzer",
+      "id": "65a6b2a9005ca695",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:organizations-trusted-access"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Actions (service): the page states 440, we take 329",
+      "id": "6640806e086e0697",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"Local Zones now generally available in Buenos Aires, Copenhagen, Helsinki and Muscat\" did not join to a service prefix. Score 0, signals none.",
       "id": "69451f0237583882",
       "kind": "alias",
@@ -45893,6 +46580,13 @@
       "kind": "alias",
       "stage": "stage5-coverage",
       "subject": "unresolved coverage targets"
+    },
+    {
+      "detail": "iam-matrix-temporary-credentials on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 141 service values. Verbatim: AWS Account Management | AWS Action Recommendations | AWS Activate Console | AWS Amplify Admin | Apache Kafka APIs for Amazon MSK clusters | Amazon API Gateway Management | Amazon API Gateway Management V2 | Amazon AppIntegrations | AWS Application Discovery Arsenal | Amazon Application Recovery Controller - Zonal Shift | AWS Application Transformation Service | AWS App Mesh Preview | Amazon ARC Region Switch | AWS Backup storage | AWS Billing and Cost Management | AWS Budget Service | Amazon Q Developer in chat applications | AWS CloudTrail Data | Amazon CloudWatch Evidently | Amazon CloudWatch Network Synthetic Monitor | Amazon CloudWatch Observability Admin Service | Amazon CloudWatch RUM | Amazon CloudWatch Synthetics | AWS CodeDeploy secure host commands service | Amazon Cognito user pools | Amazon Connect Customer Cases | Amazon Connect Customer Customer Profiles | Amazon Connect Customer Outbound Campaigns | Amazon Connect Customer Voice ID | AWS Console Mobile Application | AWS Consolidated Billing | AWS Cost Optimization Hub | AWS Customer Verification Service | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | Amazon Elastic Block Store (Amazon EBS) | Amazon Elastic Container Registry (Amazon ECR) | Amazon Elastic Container Registry Public (Amazon ECR Public) | Amazon Elastic Container Service (Amazon ECS) | Amazon Elastic File System (Amazon EFS) | Amazon Elastic Kubernetes Service (Amazon EKS) | Amazon Elastic Kubernetes Service (Amazon EKS) Auth | AWS Elastic Load Balancing | AWS Elemental Appliances and Software Activation Service | AWS Elemental Appliances and Software | AWS Elemental Support Cases | AWS Elemental Support Content | AWS End User Messaging SMS and Voice V2 | Amazon EventBridge Schemas | Amazon FinSpace API | Amazon Ground Truth Labeling | AWS HealthImaging | IAM Identity Center Directory | IAM Identity Center Identity Store | IAM Identity Center OIDC service | AWS Identity and Access Management (IAM) | AWS Identity and Access Management and Access Analyzer | AWS Identity and Access Management Roles Anywhere | AWS Identity Store Auth",
+      "id": "69553c2fabfab1eb",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-temporary-credentials"
     },
     {
       "detail": "\"AWS Whitepapers\" did not join to a service prefix. Score 0, signals none.",
@@ -45923,6 +46617,20 @@
       "subject": "recipe:organizations-trusted-access"
     },
     {
+      "detail": "iam-matrix-actions on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 139 service values. Verbatim: AWS Account Management | AWS Action Recommendations | AWS Activate Console | AWS Amplify Admin | Apache Kafka APIs for Amazon MSK clusters | Amazon API Gateway Management | Amazon API Gateway Management V2 | Amazon AppIntegrations | AWS Application Discovery Arsenal | Amazon Application Recovery Controller - Zonal Shift | AWS Application Transformation Service | AWS App Mesh Preview | Amazon ARC Region Switch | AWS Backup storage | AWS Billing and Cost Management | AWS Budget Service | Amazon Q Developer in chat applications | AWS CloudTrail Data | Amazon CloudWatch Evidently | Amazon CloudWatch Network Synthetic Monitor | Amazon CloudWatch Observability Admin Service | Amazon CloudWatch RUM | Amazon CloudWatch Synthetics | AWS CodeDeploy secure host commands service | Amazon Cognito user pools | Amazon Connect Customer Cases | Amazon Connect Customer Customer Profiles | Amazon Connect Customer Outbound Campaigns | Amazon Connect Customer Voice ID | AWS Console Mobile Application | AWS Consolidated Billing | AWS Cost Optimization Hub | AWS Customer Verification Service | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | Amazon Elastic Block Store (Amazon EBS) | Amazon Elastic Container Registry (Amazon ECR) | Amazon Elastic Container Registry Public (Amazon ECR Public) | Amazon Elastic Container Service (Amazon ECS) | Amazon Elastic File System (Amazon EFS) | Amazon Elastic Kubernetes Service (Amazon EKS) | Amazon Elastic Kubernetes Service (Amazon EKS) Auth | AWS Elastic Load Balancing | AWS Elemental Appliances and Software Activation Service | AWS Elemental Appliances and Software | AWS Elemental Support Cases | AWS Elemental Support Content | AWS End User Messaging SMS and Voice V2 | Amazon EventBridge Schemas | Amazon FinSpace API | Amazon Ground Truth Labeling | AWS HealthImaging | IAM Identity Center Directory | IAM Identity Center Identity Store | IAM Identity Center OIDC service | AWS Identity and Access Management and Access Analyzer | AWS Identity and Access Management Roles Anywhere | AWS Identity Store Auth | AWS Identity Sync",
+      "id": "6b0ab2aef095adf2",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-actions"
+    },
+    {
+      "detail": "iam-matrix-resource-level on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 145 service values. Verbatim: AWS Account Management | AWS Action Recommendations | AWS Activate Console | AWS Amplify Admin | Apache Kafka APIs for Amazon MSK clusters | Amazon API Gateway Management | Amazon API Gateway Management V2 | Amazon AppIntegrations | AWS Application Discovery Arsenal | Amazon Application Recovery Controller - Zonal Shift | AWS Application Transformation Service | AWS App Mesh Preview | Amazon ARC Region Switch | AWS Backup storage | AWS Batch | AWS Billing and Cost Management | AWS Budget Service | Amazon Q Developer in chat applications | AWS CloudTrail Data | Amazon CloudWatch Evidently | Amazon CloudWatch Network Synthetic Monitor | Amazon CloudWatch Observability Admin Service | Amazon CloudWatch RUM | Amazon CloudWatch Synthetics | AWS CodeDeploy secure host commands service | AWS CodePipeline | AWS CodeStar | Amazon Cognito user pools | AWS Config | Amazon Connect Customer Cases | Amazon Connect Customer Customer Profiles | Amazon Connect Customer Outbound Campaigns | Amazon Connect Customer Voice ID | AWS Console Mobile Application | AWS Consolidated Billing | AWS Cost Optimization Hub | AWS Customer Verification Service | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | AWS Elastic Beanstalk | Amazon Elastic Block Store (Amazon EBS) | Amazon Elastic Container Registry (Amazon ECR) | Amazon Elastic Container Registry Public (Amazon ECR Public) | Amazon Elastic Container Service (Amazon ECS) | Amazon Elastic File System (Amazon EFS) | Amazon Elastic Kubernetes Service (Amazon EKS) | Amazon Elastic Kubernetes Service (Amazon EKS) Auth | AWS Elastic Load Balancing | AWS Elemental Appliances and Software Activation Service | AWS Elemental Appliances and Software | AWS Elemental Support Cases | AWS Elemental Support Content | AWS End User Messaging SMS and Voice V2 | Amazon EventBridge Schemas | Amazon FinSpace API | Amazon Ground Truth Labeling | AWS HealthImaging | IAM Identity Center Directory | IAM Identity Center Identity Store",
+      "id": "6b4f1cbc6404759e",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-resource-level"
+    },
+    {
       "detail": "\"Amazon MSK API Reference 2.0\" did not join to a service prefix. Score 0, signals none.",
       "id": "6ba5008b858ace28",
       "kind": "alias",
@@ -45949,6 +46657,13 @@
       "kind": "recall",
       "stage": "stage5-coverage",
       "subject": "expectation not met"
+    },
+    {
+      "detail": "identity-center-managed-applications on https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md could not resolve 9 service values. Verbatim: Amazon Athena SQL | Amazon EKS Capabilities | Amazon EMR Studio | Amazon OpenSearch Service Serverless Service | Amazon S3 Access Grants | Amazon SageMaker Unified Studio | AWS Transfer Family web apps | Kiro | OpenSearch user interface (Dashboards)",
+      "id": "6e00968ac5fd8567",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:identity-center-managed-applications"
     },
     {
       "detail": "cloudhsmv2 is a tier 1 security service but no named feature was extracted. It has 0 indexed guides.",
@@ -46070,6 +46785,13 @@
       "subject": "unresolved:product:aws-app2container"
     },
     {
+      "detail": "orgs_integrate_services_list.md :: Delegated administrator for AWS services (column: \"Supports delegated administrator\") (service): the page states 52, we take 41",
+      "id": "798d4bf99a2f7e70",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"doc:reference-architecture-diagrams\" did not join to a service prefix. Score 0, signals none.",
       "id": "7a347fe0b040508a",
       "kind": "alias",
@@ -46105,11 +46827,39 @@
       "subject": "recipe:network-firewall-threat-categories"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Service-linked roles (service): the page states 440, we take 328",
+      "id": "7d2fa34330b1869d",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS Snow Family\" did not join to a service prefix. Score 0, signals none.",
       "id": "7d3c5175f92fa0da",
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:aws-snow-family"
+    },
+    {
+      "detail": "orgs_integrate_services_list.md :: Trusted access (column: \"Supports trusted access\") (service): the page states 52, we take 40",
+      "id": "7d4db8105683daf3",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
+      "detail": "iam-matrix-resource-based on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 15 service values. Verbatim: AWS Activate Console | AWS CloudTrail | Database Query Metadata Service | AWS Diagnostic tools | AWS Glue | AWS Identity and Access Management (IAM) | AWS IoT Managed Integrations Service | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon Rekognition | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management",
+      "id": "7dc2f4b6ab2150e6",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-resource-based"
+    },
+    {
+      "detail": "iam-matrix-temporary-credentials on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 15 service values. Verbatim: AWS Activate Console | Database Query Metadata Service | AWS Diagnostic tools | AWS Identity and Access Management (IAM) | AWS IoT Managed Integrations Service | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | AWS Resource Groups | Amazon SageMaker AI data science assistant | AWS Security Token Service (AWS STS) | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS Trusted Advisor",
+      "id": "7df266d3723aa2f5",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-temporary-credentials"
     },
     {
       "detail": "\"AWS Glossary Reference\" did not join to a service prefix. Score 0, signals none.",
@@ -46126,11 +46876,25 @@
       "subject": "unresolved coverage targets"
     },
     {
+      "detail": "iam-matrix-resource-based on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 19 service values. Verbatim: AWS Activate Console | AWS CloudTrail | Database Query Metadata Service | AWS Diagnostic tools | AWS Glue | AWS Identity and Access Management (IAM) | AWS IoT | AWS IoT Managed Integrations Service | Amazon Managed Streaming for Apache Kafka (MSK) | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon Rekognition | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS Systems Manager | Amazon Virtual Private Cloud (Amazon VPC)",
+      "id": "7ee9efe6de968077",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-resource-based"
+    },
+    {
       "detail": "\"AWS Regions and Availability Zones\" did not join to a service prefix. Score 0, signals none.",
       "id": "7ef60aaeec090559",
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:global-infrastructure"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Service-linked roles (service): the page states 440, we take 329",
+      "id": "7efc2452d7f0bb20",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"AWS Elemental Conductor Live Configuration\" did not join to a service prefix. Score 4, signals security-name-weak,security-doc-pages.",
@@ -46196,11 +46960,25 @@
       "subject": "recipe:ram-shareable-outside-organization"
     },
     {
+      "detail": "identity-center-managed-applications on https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md could not resolve 1 service values. Verbatim: Kiro",
+      "id": "82e1d18b58a74895",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:identity-center-managed-applications"
+    },
+    {
       "detail": "191 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions for ACM SLRs\".",
       "id": "82e43e42da88e853",
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "coverage pages without a feature"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: ABAC (authorization based on tags) (service): the page states 440, we take 329",
+      "id": "82f3034f28cae9e6",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"VMware Cloud on AWS\" did not join to a service prefix. Score 0, signals none.",
@@ -46236,6 +47014,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:quick-setup"
+    },
+    {
+      "detail": "iam-matrix-abac produced 251 claims on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md, having previously produced 332. Something stopped resolving.",
+      "id": "84185b1a8d61eb35",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "regression:iam-matrix-abac"
     },
     {
       "detail": "\"AWS Console Mobile Application\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -46336,6 +47121,13 @@
       "subject": "unresolved:product:buy-with-aws"
     },
     {
+      "detail": "iam-matrix-abac on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 29 service values. Verbatim: AWS Activate Console | AWS Amplify | Amazon Bedrock Agentcore | Amazon CloudFront | Amazon CloudWatch Logs | AWS CodeBuild | Amazon Connect Health | Database Query Metadata Service | AWS Data Pipeline | AWS Diagnostic tools | Amazon Elastic File System (Amazon EFS) | AWS Elastic Load Balancing | AWS Glue | AWS IAM Identity Center | AWS Identity and Access Management (IAM) | AWS IoT Greengrass V2 | AWS IoT Managed Integrations Service | AWS Lambda | Amazon Lightsail | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | Multi-party approval | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | Amazon Simple Storage Service (Amazon S3) | AWS Snowball Edge Device Management | AWS X-Ray",
+      "id": "88424c5eeef27400",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-abac"
+    },
+    {
       "detail": "\"doc:cost-management\" did not join to a service prefix. Score 3, signals security-doc-pages.",
       "id": "88ac450093a92bc0",
       "kind": "alias",
@@ -46406,6 +47198,13 @@
       "subject": "expectation not met"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Resource-based policies (service): the page states 440, we take 262",
+      "id": "8b842eb6ff9a6b84",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"doc:dcv\" did not join to a service prefix. Score 2, signals security-doc-pages.",
       "id": "8bf2ba586b59804a",
       "kind": "alias",
@@ -46441,6 +47240,13 @@
       "subject": "unresolved:product:amazon-elastic-container-service-ecs"
     },
     {
+      "detail": "identity-center-customer-managed-key on https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md could not resolve 1 service values. Verbatim: Kiro",
+      "id": "8cff10312756bed2",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:identity-center-customer-managed-key"
+    },
+    {
       "detail": "\"CloudWatch investigations CloudWatch investigations\" did not join to a service prefix. Score 0, signals none.",
       "id": "8d944cb9a6dc6682",
       "kind": "alias",
@@ -46474,6 +47280,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:aws-personal-health-dashboard"
+    },
+    {
+      "detail": "iam-matrix-service-linked-roles on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 20 service values. Verbatim: AWS Activate Console | Amazon CloudWatch | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | AWS Elemental MediaPackage | AWS Elemental MediaPackage VOD | AWS Firewall Manager | AWS IoT Managed Integrations Service | AWS Lambda | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon Quantum Ledger Database (Amazon QLDB) | Amazon Glacier | Amazon SageMaker AI data science assistant | AWS Security Token Service (AWS STS) | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management",
+      "id": "8ebdd20f930507ea",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-service-linked-roles"
     },
     {
       "detail": "\"Tagging AWS Resources and Tag Editor\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -46553,6 +47366,13 @@
       "subject": "expectation not met"
     },
     {
+      "detail": "iam-matrix-temporary-credentials on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 16 service values. Verbatim: AWS Activate Console | Database Query Metadata Service | AWS Diagnostic tools | AWS Identity and Access Management (IAM) | AWS IoT Managed Integrations Service | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon Quantum Ledger Database (Amazon QLDB) | AWS Resource Groups | Amazon SageMaker AI data science assistant | AWS Security Token Service (AWS STS) | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS Trusted Advisor",
+      "id": "93c7556862091d82",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-temporary-credentials"
+    },
+    {
       "detail": "\"GROW with SAP on AWS\" did not join to a service prefix. Score 0, signals none.",
       "id": "946611ff34170a0f",
       "kind": "alias",
@@ -46600,6 +47420,13 @@
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "recipe:guardduty-s3-intelligent-tiering"
+    },
+    {
+      "detail": "iam-matrix-abac on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 152 service values. Verbatim: AWS Account Management | AWS Action Recommendations | AWS Activate Console | AWS Amplify Admin | AWS Amplify | Apache Kafka APIs for Amazon MSK clusters | Amazon API Gateway Management | Amazon API Gateway Management V2 | Amazon AppIntegrations | AWS Application Discovery Arsenal | Amazon Application Recovery Controller - Zonal Shift | AWS Application Transformation Service | AWS App Mesh Preview | Amazon ARC Region Switch | AWS Backup storage | Amazon Bedrock Agentcore | AWS Billing and Cost Management | AWS Budget Service | Amazon Q Developer in chat applications | Amazon CloudFront | AWS CloudTrail Data | Amazon CloudWatch Evidently | Amazon CloudWatch Network Synthetic Monitor | Amazon CloudWatch Observability Admin Service | Amazon CloudWatch RUM | Amazon CloudWatch Synthetics | AWS CodeBuild | AWS CodeDeploy secure host commands service | Amazon Cognito user pools | Amazon Connect Customer Cases | Amazon Connect Customer Customer Profiles | Amazon Connect Customer Outbound Campaigns | Amazon Connect Customer Voice ID | Amazon Connect Health | AWS Console Mobile Application | AWS Consolidated Billing | AWS Cost Optimization Hub | AWS Customer Verification Service | Database Query Metadata Service | AWS Data Pipeline | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | Amazon Elastic Block Store (Amazon EBS) | Amazon Elastic Container Registry (Amazon ECR) | Amazon Elastic Container Registry Public (Amazon ECR Public) | Amazon Elastic Container Service (Amazon ECS) | Amazon Elastic File System (Amazon EFS) | Amazon Elastic Kubernetes Service (Amazon EKS) | Amazon Elastic Kubernetes Service (Amazon EKS) Auth | AWS Elastic Load Balancing | AWS Elemental Appliances and Software Activation Service | AWS Elemental Appliances and Software | AWS Elemental Support Cases | AWS Elemental Support Content | AWS End User Messaging SMS and Voice V2 | Amazon EventBridge Schemas | Amazon FinSpace API | AWS Glue | Amazon Ground Truth Labeling | AWS HealthImaging",
+      "id": "978ca211eb6cad4d",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-abac"
     },
     {
       "detail": "\"AWS SDK for JavaScript Developer Guide for SDK Version 3\" did not join to a service prefix. Score 3, signals security-doc-pages.",
@@ -46665,6 +47492,13 @@
       "subject": "unresolved:doc:routing-control"
     },
     {
+      "detail": "iam-matrix-temporary-credentials produced 261 claims on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md, having previously produced 343. Something stopped resolving.",
+      "id": "9a7966c3fd89bf6c",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "regression:iam-matrix-temporary-credentials"
+    },
+    {
       "detail": "managed-rules-by-aws-config.md :: AWS Config Managed Rules (managedRule): the page states 822, we take none",
       "id": "9ad7ec7f5223d332",
       "kind": "recall",
@@ -46707,6 +47541,20 @@
       "subject": "features:sts"
     },
     {
+      "detail": "config-resource-coverage-matrix on https://docs.aws.amazon.com/config/latest/developerguide/what-is-resource-config-coverage.md could not resolve 652 resourceType values. Verbatim: AWS::ACM::Certificate | AWS::Backup::RecoveryPoint | AWS::Config::ConformancePackCompliance | AWS::Config::ResourceCompliance | AWS::InspectorV2::Activation | AWS::OpenSearch::Domain | AWS::RDS::DBClusterSnapshot | AWS::Redshift::ClusterSnapshot | AWS::S3::AccountPublicAccessBlock | AWS::SSM::AssociationCompliance | AWS::SSM::FileData | AWS::SSM::ManagedInstanceInventory | AWS::SSM::PatchCompliance | AWS::ShieldRegional::Protection | AWS::WAF::RateBasedRule | AWS::WAF::RuleGroup | AWS::WAFRegional::RuleGroup | AWS::WAFv2::ManagedRuleSet | AWS::XRay::EncryptionConfig",
+      "id": "9bb4897e35f98c73",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:config-resource-coverage-matrix"
+    },
+    {
+      "detail": "identity-center-customer-managed-key on https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md could not resolve 9 service values. Verbatim: Amazon Athena SQL | Amazon EKS Capabilities | Amazon EMR Studio | Amazon OpenSearch Service Serverless Service | Amazon S3 Access Grants | Amazon SageMaker Unified Studio | AWS Transfer Family web apps | Kiro | OpenSearch user interface (Dashboards)",
+      "id": "9beef0356fbd8368",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:identity-center-customer-managed-key"
+    },
+    {
       "detail": "429 documentation guides did not join to an IAM service prefix and are held under doc: ids.",
       "id": "9d152e3f22b676fc",
       "kind": "alias",
@@ -46742,6 +47590,20 @@
       "subject": "coverage pages without a feature"
     },
     {
+      "detail": "verified-access-fips-regions on https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md could not resolve 2 region values. Verbatim: AWS GovCloud (US) West | AWS GovCloud (US) East",
+      "id": "a0ae93a6009eb4d9",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:verified-access-fips-regions"
+    },
+    {
+      "detail": "identity-center-managed-applications on https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md could not resolve 10 service values. Verbatim: Amazon Athena SQL | Amazon EKS Capabilities | Amazon EMR Studio | Amazon OpenSearch Service Serverless Service | Amazon S3 Access Grants | Amazon SageMaker Unified Studio | AWS account access (account access manager) | AWS Transfer Family web apps | Kiro | OpenSearch user interface (Dashboards)",
+      "id": "a10f7dfc77bb2ba5",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:identity-center-managed-applications"
+    },
+    {
       "detail": "\"AWS PrivateLink\" did not join to a service prefix. Score 2, signals security-name-weak.",
       "id": "a1ae2ecf8c1f41ad",
       "kind": "alias",
@@ -46770,6 +47632,34 @@
       "subject": "unresolved:regional:oracle-database-aws"
     },
     {
+      "detail": "iam-matrix-service-linked-roles on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 145 service values. Verbatim: AWS Account Management | AWS Action Recommendations | AWS Activate Console | AWS Amplify Admin | Apache Kafka APIs for Amazon MSK clusters | Amazon API Gateway Management | Amazon API Gateway Management V2 | Amazon AppIntegrations | AWS Application Discovery Arsenal | Amazon Application Recovery Controller - Zonal Shift | AWS Application Transformation Service | AWS App Mesh Preview | Amazon ARC Region Switch | AWS Backup storage | AWS Billing and Cost Management | AWS Budget Service | Amazon Q Developer in chat applications | AWS CloudTrail Data | Amazon CloudWatch | Amazon CloudWatch Evidently | Amazon CloudWatch Network Synthetic Monitor | Amazon CloudWatch Observability Admin Service | Amazon CloudWatch RUM | Amazon CloudWatch Synthetics | AWS CodeDeploy secure host commands service | Amazon Cognito user pools | Amazon Connect Customer Cases | Amazon Connect Customer Customer Profiles | Amazon Connect Customer Outbound Campaigns | Amazon Connect Customer Voice ID | AWS Console Mobile Application | AWS Consolidated Billing | AWS Cost Optimization Hub | AWS Customer Verification Service | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | Amazon Elastic Block Store (Amazon EBS) | Amazon Elastic Container Registry (Amazon ECR) | Amazon Elastic Container Registry Public (Amazon ECR Public) | Amazon Elastic Container Service (Amazon ECS) | Amazon Elastic File System (Amazon EFS) | Amazon Elastic Kubernetes Service (Amazon EKS) | Amazon Elastic Kubernetes Service (Amazon EKS) Auth | AWS Elastic Load Balancing | AWS Elemental Appliances and Software Activation Service | AWS Elemental Appliances and Software | AWS Elemental MediaPackage | AWS Elemental MediaPackage VOD | AWS Elemental Support Cases | AWS Elemental Support Content | AWS End User Messaging SMS and Voice V2 | Amazon EventBridge Schemas | Amazon FinSpace API | AWS Firewall Manager | Amazon Ground Truth Labeling | AWS HealthImaging | IAM Identity Center Directory | IAM Identity Center Identity Store | IAM Identity Center OIDC service",
+      "id": "a5559b40c0b3f00a",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-service-linked-roles"
+    },
+    {
+      "detail": "config-resource-type-reference on https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.md could not resolve 19 resourceType values. Verbatim: AWS::EC2::RegisteredHAInstance | AWS::InspectorV2::Activation | AWS::OpenSearch::Domain | AWS::Redshift::ClusterSnapshot | AWS::RDS::DBClusterSnapshot | AWS::S3::AccountPublicAccessBlock | AWS::Backup::RecoveryPoint | AWS::Config::ResourceCompliance | AWS::Config::ConformancePackCompliance | AWS::NetworkFirewall::ContainerAssociation | AWS::ShieldRegional::Protection | AWS::SSM::AssociationCompliance | AWS::SSM::FileData | AWS::SSM::ManagedInstanceInventory | AWS::SSM::PatchCompliance | AWS::WAF::RateBasedRule | AWS::WAF::RuleGroup | AWS::WAFRegional::RuleGroup | AWS::WAFv2::ManagedRuleSet",
+      "id": "a5f7d151382496d3",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:config-resource-type-reference"
+    },
+    {
+      "detail": "identity-center-trusted-identity-propagation on https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md could not resolve 10 service values. Verbatim: Amazon Athena SQL | Amazon EKS Capabilities | Amazon EMR Studio | Amazon OpenSearch Service Serverless Service | Amazon S3 Access Grants | Amazon SageMaker Unified Studio | AWS account access (account access manager) | AWS Transfer Family web apps | Kiro | OpenSearch user interface (Dashboards)",
+      "id": "a6242b32b46eacb2",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:identity-center-trusted-identity-propagation"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Service-linked roles (service): the page states 440, we take 324",
+      "id": "a692263876b3822c",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"CloudFormation Hooks\" did not join to a service prefix. Score 0, signals none.",
       "id": "a6a32ca468a5d272",
       "kind": "alias",
@@ -46789,6 +47679,20 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:idr"
+    },
+    {
+      "detail": "awsapps-that-work-with-identity-center.md :: Enables trusted identity propagation through IAM Identity Center (service): the page states 40, we take 31",
+      "id": "a9277bb7f785eb0b",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
+      "detail": "iam-matrix-resource-level on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 24 service values. Verbatim: AWS Activate Console | AWS Batch | AWS CodePipeline | AWS CodeStar | AWS Config | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | AWS Elastic Beanstalk | Amazon Elastic Block Store (Amazon EBS) | Amazon Elastic Container Service (Amazon ECS) | AWS Elastic Load Balancing | AWS IoT Managed Integrations Service | Amazon Lightsail | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon SageMaker AI data science assistant | AWS Security Token Service (AWS STS) | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | Amazon Virtual Private Cloud (Amazon VPC) | AWS X-Ray",
+      "id": "a958c9a8acfaefb6",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-resource-level"
     },
     {
       "detail": "78 services score at or above 5 without an automatic tier and need judgement. See data/state/adjudication-pending.json.",
@@ -46859,6 +47763,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:govcloud-us"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: ABAC (authorization based on tags) (service): the page states 440, we take 328",
+      "id": "ad7895c627a8c930",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "69 coverage-shaped pages could not be tied to a named feature, for example \"Supported resource types\".",
@@ -46945,6 +47856,13 @@
       "subject": "unresolved:doc:mcp-sap"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Service-linked roles (service): the page states 440, we take 262",
+      "id": "b47418306a3cca5b",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "22 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
       "id": "b4ebdef96379e104",
       "kind": "alias",
@@ -46992,6 +47910,27 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:sdk-for-java"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Resource-based policies (service): the page states 440, we take 329",
+      "id": "b69ab120a3add0a1",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Temporary credentials (service): the page states 440, we take 328",
+      "id": "b6fa715d320b91a9",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
+      "detail": "cloudtrail-network-activity-services on https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md could not resolve 1 service values. Verbatim: cloudoptimization.amazonaws.com",
+      "id": "b7925a74bd932dba",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:cloudtrail-network-activity-services"
     },
     {
       "detail": "\"AWS SDK for Swift\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -47092,6 +48031,13 @@
       "subject": "recipe-rule:waf/latest/developerguide/aws-managed-rule-groups-(atp|acfp)\\.md$"
     },
     {
+      "detail": "iam-matrix-resource-level on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 23 service values. Verbatim: AWS Activate Console | AWS Batch | AWS CodePipeline | AWS CodeStar | AWS Config | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | AWS Elastic Beanstalk | Amazon Elastic Container Service (Amazon ECS) | AWS Elastic Load Balancing | AWS IoT Managed Integrations Service | Amazon Lightsail | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon Quantum Ledger Database (Amazon QLDB) | Amazon SageMaker AI data science assistant | AWS Security Token Service (AWS STS) | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS X-Ray",
+      "id": "bca32604d970a7cd",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-resource-level"
+    },
+    {
       "detail": "\"doc:elemental-cl3\" did not join to a service prefix. Score 2, signals security-doc-pages.",
       "id": "be14fe1463d51605",
       "kind": "alias",
@@ -47104,6 +48050,13 @@
       "kind": "alias",
       "stage": "stage5-coverage",
       "subject": "unresolved coverage targets"
+    },
+    {
+      "detail": "orgs_integrate_services_list.md :: Trusted access (column: \"Supports trusted access\") (service): the page states 52, we take 41",
+      "id": "be49969cc06c0773",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "156 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions for ACM SLRs\".",
@@ -47132,6 +48085,13 @@
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "recipe:ram-shareable-resource-types"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: ABAC (authorization based on tags) (service): the page states 440, we take 324",
+      "id": "c1226efc7ea7460c",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"doc:r53recovery\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -47211,6 +48171,13 @@
       "subject": "unresolved:product:migration-evaluator-formerly-tso-logic"
     },
     {
+      "detail": "iam-matrix-abac on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 26 service values. Verbatim: AWS Activate Console | Amazon Bedrock Agentcore | Amazon CloudFront | AWS CodeBuild | Amazon Connect Health | Database Query Metadata Service | AWS Data Pipeline | AWS Diagnostic tools | Amazon Elastic File System (Amazon EFS) | AWS Elastic Load Balancing | AWS Glue | AWS IAM Identity Center | AWS Identity and Access Management (IAM) | AWS IoT Greengrass V2 | AWS IoT Managed Integrations Service | AWS Lambda | Amazon Lightsail | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | Multi-party approval | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS X-Ray",
+      "id": "c79544d74229657c",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-abac"
+    },
+    {
       "detail": "network-security-director is a tier 1 security service but no named feature was extracted. 0 guides carry pages attributed to it.",
       "id": "c8b138cf330bc421",
       "kind": "recall",
@@ -47218,11 +48185,25 @@
       "subject": "features:network-security-director"
     },
     {
+      "detail": "iam-matrix-service-linked-roles on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 21 service values. Verbatim: AWS Activate Console | Amazon CloudWatch | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | AWS Elemental MediaPackage | AWS Elemental MediaPackage VOD | AWS Firewall Manager | AWS Identity and Access Management and Access Analyzer | AWS IoT Managed Integrations Service | AWS Lambda | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon Glacier | Amazon SageMaker AI | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | Amazon Simple Storage Service (Amazon S3) | AWS Snowball Edge Device Management | Amazon Virtual Private Cloud (Amazon VPC)",
+      "id": "c910799f2b0e0f7d",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-service-linked-roles"
+    },
+    {
       "detail": "175 coverage-shaped pages could not be tied to a named feature, for example \"Feature availability\".",
       "id": "ca31ec4297282c6a",
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "coverage pages without a feature"
+    },
+    {
+      "detail": "iam-matrix-abac on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 28 service values. Verbatim: AWS Activate Console | AWS Amplify | Amazon Bedrock Agentcore | Amazon CloudFront | Amazon CloudWatch Logs | AWS CodeBuild | Amazon Connect Health | Database Query Metadata Service | AWS Data Pipeline | AWS Diagnostic tools | Amazon Elastic File System (Amazon EFS) | AWS Elastic Load Balancing | AWS Glue | AWS IAM Identity Center | AWS Identity and Access Management (IAM) | AWS IoT Greengrass V2 | AWS IoT Managed Integrations Service | AWS Lambda | Amazon Lightsail | AWS Marketplace Vendor Insights | Multi-party approval | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | Amazon Simple Storage Service (Amazon S3) | AWS Snowball Edge Device Management | AWS X-Ray",
+      "id": "ca39430cc0425d1e",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-abac"
     },
     {
       "detail": "\"Serverless\" did not join to a service prefix. Score 0, signals none.",
@@ -47244,6 +48225,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:aws-certification"
+    },
+    {
+      "detail": "ram-shareable-resource-types on https://docs.aws.amazon.com/ram/latest/userguide/shareable.md could not resolve 2 resourceType values. Verbatim: s3-outposts:Outpost | s3:AccessGrants",
+      "id": "cccc34d2bb2ff285",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:ram-shareable-resource-types"
     },
     {
       "detail": "\"doc:ccft\" did not join to a service prefix. Score 0, signals none.",
@@ -47377,6 +48365,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:aws-cost-and-usage-report"
+    },
+    {
+      "detail": "orgs_integrate_services_list.md :: Delegated administrator for AWS services (column: \"Supports delegated administrator\") (service): the page states 52, we take 40",
+      "id": "d4489c4e42aa15aa",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"AWS Solutions Library\" did not join to a service prefix. Score 0, signals none.",
@@ -47561,6 +48556,13 @@
       "subject": "unresolved:doc:sdk-for-kotlin"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Temporary credentials (service): the page states 440, we take 262",
+      "id": "e36e3bc84269b553",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"Amazon Application Recovery Controller (ARC)\" did not join to a service prefix. Score 4, signals security-name-weak,security-doc-pages.",
       "id": "e39a5fe85033d384",
       "kind": "alias",
@@ -47638,11 +48640,25 @@
       "subject": "unresolved:doc:msk"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Resource-based policies (service): the page states 440, we take 324",
+      "id": "e66fb3946362d477",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "616 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
       "id": "e7595976e45a67ff",
       "kind": "alias",
       "stage": "stage5-coverage",
       "subject": "unresolved coverage targets"
+    },
+    {
+      "detail": "iam-matrix-actions produced 262 claims on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md, having previously produced 344. Something stopped resolving.",
+      "id": "e8437641d25f37a6",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "regression:iam-matrix-actions"
     },
     {
       "detail": "\"AWS SDKs and Tools\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -47657,6 +48673,13 @@
       "kind": "recall",
       "stage": "stage4-features",
       "subject": "features:waf-regional"
+    },
+    {
+      "detail": "iam-matrix-actions on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 11 service values. Verbatim: AWS Activate Console | Database Query Metadata Service | AWS Diagnostic tools | AWS IoT Managed Integrations Service | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS Trusted Advisor",
+      "id": "ea934eaa7b0e4d2f",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-actions"
     },
     {
       "detail": "\"PyTorch on AWS\" did not join to a service prefix. Score 0, signals none.",
@@ -47687,11 +48710,25 @@
       "subject": "unresolved:doc:elemental-live"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Actions (service): the page states 440, we take 328",
+      "id": "ece2624249a0f2be",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "173 services score between 3 and 6 and need judgement. See data/state/adjudication-pending.json.",
       "id": "ed009ce6086c7b81",
       "kind": "recall",
       "stage": "stage3-discovery",
       "subject": "adjudication judgement band"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Actions (service): the page states 440, we take 324",
+      "id": "ed6b1a5bda75e09a",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"Amazon Linux 1\" did not join to a service prefix. Score 3, signals security-doc-pages.",
@@ -47722,6 +48759,13 @@
       "subject": "expectation not met"
     },
     {
+      "detail": "identity-center-oidc-scope-services on https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md could not resolve 7 service values. Verbatim: AWS Builder ID | NoSQL Workbench",
+      "id": "f0247c43cacbf40a",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:identity-center-oidc-scope-services"
+    },
+    {
       "detail": "\"doc:claude-platform\" did not join to a service prefix. Score 1, signals security-doc-pages.",
       "id": "f13dccad87eee696",
       "kind": "alias",
@@ -47748,6 +48792,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:tk-dotnet-refactoring"
+    },
+    {
+      "detail": "iam-matrix-actions on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 14 service values. Verbatim: AWS Activate Console | Database Query Metadata Service | AWS Diagnostic tools | AWS IoT Managed Integrations Service | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon Quantum Ledger Database (Amazon QLDB) | Amazon SageMaker AI data science assistant | AWS Security Token Service (AWS STS) | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS Trusted Advisor",
+      "id": "f3a0f27aca1fa3b9",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-actions"
     },
     {
       "detail": "\"doc:parallelcluster\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -47778,6 +48829,20 @@
       "subject": "unresolved:doc:diagnostic-tools"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Actions (service): the page states 440, we take 262",
+      "id": "f5786c10da5fe7b2",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
+      "detail": "awsapps-that-work-with-identity-center.md :: AWS managed applications that integrate with IAM Identity Center (organization instances of IAM Identity Center) (service): the page states 42, we take 31",
+      "id": "f5f9ef48c6534904",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"Amazon Dash Cart\" did not join to a service prefix. Score 0, signals none.",
       "id": "f60ce44f451ed5b7",
       "kind": "alias",
@@ -47790,6 +48855,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:incident-manager"
+    },
+    {
+      "detail": "config-rules-by-region produced 38 claims on https://docs.aws.amazon.com/config/latest/developerguide/managing-rules-by-region-availability.md, having previously produced 21391. Something stopped resolving.",
+      "id": "f6be7e5e991be114",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "regression:config-rules-by-region"
     },
     {
       "detail": "\"doc:blockchain-templates\" did not join to a service prefix. Score 0, signals none.",
@@ -47827,6 +48899,13 @@
       "subject": "unresolved:product:amazon-nova"
     },
     {
+      "detail": "iam-matrix-service-linked-roles on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 18 service values. Verbatim: AWS Activate Console | Amazon CloudWatch | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | AWS Elemental MediaPackage | AWS Elemental MediaPackage VOD | AWS Firewall Manager | AWS IoT Managed Integrations Service | AWS Lambda | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon Glacier | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management",
+      "id": "f8eb85178cf288c1",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:iam-matrix-service-linked-roles"
+    },
+    {
       "detail": "\"AWS Elemental Conductor File Cluster Configuration\" did not join to a service prefix. Score 3, signals security-name-weak,security-doc-pages.",
       "id": "f913bc98c4188f4a",
       "kind": "alias",
@@ -47862,6 +48941,20 @@
       "subject": "unresolved:product:amazon-lumberyard"
     },
     {
+      "detail": "organizations-delegated-administrator on https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md could not resolve 12 service values. Verbatim: AWS Account Management | AWS Billing and Cost Management | AWS CloudFormation Stacksets | AWS Cost Optimization Hub | EC2 Capacity Manager | AWS Managed Services (AMS) Self-Service Reporting (SSR) | AWS Marketplace Private Marketplace | AWS Marketplace procurement insights dashboard | Amazon S3 Storage Lens | Tag policies | Amazon VPC IP Address Manager (IPAM) | Amazon VPC Reachability Analyzer",
+      "id": "fa865d25e2fc1b8b",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:organizations-delegated-administrator"
+    },
+    {
+      "detail": "guardduty-s3-feature-support on https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md could not resolve 1 s3Feature values. Verbatim: S3 Storage Class - S3 Intelligent-Tiering",
+      "id": "fb16f47618534533",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:guardduty-s3-feature-support"
+    },
+    {
       "detail": "The alias \"RCP\" points at organizations/resource-control-policies-rcps, which no longer exists. Either the feature was renamed or the seed is stale.",
       "id": "fba9ca9a8c8174b8",
       "kind": "alias",
@@ -47888,6 +48981,20 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:service-authorization"
+    },
+    {
+      "detail": "identity-center-trusted-identity-propagation on https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md could not resolve 1 service values. Verbatim: Kiro",
+      "id": "fdaadd6303acd8bd",
+      "kind": "alias",
+      "stage": "stage5-coverage",
+      "subject": "unresolved:identity-center-trusted-identity-propagation"
+    },
+    {
+      "detail": "iam-matrix-service-linked-roles produced 260 claims on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md, having previously produced 341. Something stopped resolving.",
+      "id": "fdabef55bba7d808",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "regression:iam-matrix-service-linked-roles"
     },
     {
       "detail": "\"doc:database-encryption-sdk\" did not join to a service prefix. Score 5, signals security-name-strong.",
@@ -47925,195 +49032,28 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-02T02:33:16.856Z",
+  "generatedAt": "2026-09-02T03:46:14.468Z",
   "manifest": {
     "fetch": {
-      "cacheHit": 12437,
-      "failed": 5,
+      "cacheHit": 0,
+      "failed": 0,
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-02T02:33:08.540Z",
+    "finishedAt": "2026-09-02T03:46:02.539Z",
     "stages": [
-      {
-        "counts": {
-          "actions": 21810,
-          "dataSources": 23,
-          "docGuides": 1236,
-          "iamPrefixedServices": 526,
-          "partitions": 8,
-          "products": 358,
-          "regions": 46,
-          "resourceTypes": 3134,
-          "services": 692
-        },
-        "finishedAt": "2026-09-02T02:32:49.043Z",
-        "id": "stage1-universes",
-        "notes": [
-          "1314 service reference resources joined to an existing resource type"
-        ],
-        "startedAt": "2026-09-02T02:32:08.536Z",
-        "status": "partial"
-      },
-      {
-        "counts": {
-          "failed": 29,
-          "guides": 1236,
-          "indexed": 1207,
-          "pages": 103576
-        },
-        "finishedAt": "2026-09-02T02:32:49.572Z",
-        "id": "stage2-doc-pages",
-        "startedAt": "2026-09-02T02:32:49.044Z",
-        "status": "partial"
-      },
-      {
-        "counts": {
-          "adjudicated": 692,
-          "candidates": 307,
-          "notSecurity": 385,
-          "overridesApplied": 33,
-          "pendingJudgement": 43,
-          "prunedStaleRecords": 0,
-          "sraMatched": 31,
-          "synthetic": 166,
-          "tier1": 45,
-          "tier2": 13
-        },
-        "finishedAt": "2026-09-02T02:32:50.005Z",
-        "id": "stage3-discovery",
-        "notes": [
-          "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
-        ],
-        "startedAt": "2026-09-02T02:32:49.573Z",
-        "status": "partial"
-      },
-      {
-        "counts": {
-          "aliasesApplied": 13,
-          "aliasesUnmatched": 0,
-          "declaredFeatures": 4,
-          "features": 1739,
-          "noFeatureFound": 104,
-          "promotedToTier2": 153,
-          "prunedStaleRecords": 0,
-          "scanned": 307,
-          "servicesWithFeatures": 203
-        },
-        "finishedAt": "2026-09-02T02:32:53.703Z",
-        "id": "stage4-features",
-        "startedAt": "2026-09-02T02:32:50.005Z",
-        "status": "ok"
-      },
-      {
-        "counts": {
-          "claims": 51369,
-          "conflicts": 0,
-          "covered": 39250,
-          "duplicateRegistrationsSkipped": 1493,
-          "empty": 11715,
-          "enabled": 11774,
-          "featuresWithCoverage": 58,
-          "from_agent": 30,
-          "from_tier1-sweep": 6516,
-          "from_title-match": 5237,
-          "newlyDiscovered": 0,
-          "notCovered": 12119,
-          "openAxes": 23,
-          "openAxisMembers": 2411,
-          "pagesConsidered": 10281,
-          "pagesFailed": 1,
-          "pagesRead": 62,
-          "pagesRejectedByKind": 2636,
-          "prunedStaleRecords": 0,
-          "recipeFailures": 0,
-          "recipeRulesWithNoPage": 0,
-          "recipes": 94,
-          "recipesAttached": 94,
-          "registered": 11783,
-          "serviceWideRecords": 0,
-          "tablesRecoveredFromHtml": 360,
-          "unattachedPages": 173,
-          "unresolvedTargets": 0,
-          "valuesDroppedUnresolved": 1617,
-          "withRecipe": 62,
-          "yielding": 66
-        },
-        "finishedAt": "2026-09-02T02:33:07.044Z",
-        "id": "stage5-coverage",
-        "startedAt": "2026-09-02T02:32:53.704Z",
-        "status": "partial"
-      },
-      {
-        "counts": {
-          "claims": 51226,
-          "features": 1738,
-          "quotesChecked": 250,
-          "recallFound": 73,
-          "recallTotal": 73,
-          "services": 692,
-          "violations": 0
-        },
-        "finishedAt": "2026-09-02T02:33:07.622Z",
-        "id": "stage6-validate",
-        "startedAt": "2026-09-02T02:33:07.045Z",
-        "status": "ok"
-      },
-      {
-        "counts": {
-          "clean": 56,
-          "empty": 0,
-          "pagesChecked": 57,
-          "partialRead": 1,
-          "staleQuotes": 0
-        },
-        "finishedAt": "2026-09-02T02:33:07.930Z",
-        "id": "stage7-verify",
-        "startedAt": "2026-09-02T02:33:07.622Z",
-        "status": "partial"
-      },
-      {
-        "counts": {
-          "drifted": 17,
-          "met": 43,
-          "unmet": 0
-        },
-        "finishedAt": "2026-09-02T02:33:08.120Z",
-        "id": "stage8-expectations",
-        "notes": [
-          "logging-network-events-with-cloudtrail.md :: eventSource valid values for network activity events (eventSource): the page states 76, we take 59",
-          "reference_aws-services-that-work-with-iam.md :: Actions (service): the page states 440, we take 289",
-          "reference_aws-services-that-work-with-iam.md :: Resource-level permissions (service): the page states 440, we take 289",
-          "reference_aws-services-that-work-with-iam.md :: Resource-based policies (service): the page states 440, we take 289",
-          "reference_aws-services-that-work-with-iam.md :: ABAC (authorization based on tags) (service): the page states 440, we take 289",
-          "reference_aws-services-that-work-with-iam.md :: Temporary credentials (service): the page states 440, we take 289",
-          "reference_aws-services-that-work-with-iam.md :: Service-linked roles (service): the page states 440, we take 289",
-          "sbom-generator-ecosystem-collection.md :: Supported platforms (per ecosystem collector) (operatingSystem): the page states 3, we take 1",
-          "supported.md :: Supported runtimes: Amazon Inspector Lambda standard scanning (runtime): the page states 30, we take 25",
-          "orgs_integrate_services_list.md :: Trusted access (column: \"Supports trusted access\") (service): the page states 52, we take 39",
-          "orgs_integrate_services_list.md :: Delegated administrator for AWS services (column: \"Supports delegated administrator\") (service): the page states 52, we take 39",
-          "awsapps-that-work-with-identity-center.md :: AWS managed applications that integrate with IAM Identity Center (organization instances of IAM Identity Center) (service): the page states 42, we take 30",
-          "awsapps-that-work-with-identity-center.md :: Integrated with account instances of IAM Identity Center (service): the page states 40, we take 30",
-          "awsapps-that-work-with-identity-center.md :: Enables trusted identity propagation through IAM Identity Center (service): the page states 40, we take 30",
-          "awsapps-that-work-with-identity-center.md :: Supports IAM Identity Center configured with a customer managed KMS key (service): the page states 40, we take 30",
-          "awsapps-that-work-with-identity-center.md :: Supports deployment in additional Regions of IAM Identity Center (service): the page states 40, we take 30",
-          "ddos-protections-by-resource-type.md :: Shield Advanced protections for each resource type (\"List of resources that AWS Shield Advanced protects\") (resourceType): the page states 11, we take 7"
-        ],
-        "startedAt": "2026-09-02T02:33:07.931Z",
-        "status": "partial"
-      },
       {
         "counts": {
           "features": 1738,
           "services": 211
         },
-        "finishedAt": "2026-09-02T02:33:08.540Z",
+        "finishedAt": "2026-09-02T03:46:02.539Z",
         "id": "report",
-        "startedAt": "2026-09-02T02:33:08.120Z",
+        "startedAt": "2026-09-02T03:46:02.154Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-02T02:32:08.534Z"
+    "startedAt": "2026-09-02T03:46:02.151Z"
   },
   "outOfScope": [
     {
@@ -53752,7 +54692,7 @@
     {
       "actionCount": 41,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 18,
+      "claimCount": 19,
       "confidence": 1,
       "docGuides": [
         {
@@ -54909,7 +55849,7 @@
     {
       "actionCount": 66,
       "category": "Management & Governance",
-      "claimCount": 95,
+      "claimCount": 108,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -55303,7 +56243,7 @@
     {
       "actionCount": 102,
       "category": "Management & Governance",
-      "claimCount": 40752,
+      "claimCount": 19399,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -57198,7 +58138,7 @@
     {
       "actionCount": 190,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 1696,
+      "claimCount": 1941,
       "confidence": 1,
       "docGuides": [
         {
@@ -57349,7 +58289,7 @@
     {
       "actionCount": 81,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 328,
+      "claimCount": 337,
       "confidence": 1,
       "docGuides": [
         {
@@ -58456,7 +59396,7 @@
     {
       "actionCount": 63,
       "category": "Management & Governance",
-      "claimCount": 78,
+      "claimCount": 94,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -59532,7 +60472,7 @@
     {
       "actionCount": 24,
       "category": "Security, Identity & Compliance",
-      "claimCount": 24,
+      "claimCount": 25,
       "confidence": 1,
       "docGuides": [
         {
@@ -59602,7 +60542,7 @@
     {
       "actionCount": 129,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 6921,
+      "claimCount": 646,
       "confidence": 1,
       "docGuides": [
         {
@@ -59864,7 +60804,7 @@
     {
       "actionCount": 39,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 21,
+      "claimCount": 22,
       "confidence": 1,
       "docGuides": [
         {
@@ -60166,7 +61106,7 @@
     {
       "actionCount": 126,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 107,
+      "claimCount": 125,
       "confidence": 1,
       "docGuides": [
         {
@@ -60642,7 +61582,7 @@
     {
       "actionCount": 1,
       "category": "Networking & Content Delivery",
-      "claimCount": 5,
+      "claimCount": 7,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -60994,6 +61934,16 @@
   ],
   "sources": [
     {
+      "claims": 38,
+      "note": "One H2 per Region listing the managed rules available there. Collapsed to one claim per Region carrying the rule count, rather than a statement per rule.",
+      "readRatio": 0,
+      "recipes": 1,
+      "serviceId": "config",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/config/latest/developerguide/managing-rules-by-region-availability.md",
+      "verdict": "partial-read"
+    },
+    {
       "claims": 2,
       "note": "Region-specific feature availability, stated as prose beside each protection plan: 'RDS Protection is not supported in Asia Pacific (Taipei)'.",
       "readRatio": 0.29,
@@ -61014,17 +61964,6 @@
       "verdict": "ok"
     },
     {
-      "claims": 1696,
-      "dropped": 866,
-      "note": "A matrix: one row per AWS service, one column per IAM capability, each cell Yes, No or Partial. Each column is a distinct capability, so each gets its own feature; collapsing them into one row answered six questions with one number.",
-      "readRatio": 0.65,
-      "recipes": 6,
-      "serviceId": "iam",
-      "source": "tier1-sweep",
-      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md",
-      "verdict": "ok"
-    },
-    {
       "claims": 38,
       "note": "The Regions where AWS Directory Service is available.",
       "readRatio": 0.68,
@@ -61032,6 +61971,17 @@
       "serviceId": "ds",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 1941,
+      "dropped": 121,
+      "note": "A matrix: one row per AWS service, one column per IAM capability, each cell Yes, No or Partial. Each column is a distinct capability, so each gets its own feature; collapsing them into one row answered six questions with one number.",
+      "readRatio": 0.73,
+      "recipes": 6,
+      "serviceId": "iam",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md",
       "verdict": "ok"
     },
     {
@@ -61055,27 +62005,6 @@
       "verdict": "ok"
     },
     {
-      "claims": 18,
-      "dropped": 1,
-      "note": "The Regions where the ACM service-linked role can be used. This is the SLR's limit, not where ACM runs, so it belongs to the SLR feature.",
-      "readRatio": 0.95,
-      "recipes": 1,
-      "serviceId": "acm",
-      "source": "tier1-sweep",
-      "url": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 21391,
-      "note": "Which managed rules exist in which Region. Each H2 is a Region and scopes the rules beneath it.",
-      "readRatio": 1,
-      "recipes": 1,
-      "serviceId": "config",
-      "source": "title-match",
-      "url": "https://docs.aws.amazon.com/config/latest/developerguide/managing-rules-by-region-availability.md",
-      "verdict": "ok"
-    },
-    {
       "claims": 17954,
       "dropped": 652,
       "note": "Resource type by Region. The types run down the first column and the Regions across the header, so every cell is one statement.",
@@ -61084,16 +62013,6 @@
       "serviceId": "config",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/config/latest/developerguide/what-is-resource-config-coverage.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 6313,
-      "note": "One H2 per Region, each listing the controls that are NOT available there. The control id is the bracketed prefix of each bullet.",
-      "readRatio": 1,
-      "recipes": 1,
-      "serviceId": "securityhub",
-      "source": "agent",
-      "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/regions-controls.md",
       "verdict": "ok"
     },
     {
@@ -61128,7 +62047,7 @@
       "verdict": "ok"
     },
     {
-      "claims": 247,
+      "claims": 254,
       "note": "Operating systems by scan method, plus the languages and runtimes Inspector reads. Each axis gets its own recipe.",
       "readRatio": 1,
       "recipes": 7,
@@ -61170,8 +62089,8 @@
       "verdict": "ok"
     },
     {
-      "claims": 90,
-      "dropped": 30,
+      "claims": 108,
+      "dropped": 3,
       "note": "AWS managed applications that work with IAM Identity Center, with four independent Yes/No columns.",
       "readRatio": 1,
       "recipes": 3,
@@ -61181,7 +62100,17 @@
       "verdict": "ok"
     },
     {
-      "claims": 81,
+      "claims": 94,
+      "note": "Which AWS services support trusted access with Organizations. Yes and No arrive as icons, which the parser turns back into words.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "organizations",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 83,
       "note": "The Applications column is the universe: the Ecosystems column is a vendor grouping where one row holds fifteen Microsoft products and another holds one. The page is about applications installed outside a package manager, so these are not package ecosystems.",
       "readRatio": 1,
       "recipes": 4,
@@ -61192,18 +62121,8 @@
     },
     {
       "claims": 78,
-      "dropped": 24,
-      "note": "Which AWS services support trusted access with Organizations. Yes and No arrive as icons, which the parser turns back into words.",
-      "readRatio": 1,
-      "recipes": 2,
-      "serviceId": "organizations",
-      "source": "agent",
-      "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 65,
-      "note": "The AWS services for which CloudTrail can log network activity events.",
+      "dropped": 1,
+      "note": "The page lists the event sources that emit network activity events, one backticked service principal per bullet. The principal is the unambiguous identifier; the prose service names beside it are not all present.",
       "readRatio": 1,
       "recipes": 2,
       "serviceId": "cloudtrail",
@@ -61250,6 +62169,16 @@
       "serviceId": "guardduty",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 38,
+      "note": "One H2 per Region listing the controls unavailable there. Read per control that is 6,313 statements about 589 individual controls, which would need a row each. At the feature level it says: Security Hub controls apply in this Region, with some unavailable — so one claim per Region, carrying the count.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "securityhub",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/regions-controls.md",
       "verdict": "ok"
     },
     {
@@ -61373,8 +62302,7 @@
       "verdict": "ok"
     },
     {
-      "claims": 24,
-      "dropped": 1,
+      "claims": 25,
       "note": "The Regions where the Security Incident Response service-linked roles can be used.",
       "readRatio": 1,
       "recipes": 1,
@@ -61422,6 +62350,16 @@
       "serviceId": "guardduty",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 19,
+      "note": "The Regions where the ACM service-linked role can be used. This is the SLR's limit, not where ACM runs, so it belongs to the SLR feature.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "acm",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md",
       "verdict": "ok"
     },
     {
@@ -61476,6 +62414,16 @@
       "verdict": "ok"
     },
     {
+      "claims": 10,
+      "note": "Two lists in one page. The bullets say what Shield Advanced protects; two notes say what it does not. A Gateway Load Balancer and a custom routing accelerator have the same CloudFormation type as the load balancers and accelerators Shield does protect, so those types come out partial, which is the accurate reading: covered for some of that type, not for others.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "shield",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md",
+      "verdict": "ok"
+    },
+    {
       "claims": 9,
       "note": "RDS Protection finding types.",
       "readRatio": 1,
@@ -61527,12 +62475,12 @@
     },
     {
       "claims": 7,
-      "note": "The resource types Shield Advanced protects, one per bullet.",
+      "note": "The Regions where Verified Access offers FIPS endpoints.",
       "readRatio": 1,
       "recipes": 1,
-      "serviceId": "shield",
-      "source": "agent",
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md",
+      "serviceId": "verified-access",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md",
       "verdict": "ok"
     },
     {
@@ -61573,17 +62521,6 @@
       "serviceId": "guardduty",
       "source": "agent",
       "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 5,
-      "dropped": 2,
-      "note": "The Regions where Verified Access offers FIPS endpoints.",
-      "readRatio": 1,
-      "recipes": 1,
-      "serviceId": "verified-access",
-      "source": "tier1-sweep",
-      "url": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md",
       "verdict": "ok"
     },
     {
@@ -61638,22 +62575,22 @@
     },
     {
       "claims": 2,
-      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",
-      "readRatio": 1,
-      "recipes": 1,
-      "serviceId": "wafv2",
-      "source": "title-match",
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-ip-rep.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 1,
       "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability. Both fraud-control rule groups state they cannot be used with Amazon Cognito user pools. The exclusion is in prose beside the rule group name.",
       "readRatio": 1,
       "recipes": 2,
       "serviceId": "wafv2",
       "source": "agent",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 2,
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "wafv2",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-ip-rep.md",
       "verdict": "ok"
     },
     {
@@ -61673,8 +62610,8 @@
     "auditFramework": 29,
     "complianceStandard": 18,
     "conditionKey": 38,
-    "configRule": 828,
-    "control": 591,
+    "configRule": 822,
+    "control": 589,
     "country": 72,
     "dataIdentifier": 159,
     "dataSource": 23,
@@ -61682,13 +62619,13 @@
     "findingType": 224,
     "logSource": 6,
     "managedRuleGroup": 47,
-    "operatingSystem": 134,
+    "operatingSystem": 136,
     "partition": 8,
     "policyType": 8,
     "programmingLanguage": 10,
     "region": 46,
     "resourceType": 3134,
-    "runtime": 25,
+    "runtime": 30,
     "s3Feature": 22,
     "selectorField": 6,
     "service": 526,

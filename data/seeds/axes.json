@@ -3,11 +3,13 @@
   "axes": {
     "region": {
       "kind": "external",
-      "label": "AWS Regions"
+      "label": "AWS Regions",
+      "universe": "regions"
     },
     "partition": {
       "kind": "external",
-      "label": "AWS partitions"
+      "label": "AWS partitions",
+      "universe": "partitions"
     },
     "service": {
       "kind": "external",
@@ -153,5 +155,6 @@
       "kind": "catalogue",
       "label": "WordPress component types the scanner reads"
     }
-  }
+  },
+  "note": "kind: external means the axis is a universe that exists whether or not the service mentions it; catalogue means a list the service publishes about itself, which is counted rather than measured. universe names a closed universe file: the denominator is then every member of it, and a member the page never mentions is unknown, never not-covered. Without it the denominator is only what the page named, so a page listing 5 Regions would read 5 of 5."
 }

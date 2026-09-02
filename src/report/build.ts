@@ -7,6 +7,21 @@ import { renderPage } from "./template.js";
 
 /** Compact view of the dataset for the browser. Full records stay in data/. */
 export function toBrowserModel(data: ReportData) {
+  const catalogueAxes = new Set(
+    Object.entries(data.axisKinds).filter(([, v]) => v.kind === "catalogue").map(([k]) => k),
+  );
+  // Denominators come from the universe, not from how many rows a page happened to
+  // list. A feature that documents 12 regions covers 12 of 46, not 12 of 12.
+  const universeSizes: Record<string, number> = {
+    region: data.regions.length,
+    partition: data.partitions.length,
+    service: data.services.filter((s) => !s.id.includes(":")).length,
+    resourceType: data.resourceTypes.length,
+    dataSource: data.dataSources.length,
+  };
+  // An open axis is as big as the catalog AWS publishes for it.
+  for (const open of data.openAxes) universeSizes[open.axis] = open.count;
+
   const coverageByFeature = new Map(data.coverage.map((c) => [c.featureId, c]));
   const adjudicationById = new Map(data.adjudications.map((a) => [a.serviceId, a]));
   const serviceById = new Map(data.services.map((s) => [s.id, s]));
@@ -28,15 +43,32 @@ export function toBrowserModel(data: ReportData) {
       axis.set(claim.status, bucket);
       perAxis.set(claim.axis, axis);
     }
-    const byAxis: Record<string, { covered: number; notCovered: number; partial: number; unknown: number; total: number; scoped: number }> = {};
+    const byAxis: Record<string, { covered: number; notCovered: number; partial: number; unknown: number; total: number; scoped: number; count?: number }> = {};
     for (const [axis, statuses] of perAxis) {
+      const all = new Set<string>();
+      for (const set of statuses.values()) for (const value of set) all.add(value);
+      // A catalogue is an inventory, not a measurement. Security Hub publishes 591
+      // controls; how many are available where is a fact about each control, and each
+      // control would have to be its own row to state it. We are not doing that, so we
+      // do not report a covered/not-covered split we cannot stand behind.
+      if (catalogueAxes.has(axis)) {
+        byAxis[axis] = { covered: 0, notCovered: 0, partial: 0, unknown: 0, total: all.size, scoped: 0, count: all.size };
+        continue;
+      }
       const covered = statuses.get("covered")?.size ?? 0;
       const notCovered = statuses.get("not-covered")?.size ?? 0;
       const partial = statuses.get("partial")?.size ?? 0;
-      const unknown = statuses.get("unknown")?.size ?? 0;
-      const all = new Set<string>();
-      for (const set of statuses.values()) for (const value of set) all.add(value);
-      byAxis[axis] = { covered, notCovered, partial, unknown, total: all.size, scoped: scoped[axis] ?? 0 };
+      const stated = statuses.get("unknown")?.size ?? 0;
+      const universe = universeSizes[axis];
+      const total = universe && universe > all.size ? universe : all.size;
+      byAxis[axis] = {
+        covered,
+        notCovered,
+        partial,
+        unknown: stated + (total - all.size),
+        total,
+        scoped: scoped[axis] ?? 0,
+      };
     }
     const targets: Record<string, string[]> = {};
     for (const claim of claims) {
@@ -88,17 +120,6 @@ export function toBrowserModel(data: ReportData) {
     };
   });
 
-  // Denominators come from the universe, not from how many rows a page happened to
-  // list. A feature that documents 12 regions covers 12 of 46, not 12 of 12.
-  const universeSizes: Record<string, number> = {
-    region: data.regions.length,
-    partition: data.partitions.length,
-    service: data.services.filter((s) => !s.id.includes(":")).length,
-    resourceType: data.resourceTypes.length,
-    dataSource: data.dataSources.length,
-  };
-  // An open axis is as big as the catalog AWS publishes for it.
-  for (const open of data.openAxes) universeSizes[open.axis] = open.count;
 
   return {
     generatedAt: data.generatedAt,

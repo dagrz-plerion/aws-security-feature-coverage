@@ -11,7 +11,7 @@ import { attributeGuides } from "../features/attribution.js";
 import { guideKeyFromUrl, toMarkdownUrl } from "../sources/docsIndex.js";
 import type { DocPage } from "../sources/docsIndex.js";
 import { TargetResolver } from "../coverage/resolvers.js";
-import { recipeRules, targetAliases } from "../core/seeds.js";
+import { highWaterResets, recipeRules, targetAliases } from "../core/seeds.js";
 import { runRecipe } from "../coverage/recipe.js";
 import type { Recipe } from "../coverage/recipe.js";
 import { allPages, loadRegistry, recordResult, saveRegistry, summarise, upsert } from "../coverage/registry.js";
@@ -156,6 +156,7 @@ export const stage5: Stage = {
     // A recipe is reference metadata: it says how to read one page shape. Seed rules
     // attach by URL pattern, so a recipe covers every page of that shape.
     const rules = (await recipeRules()).map((rule) => ({ ...rule, re: new RegExp(rule.urlPattern) }));
+    const resets = await highWaterResets();
     // A URL someone wrote a recipe for is read that way and no other way, whichever
     // service registered it. Otherwise the guide's owner reads it generically too and
     // collects a second, vaguer copy of the same claims.
@@ -353,10 +354,26 @@ export const stage5: Stage = {
         if (job.page.recipes?.length) {
           const failures: string[] = [];
           let droppedHere = 0;
+          const droppedNames: string[] = [];
           const best = job.page.best ?? {};
+          for (const [id, reset] of resets) {
+            if (best[id] === reset.from) delete best[id];
+          }
           for (const recipe of job.page.recipes) {
             const outcome = runRecipe(recipe, body, pageTitle, resolver);
             droppedHere += outcome.dropped ?? 0;
+            // A page that names 440 services while we resolve 289 has not been read.
+            // Keeping the 151 names it used makes the resolver fixable; a bare count
+            // only says something went wrong.
+            if (outcome.droppedValues?.length) {
+              droppedNames.push(...outcome.droppedValues);
+              await recordGap({
+                kind: "alias",
+                subject: `unresolved:${recipe.id}`,
+                detail: `${recipe.id} on ${url} could not resolve ${outcome.dropped} ${recipe.axis} values. Verbatim: ${outcome.droppedValues.slice(0, 60).join(" | ")}`,
+                suggestedStage: "stage5-coverage",
+              });
+            }
             // A recipe that once read 96 values and now reads 40 has regressed, even
             // if requireMin was lowered to 30 in between.
             const highWater = best[recipe.id] ?? 0;
@@ -402,11 +419,13 @@ export const stage5: Stage = {
             // the set the writer looks at and every claim on it is dropped in silence.
             if (!namedByPage) serviceWideUsed.add(job.page.serviceId);
             const list = claimsByFeature.get(feature.id) ?? [];
-            const already = new Set(list.map((c) => `${c.axis}|${c.targetId}|${c.scope?.targetId ?? ""}`));
+            // Two recipes on one page can reach the same target: Shield's bullets say
+            // it protects load balancers, its note says it cannot protect Gateway Load
+            // Balancers, and both are the same CloudFormation type. Dropping the
+            // second one here hid the disagreement from the dedupe that exists to
+            // catch it. Let both through — dedupeClaims collapses them, and turns a
+            // real disagreement into partial with both quotes attached.
             for (const raw of outcome.claims) {
-              const key = `${raw.axis}|${raw.targetId}|${raw.scope?.targetId ?? ""}`;
-              if (already.has(key)) continue;
-              already.add(key);
               blockClaims += 1;
               seenAxes.add(raw.axis);
               list.push({
@@ -432,7 +451,7 @@ export const stage5: Stage = {
             claims: blockClaims,
             axes: [...seenAxes].sort(),
             status: failures.length ? "failed" : blockClaims > 0 ? "ok" : "empty",
-            ...(droppedHere ? { dropped: droppedHere } : {}),
+            ...(droppedHere ? { dropped: droppedHere, droppedValues: [...new Set(droppedNames)].slice(0, 200) } : {}),
             ...(failures.length ? { detail: failures.join("; ").slice(0, 300) } : {}),
           });
           totalDropped += droppedHere;
@@ -736,7 +755,25 @@ function dedupeClaims(claims: CoverageClaim[], conflicts: Conflict[], detectedAt
       });
     }
     const best = group.slice().sort((a, b) => b.confidence - a.confidence)[0] as CoverageClaim;
-    out.push({ ...best, evidence: dedupeEvidence(group.flatMap((c) => c.evidence)).slice(0, 3) });
+    const evidence = dedupeEvidence(group.flatMap((c) => c.evidence)).slice(0, 3);
+    // Two statements about the same target used to be settled by confidence, which
+    // published one and hid the other. Shield Advanced protects load balancers and
+    // says it cannot protect Gateway Load Balancers — same CloudFormation type, and
+    // the honest answer is partial, carrying both quotes. Picking a winner asserted
+    // something the page does not say.
+    const disagree = statuses.size > 1 && !statuses.has("unknown");
+    out.push({
+      ...best,
+      ...(disagree
+        ? {
+            status: "partial" as const,
+            qualifier:
+              best.qualifier ??
+              `AWS states both ${[...statuses].sort().join(" and ")} for this target; see the quotes`,
+          }
+        : {}),
+      evidence,
+    });
   }
   return out;
 }

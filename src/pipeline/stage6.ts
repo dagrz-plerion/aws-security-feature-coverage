@@ -7,6 +7,7 @@ import { runRecall } from "../cli/recall.js";
 import { SELF_DEPRECATING } from "../coverage/extractors.js";
 import { axisKinds, recipeRules } from "../core/seeds.js";
 import type { Stage, StageResult } from "../core/runner.js";
+import { measuredCatalogue, scopeCollapse } from "./rules.js";
 import type {
   Adjudication, CoverageClaim, DataSource, Feature, FeatureCoverage,
   Region, ResourceType, Service,
@@ -140,32 +141,10 @@ export async function validate(sampleSize = 250): Promise<{ violations: Violatio
       .map((c) => `${c.featureId}: ${c.targetId}`),
   );
 
-  // If every claim on an axis is scoped to ONE member of a catalogue, the row is named
-  // after the parent but measures the member. "Condition keys — 92 of 526 services" was
-  // really "kms:ViaService — 92 of 526 services", and the same shape hid six IAM
-  // capabilities inside one row. The member is the feature.
-  const scopeCollapse: string[] = [];
-  for (const record of coverage) {
-    const byAxis = new Map<string, Set<string>>();
-    for (const claim of record.claims) {
-      if (!claim.scope) continue;
-      const key = `${claim.axis}|${claim.scope.axis}`;
-      const set = byAxis.get(key) ?? new Set<string>();
-      set.add(claim.scope.targetId);
-      byAxis.set(key, set);
-    }
-    for (const [key, scopes] of byAxis) {
-      const [axis, scopeAxis] = key.split("|");
-      if (scopes.size !== 1) continue;
-      if (declaredKinds[scopeAxis as string]?.kind !== "catalogue") continue;
-      const only = [...scopes][0];
-      const total = record.claims.filter((c) => c.axis === axis).length;
-      const scoped = record.claims.filter((c) => c.axis === axis && c.scope).length;
-      if (scoped !== total) continue;
-      scopeCollapse.push(`${record.featureId}: every ${axis} claim is scoped to ${scopeAxis} "${only}" — that is the feature, not this one`);
-    }
-  }
-  add("a row is not named after the parent of the one thing it measures", scopeCollapse);
+  // Two rules about what a row is allowed to say. Both live in ./rules so the tests
+  // exercise the code that runs here, not a copy of it.
+  add("a row is not named after the parent of the one thing it measures", scopeCollapse(coverage, declaredKinds));
+  add("a catalogue is counted, not measured", measuredCatalogue(coverage, declaredKinds));
 
   add(
     "no axis is too small to be a denominator",

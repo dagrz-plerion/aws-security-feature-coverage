@@ -18,6 +18,13 @@ const services: Service[] = [
   { id: "s3", names: ["Amazon Simple Storage Service", "Amazon S3"], productName: "Amazon S3", docGuides: [], regions: [], resourceNames: [], seenIn: ["t"], evidence: [] },
   { id: "kms", names: ["AWS Key Management Service (KMS)"], productName: "AWS Key Management Service (KMS)", docGuides: [], regions: [], resourceNames: [], seenIn: ["t"], evidence: [] },
   { id: "ssm", names: ["AWS Systems Manager"], productName: "AWS Systems Manager", docGuides: [], regions: [], resourceNames: [], seenIn: ["t"], evidence: [] },
+  { id: "ec2", names: ["Amazon Elastic Compute Cloud"], productName: "Amazon EC2", docGuides: [], regions: [], resourceNames: [], seenIn: ["t"], evidence: [] },
+  { id: "athena", names: ["Amazon Athena"], productName: "Amazon Athena", docGuides: [], regions: [], resourceNames: [], seenIn: ["t"], evidence: [] },
+  {
+    id: "budgets", names: ["AWS Budgets"], productName: "AWS Budgets",
+    docGuides: [{ title: "AWS Billing User Guide", url: "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html" }],
+    regions: [], resourceNames: [], seenIn: ["t"], evidence: [],
+  },
 ];
 
 const resourceTypes: ResourceType[] = [
@@ -169,5 +176,49 @@ describe("one resource, three spellings", () => {
     expect(resolver.resolve("AWS::S3::Bucket", "resourceType")?.targetId).toBe("AWS::S3::Bucket");
     expect(resolver.resolve("s3:Bucket", "resourceType")?.targetId).toBe("AWS::S3::Bucket");
     expect(resolver.resolve("s3:bucket", "resourceType")?.targetId).toBe("AWS::S3::Bucket");
+  });
+});
+
+describe("a service named two ways in one cell", () => {
+  it("resolves the long name when the short one trails in brackets", () => {
+    // "Amazon Elastic Compute Cloud (Amazon EC2)" is how the IAM services table writes
+    // it, and neither half was ever tried alone. EC2, EBS, ECR, ECS, EFS and EKS all
+    // went unresolved because of it.
+    expect(resolver.resolve("Amazon Elastic Compute Cloud (Amazon EC2)", "service")?.targetId).toBe("ec2");
+  });
+
+  it("resolves the bracketed short name when the long one is the unknown half", () => {
+    expect(resolver.resolve("Elastic Compute Cloud service (Amazon EC2)", "service")?.targetId).toBe("ec2");
+  });
+
+  it("still refuses a name no service holds", () => {
+    expect(resolver.resolve("Totally Fictional Service (TFS)", "service")).toBeUndefined();
+  });
+});
+
+describe("a service principal", () => {
+  it("names the service exactly", () => {
+    expect(resolver.resolve("athena.amazonaws.com", "service")?.targetId).toBe("athena");
+  });
+
+  it("does not invent a service for an unknown principal", () => {
+    expect(resolver.resolve("cloudoptimization.amazonaws.com", "service")).toBeUndefined();
+  });
+});
+
+describe("a row that links to its own guide", () => {
+  it("resolves by the guide when the name is one we do not hold", () => {
+    // "AWS Budget Service" is not a name AWS gives Budgets anywhere in our universe,
+    // but the row links to the guide that is.
+    expect(resolver.resolve("AWS Budget Service", "service")).toBeUndefined();
+    expect(resolver.resolveByDocUrl("https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html")).toBe("budgets");
+  });
+
+  it("ignores a link that belongs to no guide we hold", () => {
+    expect(resolver.resolveByDocUrl("https://docs.aws.amazon.com/nonesuch/latest/guide/x.html")).toBeUndefined();
+  });
+
+  it("ignores a link that is not AWS documentation", () => {
+    expect(resolver.resolveByDocUrl("https://aws.amazon.com/activate/faq/")).toBeUndefined();
   });
 });

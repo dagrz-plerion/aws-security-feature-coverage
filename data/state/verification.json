@@ -1,8 +1,22 @@
 {
-  "generatedAt": "2026-09-02T02:33:16.369Z",
+  "generatedAt": "2026-09-02T03:46:14.000Z",
   "pages": 57,
-  "problems": 1,
+  "problems": 2,
   "verdicts": [
+    {
+      "candidates": 21391,
+      "claims": 38,
+      "featureIds": [
+        "config/aws-config-rules"
+      ],
+      "labelsNotInQuote": 25,
+      "note": "read 38 of about 21391 candidate values on the page",
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 0,
+      "url": "https://docs.aws.amazon.com/config/latest/developerguide/managing-rules-by-region-availability.md",
+      "verdict": "partial-read"
+    },
     {
       "candidates": 7,
       "claims": 2,
@@ -32,7 +46,7 @@
     },
     {
       "candidates": 448,
-      "claims": 1696,
+      "claims": 1941,
       "featureIds": [
         "iam/actions",
         "iam/attribute-based-access-control-abac",
@@ -44,21 +58,8 @@
       "labelsNotInQuote": 0,
       "quotesChecked": 25,
       "quotesMissing": 0,
-      "readRatio": 0.65,
+      "readRatio": 0.73,
       "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 19,
-      "claims": 18,
-      "featureIds": [
-        "acm/service-linked-roles"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 18,
-      "quotesMissing": 0,
-      "readRatio": 0.95,
-      "url": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md",
       "verdict": "ok"
     },
     {
@@ -102,6 +103,19 @@
       "verdict": "ok"
     },
     {
+      "candidates": 19,
+      "claims": 19,
+      "featureIds": [
+        "acm/service-linked-roles"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 19,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md",
+      "verdict": "ok"
+    },
+    {
       "candidates": 0,
       "claims": 29,
       "featureIds": [
@@ -142,7 +156,7 @@
     },
     {
       "candidates": 4,
-      "claims": 65,
+      "claims": 78,
       "featureIds": [
         "cloudtrail/network-activity-events"
       ],
@@ -164,19 +178,6 @@
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 21391,
-      "claims": 21391,
-      "featureIds": [
-        "config/aws-config-rules"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/config/latest/developerguide/managing-rules-by-region-availability.md",
       "verdict": "ok"
     },
     {
@@ -402,7 +403,7 @@
     },
     {
       "candidates": 39,
-      "claims": 81,
+      "claims": 83,
       "featureIds": [
         "inspector2/amazon-inspector-sbom-generator"
       ],
@@ -415,7 +416,7 @@
     },
     {
       "candidates": 209,
-      "claims": 247,
+      "claims": 254,
       "featureIds": [
         "inspector2/automated-scans"
       ],
@@ -481,7 +482,7 @@
     },
     {
       "candidates": 51,
-      "claims": 78,
+      "claims": 94,
       "featureIds": [
         "organizations/delegated-administrator-for-integrated-aws-services"
       ],
@@ -534,12 +535,12 @@
     },
     {
       "candidates": 0,
-      "claims": 24,
+      "claims": 25,
       "featureIds": [
         "security-ir/service-linked-roles"
       ],
       "labelsNotInQuote": 0,
-      "quotesChecked": 24,
+      "quotesChecked": 25,
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md",
@@ -560,11 +561,11 @@
     },
     {
       "candidates": 0,
-      "claims": 6313,
+      "claims": 38,
       "featureIds": [
         "securityhub/aws-security-hub-cspm"
       ],
-      "labelsNotInQuote": 0,
+      "labelsNotInQuote": 25,
       "quotesChecked": 25,
       "quotesMissing": 0,
       "readRatio": 1,
@@ -599,12 +600,12 @@
     },
     {
       "candidates": 0,
-      "claims": 7,
+      "claims": 8,
       "featureIds": [
         "shield/aws-shield-advanced"
       ],
       "labelsNotInQuote": 0,
-      "quotesChecked": 7,
+      "quotesChecked": 8,
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md",
@@ -625,7 +626,7 @@
     },
     {
       "candidates": 40,
-      "claims": 90,
+      "claims": 108,
       "featureIds": [
         "sso/aws-managed-applications"
       ],
@@ -651,12 +652,12 @@
     },
     {
       "candidates": 0,
-      "claims": 5,
+      "claims": 7,
       "featureIds": [
         "verified-access/fips-compliance"
       ],
       "labelsNotInQuote": 0,
-      "quotesChecked": 5,
+      "quotesChecked": 7,
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md",

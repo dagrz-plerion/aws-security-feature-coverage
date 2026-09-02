@@ -4562,6 +4562,181 @@
         {
           "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
           "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported runtimes: Amazon Inspector Lambda standard scanning",
+          "quote": "+ .NET 10",
+          "retrievedAt": "2026-09-01T04:35:11.330Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-lambda-standard-runtimes",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-runtime-net-10-lambda-standard-recipe-inspector-lambda-standard-runtimes",
+      "method": "deterministic",
+      "scope": {
+        "axis": "scanMethod",
+        "label": "lambda-standard",
+        "targetId": "lambda-standard"
+      },
+      "status": "covered",
+      "targetId": ".NET 10",
+      "targetLabel": ".NET 10"
+    },
+    {
+      "axis": "runtime",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported runtimes: Amazon Inspector Lambda standard scanning",
+          "quote": "+ .NET 6",
+          "retrievedAt": "2026-09-01T04:35:11.330Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-lambda-standard-runtimes",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-runtime-net-6-lambda-standard-recipe-inspector-lambda-standard-runtimes",
+      "method": "deterministic",
+      "scope": {
+        "axis": "scanMethod",
+        "label": "lambda-standard",
+        "targetId": "lambda-standard"
+      },
+      "status": "covered",
+      "targetId": ".NET 6",
+      "targetLabel": ".NET 6"
+    },
+    {
+      "axis": "runtime",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported runtimes: Amazon Inspector Lambda code scanning",
+          "quote": "+ .NET 6",
+          "retrievedAt": "2026-09-01T04:35:11.330Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-lambda-code-runtimes",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-runtime-net-6-lambda-code-recipe-inspector-lambda-code-runtimes",
+      "method": "deterministic",
+      "scope": {
+        "axis": "scanMethod",
+        "label": "lambda-code",
+        "targetId": "lambda-code"
+      },
+      "status": "covered",
+      "targetId": ".NET 6",
+      "targetLabel": ".NET 6"
+    },
+    {
+      "axis": "runtime",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported runtimes: Amazon Inspector Lambda standard scanning",
+          "quote": "+ .NET 8",
+          "retrievedAt": "2026-09-01T04:35:11.330Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-lambda-standard-runtimes",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-runtime-net-8-lambda-standard-recipe-inspector-lambda-standard-runtimes",
+      "method": "deterministic",
+      "scope": {
+        "axis": "scanMethod",
+        "label": "lambda-standard",
+        "targetId": "lambda-standard"
+      },
+      "status": "covered",
+      "targetId": ".NET 8",
+      "targetLabel": ".NET 8"
+    },
+    {
+      "axis": "runtime",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported runtimes: Amazon Inspector Lambda code scanning",
+          "quote": "+ .NET 8",
+          "retrievedAt": "2026-09-01T04:35:11.330Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-lambda-code-runtimes",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-runtime-net-8-lambda-code-recipe-inspector-lambda-code-runtimes",
+      "method": "deterministic",
+      "scope": {
+        "axis": "scanMethod",
+        "label": "lambda-code",
+        "targetId": "lambda-code"
+      },
+      "status": "covered",
+      "targetId": ".NET 8",
+      "targetLabel": ".NET 8"
+    },
+    {
+      "axis": "runtime",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported runtimes: Amazon Inspector Lambda standard scanning",
+          "quote": "+ AL2",
+          "retrievedAt": "2026-09-01T04:35:11.330Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-lambda-standard-runtimes",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-runtime-al2-lambda-standard-recipe-inspector-lambda-standard-runtimes",
+      "method": "deterministic",
+      "scope": {
+        "axis": "scanMethod",
+        "label": "lambda-standard",
+        "targetId": "lambda-standard"
+      },
+      "status": "covered",
+      "targetId": "AL2",
+      "targetLabel": "AL2"
+    },
+    {
+      "axis": "runtime",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported runtimes: Amazon Inspector Lambda standard scanning",
+          "quote": "+ AL2023",
+          "retrievedAt": "2026-09-01T04:35:11.330Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-lambda-standard-runtimes",
+      "featureId": "inspector2/automated-scans",
+      "id": "inspector2-automated-scans-runtime-al2023-lambda-standard-recipe-inspector-lambda-standard-runtimes",
+      "method": "deterministic",
+      "scope": {
+        "axis": "scanMethod",
+        "label": "lambda-standard",
+        "targetId": "lambda-standard"
+      },
+      "status": "covered",
+      "targetId": "AL2023",
+      "targetLabel": "AL2023"
+    },
+    {
+      "axis": "runtime",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported runtimes: Amazon Inspector Lambda standard scanning",
           "quote": "+ go1.x",
           "retrievedAt": "2026-09-01T04:35:11.330Z",
           "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
@@ -5757,7 +5932,7 @@
     }
   ],
   "featureId": "inspector2/automated-scans",
-  "generatedAt": "2026-09-02T02:33:06.600Z",
+  "generatedAt": "2026-09-02T03:44:05.771Z",
   "serviceId": "inspector2",
   "unresolvedTargets": []
 }

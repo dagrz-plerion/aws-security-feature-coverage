@@ -18,6 +18,12 @@ export type Recipe = {
     from: "list-items" | "table-column" | "headings" | "code-spans" | "paragraph" | "matrix";
     /** paragraph only: the sentence must match this before its targets are taken. */
     sentenceMatches?: string;
+    /**
+     * paragraph only: shortest line to consider. The default of 20 characters keeps
+     * prose and drops stray fragments, but AWS also states a value as a bold line of
+     * its own — "Linux", "macOS", "Windows" — and those are shorter than the floor.
+     */
+    minSentenceLength?: number;
     headerMatches?: string;
     level?: number;
     extract?: "whole" | "leading-bracket" | "leading-token" | "regex";
@@ -42,6 +48,17 @@ export type Recipe = {
     value?: string;
   };
   featureId?: string;
+  /**
+   * "scope-coverage" collapses a catalogue-by-scope page into coverage of the scope.
+   *
+   * Security Hub publishes which controls are unavailable in which Region. Read
+   * literally that is 6,313 statements about 589 individual controls, and stating
+   * those honestly would need a row per control. What the page actually supports at
+   * the feature level is simpler: Security Hub controls apply in this Region, with
+   * some unavailable. So one claim per Region, carrying the member count as its
+   * qualifier, and the members themselves are counted rather than claimed.
+   */
+  emit?: "claims" | "scope-coverage";
   /** Read only the blocks whose heading matches. One page, several features. */
   onlyBlocksMatching?: string;
   requireMin?: number;
@@ -52,6 +69,13 @@ export type RecipeOutcome = {
   blocksRead: number;
   /** Values that did not resolve to an id on a closed axis. */
   dropped?: number;
+  /**
+   * The values a recipe read but could not resolve to a universe member, verbatim.
+   * A count alone says a page was misread without saying how, so these are kept and
+   * written to a gap file, which is what makes the resolver fixable rather than a
+   * guess.
+   */
+  droppedValues?: string[];
   /** Set when the recipe produced less than it promised, which means it has broken. */
   failure?: string;
 };
@@ -122,7 +146,7 @@ function statusFor(recipe: Recipe, row: string[] | undefined, headers: string[],
  * that never appear on the page ("RDS Protection RDS Protection is not supported…"),
  * which the evidence check rightly refused.
  */
-export function sentencesIn(body: string): { text: string; raw: string }[] {
+export function sentencesIn(body: string, minLength = 20): { text: string; raw: string }[] {
   const out: { text: string; raw: string }[] = [];
   for (const raw of body.split("\n")) {
     if (/^\s*(\||[+*-]\s|#{1,6}\s|<a )/.test(raw)) continue;
@@ -136,7 +160,7 @@ export function sentencesIn(body: string): { text: string; raw: string }[] {
     if (!clean) continue;
     for (const sentence of clean.split(/(?<=[.:])\s+(?=[A-Z(])/)) {
       const text = sentence.trim();
-      if (text.length > 20 && text.length < 600) out.push({ text, raw: raw.trim() });
+      if (text.length > minLength && text.length < 600) out.push({ text, raw: raw.trim() });
     }
   }
   return out;
@@ -149,6 +173,37 @@ function splitValue(value: string, recipe: Recipe): string[] {
     .split(new RegExp(recipe.select.split))
     .map((part) => part.trim())
     .filter(Boolean);
+}
+
+/** One claim per scope value, carrying how many catalogue members it was built from. */
+function collapseToScope(claims: RawClaim[], recipe: Recipe): RawClaim[] {
+  const byScope = new Map<string, RawClaim[]>();
+  for (const claim of claims) {
+    if (!claim.scope) continue;
+    const list = byScope.get(claim.scope.targetId) ?? [];
+    list.push(claim);
+    byScope.set(claim.scope.targetId, list);
+  }
+  const out: RawClaim[] = [];
+  for (const [scopeTarget, group] of byScope) {
+    const first = group[0] as RawClaim;
+    const members = new Set(group.map((c) => c.targetId)).size;
+    const noun = recipe.axis;
+    out.push({
+      axis: first.scope?.axis ?? "region",
+      targetId: scopeTarget,
+      targetLabel: first.scope?.label ?? scopeTarget,
+      status: recipe.status === "not-covered" ? "partial" : "covered",
+      qualifier:
+        recipe.status === "not-covered"
+          ? `${members} ${noun} values are not available here`
+          : `${members} ${noun} values are available here`,
+      extractorId: `recipe:${recipe.id}`,
+      quote: first.quote,
+      locator: first.locator,
+    });
+  }
+  return out;
 }
 
 function shapeOf(recipe: Recipe): RegExp | undefined {
@@ -213,7 +268,54 @@ export function runRecipe(
   }
   const claims: RawClaim[] = [];
   const seen = new Set<string>();
+  /** key -> index in `claims`, so a repeated target is merged rather than dropped. */
+  const claimAt = new Map<string, number>();
+  /**
+   * AWS names one service on several rows. The IAM services table has nine Billing
+   * rows and four EC2 rows, and 44 of the 52 services it repeats disagree with
+   * themselves on at least one column: "AWS Auto Scaling" is No where "Amazon EC2
+   * Auto Scaling" is Yes. Keeping whichever row came first published a coin flip. The
+   * honest reading at service granularity is all-yes covered, all-no not-covered,
+   * anything mixed partial — which is what Partial already means everywhere else.
+   */
+  const merge = (key: string, status: CoverageStatus, label: string): boolean => {
+    const at = claimAt.get(key);
+    if (at === undefined) return false;
+    const existing = claims[at] as RawClaim;
+    if (existing.status !== status) {
+      existing.status = "partial";
+      existing.qualifier = existing.qualifier ?? "AWS states this on several rows for the same service, and they disagree";
+    }
+    // The quote stays the first row's, verbatim. Evidence is re-checked against the
+    // stored body, and a quote stitched from two lines appears in neither.
+    if (existing.targetLabel && !existing.targetLabel.includes(label)) {
+      existing.targetLabel = `${existing.targetLabel}; ${label}`.slice(0, 200);
+    }
+    return true;
+  };
   let dropped = 0;
+  const droppedValues: string[] = [];
+  /**
+   * A table row names a service in prose and links to its guide. When the prose does
+   * not resolve, the link still does: "AWS Budget Service" is not a name we hold, but
+   * awsaccountbilling/latest/aboutv2 is a guide we map to `budgets`. Only the first
+   * link is used, which is the one on the row's own label.
+   */
+  const resolveVia = (axis: string, value: string, quote: string): string | undefined => {
+    // Name first, link second. The name is usually the more specific of the two:
+    // Route 53 Recovery Cluster, Control Config and Readiness are three IAM services
+    // sharing one guide, and resolving by link would merge them. The link only steps
+    // in when the name is one we do not hold.
+    const hit = resolver.resolve(value, axis as never);
+    if (hit) return hit.targetId;
+    if (axis !== "service") return undefined;
+    const link = /\]\((https?:\/\/docs\.aws\.amazon\.com\/[^)\s]+)\)/i.exec(quote);
+    return link ? resolver.resolveByDocUrl(link[1] as string) : undefined;
+  };
+  const drop = (value: string) => {
+    dropped += 1;
+    if (droppedValues.length < 200 && !droppedValues.includes(value)) droppedValues.push(value);
+  };
 
   for (const block of blocks) {
     const blockDoc = parseMarkdown(block.body);
@@ -285,7 +387,7 @@ export function runRecipe(
       // list. "Macie doesn't analyze S3 objects that use other storage classes, such
       // as S3 Glacier Deep Archive or S3 Express One Zone."
       const wanted = recipe.select.sentenceMatches ? new RegExp(recipe.select.sentenceMatches, "i") : undefined;
-      for (const sentence of sentencesIn(block.body)) {
+      for (const sentence of sentencesIn(block.body, recipe.select.minSentenceLength)) {
         if (wanted && !wanted.test(sentence.text)) continue;
         for (const value of splitValue(sentence.text, recipe)) values.push({ value, quote: sentence.raw });
       }
@@ -313,19 +415,20 @@ export function runRecipe(
         const targetId0 = catalogTargetId(recipe.axis, cell.target);
         let targetId = targetId0;
         if (CLOSED_AXES.has(recipe.axis)) {
-          const hit = resolver.resolve(cell.target, recipe.axis as never);
-          if (!hit) { dropped += 1; continue; }
-          targetId = hit.targetId;
+          const hit = resolveVia(recipe.axis, cell.target, cell.quote);
+          if (!hit) { drop(cell.target); continue; }
+          targetId = hit;
         }
         let cellScope: RawClaim["scope"];
         if (recipe.scope?.from === "column-header") {
           const hit = resolver.resolve(cell.header.replace(/\s+Region$/i, ""), recipe.scope.axis as never);
-          if (!hit) { dropped += 1; continue; }
+          if (!hit) { drop(cell.header); continue; }
           cellScope = { axis: recipe.scope.axis, targetId: hit.targetId, label: cell.header };
         }
         const key = `${targetId}|${cellScope?.targetId ?? cell.header}`;
-        if (seen.has(key)) continue;
+        if (merge(key, cell.status, cell.target)) continue;
         seen.add(key);
+        claimAt.set(key, claims.length);
         claims.push({
           axis: recipe.axis,
           targetId,
@@ -348,16 +451,14 @@ export function runRecipe(
       if (shape && !shape.test(target)) continue;
       let targetId = catalogTargetId(recipe.axis, target);
       if (CLOSED_AXES.has(recipe.axis)) {
-        const hit = resolver.resolve(target, recipe.axis as never);
+        const hit = resolveVia(recipe.axis, target, entry.quote);
         if (!hit) {
-          dropped += 1;
+          drop(target);
           continue;
         }
-        targetId = hit.targetId;
+        targetId = hit;
       }
       const key = `${targetId}|${scope?.targetId ?? ""}`;
-      if (seen.has(key)) continue;
-      seen.add(key);
       let status = statusFor(recipe, entry.row, entry.headers ?? [], entry.quote);
       // "kms:CustomerMasterKeySpec (deprecated)" was being published as covered. The
       // name says otherwise, and the name is AWS's own wording.
@@ -366,9 +467,12 @@ export function runRecipe(
       // the one the recipe is for. Inspector's OS recipe swept four unrelated tables
       // this way and scoped all of them to a scan method they say nothing about.
       if (recipe.status === "from-column" && status === "unknown") {
-        dropped += 1;
+        drop(target);
         continue;
       }
+      if (merge(key, status, entry.value.trim())) continue;
+      seen.add(key);
+      claimAt.set(key, claims.length);
       claims.push({
         axis: recipe.axis,
         targetId,
@@ -382,13 +486,15 @@ export function runRecipe(
     }
   }
 
+  const finalClaims = recipe.emit === "scope-coverage" ? collapseToScope(claims, recipe) : claims;
+
   const min = recipe.requireMin ?? 1;
   return {
-    claims,
+    claims: finalClaims,
     blocksRead: blocks.length,
-    ...(dropped ? { dropped } : {}),
-    ...(claims.length < min
-      ? { failure: `recipe ${recipe.id} produced ${claims.length} claims, fewer than the ${min} it promises` }
+    ...(dropped ? { dropped, droppedValues } : {}),
+    ...(finalClaims.length < min
+      ? { failure: `recipe ${recipe.id} produced ${finalClaims.length} claims, fewer than the ${min} it promises` }
       : {}),
   };
 }

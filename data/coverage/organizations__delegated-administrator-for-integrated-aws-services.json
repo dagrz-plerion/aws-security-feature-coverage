@@ -60,6 +60,56 @@
         {
           "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
           "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "|  [AWS Account Management](services-that-can-integrate-account.md) <br />Manage the details and metadata for all of the AWS accounts for your organization. | Manage account details, alternate contacts, and Regions for all of the AWS accounts in your organization. |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-account.md#integrate-enable-ta-account)  |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-account.md#integra…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-trusted-access",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-account-trusted-access-recipe-organizations-tr",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
+      "status": "covered",
+      "targetId": "account",
+      "targetLabel": "AWS Account Management"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "|  [AWS Account Management](services-that-can-integrate-account.md) <br />Manage the details and metadata for all of the AWS accounts for your organization. | Manage account details, alternate contacts, and Regions for all of the AWS accounts in your organization. |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-account.md#integrate-enable-ta-account)  |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-account.md#integra…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-delegated-administrator",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-account-delegated-administrator-recipe-organiz",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "delegated-administrator",
+        "targetId": "delegated-administrator"
+      },
+      "status": "covered",
+      "targetId": "account",
+      "targetLabel": "AWS Account Management"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
           "quote": "|  [AWS Artifact](services-that-can-integrate-artifact.md) <br />Download AWS security compliance reports such as ISO and PCI reports. | You can accept agreements on behalf of all accounts within your organization. |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-artifact.md#integrate-enable-ta-artifact)  |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-no.png) No  |",
           "retrievedAt": "2026-09-01T06:12:37.319Z",
           "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
@@ -160,6 +210,56 @@
         {
           "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
           "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "|  [AWS Marketplace Private Marketplace](services-that-can-integrate-private-marketplace.md) <br />Provides you with a broad catalog of products available in AWS Marketplace, along with ﬁne-grained control of those products. | Enables you to create multiple private marketplace experiences that are associated with your entire organization, one or more OUs, or one or more accounts in your organization, each with its own set of approved products. Your AWS administrators can also apply company branding to each private marketplace experience with your company or team’s logo, messaging, and color sc…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-trusted-access",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-aws-marketplace-trusted-access-recipe-organiza",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
+      "status": "covered",
+      "targetId": "aws-marketplace",
+      "targetLabel": "AWS Marketplace Private Marketplace; AWS Marketplace procurement insights dashboard"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "|  [AWS Marketplace Private Marketplace](services-that-can-integrate-private-marketplace.md) <br />Provides you with a broad catalog of products available in AWS Marketplace, along with ﬁne-grained control of those products. | Enables you to create multiple private marketplace experiences that are associated with your entire organization, one or more OUs, or one or more accounts in your organization, each with its own set of approved products. Your AWS administrators can also apply company branding to each private marketplace experience with your company or team’s logo, messaging, and color sc…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-delegated-administrator",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-aws-marketplace-delegated-administrator-recipe",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "delegated-administrator",
+        "targetId": "delegated-administrator"
+      },
+      "status": "covered",
+      "targetId": "aws-marketplace",
+      "targetLabel": "AWS Marketplace Private Marketplace; AWS Marketplace procurement insights dashboard"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
           "quote": "|  [AWS Backup](services-that-can-integrate-backup.md) <br />Manage and monitor backups across all of the accounts in your organization.  | You can configure and manage backup plans for your entire organization, or for groups of accounts in your organization units (OUs). You can centrally monitor backups for all of your accounts. |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-backup.md#integrate-enable-ta-backup)  |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <…",
           "retrievedAt": "2026-09-01T06:12:37.319Z",
           "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
@@ -202,6 +302,106 @@
       "status": "covered",
       "targetId": "backup",
       "targetLabel": "AWS Backup"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "| [AWS Billing and Cost Management](services-that-can-integrate-awsaccountbilling.md) <br />Provides an overview of your AWS cloud financial management data and to help you make faster and more informed decisions.  | Allows split cost allocation data to retrieve AWS Organizations information, if applicable, and collect telemetry data for the split cost allocation data services that you have opted into. <br />For more information, see [ What is AWS Billing and Cost Management?](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html) in the *Billing and Cost Management…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-trusted-access",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-billing-trusted-access-recipe-organizations-tr",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
+      "status": "covered",
+      "targetId": "billing",
+      "targetLabel": "AWS Billing and Cost Management"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "| [AWS Billing and Cost Management](services-that-can-integrate-awsaccountbilling.md) <br />Provides an overview of your AWS cloud financial management data and to help you make faster and more informed decisions.  | Allows split cost allocation data to retrieve AWS Organizations information, if applicable, and collect telemetry data for the split cost allocation data services that you have opted into. <br />For more information, see [ What is AWS Billing and Cost Management?](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html) in the *Billing and Cost Management…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-delegated-administrator",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-billing-delegated-administrator-recipe-organiz",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "delegated-administrator",
+        "targetId": "delegated-administrator"
+      },
+      "status": "not-covered",
+      "targetId": "billing",
+      "targetLabel": "AWS Billing and Cost Management"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "|  [AWS CloudFormation Stacksets](services-that-can-integrate-cloudformation.md) <br />Create, update, or delete stacks across multiple accounts and Regions with a single operation. | A user in the management account or a delegated administrator account can create a stack set with service-managed permissions that deploys stack instances to accounts in your organization. |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-cloudformation.md#integrate-enable-ta-cloudformation)  |  ![](http://docs.aws.amazon.com/…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-trusted-access",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-cloudformation-trusted-access-recipe-organizat",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
+      "status": "covered",
+      "targetId": "cloudformation",
+      "targetLabel": "AWS CloudFormation Stacksets"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "|  [AWS CloudFormation Stacksets](services-that-can-integrate-cloudformation.md) <br />Create, update, or delete stacks across multiple accounts and Regions with a single operation. | A user in the management account or a delegated administrator account can create a stack set with service-managed permissions that deploys stack instances to accounts in your organization. |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-cloudformation.md#integrate-enable-ta-cloudformation)  |  ![](http://docs.aws.amazon.com/…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-delegated-administrator",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-cloudformation-delegated-administrator-recipe-",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "delegated-administrator",
+        "targetId": "delegated-administrator"
+      },
+      "status": "covered",
+      "targetId": "cloudformation",
+      "targetLabel": "AWS CloudFormation Stacksets"
     },
     {
       "axis": "service",
@@ -460,6 +660,56 @@
         {
           "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
           "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "| [AWS Cost Optimization Hub](services-that-can-integrate-coh.md) <br />Gather cost recommendations across AWS optimization products.  | You can easily identify, filter, and aggregate AWS cost optimization recommendations across your AWS Organizations member accounts and AWS Regions. <br />For more information, see [ Cost Optimization Hub ](https://docs.aws.amazon.com/cost-management/latest/userguide/cost-optimization-hub.html) in the *Cost Optimization Hub user guide*.  |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br />[Learn more](services-that-c…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-trusted-access",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-cost-optimization-hub-trusted-access-recipe-or",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
+      "status": "covered",
+      "targetId": "cost-optimization-hub",
+      "targetLabel": "AWS Cost Optimization Hub"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "| [AWS Cost Optimization Hub](services-that-can-integrate-coh.md) <br />Gather cost recommendations across AWS optimization products.  | You can easily identify, filter, and aggregate AWS cost optimization recommendations across your AWS Organizations member accounts and AWS Regions. <br />For more information, see [ Cost Optimization Hub ](https://docs.aws.amazon.com/cost-management/latest/userguide/cost-optimization-hub.html) in the *Cost Optimization Hub user guide*.  |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br />[Learn more](services-that-c…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-delegated-administrator",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-cost-optimization-hub-delegated-administrator-",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "delegated-administrator",
+        "targetId": "delegated-administrator"
+      },
+      "status": "covered",
+      "targetId": "cost-optimization-hub",
+      "targetLabel": "AWS Cost Optimization Hub"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
           "quote": "| [Amazon Detective](services-that-can-integrate-detective.md) <br />Generate visualizations from your log data to analyze, investigate, and quickly identify the root cause of security findings or suspicious activities. | You can integrate Amazon Detective with AWS Organizations to ensure that your Detective behavior graph provides visibility into the activity for all of your organization accounts. |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-detective.md#integrate-enable-ta-detective)  |  ![](http://d…",
           "retrievedAt": "2026-09-01T06:12:37.319Z",
           "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
@@ -626,7 +876,7 @@
       },
       "status": "covered",
       "targetId": "ec2",
-      "targetLabel": "Amazon Elastic Compute Cloud"
+      "targetLabel": "Amazon Elastic Compute Cloud; EC2 Capacity Manager; Amazon VPC IP Address Manager (IPAM); Amazon VPC Reachability Analyzer"
     },
     {
       "axis": "service",
@@ -644,14 +894,15 @@
       "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
       "id": "organizations-delegated-administrator-for-integrated-aws-services-service-ec2-delegated-administrator-recipe-organizatio",
       "method": "deterministic",
+      "qualifier": "AWS states this on several rows for the same service, and they disagree",
       "scope": {
         "axis": "integrationType",
         "label": "delegated-administrator",
         "targetId": "delegated-administrator"
       },
-      "status": "not-covered",
+      "status": "partial",
       "targetId": "ec2",
-      "targetLabel": "Amazon Elastic Compute Cloud"
+      "targetLabel": "Amazon Elastic Compute Cloud; EC2 Capacity Manager; Amazon VPC IP Address Manager (IPAM); Amazon VPC Reachability Analyzer"
     },
     {
       "axis": "service",
@@ -1310,6 +1561,106 @@
         {
           "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
           "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "|  [Tag policies](services-that-can-integrate-tag-policies.md) <br />Use standardize tags across resources in your organization's accounts.  | You can create tag policies to define tagging rules for specific resources and resource types and attach those policies to organization units and accounts to enforce those rules.  |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-tag-policies.md#integrate-enable-ta-tag-policies)  |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-no.png) No …",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-trusted-access",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-organizations-trusted-access-recipe-organizati",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
+      "status": "covered",
+      "targetId": "organizations",
+      "targetLabel": "Tag policies"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "|  [Tag policies](services-that-can-integrate-tag-policies.md) <br />Use standardize tags across resources in your organization's accounts.  | You can create tag policies to define tagging rules for specific resources and resource types and attach those policies to organization units and accounts to enforce those rules.  |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-tag-policies.md#integrate-enable-ta-tag-policies)  |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-no.png) No …",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-delegated-administrator",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-organizations-delegated-administrator-recipe-o",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "delegated-administrator",
+        "targetId": "delegated-administrator"
+      },
+      "status": "not-covered",
+      "targetId": "organizations",
+      "targetLabel": "Tag policies"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "|  [AWS Managed Services (AMS) Self-Service Reporting (SSR)](services-that-can-integrate-managed-services.md) <br />Collects data from various native AWS services and provides access to reports on major AMS offerings. SSR provides the information that you can use to support operations, configuration management, asset management, security management, and compliance. | You can enable Aggregated SSR, a feature that allows customers to view consolidated Self-service reports across your organization through either your management account or a delegated administrator account. |  ![](http://docs.aws.…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-trusted-access",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-product-aws-managed-services-trusted-access-re",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
+      "status": "covered",
+      "targetId": "product:aws-managed-services",
+      "targetLabel": "AWS Managed Services (AMS) Self-Service Reporting (SSR)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "|  [AWS Managed Services (AMS) Self-Service Reporting (SSR)](services-that-can-integrate-managed-services.md) <br />Collects data from various native AWS services and provides access to reports on major AMS offerings. SSR provides the information that you can use to support operations, configuration management, asset management, security management, and compliance. | You can enable Aggregated SSR, a feature that allows customers to view consolidated Self-service reports across your organization through either your management account or a delegated administrator account. |  ![](http://docs.aws.…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-delegated-administrator",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-product-aws-managed-services-delegated-adminis",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "delegated-administrator",
+        "targetId": "delegated-administrator"
+      },
+      "status": "covered",
+      "targetId": "product:aws-managed-services",
+      "targetLabel": "AWS Managed Services (AMS) Self-Service Reporting (SSR)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
           "quote": "|  [Amazon Q Developer](services-that-can-integrate-amazon-q-dev.md) <br />Amazon Q Developer is a generative AI powered conversational assistant that can help you understand, build, extend, and operate AWS applications.  | The paid subscription version of Amazon Q Developer requires Organizations integration. |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-amazon-q-dev.md#integrate-enable-ta-amazon-q-dev)  |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-no.png) No  |",
           "retrievedAt": "2026-09-01T06:12:37.319Z",
           "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
@@ -1502,6 +1853,56 @@
       "status": "covered",
       "targetId": "resource-explorer-2",
       "targetLabel": "AWS Resource Explorer"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "|  [Amazon S3 Storage Lens](services-that-can-integrate-s3lens.md) <br />Get visibility into your Amazon S3 storage usage and activity metrics with actionable recommendations to optimize storage. | Configure Amazon S3 Storage Lens to gain visibility into Amazon S3 storage usage and activity trends, and recommendations for all member accounts in your organization. |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-s3lens.md#integrate-enable-ta-s3lens)  |  ![](http://docs.aws.amazon.com/organizations/latest/us…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-trusted-access",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-s3-trusted-access-recipe-organizations-trusted",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "trusted-access",
+        "targetId": "trusted-access"
+      },
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Amazon S3 Storage Lens"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e5173045d1b793ecbe003924dae5aabd991e32ab9a927c8ca5fe0e5c0360c186",
+          "locator": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md :: AWS services that you can use with AWS Organizations",
+          "quote": "|  [Amazon S3 Storage Lens](services-that-can-integrate-s3lens.md) <br />Get visibility into your Amazon S3 storage usage and activity metrics with actionable recommendations to optimize storage. | Configure Amazon S3 Storage Lens to gain visibility into Amazon S3 storage usage and activity trends, and recommendations for all member accounts in your organization. |  ![](http://docs.aws.amazon.com/organizations/latest/userguide/images/icon-yes.png) Yes <br /> [Learn more](services-that-can-integrate-s3lens.md#integrate-enable-ta-s3lens)  |  ![](http://docs.aws.amazon.com/organizations/latest/us…",
+          "retrievedAt": "2026-09-01T06:12:37.319Z",
+          "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md"
+        }
+      ],
+      "extractorId": "recipe:organizations-delegated-administrator",
+      "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+      "id": "organizations-delegated-administrator-for-integrated-aws-services-service-s3-delegated-administrator-recipe-organization",
+      "method": "deterministic",
+      "scope": {
+        "axis": "integrationType",
+        "label": "delegated-administrator",
+        "targetId": "delegated-administrator"
+      },
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Amazon S3 Storage Lens"
     },
     {
       "axis": "service",
@@ -1955,7 +2356,7 @@
     }
   ],
   "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
-  "generatedAt": "2026-09-02T02:33:06.600Z",
+  "generatedAt": "2026-09-02T03:44:05.771Z",
   "serviceId": "organizations",
   "unresolvedTargets": []
 }

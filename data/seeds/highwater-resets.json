@@ -1,0 +1,17 @@
+{
+  "note": "A recipe that reads fewer values than its best has regressed, and stage5 fails it. When a recipe deliberately starts measuring something different, the old best is not a fair comparison. Each entry says which recipe, what the old best was, and why it no longer applies. The reset fires only while the stored best still equals `from`, so it clears once and the guard is live again from the new number.",
+  "resets": [
+    {
+      "recipeId": "securityhub-regional-control-limits",
+      "from": 6313,
+      "reason": "Was one claim per control per Region: 6,313 statements about 589 individual controls. Stating that honestly needs a row per control, which we do not want. Now emits one claim per Region carrying the count of controls unavailable there, so 38 is the correct number.",
+      "at": "2026-09-02"
+    },
+    {
+      "recipeId": "config-rules-by-region",
+      "from": 21391,
+      "reason": "Same change: was one claim per managed rule per Region. Now one claim per Region carrying how many rules are available there.",
+      "at": "2026-09-02"
+    }
+  ]
+}

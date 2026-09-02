@@ -10,6 +10,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "| [AWS Account Management](https://docs.aws.amazon.com/accounts/latest/reference/) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-account-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "account",
+      "targetLabel": "AWS Account Management"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "| [Account access manager](account-access-manager.md) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | [Yes](aam-security.md) |",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -41,7 +61,28 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "acm",
-      "targetLabel": "AWS Certificate Manager (ACM)"
+      "targetLabel": "AWS Certificate Manager (ACM); AWS Signer"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Private CA Connector for SCEP](https://docs.aws.amazon.com/privateca/latest/userguide/connector-for-scep.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-acm-pca-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "qualifier": "AWS states this on several rows for the same service, and they disagree",
+      "status": "partial",
+      "targetId": "acm-pca",
+      "targetLabel": "AWS Private CA Connector for SCEP; AWS Private Certificate Authority (AWS Private CA)"
     },
     {
       "axis": "service",
@@ -70,7 +111,7 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
-          "quote": "|  [AWS Amplify](https://docs.aws.amazon.com/amplify/latest/userguide/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-maybe.png) Partial | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "quote": "|  [AWS Amplify Admin](https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/what-is-admin-ui.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
         }
@@ -81,7 +122,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "amplify",
-      "targetLabel": "AWS Amplify"
+      "targetLabel": "AWS Amplify Admin"
     },
     {
       "axis": "service",
@@ -139,9 +180,10 @@
       "featureId": "iam/resource-based-policies",
       "id": "iam-resource-based-policies-service-apigateway-recipe-iam-matrix-resource-based",
       "method": "deterministic",
-      "status": "covered",
+      "qualifier": "AWS states this on several rows for the same service, and they disagree",
+      "status": "partial",
       "targetId": "apigateway",
-      "targetLabel": "Amazon API Gateway"
+      "targetLabel": "Amazon API Gateway; Amazon API Gateway Management; Amazon API Gateway Management V2"
     },
     {
       "axis": "service",
@@ -281,7 +323,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "appmesh",
-      "targetLabel": "AWS App Mesh"
+      "targetLabel": "AWS App Mesh; AWS App Mesh Preview"
     },
     {
       "axis": "service",
@@ -461,7 +503,27 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "autoscaling",
-      "targetLabel": "AWS Auto Scaling"
+      "targetLabel": "AWS Auto Scaling; Amazon EC2 Auto Scaling"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Marketplace Private Marketplace](https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-marketplace.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-aws-marketplace-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "aws-marketplace",
+      "targetLabel": "AWS Marketplace Private Marketplace"
     },
     {
       "axis": "service",
@@ -499,9 +561,10 @@
       "featureId": "iam/resource-based-policies",
       "id": "iam-resource-based-policies-service-backup-recipe-iam-matrix-resource-based",
       "method": "deterministic",
-      "status": "covered",
+      "qualifier": "AWS states this on several rows for the same service, and they disagree",
+      "status": "partial",
       "targetId": "backup",
-      "targetLabel": "AWS Backup"
+      "targetLabel": "AWS Backup; AWS Backup storage"
     },
     {
       "axis": "service",
@@ -690,6 +753,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Billing and Cost Management](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ControllingAccessWebsite.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Y…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-billing-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "billing",
+      "targetLabel": "AWS Billing and Cost Management; AWS Budget Service; AWS Consolidated Billing; AWS Customer Verification Service; AWS Migration Acceleration Program Credits; AWS Payments; AWS Price List; AWS Purchase"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [AWS Billing Conductor](https://docs.aws.amazon.com/billingconductor/latest/userguide/)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -782,6 +865,26 @@
       "status": "not-covered",
       "targetId": "ce",
       "targetLabel": "AWS Cost Explorer"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Q Developer in chat applications](https://docs.aws.amazon.com/chatbot/latest/adminguide/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https:/…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-chatbot-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "chatbot",
+      "targetLabel": "Amazon Q Developer in chat applications"
     },
     {
       "axis": "service",
@@ -1030,6 +1133,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS CloudTrail Data](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/security_iam_service-with-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-cloudtrail-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "cloudtrail",
+      "targetLabel": "AWS CloudTrail Data"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/UsingIAM.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-maybe.png) [Partial](https://docs.a…",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -1039,9 +1162,10 @@
       "featureId": "iam/resource-based-policies",
       "id": "iam-resource-based-policies-service-cloudwatch-recipe-iam-matrix-resource-based",
       "method": "deterministic",
-      "status": "not-covered",
+      "qualifier": "AWS states this on several rows for the same service, and they disagree",
+      "status": "partial",
       "targetId": "cloudwatch",
-      "targetLabel": "Amazon CloudWatch"
+      "targetLabel": "Amazon CloudWatch; Amazon CloudWatch Evidently; Amazon CloudWatch Logs; Amazon CloudWatch Network Synthetic Monitor; Amazon CloudWatch Observability Admin Service; Amazon CloudWatch RUM; Amazon CloudW"
     },
     {
       "axis": "service",
@@ -1161,7 +1285,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "codedeploy",
-      "targetLabel": "AWS CodeDeploy"
+      "targetLabel": "AWS CodeDeploy; AWS CodeDeploy secure host commands service"
     },
     {
       "axis": "service",
@@ -1181,7 +1305,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "codeguru",
-      "targetLabel": "Amazon CodeGuru Profiler"
+      "targetLabel": "Amazon CodeGuru Profiler; Amazon CodeGuru Reviewer"
     },
     {
       "axis": "service",
@@ -1330,6 +1454,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Cognito user pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](ht…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-cognito-idp-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "cognito-idp",
+      "targetLabel": "Amazon Cognito user pools"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [Amazon Cognito Sync](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-sync.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.c…",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -1430,7 +1574,7 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
-          "quote": "|  [Amazon Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/what-is-amazon-connect.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.…",
+          "quote": "|  [Amazon AppIntegrations](https://docs.aws.amazon.com/connect/latest/adminguide/what-is-amazon-connect.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.a…",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
         }
@@ -1441,7 +1585,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "connect",
-      "targetLabel": "Amazon Connect Customer"
+      "targetLabel": "Amazon AppIntegrations; Amazon Connect Customer; Amazon Connect Customer Cases; Amazon Connect Customer Customer Profiles; Amazon Connect Customer Outbound Campaigns; Amazon Connect Customer Voice ID;"
     },
     {
       "axis": "service",
@@ -1482,6 +1626,26 @@
       "status": "not-covered",
       "targetId": "controltower",
       "targetLabel": "AWS Control Tower"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Cost Optimization Hub](https://docs.aws.amazon.com/cost-management/latest/userguide/cost-optimization-hub.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-cost-optimization-hub-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "cost-optimization-hub",
+      "targetLabel": "AWS Cost Optimization Hub"
     },
     {
       "axis": "service",
@@ -1730,7 +1894,7 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
-          "quote": "|  [AWS Application Discovery Service](https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Y…",
+          "quote": "|  [AWS Application Discovery Arsenal](https://docs.aws.amazon.com/application-discovery/latest/userguide/what-is-appdiscovery.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No …",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
         }
@@ -1741,7 +1905,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "discovery",
-      "targetLabel": "AWS Application Discovery Service"
+      "targetLabel": "AWS Application Discovery Arsenal; AWS Application Discovery Service"
     },
     {
       "axis": "service",
@@ -1802,6 +1966,86 @@
       "status": "not-covered",
       "targetId": "dms",
       "targetLabel": "AWS Database Migration Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Console Mobile Application](https://docs.aws.amazon.com/consolemobileapp/latest/userguide/permissions-policies.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-doc-consolemobileapp-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "doc:consolemobileapp",
+      "targetLabel": "AWS Console Mobile Application"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Marketplace Image Building Service](https://docs.aws.amazon.com/marketplace/latest/buyerguide/completing-prerequisite-steps.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-doc-marketplace-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "doc:marketplace",
+      "targetLabel": "AWS Marketplace Image Building Service; AWS Marketplace Management Portal; AWS Marketplace Metering Service; AWS Marketplace Procurement Systems Integration; AWS Marketplace Seller Reporting"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Application Transformation Service](https://docs.aws.amazon.com/microservice-extractor/latest/userguide/microservice-extractor-security.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-doc-microservice-extractor-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "doc:microservice-extractor",
+      "targetLabel": "AWS Application Transformation Service; AWS Microservice Extractor for .NET"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Application Recovery Controller - Zonal Shift](https://docs.aws.amazon.com/r53recovery/latest/dg/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-doc-r53recovery-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "doc:r53recovery",
+      "targetLabel": "Amazon Application Recovery Controller - Zonal Shift; Amazon ARC Region Switch; Amazon Route 53 Recovery Cluster; Amazon Route 53 Recovery Control Config; Amazon Route 53 Recovery Readiness"
     },
     {
       "axis": "service",
@@ -1930,6 +2174,46 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Elastic Block Store (Amazon EBS)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-maybe.png) Partial | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-ebs-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "ebs",
+      "targetLabel": "Amazon Elastic Block Store (Amazon EBS)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Elastic Compute Cloud (Amazon EC2)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-maybe.png) Partial | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#tag-resources) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Y…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-ec2-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "ec2",
+      "targetLabel": "Amazon Elastic Compute Cloud (Amazon EC2); AWS Network Manager Chat; AWS Tiros API (for Reachability Analyzer)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [Amazon EC2 Instance Connect](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amaz…",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -1950,7 +2234,67 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
-          "quote": "|  [Amazon EMR on EKS](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amaz…",
+          "quote": "|  [Amazon Elastic Container Registry (Amazon ECR)](https://docs.aws.amazon.com/AmazonECR/latest/userguide/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/AmazonECR/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-resource-based-policies) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-ecr-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ecr",
+      "targetLabel": "Amazon Elastic Container Registry (Amazon ECR)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Elastic Container Registry Public (Amazon ECR Public)](https://docs.aws.amazon.com/AmazonECR/latest/public/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-ecr-public-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "ecr-public",
+      "targetLabel": "Amazon Elastic Container Registry Public (Amazon ECR Public)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Elastic Container Service (Amazon ECS)](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-maybe.png) Partial ([Info](#swwiam_footnotes_ecs)) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/i…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-ecs-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "ecs",
+      "targetLabel": "Amazon Elastic Container Service (Amazon ECS)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Elastic Kubernetes Service (Amazon EKS)](https://docs.aws.amazon.com/eks/latest/userguide/IAM_policies.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https…",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
         }
@@ -1961,7 +2305,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "eks",
-      "targetLabel": "Amazon EMR on EKS"
+      "targetLabel": "Amazon Elastic Kubernetes Service (Amazon EKS); Amazon Elastic Kubernetes Service (Amazon EKS) Auth; Amazon EMR on EKS"
     },
     {
       "axis": "service",
@@ -2010,6 +2354,46 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Elastic File System (Amazon EFS)](https://docs.aws.amazon.com/efs/latest/ug/security-considerations.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/efs/latest/ug/security_iam_resource-based-policy-examples.html) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-maybe.png) [Partial](https://docs.aws.amazon.com/efs/latest/ug/using-tags-efs.html) |…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-elasticfilesystem-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticfilesystem",
+      "targetLabel": "Amazon Elastic File System (Amazon EFS)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Elastic Load Balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/load-balancer-authentication-access-control.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-maybe.png) Partial | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-maybe.png) Partial | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/Us…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-elasticloadbalancing-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "elasticloadbalancing",
+      "targetLabel": "AWS Elastic Load Balancing"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/…",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -2042,6 +2426,26 @@
       "status": "not-covered",
       "targetId": "elastictranscoder",
       "targetLabel": "Amazon Elastic Transcoder"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "| [AWS Elemental Appliances and Software Activation Service](https://docs.aws.amazon.com/elemental-appliances-software/latest/ug/what-is.html) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/ico…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-elemental-appliances-software-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "elemental-appliances-software",
+      "targetLabel": "AWS Elemental Appliances and Software Activation Service; AWS Elemental Support Cases; AWS Elemental Support Content"
     },
     {
       "axis": "service",
@@ -2130,7 +2534,7 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
-          "quote": "|  [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ac.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ac.html#ac-types-resource) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Y…",
+          "quote": "|  [Amazon OpenSearch](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ac.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
         }
@@ -2139,9 +2543,10 @@
       "featureId": "iam/resource-based-policies",
       "id": "iam-resource-based-policies-service-es-recipe-iam-matrix-resource-based",
       "method": "deterministic",
-      "status": "covered",
+      "qualifier": "AWS states this on several rows for the same service, and they disagree",
+      "status": "partial",
       "targetId": "es",
-      "targetLabel": "Amazon OpenSearch Service"
+      "targetLabel": "Amazon OpenSearch; Amazon OpenSearch Service"
     },
     {
       "axis": "service",
@@ -2161,7 +2566,7 @@
       "method": "deterministic",
       "status": "covered",
       "targetId": "events",
-      "targetLabel": "Amazon EventBridge"
+      "targetLabel": "Amazon EventBridge; Amazon EventBridge Schemas"
     },
     {
       "axis": "service",
@@ -2201,7 +2606,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "finspace",
-      "targetLabel": "Amazon FinSpace"
+      "targetLabel": "Amazon FinSpace; Amazon FinSpace API"
     },
     {
       "axis": "service",
@@ -2321,7 +2726,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "freertos",
-      "targetLabel": "FreeRTOS"
+      "targetLabel": "FreeRTOS; AWS IoT Device Tester"
     },
     {
       "axis": "service",
@@ -2421,7 +2826,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "geo",
-      "targetLabel": "Amazon Location Service"
+      "targetLabel": "Amazon Location Service; Amazon Location Service Maps; Amazon Location Service Places; Amazon Location Service Routes"
     },
     {
       "axis": "service",
@@ -2610,6 +3015,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Identity and Access Management and Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-getting-started.html#access-analyzer-permissions)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.co…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-iam-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "iam",
+      "targetLabel": "AWS Identity and Access Management and Access Analyzer"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [EC2 Image Builder](https://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.c…",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -2661,7 +3086,27 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "inspector",
-      "targetLabel": "Amazon Inspector"
+      "targetLabel": "Amazon Inspector; Amazon Inspector Classic"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon InspectorScan](https://docs.aws.amazon.com/inspector/latest/user/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-inspector2-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "inspector2",
+      "targetLabel": "Amazon InspectorScan"
     },
     {
       "axis": "service",
@@ -2721,7 +3166,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "iot",
-      "targetLabel": "Fleet Hub for AWS IoT Device Management"
+      "targetLabel": "Fleet Hub for AWS IoT Device Management; AWS IoT Greengrass; AWS IoT Jobs DataPlane"
     },
     {
       "axis": "service",
@@ -2990,6 +3435,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Managed Service for Apache Flink V2](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/authentication-and-access-control.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/i…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-kinesisanalytics-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "kinesisanalytics",
+      "targetLabel": "Amazon Managed Service for Apache Flink V2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "| [Amazon Kinesis Video Streams](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-iam.html) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -3002,6 +3467,26 @@
       "status": "not-covered",
       "targetId": "kinesisvideo",
       "targetLabel": "Amazon Kinesis Video Streams"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Key Management Service (AWS KMS)](https://docs.aws.amazon.com/kms/latest/developerguide/control-access.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/kms/latest/developerguide/access-glossary.html#security_iam_access-manage) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-kms-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "kms",
+      "targetLabel": "AWS Key Management Service (AWS KMS)"
     },
     {
       "axis": "service",
@@ -3079,9 +3564,10 @@
       "featureId": "iam/resource-based-policies",
       "id": "iam-resource-based-policies-service-lex-recipe-iam-matrix-resource-based",
       "method": "deterministic",
-      "status": "not-covered",
+      "qualifier": "AWS states this on several rows for the same service, and they disagree",
+      "status": "partial",
       "targetId": "lex",
-      "targetLabel": "Amazon Lex"
+      "targetLabel": "Amazon Lex; Amazon Lex V2"
     },
     {
       "axis": "service",
@@ -3101,7 +3587,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "license-manager",
-      "targetLabel": "AWS License Manager"
+      "targetLabel": "AWS License Manager; AWS License Manager Linux Subscriptions Manager"
     },
     {
       "axis": "service",
@@ -3181,7 +3667,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "m2",
-      "targetLabel": "AWS Mainframe Modernization"
+      "targetLabel": "AWS Mainframe Modernization; AWS Mainframe Modernization Application Testing"
     },
     {
       "axis": "service",
@@ -3281,7 +3767,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "marketplacecommerceanalytics",
-      "targetLabel": "AWS Marketplace"
+      "targetLabel": "AWS Marketplace; AWS Marketplace Commerce Analytics"
     },
     {
       "axis": "service",
@@ -3361,7 +3847,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "mediapackage",
-      "targetLabel": "AWS Elemental MediaPackage"
+      "targetLabel": "AWS Elemental MediaPackage; AWS Elemental MediaPackage V2"
     },
     {
       "axis": "service",
@@ -3422,6 +3908,26 @@
       "status": "not-covered",
       "targetId": "mediatailor",
       "targetLabel": "AWS Elemental MediaTailor"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS HealthImaging](https://docs.aws.amazon.com/healthimaging/latest/devguide/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-medical-imaging-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "medical-imaging",
+      "targetLabel": "AWS HealthImaging"
     },
     {
       "axis": "service",
@@ -3502,6 +4008,26 @@
       "status": "not-covered",
       "targetId": "migrationhub-orchestrator",
       "targetLabel": "AWS Migration Hub Orchestrator"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Migration Hub Strategy Recommendations](https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-migrationhub-strategy-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "migrationhub-strategy",
+      "targetLabel": "AWS Migration Hub Strategy Recommendations"
     },
     {
       "axis": "service",
@@ -3859,9 +4385,10 @@
       "featureId": "iam/resource-based-policies",
       "id": "iam-resource-based-policies-service-outposts-recipe-iam-matrix-resource-based",
       "method": "deterministic",
-      "status": "not-covered",
+      "qualifier": "AWS states this on several rows for the same service, and they disagree",
+      "status": "partial",
       "targetId": "outposts",
-      "targetLabel": "AWS Outposts"
+      "targetLabel": "AWS Outposts; Amazon Simple Storage Service (Amazon S3) on AWS Outposts"
     },
     {
       "axis": "service",
@@ -3882,6 +4409,26 @@
       "status": "not-covered",
       "targetId": "panorama",
       "targetLabel": "AWS Panorama"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Partner Central account management](https://docs.aws.amazon.com/partner-central/latest/getting-started/controlling-access-in-apc-account-management.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/User…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-partnercentral-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "partnercentral",
+      "targetLabel": "AWS Partner Central account management"
     },
     {
       "axis": "service",
@@ -4090,6 +4637,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "| [Apache Kafka APIs for Amazon MSK clusters](https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-control.html) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-product-amazon-managed-streaming-for-apache-kafka-msk-recipe-iam-matrix-resource-bas",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "product:amazon-managed-streaming-for-apache-kafka-msk",
+      "targetLabel": "Apache Kafka APIs for Amazon MSK clusters"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "| [Amazon Managed Workflows for Apache Airflow](https://docs.aws.amazon.com/mwaa/latest/userguide/security-iam.html) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes |",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -4102,6 +4669,26 @@
       "status": "not-covered",
       "targetId": "product:amazon-managed-workflows-for-apache-airflow-mwaa",
       "targetLabel": "Amazon Managed Workflows for Apache Airflow"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Quantum Ledger Database (Amazon QLDB)](https://docs.aws.amazon.com/qldb/latest/developerguide/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-product-amazon-quantum-ledger-database-qldb-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "product:amazon-quantum-ledger-database-qldb",
+      "targetLabel": "Amazon Quantum Ledger Database (Amazon QLDB)"
     },
     {
       "axis": "service",
@@ -4190,6 +4777,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Action Recommendations](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/security-iam-awsmanpol.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-product-aws-management-console-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "product:aws-management-console",
+      "targetLabel": "AWS Action Recommendations; AWS Service for managing AWS Console user experience capabilities"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [AWS Private 5G](https://docs.aws.amazon.com/private-networks/latest/userguide/how-private-5g-works.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -4230,6 +4837,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/vpn-authentication-access-control.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aw…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-product-aws-vpn-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "product:aws-vpn",
+      "targetLabel": "AWS Site-to-Site VPN"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [AWS Proton](https://docs.aws.amazon.com/proton/latest/adminguide/Welcome.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/proton/latest/…",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -4261,7 +4888,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "qbusiness",
-      "targetLabel": "Amazon Q Business"
+      "targetLabel": "Amazon Q Business; Amazon Q Business Q Apps"
     },
     {
       "axis": "service",
@@ -4281,7 +4908,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "qdeveloper",
-      "targetLabel": "Amazon Q Developer"
+      "targetLabel": "Amazon Q Developer; AWS User Subscriptions"
     },
     {
       "axis": "service",
@@ -4310,7 +4937,47 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
-          "quote": "|  [Amazon Neptune](https://docs.aws.amazon.com/neptune/latest/userguide/intro.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/neptune/latest…",
+          "quote": "|  [AWS Resource Access Manager (AWS RAM)](https://docs.aws.amazon.com/ram/latest/userguide/control-access.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-ram-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "ram",
+      "targetLabel": "AWS Resource Access Manager (AWS RAM)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Recycle Bin](https://docs.aws.amazon.com/recyclebin/latest/APIReference/Welcome.html) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-rbin-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "rbin",
+      "targetLabel": "AWS Recycle Bin"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon MediaImport](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-setup-orcl.html#custom-setup-orcl.iam-user)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
         }
@@ -4321,7 +4988,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "rds",
-      "targetLabel": "Amazon Neptune"
+      "targetLabel": "Amazon MediaImport; Amazon Neptune; Amazon Neptune Analytics; Amazon RDS Data API; Amazon RDS IAM Authentication; Amazon Relational Database Service (Amazon RDS) ([Info)](https://docs.aws.amazon.com/A"
     },
     {
       "axis": "service",
@@ -4341,7 +5008,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "redshift",
-      "targetLabel": "Amazon Redshift"
+      "targetLabel": "Amazon Redshift; AWS SQL Workbench"
     },
     {
       "axis": "service",
@@ -4521,7 +5188,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "resource-groups",
-      "targetLabel": "AWS Resource Groups"
+      "targetLabel": "AWS Resource Groups; Tag Editor"
     },
     {
       "axis": "service",
@@ -4550,6 +5217,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Identity and Access Management Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-rolesanywhere-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "rolesanywhere",
+      "targetLabel": "AWS Identity and Access Management Roles Anywhere"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/auth-and-access-control.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -4561,7 +5248,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "route53",
-      "targetLabel": "Amazon Route 53"
+      "targetLabel": "Amazon Route 53; Amazon Route 53 Profiles"
     },
     {
       "axis": "service",
@@ -4610,6 +5297,47 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS RTB Fabric](https://docs.aws.amazon.com/rtb-fabric/latest/userguide/security.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/rtb-fa…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-rtbfabric-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "rtbfabric",
+      "targetLabel": "AWS RTB Fabric"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon S3 Express](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-access-overview.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-security-iam.html) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](ht…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-s3-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "qualifier": "AWS states this on several rows for the same service, and they disagree",
+      "status": "partial",
+      "targetId": "s3",
+      "targetLabel": "Amazon S3 Express; Amazon Simple Storage Service (Amazon S3); Amazon Simple Storage Service (Amazon S3) Object Lambda"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [Amazon S3 Tables](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-setting-up.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-resource-based-policies.html) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](h…",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -4650,7 +5378,7 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
-          "quote": "|  [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-maybe.png) [Partial](https://docs.aws.amazon.com…",
+          "quote": "|  [Amazon Ground Truth Labeling](https://docs.aws.amazon.com/sagemaker/latest/dg/sms.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
         }
@@ -4661,7 +5389,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "sagemaker",
-      "targetLabel": "Amazon SageMaker AI"
+      "targetLabel": "Amazon Ground Truth Labeling; Amazon SageMaker AI; Amazon SageMaker AI geospatial capabilities; Amazon SageMaker AI with MLflow"
     },
     {
       "axis": "service",
@@ -4910,6 +5638,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Simple Email Service ‐ Mail Manager](https://docs.aws.amazon.com/ses/latest/dg/control-user-access.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://d…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-ses-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "ses",
+      "targetLabel": "Amazon Simple Email Service ‐ Mail Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [AWS Shield](https://docs.aws.amazon.com/waf/latest/developerguide/shd-auth-and-access-control.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amaz…",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -4970,6 +5718,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS End User Messaging SMS and Voice V2](https://docs.aws.amazon.com/sms-voice/latest/userguide/security-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https:…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-sms-voice-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "sms-voice",
+      "targetLabel": "AWS End User Messaging SMS and Voice V2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [Amazon Pinpoint SMS and Voice Service](https://docs.aws.amazon.com/pinpoint/latest/developerguide/)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -5001,7 +5769,27 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "snowball",
-      "targetLabel": "AWS Snowball Edge"
+      "targetLabel": "AWS Snowball Edge; AWS Snowball Edge Edge"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Simple Notification Service (Amazon SNS)](https://docs.aws.amazon.com/sns/latest/dg/UsingIAMwithSNS.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/sns/latest/dg/security-iam.html#security_iam_service-with-iam-resource-based-policies) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserG…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-sns-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sns",
+      "targetLabel": "Amazon Simple Notification Service (Amazon SNS)"
     },
     {
       "axis": "service",
@@ -5022,6 +5810,46 @@
       "status": "not-covered",
       "targetId": "social-messaging",
       "targetLabel": "AWS End User Messaging Social"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Simple Queue Service (Amazon SQS)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/UsingIAM.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/security_iam_service-with-iam.html#security_iam_service-with-iam-resource-based-policies) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/image…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-sqs-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "sqs",
+      "targetLabel": "Amazon Simple Queue Service (Amazon SQS)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Message Delivery Service](https://docs.aws.amazon.com/systems-manager/latest/userguide/execute-remote-commands.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-ssm-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "ssm",
+      "targetLabel": "Amazon Message Delivery Service; Amazon Message Gateway Service; Amazon RHEL Knowledgebase Portal; AWS Systems Manager Quick Setup"
     },
     {
       "axis": "service",
@@ -5121,7 +5949,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "sso",
-      "targetLabel": "AWS IAM Identity Center"
+      "targetLabel": "AWS IAM Identity Center; IAM Identity Center Directory; IAM Identity Center Identity Store; IAM Identity Center OIDC service; AWS Identity Store Auth; AWS Identity Sync"
     },
     {
       "axis": "service",
@@ -5170,6 +5998,26 @@
         {
           "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
           "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Security Token Service (AWS STS)](https://docs.aws.amazon.com/STS/latest/UsingSTS/TokenPermissions.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-maybe.png) Partial ([Info](#swwiam_footnotes_sts)) | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-maybe.png) Partial ([Info](#swwiam_footnotes_sts)) | ![](http://docs…",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-sts-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "sts",
+      "targetLabel": "AWS Security Token Service (AWS STS)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
           "quote": "|  [AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/getting-started.html#accessing-support)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) [Yes](https://docs.aws.amaz…",
           "retrievedAt": "2026-09-01T04:59:14.985Z",
           "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
@@ -5181,7 +6029,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "support",
-      "targetLabel": "AWS Support"
+      "targetLabel": "AWS Support; AWS Support Console; AWS Support Plans"
     },
     {
       "axis": "service",
@@ -5222,6 +6070,26 @@
       "status": "not-covered",
       "targetId": "sustainability",
       "targetLabel": "AWS Sustainability"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [Amazon Simple Workflow Service (Amazon SWF)](https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-iam.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-swf-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "swf",
+      "targetLabel": "Amazon Simple Workflow Service (Amazon SWF)"
     },
     {
       "axis": "service",
@@ -5301,7 +6169,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "timestream",
-      "targetLabel": "Amazon Timestream"
+      "targetLabel": "Amazon Timestream; Amazon Timestream Influxdb"
     },
     {
       "axis": "service",
@@ -5481,7 +6349,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "vpc-lattice",
-      "targetLabel": "Amazon VPC Lattice"
+      "targetLabel": "Amazon VPC Lattice; Amazon VPC Lattice Services"
     },
     {
       "axis": "service",
@@ -5501,7 +6369,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "waf",
-      "targetLabel": "AWS WAF"
+      "targetLabel": "AWS WAF; AWS WAF Classic"
     },
     {
       "axis": "service",
@@ -5522,6 +6390,26 @@
       "status": "not-covered",
       "targetId": "waf-regional",
       "targetLabel": "AWS WAF Regional"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "e94e69eb1eff5aeae1b23eb145cc35f7e546468319bb0e1e9f7eec11cbb07288",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md :: Services that work with IAM",
+          "quote": "|  [AWS Shield network security director](https://docs.aws.amazon.com/waf/latest/developerguide/nsd-security.html)  | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-yes.png) Yes | ![](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/icon-no.png) No |",
+          "retrievedAt": "2026-09-01T04:59:14.985Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md"
+        }
+      ],
+      "extractorId": "recipe:iam-matrix-resource-based",
+      "featureId": "iam/resource-based-policies",
+      "id": "iam-resource-based-policies-service-wafv2-recipe-iam-matrix-resource-based",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "wafv2",
+      "targetLabel": "AWS Shield network security director"
     },
     {
       "axis": "service",
@@ -5621,7 +6509,7 @@
       "method": "deterministic",
       "status": "not-covered",
       "targetId": "workspaces",
-      "targetLabel": "Amazon WorkSpaces"
+      "targetLabel": "Amazon WorkSpaces; AWS WorkSpaces Managed Instances"
     },
     {
       "axis": "service",
@@ -5665,7 +6553,7 @@
     }
   ],
   "featureId": "iam/resource-based-policies",
-  "generatedAt": "2026-09-02T02:33:06.600Z",
+  "generatedAt": "2026-09-02T03:44:05.771Z",
   "serviceId": "iam",
   "unresolvedTargets": []
 }
