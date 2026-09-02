@@ -65,3 +65,19 @@ export async function axisKinds(): Promise<Record<string, AxisKind>> {
   const file = await load<SeedFile<{ axes: Record<string, AxisKind> }>>("axes.json", { axes: {} });
   return file.axes;
 }
+
+export type ExtraFeature = {
+  id: string;
+  serviceId: string;
+  name: string;
+  kind: string;
+  summary?: string;
+  sourceUrl: string;
+  quote: string;
+};
+
+/** Capabilities a page names that the extractor did not pick up on its own. */
+export async function extraFeatures(): Promise<ExtraFeature[]> {
+  const file = await load<SeedFile<{ features: ExtraFeature[] }>>("extra-features.json", { features: [] });
+  return file.features;
+}

@@ -77,6 +77,10 @@ export function toBrowserModel(data: ReportData) {
       signals: adj.signals.map((s) => s.id),
       category: service?.productCategory ?? "",
       regions: service?.regions.length ?? 0,
+      // A service with no Region evidence anywhere is unknown, not absent. Rendering
+      // it as "0 / 46" says it runs nowhere, which is never what the sources mean.
+      global: service?.global ?? false,
+      regionsKnown: (service?.regions.length ?? 0) > 0 || (service?.global ?? false),
       actionCount: service?.actionCount ?? 0,
       docGuides: service?.docGuides.slice(0, 4) ?? [],
       featureCount: own.length,

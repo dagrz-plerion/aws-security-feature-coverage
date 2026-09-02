@@ -57,6 +57,10 @@ export const serviceSchema = z.object({
   regions: z.array(z.string()),
   /** FIPS endpoint variants. These are endpoints, not Regions, and are kept apart. */
   fipsEndpointRegions: z.array(z.string()).optional(),
+  /** The endpoint prefix, where it differs from the service id: SES answers to "email". */
+  endpointPrefix: z.string().optional(),
+  /** A service reached through one global endpoint rather than per-Region endpoints. */
+  global: z.boolean().optional(),
   actionCount: z.number().int().optional(),
   resourceNames: z.array(z.string()),
   seenIn: z.array(z.string()).min(1),

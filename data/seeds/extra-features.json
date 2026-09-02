@@ -1,0 +1,32 @@
+{
+  "_comment": "Features a page defines that the extractor did not name on its own. Each needs a source URL and a quote that appears on it, exactly like an extracted feature. Use this only for a capability AWS names and documents; it is not a place to invent one.",
+  "features": [
+    {
+      "id": "iam/actions",
+      "serviceId": "iam",
+      "name": "Actions",
+      "kind": "identity-control",
+      "summary": "Whether a service publishes IAM actions that a policy can allow or deny.",
+      "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md",
+      "quote": "Actions"
+    },
+    {
+      "id": "iam/resource-level-permissions",
+      "serviceId": "iam",
+      "name": "Resource-level permissions",
+      "kind": "identity-control",
+      "summary": "Whether a service lets a policy name individual resources by ARN rather than only *.",
+      "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md",
+      "quote": "Resource-level permissions"
+    },
+    {
+      "id": "iam/resource-based-policies",
+      "serviceId": "iam",
+      "name": "Resource-based policies",
+      "kind": "policy-type",
+      "summary": "Whether a service supports a policy attached to the resource itself, granting access across accounts.",
+      "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md",
+      "quote": "Resource-based policies"
+    }
+  ]
+}

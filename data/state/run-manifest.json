@@ -1,37 +1,35 @@
 {
   "fetch": {
-    "cacheHit": 0,
+    "cacheHit": 61,
     "failed": 0,
     "network": 0,
     "revalidated": 0
   },
-  "finishedAt": "2026-09-02T01:25:44.643Z",
+  "finishedAt": "2026-09-02T02:00:30.103Z",
   "stages": [
     {
       "counts": {
-        "claims": 49747,
-        "features": 1737,
-        "quotesChecked": 250,
-        "recallFound": 73,
-        "recallTotal": 73,
-        "services": 692,
-        "violations": 0
+        "clean": 59,
+        "empty": 0,
+        "pagesChecked": 61,
+        "partialRead": 2,
+        "staleQuotes": 0
       },
-      "finishedAt": "2026-09-02T01:25:44.213Z",
-      "id": "stage6-validate",
-      "startedAt": "2026-09-02T01:25:43.584Z",
-      "status": "ok"
+      "finishedAt": "2026-09-02T02:00:29.663Z",
+      "id": "stage7-verify",
+      "startedAt": "2026-09-02T02:00:29.319Z",
+      "status": "partial"
     },
     {
       "counts": {
-        "features": 1737,
+        "features": 1740,
         "services": 211
       },
-      "finishedAt": "2026-09-02T01:25:44.643Z",
+      "finishedAt": "2026-09-02T02:00:30.103Z",
       "id": "report",
-      "startedAt": "2026-09-02T01:25:44.214Z",
+      "startedAt": "2026-09-02T02:00:29.664Z",
       "status": "ok"
     }
   ],
-  "startedAt": "2026-09-02T01:25:43.582Z"
+  "startedAt": "2026-09-02T02:00:29.317Z"
 }

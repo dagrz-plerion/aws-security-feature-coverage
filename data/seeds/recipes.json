@@ -1176,24 +1176,96 @@
     {
       "urlPattern": "IAM/latest/UserGuide/reference_aws-services-that-work-with-iam\\.md$",
       "serviceId": "iam",
-      "note": "A matrix: one row per AWS service, one column per IAM capability, each cell Yes, No or Partial. Read flat it asserted support the page denies for most services.",
+      "note": "A matrix: one row per AWS service, one column per IAM capability, each cell Yes, No or Partial. Each column is a distinct capability, so each gets its own feature; collapsing them into one row answered six questions with one number.",
       "recipes": [
         {
-          "id": "iam-service-capability-matrix",
+          "id": "iam-matrix-actions",
           "blocks": "h2-sections",
           "onlyBlocksMatching": "work with IAM",
           "select": {
-            "from": "matrix",
+            "from": "table-column",
             "headerMatches": "^service$",
             "extract": "whole"
           },
           "axis": "service",
           "status": "from-column",
-          "scope": {
-            "axis": "iamCapability",
-            "from": "column-header"
+          "statusColumn": "^Actions$",
+          "featureId": "iam/actions",
+          "requireMin": 250
+        },
+        {
+          "id": "iam-matrix-resource-level",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "work with IAM",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^service$",
+            "extract": "whole"
           },
-          "featureId": "iam/iam-works-with-other-aws-services",
+          "axis": "service",
+          "status": "from-column",
+          "statusColumn": "^Resource-level permissions$",
+          "featureId": "iam/resource-level-permissions",
+          "requireMin": 250
+        },
+        {
+          "id": "iam-matrix-resource-based",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "work with IAM",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^service$",
+            "extract": "whole"
+          },
+          "axis": "service",
+          "status": "from-column",
+          "statusColumn": "^Resource-based policies$",
+          "featureId": "iam/resource-based-policies",
+          "requireMin": 250
+        },
+        {
+          "id": "iam-matrix-abac",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "work with IAM",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^service$",
+            "extract": "whole"
+          },
+          "axis": "service",
+          "status": "from-column",
+          "statusColumn": "^ABAC$",
+          "featureId": "iam/attribute-based-access-control-abac",
+          "requireMin": 250
+        },
+        {
+          "id": "iam-matrix-temporary-credentials",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "work with IAM",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^service$",
+            "extract": "whole"
+          },
+          "axis": "service",
+          "status": "from-column",
+          "statusColumn": "^Temporary credentials$",
+          "featureId": "iam/temporary-security-credentials",
+          "requireMin": 250
+        },
+        {
+          "id": "iam-matrix-service-linked-roles",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "work with IAM",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^service$",
+            "extract": "whole"
+          },
+          "axis": "service",
+          "status": "from-column",
+          "statusColumn": "^Service-linked roles$",
+          "featureId": "iam/service-linked-roles",
           "requireMin": 250
         }
       ]

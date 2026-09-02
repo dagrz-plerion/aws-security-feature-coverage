@@ -178,6 +178,10 @@ export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUn
   }
 
   /* ---- source 2: local API models. These bridge endpoint prefix to display name. ---- */
+  // One service can carry two ids: its IAM prefix and its endpoint prefix. SES is
+  // "ses" in the service reference and "email" in endpoints.json. Record the pairs
+  // as we see them, so what each id learns about Regions can be shared later.
+  const twins: [string, string][] = [];
   for (const modelName of await listLocalModels()) {
     const loaded = await readLocalModel(modelName);
     if (!loaded) continue;
@@ -186,6 +190,10 @@ export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUn
     const id = services.has(prefix) ? prefix : (services.has(modelName) ? modelName : prefix);
     const service = ensure(id);
     service.seenIn.push("api-model");
+    if (meta.endpointPrefix) service.endpointPrefix = meta.endpointPrefix;
+    for (const other of [meta.endpointPrefix, meta.signingName, modelName]) {
+      if (typeof other === "string" && other && other !== id) twins.push([id, other]);
+    }
     for (const candidate of [meta.serviceFullName, meta.serviceId, meta.serviceAbbreviation]) {
       if (typeof candidate === "string" && candidate) {
         service.names.push(candidate);
@@ -316,16 +324,29 @@ export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUn
   if (endpointsJson) {
     const bodySha = await storeSyntheticBody(JSON.stringify(endpointsJson.value, null, 1));
     const retrievedAt = new Date().toISOString();
+    // A service is listed under its endpoint prefix, which is often not its service
+    // id: SES is "email", Cost Explorer is "ce". Joining on the id alone left those
+    // services with no Regions at all.
+    const byEndpointPrefix = new Map<string, string>();
+    for (const service of services.values()) {
+      if (service.endpointPrefix && !byEndpointPrefix.has(service.endpointPrefix)) {
+        byEndpointPrefix.set(service.endpointPrefix, service.id);
+      }
+    }
     for (const part of endpointsJson.value.partitions) {
       for (const [prefix, entry] of Object.entries(part.services)) {
-        const id = services.has(prefix) ? prefix : index.lookup(prefix);
+        const id = services.has(prefix) ? prefix : (byEndpointPrefix.get(prefix) ?? index.lookup(prefix));
         if (!id) continue;
         const service = ensure(id);
         service.seenIn.push("botocore-endpoints");
         // endpoints.json lists endpoint variants alongside Regions. "fips-us-east-1"
         // is an endpoint in us-east-1, not a Region of its own, and counting it made
         // services appear to run in more Regions than exist.
-        const endpointKeys = Object.keys(entry.endpoints ?? {}).filter((r) => /^[a-z]{2,4}(-[a-z]+)+-\d+$/.test(r));
+        const allKeys = Object.keys(entry.endpoints ?? {});
+        // A service whose only endpoint is "aws-global" runs everywhere through one
+        // endpoint. Reporting it as 0 of 46 Regions is the opposite of the truth.
+        if (allKeys.some((k) => /-global$/.test(k))) service.global = true;
+        const endpointKeys = allKeys.filter((r) => /^[a-z]{2,4}(-[a-z]+)+-\d+$/.test(r));
         const fips = endpointKeys.filter((r) => r.startsWith("fips-") || r.endsWith("-fips"));
         const regionIds = endpointKeys.filter((r) => !fips.includes(r));
         service.regions = [...new Set([...service.regions, ...regionIds])].sort();
@@ -344,6 +365,25 @@ export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUn
           });
         }
       }
+    }
+  }
+
+  // A service can appear twice: once under its IAM prefix and once under its endpoint
+  // prefix. SES is "ses" in the service reference and "email" in endpoints.json, and
+  // its 37 Regions were landing only on "email". They are one service; share what
+  // each knows about where it runs.
+  let regionsShared = 0;
+  for (const [a, b] of twins) {
+    const service = services.get(a);
+    const twin = services.get(b);
+    if (!service || !twin || twin.id === service.id) continue;
+    const union = [...new Set([...service.regions, ...twin.regions])].sort();
+    if (union.length > service.regions.length || union.length > twin.regions.length) regionsShared += 1;
+    service.regions = union;
+    twin.regions = union;
+    if (service.global || twin.global) {
+      service.global = true;
+      twin.global = true;
     }
   }
 
@@ -375,6 +415,9 @@ export async function buildServiceUniverse(maxAgeMs?: number): Promise<ServiceUn
     actions,
   });
 
+  if (regionsShared > 0) {
+    notes.push(`${regionsShared} services shared Region data with their endpoint-prefix twin`);
+  }
   if (droppedRegionIds > 0) {
     notes.push(`${droppedRegionIds} endpoint keys were not Regions and were removed from service Region lists`);
   }

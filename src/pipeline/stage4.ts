@@ -1,11 +1,12 @@
 import path from "node:path";
 import { paths } from "../core/paths.js";
 import { pruneDir, readAllJson, readJson, writeJson } from "../core/store.js";
-import { storeSyntheticBody } from "../core/fetch.js";
+import { cachedFetch, storeSyntheticBody } from "../core/fetch.js";
 import { listLocalModels, readLocalModel } from "../core/aws.js";
 import { idToFilename } from "../core/ids.js";
 import { recordGap } from "../core/ops.js";
-import { featureAliases } from "../core/seeds.js";
+import { makeEvidence } from "../core/evidence.js";
+import { extraFeatures, featureAliases } from "../core/seeds.js";
 import { extractFeatureCandidates } from "../features/extract.js";
 import { mergeCandidates } from "../features/merge.js";
 import { readGuideIndex } from "../sources/guidePages.js";
@@ -118,6 +119,29 @@ export const stage4: Stage = {
       aliasesApplied += 1;
     }
 
+    // Capabilities declared by hand, each still carrying a quote from its page.
+    let declared = 0;
+    for (const extra of await extraFeatures()) {
+      if (allFeatures.some((f) => f.id === extra.id)) continue;
+      const result = await cachedFetch(extra.sourceUrl, { maxAgeMs: ctx.maxAgeMs, allowStatus: [404] });
+      if (result.status === 404) continue;
+      allFeatures.push({
+        id: extra.id,
+        serviceId: extra.serviceId,
+        name: extra.name,
+        aliases: [],
+        kind: extra.kind as Feature["kind"],
+        tier: (adjudications.find((a) => a.serviceId === extra.serviceId)?.tier ?? "tier2") as Feature["tier"],
+        ...(extra.summary ? { summary: extra.summary } : {}),
+        docUrls: [extra.sourceUrl],
+        method: "manual",
+        confidence: 1,
+        discoveredBy: ["declared"],
+        evidence: [makeEvidence(result, extra.quote, "declared in data/seeds/extra-features.json")],
+      });
+      declared += 1;
+    }
+
     const written = new Set<string>();
     for (const feature of allFeatures) {
       const filename = `${idToFilename(feature.id)}.json`;
@@ -136,6 +160,7 @@ export const stage4: Stage = {
         servicesWithFeatures: new Set(allFeatures.map((f) => f.serviceId)).size,
         promotedToTier2: promoted.length,
         noFeatureFound,
+        declaredFeatures: declared,
         aliasesApplied,
         aliasesUnmatched,
         prunedStaleRecords: pruned.length,

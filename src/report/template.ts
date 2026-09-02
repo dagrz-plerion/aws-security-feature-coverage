@@ -247,6 +247,10 @@ function detailFor(key) {
   return DETAIL && DETAIL[key] ? DETAIL[key] : null;
 }
 
+// Expanding a row used to re-render the whole tab, which reset the scroll position.
+// The row builders are kept here so a click can insert or remove one detail row.
+let LAST = { cols: [], rows: [], detail: null };
+
 function table(cols, rows, detail) {
   const key = state.tab;
   const sort = state.sort[key];
@@ -261,6 +265,7 @@ function table(cols, rows, detail) {
   }
   const head = "<tr>" + cols.map((c) =>
     '<th data-col="' + c.id + '">' + esc(c.label) + (sort && sort.id === c.id ? (sort.dir === "asc" ? " ↑" : " ↓") : "") + "</th>").join("") + "</tr>";
+  LAST = { cols, rows: data, detail };
   const body = data.map((r, i) => {
     const id = r.id || String(i);
     const open = state.open.has(id);
@@ -286,6 +291,28 @@ const match = (r, fields) => {
   return fields.some((f) => String(f ?? "").toLowerCase().includes(q));
 };
 
+/** Open or close one row in place. No re-render, so the page does not move. */
+function toggleRow(tr) {
+  const id = tr.dataset.id;
+  const next = tr.nextElementSibling;
+  if (state.open.has(id)) {
+    state.open.delete(id);
+    tr.classList.remove("open");
+    if (next && next.classList && next.classList.contains("detail")) next.remove();
+    return;
+  }
+  state.open.add(id);
+  tr.classList.add("open");
+  if (!LAST.detail) return;
+  const row = LAST.rows.find((r, i) => (r.id || String(i)) === id);
+  if (!row) return;
+  const holder = document.createElement("tbody");
+  holder.innerHTML = '<tr class="detail"><td colspan="' + LAST.cols.length + '"><div class="det">' +
+    LAST.detail(row) + "</div></td></tr>";
+  const built = holder.firstElementChild;
+  if (built) tr.after(built);
+}
+
 function render(opts) {
   // A render replaces the whole table, which loses the scroll position. Expanding a
   // row a screenful down should not throw the reader back to the top.
@@ -304,9 +331,7 @@ function render(opts) {
     if (selection && String(selection).trim().length > 0) return;
     // A link in a row is a link, not a toggle.
     if (e.target.closest && e.target.closest("a")) return;
-    const id = tr.dataset.id;
-    state.open.has(id) ? state.open.delete(id) : state.open.add(id);
-    render();
+    toggleRow(tr);
   });
   main.querySelectorAll("th[data-col]").forEach((th) => th.onclick = (e) => {
     e.stopPropagation();
@@ -332,7 +357,12 @@ const VIEWS = {
         { id: "method", label: "Decided by", value: (r) => r.method, cell: (r) => '<span class="pill ' + r.method + '">' + r.method + "</span>" },
         { id: "features", label: "Features", value: (r) => r.featureCount, cell: (r) => r.featureCount },
         { id: "claims", label: "Claims", value: (r) => r.claimCount, cell: (r) => r.claimCount },
-        { id: "regions", label: "Regions", value: (r) => r.regions, cell: (r) => r.regions + " / " + (US.region ?? "?") },
+        { id: "regions", label: "Regions", value: (r) => (r.global ? 999 : r.regionsKnown ? r.regions : -1),
+          cell: (r) => r.global
+            ? '<span class="chip" title="reached through one global endpoint">global</span>'
+            : r.regionsKnown
+              ? r.regions + " / " + (US.region ?? "?")
+              : '<span class="muted" title="no source states where this service runs">not stated</span>' },
         { id: "actions", label: "IAM actions", value: (r) => r.actionCount, cell: (r) => r.actionCount },
         { id: "reason", label: "Why in scope", value: (r) => r.reason, cell: (r) => '<span class="muted">' + esc(r.reason) + "</span>" },
       ], rows, (r) => {
