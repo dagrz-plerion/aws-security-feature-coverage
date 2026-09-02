@@ -1,8 +1,529 @@
 {
   "axes": [
+    "apiOperation",
     "conditionKey"
   ],
   "claims": [
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:EncryptionContext:context-key` | String | Single-valued | `CreateGrant`<br />`Encrypt`<br />`Decrypt`<br />`GenerateDataKey`<br />`GenerateDataKeyPair`<br />`GenerateDataKeyPairWithoutPlaintext`<br />`GenerateDataKeyWithoutPlaintext`<br />`ReEncrypt`<br />`RetireGrant` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-creategrant-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CreateGrant",
+      "targetLabel": "CreateGrant"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:BypassPolicyLockoutSafetyCheck` | Boolean | Single-valued | `CreateKey`<br />`PutKeyPolicy` | IAM policies only<br />Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-createkey-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CreateKey",
+      "targetLabel": "CreateKey"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:EncryptionAlgorithm` | String | Single-valued | `Decrypt`<br />`Encrypt`<br />`GenerateDataKey`<br />`GenerateDataKeyPair`<br />`GenerateDataKeyPairWithoutPlaintext`<br />`GenerateDataKeyWithoutPlaintext`<br />`ReEncrypt` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-decrypt-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Decrypt",
+      "targetLabel": "Decrypt"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:KeyAgreementAlgorithm` | String | Single-valued | `DeriveSharedSecret` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-derivesharedsecret-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "DeriveSharedSecret",
+      "targetLabel": "DeriveSharedSecret"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:RequestAlias` | String (list) | Single-valued | [Cryptographic operations](kms-cryptography.md#cryptographic-operations)<br />[DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html)<br />[GetPublicKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetPublicKey.html) | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-describekey-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "DescribeKey",
+      "targetLabel": "DescribeKey"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:TrailingDaysWithoutKeyUsage` | Numeric | Single-valued | `DisableKey`<br />`ScheduleKeyDeletion` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-disablekey-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "DisableKey",
+      "targetLabel": "DisableKey"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:RotationPeriodInDays` | Numeric | Single-valued | `EnableKeyRotation` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-enablekeyrotation-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "EnableKeyRotation",
+      "targetLabel": "EnableKeyRotation"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:EncryptionAlgorithm` | String | Single-valued | `Decrypt`<br />`Encrypt`<br />`GenerateDataKey`<br />`GenerateDataKeyPair`<br />`GenerateDataKeyPairWithoutPlaintext`<br />`GenerateDataKeyWithoutPlaintext`<br />`ReEncrypt` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-encrypt-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Encrypt",
+      "targetLabel": "Encrypt"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:EncryptionAlgorithm` | String | Single-valued | `Decrypt`<br />`Encrypt`<br />`GenerateDataKey`<br />`GenerateDataKeyPair`<br />`GenerateDataKeyPairWithoutPlaintext`<br />`GenerateDataKeyWithoutPlaintext`<br />`ReEncrypt` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-generatedatakey-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GenerateDataKey",
+      "targetLabel": "GenerateDataKey"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:DataKeyPairSpec` | String | Single-valued | `GenerateDataKeyPair`<br />`GenerateDataKeyPairWithoutPlaintext` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-generatedatakeypair-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GenerateDataKeyPair",
+      "targetLabel": "GenerateDataKeyPair"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:DataKeyPairSpec` | String | Single-valued | `GenerateDataKeyPair`<br />`GenerateDataKeyPairWithoutPlaintext` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-generatedatakeypairwithoutplaintext-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GenerateDataKeyPairWithoutPlaintext",
+      "targetLabel": "GenerateDataKeyPairWithoutPlaintext"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:EncryptionAlgorithm` | String | Single-valued | `Decrypt`<br />`Encrypt`<br />`GenerateDataKey`<br />`GenerateDataKeyPair`<br />`GenerateDataKeyPairWithoutPlaintext`<br />`GenerateDataKeyWithoutPlaintext`<br />`ReEncrypt` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-generatedatakeywithoutplaintext-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GenerateDataKeyWithoutPlaintext",
+      "targetLabel": "GenerateDataKeyWithoutPlaintext"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:MacAlgorithm` | String | Single-valued | `GenerateMac`<br />`VerifyMac` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-generatemac-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GenerateMac",
+      "targetLabel": "GenerateMac"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:WrappingAlgorithm` | String | Single-valued | `GetParametersForImport` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-getparametersforimport-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GetParametersForImport",
+      "targetLabel": "GetParametersForImport"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:RequestAlias` | String (list) | Single-valued | [Cryptographic operations](kms-cryptography.md#cryptographic-operations)<br />[DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html)<br />[GetPublicKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetPublicKey.html) | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-getpublickey-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "GetPublicKey",
+      "targetLabel": "GetPublicKey"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:ExpirationModel` | String | Single-valued | `ImportKeyMaterial` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-importkeymaterial-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ImportKeyMaterial",
+      "targetLabel": "ImportKeyMaterial"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:GrantIsForAWSResource` | Boolean | Single-valued | `CreateGrant`<br />`ListGrants`<br />`RevokeGrant` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-listgrants-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ListGrants",
+      "targetLabel": "ListGrants"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:BypassPolicyLockoutSafetyCheck` | Boolean | Single-valued | `CreateKey`<br />`PutKeyPolicy` | IAM policies only<br />Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-putkeypolicy-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PutKeyPolicy",
+      "targetLabel": "PutKeyPolicy"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:EncryptionAlgorithm` | String | Single-valued | `Decrypt`<br />`Encrypt`<br />`GenerateDataKey`<br />`GenerateDataKeyPair`<br />`GenerateDataKeyPairWithoutPlaintext`<br />`GenerateDataKeyWithoutPlaintext`<br />`ReEncrypt` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-reencrypt-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ReEncrypt",
+      "targetLabel": "ReEncrypt"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:ReplicaRegion` | String (list) | Single-valued | `ReplicateKey` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-replicatekey-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ReplicateKey",
+      "targetLabel": "ReplicateKey"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:EncryptionContext:context-key` | String | Single-valued | `CreateGrant`<br />`Encrypt`<br />`Decrypt`<br />`GenerateDataKey`<br />`GenerateDataKeyPair`<br />`GenerateDataKeyPairWithoutPlaintext`<br />`GenerateDataKeyWithoutPlaintext`<br />`ReEncrypt`<br />`RetireGrant` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-retiregrant-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "RetireGrant",
+      "targetLabel": "RetireGrant"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:GrantIsForAWSResource` | Boolean | Single-valued | `CreateGrant`<br />`ListGrants`<br />`RevokeGrant` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-revokegrant-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "RevokeGrant",
+      "targetLabel": "RevokeGrant"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:ScheduleKeyDeletionPendingWindowInDays` | Numeric | Single-valued | `ScheduleKeyDeletion` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-schedulekeydeletion-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ScheduleKeyDeletion",
+      "targetLabel": "ScheduleKeyDeletion"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:PrimaryRegion` | String (list) | Single-valued | `UpdatePrimaryRegion` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-updateprimaryregion-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UpdatePrimaryRegion",
+      "targetLabel": "UpdatePrimaryRegion"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:MessageType` | String | Single-valued | `Sign`<br />`Verify` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-verify-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Verify",
+      "targetLabel": "Verify"
+    },
+    {
+      "axis": "apiOperation",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: AWS KMS condition keys",
+          "quote": "| `kms:MacAlgorithm` | String | Single-valued | `GenerateMac`<br />`VerifyMac` | Key policies and IAM policies |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-condition-key-api-operations",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-apioperation-verifymac-recipe-kms-condition-key-api-operations",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "VerifyMac",
+      "targetLabel": "VerifyMac"
+    },
     {
       "axis": "conditionKey",
       "confidence": 0.95,
@@ -765,7 +1286,7 @@
     }
   ],
   "featureId": "kms/condition-keys",
-  "generatedAt": "2026-09-02T02:20:58.976Z",
+  "generatedAt": "2026-09-02T02:33:06.600Z",
   "serviceId": "kms",
   "unresolvedTargets": []
 }

@@ -1,8 +1,1449 @@
 {
   "axes": [
+    "country",
     "dataIdentifier"
   ],
   "claims": [
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-albania-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Albania",
+      "targetLabel": "Albania"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-andorra-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Andorra",
+      "targetLabel": "Andorra"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [AWS secret access key](mdis-reference-credentials.md#mdis-reference-AWS-CREDENTIALS) | Credentials | AWS\\_CREDENTIALS | Yes | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-any-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Any",
+      "targetLabel": "Any"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [National identification number](mdis-reference-pii.md#mdis-reference-national-id) | Personal information: PII | Depending on country or region:<br />ARGENTINA\\_DNI\\_NUMBER, BRAZIL\\_RG\\_NUMBER, CHILE\\_RUT\\_NUMBER, COLOMBIA\\_CITIZENSHIP\\_CARD\\_NUMBER, FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, INDIA\\_AADHAAR\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, MEXICO\\_CURP\\_NUMBER, SPAIN\\_DNI\\_NUMBER | Yes | Argentina, Brazil, Chile, Colombia, France, Germany, India, Italy, Mexico, Spain |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-argentina-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Argentina",
+      "targetLabel": "Argentina"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-australia-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Australia",
+      "targetLabel": "Australia"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-austria-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Austria",
+      "targetLabel": "Austria"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-belgium-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Belgium",
+      "targetLabel": "Belgium"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-bosnia-herzegovina-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Bosnia-Herzegovina",
+      "targetLabel": "Bosnia-Herzegovina"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-brazil-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Brazil",
+      "targetLabel": "Brazil"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-bulgaria-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Bulgaria",
+      "targetLabel": "Bulgaria"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Bank account number](mdis-reference-financial.md#mdis-reference-BAN) | Financial information | BANK\\_ACCOUNT\\_NUMBER (for both Canada and the US) | Yes | Canada, US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-canada-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Canada",
+      "targetLabel": "Canada"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [National identification number](mdis-reference-pii.md#mdis-reference-national-id) | Personal information: PII | Depending on country or region:<br />ARGENTINA\\_DNI\\_NUMBER, BRAZIL\\_RG\\_NUMBER, CHILE\\_RUT\\_NUMBER, COLOMBIA\\_CITIZENSHIP\\_CARD\\_NUMBER, FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, INDIA\\_AADHAAR\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, MEXICO\\_CURP\\_NUMBER, SPAIN\\_DNI\\_NUMBER | Yes | Argentina, Brazil, Chile, Colombia, France, Germany, India, Italy, Mexico, Spain |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-chile-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Chile",
+      "targetLabel": "Chile"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [National identification number](mdis-reference-pii.md#mdis-reference-national-id) | Personal information: PII | Depending on country or region:<br />ARGENTINA\\_DNI\\_NUMBER, BRAZIL\\_RG\\_NUMBER, CHILE\\_RUT\\_NUMBER, COLOMBIA\\_CITIZENSHIP\\_CARD\\_NUMBER, FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, INDIA\\_AADHAAR\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, MEXICO\\_CURP\\_NUMBER, SPAIN\\_DNI\\_NUMBER | Yes | Argentina, Brazil, Chile, Colombia, France, Germany, India, Italy, Mexico, Spain |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-colombia-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Colombia",
+      "targetLabel": "Colombia"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-costa-rica-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Costa Rica",
+      "targetLabel": "Costa Rica"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-croatia-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Croatia",
+      "targetLabel": "Croatia"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-cyprus-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Cyprus",
+      "targetLabel": "Cyprus"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-czech-republic-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Czech Republic",
+      "targetLabel": "Czech Republic"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-denmark-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Denmark",
+      "targetLabel": "Denmark"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-dominican-republic-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Dominican Republic",
+      "targetLabel": "Dominican Republic"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-egypt-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Egypt",
+      "targetLabel": "Egypt"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-estonia-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Estonia",
+      "targetLabel": "Estonia"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Health insurance or medical identification number](mdis-reference-phi.md#mdis-reference-HI-ID) | Personal information: PHI | Depending on country or region:<br />CANADA\\_HEALTH\\_NUMBER, EUROPEAN\\_HEALTH\\_INSURANCE\\_CARD\\_NUMBER, FINLAND\\_EUROPEAN\\_HEALTH\\_INSURANCE\\_NUMBER, FRANCE\\_HEALTH\\_INSURANCE\\_NUMBER, UK\\_NHS\\_NUMBER, USA\\_MEDICARE\\_BENEFICIARY\\_IDENTIFIER | Yes | Canada, EU, Finland, France, UK, US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-eu-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "EU",
+      "targetLabel": "EU"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-faroe-islands-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Faroe Islands",
+      "targetLabel": "Faroe Islands"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-finland-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Finland",
+      "targetLabel": "Finland"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Basic Bank Account Number (BBAN)](mdis-reference-financial.md#mdis-reference-BBAN) | Financial information | Depending on country or region:<br />FRANCE\\_BANK\\_ACCOUNT\\_NUMBER, GERMANY\\_BANK\\_ACCOUNT\\_NUMBER, ITALY\\_BANK\\_ACCOUNT\\_NUMBER, SPAIN\\_BANK\\_ACCOUNT\\_NUMBER, UK\\_BANK\\_ACCOUNT\\_NUMBER | Yes | France, Germany, Italy, Spain, UK |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-france-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "France",
+      "targetLabel": "France"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Vehicle identification number (VIN)](mdis-reference-pii.md#mdis-reference-vin) | Personal information: PII | VEHICLE\\_IDENTIFICATION\\_NUMBER | Yes | Any, if the VIN is in proximity of a keyword in one of the following languages: English, French, German, Lithuanian, Polish, Portuguese, Romanian, or Spanish |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-french-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "French",
+      "targetLabel": "French"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-georgia-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Georgia",
+      "targetLabel": "Georgia"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Vehicle identification number (VIN)](mdis-reference-pii.md#mdis-reference-vin) | Personal information: PII | VEHICLE\\_IDENTIFICATION\\_NUMBER | Yes | Any, if the VIN is in proximity of a keyword in one of the following languages: English, French, German, Lithuanian, Polish, Portuguese, Romanian, or Spanish |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-german-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "German",
+      "targetLabel": "German"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Basic Bank Account Number (BBAN)](mdis-reference-financial.md#mdis-reference-BBAN) | Financial information | Depending on country or region:<br />FRANCE\\_BANK\\_ACCOUNT\\_NUMBER, GERMANY\\_BANK\\_ACCOUNT\\_NUMBER, ITALY\\_BANK\\_ACCOUNT\\_NUMBER, SPAIN\\_BANK\\_ACCOUNT\\_NUMBER, UK\\_BANK\\_ACCOUNT\\_NUMBER | Yes | France, Germany, Italy, Spain, UK |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-germany-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Germany",
+      "targetLabel": "Germany"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-greece-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Greece",
+      "targetLabel": "Greece"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-greenland-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Greenland",
+      "targetLabel": "Greenland"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-hungary-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Hungary",
+      "targetLabel": "Hungary"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-iceland-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Iceland",
+      "targetLabel": "Iceland"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-india-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "India",
+      "targetLabel": "India"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-ireland-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Ireland",
+      "targetLabel": "Ireland"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Basic Bank Account Number (BBAN)](mdis-reference-financial.md#mdis-reference-BBAN) | Financial information | Depending on country or region:<br />FRANCE\\_BANK\\_ACCOUNT\\_NUMBER, GERMANY\\_BANK\\_ACCOUNT\\_NUMBER, ITALY\\_BANK\\_ACCOUNT\\_NUMBER, SPAIN\\_BANK\\_ACCOUNT\\_NUMBER, UK\\_BANK\\_ACCOUNT\\_NUMBER | Yes | France, Germany, Italy, Spain, UK |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-italy-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Italy",
+      "targetLabel": "Italy"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-jordan-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Jordan",
+      "targetLabel": "Jordan"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-kosovo-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Kosovo",
+      "targetLabel": "Kosovo"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-latvia-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Latvia",
+      "targetLabel": "Latvia"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-liechtenstein-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Liechtenstein",
+      "targetLabel": "Liechtenstein"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-lithuania-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Lithuania",
+      "targetLabel": "Lithuania"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Vehicle identification number (VIN)](mdis-reference-pii.md#mdis-reference-vin) | Personal information: PII | VEHICLE\\_IDENTIFICATION\\_NUMBER | Yes | Any, if the VIN is in proximity of a keyword in one of the following languages: English, French, German, Lithuanian, Polish, Portuguese, Romanian, or Spanish |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-lithuanian-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Lithuanian",
+      "targetLabel": "Lithuanian"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-luxembourg-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Luxembourg",
+      "targetLabel": "Luxembourg"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-malta-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Malta",
+      "targetLabel": "Malta"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-mauritania-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Mauritania",
+      "targetLabel": "Mauritania"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-mauritius-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Mauritius",
+      "targetLabel": "Mauritius"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [National identification number](mdis-reference-pii.md#mdis-reference-national-id) | Personal information: PII | Depending on country or region:<br />ARGENTINA\\_DNI\\_NUMBER, BRAZIL\\_RG\\_NUMBER, CHILE\\_RUT\\_NUMBER, COLOMBIA\\_CITIZENSHIP\\_CARD\\_NUMBER, FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, INDIA\\_AADHAAR\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, MEXICO\\_CURP\\_NUMBER, SPAIN\\_DNI\\_NUMBER | Yes | Argentina, Brazil, Chile, Colombia, France, Germany, India, Italy, Mexico, Spain |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-mexico-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Mexico",
+      "targetLabel": "Mexico"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-monaco-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Monaco",
+      "targetLabel": "Monaco"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-montenegro-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Montenegro",
+      "targetLabel": "Montenegro"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-netherlands-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Netherlands",
+      "targetLabel": "Netherlands"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-north-macedonia-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "North Macedonia",
+      "targetLabel": "North Macedonia"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-poland-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Poland",
+      "targetLabel": "Poland"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Vehicle identification number (VIN)](mdis-reference-pii.md#mdis-reference-vin) | Personal information: PII | VEHICLE\\_IDENTIFICATION\\_NUMBER | Yes | Any, if the VIN is in proximity of a keyword in one of the following languages: English, French, German, Lithuanian, Polish, Portuguese, Romanian, or Spanish |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-polish-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Polish",
+      "targetLabel": "Polish"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-portugal-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Portugal",
+      "targetLabel": "Portugal"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Vehicle identification number (VIN)](mdis-reference-pii.md#mdis-reference-vin) | Personal information: PII | VEHICLE\\_IDENTIFICATION\\_NUMBER | Yes | Any, if the VIN is in proximity of a keyword in one of the following languages: English, French, German, Lithuanian, Polish, Portuguese, Romanian, or Spanish |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-portuguese-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Portuguese",
+      "targetLabel": "Portuguese"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-romania-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Romania",
+      "targetLabel": "Romania"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Vehicle identification number (VIN)](mdis-reference-pii.md#mdis-reference-vin) | Personal information: PII | VEHICLE\\_IDENTIFICATION\\_NUMBER | Yes | Any, if the VIN is in proximity of a keyword in one of the following languages: English, French, German, Lithuanian, Polish, Portuguese, Romanian, or Spanish |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-romanian-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Romanian",
+      "targetLabel": "Romanian"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-san-marino-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "San Marino",
+      "targetLabel": "San Marino"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-senegal-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Senegal",
+      "targetLabel": "Senegal"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-serbia-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Serbia",
+      "targetLabel": "Serbia"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-slovakia-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Slovakia",
+      "targetLabel": "Slovakia"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-slovenia-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Slovenia",
+      "targetLabel": "Slovenia"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Basic Bank Account Number (BBAN)](mdis-reference-financial.md#mdis-reference-BBAN) | Financial information | Depending on country or region:<br />FRANCE\\_BANK\\_ACCOUNT\\_NUMBER, GERMANY\\_BANK\\_ACCOUNT\\_NUMBER, ITALY\\_BANK\\_ACCOUNT\\_NUMBER, SPAIN\\_BANK\\_ACCOUNT\\_NUMBER, UK\\_BANK\\_ACCOUNT\\_NUMBER | Yes | France, Germany, Italy, Spain, UK |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-spain-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Spain",
+      "targetLabel": "Spain"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-sweden-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Sweden",
+      "targetLabel": "Sweden"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-switzerland-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Switzerland",
+      "targetLabel": "Switzerland"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-timor-leste-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Timor-Leste",
+      "targetLabel": "Timor-Leste"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-tunisia-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Tunisia",
+      "targetLabel": "Tunisia"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Basic Bank Account Number (BBAN)](mdis-reference-financial.md#mdis-reference-BBAN) | Financial information | Depending on country or region:<br />FRANCE\\_BANK\\_ACCOUNT\\_NUMBER, GERMANY\\_BANK\\_ACCOUNT\\_NUMBER, ITALY\\_BANK\\_ACCOUNT\\_NUMBER, SPAIN\\_BANK\\_ACCOUNT\\_NUMBER, UK\\_BANK\\_ACCOUNT\\_NUMBER | Yes | France, Germany, Italy, Spain, UK |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-uk-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "UK",
+      "targetLabel": "UK"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-ukraine-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Ukraine",
+      "targetLabel": "Ukraine"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-united-arab-emirates-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "United Arab Emirates",
+      "targetLabel": "United Arab Emirates"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Bank account number](mdis-reference-financial.md#mdis-reference-BAN) | Financial information | BANK\\_ACCOUNT\\_NUMBER (for both Canada and the US) | Yes | Canada, US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-us-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "US",
+      "targetLabel": "US"
+    },
+    {
+      "axis": "country",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-identifier-countries",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-country-virgin-islands-british-recipe-macie-identifier-countries",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Virgin Islands (British)",
+      "targetLabel": "Virgin Islands (British)"
+    },
     {
       "axis": "dataIdentifier",
       "confidence": 0.95,
@@ -3185,7 +4626,7 @@
     }
   ],
   "featureId": "macie2/managed-data-identifiers",
-  "generatedAt": "2026-09-02T02:20:58.976Z",
+  "generatedAt": "2026-09-02T02:33:06.600Z",
   "serviceId": "macie2",
   "unresolvedTargets": []
 }

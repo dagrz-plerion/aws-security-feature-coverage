@@ -123,6 +123,21 @@
           "status": "covered",
           "requireMin": 140,
           "featureId": "macie2/managed-data-identifiers"
+        },
+        {
+          "id": "macie-identifier-countries",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "countries and regions",
+            "extract": "whole",
+            "split": "\\s*,\\s*",
+            "matches": "^[A-Z][A-Za-z .()'-]{1,40}$"
+          },
+          "axis": "country",
+          "status": "covered",
+          "featureId": "macie2/managed-data-identifiers",
+          "requireMin": 50
         }
       ]
     },
@@ -250,6 +265,46 @@
           "requireMin": 8,
           "featureId": "inspector2/automated-scans",
           "statusColumn": "enhanced scanning"
+        },
+        {
+          "id": "inspector-lambda-standard-runtimes",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "Lambda standard scanning",
+          "select": {
+            "from": "list-items",
+            "depth": "any",
+            "extract": "whole",
+            "matches": "^[a-z][a-z0-9]*[0-9]+(\\.[a-zA-Z0-9]+)*$"
+          },
+          "axis": "runtime",
+          "status": "covered",
+          "scope": {
+            "axis": "scanMethod",
+            "from": "constant",
+            "value": "lambda-standard"
+          },
+          "featureId": "inspector2/automated-scans",
+          "requireMin": 24
+        },
+        {
+          "id": "inspector-lambda-code-runtimes",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "Lambda code scanning",
+          "select": {
+            "from": "list-items",
+            "depth": "any",
+            "extract": "whole",
+            "matches": "^[a-z][a-z0-9]*[0-9]+(\\.[a-zA-Z0-9]+)*$"
+          },
+          "axis": "runtime",
+          "status": "covered",
+          "scope": {
+            "axis": "scanMethod",
+            "from": "constant",
+            "value": "lambda-code"
+          },
+          "featureId": "inspector2/automated-scans",
+          "requireMin": 20
         }
       ]
     },
@@ -328,21 +383,67 @@
     {
       "urlPattern": "inspector/latest/user/sbom-generator-ecosystem-collection\\.md$",
       "serviceId": "inspector2",
-      "note": "Third-party application ecosystems the SBOM generator can inventory.",
+      "note": "The Applications column is the universe: the Ecosystems column is a vendor grouping where one row holds fifteen Microsoft products and another holds one. The page is about applications installed outside a package manager, so these are not package ecosystems.",
       "recipes": [
         {
-          "id": "inspector-sbom-ecosystems",
+          "id": "inspector-sbom-applications",
           "blocks": "whole-page",
           "select": {
             "from": "table-column",
-            "headerMatches": "ecosystem",
-            "extract": "whole",
-            "matches": "^[A-Za-z0-9][A-Za-z0-9 .+/&'-]{2,50}$"
+            "headerMatches": "^applications$",
+            "extract": "regex",
+            "pattern": "^`?([A-Za-z0-9][A-Za-z0-9 .+#/&'\\-]{1,60}?)`?(?:\\s+[\u2013-]\\s+.*)?$",
+            "split": "\\s+\u00b7\\s+",
+            "matches": "^(?!\\.)[A-Za-z0-9][A-Za-z0-9 .+#/&'\\-]{1,60}$"
           },
-          "axis": "packageEcosystem",
+          "axis": "softwareApplication",
           "status": "covered",
-          "requireMin": 30,
+          "requireMin": 60,
           "featureId": "inspector2/amazon-inspector-sbom-generator"
+        },
+        {
+          "id": "inspector-sbom-collector-platforms",
+          "blocks": "whole-page",
+          "select": {
+            "from": "paragraph",
+            "sentenceMatches": "Supported platforms",
+            "extract": "regex",
+            "pattern": "Supported platforms\\s*[\u2013-]\\s*(Windows|Linux|macOS)"
+          },
+          "axis": "operatingSystem",
+          "status": "covered",
+          "featureId": "inspector2/amazon-inspector-sbom-generator",
+          "requireMin": 1
+        },
+        {
+          "id": "inspector-sbom-model-formats",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^applications$",
+            "extract": "regex",
+            "pattern": "(\\.[a-z0-9]{2,12})\\s*[\u2013-]",
+            "split": "\\s+\u00b7\\s+"
+          },
+          "axis": "fileExtension",
+          "status": "covered",
+          "featureId": "inspector2/amazon-inspector-sbom-generator",
+          "requireMin": 5
+        },
+        {
+          "id": "inspector-sbom-wordpress-components",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^applications$",
+            "extract": "regex",
+            "pattern": "^(core|plugin|theme)$",
+            "split": "\\s+\u00b7\\s+"
+          },
+          "axis": "wordpressComponentType",
+          "status": "covered",
+          "featureId": "inspector2/amazon-inspector-sbom-generator",
+          "requireMin": 3
         }
       ]
     },
@@ -995,6 +1096,21 @@
           "status": "covered",
           "featureId": "securityhub/aws-security-hub-cspm",
           "requireMin": 550
+        },
+        {
+          "id": "securityhub-control-standards",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "applicable standards",
+            "extract": "whole",
+            "split": "\\s*,\\s*",
+            "matches": "^[A-Z][A-Za-z0-9 .()/-]{4,70}$"
+          },
+          "axis": "complianceStandard",
+          "status": "covered",
+          "featureId": "securityhub/aws-security-hub-cspm",
+          "requireMin": 8
         }
       ]
     },
@@ -1165,6 +1281,21 @@
           "status": "covered",
           "featureId": "kms/kms-viaservice-condition-key",
           "requireMin": 90
+        },
+        {
+          "id": "kms-condition-key-api-operations",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "api operations",
+            "extract": "whole",
+            "split": "\\s*,\\s*|\\s+\u00b7\\s+",
+            "matches": "^[A-Z][A-Za-z]{4,40}$"
+          },
+          "axis": "apiOperation",
+          "status": "covered",
+          "featureId": "kms/condition-keys",
+          "requireMin": 18
         }
       ]
     },
@@ -1403,6 +1534,19 @@
           "status": "covered",
           "featureId": "cloudtrail/network-activity-events",
           "requireMin": 50
+        },
+        {
+          "id": "cloudtrail-network-selector-fields",
+          "blocks": "whole-page",
+          "select": {
+            "from": "list-items",
+            "extract": "regex",
+            "pattern": "^([a-z][A-Za-z.]{3,30})\\s+[\u2013-]\\s"
+          },
+          "axis": "selectorField",
+          "status": "covered",
+          "featureId": "cloudtrail/network-activity-events",
+          "requireMin": 4
         }
       ]
     },

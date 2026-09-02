@@ -28,6 +28,10 @@
       "kind": "catalogue",
       "label": "controls the service publishes"
     },
+    "country": {
+      "kind": "external",
+      "label": "countries and regions a data identifier is designed for"
+    },
     "cpuArchitecture": {
       "kind": "external",
       "label": "CPU architectures"
@@ -72,6 +76,10 @@
       "kind": "catalogue",
       "label": "managed rule groups the service publishes"
     },
+    "modelFileFormat": {
+      "kind": "external",
+      "label": "machine-learning model file formats"
+    },
     "operatingSystem": {
       "kind": "external",
       "label": "operating systems"
@@ -104,6 +112,10 @@
       "kind": "external",
       "label": "AWS resource types"
     },
+    "runtime": {
+      "kind": "external",
+      "label": "Lambda runtimes"
+    },
     "s3Feature": {
       "kind": "external",
       "label": "Amazon S3 features"
@@ -111,6 +123,10 @@
     "scanMethod": {
       "kind": "external",
       "label": "how Inspector scans"
+    },
+    "selectorField": {
+      "kind": "catalogue",
+      "label": "advanced event selector fields the service publishes"
     },
     "service": {
       "kind": "external",
@@ -120,6 +136,10 @@
       "kind": "external",
       "label": "how far a resource can be shared"
     },
+    "softwareApplication": {
+      "kind": "external",
+      "label": "third-party software applications"
+    },
     "storageClass": {
       "kind": "external",
       "label": "S3 storage classes"
@@ -127,6 +147,10 @@
     "threatCategory": {
       "kind": "catalogue",
       "label": "threat categories the service publishes"
+    },
+    "wordpressComponentType": {
+      "kind": "catalogue",
+      "label": "WordPress component types the scanner reads"
     }
   },
   "conflicts": [],
@@ -6098,6 +6122,14 @@
     },
     {
       "axes": {
+        "selectorField": {
+          "covered": 6,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 6,
+          "unknown": 0
+        },
         "service": {
           "covered": 59,
           "notCovered": 0,
@@ -6107,7 +6139,7 @@
           "unknown": 0
         }
       },
-      "claimCount": 59,
+      "claimCount": 65,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -6124,6 +6156,14 @@
       "serviceName": "AWS CloudTrail",
       "summary": "Configure CloudTrail trails or event data stores to log network activity events.",
       "targets": {
+        "selectorField": [
+          "errorCode",
+          "eventCategory",
+          "eventName",
+          "eventSource",
+          "userIdentity.arn",
+          "vpcEndpointId"
+        ],
         "service": [
           "api.tunneling.iot",
           "appconfig",
@@ -23538,16 +23578,40 @@
     },
     {
       "axes": {
-        "packageEcosystem": {
-          "covered": 39,
+        "fileExtension": {
+          "covered": 6,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 39,
+          "total": 6,
+          "unknown": 0
+        },
+        "operatingSystem": {
+          "covered": 1,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 1,
+          "unknown": 0
+        },
+        "softwareApplication": {
+          "covered": 71,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 71,
+          "unknown": 0
+        },
+        "wordpressComponentType": {
+          "covered": 3,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 3,
           "unknown": 0
         }
       },
-      "claimCount": 39,
+      "claimCount": 81,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -23565,46 +23629,94 @@
       "serviceName": "Amazon Inspector",
       "summary": "Access links to previous versions of the Amazon Inspector SBOM Generator.",
       "targets": {
-        "packageEcosystem": [
-          "7-Zip",
-          "AI agent skills",
-          "AI IDE extensions",
-          "Amazon Q Developer",
-          "Anthropic",
-          "Anysphere",
-          "Apache",
-          "Atlassian",
-          "Codeium",
-          "Conda",
+        "fileExtension": [
+          ".gguf",
+          ".h5",
+          ".onnx",
+          ".pt",
+          ".pth",
+          ".safetensors"
+        ],
+        "operatingSystem": [
+          "Windows"
+        ],
+        "softwareApplication": [
+          "Amazon Corretto",
+          "Amazon Q Developer CLI",
+          "Amazon Q JetBrains plugin",
+          "Amazon Q VS Code extension",
+          "Anaconda environments",
+          "Apache Cassandra",
+          "Apache httpd",
+          "Apache Struts",
+          "Apache tomcat",
+          "ASP.NET Core Runtime",
+          "Chrome",
+          "Claude",
+          "Claude Code CLI",
+          "Claude Desktop",
+          "Cline",
+          "Cody",
+          "Confluence",
+          "containerd",
+          "Continue",
+          "core",
+          "Cross-client",
           "Curl",
-          "Docker binaries",
+          "Cursor",
+          "docker",
+          "dockerd",
           "Elasticsearch",
-          "Generic AI/ML Models",
-          "GitHub",
-          "Google",
-          "HuggingFace",
+          "Exchange Server",
+          "Fast-Agent",
+          "GitHub Copilot CLI",
+          "GitHub Copilot JetBrains plugin",
+          "GitHub Copilot VS Code extension",
+          "GPT4All",
+          "HuggingFace CLI Models Cache",
           "Jan",
-          "Java",
-          "Jenkins",
-          "Kiro",
+          "JDK",
+          "Jira Core",
+          "Jira Service Management",
+          "Jira Software",
+          "JRE",
+          "Kiro CLI",
+          "Libcurl",
           "LM Studio",
-          "MariaDB and MySQL",
-          "Microsoft applications",
+          "Mambaforge environments",
+          "Microsoft 365",
+          "Microsoft Defender",
+          "Microsoft Edge",
+          "Microsoft Office",
           "Microsoft SQL Server",
-          "MongoDB",
+          "Microsoft Teams",
+          "Miniconda environments",
+          "Miniforge environments",
           "Nginx",
+          "node",
           "Node",
-          "Node.JS",
-          "Nomic AI",
+          "NuGet CLI",
           "Ollama",
-          "OpenSSH",
+          "Ollama Model Collector",
+          "OpenClaw",
           "OpenSSL",
-          "Oracle",
-          "PHP",
-          "Redis",
-          "TabbyML",
-          "WordPress",
-          "Zed Industries"
+          "Oracle Database Server",
+          "Outlook for Windows",
+          "plugin",
+          "PowerShell",
+          "runc",
+          "SharePoint Server",
+          "Tabby",
+          "theme",
+          "Visual Studio",
+          "Visual Studio Code",
+          "Windsurf",
+          "Zed"
+        ],
+        "wordpressComponentType": [
+          "core",
+          "plugin",
+          "theme"
         ]
       },
       "tier": "tier1",
@@ -23649,9 +23761,17 @@
           "scoped": 0,
           "total": 10,
           "unknown": 0
+        },
+        "runtime": {
+          "covered": 25,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 48,
+          "total": 25,
+          "unknown": 0
         }
       },
-      "claimCount": 199,
+      "claimCount": 247,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter"
@@ -23806,6 +23926,33 @@
           "Python",
           "Ruby",
           "Rust"
+        ],
+        "runtime": [
+          "go1.x",
+          "java11",
+          "java17",
+          "java21",
+          "java25",
+          "java8",
+          "java8.al2",
+          "nodejs12.x",
+          "nodejs14.x",
+          "nodejs16.x",
+          "nodejs18.x",
+          "nodejs20.x",
+          "nodejs22.x",
+          "nodejs24.x",
+          "python3.10",
+          "python3.11",
+          "python3.12",
+          "python3.13",
+          "python3.14",
+          "python3.7",
+          "python3.8",
+          "python3.9",
+          "ruby2.7",
+          "ruby3.2",
+          "ruby3.3"
         ]
       },
       "tier": "tier1",
@@ -25030,6 +25177,14 @@
     },
     {
       "axes": {
+        "apiOperation": {
+          "covered": 26,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 26,
+          "unknown": 0
+        },
         "conditionKey": {
           "covered": 36,
           "notCovered": 2,
@@ -25039,7 +25194,7 @@
           "unknown": 0
         }
       },
-      "claimCount": 38,
+      "claimCount": 64,
       "confidence": 0.6,
       "discoveredBy": [
         "guide-subchapter"
@@ -25056,6 +25211,34 @@
       "serviceName": "AWS Key Management Service (KMS)",
       "summary": "AWS defines global condition keys, a set of policy conditions keys for all AWS services that use IAM for access control.",
       "targets": {
+        "apiOperation": [
+          "CreateGrant",
+          "CreateKey",
+          "Decrypt",
+          "DeriveSharedSecret",
+          "DescribeKey",
+          "DisableKey",
+          "EnableKeyRotation",
+          "Encrypt",
+          "GenerateDataKey",
+          "GenerateDataKeyPair",
+          "GenerateDataKeyPairWithoutPlaintext",
+          "GenerateDataKeyWithoutPlaintext",
+          "GenerateMac",
+          "GetParametersForImport",
+          "GetPublicKey",
+          "ImportKeyMaterial",
+          "ListGrants",
+          "PutKeyPolicy",
+          "ReEncrypt",
+          "ReplicateKey",
+          "RetireGrant",
+          "RevokeGrant",
+          "ScheduleKeyDeletion",
+          "UpdatePrimaryRegion",
+          "Verify",
+          "VerifyMac"
+        ],
         "conditionKey": [
           "kms:BypassPolicyLockoutSafetyCheck",
           "kms:CallerAccount",
@@ -27512,6 +27695,14 @@
     },
     {
       "axes": {
+        "country": {
+          "covered": 72,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 72,
+          "unknown": 0
+        },
         "dataIdentifier": {
           "covered": 159,
           "notCovered": 0,
@@ -27521,7 +27712,7 @@
           "unknown": 0
         }
       },
-      "claimCount": 159,
+      "claimCount": 231,
       "confidence": 0.75,
       "discoveredBy": [
         "guide-subchapter",
@@ -27539,6 +27730,80 @@
       "serviceName": "Amazon Macie",
       "summary": "Learn about Amazon Macie keyword requirements and proximity rules for detecting sensitive data in Amazon S3 objects by using built-in criteria and techniques.",
       "targets": {
+        "country": [
+          "Albania",
+          "Andorra",
+          "Any",
+          "Argentina",
+          "Australia",
+          "Austria",
+          "Belgium",
+          "Bosnia-Herzegovina",
+          "Brazil",
+          "Bulgaria",
+          "Canada",
+          "Chile",
+          "Colombia",
+          "Costa Rica",
+          "Croatia",
+          "Cyprus",
+          "Czech Republic",
+          "Denmark",
+          "Dominican Republic",
+          "Egypt",
+          "Estonia",
+          "EU",
+          "Faroe Islands",
+          "Finland",
+          "France",
+          "French",
+          "Georgia",
+          "German",
+          "Germany",
+          "Greece",
+          "Greenland",
+          "Hungary",
+          "Iceland",
+          "India",
+          "Ireland",
+          "Italy",
+          "Jordan",
+          "Kosovo",
+          "Latvia",
+          "Liechtenstein",
+          "Lithuania",
+          "Lithuanian",
+          "Luxembourg",
+          "Malta",
+          "Mauritania",
+          "Mauritius",
+          "Mexico",
+          "Monaco",
+          "Montenegro",
+          "Netherlands",
+          "North Macedonia",
+          "Poland",
+          "Polish",
+          "Portugal",
+          "Portuguese",
+          "Romania",
+          "Romanian",
+          "San Marino",
+          "Senegal",
+          "Serbia",
+          "Slovakia",
+          "Slovenia",
+          "Spain",
+          "Sweden",
+          "Switzerland",
+          "Timor-Leste",
+          "Tunisia",
+          "UK",
+          "Ukraine",
+          "United Arab Emirates",
+          "US",
+          "Virgin Islands (British)"
+        ],
         "dataIdentifier": [
           "ADDRESS",
           "ALBANIA_BANK_ACCOUNT_NUMBER",
@@ -36399,6 +36664,14 @@
     },
     {
       "axes": {
+        "complianceStandard": {
+          "covered": 11,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 11,
+          "unknown": 0
+        },
         "control": {
           "covered": 589,
           "notCovered": 522,
@@ -36408,7 +36681,7 @@
           "unknown": 0
         }
       },
-      "claimCount": 6902,
+      "claimCount": 6913,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter"
@@ -36425,6 +36698,19 @@
       "serviceName": "AWS Security Hub",
       "summary": "",
       "targets": {
+        "complianceStandard": [
+          "AWS Foundational Security Best Practices",
+          "AWS Foundational Security Best Practices v1.0.0",
+          "AWS Resource Tagging Standard",
+          "CIS AWS Foundations Benchmark v1.2.0",
+          "CIS AWS Foundations Benchmark v1.4.0",
+          "CIS AWS Foundations Benchmark v3.0.0",
+          "CIS AWS Foundations Benchmark v5.0.0",
+          "NIST SP 800-171 Rev. 2",
+          "NIST SP 800-53 Rev. 5",
+          "PCI DSS v3.2.1",
+          "PCI DSS v4.0.1"
+        ],
         "control": [
           "Account.1",
           "Account.2",
@@ -44552,6 +44838,13 @@
       "subject": "recipe:cloudhsm-platforms-arm"
     },
     {
+      "detail": "securityhub-controls-reference.md :: Applicable standards (securityStandard): the page states 10, we take none",
+      "id": "00c515d38ba2543e",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"doc:fedramp\" did not join to a service prefix. Score 0, signals none.",
       "id": "011096b67f7a8948",
       "kind": "alias",
@@ -44573,11 +44866,25 @@
       "subject": "coverage pages without a feature"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Resource-based policies (service): the page states 440, we take 289",
+      "id": "01ef948f391ec735",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS DeepComposer\" did not join to a service prefix. Score 0, signals none.",
       "id": "02e576edab8c2686",
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:aws-deepcomposer"
+    },
+    {
+      "detail": "awsapps-that-work-with-identity-center.md :: AWS managed applications that integrate with IAM Identity Center (organization instances of IAM Identity Center) (service): the page states 42, we take 30",
+      "id": "03d1192f8182263d",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"doc:sdk-for-net\" did not join to a service prefix. Score 3, signals security-doc-pages.",
@@ -44727,6 +45034,13 @@
       "subject": "unresolved:doc:encryption-sdk"
     },
     {
+      "detail": "conditions-kms.md :: API operations controlled by AWS KMS condition keys (apiOperation): the page states 25, we take none",
+      "id": "16e5e4a2d973bdf4",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"doc:online-register\" did not join to a service prefix. Score 2, signals security-doc-pages.",
       "id": "16f20f4da40a6b7b",
       "kind": "alias",
@@ -44762,6 +45076,13 @@
       "subject": "coverage pages without a feature"
     },
     {
+      "detail": "mdis-reference-quick.md :: Managed data identifiers (managedDataIdentifierId): the page states 166, we take none",
+      "id": "18eca0d91d8a081a",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "1 rules were broken in the last run, starting with \"every target exists in its axis universe\".",
       "id": "1b3dd34b73279507",
       "kind": "recall",
@@ -44781,6 +45102,13 @@
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "coverage pages without a feature"
+    },
+    {
+      "detail": "recipe inspector-sbom-model-formats produced 0 claims, fewer than the 5 it promises on https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md. The page shape has probably changed.",
+      "id": "1c708c8a2022a5df",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:inspector-sbom-model-formats"
     },
     {
       "detail": "\"AWS Application Composer \" did not join to a service prefix. Score 0, signals none.",
@@ -44809,6 +45137,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:ts-influxdb"
+    },
+    {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Temporary credentials (service): the page states 440, we take 289",
+      "id": "2030edaceec1d4ad",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"doc:sap\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -44888,6 +45223,13 @@
       "subject": "unresolved:doc:parallelcluster"
     },
     {
+      "detail": "recipe inspector-sbom-collector-platforms produced 0 claims, fewer than the 2 it promises on https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md. The page shape has probably changed.",
+      "id": "292a6d11fab72ccb",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:inspector-sbom-collector-platforms"
+    },
+    {
       "detail": "\"doc:iot-mi\" did not join to a service prefix. Score 1, signals security-doc-pages.",
       "id": "29b709babe71d065",
       "kind": "alias",
@@ -44958,6 +45300,13 @@
       "subject": "unresolved:regional:amazon-data-firehose"
     },
     {
+      "detail": "sbom-generator-ecosystem-collection.md :: WordPress ecosystem collection — Supported components (wordpressComponentType): the page states 3, we take none",
+      "id": "305f86a645778cfc",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"doc:silk\" did not join to a service prefix. Score 0, signals none.",
       "id": "30c58114caa08286",
       "kind": "alias",
@@ -44984,6 +45333,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:sdk-for-rust"
+    },
+    {
+      "detail": "supported.md :: Supported runtimes: Amazon Inspector Lambda standard scanning (runtime): the page states 30, we take none",
+      "id": "341959cb6f19c9cf",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"AWS Wavelength\" did not join to a service prefix. Score 1, signals security-doc-pages.",
@@ -45014,6 +45370,13 @@
       "subject": "recipe:cloudhsm-platforms-x86"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Resource-level permissions (service): the page states 440, we take 289",
+      "id": "37b1343bdc5acf6d",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS Microservice Extractor for .NET\" did not join to a service prefix. Score 0, signals none.",
       "id": "39db9be1cc3c879d",
       "kind": "alias",
@@ -45021,11 +45384,25 @@
       "subject": "unresolved:doc:microservice-extractor"
     },
     {
+      "detail": "recipe cloudtrail-network-selector-fields produced 0 claims, fewer than the 4 it promises on https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md. The page shape has probably changed.",
+      "id": "3bdcc85366fd4da3",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:cloudtrail-network-selector-fields"
+    },
+    {
       "detail": "inspector2-telemetry is a tier 1 security service but no named feature was extracted. 0 guides carry pages attributed to it.",
       "id": "3c1272250b20ed04",
       "kind": "recall",
       "stage": "stage4-features",
       "subject": "features:inspector2-telemetry"
+    },
+    {
+      "detail": "supported.md :: Supported runtimes: Amazon Inspector Lambda code scanning (runtime): the page states 25, we take none",
+      "id": "3c43ca932258cfa7",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"AWS Blockchain Templates\" did not join to a service prefix. Score 0, signals none.",
@@ -45126,6 +45503,13 @@
       "subject": "unresolved:doc:silk"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: ABAC (authorization based on tags) (service): the page states 440, we take 289",
+      "id": "43f2f546b279eeb5",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS Partner Revenue Measurement Onboarding guide for AWS Partner Revenue Measurement\" did not join to a service prefix. Score 0, signals none.",
       "id": "44c5cbe595f195dc",
       "kind": "alias",
@@ -45180,6 +45564,13 @@
       "kind": "alias",
       "stage": "stage5-coverage",
       "subject": "unresolved coverage targets"
+    },
+    {
+      "detail": "sbom-generator-ecosystem-collection.md :: Generic AI/ML Models ecosystem collection — model file detection by file extension (modelFileFormat): the page states 6, we take none",
+      "id": "48c8878f88bab724",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"Quick Setup\" did not join to a service prefix. Score 0, signals none.",
@@ -45315,6 +45706,13 @@
       "subject": "unresolved:doc:global-infrastructure"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Actions (service): the page states 440, we take 289",
+      "id": "566281a541c1618d",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS Distro for OpenTelemetry\" did not join to a service prefix. Score 0, signals none.",
       "id": "57d2e308819b9fef",
       "kind": "alias",
@@ -45427,6 +45825,20 @@
       "subject": "unresolved:doc:res"
     },
     {
+      "detail": "internal-sources.md :: Collecting data from AWS services in Security Lake (natively-supported AWS services as log sources) (service): the page states 6, we take none",
+      "id": "62aa39cfeb9d1979",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
+      "detail": "logging-network-events-with-cloudtrail.md :: Advanced event selector fields for network activity events (selectorField): the page states 6, we take none",
+      "id": "6380e4518e63b48b",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS Security Platform as a Service (PaaS) - Multi-Cloud Security Operations Console Hands-on tutorials\" did not join to a service prefix. Score 6, signals security-name-strong,security-doc-pages.",
       "id": "64437af4f74e2fa1",
       "kind": "alias",
@@ -45532,6 +45944,13 @@
       "subject": "unresolved:product:aws-deep-learning-containers"
     },
     {
+      "detail": "logging-network-events-with-cloudtrail.md :: eventSource valid values for network activity events (eventSource): the page states 76, we take none",
+      "id": "6daf7afb53010bb0",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "cloudhsmv2 is a tier 1 security service but no named feature was extracted. It has 0 indexed guides.",
       "id": "6e14cf6072cfa56b",
       "kind": "recall",
@@ -45544,6 +45963,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:database-encryption-sdk"
+    },
+    {
+      "detail": "sbom-generator-ecosystem-collection.md :: Supported platforms (per ecosystem collector) (operatingSystem): the page states 3, we take none",
+      "id": "6ea9e2d7308fc61e",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"AWS SDK for Go (version 1)\" did not join to a service prefix. Score 3, signals security-doc-pages.",
@@ -45595,6 +46021,13 @@
       "subject": "unresolved:doc:consolemobileapp"
     },
     {
+      "detail": "supported-s3-features-malware-protection-s3.md :: Malware Protection for S3 — S3 Intelligent-Tiering access tier support (s3IntelligentTieringAccessTier): the page states 5, we take 2",
+      "id": "74973394fbe36a7e",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"Developer Tools console\" did not join to a service prefix. Score 3, signals security-doc-pages.",
       "id": "74d0f5ec75f3938e",
       "kind": "alias",
@@ -45607,6 +46040,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:aws-service-management-connector"
+    },
+    {
+      "detail": "supported.md :: Supported runtimes: Amazon Inspector Lambda standard scanning (runtime): the page states 30, we take 25",
+      "id": "77ac1133408d1458",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"Amazon Linux 2\" did not join to a service prefix. Score 0, signals none.",
@@ -45642,6 +46082,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:amazon-managed-workflows-for-apache-airflow-mwaa"
+    },
+    {
+      "detail": "ddos-protections-by-resource-type.md :: Shield Advanced protections for each resource type (\"List of resources that AWS Shield Advanced protects\") (resourceType): the page states 11, we take 7",
+      "id": "7b5def4e3a78fcf7",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"doc:elemental-server\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -45719,6 +46166,13 @@
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "coverage pages without a feature"
+    },
+    {
+      "detail": "sbom-generator-ecosystem-collection.md :: Supported platforms (per ecosystem collector) (operatingSystem): the page states 3, we take 1",
+      "id": "80efba5bfc110194",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"doc:serverless\" did not join to a service prefix. Score 0, signals none.",
@@ -45817,6 +46271,13 @@
       "kind": "recall",
       "stage": "stage4-features",
       "subject": "features:inspector2-telemetry"
+    },
+    {
+      "detail": "awsapps-that-work-with-identity-center.md :: Integrated with account instances of IAM Identity Center (service): the page states 40, we take 30",
+      "id": "865dc078d0a4869b",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"Red Hat OpenShift Service on AWS\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -45924,11 +46385,25 @@
       "subject": "unresolved:doc:general"
     },
     {
+      "detail": "awsapps-that-work-with-identity-center.md :: Enables trusted identity propagation through IAM Identity Center (service): the page states 40, we take 30",
+      "id": "8b39d2ca35220987",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "68 coverage-shaped pages could not be tied to a named feature, for example \"Supported resource types\".",
       "id": "8b5906414e4b678c",
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "coverage pages without a feature"
+    },
+    {
+      "detail": "logging-network-events-with-cloudtrail.md :: eventSource valid values for network activity events (eventSource): the page states 76, we take 59",
+      "id": "8b6d9a028b0a144e",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"doc:dcv\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -46008,6 +46483,13 @@
       "subject": "unresolved:doc:tag-editor"
     },
     {
+      "detail": "sbom-generator-ecosystem-collection.md :: Amazon Inspector SBOM Generator comprehensive ecosystem collection — Supported ecosystems (the `extra-ecosystems` scanner group) (softwareApplication): the page states 79, we take none",
+      "id": "8f88ca241319fa6a",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS PrivateLink\" did not join to a service prefix. Score 0, signals none.",
       "id": "9000609fa8f96ad3",
       "kind": "alias",
@@ -46064,6 +46546,13 @@
       "subject": "unresolved:product:amazon-managed-service-for-prometheus"
     },
     {
+      "detail": "framework-overviews.md :: Supported frameworks in AWS Audit Manager (prebuilt standard frameworks in the framework library) (complianceFramework): the page states 29, we take none",
+      "id": "93717abc150f49a5",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"GROW with SAP on AWS\" did not join to a service prefix. Score 0, signals none.",
       "id": "946611ff34170a0f",
       "kind": "alias",
@@ -46104,6 +46593,13 @@
       "kind": "alias",
       "stage": "stage5-coverage",
       "subject": "unresolved coverage targets"
+    },
+    {
+      "detail": "recipe guardduty-s3-intelligent-tiering produced 2 claims, fewer than the 3 it promises on https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md. The page shape has probably changed.",
+      "id": "971b0e772b85bb45",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:guardduty-s3-intelligent-tiering"
     },
     {
       "detail": "\"AWS SDK for JavaScript Developer Guide for SDK Version 3\" did not join to a service prefix. Score 3, signals security-doc-pages.",
@@ -46148,6 +46644,13 @@
       "subject": "unresolved:doc:cdi-sdk"
     },
     {
+      "detail": "regions-controls.md :: Regional limits on Security Hub CSPM controls (region): the page states 38, we take none",
+      "id": "990f6d3d886afe90",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS SDK for SAP ABAP\" did not join to a service prefix. Score 2, signals security-doc-pages.",
       "id": "99237f2112ec800e",
       "kind": "alias",
@@ -46160,6 +46663,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:routing-control"
+    },
+    {
+      "detail": "managed-rules-by-aws-config.md :: AWS Config Managed Rules (managedRule): the page states 822, we take none",
+      "id": "9ad7ec7f5223d332",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "recipe security-ir-slr-regions produced 0 claims, fewer than the 20 it promises on https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md. The page shape has probably changed.",
@@ -46204,6 +46714,13 @@
       "subject": "docs guide to service join"
     },
     {
+      "detail": "supported-s3-features-malware-protection-s3.md :: Malware Protection for S3 — S3 Intelligent-Tiering access tier support (s3IntelligentTieringAccessTier): the page states 5, we take none",
+      "id": "9d339fb6df4fe00e",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS Code Sample Catalog\" did not join to a service prefix. Score 2, signals security-name-weak.",
       "id": "9e3cab45dca16c3a",
       "kind": "alias",
@@ -46230,6 +46747,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:aws-privatelink"
+    },
+    {
+      "detail": "mdis-reference-quick.md :: Countries and regions (for which managed data identifiers are designed) (country): the page states 66, we take none",
+      "id": "a376c25ebd70e179",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"doc:sdkref\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -46286,6 +46810,13 @@
       "kind": "recall",
       "stage": "stage4-features",
       "subject": "features:pca-connector-scep"
+    },
+    {
+      "detail": "orgs_integrate_services_list.md :: Trusted access (column: \"Supports trusted access\") (service): the page states 52, we take 39",
+      "id": "aaa955ba35c86f55",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "codeguru-security is a tier 1 security service but no named feature was extracted. 0 guides carry pages attributed to it.",
@@ -46489,6 +47020,13 @@
       "kind": "alias",
       "stage": "stage5-coverage",
       "subject": "unresolved coverage targets"
+    },
+    {
+      "detail": "awsapps-that-work-with-identity-center.md :: Supports IAM Identity Center configured with a customer managed KMS key (service): the page states 40, we take 30",
+      "id": "b8a49fcfefd9547a",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "226 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
@@ -46932,6 +47470,13 @@
       "subject": "coverage pages without a feature"
     },
     {
+      "detail": "awsapps-that-work-with-identity-center.md :: Supports deployment in additional Regions of IAM Identity Center (service): the page states 40, we take 30",
+      "id": "dbc8e9d84a8b9dba",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS SDK for Python\" did not join to a service prefix. Score 2, signals security-doc-pages.",
       "id": "dc0b23cb58b1a8b3",
       "kind": "alias",
@@ -46944,6 +47489,13 @@
       "kind": "recall",
       "stage": "stage4-features",
       "subject": "features:fms"
+    },
+    {
+      "detail": "ddos-protections-by-resource-type.md :: Shield Advanced IP version support (\"Shield Advanced supports IPv4, and does not support IPv6\") (ipVersion): the page states 2, we take none",
+      "id": "df34cf27ce18bc88",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "recipe ram-shareable-outside-organization produced 0 claims, fewer than the 50 it promises on https://docs.aws.amazon.com/ram/latest/userguide/shareable.md. The page shape has probably changed.",
@@ -46965,6 +47517,13 @@
       "kind": "alias",
       "stage": "stage5-coverage",
       "subject": "unresolved coverage targets"
+    },
+    {
+      "detail": "orgs_integrate_services_list.md :: Delegated administrator for AWS services (column: \"Supports delegated administrator\") (service): the page states 52, we take 39",
+      "id": "e0e60b0f61c8a9d2",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"AWS SDK for C++\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -47156,6 +47715,13 @@
       "subject": "feature-alias:cognito-idp/threat-protection"
     },
     {
+      "detail": "reference_aws-services-that-work-with-iam.md :: Service-linked roles (service): the page states 440, we take 289",
+      "id": "ef907a56f6c71f36",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"doc:claude-platform\" did not join to a service prefix. Score 1, signals security-doc-pages.",
       "id": "f13dccad87eee696",
       "kind": "alias",
@@ -47189,6 +47755,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:parallelcluster"
+    },
+    {
+      "detail": "mdis-reference-quick.md :: Managed data identifiers by type (sensitive data type) (sensitiveDataType): the page states 40, we take none",
+      "id": "f4ec3fc587961218",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"doc:sdk-for-rust\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -47338,6 +47911,13 @@
       "subject": "unresolved:product:aws-partner-device-catalog"
     },
     {
+      "detail": "1 rules were broken in the last run, starting with \"no axis is too small to be a denominator\".",
+      "id": "feb07b73a7bcc5a6",
+      "kind": "recall",
+      "stage": "stage6-validate",
+      "subject": "validation violations"
+    },
+    {
       "detail": "cloudhsmv2 is a tier 1 security service but no named feature was extracted. 0 guides carry pages attributed to it.",
       "id": "ffcb0e68936e3612",
       "kind": "recall",
@@ -47345,7 +47925,7 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-02T02:21:08.571Z",
+  "generatedAt": "2026-09-02T02:33:16.856Z",
   "manifest": {
     "fetch": {
       "cacheHit": 12437,
@@ -47353,7 +47933,7 @@
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-02T02:21:01.480Z",
+    "finishedAt": "2026-09-02T02:33:08.540Z",
     "stages": [
       {
         "counts": {
@@ -47367,12 +47947,12 @@
           "resourceTypes": 3134,
           "services": 692
         },
-        "finishedAt": "2026-09-02T02:20:38.705Z",
+        "finishedAt": "2026-09-02T02:32:49.043Z",
         "id": "stage1-universes",
         "notes": [
           "1314 service reference resources joined to an existing resource type"
         ],
-        "startedAt": "2026-09-02T02:19:51.892Z",
+        "startedAt": "2026-09-02T02:32:08.536Z",
         "status": "partial"
       },
       {
@@ -47382,9 +47962,9 @@
           "indexed": 1207,
           "pages": 103576
         },
-        "finishedAt": "2026-09-02T02:20:39.304Z",
+        "finishedAt": "2026-09-02T02:32:49.572Z",
         "id": "stage2-doc-pages",
-        "startedAt": "2026-09-02T02:20:38.707Z",
+        "startedAt": "2026-09-02T02:32:49.044Z",
         "status": "partial"
       },
       {
@@ -47400,12 +47980,12 @@
           "tier1": 45,
           "tier2": 13
         },
-        "finishedAt": "2026-09-02T02:20:39.789Z",
+        "finishedAt": "2026-09-02T02:32:50.005Z",
         "id": "stage3-discovery",
         "notes": [
           "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
         ],
-        "startedAt": "2026-09-02T02:20:39.304Z",
+        "startedAt": "2026-09-02T02:32:49.573Z",
         "status": "partial"
       },
       {
@@ -47420,16 +48000,16 @@
           "scanned": 307,
           "servicesWithFeatures": 203
         },
-        "finishedAt": "2026-09-02T02:20:44.259Z",
+        "finishedAt": "2026-09-02T02:32:53.703Z",
         "id": "stage4-features",
-        "startedAt": "2026-09-02T02:20:39.790Z",
+        "startedAt": "2026-09-02T02:32:50.005Z",
         "status": "ok"
       },
       {
         "counts": {
-          "claims": 51164,
+          "claims": 51369,
           "conflicts": 0,
-          "covered": 39045,
+          "covered": 39250,
           "duplicateRegistrationsSkipped": 1493,
           "empty": 11715,
           "enabled": 11774,
@@ -47439,8 +48019,8 @@
           "from_title-match": 5237,
           "newlyDiscovered": 0,
           "notCovered": 12119,
-          "openAxes": 19,
-          "openAxisMembers": 2230,
+          "openAxes": 23,
+          "openAxisMembers": 2411,
           "pagesConsidered": 10281,
           "pagesFailed": 1,
           "pagesRead": 62,
@@ -47448,8 +48028,8 @@
           "prunedStaleRecords": 0,
           "recipeFailures": 0,
           "recipeRulesWithNoPage": 0,
-          "recipes": 85,
-          "recipesAttached": 85,
+          "recipes": 94,
+          "recipesAttached": 94,
           "registered": 11783,
           "serviceWideRecords": 0,
           "tablesRecoveredFromHtml": 360,
@@ -47459,14 +48039,14 @@
           "withRecipe": 62,
           "yielding": 66
         },
-        "finishedAt": "2026-09-02T02:20:59.509Z",
+        "finishedAt": "2026-09-02T02:33:07.044Z",
         "id": "stage5-coverage",
-        "startedAt": "2026-09-02T02:20:44.260Z",
+        "startedAt": "2026-09-02T02:32:53.704Z",
         "status": "partial"
       },
       {
         "counts": {
-          "claims": 51021,
+          "claims": 51226,
           "features": 1738,
           "quotesChecked": 250,
           "recallFound": 73,
@@ -47474,9 +48054,9 @@
           "services": 692,
           "violations": 0
         },
-        "finishedAt": "2026-09-02T02:21:00.384Z",
+        "finishedAt": "2026-09-02T02:33:07.622Z",
         "id": "stage6-validate",
-        "startedAt": "2026-09-02T02:20:59.510Z",
+        "startedAt": "2026-09-02T02:33:07.045Z",
         "status": "ok"
       },
       {
@@ -47487,32 +48067,53 @@
           "partialRead": 1,
           "staleQuotes": 0
         },
-        "finishedAt": "2026-09-02T02:21:00.765Z",
+        "finishedAt": "2026-09-02T02:33:07.930Z",
         "id": "stage7-verify",
-        "startedAt": "2026-09-02T02:21:00.385Z",
+        "startedAt": "2026-09-02T02:33:07.622Z",
         "status": "partial"
       },
       {
         "counts": {
-          "expectations": 0
+          "drifted": 17,
+          "met": 43,
+          "unmet": 0
         },
-        "finishedAt": "2026-09-02T02:21:00.920Z",
+        "finishedAt": "2026-09-02T02:33:08.120Z",
         "id": "stage8-expectations",
-        "startedAt": "2026-09-02T02:21:00.765Z",
-        "status": "skipped"
+        "notes": [
+          "logging-network-events-with-cloudtrail.md :: eventSource valid values for network activity events (eventSource): the page states 76, we take 59",
+          "reference_aws-services-that-work-with-iam.md :: Actions (service): the page states 440, we take 289",
+          "reference_aws-services-that-work-with-iam.md :: Resource-level permissions (service): the page states 440, we take 289",
+          "reference_aws-services-that-work-with-iam.md :: Resource-based policies (service): the page states 440, we take 289",
+          "reference_aws-services-that-work-with-iam.md :: ABAC (authorization based on tags) (service): the page states 440, we take 289",
+          "reference_aws-services-that-work-with-iam.md :: Temporary credentials (service): the page states 440, we take 289",
+          "reference_aws-services-that-work-with-iam.md :: Service-linked roles (service): the page states 440, we take 289",
+          "sbom-generator-ecosystem-collection.md :: Supported platforms (per ecosystem collector) (operatingSystem): the page states 3, we take 1",
+          "supported.md :: Supported runtimes: Amazon Inspector Lambda standard scanning (runtime): the page states 30, we take 25",
+          "orgs_integrate_services_list.md :: Trusted access (column: \"Supports trusted access\") (service): the page states 52, we take 39",
+          "orgs_integrate_services_list.md :: Delegated administrator for AWS services (column: \"Supports delegated administrator\") (service): the page states 52, we take 39",
+          "awsapps-that-work-with-identity-center.md :: AWS managed applications that integrate with IAM Identity Center (organization instances of IAM Identity Center) (service): the page states 42, we take 30",
+          "awsapps-that-work-with-identity-center.md :: Integrated with account instances of IAM Identity Center (service): the page states 40, we take 30",
+          "awsapps-that-work-with-identity-center.md :: Enables trusted identity propagation through IAM Identity Center (service): the page states 40, we take 30",
+          "awsapps-that-work-with-identity-center.md :: Supports IAM Identity Center configured with a customer managed KMS key (service): the page states 40, we take 30",
+          "awsapps-that-work-with-identity-center.md :: Supports deployment in additional Regions of IAM Identity Center (service): the page states 40, we take 30",
+          "ddos-protections-by-resource-type.md :: Shield Advanced protections for each resource type (\"List of resources that AWS Shield Advanced protects\") (resourceType): the page states 11, we take 7"
+        ],
+        "startedAt": "2026-09-02T02:33:07.931Z",
+        "status": "partial"
       },
       {
         "counts": {
           "features": 1738,
           "services": 211
         },
-        "finishedAt": "2026-09-02T02:21:01.480Z",
+        "finishedAt": "2026-09-02T02:33:08.540Z",
         "id": "report",
-        "startedAt": "2026-09-02T02:21:00.921Z",
+        "startedAt": "2026-09-02T02:33:08.120Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-02T02:19:51.889Z"
+    "startedAt": "2026-09-02T02:32:08.534Z"
   },
   "outOfScope": [
     {
@@ -54308,7 +54909,7 @@
     {
       "actionCount": 66,
       "category": "Management & Governance",
-      "claimCount": 89,
+      "claimCount": 95,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -56748,7 +57349,7 @@
     {
       "actionCount": 81,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 238,
+      "claimCount": 328,
       "confidence": 1,
       "docGuides": [
         {
@@ -56930,7 +57531,7 @@
     {
       "actionCount": 56,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 130,
+      "claimCount": 156,
       "confidence": 1,
       "docGuides": [
         {
@@ -57279,7 +57880,7 @@
     {
       "actionCount": 81,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 189,
+      "claimCount": 261,
       "confidence": 1,
       "docGuides": [
         {
@@ -59001,7 +59602,7 @@
     {
       "actionCount": 129,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 6910,
+      "claimCount": 6921,
       "confidence": 1,
       "docGuides": [
         {
@@ -60444,16 +61045,6 @@
       "verdict": "ok"
     },
     {
-      "claims": 199,
-      "note": "Operating systems by scan method, plus the languages and runtimes Inspector reads. Each axis gets its own recipe.",
-      "readRatio": 0.95,
-      "recipes": 5,
-      "serviceId": "inspector2",
-      "source": "agent",
-      "url": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
-      "verdict": "ok"
-    },
-    {
       "claims": 60,
       "note": "The finding types that can trigger a GuardDuty-initiated malware scan, one per H2.",
       "readRatio": 0.95,
@@ -60516,10 +61107,10 @@
       "verdict": "ok"
     },
     {
-      "claims": 589,
+      "claims": 600,
       "note": "Every Security Hub CSPM control. Without this the map held only the per-Region exclusions, so the feature read as zero controls covered.",
       "readRatio": 1,
-      "recipes": 1,
+      "recipes": 2,
       "serviceId": "securityhub",
       "source": "agent",
       "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md",
@@ -60537,6 +61128,26 @@
       "verdict": "ok"
     },
     {
+      "claims": 247,
+      "note": "Operating systems by scan method, plus the languages and runtimes Inspector reads. Each axis gets its own recipe.",
+      "readRatio": 1,
+      "recipes": 7,
+      "serviceId": "inspector2",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 231,
+      "note": "The managed data identifier catalogue, in the identifier ID column.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "macie2",
+      "source": "tier1-sweep",
+      "url": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md",
+      "verdict": "ok"
+    },
+    {
       "claims": 162,
       "dropped": 4,
       "note": "Forty-two services, each with a table of the resource types RAM can share and how far each can be shared.",
@@ -60548,21 +61159,11 @@
       "verdict": "ok"
     },
     {
-      "claims": 159,
-      "note": "The managed data identifier catalogue, in the identifier ID column.",
-      "readRatio": 1,
-      "recipes": 1,
-      "serviceId": "macie2",
-      "source": "tier1-sweep",
-      "url": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 130,
+      "claims": 156,
       "dropped": 2,
       "note": "Each H2 is one KMS condition key. kms:ViaService additionally lists the AWS services it accepts, and those services are that one key's coverage — not the coverage of condition keys in general.",
       "readRatio": 1,
-      "recipes": 2,
+      "recipes": 3,
       "serviceId": "kms",
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md",
@@ -60580,6 +61181,16 @@
       "verdict": "ok"
     },
     {
+      "claims": 81,
+      "note": "The Applications column is the universe: the Ecosystems column is a vendor grouping where one row holds fifteen Microsoft products and another holds one. The page is about applications installed outside a package manager, so these are not package ecosystems.",
+      "readRatio": 1,
+      "recipes": 4,
+      "serviceId": "inspector2",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md",
+      "verdict": "ok"
+    },
+    {
       "claims": 78,
       "dropped": 24,
       "note": "Which AWS services support trusted access with Organizations. Yes and No arrive as icons, which the parser turns back into words.",
@@ -60591,10 +61202,10 @@
       "verdict": "ok"
     },
     {
-      "claims": 59,
+      "claims": 65,
       "note": "The AWS services for which CloudTrail can log network activity events.",
       "readRatio": 1,
-      "recipes": 1,
+      "recipes": 2,
       "serviceId": "cloudtrail",
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md",
@@ -60639,16 +61250,6 @@
       "serviceId": "guardduty",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-ec2.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 39,
-      "note": "Third-party application ecosystems the SBOM generator can inventory.",
-      "readRatio": 1,
-      "recipes": 1,
-      "serviceId": "inspector2",
-      "source": "agent",
-      "url": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md",
       "verdict": "ok"
     },
     {
@@ -61068,29 +61669,33 @@
   ],
   "universeSizes": {
     "accessScope": 12,
-    "apiOperation": 30,
+    "apiOperation": 56,
     "auditFramework": 29,
-    "complianceStandard": 8,
+    "complianceStandard": 18,
     "conditionKey": 38,
     "configRule": 828,
     "control": 591,
+    "country": 72,
     "dataIdentifier": 159,
     "dataSource": 23,
-    "fileExtension": 22,
+    "fileExtension": 28,
     "findingType": 224,
     "logSource": 6,
     "managedRuleGroup": 47,
-    "operatingSystem": 133,
-    "packageEcosystem": 39,
+    "operatingSystem": 134,
     "partition": 8,
     "policyType": 8,
     "programmingLanguage": 10,
     "region": 46,
     "resourceType": 3134,
+    "runtime": 25,
     "s3Feature": 22,
+    "selectorField": 6,
     "service": 526,
+    "softwareApplication": 71,
     "storageClass": 8,
-    "threatCategory": 16
+    "threatCategory": 16,
+    "wordpressComponentType": 3
   },
   "universes": {
     "adjudicated": 692,

@@ -2,6 +2,7 @@ import path from "node:path";
 import { paths } from "../core/paths.js";
 import { readAllJson, readJson } from "../core/store.js";
 import { recordGap } from "../core/ops.js";
+import { axisSynonyms } from "../core/seeds.js";
 import type { Stage, StageResult } from "../core/runner.js";
 import type { FeatureCoverage } from "../core/schema.js";
 
@@ -31,6 +32,8 @@ export type Expectation = {
     statuses: string;
     scope?: string;
     reasoning: string;
+    /** Why this expectation is deliberately not met. Waiving is a decision, recorded. */
+    waived?: string;
   }[];
   shouldNotExtract: string;
   coverageDimensions?: string;
@@ -41,6 +44,11 @@ export type Expectation = {
 const TOLERANCE = 0.15;
 
 export async function checkExpectations(): Promise<{ ok: string[]; drift: string[]; unmet: string[] }> {
+  // The reader names an axis in the page's words, we name it in the map's. Where the
+  // two denote the same set of things, say so once rather than pretending a naming
+  // difference is missing data.
+  const synonyms = await axisSynonyms();
+  const canonical = (axis: string): string => synonyms[axis] ?? axis;
   const expectations = await readAllJson<Expectation>(paths.expectations);
   const coverage = await readAllJson<FeatureCoverage>(paths.coverage);
 
@@ -51,6 +59,9 @@ export async function checkExpectations(): Promise<{ ok: string[]; drift: string
       if (!url) continue;
       const list = byUrl.get(url) ?? [];
       list.push({ axis: claim.axis, count: 1 });
+      // A scope is an axis too. The Regions on the Security Hub exclusions page are
+      // carried as the scope of each control, and not counting them read as missing.
+      if (claim.scope) list.push({ axis: claim.scope.axis, count: 1 });
       byUrl.set(url, list);
     }
   }
@@ -62,10 +73,22 @@ export async function checkExpectations(): Promise<{ ok: string[]; drift: string
   for (const expectation of expectations) {
     const claims = byUrl.get(expectation.url) ?? [];
     const actualByAxis = new Map<string, number>();
-    for (const c of claims) actualByAxis.set(c.axis, (actualByAxis.get(c.axis) ?? 0) + 1);
+    const distinctByAxis = new Map<string, Set<string>>();
+    for (const claim of coverage.flatMap((r) => r.claims)) {
+      if (claim.evidence[0]?.sourceUrl !== expectation.url) continue;
+      const add = (axis: string, target: string): void => {
+        const set = distinctByAxis.get(canonical(axis)) ?? new Set<string>();
+        set.add(target);
+        distinctByAxis.set(canonical(axis), set);
+      };
+      add(claim.axis, claim.targetId);
+      if (claim.scope) add(claim.scope.axis, claim.scope.targetId);
+    }
+    for (const [axis, set] of distinctByAxis) actualByAxis.set(axis, set.size);
 
     for (const wanted of expectation.features) {
-      const actual = actualByAxis.get(wanted.axis) ?? 0;
+      if (wanted.waived) continue;
+      const actual = actualByAxis.get(canonical(wanted.axis)) ?? 0;
       const short = wanted.expectedCount > 0 && actual < wanted.expectedCount * (1 - TOLERANCE);
       const absent = actual === 0;
       const label = `${expectation.url.split("/").pop()} :: ${wanted.featureName} (${wanted.axis})`;

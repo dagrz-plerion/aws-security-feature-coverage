@@ -1,0 +1,128 @@
+{
+  "coverageDimensions": "SERVICE coverage would mean: which AWS services can Inspector scan resources in. The page gives this only in prose, and only three - Amazon EC2, Amazon ECR, and AWS Lambda - stated as an intro bullet list of scan targets rather than as an enumerated support table. It is a usable fact but it is not a service-coverage table, it has no denominator, and it is not what any of the five tables measure. Do not synthesise a service-coverage ratio from it.\n\nREGION coverage would mean: in which AWS Regions each Inspector scan type is available. The page gives you nothing at all. There is not one Region name anywhere on it, no Region column, and no per-Region qualification of any row. Any Region answer for Inspector must come from a different page.\n\nRESOURCE TYPE coverage would mean: which resource types Inspector scans - EC2 instances, ECR container images, Lambda functions. The page implies exactly those three from the same intro bullets, and every table is scoped to one of them, but it never enumerates resource types as an axis with per-type Yes/No. So resource type here is a scope label on the capabilities, not a measured axis.\n\nWhat the page actually measures is a fourth dimension these three do not cover: the operating system, programming language and runtime that a resource is running. That is the real axis of this page, it is external in every case (operating systems, languages and Lambda runtime identifiers all exist whether or not Inspector does), and none of the thirteen capabilities is a catalogue - Inspector is not publishing a list about itself here, it is stating reach into universes other people own. So all thirteen ratios are meaningful. The honest summary is: this page is the authority on OS, language and runtime coverage for Inspector, contributes a weak three-value hint on service and resource-type coverage, and contributes nothing whatsoever on Region coverage.",
+  "features": [
+    {
+      "axis": "operatingSystem",
+      "axisKind": "external",
+      "expectedCount": 37,
+      "featureName": "Supported operating systems: Amazon EC2 scanning - agentless scanning",
+      "reasoning": "The table has operating systems down the side and two scan methods across the top, so it is a matrix and each column is a separate capability with a different answer set. The unit of the axis is the (operating system, version) row, not the OS family name: AlmaLinux 8, 9 and 10 are three separately-stated support claims. Counting families would give 13 and lose the version granularity that is the whole point of the table. Operating systems exist independently of Inspector, so the axis is external and a ratio against the OS universe is meaningful.",
+      "scope": "Amazon EC2 instances; the \"Agentless scan support\" column of the EC2 table",
+      "statuses": "29 Yes, 8 No. The table carries an explicit Yes/No column. Every one of the 8 macOS rows (Mojave 10.14, Catalina 10.15, Big Sur 11, Monterey 12, Ventura 13, Sonoma 14, Sequoia 15, Tahoe 26) is No; all 29 non-macOS rows are Yes. A prose exclusion also applies to the whole table: Linux detections cover only the default package manager repository (rpm and dpkg), not third-party applications, extended support repositories, or optional repositories (application streams)."
+    },
+    {
+      "axis": "operatingSystem",
+      "axisKind": "external",
+      "expectedCount": 37,
+      "featureName": "Supported operating systems: Amazon EC2 scanning - agent-based scanning",
+      "reasoning": "Same 37 rows, different column, materially different answer - this is exactly why the two columns must not be merged. Collapsing the EC2 table into one supported-OS list would either invent agentless support for macOS or delete agent-based support for it. The SSM agent version is a prerequisite, not an axis value.",
+      "scope": "Amazon EC2 instances; the \"Agent-based scan support\" column of the EC2 table",
+      "statuses": "37 Yes, 0 No. Every row in the column reads Yes, including all 8 macOS rows that agentless does not reach. Agent-based scanning has a stated prerequisite (SSM agent, recommended version greater than 3.2.2086.0) but no row-level exclusion. A separate prose exclusion elsewhere on the page: deep inspection is not supported for Bottlerocket, which narrows what agent-based scanning does on the Bottlerocket row without removing the row."
+    },
+    {
+      "axis": "operatingSystem",
+      "axisKind": "external",
+      "expectedCount": 40,
+      "featureName": "Supported operating systems: Amazon ECR scanning - basic scanning",
+      "reasoning": "A second, genuinely different list from the EC2 one - it adds Alpine Linux (4 versions), Azure Linux, BusyBox, Chainguard, Echo, Hummingbird OS, MinimOS, Photon OS (2), Wolfi, and it drops Windows Server 2016 and every macOS row. Different resource, different list, therefore a different capability. Windows Server 2016 is absent here rather than marked No: absence is not a not-supported claim and must not be recorded as one.",
+      "scope": "Container images in Amazon ECR repositories; the \"Basic scanning\" column",
+      "statuses": "40 Yes, 0 No. Explicit Yes/No column, every row Yes."
+    },
+    {
+      "axis": "operatingSystem",
+      "axisKind": "external",
+      "expectedCount": 40,
+      "featureName": "Supported operating systems: Amazon ECR scanning - enhanced scanning",
+      "reasoning": "The second column of the ECR matrix, and the only place on the page where Windows containers are stated as out of reach. Merging the ECR columns would erase four explicit negative claims - the most valuable rows on the page, because a No that AWS states out loud is worth more than a Yes.",
+      "scope": "Container images in Amazon ECR repositories; the \"Enhanced scanning\" column",
+      "statuses": "36 Yes, 4 No. The 4 No rows are Hummingbird OS, Windows Server 2019, Windows Server 2022 and Windows Server 2025. All other rows are Yes."
+    },
+    {
+      "axis": "operatingSystem",
+      "axisKind": "external",
+      "expectedCount": 13,
+      "featureName": "Supported operating systems: CIS scanning",
+      "reasoning": "A separate capability with a much shorter list than vulnerability scanning: only AL2023, RHEL 8 and 9, Rocky 8 and 9, SLES 15, Ubuntu 20.04/22.04/24.04, and Windows Server 2016/2019/2022/2025. The CIS benchmark version (1.0.0, 4.0.0, 2.0.0, and so on) is an attribute of the row, not a second axis and not a coverage value.",
+      "scope": "CIS benchmark scans; the CIS benchmark version column gives the benchmark per OS, and a note limits CIS standards to x86_64 (some checks might not be evaluated, or might return invalid remediation instructions, on ARM-based resources)",
+      "statuses": "13 supported, 0 stated not supported. There is no Yes/No column - inclusion in the table is the support claim. The architecture note is a partial-support caveat over the whole table, not a per-row No."
+    },
+    {
+      "axis": "operatingSystem",
+      "axisKind": "external",
+      "expectedCount": 44,
+      "featureName": "Supported operating systems: Amazon Inspector Scan API",
+      "reasoning": "The widest OS list on the page, and a fourth distinct capability. It is the union-plus of the others: it keeps Bottlerocket and macOS (as a single 'macOS 11+' row) from the EC2 list, keeps Alpine/Chainguard/Wolfi/Echo/MinimOS/Hummingbird/Photon/Azure Linux/BusyBox from the ECR list, adds Debian Sid which appears nowhere else, and restores Windows Server 2016 which the ECR table omits. Because the values overlap heavily with the other three tables, they must be kept per-capability - deduplicating operating systems across tables would destroy every per-capability answer.",
+      "scope": "The Inspector Scan API (ScanSbom); no second dimension - the table has only Operating system and Version columns",
+      "statuses": "44 supported, 0 stated not supported. Inclusion is the claim; there is no Yes/No column."
+    },
+    {
+      "axis": "operatingSystem",
+      "axisKind": "external",
+      "expectedCount": 75,
+      "featureName": "Discontinued operating systems",
+      "reasoning": "This is the page's explicit negative list and the single richest source of not-covered claims: Alpine 3.2-3.20 (19), Amazon Linux 1 (1), Amazon Linux 2 (1), CentOS 7 and 8 (2), Debian 8/9/10/11 (4), Fedora 33-42 (10), OpenSUSE Leap 15.2-15.6 (5), Oracle Linux 6 and 7 (2), Photon OS 2 and 3 (2), RHEL 6 and 7 (2), SLES 12-12.5 and 15-15.6 (13), Ubuntu 12.04/14.04/16.04/20.10/21.04/21.10/22.10/23.04/23.10/24.10/25.04/25.10 (12), Windows Server 2012 and 2012 R2 (2) = 75. It is a capability-level statement spanning EC2 and ECR rather than one column of one table, so it stands as its own feature. The discontinued date is an attribute, not an axis.",
+      "scope": "Applies across Amazon EC2 instances and Amazon ECR container images; each row carries a discontinued date",
+      "statuses": "75 stated as discontinued, that is, not fully supported. The status is carried by the heading and the prose, not a column: 'Amazon Inspector can provide only limited support for an operating system after a vendor discontinues support'. The support is not zero and must not be recorded as a plain No - Inspector keeps scanning these resources and raises a CRITICAL finding recommending a move to a supported version, and it stops generating findings 12 months after the listed date. Some dates are in the future relative to today (Amazon Linux 2 on June 30 2026, Debian Bullseye 11 on August 31 2026, Ubuntu Questing 25.10 on July 9 2026), so those rows are not yet past their date."
+    },
+    {
+      "axis": "programmingLanguage",
+      "axisKind": "external",
+      "expectedCount": 8,
+      "featureName": "Supported programming languages: Amazon EC2 agentless scanning",
+      "reasoning": "C#, Go, Java, JavaScript, PHP, Python, Ruby, Rust = 8 bullets, counted off the page. Programming languages exist independently of Inspector, so external. The toolchain caveat is the kind of thing a parser wants to turn into a No for Go and Rust - it is not; both are listed as supported.",
+      "scope": "Amazon EC2 instances, agentless scan method",
+      "statuses": "8 supported, 0 not supported as language values. A prose exclusion narrows two of them rather than removing them: Inspector does not scan for toolchain vulnerabilities in Go and Rust. That is a limit on depth within a supported language, not a not-supported language."
+    },
+    {
+      "axis": "programmingLanguage",
+      "axisKind": "external",
+      "expectedCount": 8,
+      "featureName": "Supported programming languages: Amazon Inspector VM Scanner",
+      "reasoning": "AWS gives this its own H3 and its own name, so it is a named capability, but its list is stated only by reference. A parser that reads bullets under headings would record this capability as having zero values - which reads as 'no language support' and is flatly wrong. Either resolve the reference or do not emit the capability at all; do not emit it empty.",
+      "scope": "Amazon EC2 instances (Linux, Windows and macOS) scanned by the Inspector VM Scanner; the list is stated by cross-reference, not repeated",
+      "statuses": "8 supported, 0 not supported. The section body carries no bullets - it states 'The Amazon Inspector VM Scanner supports the same programming languages as Amazon EC2 agentless scanning' and links to that list, so the 8 values are C#, Go, Java, JavaScript, PHP, Python, Ruby, Rust."
+    },
+    {
+      "axis": "programmingLanguage",
+      "axisKind": "external",
+      "expectedCount": 3,
+      "featureName": "Supported programming languages: Amazon Inspector SSM plugin",
+      "reasoning": "A genuinely narrower capability that shares its axis with the VM Scanner list, which is why the two must be kept apart: 3 of 8, not 8. The four Java archive formats (.ear, .jar, .par, .war) are a qualification of the Java value, not four more values on this axis - if file format were the axis it would be a different capability with a different question.",
+      "scope": "Deep inspection scans on Amazon EC2 Linux instances only, using the Amazon Inspector SSM plugin",
+      "statuses": "3 supported: Java (.ear, .jar, .par and .war archive formats), JavaScript, Python. The page states this is a subset of what the VM Scanner supports, so the other 5 languages - C#, Go, PHP, Ruby, Rust - are implicitly out of reach for this path. Separately, deep inspection is not supported for Bottlerocket operating systems, and Systems Manager Distributor must also support the instance OS."
+    },
+    {
+      "axis": "programmingLanguage",
+      "axisKind": "external",
+      "expectedCount": 10,
+      "featureName": "Supported programming languages: Amazon ECR scanning",
+      "reasoning": "Ten bullets: C#, Go, Go toolchain, Java (including Chainguard and Echo Libraries), Java JDK, JavaScript (including Echo Libraries), PHP, Python (including Chainguard and Echo Libraries), Ruby, Rust. 'Go toolchain' and 'Java JDK' are separate bullets from 'Go' and 'Java' and must stay separate - the ECR path scans the Go toolchain where the EC2 agentless path explicitly does not, which is the difference between the two lists. Merging them would flatten this to 8 and erase the distinction.",
+      "scope": "Container images in Amazon ECR repositories",
+      "statuses": "10 supported, 0 not supported. Prose exclusion: Inspector does not scan for toolchain vulnerabilities in Rust. Prose qualification, not exclusion: for Python and Java using Chainguard Libraries, and for Python, Java and JavaScript using Echo Libraries, Inspector recognises back-ported security fixes and excludes them from findings."
+    },
+    {
+      "axis": "runtime",
+      "axisKind": "external",
+      "expectedCount": 30,
+      "featureName": "Supported runtimes: Amazon Inspector Lambda standard scanning",
+      "reasoning": "The values are Lambda runtime identifiers, not language names, and the list is a two-level nest. Counting the leaves: Go 1 (go1.x); Java 6 (java8, java8.al2, java11, java17, java21, java25); .NET 3 (.NET 6, .NET 8, .NET 10); Node.js 7 (nodejs12.x, 14.x, 16.x, 18.x, 20.x, 22.x, 24.x); Python 8 (python3.7 through python3.14); Ruby 3 (ruby2.7, ruby3.2, ruby3.3); Custom runtimes 2 (AL2, AL2023) = 30. The 7 parent bullets are grouping labels, not runtimes: counting them gives 7, counting both gives 37, and both are wrong. The runtime universe is published by AWS Lambda, not by Inspector, so it is external to this service and a ratio against it is meaningful.",
+      "scope": "AWS Lambda functions, package vulnerabilities in third-party software packages",
+      "statuses": "30 supported, 0 stated not supported. Prose exclusion: Inspector does not scan for toolchain vulnerabilities in Rust."
+    },
+    {
+      "axis": "runtime",
+      "axisKind": "external",
+      "expectedCount": 25,
+      "featureName": "Supported runtimes: Amazon Inspector Lambda code scanning",
+      "reasoning": "Java 6, .NET 2 (.NET 6, .NET 8), Node.js 6 (nodejs12.x through nodejs22.x), Python 8, Ruby 3 = 25. This is deliberately narrower than standard scanning - no Go at all, no .NET 10, no nodejs24.x, no custom runtimes. Two capabilities on the same axis with different answers, so they must be separate entries; a single merged 'Lambda runtimes' list would claim code scanning reaches Go and nodejs24.x, which the page does not say.",
+      "scope": "AWS Lambda functions, vulnerabilities in code",
+      "statuses": "25 supported, 0 stated not supported. No Yes/No column and no prose exclusion in this section."
+    }
+  ],
+  "pageTitle": "Supported operating systems and programming languages for Amazon Inspector",
+  "recordedAt": "2026-09-02T02:25:51.121Z",
+  "shouldNotExtract": "The Topics block of four internal anchors is navigation, not values. The 'Vendor security advisories' column (Errata CVE, ALAS, DSA, RHEL CVE BaseOS and EUS/E2S/E4S, SUSE CVE, USN and Ubuntu Pro esm-infra/esm-apps, MSKB, APPLE-SA, MITRE CVE) is a reference attribute of each row - it says where the data comes from, not what Inspector reaches - so advisory feeds are not an axis. The 'CIS benchmark version' column is likewise an attribute, not a coverage value. The 'Discontinued' date column is an attribute, not a value. The 'more than 50 data feeds' sentence and the NVD/MITRE mention are provenance, not coverage. The SSM agent version recommendation (greater than 3.2.2086.0), the Systems Manager Distributor requirement, and the Systems Manager Distributor platform link are prerequisites. The four Java archive formats (.ear, .jar, .par, .war) qualify the Java value and are not separate axis values. 'Docker' appears only in prose as a hardened-image provider with no table row, so it is not a value. Every language-heading bullet in the two Lambda lists (Go, Java, .NET, Node.js, Python, Ruby, Custom runtimes) is a grouping label, not a runtime. Finally the whole 'See also' section, which is only the boilerplate AI-coding-assistant bullet pointing at the Agent Toolkit for AWS catalog, must be dropped entirely.",
+  "trap": "Two traps, both about flattening. First, treating the page as one 'supported operating systems' list. There are four separate OS lists with four different counts (EC2 37, ECR 40, CIS 13, Scan API 44) and heavy overlap between them, and two of those tables are matrices whose columns disagree with each other. Deduplicating operating systems across the tables, or merging the two columns of a matrix, silently converts the page's most valuable content - the 12 explicit No cells (8 macOS rows with no agentless support, Hummingbird OS and three Windows Server versions with no ECR enhanced scanning) - into false Yes claims. Second, mistaking the row unit. Each table row is an (operating system, version) pair and each is its own support claim; a parser that keys on the OS name column collapses AlmaLinux 8/9/10 into one and turns 37 rows into 13. The mirror of that in the Lambda sections is counting the 7 language headings instead of the 30 nested runtime identifiers, or counting both and reporting 37. A third, quieter trap: Windows Server 2016 is in the EC2 and Scan API tables but simply absent from the ECR table. Absence is silence, not a stated No, and must never be written down as a not-covered claim.",
+  "url": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+  "whatThePageStates": "This page states what an Amazon Inspector scan can examine: the operating systems, programming languages and Lambda runtimes that each Inspector scan path supports. It enumerates five tables (EC2 scanning OSes with agentless/agent-based columns, ECR scanning OSes with basic/enhanced columns, CIS scanning OSes, Inspector Scan API OSes, and discontinued OSes) plus six bullet lists (four programming-language lists, two Lambda runtime lists). The page's own framing is that Inspector scans three resource classes - EC2 instances, ECR container images, and Lambda functions - and each resource class plus scan method has its own distinct support list."
+}

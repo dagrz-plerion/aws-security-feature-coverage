@@ -1,8 +1,229 @@
 {
   "axes": [
+    "complianceStandard",
     "control"
   ],
   "claims": [
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "aa3e59b1c5b66e804e380cb21a781df1b107b353fa33203696dd12beb019865a",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md :: Control reference for Security Hub CSPM",
+          "quote": "|  [APIGateway.11](apigateway-controls.md#apigateway-11)  |  API Gateway domain names should use recommended security policies  |  AWS Foundational Security Best Practices  |  MEDIUM  |  ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-no.png) No  |  Change triggered  |",
+          "retrievedAt": "2026-09-01T07:36:54.134Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-control-standards",
+      "featureId": "securityhub/aws-security-hub-cspm",
+      "id": "securityhub-aws-security-hub-cspm-compliancestandard-aws-foundational-security-best-practices-recipe-securityhub-control",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS Foundational Security Best Practices",
+      "targetLabel": "AWS Foundational Security Best Practices"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "aa3e59b1c5b66e804e380cb21a781df1b107b353fa33203696dd12beb019865a",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md :: Control reference for Security Hub CSPM",
+          "quote": "| [Account.1](account-controls.md#account-1)  | Security contact information should be provided for an AWS account  | CIS AWS Foundations Benchmark v5.0.0, CIS AWS Foundations Benchmark v3.0.0, AWS Foundational Security Best Practices v1.0.0, NIST SP 800-53 Rev. 5  | MEDIUM  | ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-no.png) No  | Periodic  |",
+          "retrievedAt": "2026-09-01T07:36:54.134Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-control-standards",
+      "featureId": "securityhub/aws-security-hub-cspm",
+      "id": "securityhub-aws-security-hub-cspm-compliancestandard-aws-foundational-security-best-practices-v1-0-0-recipe-securityhub-",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS Foundational Security Best Practices v1.0.0",
+      "targetLabel": "AWS Foundational Security Best Practices v1.0.0"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "aa3e59b1c5b66e804e380cb21a781df1b107b353fa33203696dd12beb019865a",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md :: Control reference for Security Hub CSPM",
+          "quote": "|  [ACM.3](acm-controls.md#acm-3)  | ACM certificates should be tagged | AWS Resource Tagging Standard | LOW | ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-yes.png) Yes | Change triggered |",
+          "retrievedAt": "2026-09-01T07:36:54.134Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-control-standards",
+      "featureId": "securityhub/aws-security-hub-cspm",
+      "id": "securityhub-aws-security-hub-cspm-compliancestandard-aws-resource-tagging-standard-recipe-securityhub-control-standards",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS Resource Tagging Standard",
+      "targetLabel": "AWS Resource Tagging Standard"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "aa3e59b1c5b66e804e380cb21a781df1b107b353fa33203696dd12beb019865a",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md :: Control reference for Security Hub CSPM",
+          "quote": "|  [CloudTrail.1](cloudtrail-controls.md#cloudtrail-1)  | CloudTrail should be enabled and configured with at least one multi-Region trail that includes read and write management events | CIS AWS Foundations Benchmark v5.0.0, CIS AWS Foundations Benchmark v3.0.0, CIS AWS Foundations Benchmark v1.4.0, CIS AWS Foundations Benchmark v1.2.0, AWS Foundational Security Best Practices, NIST SP 800-53 Rev. 5 | HIGH | ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-no.png) No | Periodic |",
+          "retrievedAt": "2026-09-01T07:36:54.134Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-control-standards",
+      "featureId": "securityhub/aws-security-hub-cspm",
+      "id": "securityhub-aws-security-hub-cspm-compliancestandard-cis-aws-foundations-benchmark-v1-2-0-recipe-securityhub-control-sta",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CIS AWS Foundations Benchmark v1.2.0",
+      "targetLabel": "CIS AWS Foundations Benchmark v1.2.0"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "aa3e59b1c5b66e804e380cb21a781df1b107b353fa33203696dd12beb019865a",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md :: Control reference for Security Hub CSPM",
+          "quote": "|  [CloudTrail.1](cloudtrail-controls.md#cloudtrail-1)  | CloudTrail should be enabled and configured with at least one multi-Region trail that includes read and write management events | CIS AWS Foundations Benchmark v5.0.0, CIS AWS Foundations Benchmark v3.0.0, CIS AWS Foundations Benchmark v1.4.0, CIS AWS Foundations Benchmark v1.2.0, AWS Foundational Security Best Practices, NIST SP 800-53 Rev. 5 | HIGH | ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-no.png) No | Periodic |",
+          "retrievedAt": "2026-09-01T07:36:54.134Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-control-standards",
+      "featureId": "securityhub/aws-security-hub-cspm",
+      "id": "securityhub-aws-security-hub-cspm-compliancestandard-cis-aws-foundations-benchmark-v1-4-0-recipe-securityhub-control-sta",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CIS AWS Foundations Benchmark v1.4.0",
+      "targetLabel": "CIS AWS Foundations Benchmark v1.4.0"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "aa3e59b1c5b66e804e380cb21a781df1b107b353fa33203696dd12beb019865a",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md :: Control reference for Security Hub CSPM",
+          "quote": "| [Account.1](account-controls.md#account-1)  | Security contact information should be provided for an AWS account  | CIS AWS Foundations Benchmark v5.0.0, CIS AWS Foundations Benchmark v3.0.0, AWS Foundational Security Best Practices v1.0.0, NIST SP 800-53 Rev. 5  | MEDIUM  | ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-no.png) No  | Periodic  |",
+          "retrievedAt": "2026-09-01T07:36:54.134Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-control-standards",
+      "featureId": "securityhub/aws-security-hub-cspm",
+      "id": "securityhub-aws-security-hub-cspm-compliancestandard-cis-aws-foundations-benchmark-v3-0-0-recipe-securityhub-control-sta",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CIS AWS Foundations Benchmark v3.0.0",
+      "targetLabel": "CIS AWS Foundations Benchmark v3.0.0"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "aa3e59b1c5b66e804e380cb21a781df1b107b353fa33203696dd12beb019865a",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md :: Control reference for Security Hub CSPM",
+          "quote": "| [Account.1](account-controls.md#account-1)  | Security contact information should be provided for an AWS account  | CIS AWS Foundations Benchmark v5.0.0, CIS AWS Foundations Benchmark v3.0.0, AWS Foundational Security Best Practices v1.0.0, NIST SP 800-53 Rev. 5  | MEDIUM  | ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-no.png) No  | Periodic  |",
+          "retrievedAt": "2026-09-01T07:36:54.134Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-control-standards",
+      "featureId": "securityhub/aws-security-hub-cspm",
+      "id": "securityhub-aws-security-hub-cspm-compliancestandard-cis-aws-foundations-benchmark-v5-0-0-recipe-securityhub-control-sta",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "CIS AWS Foundations Benchmark v5.0.0",
+      "targetLabel": "CIS AWS Foundations Benchmark v5.0.0"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "aa3e59b1c5b66e804e380cb21a781df1b107b353fa33203696dd12beb019865a",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md :: Control reference for Security Hub CSPM",
+          "quote": "|  [ACM.1](acm-controls.md#acm-1)  |  Imported and ACM-issued certificates should be renewed after a specified time period  |  AWS Foundational Security Best Practices v1.0.0, NIST SP 800-53 Rev. 5, NIST SP 800-171 Rev. 2, PCI DSS v4.0.1 |  MEDIUM  |  ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-yes.png) Yes  |  Change triggered and periodic  |",
+          "retrievedAt": "2026-09-01T07:36:54.134Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-control-standards",
+      "featureId": "securityhub/aws-security-hub-cspm",
+      "id": "securityhub-aws-security-hub-cspm-compliancestandard-nist-sp-800-171-rev-2-recipe-securityhub-control-standards",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "NIST SP 800-171 Rev. 2",
+      "targetLabel": "NIST SP 800-171 Rev. 2"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "aa3e59b1c5b66e804e380cb21a781df1b107b353fa33203696dd12beb019865a",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md :: Control reference for Security Hub CSPM",
+          "quote": "| [Account.1](account-controls.md#account-1)  | Security contact information should be provided for an AWS account  | CIS AWS Foundations Benchmark v5.0.0, CIS AWS Foundations Benchmark v3.0.0, AWS Foundational Security Best Practices v1.0.0, NIST SP 800-53 Rev. 5  | MEDIUM  | ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-no.png) No  | Periodic  |",
+          "retrievedAt": "2026-09-01T07:36:54.134Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-control-standards",
+      "featureId": "securityhub/aws-security-hub-cspm",
+      "id": "securityhub-aws-security-hub-cspm-compliancestandard-nist-sp-800-53-rev-5-recipe-securityhub-control-standards",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "NIST SP 800-53 Rev. 5",
+      "targetLabel": "NIST SP 800-53 Rev. 5"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "aa3e59b1c5b66e804e380cb21a781df1b107b353fa33203696dd12beb019865a",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md :: Control reference for Security Hub CSPM",
+          "quote": "|  [AutoScaling.1](autoscaling-controls.md#autoscaling-1)  | Auto Scaling groups associated with a load balancer should use ELB health checks | AWS Foundational Security Best Practices, PCI DSS v3.2.1, NIST SP 800-53 Rev. 5 | LOW | ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-no.png) No | Change triggered |",
+          "retrievedAt": "2026-09-01T07:36:54.134Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-control-standards",
+      "featureId": "securityhub/aws-security-hub-cspm",
+      "id": "securityhub-aws-security-hub-cspm-compliancestandard-pci-dss-v3-2-1-recipe-securityhub-control-standards",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PCI DSS v3.2.1",
+      "targetLabel": "PCI DSS v3.2.1"
+    },
+    {
+      "axis": "complianceStandard",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "aa3e59b1c5b66e804e380cb21a781df1b107b353fa33203696dd12beb019865a",
+          "locator": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md :: Control reference for Security Hub CSPM",
+          "quote": "|  [ACM.1](acm-controls.md#acm-1)  |  Imported and ACM-issued certificates should be renewed after a specified time period  |  AWS Foundational Security Best Practices v1.0.0, NIST SP 800-53 Rev. 5, NIST SP 800-171 Rev. 2, PCI DSS v4.0.1 |  MEDIUM  |  ![](http://docs.aws.amazon.com/securityhub/latest/userguide/images/icon-yes.png) Yes  |  Change triggered and periodic  |",
+          "retrievedAt": "2026-09-01T07:36:54.134Z",
+          "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md"
+        }
+      ],
+      "extractorId": "recipe:securityhub-control-standards",
+      "featureId": "securityhub/aws-security-hub-cspm",
+      "id": "securityhub-aws-security-hub-cspm-compliancestandard-pci-dss-v4-0-1-recipe-securityhub-control-standards",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PCI DSS v4.0.1",
+      "targetLabel": "PCI DSS v4.0.1"
+    },
     {
       "axis": "control",
       "confidence": 0.95,
@@ -169610,7 +169831,7 @@
     }
   ],
   "featureId": "securityhub/aws-security-hub-cspm",
-  "generatedAt": "2026-09-02T02:20:58.976Z",
+  "generatedAt": "2026-09-02T02:33:06.600Z",
   "serviceId": "securityhub",
   "unresolvedTargets": []
 }

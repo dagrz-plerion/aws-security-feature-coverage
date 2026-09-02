@@ -1,8 +1,129 @@
 {
   "axes": [
+    "selectorField",
     "service"
   ],
   "claims": [
+    {
+      "axis": "selectorField",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `errorCode` – The requested error code that you want to filter on. Currently, the only valid `errorCode` is `VpceAccessDenied`. You can use only the `Equals` operator with `errorCode`.",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-selector-fields",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-selectorfield-errorcode-recipe-cloudtrail-network-selector-fields",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "errorCode",
+      "targetLabel": "errorCode – The requested error code that you want to filter on. Currently, the only valid errorCode is VpceAccessDenied. You can use only the Equals operator with errorCode."
+    },
+    {
+      "axis": "selectorField",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `eventCategory` – To log network activity events, the value must be `NetworkActivity`. `eventCategory` can only use the `Equals` operator.",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-selector-fields",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-selectorfield-eventcategory-recipe-cloudtrail-network-selector-fields",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eventCategory",
+      "targetLabel": "eventCategory – To log network activity events, the value must be NetworkActivity. eventCategory can only use the Equals operator."
+    },
+    {
+      "axis": "selectorField",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `eventName` – The requested action that you want to filter on. For example, `CreateKey` or `ListKeys`. `eventName` can use any operator.",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-selector-fields",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-selectorfield-eventname-recipe-cloudtrail-network-selector-fields",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eventName",
+      "targetLabel": "eventName – The requested action that you want to filter on. For example, CreateKey or ListKeys. eventName can use any operator."
+    },
+    {
+      "axis": "selectorField",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `eventSource` – The event source for which you want to log network activity events. `eventSource` can only use the `Equals` operator. If you want to log network activity events for multiple event sources, you must create a separate field selector for each event source.",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-selector-fields",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-selectorfield-eventsource-recipe-cloudtrail-network-selector-fields",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "eventSource",
+      "targetLabel": "eventSource – The event source for which you want to log network activity events. eventSource can only use the Equals operator. If you want to log network activity events for multiple event sources, y"
+    },
+    {
+      "axis": "selectorField",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `userIdentity.arn` – Include or exclude events for actions taken by specific IAM identities. For more information, see [CloudTrail userIdentity element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html). You can use any operator with `userIdentity.arn`. CloudTrail supports this field for trails only. You cannot filter network activity events on `userIdentity.arn` for event data stores.",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-selector-fields",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-selectorfield-useridentity-arn-recipe-cloudtrail-network-selector-fields",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "userIdentity.arn",
+      "targetLabel": "userIdentity.arn – Include or exclude events for actions taken by specific IAM identities. For more information, see CloudTrail userIdentity element. You can use any operator with userIdentity.arn. Cl"
+    },
+    {
+      "axis": "selectorField",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
+          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
+          "quote": "+ `vpcEndpointId` – Identifies the VPC endpoint that the operation passed through. You can use any operator with `vpcEndpointId`.",
+          "retrievedAt": "2026-09-01T04:59:40.214Z",
+          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
+        }
+      ],
+      "extractorId": "recipe:cloudtrail-network-selector-fields",
+      "featureId": "cloudtrail/network-activity-events",
+      "id": "cloudtrail-network-activity-events-selectorfield-vpcendpointid-recipe-cloudtrail-network-selector-fields",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "vpcEndpointId",
+      "targetLabel": "vpcEndpointId – Identifies the VPC endpoint that the operation passed through. You can use any operator with vpcEndpointId."
+    },
     {
       "axis": "service",
       "confidence": 0.95,
@@ -1185,7 +1306,7 @@
     }
   ],
   "featureId": "cloudtrail/network-activity-events",
-  "generatedAt": "2026-09-02T02:20:58.976Z",
+  "generatedAt": "2026-09-02T02:33:06.600Z",
   "serviceId": "cloudtrail",
   "unresolvedTargets": []
 }

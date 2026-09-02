@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T02:21:07.968Z",
+  "generatedAt": "2026-09-02T02:33:16.369Z",
   "pages": 57,
   "problems": 1,
   "verdicts": [
@@ -75,19 +75,6 @@
       "verdict": "ok"
     },
     {
-      "candidates": 209,
-      "claims": 199,
-      "featureIds": [
-        "inspector2/automated-scans"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 0.95,
-      "url": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
-      "verdict": "ok"
-    },
-    {
       "candidates": 0,
       "claims": 21,
       "featureIds": [
@@ -155,7 +142,7 @@
     },
     {
       "candidates": 4,
-      "claims": 59,
+      "claims": 65,
       "featureIds": [
         "cloudtrail/network-activity-events"
       ],
@@ -415,7 +402,7 @@
     },
     {
       "candidates": 39,
-      "claims": 39,
+      "claims": 81,
       "featureIds": [
         "inspector2/amazon-inspector-sbom-generator"
       ],
@@ -427,8 +414,21 @@
       "verdict": "ok"
     },
     {
+      "candidates": 209,
+      "claims": 247,
+      "featureIds": [
+        "inspector2/automated-scans"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+      "verdict": "ok"
+    },
+    {
       "candidates": 96,
-      "claims": 130,
+      "claims": 156,
       "featureIds": [
         "kms/condition-keys",
         "kms/kms-viaservice-condition-key"
@@ -442,7 +442,7 @@
     },
     {
       "candidates": 0,
-      "claims": 159,
+      "claims": 231,
       "featureIds": [
         "macie2/managed-data-identifiers"
       ],
@@ -546,6 +546,19 @@
       "verdict": "ok"
     },
     {
+      "candidates": 589,
+      "claims": 600,
+      "featureIds": [
+        "securityhub/aws-security-hub-cspm"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md",
+      "verdict": "ok"
+    },
+    {
       "candidates": 0,
       "claims": 6313,
       "featureIds": [
@@ -556,19 +569,6 @@
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/regions-controls.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 589,
-      "claims": 589,
-      "featureIds": [
-        "securityhub/aws-security-hub-cspm"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md",
       "verdict": "ok"
     },
     {

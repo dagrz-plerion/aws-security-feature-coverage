@@ -81,3 +81,9 @@ export async function extraFeatures(): Promise<ExtraFeature[]> {
   const file = await load<SeedFile<{ features: ExtraFeature[] }>>("extra-features.json", { features: [] });
   return file.features;
 }
+
+/** An axis the blind reader named differently from the map. */
+export async function axisSynonyms(): Promise<Record<string, string>> {
+  const file = await load<SeedFile<{ synonyms: Record<string, string> }>>("axis-synonyms.json", { synonyms: {} });
+  return file.synonyms;
+}

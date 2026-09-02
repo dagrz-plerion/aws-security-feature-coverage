@@ -5,7 +5,7 @@
     "network": 0,
     "revalidated": 0
   },
-  "finishedAt": "2026-09-02T02:21:01.480Z",
+  "finishedAt": "2026-09-02T02:33:08.540Z",
   "stages": [
     {
       "counts": {
@@ -19,12 +19,12 @@
         "resourceTypes": 3134,
         "services": 692
       },
-      "finishedAt": "2026-09-02T02:20:38.705Z",
+      "finishedAt": "2026-09-02T02:32:49.043Z",
       "id": "stage1-universes",
       "notes": [
         "1314 service reference resources joined to an existing resource type"
       ],
-      "startedAt": "2026-09-02T02:19:51.892Z",
+      "startedAt": "2026-09-02T02:32:08.536Z",
       "status": "partial"
     },
     {
@@ -34,9 +34,9 @@
         "indexed": 1207,
         "pages": 103576
       },
-      "finishedAt": "2026-09-02T02:20:39.304Z",
+      "finishedAt": "2026-09-02T02:32:49.572Z",
       "id": "stage2-doc-pages",
-      "startedAt": "2026-09-02T02:20:38.707Z",
+      "startedAt": "2026-09-02T02:32:49.044Z",
       "status": "partial"
     },
     {
@@ -52,12 +52,12 @@
         "tier1": 45,
         "tier2": 13
       },
-      "finishedAt": "2026-09-02T02:20:39.789Z",
+      "finishedAt": "2026-09-02T02:32:50.005Z",
       "id": "stage3-discovery",
       "notes": [
         "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
       ],
-      "startedAt": "2026-09-02T02:20:39.304Z",
+      "startedAt": "2026-09-02T02:32:49.573Z",
       "status": "partial"
     },
     {
@@ -72,16 +72,16 @@
         "scanned": 307,
         "servicesWithFeatures": 203
       },
-      "finishedAt": "2026-09-02T02:20:44.259Z",
+      "finishedAt": "2026-09-02T02:32:53.703Z",
       "id": "stage4-features",
-      "startedAt": "2026-09-02T02:20:39.790Z",
+      "startedAt": "2026-09-02T02:32:50.005Z",
       "status": "ok"
     },
     {
       "counts": {
-        "claims": 51164,
+        "claims": 51369,
         "conflicts": 0,
-        "covered": 39045,
+        "covered": 39250,
         "duplicateRegistrationsSkipped": 1493,
         "empty": 11715,
         "enabled": 11774,
@@ -91,8 +91,8 @@
         "from_title-match": 5237,
         "newlyDiscovered": 0,
         "notCovered": 12119,
-        "openAxes": 19,
-        "openAxisMembers": 2230,
+        "openAxes": 23,
+        "openAxisMembers": 2411,
         "pagesConsidered": 10281,
         "pagesFailed": 1,
         "pagesRead": 62,
@@ -100,8 +100,8 @@
         "prunedStaleRecords": 0,
         "recipeFailures": 0,
         "recipeRulesWithNoPage": 0,
-        "recipes": 85,
-        "recipesAttached": 85,
+        "recipes": 94,
+        "recipesAttached": 94,
         "registered": 11783,
         "serviceWideRecords": 0,
         "tablesRecoveredFromHtml": 360,
@@ -111,14 +111,14 @@
         "withRecipe": 62,
         "yielding": 66
       },
-      "finishedAt": "2026-09-02T02:20:59.509Z",
+      "finishedAt": "2026-09-02T02:33:07.044Z",
       "id": "stage5-coverage",
-      "startedAt": "2026-09-02T02:20:44.260Z",
+      "startedAt": "2026-09-02T02:32:53.704Z",
       "status": "partial"
     },
     {
       "counts": {
-        "claims": 51021,
+        "claims": 51226,
         "features": 1738,
         "quotesChecked": 250,
         "recallFound": 73,
@@ -126,9 +126,9 @@
         "services": 692,
         "violations": 0
       },
-      "finishedAt": "2026-09-02T02:21:00.384Z",
+      "finishedAt": "2026-09-02T02:33:07.622Z",
       "id": "stage6-validate",
-      "startedAt": "2026-09-02T02:20:59.510Z",
+      "startedAt": "2026-09-02T02:33:07.045Z",
       "status": "ok"
     },
     {
@@ -139,30 +139,51 @@
         "partialRead": 1,
         "staleQuotes": 0
       },
-      "finishedAt": "2026-09-02T02:21:00.765Z",
+      "finishedAt": "2026-09-02T02:33:07.930Z",
       "id": "stage7-verify",
-      "startedAt": "2026-09-02T02:21:00.385Z",
+      "startedAt": "2026-09-02T02:33:07.622Z",
       "status": "partial"
     },
     {
       "counts": {
-        "expectations": 0
+        "drifted": 17,
+        "met": 43,
+        "unmet": 0
       },
-      "finishedAt": "2026-09-02T02:21:00.920Z",
+      "finishedAt": "2026-09-02T02:33:08.120Z",
       "id": "stage8-expectations",
-      "startedAt": "2026-09-02T02:21:00.765Z",
-      "status": "skipped"
+      "notes": [
+        "logging-network-events-with-cloudtrail.md :: eventSource valid values for network activity events (eventSource): the page states 76, we take 59",
+        "reference_aws-services-that-work-with-iam.md :: Actions (service): the page states 440, we take 289",
+        "reference_aws-services-that-work-with-iam.md :: Resource-level permissions (service): the page states 440, we take 289",
+        "reference_aws-services-that-work-with-iam.md :: Resource-based policies (service): the page states 440, we take 289",
+        "reference_aws-services-that-work-with-iam.md :: ABAC (authorization based on tags) (service): the page states 440, we take 289",
+        "reference_aws-services-that-work-with-iam.md :: Temporary credentials (service): the page states 440, we take 289",
+        "reference_aws-services-that-work-with-iam.md :: Service-linked roles (service): the page states 440, we take 289",
+        "sbom-generator-ecosystem-collection.md :: Supported platforms (per ecosystem collector) (operatingSystem): the page states 3, we take 1",
+        "supported.md :: Supported runtimes: Amazon Inspector Lambda standard scanning (runtime): the page states 30, we take 25",
+        "orgs_integrate_services_list.md :: Trusted access (column: \"Supports trusted access\") (service): the page states 52, we take 39",
+        "orgs_integrate_services_list.md :: Delegated administrator for AWS services (column: \"Supports delegated administrator\") (service): the page states 52, we take 39",
+        "awsapps-that-work-with-identity-center.md :: AWS managed applications that integrate with IAM Identity Center (organization instances of IAM Identity Center) (service): the page states 42, we take 30",
+        "awsapps-that-work-with-identity-center.md :: Integrated with account instances of IAM Identity Center (service): the page states 40, we take 30",
+        "awsapps-that-work-with-identity-center.md :: Enables trusted identity propagation through IAM Identity Center (service): the page states 40, we take 30",
+        "awsapps-that-work-with-identity-center.md :: Supports IAM Identity Center configured with a customer managed KMS key (service): the page states 40, we take 30",
+        "awsapps-that-work-with-identity-center.md :: Supports deployment in additional Regions of IAM Identity Center (service): the page states 40, we take 30",
+        "ddos-protections-by-resource-type.md :: Shield Advanced protections for each resource type (\"List of resources that AWS Shield Advanced protects\") (resourceType): the page states 11, we take 7"
+      ],
+      "startedAt": "2026-09-02T02:33:07.931Z",
+      "status": "partial"
     },
     {
       "counts": {
         "features": 1738,
         "services": 211
       },
-      "finishedAt": "2026-09-02T02:21:01.480Z",
+      "finishedAt": "2026-09-02T02:33:08.540Z",
       "id": "report",
-      "startedAt": "2026-09-02T02:21:00.921Z",
+      "startedAt": "2026-09-02T02:33:08.120Z",
       "status": "ok"
     }
   ],
-  "startedAt": "2026-09-02T02:19:51.889Z"
+  "startedAt": "2026-09-02T02:32:08.534Z"
 }
