@@ -128,7 +128,7 @@ tr.detail>td{background:var(--panel);padding:0}
 const M = JSON.parse(document.getElementById("model").textContent);
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const state = { tab: "services", q: "", tier: "", method: "", sort: {}, open: new Set() };
+const state = { tab: "coverage", q: "", tier: "", method: "", sort: {}, open: new Set() };
 const US = M.universeSizes || {};
 const AXIS = M.axisKinds || {};
 const isCatalogue = (a) => (AXIS[a] || {}).kind === "catalogue";
@@ -171,9 +171,9 @@ $("#stats").innerHTML = [
 ].map(([l, n, hero]) => '<div class="stat' + (hero ? " hero" : "") + '"><div class="n">' + n + '</div><div class="l">' + l + "</div></div>").join("");
 
 const TABS = [
+  ["coverage", "Coverage", () => M.features.filter((f) => f.claimCount > 0).length],
   ["services", "Services", () => M.services.length],
   ["features", "Features", () => M.features.length],
-  ["coverage", "Coverage", () => M.features.filter((f) => f.claimCount > 0).length],
   ["regions", "Regions", () => M.regions.length],
   ["outofscope", "Ruled out", () => M.outOfScope.length],
   ["sources", "Sources", () => (M.sources || []).length],
