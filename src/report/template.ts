@@ -77,7 +77,9 @@ table{width:100%;border-collapse:collapse;font-size:13px}
 th{text-align:left;color:var(--dim2);font-weight:600;font-size:10.5px;text-transform:uppercase;letter-spacing:.7px;padding:8px 10px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);cursor:pointer;white-space:nowrap}
 th:hover{color:var(--accent)}
 td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-tr.row{cursor:pointer}
+tr.row{cursor:pointer;user-select:text}
+tr.row td:first-child::before{content:"\\25B8";color:var(--dim2);margin-right:7px;font-size:10px;display:inline-block;transition:transform .12s}
+tr.row.open td:first-child::before{transform:rotate(90deg);color:var(--accent)}
 tr.row:hover{background:var(--panel)}
 tr.detail>td{background:var(--panel);padding:0}
 .det{padding:14px 18px;border-left:2px solid var(--accent)}
@@ -185,7 +187,7 @@ $("#tabs").innerHTML = TABS.map(([id, label, count]) =>
 $("#tabs").onclick = (e) => {
   const b = e.target.closest("button[data-tab]");
   if (!b) return;
-  state.tab = b.dataset.tab; state.open.clear(); render();
+  state.tab = b.dataset.tab; state.open.clear(); render({ keepScroll: false });
 };
 
 function axisTotal(axis, stats) {
@@ -262,7 +264,7 @@ function table(cols, rows, detail) {
   const body = data.map((r, i) => {
     const id = r.id || String(i);
     const open = state.open.has(id);
-    return '<tr class="row" data-id="' + esc(id) + '">' + cols.map((c) => "<td>" + c.cell(r) + "</td>").join("") + "</tr>" +
+    return '<tr class="row' + (open ? " open" : "") + '" data-id="' + esc(id) + '">' + cols.map((c) => "<td>" + c.cell(r) + "</td>").join("") + "</tr>" +
       (open && detail ? '<tr class="detail"><td colspan="' + cols.length + '"><div class="det">' + detail(r) + "</div></td></tr>" : "");
   }).join("");
   if (!data.length) return '<div class="empty">Nothing here yet. This view fills in as the pipeline runs.</div>';
@@ -284,15 +286,24 @@ const match = (r, fields) => {
   return fields.some((f) => String(f ?? "").toLowerCase().includes(q));
 };
 
-function render() {
+function render(opts) {
+  // A render replaces the whole table, which loses the scroll position. Expanding a
+  // row a screenful down should not throw the reader back to the top.
+  const keepScroll = !opts || opts.keepScroll !== false;
+  const y = window.scrollY;
   document.querySelectorAll("#tabs button").forEach((b) => b.classList.toggle("on", b.dataset.tab === state.tab));
   const main = $("#main");
   main.innerHTML = VIEWS[state.tab]();
   const q = $("#q");
-  if (q) { q.oninput = (e) => { state.q = e.target.value; render(); }; q.focus(); q.setSelectionRange(q.value.length, q.value.length); }
-  const tier = $("#tier"); if (tier) tier.onchange = (e) => { state.tier = e.target.value; render(); };
-  const method = $("#method"); if (method) method.onchange = (e) => { state.method = e.target.value; render(); };
-  main.querySelectorAll("tr.row").forEach((tr) => tr.onclick = () => {
+  if (q) { q.oninput = (e) => { state.q = e.target.value; render({ keepScroll: false }); }; q.focus(); q.setSelectionRange(q.value.length, q.value.length); }
+  const tier = $("#tier"); if (tier) tier.onchange = (e) => { state.tier = e.target.value; render({ keepScroll: false }); };
+  const method = $("#method"); if (method) method.onchange = (e) => { state.method = e.target.value; render({ keepScroll: false }); };
+  main.querySelectorAll("tr.row").forEach((tr) => tr.onclick = (e) => {
+    // Selecting text inside a row must not toggle it, or the text cannot be copied.
+    const selection = window.getSelection && window.getSelection();
+    if (selection && String(selection).trim().length > 0) return;
+    // A link in a row is a link, not a toggle.
+    if (e.target.closest && e.target.closest("a")) return;
     const id = tr.dataset.id;
     state.open.has(id) ? state.open.delete(id) : state.open.add(id);
     render();
@@ -301,8 +312,9 @@ function render() {
     e.stopPropagation();
     const id = th.dataset.col, cur = state.sort[state.tab];
     state.sort[state.tab] = cur && cur.id === id ? { id, dir: cur.dir === "asc" ? "desc" : "asc" } : { id, dir: "asc" };
-    render();
+    render({ keepScroll: false });
   });
+  if (keepScroll) window.scrollTo(0, y);
 }
 
 const VIEWS = {
