@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-02T02:15:37.483Z",
-  "pages": 61,
-  "problems": 2,
+  "generatedAt": "2026-09-02T02:21:07.968Z",
+  "pages": 57,
+  "problems": 1,
   "verdicts": [
     {
       "candidates": 7,
@@ -15,20 +15,6 @@
       "quotesMissing": 0,
       "readRatio": 0.29,
       "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md",
-      "verdict": "partial-read"
-    },
-    {
-      "candidates": 65,
-      "claims": 26,
-      "featureIds": [
-        "guardduty/guardduty-findings"
-      ],
-      "labelsNotInQuote": 0,
-      "note": "read 26 of about 65 candidate values on the page",
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 0.4,
-      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md",
       "verdict": "partial-read"
     },
     {
@@ -60,32 +46,6 @@
       "quotesMissing": 0,
       "readRatio": 0.65,
       "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 56,
-      "claims": 38,
-      "featureIds": [
-        "ds/service-wide"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 0.68,
-      "url": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 42,
-      "claims": 36,
-      "featureIds": [
-        "config/service-wide"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 0.86,
-      "url": "https://docs.aws.amazon.com/config/latest/developerguide/config-region-support.md",
       "verdict": "ok"
     },
     {
@@ -195,7 +155,7 @@
     },
     {
       "candidates": 4,
-      "claims": 62,
+      "claims": 59,
       "featureIds": [
         "cloudtrail/network-activity-events"
       ],
@@ -204,19 +164,6 @@
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 36,
-      "claims": 36,
-      "featureIds": [
-        "cloudtrail/service-wide"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md",
       "verdict": "ok"
     },
     {
@@ -739,19 +686,6 @@
       "quotesChecked": 2,
       "quotesMissing": 0,
       "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 0,
-      "claims": 1,
-      "featureIds": [
-        "wafv2/aws-managed-rules-rule-groups-list"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 1,
-      "quotesMissing": 0,
-      "readRatio": 1,
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md",
       "verdict": "ok"
     },
@@ -779,6 +713,19 @@
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-ip-rep.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 0,
+      "claims": 1,
+      "featureIds": [
+        "wafv2/aws-managed-rules-rule-groups-list"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 1,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md",
       "verdict": "ok"
     },
     {

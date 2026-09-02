@@ -5,7 +5,7 @@
   "claims": [
     {
       "axis": "region",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "4b91cf6e5f710bf11ecca29c8f8936af9a234283fb6a6971462f42299fb4893e",
@@ -15,9 +15,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:verified-access-fips-regions",
       "featureId": "verified-access/fips-compliance",
-      "id": "verified-access-fips-compliance-region-ca-central-1-md-bullet-list",
+      "id": "verified-access-fips-compliance-region-ca-central-1-recipe-verified-access-fips-regions",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ca-central-1",
@@ -25,7 +25,7 @@
     },
     {
       "axis": "region",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "4b91cf6e5f710bf11ecca29c8f8936af9a234283fb6a6971462f42299fb4893e",
@@ -35,9 +35,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:verified-access-fips-regions",
       "featureId": "verified-access/fips-compliance",
-      "id": "verified-access-fips-compliance-region-us-east-1-md-bullet-list",
+      "id": "verified-access-fips-compliance-region-us-east-1-recipe-verified-access-fips-regions",
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-east-1",
@@ -45,7 +45,7 @@
     },
     {
       "axis": "region",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "4b91cf6e5f710bf11ecca29c8f8936af9a234283fb6a6971462f42299fb4893e",
@@ -55,9 +55,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:verified-access-fips-regions",
       "featureId": "verified-access/fips-compliance",
-      "id": "verified-access-fips-compliance-region-us-east-2-md-bullet-list",
+      "id": "verified-access-fips-compliance-region-us-east-2-recipe-verified-access-fips-regions",
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-east-2",
@@ -65,7 +65,7 @@
     },
     {
       "axis": "region",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "4b91cf6e5f710bf11ecca29c8f8936af9a234283fb6a6971462f42299fb4893e",
@@ -75,9 +75,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:verified-access-fips-regions",
       "featureId": "verified-access/fips-compliance",
-      "id": "verified-access-fips-compliance-region-us-west-1-md-bullet-list",
+      "id": "verified-access-fips-compliance-region-us-west-1-recipe-verified-access-fips-regions",
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-west-1",
@@ -85,7 +85,7 @@
     },
     {
       "axis": "region",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "4b91cf6e5f710bf11ecca29c8f8936af9a234283fb6a6971462f42299fb4893e",
@@ -95,9 +95,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:verified-access-fips-regions",
       "featureId": "verified-access/fips-compliance",
-      "id": "verified-access-fips-compliance-region-us-west-2-md-bullet-list",
+      "id": "verified-access-fips-compliance-region-us-west-2-recipe-verified-access-fips-regions",
       "method": "deterministic",
       "status": "covered",
       "targetId": "us-west-2",
@@ -105,18 +105,7 @@
     }
   ],
   "featureId": "verified-access/fips-compliance",
-  "generatedAt": "2026-09-02T02:14:21.090Z",
+  "generatedAt": "2026-09-02T02:20:58.976Z",
   "serviceId": "verified-access",
-  "unresolvedTargets": [
-    {
-      "axis": "region",
-      "raw": "AWS GovCloud (US) West",
-      "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md"
-    },
-    {
-      "axis": "region",
-      "raw": "AWS GovCloud (US) East",
-      "sourceUrl": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md"
-    }
-  ]
+  "unresolvedTargets": []
 }

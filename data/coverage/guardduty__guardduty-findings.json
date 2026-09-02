@@ -6,48 +6,6 @@
   "claims": [
     {
       "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [AttackSequence:EKS/CompromisedCluster](guardduty-attack-sequence-finding-types.md#attack-sequence-eks-compromised-cluster)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-attacksequence-eks-compromisedcluster-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "AttackSequence:EKS/CompromisedCluster",
-      "targetLabel": "AttackSequence:EKS/CompromisedCluster"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [AttackSequence:S3/CompromisedData](guardduty-attack-sequence-finding-types.md#attack-sequence-s3-compromised-data)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-attacksequence-s3-compromiseddata-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "AttackSequence:S3/CompromisedData",
-      "targetLabel": "AttackSequence:S3/CompromisedData"
-    },
-    {
-      "axis": "findingType",
       "confidence": 0.95,
       "evidence": [
         {
@@ -228,27 +186,6 @@
     },
     {
       "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Backdoor:Runtime/C&CActivity.B\\!DNS](findings-runtime-monitoring.md#backdoor-runtime-ccactivitybdns)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-backdoor-runtime-c-and-cactivity-b-dns-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Backdoor:Runtime/C&CActivity.B!DNS",
-      "targetLabel": "Backdoor:Runtime/C&CActivity.B!DNS"
-    },
-    {
-      "axis": "findingType",
       "confidence": 0.95,
       "evidence": [
         {
@@ -409,27 +346,6 @@
     },
     {
       "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [CryptoCurrency:Runtime/BitcoinTool.B\\!DNS](findings-runtime-monitoring.md#cryptocurrency-runtime-bitcointoolbdns)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-cryptocurrency-runtime-bitcointool-b-dns-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "CryptoCurrency:Runtime/BitcoinTool.B!DNS",
-      "targetLabel": "CryptoCurrency:Runtime/BitcoinTool.B!DNS"
-    },
-    {
-      "axis": "findingType",
       "confidence": 0.95,
       "evidence": [
         {
@@ -530,48 +446,6 @@
     },
     {
       "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [DefenseEvasion:Runtime/ProcessInjection.Ptrace](findings-runtime-monitoring.md#defenseeva-runtime-processinjectionptrace)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-defenseevasion-runtime-processinjection-ptrace-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "DefenseEvasion:Runtime/ProcessInjection.Ptrace",
-      "targetLabel": "DefenseEvasion:Runtime/ProcessInjection.Ptrace"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [DefenseEvasion:Runtime/ProcessInjection.VirtualMemoryWrite](findings-runtime-monitoring.md#defenseeva-runtime-processinjectionvirtualmemw)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-defenseevasion-runtime-processinjection-virtualmemorywrite-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "DefenseEvasion:Runtime/ProcessInjection.VirtualMemoryWrite",
-      "targetLabel": "DefenseEvasion:Runtime/ProcessInjection.VirtualMemoryWrite"
-    },
-    {
-      "axis": "findingType",
       "confidence": 0.95,
       "evidence": [
         {
@@ -589,69 +463,6 @@
       "status": "covered",
       "targetId": "Discovery:IAMUser/AnomalousBehavior",
       "targetLabel": "Discovery:IAMUser/AnomalousBehavior"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Discovery:Kubernetes/MaliciousIPCaller.Custom](guardduty-finding-types-eks-audit-logs.md#discovery-kubernetes-maliciousipcallercustom)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-discovery-kubernetes-maliciousipcaller-custom-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Discovery:Kubernetes/MaliciousIPCaller.Custom",
-      "targetLabel": "Discovery:Kubernetes/MaliciousIPCaller.Custom"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Discovery:Kubernetes/SuccessfulAnonymousAccess](guardduty-finding-types-eks-audit-logs.md#discovery-kubernetes-successfulanonymousaccess)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-discovery-kubernetes-successfulanonymousaccess-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Discovery:Kubernetes/SuccessfulAnonymousAccess",
-      "targetLabel": "Discovery:Kubernetes/SuccessfulAnonymousAccess"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Discovery:Kubernetes/TorIPCaller](guardduty-finding-types-eks-audit-logs.md#discovery-kubernetes-toripcaller)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-discovery-kubernetes-toripcaller-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Discovery:Kubernetes/TorIPCaller",
-      "targetLabel": "Discovery:Kubernetes/TorIPCaller"
     },
     {
       "axis": "findingType",
@@ -752,48 +563,6 @@
       "status": "covered",
       "targetId": "Discovery:S3/TorIPCaller",
       "targetLabel": "Discovery:S3/TorIPCaller"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Execution:Kubernetes/ExecInKubeSystemPod](guardduty-finding-types-eks-audit-logs.md#execution-kubernetes-execinkubesystempod)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-execution-kubernetes-execinkubesystempod-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Execution:Kubernetes/ExecInKubeSystemPod",
-      "targetLabel": "Execution:Kubernetes/ExecInKubeSystemPod"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Execution:Runtime/ReverseShell](findings-runtime-monitoring.md#execution-runtime-reverseshell)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-execution-runtime-reverseshell-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Execution:Runtime/ReverseShell",
-      "targetLabel": "Execution:Runtime/ReverseShell"
     },
     {
       "axis": "findingType",
@@ -1034,111 +803,6 @@
       "status": "covered",
       "targetId": "Impact:IAMUser/AnomalousBehavior",
       "targetLabel": "Impact:IAMUser/AnomalousBehavior"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Impact:Kubernetes/MaliciousIPCaller.Custom](guardduty-finding-types-eks-audit-logs.md#impact-kubernetes-maliciousipcallercustom)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-impact-kubernetes-maliciousipcaller-custom-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Impact:Kubernetes/MaliciousIPCaller.Custom",
-      "targetLabel": "Impact:Kubernetes/MaliciousIPCaller.Custom"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Impact:Runtime/AbusedDomainRequest.Reputation](findings-runtime-monitoring.md#impact-runtime-abuseddomainrequestreputation)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-impact-runtime-abuseddomainrequest-reputation-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Impact:Runtime/AbusedDomainRequest.Reputation",
-      "targetLabel": "Impact:Runtime/AbusedDomainRequest.Reputation"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Impact:Runtime/BitcoinDomainRequest.Reputation](findings-runtime-monitoring.md#impact-runtime-bitcoindomainrequestreputation)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-impact-runtime-bitcoindomainrequest-reputation-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Impact:Runtime/BitcoinDomainRequest.Reputation",
-      "targetLabel": "Impact:Runtime/BitcoinDomainRequest.Reputation"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Impact:Runtime/MaliciousDomainRequest.Reputation](findings-runtime-monitoring.md#impact-runtime-maliciousdomainrequestreputation)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-impact-runtime-maliciousdomainrequest-reputation-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Impact:Runtime/MaliciousDomainRequest.Reputation",
-      "targetLabel": "Impact:Runtime/MaliciousDomainRequest.Reputation"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Impact:Runtime/SuspiciousDomainRequest.Reputation](findings-runtime-monitoring.md#impact-runtime-suspiciousdomainrequestreputation)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-impact-runtime-suspiciousdomainrequest-reputation-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Impact:Runtime/SuspiciousDomainRequest.Reputation",
-      "targetLabel": "Impact:Runtime/SuspiciousDomainRequest.Reputation"
     },
     {
       "axis": "findingType",
@@ -1542,48 +1206,6 @@
     },
     {
       "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Policy:Kubernetes/AdminAccessToDefaultServiceAccount](guardduty-finding-types-eks-audit-logs.md#policy-kubernetes-adminaccesstodefaultserviceaccount)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-policy-kubernetes-adminaccesstodefaultserviceaccount-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Policy:Kubernetes/AdminAccessToDefaultServiceAccount",
-      "targetLabel": "Policy:Kubernetes/AdminAccessToDefaultServiceAccount"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Policy:Kubernetes/AnonymousAccessGranted](guardduty-finding-types-eks-audit-logs.md#policy-kubernetes-anonymousaccessgranted)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-policy-kubernetes-anonymousaccessgranted-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Policy:Kubernetes/AnonymousAccessGranted",
-      "targetLabel": "Policy:Kubernetes/AnonymousAccessGranted"
-    },
-    {
-      "axis": "findingType",
       "confidence": 0.95,
       "evidence": [
         {
@@ -1721,48 +1343,6 @@
       "status": "not-covered",
       "targetId": "PrivilegeEscalation:Kubernetes/PrivilegedContainer",
       "targetLabel": "PrivilegeEscalation:Kubernetes/PrivilegedContainer"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [PrivilegeEscalation:Runtime/ContainerMountsHostDirectory](findings-runtime-monitoring.md#privilegeescalation-runtime-containermountshostdirectory)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-privilegeescalation-runtime-containermountshostdirectory-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "PrivilegeEscalation:Runtime/ContainerMountsHostDirectory",
-      "targetLabel": "PrivilegeEscalation:Runtime/ContainerMountsHostDirectory"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [PrivilegeEscalation:Runtime/DockerSocketAccessed](findings-runtime-monitoring.md#privilegeesc-runtime-dockersocketaccessed)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-privilegeescalation-runtime-dockersocketaccessed-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "PrivilegeEscalation:Runtime/DockerSocketAccessed",
-      "targetLabel": "PrivilegeEscalation:Runtime/DockerSocketAccessed"
     },
     {
       "axis": "findingType",
@@ -2226,111 +1806,6 @@
     },
     {
       "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Trojan:Runtime/BlackholeTraffic\\!DNS](findings-runtime-monitoring.md#trojan-runtime-blackholetrafficdns)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-trojan-runtime-blackholetraffic-dns-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Trojan:Runtime/BlackholeTraffic!DNS",
-      "targetLabel": "Trojan:Runtime/BlackholeTraffic!DNS"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Trojan:Runtime/DGADomainRequest.C\\!DNS](findings-runtime-monitoring.md#trojan-runtime-dgadomainrequestcdns)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-trojan-runtime-dgadomainrequest-c-dns-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Trojan:Runtime/DGADomainRequest.C!DNS",
-      "targetLabel": "Trojan:Runtime/DGADomainRequest.C!DNS"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Trojan:Runtime/DriveBySourceTraffic\\!DNS](findings-runtime-monitoring.md#trojan-runtime-drivebysourcetrafficdns)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-trojan-runtime-drivebysourcetraffic-dns-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Trojan:Runtime/DriveBySourceTraffic!DNS",
-      "targetLabel": "Trojan:Runtime/DriveBySourceTraffic!DNS"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Trojan:Runtime/DropPoint\\!DNS](findings-runtime-monitoring.md#trojan-runtime-droppointdns)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-trojan-runtime-droppoint-dns-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Trojan:Runtime/DropPoint!DNS",
-      "targetLabel": "Trojan:Runtime/DropPoint!DNS"
-    },
-    {
-      "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [Trojan:Runtime/PhishingDomainRequest\\!DNS](findings-runtime-monitoring.md#trojan-runtime-phishingdomainrequestdns)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-trojan-runtime-phishingdomainrequest-dns-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "Trojan:Runtime/PhishingDomainRequest!DNS",
-      "targetLabel": "Trojan:Runtime/PhishingDomainRequest!DNS"
-    },
-    {
-      "axis": "findingType",
       "confidence": 0.95,
       "evidence": [
         {
@@ -2671,27 +2146,6 @@
     },
     {
       "axis": "findingType",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "b655e98bbeced58b8519b44ea857e558e6264b7f6731c68fa25dbcbb8c30830c",
-          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md :: Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-          "quote": "+ [UnauthorizedAccess:Lambda/MaliciousIPCaller.Custom](lambda-protection-finding-types.md#unauthorized-access-lambda-maliciousIPcaller-custom)",
-          "retrievedAt": "2026-09-01T05:00:39.365Z",
-          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "guardduty/guardduty-findings",
-      "id": "guardduty-guardduty-findings-findingtype-unauthorizedaccess-lambda-maliciousipcaller-custom-md-bullet-list",
-      "method": "deterministic",
-      "qualifier": "Presently, the tester script generates following finding types that are related to Amazon EC2, Amazon EKS, Amazon S3, IAM, and EKS audit logs:",
-      "status": "covered",
-      "targetId": "UnauthorizedAccess:Lambda/MaliciousIPCaller.Custom",
-      "targetLabel": "UnauthorizedAccess:Lambda/MaliciousIPCaller.Custom"
-    },
-    {
-      "axis": "findingType",
       "confidence": 0.95,
       "evidence": [
         {
@@ -2772,7 +2226,7 @@
     }
   ],
   "featureId": "guardduty/guardduty-findings",
-  "generatedAt": "2026-09-02T02:14:21.090Z",
+  "generatedAt": "2026-09-02T02:20:58.976Z",
   "serviceId": "guardduty",
   "unresolvedTargets": []
 }

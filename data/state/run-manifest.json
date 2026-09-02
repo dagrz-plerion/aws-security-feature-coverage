@@ -1,59 +1,168 @@
 {
   "fetch": {
-    "cacheHit": 61,
-    "failed": 0,
+    "cacheHit": 12437,
+    "failed": 5,
     "network": 0,
     "revalidated": 0
   },
-  "finishedAt": "2026-09-02T02:15:30.425Z",
+  "finishedAt": "2026-09-02T02:21:01.480Z",
   "stages": [
     {
       "counts": {
-        "claims": 51160,
-        "features": 1741,
+        "actions": 21810,
+        "dataSources": 23,
+        "docGuides": 1236,
+        "iamPrefixedServices": 526,
+        "partitions": 8,
+        "products": 358,
+        "regions": 46,
+        "resourceTypes": 3134,
+        "services": 692
+      },
+      "finishedAt": "2026-09-02T02:20:38.705Z",
+      "id": "stage1-universes",
+      "notes": [
+        "1314 service reference resources joined to an existing resource type"
+      ],
+      "startedAt": "2026-09-02T02:19:51.892Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "failed": 29,
+        "guides": 1236,
+        "indexed": 1207,
+        "pages": 103576
+      },
+      "finishedAt": "2026-09-02T02:20:39.304Z",
+      "id": "stage2-doc-pages",
+      "startedAt": "2026-09-02T02:20:38.707Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "adjudicated": 692,
+        "candidates": 307,
+        "notSecurity": 385,
+        "overridesApplied": 33,
+        "pendingJudgement": 43,
+        "prunedStaleRecords": 0,
+        "sraMatched": 31,
+        "synthetic": 166,
+        "tier1": 45,
+        "tier2": 13
+      },
+      "finishedAt": "2026-09-02T02:20:39.789Z",
+      "id": "stage3-discovery",
+      "notes": [
+        "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
+      ],
+      "startedAt": "2026-09-02T02:20:39.304Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "aliasesApplied": 13,
+        "aliasesUnmatched": 0,
+        "declaredFeatures": 4,
+        "features": 1739,
+        "noFeatureFound": 104,
+        "promotedToTier2": 153,
+        "prunedStaleRecords": 0,
+        "scanned": 307,
+        "servicesWithFeatures": 203
+      },
+      "finishedAt": "2026-09-02T02:20:44.259Z",
+      "id": "stage4-features",
+      "startedAt": "2026-09-02T02:20:39.790Z",
+      "status": "ok"
+    },
+    {
+      "counts": {
+        "claims": 51164,
+        "conflicts": 0,
+        "covered": 39045,
+        "duplicateRegistrationsSkipped": 1493,
+        "empty": 11715,
+        "enabled": 11774,
+        "featuresWithCoverage": 58,
+        "from_agent": 30,
+        "from_tier1-sweep": 6516,
+        "from_title-match": 5237,
+        "newlyDiscovered": 0,
+        "notCovered": 12119,
+        "openAxes": 19,
+        "openAxisMembers": 2230,
+        "pagesConsidered": 10281,
+        "pagesFailed": 1,
+        "pagesRead": 62,
+        "pagesRejectedByKind": 2636,
+        "prunedStaleRecords": 0,
+        "recipeFailures": 0,
+        "recipeRulesWithNoPage": 0,
+        "recipes": 85,
+        "recipesAttached": 85,
+        "registered": 11783,
+        "serviceWideRecords": 0,
+        "tablesRecoveredFromHtml": 360,
+        "unattachedPages": 173,
+        "unresolvedTargets": 0,
+        "valuesDroppedUnresolved": 1617,
+        "withRecipe": 62,
+        "yielding": 66
+      },
+      "finishedAt": "2026-09-02T02:20:59.509Z",
+      "id": "stage5-coverage",
+      "startedAt": "2026-09-02T02:20:44.260Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "claims": 51021,
+        "features": 1738,
         "quotesChecked": 250,
         "recallFound": 73,
         "recallTotal": 73,
         "services": 692,
         "violations": 0
       },
-      "finishedAt": "2026-09-02T02:15:29.445Z",
+      "finishedAt": "2026-09-02T02:21:00.384Z",
       "id": "stage6-validate",
-      "startedAt": "2026-09-02T02:15:28.779Z",
+      "startedAt": "2026-09-02T02:20:59.510Z",
       "status": "ok"
     },
     {
       "counts": {
-        "clean": 59,
+        "clean": 56,
         "empty": 0,
-        "pagesChecked": 61,
-        "partialRead": 2,
+        "pagesChecked": 57,
+        "partialRead": 1,
         "staleQuotes": 0
       },
-      "finishedAt": "2026-09-02T02:15:29.807Z",
+      "finishedAt": "2026-09-02T02:21:00.765Z",
       "id": "stage7-verify",
-      "startedAt": "2026-09-02T02:15:29.446Z",
+      "startedAt": "2026-09-02T02:21:00.385Z",
       "status": "partial"
     },
     {
       "counts": {
         "expectations": 0
       },
-      "finishedAt": "2026-09-02T02:15:29.945Z",
+      "finishedAt": "2026-09-02T02:21:00.920Z",
       "id": "stage8-expectations",
-      "startedAt": "2026-09-02T02:15:29.807Z",
+      "startedAt": "2026-09-02T02:21:00.765Z",
       "status": "skipped"
     },
     {
       "counts": {
-        "features": 1741,
+        "features": 1738,
         "services": 211
       },
-      "finishedAt": "2026-09-02T02:15:30.425Z",
+      "finishedAt": "2026-09-02T02:21:01.480Z",
       "id": "report",
-      "startedAt": "2026-09-02T02:15:29.945Z",
+      "startedAt": "2026-09-02T02:21:00.921Z",
       "status": "ok"
     }
   ],
-  "startedAt": "2026-09-02T02:15:28.777Z"
+  "startedAt": "2026-09-02T02:19:51.889Z"
 }

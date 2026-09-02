@@ -1345,6 +1345,187 @@
           "requireMin": 55
         }
       ]
+    },
+    {
+      "urlPattern": "privateca/latest/userguide/vpc-endpoints\\.md$",
+      "serviceId": "acm-pca",
+      "note": "The Regions where AWS Private CA offers a PrivateLink endpoint.",
+      "recipes": [
+        {
+          "id": "acm-pca-vpc-endpoint-regions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "list-items",
+            "extract": "whole",
+            "matches": "^(US|Europe|Asia|Africa|South America|Canada|Middle East|Israel|Mexico|China|AWS GovCloud)"
+          },
+          "axis": "region",
+          "status": "covered",
+          "featureId": "acm-pca/vpc-endpoints-aws-privatelink",
+          "requireMin": 25
+        }
+      ]
+    },
+    {
+      "urlPattern": "awscloudtrail/latest/userguide/cloudtrail-lake-supported-regions\\.md$",
+      "serviceId": "cloudtrail",
+      "note": "The Regions where CloudTrail Lake is available.",
+      "recipes": [
+        {
+          "id": "cloudtrail-lake-regions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "region",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "covered",
+          "featureId": "cloudtrail/cloudtrail-lake-supported-regions",
+          "requireMin": 25
+        }
+      ]
+    },
+    {
+      "urlPattern": "awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail\\.md$",
+      "serviceId": "cloudtrail",
+      "note": "The AWS services for which CloudTrail can log network activity events.",
+      "recipes": [
+        {
+          "id": "cloudtrail-network-activity-services",
+          "blocks": "whole-page",
+          "select": {
+            "from": "list-items",
+            "extract": "whole",
+            "matches": "^(AWS|Amazon|US|Europe|Asia|Africa|South|Canada|Middle|Israel|Mexico|China|AWS GovCloud)"
+          },
+          "axis": "service",
+          "status": "covered",
+          "featureId": "cloudtrail/network-activity-events",
+          "requireMin": 50
+        }
+      ]
+    },
+    {
+      "urlPattern": "awscloudtrail/latest/userguide/cloudtrail-supported-regions\\.md$",
+      "serviceId": "cloudtrail",
+      "note": "The Regions where CloudTrail is available.",
+      "recipes": [
+        {
+          "id": "cloudtrail-supported-regions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "region",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "covered",
+          "featureId": "cloudtrail/service-wide",
+          "requireMin": 30
+        }
+      ]
+    },
+    {
+      "urlPattern": "config/latest/developerguide/config-region-support\\.md$",
+      "serviceId": "config",
+      "note": "The Regions where AWS Config is available.",
+      "recipes": [
+        {
+          "id": "config-supported-regions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "region",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "covered",
+          "featureId": "config/service-wide",
+          "requireMin": 30
+        }
+      ]
+    },
+    {
+      "urlPattern": "directoryservice/latest/admin-guide/using-service-linked-roles\\.md$",
+      "serviceId": "ds",
+      "note": "The Regions where the Directory Service service-linked role can be used.",
+      "recipes": [
+        {
+          "id": "ds-slr-regions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "region",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "covered",
+          "featureId": "ds/service-linked-roles",
+          "requireMin": 22
+        }
+      ]
+    },
+    {
+      "urlPattern": "directoryservice/latest/admin-guide/regions\\.md$",
+      "serviceId": "ds",
+      "note": "The Regions where AWS Directory Service is available.",
+      "recipes": [
+        {
+          "id": "ds-supported-regions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "region",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "covered",
+          "featureId": "ds/service-wide",
+          "requireMin": 30
+        }
+      ]
+    },
+    {
+      "urlPattern": "security-ir/latest/userguide/using-service-linked-roles\\.md$",
+      "serviceId": "security-ir",
+      "note": "The Regions where the Security Incident Response service-linked roles can be used.",
+      "recipes": [
+        {
+          "id": "security-ir-slr-regions",
+          "blocks": "h2-sections",
+          "select": {
+            "from": "list-items",
+            "extract": "whole",
+            "matches": "^(US|Europe|Asia|Africa|South America|Canada|Middle East|Israel|Mexico|China|AWS GovCloud)"
+          },
+          "axis": "region",
+          "status": "covered",
+          "featureId": "security-ir/service-linked-roles",
+          "requireMin": 15,
+          "onlyBlocksMatching": "Supported regions"
+        }
+      ]
+    },
+    {
+      "urlPattern": "verified-access/latest/ug/fips-compliance\\.md$",
+      "serviceId": "verified-access",
+      "note": "The Regions where Verified Access offers FIPS endpoints.",
+      "recipes": [
+        {
+          "id": "verified-access-fips-regions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "list-items",
+            "extract": "whole",
+            "matches": "^(AWS|Amazon|US|Europe|Asia|Africa|South|Canada|Middle|Israel|Mexico|China|AWS GovCloud)"
+          },
+          "axis": "region",
+          "status": "covered",
+          "featureId": "verified-access/fips-compliance",
+          "requireMin": 4
+        }
+      ]
     }
   ]
 }

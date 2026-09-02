@@ -5,7 +5,7 @@
   "claims": [
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -15,9 +15,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-api-tunneling-iot-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-api-tunneling-iot-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "api.tunneling.iot",
@@ -25,7 +25,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -35,9 +35,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-appconfig-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-appconfig-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "appconfig",
@@ -45,27 +45,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ CloudWatch Application Signals",
-          "retrievedAt": "2026-09-01T04:59:40.214Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-application-signals-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "application-signals",
-      "targetLabel": "CloudWatch Application Signals"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -75,9 +55,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-appmesh-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-appmesh-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "appmesh",
@@ -85,7 +65,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -95,9 +75,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-athena-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-athena-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "athena",
@@ -105,7 +85,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -115,9 +95,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-b2bi-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-b2bi-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "b2bi",
@@ -125,7 +105,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -135,9 +115,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-backup-gateway-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-backup-gateway-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "backup-gateway",
@@ -145,7 +125,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -155,9 +135,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-bcm-data-exports-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-bcm-data-exports-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "bcm-data-exports",
@@ -165,7 +145,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -175,9 +155,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-bcm-pricing-calculator-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-bcm-pricing-calculator-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "bcm-pricing-calculator",
@@ -185,7 +165,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -195,9 +175,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-bedrock-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-bedrock-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "bedrock",
@@ -205,27 +185,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Billing and Cost Management",
-          "retrievedAt": "2026-09-01T04:59:40.214Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-billing-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "billing",
-      "targetLabel": "Billing and Cost Management"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -235,9 +195,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-cassandra-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-cassandra-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "cassandra",
@@ -245,7 +205,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -255,9 +215,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-ce-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-ce-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ce",
@@ -265,7 +225,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -275,9 +235,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-cloudcontrolapi-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-cloudcontrolapi-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudcontrolapi",
@@ -285,7 +245,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -295,9 +255,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-cloudformation-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-cloudformation-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudformation",
@@ -305,7 +265,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -315,9 +275,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-cloudhsm-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-cloudhsm-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudhsm",
@@ -325,7 +285,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -335,9 +295,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-cloudtrail-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-cloudtrail-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudtrail",
@@ -345,7 +305,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -355,9 +315,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-cloudwatch-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-cloudwatch-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "cloudwatch",
@@ -365,7 +325,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -375,9 +335,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-codedeploy-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-codedeploy-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "codedeploy",
@@ -385,7 +345,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -395,9 +355,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-comprehendmedical-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-comprehendmedical-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "comprehendmedical",
@@ -405,7 +365,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -415,9 +375,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-config-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-config-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "config",
@@ -425,7 +385,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -435,9 +395,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-ds-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-ds-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ds",
@@ -445,7 +405,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -455,9 +415,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-dynamodb-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-dynamodb-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "dynamodb",
@@ -465,7 +425,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -475,9 +435,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-ec2-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-ec2-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ec2",
@@ -485,7 +445,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -495,9 +455,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-ecs-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-ecs-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ecs",
@@ -505,7 +465,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -515,9 +475,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-elasticfilesystem-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-elasticfilesystem-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "elasticfilesystem",
@@ -525,27 +485,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
-      "evidence": [
-        {
-          "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
-          "locator": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md :: Logging network activity events",
-          "quote": "+ Elastic Load Balancing",
-          "retrievedAt": "2026-09-01T04:59:40.214Z",
-          "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
-        }
-      ],
-      "extractorId": "md-bullet-list",
-      "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-elasticloadbalancing-md-bullet-list",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "elasticloadbalancing",
-      "targetLabel": "Elastic Load Balancing"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -555,9 +495,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-events-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-events-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "events",
@@ -565,7 +505,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -575,9 +515,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-firehose-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-firehose-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "firehose",
@@ -585,7 +525,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -595,9 +535,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-frauddetector-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-frauddetector-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "frauddetector",
@@ -605,7 +545,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -615,9 +555,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-freetier-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-freetier-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "freetier",
@@ -625,7 +565,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -635,9 +575,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-fsx-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-fsx-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "fsx",
@@ -645,7 +585,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -655,9 +595,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-glue-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-glue-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "glue",
@@ -665,7 +605,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -675,9 +615,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-healthlake-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-healthlake-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "healthlake",
@@ -685,7 +625,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -695,9 +635,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-invoicing-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-invoicing-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "invoicing",
@@ -705,7 +645,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -715,9 +655,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-iotfleetwise-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-iotfleetwise-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "iotfleetwise",
@@ -725,7 +665,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -735,9 +675,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-kms-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-kms-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "kms",
@@ -745,7 +685,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -755,9 +695,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-lakeformation-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-lakeformation-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "lakeformation",
@@ -765,7 +705,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -775,9 +715,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-lambda-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-lambda-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "lambda",
@@ -785,7 +725,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -795,9 +735,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-license-manager-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-license-manager-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "license-manager",
@@ -805,7 +745,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -815,9 +755,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-lookoutequipment-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-lookoutequipment-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "lookoutequipment",
@@ -825,7 +765,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -835,9 +775,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-personalize-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-personalize-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "personalize",
@@ -845,7 +785,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -855,9 +795,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-product-amazon-lookout-for-vision-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-product-amazon-lookout-for-vision-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "product:amazon-lookout-for-vision",
@@ -865,7 +805,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -875,9 +815,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-qbusiness-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-qbusiness-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "qbusiness",
@@ -885,7 +825,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -895,9 +835,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-rds-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-rds-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "rds",
@@ -905,7 +845,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -915,9 +855,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-rekognition-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-rekognition-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "rekognition",
@@ -925,7 +865,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -935,9 +875,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-s3-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-s3-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "s3",
@@ -945,7 +885,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -955,9 +895,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-sagemaker-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-sagemaker-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "sagemaker",
@@ -965,7 +905,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -975,9 +915,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-scheduler-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-scheduler-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "scheduler",
@@ -985,7 +925,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -995,9 +935,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-secretsmanager-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-secretsmanager-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "secretsmanager",
@@ -1005,7 +945,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -1015,9 +955,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-servicediscovery-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-servicediscovery-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "servicediscovery",
@@ -1025,7 +965,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -1035,9 +975,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-sns-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-sns-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "sns",
@@ -1045,7 +985,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -1055,9 +995,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-sqs-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-sqs-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "sqs",
@@ -1065,7 +1005,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -1075,9 +1015,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-ssm-incidents-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-ssm-incidents-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "ssm-incidents",
@@ -1085,7 +1025,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -1095,9 +1035,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-storagegateway-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-storagegateway-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "storagegateway",
@@ -1105,7 +1045,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -1115,9 +1055,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-swf-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-swf-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "swf",
@@ -1125,7 +1065,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -1135,9 +1075,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-textract-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-textract-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "textract",
@@ -1145,7 +1085,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -1155,9 +1095,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-transcribe-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-transcribe-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "transcribe",
@@ -1165,7 +1105,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -1175,9 +1115,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-transform-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-transform-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "transform",
@@ -1185,7 +1125,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -1195,9 +1135,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-translate-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-translate-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "translate",
@@ -1205,7 +1145,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -1215,9 +1155,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-verifiedpermissions-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-verifiedpermissions-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "verifiedpermissions",
@@ -1225,7 +1165,7 @@
     },
     {
       "axis": "service",
-      "confidence": 0.8,
+      "confidence": 0.95,
       "evidence": [
         {
           "bodySha256": "1a6d162e34f2045b01d1000dd1582ac00fa7efe80c4fbd5df6fb6d43899a7ed3",
@@ -1235,9 +1175,9 @@
           "sourceUrl": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md"
         }
       ],
-      "extractorId": "md-bullet-list",
+      "extractorId": "recipe:cloudtrail-network-activity-services",
       "featureId": "cloudtrail/network-activity-events",
-      "id": "cloudtrail-network-activity-events-service-workmail-md-bullet-list",
+      "id": "cloudtrail-network-activity-events-service-workmail-recipe-cloudtrail-network-activity-services",
       "method": "deterministic",
       "status": "covered",
       "targetId": "workmail",
@@ -1245,7 +1185,7 @@
     }
   ],
   "featureId": "cloudtrail/network-activity-events",
-  "generatedAt": "2026-09-02T02:14:21.090Z",
+  "generatedAt": "2026-09-02T02:20:58.976Z",
   "serviceId": "cloudtrail",
   "unresolvedTargets": []
 }

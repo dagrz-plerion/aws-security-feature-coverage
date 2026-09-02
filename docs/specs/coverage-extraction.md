@@ -114,3 +114,15 @@ quota table is not coverage. Only an expectation written by someone who never sa
 code can.
 
 Record them with `npm run record-expectations -- <specs.json>`.
+
+## Every published row has its own parser
+
+The generic reader — the one that infers an axis from the shape of a list — is for
+**discovery**. It finds pages worth a recipe. It is not a source of published claims,
+because a quota table has the same shape as a coverage table and it cannot tell them
+apart. That is how `verified-access` came to claim 4 resource types off a table of
+service quotas.
+
+`stage6-validate` fails the run if any published row contains a claim the generic
+reader produced. In practice that means: one page, one recipe, written after reading
+that page.

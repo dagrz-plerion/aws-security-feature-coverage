@@ -6099,15 +6099,15 @@
     {
       "axes": {
         "service": {
-          "covered": 62,
+          "covered": 59,
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 62,
+          "total": 59,
           "unknown": 0
         }
       },
-      "claimCount": 62,
+      "claimCount": 59,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -6127,7 +6127,6 @@
         "service": [
           "api.tunneling.iot",
           "appconfig",
-          "application-signals",
           "appmesh",
           "athena",
           "b2bi",
@@ -6135,7 +6134,6 @@
           "bcm-data-exports",
           "bcm-pricing-calculator",
           "bedrock",
-          "billing",
           "cassandra",
           "ce",
           "cloudcontrolapi",
@@ -6151,7 +6149,6 @@
           "ec2",
           "ecs",
           "elasticfilesystem",
-          "elasticloadbalancing",
           "events",
           "firehose",
           "frauddetector",
@@ -6367,74 +6364,6 @@
       "serviceName": "AWS CloudTrail",
       "summary": "How to use service-linked roles to give CloudTrail access to resources in your AWS account.",
       "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {
-        "region": {
-          "covered": 36,
-          "notCovered": 0,
-          "partial": 0,
-          "scoped": 0,
-          "total": 36,
-          "unknown": 0
-        }
-      },
-      "claimCount": 36,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "cloudtrail/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS CloudTrail: stated for the service as a whole",
-      "serviceId": "cloudtrail",
-      "serviceName": "AWS CloudTrail",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {
-        "region": [
-          "af-south-1",
-          "ap-east-1",
-          "ap-northeast-1",
-          "ap-northeast-2",
-          "ap-northeast-3",
-          "ap-south-1",
-          "ap-south-2",
-          "ap-southeast-1",
-          "ap-southeast-2",
-          "ap-southeast-3",
-          "ap-southeast-4",
-          "ap-southeast-5",
-          "ap-southeast-7",
-          "ca-central-1",
-          "ca-west-1",
-          "cn-north-1",
-          "cn-northwest-1",
-          "eu-central-1",
-          "eu-central-2",
-          "eu-north-1",
-          "eu-south-1",
-          "eu-south-2",
-          "eu-west-1",
-          "eu-west-2",
-          "eu-west-3",
-          "il-central-1",
-          "me-central-1",
-          "me-south-1",
-          "mx-central-1",
-          "sa-east-1",
-          "us-east-1",
-          "us-east-2",
-          "us-gov-east-1",
-          "us-gov-west-1",
-          "us-west-1",
-          "us-west-2"
-        ]
-      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -10247,74 +10176,6 @@
       "unresolved": 0
     },
     {
-      "axes": {
-        "region": {
-          "covered": 36,
-          "notCovered": 0,
-          "partial": 0,
-          "scoped": 0,
-          "total": 36,
-          "unknown": 0
-        }
-      },
-      "claimCount": 36,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "config/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS Config: stated for the service as a whole",
-      "serviceId": "config",
-      "serviceName": "AWS Config",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {
-        "region": [
-          "af-south-1",
-          "ap-east-1",
-          "ap-east-2",
-          "ap-northeast-1",
-          "ap-northeast-2",
-          "ap-northeast-3",
-          "ap-south-1",
-          "ap-south-2",
-          "ap-southeast-1",
-          "ap-southeast-2",
-          "ap-southeast-3",
-          "ap-southeast-4",
-          "ap-southeast-5",
-          "ap-southeast-6",
-          "ap-southeast-7",
-          "ca-central-1",
-          "ca-west-1",
-          "eu-central-1",
-          "eu-central-2",
-          "eu-north-1",
-          "eu-south-1",
-          "eu-south-2",
-          "eu-west-1",
-          "eu-west-2",
-          "eu-west-3",
-          "il-central-1",
-          "me-central-1",
-          "me-south-1",
-          "mx-central-1",
-          "sa-east-1",
-          "us-east-1",
-          "us-east-2",
-          "us-gov-east-1",
-          "us-gov-west-1",
-          "us-west-1",
-          "us-west-2"
-        ]
-      },
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
       "axes": {},
       "claimCount": 0,
       "confidence": 0.6,
@@ -12376,76 +12237,6 @@
           "sa-east-1",
           "us-east-1",
           "us-east-2",
-          "us-west-1",
-          "us-west-2"
-        ]
-      },
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {
-        "region": {
-          "covered": 38,
-          "notCovered": 0,
-          "partial": 0,
-          "scoped": 0,
-          "total": 38,
-          "unknown": 0
-        }
-      },
-      "claimCount": 38,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "ds/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS Directory Service: stated for the service as a whole",
-      "serviceId": "ds",
-      "serviceName": "AWS Directory Service",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {
-        "region": [
-          "af-south-1",
-          "ap-east-1",
-          "ap-east-2",
-          "ap-northeast-1",
-          "ap-northeast-2",
-          "ap-northeast-3",
-          "ap-south-1",
-          "ap-south-2",
-          "ap-southeast-1",
-          "ap-southeast-2",
-          "ap-southeast-3",
-          "ap-southeast-4",
-          "ap-southeast-5",
-          "ap-southeast-6",
-          "ap-southeast-7",
-          "ca-central-1",
-          "ca-west-1",
-          "cn-north-1",
-          "cn-northwest-1",
-          "eu-central-1",
-          "eu-central-2",
-          "eu-north-1",
-          "eu-south-1",
-          "eu-south-2",
-          "eu-west-1",
-          "eu-west-2",
-          "eu-west-3",
-          "il-central-1",
-          "me-central-1",
-          "me-south-1",
-          "mx-central-1",
-          "sa-east-1",
-          "us-east-1",
-          "us-east-2",
-          "us-gov-east-1",
-          "us-gov-west-1",
           "us-west-1",
           "us-west-2"
         ]
@@ -18271,11 +18062,11 @@
     {
       "axes": {
         "findingType": {
-          "covered": 114,
+          "covered": 88,
           "notCovered": 21,
           "partial": 0,
           "scoped": 0,
-          "total": 135,
+          "total": 109,
           "unknown": 0
         },
         "region": {
@@ -18287,7 +18078,7 @@
           "unknown": 0
         }
       },
-      "claimCount": 137,
+      "claimCount": 111,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -18307,8 +18098,6 @@
       "summary": "Lifecycle metadata fields help you audit filter history and detect unexpected changes to your suppression rules.",
       "targets": {
         "findingType": [
-          "AttackSequence:EKS/CompromisedCluster",
-          "AttackSequence:S3/CompromisedData",
           "Backdoor:EC2/C&CActivity.B",
           "Backdoor:EC2/C&CActivity.B!DNS",
           "Backdoor:EC2/DenialOfService.Dns",
@@ -18318,7 +18107,6 @@
           "Backdoor:EC2/DenialOfService.UnusualProtocol",
           "Backdoor:EC2/Spambot",
           "Backdoor:EC2/XORDDOS",
-          "Backdoor:Runtime/C&CActivity.B!DNS",
           "Behavior:EC2/NetworkPortUnusual",
           "Behavior:EC2/TrafficVolumeUnusual",
           "Behavior:IAMUser/InstanceLaunchUnusual",
@@ -18327,25 +18115,17 @@
           "CryptoCurrency:EC2/BitcoinTool.A",
           "CryptoCurrency:EC2/BitcoinTool.B",
           "CryptoCurrency:EC2/BitcoinTool.B!DNS",
-          "CryptoCurrency:Runtime/BitcoinTool.B!DNS",
           "DefenseEvasion:EC2/UnusualDNSResolver",
           "DefenseEvasion:EC2/UnusualDoHActivity",
           "DefenseEvasion:EC2/UnusualDoTActivity",
           "DefenseEvasion:IAMUser/AnomalousBehavior",
           "DefenseEvasion:IAMUser/BedrockLoggingDisabled",
-          "DefenseEvasion:Runtime/ProcessInjection.Ptrace",
-          "DefenseEvasion:Runtime/ProcessInjection.VirtualMemoryWrite",
           "Discovery:IAMUser/AnomalousBehavior",
-          "Discovery:Kubernetes/MaliciousIPCaller.Custom",
-          "Discovery:Kubernetes/SuccessfulAnonymousAccess",
-          "Discovery:Kubernetes/TorIPCaller",
           "Discovery:S3/AnomalousBehavior",
           "Discovery:S3/BucketEnumeration.Unusual",
           "Discovery:S3/MaliciousIPCaller",
           "Discovery:S3/MaliciousIPCaller.Custom",
           "Discovery:S3/TorIPCaller",
-          "Execution:Kubernetes/ExecInKubeSystemPod",
-          "Execution:Runtime/ReverseShell",
           "Exfiltration:IAMUser/AnomalousBehavior",
           "Exfiltration:S3/AnomalousBehavior",
           "Exfiltration:S3/MaliciousIPCaller",
@@ -18358,11 +18138,6 @@
           "Impact:EC2/SuspiciousDomainRequest.Reputation",
           "Impact:EC2/WinRMBruteForce",
           "Impact:IAMUser/AnomalousBehavior",
-          "Impact:Kubernetes/MaliciousIPCaller.Custom",
-          "Impact:Runtime/AbusedDomainRequest.Reputation",
-          "Impact:Runtime/BitcoinDomainRequest.Reputation",
-          "Impact:Runtime/MaliciousDomainRequest.Reputation",
-          "Impact:Runtime/SuspiciousDomainRequest.Reputation",
           "Impact:S3/AnomalousBehavior.Delete",
           "Impact:S3/AnomalousBehavior.Permission",
           "Impact:S3/AnomalousBehavior.Write",
@@ -18383,8 +18158,6 @@
           "Persistence:Kubernetes/ContainerWithSensitiveMount",
           "Policy:IAMUser/RootCredentialUsage",
           "Policy:IAMUser/ShortTermRootCredentialUsage",
-          "Policy:Kubernetes/AdminAccessToDefaultServiceAccount",
-          "Policy:Kubernetes/AnonymousAccessGranted",
           "Policy:S3/AccountBlockPublicAccessDisabled",
           "Policy:S3/BucketAnonymousAccessGranted",
           "Policy:S3/BucketBlockPublicAccessDisabled",
@@ -18392,8 +18165,6 @@
           "PrivilegeEscalation:IAMUser/AdministrativePermissions",
           "PrivilegeEscalation:IAMUser/AnomalousBehavior",
           "PrivilegeEscalation:Kubernetes/PrivilegedContainer",
-          "PrivilegeEscalation:Runtime/ContainerMountsHostDirectory",
-          "PrivilegeEscalation:Runtime/DockerSocketAccessed",
           "Recon:EC2/PortProbeEMRUnprotectedPort",
           "Recon:EC2/PortProbeUnprotectedPort",
           "Recon:EC2/Portscan",
@@ -18417,11 +18188,6 @@
           "Trojan:EC2/DropPoint",
           "Trojan:EC2/DropPoint!DNS",
           "Trojan:EC2/PhishingDomainRequest!DNS",
-          "Trojan:Runtime/BlackholeTraffic!DNS",
-          "Trojan:Runtime/DGADomainRequest.C!DNS",
-          "Trojan:Runtime/DriveBySourceTraffic!DNS",
-          "Trojan:Runtime/DropPoint!DNS",
-          "Trojan:Runtime/PhishingDomainRequest!DNS",
           "UnauthorizedAccess:EC2/MaliciousIPCaller.Custom",
           "UnauthorizedAccess:EC2/MetadataDNSRebind",
           "UnauthorizedAccess:EC2/RDPBruteForce",
@@ -18439,7 +18205,6 @@
           "UnauthorizedAccess:IAMUser/ResourceCredentialExfiltration.OutsideAWS",
           "UnauthorizedAccess:IAMUser/TorIPCaller",
           "UnauthorizedAccess:IAMUser/UnusualASNCaller",
-          "UnauthorizedAccess:Lambda/MaliciousIPCaller.Custom",
           "UnauthorizedAccess:S3/MaliciousIPCaller.Custom",
           "UnauthorizedAccess:S3/TorIPCaller"
         ],
@@ -36361,7 +36126,7 @@
         ]
       },
       "tier": "tier1",
-      "unresolved": 2
+      "unresolved": 0
     },
     {
       "axes": {},
@@ -41821,7 +41586,7 @@
         ]
       },
       "tier": "tier1",
-      "unresolved": 2
+      "unresolved": 0
     },
     {
       "axes": {},
@@ -44990,6 +44755,13 @@
       "subject": "unresolved:doc:sdk-for-java"
     },
     {
+      "detail": "173 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions\".",
+      "id": "18de0c59b3e53933",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "coverage pages without a feature"
+    },
+    {
       "detail": "1 rules were broken in the last run, starting with \"every target exists in its axis universe\".",
       "id": "1b3dd34b73279507",
       "kind": "recall",
@@ -45121,6 +44893,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:iot-mi"
+    },
+    {
+      "detail": "recipe guardduty-findings-scripts produced 0 claims, fewer than the 20 it promises on https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md. The page shape has probably changed.",
+      "id": "29e0bdf045f992c0",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:guardduty-findings-scripts"
     },
     {
       "detail": "\"doc:vm-import\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -46383,6 +46162,13 @@
       "subject": "unresolved:doc:routing-control"
     },
     {
+      "detail": "recipe security-ir-slr-regions produced 0 claims, fewer than the 20 it promises on https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md. The page shape has probably changed.",
+      "id": "9b48d29a4eb19130",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:security-ir-slr-regions"
+    },
+    {
       "detail": "\"AWS Inferentia\" did not join to a service prefix. Score 0, signals none.",
       "id": "9b4ffbb5911420c7",
       "kind": "alias",
@@ -47069,6 +46855,13 @@
       "subject": "verify:https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md"
     },
     {
+      "detail": "recipe acm-pca-vpc-endpoint-regions produced 0 claims, fewer than the 25 it promises on https://docs.aws.amazon.com/privateca/latest/userguide/vpc-endpoints.md. The page shape has probably changed.",
+      "id": "d610b7ab8c64890f",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:acm-pca-vpc-endpoint-regions"
+    },
+    {
       "detail": "read 26 of about 65 candidate values on the page. Either the page holds more than this feature, or a recipe is needed.",
       "id": "d72eed91bd0b4486",
       "kind": "parser",
@@ -47552,65 +47345,174 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-02T02:15:38.084Z",
+  "generatedAt": "2026-09-02T02:21:08.571Z",
   "manifest": {
     "fetch": {
-      "cacheHit": 61,
-      "failed": 0,
+      "cacheHit": 12437,
+      "failed": 5,
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-02T02:15:30.425Z",
+    "finishedAt": "2026-09-02T02:21:01.480Z",
     "stages": [
       {
         "counts": {
-          "claims": 51160,
-          "features": 1741,
+          "actions": 21810,
+          "dataSources": 23,
+          "docGuides": 1236,
+          "iamPrefixedServices": 526,
+          "partitions": 8,
+          "products": 358,
+          "regions": 46,
+          "resourceTypes": 3134,
+          "services": 692
+        },
+        "finishedAt": "2026-09-02T02:20:38.705Z",
+        "id": "stage1-universes",
+        "notes": [
+          "1314 service reference resources joined to an existing resource type"
+        ],
+        "startedAt": "2026-09-02T02:19:51.892Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "failed": 29,
+          "guides": 1236,
+          "indexed": 1207,
+          "pages": 103576
+        },
+        "finishedAt": "2026-09-02T02:20:39.304Z",
+        "id": "stage2-doc-pages",
+        "startedAt": "2026-09-02T02:20:38.707Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "adjudicated": 692,
+          "candidates": 307,
+          "notSecurity": 385,
+          "overridesApplied": 33,
+          "pendingJudgement": 43,
+          "prunedStaleRecords": 0,
+          "sraMatched": 31,
+          "synthetic": 166,
+          "tier1": 45,
+          "tier2": 13
+        },
+        "finishedAt": "2026-09-02T02:20:39.789Z",
+        "id": "stage3-discovery",
+        "notes": [
+          "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
+        ],
+        "startedAt": "2026-09-02T02:20:39.304Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "aliasesApplied": 13,
+          "aliasesUnmatched": 0,
+          "declaredFeatures": 4,
+          "features": 1739,
+          "noFeatureFound": 104,
+          "promotedToTier2": 153,
+          "prunedStaleRecords": 0,
+          "scanned": 307,
+          "servicesWithFeatures": 203
+        },
+        "finishedAt": "2026-09-02T02:20:44.259Z",
+        "id": "stage4-features",
+        "startedAt": "2026-09-02T02:20:39.790Z",
+        "status": "ok"
+      },
+      {
+        "counts": {
+          "claims": 51164,
+          "conflicts": 0,
+          "covered": 39045,
+          "duplicateRegistrationsSkipped": 1493,
+          "empty": 11715,
+          "enabled": 11774,
+          "featuresWithCoverage": 58,
+          "from_agent": 30,
+          "from_tier1-sweep": 6516,
+          "from_title-match": 5237,
+          "newlyDiscovered": 0,
+          "notCovered": 12119,
+          "openAxes": 19,
+          "openAxisMembers": 2230,
+          "pagesConsidered": 10281,
+          "pagesFailed": 1,
+          "pagesRead": 62,
+          "pagesRejectedByKind": 2636,
+          "prunedStaleRecords": 0,
+          "recipeFailures": 0,
+          "recipeRulesWithNoPage": 0,
+          "recipes": 85,
+          "recipesAttached": 85,
+          "registered": 11783,
+          "serviceWideRecords": 0,
+          "tablesRecoveredFromHtml": 360,
+          "unattachedPages": 173,
+          "unresolvedTargets": 0,
+          "valuesDroppedUnresolved": 1617,
+          "withRecipe": 62,
+          "yielding": 66
+        },
+        "finishedAt": "2026-09-02T02:20:59.509Z",
+        "id": "stage5-coverage",
+        "startedAt": "2026-09-02T02:20:44.260Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "claims": 51021,
+          "features": 1738,
           "quotesChecked": 250,
           "recallFound": 73,
           "recallTotal": 73,
           "services": 692,
           "violations": 0
         },
-        "finishedAt": "2026-09-02T02:15:29.445Z",
+        "finishedAt": "2026-09-02T02:21:00.384Z",
         "id": "stage6-validate",
-        "startedAt": "2026-09-02T02:15:28.779Z",
+        "startedAt": "2026-09-02T02:20:59.510Z",
         "status": "ok"
       },
       {
         "counts": {
-          "clean": 59,
+          "clean": 56,
           "empty": 0,
-          "pagesChecked": 61,
-          "partialRead": 2,
+          "pagesChecked": 57,
+          "partialRead": 1,
           "staleQuotes": 0
         },
-        "finishedAt": "2026-09-02T02:15:29.807Z",
+        "finishedAt": "2026-09-02T02:21:00.765Z",
         "id": "stage7-verify",
-        "startedAt": "2026-09-02T02:15:29.446Z",
+        "startedAt": "2026-09-02T02:21:00.385Z",
         "status": "partial"
       },
       {
         "counts": {
           "expectations": 0
         },
-        "finishedAt": "2026-09-02T02:15:29.945Z",
+        "finishedAt": "2026-09-02T02:21:00.920Z",
         "id": "stage8-expectations",
-        "startedAt": "2026-09-02T02:15:29.807Z",
+        "startedAt": "2026-09-02T02:21:00.765Z",
         "status": "skipped"
       },
       {
         "counts": {
-          "features": 1741,
+          "features": 1738,
           "services": 211
         },
-        "finishedAt": "2026-09-02T02:15:30.425Z",
+        "finishedAt": "2026-09-02T02:21:01.480Z",
         "id": "report",
-        "startedAt": "2026-09-02T02:15:29.945Z",
+        "startedAt": "2026-09-02T02:21:00.921Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-02T02:15:28.777Z"
+    "startedAt": "2026-09-02T02:19:51.889Z"
   },
   "outOfScope": [
     {
@@ -54406,7 +54308,7 @@
     {
       "actionCount": 66,
       "category": "Management & Governance",
-      "claimCount": 128,
+      "claimCount": 89,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -54434,7 +54336,7 @@
           "url": "https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/Welcome.md"
         }
       ],
-      "featureCount": 47,
+      "featureCount": 46,
       "global": false,
       "id": "cloudtrail",
       "method": "llm",
@@ -54800,7 +54702,7 @@
     {
       "actionCount": 102,
       "category": "Management & Governance",
-      "claimCount": 40788,
+      "claimCount": 40752,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -54816,7 +54718,7 @@
           "url": "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.md"
         }
       ],
-      "featureCount": 24,
+      "featureCount": 23,
       "global": false,
       "id": "config",
       "method": "llm",
@@ -55457,7 +55359,7 @@
     {
       "actionCount": 91,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 65,
+      "claimCount": 27,
       "confidence": 1,
       "docGuides": [
         {
@@ -55473,7 +55375,7 @@
           "url": "https://docs.aws.amazon.com/directoryservice/latest/devguide/Welcome.md"
         }
       ],
-      "featureCount": 20,
+      "featureCount": 19,
       "global": false,
       "id": "ds",
       "method": "deterministic",
@@ -56624,7 +56526,7 @@
     {
       "actionCount": 91,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 337,
+      "claimCount": 311,
       "confidence": 1,
       "docGuides": [
         {
@@ -60501,15 +60403,6 @@
       "verdict": "partial-read"
     },
     {
-      "claims": 26,
-      "readRatio": 0.4,
-      "recipes": 0,
-      "serviceId": "guardduty",
-      "source": "tier1-sweep",
-      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-scripts.md",
-      "verdict": "partial-read"
-    },
-    {
       "claims": 1,
       "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",
       "readRatio": 0.5,
@@ -60532,8 +60425,9 @@
     },
     {
       "claims": 38,
+      "note": "The Regions where AWS Directory Service is available.",
       "readRatio": 0.68,
-      "recipes": 0,
+      "recipes": 1,
       "serviceId": "ds",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.md",
@@ -60541,8 +60435,9 @@
     },
     {
       "claims": 36,
+      "note": "The Regions where AWS Config is available.",
       "readRatio": 0.86,
-      "recipes": 0,
+      "recipes": 1,
       "serviceId": "config",
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/config/latest/developerguide/config-region-support.md",
@@ -60696,9 +60591,10 @@
       "verdict": "ok"
     },
     {
-      "claims": 62,
+      "claims": 59,
+      "note": "The AWS services for which CloudTrail can log network activity events.",
       "readRatio": 1,
-      "recipes": 0,
+      "recipes": 1,
       "serviceId": "cloudtrail",
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md",
@@ -60757,8 +60653,9 @@
     },
     {
       "claims": 36,
+      "note": "The Regions where CloudTrail is available.",
       "readRatio": 1,
-      "recipes": 0,
+      "recipes": 1,
       "serviceId": "cloudtrail",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md",
@@ -60806,8 +60703,9 @@
     },
     {
       "claims": 30,
+      "note": "The Regions where CloudTrail Lake is available.",
       "readRatio": 1,
-      "recipes": 0,
+      "recipes": 1,
       "serviceId": "cloudtrail",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-supported-regions.md",
@@ -60825,8 +60723,9 @@
     },
     {
       "claims": 29,
+      "note": "The Regions where AWS Private CA offers a PrivateLink endpoint.",
       "readRatio": 1,
-      "recipes": 0,
+      "recipes": 1,
       "serviceId": "acm-pca",
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/privateca/latest/userguide/vpc-endpoints.md",
@@ -60854,8 +60753,9 @@
     },
     {
       "claims": 27,
+      "note": "The Regions where the Directory Service service-linked role can be used.",
       "readRatio": 1,
-      "recipes": 0,
+      "recipes": 1,
       "serviceId": "ds",
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/using-service-linked-roles.md",
@@ -60873,8 +60773,10 @@
     },
     {
       "claims": 24,
+      "dropped": 1,
+      "note": "The Regions where the Security Incident Response service-linked roles can be used.",
       "readRatio": 1,
-      "recipes": 0,
+      "recipes": 1,
       "serviceId": "security-ir",
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md",
@@ -61074,8 +60976,10 @@
     },
     {
       "claims": 5,
+      "dropped": 2,
+      "note": "The Regions where Verified Access offers FIPS endpoints.",
       "readRatio": 1,
-      "recipes": 0,
+      "recipes": 1,
       "serviceId": "verified-access",
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.md",
@@ -61128,7 +61032,7 @@
       "recipes": 2,
       "serviceId": "wafv2",
       "source": "agent",
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md",
       "verdict": "ok"
     },
     {
@@ -61148,7 +61052,7 @@
       "recipes": 2,
       "serviceId": "wafv2",
       "source": "agent",
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md",
       "verdict": "ok"
     },
     {
