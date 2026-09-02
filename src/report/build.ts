@@ -148,13 +148,28 @@ export function buildDetail(data: ReportData) {
     if (adjudication.tier === "not-security" && !adjudication.candidate) continue;
     detail[`service:${adjudication.serviceId}`] = { evidence: adjudication.evidence.slice(0, 3) };
   }
+  // A scoped record can hold twenty thousand claims — every Config rule in every
+  // Region. Sending them all made the detail file 59 MB. One claim per distinct
+  // target is enough to show what a feature covers and what it cites.
+  const PER_FEATURE = 400;
   for (const coverage of data.coverage) {
+    const seen = new Set<string>();
+    const shown: typeof coverage.claims = [];
+    for (const claim of coverage.claims) {
+      const key = `${claim.axis}|${claim.targetId}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      shown.push(claim);
+      if (shown.length >= PER_FEATURE) break;
+    }
     detail[`coverage:${coverage.featureId}`] = {
-      claims: coverage.claims.map((c) => ({
+      total: coverage.claims.length,
+      shown: shown.length,
+      claims: shown.map((c) => ({
         axis: c.axis, targetId: c.targetId, targetLabel: c.targetLabel, status: c.status,
         ...(c.scope ? { scope: c.scope } : {}),
         qualifier: c.qualifier ?? "", extractorId: c.extractorId, method: c.method,
-        evidence: c.evidence.slice(0, 2),
+        evidence: c.evidence.slice(0, 1),
       })),
       unresolved: coverage.unresolvedTargets.slice(0, 40),
     };

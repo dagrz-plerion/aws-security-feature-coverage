@@ -405,7 +405,10 @@ const VIEWS = {
         const cov = detailFor("coverage:" + r.id);
         if (typeof cov === "string") return cov;
         if (!cov) return '<span class="muted">no detail</span>';
-        return '<section><h4>' + cov.claims.length + ' claims</h4>' +
+        return '<section><h4>' + (cov.total || cov.claims.length) + ' claims' +
+          (cov.total && cov.total > cov.claims.length
+            ? ' <span class="muted">— showing ' + cov.claims.length + ' distinct targets; the rest repeat these under another Region or scope</span>' : "") +
+          "</h4>" +
           cov.claims.slice(0, 60).map((c) =>
             '<div style="margin-bottom:7px"><span class="chip">' + esc(c.axis) + '</span> <span class="mono">' + esc(c.targetId) + "</span> " +
             '<span class="pill ' + (c.status === "covered" ? "deterministic" : "manual") + '">' + esc(c.status) + "</span>" +
