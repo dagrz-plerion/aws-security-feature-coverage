@@ -100,6 +100,7 @@ tr.detail>td{background:var(--panel);padding:0}
 .empty{padding:50px;text-align:center;color:var(--dim)}
 .chips{display:flex;gap:4px;flex-wrap:wrap}
 .chip{font-size:10.5px;color:var(--dim);background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-family:var(--mono)}
+.chip.warn{color:var(--ink);background:rgba(248,225,79,.16);border-color:rgba(248,225,79,.5)}
 .stage{display:flex;gap:9px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line);font-size:12.5px}
 .dot{width:8px;height:8px;border-radius:50%;flex:none}
 .dot.ok{background:var(--covered)}.dot.partial{background:var(--partial)}.dot.failed{background:var(--absent)}.dot.skipped{background:var(--dim2)}
@@ -223,10 +224,16 @@ function axisBar(axis, stats) {
   const title = stats.covered + " stated as covered, " + stats.partial + " partial, " + stats.notCovered +
     " stated as not covered, " + unstated + " not stated, out of " + total + " known " + axis + " values" +
     (stats.scoped ? " · " + stats.scoped + " statements are scoped to a Region or similar" : "");
+  // The numerator is everything the feature reaches, covered and partial together.
+  // Counting only "covered" made Security Hub read 0/46 when it is present in 38
+  // Regions with some controls missing in each — the opposite of what AWS states.
+  // The bar keeps the two apart in colour, and the chip names the partial count.
+  const reached = stats.covered + stats.partial;
   return '<div class="axisrow"><div class="bar" title="' + title + '">' +
     '<i class="c" style="width:' + pc(stats.covered) + '"></i><i class="p" style="width:' + pc(stats.partial) + '"></i>' +
     '<i class="n" style="width:' + pc(stats.notCovered) + '"></i></div>' +
-    '<span class="ratio">' + stats.covered + "/" + total +
+    '<span class="ratio">' + reached + "/" + total +
+    (stats.partial ? ' <span class="chip warn" title="reached, but AWS states it is incomplete here">' + stats.partial + " partial</span>" : "") +
     (stats.scoped ? ' <span class="chip" title="statements scoped to a Region or similar">' + stats.scoped + " scoped</span>" : "") +
     "</span></div>";
 }
