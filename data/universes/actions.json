@@ -52546,6 +52546,18 @@
       "serviceId": "cognito-idp"
     },
     {
+      "id": "cognito-idp:AdminDeleteSoftwareToken",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "AdminDeleteSoftwareToken",
+      "resources": [
+        "userpool"
+      ],
+      "serviceId": "cognito-idp"
+    },
+    {
       "id": "cognito-idp:AdminDeleteUser",
       "isList": false,
       "isPermissionManagement": false,
@@ -57469,6 +57481,18 @@
       "serviceId": "connect"
     },
     {
+      "id": "connect:CreateExtractionDefinition",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "CreateExtractionDefinition",
+      "resources": [
+        "extraction-definition"
+      ],
+      "serviceId": "connect"
+    },
+    {
       "id": "connect:CreateHoursOfOperation",
       "isList": false,
       "isPermissionManagement": false,
@@ -57944,6 +57968,18 @@
       "serviceId": "connect"
     },
     {
+      "id": "connect:DeleteExtractionDefinition",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "DeleteExtractionDefinition",
+      "resources": [
+        "extraction-definition"
+      ],
+      "serviceId": "connect"
+    },
+    {
       "id": "connect:DeleteHoursOfOperation",
       "isList": false,
       "isPermissionManagement": false,
@@ -58387,6 +58423,18 @@
       "name": "DescribeEvaluationForm",
       "resources": [
         "evaluation-form"
+      ],
+      "serviceId": "connect"
+    },
+    {
+      "id": "connect:DescribeExtractionDefinition",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "DescribeExtractionDefinition",
+      "resources": [
+        "extraction-definition"
       ],
       "serviceId": "connect"
     },
@@ -58955,6 +59003,18 @@
       "serviceId": "connect"
     },
     {
+      "id": "connect:GetCrossRegionRouting",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "GetCrossRegionRouting",
+      "resources": [
+        "instance"
+      ],
+      "serviceId": "connect"
+    },
+    {
       "id": "connect:GetCurrentMetricData",
       "isList": false,
       "isPermissionManagement": false,
@@ -59397,6 +59457,18 @@
       "serviceId": "connect"
     },
     {
+      "id": "connect:ListExtractionDefinitions",
+      "isList": true,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "ListExtractionDefinitions",
+      "resources": [
+        "instance"
+      ],
+      "serviceId": "connect"
+    },
+    {
       "id": "connect:ListFlowAssociations",
       "isList": true,
       "isPermissionManagement": false,
@@ -59769,6 +59841,7 @@
         "contact-flow",
         "contact-flow-module",
         "evaluation-form",
+        "extraction-definition",
         "hierarchy-group",
         "hours-of-operation",
         "integration-association",
@@ -60733,6 +60806,7 @@
         "customer-managed-view",
         "email-address",
         "evaluation-form",
+        "extraction-definition",
         "hierarchy-group",
         "hours-of-operation",
         "instance",
@@ -60795,6 +60869,7 @@
         "customer-managed-view",
         "email-address",
         "evaluation-form",
+        "extraction-definition",
         "hierarchy-group",
         "hours-of-operation",
         "instance",
@@ -60985,6 +61060,18 @@
       "serviceId": "connect"
     },
     {
+      "id": "connect:UpdateCrossRegionRouting",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "UpdateCrossRegionRouting",
+      "resources": [
+        "instance"
+      ],
+      "serviceId": "connect"
+    },
+    {
       "id": "connect:UpdateDataTableAttribute",
       "isList": false,
       "isPermissionManagement": false,
@@ -61041,6 +61128,18 @@
       "name": "UpdateEvaluationForm",
       "resources": [
         "evaluation-form"
+      ],
+      "serviceId": "connect"
+    },
+    {
+      "id": "connect:UpdateExtractionDefinition",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "UpdateExtractionDefinition",
+      "resources": [
+        "extraction-definition"
       ],
       "serviceId": "connect"
     },
@@ -78688,6 +78787,18 @@
       "serviceId": "ec2"
     },
     {
+      "id": "ec2:BatchModifyIpamRoutingPolicyRegistrations",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "BatchModifyIpamRoutingPolicyRegistrations",
+      "resources": [
+        "ipam-internet-registry-association"
+      ],
+      "serviceId": "ec2"
+    },
+    {
       "id": "ec2:BundleInstance",
       "isList": false,
       "isPermissionManagement": false,
@@ -79272,6 +79383,19 @@
       "serviceId": "ec2"
     },
     {
+      "id": "ec2:CreateIpamInternetRegistryAssociation",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "CreateIpamInternetRegistryAssociation",
+      "resources": [
+        "ipam",
+        "ipam-internet-registry-association"
+      ],
+      "serviceId": "ec2"
+    },
+    {
       "id": "ec2:CreateIpamPolicy",
       "isList": false,
       "isPermissionManagement": false,
@@ -79333,6 +79457,18 @@
       "name": "CreateIpamResourceDiscovery",
       "resources": [
         "ipam-resource-discovery"
+      ],
+      "serviceId": "ec2"
+    },
+    {
+      "id": "ec2:CreateIpamRoutingPolicyRegistration",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "CreateIpamRoutingPolicyRegistration",
+      "resources": [
+        "ipam-internet-registry-association"
       ],
       "serviceId": "ec2"
     },
@@ -79893,6 +80029,7 @@
         "internet-gateway",
         "ipam",
         "ipam-external-resource-verification-token",
+        "ipam-internet-registry-association",
         "ipam-policy",
         "ipam-pool",
         "ipam-pool-allocation",
@@ -80666,6 +80803,18 @@
       "serviceId": "ec2"
     },
     {
+      "id": "ec2:DeleteIpamInternetRegistryAssociation",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "DeleteIpamInternetRegistryAssociation",
+      "resources": [
+        "ipam-internet-registry-association"
+      ],
+      "serviceId": "ec2"
+    },
+    {
       "id": "ec2:DeleteIpamPolicy",
       "isList": false,
       "isPermissionManagement": false,
@@ -80722,6 +80871,18 @@
       "name": "DeleteIpamResourceDiscovery",
       "resources": [
         "ipam-resource-discovery"
+      ],
+      "serviceId": "ec2"
+    },
+    {
+      "id": "ec2:DeleteIpamRoutingPolicyRegistration",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "DeleteIpamRoutingPolicyRegistration",
+      "resources": [
+        "ipam-internet-registry-association"
       ],
       "serviceId": "ec2"
     },
@@ -81219,6 +81380,7 @@
         "internet-gateway",
         "ipam",
         "ipam-external-resource-verification-token",
+        "ipam-internet-registry-association",
         "ipam-policy",
         "ipam-pool",
         "ipam-pool-allocation",
@@ -81820,6 +81982,16 @@
       "isTaggingOnly": false,
       "isWrite": false,
       "name": "DescribeAccountAttributes",
+      "resources": [],
+      "serviceId": "ec2"
+    },
+    {
+      "id": "ec2:DescribeAccountVpcEncryptionControl",
+      "isList": true,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "DescribeAccountVpcEncryptionControl",
       "resources": [],
       "serviceId": "ec2"
     },
@@ -82590,6 +82762,16 @@
       "isTaggingOnly": false,
       "isWrite": false,
       "name": "DescribeIpamExternalResourceVerificationTokens",
+      "resources": [],
+      "serviceId": "ec2"
+    },
+    {
+      "id": "ec2:DescribeIpamInternetRegistryAssociations",
+      "isList": true,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "DescribeIpamInternetRegistryAssociations",
       "resources": [],
       "serviceId": "ec2"
     },
@@ -84533,6 +84715,18 @@
       "serviceId": "ec2"
     },
     {
+      "id": "ec2:EnableIpamInternetRegistryAssociation",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "EnableIpamInternetRegistryAssociation",
+      "resources": [
+        "ipam-internet-registry-association"
+      ],
+      "serviceId": "ec2"
+    },
+    {
       "id": "ec2:EnableIpamOrganizationAdminAccount",
       "isList": false,
       "isPermissionManagement": false,
@@ -85064,6 +85258,42 @@
       "serviceId": "ec2"
     },
     {
+      "id": "ec2:GetIpamDiscoveredRoutes",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "GetIpamDiscoveredRoutes",
+      "resources": [
+        "ipam-resource-discovery"
+      ],
+      "serviceId": "ec2"
+    },
+    {
+      "id": "ec2:GetIpamInternetRegistryAssociationAsns",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "GetIpamInternetRegistryAssociationAsns",
+      "resources": [
+        "ipam-internet-registry-association"
+      ],
+      "serviceId": "ec2"
+    },
+    {
+      "id": "ec2:GetIpamInternetRegistryAssociationCidrs",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "GetIpamInternetRegistryAssociationCidrs",
+      "resources": [
+        "ipam-internet-registry-association"
+      ],
+      "serviceId": "ec2"
+    },
+    {
       "id": "ec2:GetIpamPolicyAllocationRules",
       "isList": true,
       "isPermissionManagement": false,
@@ -85157,6 +85387,54 @@
       "resources": [
         "ipam-pool",
         "ipam-scope"
+      ],
+      "serviceId": "ec2"
+    },
+    {
+      "id": "ec2:GetIpamRouteOriginAuthorizations",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "GetIpamRouteOriginAuthorizations",
+      "resources": [
+        "ipam-internet-registry-association"
+      ],
+      "serviceId": "ec2"
+    },
+    {
+      "id": "ec2:GetIpamRouteProtectionFindings",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "GetIpamRouteProtectionFindings",
+      "resources": [
+        "ipam"
+      ],
+      "serviceId": "ec2"
+    },
+    {
+      "id": "ec2:GetIpamRoutingPolicyRegistrationDeltas",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "GetIpamRoutingPolicyRegistrationDeltas",
+      "resources": [
+        "ipam-internet-registry-association"
+      ],
+      "serviceId": "ec2"
+    },
+    {
+      "id": "ec2:GetIpamRoutingPolicyRegistrations",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "GetIpamRoutingPolicyRegistrations",
+      "resources": [
+        "ipam-internet-registry-association"
       ],
       "serviceId": "ec2"
     },
@@ -85695,6 +85973,16 @@
       "serviceId": "ec2"
     },
     {
+      "id": "ec2:ModifyAccountVpcEncryptionControl",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "ModifyAccountVpcEncryptionControl",
+      "resources": [],
+      "serviceId": "ec2"
+    },
+    {
       "id": "ec2:ModifyAddressAttribute",
       "isList": false,
       "isPermissionManagement": false,
@@ -86103,6 +86391,18 @@
       "name": "ModifyIpamResourceDiscovery",
       "resources": [
         "ipam-resource-discovery"
+      ],
+      "serviceId": "ec2"
+    },
+    {
+      "id": "ec2:ModifyIpamRoutingPolicyRegistration",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "ModifyIpamRoutingPolicyRegistration",
+      "resources": [
+        "ipam-internet-registry-association"
       ],
       "serviceId": "ec2"
     },
@@ -114308,6 +114608,26 @@
       "serviceId": "guardduty"
     },
     {
+      "id": "guardduty:CreateCustomDetectionRuleAssociation",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "CreateCustomDetectionRuleAssociation",
+      "resources": [],
+      "serviceId": "guardduty"
+    },
+    {
+      "id": "guardduty:CreateCustomDetectionRuleOrgConfiguration",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "CreateCustomDetectionRuleOrgConfiguration",
+      "resources": [],
+      "serviceId": "guardduty"
+    },
+    {
       "id": "guardduty:CreateDetector",
       "isList": false,
       "isPermissionManagement": false,
@@ -114426,6 +114746,28 @@
       "isTaggingOnly": false,
       "isWrite": true,
       "name": "DeclineInvitations",
+      "resources": [],
+      "serviceId": "guardduty"
+    },
+    {
+      "id": "guardduty:DeleteCustomDetectionRuleAssociation",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "DeleteCustomDetectionRuleAssociation",
+      "resources": [
+        "customdetectionruleassociation"
+      ],
+      "serviceId": "guardduty"
+    },
+    {
+      "id": "guardduty:DeleteCustomDetectionRuleOrgConfiguration",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "DeleteCustomDetectionRuleOrgConfiguration",
       "resources": [],
       "serviceId": "guardduty"
     },
@@ -114647,6 +114989,40 @@
       "resources": [
         "detector"
       ],
+      "serviceId": "guardduty"
+    },
+    {
+      "id": "guardduty:GetCustomDetectionRule",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "GetCustomDetectionRule",
+      "resources": [
+        "customdetectionrule"
+      ],
+      "serviceId": "guardduty"
+    },
+    {
+      "id": "guardduty:GetCustomDetectionRuleAssociation",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "GetCustomDetectionRuleAssociation",
+      "resources": [
+        "customdetectionruleassociation"
+      ],
+      "serviceId": "guardduty"
+    },
+    {
+      "id": "guardduty:GetCustomDetectionRuleOrgConfiguration",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "GetCustomDetectionRuleOrgConfiguration",
+      "resources": [],
       "serviceId": "guardduty"
     },
     {
@@ -114876,6 +115252,36 @@
       "serviceId": "guardduty"
     },
     {
+      "id": "guardduty:ListCustomDetectionRuleAssociations",
+      "isList": true,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "ListCustomDetectionRuleAssociations",
+      "resources": [],
+      "serviceId": "guardduty"
+    },
+    {
+      "id": "guardduty:ListCustomDetectionRuleOrgConfigurations",
+      "isList": true,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "ListCustomDetectionRuleOrgConfigurations",
+      "resources": [],
+      "serviceId": "guardduty"
+    },
+    {
+      "id": "guardduty:ListCustomDetectionRules",
+      "isList": true,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "ListCustomDetectionRules",
+      "resources": [],
+      "serviceId": "guardduty"
+    },
+    {
       "id": "guardduty:ListDetectors",
       "isList": true,
       "isPermissionManagement": false,
@@ -114993,6 +115399,7 @@
       "isWrite": false,
       "name": "ListTagsForResource",
       "resources": [
+        "customdetectionruleassociation",
         "detector",
         "filter",
         "ipset",
@@ -115092,6 +115499,7 @@
       "isWrite": true,
       "name": "TagResource",
       "resources": [
+        "customdetectionruleassociation",
         "detector",
         "filter",
         "ipset",
@@ -115121,6 +115529,7 @@
       "isWrite": true,
       "name": "UntagResource",
       "resources": [
+        "customdetectionruleassociation",
         "detector",
         "filter",
         "ipset",
@@ -115130,6 +115539,28 @@
         "threatintelset",
         "trustedentityset"
       ],
+      "serviceId": "guardduty"
+    },
+    {
+      "id": "guardduty:UpdateCustomDetectionRuleAssociation",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "UpdateCustomDetectionRuleAssociation",
+      "resources": [
+        "customdetectionruleassociation"
+      ],
+      "serviceId": "guardduty"
+    },
+    {
+      "id": "guardduty:UpdateCustomDetectionRuleOrgConfiguration",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "UpdateCustomDetectionRuleOrgConfiguration",
+      "resources": [],
       "serviceId": "guardduty"
     },
     {
@@ -136808,6 +137239,31 @@
       "serviceId": "kinesis"
     },
     {
+      "id": "kinesis:AssociateStreamsWithChannel",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "AssociateStreamsWithChannel",
+      "resources": [
+        "channel",
+        "stream"
+      ],
+      "serviceId": "kinesis"
+    },
+    {
+      "id": "kinesis:CreateChannel",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": true,
+      "isWrite": true,
+      "name": "CreateChannel",
+      "resources": [
+        "channel"
+      ],
+      "serviceId": "kinesis"
+    },
+    {
       "id": "kinesis:CreateStream",
       "isList": false,
       "isPermissionManagement": false,
@@ -136828,6 +137284,18 @@
       "name": "DecreaseStreamRetentionPeriod",
       "resources": [
         "stream"
+      ],
+      "serviceId": "kinesis"
+    },
+    {
+      "id": "kinesis:DeleteChannel",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "DeleteChannel",
+      "resources": [
+        "channel"
       ],
       "serviceId": "kinesis"
     },
@@ -136876,6 +137344,18 @@
       "isWrite": false,
       "name": "DescribeAccountSettings",
       "resources": [],
+      "serviceId": "kinesis"
+    },
+    {
+      "id": "kinesis:DescribeChannel",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "DescribeChannel",
+      "resources": [
+        "channel"
+      ],
       "serviceId": "kinesis"
     },
     {
@@ -137004,6 +137484,16 @@
       "serviceId": "kinesis"
     },
     {
+      "id": "kinesis:ListChannels",
+      "isList": true,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": false,
+      "name": "ListChannels",
+      "resources": [],
+      "serviceId": "kinesis"
+    },
+    {
       "id": "kinesis:ListShards",
       "isList": true,
       "isPermissionManagement": false,
@@ -137045,6 +137535,7 @@
       "isWrite": false,
       "name": "ListTagsForResource",
       "resources": [
+        "channel",
         "consumer",
         "stream"
       ],
@@ -137193,6 +137684,7 @@
       "isWrite": true,
       "name": "TagResource",
       "resources": [
+        "channel",
         "consumer",
         "stream"
       ],
@@ -137206,6 +137698,7 @@
       "isWrite": true,
       "name": "UntagResource",
       "resources": [
+        "channel",
         "consumer",
         "stream"
       ],
@@ -137219,6 +137712,18 @@
       "isWrite": true,
       "name": "UpdateAccountSettings",
       "resources": [],
+      "serviceId": "kinesis"
+    },
+    {
+      "id": "kinesis:UpdateChannel",
+      "isList": false,
+      "isPermissionManagement": false,
+      "isTaggingOnly": false,
+      "isWrite": true,
+      "name": "UpdateChannel",
+      "resources": [
+        "channel"
+      ],
       "serviceId": "kinesis"
     },
     {
@@ -255102,6 +255607,6 @@
       "serviceId": "xray"
     }
   ],
-  "count": 21810,
-  "generatedAt": "2026-09-02T02:32:12.137Z"
+  "count": 21853,
+  "generatedAt": "2026-09-02T04:40:35.344Z"
 }

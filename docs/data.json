@@ -247,8 +247,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 3134,
-          "unknown": 3119
+          "total": 3160,
+          "unknown": 3145
         }
       },
       "claimCount": 15,
@@ -361,8 +361,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 3134,
-          "unknown": 3128
+          "total": 3160,
+          "unknown": 3154
         }
       },
       "claimCount": 6,
@@ -463,8 +463,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 3134,
-          "unknown": 3132
+          "total": 3160,
+          "unknown": 3158
         }
       },
       "claimCount": 2,
@@ -9760,15 +9760,15 @@
     {
       "axes": {
         "resourceType": {
-          "covered": 632,
-          "notCovered": 477,
+          "covered": 653,
+          "notCovered": 491,
           "partial": 0,
-          "scoped": 17954,
-          "total": 3134,
-          "unknown": 2502
+          "scoped": 18606,
+          "total": 3160,
+          "unknown": 2507
         }
       },
-      "claimCount": 18539,
+      "claimCount": 19210,
       "confidence": 0.6,
       "discoveredBy": [
         "guide-subchapter"
@@ -9787,6 +9787,7 @@
       "targets": {
         "resourceType": [
           "AWS::AccessAnalyzer::Analyzer",
+          "AWS::ACM::Certificate",
           "AWS::ACMPCA::CertificateAuthority",
           "AWS::ACMPCA::CertificateAuthorityActivation",
           "AWS::AmazonMQ::Broker",
@@ -9849,6 +9850,7 @@
           "AWS::Backup::BackupPlan",
           "AWS::Backup::BackupSelection",
           "AWS::Backup::BackupVault",
+          "AWS::Backup::RecoveryPoint",
           "AWS::Backup::ReportPlan",
           "AWS::Backup::RestoreTestingPlan",
           "AWS::BackupGateway::Hypervisor",
@@ -9921,6 +9923,8 @@
           "AWS::Config::AggregationAuthorization",
           "AWS::Config::ConfigurationRecorder",
           "AWS::Config::ConformancePack",
+          "AWS::Config::ConformancePackCompliance",
+          "AWS::Config::ResourceCompliance",
           "AWS::Config::StoredQuery",
           "AWS::Connect::Instance",
           "AWS::Connect::PhoneNumber",
@@ -9999,6 +10003,7 @@
           "AWS::EC2::NetworkInsightsPath",
           "AWS::EC2::NetworkInterface",
           "AWS::EC2::PrefixList",
+          "AWS::EC2::RegisteredHAInstance",
           "AWS::EC2::RouteTable",
           "AWS::EC2::SecurityGroup",
           "AWS::EC2::SecurityGroupVpcAssociation",
@@ -10131,6 +10136,7 @@
           "AWS::ImageBuilder::ImageRecipe",
           "AWS::ImageBuilder::InfrastructureConfiguration",
           "AWS::ImageBuilder::LifecyclePolicy",
+          "AWS::InspectorV2::Activation",
           "AWS::InspectorV2::Filter",
           "AWS::InternetMonitor::Monitor",
           "AWS::IoT::AccountAuditConfiguration",
@@ -10237,6 +10243,7 @@
           "AWS::MSK::Configuration",
           "AWS::MSK::ServerlessCluster",
           "AWS::MSK::VpcConnection",
+          "AWS::NetworkFirewall::ContainerAssociation",
           "AWS::NetworkFirewall::Firewall",
           "AWS::NetworkFirewall::FirewallPolicy",
           "AWS::NetworkFirewall::RuleGroup",
@@ -10253,6 +10260,7 @@
           "AWS::NetworkManager::TransitGatewayRegistration",
           "AWS::Omics::RunGroup",
           "AWS::Omics::Workflow",
+          "AWS::OpenSearch::Domain",
           "AWS::OpenSearchServerless::Collection",
           "AWS::OpenSearchServerless::SecurityConfig",
           "AWS::OpenSearchServerless::SecurityPolicy",
@@ -10283,6 +10291,7 @@
           "AWS::QuickSight::Template",
           "AWS::QuickSight::Theme",
           "AWS::RDS::DBCluster",
+          "AWS::RDS::DBClusterSnapshot",
           "AWS::RDS::DBInstance",
           "AWS::RDS::DBProxyEndpoint",
           "AWS::RDS::DBSecurityGroup",
@@ -10295,6 +10304,7 @@
           "AWS::Redshift::Cluster",
           "AWS::Redshift::ClusterParameterGroup",
           "AWS::Redshift::ClusterSecurityGroup",
+          "AWS::Redshift::ClusterSnapshot",
           "AWS::Redshift::ClusterSubnetGroup",
           "AWS::Redshift::EndpointAccess",
           "AWS::Redshift::EndpointAuthorization",
@@ -10337,6 +10347,7 @@
           "AWS::S3::AccessGrantsInstance",
           "AWS::S3::AccessGrantsLocation",
           "AWS::S3::AccessPoint",
+          "AWS::S3::AccountPublicAccessBlock",
           "AWS::S3::Bucket",
           "AWS::S3::BucketPolicy",
           "AWS::S3::MultiRegionAccessPoint",
@@ -10390,11 +10401,16 @@
           "AWS::SES::ReceiptRuleSet",
           "AWS::SES::Template",
           "AWS::Shield::Protection",
+          "AWS::ShieldRegional::Protection",
           "AWS::Signer::SigningProfile",
           "AWS::SNS::Topic",
           "AWS::SQS::Queue",
+          "AWS::SSM::AssociationCompliance",
           "AWS::SSM::Document",
+          "AWS::SSM::FileData",
+          "AWS::SSM::ManagedInstanceInventory",
           "AWS::SSM::PatchBaseline",
+          "AWS::SSM::PatchCompliance",
           "AWS::SSM::ResourceDataSync",
           "AWS::SSMContacts::Contact",
           "AWS::SSMIncidents::ResponsePlan",
@@ -10407,17 +10423,22 @@
           "AWS::Transfer::Server",
           "AWS::Transfer::User",
           "AWS::Transfer::Workflow",
+          "AWS::WAF::RateBasedRule",
           "AWS::WAF::Rule",
+          "AWS::WAF::RuleGroup",
           "AWS::WAF::WebACL",
           "AWS::WAFRegional::RateBasedRule",
           "AWS::WAFRegional::Rule",
+          "AWS::WAFRegional::RuleGroup",
           "AWS::WAFRegional::WebACL",
           "AWS::WAFv2::IPSet",
+          "AWS::WAFv2::ManagedRuleSet",
           "AWS::WAFv2::RegexPatternSet",
           "AWS::WAFv2::RuleGroup",
           "AWS::WAFv2::WebACL",
           "AWS::WorkSpaces::ConnectionAlias",
-          "AWS::WorkSpaces::Workspace"
+          "AWS::WorkSpaces::Workspace",
+          "AWS::XRay::EncryptionConfig"
         ]
       },
       "tier": "tier1",
@@ -33072,8 +33093,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 3134,
-          "unknown": 3053
+          "total": 3160,
+          "unknown": 3079
         }
       },
       "claimCount": 81,
@@ -33209,8 +33230,8 @@
           "notCovered": 38,
           "partial": 0,
           "scoped": 0,
-          "total": 3134,
-          "unknown": 3053
+          "total": 3160,
+          "unknown": 3079
         }
       },
       "claimCount": 81,
@@ -33392,8 +33413,8 @@
           "notCovered": 13,
           "partial": 0,
           "scoped": 0,
-          "total": 3134,
-          "unknown": 3053
+          "total": 3160,
+          "unknown": 3079
         }
       },
       "claimCount": 81,
@@ -33507,8 +33528,8 @@
           "notCovered": 37,
           "partial": 0,
           "scoped": 0,
-          "total": 3134,
-          "unknown": 3053
+          "total": 3160,
+          "unknown": 3079
         }
       },
       "claimCount": 81,
@@ -33622,8 +33643,8 @@
           "notCovered": 77,
           "partial": 0,
           "scoped": 0,
-          "total": 3134,
-          "unknown": 3053
+          "total": 3160,
+          "unknown": 3079
         }
       },
       "claimCount": 81,
@@ -33737,8 +33758,8 @@
           "notCovered": 0,
           "partial": 0,
           "scoped": 0,
-          "total": 3134,
-          "unknown": 3053
+          "total": 3160,
+          "unknown": 3079
         }
       },
       "claimCount": 81,
@@ -40921,8 +40942,8 @@
           "notCovered": 1,
           "partial": 2,
           "scoped": 0,
-          "total": 3134,
-          "unknown": 3126
+          "total": 3160,
+          "unknown": 3152
         }
       },
       "claimCount": 8,
@@ -45056,8 +45077,8 @@
           "notCovered": 1,
           "partial": 0,
           "scoped": 0,
-          "total": 3134,
-          "unknown": 3132
+          "total": 3160,
+          "unknown": 3158
         }
       },
       "claimCount": 13,
@@ -49220,6 +49241,13 @@
       "subject": "expectation not met"
     },
     {
+      "detail": "178 coverage-shaped pages could not be tied to a named feature, for example \"Supported Regions\".",
+      "id": "74bc6c43b877da64",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "coverage pages without a feature"
+    },
+    {
       "detail": "\"Developer Tools console\" did not join to a service prefix. Score 3, signals security-doc-pages.",
       "id": "74d0f5ec75f3938e",
       "kind": "alias",
@@ -51824,7 +51852,7 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-02T04:39:25.536Z",
+  "generatedAt": "2026-09-02T04:45:22.001Z",
   "manifest": {
     "fetch": {
       "cacheHit": 0,
@@ -51832,20 +51860,20 @@
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-02T04:39:12.796Z",
+    "finishedAt": "2026-09-02T04:45:20.979Z",
     "stages": [
       {
         "counts": {
           "features": 1763,
           "services": 211
         },
-        "finishedAt": "2026-09-02T04:39:12.796Z",
+        "finishedAt": "2026-09-02T04:45:20.978Z",
         "id": "report",
-        "startedAt": "2026-09-02T04:39:12.388Z",
+        "startedAt": "2026-09-02T04:45:20.567Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-02T04:39:12.386Z"
+    "startedAt": "2026-09-02T04:45:20.565Z"
   },
   "outOfScope": [
     {
@@ -58931,7 +58959,7 @@
       "tier": "tier2"
     },
     {
-      "actionCount": 128,
+      "actionCount": 129,
       "category": "Security, Identity, & Compliance",
       "claimCount": 0,
       "confidence": 1,
@@ -59035,7 +59063,7 @@
     {
       "actionCount": 102,
       "category": "Management & Governance",
-      "claimCount": 19435,
+      "claimCount": 20106,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -59068,7 +59096,7 @@
       "tier": "tier1"
     },
     {
-      "actionCount": 378,
+      "actionCount": 385,
       "category": "Business Applications",
       "claimCount": 0,
       "confidence": 0.4,
@@ -59794,7 +59822,7 @@
       "tier": "tier2"
     },
     {
-      "actionCount": 807,
+      "actionCount": 824,
       "category": "Networking & Content Delivery",
       "claimCount": 0,
       "confidence": 0.85,
@@ -60857,7 +60885,7 @@
       "tier": "tier2"
     },
     {
-      "actionCount": 91,
+      "actionCount": 103,
       "category": "Security, Identity, & Compliance",
       "claimCount": 310,
       "confidence": 1,
@@ -64818,8 +64846,7 @@
       "verdict": "ok"
     },
     {
-      "claims": 17954,
-      "dropped": 652,
+      "claims": 18606,
       "note": "Resource type by Region. The types run down the first column and the Regions across the header, so every cell is one statement.",
       "readRatio": 1,
       "recipes": 1,
@@ -64839,6 +64866,16 @@
       "verdict": "ok"
     },
     {
+      "claims": 604,
+      "note": "The authoritative reference of every resource type AWS Config records, in the Resource Type Value column.",
+      "readRatio": 1,
+      "recipes": 1,
+      "serviceId": "config",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.md",
+      "verdict": "ok"
+    },
+    {
       "claims": 600,
       "note": "Every Security Hub CSPM control. Without this the map held only the per-Region exclusions, so the feature read as zero controls covered.",
       "readRatio": 1,
@@ -64846,17 +64883,6 @@
       "serviceId": "securityhub",
       "source": "agent",
       "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 585,
-      "dropped": 19,
-      "note": "The authoritative reference of every resource type AWS Config records, in the Resource Type Value column.",
-      "readRatio": 1,
-      "recipes": 1,
-      "serviceId": "config",
-      "source": "title-match",
-      "url": "https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.md",
       "verdict": "ok"
     },
     {
@@ -65405,7 +65431,7 @@
     "partition": 8,
     "programmingLanguage": 14,
     "region": 46,
-    "resourceType": 3134,
+    "resourceType": 3160,
     "runtime": 30,
     "s3Feature": 22,
     "selectorField": 6,
@@ -65421,7 +65447,7 @@
     "dataSources": 23,
     "partitions": 8,
     "regions": 46,
-    "resourceTypes": 3134,
+    "resourceTypes": 3160,
     "services": 692
   }
 }

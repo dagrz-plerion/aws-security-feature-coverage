@@ -2,7 +2,7 @@ import path from "node:path";
 import { paths } from "../core/paths.js";
 import { writeJson } from "../core/store.js";
 import { awsPaginate } from "../core/aws.js";
-import { storeSyntheticBody } from "../core/fetch.js";
+import { cachedFetch, readRawBody, storeSyntheticBody } from "../core/fetch.js";
 import { makeEvidence } from "../core/evidence.js";
 import type { FetchResult } from "../core/fetch.js";
 import { recordGap } from "../core/ops.js";
@@ -149,6 +149,37 @@ export async function buildResourceTypeUniverse(
     }
   }
 
+  /* ---- source 4: resource types AWS Config records ---- */
+  // AWS Config records things the CloudFormation registry has no type for, because
+  // you cannot create them: AWS::Config::ResourceCompliance, AWS::SSM::PatchCompliance,
+  // AWS::ShieldRegional::Protection and 600-odd more. They are resource types, AWS
+  // publishes them in a reference of its own, and leaving them out meant every value
+  // on the Config coverage pages went unresolved and was dropped in silence.
+  let fromConfig = 0;
+  const configReference = "https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.md";
+  try {
+    const result = await cachedFetch(configReference, { allowStatus: [404] });
+    if (result.status !== 404) {
+      const body = (await readRawBody(result.bodySha256)) ?? "";
+      const seen = new Set<string>();
+      for (const match of body.matchAll(/\bAWS::[A-Za-z0-9]+::[A-Za-z0-9]+\b/g)) {
+        const typeName = match[0];
+        if (seen.has(typeName)) continue;
+        seen.add(typeName);
+        if (byId.has(typeName)) continue;
+        const record = ensure(typeName);
+        record.cfnTypeName = typeName;
+        record.serviceId = record.serviceId ?? cfnServiceHint(typeName);
+        record.seenIn.push("config-reference");
+        record.evidence.push(makeEvidence(result, typeName, "AWS Config supported resource types"));
+        fromConfig += 1;
+      }
+    }
+  } catch (error) {
+    notes.push(`AWS Config resource type reference skipped: ${(error as Error).message}`);
+  }
+  notes.push(`${fromConfig} resource types known only to AWS Config`);
+
   for (const record of byId.values()) {
     record.seenIn = [...new Set(record.seenIn)].sort();
   }
@@ -158,7 +189,7 @@ export async function buildResourceTypeUniverse(
   await writeJson(path.join(paths.universes, "resource-types.json"), {
     generatedAt: new Date().toISOString(),
     count: list.length,
-    sources: ["cloudformation-registry", "resource-explorer", "service-reference"],
+    sources: ["cloudformation-registry", "resource-explorer", "service-reference", "config-reference"],
     resourceTypes: list,
   });
   return { resourceTypes: list, notes };
