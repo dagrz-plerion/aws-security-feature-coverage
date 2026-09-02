@@ -1,0 +1,71 @@
+{
+  "axes": [
+    "programmingLanguage"
+  ],
+  "claims": [
+    {
+      "axis": "programmingLanguage",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported programming languages: Amazon Inspector SSM plugin",
+          "quote": "+ Java (.ear, .jar, .par, and .war archive formats)",
+          "retrievedAt": "2026-09-02T04:35:29.920Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-lang-ssm-plugin",
+      "featureId": "inspector2/inspector-ssm-plugin",
+      "id": "inspector2-inspector-ssm-plugin-programminglanguage-java-ear-jar-par-and-war-archive-formats-recipe-inspector-lang-ssm-p",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Java (.ear, .jar, .par, and .war archive formats)",
+      "targetLabel": "Java (.ear, .jar, .par, and .war archive formats)"
+    },
+    {
+      "axis": "programmingLanguage",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported programming languages: Amazon Inspector SSM plugin",
+          "quote": "+ JavaScript",
+          "retrievedAt": "2026-09-02T04:35:29.920Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-lang-ssm-plugin",
+      "featureId": "inspector2/inspector-ssm-plugin",
+      "id": "inspector2-inspector-ssm-plugin-programminglanguage-javascript-recipe-inspector-lang-ssm-plugin",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "JavaScript",
+      "targetLabel": "JavaScript"
+    },
+    {
+      "axis": "programmingLanguage",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
+          "locator": "https://docs.aws.amazon.com/inspector/latest/user/supported.md :: Supported programming languages: Amazon Inspector SSM plugin",
+          "quote": "+ Python",
+          "retrievedAt": "2026-09-02T04:35:29.920Z",
+          "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+        }
+      ],
+      "extractorId": "recipe:inspector-lang-ssm-plugin",
+      "featureId": "inspector2/inspector-ssm-plugin",
+      "id": "inspector2-inspector-ssm-plugin-programminglanguage-python-recipe-inspector-lang-ssm-plugin",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Python",
+      "targetLabel": "Python"
+    }
+  ],
+  "featureId": "inspector2/inspector-ssm-plugin",
+  "generatedAt": "2026-09-02T04:38:45.714Z",
+  "serviceId": "inspector2",
+  "unresolvedTargets": []
+}

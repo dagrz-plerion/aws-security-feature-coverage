@@ -12,6 +12,12 @@
       "from": 21391,
       "reason": "Same change: was one claim per managed rule per Region. Now one claim per Region carrying how many rules are available there.",
       "at": "2026-09-02"
+    },
+    {
+      "recipeId": "s3-mrap-supported-operations",
+      "from": 30,
+      "reason": "Was reading both operation lists on the page as one: 21 data plane operations that accept a Multi-Region Access Point ARN plus 9 control plane operations that create and manage one. They are separate statements and now have separate rows, so 21 is the correct number for this recipe and 9 for its sibling.",
+      "at": "2026-09-02"
     }
   ]
 }

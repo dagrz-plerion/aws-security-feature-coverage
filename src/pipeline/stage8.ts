@@ -45,6 +45,16 @@ export type Expectation = {
     waived?: string;
   }[];
   shouldNotExtract: string;
+  /**
+   * Axes we publish from this page that the reader did not list, each with a reason.
+   * Two things land here. Sometimes the reader saw the values and filed them as a
+   * scope rather than an axis. Sometimes the reader was simply wrong — the KMS
+   * conditions page states "The following table lists AWS services that ... support
+   * the use of the kms:ViaService condition key" and the reader concluded the page
+   * gives nothing for services. An exception recorded with its evidence is reviewable;
+   * a check quietly relaxed is not.
+   */
+  alsoPublished?: { axis: string; count: number; reason: string }[];
   coverageDimensions?: string;
   trap?: string;
 };
@@ -99,6 +109,22 @@ export async function checkExpectations(): Promise<{ ok: string[]; drift: string
     }
     for (const [axis, set] of distinctByAxis) actualByAxis.set(axis, set.size);
 
+    // How many of OUR features carry claims from this page, per axis. Comparing only
+    // pooled target counts let one row satisfy several expectations: the Directory
+    // Service Regions page states seven separate availability lists on the region
+    // axis, we published one merged row of 38, and all seven passed against that
+    // single number. Two features stated on one axis need two features published.
+    const featuresByAxis = new Map<string, Set<string>>();
+    for (const record of coverage) {
+      for (const claim of record.claims) {
+        if (!claim.evidence.some((e) => e.sourceUrl === expectation.url)) continue;
+        const key = canonical(claim.axis);
+        const set = featuresByAxis.get(key) ?? new Set<string>();
+        set.add(record.featureId);
+        featuresByAxis.set(key, set);
+      }
+    }
+
     // A page the independent reader found no coverage on must produce no coverage.
     // The Firewall Manager chapter stub is a Topics navigation list, and we were
     // publishing its eight links as eight supported policy types — the reader named
@@ -115,6 +141,50 @@ export async function checkExpectations(): Promise<{ ok: string[]; drift: string
         ok.push(label);
       }
       continue;
+    }
+
+    // An axis the independent reader never named on this page is one we invented.
+    // The Identity Center OIDC page lists which service each access scope belongs to,
+    // and we published that column as "five of 526 services support SAML and OAuth
+    // applications" — a claim the reader explicitly called a per-scope qualifier
+    // rather than coverage. The reader names every axis a page states; anything else
+    // coming off that page is ours, not the page's.
+    const named = new Set(expectation.features.map((f) => canonical(f.axis)));
+    for (const extra of expectation.alsoPublished ?? []) named.add(canonical(extra.axis));
+    // Only the axis a claim is ABOUT. A scope is the second dimension of a claim the
+    // reader already accounted for — CloudHSM's x86 and arm, Inspector's scan
+    // methods — and readers describe those in prose rather than as an axis of their
+    // own, so counting them here fires on every scoped page.
+    const primary = new Map<string, Set<string>>();
+    for (const record of coverage) {
+      for (const claim of record.claims) {
+        if (!claim.evidence.some((e) => e.sourceUrl === expectation.url)) continue;
+        const key = canonical(claim.axis);
+        const set = primary.get(key) ?? new Set<string>();
+        set.add(claim.targetId);
+        primary.set(key, set);
+      }
+    }
+    for (const [axis, targets] of primary) {
+      if (named.has(axis)) continue;
+      drift.push(
+        `${expectation.url.split("/").pop()} :: we publish ${targets.size} ${axis} values the page was not read as stating`,
+      );
+    }
+
+    const liveByAxis = new Map<string, number>();
+    for (const wanted of expectation.features) {
+      if (wanted.waived) continue;
+      const key = canonical(wanted.axis);
+      liveByAxis.set(key, (liveByAxis.get(key) ?? 0) + 1);
+    }
+    for (const [axis, wantedCount] of liveByAxis) {
+      if (wantedCount < 2) continue;
+      const published = featuresByAxis.get(axis)?.size ?? 0;
+      if (published >= wantedCount) continue;
+      drift.push(
+        `${expectation.url.split("/").pop()} :: ${wantedCount} separate features on the ${axis} axis, we publish ${published} row${published === 1 ? "" : "s"} — one row cannot state ${wantedCount} different availabilities`,
+      );
     }
 
     for (const wanted of expectation.features) {

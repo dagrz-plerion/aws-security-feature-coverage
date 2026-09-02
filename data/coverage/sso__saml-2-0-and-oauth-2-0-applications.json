@@ -1,7 +1,6 @@
 {
   "axes": [
-    "accessScope",
-    "service"
+    "accessScope"
   ],
   "claims": [
     {
@@ -243,110 +242,10 @@
       "status": "covered",
       "targetId": "verified_access:application:connect",
       "targetLabel": "verified_access:application:connect"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "330b1eded59c3dc1c2da0e978d6c09048470f95ab1a63f6f03ad773646e7ce27",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md :: Single sign-on access to SAML 2.0 and OAuth 2.0 applications",
-          "quote": "| datazone:domain:access | Access your DataZone Domain Execution Role | Amazon DataZone |",
-          "retrievedAt": "2026-09-01T04:59:36.398Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md"
-        }
-      ],
-      "extractorId": "recipe:identity-center-oidc-scope-services",
-      "featureId": "sso/saml-2-0-and-oauth-2-0-applications",
-      "id": "sso-saml-2-0-and-oauth-2-0-applications-service-datazone-recipe-identity-center-oidc-scope-services",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "datazone",
-      "targetLabel": "Amazon DataZone"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "330b1eded59c3dc1c2da0e978d6c09048470f95ab1a63f6f03ad773646e7ce27",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md :: Single sign-on access to SAML 2.0 and OAuth 2.0 applications",
-          "quote": "| sso:account:access | Access IAM Identity Center managed accounts and permission sets. | IAM Identity Center |",
-          "retrievedAt": "2026-09-01T04:59:36.398Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md"
-        }
-      ],
-      "extractorId": "recipe:identity-center-oidc-scope-services",
-      "featureId": "sso/saml-2-0-and-oauth-2-0-applications",
-      "id": "sso-saml-2-0-and-oauth-2-0-applications-service-identitystore-recipe-identity-center-oidc-scope-services",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "identitystore",
-      "targetLabel": "IAM Identity Center"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "330b1eded59c3dc1c2da0e978d6c09048470f95ab1a63f6f03ad773646e7ce27",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md :: Single sign-on access to SAML 2.0 and OAuth 2.0 applications",
-          "quote": "| redshift:connect | Connect to Amazon Redshift | Amazon Redshift |",
-          "retrievedAt": "2026-09-01T04:59:36.398Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md"
-        }
-      ],
-      "extractorId": "recipe:identity-center-oidc-scope-services",
-      "featureId": "sso/saml-2-0-and-oauth-2-0-applications",
-      "id": "sso-saml-2-0-and-oauth-2-0-applications-service-redshift-recipe-identity-center-oidc-scope-services",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "redshift",
-      "targetLabel": "Amazon Redshift"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "330b1eded59c3dc1c2da0e978d6c09048470f95ab1a63f6f03ad773646e7ce27",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md :: Single sign-on access to SAML 2.0 and OAuth 2.0 applications",
-          "quote": "| transform:read\\_write | Enable access to AWS Transform Agent for code transformation | AWS Transform |",
-          "retrievedAt": "2026-09-01T04:59:36.398Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md"
-        }
-      ],
-      "extractorId": "recipe:identity-center-oidc-scope-services",
-      "featureId": "sso/saml-2-0-and-oauth-2-0-applications",
-      "id": "sso-saml-2-0-and-oauth-2-0-applications-service-transform-recipe-identity-center-oidc-scope-services",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "transform",
-      "targetLabel": "AWS Transform"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "330b1eded59c3dc1c2da0e978d6c09048470f95ab1a63f6f03ad773646e7ce27",
-          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md :: Single sign-on access to SAML 2.0 and OAuth 2.0 applications",
-          "quote": "| verified\\_access:application:connect | Enable AWS Verified Access | AWS Verified Access |",
-          "retrievedAt": "2026-09-01T04:59:36.398Z",
-          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md"
-        }
-      ],
-      "extractorId": "recipe:identity-center-oidc-scope-services",
-      "featureId": "sso/saml-2-0-and-oauth-2-0-applications",
-      "id": "sso-saml-2-0-and-oauth-2-0-applications-service-verified-access-recipe-identity-center-oidc-scope-services",
-      "method": "deterministic",
-      "status": "covered",
-      "targetId": "verified-access",
-      "targetLabel": "AWS Verified Access"
     }
   ],
   "featureId": "sso/saml-2-0-and-oauth-2-0-applications",
-  "generatedAt": "2026-09-02T04:06:16.283Z",
+  "generatedAt": "2026-09-02T04:38:45.714Z",
   "serviceId": "sso",
   "unresolvedTargets": []
 }

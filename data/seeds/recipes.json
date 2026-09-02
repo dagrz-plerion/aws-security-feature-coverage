@@ -4,7 +4,7 @@
     {
       "urlPattern": "IAM/latest/UserGuide/access-analyzer-resources\\.md$",
       "serviceId": "access-analyzer",
-      "note": "One page, three analyzer types, three different resource lists. Each H2 names the analyzer type, so each is pinned to its own feature.",
+      "note": "Three lists, not one. External access enumerates 15 resource types under its own heading, internal access 6 under another, and the unused access analyzer states its two in a single sentence in the opening Note with no heading at all: 'Unused access analyzers only support IAM users and roles.'",
       "recipes": [
         {
           "id": "access-analyzer-external-resources",
@@ -35,6 +35,21 @@
           "featureId": "access-analyzer/internal-access-analyzer",
           "requireMin": 6,
           "onlyBlocksMatching": "internal access"
+        },
+        {
+          "id": "access-analyzer-unused-resources",
+          "blocks": "whole-page",
+          "select": {
+            "from": "paragraph",
+            "sentenceMatches": "Unused access analyzers only support",
+            "extract": "regex",
+            "pattern": "(IAM users|IAM roles|roles)",
+            "split": "\\s+and\\s+"
+          },
+          "axis": "resourceType",
+          "status": "covered",
+          "featureId": "access-analyzer/unused-access-analyzer",
+          "requireMin": 2
         }
       ]
     },
@@ -107,7 +122,7 @@
     {
       "urlPattern": "macie/latest/user/mdis-reference-quick\\.md$",
       "serviceId": "macie2",
-      "note": "The managed data identifier catalogue, in the identifier ID column.",
+      "note": "The table publishes two catalogues side by side: 166 managed data identifiers and the sensitive data types they detect. A type is not an identifier, so they are counted separately rather than merged onto one axis.",
       "recipes": [
         {
           "id": "macie-managed-data-identifiers",
@@ -139,6 +154,19 @@
           "status": "covered",
           "featureId": "macie2/managed-data-identifiers",
           "requireMin": 50
+        },
+        {
+          "id": "macie-sensitive-data-types",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Sensitive data type$",
+            "extract": "whole"
+          },
+          "axis": "sensitiveDataType",
+          "status": "covered",
+          "requireMin": 30,
+          "featureId": "macie2/managed-data-identifiers"
         }
       ]
     },
@@ -165,68 +193,8 @@
     {
       "urlPattern": "inspector/latest/user/supported\\.md$",
       "serviceId": "inspector2",
-      "note": "Operating systems by scan method, plus the languages and runtimes Inspector reads. Each axis gets its own recipe.",
+      "note": "Thirteen scanners on one page, each with its own list. EC2 splits agentless from agent-based, ECR splits basic from enhanced, and CIS scanning, the Scan API, the VM Scanner and the SSM plugin each support a different set again. One merged row stated the widest list for all of them.",
       "recipes": [
-        {
-          "id": "inspector-os-agentless",
-          "blocks": "h3-sections",
-          "select": {
-            "from": "table-column",
-            "headerMatches": "operating system",
-            "joinColumns": [
-              "^version$"
-            ],
-            "extract": "whole"
-          },
-          "axis": "operatingSystem",
-          "status": "from-column",
-          "statusColumn": "agentless scan support",
-          "scope": {
-            "axis": "scanMethod",
-            "from": "constant",
-            "value": "agentless"
-          },
-          "requireMin": 30,
-          "onlyBlocksMatching": "Amazon EC2 scanning",
-          "featureId": "inspector2/automated-scans"
-        },
-        {
-          "id": "inspector-os-agent-based",
-          "blocks": "h3-sections",
-          "select": {
-            "from": "table-column",
-            "headerMatches": "operating system",
-            "joinColumns": [
-              "^version$"
-            ],
-            "extract": "whole"
-          },
-          "axis": "operatingSystem",
-          "status": "from-column",
-          "statusColumn": "agent-based scan support",
-          "scope": {
-            "axis": "scanMethod",
-            "from": "constant",
-            "value": "agent-based"
-          },
-          "requireMin": 30,
-          "onlyBlocksMatching": "Amazon EC2 scanning",
-          "featureId": "inspector2/automated-scans"
-        },
-        {
-          "id": "inspector-languages",
-          "blocks": "h3-sections",
-          "onlyBlocksMatching": "programming languages",
-          "select": {
-            "from": "list-items",
-            "extract": "whole",
-            "matches": "^[A-Za-z][A-Za-z0-9+#. ]{1,30}$"
-          },
-          "axis": "programmingLanguage",
-          "status": "covered",
-          "requireMin": 5,
-          "featureId": "inspector2/automated-scans"
-        },
         {
           "id": "inspector-discontinued-os",
           "blocks": "h2-sections",
@@ -242,30 +210,7 @@
           "axis": "operatingSystem",
           "status": "from-context",
           "requireMin": 8,
-          "featureId": "inspector2/automated-scans"
-        },
-        {
-          "id": "inspector-ecr-os",
-          "blocks": "h3-sections",
-          "onlyBlocksMatching": "Amazon ECR scanning",
-          "select": {
-            "from": "table-column",
-            "headerMatches": "operating system",
-            "joinColumns": [
-              "^version$"
-            ],
-            "extract": "whole"
-          },
-          "axis": "operatingSystem",
-          "status": "from-column",
-          "scope": {
-            "axis": "scanMethod",
-            "from": "constant",
-            "value": "ecr-scanning"
-          },
-          "requireMin": 8,
-          "featureId": "inspector2/automated-scans",
-          "statusColumn": "enhanced scanning"
+          "featureId": "inspector2/discontinued-operating-systems"
         },
         {
           "id": "inspector-lambda-standard-runtimes",
@@ -279,12 +224,7 @@
           },
           "axis": "runtime",
           "status": "covered",
-          "scope": {
-            "axis": "scanMethod",
-            "from": "constant",
-            "value": "lambda-standard"
-          },
-          "featureId": "inspector2/automated-scans",
+          "featureId": "inspector2/amazon-inspector-lambda-standard-scanning",
           "requireMin": 24
         },
         {
@@ -299,13 +239,170 @@
           },
           "axis": "runtime",
           "status": "covered",
-          "scope": {
-            "axis": "scanMethod",
-            "from": "constant",
-            "value": "lambda-code"
-          },
-          "featureId": "inspector2/automated-scans",
+          "featureId": "inspector2/amazon-inspector-lambda-code-scanning",
           "requireMin": 20
+        },
+        {
+          "id": "inspector-os-ec2-agentless",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "Amazon EC2 scanning",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "operating system",
+            "extract": "whole",
+            "joinColumns": [
+              "^Version$"
+            ]
+          },
+          "axis": "operatingSystem",
+          "featureId": "inspector2/ec2-agentless-scanning",
+          "requireMin": 8,
+          "status": "from-column",
+          "statusColumn": "agentless"
+        },
+        {
+          "id": "inspector-os-ec2-agent-based",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "Amazon EC2 scanning",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "operating system",
+            "extract": "whole",
+            "joinColumns": [
+              "^Version$"
+            ]
+          },
+          "axis": "operatingSystem",
+          "featureId": "inspector2/ec2-agent-based-scanning",
+          "requireMin": 8,
+          "status": "from-column",
+          "statusColumn": "agent-based"
+        },
+        {
+          "id": "inspector-os-ecr-basic",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "Amazon ECR scanning",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "operating system",
+            "extract": "whole",
+            "joinColumns": [
+              "^Version$"
+            ]
+          },
+          "axis": "operatingSystem",
+          "featureId": "inspector2/ecr-basic-scanning",
+          "requireMin": 8,
+          "status": "from-column",
+          "statusColumn": "basic"
+        },
+        {
+          "id": "inspector-os-ecr-enhanced",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "Amazon ECR scanning",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "operating system",
+            "extract": "whole",
+            "joinColumns": [
+              "^Version$"
+            ]
+          },
+          "axis": "operatingSystem",
+          "featureId": "inspector2/ecr-enhanced-scanning",
+          "requireMin": 8,
+          "status": "from-column",
+          "statusColumn": "enhanced"
+        },
+        {
+          "id": "inspector-os-cis",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "CIS scanning",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "operating system",
+            "extract": "whole",
+            "joinColumns": [
+              "^Version$"
+            ]
+          },
+          "axis": "operatingSystem",
+          "featureId": "inspector2/cis-scans",
+          "requireMin": 8,
+          "status": "covered"
+        },
+        {
+          "id": "inspector-os-scan-api",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "Amazon Inspector Scan API",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "operating system",
+            "extract": "whole",
+            "joinColumns": [
+              "^Version$"
+            ]
+          },
+          "axis": "operatingSystem",
+          "featureId": "inspector2/inspector-scan-api",
+          "requireMin": 8,
+          "status": "covered"
+        },
+        {
+          "id": "inspector-lang-ec2-agentless",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "programming languages: Amazon EC2 agentless",
+          "select": {
+            "from": "list-items",
+            "depth": "any",
+            "extract": "whole"
+          },
+          "axis": "programmingLanguage",
+          "status": "covered",
+          "featureId": "inspector2/ec2-agentless-scanning",
+          "requireMin": 2
+        },
+        {
+          "id": "inspector-lang-vm-scanner",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "programming languages: Amazon EC2 agentless",
+          "select": {
+            "from": "list-items",
+            "depth": "any",
+            "extract": "whole"
+          },
+          "axis": "programmingLanguage",
+          "status": "covered",
+          "featureId": "inspector2/amazon-inspector-vm-scanner",
+          "requireMin": 2
+        },
+        {
+          "id": "inspector-lang-ssm-plugin",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "programming languages: Amazon Inspector SSM plugin",
+          "select": {
+            "from": "list-items",
+            "depth": "any",
+            "extract": "whole"
+          },
+          "axis": "programmingLanguage",
+          "status": "covered",
+          "featureId": "inspector2/inspector-ssm-plugin",
+          "requireMin": 2
+        },
+        {
+          "id": "inspector-lang-ecr",
+          "blocks": "h3-sections",
+          "onlyBlocksMatching": "programming languages: Amazon ECR scanning",
+          "select": {
+            "from": "list-items",
+            "depth": "any",
+            "extract": "whole"
+          },
+          "axis": "programmingLanguage",
+          "status": "covered",
+          "featureId": "inspector2/ecr-enhanced-scanning",
+          "requireMin": 2
         }
       ]
     },
@@ -564,7 +661,7 @@
           "status": "from-column",
           "statusColumn": "trusted access",
           "requireMin": 35,
-          "featureId": "organizations/delegated-administrator-for-integrated-aws-services",
+          "featureId": "organizations/trusted-access",
           "scope": {
             "axis": "integrationType",
             "from": "constant",
@@ -862,7 +959,7 @@
     {
       "urlPattern": "ram/latest/userguide/shareable\\.md$",
       "serviceId": "ram",
-      "note": "Forty-two services, each with a table of the resource types RAM can share and how far each can be shared.",
+      "note": "Six capabilities in one table. Each column is a separate statement about the same resource types, so each is its own row: merging them into one asserted that whatever the first column said held for all of them. AWS managed permissions has no column \u2014 the legend states it holds for every supported resource type.",
       "recipes": [
         {
           "id": "ram-shareable-resource-types",
@@ -892,20 +989,78 @@
           "axis": "resourceType",
           "status": "from-column",
           "statusColumn": "outside its organization",
-          "scope": {
-            "axis": "sharingScope",
-            "from": "constant",
-            "value": "outside-organization"
-          },
           "requireMin": 70,
-          "featureId": "ram/shared-resources"
+          "featureId": "ram/share-outside-organization"
+        },
+        {
+          "id": "ram-iam-users-and-roles",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "resource type and code",
+            "extract": "whole",
+            "split": "\\s+\u00b7\\s+",
+            "matches": "^[a-z0-9-]+:[A-Za-z][A-Za-z0-9-]*$"
+          },
+          "axis": "resourceType",
+          "status": "from-column",
+          "requireMin": 70,
+          "featureId": "ram/share-with-iam-users-and-roles",
+          "statusColumn": "IAM users and roles"
+        },
+        {
+          "id": "ram-customer-managed-permissions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "resource type and code",
+            "extract": "whole",
+            "split": "\\s+\u00b7\\s+",
+            "matches": "^[a-z0-9-]+:[A-Za-z][A-Za-z0-9-]*$"
+          },
+          "axis": "resourceType",
+          "status": "from-column",
+          "requireMin": 70,
+          "featureId": "ram/customer-managed-permissions",
+          "statusColumn": "customer managed permissions"
+        },
+        {
+          "id": "ram-service-principals",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "resource type and code",
+            "extract": "whole",
+            "split": "\\s+\u00b7\\s+",
+            "matches": "^[a-z0-9-]+:[A-Za-z][A-Za-z0-9-]*$"
+          },
+          "axis": "resourceType",
+          "status": "from-column",
+          "requireMin": 70,
+          "featureId": "ram/share-with-service-principals",
+          "statusColumn": "service principals"
+        },
+        {
+          "id": "ram-aws-managed-permissions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "resource type and code",
+            "extract": "whole",
+            "split": "\\s+\u00b7\\s+",
+            "matches": "^[a-z0-9-]+:[A-Za-z][A-Za-z0-9-]*$"
+          },
+          "axis": "resourceType",
+          "status": "covered",
+          "requireMin": 70,
+          "featureId": "ram/aws-managed-permissions"
         }
       ]
     },
     {
       "urlPattern": "singlesignon/latest/userguide/awsapps-that-work-with-identity-center\\.md$",
       "serviceId": "sso",
-      "note": "AWS managed applications that work with IAM Identity Center, with four independent Yes/No columns.",
+      "note": "Five capabilities in one table, one per column. Each is its own row: a single row could only state one of the five, and stated it for all.",
       "recipes": [
         {
           "id": "identity-center-managed-applications",
@@ -931,13 +1086,8 @@
           "axis": "service",
           "status": "from-column",
           "statusColumn": "trusted identity propagation",
-          "scope": {
-            "axis": "identityCenterCapability",
-            "from": "constant",
-            "value": "trusted-identity-propagation"
-          },
           "requireMin": 25,
-          "featureId": "sso/aws-managed-applications"
+          "featureId": "sso/trusted-identity-propagation"
         },
         {
           "id": "identity-center-customer-managed-key",
@@ -950,58 +1100,72 @@
           "axis": "service",
           "status": "from-column",
           "statusColumn": "customer managed KMS key",
-          "scope": {
-            "axis": "identityCenterCapability",
-            "from": "constant",
-            "value": "customer-managed-kms-key"
-          },
           "requireMin": 25,
-          "featureId": "sso/aws-managed-applications"
+          "featureId": "sso/customer-managed-kms-key"
+        },
+        {
+          "id": "identity-center-account-instances",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "managed application",
+            "extract": "whole"
+          },
+          "axis": "service",
+          "status": "from-column",
+          "requireMin": 30,
+          "featureId": "sso/identity-center-account-instances",
+          "statusColumn": "account instances"
+        },
+        {
+          "id": "identity-center-additional-regions",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "managed application",
+            "extract": "whole"
+          },
+          "axis": "service",
+          "status": "from-column",
+          "requireMin": 30,
+          "featureId": "sso/additional-regions-deployment",
+          "statusColumn": "additional Regions"
         }
       ]
     },
     {
       "urlPattern": "cloudhsm/latest/userguide/cloudhsm-cli-support\\.md$",
       "serviceId": "cloudhsm",
-      "note": "The operating systems the CloudHSM CLI runs on, by CPU architecture. The older Client SDK 3 tool page uses a different table and needs its own recipe.",
+      "note": "Two headings, two platform lists. The earlier split was by CPU architecture, which is a column inside each table rather than the division the page makes.",
       "recipes": [
         {
-          "id": "cloudhsm-platforms-x86",
-          "blocks": "whole-page",
+          "id": "cloudhsm-platforms-linux",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "^Linux support$",
           "select": {
             "from": "table-column",
             "headerMatches": "supported platforms",
             "extract": "whole"
           },
           "axis": "operatingSystem",
-          "status": "from-column",
-          "statusColumn": "X86",
-          "scope": {
-            "axis": "cpuArchitecture",
-            "from": "constant",
-            "value": "x86_64"
-          },
-          "requireMin": 4,
-          "featureId": "cloudhsm/cloudhsm-cli"
+          "status": "covered",
+          "featureId": "cloudhsm/cloudhsm-cli",
+          "requireMin": 3
         },
         {
-          "id": "cloudhsm-platforms-arm",
-          "blocks": "whole-page",
+          "id": "cloudhsm-platforms-windows",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "^Windows support$",
           "select": {
-            "from": "table-column",
-            "headerMatches": "supported platforms",
-            "extract": "whole"
+            "from": "list-items",
+            "depth": "any",
+            "extract": "whole",
+            "matches": "^Microsoft Windows Server \\d{4}$"
           },
           "axis": "operatingSystem",
-          "status": "from-column",
-          "statusColumn": "ARM",
-          "scope": {
-            "axis": "cpuArchitecture",
-            "from": "constant",
-            "value": "arm64"
-          },
-          "requireMin": 4,
-          "featureId": "cloudhsm/cloudhsm-cli"
+          "status": "covered",
+          "featureId": "cloudhsm/cloudhsm-cli-windows",
+          "requireMin": 3
         }
       ]
     },
@@ -1116,7 +1280,7 @@
     {
       "urlPattern": "AmazonS3/latest/userguide/MrapOperations\\.md$",
       "serviceId": "s3",
-      "note": "Two catalogues the generic reader skipped: the S3 data plane and control plane API operations that accept a Multi-Region Access Point ARN, and the five Regions route commands can be run against. The Region list belongs to failover controls, not to Multi-Region Access Points as a whole.",
+      "note": "One heading holds two lists. The control plane operations that create and manage a Multi-Region Access Point all carry MultiRegionAccessPoint in their name; the data plane operations that accept its ARN do not. They are separate statements and get separate rows.",
       "recipes": [
         {
           "id": "s3-mrap-supported-operations",
@@ -1125,12 +1289,12 @@
           "select": {
             "from": "list-items",
             "extract": "whole",
-            "matches": "^[A-Z][A-Za-z0-9]{5,60}$"
+            "matches": "^(?!.*MultiRegionAccessPoint)[A-Z][A-Za-z0-9]{5,60}$"
           },
           "axis": "apiOperation",
           "status": "covered",
           "featureId": "s3/multi-region-access-points",
-          "requireMin": 29
+          "requireMin": 18
         },
         {
           "id": "s3-mrap-route-command-regions",
@@ -1145,13 +1309,27 @@
           "status": "covered",
           "featureId": "s3/amazon-s3-multi-region-access-point-failover-controls",
           "requireMin": 5
+        },
+        {
+          "id": "s3-mrap-control-operations",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "compatibility with S3 operations",
+          "select": {
+            "from": "list-items",
+            "extract": "whole",
+            "matches": "^[A-Za-z]*MultiRegionAccessPoint[A-Za-z]*$"
+          },
+          "axis": "apiOperation",
+          "status": "covered",
+          "featureId": "s3/multi-region-access-point-control-operations",
+          "requireMin": 8
         }
       ]
     },
     {
       "urlPattern": "singlesignon/latest/userguide/customermanagedapps-saml2-oauth2\\.md$",
       "serviceId": "sso",
-      "note": "The OIDC access scope catalogue. The generic reader took only the five services in the last column and left the scopes themselves, which is what the table exists to publish.",
+      "note": "The OIDC access scope catalogue, and only that. The table's third column names the service each scope belongs to; that is a per-scope qualifier, not a claim that IAM Identity Center applications reach five of the 526 AWS services. Reading it as service coverage was a fabrication and the column is left alone.",
       "recipes": [
         {
           "id": "identity-center-oidc-access-scopes",
@@ -1166,20 +1344,6 @@
           "status": "covered",
           "featureId": "sso/saml-2-0-and-oauth-2-0-applications",
           "requireMin": 11
-        },
-        {
-          "id": "identity-center-oidc-scope-services",
-          "blocks": "whole-page",
-          "select": {
-            "from": "table-column",
-            "headerMatches": "Services supported by",
-            "extract": "whole",
-            "split": "\\s+and\\s+"
-          },
-          "axis": "service",
-          "status": "covered",
-          "featureId": "sso/saml-2-0-and-oauth-2-0-applications",
-          "requireMin": 5
         }
       ]
     },
@@ -1611,20 +1775,112 @@
     {
       "urlPattern": "directoryservice/latest/admin-guide/regions\\.md$",
       "serviceId": "ds",
-      "note": "The Regions where AWS Directory Service is available.",
+      "note": "Two tables, seven columns, seven separate availabilities. The directory types reach 38 Regions; the Directory Service Data API reaches 18. Reading the Region column alone and calling it the service as a whole published 38 for all seven, which is wrong for the three Directory Service Data rows.",
       "recipes": [
         {
-          "id": "ds-supported-regions",
-          "blocks": "whole-page",
+          "id": "ds-regions-managed-microsoft-ad",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "^Region availability for Directory Service$",
           "select": {
             "from": "table-column",
-            "headerMatches": "region",
+            "headerMatches": "^Region$",
             "extract": "whole"
           },
           "axis": "region",
-          "status": "covered",
-          "featureId": "ds/service-wide",
-          "requireMin": 30
+          "status": "from-column",
+          "statusColumn": "Standard and Enterprise Editions",
+          "featureId": "ds/aws-managed-microsoft-ad",
+          "requireMin": 15
+        },
+        {
+          "id": "ds-regions-managed-microsoft-ad-hybrid",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "^Region availability for Directory Service$",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Region$",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "from-column",
+          "statusColumn": "Hybrid Edition",
+          "featureId": "ds/aws-managed-microsoft-ad-hybrid-edition",
+          "requireMin": 15
+        },
+        {
+          "id": "ds-regions-ad-connector",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "^Region availability for Directory Service$",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Region$",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "from-column",
+          "statusColumn": "AD Connector",
+          "featureId": "ds/ad-connector",
+          "requireMin": 15
+        },
+        {
+          "id": "ds-regions-simple-ad",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "^Region availability for Directory Service$",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Region$",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "from-column",
+          "statusColumn": "Simple AD",
+          "featureId": "ds/simple-ad",
+          "requireMin": 15
+        },
+        {
+          "id": "ds-data-regions-managed-microsoft-ad",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "Directory Service Data",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Region$",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "from-column",
+          "statusColumn": "AWS Managed Microsoft AD",
+          "featureId": "ds/directory-service-data-managed-microsoft-ad",
+          "requireMin": 15
+        },
+        {
+          "id": "ds-data-regions-ad-connector",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "Directory Service Data",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Region$",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "from-column",
+          "statusColumn": "AD Connector",
+          "featureId": "ds/directory-service-data-ad-connector",
+          "requireMin": 15
+        },
+        {
+          "id": "ds-data-regions-simple-ad",
+          "blocks": "h2-sections",
+          "onlyBlocksMatching": "Directory Service Data",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Region$",
+            "extract": "whole"
+          },
+          "axis": "region",
+          "status": "from-column",
+          "statusColumn": "Simple AD",
+          "featureId": "ds/directory-service-data-simple-ad",
+          "requireMin": 15
         }
       ]
     },

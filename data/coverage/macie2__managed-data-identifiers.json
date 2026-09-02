@@ -1,7 +1,8 @@
 {
   "axes": [
     "country",
-    "dataIdentifier"
+    "dataIdentifier",
+    "sensitiveDataType"
   ],
   "claims": [
     {
@@ -4623,10 +4624,810 @@
       "status": "covered",
       "targetId": "VEHICLE_IDENTIFICATION_NUMBER",
       "targetLabel": "VEHICLE_IDENTIFICATION_NUMBER"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [AWS secret access key](mdis-reference-credentials.md#mdis-reference-AWS-CREDENTIALS) | Credentials | AWS\\_CREDENTIALS | Yes | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-aws-secret-access-key-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS secret access key",
+      "targetLabel": "AWS secret access key"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Bank account number](mdis-reference-financial.md#mdis-reference-BAN) | Financial information | BANK\\_ACCOUNT\\_NUMBER (for both Canada and the US) | Yes | Canada, US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-bank-account-number-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Bank account number",
+      "targetLabel": "Bank account number"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Basic Bank Account Number (BBAN)](mdis-reference-financial.md#mdis-reference-BBAN) | Financial information | Depending on country or region:<br />FRANCE\\_BANK\\_ACCOUNT\\_NUMBER, GERMANY\\_BANK\\_ACCOUNT\\_NUMBER, ITALY\\_BANK\\_ACCOUNT\\_NUMBER, SPAIN\\_BANK\\_ACCOUNT\\_NUMBER, UK\\_BANK\\_ACCOUNT\\_NUMBER | Yes | France, Germany, Italy, Spain, UK |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-basic-bank-account-number-bban-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Basic Bank Account Number (BBAN)",
+      "targetLabel": "Basic Bank Account Number (BBAN)"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Birth date](mdis-reference-pii.md#mdis-reference-DATE_OF_BIRTH) | Personal information: PII | DATE\\_OF\\_BIRTH | Yes | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-birth-date-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Birth date",
+      "targetLabel": "Birth date"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Credit card expiration date](mdis-reference-financial.md#mdis-reference-CC-expiration) | Financial information | CREDIT\\_CARD\\_EXPIRATION | Yes | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-credit-card-expiration-date-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Credit card expiration date",
+      "targetLabel": "Credit card expiration date"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Credit card magnetic stripe data](mdis-reference-financial.md#mdis-reference-CC-stripe) | Financial information | CREDIT\\_CARD\\_MAGNETIC\\_STRIPE | Yes | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-credit-card-magnetic-stripe-data-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Credit card magnetic stripe data",
+      "targetLabel": "Credit card magnetic stripe data"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Credit card number](mdis-reference-financial.md#mdis-reference-CC-number) | Financial information | CREDIT\\_CARD\\_NUMBER (for credit card numbers in proximity of a keyword), CREDIT\\_CARD\\_NUMBER\\_(NO\\_KEYWORD) (for credit card numbers not in proximity of a keyword) | Varies | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-credit-card-number-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Credit card number",
+      "targetLabel": "Credit card number"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Credit card verification code](mdis-reference-financial.md#mdis-reference-CC-verification-code) | Financial information | CREDIT\\_CARD\\_SECURITY\\_CODE | Yes | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-credit-card-verification-code-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Credit card verification code",
+      "targetLabel": "Credit card verification code"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Driver’s license identification number](mdis-reference-pii.md#mdis-reference-DL-num) | Personal information: PII | Depending on country or region:<br />AUSTRALIA\\_DRIVERS\\_LICENSE, AUSTRIA\\_DRIVERS\\_LICENSE, BELGIUM\\_DRIVERS\\_LICENSE, BULGARIA\\_DRIVERS\\_LICENSE, CANADA\\_DRIVERS\\_LICENSE, CROATIA\\_DRIVERS\\_LICENSE, CYPRUS\\_DRIVERS\\_LICENSE, CZECHIA\\_DRIVERS\\_LICENSE, DENMARK\\_DRIVERS\\_LICENSE, DRIVERS\\_LICENSE (for the US), ESTONIA\\_DRIVERS\\_LICENSE, FINLAND\\_DRIVERS\\_LICENSE, FRANCE\\_DRIVERS\\_LICENSE, GERMANY\\_DRIVERS\\_LICENSE, GREECE\\_DRIVERS\\_LICENSE, HUNGARY\\_DRIVERS\\_LICENSE, INDIA\\_DRI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-driver-s-license-identification-number-recipe-macie-sensitive-data-typ",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Driver’s license identification number",
+      "targetLabel": "Driver’s license identification number"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Drug Enforcement Agency (DEA) Registration Number](mdis-reference-phi.md#mdis-reference-DEA-registration-num) | Personal information: PHI | US\\_DRUG\\_ENFORCEMENT\\_AGENCY\\_NUMBER | Yes | US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-drug-enforcement-agency-dea-registration-number-recipe-macie-sensitive",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Drug Enforcement Agency (DEA) Registration Number",
+      "targetLabel": "Drug Enforcement Agency (DEA) Registration Number"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Electoral roll number](mdis-reference-pii.md#mdis-reference-electoral-roll-num) | Personal information: PII | UK\\_ELECTORAL\\_ROLL\\_NUMBER | Yes | UK |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-electoral-roll-number-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Electoral roll number",
+      "targetLabel": "Electoral roll number"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Full name](mdis-reference-pii.md#mdis-reference-full-name) | Personal information: PII | NAME | No | Any, if the name uses a Latin character set |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-full-name-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Full name",
+      "targetLabel": "Full name"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Global Positioning System (GPS) coordinates](mdis-reference-pii.md#mdis-reference-GPS) | Personal information: PII | LATITUDE\\_LONGITUDE | Yes | Any, if the coordinates are in proximity of an English keyword |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-global-positioning-system-gps-coordinates-recipe-macie-sensitive-data-",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Global Positioning System (GPS) coordinates",
+      "targetLabel": "Global Positioning System (GPS) coordinates"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Google Cloud API key](mdis-reference-credentials.md#mdis-reference-GCP-API-key) | Credentials | GCP\\_API\\_KEY | Yes | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-google-cloud-api-key-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Google Cloud API key",
+      "targetLabel": "Google Cloud API key"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Health Insurance Claim Number (HICN)](mdis-reference-phi.md#mdis-reference-HICN) | Personal information: PHI | USA\\_HEALTH\\_INSURANCE\\_CLAIM\\_NUMBER | Yes | US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-health-insurance-claim-number-hicn-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Health Insurance Claim Number (HICN)",
+      "targetLabel": "Health Insurance Claim Number (HICN)"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Health insurance or medical identification number](mdis-reference-phi.md#mdis-reference-HI-ID) | Personal information: PHI | Depending on country or region:<br />CANADA\\_HEALTH\\_NUMBER, EUROPEAN\\_HEALTH\\_INSURANCE\\_CARD\\_NUMBER, FINLAND\\_EUROPEAN\\_HEALTH\\_INSURANCE\\_NUMBER, FRANCE\\_HEALTH\\_INSURANCE\\_NUMBER, UK\\_NHS\\_NUMBER, USA\\_MEDICARE\\_BENEFICIARY\\_IDENTIFIER | Yes | Canada, EU, Finland, France, UK, US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-health-insurance-or-medical-identification-number-recipe-macie-sensiti",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Health insurance or medical identification number",
+      "targetLabel": "Health insurance or medical identification number"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Healthcare Common Procedure Coding System (HCPCS) code](mdis-reference-phi.md#mdis-reference-HCPCS) | Personal information: PHI | USA\\_HEALTHCARE\\_PROCEDURE\\_CODE | Yes | US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-healthcare-common-procedure-coding-system-hcpcs-code-recipe-macie-sens",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Healthcare Common Procedure Coding System (HCPCS) code",
+      "targetLabel": "Healthcare Common Procedure Coding System (HCPCS) code"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [HTTP Basic Authorization header](mdis-reference-credentials.md#mdis-reference-HTTP_BASIC_AUTH_HEADER) | Credentials | HTTP\\_BASIC\\_AUTH\\_HEADER | No | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-http-basic-authorization-header-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "HTTP Basic Authorization header",
+      "targetLabel": "HTTP Basic Authorization header"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [HTTP cookie](mdis-reference-pii.md#mdis-reference-HTTP_COOKIE) | Personal information: PII | HTTP\\_COOKIE | No | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-http-cookie-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "HTTP cookie",
+      "targetLabel": "HTTP cookie"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [International Bank Account Number (IBAN)](mdis-reference-financial.md#mdis-reference-IBAN) | Financial information | Depending on country or region:<br />ALBANIA\\_BANK\\_ACCOUNT\\_NUMBER, ANDORRA\\_BANK\\_ACCOUNT\\_NUMBER, BOSNIA\\_AND\\_HERZEGOVINA\\_BANK\\_ACCOUNT\\_NUMBER, BRAZIL\\_BANK\\_ACCOUNT\\_NUMBER, BULGARIA\\_BANK\\_ACCOUNT\\_NUMBER, COSTA\\_RICA\\_BANK\\_ACCOUNT\\_NUMBER, CROATIA\\_BANK\\_ACCOUNT\\_NUMBER, CYPRUS\\_BANK\\_ACCOUNT\\_NUMBER, CZECH\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, DENMARK\\_BANK\\_ACCOUNT\\_NUMBER, DOMINICAN\\_REPUBLIC\\_BANK\\_ACCOUNT\\_NUMBER, EGYPT\\_BANK\\_ACCOUNT\\_NUMBER, ESTONIA\\_BANK\\_ACCOUN…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-international-bank-account-number-iban-recipe-macie-sensitive-data-typ",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "International Bank Account Number (IBAN)",
+      "targetLabel": "International Bank Account Number (IBAN)"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [JSON Web Token (JWT)](mdis-reference-credentials.md#mdis-reference-JSON_WEB_TOKEN) | Credentials | JSON\\_WEB\\_TOKEN | No | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-json-web-token-jwt-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "JSON Web Token (JWT)",
+      "targetLabel": "JSON Web Token (JWT)"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Mailing address](mdis-reference-pii.md#mdis-reference-mailing-address) | Personal information: PII | ADDRESS, BRAZIL\\_CEP\\_CODE (for Brazil's Código de Endereçamento Postal) | Varies | Australia, Brazil, Canada, France, Germany, Italy, Spain, UK, US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-mailing-address-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Mailing address",
+      "targetLabel": "Mailing address"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [National Drug Code (NDC)](mdis-reference-phi.md#mdis-reference-NDC) | Personal information: PHI | USA\\_NATIONAL\\_DRUG\\_CODE | Yes | US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-national-drug-code-ndc-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "National Drug Code (NDC)",
+      "targetLabel": "National Drug Code (NDC)"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [National identification number](mdis-reference-pii.md#mdis-reference-national-id) | Personal information: PII | Depending on country or region:<br />ARGENTINA\\_DNI\\_NUMBER, BRAZIL\\_RG\\_NUMBER, CHILE\\_RUT\\_NUMBER, COLOMBIA\\_CITIZENSHIP\\_CARD\\_NUMBER, FRANCE\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, GERMANY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, INDIA\\_AADHAAR\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, MEXICO\\_CURP\\_NUMBER, SPAIN\\_DNI\\_NUMBER | Yes | Argentina, Brazil, Chile, Colombia, France, Germany, India, Italy, Mexico, Spain |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-national-identification-number-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "National identification number",
+      "targetLabel": "National identification number"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [National Insurance Number (NINO)](mdis-reference-pii.md#mdis-reference-NINO) | Personal information: PII | UK\\_NATIONAL\\_INSURANCE\\_NUMBER | Yes | UK |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-national-insurance-number-nino-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "National Insurance Number (NINO)",
+      "targetLabel": "National Insurance Number (NINO)"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [National Provider Identifier (NPI)](mdis-reference-phi.md#mdis-reference-NPI) | Personal information: PHI | USA\\_NATIONAL\\_PROVIDER\\_IDENTIFIER | Yes | US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-national-provider-identifier-npi-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "National Provider Identifier (NPI)",
+      "targetLabel": "National Provider Identifier (NPI)"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [OpenSSH private key](mdis-reference-credentials.md#mdis-reference-OPENSSH_PRIVATE_KEY) | Credentials | OPENSSH\\_PRIVATE\\_KEY | No | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-openssh-private-key-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "OpenSSH private key",
+      "targetLabel": "OpenSSH private key"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Passport number](mdis-reference-pii.md#mdis-reference-passport-num) | Personal information: PII | Depending on country or region:<br />CANADA\\_PASSPORT\\_NUMBER, FRANCE\\_PASSPORT\\_NUMBER, GERMANY\\_PASSPORT\\_NUMBER, ITALY\\_PASSPORT\\_NUMBER, SPAIN\\_PASSPORT\\_NUMBER, UK\\_PASSPORT\\_NUMBER, USA\\_PASSPORT\\_NUMBER | Yes | Canada, France, Germany, Italy, Spain, UK, US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-passport-number-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Passport number",
+      "targetLabel": "Passport number"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Permanent residence number](mdis-reference-pii.md#mdis-reference-permanent-residence-num) | Personal information: PII | CANADA\\_NATIONAL\\_IDENTIFICATION\\_NUMBER | Yes | Canada |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-permanent-residence-number-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Permanent residence number",
+      "targetLabel": "Permanent residence number"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [PGP private key](mdis-reference-credentials.md#mdis-reference-PGP_PRIVATE_KEY) | Credentials | PGP\\_PRIVATE\\_KEY | No | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-pgp-private-key-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PGP private key",
+      "targetLabel": "PGP private key"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Phone number](mdis-reference-pii.md#mdis-reference-phone-num) | Personal information: PII | Depending on country or region:<br />BRAZIL\\_PHONE\\_NUMBER, FRANCE\\_PHONE\\_NUMBER, GERMANY\\_PHONE\\_NUMBER, ITALY\\_PHONE\\_NUMBER, PHONE\\_NUMBER (for Canada and the US), SPAIN\\_PHONE\\_NUMBER, UK\\_PHONE\\_NUMBER | Varies | Brazil, Canada, France, Germany, Italy, Spain, UK, US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-phone-number-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Phone number",
+      "targetLabel": "Phone number"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Public transportation card number](mdis-reference-pii.md#mdis-reference-public-transport-num) | Personal information: PII | ARGENTINA\\_TARJETA\\_SUBE | Yes | Argentina |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-public-transportation-card-number-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Public transportation card number",
+      "targetLabel": "Public transportation card number"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Public-Key Cryptography Standard (PKCS) private key](mdis-reference-credentials.md#mdis-reference-PKCS) | Credentials | PKCS | No | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-public-key-cryptography-standard-pkcs-private-key-recipe-macie-sensiti",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Public-Key Cryptography Standard (PKCS) private key",
+      "targetLabel": "Public-Key Cryptography Standard (PKCS) private key"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [PuTTY private key](mdis-reference-credentials.md#mdis-reference-PUTTY_PRIVATE_KEY) | Credentials | PUTTY\\_PRIVATE\\_KEY | No | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-putty-private-key-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "PuTTY private key",
+      "targetLabel": "PuTTY private key"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Social Insurance Number (SIN)](mdis-reference-pii.md#mdis-reference-social-insurance-num) | Personal information: PII | CANADA\\_SOCIAL\\_INSURANCE\\_NUMBER | Yes | Canada |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-social-insurance-number-sin-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Social Insurance Number (SIN)",
+      "targetLabel": "Social Insurance Number (SIN)"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Social Security number (SSN)](mdis-reference-pii.md#mdis-reference-social-security-num) | Personal information: PII | Depending on country or region:<br />SPAIN\\_SOCIAL\\_SECURITY\\_NUMBER, USA\\_SOCIAL\\_SECURITY\\_NUMBER | Yes | Spain, US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-social-security-number-ssn-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Social Security number (SSN)",
+      "targetLabel": "Social Security number (SSN)"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Stripe API key](mdis-reference-credentials.md#mdis-reference-Stripe_API_key) | Credentials | STRIPE\\_CREDENTIALS | No | Any |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-stripe-api-key-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Stripe API key",
+      "targetLabel": "Stripe API key"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Taxpayer identification or reference number](mdis-reference-pii.md#mdis-reference-taxpayer-num) | Personal information: PII | Depending on country or region:<br />ARGENTINA\\_INDIVIDUAL\\_TAX\\_IDENTIFICATION\\_NUMBER, ARGENTINA\\_ORGANIZATION\\_TAX\\_IDENTIFICATION\\_NUMBER, AUSTRALIA\\_TAX\\_FILE\\_NUMBER, BRAZIL\\_CNPJ\\_NUMBER, BRAZIL\\_CPF\\_NUMBER, CHILE\\_RUT\\_NUMBER, COLOMBIA\\_INDIVIDUAL\\_NIT\\_NUMBER, COLOMBIA\\_ORGANIZATION\\_NIT\\_NUMBER, FRANCE\\_TAX\\_IDENTIFICATION\\_NUMBER, GERMANY\\_TAX\\_IDENTIFICATION\\_NUMBER, INDIA\\_PERMANENT\\_ACCOUNT\\_NUMBER, ITALY\\_NATIONAL\\_IDENTIFICATION\\_NUMBER, MEXICO\\_INDI…",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-taxpayer-identification-or-reference-number-recipe-macie-sensitive-dat",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Taxpayer identification or reference number",
+      "targetLabel": "Taxpayer identification or reference number"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Unique device identifier (UDI)](mdis-reference-phi.md#mdis-reference-UDI) | Personal information: PHI | MEDICAL\\_DEVICE\\_UDI | Yes | US |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-unique-device-identifier-udi-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Unique device identifier (UDI)",
+      "targetLabel": "Unique device identifier (UDI)"
+    },
+    {
+      "axis": "sensitiveDataType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "c8769fe60ec1e43c9d26598edde0df48949cb809a39da633e08dea24f8d41f99",
+          "locator": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md :: Quick reference: Managed data identifiers by type",
+          "quote": "| [Vehicle identification number (VIN)](mdis-reference-pii.md#mdis-reference-vin) | Personal information: PII | VEHICLE\\_IDENTIFICATION\\_NUMBER | Yes | Any, if the VIN is in proximity of a keyword in one of the following languages: English, French, German, Lithuanian, Polish, Portuguese, Romanian, or Spanish |",
+          "retrievedAt": "2026-09-01T05:00:45.504Z",
+          "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md"
+        }
+      ],
+      "extractorId": "recipe:macie-sensitive-data-types",
+      "featureId": "macie2/managed-data-identifiers",
+      "id": "macie2-managed-data-identifiers-sensitivedatatype-vehicle-identification-number-vin-recipe-macie-sensitive-data-types",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "Vehicle identification number (VIN)",
+      "targetLabel": "Vehicle identification number (VIN)"
     }
   ],
   "featureId": "macie2/managed-data-identifiers",
-  "generatedAt": "2026-09-02T04:06:16.283Z",
+  "generatedAt": "2026-09-02T04:38:45.714Z",
   "serviceId": "macie2",
   "unresolvedTargets": []
 }

@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 1,
+  "discoveredBy": [
+    "declared"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+      "locator": "declared in data/seeds/extra-features.json",
+      "quote": "Can share with accounts outside its organization",
+      "retrievedAt": "2026-09-01T05:00:40.675Z",
+      "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+    }
+  ],
+  "id": "ram/share-outside-organization",
+  "kind": "access-control",
+  "method": "manual",
+  "name": "Sharing outside the organization",
+  "serviceId": "ram",
+  "summary": "Whether a resource type can be shared with an account that is not in the same AWS organization. This is the cross-organization exposure surface.",
+  "tier": "tier1"
+}

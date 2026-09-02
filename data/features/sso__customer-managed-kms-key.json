@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 1,
+  "discoveredBy": [
+    "declared"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+      "locator": "declared in data/seeds/extra-features.json",
+      "quote": "customer managed KMS key",
+      "retrievedAt": "2026-09-01T04:59:34.233Z",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+    }
+  ],
+  "id": "sso/customer-managed-kms-key",
+  "kind": "data-protection",
+  "method": "manual",
+  "name": "Support for a customer managed KMS key",
+  "serviceId": "sso",
+  "summary": "Whether an AWS managed application works when IAM Identity Center is configured with a customer managed KMS key.",
+  "tier": "tier1"
+}

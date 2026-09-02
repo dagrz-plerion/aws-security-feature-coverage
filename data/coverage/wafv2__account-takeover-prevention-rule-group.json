@@ -12,7 +12,7 @@
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "| AttributeCompromisedCredentials | Inspects for multiple requests from the same client session that use stolen credentials. <br />Rule action: Block<br />Labels: `awswaf:managed:aws:atp:aggregate:attribute:compromised_credentials` and `awswaf:managed:aws:atp:AttributeCompromisedCredentials`  |",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -32,7 +32,7 @@
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "| AttributeLongSession | Inspects for multiple requests from the same client session that use long lasting sessions. The threshold is more than 6 hours of traffic that has at least one login request every 30 minutes.<br />This inspection only applies when the web request has a token. Tokens are added to requests by the application integration SDKs and by the rule actions CAPTCHA and Challenge. For more information, see [Token use in AWS WAF intelligent threat mitigation](waf-tokens.md).<br />Rule action: Block<br />Labels: `awswaf:managed:aws:atp:aggregate:attribute:long_session` and `awswaf:m…",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -52,7 +52,7 @@
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "| AttributePasswordTraversal | Inspects for multiple requests with the same username that use password traversal. <br />Rule action: Block<br />Labels: `awswaf:managed:aws:atp:aggregate:attribute:password_traversal` and `awswaf:managed:aws:atp:AttributePasswordTraversal`  |",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -72,7 +72,7 @@
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "| AttributeUsernameTraversal | Inspects for multiple requests from the same client session that use username traversal. <br />Rule action: Block<br />Labels: `awswaf:managed:aws:atp:aggregate:attribute:username_traversal` and `awswaf:managed:aws:atp:AttributeUsernameTraversal`  |",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -92,7 +92,7 @@
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "| SignalMissingCredential | Inspects for requests with credentials that are missing the username or password. <br />Rule action: Block<br />Labels: `awswaf:managed:aws:atp:signal:missing_credential` and `awswaf:managed:aws:atp:SignalMissingCredential`  |",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -112,7 +112,7 @@
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "| TokenRejected | Inspects for requests with tokens that are rejected by AWS WAF token management. <br />This inspection only applies when the web request has a token. Tokens are added to requests by the application integration SDKs and by the rule actions CAPTCHA and Challenge. For more information, see [Token use in AWS WAF intelligent threat mitigation](waf-tokens.md).<br />Rule action: Block<br />Labels: None. To check for token rejected, use a label match rule to match on the label: `awswaf:managed:token:rejected`.  |",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -132,7 +132,7 @@
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "| UnsupportedCognitoIDP | Inspects for web traffic going to an Amazon Cognito user pool. ATP isn't available for use with Amazon Cognito user pools, and this rule helps to ensure that the other ATP rule group rules are not used to evaluate user pool traffic.<br />Rule action: Block<br />Labels: `awswaf:managed:aws:atp:unsupported:cognito_idp` and `awswaf:managed:aws:atp:UnsupportedCognitoIDP`  |",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -152,7 +152,7 @@
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "| VolumetricIpFailedLoginResponseHigh | Inspects for IP addresses that have recently been the source of too high a rate of failed login attempts. A high volume is more than 10 failed login requests from an IP address in a 10 minute window. <br />If you've configured the rule group to inspect the response body or JSON components, AWS WAF can inspect the first 65,536 bytes (64 KB) of these component types for success or failure indicators. <br />This rule applies the rule action and labeling to new web requests from an IP address, based on the success and failure responses from the protected res…",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -172,7 +172,7 @@
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "| VolumetricIpHigh | Inspects for high volumes of requests sent from individual IP addresses. A high volume is more than 20 requests in a 10 minute window.  The thresholds that this rule applies can vary slightly due to latency. For the high volume, a few requests might make it through beyond the limit before the rule action is applied.  <br />Rule action: Block<br />Labels: `awswaf:managed:aws:atp:aggregate:volumetric:ip:high` and `awswaf:managed:aws:atp:VolumetricIpHigh` <br />The rule group applies the following labels to requests with medium volumes (more than 15 requests per 10 minute win…",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -192,7 +192,7 @@
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "| VolumetricSession | Inspects for high volumes of requests sent from individual client sessions. The threshold is more than 20 requests per 30 minute window. <br />This inspection only applies when the web request has a token. Tokens are added to requests by the application integration SDKs and by the rule actions CAPTCHA and Challenge. For more information, see [Token use in AWS WAF intelligent threat mitigation](waf-tokens.md). The thresholds that this rule applies can vary slightly due to latency. A few requests might make it through beyond the limit before the rule action is applied.  <br…",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -212,7 +212,7 @@
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "| VolumetricSessionFailedLoginResponseHigh | Inspects for client sessions that have recently been the source of too high a rate of failed login attempts. A high volume is more than 10 failed login requests from a client session in a 30 minute window. <br />If you've configured the rule group to inspect the response body or JSON components, AWS WAF can inspect the first 65,536 bytes (64 KB) of these component types for success or failure indicators. <br />This rule applies the rule action and labeling to new web requests from a client session, based on the success and failure responses from the…",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -232,7 +232,7 @@
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "+ **Response inspection** – For CloudFront distributions, in addition to inspecting incoming login requests, the ATP rule group inspects your application's responses to login attempts, to track success and failure rates. Using this information, ATP can temporarily block client sessions or IP addresses that have too many login failures. AWS WAF performs response inspection asynchronously, so this doesn't increase latency in your web traffic. AWS WAF doesn't inspect responses for web requests that clients send over HTTP/3 (QUIC).",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -252,14 +252,14 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "This rule group isn't available for use with Amazon Cognito user pools. You can't associate a protection pack (web ACL) that uses this rule group with a user pool, and you can't add this rule group to a protection pack (web ACL) that's already associated with a user pool.",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         },
         {
           "bodySha256": "53aa61bbdfbd2189967dff0ad291a19621ea560db6a8ab04986ab1090b226311",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md :: AWS WAF Fraud Control account takeover prevention (ATP) rule group",
           "quote": "This rule group isn't available for use with Amazon Cognito user pools. You can't associate a protection pack (web ACL) that uses this rule group with a user pool, and you can't add this rule group to a protection pack (web ACL) that's already associated with a user pool.",
-          "retrievedAt": "2026-09-01T04:29:46.373Z",
+          "retrievedAt": "2026-09-02T04:30:43.679Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md"
         }
       ],
@@ -273,7 +273,7 @@
     }
   ],
   "featureId": "wafv2/account-takeover-prevention-rule-group",
-  "generatedAt": "2026-09-02T04:06:16.283Z",
+  "generatedAt": "2026-09-02T04:38:45.714Z",
   "serviceId": "wafv2",
   "unresolvedTargets": []
 }

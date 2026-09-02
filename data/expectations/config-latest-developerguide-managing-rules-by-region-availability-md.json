@@ -1,4 +1,11 @@
 {
+  "alsoPublished": [
+    {
+      "axis": "region",
+      "count": 38,
+      "reason": "The reader named the Regions as the scope of each rule rather than as an axis. That is the same reading; we publish it the other way up. A claim per rule per Region needs a row per rule, so the catalogue is counted and the Region is measured."
+    }
+  ],
   "coverageDimensions": "REGION: rich. The page names 38 Regions explicitly, in prose form, as its section structure, and asserts a per-Region rule list for each. This is the page's real second dimension. It does NOT give region codes, does not name partitions, does not say a Region is unsupported, and does not claim the 38 are all AWS Regions - Regions absent from this page (for example any Region with no managed rules documented here) are simply not mentioned. SERVICE: nothing stated. Rule names contain service-ish prefixes (s3-, ec2-, iam-, sagemaker-, amplify-), but the page never declares a service column, never names a service, and prefixes are unreliable - api-gw-, api-gwv2- and apigatewayv2- are three prefixes for the same service, and rules like access-keys-rotated or account-part-of-organizations carry no prefix at all. Any per-service count from this page is fabricated. RESOURCE TYPE: nothing stated. The page never names an AWS::*::* resource type or any evaluated resource. A rule's target resource type lives on the linked per-rule page, not here. Any resource-type figure attributed to this page is fabricated.",
   "features": [
     {

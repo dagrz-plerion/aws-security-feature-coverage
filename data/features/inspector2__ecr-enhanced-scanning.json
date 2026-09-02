@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 1,
+  "discoveredBy": [
+    "declared"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "5a9bb986841deb121c9c9f74d02b25a669ab06106e471bbe27957ebb0c4915ec",
+      "locator": "declared in data/seeds/extra-features.json",
+      "quote": "Enhanced scanning",
+      "retrievedAt": "2026-09-01T04:35:11.330Z",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md"
+    }
+  ],
+  "id": "inspector2/ecr-enhanced-scanning",
+  "kind": "vulnerability-management",
+  "method": "manual",
+  "name": "Amazon ECR enhanced scanning",
+  "serviceId": "inspector2",
+  "summary": "Enhanced scanning of container images in Amazon ECR, covering operating system and programming language packages.",
+  "tier": "tier1"
+}

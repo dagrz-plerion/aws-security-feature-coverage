@@ -1,4 +1,11 @@
 {
+  "alsoPublished": [
+    {
+      "axis": "managedRuleGroup",
+      "count": 1,
+      "reason": "The page names the rule group it documents. The reader listed the rules and the bot categories; the group's own name is inventory of the group itself."
+    }
+  ],
   "coverageDimensions": "REGION: nothing. The page names no Region, no partition, no Region-availability table, and no 'available in the following Regions' sentence. Any per-Region figure attributed to this page is fabricated. SERVICE: nothing enumerable. The page is about exactly one service (AWS WAF) and one rule group within it; it mentions Amazon CloudWatch (metrics for labels) and Amazon Bedrock AgentCore (the bot:account and bot:vendor labels) only in passing, and neither is a coverage claim about a service list \u2014 a service count of 1, 2 or 3 from this page is meaningless. RESOURCE TYPE: nothing. The page never lists protected resource types; it says rules run in a 'protection pack (web ACL)' but never enumerates what a web ACL can be associated with (no CloudFront, ALB, API Gateway, AppSync, Cognito, App Runner or Verified Access list appears). What the page DOES give: a rule catalogue (30 rows / 38 named rules) and a bot-category taxonomy (16), both scoped by protection level (19 Common / 19 Targeted by name).",
   "features": [
     {

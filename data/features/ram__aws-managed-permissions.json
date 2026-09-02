@@ -1,0 +1,26 @@
+{
+  "aliases": [],
+  "confidence": 1,
+  "discoveredBy": [
+    "declared"
+  ],
+  "docUrls": [
+    "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+  ],
+  "evidence": [
+    {
+      "bodySha256": "dbc1f7c2bb0db539fc07b89fea3febe17371368c236889c7fefc7061d140ac02",
+      "locator": "declared in data/seeds/extra-features.json",
+      "quote": "All resource types supported by AWS RAM support AWS managed permissions",
+      "retrievedAt": "2026-09-01T05:00:40.675Z",
+      "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md"
+    }
+  ],
+  "id": "ram/aws-managed-permissions",
+  "kind": "access-control",
+  "method": "manual",
+  "name": "AWS managed permissions",
+  "serviceId": "ram",
+  "summary": "Every resource type AWS RAM supports accepts an AWS managed permission; the page states this once for all of them.",
+  "tier": "tier1"
+}

@@ -1,0 +1,51 @@
+{
+  "axes": [
+    "resourceType"
+  ],
+  "claims": [
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: IAM Access Analyzer supported resource types for external and internal access",
+          "quote": "The supported resource types listed are for external and internal access analyzers. Internal access analyzers don't support all resource types that external access analyzers support. Unused access analyzers only support IAM users and roles. For more information, see [Understand how IAM Access Analyzer findings work](access-analyzer-concepts.md).",
+          "retrievedAt": "2026-09-02T04:29:52.302Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
+        }
+      ],
+      "extractorId": "recipe:access-analyzer-unused-resources",
+      "featureId": "access-analyzer/unused-access-analyzer",
+      "id": "access-analyzer-unused-access-analyzer-resourcetype-aws-iam-role-recipe-access-analyzer-unused-resources",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::IAM::Role",
+      "targetLabel": "roles."
+    },
+    {
+      "axis": "resourceType",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "f256f04594f6e6b7429c79fee694a1c8df44b6ddaac0802870806ed01ec45eef",
+          "locator": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md :: IAM Access Analyzer supported resource types for external and internal access",
+          "quote": "The supported resource types listed are for external and internal access analyzers. Internal access analyzers don't support all resource types that external access analyzers support. Unused access analyzers only support IAM users and roles. For more information, see [Understand how IAM Access Analyzer findings work](access-analyzer-concepts.md).",
+          "retrievedAt": "2026-09-02T04:29:52.302Z",
+          "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md"
+        }
+      ],
+      "extractorId": "recipe:access-analyzer-unused-resources",
+      "featureId": "access-analyzer/unused-access-analyzer",
+      "id": "access-analyzer-unused-access-analyzer-resourcetype-aws-iam-user-recipe-access-analyzer-unused-resources",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "AWS::IAM::User",
+      "targetLabel": "Unused access analyzers only support IAM users"
+    }
+  ],
+  "featureId": "access-analyzer/unused-access-analyzer",
+  "generatedAt": "2026-09-02T04:38:45.714Z",
+  "serviceId": "access-analyzer",
+  "unresolvedTargets": []
+}

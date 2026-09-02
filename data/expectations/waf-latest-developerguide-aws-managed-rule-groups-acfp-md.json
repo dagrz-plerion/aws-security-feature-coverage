@@ -1,4 +1,16 @@
 {
+  "alsoPublished": [
+    {
+      "axis": "managedRuleGroup",
+      "count": 1,
+      "reason": "The page names the rule group it documents: 'VendorName: AWS, Name: AWSManagedRulesACFPRuleSet, WCU: 50'. The reader was asked for the rules inside the group and listed those; the group's own name is inventory of the group itself."
+    },
+    {
+      "axis": "resourceType",
+      "count": 1,
+      "reason": "The page states the same exclusion as the ATP page: 'This rule group isn't available for use with Amazon Cognito user pools.' The reader treated it as prose about the UnsupportedCognitoIDP rule; it is also a stated resource-type exclusion."
+    }
+  ],
   "coverageDimensions": "REGION: nothing. The page names no Region, no Region count, no Region availability table, and no partition. Any per-Region figure attributed to this page is fabricated. SERVICE: nothing as an enumerated axis. Other AWS services appear only as scope qualifiers - Amazon Cognito user pools as an exclusion, Amazon CloudFront distributions as the only place two rules are evaluated, Amazon CloudWatch as where label metrics land. That is 0 services covered, not 2 or 3. RESOURCE TYPE: nothing enumerated. 'Protection pack (web ACL)' and 'CloudFront distribution' are mentioned as the protected-resource context, but the page publishes no resource-type list and no per-resource-type support matrix. The only dimension this page actually supplies is the catalogue of 16 named rules inside one managed rule group.",
   "features": [
     {

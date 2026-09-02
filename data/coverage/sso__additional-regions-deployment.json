@@ -1,0 +1,733 @@
+{
+  "axes": [
+    "service"
+  ],
+  "claims": [
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS account access ([account access manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/account-access-manager.html)) | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No3 |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-account-access-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "account-access",
+      "targetLabel": "AWS account access (account access manager)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS DevOps Agent | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-aidevops-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "aidevops",
+      "targetLabel": "AWS DevOps Agent"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon OpenSearch Service Serverless Service | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-aoss-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "aoss",
+      "targetLabel": "Amazon OpenSearch Service Serverless Service"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS App Studio  | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-appstudio-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "appstudio",
+      "targetLabel": "AWS App Studio"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Athena SQL | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-athena-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "athena",
+      "targetLabel": "Amazon Athena SQL"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon CodeCatalyst | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-codecatalyst-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "codecatalyst",
+      "targetLabel": "Amazon CodeCatalyst"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon DataZone | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-datazone-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "datazone",
+      "targetLabel": "Amazon DataZone"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Deadline Cloud | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-deadline-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "deadline",
+      "targetLabel": "AWS Deadline Cloud"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon EMR on EC2 | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-ec2-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "Amazon EMR on EC2"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon EKS Capabilities | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-eks-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "qualifier": "AWS states this on several rows for the same service, and they disagree",
+      "status": "partial",
+      "targetId": "eks",
+      "targetLabel": "Amazon EKS Capabilities; Amazon EMR on EKS"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon EMR Studio | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-elasticmapreduce-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "elasticmapreduce",
+      "targetLabel": "Amazon EMR Studio"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon EMR Serverless | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-emr-serverless-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "emr-serverless",
+      "targetLabel": "Amazon EMR Serverless"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon OpenSearch Service | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-es-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "es",
+      "targetLabel": "Amazon OpenSearch Service; OpenSearch user interface (Dashboards)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Glue | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-glue-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "glue",
+      "targetLabel": "AWS Glue"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Managed Grafana | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-grafana-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "grafana",
+      "targetLabel": "Amazon Managed Grafana"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS IoT Events | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-iotevents-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "iotevents",
+      "targetLabel": "AWS IoT Events"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS IoT SiteWise | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-iotsitewise-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "iotsitewise",
+      "targetLabel": "AWS IoT SiteWise"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Kendra | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-kendra-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "kendra",
+      "targetLabel": "Amazon Kendra"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Lake Formation | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-lakeformation-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "lakeformation",
+      "targetLabel": "AWS Lake Formation"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Monitron | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-monitron-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "monitron",
+      "targetLabel": "Amazon Monitron"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Multi-party approval | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-mpa-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "mpa",
+      "targetLabel": "Multi-party approval"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Q Business | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-qbusiness-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "qbusiness",
+      "targetLabel": "Amazon Q Business"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Quick | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-quicksight-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "quicksight",
+      "targetLabel": "Amazon Quick"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon Redshift | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes2 | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-redshift-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "redshift",
+      "targetLabel": "Amazon Redshift"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS re:Post Private | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-repostspace-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "repostspace",
+      "targetLabel": "AWS re:Post Private"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon S3 Access Grants | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-s3-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "Amazon S3 Access Grants"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon SageMaker Studio | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-sagemaker-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "qualifier": "AWS states this on several rows for the same service, and they disagree",
+      "status": "partial",
+      "targetId": "sagemaker",
+      "targetLabel": "Amazon SageMaker Studio; Amazon SageMaker Unified Studio"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Supply Chain | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-scn-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "scn",
+      "targetLabel": "AWS Supply Chain"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Security Agent | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-securityagent-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "securityagent",
+      "targetLabel": "AWS Security Agent"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Systems Manager | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes - Fleet Manager Remote Desktop |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-ssm-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ssm",
+      "targetLabel": "AWS Systems Manager"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Transfer Family web apps | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-transfer-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "transfer",
+      "targetLabel": "AWS Transfer Family web apps"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Transform | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-transform-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "transform",
+      "targetLabel": "AWS Transform"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| AWS Verified Access | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-verified-access-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "verified-access",
+      "targetLabel": "AWS Verified Access"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon WorkMail | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-workmail-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "workmail",
+      "targetLabel": "Amazon WorkMail"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon WorkSpaces | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-workspaces-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "workspaces",
+      "targetLabel": "Amazon WorkSpaces"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "d6ae2851897ace974f6e493a14caa80e6c55b8629182d2c22b9bb043e10f414b",
+          "locator": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md :: AWS managed applications that you can use with IAM Identity Center",
+          "quote": "| Amazon WorkSpaces Secure Browser | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/singlesignon/latest/userguide/images/negative_icon.png) No |",
+          "retrievedAt": "2026-09-01T04:59:34.233Z",
+          "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md"
+        }
+      ],
+      "extractorId": "recipe:identity-center-additional-regions",
+      "featureId": "sso/additional-regions-deployment",
+      "id": "sso-additional-regions-deployment-service-workspaces-web-recipe-identity-center-additional-regions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "workspaces-web",
+      "targetLabel": "Amazon WorkSpaces Secure Browser"
+    }
+  ],
+  "featureId": "sso/additional-regions-deployment",
+  "generatedAt": "2026-09-02T04:38:45.714Z",
+  "serviceId": "sso",
+  "unresolvedTargets": []
+}

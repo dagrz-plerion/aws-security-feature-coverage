@@ -11,7 +11,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| AllRequests | Applies the rule action to requests that access the registration page path. You configure the registration page path when you configure the rule group. <br />By default, this rule applies the Challenge to requests. By applying this action, the rule ensures that the client acquires a challenge token before any requests are evaluated by the rest of the rules in the rule group. <br />Ensure that your end users load the registration page path before they submit an account creation request. <br />Tokens are added to requests by the client application integration SDKs and by the rule…",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -31,7 +31,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| AttributeUsernameTraversalHigh | Inspects for a high rate of account creation requests from a single client session that use different usernames. The threshold for a high evaluation is more than 10 requests in 30 minutes.  The thresholds that this rule applies can vary slightly due to latency. A few requests might make it through beyond the limit before the rule action is applied.  <br />Rule action: Block<br />Labels: `awswaf:managed:aws:acfp:aggregate:attribute:username_traversal:creation:high` and `awswaf:managed:aws:acfp:AttributeUsernameTraversalHigh` <br />The rule group applies the fo…",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -51,7 +51,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| AutomatedBrowser | Inspects for indicators that the client browser might be automated. <br />Rule action: Block <br />Labels: `awswaf:managed:aws:acfp:signal:automated_browser` and `awswaf:managed:aws:acfp:AutomatedBrowser` |",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -71,7 +71,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| BrowserInconsistency | Inspects the request's token for inconsistent browser interrogation data. For more information, see [AWS WAF token characteristics](waf-tokens-details.md).<br />Rule action: CAPTCHA <br />Labels: `awswaf:managed:aws:acfp:signal:browser_inconsistency` and `awswaf:managed:aws:acfp:BrowserInconsistency` |",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -91,7 +91,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| RiskScoreHigh | Inspects for account creation requests with IP addresses or other factors that are considered to be highly suspicious. This evaluation is usually based on multiple contributing factors, which you can see in `risk_score` labels that the rule group adds to the request.<br />Rule action: Block<br />Labels: `awswaf:managed:aws:acfp:risk_score:high` and `awswaf:managed:aws:acfp:RiskScoreHigh` <br />The rule might also apply `medium` or `low` risk score labels to the request. <br />If AWS WAF doesn't succeed at evaluating the risk score for the web request, the rule adds the label …",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -111,7 +111,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| SignalClientHumanInteractivityAbsentLow | Inspects the account creation request's token for data that indicates abnormal human interactivity with the application. Human interactivity is detected through interactions such as mouse movements and key presses. If the page has an HTML form, human interactivity includes interactions with the form.  This rule only inspects requests to the account creation path and is only evaluated if you've implemented the application integration SDKs. The SDK implementations passively capture human interactivity and stores the information in the request token. Fo…",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -131,7 +131,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| SignalCredentialCompromised | Searches the stolen credential database for the credentials that were submitted in the account creation request. <br />This rule ensures that new clients initialize their accounts with positive security posture.  You can add a custom blocking response, to describe the problem to your end user and tell them how to proceed. For information, see [ACFP example: Custom response for compromised credentials](waf-acfp-control-example-compromised-credentials.md). <br />Rule action: Block<br />Labels: `awswaf:managed:aws:acfp:signal:credential_compromised` and `awswaf:man…",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -151,7 +151,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| UnsupportedCognitoIDP | Inspects for web traffic going to an Amazon Cognito user pool. ACFP isn't available for use with Amazon Cognito user pools, and this rule helps to ensure that the other ACFP rule group rules are not used to evaluate user pool traffic.<br />Rule action: Block<br />Labels: `awswaf:managed:aws:acfp:unsupported:cognito_idp` and `awswaf:managed:aws:acfp:UnsupportedCognitoIDP`  |",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -171,7 +171,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| VolumetricAddressHigh | Inspects for high volumes of account creation requests that use the same physical address. The threshold for a high evaluation is more than 100 requests per 30 minute window.  The thresholds that this rule applies can vary slightly due to latency. A few requests might make it through beyond the limit before the rule action is applied.  <br />Rule action: Block<br />Labels: `awswaf:managed:aws:acfp:aggregate:volumetric:address:high` and `awswaf:managed:aws:acfp:VolumetricAddressHigh`  |",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -191,7 +191,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| VolumetricAddressLow | Inspects for low and medium volumes of account creation requests that use the same physical address. The threshold for a medium evaluation is more than 50 requests per 30 minute window, and for a low evaluation is more than 10 requests per 30 minute window. <br />The rule applies the action for either medium or low volumes. The thresholds that this rule applies can vary slightly due to latency. A few requests might make it through beyond the limit before the rule action is applied.  <br />Rule action: CAPTCHA<br />Labels: `awswaf:managed:aws:acfp:aggregate:volumetric:a…",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -211,7 +211,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| VolumetricIpHigh | Inspects for high volumes of account creation requests sent from individual IP addresses. A high volume is more than 20 requests in a 10 minute window. The thresholds that this rule applies can vary slightly due to latency. For the high volume, a few requests might make it through beyond the limit before the rule action is applied. <br />Rule action: CAPTCHA<br />Labels: `awswaf:managed:aws:acfp:aggregate:volumetric:ip:creation:high` and `awswaf:managed:aws:acfp:VolumetricIpHigh` <br />The rule applies the following labels to requests with medium volumes (more than 15 requ…",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -231,7 +231,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| VolumetricIPSuccessfulResponse | Inspects for a high volume of successful account creation requests for a single IP address. This rule aggregates success responses from the protected resource to account creation requests. The threshold for a high evaluation is more than 10 requests per 10 minute window. <br />This rule helps protect against bulk account creation attempts. It has a lower threshold than the rule `VolumetricIpHigh`, which counts just the requests. <br />If you've configured the rule group to inspect the response body or JSON components, AWS WAF can inspect the first 65,536 byte…",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -251,7 +251,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| VolumetricPhoneNumberHigh | Inspects for high volumes of account creation requests that use the same phone number. The threshold for a high evaluation is more than 10 requests in 30 minutes.  The thresholds that this rule applies can vary slightly due to latency. A few requests might make it through beyond the limit before the rule action is applied.  <br />Rule action: Block<br />Labels: `awswaf:managed:aws:acfp:aggregate:volumetric:phone_number:high` and `awswaf:managed:aws:acfp:VolumetricPhoneNumberHigh`<br />The rule group applies the following labels to requests with medium volumes (mor…",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -271,7 +271,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| VolumetricSessionHigh | Inspects for high volumes of account creation requests sent from individual client sessions. A high volume is more than 10 requests in a 30 minute window.  The thresholds that this rule applies can vary slightly due to latency. A few requests might make it through beyond the limit before the rule action is applied.  <br />Rule action: Block<br />Labels: `awswaf:managed:aws:acfp:aggregate:volumetric:session:creation:high` and `awswaf:managed:aws:acfp:VolumetricSessionHigh` <br />The rule group applies the following labels to requests with medium volumes (more than 5 re…",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -291,7 +291,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| VolumetricSessionSuccessfulResponse | Inspects for a low volume of success responses from the protected resource to account creation requests that are being sent from a single client session. This helps to protect against bulk account creation attempts. The threshold for a low evaluation is more than 1 request per 30 minute window. <br />This helps protect against bulk account creation attempts. This rule uses a lower threshold than the rule `VolumetricSessionHigh`, which tracks only the requests. <br />If you've configured the rule group to inspect the response body or JSON components, AWS …",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -311,7 +311,7 @@
           "bodySha256": "e95db7e6020e42ad5c3a08084ecdf1a2402c3916940196a9aa22678e1de0b092",
           "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md :: AWS WAF Fraud Control account creation fraud prevention (ACFP) rule group",
           "quote": "| VolumetricSessionTokenReuseIp | Inspects account creation requests for the use of a single token among more than 5 distinct IP addresses.  The thresholds that this rule applies can vary slightly due to latency. A few requests might make it through beyond the limit before the rule action is applied.  <br />Rule action: Block<br />Labels: `awswaf:managed:aws:acfp:aggregate:volumetric:session:creation:token_reuse:ip` and `awswaf:managed:aws:acfp:VolumetricSessionTokenReuseIp` |",
-          "retrievedAt": "2026-09-01T04:29:46.352Z",
+          "retrievedAt": "2026-09-02T04:29:48.586Z",
           "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
         }
       ],
@@ -325,7 +325,7 @@
     }
   ],
   "featureId": "wafv2/acfp-rule-group",
-  "generatedAt": "2026-09-02T04:06:16.283Z",
+  "generatedAt": "2026-09-02T04:38:45.714Z",
   "serviceId": "wafv2",
   "unresolvedTargets": []
 }

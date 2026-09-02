@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T04:07:11.262Z",
+  "generatedAt": "2026-09-02T04:39:25.027Z",
   "pages": 61,
   "problems": 2,
   "verdicts": [
@@ -33,9 +33,15 @@
     },
     {
       "candidates": 56,
-      "claims": 38,
+      "claims": 206,
       "featureIds": [
-        "ds/service-wide"
+        "ds/ad-connector",
+        "ds/aws-managed-microsoft-ad",
+        "ds/aws-managed-microsoft-ad-hybrid-edition",
+        "ds/directory-service-data-ad-connector",
+        "ds/directory-service-data-managed-microsoft-ad",
+        "ds/directory-service-data-simple-ad",
+        "ds/simple-ad"
       ],
       "labelsNotInQuote": 0,
       "quotesChecked": 25,
@@ -63,6 +69,29 @@
       "verdict": "ok"
     },
     {
+      "candidates": 209,
+      "claims": 370,
+      "featureIds": [
+        "inspector2/amazon-inspector-lambda-code-scanning",
+        "inspector2/amazon-inspector-lambda-standard-scanning",
+        "inspector2/amazon-inspector-vm-scanner",
+        "inspector2/cis-scans",
+        "inspector2/discontinued-operating-systems",
+        "inspector2/ec2-agent-based-scanning",
+        "inspector2/ec2-agentless-scanning",
+        "inspector2/ecr-basic-scanning",
+        "inspector2/ecr-enhanced-scanning",
+        "inspector2/inspector-scan-api",
+        "inspector2/inspector-ssm-plugin"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 0.84,
+      "url": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+      "verdict": "ok"
+    },
+    {
       "candidates": 42,
       "claims": 36,
       "featureIds": [
@@ -73,6 +102,36 @@
       "quotesMissing": 0,
       "readRatio": 0.86,
       "url": "https://docs.aws.amazon.com/config/latest/developerguide/config-region-support.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 14,
+      "claims": 12,
+      "featureIds": [
+        "sso/saml-2-0-and-oauth-2-0-applications"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 12,
+      "quotesMissing": 0,
+      "readRatio": 0.86,
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 40,
+      "claims": 180,
+      "featureIds": [
+        "sso/additional-regions-deployment",
+        "sso/aws-managed-applications",
+        "sso/customer-managed-kms-key",
+        "sso/identity-center-account-instances",
+        "sso/trusted-identity-propagation"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 0.9,
+      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md",
       "verdict": "ok"
     },
     {
@@ -90,13 +149,14 @@
     },
     {
       "candidates": 0,
-      "claims": 21,
+      "claims": 23,
       "featureIds": [
         "access-analyzer/external-access-analyzer",
-        "access-analyzer/internal-access-analyzer"
+        "access-analyzer/internal-access-analyzer",
+        "access-analyzer/unused-access-analyzer"
       ],
       "labelsNotInQuote": 0,
-      "quotesChecked": 21,
+      "quotesChecked": 23,
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md",
@@ -156,12 +216,13 @@
     },
     {
       "candidates": 12,
-      "claims": 16,
+      "claims": 12,
       "featureIds": [
-        "cloudhsm/cloudhsm-cli"
+        "cloudhsm/cloudhsm-cli",
+        "cloudhsm/cloudhsm-cli-windows"
       ],
       "labelsNotInQuote": 0,
-      "quotesChecked": 16,
+      "quotesChecked": 12,
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md",
@@ -454,19 +515,6 @@
       "verdict": "ok"
     },
     {
-      "candidates": 209,
-      "claims": 254,
-      "featureIds": [
-        "inspector2/automated-scans"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
-      "verdict": "ok"
-    },
-    {
       "candidates": 96,
       "claims": 156,
       "featureIds": [
@@ -482,11 +530,11 @@
     },
     {
       "candidates": 0,
-      "claims": 231,
+      "claims": 271,
       "featureIds": [
         "macie2/managed-data-identifiers"
       ],
-      "labelsNotInQuote": 0,
+      "labelsNotInQuote": 1,
       "quotesChecked": 25,
       "quotesMissing": 0,
       "readRatio": 1,
@@ -523,7 +571,8 @@
       "candidates": 51,
       "claims": 94,
       "featureIds": [
-        "organizations/delegated-administrator-for-integrated-aws-services"
+        "organizations/delegated-administrator-for-integrated-aws-services",
+        "organizations/trusted-access"
       ],
       "labelsNotInQuote": 0,
       "quotesChecked": 25,
@@ -534,8 +583,13 @@
     },
     {
       "candidates": 0,
-      "claims": 162,
+      "claims": 486,
       "featureIds": [
+        "ram/aws-managed-permissions",
+        "ram/customer-managed-permissions",
+        "ram/share-outside-organization",
+        "ram/share-with-iam-users-and-roles",
+        "ram/share-with-service-principals",
         "ram/shared-resources"
       ],
       "labelsNotInQuote": 0,
@@ -550,6 +604,7 @@
       "claims": 35,
       "featureIds": [
         "s3/amazon-s3-multi-region-access-point-failover-controls",
+        "s3/multi-region-access-point-control-operations",
         "s3/multi-region-access-points"
       ],
       "labelsNotInQuote": 0,
@@ -661,32 +716,6 @@
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 40,
-      "claims": 108,
-      "featureIds": [
-        "sso/aws-managed-applications"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 25,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 14,
-      "claims": 17,
-      "featureIds": [
-        "sso/saml-2-0-and-oauth-2-0-applications"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 17,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md",
       "verdict": "ok"
     },
     {

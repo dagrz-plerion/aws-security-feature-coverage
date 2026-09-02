@@ -437,16 +437,20 @@ const VIEWS = {
     const catalogueCell = (r) => {
       const mine = others.filter((a) => isCatalogue(a) && r.axes[a]);
       if (!mine.length) return '<span class="muted">—</span>';
+      // A catalogue carries its size in the count field; the covered field is
+      // deliberately zero, since how much of its own list a service covers is always
+      // all of it. Reading covered here printed a zero against every catalogue.
       return '<div class="chips">' + mine.map((a) =>
-        '<span class="chip" title="' + esc((AXIS[a] || {}).label || a) + '">' + esc(a) + " " + r.axes[a].covered +
-        (r.axes[a].scoped ? " · " + r.axes[a].scoped + " scoped" : "") + "</span>").join("") + "</div>";
+        '<span class="chip" title="' + esc((AXIS[a] || {}).label || a) + '">' + esc(a) + " " +
+        (r.axes[a].count != null ? r.axes[a].count : r.axes[a].covered) + "</span>").join("") + "</div>";
     };
     const otherCell = (r) => {
       const mine = others.filter((a) => !isCatalogue(a) && r.axes[a]);
       if (!mine.length) return '<span class="muted">—</span>';
       return '<div class="chips">' + mine.map((a) =>
-        '<span class="chip" title="' + esc(a) + ': ' + r.axes[a].covered + " of " + (US[a] ?? r.axes[a].total) +
-        ' stated as covered">' + esc(a) + " " + r.axes[a].covered + "/" + (US[a] ?? r.axes[a].total) + "</span>").join("") + "</div>";
+        '<span class="chip" title="' + esc(a) + ': ' + (r.axes[a].covered + r.axes[a].partial) + " of " + (US[a] ?? r.axes[a].total) +
+        ' reached, ' + r.axes[a].partial + ' of them partial">' + esc(a) + " " + (r.axes[a].covered + r.axes[a].partial) +
+        "/" + (US[a] ?? r.axes[a].total) + "</span>").join("") + "</div>";
     };
 
     return filters({ placeholder: "search mapped features" }) + LEGEND +

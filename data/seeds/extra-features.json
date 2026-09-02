@@ -45,6 +45,204 @@
       "summary": "The AWSManagedRulesACFPRuleSet managed rule group, which inspects account creation requests.",
       "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md",
       "quote": "Rule name"
+    },
+    {
+      "id": "organizations/trusted-access",
+      "serviceId": "organizations",
+      "name": "Trusted access for AWS services",
+      "kind": "governance",
+      "summary": "Whether a service can be granted trusted access to act across the accounts of an organization.",
+      "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md",
+      "quote": "Supports trusted access"
+    },
+    {
+      "id": "cloudhsm/cloudhsm-cli-windows",
+      "serviceId": "cloudhsm",
+      "name": "AWS CloudHSM CLI on Windows",
+      "kind": "key-management",
+      "summary": "The Windows platforms the AWS CloudHSM CLI supports.",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md",
+      "quote": "Windows support"
+    },
+    {
+      "id": "s3/multi-region-access-point-control-operations",
+      "serviceId": "s3",
+      "name": "Multi-Region Access Point control plane operations",
+      "kind": "access-control",
+      "summary": "The operations that create and manage Multi-Region Access Points, as distinct from the data plane operations that accept a Multi-Region Access Point ARN.",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md",
+      "quote": "Multi-Region Access Point"
+    },
+    {
+      "id": "ram/share-with-iam-users-and-roles",
+      "serviceId": "ram",
+      "name": "Sharing with IAM users and roles",
+      "kind": "access-control",
+      "summary": "Whether a resource type can be shared directly with an IAM user or role, rather than only with an account.",
+      "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md",
+      "quote": "Can share with IAM users and roles"
+    },
+    {
+      "id": "ram/share-outside-organization",
+      "serviceId": "ram",
+      "name": "Sharing outside the organization",
+      "kind": "access-control",
+      "summary": "Whether a resource type can be shared with an account that is not in the same AWS organization. This is the cross-organization exposure surface.",
+      "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md",
+      "quote": "Can share with accounts outside its organization"
+    },
+    {
+      "id": "ram/customer-managed-permissions",
+      "serviceId": "ram",
+      "name": "Customer managed permissions",
+      "kind": "access-control",
+      "summary": "Whether a resource type accepts a customer managed permission, rather than only the AWS managed permission.",
+      "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md",
+      "quote": "Can use customer managed permissions"
+    },
+    {
+      "id": "ram/share-with-service-principals",
+      "serviceId": "ram",
+      "name": "Sharing with service principals",
+      "kind": "access-control",
+      "summary": "Whether a resource type can be shared with an AWS service principal.",
+      "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md",
+      "quote": "Can share with service principals"
+    },
+    {
+      "id": "ram/aws-managed-permissions",
+      "serviceId": "ram",
+      "name": "AWS managed permissions",
+      "kind": "access-control",
+      "summary": "Every resource type AWS RAM supports accepts an AWS managed permission; the page states this once for all of them.",
+      "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md",
+      "quote": "All resource types supported by AWS RAM support AWS managed permissions"
+    },
+    {
+      "id": "sso/identity-center-account-instances",
+      "serviceId": "sso",
+      "name": "Integration with account instances",
+      "kind": "identity-control",
+      "summary": "Whether an AWS managed application works with an account instance of IAM Identity Center, not only an organization instance.",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md",
+      "quote": "account instances of IAM Identity Center"
+    },
+    {
+      "id": "sso/trusted-identity-propagation",
+      "serviceId": "sso",
+      "name": "Trusted identity propagation",
+      "kind": "identity-control",
+      "summary": "Whether an AWS managed application can propagate the end user's identity to downstream services.",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md",
+      "quote": "trusted identity propagation"
+    },
+    {
+      "id": "sso/customer-managed-kms-key",
+      "serviceId": "sso",
+      "name": "Support for a customer managed KMS key",
+      "kind": "data-protection",
+      "summary": "Whether an AWS managed application works when IAM Identity Center is configured with a customer managed KMS key.",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md",
+      "quote": "customer managed KMS key"
+    },
+    {
+      "id": "sso/additional-regions-deployment",
+      "serviceId": "sso",
+      "name": "Deployment in additional Regions",
+      "kind": "identity-control",
+      "summary": "Whether an AWS managed application supports deployment in the additional Regions of IAM Identity Center.",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md",
+      "quote": "additional Regions"
+    },
+    {
+      "id": "ds/directory-service-data-managed-microsoft-ad",
+      "serviceId": "ds",
+      "name": "Directory Service Data for AWS Managed Microsoft AD",
+      "kind": "identity-control",
+      "summary": "The Directory Service Data API against an AWS Managed Microsoft AD directory, which is available in fewer Regions than the directory itself.",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.md",
+      "quote": "AWS Managed Microsoft AD"
+    },
+    {
+      "id": "ds/directory-service-data-ad-connector",
+      "serviceId": "ds",
+      "name": "Directory Service Data for AD Connector",
+      "kind": "identity-control",
+      "summary": "The Directory Service Data API against an AD Connector directory.",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.md",
+      "quote": "AD Connector"
+    },
+    {
+      "id": "ds/directory-service-data-simple-ad",
+      "serviceId": "ds",
+      "name": "Directory Service Data for Simple AD",
+      "kind": "identity-control",
+      "summary": "The Directory Service Data API against a Simple AD directory.",
+      "sourceUrl": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.md",
+      "quote": "Simple AD"
+    },
+    {
+      "id": "inspector2/ec2-agentless-scanning",
+      "serviceId": "inspector2",
+      "name": "Amazon EC2 agentless scanning",
+      "kind": "vulnerability-management",
+      "summary": "EC2 scanning that takes an EBS snapshot instead of running an agent, with its own supported operating systems and languages.",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+      "quote": "Agentless scan support"
+    },
+    {
+      "id": "inspector2/ec2-agent-based-scanning",
+      "serviceId": "inspector2",
+      "name": "Amazon EC2 agent-based scanning",
+      "kind": "vulnerability-management",
+      "summary": "EC2 scanning through the SSM agent, with its own list of supported operating systems.",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+      "quote": "Agent-based scan support"
+    },
+    {
+      "id": "inspector2/ecr-basic-scanning",
+      "serviceId": "inspector2",
+      "name": "Amazon ECR basic scanning",
+      "kind": "vulnerability-management",
+      "summary": "Basic scanning of container images in Amazon ECR.",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+      "quote": "Basic scanning"
+    },
+    {
+      "id": "inspector2/ecr-enhanced-scanning",
+      "serviceId": "inspector2",
+      "name": "Amazon ECR enhanced scanning",
+      "kind": "vulnerability-management",
+      "summary": "Enhanced scanning of container images in Amazon ECR, covering operating system and programming language packages.",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+      "quote": "Enhanced scanning"
+    },
+    {
+      "id": "inspector2/inspector-scan-api",
+      "serviceId": "inspector2",
+      "name": "Amazon Inspector Scan API",
+      "kind": "vulnerability-management",
+      "summary": "The API that scans an SBOM you supply, with its own supported operating systems.",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+      "quote": "Supported operating systems: Amazon Inspector Scan API"
+    },
+    {
+      "id": "inspector2/inspector-ssm-plugin",
+      "serviceId": "inspector2",
+      "name": "Amazon Inspector SSM plugin",
+      "kind": "vulnerability-management",
+      "summary": "The SSM plugin scanner, which supports fewer programming languages than the other scanners.",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+      "quote": "Supported programming languages: Amazon Inspector SSM plugin"
+    },
+    {
+      "id": "inspector2/discontinued-operating-systems",
+      "serviceId": "inspector2",
+      "name": "Discontinued operating systems",
+      "kind": "vulnerability-management",
+      "summary": "Operating systems Amazon Inspector has stopped supporting. Every value here is stated as not covered.",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+      "quote": "Discontinued operating systems"
     }
   ]
 }

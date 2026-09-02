@@ -232,6 +232,13 @@ function blocksFor(doc: MdDocument, body: string, recipe: Recipe, pageTitle: str
   }
   const heads = doc.sections.filter((section) => section.level === level);
   const blocks: Block[] = [];
+  // Everything above the first heading of this level is the page's own section, and
+  // it was being thrown away. The Directory Service Regions page puts its main table
+  // there and a second table under an H2, so the two could not be told apart and the
+  // narrower one's columns were read against both.
+  const first = heads[0];
+  const preamble = doc.lines.slice(0, first ? first.startLine : doc.lines.length).join("\n");
+  if (preamble.trim()) blocks.push({ title: pageTitle, body: preamble });
   for (const head of heads) {
     const next = doc.sections.find((s) => s.startLine > head.startLine && s.level <= level);
     const end = next ? next.startLine : doc.lines.length;

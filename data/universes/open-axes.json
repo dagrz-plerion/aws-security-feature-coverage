@@ -1820,7 +1820,7 @@
     },
     {
       "axis": "operatingSystem",
-      "count": 136,
+      "count": 146,
       "members": [
         "AlmaLinux 10",
         "AlmaLinux 8",
@@ -1853,8 +1853,11 @@
         "Amazon Linux 2 (AL2) AL2",
         "Amazon Linux 2023",
         "Amazon Linux 2023 (AL2023) AL2023",
+        "Amazon Linux 2023 AL2023",
         "Azure Linux 3",
         "Bottlerocket 1.7.0 and later",
+        "Bottlerocket –",
+        "BusyBox 1.36.0+",
         "BusyBox –",
         "CentOS Linux (CentOS) 7",
         "CentOS Linux (CentOS) 8",
@@ -1865,6 +1868,7 @@
         "Debian Server (Jessie) 8",
         "Debian Server (Stretch) 9",
         "Debian Server (Trixie) 13",
+        "Debian Sid –",
         "Echo 2",
         "Fedora 33",
         "Fedora 34",
@@ -1880,6 +1884,10 @@
         "Fedora 44",
         "Hummingbird OS –",
         "Linux",
+        "Microsoft Windows Server 2016",
+        "Microsoft Windows Server 2019",
+        "Microsoft Windows Server 2022",
+        "Microsoft Windows Server 2025",
         "MinimOS –",
         "OpenSUSE Leap 15.2",
         "OpenSUSE Leap 15.3",
@@ -1921,6 +1929,7 @@
         "SUSE Linux Enterprise Server (SLES) 15.6",
         "SUSE Linux Enterprise Server (SLES) 15.7",
         "SUSE Linux Enterprise Server (SLES) 16.0",
+        "SUSE Linux Enterprise Server 15",
         "Ubuntu (Bionic) 18.04",
         "Ubuntu (Focal) 20.04",
         "Ubuntu (Groovy) 20.10",
@@ -1957,7 +1966,8 @@
         "macOS (Sequoia) 15",
         "macOS (Sonoma) 14",
         "macOS (Tahoe) 26",
-        "macOS (Ventura) 13"
+        "macOS (Ventura) 13",
+        "macOS 11+"
       ]
     },
     {
@@ -2295,6 +2305,52 @@
       ]
     },
     {
+      "axis": "sensitiveDataType",
+      "count": 40,
+      "members": [
+        "AWS secret access key",
+        "Bank account number",
+        "Basic Bank Account Number (BBAN)",
+        "Birth date",
+        "Credit card expiration date",
+        "Credit card magnetic stripe data",
+        "Credit card number",
+        "Credit card verification code",
+        "Driver’s license identification number",
+        "Drug Enforcement Agency (DEA) Registration Number",
+        "Electoral roll number",
+        "Full name",
+        "Global Positioning System (GPS) coordinates",
+        "Google Cloud API key",
+        "HTTP Basic Authorization header",
+        "HTTP cookie",
+        "Health Insurance Claim Number (HICN)",
+        "Health insurance or medical identification number",
+        "Healthcare Common Procedure Coding System (HCPCS) code",
+        "International Bank Account Number (IBAN)",
+        "JSON Web Token (JWT)",
+        "Mailing address",
+        "National Drug Code (NDC)",
+        "National Insurance Number (NINO)",
+        "National Provider Identifier (NPI)",
+        "National identification number",
+        "OpenSSH private key",
+        "PGP private key",
+        "Passport number",
+        "Permanent residence number",
+        "Phone number",
+        "PuTTY private key",
+        "Public transportation card number",
+        "Public-Key Cryptography Standard (PKCS) private key",
+        "Social Insurance Number (SIN)",
+        "Social Security number (SSN)",
+        "Stripe API key",
+        "Taxpayer identification or reference number",
+        "Unique device identifier (UDI)",
+        "Vehicle identification number (VIN)"
+      ]
+    },
+    {
       "axis": "conditionKey",
       "count": 38,
       "members": [
@@ -2534,6 +2590,26 @@
       ]
     },
     {
+      "axis": "programmingLanguage",
+      "count": 14,
+      "members": [
+        "C#",
+        "Go",
+        "Go toolchain",
+        "Java",
+        "Java (.ear, .jar, .par, and .war archive formats)",
+        "Java (including Chainguard and Echo Libraries)",
+        "Java JDK",
+        "JavaScript",
+        "JavaScript (including Echo Libraries)",
+        "PHP",
+        "Python",
+        "Python (including Chainguard and Echo Libraries)",
+        "Ruby",
+        "Rust"
+      ]
+    },
+    {
       "axis": "accessScope",
       "count": 12,
       "members": [
@@ -2549,22 +2625,6 @@
         "sso:account:access",
         "transform:read_write",
         "verified_access:application:connect"
-      ]
-    },
-    {
-      "axis": "programmingLanguage",
-      "count": 10,
-      "members": [
-        "C#",
-        "Go",
-        "Go toolchain",
-        "Java",
-        "Java JDK",
-        "JavaScript",
-        "PHP",
-        "Python",
-        "Ruby",
-        "Rust"
       ]
     },
     {
@@ -2615,6 +2675,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-02T04:06:16.282Z",
+  "generatedAt": "2026-09-02T04:38:45.713Z",
   "note": "Axes AWS defines only inside its documentation. Membership is everything the catalogs name."
 }
