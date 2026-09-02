@@ -80,6 +80,8 @@ export class TargetResolver {
   private resourceByName = new Map<string, string>();
   private dataSourceByName = new Map<string, string>();
   private resourceNouns = new Set<string>();
+  /** service+noun with punctuation and case removed, so the three AWS spellings meet. */
+  private resourceByFlatKey = new Map<string, string>();
   /** service id -> [normalised resource noun, resource type id] */
   private resourceByServiceNoun = new Map<string, [string, string][]>();
   private serviceNamesByLength: { name: string; serviceId: string }[] = [];
@@ -128,6 +130,25 @@ export class TargetResolver {
       const noun = type.cfnTypeName?.split("::")[2] ?? type.serviceReferenceName ?? "";
       if (noun) this.resourceNouns.add(clean(noun.replace(/([a-z0-9])([A-Z])/g, "$1 $2")));
     }
+    // AWS writes the same resource three ways: AWS::EC2::CapacityReservation in
+    // CloudFormation, ec2:capacity-reservation in Resource Explorer, and
+    // ec2:CapacityReservation in the RAM tables. Index a form all three collapse to.
+    const flatKey = (service: string, noun: string): string =>
+      `${service.replace(/[^a-z0-9]/gi, "").toLowerCase()}|${noun.replace(/[^a-z0-9]/gi, "").toLowerCase()}`;
+    for (const type of input.resourceTypes) {
+      const parts = type.cfnTypeName?.split("::");
+      const candidates: [string, string][] = [];
+      if (parts?.length === 3) candidates.push([parts[1] as string, parts[2] as string]);
+      if (type.serviceId && type.serviceReferenceName) candidates.push([type.serviceId, type.serviceReferenceName]);
+      if (type.resourceExplorerType?.includes(":")) {
+        const [svc, ...rest] = type.resourceExplorerType.split(":");
+        if (svc && rest.length) candidates.push([svc, rest.join(":")]);
+      }
+      for (const [svc, noun] of candidates) {
+        const key = flatKey(svc, noun);
+        if (!this.resourceByFlatKey.has(key)) this.resourceByFlatKey.set(key, type.id);
+      }
+    }
     for (const type of input.resourceTypes) {
       if (!type.serviceId) continue;
       const noun = type.cfnTypeName?.split("::")[2] ?? type.serviceReferenceName;
@@ -169,6 +190,15 @@ export class TargetResolver {
     return out;
   }
 
+  /** Does a closed universe actually hold this id? */
+  knows(axis: Universe, id: string): boolean {
+    if (axis === "region") return this.regionById.has(id);
+    if (axis === "service") return [...this.serviceByName.values()].includes(id);
+    if (axis === "resourceType") return [...this.resourceById.values()].includes(id);
+    if (axis === "dataSource") return [...this.dataSourceByName.values()].includes(id);
+    return true;
+  }
+
   resolve(raw: string, axis?: Universe): Resolution | undefined {
     const text = raw.trim();
     if (!text) return undefined;
@@ -179,7 +209,9 @@ export class TargetResolver {
       // An alias must not answer a question about a different axis. Returning a
       // resource type when a service was asked for put AWS::Lambda::Function on the
       // service axis.
-      if (aliasAxis && id && (axis === undefined || axis === aliasAxis)) {
+      // An alias is a redirect, not a licence to invent a target. If it points at
+      // something no universe holds, fall through and let the value go unresolved.
+      if (aliasAxis && id && (axis === undefined || axis === aliasAxis) && this.knows(aliasAxis as Universe, id)) {
         return { axis: aliasAxis as Universe, targetId: id, label: text };
       }
     }
@@ -196,6 +228,14 @@ export class TargetResolver {
       }
       const byId = this.resourceById.get(text) ?? this.resourceById.get(text.toLowerCase());
       if (byId) return { axis: "resourceType", targetId: byId, label: text };
+      // service:Noun in any of AWS's three spellings. Checked before the bare-word
+      // guard, which would otherwise reject a short code like "s3:Bucket".
+      const colon = /^([A-Za-z0-9-]+):(.+)$/.exec(text);
+      if (colon?.[1] && colon[2]) {
+        const flat = `${colon[1].replace(/[^a-z0-9]/gi, "").toLowerCase()}|${colon[2].replace(/[^a-z0-9]/gi, "").toLowerCase()}`;
+        const hit = this.resourceByFlatKey.get(flat);
+        if (hit) return { axis: "resourceType", targetId: hit, label: text };
+      }
       // A bare common word must not become a resource type. "Remediation" is a
       // heading in many guides and also the name of an SSM resource.
       if (!/\s/.test(key) && key.length < 14) return undefined;

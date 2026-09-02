@@ -1512,26 +1512,6 @@
     {
       "axes": {},
       "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "acm/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS Certificate Manager: stated for the service as a whole",
-      "serviceId": "acm",
-      "serviceName": "AWS Certificate Manager",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter"
@@ -2107,63 +2087,6 @@
       "unresolved": 0
     },
     {
-      "axes": {
-        "region": {
-          "covered": 3,
-          "notCovered": 22,
-          "partial": 0,
-          "scoped": 0,
-          "total": 25,
-          "unknown": 0
-        }
-      },
-      "claimCount": 25,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "artifact/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS Artifact: stated for the service as a whole",
-      "serviceId": "artifact",
-      "serviceName": "AWS Artifact",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {
-        "region": [
-          "af-south-1",
-          "ap-east-1",
-          "ap-northeast-1",
-          "ap-northeast-2",
-          "ap-northeast-3",
-          "ap-south-1",
-          "ap-southeast-1",
-          "ap-southeast-2",
-          "ap-southeast-3",
-          "ca-central-1",
-          "eu-central-1",
-          "eu-north-1",
-          "eu-south-1",
-          "eu-west-1",
-          "eu-west-2",
-          "eu-west-3",
-          "me-central-1",
-          "me-south-1",
-          "sa-east-1",
-          "us-east-1",
-          "us-east-2",
-          "us-gov-east-1",
-          "us-gov-west-1",
-          "us-west-1",
-          "us-west-2"
-        ]
-      },
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
       "axes": {},
       "claimCount": 0,
       "confidence": 0.6,
@@ -2442,26 +2365,6 @@
       "serviceId": "auditmanager",
       "serviceName": "AWS Audit Manager",
       "summary": "Learn how to use service-linked roles to give Audit Manager access to resources in your AWS account.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "auditmanager/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS Audit Manager: stated for the service as a whole",
-      "serviceId": "auditmanager",
-      "serviceName": "AWS Audit Manager",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
       "targets": {},
       "tier": "tier1",
       "unresolved": 0
@@ -5080,26 +4983,6 @@
       "serviceId": "cloudhsm",
       "serviceName": "AWS CloudHSM",
       "summary": "The IAM policy that you created previously to includes the iam:CreateServiceLinkedRole action.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "cloudhsm/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS CloudHSM: stated for the service as a whole",
-      "serviceId": "cloudhsm",
-      "serviceName": "AWS CloudHSM",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
       "targets": {},
       "tier": "tier1",
       "unresolved": 0
@@ -7994,26 +7877,6 @@
       "serviceId": "cognito-idp",
       "serviceName": "Amazon Cognito",
       "summary": "How to use service-linked roles to give Amazon Cognito access to resources in your AWS account.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "cognito-idp/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "Amazon Cognito: stated for the service as a whole",
-      "serviceId": "cognito-idp",
-      "serviceName": "Amazon Cognito",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
       "targets": {},
       "tier": "tier1",
       "unresolved": 0
@@ -11682,26 +11545,6 @@
       "serviceId": "detective",
       "serviceName": "Amazon Detective",
       "summary": "How to use service-linked roles to give Detective access to resources in your AWS account.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "detective/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "Amazon Detective: stated for the service as a whole",
-      "serviceId": "detective",
-      "serviceName": "Amazon Detective",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
       "targets": {},
       "tier": "tier1",
       "unresolved": 0
@@ -17158,46 +17001,6 @@
       "unresolved": 0
     },
     {
-      "axes": {
-        "policyType": {
-          "covered": 8,
-          "notCovered": 0,
-          "partial": 0,
-          "scoped": 0,
-          "total": 8,
-          "unknown": 0
-        }
-      },
-      "claimCount": 8,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "fms/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS Firewall Manager: stated for the service as a whole",
-      "serviceId": "fms",
-      "serviceName": "AWS Firewall Manager",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {
-        "policyType": [
-          "Amazon VPC network ACL",
-          "Amazon VPC security group",
-          "AWS Network Firewall",
-          "AWS Shield Advanced",
-          "AWS WAF",
-          "DNS Firewall",
-          "Fortigate CNF",
-          "Palo Alto Networks Cloud Next Generation Firewall"
-        ]
-      },
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
       "axes": {},
       "claimCount": 0,
       "confidence": 0.6,
@@ -19549,26 +19352,6 @@
     {
       "axes": {},
       "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "guardduty/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "Amazon GuardDuty: stated for the service as a whole",
-      "serviceId": "guardduty",
-      "serviceName": "Amazon GuardDuty",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -21538,26 +21321,6 @@
     {
       "axes": {},
       "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "iam/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS Identity and Access Management: stated for the service as a whole",
-      "serviceId": "iam",
-      "serviceName": "AWS Identity and Access Management",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
       "confidence": 0.75,
       "discoveredBy": [
         "attributed-page",
@@ -23032,26 +22795,6 @@
     {
       "axes": {},
       "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "inspector2/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "Amazon Inspector: stated for the service as a whole",
-      "serviceId": "inspector2",
-      "serviceName": "Amazon Inspector",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -23992,15 +23735,15 @@
           "unknown": 0
         },
         "service": {
-          "covered": 77,
+          "covered": 92,
           "notCovered": 0,
           "partial": 0,
-          "scoped": 77,
-          "total": 77,
+          "scoped": 92,
+          "total": 92,
           "unknown": 0
         }
       },
-      "claimCount": 115,
+      "claimCount": 130,
       "confidence": 0.6,
       "discoveredBy": [
         "guide-subchapter"
@@ -24059,24 +23802,32 @@
         ],
         "service": [
           "aiops",
+          "airflow",
           "appfabric",
           "appflow",
           "apprunner",
+          "apptest",
           "athena",
           "auditmanager",
           "backup",
           "backup-gateway",
+          "bedrock",
           "cassandra",
           "chime",
           "cleanrooms-ml",
           "codeartifact",
-          "codeguru",
+          "codeguru-reviewer",
           "comprehend",
           "connect",
+          "dax",
           "dms",
+          "docdb-elastic",
           "ds",
           "dynamodb",
+          "ec2",
+          "ecr",
           "elasticache",
+          "elasticfilesystem",
           "entityresolution",
           "es",
           "events",
@@ -24089,7 +23840,9 @@
           "groundstation",
           "guardduty",
           "healthlake",
+          "importexport",
           "iotsitewise",
+          "kafka",
           "kendra",
           "kinesis",
           "kinesisvideo",
@@ -24097,6 +23850,8 @@
           "lex",
           "license-manager",
           "lookoutequipment",
+          "lookoutmetrics",
+          "lookoutvision",
           "m2",
           "macie2",
           "managedblockchain",
@@ -24107,22 +23862,24 @@
           "mq",
           "nimble",
           "omics",
-          "product:amazon-aurora",
-          "product:amazon-documentdb",
-          "product:amazon-lookout-for-metrics",
-          "product:amazon-lookout-for-vision",
-          "product:amazon-managed-workflows-for-apache-airflow-mwaa",
           "product:aws-deepracer",
+          "profile",
           "proton",
+          "qldb",
           "rds",
           "redshift",
           "redshift-serverless",
           "rekognition",
+          "s3",
           "s3tables",
           "sagemaker",
           "secretsmanager",
           "securitylake",
-          "snowball",
+          "ses",
+          "sns",
+          "sqlworkbench",
+          "sqs",
+          "ssm",
           "ssm-contacts",
           "ssm-incidents",
           "states",
@@ -24131,6 +23888,7 @@
           "timestream",
           "translate",
           "verified-access",
+          "wisdom",
           "workmail",
           "workspaces",
           "workspaces-web",
@@ -26763,26 +26521,6 @@
     {
       "axes": {},
       "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "macie2/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "Amazon Macie: stated for the service as a whole",
-      "serviceId": "macie2",
-      "serviceName": "Amazon Macie",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -29356,26 +29094,6 @@
     {
       "axes": {},
       "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "organizations/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS Organizations: stated for the service as a whole",
-      "serviceId": "organizations",
-      "serviceName": "AWS Organizations",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {},
-      "tier": "tier2",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
       "confidence": 0.75,
       "discoveredBy": [
         "attributed-page",
@@ -30260,37 +29978,17 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "ram/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS Resource Access Manager: stated for the service as a whole",
-      "serviceId": "ram",
-      "serviceName": "AWS Resource Access Manager",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
       "axes": {
         "resourceType": {
-          "covered": 32,
-          "notCovered": 5,
+          "covered": 81,
+          "notCovered": 13,
           "partial": 0,
-          "scoped": 32,
-          "total": 32,
+          "scoped": 81,
+          "total": 81,
           "unknown": 0
         }
       },
-      "claimCount": 64,
+      "claimCount": 162,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter"
@@ -30309,36 +30007,85 @@
       "targets": {
         "resourceType": [
           "aws-marketplace:Entity",
+          "AWS::ACMPCA::CertificateAuthority",
+          "AWS::ApiGateway::DomainName",
           "AWS::AppMesh::Mesh",
           "AWS::AppSync::GraphQLApi",
+          "AWS::ARCRegionSwitch::Plan",
+          "AWS::Backup::BackupVault",
+          "AWS::Billing::BillingView",
+          "AWS::CloudFront::VpcOrigin",
           "AWS::CodeBuild::Project",
+          "AWS::CodeBuild::ReportGroup",
           "AWS::CodeConnections::Connection",
+          "AWS::DataZone::Domain",
           "AWS::DocDB::DBCluster",
+          "AWS::EC2::CapacityReservation",
+          "AWS::EC2::Host",
+          "AWS::EC2::IPAMPool",
+          "AWS::EC2::IPAMResourceDiscovery",
+          "AWS::EC2::LocalGatewayRouteTable",
+          "AWS::EC2::PlacementGroup",
+          "AWS::EC2::PrefixList",
+          "AWS::EC2::SecurityGroup",
           "AWS::EC2::Subnet",
+          "AWS::EC2::TrafficMirrorTarget",
+          "AWS::EC2::TransitGateway",
+          "AWS::EC2::TransitGatewayMulticastDomain",
+          "AWS::EC2::VerifiedAccessGroup",
+          "AWS::FSx::Volume",
+          "AWS::Glue::Catalog",
           "AWS::Glue::Database",
           "AWS::Glue::Table",
           "AWS::ImageBuilder::Component",
+          "AWS::ImageBuilder::ContainerRecipe",
           "AWS::ImageBuilder::Image",
+          "AWS::ImageBuilder::ImageRecipe",
+          "AWS::MPA::ApprovalTeam",
           "AWS::NetworkFirewall::Firewall",
+          "AWS::NetworkFirewall::FirewallPolicy",
+          "AWS::NetworkManager::CoreNetwork",
+          "AWS::ODB::CloudExadataInfrastructure",
+          "AWS::ODB::OdbNetwork",
           "AWS::Outposts::Site",
           "AWS::RefactorSpaces::Environment",
           "AWS::ResourceExplorer2::View",
           "AWS::ResourceGroups::Group",
+          "AWS::Route53GlobalResolver::DnsView",
+          "AWS::Route53Profiles::Profile",
           "AWS::Route53RecoveryControl::Cluster",
+          "AWS::Route53Resolver::FirewallRuleGroup",
+          "AWS::Route53Resolver::ResolverQueryLoggingConfig",
+          "AWS::Route53Resolver::ResolverRule",
+          "AWS::SageMaker::FeatureGroup",
           "AWS::SageMaker::Hub",
+          "AWS::SageMaker::ModelCard",
           "AWS::SageMaker::ModelPackageGroup",
+          "AWS::SageMaker::PartnerApp",
           "AWS::SageMaker::Pipeline",
           "AWS::ServiceCatalogAppRegistry::Application",
+          "AWS::ServiceCatalogAppRegistry::AttributeGroup",
+          "AWS::SMSVOICE::PhoneNumber",
+          "AWS::SMSVOICE::Pool",
+          "AWS::SMSVOICE::SenderId",
           "AWS::SSM::Document",
           "AWS::SSM::Parameter",
+          "AWS::SSMContacts::Contact",
+          "AWS::SSMIncidents::ResponsePlan",
+          "AWS::VpcLattice::ResourceConfiguration",
           "AWS::VpcLattice::Service",
           "AWS::VpcLattice::ServiceNetwork",
           "bcm-dashboards:dashboard",
+          "bedrock:custom-model",
           "cloudhsm:backup",
+          "ec2:coip-pool",
           "elasticloadbalancing:truststore",
+          "license-manager:license-configuration",
           "network-firewall:StatefulRuleGroup",
           "network-firewall:StatelessRuleGroup",
           "outposts:outpost",
+          "sagemaker:lineage-group",
+          "sagemaker:sagemaker-catalog",
           "servicediscovery:namespace"
         ]
       },
@@ -34734,26 +34481,6 @@
     {
       "axes": {},
       "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "secretsmanager/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS Secrets Manager: stated for the service as a whole",
-      "serviceId": "secretsmanager",
-      "serviceName": "AWS Secrets Manager",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -36683,26 +36410,6 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "securityhub/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS Security Hub: stated for the service as a whole",
-      "serviceId": "securityhub",
-      "serviceName": "AWS Security Hub",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
       "axes": {
         "complianceStandard": {
           "covered": 8,
@@ -36982,26 +36689,6 @@
       "serviceId": "securitylake",
       "serviceName": "Amazon Security Lake",
       "summary": "Security Lake uses the service-linked role named AWSServiceRoleForSecurityLake.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "securitylake/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "Amazon Security Lake: stated for the service as a whole",
-      "serviceId": "securitylake",
-      "serviceName": "Amazon Security Lake",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
       "targets": {},
       "tier": "tier1",
       "unresolved": 0
@@ -37721,26 +37408,6 @@
           "us-west-2"
         ]
       },
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "shield/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS Shield: stated for the service as a whole",
-      "serviceId": "shield",
-      "serviceName": "AWS Shield",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {},
       "tier": "tier1",
       "unresolved": 0
     },
@@ -42568,26 +42235,6 @@
     {
       "axes": {},
       "claimCount": 0,
-      "confidence": 0.7,
-      "discoveredBy": [
-        "service-level"
-      ],
-      "docUrls": [],
-      "id": "wafv2/service-wide",
-      "kind": "configuration",
-      "llmClaims": 0,
-      "method": "deterministic",
-      "name": "AWS WAF: stated for the service as a whole",
-      "serviceId": "wafv2",
-      "serviceName": "AWS WAF",
-      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
-      "targets": {},
-      "tier": "tier1",
-      "unresolved": 0
-    },
-    {
-      "axes": {},
-      "claimCount": 0,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -43780,6 +43427,13 @@
       "subject": "unresolved:doc:sdk-for-java"
     },
     {
+      "detail": "1 rules were broken in the last run, starting with \"every target exists in its axis universe\".",
+      "id": "1b3dd34b73279507",
+      "kind": "recall",
+      "stage": "stage6-validate",
+      "subject": "validation violations"
+    },
+    {
       "detail": "\"doc:amazonswf\" did not join to a service prefix. Score 0, signals none.",
       "id": "1bae5a105ea0b4da",
       "kind": "alias",
@@ -44807,6 +44461,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:product:aws-mainframe-modernization"
+    },
+    {
+      "detail": "2 rules were broken in the last run, starting with \"every recipe is pinned to a feature that exists\".",
+      "id": "86524e8cd271568f",
+      "kind": "recall",
+      "stage": "stage6-validate",
+      "subject": "validation violations"
     },
     {
       "detail": "inspector2-telemetry is a tier 1 security service but no named feature was extracted. It has 0 indexed guides.",
@@ -45936,6 +45597,13 @@
       "subject": "recipe:ram-shareable-outside-organization"
     },
     {
+      "detail": "recipe kms-viaservice-supported-services produced 87 claims, fewer than the 90 it promises on https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md. The page shape has probably changed.",
+      "id": "df573cf05286f5d8",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:kms-viaservice-supported-services"
+    },
+    {
       "detail": "1290 names in coverage lists did not resolve to a universe id. Each is recorded on its feature so an alias can be added.",
       "id": "e0d152bc0a009282",
       "kind": "alias",
@@ -46321,41 +45989,164 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-02T00:19:24.190Z",
+  "generatedAt": "2026-09-02T01:20:21.772Z",
   "manifest": {
     "fetch": {
-      "cacheHit": 63,
-      "failed": 0,
+      "cacheHit": 12438,
+      "failed": 5,
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-01T11:20:27.910Z",
+    "finishedAt": "2026-09-02T01:20:19.088Z",
     "stages": [
       {
         "counts": {
-          "clean": 61,
-          "empty": 0,
-          "pagesChecked": 63,
-          "partialRead": 2,
-          "staleQuotes": 0
+          "actions": 21810,
+          "dataSources": 23,
+          "docGuides": 1236,
+          "iamPrefixedServices": 526,
+          "partitions": 8,
+          "products": 358,
+          "regions": 46,
+          "resourceTypes": 3134,
+          "services": 692
         },
-        "finishedAt": "2026-09-01T11:20:27.296Z",
-        "id": "stage7-verify",
-        "startedAt": "2026-09-01T11:20:26.947Z",
+        "finishedAt": "2026-09-02T01:19:58.527Z",
+        "id": "stage1-universes",
+        "notes": [
+          "1314 service reference resources joined to an existing resource type"
+        ],
+        "startedAt": "2026-09-02T01:19:19.437Z",
         "status": "partial"
       },
       {
         "counts": {
-          "features": 1755,
+          "failed": 29,
+          "guides": 1236,
+          "indexed": 1207,
+          "pages": 103576
+        },
+        "finishedAt": "2026-09-02T01:19:58.833Z",
+        "id": "stage2-doc-pages",
+        "startedAt": "2026-09-02T01:19:58.527Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "adjudicated": 692,
+          "candidates": 307,
+          "notSecurity": 385,
+          "overridesApplied": 33,
+          "pendingJudgement": 43,
+          "prunedStaleRecords": 0,
+          "sraMatched": 31,
+          "synthetic": 166,
+          "tier1": 45,
+          "tier2": 13
+        },
+        "finishedAt": "2026-09-02T01:19:59.310Z",
+        "id": "stage3-discovery",
+        "notes": [
+          "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
+        ],
+        "startedAt": "2026-09-02T01:19:58.833Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "aliasesApplied": 13,
+          "aliasesUnmatched": 0,
+          "features": 1735,
+          "noFeatureFound": 104,
+          "promotedToTier2": 153,
+          "prunedStaleRecords": 3,
+          "scanned": 307,
+          "servicesWithFeatures": 203
+        },
+        "finishedAt": "2026-09-02T01:20:03.302Z",
+        "id": "stage4-features",
+        "startedAt": "2026-09-02T01:19:59.311Z",
+        "status": "ok"
+      },
+      {
+        "counts": {
+          "claims": 49780,
+          "conflicts": 0,
+          "covered": 37927,
+          "duplicateRegistrationsSkipped": 1493,
+          "empty": 11715,
+          "enabled": 11775,
+          "featuresWithCoverage": 52,
+          "from_agent": 30,
+          "from_tier1-sweep": 6516,
+          "from_title-match": 5237,
+          "newlyDiscovered": 0,
+          "notCovered": 11853,
+          "openAxes": 19,
+          "openAxisMembers": 2230,
+          "pagesConsidered": 10282,
+          "pagesFailed": 1,
+          "pagesRead": 63,
+          "pagesRejectedByKind": 2636,
+          "prunedStaleRecords": 0,
+          "recipeFailures": 0,
+          "recipeRulesWithNoPage": 0,
+          "recipes": 71,
+          "recipesAttached": 71,
+          "registered": 11783,
+          "serviceWideRecords": 3,
+          "tablesRecoveredFromHtml": 360,
+          "unattachedPages": 174,
+          "unresolvedTargets": 4,
+          "valuesDroppedUnresolved": 3036,
+          "withRecipe": 53,
+          "yielding": 67
+        },
+        "finishedAt": "2026-09-02T01:20:17.442Z",
+        "id": "stage5-coverage",
+        "startedAt": "2026-09-02T01:20:03.303Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "claims": 49747,
+          "features": 1737,
+          "quotesChecked": 250,
+          "recallFound": 73,
+          "recallTotal": 73,
+          "services": 692,
+          "violations": 0
+        },
+        "finishedAt": "2026-09-02T01:20:18.235Z",
+        "id": "stage6-validate",
+        "startedAt": "2026-09-02T01:20:17.443Z",
+        "status": "ok"
+      },
+      {
+        "counts": {
+          "clean": 59,
+          "empty": 0,
+          "pagesChecked": 61,
+          "partialRead": 2,
+          "staleQuotes": 0
+        },
+        "finishedAt": "2026-09-02T01:20:18.591Z",
+        "id": "stage7-verify",
+        "startedAt": "2026-09-02T01:20:18.235Z",
+        "status": "partial"
+      },
+      {
+        "counts": {
+          "features": 1737,
           "services": 211
         },
-        "finishedAt": "2026-09-01T11:20:27.910Z",
+        "finishedAt": "2026-09-02T01:20:19.087Z",
         "id": "report",
-        "startedAt": "2026-09-01T11:20:27.296Z",
+        "startedAt": "2026-09-02T01:20:18.591Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-01T11:20:26.945Z"
+    "startedAt": "2026-09-02T01:19:19.435Z"
   },
   "outOfScope": [
     {
@@ -51673,7 +51464,7 @@
           "url": "https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.md"
         }
       ],
-      "featureCount": 22,
+      "featureCount": 21,
       "id": "acm",
       "method": "deterministic",
       "name": "AWS Certificate Manager",
@@ -52057,7 +51848,7 @@
     {
       "actionCount": 24,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 25,
+      "claimCount": 0,
       "confidence": 1,
       "docGuides": [
         {
@@ -52073,7 +51864,7 @@
           "url": "https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.md"
         }
       ],
-      "featureCount": 2,
+      "featureCount": 1,
       "id": "artifact",
       "method": "deterministic",
       "name": "AWS Artifact",
@@ -52137,7 +51928,7 @@
           "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.md"
         }
       ],
-      "featureCount": 10,
+      "featureCount": 9,
       "id": "auditmanager",
       "method": "deterministic",
       "name": "AWS Audit Manager",
@@ -52693,7 +52484,7 @@
           "url": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.md"
         }
       ],
-      "featureCount": 47,
+      "featureCount": 46,
       "id": "cloudhsm",
       "method": "deterministic",
       "name": "AWS CloudHSM",
@@ -53044,7 +52835,7 @@
           "url": "https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welcome.md"
         }
       ],
-      "featureCount": 39,
+      "featureCount": 38,
       "id": "cognito-idp",
       "method": "deterministic",
       "name": "Amazon Cognito",
@@ -53507,7 +53298,7 @@
           "url": "https://docs.aws.amazon.com/detective/latest/userguide/what-is-detective.md"
         }
       ],
-      "featureCount": 20,
+      "featureCount": 19,
       "id": "detective",
       "method": "deterministic",
       "name": "Amazon Detective",
@@ -54456,7 +54247,7 @@
     {
       "actionCount": 42,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 8,
+      "claimCount": 0,
       "confidence": 1,
       "docGuides": [
         {
@@ -54466,7 +54257,7 @@
           "url": "https://docs.aws.amazon.com/fms/2018-01-01/APIReference/Welcome.md"
         }
       ],
-      "featureCount": 21,
+      "featureCount": 20,
       "id": "fms",
       "method": "deterministic",
       "name": "AWS Firewall Manager",
@@ -54860,7 +54651,7 @@
           "url": "https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.md"
         }
       ],
-      "featureCount": 60,
+      "featureCount": 59,
       "id": "guardduty",
       "method": "deterministic",
       "name": "Amazon GuardDuty",
@@ -54927,7 +54718,7 @@
           "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.md"
         }
       ],
-      "featureCount": 81,
+      "featureCount": 80,
       "id": "iam",
       "method": "deterministic",
       "name": "AWS Identity and Access Management",
@@ -55072,7 +54863,7 @@
           "url": "https://docs.aws.amazon.com/inspector/v2/APIReference/Welcome.md"
         }
       ],
-      "featureCount": 25,
+      "featureCount": 24,
       "id": "inspector2",
       "method": "deterministic",
       "name": "Amazon Inspector",
@@ -55222,7 +55013,7 @@
     {
       "actionCount": 56,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 115,
+      "claimCount": 130,
       "confidence": 1,
       "docGuides": [
         {
@@ -55567,7 +55358,7 @@
           "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.md"
         }
       ],
-      "featureCount": 25,
+      "featureCount": 24,
       "id": "macie2",
       "method": "deterministic",
       "name": "Amazon Macie",
@@ -56109,7 +55900,7 @@
           "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.md"
         }
       ],
-      "featureCount": 36,
+      "featureCount": 35,
       "id": "organizations",
       "method": "llm",
       "name": "AWS Organizations",
@@ -56446,7 +56237,7 @@
     {
       "actionCount": 35,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 64,
+      "claimCount": 162,
       "confidence": 1,
       "docGuides": [
         {
@@ -56462,7 +56253,7 @@
           "url": "https://docs.aws.amazon.com/ram/latest/userguide/what-is.md"
         }
       ],
-      "featureCount": 6,
+      "featureCount": 5,
       "id": "ram",
       "method": "deterministic",
       "name": "AWS Resource Access Manager",
@@ -57088,7 +56879,7 @@
           "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.md"
         }
       ],
-      "featureCount": 36,
+      "featureCount": 35,
       "id": "secretsmanager",
       "method": "deterministic",
       "name": "AWS Secrets Manager",
@@ -57195,7 +56986,7 @@
           "url": "https://docs.aws.amazon.com/securityhub/latest/userguide/what-are-securityhub-services.md"
         }
       ],
-      "featureCount": 44,
+      "featureCount": 43,
       "id": "securityhub",
       "method": "deterministic",
       "name": "AWS Security Hub",
@@ -57230,7 +57021,7 @@
           "url": "https://docs.aws.amazon.com/security-lake/latest/userguide/what-is-security-lake.md"
         }
       ],
-      "featureCount": 13,
+      "featureCount": 12,
       "id": "securitylake",
       "method": "deterministic",
       "name": "Amazon Security Lake",
@@ -57431,7 +57222,7 @@
           "url": "https://docs.aws.amazon.com/nspm/3.0/network-security-posture-management/latest/APIReference//Welcome.md"
         }
       ],
-      "featureCount": 25,
+      "featureCount": 24,
       "id": "shield",
       "method": "deterministic",
       "name": "AWS Shield",
@@ -58318,7 +58109,7 @@
           "url": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
         }
       ],
-      "featureCount": 65,
+      "featureCount": 64,
       "id": "wafv2",
       "method": "deterministic",
       "name": "AWS WAF",
@@ -58636,6 +58427,17 @@
       "verdict": "ok"
     },
     {
+      "claims": 162,
+      "dropped": 4,
+      "note": "Forty-two services, each with a table of the resource types RAM can share and how far each can be shared.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "ram",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md",
+      "verdict": "ok"
+    },
+    {
       "claims": 159,
       "note": "The managed data identifier catalogue, in the identifier ID column.",
       "readRatio": 1,
@@ -58646,8 +58448,8 @@
       "verdict": "ok"
     },
     {
-      "claims": 115,
-      "dropped": 18,
+      "claims": 130,
+      "dropped": 2,
       "note": "Each H2 is one KMS condition key. Only kms:ViaService carries a service list, and that list is coverage scoped to that one key, not to condition keys in general.",
       "readRatio": 1,
       "recipes": 2,
@@ -58676,17 +58478,6 @@
       "serviceId": "organizations",
       "source": "agent",
       "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 64,
-      "dropped": 102,
-      "note": "Forty-two services, each with a table of the resource types RAM can share and how far each can be shared.",
-      "readRatio": 1,
-      "recipes": 2,
-      "serviceId": "ram",
-      "source": "agent",
-      "url": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md",
       "verdict": "ok"
     },
     {

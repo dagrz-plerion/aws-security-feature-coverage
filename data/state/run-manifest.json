@@ -1,35 +1,158 @@
 {
   "fetch": {
-    "cacheHit": 63,
-    "failed": 0,
+    "cacheHit": 12438,
+    "failed": 5,
     "network": 0,
     "revalidated": 0
   },
-  "finishedAt": "2026-09-01T11:20:27.910Z",
+  "finishedAt": "2026-09-02T01:20:19.088Z",
   "stages": [
     {
       "counts": {
-        "clean": 61,
-        "empty": 0,
-        "pagesChecked": 63,
-        "partialRead": 2,
-        "staleQuotes": 0
+        "actions": 21810,
+        "dataSources": 23,
+        "docGuides": 1236,
+        "iamPrefixedServices": 526,
+        "partitions": 8,
+        "products": 358,
+        "regions": 46,
+        "resourceTypes": 3134,
+        "services": 692
       },
-      "finishedAt": "2026-09-01T11:20:27.296Z",
-      "id": "stage7-verify",
-      "startedAt": "2026-09-01T11:20:26.947Z",
+      "finishedAt": "2026-09-02T01:19:58.527Z",
+      "id": "stage1-universes",
+      "notes": [
+        "1314 service reference resources joined to an existing resource type"
+      ],
+      "startedAt": "2026-09-02T01:19:19.437Z",
       "status": "partial"
     },
     {
       "counts": {
-        "features": 1755,
+        "failed": 29,
+        "guides": 1236,
+        "indexed": 1207,
+        "pages": 103576
+      },
+      "finishedAt": "2026-09-02T01:19:58.833Z",
+      "id": "stage2-doc-pages",
+      "startedAt": "2026-09-02T01:19:58.527Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "adjudicated": 692,
+        "candidates": 307,
+        "notSecurity": 385,
+        "overridesApplied": 33,
+        "pendingJudgement": 43,
+        "prunedStaleRecords": 0,
+        "sraMatched": 31,
+        "synthetic": 166,
+        "tier1": 45,
+        "tier2": 13
+      },
+      "finishedAt": "2026-09-02T01:19:59.310Z",
+      "id": "stage3-discovery",
+      "notes": [
+        "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
+      ],
+      "startedAt": "2026-09-02T01:19:58.833Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "aliasesApplied": 13,
+        "aliasesUnmatched": 0,
+        "features": 1735,
+        "noFeatureFound": 104,
+        "promotedToTier2": 153,
+        "prunedStaleRecords": 3,
+        "scanned": 307,
+        "servicesWithFeatures": 203
+      },
+      "finishedAt": "2026-09-02T01:20:03.302Z",
+      "id": "stage4-features",
+      "startedAt": "2026-09-02T01:19:59.311Z",
+      "status": "ok"
+    },
+    {
+      "counts": {
+        "claims": 49780,
+        "conflicts": 0,
+        "covered": 37927,
+        "duplicateRegistrationsSkipped": 1493,
+        "empty": 11715,
+        "enabled": 11775,
+        "featuresWithCoverage": 52,
+        "from_agent": 30,
+        "from_tier1-sweep": 6516,
+        "from_title-match": 5237,
+        "newlyDiscovered": 0,
+        "notCovered": 11853,
+        "openAxes": 19,
+        "openAxisMembers": 2230,
+        "pagesConsidered": 10282,
+        "pagesFailed": 1,
+        "pagesRead": 63,
+        "pagesRejectedByKind": 2636,
+        "prunedStaleRecords": 0,
+        "recipeFailures": 0,
+        "recipeRulesWithNoPage": 0,
+        "recipes": 71,
+        "recipesAttached": 71,
+        "registered": 11783,
+        "serviceWideRecords": 3,
+        "tablesRecoveredFromHtml": 360,
+        "unattachedPages": 174,
+        "unresolvedTargets": 4,
+        "valuesDroppedUnresolved": 3036,
+        "withRecipe": 53,
+        "yielding": 67
+      },
+      "finishedAt": "2026-09-02T01:20:17.442Z",
+      "id": "stage5-coverage",
+      "startedAt": "2026-09-02T01:20:03.303Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "claims": 49747,
+        "features": 1737,
+        "quotesChecked": 250,
+        "recallFound": 73,
+        "recallTotal": 73,
+        "services": 692,
+        "violations": 0
+      },
+      "finishedAt": "2026-09-02T01:20:18.235Z",
+      "id": "stage6-validate",
+      "startedAt": "2026-09-02T01:20:17.443Z",
+      "status": "ok"
+    },
+    {
+      "counts": {
+        "clean": 59,
+        "empty": 0,
+        "pagesChecked": 61,
+        "partialRead": 2,
+        "staleQuotes": 0
+      },
+      "finishedAt": "2026-09-02T01:20:18.591Z",
+      "id": "stage7-verify",
+      "startedAt": "2026-09-02T01:20:18.235Z",
+      "status": "partial"
+    },
+    {
+      "counts": {
+        "features": 1737,
         "services": 211
       },
-      "finishedAt": "2026-09-01T11:20:27.910Z",
+      "finishedAt": "2026-09-02T01:20:19.087Z",
       "id": "report",
-      "startedAt": "2026-09-01T11:20:27.296Z",
+      "startedAt": "2026-09-02T01:20:18.591Z",
       "status": "ok"
     }
   ],
-  "startedAt": "2026-09-01T11:20:26.945Z"
+  "startedAt": "2026-09-02T01:19:19.435Z"
 }

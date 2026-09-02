@@ -29,6 +29,12 @@ export type CoveragePage = {
    */
   recipes?: Recipe[];
   firstSeen: string;
+  /**
+   * The most this page has ever produced, per recipe. A later run that produces
+   * materially less has regressed, whatever its requireMin says — which stops a
+   * threshold being lowered to make a broken recipe look healthy.
+   */
+  best?: Record<string, number>;
   /** What the last verification pass found. Drift from this is a failure. */
   verified?: {
     at: string;

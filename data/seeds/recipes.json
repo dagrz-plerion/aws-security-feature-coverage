@@ -757,7 +757,7 @@
           },
           "axis": "resourceType",
           "status": "covered",
-          "requireMin": 30,
+          "requireMin": 70,
           "featureId": "ram/shared-resources"
         },
         {
@@ -778,7 +778,7 @@
             "from": "constant",
             "value": "outside-organization"
           },
-          "requireMin": 30,
+          "requireMin": 70,
           "featureId": "ram/shared-resources"
         }
       ]
@@ -1156,8 +1156,10 @@
           "onlyBlocksMatching": "^kms:ViaService$",
           "select": {
             "from": "table-column",
-            "headerMatches": "service name",
-            "extract": "whole"
+            "headerMatches": "viaservice name",
+            "extract": "regex",
+            "pattern": "([a-z0-9][a-z0-9-]*)\\.\\{\\{AWS",
+            "split": "\\s+\u00b7\\s+|\\s*\\+\\s+"
           },
           "axis": "service",
           "status": "covered",
@@ -1167,7 +1169,7 @@
             "value": "kms:ViaService"
           },
           "featureId": "kms/condition-keys",
-          "requireMin": 75
+          "requireMin": 90
         }
       ]
     },

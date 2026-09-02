@@ -787,7 +787,32 @@
       },
       "status": "covered",
       "targetId": "aiops",
-      "targetLabel": "Amazon AI Operations"
+      "targetLabel": "aiops.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Managed Workflows for Apache Airflow (MWAA) | airflow.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-airflow-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "airflow",
+      "targetLabel": "airflow.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -812,7 +837,7 @@
       },
       "status": "covered",
       "targetId": "appfabric",
-      "targetLabel": "AWS AppFabric"
+      "targetLabel": "appfabric.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -837,7 +862,7 @@
       },
       "status": "covered",
       "targetId": "appflow",
-      "targetLabel": "Amazon AppFlow"
+      "targetLabel": "appflow.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -862,7 +887,32 @@
       },
       "status": "covered",
       "targetId": "apprunner",
-      "targetLabel": "AWS App Runner"
+      "targetLabel": "apprunner.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| AWS Mainframe Modernization Application Testing | apptest.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-apptest-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "apptest",
+      "targetLabel": "apptest.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -887,7 +937,7 @@
       },
       "status": "covered",
       "targetId": "athena",
-      "targetLabel": "Amazon Athena"
+      "targetLabel": "athena.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -912,7 +962,7 @@
       },
       "status": "covered",
       "targetId": "auditmanager",
-      "targetLabel": "AWS Audit Manager"
+      "targetLabel": "auditmanager.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -937,7 +987,7 @@
       },
       "status": "covered",
       "targetId": "backup",
-      "targetLabel": "AWS Backup"
+      "targetLabel": "backup.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -962,7 +1012,32 @@
       },
       "status": "covered",
       "targetId": "backup-gateway",
-      "targetLabel": "AWS Backup Gateway"
+      "targetLabel": "backup-gateway.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Bedrock Model Copy | bedrock.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-bedrock-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "bedrock",
+      "targetLabel": "bedrock.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -987,7 +1062,7 @@
       },
       "status": "covered",
       "targetId": "cassandra",
-      "targetLabel": "Amazon Keyspaces (for Apache Cassandra)"
+      "targetLabel": "cassandra.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1012,7 +1087,7 @@
       },
       "status": "covered",
       "targetId": "chime",
-      "targetLabel": "Amazon Chime SDK"
+      "targetLabel": "chimevoiceconnector.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1037,7 +1112,7 @@
       },
       "status": "covered",
       "targetId": "cleanrooms-ml",
-      "targetLabel": "AWS Clean Rooms ML"
+      "targetLabel": "cleanrooms-ml.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1062,7 +1137,7 @@
       },
       "status": "covered",
       "targetId": "codeartifact",
-      "targetLabel": "AWS CodeArtifact"
+      "targetLabel": "codeartifact.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1078,7 +1153,7 @@
       ],
       "extractorId": "recipe:kms-viaservice-supported-services",
       "featureId": "kms/condition-keys",
-      "id": "kms-condition-keys-service-codeguru-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "id": "kms-condition-keys-service-codeguru-reviewer-kms-viaservice-recipe-kms-viaservice-supported-services",
       "method": "deterministic",
       "scope": {
         "axis": "conditionKey",
@@ -1086,8 +1161,8 @@
         "targetId": "kms:ViaService"
       },
       "status": "covered",
-      "targetId": "codeguru",
-      "targetLabel": "Amazon CodeGuru Reviewer"
+      "targetId": "codeguru-reviewer",
+      "targetLabel": "codeguru-reviewer.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1112,7 +1187,7 @@
       },
       "status": "covered",
       "targetId": "comprehend",
-      "targetLabel": "Amazon Comprehend"
+      "targetLabel": "comprehend.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1137,7 +1212,32 @@
       },
       "status": "covered",
       "targetId": "connect",
-      "targetLabel": "Amazon Connect Customer"
+      "targetLabel": "connect.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon ElastiCache | Include both ViaService names in the condition key value:+  `elasticache.{{AWS_region}}.amazonaws.com` <br />+  `dax.{{AWS_region}}.amazonaws.com`  |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-dax-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "dax",
+      "targetLabel": "dax.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1162,7 +1262,32 @@
       },
       "status": "covered",
       "targetId": "dms",
-      "targetLabel": "AWS Database Migration Service (AWS DMS)"
+      "targetLabel": "dms.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon DocumentDB | docdb-elastic.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-docdb-elastic-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "docdb-elastic",
+      "targetLabel": "docdb-elastic.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1187,7 +1312,7 @@
       },
       "status": "covered",
       "targetId": "ds",
-      "targetLabel": "AWS Directory Service"
+      "targetLabel": "directoryservice.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1212,7 +1337,57 @@
       },
       "status": "covered",
       "targetId": "dynamodb",
-      "targetLabel": "Amazon DynamoDB"
+      "targetLabel": "dynamodb.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Elastic Block Store (Amazon EBS) | ec2.{{AWS\\_region}}.amazonaws.com (EBS only) |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-ec2-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "ec2",
+      "targetLabel": "ec2.{{AWS_region}}.amazonaws.com (EBS only)"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Elastic Container Registry (Amazon ECR) | ecr.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-ecr-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "ecr",
+      "targetLabel": "ecr.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1237,7 +1412,32 @@
       },
       "status": "covered",
       "targetId": "elasticache",
-      "targetLabel": "Amazon ElastiCache"
+      "targetLabel": "elasticache.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Elastic File System (Amazon EFS) | elasticfilesystem.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-elasticfilesystem-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "elasticfilesystem",
+      "targetLabel": "elasticfilesystem.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1262,7 +1462,7 @@
       },
       "status": "covered",
       "targetId": "entityresolution",
-      "targetLabel": "AWS Entity Resolution"
+      "targetLabel": "entityresolution.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1287,7 +1487,7 @@
       },
       "status": "covered",
       "targetId": "es",
-      "targetLabel": "Amazon OpenSearch Service"
+      "targetLabel": "es.{{AWS_region}}.amazonaws.com, aoss.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1312,7 +1512,7 @@
       },
       "status": "covered",
       "targetId": "events",
-      "targetLabel": "Amazon EventBridge"
+      "targetLabel": "events.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1337,7 +1537,7 @@
       },
       "status": "covered",
       "targetId": "finspace",
-      "targetLabel": "Amazon FinSpace"
+      "targetLabel": "finspace.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1362,7 +1562,7 @@
       },
       "status": "covered",
       "targetId": "firehose",
-      "targetLabel": "Amazon Data Firehose"
+      "targetLabel": "firehose.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1387,7 +1587,7 @@
       },
       "status": "covered",
       "targetId": "forecast",
-      "targetLabel": "Amazon Forecast"
+      "targetLabel": "forecast.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1412,7 +1612,7 @@
       },
       "status": "covered",
       "targetId": "fsx",
-      "targetLabel": "Amazon FSx"
+      "targetLabel": "fsx.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1437,7 +1637,7 @@
       },
       "status": "covered",
       "targetId": "geo",
-      "targetLabel": "Amazon Location Service"
+      "targetLabel": "geo.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1462,7 +1662,7 @@
       },
       "status": "covered",
       "targetId": "glue",
-      "targetLabel": "AWS Glue"
+      "targetLabel": "glue.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1487,7 +1687,7 @@
       },
       "status": "covered",
       "targetId": "groundstation",
-      "targetLabel": "AWS Ground Station"
+      "targetLabel": "groundstation.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1512,7 +1712,7 @@
       },
       "status": "covered",
       "targetId": "guardduty",
-      "targetLabel": "Amazon GuardDuty"
+      "targetLabel": "malware-protection.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1537,7 +1737,32 @@
       },
       "status": "covered",
       "targetId": "healthlake",
-      "targetLabel": "AWS HealthLake"
+      "targetLabel": "healthlake.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| AWS Snowball Edge | importexport.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-importexport-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "importexport",
+      "targetLabel": "importexport.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1562,7 +1787,32 @@
       },
       "status": "covered",
       "targetId": "iotsitewise",
-      "targetLabel": "AWS IoT SiteWise"
+      "targetLabel": "iotsitewise.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Managed Streaming for Apache Kafka (Amazon MSK) | kafka.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-kafka-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "kafka",
+      "targetLabel": "kafka.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1587,7 +1837,7 @@
       },
       "status": "covered",
       "targetId": "kendra",
-      "targetLabel": "Amazon Kendra"
+      "targetLabel": "kendra.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1612,7 +1862,7 @@
       },
       "status": "covered",
       "targetId": "kinesis",
-      "targetLabel": "Amazon Kinesis"
+      "targetLabel": "kinesis.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1637,7 +1887,7 @@
       },
       "status": "covered",
       "targetId": "kinesisvideo",
-      "targetLabel": "Amazon Kinesis Video Streams"
+      "targetLabel": "kinesisvideo.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1662,7 +1912,7 @@
       },
       "status": "covered",
       "targetId": "lambda",
-      "targetLabel": "AWS Lambda"
+      "targetLabel": "lambda.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1687,7 +1937,7 @@
       },
       "status": "covered",
       "targetId": "lex",
-      "targetLabel": "Amazon Lex"
+      "targetLabel": "lex.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1712,7 +1962,7 @@
       },
       "status": "covered",
       "targetId": "license-manager",
-      "targetLabel": "AWS License Manager"
+      "targetLabel": "license-manager.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1737,7 +1987,57 @@
       },
       "status": "covered",
       "targetId": "lookoutequipment",
-      "targetLabel": "Amazon Lookout for Equipment"
+      "targetLabel": "lookoutequipment.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Lookout for Metrics | lookoutmetrics.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-lookoutmetrics-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "lookoutmetrics",
+      "targetLabel": "lookoutmetrics.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Lookout for Vision | lookoutvision.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-lookoutvision-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "lookoutvision",
+      "targetLabel": "lookoutvision.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1762,7 +2062,7 @@
       },
       "status": "covered",
       "targetId": "m2",
-      "targetLabel": "AWS Mainframe Modernization"
+      "targetLabel": "m2.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1787,7 +2087,7 @@
       },
       "status": "covered",
       "targetId": "macie2",
-      "targetLabel": "Amazon Macie"
+      "targetLabel": "macie.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1812,7 +2112,7 @@
       },
       "status": "covered",
       "targetId": "managedblockchain",
-      "targetLabel": "Amazon Managed Blockchain"
+      "targetLabel": "managedblockchain.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1837,7 +2137,7 @@
       },
       "status": "covered",
       "targetId": "mediatailor",
-      "targetLabel": "AWS Elemental MediaTailor"
+      "targetLabel": "mediatailor.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1862,7 +2162,7 @@
       },
       "status": "covered",
       "targetId": "memorydb",
-      "targetLabel": "Amazon MemoryDB"
+      "targetLabel": "memorydb.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1887,7 +2187,7 @@
       },
       "status": "covered",
       "targetId": "mgn",
-      "targetLabel": "AWS Transform MGN"
+      "targetLabel": "mgn.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1912,7 +2212,7 @@
       },
       "status": "covered",
       "targetId": "monitron",
-      "targetLabel": "Amazon Monitron"
+      "targetLabel": "monitron.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1937,7 +2237,7 @@
       },
       "status": "covered",
       "targetId": "mq",
-      "targetLabel": "Amazon MQ"
+      "targetLabel": "mq.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1962,7 +2262,7 @@
       },
       "status": "covered",
       "targetId": "nimble",
-      "targetLabel": "Amazon Nimble Studio"
+      "targetLabel": "nimble.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -1987,132 +2287,7 @@
       },
       "status": "covered",
       "targetId": "omics",
-      "targetLabel": "AWS HealthOmics"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
-          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
-          "quote": "| Amazon Aurora | rds.{{AWS\\_region}}.amazonaws.com |",
-          "retrievedAt": "2026-09-01T05:00:22.444Z",
-          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
-        }
-      ],
-      "extractorId": "recipe:kms-viaservice-supported-services",
-      "featureId": "kms/condition-keys",
-      "id": "kms-condition-keys-service-product-amazon-aurora-kms-viaservice-recipe-kms-viaservice-supported-services",
-      "method": "deterministic",
-      "scope": {
-        "axis": "conditionKey",
-        "label": "kms:ViaService",
-        "targetId": "kms:ViaService"
-      },
-      "status": "covered",
-      "targetId": "product:amazon-aurora",
-      "targetLabel": "Amazon Aurora"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
-          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
-          "quote": "| Amazon DocumentDB | docdb-elastic.{{AWS\\_region}}.amazonaws.com |",
-          "retrievedAt": "2026-09-01T05:00:22.444Z",
-          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
-        }
-      ],
-      "extractorId": "recipe:kms-viaservice-supported-services",
-      "featureId": "kms/condition-keys",
-      "id": "kms-condition-keys-service-product-amazon-documentdb-kms-viaservice-recipe-kms-viaservice-supported-services",
-      "method": "deterministic",
-      "scope": {
-        "axis": "conditionKey",
-        "label": "kms:ViaService",
-        "targetId": "kms:ViaService"
-      },
-      "status": "covered",
-      "targetId": "product:amazon-documentdb",
-      "targetLabel": "Amazon DocumentDB"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
-          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
-          "quote": "| Amazon Lookout for Metrics | lookoutmetrics.{{AWS\\_region}}.amazonaws.com |",
-          "retrievedAt": "2026-09-01T05:00:22.444Z",
-          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
-        }
-      ],
-      "extractorId": "recipe:kms-viaservice-supported-services",
-      "featureId": "kms/condition-keys",
-      "id": "kms-condition-keys-service-product-amazon-lookout-for-metrics-kms-viaservice-recipe-kms-viaservice-supported-services",
-      "method": "deterministic",
-      "scope": {
-        "axis": "conditionKey",
-        "label": "kms:ViaService",
-        "targetId": "kms:ViaService"
-      },
-      "status": "covered",
-      "targetId": "product:amazon-lookout-for-metrics",
-      "targetLabel": "Amazon Lookout for Metrics"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
-          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
-          "quote": "| Amazon Lookout for Vision | lookoutvision.{{AWS\\_region}}.amazonaws.com |",
-          "retrievedAt": "2026-09-01T05:00:22.444Z",
-          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
-        }
-      ],
-      "extractorId": "recipe:kms-viaservice-supported-services",
-      "featureId": "kms/condition-keys",
-      "id": "kms-condition-keys-service-product-amazon-lookout-for-vision-kms-viaservice-recipe-kms-viaservice-supported-services",
-      "method": "deterministic",
-      "scope": {
-        "axis": "conditionKey",
-        "label": "kms:ViaService",
-        "targetId": "kms:ViaService"
-      },
-      "status": "covered",
-      "targetId": "product:amazon-lookout-for-vision",
-      "targetLabel": "Amazon Lookout for Vision"
-    },
-    {
-      "axis": "service",
-      "confidence": 0.95,
-      "evidence": [
-        {
-          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
-          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
-          "quote": "| Amazon Managed Workflows for Apache Airflow (MWAA) | airflow.{{AWS\\_region}}.amazonaws.com |",
-          "retrievedAt": "2026-09-01T05:00:22.444Z",
-          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
-        }
-      ],
-      "extractorId": "recipe:kms-viaservice-supported-services",
-      "featureId": "kms/condition-keys",
-      "id": "kms-condition-keys-service-product-amazon-managed-workflows-for-apache-airflow-mwaa-kms-viaservice-recipe-kms-viaservice",
-      "method": "deterministic",
-      "scope": {
-        "axis": "conditionKey",
-        "label": "kms:ViaService",
-        "targetId": "kms:ViaService"
-      },
-      "status": "covered",
-      "targetId": "product:amazon-managed-workflows-for-apache-airflow-mwaa",
-      "targetLabel": "Amazon Managed Workflows for Apache Airflow (MWAA)"
+      "targetLabel": "omics.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2137,7 +2312,32 @@
       },
       "status": "covered",
       "targetId": "product:aws-deepracer",
-      "targetLabel": "AWS DeepRacer"
+      "targetLabel": "deepracer.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Connect Customer Customer Profiles | profile.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-profile-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "profile",
+      "targetLabel": "profile.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2162,7 +2362,7 @@
       },
       "status": "covered",
       "targetId": "proton",
-      "targetLabel": "AWS Proton"
+      "targetLabel": "proton.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2171,7 +2371,32 @@
         {
           "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
           "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
-          "quote": "| Amazon Neptune | rds.{{AWS\\_region}}.amazonaws.com |",
+          "quote": "| Amazon Quantum Ledger Database (Amazon QLDB) | qldb.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-qldb-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "qldb",
+      "targetLabel": "qldb.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Aurora | rds.{{AWS\\_region}}.amazonaws.com |",
           "retrievedAt": "2026-09-01T05:00:22.444Z",
           "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
         }
@@ -2187,7 +2412,7 @@
       },
       "status": "covered",
       "targetId": "rds",
-      "targetLabel": "Amazon Neptune"
+      "targetLabel": "rds.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2212,7 +2437,7 @@
       },
       "status": "covered",
       "targetId": "redshift",
-      "targetLabel": "Amazon Redshift"
+      "targetLabel": "redshift.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2237,7 +2462,7 @@
       },
       "status": "covered",
       "targetId": "redshift-serverless",
-      "targetLabel": "Amazon Redshift Serverless"
+      "targetLabel": "redshift-serverless.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2262,7 +2487,32 @@
       },
       "status": "covered",
       "targetId": "rekognition",
-      "targetLabel": "Amazon Rekognition"
+      "targetLabel": "rekognition.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Simple Storage Service (Amazon S3) | s3.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-s3-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "s3",
+      "targetLabel": "s3.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2287,7 +2537,7 @@
       },
       "status": "covered",
       "targetId": "s3tables",
-      "targetLabel": "Amazon S3 Tables"
+      "targetLabel": "s3tables.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2312,7 +2562,7 @@
       },
       "status": "covered",
       "targetId": "sagemaker",
-      "targetLabel": "Amazon SageMaker AI"
+      "targetLabel": "sagemaker.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2337,7 +2587,7 @@
       },
       "status": "covered",
       "targetId": "secretsmanager",
-      "targetLabel": "AWS Secrets Manager"
+      "targetLabel": "secretsmanager.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2362,7 +2612,7 @@
       },
       "status": "covered",
       "targetId": "securitylake",
-      "targetLabel": "Amazon Security Lake"
+      "targetLabel": "securitylake.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2371,14 +2621,14 @@
         {
           "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
           "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
-          "quote": "| AWS Snowball Edge | importexport.{{AWS\\_region}}.amazonaws.com |",
+          "quote": "| Amazon Simple Email Service (Amazon SES) | ses.{{AWS\\_region}}.amazonaws.com |",
           "retrievedAt": "2026-09-01T05:00:22.444Z",
           "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
         }
       ],
       "extractorId": "recipe:kms-viaservice-supported-services",
       "featureId": "kms/condition-keys",
-      "id": "kms-condition-keys-service-snowball-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "id": "kms-condition-keys-service-ses-kms-viaservice-recipe-kms-viaservice-supported-services",
       "method": "deterministic",
       "scope": {
         "axis": "conditionKey",
@@ -2386,8 +2636,108 @@
         "targetId": "kms:ViaService"
       },
       "status": "covered",
-      "targetId": "snowball",
-      "targetLabel": "AWS Snowball Edge"
+      "targetId": "ses",
+      "targetLabel": "ses.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Simple Notification Service (Amazon SNS) | sns.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-sns-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "sns",
+      "targetLabel": "sns.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Redshift query editor V2 | sqlworkbench.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-sqlworkbench-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "sqlworkbench",
+      "targetLabel": "sqlworkbench.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Simple Queue Service (Amazon SQS) | sqs.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-sqs-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "sqs",
+      "targetLabel": "sqs.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon EC2 Systems Manager (SSM) | ssm.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-ssm-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "ssm",
+      "targetLabel": "ssm.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2412,7 +2762,7 @@
       },
       "status": "covered",
       "targetId": "ssm-contacts",
-      "targetLabel": "AWS Systems Manager Incident Manager Contacts"
+      "targetLabel": "ssm-contacts.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2437,7 +2787,7 @@
       },
       "status": "covered",
       "targetId": "ssm-incidents",
-      "targetLabel": "AWS Systems Manager Incident Manager"
+      "targetLabel": "ssm-incidents.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2462,7 +2812,7 @@
       },
       "status": "covered",
       "targetId": "states",
-      "targetLabel": "AWS Step Functions"
+      "targetLabel": "states.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2487,7 +2837,7 @@
       },
       "status": "covered",
       "targetId": "storagegateway",
-      "targetLabel": "AWS Storage Gateway"
+      "targetLabel": "storagegateway.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2512,7 +2862,7 @@
       },
       "status": "covered",
       "targetId": "thinclient",
-      "targetLabel": "Amazon WorkSpaces Thin Client"
+      "targetLabel": "thinclient.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2537,7 +2887,7 @@
       },
       "status": "covered",
       "targetId": "timestream",
-      "targetLabel": "Amazon Timestream"
+      "targetLabel": "timestream.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2562,7 +2912,7 @@
       },
       "status": "covered",
       "targetId": "translate",
-      "targetLabel": "Amazon Translate"
+      "targetLabel": "translate.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2587,7 +2937,32 @@
       },
       "status": "covered",
       "targetId": "verified-access",
-      "targetLabel": "AWS Verified Access"
+      "targetLabel": "verified-access.{{AWS_region}}.amazonaws.com"
+    },
+    {
+      "axis": "service",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "9d3749b26fb4b549cde5b4267ceacc2e7fa38a0f6ddffa7124045ba31f27fe66",
+          "locator": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md :: kms:ViaService",
+          "quote": "| Amazon Q in Connect | wisdom.{{AWS\\_region}}.amazonaws.com |",
+          "retrievedAt": "2026-09-01T05:00:22.444Z",
+          "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md"
+        }
+      ],
+      "extractorId": "recipe:kms-viaservice-supported-services",
+      "featureId": "kms/condition-keys",
+      "id": "kms-condition-keys-service-wisdom-kms-viaservice-recipe-kms-viaservice-supported-services",
+      "method": "deterministic",
+      "scope": {
+        "axis": "conditionKey",
+        "label": "kms:ViaService",
+        "targetId": "kms:ViaService"
+      },
+      "status": "covered",
+      "targetId": "wisdom",
+      "targetLabel": "wisdom.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2612,7 +2987,7 @@
       },
       "status": "covered",
       "targetId": "workmail",
-      "targetLabel": "Amazon WorkMail"
+      "targetLabel": "workmail.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2637,7 +3012,7 @@
       },
       "status": "covered",
       "targetId": "workspaces",
-      "targetLabel": "Amazon WorkSpaces"
+      "targetLabel": "workspaces.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2662,7 +3037,7 @@
       },
       "status": "covered",
       "targetId": "workspaces-web",
-      "targetLabel": "Amazon WorkSpaces Web"
+      "targetLabel": "workspaces-web.{{AWS_region}}.amazonaws.com"
     },
     {
       "axis": "service",
@@ -2687,11 +3062,11 @@
       },
       "status": "covered",
       "targetId": "xray",
-      "targetLabel": "AWS X-Ray"
+      "targetLabel": "xray.{{AWS_region}}.amazonaws.com"
     }
   ],
   "featureId": "kms/condition-keys",
-  "generatedAt": "2026-09-01T11:20:16.828Z",
+  "generatedAt": "2026-09-02T01:20:16.921Z",
   "serviceId": "kms",
   "unresolvedTargets": []
 }

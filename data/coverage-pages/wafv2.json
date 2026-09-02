@@ -4,7 +4,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.647Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.714Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -17,7 +17,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.647Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.714Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -30,7 +30,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.647Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.715Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -43,7 +43,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.647Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.715Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -56,7 +56,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.648Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.715Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -67,9 +67,13 @@
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-config-firewall-manager-findings.md"
     },
     {
+      "best": {
+        "waf-fraud-control-cognito-exclusion": 1,
+        "waf-managed-rule-group-names": 1
+      },
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.649Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.717Z",
       "lastResult": {
         "axes": [
           "managedRuleGroup",
@@ -124,7 +128,7 @@
       "source": "agent",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md",
       "verified": {
-        "at": "2026-09-02T00:19:23.598Z",
+        "at": "2026-09-02T01:20:21.170Z",
         "candidates": 0,
         "distinctTargets": 2,
         "readRatio": 1,
@@ -132,9 +136,12 @@
       }
     },
     {
+      "best": {
+        "waf-managed-rule-group-names": 1
+      },
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.649Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.719Z",
       "lastResult": {
         "axes": [
           "managedRuleGroup"
@@ -174,7 +181,7 @@
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md",
       "verified": {
-        "at": "2026-09-02T00:19:23.601Z",
+        "at": "2026-09-02T01:20:21.171Z",
         "candidates": 2,
         "distinctTargets": 1,
         "readRatio": 0.5,
@@ -182,9 +189,13 @@
       }
     },
     {
+      "best": {
+        "waf-fraud-control-cognito-exclusion": 1,
+        "waf-managed-rule-group-names": 1
+      },
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.651Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.719Z",
       "lastResult": {
         "axes": [
           "managedRuleGroup"
@@ -238,7 +249,7 @@
       "source": "agent",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md",
       "verified": {
-        "at": "2026-09-02T00:19:23.601Z",
+        "at": "2026-09-02T01:20:21.171Z",
         "candidates": 0,
         "distinctTargets": 1,
         "readRatio": 1,
@@ -246,9 +257,12 @@
       }
     },
     {
+      "best": {
+        "waf-managed-rule-group-names": 3
+      },
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.652Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.720Z",
       "lastResult": {
         "axes": [
           "managedRuleGroup"
@@ -288,7 +302,7 @@
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-baseline.md",
       "verified": {
-        "at": "2026-09-02T00:19:23.599Z",
+        "at": "2026-09-02T01:20:21.170Z",
         "candidates": 0,
         "distinctTargets": 3,
         "readRatio": 1,
@@ -296,9 +310,12 @@
       }
     },
     {
+      "best": {
+        "waf-managed-rule-group-names": 1
+      },
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.655Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.724Z",
       "lastResult": {
         "axes": [
           "managedRuleGroup"
@@ -338,7 +355,7 @@
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-bot.md",
       "verified": {
-        "at": "2026-09-02T00:19:23.602Z",
+        "at": "2026-09-02T01:20:21.172Z",
         "candidates": 0,
         "distinctTargets": 1,
         "readRatio": 1,
@@ -348,7 +365,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.654Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.722Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -372,9 +389,12 @@
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-changelog.md"
     },
     {
+      "best": {
+        "waf-managed-rule-group-names": 2
+      },
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.655Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.725Z",
       "lastResult": {
         "axes": [
           "managedRuleGroup"
@@ -414,7 +434,7 @@
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-ip-rep.md",
       "verified": {
-        "at": "2026-09-02T00:19:23.600Z",
+        "at": "2026-09-02T01:20:21.171Z",
         "candidates": 0,
         "distinctTargets": 2,
         "readRatio": 1,
@@ -422,9 +442,12 @@
       }
     },
     {
+      "best": {
+        "waf-managed-rule-group-names": 6
+      },
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.656Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.724Z",
       "lastResult": {
         "axes": [
           "managedRuleGroup"
@@ -464,7 +487,7 @@
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-use-case.md",
       "verified": {
-        "at": "2026-09-02T00:19:23.603Z",
+        "at": "2026-09-02T01:20:21.172Z",
         "candidates": 0,
         "distinctTargets": 6,
         "readRatio": 1,
@@ -474,7 +497,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.656Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.725Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -487,7 +510,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.656Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.725Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -500,7 +523,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.656Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.725Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -513,7 +536,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.656Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.726Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -527,7 +550,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.657Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.726Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -540,7 +563,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.657Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.726Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -554,7 +577,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.658Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.726Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -567,7 +590,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.658Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.727Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -580,7 +603,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.658Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.728Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -593,7 +616,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.658Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.728Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -607,7 +630,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.658Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.727Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -621,7 +644,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.658Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.728Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -635,7 +658,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.659Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.728Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -649,7 +672,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.659Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.729Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -662,7 +685,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.659Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.729Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -675,7 +698,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.659Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.728Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -689,7 +712,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.659Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.728Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -703,7 +726,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.660Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.729Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -716,7 +739,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.660Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.729Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -729,7 +752,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.660Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.733Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -742,7 +765,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.663Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.733Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -755,7 +778,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.663Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.730Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -769,7 +792,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.664Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.734Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -782,7 +805,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:06.375Z",
+      "lastCheckedAt": "2026-09-02T01:20:05.933Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -793,7 +816,7 @@
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/classic-using-service-linked-roles.md",
       "verified": {
-        "at": "2026-09-02T00:19:23.598Z",
+        "at": "2026-09-02T01:20:21.169Z",
         "candidates": 16,
         "distinctTargets": 16,
         "readRatio": 1,
@@ -803,7 +826,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.664Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.734Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -816,7 +839,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.664Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.734Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -829,7 +852,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.664Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.735Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -842,7 +865,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.664Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.734Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -855,7 +878,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.665Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.735Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -868,7 +891,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.665Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.734Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -881,7 +904,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.665Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.735Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -894,7 +917,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.665Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.735Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -907,7 +930,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.665Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.735Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -920,7 +943,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.665Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.736Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -933,7 +956,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.667Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.738Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -946,7 +969,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.667Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.740Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -959,7 +982,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.667Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.736Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -972,7 +995,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.667Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.736Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -985,7 +1008,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.668Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.738Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -998,7 +1021,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.668Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.740Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1011,7 +1034,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.669Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.740Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1024,7 +1047,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.670Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.741Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1037,7 +1060,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.670Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.741Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1050,7 +1073,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.670Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.744Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1063,7 +1086,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.672Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.744Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1076,7 +1099,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.673Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.742Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1089,7 +1112,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.673Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.744Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1102,7 +1125,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.675Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.746Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1115,7 +1138,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.675Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.744Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1128,7 +1151,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.675Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.745Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1141,7 +1164,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.675Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.747Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1154,7 +1177,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.676Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.747Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1167,7 +1190,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.676Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.748Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1180,7 +1203,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.676Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.748Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1193,7 +1216,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.677Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.749Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1206,7 +1229,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.677Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.748Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1219,7 +1242,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.677Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.749Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1232,7 +1255,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.678Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.751Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1245,7 +1268,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.678Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.750Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1258,7 +1281,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.678Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.750Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1271,7 +1294,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.678Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.751Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1284,7 +1307,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.679Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.752Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1297,7 +1320,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.679Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.752Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1310,7 +1333,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.679Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.752Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1323,7 +1346,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.679Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.752Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1336,7 +1359,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.679Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.752Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1349,7 +1372,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.680Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.753Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1362,7 +1385,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.680Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.753Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1375,7 +1398,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.680Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.753Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1388,7 +1411,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.680Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.753Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1401,7 +1424,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.680Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.753Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1414,7 +1437,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.681Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.754Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1427,7 +1450,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.681Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.754Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1440,7 +1463,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.681Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.754Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1453,7 +1476,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.681Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.754Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1466,7 +1489,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.681Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.754Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1479,7 +1502,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.681Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.755Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1492,7 +1515,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.681Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.755Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1505,7 +1528,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.681Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.755Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1518,7 +1541,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.681Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.755Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1531,7 +1554,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.681Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.755Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1544,7 +1567,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.682Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.756Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1557,7 +1580,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.685Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.759Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1570,7 +1593,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.686Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.756Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1583,7 +1606,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.686Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.756Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1596,7 +1619,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.686Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.756Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1609,7 +1632,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.686Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.759Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1622,7 +1645,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:06.375Z",
+      "lastCheckedAt": "2026-09-02T01:20:05.933Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1633,7 +1656,7 @@
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md",
       "verified": {
-        "at": "2026-09-02T00:19:23.593Z",
+        "at": "2026-09-02T01:20:21.168Z",
         "candidates": 0,
         "distinctTargets": 7,
         "readRatio": 1,
@@ -1643,7 +1666,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.686Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.760Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1656,7 +1679,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.687Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.761Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1669,7 +1692,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.686Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.760Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1682,7 +1705,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.688Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.762Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1695,7 +1718,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.688Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.762Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1708,7 +1731,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.688Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.763Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1721,7 +1744,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.689Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.763Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1734,7 +1757,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.689Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.763Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1747,7 +1770,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.689Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.763Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1760,7 +1783,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.689Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.763Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1773,7 +1796,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.689Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.764Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1786,7 +1809,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.689Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.764Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1799,7 +1822,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.689Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.764Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1812,7 +1835,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.690Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.764Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1825,7 +1848,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.690Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.764Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1838,7 +1861,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.690Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.764Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1851,7 +1874,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.690Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.764Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1864,7 +1887,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.690Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.765Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1877,7 +1900,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.690Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.765Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1890,7 +1913,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.690Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.765Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1904,7 +1927,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.690Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.765Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1917,7 +1940,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.690Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.765Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1930,7 +1953,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.690Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.765Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1943,7 +1966,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.691Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.765Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1956,7 +1979,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.691Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.766Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1969,7 +1992,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.691Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.766Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1982,7 +2005,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.691Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.766Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -1995,7 +2018,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.691Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.766Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2008,7 +2031,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.691Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.766Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2021,7 +2044,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.691Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.766Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2034,7 +2057,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.692Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.766Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2047,7 +2070,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.692Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.766Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2060,7 +2083,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.692Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.767Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2073,7 +2096,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.692Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.767Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2086,7 +2109,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.692Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.768Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2099,7 +2122,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.692Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.768Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2112,7 +2135,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.692Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.768Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2125,7 +2148,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.693Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.768Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2138,7 +2161,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.693Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.768Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2151,7 +2174,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.693Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.768Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2165,7 +2188,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.693Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.768Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2178,7 +2201,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.693Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.768Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2191,7 +2214,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.694Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.769Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2204,7 +2227,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.694Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.773Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2217,7 +2240,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.696Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.771Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2230,7 +2253,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.696Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.773Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2244,7 +2267,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.696Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.772Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2257,7 +2280,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.697Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.772Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2270,7 +2293,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.697Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.773Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2283,7 +2306,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.697Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.774Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2296,7 +2319,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.698Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.774Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2309,7 +2332,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.698Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.774Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2322,7 +2345,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.698Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.775Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2335,7 +2358,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.698Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.775Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2348,7 +2371,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.698Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.775Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2361,7 +2384,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.698Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.775Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2374,7 +2397,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.699Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.775Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2387,7 +2410,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.699Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.776Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2400,7 +2423,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.699Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.776Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2413,7 +2436,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.699Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.776Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2426,7 +2449,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.699Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.776Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2439,7 +2462,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.699Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.776Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2452,7 +2475,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.700Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.777Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2465,7 +2488,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.705Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.782Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2478,7 +2501,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.705Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.782Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2492,7 +2515,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.705Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.783Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2505,7 +2528,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.706Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.782Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2518,7 +2541,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.706Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.783Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2531,7 +2554,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.706Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.783Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2544,7 +2567,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.706Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.783Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2558,7 +2581,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.706Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.783Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2571,7 +2594,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.708Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.785Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2584,7 +2607,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.708Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.785Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2597,7 +2620,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.708Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.786Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2610,7 +2633,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.708Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.788Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2623,7 +2646,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.710Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.787Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2636,7 +2659,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.710Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.788Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2649,7 +2672,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.710Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.788Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2662,7 +2685,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.710Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.788Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2676,7 +2699,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.711Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.789Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2689,7 +2712,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.710Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.788Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2702,7 +2725,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.711Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.789Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2715,7 +2738,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.711Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.790Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2728,7 +2751,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.712Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.789Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2741,7 +2764,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.712Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.792Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2754,7 +2777,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.713Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.791Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2767,7 +2790,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.713Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.791Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2780,7 +2803,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.713Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.792Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2793,7 +2816,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.713Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.792Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2806,7 +2829,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.714Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.793Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2819,7 +2842,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.714Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.792Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2832,7 +2855,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.714Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.793Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2845,7 +2868,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.714Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.793Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2858,7 +2881,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.714Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.793Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2871,7 +2894,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.714Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.793Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2884,7 +2907,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.715Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.794Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2897,7 +2920,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.715Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.794Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2910,7 +2933,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.716Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.794Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2923,7 +2946,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.716Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.794Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2936,7 +2959,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.716Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.795Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2949,7 +2972,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.716Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.795Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2962,7 +2985,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.716Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.795Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2975,7 +2998,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.716Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.795Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -2988,7 +3011,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.716Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.795Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3001,7 +3024,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.716Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.795Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3014,7 +3037,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.716Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.796Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3027,7 +3050,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.717Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.799Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3040,7 +3063,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:06.375Z",
+      "lastCheckedAt": "2026-09-02T01:20:05.934Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3051,7 +3074,7 @@
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md",
       "verified": {
-        "at": "2026-09-02T00:19:23.594Z",
+        "at": "2026-09-02T01:20:21.168Z",
         "candidates": 14,
         "distinctTargets": 14,
         "readRatio": 1,
@@ -3061,7 +3084,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.720Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.799Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3074,7 +3097,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.720Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.799Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3088,7 +3111,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.720Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.800Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3101,7 +3124,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.720Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.800Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3114,7 +3137,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.720Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.801Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3127,7 +3150,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.721Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.800Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3140,7 +3163,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.721Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.801Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3153,7 +3176,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.721Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.801Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3166,7 +3189,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.723Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.802Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3179,7 +3202,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.723Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.803Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3192,7 +3215,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.723Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.802Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3205,7 +3228,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.723Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.803Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3218,7 +3241,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.723Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.803Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3232,7 +3255,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.723Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.803Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3246,7 +3269,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.724Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.804Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3259,7 +3282,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.724Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.804Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3272,7 +3295,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.724Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.804Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3285,7 +3308,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.724Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.804Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3298,7 +3321,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.725Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.804Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3311,7 +3334,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.727Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.807Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3324,7 +3347,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.727Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.808Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3338,7 +3361,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.727Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.808Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3351,7 +3374,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.728Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.808Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3364,7 +3387,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.728Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.809Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3377,7 +3400,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.729Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.811Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3390,7 +3413,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.729Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.808Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3404,7 +3427,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.730Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.810Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3417,7 +3440,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.731Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.811Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3430,7 +3453,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.731Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.812Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3443,7 +3466,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.731Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.812Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3456,7 +3479,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.731Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.812Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3470,7 +3493,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.731Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.812Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3483,7 +3506,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.732Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.814Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3496,7 +3519,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.733Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.813Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3509,7 +3532,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.733Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.813Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3522,7 +3545,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.733Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.814Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3535,7 +3558,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.733Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.814Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3548,7 +3571,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.733Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.814Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3561,7 +3584,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.733Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.815Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3574,7 +3597,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.733Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.815Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3587,7 +3610,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.734Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.815Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3600,7 +3623,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.734Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.815Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3613,7 +3636,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.734Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.816Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3626,7 +3649,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.737Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.819Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3639,7 +3662,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.737Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.816Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3653,7 +3676,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.738Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.816Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3666,7 +3689,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.738Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.820Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3679,7 +3702,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.738Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.820Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3692,7 +3715,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.738Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.820Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3706,7 +3729,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.738Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.820Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3719,7 +3742,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.738Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.820Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3732,7 +3755,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.738Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.820Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3745,7 +3768,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.739Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.821Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3758,7 +3781,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.739Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.821Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3771,7 +3794,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.739Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.821Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3784,7 +3807,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.739Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.821Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3797,7 +3820,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.739Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.821Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3810,7 +3833,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.739Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.821Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3823,7 +3846,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.740Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.822Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3836,7 +3859,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.740Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.822Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3849,7 +3872,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.740Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.822Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3862,7 +3885,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.740Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.822Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3875,7 +3898,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.740Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.822Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3888,7 +3911,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.740Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.823Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3901,7 +3924,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.741Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.825Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3914,7 +3937,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.742Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.824Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3927,7 +3950,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.742Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.823Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3940,7 +3963,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.742Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.825Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3953,7 +3976,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.742Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.823Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3966,7 +3989,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.742Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.825Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3979,7 +4002,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.743Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.825Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -3992,7 +4015,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.743Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.825Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4006,7 +4029,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.743Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.825Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4019,7 +4042,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.743Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.826Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4032,7 +4055,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.743Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.826Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4045,7 +4068,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.743Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.826Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4058,7 +4081,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.743Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.826Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4071,7 +4094,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.743Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.826Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4084,7 +4107,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.744Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.827Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4097,7 +4120,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.744Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.827Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4110,7 +4133,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.745Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.828Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4123,7 +4146,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.745Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.829Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4136,7 +4159,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.745Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.828Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4149,7 +4172,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.745Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.827Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4162,7 +4185,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.745Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.828Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4175,7 +4198,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.745Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.828Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4188,7 +4211,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.746Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.829Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4201,7 +4224,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.746Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.828Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4214,7 +4237,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.747Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.830Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4227,7 +4250,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.748Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.830Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4240,7 +4263,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.747Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.831Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4253,7 +4276,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.748Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.831Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4266,7 +4289,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.748Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.831Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4279,7 +4302,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.748Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.831Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4292,7 +4315,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.748Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.831Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4305,7 +4328,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.748Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.831Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4318,7 +4341,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.748Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.831Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4331,7 +4354,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.748Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.831Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4344,7 +4367,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.749Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.831Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4357,7 +4380,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.748Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.831Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4370,7 +4393,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.749Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.833Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4383,7 +4406,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.749Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.833Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4396,7 +4419,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.749Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.833Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4409,7 +4432,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.750Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.833Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4422,7 +4445,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.750Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.833Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4435,7 +4458,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.750Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.833Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4448,7 +4471,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.750Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.834Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4461,7 +4484,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.750Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.834Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4474,7 +4497,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.750Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.834Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4487,7 +4510,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.750Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.834Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4500,7 +4523,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.750Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.834Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4513,7 +4536,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.750Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.834Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4526,7 +4549,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.750Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.834Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4539,7 +4562,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.750Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.834Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4552,7 +4575,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.752Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.836Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4565,7 +4588,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.752Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.836Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4578,7 +4601,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.752Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.836Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4591,7 +4614,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.752Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.837Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4604,7 +4627,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.753Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.836Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4617,7 +4640,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.753Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.837Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4630,7 +4653,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.753Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.837Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4643,7 +4666,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.753Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.837Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4656,7 +4679,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.753Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.837Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4670,7 +4693,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.754Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.838Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4683,7 +4706,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.754Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.838Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4696,7 +4719,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.754Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.838Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4709,7 +4732,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.754Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.838Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4722,7 +4745,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.754Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.838Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4735,7 +4758,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.754Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.839Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4748,7 +4771,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.756Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.840Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4761,7 +4784,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.756Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.840Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4774,7 +4797,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.756Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.841Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4787,7 +4810,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.756Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.841Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4801,7 +4824,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.756Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.841Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4815,7 +4838,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.756Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.841Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4829,7 +4852,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.756Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.841Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4843,7 +4866,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.756Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.841Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4857,7 +4880,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.756Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.841Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4871,7 +4894,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.757Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.841Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4884,7 +4907,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.757Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.841Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4897,7 +4920,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.758Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.842Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4910,7 +4933,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.757Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.842Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4923,7 +4946,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.758Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.842Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4936,7 +4959,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.758Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.842Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4949,7 +4972,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.758Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.842Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4962,7 +4985,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.758Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.843Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4975,7 +4998,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.758Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.843Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -4988,7 +5011,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.758Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.843Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5001,7 +5024,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.758Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.844Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5014,7 +5037,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.759Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.845Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5027,7 +5050,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.760Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.845Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5040,7 +5063,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.760Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.845Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5053,7 +5076,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.760Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.846Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5066,7 +5089,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.761Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.847Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5079,7 +5102,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.761Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.845Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5092,7 +5115,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.761Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.847Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5105,7 +5128,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.761Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.845Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5118,7 +5141,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.765Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.851Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5131,7 +5154,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.761Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.847Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5144,7 +5167,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.762Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.848Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5157,7 +5180,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.762Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.848Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5170,7 +5193,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.762Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.848Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5183,7 +5206,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.762Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.848Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5196,7 +5219,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.763Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.850Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5209,7 +5232,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.763Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.850Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5222,7 +5245,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.763Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.848Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5235,7 +5258,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.764Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.849Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5248,7 +5271,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.764Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.850Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5261,7 +5284,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.765Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.851Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5274,7 +5297,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.764Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.851Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5287,7 +5310,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.765Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.852Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5300,7 +5323,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.765Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.852Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5313,7 +5336,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.765Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.852Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5326,7 +5349,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.766Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.852Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5339,7 +5362,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.766Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.852Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5352,7 +5375,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.766Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.853Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5365,7 +5388,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.766Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.853Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5378,7 +5401,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.767Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.853Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5391,7 +5414,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.767Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.853Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5404,7 +5427,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.767Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.854Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5417,7 +5440,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.767Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.853Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5430,7 +5453,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.767Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.854Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5443,7 +5466,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.767Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.854Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5456,7 +5479,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.767Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.854Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5469,7 +5492,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.768Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.854Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5482,7 +5505,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.768Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.854Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5495,7 +5518,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.768Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.855Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5508,7 +5531,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.768Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.855Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5521,7 +5544,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.768Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.855Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5534,7 +5557,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.768Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.855Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5547,7 +5570,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.769Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.855Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5560,7 +5583,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.769Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.856Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5573,7 +5596,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.769Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.856Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5586,7 +5609,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.769Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.856Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5599,7 +5622,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.769Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.856Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5612,7 +5635,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.770Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.857Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5625,7 +5648,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.770Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.856Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5638,7 +5661,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.770Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.857Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5651,7 +5674,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.771Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.856Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5664,7 +5687,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.771Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.857Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5677,7 +5700,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.771Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.857Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5690,7 +5713,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.771Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.858Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5703,7 +5726,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.771Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.858Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5716,7 +5739,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.771Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.858Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5729,7 +5752,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.772Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.859Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5742,7 +5765,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.772Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.859Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5755,7 +5778,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.772Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.859Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5769,7 +5792,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.772Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.858Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5782,7 +5805,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.772Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.858Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5795,7 +5818,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.772Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.859Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5808,7 +5831,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.773Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.859Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5821,7 +5844,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.773Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.860Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5834,7 +5857,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.773Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.860Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5847,7 +5870,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.774Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.861Z",
       "lastResult": {
         "axes": [],
         "claims": 0,
@@ -5860,7 +5883,7 @@
     {
       "enabled": true,
       "firstSeen": "2026-09-01T05:14:46.145Z",
-      "lastCheckedAt": "2026-09-01T11:20:16.774Z",
+      "lastCheckedAt": "2026-09-02T01:20:16.860Z",
       "lastResult": {
         "axes": [],
         "claims": 0,

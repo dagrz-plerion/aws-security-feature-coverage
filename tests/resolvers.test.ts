@@ -163,3 +163,11 @@ describe("which feature a heading is about", () => {
     expect(isSubjectOf("eks protection", "s3 protection")).toBe(false);
   });
 });
+
+describe("one resource, three spellings", () => {
+  it("matches the CloudFormation, Resource Explorer and RAM forms to one id", () => {
+    expect(resolver.resolve("AWS::S3::Bucket", "resourceType")?.targetId).toBe("AWS::S3::Bucket");
+    expect(resolver.resolve("s3:Bucket", "resourceType")?.targetId).toBe("AWS::S3::Bucket");
+    expect(resolver.resolve("s3:bucket", "resourceType")?.targetId).toBe("AWS::S3::Bucket");
+  });
+});

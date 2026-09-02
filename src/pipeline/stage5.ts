@@ -353,9 +353,26 @@ export const stage5: Stage = {
         if (job.page.recipes?.length) {
           const failures: string[] = [];
           let droppedHere = 0;
+          const best = job.page.best ?? {};
           for (const recipe of job.page.recipes) {
             const outcome = runRecipe(recipe, body, pageTitle, resolver);
             droppedHere += outcome.dropped ?? 0;
+            // A recipe that once read 96 values and now reads 40 has regressed, even
+            // if requireMin was lowered to 30 in between.
+            const highWater = best[recipe.id] ?? 0;
+            if (outcome.claims.length < Math.floor(highWater * 0.9)) {
+              recipeFailures += 1;
+              failures.push(
+                `recipe ${recipe.id} read ${outcome.claims.length}, down from a best of ${highWater}`,
+              );
+              await recordGap({
+                kind: "parser",
+                subject: `regression:${recipe.id}`,
+                detail: `${recipe.id} produced ${outcome.claims.length} claims on ${url}, having previously produced ${highWater}. Something stopped resolving.`,
+                suggestedStage: "stage5-coverage",
+              });
+            }
+            best[recipe.id] = Math.max(highWater, outcome.claims.length);
             if (outcome.failure) {
               recipeFailures += 1;
               failures.push(outcome.failure);
@@ -367,8 +384,15 @@ export const stage5: Stage = {
               });
             }
             const pinned = recipe.featureId ?? job.page.featureId;
+            // A recipe pinned to a service-wide id must get one, even though stage 4
+            // pruned it: those records are created on demand here, so a full run
+            // would otherwise silently drop every claim the recipe reads.
+            const pinnedIsServiceWide = pinned === `${job.page.serviceId}/service-wide`;
             const namedByPage =
               (pinned ? job.features.find((f) => f.id === pinned) : undefined) ??
+              (pinnedIsServiceWide
+                ? serviceWideFeature(job.page.serviceId, serviceById, featuresByService, tierById.get(job.page.serviceId), true, "supported regions")
+                : undefined) ??
               bestFeatureFor([pageTitle], job.features);
             const feature =
               namedByPage ??
@@ -403,6 +427,7 @@ export const stage5: Stage = {
             claimsByFeature.set(feature.id, list);
           }
           attachedAny = blockClaims > 0;
+          job.page.best = best;
           recordResult(job.page, {
             claims: blockClaims,
             axes: [...seenAxes].sort(),

@@ -50,6 +50,13 @@ export async function validate(sampleSize = 250): Promise<{ violations: Violatio
   // A recipe pinned to a feature that does not exist loses every claim it reads, in
   // silence. Security Hub's 6,313 regional exclusions vanished this way.
   const pinnable = new Set(features.map((f) => f.id));
+  // A "<service>/service-wide" record is created on demand while reading, so it is a
+  // valid pin for any service that is in scope.
+  for (const adjudication of adjudications) {
+    if (adjudication.tier !== "not-security" || adjudication.candidate) {
+      pinnable.add(`${adjudication.serviceId}/service-wide`);
+    }
+  }
   const rules = await recipeRules();
   // A recipe with no pin has nowhere to put its claims and loses them silently.
   add(
