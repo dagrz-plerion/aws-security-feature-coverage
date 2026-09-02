@@ -405,18 +405,31 @@ const VIEWS = {
         const cov = detailFor("coverage:" + r.id);
         if (typeof cov === "string") return cov;
         if (!cov) return '<span class="muted">no detail</span>';
-        return '<section><h4>' + (cov.total || cov.claims.length) + ' claims' +
+        // Grouped by axis. Ungrouped, a feature with 38 condition keys and 92 services
+        // listed the condition keys and ran out of room before reaching the services.
+        const groups = {};
+        for (const c of cov.claims) (groups[c.axis] = groups[c.axis] || []).push(c);
+        const order = Object.keys(groups).sort((a, b) => groups[b].length - groups[a].length);
+        return '<section><h4>' + (cov.total || cov.claims.length) + ' claims across ' + order.length +
+          (order.length === 1 ? ' axis' : ' axes') +
           (cov.total && cov.total > cov.claims.length
-            ? ' <span class="muted">— showing ' + cov.claims.length + ' distinct targets; the rest repeat these under another Region or scope</span>' : "") +
-          "</h4>" +
-          cov.claims.slice(0, 60).map((c) =>
-            '<div style="margin-bottom:7px"><span class="chip">' + esc(c.axis) + '</span> <span class="mono">' + esc(c.targetId) + "</span> " +
-            '<span class="pill ' + (c.status === "covered" ? "deterministic" : "manual") + '">' + esc(c.status) + "</span>" +
-            (c.scope ? ' <span class="chip">in ' + esc(c.scope.targetId) + "</span>" : "") +
-            (c.qualifier ? ' <span class="muted">' + esc(c.qualifier) + "</span>" : "") +
-            (c.evidence && c.evidence[0] ? '<div class="quote">' + esc(c.evidence[0].quote) + "</div>" +
-              '<a href="' + esc(String(c.evidence[0].sourceUrl).replace(/\\.md$/, ".html")) + '" target="_blank" rel="noopener">source</a>' : "") + "</div>").join("") +
-          "</section>";
+            ? ' <span class="muted">\u2014 showing ' + cov.claims.length + ' distinct targets; the rest repeat these under another Region or scope</span>' : "") +
+          "</h4></section>" +
+          order.map(function (axis) {
+            const list = groups[axis];
+            const shown = list.slice(0, 40);
+            return '<section><h4>' + esc(axis) + " \u2014 " + list.length +
+              (isCatalogue(axis) ? " published" : " of " + (US[axis] || list.length)) + "</h4>" +
+              shown.map((c) =>
+                '<div style="margin-bottom:7px"><span class="mono">' + esc(c.targetId) + "</span> " +
+                '<span class="pill ' + (c.status === "covered" ? "deterministic" : "manual") + '">' + esc(c.status) + "</span>" +
+                (c.scope ? ' <span class="chip">in ' + esc(c.scope.targetId) + "</span>" : "") +
+                (c.qualifier ? ' <span class="muted">' + esc(c.qualifier) + "</span>" : "") +
+                (c.evidence && c.evidence[0] ? '<div class="quote">' + esc(c.evidence[0].quote) + "</div>" +
+                  '<a href="' + esc(String(c.evidence[0].sourceUrl).replace(/\\.md$/, ".html")) + '" target="_blank" rel="noopener">source</a>' : "") + "</div>").join("") +
+              (list.length > shown.length ? '<div class="muted">\u2026and ' + (list.length - shown.length) + " more on this axis</div>" : "") +
+              "</section>";
+          }).join("");
       });
   },
   sources() {

@@ -4,6 +4,7 @@ import { readAllJson, readJson } from "../core/store.js";
 import { verifyEvidence } from "../core/evidence.js";
 import { recordGap } from "../core/ops.js";
 import { runRecall } from "../cli/recall.js";
+import { SELF_DEPRECATING } from "../coverage/extractors.js";
 import { axisKinds, recipeRules } from "../core/seeds.js";
 import type { Stage, StageResult } from "../core/runner.js";
 import type {
@@ -127,6 +128,15 @@ export async function validate(sampleSize = 250): Promise<{ violations: Violatio
   add(
     "every axis in use declares whether it is a real universe or a catalogue",
     usedAxes.filter((a) => !declared[a]),
+  );
+
+  // AWS marks a withdrawn thing in its own name. Publishing it as covered says the
+  // opposite of the source.
+  add(
+    "nothing whose name says deprecated is recorded as covered",
+    claims
+      .filter((c) => c.status === "covered" && SELF_DEPRECATING.test(c.targetId))
+      .map((c) => `${c.featureId}: ${c.targetId}`),
   );
 
   add(

@@ -145,6 +145,9 @@ const PARTIAL = /^(partial|limited|preview|some|conditional)$/i;
  * AWS states what a feature does not reach as often as what it does, and those
  * statements are the most useful ones. They are phrased a dozen ways.
  */
+/** A name that declares itself withdrawn. */
+export const SELF_DEPRECATING = /\((deprecated|legacy|retired|removed|end of life|eol)\)|\b(deprecated|retired)$/i;
+
 export function statesAbsence(text: string): boolean {
   return /\b(not supported|aren'?t supported|isn'?t supported|are not available|aren'?t available|is not available|isn'?t available|not currently available|does ?n'?t support|do ?n'?t support|can'?t (be used|scan|generate)|unsupported|excluded from|no longer supported|no longer generated|retired|discontinued|deprecated)\b/i.test(
     text,

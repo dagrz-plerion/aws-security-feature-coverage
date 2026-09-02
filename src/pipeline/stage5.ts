@@ -1,6 +1,6 @@
 import path from "node:path";
 import { paths } from "../core/paths.js";
-import { pruneDir, readAllJson, readJson, writeJson } from "../core/store.js";
+import { listJson, pruneDir, readAllJson, readJson, writeJson } from "../core/store.js";
 import { cachedFetch, mapPool, storeSyntheticBody } from "../core/fetch.js";
 import { makeEvidence } from "../core/evidence.js";
 import { idToFilename, slug } from "../core/ids.js";
@@ -580,7 +580,20 @@ export const stage5: Stage = {
       written.add(filename);
       await writeJson(path.join(paths.coverage, filename), coverage);
     }
-    const pruned = await pruneDir(paths.coverage, written);
+    // A run that suddenly reads a fraction of what it read before is broken, not
+    // newly accurate. Refuse to prune on that basis: a bad build once wiped 37 rows.
+    const previous = (await listJson(paths.coverage)).length;
+    const collapsed = previous > 10 && written.size < previous * 0.7;
+    if (collapsed) {
+      await recordGap({
+        kind: "recall",
+        subject: "coverage collapse",
+        detail: `This run produced ${written.size} coverage records where the last produced ${previous}. Stale records were kept rather than pruned; investigate before trusting the output.`,
+        suggestedStage: "stage5-coverage",
+      });
+      ctx.log(`  ✗ produced ${written.size} records, down from ${previous}; keeping the old ones`);
+    }
+    const pruned = collapsed ? [] : await pruneDir(paths.coverage, written);
 
     const conflictFiles = new Set<string>();
     for (const conflict of conflicts) {

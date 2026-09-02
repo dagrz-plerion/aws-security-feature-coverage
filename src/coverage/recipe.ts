@@ -87,6 +87,9 @@ function extractTarget(value: string, recipe: Recipe): string | undefined {
 const YES = /^(yes|supported|available|✓|✔|all|full)$/i;
 const NO = /^(no|not supported|unsupported|unavailable|n\/a|-|—|none)$/i;
 
+/** A target whose own name says it is withdrawn cannot be recorded as covered. */
+const SELF_DEPRECATING = /\((deprecated|legacy|retired|removed|end of life|eol)\)|\b(deprecated|retired)$/i;
+
 const ABSENCE =
   /\b(not supported|aren'?t supported|isn'?t supported|are not available|aren'?t available|is not available|isn'?t available|not currently available|does ?n'?t (support|analy[sz]e|scan|include)|do ?n'?t (support|analy[sz]e|scan|include)|can'?t (be used|scan|generate)|unsupported|excluded|no longer|retired|only for|only in|only with)\b/i;
 
@@ -355,7 +358,10 @@ export function runRecipe(
       const key = `${targetId}|${scope?.targetId ?? ""}`;
       if (seen.has(key)) continue;
       seen.add(key);
-      const status = statusFor(recipe, entry.row, entry.headers ?? [], entry.quote);
+      let status = statusFor(recipe, entry.row, entry.headers ?? [], entry.quote);
+      // "kms:CustomerMasterKeySpec (deprecated)" was being published as covered. The
+      // name says otherwise, and the name is AWS's own wording.
+      if (status === "covered" && SELF_DEPRECATING.test(target)) status = "not-covered";
       // "unknown" means the status column was not on this table, so the row was not
       // the one the recipe is for. Inspector's OS recipe swept four unrelated tables
       // this way and scoped all of them to a scan method they say nothing about.

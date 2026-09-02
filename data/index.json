@@ -23727,8 +23727,8 @@
     {
       "axes": {
         "conditionKey": {
-          "covered": 38,
-          "notCovered": 0,
+          "covered": 36,
+          "notCovered": 2,
           "partial": 0,
           "scoped": 0,
           "total": 38,
@@ -45989,124 +45989,16 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-02T01:20:21.772Z",
+  "generatedAt": "2026-09-02T01:26:43.327Z",
   "manifest": {
     "fetch": {
-      "cacheHit": 12438,
-      "failed": 5,
+      "cacheHit": 0,
+      "failed": 0,
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-02T01:20:19.088Z",
+    "finishedAt": "2026-09-02T01:25:44.643Z",
     "stages": [
-      {
-        "counts": {
-          "actions": 21810,
-          "dataSources": 23,
-          "docGuides": 1236,
-          "iamPrefixedServices": 526,
-          "partitions": 8,
-          "products": 358,
-          "regions": 46,
-          "resourceTypes": 3134,
-          "services": 692
-        },
-        "finishedAt": "2026-09-02T01:19:58.527Z",
-        "id": "stage1-universes",
-        "notes": [
-          "1314 service reference resources joined to an existing resource type"
-        ],
-        "startedAt": "2026-09-02T01:19:19.437Z",
-        "status": "partial"
-      },
-      {
-        "counts": {
-          "failed": 29,
-          "guides": 1236,
-          "indexed": 1207,
-          "pages": 103576
-        },
-        "finishedAt": "2026-09-02T01:19:58.833Z",
-        "id": "stage2-doc-pages",
-        "startedAt": "2026-09-02T01:19:58.527Z",
-        "status": "partial"
-      },
-      {
-        "counts": {
-          "adjudicated": 692,
-          "candidates": 307,
-          "notSecurity": 385,
-          "overridesApplied": 33,
-          "pendingJudgement": 43,
-          "prunedStaleRecords": 0,
-          "sraMatched": 31,
-          "synthetic": 166,
-          "tier1": 45,
-          "tier2": 13
-        },
-        "finishedAt": "2026-09-02T01:19:59.310Z",
-        "id": "stage3-discovery",
-        "notes": [
-          "43 services need judgement: apigateway, bedrock, billing, cassandra, cloudformation, cloudwatch, codeartifact, codebuild, data-signer, datazone, deadline, dynamodb, ecs, elasticloadbalancing, elasticmapreduce, events, freertos, fsx, glacier, glue"
-        ],
-        "startedAt": "2026-09-02T01:19:58.833Z",
-        "status": "partial"
-      },
-      {
-        "counts": {
-          "aliasesApplied": 13,
-          "aliasesUnmatched": 0,
-          "features": 1735,
-          "noFeatureFound": 104,
-          "promotedToTier2": 153,
-          "prunedStaleRecords": 3,
-          "scanned": 307,
-          "servicesWithFeatures": 203
-        },
-        "finishedAt": "2026-09-02T01:20:03.302Z",
-        "id": "stage4-features",
-        "startedAt": "2026-09-02T01:19:59.311Z",
-        "status": "ok"
-      },
-      {
-        "counts": {
-          "claims": 49780,
-          "conflicts": 0,
-          "covered": 37927,
-          "duplicateRegistrationsSkipped": 1493,
-          "empty": 11715,
-          "enabled": 11775,
-          "featuresWithCoverage": 52,
-          "from_agent": 30,
-          "from_tier1-sweep": 6516,
-          "from_title-match": 5237,
-          "newlyDiscovered": 0,
-          "notCovered": 11853,
-          "openAxes": 19,
-          "openAxisMembers": 2230,
-          "pagesConsidered": 10282,
-          "pagesFailed": 1,
-          "pagesRead": 63,
-          "pagesRejectedByKind": 2636,
-          "prunedStaleRecords": 0,
-          "recipeFailures": 0,
-          "recipeRulesWithNoPage": 0,
-          "recipes": 71,
-          "recipesAttached": 71,
-          "registered": 11783,
-          "serviceWideRecords": 3,
-          "tablesRecoveredFromHtml": 360,
-          "unattachedPages": 174,
-          "unresolvedTargets": 4,
-          "valuesDroppedUnresolved": 3036,
-          "withRecipe": 53,
-          "yielding": 67
-        },
-        "finishedAt": "2026-09-02T01:20:17.442Z",
-        "id": "stage5-coverage",
-        "startedAt": "2026-09-02T01:20:03.303Z",
-        "status": "partial"
-      },
       {
         "counts": {
           "claims": 49747,
@@ -46117,36 +46009,23 @@
           "services": 692,
           "violations": 0
         },
-        "finishedAt": "2026-09-02T01:20:18.235Z",
+        "finishedAt": "2026-09-02T01:25:44.213Z",
         "id": "stage6-validate",
-        "startedAt": "2026-09-02T01:20:17.443Z",
+        "startedAt": "2026-09-02T01:25:43.584Z",
         "status": "ok"
-      },
-      {
-        "counts": {
-          "clean": 59,
-          "empty": 0,
-          "pagesChecked": 61,
-          "partialRead": 2,
-          "staleQuotes": 0
-        },
-        "finishedAt": "2026-09-02T01:20:18.591Z",
-        "id": "stage7-verify",
-        "startedAt": "2026-09-02T01:20:18.235Z",
-        "status": "partial"
       },
       {
         "counts": {
           "features": 1737,
           "services": 211
         },
-        "finishedAt": "2026-09-02T01:20:19.087Z",
+        "finishedAt": "2026-09-02T01:25:44.643Z",
         "id": "report",
-        "startedAt": "2026-09-02T01:20:18.591Z",
+        "startedAt": "2026-09-02T01:25:44.214Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-02T01:19:19.435Z"
+    "startedAt": "2026-09-02T01:25:43.582Z"
   },
   "outOfScope": [
     {
@@ -49059,6 +48938,13 @@
       "subject": "redshift/amazon-redshift :: Using the Amazon Redshift data source"
     },
     {
+      "id": "03c895570f44d186",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-use-case.md",
+      "stage": "stage5-coverage",
+      "subject": "wafv2 :: Use-case specific rule groups"
+    },
+    {
       "id": "06926e77ec970aea",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-attributes-table.md",
@@ -49066,11 +48952,25 @@
       "subject": "cloudhsm/command-line-tools :: Supported attributes"
     },
     {
+      "id": "069c80a342e4c6d1",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md",
+      "stage": "stage5-coverage",
+      "subject": "wafv2 :: Account takeover prevention rule group"
+    },
+    {
       "id": "0897d0c0932228d4",
       "reason": "guide page index produced no pages",
       "sourceUrl": "https://docs.aws.amazon.com/deepracer/latest/developerguide/llms.txt",
       "stage": "stage2-doc-pages",
       "subject": "guide:deepracer/latest/developerguide"
+    },
+    {
+      "id": "08fa4d358ce74933",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/supported-s3-features-malware-protection-s3.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: Supportability of Amazon S3 features"
     },
     {
       "id": "09125c64102115d4",
@@ -49262,6 +49162,13 @@
       "subject": "sso/supported-api-operations :: ServiceProviderConfig"
     },
     {
+      "id": "21bcf0a561556c78",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.md",
+      "stage": "stage5-coverage",
+      "subject": "acm :: Use service-linked roles"
+    },
+    {
       "id": "21c4adb8dd804ec8",
       "reason": "guide page index could not be fetched",
       "sourceUrl": "https://docs.aws.amazon.com/code-samples/latest/catalog/toc-contents.json",
@@ -49316,6 +49223,13 @@
       "sourceUrl": "https://docs.aws.amazon.com/security-ir/latest/userguide/when-to-contact-security-ir.md",
       "stage": "stage5-coverage",
       "subject": "support/aws-support :: When to contact AWS Security Incident Response"
+    },
+    {
+      "id": "2933f80a82789d36",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: Foundational data sources"
     },
     {
       "id": "295b49f4a867e686",
@@ -49381,6 +49295,20 @@
       "subject": "logs/integration-with-amazon-cloudwatch-logs :: Integration with Amazon CloudWatch Logs"
     },
     {
+      "id": "30c4a04b43209e24",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.md",
+      "stage": "stage5-coverage",
+      "subject": "config :: managed-rules-by-aws-config"
+    },
+    {
+      "id": "3198d77dfd91c695",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-baseline.md",
+      "stage": "stage5-coverage",
+      "subject": "wafv2 :: Baseline rule groups"
+    },
+    {
       "id": "321340223bf11ae6",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/incident-manager/latest/userguide/export-data.md",
@@ -49421,6 +49349,13 @@
       "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-use-case.md",
       "stage": "stage5-coverage",
       "subject": "wafv2/aws-managed-rules-rule-groups-list :: Use-case specific rule groups"
+    },
+    {
+      "id": "383ef628e9fe2ab7",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.md",
+      "stage": "stage5-coverage",
+      "subject": "access-analyzer :: Supported resource types"
     },
     {
       "id": "388bd361a7e9e2fd",
@@ -49479,6 +49414,13 @@
       "subject": "kinesis :: Quotas"
     },
     {
+      "id": "3f678ac0f65ff6a4",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/discovery-supported-storage.md",
+      "stage": "stage5-coverage",
+      "subject": "macie2 :: Supported storage classes and formats"
+    },
+    {
       "id": "40731e29a64d9ccc",
       "reason": "guide llms.txt produced no pages",
       "sourceUrl": "https://docs.aws.amazon.com/deepracer/latest/developerguide/llms.txt",
@@ -49514,6 +49456,20 @@
       "subject": "sso/supported-api-operations :: PutUser"
     },
     {
+      "id": "42bc57dcaec1a96f",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/gd-findings-initiate-malware-protection-scan.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: Findings that invoke GuardDuty-initiated malware scan"
+    },
+    {
+      "id": "4348f837159715c3",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md",
+      "stage": "stage5-coverage",
+      "subject": "wafv2 :: Anti-DDoS rule group"
+    },
+    {
       "id": "45297ccc12ef8063",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-baseline.md",
@@ -49542,6 +49498,13 @@
       "subject": "elasticmapreduce/integrating-optimized-services :: Amazon EMR on EKS"
     },
     {
+      "id": "4637ced482b04def",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-runtime-monitoring.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: Runtime Monitoring finding types"
+    },
+    {
       "id": "4699f75e99df3d64",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/grafana/latest/userguide/amazon-using-prometheus-datasource.md",
@@ -49568,6 +49531,13 @@
       "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/codeconnections.md",
       "stage": "stage1-universes",
       "subject": "general-reference:CodeConnections"
+    },
+    {
+      "id": "49efa0d9685e62d2",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-malware-protection.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: Malware Protection for EC2 finding types"
     },
     {
       "id": "4a3f21589c05ff9e",
@@ -49610,6 +49580,13 @@
       "sourceUrl": "https://docs.aws.amazon.com/reference-architecture-diagrams/latest/routing-scenarios-with-aws-direct-connect-sitelink/toc-contents.json",
       "stage": "stage2-doc-pages",
       "subject": "guide:reference-architecture-diagrams/latest/routing-scenarios-with-aws-direct-connect-sitelink"
+    },
+    {
+      "id": "50780d95711a4244",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services_list.md",
+      "stage": "stage5-coverage",
+      "subject": "organizations :: orgs_integrate_services_list"
     },
     {
       "id": "508b1c23de4dd8b3",
@@ -49836,11 +49813,32 @@
       "subject": "iam/condition-policy-examples :: Supported data types"
     },
     {
+      "id": "66a6ec06f46bae56",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-iam.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: IAM finding types"
+    },
+    {
+      "id": "66b227432b948166",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: RDS Protection finding types"
+    },
+    {
       "id": "6915285f489ec5e1",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/parallelcluster/latest/ug/cloudwatch-logs-v3.md",
       "stage": "stage5-coverage",
       "subject": "logs/integration-with-amazon-cloudwatch-logs :: Integration with Amazon CloudWatch Logs"
+    },
+    {
+      "id": "69706f6ac1b426a8",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.md",
+      "stage": "stage5-coverage",
+      "subject": "securityhub :: securityhub-controls-reference"
     },
     {
       "id": "6a021d984fe20a06",
@@ -49892,11 +49890,39 @@
       "subject": "guide:hands-on/latest/request-service-quota-increase"
     },
     {
+      "id": "6e005d980a397257",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-malware-protection-backup.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: Malware Protection for Backup finding types"
+    },
+    {
       "id": "6e2363fac178d84c",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-securityhub-integration.md",
       "stage": "stage5-coverage",
       "subject": "securityhub/security-hub-cspm-integration :: Security Hub CSPM integration"
+    },
+    {
+      "id": "6e5f6529b21bfb34",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: S3 Protection finding types"
+    },
+    {
+      "id": "6f5e257ccc76e5a3",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md",
+      "stage": "stage5-coverage",
+      "subject": "kms :: AWS KMS condition keys"
+    },
+    {
+      "id": "6fbef584570e481c",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/ram/latest/userguide/shareable.md",
+      "stage": "stage5-coverage",
+      "subject": "ram :: Shareable resources"
     },
     {
       "id": "6fdcaf13b8e9483f",
@@ -50018,6 +50044,13 @@
       "subject": "general-reference:Services in Maintenance"
     },
     {
+      "id": "7a8337965dae1ff0",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/managing-rules-by-region-availability.md",
+      "stage": "stage5-coverage",
+      "subject": "config :: List of Managed Rules by Region Availability"
+    },
+    {
       "id": "7a8844446eace687",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mariadb-upgrade-snapshot.upgrade-options.md",
@@ -50051,6 +50084,13 @@
       "sourceUrl": "https://docs.aws.amazon.com/parallelcluster/v2/ug/cloudwatch-logs.md",
       "stage": "stage5-coverage",
       "subject": "cloudwatch/integration-with-amazon-cloudwatch-logs :: Integration with Amazon CloudWatch Logs"
+    },
+    {
+      "id": "7e3f8be1d0de79ca",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md",
+      "stage": "stage5-coverage",
+      "subject": "sso :: Applications that you can use with IAM Identity Center"
     },
     {
       "id": "7e501529d2c6228e",
@@ -50158,6 +50198,13 @@
       "subject": "cloudhsm/manage-quorum-authentication-m-of-n :: Supported services and types"
     },
     {
+      "id": "8ad9ee3fe04109ff",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.md",
+      "stage": "stage5-coverage",
+      "subject": "config :: Supported Resource Types"
+    },
+    {
       "id": "8bc6d0de24fd3a67",
       "reason": "guide page index could not be fetched",
       "sourceUrl": "https://docs.aws.amazon.com/hands-on/latest/remotely-run-commands-ec2-instance-systems-manager/toc-contents.json",
@@ -50214,6 +50261,13 @@
       "subject": "medical-imaging/oidc-authentication :: Requirements and setup"
     },
     {
+      "id": "93a8c8e99d889444",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md",
+      "stage": "stage5-coverage",
+      "subject": "shield :: List of protected resources"
+    },
+    {
       "id": "9421970b10a744ae",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/rds-controls.md",
@@ -50242,11 +50296,25 @@
       "subject": "rds/amazon-rds :: Collation and character support"
     },
     {
+      "id": "96e8cfb02a4fd77a",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/audit-manager/latest/userguide/framework-overviews.md",
+      "stage": "stage5-coverage",
+      "subject": "auditmanager :: framework-overviews"
+    },
+    {
       "id": "9775c86b82fa0244",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/developerguide/patchgroup.md",
       "stage": "stage5-coverage",
       "subject": "sso/supported-api-operations :: PatchGroup"
+    },
+    {
+      "id": "9889b65fbaf891e0",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-support.md",
+      "stage": "stage5-coverage",
+      "subject": "cloudhsm :: Supported platforms"
     },
     {
       "id": "9a0da7bd8fa7d525",
@@ -50324,6 +50392,13 @@
       "sourceUrl": "https://docs.aws.amazon.com/hands-on/latest/deploy-lamp-lightsail/llms.txt",
       "stage": "stage2-doc-pages",
       "subject": "guide:hands-on/latest/deploy-lamp-lightsail"
+    },
+    {
+      "id": "aaebefb22510436e",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/singlesignon/latest/userguide/customermanagedapps-saml2-oauth2.md",
+      "stage": "stage5-coverage",
+      "subject": "sso :: SAML 2.0 and OAuth 2.0 applications"
     },
     {
       "id": "ac895082e5973901",
@@ -50438,6 +50513,13 @@
       "subject": "wafv2/aws-managed-rules-rule-groups-list :: IP reputation rule groups"
     },
     {
+      "id": "bcfa42147cd68f18",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/lambda-protection-finding-types.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: Lambda Protection finding types"
+    },
+    {
       "id": "be5b09e3c94f1b59",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-azure-setup-securityhub.md",
@@ -50478,6 +50560,13 @@
       "sourceUrl": "https://docs.aws.amazon.com/connect/latest/adminguide/sr-system-req.md",
       "stage": "stage5-coverage",
       "subject": "connect/connect-customer :: System and network requirements"
+    },
+    {
+      "id": "c4208bc63be542aa",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/security_iam_nsd-with-iam-roles-service-linked.md",
+      "stage": "stage5-coverage",
+      "subject": "shield :: Using service-linked roles"
     },
     {
       "id": "c4720a70ac5c7808",
@@ -50522,6 +50611,13 @@
       "subject": "backup/backup :: S3 restore"
     },
     {
+      "id": "cc707dd6bc1913f7",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.md",
+      "stage": "stage5-coverage",
+      "subject": "securityhub :: standards-reference"
+    },
+    {
       "id": "cc992effa00951bf",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_saml_3rd-party.md",
@@ -50550,11 +50646,32 @@
       "subject": "rds/amazon-rds :: Supported DB engines"
     },
     {
+      "id": "d018b0606af212b8",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md",
+      "stage": "stage5-coverage",
+      "subject": "wafv2 :: Account creation fraud prevention rule group"
+    },
+    {
       "id": "d03e70a9f97a6a54",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-ai-protection.md",
       "stage": "stage5-coverage",
       "subject": "guardduty/ai-protection :: AI Protection finding types"
+    },
+    {
+      "id": "d2530e29b08c1a78",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-ai-protection.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: AI Protection finding types"
+    },
+    {
+      "id": "d3af4a22af13b167",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/macie/latest/user/mdis-reference-quick.md",
+      "stage": "stage5-coverage",
+      "subject": "macie2 :: Quick reference by sensitive data type"
     },
     {
       "id": "d48bf913cd56a157",
@@ -50676,6 +50793,13 @@
       "subject": "sso/supported-api-operations :: PatchUser"
     },
     {
+      "id": "e05e3892e8b94251",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/supported.md",
+      "stage": "stage5-coverage",
+      "subject": "inspector2 :: Supported operating systems and programming languages"
+    },
+    {
       "id": "e0d5d9889656697f",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/gdu-assess-coverage-bottlerocket-ecs-ec2.md",
@@ -50702,6 +50826,13 @@
       "sourceUrl": "https://docs.aws.amazon.com/timestream/latest/developerguide/supported-data-types.md",
       "stage": "stage5-coverage",
       "subject": "timestream/amazon-timestream :: Supported data types"
+    },
+    {
+      "id": "e3b64e4bb1c0f054",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.md",
+      "stage": "stage5-coverage",
+      "subject": "securitylake :: internal-sources"
     },
     {
       "id": "e3b8b5414c7d2412",
@@ -50732,6 +50863,13 @@
       "subject": "guide:hands-on/latest/amazon-s3-with-additional-checksums"
     },
     {
+      "id": "e8004313d3d281fa",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-finding-types-eks-audit-logs.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: EKS Protection finding types"
+    },
+    {
       "id": "e97d77617eb0f10e",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_fido_supported_configurations.md",
@@ -50760,6 +50898,20 @@
       "subject": "cloudwatch/controls-reference :: Amazon CloudWatch controls"
     },
     {
+      "id": "ede8a6bafa7b5404",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-attack-sequence-finding-types.md",
+      "stage": "stage5-coverage",
+      "subject": "guardduty :: Attack sequence finding types"
+    },
+    {
+      "id": "ee2526d64d48763f",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/network-firewall/latest/developerguide/aws-managed-rule-groups-threat-signature.md",
+      "stage": "stage5-coverage",
+      "subject": "network-firewall :: aws-managed-rule-groups-threat-signature"
+    },
+    {
       "id": "eed525c8a17f9ae0",
       "reason": "no column resolved to a known universe",
       "sourceUrl": "https://docs.aws.amazon.com/step-functions/latest/dg/connect-api-gateway.md",
@@ -50779,6 +50931,13 @@
       "sourceUrl": "https://docs.aws.amazon.com/hands-on/latest/deploy-lamp-lightsail/llms.txt",
       "stage": "stage2-doc-pages",
       "subject": "guide:hands-on/latest/deploy-lamp-lightsail"
+    },
+    {
+      "id": "f027e7735a876e9b",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.md",
+      "stage": "stage5-coverage",
+      "subject": "s3 :: Supported API operations"
     },
     {
       "id": "f0b32f4bdb00be2c",
@@ -50809,6 +50968,41 @@
       "subject": "macie2/assessing-automated-discovery-coverage :: Default automated discovery settings"
     },
     {
+      "id": "f468bef58f24d682",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/classic-using-service-linked-roles.md",
+      "stage": "stage5-coverage",
+      "subject": "waf :: Using service-linked roles"
+    },
+    {
+      "id": "f4c13b5b2769f3c0",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ecosystem-collection.md",
+      "stage": "stage5-coverage",
+      "subject": "inspector2 :: Ecosystem collection"
+    },
+    {
+      "id": "f52223cc760e30ef",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-bot.md",
+      "stage": "stage5-coverage",
+      "subject": "wafv2 :: Bot Control rule group"
+    },
+    {
+      "id": "f54a559cf6262ea8",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-ip-rep.md",
+      "stage": "stage5-coverage",
+      "subject": "wafv2 :: IP reputation rule groups"
+    },
+    {
+      "id": "f77d3bf60cf3721e",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/getting-started-fms-intro.md",
+      "stage": "stage5-coverage",
+      "subject": "fms :: getting-started-fms-intro"
+    },
+    {
       "id": "f7dbbef55196caff",
       "reason": "guide page index could not be fetched",
       "sourceUrl": "https://docs.aws.amazon.com/hands-on/latest/amazon-ec2-backup-and-restore-using-aws-backup/toc-contents.json",
@@ -50821,6 +51015,13 @@
       "sourceUrl": "https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-ebs.md",
       "stage": "stage5-coverage",
       "subject": "backup/backup :: EBS restore"
+    },
+    {
+      "id": "f9a1bd1e042c6441",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrating.md",
+      "stage": "stage5-coverage",
+      "subject": "secretsmanager :: integrating"
     },
     {
       "id": "fa1b2899a713e15b",
@@ -50856,6 +51057,13 @@
       "sourceUrl": "https://docs.aws.amazon.com/general/latest/gr/aws-transform.md",
       "stage": "stage1-universes",
       "subject": "general-reference:AWS Transform"
+    },
+    {
+      "id": "fe1400f28a2bd0f6",
+      "reason": "coverage page could not be read",
+      "sourceUrl": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md",
+      "stage": "stage5-coverage",
+      "subject": "artifact :: Using service-linked roles"
     },
     {
       "id": "ff1c751a5013d209",
