@@ -1,0 +1,72 @@
+{
+  "coverageDimensions": "REGION: almost nothing. The page names exactly two AWS Region codes (ap-east-2 for RDS Protection, ap-east-1 for BedrockLoggingDisabled), plus the non-Region location class 'AWS Dedicated Local Zones' twice (one Yes, one No), plus one partition ('aws'). It gives NO list of Regions where GuardDuty is available - that is delegated to the AWS General Reference - and the two entries that would have carried real Region lists are elided in this .md. Any Region total larger than 2 (or 3-4 if location classes are counted) attributed to this page is fabricated. SERVICE: nothing. The page is about GuardDuty alone; Amazon RDS, Amazon EC2, Amazon Bedrock and Amazon SageMaker AI appear as finding-type subjects or upstream dependencies, never as covered services with a support verdict. RESOURCE TYPE: nothing at all - no resource type is enumerated or given a status anywhere on the page.",
+  "features": [
+    {
+      "axis": "partition",
+      "axisKind": "external",
+      "expectedCount": 1,
+      "featureName": "Expanded filterable fields for CreateFilter and UpdateFilter",
+      "reasoning": "The unit of claim is the partition, not the Region: the entry names a partition identifier ('aws') and contrasts it with 'other partitions'. Treating this as a Region statement would be wrong because no Region code appears in it.",
+      "scope": "Second dimension present: the claim is scoped to the additional filterable fields used by suppression rules and filters via the CreateFilter and UpdateFilter API operations - not to GuardDuty as a whole.",
+      "statuses": "1 Yes (the aws partition, named in code font). Not-supported is STATED but unnamed: 'In other partitions, you can continue to use the console-supported fields' asserts an exclusion without naming aws-cn, aws-us-gov or any ISO partition, so 0 explicit No values. 1 Yes + 0 No = 1 enumerated value.",
+      "waived": "One partition is not an axis. A denominator of one reads as a failure or a certainty depending on the numerator and means neither, so axes below three members are not published."
+    },
+    {
+      "axis": "region",
+      "axisKind": "external",
+      "expectedCount": 1,
+      "featureName": "Malware Protection for EC2",
+      "reasoning": "The enumerated value is a deployment location, so 'region' is the closest vocabulary fit, but the value is a location CLASS (Dedicated Local Zones), not an AWS Region code such as us-east-1. Anyone mapping this onto a Region list must not expand it into individual Region codes - the page names none.",
+      "scope": "Second dimension present: the statement is scoped to one GuardDuty protection plan, Malware Protection for EC2. It says nothing about the other protection plans in that location.",
+      "statuses": "1 Yes (AWS Dedicated Local Zones - 'GuardDuty supports the Malware Protection for EC2 feature in the AWS Dedicated Local Zones'). 0 No. 1 Yes + 0 No = 1.",
+      "waived": "The statement is about the AWS Dedicated Local Zones, which are not Regions and hold no Region code, so there is no member of the Region universe to attach it to."
+    },
+    {
+      "axis": "region",
+      "axisKind": "external",
+      "collapse": "Two exclusions are stated: Asia Pacific (Taipei), which is a Region, and the AWS Dedicated Local Zones, which are not \u2014 they have no Region code and are not members of the Region universe. Only the Region is published; the Local Zones exclusion has nowhere true to go.",
+      "distinctTargets": 1,
+      "expectedCount": 2,
+      "featureName": "RDS Protection",
+      "reasoning": "Two lines, two distinct exclusion targets, so no collapse. One target (ap-east-2) is a real Region code; the other (AWS Dedicated Local Zones) is a location class, so the 2 values are not homogeneous Regions.",
+      "scope": "Second dimension present: scoped to the RDS Protection protection plan only.",
+      "statuses": "0 Yes, 2 No: 'not supported in Asia Pacific (Taipei) (ap-east-2) Region' and 'not supported in the AWS Dedicated Local Zones'. Both are explicit not-supported statements on two separate lines. 0 + 2 = 2."
+    },
+    {
+      "axis": "region",
+      "axisKind": "external",
+      "expectedCount": 0,
+      "featureName": "IAM finding type CredentialAccess:IAMUser/CompromisedCredentials",
+      "reasoning": "The axis being enumerated would be Region, but this rendering carries no Region values at all. Recording any positive count here would be fabrication - the number of excluded Regions is unknowable from this page as delivered.",
+      "scope": "Second dimension present: scoped to one named finding type, not to GuardDuty or to IAM findings generally.",
+      "statuses": "0 Yes, 0 No enumerable. The prose STATES a not-supported claim ('is not supported in following regions') but the list that would follow it is replaced in this .md rendering by the single line '[See the AWS documentation website for more details]'. The claim exists; the values do not. 0 + 0 = 0.",
+      "waived": "The exclusion table this refers to is elided in the Markdown twin, which carries a placeholder link instead of the table. The independent reader counted zero for the same reason we extract zero."
+    },
+    {
+      "axis": "region",
+      "axisKind": "external",
+      "expectedCount": 1,
+      "featureName": "IAM finding type DefenseEvasion:IAMUser/BedrockLoggingDisabled",
+      "reasoning": "A single explicit Region exclusion with a Region code, so region is the axis and the count is exactly 1.",
+      "scope": "Second dimension present: scoped to one named finding type.",
+      "statuses": "0 Yes, 1 No: 'not supported in Asia Pacific (Hong Kong) (ap-east-1) Region'. 0 + 1 = 1.",
+      "waived": "A finding type missing from one Region is a fact about one member of a catalogue. We count catalogues rather than measuring them, so this is not published as Region coverage of a feature."
+    },
+    {
+      "axis": "region",
+      "axisKind": "external",
+      "expectedCount": 0,
+      "featureName": "Amazon EC2 finding types DefenseEvasion:EC2/UnusualDoHActivity and DefenseEvasion:EC2/UnusualDoTActivity",
+      "reasoning": "Region is the axis the missing table would enumerate. As delivered, the page supplies no values, so the honest count is 0.",
+      "scope": "Second dimension present: one shared exclusion set applied to two named finding types, so any Region harvested here would count twice - once per finding type.",
+      "statuses": "0 Yes, 0 No enumerable. The entry announces 'The following table shows the AWS Regions where GuardDuty is available but these two Amazon EC2 finding types are not yet supported', then the table is replaced by '[See the AWS documentation website for more details]'. A table is asserted to exist; zero rows survive in this .md. 0 + 0 = 0.",
+      "waived": "The exclusion table this refers to is elided in the Markdown twin, which carries a placeholder link instead of the table. The independent reader counted zero for the same reason we extract zero."
+    }
+  ],
+  "pageTitle": "Amazon GuardDuty Regions and endpoints",
+  "recordedAt": "2026-09-02T03:55:00Z",
+  "shouldNotExtract": "Not coverage: (1) the intro sentence and its link to the General Reference GuardDuty endpoints page - it defers the Region list rather than giving one; (2) the recommendation to enable GuardDuty in all supported Regions; (3) the 'ListFindings and GetFindingsStatistics APIs' entry - it describes a temporary consoleOnly flag and a 1000-result limit, which is a quota/behaviour note, not availability; (4) the 7 API bullets under 'General API support' - they 'may have regional differences', a hedge with no Yes/No and no Region named, so they are not 7 apiOperation coverage values; (5) the 'AI Protection finding types' entry - it states dependencies on Amazon Bedrock, SageMaker AI and Bedrock Guardrails and links out to Bedrock's own Region lists, naming zero Regions itself; (6) the 'AWS GovCloud (US) Regions' and 'China Regions' entries - pure pointers to other guides, zero values; (7) the two '[See the AWS documentation website for more details]' placeholder links, which are elision markers, not data; (8) the section heading and the anchor tags; (9) the entire 'See also' block about AWS skills for AI coding assistants and the agent-toolkit CLI command.",
+  "trap": "The single most likely misparse: treating the two '[See the AWS documentation website for more details]' placeholders as if the missing tables had been read, and either silently emitting 0 excluded Regions as '0 exclusions exist' (turning an unknown into a confident No-exclusions claim) or, worse, back-filling a Region list from elsewhere. Runners-up: (a) counting the 11 bolded definition entries as 11 coverage rows, when only 6 carry an availability verdict and 5 are quotas, hedges or pointers; (b) harvesting the 7 API bullets under 'General API support' as 7 supported apiOperation values, when the sentence only says they 'may have regional differences'; (c) reading the intro link as though this page enumerated GuardDuty's available Regions; (d) flattening 'AWS Dedicated Local Zones' and the 'aws' partition into the Region axis alongside ap-east-1/ap-east-2, mixing three different kinds of value; (e) losing the second dimension entirely - every statement here is per GuardDuty feature, protection plan or finding type, so an exclusion for RDS Protection says nothing about Malware Protection, and the shared DoH/DoT table applies to two finding types at once; (f) counting the 7 caveated finding types named across the page (CompromisedCredentials, BedrockLoggingDisabled, AnomalousModelInvocation, CostHarvesting, PromptInjection.Direct, UnusualDoHActivity, UnusualDoTActivity) as a findingType coverage catalogue - the page lists them as exceptions, not as a supported-finding-type list.",
+  "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md",
+  "whatThePageStates": "The page does NOT list the Regions where GuardDuty is available; it points to the Amazon Web Services General Reference for that list. Its only substance is one section, 'Region-specific feature availability', built as 11 bolded definition entries that each record an exception for one GuardDuty capability: a partition restriction on expanded filter fields, an API result-limit note, Malware Protection for EC2 in Dedicated Local Zones, two RDS Protection exclusions, three finding-type exclusion notes, an AI Protection dependency note, a list of 7 APIs that 'may have regional differences', and two pointer entries for GovCloud and China. Every coverage statement is an exception keyed to a named GuardDuty feature, protection plan or finding type, so the page is two-dimensional: Region (or partition) crossed with GuardDuty capability. Critically, the two entries that would carry the most values - the CompromisedCredentials exclusion list and the DoH/DoT exclusion table - are both replaced in this .md rendering by the placeholder link 'See the AWS documentation website for more details', so they enumerate zero Regions here. Nothing on the page states positive Region-by-Region support for GuardDuty as a whole."
+}

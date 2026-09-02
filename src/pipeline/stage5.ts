@@ -417,7 +417,12 @@ export const stage5: Stage = {
             if (!feature) continue;
             // A service-wide record made here has to be registered, or it is not in
             // the set the writer looks at and every claim on it is dropped in silence.
-            if (!namedByPage) serviceWideUsed.add(job.page.serviceId);
+            // Testing `!namedByPage` was not enough: a recipe that PINS to
+            // "<service>/service-wide" resolves through serviceWideFeature, which sets
+            // namedByPage, so the record was created and never registered. Five pages
+            // — Artifact, CloudTrail, Config, Directory Service — produced 170 claims
+            // that the writer then threw away. Register on what the feature IS.
+            if (feature.id.endsWith("/service-wide")) serviceWideUsed.add(feature.serviceId);
             const list = claimsByFeature.get(feature.id) ?? [];
             // Two recipes on one page can reach the same target: Shield's bullets say
             // it protects load balancers, its note says it cannot protect Gateway Load
@@ -484,7 +489,7 @@ export const stage5: Stage = {
             unattached.push({ serviceId: job.page.serviceId, url: url, title: block.headings[0] ?? pageTitle });
             continue;
           }
-          if (!named) serviceWideUsed.add(job.page.serviceId);
+          if (feature.id.endsWith("/service-wide")) serviceWideUsed.add(feature.serviceId);
           attachedAny = true;
           const list = claimsByFeature.get(feature.id) ?? [];
           const already = new Set(list.map((c) => `${c.axis}|${c.targetId}`));

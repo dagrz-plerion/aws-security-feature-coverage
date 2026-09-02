@@ -84,7 +84,11 @@ export async function checkExpectations(): Promise<{ ok: string[]; drift: string
     const actualByAxis = new Map<string, number>();
     const distinctByAxis = new Map<string, Set<string>>();
     for (const claim of coverage.flatMap((r) => r.claims)) {
-      if (claim.evidence[0]?.sourceUrl !== expectation.url) continue;
+      // Any evidence item, not just the first. The Cognito exclusion is stated on both
+      // fraud-control pages; the dedupe keeps one claim carrying both quotes, and
+      // testing only evidence[0] credited it to whichever page happened to sort first,
+      // so the other page read as missing a claim it plainly states.
+      if (!claim.evidence.some((e) => e.sourceUrl === expectation.url)) continue;
       const add = (axis: string, target: string): void => {
         const set = distinctByAxis.get(canonical(axis)) ?? new Set<string>();
         set.add(target);
@@ -94,6 +98,24 @@ export async function checkExpectations(): Promise<{ ok: string[]; drift: string
       if (claim.scope) add(claim.scope.axis, claim.scope.targetId);
     }
     for (const [axis, set] of distinctByAxis) actualByAxis.set(axis, set.size);
+
+    // A page the independent reader found no coverage on must produce no coverage.
+    // The Firewall Manager chapter stub is a Topics navigation list, and we were
+    // publishing its eight links as eight supported policy types — the reader named
+    // that exact trap before seeing our output. Reading nothing is the correct result
+    // for such a page, and this makes it enforceable rather than a matter of taste.
+    if (!expectation.features.length) {
+      const sourced = coverage
+        .flatMap((r) => r.claims)
+        .filter((c) => c.evidence.some((e) => e.sourceUrl === expectation.url));
+      const label = `${expectation.url.split("/").pop()} :: states no coverage`;
+      if (sourced.length) {
+        drift.push(`${label}: the page states none, we take ${sourced.length} (${[...new Set(sourced.map((c) => c.axis))].join(", ")})`);
+      } else {
+        ok.push(label);
+      }
+      continue;
+    }
 
     for (const wanted of expectation.features) {
       if (wanted.waived) continue;

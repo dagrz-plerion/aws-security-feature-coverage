@@ -805,7 +805,7 @@
     {
       "urlPattern": "waf/latest/developerguide/aws-managed-rule-groups-(atp|acfp)\\.md$",
       "serviceId": "wafv2",
-      "note": "Both fraud-control rule groups state they cannot be used with Amazon Cognito user pools. The exclusion is in prose beside the rule group name.",
+      "note": "Both fraud-control rule groups state the same exclusion: they cannot protect Amazon Cognito user pools.",
       "recipes": [
         {
           "id": "waf-fraud-control-cognito-exclusion",
@@ -1002,26 +1002,6 @@
           },
           "requireMin": 4,
           "featureId": "cloudhsm/cloudhsm-cli"
-        }
-      ]
-    },
-    {
-      "urlPattern": "waf/latest/developerguide/getting-started-fms-intro\\.md$",
-      "serviceId": "fms",
-      "note": "The policy types Firewall Manager can enforce, one per bullet.",
-      "recipes": [
-        {
-          "id": "firewall-manager-policy-types",
-          "blocks": "whole-page",
-          "select": {
-            "from": "list-items",
-            "extract": "regex",
-            "pattern": "Setting up AWS Firewall Manager[\u200b\\s]*(.+?) policies$"
-          },
-          "axis": "policyType",
-          "status": "covered",
-          "requireMin": 6,
-          "featureId": "fms/service-wide"
         }
       ]
     },
@@ -1248,20 +1228,20 @@
     {
       "urlPattern": "guardduty/latest/ug/guardduty_regions\\.md$",
       "serviceId": "guardduty",
-      "note": "Region-specific feature availability, stated as prose beside each protection plan: 'RDS Protection is not supported in Asia Pacific (Taipei)'.",
+      "note": "Every statement on this page sits under a bold subject naming what it is about: a protection plan, an API, or one finding type. Reading the sentences without that subject put all of them on a catch-all 'GuardDuty findings' row, which then read '2 excluded of 46' \u2014 a claim about GuardDuty findings as a whole that the page never makes. Only the protection-plan exclusions are feature-level coverage. A finding type missing from one Region is a fact about that one catalogue member, and we count catalogues rather than measuring them, so those are not published.",
       "recipes": [
         {
-          "id": "guardduty-region-exclusions",
+          "id": "guardduty-rds-protection-region-exclusions",
           "blocks": "whole-page",
           "select": {
             "from": "paragraph",
-            "sentenceMatches": "(is|are) not supported in",
+            "sentenceMatches": "^RDS Protection is not supported in",
             "extract": "regex",
             "pattern": "\\(([a-z]{2,4}-[a-z]+-\\d)\\)"
           },
           "axis": "region",
           "status": "not-covered",
-          "featureId": "guardduty/guardduty-findings",
+          "featureId": "guardduty/rds-protection",
           "requireMin": 1
         }
       ]
@@ -1686,6 +1666,117 @@
           "status": "covered",
           "featureId": "verified-access/fips-compliance",
           "requireMin": 4
+        }
+      ]
+    },
+    {
+      "urlPattern": "waf/latest/developerguide/aws-managed-rule-groups-atp\\.md$",
+      "serviceId": "wafv2",
+      "note": "The ATP page names exactly two resource types: CloudFront distributions, the only place the rule group also inspects responses, and Amazon Cognito user pools, which it explicitly cannot protect. The exclusion is read by the shared fraud-control recipe; this one reads the supported side.",
+      "recipes": [
+        {
+          "id": "waf-atp-cloudfront-response-inspection",
+          "blocks": "whole-page",
+          "select": {
+            "from": "list-items",
+            "depth": "any",
+            "extract": "regex",
+            "pattern": "For (CloudFront distributions), in addition to inspecting incoming login requests"
+          },
+          "axis": "resourceType",
+          "status": "covered",
+          "featureId": "wafv2/account-takeover-prevention-rule-group",
+          "requireMin": 1
+        }
+      ]
+    },
+    {
+      "urlPattern": "waf/latest/developerguide/aws-managed-rule-groups-acfp\\.md$",
+      "serviceId": "wafv2",
+      "note": "Each managed rule group publishes its own rules in a 'Rule name' table. That is a catalogue the rule group owns, so it is counted, not measured \u2014 the page states no per-rule availability.",
+      "recipes": [
+        {
+          "id": "waf-acfp-rule-names",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Rule name$"
+          },
+          "axis": "managedRuleGroupRule",
+          "status": "covered",
+          "featureId": "wafv2/acfp-rule-group",
+          "requireMin": 14
+        }
+      ]
+    },
+    {
+      "urlPattern": "waf/latest/developerguide/aws-managed-rule-groups-anti-ddos\\.md$",
+      "serviceId": "wafv2",
+      "note": "Each managed rule group publishes its own rules in a 'Rule name' table. That is a catalogue the rule group owns, so it is counted, not measured \u2014 the page states no per-rule availability.",
+      "recipes": [
+        {
+          "id": "waf-anti-ddos-rule-names",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Rule name$"
+          },
+          "axis": "managedRuleGroupRule",
+          "status": "covered",
+          "featureId": "wafv2/anti-ddos-rule-group",
+          "requireMin": 3
+        }
+      ]
+    },
+    {
+      "urlPattern": "waf/latest/developerguide/aws-managed-rule-groups-atp\\.md$",
+      "serviceId": "wafv2",
+      "note": "Each managed rule group publishes its own rules in a 'Rule name' table. That is a catalogue the rule group owns, so it is counted, not measured \u2014 the page states no per-rule availability.",
+      "recipes": [
+        {
+          "id": "waf-atp-rule-names",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Rule name$"
+          },
+          "axis": "managedRuleGroupRule",
+          "status": "covered",
+          "featureId": "wafv2/account-takeover-prevention-rule-group",
+          "requireMin": 10
+        }
+      ]
+    },
+    {
+      "urlPattern": "waf/latest/developerguide/aws-managed-rule-groups-bot\\.md$",
+      "serviceId": "wafv2",
+      "note": "Each managed rule group publishes its own rules in a 'Rule name' table. That is a catalogue the rule group owns, so it is counted, not measured \u2014 the page states no per-rule availability. The Category* rules in the same table are also the bot categories AWS WAF classifies, which is why the page is read twice.",
+      "recipes": [
+        {
+          "id": "waf-bot-rule-names",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Rule name$"
+          },
+          "axis": "managedRuleGroupRule",
+          "status": "covered",
+          "featureId": "wafv2/bot-control-rule-group",
+          "requireMin": 26
+        },
+        {
+          "id": "waf-bot-control-categories",
+          "blocks": "whole-page",
+          "select": {
+            "from": "table-column",
+            "headerMatches": "^Rule name$",
+            "extract": "regex",
+            "pattern": "^Category([A-Za-z]+)$"
+          },
+          "axis": "threatCategory",
+          "status": "covered",
+          "featureId": "wafv2/bot-control-rule-group",
+          "requireMin": 14
         }
       ]
     }

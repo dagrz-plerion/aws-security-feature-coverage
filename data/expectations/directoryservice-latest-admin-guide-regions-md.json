@@ -1,0 +1,74 @@
+{
+  "url": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.md",
+  "pageTitle": "Region availability for Directory Service",
+  "whatThePageStates": "The page carries two Region-availability matrices. The first (introduced by \"which Region-specific endpoints are supported by directory type\") has 38 Region rows and four directory-type columns: AWS Managed Microsoft AD (Standard and Enterprise Editions), AWS Managed Microsoft AD (Hybrid Edition), AD Connector, and Simple AD. Every cell is an explicit Yes or No icon plus word, so non-support is stated, not merely absent. The second table, under the heading \"Supported AWS Regions for Directory Service Data\", has 18 Region rows and three directory-type columns for the separate ds-data endpoint: AWS Managed Microsoft AD, AD Connector, Simple AD. The remaining prose is three cross-references (GovCloud endpoints, China endpoints, FIPS endpoints) and the boilerplate \"See also\" note about AI coding assistant skills; neither table states anything about resource types or about other AWS services.",
+  "recordedAt": "2026-09-02T03:55:00Z",
+  "features": [
+    {
+      "featureName": "AWS Managed Microsoft AD (Standard and Enterprise Editions)",
+      "axis": "region",
+      "axisKind": "external",
+      "expectedCount": 38,
+      "statuses": "38 Yes, 0 No; 38+0=38. Every cell in this column is the icon-yes image followed by the word Yes. There are no blanks, footnote markers or Partial values in this column.",
+      "scope": "Second dimension is the endpoint family: this table is the Directory Service control-plane endpoint (ds.<region>.amazonaws.com), distinct from the Directory Service Data endpoint table lower on the page. The Protocol column is HTTPS for all 38 rows and carries no coverage information.",
+      "reasoning": "The rows enumerate AWS Regions (a universe that exists independently of Directory Service), so the axis is region. The unit of claim is one directory type per Region, so each of the four columns is its own capability rather than one merged 'Directory Service is available here' claim."
+    },
+    {
+      "featureName": "AWS Managed Microsoft AD (Hybrid Edition)",
+      "axis": "region",
+      "axisKind": "external",
+      "expectedCount": 38,
+      "statuses": "27 Yes, 11 No; 27+11=38. The 11 explicit No Regions are ap-east-2, ap-southeast-5, ap-southeast-7, ap-southeast-6, ca-west-1, cn-north-1, cn-northwest-1, il-central-1, mx-central-1, us-gov-west-1, us-gov-east-1. Each No is the icon-no image plus the word No, so non-support is stated.",
+      "scope": "Directory Service control-plane endpoint (ds.<region>.amazonaws.com) table. Protocol is HTTPS for every row and is not a coverage dimension.",
+      "reasoning": "Hybrid Edition is a separate column with a different Yes/No pattern from the Standard and Enterprise Editions column, so it is a distinct coverage claim on the same region axis. Merging the two AWS Managed Microsoft AD columns would erase 11 stated exclusions."
+    },
+    {
+      "featureName": "AD Connector",
+      "axis": "region",
+      "axisKind": "external",
+      "expectedCount": 38,
+      "statuses": "38 Yes, 0 No; 38+0=38. Every cell in this column is icon-yes plus Yes.",
+      "scope": "Directory Service control-plane endpoint (ds.<region>.amazonaws.com) table. No per-plan or per-method sub-dimension.",
+      "reasoning": "Same 38-Region axis; AD Connector is its own column and therefore its own capability. Its all-Yes pattern must not be inherited by the Simple AD or Hybrid Edition columns."
+    },
+    {
+      "featureName": "Simple AD",
+      "axis": "region",
+      "axisKind": "external",
+      "expectedCount": 38,
+      "statuses": "6 Yes, 32 No; 6+32=38. The 6 Yes Regions are us-east-1, us-west-2, ap-southeast-1, ap-southeast-2, ap-northeast-1, eu-west-1. The other 32 rows carry an explicit icon-no plus No, so this is 32 stated non-support values, not 32 absences.",
+      "scope": "Directory Service control-plane endpoint (ds.<region>.amazonaws.com) table. Protocol column is uniformly HTTPS and is not scope.",
+      "reasoning": "Simple AD is a distinct column with the sparsest availability on the page. It is the clearest evidence that the four columns are four separate claims: a parser that reports a single Directory Service region count would report 38 and lose the fact that Simple AD is stated unavailable in 32 of them."
+    },
+    {
+      "featureName": "Directory Service Data - AWS Managed Microsoft AD",
+      "axis": "region",
+      "axisKind": "external",
+      "expectedCount": 18,
+      "statuses": "18 Yes, 0 No; 18+0=18. Every cell in this column of the second table is icon-yes plus Yes.",
+      "scope": "Second dimension is the endpoint family: the Directory Service Data API endpoint (ds-data.<region>.amazonaws.com), which is a strictly smaller footprint than the ds.<region> control plane. All 18 of these Regions also appear in the first table, so the page's union is still 38 Regions.",
+      "reasoning": "The second table is introduced by its own heading and its own sentence about which Region-specific endpoints Directory Service Data supports, so it is a separate capability from the control-plane availability, even though the column name repeats. The axis is again AWS Regions."
+    },
+    {
+      "featureName": "Directory Service Data - AD Connector",
+      "axis": "region",
+      "axisKind": "external",
+      "expectedCount": 18,
+      "statuses": "0 Yes, 18 No; 0+18=18. Every cell is icon-no plus No. This is a fully stated non-support claim across all 18 listed Regions, not an omission.",
+      "scope": "Directory Service Data endpoint (ds-data.<region>.amazonaws.com) table only. The same directory type is Yes in all 38 Regions of the control-plane table, so the scope label is load-bearing.",
+      "reasoning": "A column that is No everywhere is still a coverage statement and must be recorded as one; dropping it because it has no Yes values would silently discard 18 explicit exclusions and would also make the AD Connector claim look uniformly available across the page."
+    },
+    {
+      "featureName": "Directory Service Data - Simple AD",
+      "axis": "region",
+      "axisKind": "external",
+      "expectedCount": 18,
+      "statuses": "0 Yes, 18 No; 0+18=18. Every cell is icon-no plus No.",
+      "scope": "Directory Service Data endpoint (ds-data.<region>.amazonaws.com) table only.",
+      "reasoning": "Same 18-Region axis as the other two Directory Service Data columns; the column is a distinct directory type and therefore a distinct claim, stated entirely as No."
+    }
+  ],
+  "shouldNotExtract": "The Region name, Region, Endpoint and Protocol columns are keys and metadata, not coverage: 'ds.eu-west-1.amazonaws.com' and 'HTTPS' are never Yes/No values, and Protocol is the literal string HTTPS in all 56 rows. The icon-yes and icon-no PNG image links are rendering artefacts of the Yes/No words, not separate values. The three trailing cross-reference paragraphs (GovCloud (US) service endpoints, Endpoints and ARNs for Amazon Web Services in China, and twice the Directory Service Data endpoints and quotas FIPS pointer) are pointers to other pages and state no availability here; in particular the FIPS sentences must not be turned into a FIPS-endpoint coverage claim, because this page lists no FIPS endpoints. The '## See also' bullet about AI coding assistant skills and the 'aws agent-toolkit search-skills' command is boilerplate. The <a name=...> anchors and the two section headings are structure, not data.",
+  "coverageDimensions": "REGION: fully supplied. 38 named Region codes for the Directory Service control plane and 18 named Region codes for Directory Service Data, each with a stated Yes or No per directory type; the union of both tables is 38 distinct Regions, and the 18 Directory Service Data Regions are a subset of the 38. Partitions are mixed into the same list (2 China Regions and 2 GovCloud Regions among the 38), so a partition figure can be derived only by reading Region codes, and the page never uses the word partition. SERVICE: none. The page is about a single service, AWS Directory Service, plus its Directory Service Data API; it does not enumerate AWS services and supports no 'N services covered' figure. RESOURCE TYPE: none. The columns are directory types (product editions and offerings such as Simple AD and AD Connector), not resource types, and no ARN type, CloudFormation type or API resource is named anywhere on the page. Any resourceType number attributed to this page would be fabricated.",
+  "trap": "The single most likely misparse is collapsing the page to one number: reporting 'AWS Directory Service is available in 38 Regions' (or in 56, by adding the two tables) and discarding the per-directory-type split. That loses 11 stated Hybrid Edition exclusions, 32 stated Simple AD exclusions, and 36 stated Directory Service Data exclusions. Runners-up: (a) double counting the 18 Directory Service Data Regions as new Regions when all 18 are already in the first table; (b) treating the second table's 'AWS Managed Microsoft AD' column as the same capability as the first table's 'AWS Managed Microsoft AD (Standard and Enterprise Editions)' column and merging 18 rows into 38; (c) dropping the two all-No Directory Service Data columns as empty, which converts 36 explicit No values into silence; (d) harvesting the Endpoint or Protocol column as a coverage value, which yields 38 or 56 phantom 'HTTPS' hits; (e) reading the icon image alt-less <img> tags as blank cells and inferring Partial where the page only ever states Yes or No - there is no tri-state anywhere on this page; (f) turning the FIPS or GovCloud cross-reference sentences into availability claims."
+}

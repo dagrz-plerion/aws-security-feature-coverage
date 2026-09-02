@@ -2116,6 +2116,70 @@
       ]
     },
     {
+      "axis": "managedRuleGroupRule",
+      "count": 58,
+      "members": [
+        "AllRequests",
+        "AttributeCompromisedCredentials",
+        "AttributeLongSession",
+        "AttributePasswordTraversal",
+        "AttributeUsernameTraversal",
+        "AttributeUsernameTraversalHigh",
+        "AutomatedBrowser",
+        "BrowserInconsistency",
+        "CategoryAI",
+        "CategoryAdvertising",
+        "CategoryArchiver",
+        "CategoryContentFetcher",
+        "CategoryEmailClient",
+        "CategoryHttpLibrary",
+        "CategoryLinkChecker",
+        "CategoryMiscellaneous",
+        "CategoryMonitoring",
+        "CategoryPagePreview",
+        "CategoryScrapingFramework",
+        "CategorySearchEngine",
+        "CategorySecurity",
+        "CategorySeo",
+        "CategorySocialMedia",
+        "CategoryWebhooks",
+        "ChallengeAllDuringEvent",
+        "ChallengeDDoSRequests",
+        "DDoSRequests",
+        "RiskScoreHigh",
+        "SignalAutomatedBrowser",
+        "SignalClientHumanInteractivityAbsentLow",
+        "SignalCredentialCompromised",
+        "SignalKnownBotDataCenter",
+        "SignalMissingCredential",
+        "SignalNonBrowserUserAgent",
+        "TGT_ML_CoordinatedActivityLow, TGT_ML_CoordinatedActivityMedium, TGT_ML_CoordinatedActivityHigh",
+        "TGT_SignalAutomatedBrowser",
+        "TGT_SignalBrowserAutomationExtension",
+        "TGT_SignalBrowserInconsistency",
+        "TGT_TokenAbsent",
+        "TGT_TokenReuseAsnLow, TGT_TokenReuseAsnMedium, TGT_TokenReuseAsnHigh",
+        "TGT_TokenReuseCountryLow, TGT_TokenReuseCountryMedium, TGT_TokenReuseCountryHigh",
+        "TGT_TokenReuseIpLow, TGT_TokenReuseIpMedium, TGT_TokenReuseIpHigh",
+        "TGT_VolumetricIpTokenAbsent",
+        "TGT_VolumetricSession",
+        "TGT_VolumetricSessionMaximum",
+        "TokenRejected",
+        "UnsupportedCognitoIDP",
+        "VolumetricAddressHigh",
+        "VolumetricAddressLow",
+        "VolumetricIPSuccessfulResponse",
+        "VolumetricIpFailedLoginResponseHigh",
+        "VolumetricIpHigh",
+        "VolumetricPhoneNumberHigh",
+        "VolumetricSession",
+        "VolumetricSessionFailedLoginResponseHigh",
+        "VolumetricSessionHigh",
+        "VolumetricSessionSuccessfulResponse",
+        "VolumetricSessionTokenReuseIp"
+      ]
+    },
+    {
       "axis": "apiOperation",
       "count": 56,
       "members": [
@@ -2272,6 +2336,44 @@
         "kms:ViaService",
         "kms:WrappingAlgorithm",
         "kms:WrappingKeySpec"
+      ]
+    },
+    {
+      "axis": "threatCategory",
+      "count": 32,
+      "members": [
+        "AI",
+        "Advertising",
+        "Archiver",
+        "Botnet",
+        "Botnet Web",
+        "Botnet Windows",
+        "Compromised",
+        "ContentFetcher",
+        "DoS",
+        "EmailClient",
+        "Emerging Threats",
+        "Exploits",
+        "FUP",
+        "HttpLibrary",
+        "LinkChecker",
+        "Malware",
+        "Malware Coin Mining",
+        "Malware Mobile",
+        "Malware Web",
+        "Miscellaneous",
+        "Monitoring",
+        "PagePreview",
+        "Phishing",
+        "Scanners",
+        "ScrapingFramework",
+        "SearchEngine",
+        "Security",
+        "Seo",
+        "SocialMedia",
+        "Suspect",
+        "Web Attacks",
+        "Webhooks"
       ]
     },
     {
@@ -2432,28 +2534,6 @@
       ]
     },
     {
-      "axis": "threatCategory",
-      "count": 16,
-      "members": [
-        "Botnet",
-        "Botnet Web",
-        "Botnet Windows",
-        "Compromised",
-        "DoS",
-        "Emerging Threats",
-        "Exploits",
-        "FUP",
-        "Malware",
-        "Malware Coin Mining",
-        "Malware Mobile",
-        "Malware Web",
-        "Phishing",
-        "Scanners",
-        "Suspect",
-        "Web Attacks"
-      ]
-    },
-    {
       "axis": "accessScope",
       "count": 12,
       "members": [
@@ -2485,20 +2565,6 @@
         "Python",
         "Ruby",
         "Rust"
-      ]
-    },
-    {
-      "axis": "policyType",
-      "count": 8,
-      "members": [
-        "AWS Network Firewall",
-        "AWS Shield Advanced",
-        "AWS WAF",
-        "Amazon VPC network ACL",
-        "Amazon VPC security group",
-        "DNS Firewall",
-        "Fortigate CNF",
-        "Palo Alto Networks Cloud Next Generation Firewall"
       ]
     },
     {
@@ -2549,6 +2615,6 @@
       ]
     }
   ],
-  "generatedAt": "2026-09-02T03:44:05.769Z",
+  "generatedAt": "2026-09-02T04:06:16.282Z",
   "note": "Axes AWS defines only inside its documentation. Membership is everything the catalogs name."
 }

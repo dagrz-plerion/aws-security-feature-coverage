@@ -1,0 +1,71 @@
+{
+  "axes": [
+    "managedRuleGroupRule"
+  ],
+  "claims": [
+    {
+      "axis": "managedRuleGroupRule",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "64fb7afa59d002da597a696c1ea6b564ccc0de612fc7b8375165e6f69b50d6c7",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md :: AWS WAF Distributed Denial of Service (DDoS) prevention rule group",
+          "quote": "| ChallengeAllDuringEvent | Matches requests that have the label `awswaf:managed:aws:anti-ddos:challengeable-request` for any protected resource that is currently under attack. <br />Rule action: Challenge<br />You can only override this rule action to Allow or Count. The use of Allow is not recommended. For any rule action setting, the rule only matches requests that have the `challengeable-request` label.<br />The configuration of this rule affects the evaluation of the next rule, `ChallengeDDoSRequests`. AWS WAF only evaluates that rule when the action for this rule has override set to Coun…",
+          "retrievedAt": "2026-09-01T04:29:46.379Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md"
+        }
+      ],
+      "extractorId": "recipe:waf-anti-ddos-rule-names",
+      "featureId": "wafv2/anti-ddos-rule-group",
+      "id": "wafv2-anti-ddos-rule-group-managedrulegrouprule-challengeallduringevent-recipe-waf-anti-ddos-rule-names",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ChallengeAllDuringEvent",
+      "targetLabel": "ChallengeAllDuringEvent"
+    },
+    {
+      "axis": "managedRuleGroupRule",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "64fb7afa59d002da597a696c1ea6b564ccc0de612fc7b8375165e6f69b50d6c7",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md :: AWS WAF Distributed Denial of Service (DDoS) prevention rule group",
+          "quote": "| ChallengeDDoSRequests | Matches requests for a protected resource that meet or exceed the rule group's configured challenge sensitivity setting, during times that the resource is under attack. <br />Rule action: Challenge<br />You can only override this rule action to Allow or Count. The use of Allow is not recommended. In any case, the rule only matches requests that have the `challengeable-request` label.<br />AWS WAF only evaluates this rule if you override the action to Count in the prior rule, `ChallengeAllDuringEvent`. <br />Labels: `awswaf:managed:aws:anti-ddos:ChallengeDDoSRequests` …",
+          "retrievedAt": "2026-09-01T04:29:46.379Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md"
+        }
+      ],
+      "extractorId": "recipe:waf-anti-ddos-rule-names",
+      "featureId": "wafv2/anti-ddos-rule-group",
+      "id": "wafv2-anti-ddos-rule-group-managedrulegrouprule-challengeddosrequests-recipe-waf-anti-ddos-rule-names",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "ChallengeDDoSRequests",
+      "targetLabel": "ChallengeDDoSRequests"
+    },
+    {
+      "axis": "managedRuleGroupRule",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "64fb7afa59d002da597a696c1ea6b564ccc0de612fc7b8375165e6f69b50d6c7",
+          "locator": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md :: AWS WAF Distributed Denial of Service (DDoS) prevention rule group",
+          "quote": "| DDoSRequests | Matches requests for a protected resource that meet or exceed the rule group's configured block sensitivity setting, during times that the resource is under attack. <br />Rule action: Block<br />Labels: `awswaf:managed:aws:anti-ddos:DDoSRequests`  |",
+          "retrievedAt": "2026-09-01T04:29:46.379Z",
+          "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md"
+        }
+      ],
+      "extractorId": "recipe:waf-anti-ddos-rule-names",
+      "featureId": "wafv2/anti-ddos-rule-group",
+      "id": "wafv2-anti-ddos-rule-group-managedrulegrouprule-ddosrequests-recipe-waf-anti-ddos-rule-names",
+      "method": "deterministic",
+      "status": "covered",
+      "targetId": "DDoSRequests",
+      "targetLabel": "DDoSRequests"
+    }
+  ],
+  "featureId": "wafv2/anti-ddos-rule-group",
+  "generatedAt": "2026-09-02T04:06:16.283Z",
+  "serviceId": "wafv2",
+  "unresolvedTargets": []
+}

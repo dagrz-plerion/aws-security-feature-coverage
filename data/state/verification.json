@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-02T03:53:01.549Z",
-  "pages": 57,
+  "generatedAt": "2026-09-02T04:07:11.262Z",
+  "pages": 61,
   "problems": 2,
   "verdicts": [
     {
@@ -19,29 +19,29 @@
     },
     {
       "candidates": 7,
-      "claims": 2,
+      "claims": 1,
       "featureIds": [
-        "guardduty/guardduty-findings"
+        "guardduty/rds-protection"
       ],
       "labelsNotInQuote": 0,
-      "note": "read 2 of about 7 candidate values on the page",
-      "quotesChecked": 2,
+      "note": "read 1 of about 7 candidate values on the page",
+      "quotesChecked": 1,
       "quotesMissing": 0,
-      "readRatio": 0.29,
+      "readRatio": 0.14,
       "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md",
       "verdict": "partial-read"
     },
     {
-      "candidates": 2,
-      "claims": 1,
+      "candidates": 56,
+      "claims": 38,
       "featureIds": [
-        "wafv2/aws-managed-rules-rule-groups-list"
+        "ds/service-wide"
       ],
       "labelsNotInQuote": 0,
-      "quotesChecked": 1,
+      "quotesChecked": 25,
       "quotesMissing": 0,
-      "readRatio": 0.5,
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md",
+      "readRatio": 0.68,
+      "url": "https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.md",
       "verdict": "ok"
     },
     {
@@ -60,6 +60,19 @@
       "quotesMissing": 0,
       "readRatio": 0.73,
       "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 42,
+      "claims": 36,
+      "featureIds": [
+        "config/service-wide"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 0.86,
+      "url": "https://docs.aws.amazon.com/config/latest/developerguide/config-region-support.md",
       "verdict": "ok"
     },
     {
@@ -116,6 +129,19 @@
       "verdict": "ok"
     },
     {
+      "candidates": 25,
+      "claims": 25,
+      "featureIds": [
+        "artifact/service-wide"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.md",
+      "verdict": "ok"
+    },
+    {
       "candidates": 0,
       "claims": 29,
       "featureIds": [
@@ -165,6 +191,19 @@
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 36,
+      "claims": 36,
+      "featureIds": [
+        "cloudtrail/service-wide"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 25,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-supported-regions.md",
       "verdict": "ok"
     },
     {
@@ -678,16 +717,45 @@
     },
     {
       "candidates": 0,
-      "claims": 2,
+      "claims": 13,
       "featureIds": [
         "wafv2/account-takeover-prevention-rule-group",
         "wafv2/aws-managed-rules-rule-groups-list"
       ],
       "labelsNotInQuote": 0,
-      "quotesChecked": 2,
+      "quotesChecked": 13,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 0,
+      "claims": 18,
+      "featureIds": [
+        "wafv2/account-takeover-prevention-rule-group",
+        "wafv2/acfp-rule-group",
+        "wafv2/aws-managed-rules-rule-groups-list"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 18,
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md",
+      "verdict": "ok"
+    },
+    {
+      "candidates": 2,
+      "claims": 4,
+      "featureIds": [
+        "wafv2/anti-ddos-rule-group",
+        "wafv2/aws-managed-rules-rule-groups-list"
+      ],
+      "labelsNotInQuote": 0,
+      "quotesChecked": 4,
+      "quotesMissing": 0,
+      "readRatio": 1,
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md",
       "verdict": "ok"
     },
     {
@@ -718,25 +786,13 @@
     },
     {
       "candidates": 0,
-      "claims": 1,
+      "claims": 47,
       "featureIds": [
-        "wafv2/aws-managed-rules-rule-groups-list"
+        "wafv2/aws-managed-rules-rule-groups-list",
+        "wafv2/bot-control-rule-group"
       ],
       "labelsNotInQuote": 0,
-      "quotesChecked": 1,
-      "quotesMissing": 0,
-      "readRatio": 1,
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md",
-      "verdict": "ok"
-    },
-    {
-      "candidates": 0,
-      "claims": 1,
-      "featureIds": [
-        "wafv2/aws-managed-rules-rule-groups-list"
-      ],
-      "labelsNotInQuote": 0,
-      "quotesChecked": 1,
+      "quotesChecked": 25,
       "quotesMissing": 0,
       "readRatio": 1,
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-bot.md",

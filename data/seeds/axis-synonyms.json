@@ -1,13 +1,13 @@
 {
-  "_comment": "An independent reader names an axis in the page's own words; we name it in the map's words. These are the same axis under two names. Only put a pair here when they genuinely denote the same set of things \u2014 if the reader meant something we do not measure, that is a gap to close, not a synonym to declare.",
+  "_comment": "An independent reader names an axis in the page's own words; we name it in the map's words. These are the same axis under two names. Only put a pair here when they genuinely denote the same set of things \u2014 if the reader meant something we do not measure, that is a gap to close, not a synonym to declare. A name that means different things on different pages does not belong here: \"managedRule\" is a Config managed rule on one page and a rule inside a WAF rule group on another, so it is normalised on the expectation that used it rather than globally.",
   "synonyms": {
     "complianceFramework": "auditFramework",
     "securityStandard": "complianceStandard",
-    "managedRule": "configRule",
     "managedDataIdentifierId": "dataIdentifier",
     "eventSource": "service",
     "sensitiveDataType": "dataIdentifier",
     "modelFileFormat": "fileExtension",
-    "logSource": "service"
+    "logSource": "service",
+    "managedRuleName": "managedRuleGroupRule"
   }
 }

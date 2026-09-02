@@ -76,6 +76,10 @@
       "kind": "catalogue",
       "label": "managed rule groups the service publishes"
     },
+    "managedRuleGroupRule": {
+      "kind": "catalogue",
+      "label": "rules inside a managed rule group"
+    },
     "modelFileFormat": {
       "kind": "external",
       "label": "machine-learning model file formats"
@@ -2139,6 +2143,63 @@
       "serviceName": "AWS Artifact",
       "summary": "",
       "targets": {},
+      "tier": "tier1",
+      "unresolved": 0
+    },
+    {
+      "axes": {
+        "region": {
+          "covered": 3,
+          "notCovered": 22,
+          "partial": 0,
+          "scoped": 0,
+          "total": 46,
+          "unknown": 21
+        }
+      },
+      "claimCount": 25,
+      "confidence": 0.7,
+      "discoveredBy": [
+        "service-level"
+      ],
+      "docUrls": [],
+      "id": "artifact/service-wide",
+      "kind": "configuration",
+      "llmClaims": 0,
+      "method": "deterministic",
+      "name": "AWS Artifact: stated for the service as a whole",
+      "serviceId": "artifact",
+      "serviceName": "AWS Artifact",
+      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+      "targets": {
+        "region": [
+          "af-south-1",
+          "ap-east-1",
+          "ap-northeast-1",
+          "ap-northeast-2",
+          "ap-northeast-3",
+          "ap-south-1",
+          "ap-southeast-1",
+          "ap-southeast-2",
+          "ap-southeast-3",
+          "ca-central-1",
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3",
+          "me-central-1",
+          "me-south-1",
+          "sa-east-1",
+          "us-east-1",
+          "us-east-2",
+          "us-gov-east-1",
+          "us-gov-west-1",
+          "us-west-1",
+          "us-west-2"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -6455,6 +6516,74 @@
       "unresolved": 0
     },
     {
+      "axes": {
+        "region": {
+          "covered": 36,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 46,
+          "unknown": 10
+        }
+      },
+      "claimCount": 36,
+      "confidence": 0.7,
+      "discoveredBy": [
+        "service-level"
+      ],
+      "docUrls": [],
+      "id": "cloudtrail/service-wide",
+      "kind": "configuration",
+      "llmClaims": 0,
+      "method": "deterministic",
+      "name": "AWS CloudTrail: stated for the service as a whole",
+      "serviceId": "cloudtrail",
+      "serviceName": "AWS CloudTrail",
+      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+      "targets": {
+        "region": [
+          "af-south-1",
+          "ap-east-1",
+          "ap-northeast-1",
+          "ap-northeast-2",
+          "ap-northeast-3",
+          "ap-south-1",
+          "ap-south-2",
+          "ap-southeast-1",
+          "ap-southeast-2",
+          "ap-southeast-3",
+          "ap-southeast-4",
+          "ap-southeast-5",
+          "ap-southeast-7",
+          "ca-central-1",
+          "ca-west-1",
+          "cn-north-1",
+          "cn-northwest-1",
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3",
+          "il-central-1",
+          "me-central-1",
+          "me-south-1",
+          "mx-central-1",
+          "sa-east-1",
+          "us-east-1",
+          "us-east-2",
+          "us-gov-east-1",
+          "us-gov-west-1",
+          "us-west-1",
+          "us-west-2"
+        ]
+      },
+      "tier": "tier1",
+      "unresolved": 0
+    },
+    {
       "axes": {},
       "claimCount": 0,
       "confidence": 0.6,
@@ -10306,6 +10435,74 @@
       "unresolved": 0
     },
     {
+      "axes": {
+        "region": {
+          "covered": 36,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 46,
+          "unknown": 10
+        }
+      },
+      "claimCount": 36,
+      "confidence": 0.7,
+      "discoveredBy": [
+        "service-level"
+      ],
+      "docUrls": [],
+      "id": "config/service-wide",
+      "kind": "configuration",
+      "llmClaims": 0,
+      "method": "deterministic",
+      "name": "AWS Config: stated for the service as a whole",
+      "serviceId": "config",
+      "serviceName": "AWS Config",
+      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+      "targets": {
+        "region": [
+          "af-south-1",
+          "ap-east-1",
+          "ap-east-2",
+          "ap-northeast-1",
+          "ap-northeast-2",
+          "ap-northeast-3",
+          "ap-south-1",
+          "ap-south-2",
+          "ap-southeast-1",
+          "ap-southeast-2",
+          "ap-southeast-3",
+          "ap-southeast-4",
+          "ap-southeast-5",
+          "ap-southeast-6",
+          "ap-southeast-7",
+          "ca-central-1",
+          "ca-west-1",
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3",
+          "il-central-1",
+          "me-central-1",
+          "me-south-1",
+          "mx-central-1",
+          "sa-east-1",
+          "us-east-1",
+          "us-east-2",
+          "us-gov-east-1",
+          "us-gov-west-1",
+          "us-west-1",
+          "us-west-2"
+        ]
+      },
+      "tier": "tier1",
+      "unresolved": 0
+    },
+    {
       "axes": {},
       "claimCount": 0,
       "confidence": 0.6,
@@ -12367,6 +12564,76 @@
           "sa-east-1",
           "us-east-1",
           "us-east-2",
+          "us-west-1",
+          "us-west-2"
+        ]
+      },
+      "tier": "tier1",
+      "unresolved": 0
+    },
+    {
+      "axes": {
+        "region": {
+          "covered": 38,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 46,
+          "unknown": 8
+        }
+      },
+      "claimCount": 38,
+      "confidence": 0.7,
+      "discoveredBy": [
+        "service-level"
+      ],
+      "docUrls": [],
+      "id": "ds/service-wide",
+      "kind": "configuration",
+      "llmClaims": 0,
+      "method": "deterministic",
+      "name": "AWS Directory Service: stated for the service as a whole",
+      "serviceId": "ds",
+      "serviceName": "AWS Directory Service",
+      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+      "targets": {
+        "region": [
+          "af-south-1",
+          "ap-east-1",
+          "ap-east-2",
+          "ap-northeast-1",
+          "ap-northeast-2",
+          "ap-northeast-3",
+          "ap-south-1",
+          "ap-south-2",
+          "ap-southeast-1",
+          "ap-southeast-2",
+          "ap-southeast-3",
+          "ap-southeast-4",
+          "ap-southeast-5",
+          "ap-southeast-6",
+          "ap-southeast-7",
+          "ca-central-1",
+          "ca-west-1",
+          "cn-north-1",
+          "cn-northwest-1",
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3",
+          "il-central-1",
+          "me-central-1",
+          "me-south-1",
+          "mx-central-1",
+          "sa-east-1",
+          "us-east-1",
+          "us-east-2",
+          "us-gov-east-1",
+          "us-gov-west-1",
           "us-west-1",
           "us-west-2"
         ]
@@ -16924,6 +17191,26 @@
     {
       "axes": {},
       "claimCount": 0,
+      "confidence": 0.7,
+      "discoveredBy": [
+        "service-level"
+      ],
+      "docUrls": [],
+      "id": "fms/service-wide",
+      "kind": "configuration",
+      "llmClaims": 0,
+      "method": "deterministic",
+      "name": "AWS Firewall Manager: stated for the service as a whole",
+      "serviceId": "fms",
+      "serviceName": "AWS Firewall Manager",
+      "summary": "Coverage the documentation states for the whole service rather than for one named feature.",
+      "targets": {},
+      "tier": "tier1",
+      "unresolved": 0
+    },
+    {
+      "axes": {},
+      "claimCount": 0,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -18202,17 +18489,9 @@
           "scoped": 0,
           "total": 109,
           "unknown": 0
-        },
-        "region": {
-          "covered": 0,
-          "notCovered": 2,
-          "partial": 0,
-          "scoped": 0,
-          "total": 46,
-          "unknown": 44
         }
       },
-      "claimCount": 111,
+      "claimCount": 109,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -18341,10 +18620,6 @@
           "UnauthorizedAccess:IAMUser/UnusualASNCaller",
           "UnauthorizedAccess:S3/MaliciousIPCaller.Custom",
           "UnauthorizedAccess:S3/TorIPCaller"
-        ],
-        "region": [
-          "ap-east-1",
-          "ap-east-2"
         ]
       },
       "tier": "tier1",
@@ -18894,9 +19169,17 @@
           "scoped": 0,
           "total": 9,
           "unknown": 0
+        },
+        "region": {
+          "covered": 0,
+          "notCovered": 1,
+          "partial": 0,
+          "scoped": 0,
+          "total": 46,
+          "unknown": 45
         }
       },
-      "claimCount": 9,
+      "claimCount": 10,
       "confidence": 0.85,
       "discoveredBy": [
         "guide-chapter",
@@ -18924,6 +19207,9 @@
           "CredentialAccess:RDS/TorIPCaller.SuccessfulLogin",
           "Discovery:RDS/MaliciousIPCaller",
           "Discovery:RDS/TorIPCaller"
+        ],
+        "region": [
+          "ap-east-2"
         ]
       },
       "tier": "tier1",
@@ -42970,16 +43256,25 @@
     },
     {
       "axes": {
-        "resourceType": {
+        "managedRuleGroupRule": {
+          "count": 11,
           "covered": 0,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 11,
+          "unknown": 0
+        },
+        "resourceType": {
+          "covered": 1,
           "notCovered": 1,
           "partial": 0,
           "scoped": 0,
           "total": 3134,
-          "unknown": 3133
+          "unknown": 3132
         }
       },
-      "claimCount": 1,
+      "claimCount": 13,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -42996,7 +43291,21 @@
       "serviceName": "AWS WAF",
       "summary": "Learn about the AWS WAF Fraud Control account takeover prevention (ATP) managed rule group available from AWS Managed Rules.",
       "targets": {
+        "managedRuleGroupRule": [
+          "AttributeCompromisedCredentials",
+          "AttributeLongSession",
+          "AttributePasswordTraversal",
+          "AttributeUsernameTraversal",
+          "SignalMissingCredential",
+          "TokenRejected",
+          "UnsupportedCognitoIDP",
+          "VolumetricIpFailedLoginResponseHigh",
+          "VolumetricIpHigh",
+          "VolumetricSession",
+          "VolumetricSessionFailedLoginResponseHigh"
+        ],
         "resourceType": [
+          "AWS::CloudFront::Distribution",
           "AWS::Cognito::UserPool"
         ]
       },
@@ -43022,6 +43331,57 @@
       "serviceName": "AWS WAF",
       "summary": "Add an AWS WAF Fraud Control account creation fraud prevention (ACFP) managed rule group to your protection pack (web ACL).",
       "targets": {},
+      "tier": "tier1",
+      "unresolved": 0
+    },
+    {
+      "axes": {
+        "managedRuleGroupRule": {
+          "count": 16,
+          "covered": 0,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 16,
+          "unknown": 0
+        }
+      },
+      "claimCount": 16,
+      "confidence": 1,
+      "discoveredBy": [
+        "declared"
+      ],
+      "docUrls": [
+        "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md"
+      ],
+      "id": "wafv2/acfp-rule-group",
+      "kind": "detection",
+      "llmClaims": 0,
+      "method": "manual",
+      "name": "Account creation fraud prevention rule group",
+      "serviceId": "wafv2",
+      "serviceName": "AWS WAF",
+      "summary": "The AWSManagedRulesACFPRuleSet managed rule group, which inspects account creation requests.",
+      "targets": {
+        "managedRuleGroupRule": [
+          "AllRequests",
+          "AttributeUsernameTraversalHigh",
+          "AutomatedBrowser",
+          "BrowserInconsistency",
+          "RiskScoreHigh",
+          "SignalClientHumanInteractivityAbsentLow",
+          "SignalCredentialCompromised",
+          "UnsupportedCognitoIDP",
+          "VolumetricAddressHigh",
+          "VolumetricAddressLow",
+          "VolumetricIpHigh",
+          "VolumetricIPSuccessfulResponse",
+          "VolumetricPhoneNumberHigh",
+          "VolumetricSessionHigh",
+          "VolumetricSessionSuccessfulResponse",
+          "VolumetricSessionTokenReuseIp"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -43115,8 +43475,18 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "managedRuleGroupRule": {
+          "count": 3,
+          "covered": 0,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 3,
+          "unknown": 0
+        }
+      },
+      "claimCount": 3,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -43132,7 +43502,13 @@
       "serviceId": "wafv2",
       "serviceName": "AWS WAF",
       "summary": "Learn about the Anti-DDoS managed rule group available from AWS Managed Rules.",
-      "targets": {},
+      "targets": {
+        "managedRuleGroupRule": [
+          "ChallengeAllDuringEvent",
+          "ChallengeDDoSRequests",
+          "DDoSRequests"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -43542,8 +43918,27 @@
       "unresolved": 0
     },
     {
-      "axes": {},
-      "claimCount": 0,
+      "axes": {
+        "managedRuleGroupRule": {
+          "count": 30,
+          "covered": 0,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 30,
+          "unknown": 0
+        },
+        "threatCategory": {
+          "count": 16,
+          "covered": 0,
+          "notCovered": 0,
+          "partial": 0,
+          "scoped": 0,
+          "total": 16,
+          "unknown": 0
+        }
+      },
+      "claimCount": 46,
       "confidence": 0.6,
       "discoveredBy": [
         "named-control"
@@ -43559,7 +43954,58 @@
       "serviceId": "wafv2",
       "serviceName": "AWS WAF",
       "summary": "Learn about the Bot Control managed rule group available from AWS Managed Rules.",
-      "targets": {},
+      "targets": {
+        "managedRuleGroupRule": [
+          "CategoryAdvertising",
+          "CategoryAI",
+          "CategoryArchiver",
+          "CategoryContentFetcher",
+          "CategoryEmailClient",
+          "CategoryHttpLibrary",
+          "CategoryLinkChecker",
+          "CategoryMiscellaneous",
+          "CategoryMonitoring",
+          "CategoryPagePreview",
+          "CategoryScrapingFramework",
+          "CategorySearchEngine",
+          "CategorySecurity",
+          "CategorySeo",
+          "CategorySocialMedia",
+          "CategoryWebhooks",
+          "SignalAutomatedBrowser",
+          "SignalKnownBotDataCenter",
+          "SignalNonBrowserUserAgent",
+          "TGT_ML_CoordinatedActivityLow, TGT_ML_CoordinatedActivityMedium, TGT_ML_CoordinatedActivityHigh",
+          "TGT_SignalAutomatedBrowser",
+          "TGT_SignalBrowserAutomationExtension",
+          "TGT_SignalBrowserInconsistency",
+          "TGT_TokenAbsent",
+          "TGT_TokenReuseAsnLow, TGT_TokenReuseAsnMedium, TGT_TokenReuseAsnHigh",
+          "TGT_TokenReuseCountryLow, TGT_TokenReuseCountryMedium, TGT_TokenReuseCountryHigh",
+          "TGT_TokenReuseIpLow, TGT_TokenReuseIpMedium, TGT_TokenReuseIpHigh",
+          "TGT_VolumetricIpTokenAbsent",
+          "TGT_VolumetricSession",
+          "TGT_VolumetricSessionMaximum"
+        ],
+        "threatCategory": [
+          "Advertising",
+          "AI",
+          "Archiver",
+          "ContentFetcher",
+          "EmailClient",
+          "HttpLibrary",
+          "LinkChecker",
+          "Miscellaneous",
+          "Monitoring",
+          "PagePreview",
+          "ScrapingFramework",
+          "SearchEngine",
+          "Security",
+          "Seo",
+          "SocialMedia",
+          "Webhooks"
+        ]
+      },
       "tier": "tier1",
       "unresolved": 0
     },
@@ -45483,11 +45929,25 @@
       "subject": "unresolved:doc:quick"
     },
     {
+      "detail": "aws-managed-rule-groups-atp.md :: ATP rule group availability by protected resource type (resourceType): the page states 2, we take none",
+      "id": "13c28e13eb6c5ad5",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "identity-center-customer-managed-key on https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.md could not resolve 10 service values. Verbatim: Amazon Athena SQL | Amazon EKS Capabilities | Amazon EMR Studio | Amazon OpenSearch Service Serverless Service | Amazon S3 Access Grants | Amazon SageMaker Unified Studio | AWS account access (account access manager) | AWS Transfer Family web apps | Kiro | OpenSearch user interface (Dashboards)",
       "id": "1428dbe3f824a8c3",
       "kind": "alias",
       "stage": "stage5-coverage",
       "subject": "unresolved:identity-center-customer-managed-key"
+    },
+    {
+      "detail": "regions.md :: AWS Managed Microsoft AD (Standard and Enterprise Editions) (region): the page states 38, we take none",
+      "id": "145d9477b16e5cc2",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "The alias \"IMDSv2\" points at ec2/instance-metadata-and-user-data, which no longer exists. Either the feature was renamed or the seed is stale.",
@@ -45565,6 +46025,20 @@
       "kind": "recall",
       "stage": "stage5-coverage",
       "subject": "expectation not met"
+    },
+    {
+      "detail": "aws-managed-rule-groups-atp.md :: Account takeover prevention rules listing (AWSManagedRulesATPRuleSet) (managedRuleGroupRule): the page states 11, we take none",
+      "id": "191a8f56cb75e507",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
+      "detail": "recipe waf-atp-cloudfront-response-inspection produced 0 claims, fewer than the 1 it promises on https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md. The page shape has probably changed.",
+      "id": "196694ccfa38ce94",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:waf-atp-cloudfront-response-inspection"
     },
     {
       "detail": "1 rules were broken in the last run, starting with \"every target exists in its axis universe\".",
@@ -46141,6 +46615,13 @@
       "subject": "unresolved:iam-matrix-service-linked-roles"
     },
     {
+      "detail": "regions.md :: Simple AD (region): the page states 38, we take none",
+      "id": "462eb2a3f6fb17aa",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "recipe shield-advanced-protected-resources produced 3 claims, fewer than the 5 it promises on https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protections-by-resource-type.md. The page shape has probably changed.",
       "id": "464488034822dc59",
       "kind": "parser",
@@ -46202,6 +46683,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:marketplace"
+    },
+    {
+      "detail": "aws-managed-rule-groups-atp.md :: ATP rule group availability by protected resource type (resourceType): the page states 2, we take 1",
+      "id": "4cfcbb11e498a581",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"Reserved Instance (RI) Reporting\" did not join to a service prefix. Score 0, signals none.",
@@ -46491,6 +46979,13 @@
       "subject": "unresolved:doc:res"
     },
     {
+      "detail": "regions.md :: Directory Service Data - AWS Managed Microsoft AD (region): the page states 18, we take none",
+      "id": "6197b182cad9dd2d",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "internal-sources.md :: Collecting data from AWS services in Security Lake (natively-supported AWS services as log sources) (service): the page states 6, we take none",
       "id": "62aa39cfeb9d1979",
       "kind": "recall",
@@ -46615,6 +47110,13 @@
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "recipe:organizations-trusted-access"
+    },
+    {
+      "detail": "guardduty_regions.md :: RDS Protection (region): the page states 2, we take 1",
+      "id": "6ac033fec348fade",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "iam-matrix-actions on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 139 service values. Verbatim: AWS Account Management | AWS Action Recommendations | AWS Activate Console | AWS Amplify Admin | Apache Kafka APIs for Amazon MSK clusters | Amazon API Gateway Management | Amazon API Gateway Management V2 | Amazon AppIntegrations | AWS Application Discovery Arsenal | Amazon Application Recovery Controller - Zonal Shift | AWS Application Transformation Service | AWS App Mesh Preview | Amazon ARC Region Switch | AWS Backup storage | AWS Billing and Cost Management | AWS Budget Service | Amazon Q Developer in chat applications | AWS CloudTrail Data | Amazon CloudWatch Evidently | Amazon CloudWatch Network Synthetic Monitor | Amazon CloudWatch Observability Admin Service | Amazon CloudWatch RUM | Amazon CloudWatch Synthetics | AWS CodeDeploy secure host commands service | Amazon Cognito user pools | Amazon Connect Customer Cases | Amazon Connect Customer Customer Profiles | Amazon Connect Customer Outbound Campaigns | Amazon Connect Customer Voice ID | AWS Console Mobile Application | AWS Consolidated Billing | AWS Cost Optimization Hub | AWS Customer Verification Service | Database Query Metadata Service | AWS Diagnostic tools | Amazon Elastic Compute Cloud (Amazon EC2) | Amazon Elastic Block Store (Amazon EBS) | Amazon Elastic Container Registry (Amazon ECR) | Amazon Elastic Container Registry Public (Amazon ECR Public) | Amazon Elastic Container Service (Amazon ECS) | Amazon Elastic File System (Amazon EFS) | Amazon Elastic Kubernetes Service (Amazon EKS) | Amazon Elastic Kubernetes Service (Amazon EKS) Auth | AWS Elastic Load Balancing | AWS Elemental Appliances and Software Activation Service | AWS Elemental Appliances and Software | AWS Elemental Support Cases | AWS Elemental Support Content | AWS End User Messaging SMS and Voice V2 | Amazon EventBridge Schemas | Amazon FinSpace API | Amazon Ground Truth Labeling | AWS HealthImaging | IAM Identity Center Directory | IAM Identity Center Identity Store | IAM Identity Center OIDC service | AWS Identity and Access Management and Access Analyzer | AWS Identity and Access Management Roles Anywhere | AWS Identity Store Auth | AWS Identity Sync",
@@ -46792,6 +47294,13 @@
       "subject": "expectation not met"
     },
     {
+      "detail": "using-service-linked-roles.md :: Supported Regions for AWS Artifact service-linked roles (AWSServiceRoleForArtifact) (region): the page states 25, we take none",
+      "id": "7a2fcf36ee7045c4",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"doc:reference-architecture-diagrams\" did not join to a service prefix. Score 0, signals none.",
       "id": "7a347fe0b040508a",
       "kind": "alias",
@@ -46939,6 +47448,13 @@
       "subject": "expectation not met"
     },
     {
+      "detail": "config-region-support.md :: AWS Config (Regions where you can enable AWS Config) (region): the page states 36, we take none",
+      "id": "8117087428579ccf",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"doc:serverless\" did not join to a service prefix. Score 0, signals none.",
       "id": "819523b56d556042",
       "kind": "alias",
@@ -47035,6 +47551,13 @@
       "kind": "recall",
       "stage": "stage4-features",
       "subject": "features:inspector-scan"
+    },
+    {
+      "detail": "regions.md :: AWS Managed Microsoft AD (Hybrid Edition) (region): the page states 38, we take none",
+      "id": "85ad6aa6949cba9c",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"AWS Mainframe Modernization\" did not join to a service prefix. Score 0, signals none.",
@@ -47217,6 +47740,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:sdk-for-net"
+    },
+    {
+      "detail": "regions.md :: Directory Service Data - Simple AD (region): the page states 18, we take none",
+      "id": "8c6049c115de3523",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"AWS SDK for PHP Developer Guide for version 3\" did not join to a service prefix. Score 3, signals security-doc-pages.",
@@ -47506,6 +48036,13 @@
       "subject": "expectation not met"
     },
     {
+      "detail": "regions.md :: Directory Service Data - AD Connector (region): the page states 18, we take none",
+      "id": "9ae11937fc839177",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "recipe security-ir-slr-regions produced 0 claims, fewer than the 20 it promises on https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.md. The page shape has probably changed.",
       "id": "9b48d29a4eb19130",
       "kind": "parser",
@@ -47553,6 +48090,13 @@
       "kind": "alias",
       "stage": "stage5-coverage",
       "subject": "unresolved:identity-center-customer-managed-key"
+    },
+    {
+      "detail": "aws-managed-rule-groups-anti-ddos.md :: Anti-DDoS rules listing (rules in the AWSManagedRulesAntiDDoSRuleSet managed rule group) (managedRuleGroupRule): the page states 3, we take none",
+      "id": "9d0449ccea818586",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "429 documentation guides did not join to an IAM service prefix and are held under doc: ids.",
@@ -47735,6 +48279,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:speke"
+    },
+    {
+      "detail": "aws-managed-rule-groups-bot.md :: Bot Control rules listing (rules in the AWSManagedRulesBotControlRuleSet managed rule group) (managedRuleName): the page states 30 rows naming 38 managedRuleName values, we take 30",
+      "id": "ab6e6a1802f50f8d",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"doc:sdk-for-kotlin\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -47926,6 +48477,13 @@
       "subject": "expectation not met"
     },
     {
+      "detail": "regions.md :: AD Connector (region): the page states 38, we take none",
+      "id": "b7713f32a7af225f",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "cloudtrail-network-activity-services on https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-network-events-with-cloudtrail.md could not resolve 1 service values. Verbatim: cloudoptimization.amazonaws.com",
       "id": "b7925a74bd932dba",
       "kind": "alias",
@@ -48073,6 +48631,13 @@
       "subject": "unresolved:doc:sdk-for-go"
     },
     {
+      "detail": "aws-managed-rule-groups-bot.md :: Bot Control rules listing (rules in the AWSManagedRulesBotControlRuleSet managed rule group) (managedRuleName): the page states 30 rows naming 38 managedRuleName values, we take none",
+      "id": "beee0d85209c78f1",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS DeepRacer\" did not join to a service prefix. Score 0, signals none.",
       "id": "bf7cd0769b15402d",
       "kind": "alias",
@@ -48106,6 +48671,13 @@
       "kind": "recall",
       "stage": "stage3-discovery",
       "subject": "adjudication judgement band"
+    },
+    {
+      "detail": "cloudtrail-supported-regions.md :: CloudTrail supported Regions (region): the page states 36, we take none",
+      "id": "c1b605019ed336e7",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"doc:agentworkspace\" did not join to a service prefix. Score 1, signals security-doc-pages.",
@@ -48171,11 +48743,25 @@
       "subject": "unresolved:product:migration-evaluator-formerly-tso-logic"
     },
     {
+      "detail": "recipe waf-bot-control-categories produced 0 claims, fewer than the 14 it promises on https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-bot.md. The page shape has probably changed.",
+      "id": "c77ffbb1969cf9d4",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:waf-bot-control-categories"
+    },
+    {
       "detail": "iam-matrix-abac on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 26 service values. Verbatim: AWS Activate Console | Amazon Bedrock Agentcore | Amazon CloudFront | AWS CodeBuild | Amazon Connect Health | Database Query Metadata Service | AWS Data Pipeline | AWS Diagnostic tools | Amazon Elastic File System (Amazon EFS) | AWS Elastic Load Balancing | AWS Glue | AWS IAM Identity Center | AWS Identity and Access Management (IAM) | AWS IoT Greengrass V2 | AWS IoT Managed Integrations Service | AWS Lambda | Amazon Lightsail | AWS Marketplace Reporting | AWS Marketplace Vendor Insights | Multi-party approval | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS X-Ray",
       "id": "c79544d74229657c",
       "kind": "alias",
       "stage": "stage5-coverage",
       "subject": "unresolved:iam-matrix-abac"
+    },
+    {
+      "detail": "aws-managed-rule-groups-acfp.md :: Account creation fraud prevention rules listing (rules in AWSManagedRulesACFPRuleSet) (managedRule): the page states 16, we take none",
+      "id": "c7d7dd4fe56022ba",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "network-security-director is a tier 1 security service but no named feature was extracted. 0 guides carry pages attributed to it.",
@@ -48346,6 +48932,13 @@
       "subject": "unresolved:product:amazon-quantum-ledger-database-qldb"
     },
     {
+      "detail": "guardduty_regions.md :: Expanded filterable fields for CreateFilter and UpdateFilter (partition): the page states 1, we take none",
+      "id": "d28a4dc76ce4cad5",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "\"AWS Elemental Statmux Configuration\" did not join to a service prefix. Score 4, signals security-name-weak,security-doc-pages.",
       "id": "d2d023d9f1ab3fa7",
       "kind": "alias",
@@ -48395,6 +48988,13 @@
       "subject": "recipe:acm-pca-vpc-endpoint-regions"
     },
     {
+      "detail": "managing-rules-by-region-availability.md :: AWS Config managed rules by Region availability (configRule): the page states 21391 rows naming 822 configRule values, we take none",
+      "id": "d6b4c1b8f403ada4",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "read 26 of about 65 candidate values on the page. Either the page holds more than this feature, or a recipe is needed.",
       "id": "d72eed91bd0b4486",
       "kind": "parser",
@@ -48428,6 +49028,13 @@
       "kind": "parser",
       "stage": "stage5-coverage",
       "subject": "recipe:auditmanager-frameworks"
+    },
+    {
+      "detail": "aws-managed-rule-groups-bot.md :: Bot categories classified by Bot Control (the Category* rules and the bot:category: labels) (threatCategory): the page states 16, we take none",
+      "id": "d980d731ec90499c",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
     },
     {
       "detail": "\"AWS End User Messaging\" did not join to a service prefix. Score 2, signals security-doc-pages.",
@@ -48675,6 +49282,13 @@
       "subject": "features:waf-regional"
     },
     {
+      "detail": "customermanagedapps-saml2-oauth2.md :: OAuth 2.0 grant flows supported for public clients (oauthGrantFlow): the page states 2, we take none",
+      "id": "ea6a35fcdfdf1a66",
+      "kind": "recall",
+      "stage": "stage5-coverage",
+      "subject": "expectation not met"
+    },
+    {
       "detail": "iam-matrix-actions on https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.md could not resolve 11 service values. Verbatim: AWS Activate Console | Database Query Metadata Service | AWS Diagnostic tools | AWS IoT Managed Integrations Service | AWS Marketplace Vendor Insights | AWS OpsWorks Configuration Management | AWS Partner Central Selling | Amazon SageMaker AI data science assistant | Amazon Simple Email Service (Amazon SES) v2 | AWS Snowball Edge Device Management | AWS Trusted Advisor",
       "id": "ea934eaa7b0e4d2f",
       "kind": "alias",
@@ -48708,6 +49322,13 @@
       "kind": "alias",
       "stage": "stage1-universes",
       "subject": "unresolved:doc:elemental-live"
+    },
+    {
+      "detail": "recipe waf-atp-cloudfront-response-inspection produced 0 claims, fewer than the 1 it promises on https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md. The page shape has probably changed.",
+      "id": "ecc9c0b534707cc5",
+      "kind": "parser",
+      "stage": "stage5-coverage",
+      "subject": "recipe:waf-atp-cloudfront-response-inspection"
     },
     {
       "detail": "reference_aws-services-that-work-with-iam.md :: Actions (service): the page states 440, we take 328",
@@ -49032,7 +49653,7 @@
       "subject": "features:cloudhsmv2"
     }
   ],
-  "generatedAt": "2026-09-02T03:53:02.086Z",
+  "generatedAt": "2026-09-02T04:07:11.713Z",
   "manifest": {
     "fetch": {
       "cacheHit": 0,
@@ -49040,20 +49661,20 @@
       "network": 0,
       "revalidated": 0
     },
-    "finishedAt": "2026-09-02T03:52:54.831Z",
+    "finishedAt": "2026-09-02T04:06:27.417Z",
     "stages": [
       {
         "counts": {
-          "features": 1738,
+          "features": 1744,
           "services": 211
         },
-        "finishedAt": "2026-09-02T03:52:54.831Z",
+        "finishedAt": "2026-09-02T04:06:27.416Z",
         "id": "report",
-        "startedAt": "2026-09-02T03:52:54.222Z",
+        "startedAt": "2026-09-02T04:06:27.037Z",
         "status": "ok"
       }
     ],
-    "startedAt": "2026-09-02T03:52:54.220Z"
+    "startedAt": "2026-09-02T04:06:27.035Z"
   },
   "outOfScope": [
     {
@@ -55116,7 +55737,7 @@
     {
       "actionCount": 24,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 0,
+      "claimCount": 25,
       "confidence": 1,
       "docGuides": [
         {
@@ -55132,7 +55753,7 @@
           "url": "https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.md"
         }
       ],
-      "featureCount": 1,
+      "featureCount": 2,
       "global": false,
       "id": "artifact",
       "method": "deterministic",
@@ -55849,7 +56470,7 @@
     {
       "actionCount": 66,
       "category": "Management & Governance",
-      "claimCount": 108,
+      "claimCount": 144,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -55877,7 +56498,7 @@
           "url": "https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/Welcome.md"
         }
       ],
-      "featureCount": 46,
+      "featureCount": 47,
       "global": false,
       "id": "cloudtrail",
       "method": "llm",
@@ -56243,7 +56864,7 @@
     {
       "actionCount": 102,
       "category": "Management & Governance",
-      "claimCount": 19399,
+      "claimCount": 19435,
       "confidence": 0.85,
       "docGuides": [
         {
@@ -56259,7 +56880,7 @@
           "url": "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.md"
         }
       ],
-      "featureCount": 23,
+      "featureCount": 24,
       "global": false,
       "id": "config",
       "method": "llm",
@@ -56900,7 +57521,7 @@
     {
       "actionCount": 91,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 27,
+      "claimCount": 65,
       "confidence": 1,
       "docGuides": [
         {
@@ -56916,7 +57537,7 @@
           "url": "https://docs.aws.amazon.com/directoryservice/latest/devguide/Welcome.md"
         }
       ],
-      "featureCount": 19,
+      "featureCount": 20,
       "global": false,
       "id": "ds",
       "method": "deterministic",
@@ -57667,7 +58288,7 @@
           "url": "https://docs.aws.amazon.com/fms/2018-01-01/APIReference/Welcome.md"
         }
       ],
-      "featureCount": 20,
+      "featureCount": 21,
       "global": false,
       "id": "fms",
       "method": "deterministic",
@@ -58067,7 +58688,7 @@
     {
       "actionCount": 91,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 311,
+      "claimCount": 310,
       "confidence": 1,
       "docGuides": [
         {
@@ -61736,7 +62357,7 @@
     {
       "actionCount": 61,
       "category": "Security, Identity, & Compliance",
-      "claimCount": 16,
+      "claimCount": 93,
       "confidence": 1,
       "docGuides": [
         {
@@ -61757,7 +62378,7 @@
           "url": "https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.md"
         }
       ],
-      "featureCount": 64,
+      "featureCount": 65,
       "global": false,
       "id": "wafv2",
       "method": "deterministic",
@@ -61944,24 +62565,14 @@
       "verdict": "partial-read"
     },
     {
-      "claims": 2,
-      "note": "Region-specific feature availability, stated as prose beside each protection plan: 'RDS Protection is not supported in Asia Pacific (Taipei)'.",
-      "readRatio": 0.29,
+      "claims": 1,
+      "note": "Every statement on this page sits under a bold subject naming what it is about: a protection plan, an API, or one finding type. Reading the sentences without that subject put all of them on a catch-all 'GuardDuty findings' row, which then read '2 excluded of 46' — a claim about GuardDuty findings as a whole that the page never makes. Only the protection-plan exclusions are feature-level coverage. A finding type missing from one Region is a fact about that one catalogue member, and we count catalogues rather than measuring them, so those are not published.",
+      "readRatio": 0.14,
       "recipes": 1,
       "serviceId": "guardduty",
       "source": "tier1-sweep",
       "url": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md",
       "verdict": "partial-read"
-    },
-    {
-      "claims": 1,
-      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",
-      "readRatio": 0.5,
-      "recipes": 1,
-      "serviceId": "wafv2",
-      "source": "title-match",
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md",
-      "verdict": "ok"
     },
     {
       "claims": 38,
@@ -62149,6 +62760,16 @@
       "serviceId": "secretsmanager",
       "source": "agent",
       "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrating.md",
+      "verdict": "ok"
+    },
+    {
+      "claims": 47,
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability. Each managed rule group publishes its own rules in a 'Rule name' table. That is a catalogue the rule group owns, so it is counted, not measured — the page states no per-rule availability. The Category* rules in the same table are also the bot categories AWS WAF classifies, which is why the page is read twice.",
+      "readRatio": 1,
+      "recipes": 3,
+      "serviceId": "wafv2",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-bot.md",
       "verdict": "ok"
     },
     {
@@ -62363,6 +62984,16 @@
       "verdict": "ok"
     },
     {
+      "claims": 18,
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability. Both fraud-control rule groups state the same exclusion: they cannot protect Amazon Cognito user pools. Each managed rule group publishes its own rules in a 'Rule name' table. That is a catalogue the rule group owns, so it is counted, not measured — the page states no per-rule availability.",
+      "readRatio": 1,
+      "recipes": 3,
+      "serviceId": "wafv2",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md",
+      "verdict": "ok"
+    },
+    {
       "claims": 17,
       "dropped": 7,
       "note": "The OIDC access scope catalogue. The generic reader took only the five services in the last column and left the scopes themselves, which is what the table exists to publish.",
@@ -62404,6 +63035,16 @@
       "verdict": "ok"
     },
     {
+      "claims": 14,
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability. Both fraud-control rule groups state the same exclusion: they cannot protect Amazon Cognito user pools. The ATP page names exactly two resource types: CloudFront distributions, the only place the rule group also inspects responses, and Amazon Cognito user pools, which it explicitly cannot protect. The exclusion is read by the shared fraud-control recipe; this one reads the supported side. Each managed rule group publishes its own rules in a 'Rule name' table. That is a catalogue the rule group owns, so it is counted, not measured — the page states no per-rule availability.",
+      "readRatio": 1,
+      "recipes": 4,
+      "serviceId": "wafv2",
+      "source": "agent",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md",
+      "verdict": "ok"
+    },
+    {
       "claims": 11,
       "note": "the AppIntegrations service-linked role, not Amazon Connect's",
       "readRatio": 1,
@@ -62431,16 +63072,6 @@
       "serviceId": "guardduty",
       "source": "agent",
       "url": "https://docs.aws.amazon.com/guardduty/latest/ug/findings-rds-protection.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 8,
-      "note": "The policy types Firewall Manager can enforce, one per bullet.",
-      "readRatio": 1,
-      "recipes": 1,
-      "serviceId": "fms",
-      "source": "agent",
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/getting-started-fms-intro.md",
       "verdict": "ok"
     },
     {
@@ -62534,6 +63165,16 @@
       "verdict": "ok"
     },
     {
+      "claims": 4,
+      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability. Each managed rule group publishes its own rules in a 'Rule name' table. That is a catalogue the rule group owns, so it is counted, not measured — the page states no per-rule availability.",
+      "readRatio": 1,
+      "recipes": 2,
+      "serviceId": "wafv2",
+      "source": "title-match",
+      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.md",
+      "verdict": "ok"
+    },
+    {
       "claims": 3,
       "note": "AI Protection finding types.",
       "readRatio": 1,
@@ -62565,42 +63206,12 @@
     },
     {
       "claims": 2,
-      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability. Both fraud-control rule groups state they cannot be used with Amazon Cognito user pools. The exclusion is in prose beside the rule group name.",
-      "readRatio": 1,
-      "recipes": 2,
-      "serviceId": "wafv2",
-      "source": "agent",
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 2,
-      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability. Both fraud-control rule groups state they cannot be used with Amazon Cognito user pools. The exclusion is in prose beside the rule group name.",
-      "readRatio": 1,
-      "recipes": 2,
-      "serviceId": "wafv2",
-      "source": "agent",
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-atp.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 2,
       "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",
       "readRatio": 1,
       "recipes": 1,
       "serviceId": "wafv2",
       "source": "title-match",
       "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-ip-rep.md",
-      "verdict": "ok"
-    },
-    {
-      "claims": 1,
-      "note": "Rule group names appear only in inline code, as Name: `AWSManagedRules…`. The changelog and index pages are excluded: neither states capability.",
-      "readRatio": 1,
-      "recipes": 1,
-      "serviceId": "wafv2",
-      "source": "title-match",
-      "url": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-bot.md",
       "verdict": "ok"
     }
   ],
@@ -62619,9 +63230,9 @@
     "findingType": 224,
     "logSource": 6,
     "managedRuleGroup": 47,
+    "managedRuleGroupRule": 58,
     "operatingSystem": 136,
     "partition": 8,
-    "policyType": 8,
     "programmingLanguage": 10,
     "region": 46,
     "resourceType": 3134,
@@ -62631,7 +63242,7 @@
     "service": 526,
     "softwareApplication": 71,
     "storageClass": 8,
-    "threatCategory": 16,
+    "threatCategory": 32,
     "wordpressComponentType": 3
   },
   "universes": {

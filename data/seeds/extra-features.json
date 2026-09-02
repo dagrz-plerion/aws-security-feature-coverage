@@ -36,6 +36,15 @@
       "summary": "Limits use of a KMS key to requests made through named AWS services.",
       "sourceUrl": "https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.md",
       "quote": "The `kms:ViaService` condition key limits use of an KMS key to requests from specified AWS services."
+    },
+    {
+      "id": "wafv2/acfp-rule-group",
+      "serviceId": "wafv2",
+      "name": "Account creation fraud prevention rule group",
+      "kind": "detection",
+      "summary": "The AWSManagedRulesACFPRuleSet managed rule group, which inspects account creation requests.",
+      "sourceUrl": "https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-acfp.md",
+      "quote": "Rule name"
     }
   ]
 }

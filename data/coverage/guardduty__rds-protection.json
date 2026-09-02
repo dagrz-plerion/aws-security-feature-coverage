@@ -1,6 +1,7 @@
 {
   "axes": [
-    "findingType"
+    "findingType",
+    "region"
   ],
   "claims": [
     {
@@ -182,10 +183,30 @@
       "status": "covered",
       "targetId": "Discovery:RDS/TorIPCaller",
       "targetLabel": "Discovery:RDS/TorIPCaller"
+    },
+    {
+      "axis": "region",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "bodySha256": "24373a71d5408ca48c9568a5ec0d5112d4a10040d585e23a3a3ab08d4435fc7a",
+          "locator": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md :: Amazon GuardDuty Regions and endpoints",
+          "quote": "RDS Protection is not supported in Asia Pacific (Taipei) (`ap-east-2`) Region.",
+          "retrievedAt": "2026-09-01T05:00:37.081Z",
+          "sourceUrl": "https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_regions.md"
+        }
+      ],
+      "extractorId": "recipe:guardduty-rds-protection-region-exclusions",
+      "featureId": "guardduty/rds-protection",
+      "id": "guardduty-rds-protection-region-ap-east-2-recipe-guardduty-rds-protection-region-exclusions",
+      "method": "deterministic",
+      "status": "not-covered",
+      "targetId": "ap-east-2",
+      "targetLabel": "RDS Protection is not supported in Asia Pacific (Taipei) (ap-east-2) Region."
     }
   ],
   "featureId": "guardduty/rds-protection",
-  "generatedAt": "2026-09-02T03:44:05.771Z",
+  "generatedAt": "2026-09-02T04:06:16.283Z",
   "serviceId": "guardduty",
   "unresolvedTargets": []
 }
