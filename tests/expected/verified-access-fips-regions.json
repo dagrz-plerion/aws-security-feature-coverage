@@ -1,0 +1,25 @@
+{
+  "note": "Recorded by hand from https://docs.aws.amazon.com/verified-access/latest/ug/fips-compliance.html before the parser was written. The introducing sentence is \"FIPS compliance for Verified Access is available in the following AWS Regions:\" and exactly 7 bullets follow it: US East (Ohio), US East (N. Virginia), US West (N. California), US West (Oregon), Canada (Central), AWS GovCloud (US) West, AWS GovCloud (US) East. All 7 resolve, so the numerator is 7 and nothing is unresolved. regions.json spells the GovCloud Regions \"AWS GovCloud (US-East)\" and \"AWS GovCloud (US-West)\"; the page writes \"AWS GovCloud (US) East\" and \"AWS GovCloud (US) West\". resolveRegion strips punctuation, so both wordings normalise to the same key and resolve without being forced. The rest of the page is step-by-step setup text naming Verified Access instances, groups, endpoints and trust providers; those are neither Regions nor resource types and are not counted. The page names no Region as unsupported, so there are no exclusions and no partials.",
+  "features": [
+    {
+      "id": "verified-access/fips-compliance-regions",
+      "name": "AWS Verified Access FIPS compliance",
+      "axis": "region",
+      "scope": "feature",
+      "serviceId": "verified-access",
+      "derivation": "enumerated",
+      "numerator": 7,
+      "coveredIds": [
+        "us-east-2",
+        "us-east-1",
+        "us-west-1",
+        "us-west-2",
+        "ca-central-1",
+        "us-gov-west-1",
+        "us-gov-east-1"
+      ],
+      "excludedIds": [],
+      "partialIds": []
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "note": "Recorded by hand from the snapshot of https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-supported-regions.html before the parser was written. The page has one table under 'Currently, CloudTrail Lake is supported in the following AWS Regions:'. I counted its data rows top to bottom: 4 US, 1 Africa, 10 Asia Pacific, 1 Canada, 8 Europe, 1 Israel, 2 Middle East, 1 South America and 2 AWS GovCloud (US) = 30 rows. Every row carries a Region code in the second column, so all 30 resolve; none is unresolved. Nothing on the page says a Region is not supported, so excludedIds is empty, and no Region carries a carve-out, so partialIds is empty. The two trailing pointers, to the CloudTrail endpoints and quotas page and to the AWS GovCloud (US) User Guide, are links to other guides, not statements of coverage, so nothing is counted from them. The deprecation note (closed to new customers from May 31, 2026) does not remove any Region, so it is a feature note rather than an exclusion.",
+  "features": [
+    {
+      "id": "cloudtrail/lake-regions",
+      "name": "CloudTrail Lake",
+      "axis": "region",
+      "scope": "feature",
+      "serviceId": "cloudtrail",
+      "derivation": "enumerated",
+      "numerator": 30,
+      "coveredIds": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2",
+        "af-south-1",
+        "ap-east-1",
+        "ap-south-2",
+        "ap-southeast-3",
+        "ap-southeast-4",
+        "ap-south-1",
+        "ap-northeast-3",
+        "ap-northeast-2",
+        "ap-southeast-1",
+        "ap-southeast-2",
+        "ap-northeast-1",
+        "ca-central-1",
+        "eu-central-1",
+        "eu-west-1",
+        "eu-west-2",
+        "eu-south-1",
+        "eu-west-3",
+        "eu-south-2",
+        "eu-north-1",
+        "eu-central-2",
+        "il-central-1",
+        "me-south-1",
+        "me-central-1",
+        "sa-east-1",
+        "us-gov-east-1",
+        "us-gov-west-1"
+      ],
+      "excludedIds": [],
+      "partialIds": []
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "note": "Recorded by hand from https://docs.aws.amazon.com/directoryservice/latest/admin-guide/using-service-linked-roles.html before the parser was written. Counted the rows of the \"Hybrid directory opt-in Region support\" table under \"Supported Regions for Directory Service service-linked roles\": 27 rows, every one with \"Yes\" in the opt-in support column, so 27 covered and 0 excluded. The page says Directory Service uses the AWSServiceRoleForDirectoryService role only in Regions where you can opt in to hybrid directories, so this table is the Region list for the service-linked role. The sentence \"does not support using service-linked roles in every Region where the service is available\" is not an \"all Regions except X\" statement, so derivation stays enumerated, not universe-minus-exclusions. Region identity column codes resolve one-to-one via resolveRegion; none were left unresolved. Review note: the table proves hybrid directory opt-in support, and the role Region list is inferred from the \"only in AWS Regions where you can opt-in to hybrid directories\" sentence, which is an upper bound, so the feature is named for the role as it applies to hybrid directories and whatIsCounted names the opt-in table.",
+  "features": [
+    {
+      "id": "ds/service-linked-role-regions",
+      "name": "Directory Service service-linked role for hybrid directories",
+      "axis": "region",
+      "scope": "feature",
+      "serviceId": "ds",
+      "derivation": "enumerated",
+      "numerator": 27,
+      "coveredIds": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2",
+        "eu-north-1",
+        "me-south-1",
+        "ap-south-1",
+        "eu-west-3",
+        "ap-southeast-3",
+        "af-south-1",
+        "eu-west-1",
+        "me-central-1",
+        "eu-central-1",
+        "sa-east-1",
+        "ap-east-1",
+        "ap-south-2",
+        "ap-northeast-2",
+        "ap-northeast-3",
+        "eu-west-2",
+        "ap-southeast-4",
+        "eu-south-1",
+        "ap-northeast-1",
+        "ap-southeast-1",
+        "ap-southeast-2",
+        "ca-central-1",
+        "eu-south-2",
+        "eu-central-2"
+      ],
+      "excludedIds": [],
+      "partialIds": []
+    }
+  ]
+}

@@ -1,239 +1,143 @@
-/**
- * Parser for the Markdown twin of an AWS documentation page
- * (any docs URL with .html swapped for .md).
- */
-
-export type MdTable = {
-  headers: string[];
-  rows: string[][];
-  /** The unmodified source line for each row, so extractors can quote verbatim. */
-  rawRows: string[];
-  /** Heading path above the table, outermost first. */
-  section: string[];
-  /** Raw source of the table, usable as evidence. */
-  raw: string;
-  startLine: number;
-};
-
-export type MdList = {
-  items: MdListItem[];
-  section: string[];
-  raw: string;
-  startLine: number;
-  /** Text of the paragraph immediately before the list. */
-  intro?: string;
-};
-
-export type MdListItem = {
-  text: string;
-  /** Link targets found in the item. */
-  links: { text: string; href: string }[];
-  depth: number;
-  raw: string;
-};
-
-export type MdSection = {
-  path: string[];
-  title: string;
+export interface Section {
   level: number;
+  title: string;
   anchor?: string;
-  body: string;
-  startLine: number;
-};
-
-export type MdDocument = {
-  title?: string;
-  sections: MdSection[];
-  tables: MdTable[];
-  lists: MdList[];
-  lines: string[];
-};
-
-const HEADING = /^(#{1,6})\s+(.+?)\s*$/;
-const ANCHOR = /^<a name="([^"]+)"><\/a>\s*$/;
-const TABLE_ROW = /^\s*\|(.*)\|\s*$/;
-const TABLE_DIVIDER = /^\s*\|[\s|:-]+\|\s*$/;
-const BULLET = /^(\s*)(?:\+|-|\*)\s+(.*)$/;
-const LINK = /\[([^\]]*)\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g;
-
-export function stripLinks(text: string): string {
-  return text.replace(LINK, "$1").trim();
+  /** Everything below the heading, up to the next heading of any level. */
+  text: string;
+  /** Everything below the heading, up to the next heading of the same or higher level. */
+  block: string;
 }
 
-export function extractLinks(text: string): { text: string; href: string }[] {
-  const out: { text: string; href: string }[] = [];
-  for (const match of text.matchAll(LINK)) {
-    out.push({ text: match[1] ?? "", href: match[2] ?? "" });
-  }
-  return out;
-}
+const HEADING = /^(#{1,6})\s+(.*)$/;
 
-/** Remove Markdown emphasis and inline code fences from a cell or item. */
-/** In AWS matrices a tick or cross is an image, so the image becomes its word. */
-function imagesToWords(text: string): string {
-  return text
-    .replace(/!\[[^\]]*\]\(([^)]*)\)/g, (whole, src: string) => {
-      if (/icon-yes|success_icon|checkmark_icon/i.test(src)) return " Yes ";
-      if (/icon-no|negative_icon|fail_icon/i.test(src)) return " No ";
-      return " ";
-      void whole;
-    })
-    .replace(/<img\b[^>]*src="([^"]*)"[^>]*>/gi, (whole, src: string) => {
-      if (/icon-yes|success_icon|checkmark_icon/i.test(src)) return " Yes ";
-      if (/icon-no|negative_icon|fail_icon/i.test(src)) return " No ";
-      return " ";
-      void whole;
-    });
-}
-
-export function cleanText(text: string): string {
-  return stripLinks(imagesToWords(text))
-    .replace(/<br\s*\/?>/gi, " · ")
-    .replace(/\\([^A-Za-z0-9\s])/g, "$1")
-    .replace(/`([^`]*)`/g, "$1")
-    .replace(/\*\*([^*]*)\*\*/g, "$1")
-    .replace(/\*([^*]*)\*/g, "$1")
-    .replace(/<[^>]+>/g, "")
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&#39;/g, "'")
-    .replace(/&quot;/g, '"')
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function splitRow(line: string): string[] {
-  const inner = TABLE_ROW.exec(line)?.[1] ?? "";
-  return inner.split("|").map((cell) => cleanText(cell));
-}
-
-export function parseMarkdown(body: string): MdDocument {
-  const lines = body.split("\n");
-  const sections: MdSection[] = [];
-  const tables: MdTable[] = [];
-  const lists: MdList[] = [];
-  const path: string[] = [];
-  let title: string | undefined;
-  let current: MdSection | undefined;
-
-  for (let i = 0; i < lines.length; i += 1) {
-    const line = lines[i] as string;
-
-    const heading = HEADING.exec(line);
-    if (heading) {
-      const level = (heading[1] as string).length;
-      const text = cleanText(heading[2] as string);
-      path.length = Math.max(0, level - 1);
-      path[level - 1] = text;
-      if (level === 1 && !title) title = text;
-      const anchorLine = lines[i + 1] ?? "";
-      const anchor = ANCHOR.exec(anchorLine.trim())?.[1];
-      current = {
-        path: path.filter(Boolean).slice(),
-        title: text,
-        level,
-        ...(anchor ? { anchor } : {}),
-        body: "",
-        startLine: i,
-      };
-      sections.push(current);
-      continue;
-    }
-
-    if (current) current.body += `${line}\n`;
-
-    // tables
-    if (TABLE_ROW.test(line) && TABLE_DIVIDER.test(lines[i + 1] ?? "")) {
-      const headers = splitRow(line);
-      const rows: string[][] = [];
-      const rawRows: string[] = [];
-      const rawLines = [line, lines[i + 1] as string];
-      let j = i + 2;
-      while (j < lines.length && TABLE_ROW.test(lines[j] as string)) {
-        rawLines.push(lines[j] as string);
-        rawRows.push(lines[j] as string);
-        rows.push(splitRow(lines[j] as string));
-        j += 1;
-      }
-      tables.push({
-        headers,
-        rows,
-        rawRows,
-        section: path.filter(Boolean).slice(),
-        raw: rawLines.join("\n"),
-        startLine: i,
-      });
-      if (current) current.body += `${rawLines.slice(1).join("\n")}\n`;
-      i = j - 1;
-      continue;
-    }
-
-    // bullet lists
-    if (BULLET.test(line)) {
-      const items: MdListItem[] = [];
-      const rawLines: string[] = [];
-      let j = i;
-      while (j < lines.length) {
-        const candidate = lines[j] as string;
-        const bullet = BULLET.exec(candidate);
-        if (bullet) {
-          const indent = (bullet[1] as string).length;
-          const text = bullet[2] as string;
-          items.push({
-            text: cleanText(text),
-            links: extractLinks(text),
-            depth: Math.floor(indent / 2),
-            raw: candidate,
-          });
-          rawLines.push(candidate);
-          j += 1;
-          continue;
-        }
-        // a continuation line belongs to the previous item
-        if (/^\s{2,}\S/.test(candidate) && items.length > 0) {
-          const last = items[items.length - 1] as MdListItem;
-          last.text = cleanText(`${last.text} ${candidate}`);
-          rawLines.push(candidate);
-          j += 1;
-          continue;
-        }
+export const sections = (body: string): Section[] => {
+  const lines = body.split('\n');
+  const heads: { level: number; title: string; line: number }[] = [];
+  lines.forEach((l, i) => {
+    const m = HEADING.exec(l);
+    if (m?.[1] && m[2] !== undefined) heads.push({ level: m[1].length, title: m[2].trim(), line: i });
+  });
+  return heads.map((h, i) => {
+    const nextAny = heads[i + 1]?.line ?? lines.length;
+    let nextSame = lines.length;
+    for (let j = i + 1; j < heads.length; j++) {
+      const cand = heads[j]!;
+      if (cand.level <= h.level) {
+        nextSame = cand.line;
         break;
       }
-      const introLine = findIntro(lines, i);
-      lists.push({
-        items,
-        section: path.filter(Boolean).slice(),
-        raw: rawLines.join("\n"),
-        startLine: i,
-        ...(introLine ? { intro: introLine } : {}),
-      });
-      if (current) current.body += `${rawLines.slice(1).join("\n")}\n`;
-      i = j - 1;
-      continue;
     }
-  }
+    const text = lines.slice(h.line + 1, nextAny).join('\n');
+    const block = lines.slice(h.line + 1, nextSame).join('\n');
+    const anchor = /<a name="([^"]+)"/.exec(text)?.[1];
+    return { level: h.level, title: h.title, anchor, text, block };
+  });
+};
 
-  return { ...(title ? { title } : {}), sections, tables, lists, lines };
+/**
+ * AWS pages carry non-breaking and other Unicode spaces inside ordinary wording,
+ * for example "Route<nbsp>53". Match against this; always quote the raw text.
+ */
+export const normalizeSpaces = (s: string): string =>
+  s.replace(/[\u00a0\u1680\u2000-\u200a\u202f\u205f\u3000]/g, ' ');
+
+const LINK = /\[([^[\]]*)\]\([^()]*\)/g;
+
+/** Unwrap the innermost link first, so a link nested in a link resolves cleanly. */
+const unnest = (s: string): string => {
+  let out = s;
+  for (let i = 0; i < 6; i++) {
+    const next = out.replace(LINK, '$1');
+    if (next === out) break;
+    out = next;
+  }
+  return out;
+};
+
+/**
+ * `[label](url)` becomes `label`; images are dropped. AWS nests a footnote link
+ * inside a row link, so the innermost link is unwrapped first, repeatedly.
+ */
+export const stripLinks = (s: string): string =>
+  unnest(normalizeSpaces(s).replace(/!\[[^\]]*\]\([^)]*\)/g, ''))
+    .replace(/`/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+/** Top-level `+ ` or `- ` bullets, keeping the raw line for quoting. */
+export const bullets = (text: string, indent = 0): { raw: string; value: string }[] => {
+  const pad = ' '.repeat(indent);
+  const re = new RegExp(`^${pad}[+-] (.*)$`);
+  return text
+    .split('\n')
+    .map((l) => ({ line: l, m: re.exec(l) }))
+    .filter((x): x is { line: string; m: RegExpExecArray } => x.m !== null)
+    .map((x) => ({ raw: x.line.trim(), value: stripLinks(x.m[1] ?? '') }));
+};
+
+export interface Table {
+  headers: string[];
+  rows: string[][];
+  /** The raw lines, for quoting. */
+  rawRows: string[];
 }
 
-function findIntro(lines: string[], listStart: number): string | undefined {
-  for (let i = listStart - 1; i >= 0 && i > listStart - 6; i -= 1) {
-    const line = (lines[i] ?? "").trim();
-    if (!line) continue;
-    if (HEADING.test(line) || ANCHOR.test(line)) return undefined;
-    // A bold lead-in labels the list that follows; keep the label unmodified.
-    const bold = /^\*\*(.+?)\*\*/.exec(line);
-    return bold ? cleanText(`${bold[1]} ${line.slice(bold[0].length)}`) : cleanText(line);
+const cells = (line: string): string[] =>
+  line
+    .replace(/^\s*\|/, '')
+    .replace(/\|\s*$/, '')
+    .split('|')
+    .map((c) => c.trim());
+
+const isDivider = (line: string): boolean => /^\s*\|?[\s:-]*\|[\s|:-]*$/.test(line) && line.includes('-');
+
+export const tables = (text: string): Table[] => {
+  const lines = text.split('\n');
+  const out: Table[] = [];
+  for (let i = 0; i < lines.length; i++) {
+    const head = lines[i];
+    const div = lines[i + 1];
+    if (!head?.trim().startsWith('|') || !div || !isDivider(div)) continue;
+    const headers = cells(head).map(stripLinks);
+    const rows: string[][] = [];
+    const rawRows: string[] = [];
+    let j = i + 2;
+    for (; j < lines.length; j++) {
+      const l = lines[j];
+      if (!l?.trim().startsWith('|')) break;
+      rows.push(cells(l).map(stripLinks));
+      rawRows.push(l);
+    }
+    out.push({ headers, rows, rawRows });
+    i = j - 1;
   }
+  return out;
+};
+
+/** "Yes"/"No" cells in AWS docs carry an icon image; read the word. */
+export const yesNo = (cell: string): boolean | undefined => {
+  // AWS hangs "<br /> Learn more" off a verdict cell. Read the verdict, drop the rest.
+  const t = normalizeSpaces(cell)
+    .split(/<br\s*\/?>/i)[0]!
+    .replace(/\s*Learn more\s*$/i, '')
+    .trim()
+    .toLowerCase();
+  if (t === 'yes' || t.endsWith(' yes')) return true;
+  if (t === 'no' || t.endsWith(' no')) return false;
   return undefined;
-}
+};
 
-/** Column index whose header matches any of the given patterns. */
-export function findColumn(headers: string[], patterns: RegExp[]): number {
-  for (let i = 0; i < headers.length; i += 1) {
-    const header = headers[i] ?? "";
-    if (patterns.some((p) => p.test(header))) return i;
-  }
-  return -1;
-}
+/** Bold run-in headings AWS uses for definition lists: `**Title**  `. */
+export const boldHeadings = (text: string): { title: string; body: string; raw: string }[] => {
+  const lines = text.split('\n');
+  const marks: { title: string; raw: string; line: number }[] = [];
+  lines.forEach((l, i) => {
+    const m = /^\*\*(.+)\*\*\s*$/.exec(l.trimEnd());
+    if (m?.[1]) marks.push({ title: stripLinks(m[1]), raw: l, line: i });
+  });
+  return marks.map((mk, i) => ({
+    title: mk.title,
+    raw: mk.raw,
+    body: lines.slice(mk.line + 1, marks[i + 1]?.line ?? lines.length).join('\n'),
+  }));
+};

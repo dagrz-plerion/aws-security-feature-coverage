@@ -1,0 +1,31 @@
+{
+  "note": "Recorded by hand from https://docs.aws.amazon.com/AmazonS3/latest/userguide/MrapOperations.html. The page states exactly two countable Region facts, and they are different operation groups, so they are two features. (1) 'All control plane requests to create or maintain Multi-Region Access Points must be routed to the `US West (Oregon)` Region.' — one named Region, numerator 1. (2) Under 'Update a Multi-Region Access Point route configuration': 'Multi-Region Access Point route commands can be run against the following five Regions:' followed by ap-southeast-2, ap-northeast-1, us-east-1, us-west-2 and eu-west-1 — five named Regions, numerator 5. Both are RESTRICTIONS, not weak coverage. Rejected: (a) 'the request must be routed to one of the five supported Regions' for the failover control plane — that sentence names no Region, so it is not itself evidence, although it corroborates the count of five in (2); (b) 'For Multi-Region Access Point data plane requests, Regions don't need to be specified' — it names no Region and is not an enumeration; (c) the 'compatibility with AWS services and AWS SDKs' section, which only links out to an SDK compatibility page — SDKs are not services and a link is not a list; (d) the 'compatibility with S3 operations' section, which lists 21 data plane and 9 control plane API operations — API operations are not items on any axis; (e) Region codes inside CLI and SDK sample code (eu-west-1, us-east-1, ap-southeast-2, ca-central-1), which sit inside {{user input placeholders}} and are not statements of coverage; (f) the 10 'Topics' navigation bullets, which only repeat the section headings.",
+  "bulletAccounting": "The page has 45 top-level bullets: 10 Topics navigation links, 21 data plane API operations, 9 control plane API operations, and the 5 Region codes counted in feature 2. Nothing is dropped without a reason.",
+  "overlap": "us-west-2 appears in both features. The features describe different operations, so this is not double counting, but the two numerators must never be added.",
+  "features": [
+    {
+      "id": "s3/mrap-control-plane-regions",
+      "name": "S3 Multi-Region Access Point control plane",
+      "axis": "region",
+      "scope": "subfeature",
+      "serviceId": "s3",
+      "derivation": "enumerated",
+      "numerator": 1,
+      "coveredIds": ["us-west-2"],
+      "excludedIds": [],
+      "partialIds": []
+    },
+    {
+      "id": "s3/mrap-route-configuration-regions",
+      "name": "S3 Multi-Region Access Point route configuration",
+      "axis": "region",
+      "scope": "subfeature",
+      "serviceId": "s3",
+      "derivation": "enumerated",
+      "numerator": 5,
+      "coveredIds": ["ap-northeast-1", "ap-southeast-2", "eu-west-1", "us-east-1", "us-west-2"],
+      "excludedIds": [],
+      "partialIds": []
+    }
+  ]
+}

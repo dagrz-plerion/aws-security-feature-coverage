@@ -1,8 +1,4 @@
 node_modules/
-*.log
-probe-*.ts
-
-# Regenerable caches. The pipeline refetches these on a fresh clone.
-data/raw/
-data/cache/
-data/guides/
+.cache/
+old/
+.DS_Store

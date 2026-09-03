@@ -1,0 +1,17 @@
+{
+  "note": "Re-derived by hand from data/pages/waf__latest__developerguide__aws-managed-rule-groups-acfp.md during adversarial review, replacing an earlier hand expectation of no coverage. The page is the reference for AWSManagedRulesACFPRuleSet. It lists 16 rules with rule actions and awswaf:managed:* labels; none of those is an item on the region, service or resourceType axis, and none is counted. It names no Region. It names exactly three AWS things beside AWS WAF itself. (1) Amazon Cognito user pools: 'This rule group isn't available for use with Amazon Cognito user pools.' in Considerations, repeated by the UnsupportedCognitoIDP rule. That is an exclusion, AWS::Cognito::UserPool. (2) Amazon CloudFront distributions: the rules VolumetricIPSuccessfulResponse and VolumetricSessionSuccessfulResponse each state 'AWS WAF only evaluates this rule in protection packs (web ACLs) that protect Amazon CloudFront distributions.' The sentence is positive about CloudFront: it states those rules ARE evaluated for protection packs that protect CloudFront distributions. That is one enumerated resource type on the resourceType axis, so a feature exists and the exclusion can ride on it. It is recorded as a subfeature scoped to the response inspection rules, never as the rule group's protected resource types, because the page nowhere lists what the rest of the rule group reaches. (3) Amazon CloudWatch, only as where label metrics are reported, which is not coverage. AWS::CloudFront::Distribution is partial because the same rules state 'AWS WAF doesn't inspect responses for web requests that clients send over HTTP/3 (QUIC).' The 'protection pack (web ACL)' wording is the container the rule group is added to, not a protected resource, so AWS::WAFv2::WebACL is not counted. The Considerations section enumerates no protectable resource type; it covers configuration, pricing, intelligent threat mitigation, best practices and the Cognito exclusion only.",
+  "features": [
+    {
+      "id": "wafv2/acfp-response-inspection-resource-types",
+      "name": "AWS WAF ACFP rule group response inspection",
+      "axis": "resourceType",
+      "scope": "subfeature",
+      "serviceId": "wafv2",
+      "derivation": "enumerated",
+      "numerator": 1,
+      "coveredIds": ["AWS::CloudFront::Distribution"],
+      "excludedIds": ["AWS::Cognito::UserPool"],
+      "partialIds": ["AWS::CloudFront::Distribution"]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "note": "Counted by hand from data/pages/waf__latest__developerguide__ddos-protections-by-resource-type.md. The page has 9 bullet lines: 6 at the top level and 3 nested. One top-level bullet, \"The following Elastic Load Balancing (ELB) load balancers:\", is a container, not an item, so 8 resource types are listed. Application, Classic and Network Load Balancers are three separate ids in resource-types.json, so counting them once each is not double counting; AWS Config documentation instead gives Application and Network Load Balancers one shared value, AWS::ElasticLoadBalancingV2::LoadBalancer, which would make the numerator 7 with the Gateway Load Balancer exclusion turned into a carve-out. Global Accelerator is partial because standard and custom routing accelerators share one id. Amazon EC2 instances and Network Load Balancers are partial because only those associated with a protected Elastic IP address are reached. Gateway Load Balancers and NAT Gateways are named as not protected, so they are exclusions, not coverage. Custom routing accelerators are named as not protected but have no id of their own, so they are unresolved, never counted.",
+  "features": [
+    {
+      "id": "shield/advanced-protected-resource-types",
+      "name": "AWS Shield Advanced protected resources",
+      "axis": "resourceType",
+      "scope": "feature",
+      "serviceId": "shield",
+      "derivation": "enumerated",
+      "numerator": 8,
+      "coveredIds": [
+        "AWS::CloudFront::Distribution",
+        "AWS::Route53::HostedZone",
+        "AWS::GlobalAccelerator::Accelerator",
+        "AWS::EC2::EIP",
+        "AWS::EC2::Instance",
+        "elasticloadbalancing:loadbalancer/app/",
+        "AWS::ElasticLoadBalancing::LoadBalancer",
+        "elasticloadbalancing:loadbalancer/net/"
+      ],
+      "excludedIds": [
+        "elasticloadbalancing:loadbalancer/gwy/",
+        "AWS::EC2::NatGateway"
+      ],
+      "partialIds": [
+        "AWS::GlobalAccelerator::Accelerator",
+        "AWS::EC2::Instance",
+        "elasticloadbalancing:loadbalancer/net/"
+      ]
+    }
+  ]
+}

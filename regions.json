@@ -1,0 +1,550 @@
+{
+  "meta": {
+    "generatedAt": "2026-09-02T04:40:22.820Z",
+    "count": 46,
+    "note": "Every AWS Region, from three independent sources that are cross-checked against each other.",
+    "sources": [
+      {
+        "id": "botocore-endpoints",
+        "name": "AWS CLI bundled endpoints.json (botocore)",
+        "url": "file://<aws-cli>/botocore/data/endpoints.json",
+        "what": "Every Region and partition the AWS SDKs ship endpoints for."
+      },
+      {
+        "id": "regions-guide",
+        "name": "AWS Regions and Availability Zones guide",
+        "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
+        "what": "The published Region table, including opt-in status and country."
+      },
+      {
+        "id": "ssm-global-infrastructure",
+        "name": "SSM global-infrastructure public parameters",
+        "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-public-parameters-global-infrastructure.html",
+        "what": "AWS's own parameter store listing of Regions, long names and geography."
+      }
+    ]
+  },
+  "regions": [
+    {
+      "id": "af-south-1",
+      "name": "Africa (Cape Town)",
+      "partition": "aws",
+      "country": "South Africa",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-east-1",
+      "name": "Asia Pacific (Hong Kong)",
+      "partition": "aws",
+      "country": "Hong Kong",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-east-2",
+      "name": "Asia Pacific (Taipei)",
+      "partition": "aws",
+      "country": "Taiwan",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-northeast-1",
+      "name": "Asia Pacific (Tokyo)",
+      "partition": "aws",
+      "country": "Japan",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-northeast-2",
+      "name": "Asia Pacific (Seoul)",
+      "partition": "aws",
+      "country": "South Korea",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-northeast-3",
+      "name": "Asia Pacific (Osaka)",
+      "partition": "aws",
+      "country": "Japan",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-south-1",
+      "name": "Asia Pacific (Mumbai)",
+      "partition": "aws",
+      "country": "India",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-south-2",
+      "name": "Asia Pacific (Hyderabad)",
+      "partition": "aws",
+      "country": "India",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-southeast-1",
+      "name": "Asia Pacific (Singapore)",
+      "partition": "aws",
+      "country": "Singapore",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-southeast-2",
+      "name": "Asia Pacific (Sydney)",
+      "partition": "aws",
+      "country": "Australia",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-southeast-3",
+      "name": "Asia Pacific (Jakarta)",
+      "partition": "aws",
+      "country": "Indonesia",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-southeast-4",
+      "name": "Asia Pacific (Melbourne)",
+      "partition": "aws",
+      "country": "Australia",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-southeast-5",
+      "name": "Asia Pacific (Malaysia)",
+      "partition": "aws",
+      "country": "Malaysia",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-southeast-6",
+      "name": "Asia Pacific (New Zealand)",
+      "partition": "aws",
+      "country": "New Zealand",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ap-southeast-7",
+      "name": "Asia Pacific (Thailand)",
+      "partition": "aws",
+      "country": "Thailand",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ca-central-1",
+      "name": "Canada (Central)",
+      "partition": "aws",
+      "country": "Canada",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "ca-west-1",
+      "name": "Canada West (Calgary)",
+      "partition": "aws",
+      "country": "Canada",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "cn-north-1",
+      "name": "China (Beijing)",
+      "partition": "aws-cn",
+      "domain": "amazonaws.com.cn",
+      "sources": [
+        "botocore-endpoints",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "cn-northwest-1",
+      "name": "China (Ningxia)",
+      "partition": "aws-cn",
+      "domain": "amazonaws.com.cn",
+      "sources": [
+        "botocore-endpoints",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "eu-central-1",
+      "name": "Europe (Frankfurt)",
+      "partition": "aws",
+      "country": "Germany",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "eu-central-2",
+      "name": "Europe (Zurich)",
+      "partition": "aws",
+      "country": "Switzerland",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "eu-isoe-west-1",
+      "name": "EU ISOE West",
+      "partition": "aws-iso-e",
+      "domain": "cloud.adc-e.uk",
+      "sources": [
+        "botocore-endpoints"
+      ]
+    },
+    {
+      "id": "eu-north-1",
+      "name": "Europe (Stockholm)",
+      "partition": "aws",
+      "country": "Sweden",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "eu-south-1",
+      "name": "Europe (Milan)",
+      "partition": "aws",
+      "country": "Italy",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "eu-south-2",
+      "name": "Europe (Spain)",
+      "partition": "aws",
+      "country": "Spain",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "eu-west-1",
+      "name": "Europe (Ireland)",
+      "partition": "aws",
+      "country": "Ireland",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "eu-west-2",
+      "name": "Europe (London)",
+      "partition": "aws",
+      "country": "United Kingdom",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "eu-west-3",
+      "name": "Europe (Paris)",
+      "partition": "aws",
+      "country": "France",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "eusc-de-east-1",
+      "name": "AWS European Sovereign Cloud (Germany)",
+      "partition": "aws-eusc",
+      "domain": "amazonaws.eu",
+      "sources": [
+        "botocore-endpoints",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "il-central-1",
+      "name": "Israel (Tel Aviv)",
+      "partition": "aws",
+      "country": "Israel",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "me-central-1",
+      "name": "Middle East (UAE)",
+      "partition": "aws",
+      "country": "United Arab Emirates",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "me-south-1",
+      "name": "Middle East (Bahrain)",
+      "partition": "aws",
+      "country": "Bahrain",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "mx-central-1",
+      "name": "Mexico (Central)",
+      "partition": "aws",
+      "country": "Mexico",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "sa-east-1",
+      "name": "South America (São Paulo)",
+      "partition": "aws",
+      "country": "Brazil",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "us-east-1",
+      "name": "US East (N. Virginia)",
+      "partition": "aws",
+      "country": "United States of America",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "us-east-2",
+      "name": "US East (Ohio)",
+      "partition": "aws",
+      "country": "United States of America",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "us-gov-east-1",
+      "name": "AWS GovCloud (US-East)",
+      "partition": "aws-us-gov",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "us-gov-west-1",
+      "name": "AWS GovCloud (US-West)",
+      "partition": "aws-us-gov",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "us-iso-east-1",
+      "name": "US ISO East",
+      "partition": "aws-iso",
+      "domain": "c2s.ic.gov",
+      "sources": [
+        "botocore-endpoints"
+      ]
+    },
+    {
+      "id": "us-iso-west-1",
+      "name": "US ISO WEST",
+      "partition": "aws-iso",
+      "domain": "c2s.ic.gov",
+      "sources": [
+        "botocore-endpoints"
+      ]
+    },
+    {
+      "id": "us-isob-east-1",
+      "name": "US ISOB East (Ohio)",
+      "partition": "aws-iso-b",
+      "domain": "sc2s.sgov.gov",
+      "sources": [
+        "botocore-endpoints"
+      ]
+    },
+    {
+      "id": "us-isob-west-1",
+      "name": "US ISOB West",
+      "partition": "aws-iso-b",
+      "domain": "sc2s.sgov.gov",
+      "sources": [
+        "botocore-endpoints"
+      ]
+    },
+    {
+      "id": "us-isof-east-1",
+      "name": "US ISOF EAST",
+      "partition": "aws-iso-f",
+      "domain": "csp.hci.ic.gov",
+      "sources": [
+        "botocore-endpoints"
+      ]
+    },
+    {
+      "id": "us-isof-south-1",
+      "name": "US ISOF SOUTH",
+      "partition": "aws-iso-f",
+      "domain": "csp.hci.ic.gov",
+      "sources": [
+        "botocore-endpoints"
+      ]
+    },
+    {
+      "id": "us-west-1",
+      "name": "US West (N. California)",
+      "partition": "aws",
+      "country": "United States of America",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    },
+    {
+      "id": "us-west-2",
+      "name": "US West (Oregon)",
+      "partition": "aws",
+      "country": "United States of America",
+      "domain": "amazonaws.com",
+      "sources": [
+        "botocore-endpoints",
+        "regions-guide",
+        "ssm-global-infrastructure"
+      ]
+    }
+  ]
+}

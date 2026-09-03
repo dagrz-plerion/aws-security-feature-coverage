@@ -1,0 +1,37 @@
+{
+  "note": "Recorded by hand from https://docs.aws.amazon.com/acm/latest/userguide/acm-slr.html before the parser was written. Counted the rows of the single table under 'Supported Regions for ACM SLRs' (columns: Region name | Region identity | Support in ACM). The table has 19 data rows and every 'Support in ACM' cell reads Yes, so the numerator is 19 and there are no exclusions. Each row was resolved by its 'Region identity' cell (us-east-1 ... us-gov-east-1); all 19 matched regions.json. The prose 'ACM supports using SLRs in all of the regions where both ACM and AWS Private CA are available' is conditional on another service's footprint, not an 'all Regions except X' statement, so derivation stays 'enumerated' and the 27 Regions absent from the table are neither covered nor excluded. The row labelled 'AWS GovCloud (US-East) East' carries a stray trailing word in the Region name column; it still resolves to us-gov-east-1 from its Region identity cell.",
+  "features": [
+    {
+      "id": "acm/service-linked-role-regions",
+      "name": "ACM service-linked roles",
+      "axis": "region",
+      "scope": "feature",
+      "serviceId": "acm",
+      "derivation": "enumerated",
+      "numerator": 19,
+      "coveredIds": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2",
+        "ap-south-1",
+        "ap-northeast-3",
+        "ap-northeast-2",
+        "ap-southeast-1",
+        "ap-southeast-2",
+        "ap-northeast-1",
+        "ca-central-1",
+        "eu-central-1",
+        "eu-central-2",
+        "eu-west-1",
+        "eu-west-2",
+        "eu-west-3",
+        "sa-east-1",
+        "us-gov-west-1",
+        "us-gov-east-1"
+      ],
+      "excludedIds": [],
+      "partialIds": []
+    }
+  ]
+}

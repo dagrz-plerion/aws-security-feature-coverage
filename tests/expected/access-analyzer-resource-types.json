@@ -1,0 +1,72 @@
+{
+  "note": "Recorded by hand from https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-resources.html before the parser was written. Three analyzer kinds are three features. External access lists 15 bullets, but the bullet 'AWS Lambda functions and layers' names two resource types, so the numerator is 16. Internal access lists 6 bullets, all of which also appear in the external list; the two features are separate, so this is not double counting. The page note 'Unused access analyzers only support IAM users and roles.' names two resource types, so the unused feature counts 2. The per-kind detail sections below the two lists repeat the same resource kinds; they were not counted again. Partial marks in the external feature come from carve-outs in the detail sections: cross-account access point policies are not analysed for Amazon S3 buckets and directory buckets, and Lambda policies attached to aliases and qualified versions are not analysed. Re-derived independently during adversarial review: the external list has 15 bullets (snapshot lines 13-27) and the internal list 6 (lines 31-36), and 15 detail sections follow, one per external bullet, so nothing below the two lists is counted again. Every mapping row was rechecked against resource-types.json. The 16 ids are exactly the resourceType values IAM Access Analyzer itself reports, which settles the three contested rows: AWS::EC2::Snapshot is absent from the universe so ec2:snapshot is used (ebs:snapshot is the same physical resource under the EBS direct-API prefix and would double count); AWS::RDS::DBClusterSnapshot is the reported id, not the AWS::RDS::ClusterSnapshot row; layer permissions are per layer version, so AWS::Lambda::LayerVersion, not lambda:layer. Rereading all 15 detail sections found exactly three scope carve-outs, the three already marked partial. The KMS Access Denied error finding, the RDS 'not on the database itself' notes and the ECR ecr:GetAuthorizationToken condition are not carve-outs inside the listed type, so those stay full.",
+  "features": [
+    {
+      "id": "access-analyzer/external-access-resource-types",
+      "name": "IAM Access Analyzer external access analysis",
+      "axis": "resourceType",
+      "scope": "feature",
+      "serviceId": "access-analyzer",
+      "derivation": "enumerated",
+      "numerator": 16,
+      "coveredIds": [
+        "AWS::S3::Bucket",
+        "AWS::S3Express::DirectoryBucket",
+        "AWS::IAM::Role",
+        "AWS::KMS::Key",
+        "AWS::Lambda::Function",
+        "AWS::Lambda::LayerVersion",
+        "AWS::SQS::Queue",
+        "AWS::SecretsManager::Secret",
+        "AWS::SNS::Topic",
+        "ec2:snapshot",
+        "AWS::RDS::DBSnapshot",
+        "AWS::RDS::DBClusterSnapshot",
+        "AWS::ECR::Repository",
+        "AWS::EFS::FileSystem",
+        "AWS::DynamoDB::Stream",
+        "AWS::DynamoDB::Table"
+      ],
+      "excludedIds": [],
+      "partialIds": [
+        "AWS::S3::Bucket",
+        "AWS::S3Express::DirectoryBucket",
+        "AWS::Lambda::Function"
+      ]
+    },
+    {
+      "id": "access-analyzer/internal-access-resource-types",
+      "name": "IAM Access Analyzer internal access analysis",
+      "axis": "resourceType",
+      "scope": "feature",
+      "serviceId": "access-analyzer",
+      "derivation": "enumerated",
+      "numerator": 6,
+      "coveredIds": [
+        "AWS::S3::Bucket",
+        "AWS::S3Express::DirectoryBucket",
+        "AWS::RDS::DBSnapshot",
+        "AWS::RDS::DBClusterSnapshot",
+        "AWS::DynamoDB::Stream",
+        "AWS::DynamoDB::Table"
+      ],
+      "excludedIds": [],
+      "partialIds": []
+    },
+    {
+      "id": "access-analyzer/unused-access-resource-types",
+      "name": "IAM Access Analyzer unused access analysis",
+      "axis": "resourceType",
+      "scope": "feature",
+      "serviceId": "access-analyzer",
+      "derivation": "enumerated",
+      "numerator": 2,
+      "coveredIds": [
+        "AWS::IAM::User",
+        "AWS::IAM::Role"
+      ],
+      "excludedIds": [],
+      "partialIds": []
+    }
+  ]
+}

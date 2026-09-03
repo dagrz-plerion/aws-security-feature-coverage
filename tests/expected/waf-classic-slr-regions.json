@@ -1,0 +1,34 @@
+{
+  "note": "Recorded by hand from the snapshot of https://docs.aws.amazon.com/waf/latest/developerguide/classic-using-service-linked-roles.html before the parser was written. The 'Supported Regions for AWS WAF Classic service-linked roles' table has 16 rows, and every 'Support in AWS WAF Classic' cell says Yes, so there are 16 covered Regions and no exclusions. Each Region is resolved from the 'Region Identity' code column, not from the Region name. The end-of-life warning points readers at their AWS Health dashboard 'for the milestones and dates specific to your Region' but names no Region, so it is a note, not coverage. The trust-policy bullets name waf.amazonaws.com and waf-regional.amazonaws.com, which are service principals on the service axis and cannot be Regions.",
+  "features": [
+    {
+      "id": "waf/classic-service-linked-role-regions",
+      "name": "AWS WAF Classic service-linked roles",
+      "axis": "region",
+      "scope": "feature",
+      "serviceId": "waf",
+      "derivation": "enumerated",
+      "numerator": 16,
+      "coveredIds": [
+        "us-east-1",
+        "us-east-2",
+        "us-west-1",
+        "us-west-2",
+        "ap-south-1",
+        "ap-northeast-3",
+        "ap-northeast-2",
+        "ap-southeast-1",
+        "ap-southeast-2",
+        "ap-northeast-1",
+        "ca-central-1",
+        "eu-central-1",
+        "eu-west-1",
+        "eu-west-2",
+        "eu-west-3",
+        "sa-east-1"
+      ],
+      "excludedIds": [],
+      "partialIds": []
+    }
+  ]
+}

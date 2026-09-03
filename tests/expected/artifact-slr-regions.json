@@ -1,0 +1,40 @@
+{
+  "note": "Counted by hand from the 'Supported Regions for AWS Artifact service-linked roles' table on https://docs.aws.amazon.com/artifact/latest/ug/using-service-linked-roles.html before the parser was written. The table has 25 data rows. The 'Support in AWS Artifact' cell says Yes on 3 rows (us-east-1, us-west-2, us-gov-west-1) and No on the other 22, so the numerator is 3 and 22 ids are exclusions. The prose says AWS Artifact 'does not support using service-linked roles in every Region where the service is available', so the table is the whole story and coverage is enumerated, never universe-minus-exclusions. 3 + 22 = 25, which is less than the 46-Region universe: the table simply does not name the other 21 Regions. No row is partial.",
+  "features": [
+    {
+      "id": "artifact/service-linked-role-regions",
+      "name": "AWS Artifact service-linked roles",
+      "axis": "region",
+      "scope": "feature",
+      "serviceId": "artifact",
+      "derivation": "enumerated",
+      "numerator": 3,
+      "coveredIds": ["us-east-1", "us-west-2", "us-gov-west-1"],
+      "excludedIds": [
+        "us-east-2",
+        "us-west-1",
+        "af-south-1",
+        "ap-east-1",
+        "ap-southeast-3",
+        "ap-south-1",
+        "ap-northeast-3",
+        "ap-northeast-2",
+        "ap-southeast-1",
+        "ap-southeast-2",
+        "ap-northeast-1",
+        "ca-central-1",
+        "eu-central-1",
+        "eu-west-1",
+        "eu-west-2",
+        "eu-south-1",
+        "eu-west-3",
+        "eu-north-1",
+        "me-south-1",
+        "me-central-1",
+        "sa-east-1",
+        "us-gov-east-1"
+      ],
+      "partialIds": []
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "note": "Recorded by hand from https://docs.aws.amazon.com/security-ir/latest/userguide/using-service-linked-roles.html before the parser was written. The section \"Supported regions for AWS Security Incident Response service-linked roles\" states ONE Region list for BOTH roles: the heading is plural and the lead sentence reads \"AWS Security Incident Response supports using service-linked roles in all of the regions where the service is available.\" Neither per-role section names a Region, so there is one feature, not two. The list holds 25 bullets, counted by hand, all resolved: US East (Ohio), US West (Oregon), US East (Virginia), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Milan), Europe (Paris), Europe (Spain), Europe (Stockholm), Europe (Zurich), Asia Pacific (Hong Kong), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Melbourne), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Middle East (Bahrain), Middle East (UAE), South America (Sao Paulo), Africa (Cape Town). The page writes us-east-1 as \"US East (Virginia)\", which is the same Region as regions.json \"US East (N. Virginia)\". The page names no Region as unsupported, so there are no exclusions and no partials. CloudTrail event names (CreateServiceLinkedRole, InvalidInputException) and the IAM policy resource names in the two Permissions sections are not Regions and are not counted.",
+  "features": [
+    {
+      "id": "security-ir/service-linked-role-regions",
+      "name": "AWS Security Incident Response service-linked roles",
+      "axis": "region",
+      "scope": "feature",
+      "serviceId": "security-ir",
+      "derivation": "enumerated",
+      "numerator": 25,
+      "coveredIds": [
+        "us-east-2",
+        "us-west-2",
+        "us-east-1",
+        "eu-central-1",
+        "eu-west-1",
+        "eu-west-2",
+        "eu-south-1",
+        "eu-west-3",
+        "eu-south-2",
+        "eu-north-1",
+        "eu-central-2",
+        "ap-east-1",
+        "ap-south-2",
+        "ap-southeast-3",
+        "ap-southeast-4",
+        "ap-south-1",
+        "ap-northeast-2",
+        "ap-southeast-1",
+        "ap-southeast-2",
+        "ap-northeast-1",
+        "ca-central-1",
+        "me-south-1",
+        "me-central-1",
+        "sa-east-1",
+        "af-south-1"
+      ],
+      "excludedIds": [],
+      "partialIds": []
+    }
+  ]
+}

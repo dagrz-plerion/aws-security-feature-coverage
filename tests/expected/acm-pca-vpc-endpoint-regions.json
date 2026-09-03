@@ -1,0 +1,47 @@
+{
+  "note": "Counted by hand from https://docs.aws.amazon.com/privateca/latest/userguide/vpc-endpoints.html before the parser was written. The bullet list under \"AWS Private CA API currently supports VPC endpoints in the following AWS Regions:\" holds 29 Regions, all of which resolve. Deliberately excluded from the count: the four Considerations bullets above that list (they name no Region); the DNS format string {{region}} and its worked example \"us-east-2 for the US East (Ohio) Region\", which is an example of an endpoint name, not a coverage statement; and the link to the AWS Private CA Endpoints and Quotas page, which is a pointer, not a list. \"VPC endpoints do not support cross-Region requests\" names no Region, so it is not an exclusion.",
+  "features": [
+    {
+      "id": "acm-pca/vpc-endpoint-regions",
+      "name": "AWS Private CA VPC endpoints (AWS PrivateLink)",
+      "axis": "region",
+      "scope": "feature",
+      "serviceId": "acm-pca",
+      "derivation": "enumerated",
+      "numerator": 29,
+      "coveredIds": [
+        "us-east-2",
+        "us-east-1",
+        "us-west-1",
+        "us-west-2",
+        "af-south-1",
+        "ap-east-1",
+        "ap-south-2",
+        "ap-southeast-3",
+        "ap-southeast-4",
+        "ap-south-1",
+        "ap-northeast-3",
+        "ap-northeast-2",
+        "ap-southeast-1",
+        "ap-southeast-2",
+        "ap-northeast-1",
+        "ca-central-1",
+        "ca-west-1",
+        "eu-central-1",
+        "eu-west-1",
+        "eu-west-2",
+        "eu-south-1",
+        "eu-west-3",
+        "eu-south-2",
+        "eu-north-1",
+        "eu-central-2",
+        "il-central-1",
+        "me-south-1",
+        "me-central-1",
+        "sa-east-1"
+      ],
+      "excludedIds": [],
+      "partialIds": []
+    }
+  ]
+}
