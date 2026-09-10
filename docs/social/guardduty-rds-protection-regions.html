@@ -13,7 +13,7 @@ body{background:var(--bg); color:var(--cloud); font-family:Inter,-apple-system,s
   color:var(--cloud-mid); margin-bottom:16px}
 h1{font-size:37px; font-weight:600; line-height:1.16; letter-spacing:-.02em}
 ul{list-style:none; margin-top:30px; columns:4; column-gap:26px}
-li{font-size:14.5px; line-height:1.95; padding-left:17px; position:relative;
+li{font-size:14.5px; line-height:1.82; padding-left:17px; position:relative;
   break-inside:avoid; white-space:nowrap}
 li::before{content:""; position:absolute; left:0; top:9px; width:9px; height:9px; border-radius:1.5px}
 li.in::before{background:var(--orange)}
@@ -23,52 +23,54 @@ li.out::before{background:var(--deep); box-shadow:inset 0 0 0 2px rgba(199,222,2
 .src b{color:var(--cloud); font-weight:500}
 </style></head><body>
   <div class="eyebrow">Amazon GuardDuty &middot; RDS Protection</div>
-  <h1>RDS Protection runs in 43 of the 44 Regions where GuardDuty itself exists</h1>
+  <h1>RDS Protection runs in 43 of the 46 AWS Regions</h1>
   <ul>
     <li class="in">Africa (Cape Town)</li>
     <li class="in">Asia Pacific (Hong Kong)</li>
-    <li class="out">Asia Pacific (Taipei)</li>
-    <li class="in">Asia Pacific (Tokyo)</li>
-    <li class="in">Asia Pacific (Seoul)</li>
-    <li class="in">Asia Pacific (Osaka)</li>
-    <li class="in">Asia Pacific (Mumbai)</li>
     <li class="in">Asia Pacific (Hyderabad)</li>
+    <li class="in">Asia Pacific (Jakarta)</li>
+    <li class="in">Asia Pacific (Malaysia)</li>
+    <li class="in">Asia Pacific (Melbourne)</li>
+    <li class="in">Asia Pacific (Mumbai)</li>
+    <li class="in">Asia Pacific (New Zealand)</li>
+    <li class="in">Asia Pacific (Osaka)</li>
+    <li class="in">Asia Pacific (Seoul)</li>
     <li class="in">Asia Pacific (Singapore)</li>
     <li class="in">Asia Pacific (Sydney)</li>
-    <li class="in">Asia Pacific (Jakarta)</li>
-    <li class="in">Asia Pacific (Melbourne)</li>
-    <li class="in">Asia Pacific (Malaysia)</li>
-    <li class="in">Asia Pacific (New Zealand)</li>
+    <li class="out">Asia Pacific (Taipei)</li>
     <li class="in">Asia Pacific (Thailand)</li>
+    <li class="in">Asia Pacific (Tokyo)</li>
+    <li class="in">AWS GovCloud (US-East)</li>
+    <li class="in">AWS GovCloud (US-West)</li>
     <li class="in">Canada (Central)</li>
     <li class="in">Canada West (Calgary)</li>
     <li class="in">China (Beijing)</li>
     <li class="in">China (Ningxia)</li>
+    <li class="out">EU ISOE West</li>
+    <li class="in">EU Sovereign Cloud (Germany)</li>
     <li class="in">Europe (Frankfurt)</li>
-    <li class="in">Europe (Zurich)</li>
-    <li class="in">Europe (Stockholm)</li>
-    <li class="in">Europe (Milan)</li>
-    <li class="in">Europe (Spain)</li>
     <li class="in">Europe (Ireland)</li>
     <li class="in">Europe (London)</li>
+    <li class="in">Europe (Milan)</li>
     <li class="in">Europe (Paris)</li>
-    <li class="in">EU Sovereign Cloud (Germany)</li>
+    <li class="in">Europe (Spain)</li>
+    <li class="in">Europe (Stockholm)</li>
+    <li class="in">Europe (Zurich)</li>
     <li class="in">Israel (Tel Aviv)</li>
-    <li class="in">Middle East (UAE)</li>
-    <li class="in">Middle East (Bahrain)</li>
     <li class="in">Mexico (Central)</li>
+    <li class="in">Middle East (Bahrain)</li>
+    <li class="in">Middle East (UAE)</li>
     <li class="in">South America (São Paulo)</li>
     <li class="in">US East (N. Virginia)</li>
     <li class="in">US East (Ohio)</li>
-    <li class="in">AWS GovCloud (US-East)</li>
-    <li class="in">AWS GovCloud (US-West)</li>
     <li class="in">US ISO East</li>
     <li class="in">US ISO West</li>
     <li class="in">US ISOB East (Ohio)</li>
+    <li class="out">US ISOB West</li>
     <li class="in">US ISOF East</li>
     <li class="in">US ISOF South</li>
     <li class="in">US West (N. California)</li>
     <li class="in">US West (Oregon)</li>
   </ul>
-  <div class="src">The one exception AWS names: <b>Asia Pacific (Taipei)</b>. GuardDuty itself is not offered in <b>EU ISOE West</b> or <b>US ISOB West</b>, so neither can be counted either way.<br>&ldquo;Amazon GuardDuty Regions and endpoints&rdquo;, Amazon GuardDuty User Guide, read 10&nbsp;September&nbsp;2026.</div>
+  <div class="src">It does not run in <b>Asia Pacific (Taipei)</b>, where GuardDuty runs but AWS names this feature as unsupported, nor in <b>EU ISOE West</b> or <b>US ISOB West</b>, where GuardDuty is not offered at all.<br>&ldquo;Amazon GuardDuty Regions and endpoints&rdquo;, Amazon GuardDuty User Guide, read 10&nbsp;September&nbsp;2026.</div>
 </body></html>
